@@ -87,11 +87,16 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:
 .empty h3{font-family:var(--serif);color:var(--text);font-size:1.2rem;margin-bottom:.5rem}
 footer{margin-top:3rem;padding:1.5rem;text-align:center;font-size:.75rem;color:var(--muted);border-top:1px solid var(--border)}
 
-.summary-banner{background:var(--surface);border-bottom:1px solid var(--border);padding:1rem 1.5rem}
-.summary-banner-inner{max-width:1280px;margin:0 auto;display:flex;gap:1rem;align-items:flex-start}
-.summary-label{font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--green);white-space:nowrap;padding-top:.15rem;flex-shrink:0}
-.summary-text{font-size:.875rem;line-height:1.65;color:var(--text)}
-.summary-text.loading{color:var(--muted);font-style:italic}
+.headlines-bar{background:var(--surface);border-bottom:1px solid var(--border);padding:1.25rem 1.5rem}
+.headlines-bar-inner{max-width:1280px;margin:0 auto}
+.headlines-label{font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--green);margin-bottom:.85rem}
+.headlines-list{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+.headline-item{display:flex;align-items:baseline;gap:.75rem}
+.headline-dot{width:6px;height:6px;border-radius:50%;background:var(--muted);flex-shrink:0;margin-bottom:1px}
+.headline-content{display:flex;flex-direction:column;gap:.2rem}
+.headline-time{font-size:.75rem;color:var(--muted);font-family:var(--mono)}
+.headline-title{font-family:var(--serif);font-size:.975rem;font-weight:600;color:var(--text);line-height:1.35;text-decoration:none}
+.headline-title:hover{color:var(--green)}
 
 .tooltip{position:fixed;z-index:999;max-width:320px;background:#fff;border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.10);padding:1rem 1.1rem;pointer-events:none;opacity:0;transition:opacity .15s;font-size:.8rem;line-height:1.6;color:var(--text)}
 .tooltip.visible{opacity:1}
@@ -133,22 +138,20 @@ footer{margin-top:3rem;padding:1.5rem;text-align:center;font-size:.75rem;color:v
   </div>
 </div>
 
-<div class="summary-banner" id="summary-banner" style="display:none">
-  <div class="summary-banner-inner">
-    <span class="summary-label">AI Briefing</span>
-    <p class="summary-text" id="summary-text"></p>
+<div class="headlines-bar" id="headlines-bar" style="display:none">
+  <div class="headlines-bar-inner">
+    <div class="headlines-label">Latest</div>
+    <ul class="headlines-list" id="headlines-list"></ul>
   </div>
 </div>
+
+<div id="tooltip" class="tooltip"><div class="tooltip-source" id="tooltip-source"></div><div id="tooltip-body"></div></div>
 
 <div class="filter-bar">
   <div class="filter-bar-inner" id="filter-bar">
     <button class="chip active" onclick="setFilter('all',this)">All Sources</button>
   </div>
 </div>
-
-<div class="summary-banner" id="summary-banner" style="display:none"><div class="summary-banner-inner"><span class="summary-label">AI Briefing</span><p class="summary-text" id="summary-text"></p></div></div>
-
-<div id="tooltip" class="tooltip"><div class="tooltip-source" id="tooltip-source"></div><div id="tooltip-body"></div></div>
 
 <main class="page">
   <div class="status-bar">
@@ -316,7 +319,7 @@ async function loadData() {
         'Updated ' + fetched.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
     }
 
-    showSummary(data.summary);
+    showHeadlines(allArticles);
     document.getElementById('status-text').textContent = allArticles.length + ' articles loaded';
     buildFilterBar();
     renderArticles();
@@ -387,11 +390,21 @@ function onCardEnter(e, el) {
   if (article) showTooltip(e, article);
 }
 
-// ── Summary banner ──
-function showSummary(text) {
-  if (!text) return;
-  document.getElementById('summary-text').textContent = text;
-  document.getElementById('summary-banner').style.display = 'block';
+// ── Headlines bar ──
+function showHeadlines(articles) {
+  if (!articles || !articles.length) return;
+  var top5 = articles.slice(0, 5);
+  var list = document.getElementById('headlines-list');
+  list.innerHTML = top5.map(function(a) {
+    return '<li class="headline-item">'
+      + '<span class="headline-dot"></span>'
+      + '<div class="headline-content">'
+      + '<span class="headline-time">' + (timeAgo(a.pubDate) || '—') + '</span>'
+      + '<a class="headline-title" href="' + (a.link||'#') + '" target="_blank" rel="noopener">' + escapeHTML(a.title||'') + '</a>'
+      + '</div>'
+      + '</li>';
+  }).join('');
+  document.getElementById('headlines-bar').style.display = 'block';
 }
 </script>
 </body>
