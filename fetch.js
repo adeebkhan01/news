@@ -11,10 +11,9 @@ const SOURCES = [
   { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/bangladesh/rss.xml' },
   { id: 'bdnews24',         name: 'bdnews24',          color: '#e05c1a', url: 'https://bdnews24.com/?widgetName=rssfeed&widgetId=1150&getXmlFeed=true' },
   { id: 'prothomalo',       name: 'Prothom Alo',       color: '#c0392b', url: 'https://en.prothomalo.com/feed/' },
-  { id: 'newagebd',         name: 'New Age',           color: '#2980b9', url: 'https://www.newagebd.net/rss' },
+  { id: 'tbsnews',          name: 'TBS News',          color: '#2980b9', url: 'https://www.tbsnews.net/rss' },
   { id: 'financialexpress', name: 'Financial Express', color: '#8e44ad', url: 'https://thefinancialexpress.com.bd/feed/' },
-  { id: 'independentbd',    name: 'The Independent',   color: '#16a085', url: 'https://theindependentbd.com/feed/' },
-  { id: 'bangladeshtoday',  name: 'Bangladesh Today',  color: '#d35400', url: 'https://www.thebangladeshtoday.com/feed/' },
+  { id: 'dailysun',         name: 'Daily Sun',         color: '#16a085', url: 'https://www.daily-sun.com/rss' },
 ];
 
 var UNIQUE_SOURCES = [];
@@ -24,7 +23,31 @@ SOURCES.forEach(function(s) {
 });
 
 var THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
-function isRecent(d) { var t = Date.parse(d); return t && (Date.now() - t) < THIRTY_DAYS_MS; }
+
+// Robust date parser — handles RFC 822, ISO 8601, and Bengali/Asian timezone offsets
+function parseDate(str) {
+  if (!str) return null;
+  str = str.trim();
+  // Try native parse first
+  var t = Date.parse(str);
+  if (!isNaN(t)) return t;
+  // Strip timezone names in parens e.g. "Mon, 15 Mar 2026 12:00:00 +0600 (BST)"
+  str = str.replace(/\s*\([^)]+\)\s*$/, '');
+  t = Date.parse(str);
+  if (!isNaN(t)) return t;
+  // Replace named timezones with offsets
+  str = str.replace(/\bGMT\b/, '+0000').replace(/\bUTC\b/, '+0000')
+           .replace(/\bBST\b/, '+0600').replace(/\bIST\b/, '+0530');
+  t = Date.parse(str);
+  if (!isNaN(t)) return t;
+  return null;
+}
+
+function isRecent(pubDate) {
+  var t = parseDate(pubDate);
+  if (!t) return true; // if we can't parse the date, include it rather than drop it
+  return (Date.now() - t) < THIRTY_DAYS_MS;
+}
 
 function resolveLocation(loc, from) {
   if (loc.startsWith('http://') || loc.startsWith('https://')) return loc;
@@ -39,7 +62,10 @@ function fetchUrl(reqUrl, redirects) {
     if (redirects > 5) return reject(new Error('Too many redirects'));
     var lib = reqUrl.startsWith('https') ? https : http;
     var req = lib.get(reqUrl, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml,*/*' },
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml,*/*',
+      },
       timeout: 15000
     }, function(res) {
       if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
@@ -137,7 +163,6 @@ async function enrichImages(articles) {
   }
 }
 
-// Call Claude API
 function claudeComplete(systemPrompt, userPrompt) {
   return new Promise(function(resolve, reject) {
     var body = JSON.stringify({
@@ -161,10 +186,8 @@ function claudeComplete(systemPrompt, userPrompt) {
       var data = ''; res.setEncoding('utf8');
       res.on('data', function(c) { data += c; });
       res.on('end', function() {
-        try {
-          var json = JSON.parse(data);
-          resolve(json.content && json.content[0] ? json.content[0].text : '');
-        } catch(e) { reject(e); }
+        try { var json=JSON.parse(data); resolve(json.content&&json.content[0]?json.content[0].text:''); }
+        catch(e) { reject(e); }
       });
     });
     req.on('error', reject);
@@ -177,16 +200,13 @@ function claudeComplete(systemPrompt, userPrompt) {
 async function generatePageSummary(articles) {
   if (!ANTHROPIC_API_KEY) return null;
   console.log('Generating page summary...');
-  var titles = articles.slice(0, 40).map(function(a, i) { return (i+1) + '. ' + a.title; }).join('\n');
+  var titles = articles.slice(0,40).map(function(a,i){ return (i+1)+'. '+a.title; }).join('\n');
   try {
     return await claudeComplete(
       'You are a concise news briefing editor covering Bangladesh. Write in plain prose, no bullet points, no markdown.',
-      'Here are the top headlines from Bangladesh news sources today:\n\n' + titles + '\n\nWrite a 3-4 sentence briefing summarising the key themes and most significant stories. Be direct and informative.'
+      'Here are the top headlines from Bangladesh news sources today:\n\n'+titles+'\n\nWrite a 3-4 sentence briefing summarising the key themes and most significant stories. Be direct and informative.'
     );
-  } catch(e) {
-    console.error('Page summary failed:', e.message);
-    return null;
-  }
+  } catch(e) { console.error('Page summary failed:', e.message); return null; }
 }
 
 async function generateArticleSummaries(articles) {
@@ -198,52 +218,40 @@ async function generateArticleSummaries(articles) {
       try {
         a.aiSummary = await claudeComplete(
           'You are a sharp news analyst. Be concise. No bullet points. No markdown.',
-          'Article: ' + a.title + '\n' + (a.desc || '') + '\n\nWrite exactly two things:\n1. One sentence summarising what this article is about.\n2. One sentence giving your analytical opinion on its significance or implications.'
+          'Article: '+a.title+'\n'+(a.desc||'')+'\n\nWrite exactly two things:\n1. One sentence summarising what this article is about.\n2. One sentence giving your analytical opinion on its significance or implications.'
         );
-      } catch(e) {
-        a.aiSummary = null;
-      }
+      } catch(e) { a.aiSummary = null; }
     }));
-    // Small delay between batches to avoid rate limiting
-    if (i + BATCH < articles.length) await new Promise(function(r) { setTimeout(r, 500); });
+    if (i+BATCH < articles.length) await new Promise(function(r){ setTimeout(r,500); });
   }
 }
 
 async function main() {
   if (!ANTHROPIC_API_KEY) console.warn('Warning: ANTHROPIC_API_KEY not set — AI features will be skipped');
 
-  var results = [], seen = {};
+  var results=[], seen={};
   for (var i=0; i<SOURCES.length; i++) {
-    var source = SOURCES[i];
+    var source=SOURCES[i];
     try {
       console.log('Fetching:', source.name, '-', source.url);
-      var xml = await fetchUrl(source.url);
-      var articles = parseFeed(xml, source)
-        .filter(function(a) { return isRecent(a.pubDate); })
-        .filter(function(a) { if(seen[a.link]) return false; seen[a.link]=true; return true; });
+      var xml=await fetchUrl(source.url);
+      var articles=parseFeed(xml,source)
+        .filter(function(a){ return isRecent(a.pubDate); })
+        .filter(function(a){ if(seen[a.link]) return false; seen[a.link]=true; return true; });
       console.log('  Got', articles.length, 'recent articles');
-      results = results.concat(articles);
-    } catch(e) {
-      console.error('  Failed:', e.message);
-    }
+      results=results.concat(articles);
+    } catch(e) { console.error('  Failed:', e.message); }
   }
 
   await enrichImages(results);
-
-  results.sort(function(a,b) { return new Date(b.pubDate)-new Date(a.pubDate); });
+  results.sort(function(a,b){ return (parseDate(b.pubDate)||0)-(parseDate(a.pubDate)||0); });
 
   var pageSummary = await generatePageSummary(results);
   await generateArticleSummaries(results);
 
-  var output = {
-    fetchedAt:   new Date().toISOString(),
-    summary:     pageSummary,
-    sources:     UNIQUE_SOURCES,
-    articles:    results
-  };
-
+  var output = { fetchedAt: new Date().toISOString(), summary: pageSummary, sources: UNIQUE_SOURCES, articles: results };
   fs.writeFileSync('data.json', JSON.stringify(output, null, 2));
   console.log('Done. Saved', results.length, 'articles to data.json');
 }
 
-main().catch(function(e) { console.error(e); process.exit(1); });
+main().catch(function(e){ console.error(e); process.exit(1); });
