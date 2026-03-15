@@ -221,7 +221,8 @@ async function loadData() {
   showSkeletons();
 
   try {
-    const res = await fetch('data.json?t=' + Date.now());
+    const base = window.location.pathname.replace(/\/?$/, '/');
+    const res = await fetch(base + 'data.json?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
     allArticles = data.articles || [];
