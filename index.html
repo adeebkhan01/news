@@ -29,16 +29,28 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:
 #refresh-btn.spinning svg{animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .last-updated{font-size:.72rem;color:var(--muted);font-family:var(--mono)}
+
+.search-bar{background:var(--surface);border-bottom:1px solid var(--border);padding:.75rem 1.5rem}
+.search-bar-inner{max-width:1280px;margin:0 auto;position:relative}
+.search-bar-inner svg{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+#search-input{width:100%;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:.55rem .75rem .55rem 2.4rem;font-family:var(--sans);font-size:.875rem;color:var(--text);outline:none;transition:border-color .15s}
+#search-input::placeholder{color:var(--muted)}
+#search-input:focus{border-color:var(--green-lt)}
+#search-clear{position:absolute;right:.75rem;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--muted);cursor:pointer;font-size:1rem;display:none;line-height:1;padding:.2rem}
+#search-clear:hover{color:var(--text)}
+
 .filter-bar{background:var(--surface);border-bottom:1px solid var(--border);padding:0 1.5rem}
 .filter-bar-inner{max-width:1280px;margin:0 auto;display:flex;gap:.4rem;padding:.6rem 0;overflow-x:auto;scrollbar-width:none}
 .filter-bar-inner::-webkit-scrollbar{display:none}
 .chip{font-size:.75rem;font-weight:500;padding:.3rem .8rem;border-radius:999px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;white-space:nowrap;transition:all .15s;flex-shrink:0}
 .chip:hover{border-color:var(--green-lt);color:var(--green-lt)}
 .chip.active{background:var(--green);border-color:var(--green);color:#fff}
+
 .page{max-width:1280px;margin:0 auto;padding:1.5rem}
 .status-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.2rem;font-size:.8rem;color:var(--muted)}
 .status-dot{width:7px;height:7px;border-radius:50%;background:var(--green-lt);display:inline-block;margin-right:.4rem;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1rem}
 .card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:border-color .2s,transform .15s}
 .card:hover{border-color:var(--green-lt);transform:translateY(-2px)}
@@ -59,12 +71,15 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:
   .card.featured{flex-direction:column}
   .card.featured .card-thumb{width:100%;min-width:0;height:200px;border-right:none;border-bottom:1px solid var(--border)}
 }
+.highlight{background:rgba(184,212,138,.25);border-radius:2px;padding:0 1px}
+
 .loading-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1rem}
 .skeleton{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;animation:shimmer 1.5s infinite}
 .skeleton-thumb{height:140px;background:var(--surface)}
 .skeleton-body{padding:1rem}
 .skeleton-line{height:10px;border-radius:4px;background:var(--surface);margin-bottom:8px}
 @keyframes shimmer{0%,100%{opacity:1}50%{opacity:.6}}
+
 .error-box{background:#2a0f0f;border:1px solid var(--red);border-radius:8px;padding:1.5rem;color:#f0a0a0;margin:2rem 0;text-align:center}
 .error-box h3{font-family:var(--serif);margin-bottom:.5rem;font-size:1.1rem}
 .error-box p{font-size:.85rem;line-height:1.6}
@@ -95,9 +110,19 @@ footer{margin-top:3rem;padding:1.5rem;text-align:center;font-size:.75rem;color:v
   </div>
 </header>
 
+<div class="search-bar">
+  <div class="search-bar-inner">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input id="search-input" type="search" placeholder="Search articles…" oninput="onSearch(this.value)" />
+    <button id="search-clear" onclick="clearSearch()">✕</button>
+  </div>
+</div>
+
 <div class="filter-bar">
   <div class="filter-bar-inner" id="filter-bar">
-    <button class="chip active" onclick="setFilter('all',this)">All Sections</button>
+    <button class="chip active" onclick="setFilter('all',this)">All Sources</button>
   </div>
 </div>
 
@@ -112,15 +137,23 @@ footer{margin-top:3rem;padding:1.5rem;text-align:center;font-size:.75rem;color:v
 <footer>Bangladesh News Feed · 7 outlets · refreshed hourly via GitHub Actions</footer>
 
 <script>
-let allArticles = [];
-let allSources  = [];
+let allArticles  = [];
+let allSources   = [];
 let activeFilter = 'all';
-let loading = false;
+let searchQuery  = '';
+let loading      = false;
 
 function escapeHTML(str) {
   return String(str || '').replace(/[&<>"']/g, m =>
     ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'})[m]
   );
+}
+
+// Wrap matched keywords in a highlight span
+function highlight(text, query) {
+  if (!query) return text;
+  var escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return text.replace(new RegExp('(' + escaped + ')', 'gi'), '<span class="highlight">$1</span>');
 }
 
 function timeAgo(dateStr) {
@@ -133,12 +166,25 @@ function timeAgo(dateStr) {
   return                   Math.floor(diff / 86400) + 'd ago';
 }
 
+function onSearch(val) {
+  searchQuery = val.trim();
+  document.getElementById('search-clear').style.display = searchQuery ? 'block' : 'none';
+  renderArticles();
+}
+
+function clearSearch() {
+  searchQuery = '';
+  document.getElementById('search-input').value = '';
+  document.getElementById('search-clear').style.display = 'none';
+  renderArticles();
+}
+
 function buildFilterBar() {
   const counts = {};
   allArticles.forEach(a => { counts[a.sourceId] = (counts[a.sourceId] || 0) + 1; });
 
   const bar = document.getElementById('filter-bar');
-  bar.innerHTML = `<button class="chip ${activeFilter === 'all' ? 'active' : ''}" onclick="setFilter('all',this)">All Sections</button>`;
+  bar.innerHTML = '<button class="chip ' + (activeFilter === 'all' ? 'active' : '') + '" onclick="setFilter(\'all\',this)">All Sources</button>';
 
   allSources.forEach(s => {
     const count = counts[s.id] || 0;
@@ -160,25 +206,36 @@ function setFilter(id, el) {
 
 function renderArticles() {
   const container = document.getElementById('feed-container');
-  const articles = activeFilter === 'all'
+  const q = searchQuery.toLowerCase();
+
+  let articles = activeFilter === 'all'
     ? allArticles
     : allArticles.filter(a => a.sourceId === activeFilter);
+
+  if (q) {
+    articles = articles.filter(a =>
+      (a.title || '').toLowerCase().includes(q) ||
+      (a.desc  || '').toLowerCase().includes(q)
+    );
+  }
 
   document.getElementById('article-count').textContent = articles.length + ' articles';
 
   if (!articles.length) {
-    container.innerHTML = '<div class="empty"><h3>No articles</h3><p>Try a different section.</p></div>';
+    container.innerHTML = '<div class="empty"><h3>No articles found</h3><p>' + (q ? 'Try a different search term.' : 'Try a different source.') + '</p></div>';
     return;
   }
 
-  const featuredIndex = activeFilter === 'all' ? articles.findIndex(a => a.img) : -1;
+  const featuredIndex = (!q && activeFilter === 'all') ? articles.findIndex(a => a.img) : -1;
 
   const cards = articles.map((a, i) => {
-    const title      = escapeHTML(a.title      || 'Untitled');
-    const desc       = escapeHTML(a.desc       || '');
-    const sourceName = escapeHTML(a.sourceName || 'Unknown');
-    const color      = a.sourceColor || '#aaa';
-    const link       = a.link || '#';
+    const rawTitle = escapeHTML(a.title || 'Untitled');
+    const rawDesc  = escapeHTML(a.desc  || '');
+    const title    = highlight(rawTitle, escapeHTML(searchQuery));
+    const desc     = highlight(rawDesc,  escapeHTML(searchQuery));
+    const source   = escapeHTML(a.sourceName || 'Unknown');
+    const color    = a.sourceColor || '#aaa';
+    const link     = a.link || '#';
     const isFeatured = i === featuredIndex;
 
     const imgHtml = a.img
@@ -190,7 +247,7 @@ function renderArticles() {
       + '<div class="card-body">'
       + '<div class="card-source">'
       + '<span class="source-dot" style="background:' + color + '"></span>'
-      + '<span style="color:' + color + '">' + sourceName + '</span>'
+      + '<span style="color:' + color + '">' + source + '</span>'
       + '</div>'
       + '<div class="card-title">' + title + '</div>'
       + (desc ? '<div class="card-desc">' + desc + '</div>' : '')
