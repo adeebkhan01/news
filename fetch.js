@@ -4,13 +4,9 @@ const url   = require('url');
 const fs    = require('fs');
 
 const SOURCES = [
+  { id: 'ds-business',      name: 'The Daily Star',    color: '#1a7a4a', url: 'https://www.thedailystar.net/business/rss.xml' },
   { id: 'ds-frontpage',     name: 'The Daily Star',    color: '#1a7a4a', url: 'https://www.thedailystar.net/frontpage/rss.xml' },
-  { id: 'ds-bangladesh',    name: 'DS: Bangladesh',    color: '#1a7a4a', url: 'https://www.thedailystar.net/bangladesh/rss.xml' },
-  { id: 'ds-business',      name: 'DS: Business',      color: '#1a7a4a', url: 'https://www.thedailystar.net/business/rss.xml' },
-  { id: 'ds-sports',        name: 'DS: Sports',        color: '#1a7a4a', url: 'https://www.thedailystar.net/sports/rss.xml' },
-  { id: 'ds-entertainment', name: 'DS: Entertainment', color: '#1a7a4a', url: 'https://www.thedailystar.net/entertainment/rss.xml' },
-  { id: 'ds-lifestyle',     name: 'DS: Lifestyle',     color: '#1a7a4a', url: 'https://www.thedailystar.net/lifestyle/rss.xml' },
-  { id: 'ds-opinion',       name: 'DS: Opinion',       color: '#1a7a4a', url: 'https://www.thedailystar.net/opinion/rss.xml' },
+  { id: 'ds-bangladesh',    name: 'The Daily Star',    color: '#1a7a4a', url: 'https://www.thedailystar.net/bangladesh/rss.xml' },
   { id: 'bdnews24',         name: 'bdnews24',          color: '#e05c1a', url: 'https://bdnews24.com/?widgetName=rssfeed&widgetId=1150&getXmlFeed=true' },
   { id: 'prothomalo',       name: 'Prothom Alo',       color: '#c0392b', url: 'https://en.prothomalo.com/feed/' },
   { id: 'newagebd',         name: 'New Age',           color: '#2980b9', url: 'https://www.newagebd.net/rss' },
@@ -19,15 +15,29 @@ const SOURCES = [
   { id: 'bangladeshtoday',  name: 'Bangladesh Today',  color: '#d35400', url: 'https://www.thebangladeshtoday.com/feed/' },
 ];
 
-// Resolve a potentially-relative redirect Location against the originating URL
+// Keep only articles matching business / economics / politics topics
+var KEYWORDS = [
+  'economy','economic','gdp','inflation','budget','fiscal','monetary','trade','export','import',
+  'revenue','investment','stock','bank','banking','finance','financial','market','currency','taka',
+  'remittance','garment','rmg','industry','manufacturing','growth','recession','imf','world bank',
+  'commerce','entrepreneur','startup','corporate','profit','loan','interest rate','tax','tariff',
+  'government','minister','ministry','parliament','election','political','party','cabinet','policy',
+  'reform','law','court','constitution','interim','chief adviser','commission','regulation',
+  'diplomacy','foreign','bilateral','sanction','protest','opposition','ruling','vote','democracy',
+];
+
+function isRelevant(article) {
+  var text = (article.title + ' ' + article.desc).toLowerCase();
+  for (var i = 0; i < KEYWORDS.length; i++) {
+    if (text.indexOf(KEYWORDS[i]) !== -1) return true;
+  }
+  return false;
+}
+
 function resolveLocation(location, fromUrl) {
-  if (location.startsWith('http://') || location.startsWith('https://')) {
-    return location;
-  }
+  if (location.startsWith('http://') || location.startsWith('https://')) return location;
   var parsed = url.parse(fromUrl);
-  if (location.startsWith('//')) {
-    return parsed.protocol + location;
-  }
+  if (location.startsWith('//')) return parsed.protocol + location;
   return parsed.protocol + '//' + parsed.host + (location.startsWith('/') ? '' : '/') + location;
 }
 
@@ -88,12 +98,11 @@ function getTag(block, tag) {
   return m ? m[1].trim() : '';
 }
 
-// Parse standard RSS feeds (items use <item> tags)
 function parseRSS(xml, source) {
   var items = [];
   var re = /<item[^>]*>([\s\S]*?)<\/item>/gi;
   var m;
-  while ((m = re.exec(xml)) !== null && items.length < 15) {
+  while ((m = re.exec(xml)) !== null && items.length < 30) {
     var b = m[1];
     var title = stripTags(getTag(b, 'title'));
     if (!title) continue;
@@ -111,25 +120,20 @@ function parseRSS(xml, source) {
   return items;
 }
 
-// Parse Atom feeds (items use <entry> tags)
 function parseAtom(xml, source) {
   var items = [];
   var re = /<entry[^>]*>([\s\S]*?)<\/entry>/gi;
   var m;
-  while ((m = re.exec(xml)) !== null && items.length < 15) {
+  while ((m = re.exec(xml)) !== null && items.length < 30) {
     var b = m[1];
     var title = stripTags(getTag(b, 'title'));
     if (!title) continue;
-    // Atom uses <link href="..."/> or <link>url</link>
     var linkMatch = b.match(/<link[^>]+href="([^"]+)"/i) || b.match(/<link[^>]*>([^<]+)<\/link>/i);
-    var link = linkMatch ? linkMatch[1].trim() : '';
-    var desc = stripTags(getTag(b, 'summary') || getTag(b, 'content')).slice(0, 200);
-    var pubDate = getTag(b, 'published') || getTag(b, 'updated') || '';
     items.push({
       title:       title,
-      link:        link,
-      desc:        desc,
-      pubDate:     pubDate,
+      link:        linkMatch ? linkMatch[1].trim() : '',
+      desc:        stripTags(getTag(b, 'summary') || getTag(b, 'content')).slice(0, 200),
+      pubDate:     getTag(b, 'published') || getTag(b, 'updated') || '',
       img:         extractImg(b),
       sourceId:    source.id,
       sourceName:  source.name,
@@ -152,8 +156,8 @@ async function main() {
     try {
       console.log('Fetching:', source.name, '-', source.url);
       var xml = await fetchUrl(source.url);
-      var articles = parseFeed(xml, source);
-      console.log('  Got', articles.length, 'articles');
+      var articles = parseFeed(xml, source).filter(isRelevant);
+      console.log('  Got', articles.length, 'relevant articles');
       results = results.concat(articles);
     } catch(e) {
       console.error('  Failed:', e.message);
