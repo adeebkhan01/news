@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Daily Star — Bangladesh News</title>
+<title>Bangladesh News — RSS Aggregator</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&family=DM+Mono&display=swap" rel="stylesheet" />
 <style>
@@ -125,7 +125,7 @@
   <div id="feed-container"></div>
 </main>
 
-<footer>The Daily Star Feed · data refreshed hourly via GitHub Actions · <a href="https://www.thedailystar.net" target="_blank" rel="noopener" style="color:var(--green-lt)">thedailystar.net</a></footer>
+<footer>Bangladesh News Feed · 7 outlets · data refreshed hourly via GitHub Actions</footer>
 
 <script>
 let allArticles = [];
@@ -214,34 +214,6 @@ function showSkeletons() {
   document.getElementById('feed-container').innerHTML = `<div class="loading-grid">${skels}</div>`;
 }
 
-const SAMPLE_DATA = {
-  fetchedAt: new Date().toISOString(),
-  sources: [
-    { id: 'frontpage',     name: 'Front Page',    color: '#1a7a4a' },
-    { id: 'bangladesh',    name: 'Bangladesh',    color: '#2a7abf' },
-    { id: 'world',         name: 'World',         color: '#7a4abf' },
-    { id: 'business',      name: 'Business',      color: '#bf8a2a' },
-    { id: 'sports',        name: 'Sports',        color: '#c23a3a' },
-    { id: 'entertainment', name: 'Entertainment', color: '#bf2a7a' },
-    { id: 'lifestyle',     name: 'Lifestyle',     color: '#4abf7a' },
-    { id: 'opinion',       name: 'Opinion',       color: '#8a8a6a' },
-  ],
-  articles: [
-    { title: 'Cabinet approves draft of new anti-corruption law amid public pressure', link: 'https://www.thedailystar.net', desc: 'The cabinet on Tuesday approved a draft of the long-awaited anti-corruption legislation following months of civil society advocacy.', pubDate: new Date(Date.now()-1800000).toISOString(), img: null, sourceId: 'frontpage', sourceName: 'Front Page', sourceColor: '#1a7a4a' },
-    { title: 'Dhaka city corporation launches emergency flood relief operations', link: 'https://www.thedailystar.net', desc: 'Relief teams were deployed to low-lying areas across the capital as water levels rose following heavy monsoon rainfall overnight.', pubDate: new Date(Date.now()-3600000).toISOString(), img: null, sourceId: 'bangladesh', sourceName: 'Bangladesh', sourceColor: '#2a7abf' },
-    { title: 'Bangladesh GDP growth forecast revised upward to 6.8% for FY2025', link: 'https://www.thedailystar.net', desc: 'The World Bank has revised its growth projection for Bangladesh citing strong export performance and resilient remittance inflows.', pubDate: new Date(Date.now()-7200000).toISOString(), img: null, sourceId: 'business', sourceName: 'Business', sourceColor: '#bf8a2a' },
-    { title: 'Tigers clinch series against West Indies with dominant batting display', link: 'https://www.thedailystar.net', desc: 'Bangladesh sealed the ODI series 3-1 after a commanding 180-run total was defended comfortably by the pace attack.', pubDate: new Date(Date.now()-10800000).toISOString(), img: null, sourceId: 'sports', sourceName: 'Sports', sourceColor: '#c23a3a' },
-    { title: 'UN calls for immediate ceasefire as Gaza death toll climbs past 45,000', link: 'https://www.thedailystar.net', desc: 'The United Nations Security Council held an emergency session Monday demanding a halt to hostilities as humanitarian conditions deteriorate.', pubDate: new Date(Date.now()-14400000).toISOString(), img: null, sourceId: 'world', sourceName: 'World', sourceColor: '#7a4abf' },
-    { title: 'Shakib Al Hasan announces retirement from Test cricket', link: 'https://www.thedailystar.net', desc: 'The veteran all-rounder confirmed his decision after 17 years of Test cricket, citing the need to focus on limited-overs formats.', pubDate: new Date(Date.now()-18000000).toISOString(), img: null, sourceId: 'sports', sourceName: 'Sports', sourceColor: '#c23a3a' },
-    { title: 'Remittance inflows hit record $2.4 billion in October', link: 'https://www.thedailystar.net', desc: 'Bangladesh Bank reported the highest-ever single-month remittance figure, driven by increased flows from the Middle East and Malaysia.', pubDate: new Date(Date.now()-21600000).toISOString(), img: null, sourceId: 'business', sourceName: 'Business', sourceColor: '#bf8a2a' },
-    { title: 'Govt to invest Tk 12,000 crore in rural electrification by 2026', link: 'https://www.thedailystar.net', desc: 'The power ministry unveiled an ambitious plan to bring 100% electricity coverage to rural households within the next 18 months.', pubDate: new Date(Date.now()-25200000).toISOString(), img: null, sourceId: 'frontpage', sourceName: 'Front Page', sourceColor: '#1a7a4a' },
-    { title: 'Dhaka Film Festival opens with record 200 submissions from 70 countries', link: 'https://www.thedailystar.net', desc: 'The international film festival kicked off at the Bangladesh National Museum with screenings attracting large audiences on the opening day.', pubDate: new Date(Date.now()-28800000).toISOString(), img: null, sourceId: 'entertainment', sourceName: 'Entertainment', sourceColor: '#bf2a7a' },
-    { title: 'Opinion: Why Bangladesh must act now on climate adaptation', link: 'https://www.thedailystar.net', desc: 'With sea levels projected to inundate 17% of the country by 2050, delaying infrastructure investment is no longer an option.', pubDate: new Date(Date.now()-32400000).toISOString(), img: null, sourceId: 'opinion', sourceName: 'Opinion', sourceColor: '#8a8a6a' },
-    { title: 'The art of Eid dressing: how Bangladeshi designers are reclaiming tradition', link: 'https://www.thedailystar.net', desc: 'Local fashion houses are blending jamdani motifs with contemporary silhouettes as demand for homegrown festive wear surges.', pubDate: new Date(Date.now()-36000000).toISOString(), img: null, sourceId: 'lifestyle', sourceName: 'Lifestyle', sourceColor: '#4abf7a' },
-    { title: 'India, Bangladesh sign new water-sharing accord for Teesta river', link: 'https://www.thedailystar.net', desc: 'A landmark agreement was reached on water distribution during the bilateral summit held in New Delhi on Monday.', pubDate: new Date(Date.now()-39600000).toISOString(), img: null, sourceId: 'bangladesh', sourceName: 'Bangladesh', sourceColor: '#2a7abf' },
-  ]
-};
-
 async function loadData() {
   const btn = document.getElementById('refresh-btn');
   btn.classList.add('spinning');
@@ -257,16 +229,18 @@ async function loadData() {
     const fetched = new Date(data.fetchedAt);
     document.getElementById('last-updated').textContent = 'Updated ' + fetched.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
     document.getElementById('status-text').textContent = allArticles.length + ' articles loaded';
+    buildFilterBar();
+    renderArticles();
   } catch (e) {
-    // data.json not available yet — use sample data so the UI is visible
-    allArticles = SAMPLE_DATA.articles;
-    allSources  = SAMPLE_DATA.sources;
-    document.getElementById('last-updated').textContent = 'sample data';
-    document.getElementById('status-text').textContent = 'Showing sample data — run GitHub Actions to load live articles';
+    document.getElementById('feed-container').innerHTML = `
+      <div class="error-box">
+        <h3>Waiting for first data fetch</h3>
+        <p>Go to your repo → <strong>Actions</strong> tab → <strong>Fetch RSS Feeds</strong> → <strong>Run workflow</strong>. Once it completes, refresh this page.</p>
+        <p style="margin-top:0.75rem;font-size:0.8rem;opacity:0.7">Error: ${e.message}</p>
+      </div>`;
+    document.getElementById('status-text').textContent = 'No data yet';
   }
 
-  buildFilterBar();
-  renderArticles();
   btn.classList.remove('spinning');
 }
 
