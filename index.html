@@ -100,7 +100,7 @@ footer{margin-top:3rem;padding:1.5rem;text-align:center;font-size:.75rem;color:v
 
 .tooltip{position:fixed;z-index:999;max-width:320px;background:#fff;border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.10);padding:1rem 1.1rem;pointer-events:none;opacity:0;transition:opacity .15s;font-size:.8rem;line-height:1.6;color:var(--text)}
 .tooltip.visible{opacity:1}
-.tooltip-source{font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem}
+.tooltip-source{font-size:.8rem;font-weight:600;color:var(--text);margin-bottom:.5rem;line-height:1.35;font-family:var(--serif)}
 .tooltip-summary{color:var(--text);margin-bottom:.5rem}
 .tooltip-opinion{color:var(--muted);font-style:italic;border-top:1px solid var(--border);padding-top:.5rem;margin-top:.5rem}
 .tooltip-loading{color:var(--muted);font-style:italic}
@@ -349,8 +349,8 @@ let tooltipTimer  = null;
 function showTooltip(e, article) {
   clearTimeout(tooltipTimer);
   tooltipTimer = setTimeout(function() {
-    tooltipSrc.textContent = article.sourceName || '';
-    tooltipSrc.style.color = article.sourceColor || '#aaa';
+    tooltipSrc.textContent = article.title || '';
+    tooltipSrc.style.color = 'var(--text)';
     if (article.aiSummary) {
       var parts = article.aiSummary.split(/\n+/).filter(Boolean);
       tooltipBody.innerHTML =
