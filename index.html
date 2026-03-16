@@ -206,6 +206,7 @@ function toggleLang() {
   btn.textContent = langMode === 'bn' ? 'English' : 'বাংলা';
   btn.classList.toggle('bn', langMode === 'bn');
   renderArticles();
+  showHeadlines(allArticles);
 }
 
 function timeAgo(dateStr) {
@@ -435,7 +436,7 @@ function showHeadlines(articles) {
   list.innerHTML = top5.map(function(a) {
     return '<li class="headline-item">'
       + '<div class="headline-time">' + (timeAgo(a.pubDate) || '—') + '</div>'
-      + '<a class="headline-title" href="' + (a.link||'#') + '" target="_blank" rel="noopener">' + escapeHTML(a.title||'') + '</a>'
+      + '<a class="headline-title" href="' + (a.link||'#') + '" target="_blank" rel="noopener">' + escapeHTML((langMode === 'bn' && a.titleBn) ? a.titleBn : (a.title||'')) + '</a>'
       + '</li>';
   }).join('');
 }
