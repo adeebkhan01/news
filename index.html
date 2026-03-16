@@ -106,12 +106,16 @@ footer{margin-top:3rem;padding:1.5rem;text-align:center;font-size:.75rem;color:v
   .content-wrap{grid-template-columns:1fr}
   .sidebar{position:static;border-bottom:1px solid var(--border);padding-bottom:1rem;margin-bottom:.5rem}
 }
+@media(max-width:480px){
+  .masthead-inner{flex-wrap:wrap;height:auto;padding:.5rem 0}
+  .logo{font-size:1.1rem}
+  .masthead-right{gap:.5rem}
+  .last-updated{display:none}
+  #refresh-btn,#lang-toggle{font-size:.72rem;padding:.3rem .6rem}
+}
 
-.tooltip{position:fixed;z-index:999;max-width:320px;background:#fff;border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.10);padding:1rem 1.1rem;pointer-events:none;opacity:0;transition:opacity .15s;font-size:.8rem;line-height:1.6;color:var(--text)}
-.tooltip.visible{opacity:1}
-.tooltip-source{font-size:.8rem;font-weight:600;color:var(--text);margin-bottom:.5rem;line-height:1.35;font-family:var(--serif)}
-.tooltip-summary{color:var(--text);margin-bottom:.5rem}
-.tooltip-loading{color:var(--muted);font-style:italic}
+.page-summary{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1rem 1.25rem;margin-bottom:1.25rem;font-size:.875rem;line-height:1.7;color:var(--text)}
+.page-summary-label{font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--green);margin-bottom:.4rem}
 </style>
 </head>
 <body>
@@ -147,8 +151,6 @@ footer{margin-top:3rem;padding:1.5rem;text-align:center;font-size:.75rem;color:v
   </div>
 </div>
 
-<div id="tooltip" class="tooltip"><div class="tooltip-source" id="tooltip-source"></div><div id="tooltip-body"></div></div>
-
 <div class="filter-bar">
   <div class="filter-bar-inner" id="filter-bar">
     <button class="chip active" onclick="setFilter('all',this)">All Sources</button>
@@ -161,6 +163,10 @@ footer{margin-top:3rem;padding:1.5rem;text-align:center;font-size:.75rem;color:v
     <ul class="headlines-list" id="headlines-list"></ul>
   </aside>
   <div class="main-col">
+    <div id="page-summary" style="display:none" class="page-summary">
+      <div class="page-summary-label">AI Briefing</div>
+      <div id="page-summary-text"></div>
+    </div>
     <div class="status-bar">
       <span><span class="status-dot"></span><span id="status-text">Loading…</span></span>
       <span id="article-count"></span>
@@ -287,8 +293,7 @@ function renderArticles() {
       ? '<img class="card-thumb" src="' + a.img + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
       : '';
 
-    return '<a class="card' + (isFeatured ? ' featured' : '') + '" href="' + link + '" target="_blank" rel="noopener"'
-      + ' data-idx="' + i + '" onmouseenter="onCardEnter(event,this)" onmouseleave="hideTooltip()">'
+    return '<a class="card' + (isFeatured ? ' featured' : '') + '" href="' + link + '" target="_blank" rel="noopener">'
       + imgHtml
       + '<div class="card-body">'
       + '<div class="card-source">'
@@ -338,6 +343,7 @@ async function loadData() {
     }
 
     showHeadlines(allArticles);
+    showPageSummary(data.summary);
     document.getElementById('status-text').textContent = allArticles.length + ' articles loaded';
     buildFilterBar();
     renderArticles();
@@ -358,51 +364,11 @@ async function loadData() {
 
 loadData();
 
-// ── Tooltip ──
-const tooltip     = document.getElementById('tooltip');
-const tooltipSrc  = document.getElementById('tooltip-source');
-const tooltipBody = document.getElementById('tooltip-body');
-let tooltipTimer  = null;
-
-function showTooltip(e, article) {
-  clearTimeout(tooltipTimer);
-  tooltipTimer = setTimeout(function() {
-    tooltipSrc.textContent = article.title || '';
-    tooltipSrc.style.color = 'var(--text)';
-    if (article.desc) {
-      tooltipBody.innerHTML = '<div class="tooltip-summary">' + escapeHTML(article.desc) + '</div>';
-    } else {
-      tooltipBody.innerHTML = '<div class="tooltip-loading">No summary available</div>';
-    }
-    positionTooltip(e);
-    tooltip.classList.add('visible');
-  }, 400);
-}
-
-function positionTooltip(e) {
-  var x = e.clientX + 16, y = e.clientY + 16;
-  if (x + 336 > window.innerWidth)  x = e.clientX - 336;
-  if (y + 180 > window.innerHeight) y = e.clientY - 180;
-  tooltip.style.left = x + 'px';
-  tooltip.style.top  = y + 'px';
-}
-
-function hideTooltip() {
-  clearTimeout(tooltipTimer);
-  tooltip.classList.remove('visible');
-}
-
-document.addEventListener('mousemove', function(e) {
-  if (tooltip.classList.contains('visible')) positionTooltip(e);
-});
-
-function onCardEnter(e, el) {
-  var idx = parseInt(el.getAttribute('data-idx'), 10);
-  var q   = searchQuery.toLowerCase();
-  var pool = activeFilter === 'all' ? allArticles : allArticles.filter(function(a){ return a.sourceId === activeFilter; });
-  if (q) pool = pool.filter(function(a){ return (a.title||'').toLowerCase().includes(q)||(a.desc||'').toLowerCase().includes(q); });
-  var article = pool[idx];
-  if (article) showTooltip(e, article);
+// ── Page summary ──
+function showPageSummary(text) {
+  if (!text) return;
+  document.getElementById('page-summary-text').textContent = text;
+  document.getElementById('page-summary').style.display = 'block';
 }
 
 // ── Headlines bar ──

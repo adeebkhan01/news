@@ -204,6 +204,18 @@ function claudeComplete(systemPrompt, userPrompt) {
   });
 }
 
+async function generatePageSummary(articles) {
+  if (!ANTHROPIC_API_KEY) return null;
+  console.log('Generating page summary...');
+  var titles = articles.slice(0,40).map(function(a,i){ return (i+1)+'. '+a.title; }).join('\n');
+  try {
+    return await claudeComplete(
+      'You are a concise news briefing editor covering Bangladesh. Write in plain prose, no bullet points, no markdown.',
+      'Here are the top headlines from Bangladesh news sources today:\n\n'+titles+'\n\nWrite a 3-4 sentence briefing summarising the key themes and most significant stories. Be direct and informative.'
+    );
+  } catch(e) { console.error('Page summary failed:', e.message); return null; }
+}
+
 // Translate articles to Bangla
 async function translateArticles(articles) {
   if (!ANTHROPIC_API_KEY || !articles.length) return;
@@ -237,7 +249,7 @@ async function translateArticles(articles) {
 }
 
 async function main() {
-  if (!ANTHROPIC_API_KEY) console.warn('Warning: ANTHROPIC_API_KEY not set — Bangla translations will be skipped');
+  if (!ANTHROPIC_API_KEY) console.warn('Warning: ANTHROPIC_API_KEY not set — AI summary and Bangla translations will be skipped');
 
   // ── Load existing data.json ──
   var existingArticles = [];
@@ -282,8 +294,12 @@ async function main() {
   var allArticles = freshArticles.concat(existingArticles);
   allArticles.sort(function(a,b){ return (parseDate(b.pubDate)||0)-(parseDate(a.pubDate)||0); });
 
+  // ── Generate page summary from latest headlines ──
+  var pageSummary = await generatePageSummary(allArticles);
+
   var output = {
     fetchedAt: new Date().toISOString(),
+    summary:   pageSummary,
     sources:   UNIQUE_SOURCES,
     articles:  allArticles
   };
