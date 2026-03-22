@@ -240,8 +240,8 @@ async function translateArticles(articles) {
         a.descBn  = parsed.descBn  || '';
       } catch(e) {
         console.error('  Translation failed for "' + a.title.slice(0,40) + '":', e.message);
-        a.titleBn = null;
-        a.descBn  = null;
+        a.titleBn = false;
+        a.descBn  = false;
       }
     }));
     if (i+BATCH < articles.length) await new Promise(function(r){ setTimeout(r,500); });
@@ -259,9 +259,9 @@ async function main() {
       var existing = JSON.parse(fs.readFileSync('data.json','utf8'));
       existingArticles = (existing.articles || []).filter(function(a) { return isRecent(a.pubDate); });
       existingArticles.forEach(function(a) {
-        // Fix legacy &apos; entities baked into old articles
-        if (a.title) a.title = a.title.replace(/&apos;/g, "'");
-        if (a.desc)  a.desc  = a.desc.replace(/&apos;/g, "'");
+        // Migrate legacy null translation markers to false (failed)
+        if (a.titleBn === null) a.titleBn = false;
+        if (a.descBn === null)  a.descBn  = false;
         existingByLink[a.link] = true;
       });
       console.log('Loaded', existingArticles.length, 'existing articles (after 30-day prune)');
@@ -288,8 +288,9 @@ async function main() {
   }
 
   // ── Translate articles missing Bangla text ──
-  var needsTranslation = existingArticles.filter(function(a) { return a.titleBn === null || a.titleBn === undefined; });
-  console.log(freshArticles.length, 'new articles,', needsTranslation.length, 'existing articles need translation');
+  var needsTranslation = existingArticles.filter(function(a) { return a.titleBn === undefined; });
+  var failedTranslation = existingArticles.filter(function(a) { return a.titleBn === false; });
+  console.log(freshArticles.length, 'new articles,', needsTranslation.length, 'existing need translation,', failedTranslation.length, 'previously failed (skipped)');
 
   var toTranslate = freshArticles.concat(needsTranslation);
   await enrichImages(freshArticles);
@@ -299,8 +300,14 @@ async function main() {
   var allArticles = freshArticles.concat(existingArticles);
   allArticles.sort(function(a,b){ return (parseDate(b.pubDate)||0)-(parseDate(a.pubDate)||0); });
 
-  // ── Generate page summary from latest headlines ──
-  var pageSummary = await generatePageSummary(allArticles);
+  // ── Generate page summary from latest headlines (skip if no new articles) ──
+  var pageSummary = null;
+  if (freshArticles.length > 0) {
+    pageSummary = await generatePageSummary(allArticles);
+  } else {
+    console.log('No new articles — reusing existing summary');
+    try { pageSummary = JSON.parse(fs.readFileSync('data.json','utf8')).summary || null; } catch(e) {}
+  }
 
   var output = {
     fetchedAt: new Date().toISOString(),
