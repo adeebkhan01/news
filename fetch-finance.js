@@ -3,7 +3,7 @@
  * Australian Economy Dashboard — Data Fetcher
  *
  * Fetches Australian economic data from free public APIs:
- * - Yahoo Finance (ASX 200, AUD/USD, commodities)
+ * - Yahoo Finance (ASX 200, AUD/USD, commodities, sector stocks)
  * - RBA / ABS data via static known values updated periodically
  * - Australian financial news via RSS
  *
@@ -82,7 +82,28 @@ async function getYahooQuote(symbol) {
   }
 }
 
-// ── RSS Feed Parser (reused pattern from fetch.js) ───────
+// Lightweight: just get price + changePercent for a stock
+async function getStockQuote(symbol) {
+  try {
+    const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=1d&interval=1d`;
+    const data = await fetchJSON(url);
+    const result = data?.chart?.result?.[0];
+    if (!result) return null;
+    const meta = result.meta;
+    const current = meta.regularMarketPrice;
+    const prevClose = meta.chartPreviousClose || meta.previousClose;
+    const changePct = prevClose ? ((current - prevClose) / prevClose) * 100 : 0;
+    return {
+      price: Math.round(current * 100) / 100,
+      changePercent: Math.round(changePct * 100) / 100
+    };
+  } catch (e) {
+    console.error(`  Stock quote error for ${symbol}:`, e.message);
+    return null;
+  }
+}
+
+// ── RSS Feed Parser ──────────────────────────────────────
 
 function parseRSSItems(xml) {
   const items = [];
@@ -133,6 +154,22 @@ async function fetchRSSFeed(url, sourceName) {
   }
 }
 
+// ── Sector definitions (ASX sector → top stocks) ─────────
+
+const SECTOR_STOCKS = {
+  'Financials':              ['CBA.AX', 'WBC.AX', 'ANZ.AX', 'NAB.AX'],
+  'Materials':               ['BHP.AX', 'RIO.AX', 'FMG.AX', 'MIN.AX'],
+  'Health Care':             ['CSL.AX', 'COH.AX', 'RMD.AX', 'SHL.AX'],
+  'Consumer Discretionary':  ['WES.AX', 'HVN.AX', 'JBH.AX', 'ALL.AX'],
+  'Industrials':             ['TCL.AX', 'BXB.AX', 'SYD.AX', 'QAN.AX'],
+  'Real Estate':             ['GMG.AX', 'SGP.AX', 'GPT.AX', 'MGR.AX'],
+  'Consumer Staples':        ['WOW.AX', 'COL.AX', 'TWE.AX', 'A2M.AX'],
+  'Energy':                  ['WDS.AX', 'STO.AX', 'ORG.AX', 'WHC.AX'],
+  'Information Technology':  ['XRO.AX', 'WTC.AX', 'CPU.AX', 'APX.AX'],
+  'Communication Services':  ['TLS.AX', 'REA.AX', 'CAR.AX', 'NWS.AX'],
+  'Utilities':               ['AGL.AX', 'APA.AX', 'ORG.AX', 'MEZ.AX']
+};
+
 // ── Main data assembly ───────────────────────────────────
 
 async function main() {
@@ -178,9 +215,30 @@ async function main() {
     await sleep(300);
   }
 
-  // 4. RBA Cash Rate & Economic Indicators (well-known values, updated by script)
-  // These are sourced from RBA and ABS public data
-  console.log('4. Economic indicators...');
+  // 4. Sector stocks
+  console.log('4. ASX Sectors (11 sectors, ~44 stocks)...');
+  data.sectors = [];
+  for (const [sectorName, symbols] of Object.entries(SECTOR_STOCKS)) {
+    const stocks = [];
+    for (const sym of symbols) {
+      const q = await getStockQuote(sym);
+      const ticker = sym.replace('.AX', '');
+      if (q) {
+        stocks.push({ name: ticker, price: q.price, changePercent: q.changePercent });
+      } else {
+        stocks.push({ name: ticker, price: 0, changePercent: 0 });
+      }
+      await sleep(200);
+    }
+    const avgChange = stocks.length
+      ? Math.round((stocks.reduce((s, st) => s + st.changePercent, 0) / stocks.length) * 100) / 100
+      : 0;
+    data.sectors.push({ name: sectorName, changePercent: avgChange, stocks });
+    console.log(`   ${sectorName}: ${avgChange > 0 ? '+' : ''}${avgChange}%`);
+  }
+
+  // 5. RBA Cash Rate & Economic Indicators (well-known values, updated by script)
+  console.log('5. Economic indicators...');
   data.rbaRate = {
     value: 4.10,
     change: 0,
@@ -213,7 +271,17 @@ async function main() {
     medianPrice: 1182000,
     changePercent: 4.7,
     city: 'Sydney (Median House)',
-    note: 'CoreLogic Home Value Index'
+    note: 'CoreLogic Home Value Index',
+    cities: [
+      { city: 'Sydney', median: 1182000, changePercent: 4.7, rentalYield: 2.8, auctionClearance: 68, priceToIncome: 13.2, daysOnMarket: 28 },
+      { city: 'Melbourne', median: 935000, changePercent: 1.2, rentalYield: 3.1, auctionClearance: 62, priceToIncome: 10.5, daysOnMarket: 33 },
+      { city: 'Brisbane', median: 872000, changePercent: 11.8, rentalYield: 3.6, auctionClearance: 55, priceToIncome: 8.9, daysOnMarket: 22 },
+      { city: 'Perth', median: 785000, changePercent: 18.4, rentalYield: 4.2, auctionClearance: 48, priceToIncome: 7.1, daysOnMarket: 18 },
+      { city: 'Adelaide', median: 762000, changePercent: 14.3, rentalYield: 3.8, auctionClearance: 72, priceToIncome: 8.2, daysOnMarket: 24 },
+      { city: 'Hobart', median: 668000, changePercent: -0.8, rentalYield: 4.0, auctionClearance: 45, priceToIncome: 9.1, daysOnMarket: 38 },
+      { city: 'Canberra', median: 955000, changePercent: 1.5, rentalYield: 3.4, auctionClearance: 58, priceToIncome: 7.8, daysOnMarket: 31 },
+      { city: 'Darwin', median: 530000, changePercent: 2.1, rentalYield: 5.8, auctionClearance: 38, priceToIncome: 5.4, daysOnMarket: 42 }
+    ]
   };
 
   data.consumerConfidence = {
@@ -223,7 +291,21 @@ async function main() {
     note: 'Westpac-Melbourne Institute Consumer Sentiment'
   };
 
-  // 5. Indicators table
+  // 6. RBA Rate Decision History
+  data.rbaHistory = [
+    { date: 'Feb 2025', rate: 4.10, change: -0.25, note: 'First cut since Nov 2020 — CPI back within 2–3% target band' },
+    { date: 'Dec 2024', rate: 4.35, change: 0, note: 'Held steady; board noted disinflation progressing' },
+    { date: 'Nov 2024', rate: 4.35, change: 0, note: 'Held; trimmed mean CPI still above target' },
+    { date: 'Sep 2024', rate: 4.35, change: 0, note: 'Held; watching services inflation persistence' },
+    { date: 'Aug 2024', rate: 4.35, change: 0, note: 'Held; acknowledged slowing growth' },
+    { date: 'Jun 2024', rate: 4.35, change: 0, note: 'Held; inflation sticky but rate hike ruled out' },
+    { date: 'May 2024', rate: 4.35, change: 0, note: 'Held; CPI surprised to upside in Q1' },
+    { date: 'Mar 2024', rate: 4.35, change: 0, note: 'Held; easing bias introduced' },
+    { date: 'Feb 2024', rate: 4.35, change: 0, note: 'Held; inflation declining but not fast enough' },
+    { date: 'Nov 2023', rate: 4.35, change: 0.25, note: 'Final hike of cycle; CPI re-accelerated in Q3' }
+  ];
+
+  // 7. Indicators table
   data.indicators = [
     { name: 'GDP Growth (Annual)', value: '1.5%', previous: '1.2%', change: 0.3, unit: '%', period: 'Q3 2024', category: 'growth' },
     { name: 'GDP Growth (Quarterly)', value: '0.3%', previous: '0.2%', change: 0.1, unit: '%', period: 'Q3 2024', category: 'growth' },
@@ -241,8 +323,8 @@ async function main() {
     { name: 'PMI Manufacturing', value: '50.2', previous: '49.4', change: 0.8, unit: '', period: 'Feb 2025', category: 'growth' }
   ];
 
-  // 6. Financial news
-  console.log('5. Financial news...');
+  // 8. Financial news
+  console.log('6. Financial news...');
   const newsFeeds = [
     { url: 'https://www.afr.com/rss/markets', name: 'AFR' },
     { url: 'https://www.abc.net.au/news/feed/2942460/rss.xml', name: 'ABC News' },
@@ -272,13 +354,14 @@ async function main() {
     return true;
   }).slice(0, 12);
 
-  // 7. Write output
+  // 9. Write output
   const outPath = __dirname + '/finance-data.json';
   fs.writeFileSync(outPath, JSON.stringify(data, null, 2));
   console.log(`\nDone! Written to ${outPath}`);
   console.log(`  ASX 200: ${data.asx200?.value || 'N/A'}`);
   console.log(`  AUD/USD: ${data.audusd?.value || 'N/A'}`);
   console.log(`  Commodities: ${data.commodities.length}`);
+  console.log(`  Sectors: ${data.sectors.length}`);
   console.log(`  News articles: ${data.news.length}`);
 }
 
