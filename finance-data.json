@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-24T07:34:45.486Z",
+  "fetchedAt": "2026-03-24T10:12:01.275Z",
   "asx200": {
     "value": 8379.4,
     "change": -642.9,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.01,
-    "changePercent": -1.1,
+    "changePercent": -1.27,
     "previousClose": 0.71,
     "asOf": "2026-03-24",
     "history": [
@@ -191,17 +191,17 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4413.3,
-      "change": -742.5,
-      "changePercent": -14.4
+      "price": 4424.3,
+      "change": -731.5,
+      "changePercent": -14.19
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 69.69,
-      "change": -17.77,
-      "changePercent": -20.32
+      "price": 70.2,
+      "change": -17.26,
+      "changePercent": -19.73
     },
     {
       "name": "Crude Oil (WTI)",
@@ -215,9 +215,9 @@
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.42,
-      "change": -0.5,
-      "changePercent": -8.46
+      "price": 5.4,
+      "change": -0.52,
+      "changePercent": -8.86
     },
     {
       "name": "BHP Group",
@@ -826,6 +826,13 @@
   ],
   "news": [
     {
+      "title": "Suns' woes compounded as Humphrey fails to overturn ban at tribunal",
+      "link": "https://www.abc.net.au/news/2026-03-24/gold-coast-suns-bailey-humphrey-fails-afl-tribunal/106493244",
+      "snippet": "",
+      "pubDate": "Tue, 24 Mar 2026 08:21:22 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Broncos 'surprised' as key cog resigns after dispute with coach",
       "link": "https://www.abc.net.au/news/2026-03-24/ben-teo-resigns-from-broncos-michael-maguire/106493078",
       "snippet": "",
@@ -900,13 +907,6 @@
       "link": "https://www.smh.com.au/business/companies/show-me-the-money-why-david-jones-suppliers-are-panicking-20260324-p5u2xn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "With consumer confidence tanking amid the petrol price shock, this isn’t the time for the department store to foment fears about its viability.",
       "pubDate": "Tue, 24 Mar 2026 14:39:47 +1100",
-      "source": "SMH Business"
-    },
-    {
-      "title": "This is what happens at the bowser when fuel prices skyrocket",
-      "link": "https://www.smh.com.au/business/consumer-affairs/this-is-what-happens-at-the-bowser-when-fuel-prices-skyrocket-20260324-p5uipw.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Samantha Selinger-Morris, host of The Morning Edition podcast, stepped out in Sydney to understand the impact of the rising costs of fuel.",
-      "pubDate": "Tue, 24 Mar 2026 14:00:32 +1100",
       "source": "SMH Business"
     }
   ]
