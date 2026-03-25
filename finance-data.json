@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-25T19:14:53.802Z",
+  "fetchedAt": "2026-03-25T21:58:06.676Z",
   "asx200": {
     "value": 8534.3,
     "change": -594,
@@ -94,9 +94,9 @@
     ]
   },
   "audusd": {
-    "value": 0.69,
+    "value": 0.7,
     "change": -0.01,
-    "changePercent": -1.6,
+    "changePercent": -1.57,
     "previousClose": 0.71,
     "asOf": "2026-03-25",
     "history": [
@@ -182,7 +182,11 @@
       },
       {
         "date": "2026-03-25",
-        "close": 0.69
+        "close": 0.7
+      },
+      {
+        "date": "2026-03-25",
+        "close": 0.7
       }
     ]
   },
@@ -191,33 +195,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4529.7,
-      "change": -676.7,
-      "changePercent": -13
+      "price": 4503.3,
+      "change": -703.1,
+      "changePercent": -13.5
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 72,
-      "change": -18.94,
-      "changePercent": -20.83
+      "price": 71.44,
+      "change": -19.49,
+      "changePercent": -21.44
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 91.22,
-      "change": 25.8,
-      "changePercent": 39.44
+      "price": 91.29,
+      "change": 25.87,
+      "changePercent": 39.54
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.54,
-      "change": -0.44,
-      "changePercent": -7.41
+      "price": 5.52,
+      "change": -0.46,
+      "changePercent": -7.68
     },
     {
       "name": "BHP Group",
@@ -826,6 +830,34 @@
   ],
   "news": [
     {
+      "title": "Injury-hit Crows urged to 'have a real crack' at ending Geelong hoodoo",
+      "link": "https://www.abc.net.au/news/2026-03-26/adelaide-crows-geelong-cats-afl-round-three/106496488",
+      "snippet": "",
+      "pubDate": "Wed, 25 Mar 2026 21:00:01 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "NFL confirms historic MCG game to be played on AFL semifinal weekend",
+      "link": "https://www.abc.net.au/news/2026-03-26/nfl-comfirms-date-and-time-rams-49ers-mcg/106496514",
+      "snippet": "",
+      "pubDate": "Wed, 25 Mar 2026 20:56:18 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to rise as Wall Street seesaws; SpaceX targets $US75b IPO",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-as-wall-street-seesaws-20260326-p5zhn3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Hopes for a possible end to the war with Iran are pushing stocks higher again on Wall Street Wednesday, while oil prices ease.",
+      "pubDate": "Thu, 26 Mar 2026 07:31:54 +1100",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Title beckons as South Australia peak for Sheffield Shield final",
+      "link": "https://www.abc.net.au/news/2026-03-26/south-australia-victoria-sheffield-shield-final-ryan-harris/106496460",
+      "snippet": "",
+      "pubDate": "Wed, 25 Mar 2026 20:03:00 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Former Brisbane Lion Leigh Ryswyk becomes first openly gay AFL player",
       "link": "https://www.abc.net.au/news/2026-03-26/brisbane-lion-leigh-ryswyk-becomes-first-openly-gay-afl-player/106496402",
       "snippet": "",
@@ -845,13 +877,6 @@
       "snippet": "",
       "pubDate": "Wed, 25 Mar 2026 18:30:00 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "ASX set to rise as Wall Street seesaws",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-as-wall-street-seesaws-20260326-p5zhn3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Hopes for a possible end to the war with Iran are pushing stocks higher again on Wall Street Wednesday, while oil prices ease.",
-      "pubDate": "Thu, 26 Mar 2026 05:17:37 +1100",
-      "source": "SMH Business"
     },
     {
       "title": "The big ABC names who have gone on strike for higher pay",
@@ -886,27 +911,6 @@
       "link": "https://www.smh.com.au/business/companies/zuckerberg-s-court-loss-is-the-big-tobacco-moment-for-big-tech-20260325-p5wy4e.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Meta knew its platforms were connecting predators with children. A jury has now hit the company with a $US375 million verdict for concealing it.",
       "pubDate": "Wed, 25 Mar 2026 16:05:34 +1100",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Star Aussie swimmer 'dumbfounded' by $2m prize for doped athletes",
-      "link": "https://www.abc.net.au/news/2026-03-25/cam-mcevoy-enhanced-games-50m-freestyle-world-record-prize-money/106490158",
-      "snippet": "",
-      "pubDate": "Wed, 25 Mar 2026 05:04:42 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "International bodies publicly back Rockhampton Olympic rowing venue",
-      "link": "https://www.abc.net.au/news/2026-03-25/world-rowing-back-fitzroy-river-olympic-rowing-venue/106495440",
-      "snippet": "",
-      "pubDate": "Wed, 25 Mar 2026 04:47:02 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "House prices are at a tipping point. It’s time for buyers to negotiate",
-      "link": "https://www.smh.com.au/business/the-economy/house-prices-are-at-a-tipping-point-it-s-time-for-buyers-to-negotiate-20260325-p5x9s6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Buyers are increasingly unwilling to transact at sellers’ asking prices, and homes are being passed in.",
-      "pubDate": "Wed, 25 Mar 2026 15:17:14 +1100",
       "source": "SMH Business"
     }
   ]
