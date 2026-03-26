@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-26T07:39:07.914Z",
+  "fetchedAt": "2026-03-26T10:28:33.803Z",
   "asx200": {
     "value": 8525.7,
     "change": -649.6,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.02,
-    "changePercent": -2.49,
+    "changePercent": -2.56,
     "previousClose": 0.71,
     "asOf": "2026-03-26",
     "history": [
@@ -191,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4443.2,
-      "change": -733.3,
-      "changePercent": -14.17
+      "price": 4429.6,
+      "change": -746.9,
+      "changePercent": -14.43
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 69.53,
-      "change": -17.47,
-      "changePercent": -20.08
+      "price": 68.33,
+      "change": -18.67,
+      "changePercent": -21.46
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 92.99,
-      "change": 27.78,
-      "changePercent": 42.6
+      "price": 93.2,
+      "change": 27.99,
+      "changePercent": 42.92
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.5,
-      "change": -0.45,
-      "changePercent": -7.57
+      "price": 5.51,
+      "change": -0.43,
+      "changePercent": -7.28
     },
     {
       "name": "BHP Group",
@@ -826,7 +826,21 @@
   ],
   "news": [
     {
-      "title": "Live: Adelaide looking to end 23-year drought in blockbuster Geelong clash",
+      "title": "How skyrocketing fuel costs could fan the flames of inflation",
+      "link": "https://www.smh.com.au/business/the-economy/how-skyrocketing-fuel-costs-could-fan-the-flames-of-inflation-20260325-p5xo1d.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Uber has raised its prices amid the fuel crisis, but its competitor DoorDash has declared it will cover the cost of fuel assistance for delivery workers itself.",
+      "pubDate": "Thu, 26 Mar 2026 19:30:00 +1100",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Three tries in five minutes stun Sea Eagles at Brookvale",
+      "link": "https://www.abc.net.au/news/2026-03-26/nrl-live-updates-manly-sea-eagles-roosters-daly-cherry-evans/106499234",
+      "snippet": "",
+      "pubDate": "Thu, 26 Mar 2026 07:58:53 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Crows defender returns after brutal head clash as hail hits Geelong",
       "link": "https://www.abc.net.au/news/2026-03-26/afl-round-3-geelong-cats-adelaide-crows-live-blog/106499520",
       "snippet": "",
       "pubDate": "Thu, 26 Mar 2026 07:12:33 +0000",
@@ -861,7 +875,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Socceroos approaching last chance saloon, with World Cup dreams in the balance",
+      "title": "Popovic wants World Cup contenders to play with freedom in final home matches",
       "link": "https://www.abc.net.au/news/2026-03-26/socceroos-world-cup-fifa-series-cameroon-curacao/106497242",
       "snippet": "",
       "pubDate": "Thu, 26 Mar 2026 05:13:06 +0000",
@@ -894,20 +908,6 @@
       "snippet": "Australian workers fortunately haven’t felt much pain yet, but if the war rages on, some of these measures will eventually arrive here.",
       "pubDate": "Thu, 26 Mar 2026 15:30:00 +1100",
       "source": "SMH Business"
-    },
-    {
-      "title": "AFL says new illicit drug policy is 'most stringent in Australian sport'",
-      "link": "https://www.abc.net.au/news/2026-03-26/afl-reveals-new-illicit-drug-policy-andrew-dillon/106497910",
-      "snippet": "",
-      "pubDate": "Thu, 26 Mar 2026 03:25:01 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "The NRL risks losing itself in a maze of set restarts",
-      "link": "https://www.abc.net.au/news/2026-03-26/nrl-set-restart-six-again-rule-penalties-vlandys/106497462",
-      "snippet": "",
-      "pubDate": "Thu, 26 Mar 2026 03:07:00 +0000",
-      "source": "ABC News"
     }
   ]
 }
