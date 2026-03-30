@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-30T16:31:24.211Z",
+  "fetchedAt": "2026-03-30T19:31:22.724Z",
   "asx200": {
     "value": 8461,
     "change": -737.6,
@@ -94,9 +94,9 @@
     ]
   },
   "audusd": {
-    "value": 0.69,
+    "value": 0.68,
     "change": -0.03,
-    "changePercent": -3.52,
+    "changePercent": -3.63,
     "previousClose": 0.71,
     "asOf": "2026-03-30",
     "history": [
@@ -182,7 +182,7 @@
       },
       {
         "date": "2026-03-30",
-        "close": 0.69
+        "close": 0.68
       }
     ]
   },
@@ -191,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4575,
-      "change": -655.5,
-      "changePercent": -12.53
+      "price": 4525.1,
+      "change": -705.4,
+      "changePercent": -13.49
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 70.96,
-      "change": -21.72,
-      "changePercent": -23.44
+      "price": 69.81,
+      "change": -22.88,
+      "changePercent": -24.68
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 103.01,
-      "change": 35.99,
-      "changePercent": 53.7
+      "price": 104.06,
+      "change": 37.04,
+      "changePercent": 55.27
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.51,
-      "change": -0.5,
-      "changePercent": -8.26
+      "price": 5.48,
+      "change": -0.53,
+      "changePercent": -8.74
     },
     {
       "name": "BHP Group",
@@ -826,6 +826,27 @@
   ],
   "news": [
     {
+      "title": "Massive Matildas hype hasn't translated to A-League Women fandom",
+      "link": "https://www.abc.net.au/news/2026-03-31/matildas-hype-hasnt-translated-into-league-womens-fandom/106506574",
+      "snippet": "",
+      "pubDate": "Mon, 30 Mar 2026 18:51:19 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Italy's World Cup fate to be decided, Socceroos to learn final group opponent",
+      "link": "https://www.abc.net.au/news/2026-03-31/fifa-world-cup-qualifiers-italy-bosnia-turkiye-kosovo-iraq/106511696",
+      "snippet": "",
+      "pubDate": "Mon, 30 Mar 2026 18:47:56 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to rise as Wall Street seesaws; Oil mixed",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-as-wall-street-seesaws-oil-mixed-20260331-p5zk2f.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "US stocks are swinging again as oil prices remain high because of uncertainty about when the war with Iran could end.",
+      "pubDate": "Tue, 31 Mar 2026 05:28:43 +1100",
+      "source": "SMH Business"
+    },
+    {
       "title": "Made by Shein: The ultra-fast fashion giant is pitching itself to Aussie clothing labels",
       "link": "https://www.smh.com.au/business/companies/made-by-shein-the-ultra-fast-fashion-giant-is-pitching-itself-to-aussie-clothing-labels-20260327-p5zj8p.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Fashion giant Shein wants to be a global launching pad for Australian brands. But do local labels want to be part of this?",
@@ -887,27 +908,6 @@
       "snippet": "",
       "pubDate": "Mon, 30 Mar 2026 06:34:46 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "ASX loses ground as big banks slump; oil prices rise again",
-      "link": "https://www.smh.com.au/business/markets/asx-set-for-more-losses-oil-poised-to-rise-again-20260330-p5zjq4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket has closed in the red, weighed down by a slump in major bank shares, as the Middle East conflict continues to cast a heavy shadow over markets.",
-      "pubDate": "Mon, 30 Mar 2026 17:18:24 +1100",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Locksley reveals ultra-stable battery material in US antimony push",
-      "link": "https://www.smh.com.au/business/companies/locksley-reveals-ultra-stable-battery-material-in-us-antimony-push-20260330-p5zk0e.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Locksley Resources has developed a highly stable antimony-graphite material while advancing defence-grade 99% pure antimony under its US mine-to-market strategy.",
-      "pubDate": "Mon, 30 Mar 2026 16:51:10 +1100",
-      "source": "SMH Business"
-    },
-    {
-      "title": "West Wits banks fuel supply as SA gold project gears for grid power",
-      "link": "https://www.smh.com.au/business/companies/west-wits-banks-fuel-supply-as-sa-gold-project-gears-for-grid-power-20260330-p5zk03.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "West Wits has secured a total fuel capacity of 163,000 litres for its Qala Shallows gold project, lifting site storage to 63,000 litres, while targeting grid power in Q4 2026.",
-      "pubDate": "Mon, 30 Mar 2026 16:22:41 +1100",
-      "source": "SMH Business"
     }
   ]
 }
