@@ -1,11 +1,11 @@
 {
-  "fetchedAt": "2026-04-05T21:51:38.650Z",
+  "fetchedAt": "2026-04-06T03:44:21.820Z",
   "asx200": {
     "value": 8579.5,
     "change": -588,
     "changePercent": -6.41,
     "previousClose": 9167.5,
-    "asOf": "2026-04-05",
+    "asOf": "2026-04-06",
     "history": [
       {
         "date": "2026-03-01",
@@ -111,23 +111,11 @@
   },
   "audusd": {
     "value": 0.69,
-    "change": -0.02,
-    "changePercent": -3.1,
-    "previousClose": 0.71,
-    "asOf": "2026-04-05",
+    "change": -0.01,
+    "changePercent": -1.53,
+    "previousClose": 0.7,
+    "asOf": "2026-04-06",
     "history": [
-      {
-        "date": "2026-03-03",
-        "close": 0.71
-      },
-      {
-        "date": "2026-03-04",
-        "close": 0.7
-      },
-      {
-        "date": "2026-03-05",
-        "close": 0.71
-      },
       {
         "date": "2026-03-06",
         "close": 0.7
@@ -213,7 +201,7 @@
         "close": 0.69
       },
       {
-        "date": "2026-04-05",
+        "date": "2026-04-06",
         "close": 0.69
       }
     ]
@@ -223,33 +211,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4702.7,
-      "change": -362.6,
-      "changePercent": -7.16
+      "price": 4654.1,
+      "change": -411.2,
+      "changePercent": -8.12
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 73.17,
-      "change": -8.52,
-      "changePercent": -10.43
+      "price": 71.93,
+      "change": -9.76,
+      "changePercent": -11.95
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 112.06,
-      "change": 31.05,
-      "changePercent": 38.33
+      "price": 112.01,
+      "change": 31,
+      "changePercent": 38.27
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.68,
-      "change": -0.07,
-      "changePercent": -1.24
+      "price": 5.61,
+      "change": -0.15,
+      "changePercent": -2.53
     },
     {
       "name": "BHP Group",
@@ -858,6 +846,34 @@
   ],
   "news": [
     {
+      "title": "Murray River ski boat launches into tree as race puts four in hospital",
+      "link": "https://www.abc.net.au/news/2026-04-06/mildura-100-ski-race-2026-four-taken-to-hospital/106533076",
+      "snippet": "",
+      "pubDate": "Mon, 06 Apr 2026 03:23:42 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Richardson reaches Stawell Gift final by seven thousands of a second",
+      "link": "https://www.abc.net.au/news/2026-04-06/stawell-gift-shacarri-richardson-christian-coleman/106534680",
+      "snippet": "",
+      "pubDate": "Mon, 06 Apr 2026 03:02:04 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Cycling great avoids disqualification over train crossing to win Tour of Flanders",
+      "link": "https://www.abc.net.au/news/2026-04-06/train-splits-tour-of-flanders-as-tadej-pogacar-wins-again/106534156",
+      "snippet": "",
+      "pubDate": "Mon, 06 Apr 2026 00:41:37 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Tim David stars for RCB, Travis Head loses on second last ball",
+      "link": "https://www.abc.net.au/news/2026-04-06/tim-david-stars-for-rcb-travis-head-loses-in-ipl/106533912",
+      "snippet": "",
+      "pubDate": "Sun, 05 Apr 2026 22:42:00 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Resurgent Jason Day back at Masters after career of near misses",
       "link": "https://www.abc.net.au/news/2026-04-06/jason-day-returns-to-masters-after-career-of-near-misses/106533818",
       "snippet": "",
@@ -911,34 +927,6 @@
       "link": "https://www.abc.net.au/news/2026-04-05/afl-easter-sunday-live-blog/106530544",
       "snippet": "",
       "pubDate": "Sun, 05 Apr 2026 04:54:38 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Raiders' season lurches towards disaster as Knights run riot",
-      "link": "https://www.abc.net.au/news/2026-04-05/nrl-live-updates-sharks-warriors-knights-raiders/106532864",
-      "snippet": "",
-      "pubDate": "Sun, 05 Apr 2026 03:37:54 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Kings break NBL trophy after dramatic overtime win as 36ers blow late lead",
-      "link": "https://www.abc.net.au/news/2026-04-05/nbl-finals-live-game-five-sydney-kings-vs-adelaide-36ers/106531510",
-      "snippet": "",
-      "pubDate": "Sun, 05 Apr 2026 03:20:49 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Walsh facing up to six weeks on sidelines with fractured cheekbone",
-      "link": "https://www.abc.net.au/news/2026-04-05/reece-walsh-brisbane-broncos-nrl-fractured-cheekbone/106532590",
-      "snippet": "",
-      "pubDate": "Sun, 05 Apr 2026 01:21:05 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Australian helps Oxford end women's Boat Race drought",
-      "link": "https://www.abc.net.au/news/2026-04-05/boat-race-oxford-cambridge-australian-annie-anezakis/106532568",
-      "snippet": "",
-      "pubDate": "Sat, 04 Apr 2026 23:45:02 +0000",
       "source": "ABC News"
     }
   ]
