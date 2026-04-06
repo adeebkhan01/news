@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-06T03:44:21.820Z",
+  "fetchedAt": "2026-04-06T08:07:24.114Z",
   "asx200": {
     "value": 8579.5,
     "change": -588,
@@ -112,7 +112,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.01,
-    "changePercent": -1.53,
+    "changePercent": -1.16,
     "previousClose": 0.7,
     "asOf": "2026-04-06",
     "history": [
@@ -211,33 +211,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4654.1,
-      "change": -411.2,
-      "changePercent": -8.12
+      "price": 4713.1,
+      "change": -433,
+      "changePercent": -8.41
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 71.93,
-      "change": -9.76,
-      "changePercent": -11.95
+      "price": 72.79,
+      "change": -11.03,
+      "changePercent": -13.16
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 112.01,
-      "change": 31,
-      "changePercent": 38.27
+      "price": 109.26,
+      "change": 18.36,
+      "changePercent": 20.2
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.61,
-      "change": -0.15,
-      "changePercent": -2.53
+      "price": 5.62,
+      "change": -0.13,
+      "changePercent": -2.32
     },
     {
       "name": "BHP Group",
@@ -846,6 +846,55 @@
   ],
   "news": [
     {
+      "title": "Battling Bombers stare down unwanted record",
+      "link": "https://www.abc.net.au/news/2026-04-06/essendon-bombers-on-cusp-of-record-losing-streak-at-gather-round/106535556",
+      "snippet": "",
+      "pubDate": "Mon, 06 Apr 2026 06:37:19 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Fair Work blasts Uber over a driver sacked for touching his groin during a trip",
+      "link": "https://www.smh.com.au/business/workplace/fair-work-blasts-uber-over-a-driver-sacked-for-touching-his-groin-during-a-trip-20260406-p5zlip.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The ride-share giant has been criticised for its complaints handling processes, in a hearing where a driver produced a tube of ointment as evidence.",
+      "pubDate": "Mon, 06 Apr 2026 16:34:43 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Graham Arnold mobbed by Iraq fans celebrating World Cup qualification",
+      "link": "https://www.abc.net.au/news/2026-04-06/graham-arnold-iraq-world-cup-sydney-airport-celebration/106535326",
+      "snippet": "",
+      "pubDate": "Mon, 06 Apr 2026 06:13:53 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Maguire faces a Broncos first amid injury crisis",
+      "link": "https://www.abc.net.au/news/2026-04-06/brisbane-broncos-nrl-injury-crisis-halfback-options/106535422",
+      "snippet": "",
+      "pubDate": "Mon, 06 Apr 2026 05:46:54 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "How selectors hope to handle Australia's aging team ahead of away Ashes",
+      "link": "https://www.abc.net.au/news/2026-04-06/george-bailey-australia-abc-cricket-podcast/106528204",
+      "snippet": "",
+      "pubDate": "Mon, 06 Apr 2026 05:39:21 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Eels and Tigers go to golden point, super sub scores double on debut",
+      "link": "https://www.abc.net.au/news/2026-04-06/nrl-live-updates-parramatta-eels-wests-tigers/106535120",
+      "snippet": "",
+      "pubDate": "Mon, 06 Apr 2026 05:08:20 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Gunston kicks behind in dying seconds to win epic over Cats",
+      "link": "https://www.abc.net.au/news/2026-04-06/afl-round-4-hawthorn-hawks-geelong-cats-live-blog-easter-monday/106535162",
+      "snippet": "",
+      "pubDate": "Mon, 06 Apr 2026 04:18:22 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Murray River ski boat launches into tree as race puts four in hospital",
       "link": "https://www.abc.net.au/news/2026-04-06/mildura-100-ski-race-2026-four-taken-to-hospital/106533076",
       "snippet": "",
@@ -853,7 +902,7 @@
       "source": "ABC News"
     },
     {
-      "title": "Richardson reaches Stawell Gift final by seven thousands of a second",
+      "title": "US star Sha'Carri Richardson overcomes semis scare to win Stawell Gift",
       "link": "https://www.abc.net.au/news/2026-04-06/stawell-gift-shacarri-richardson-christian-coleman/106534680",
       "snippet": "",
       "pubDate": "Mon, 06 Apr 2026 03:02:04 +0000",
@@ -874,60 +923,11 @@
       "source": "ABC News"
     },
     {
-      "title": "Resurgent Jason Day back at Masters after career of near misses",
-      "link": "https://www.abc.net.au/news/2026-04-06/jason-day-returns-to-masters-after-career-of-near-misses/106533818",
-      "snippet": "",
-      "pubDate": "Sun, 05 Apr 2026 21:00:34 +0000",
-      "source": "ABC News"
-    },
-    {
       "title": "Our obsession with Qantas frequent flyer points faces a key test",
       "link": "https://www.smh.com.au/business/companies/our-obsession-with-frequent-flyer-points-faces-a-key-test-20260402-p5zl3g.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Frequent flyer points are hugely popular and make big money for Qantas. But will people be as keen on racking up points if banks make them harder to earn?",
       "pubDate": "Mon, 06 Apr 2026 05:15:00 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "How banks are only ‘partially’ raising rates for savers",
-      "link": "https://www.smh.com.au/business/banking-and-finance/how-banks-are-only-partially-raising-rates-for-savers-20260402-p5zkxf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Savers are having to jump through hoops to get the full benefit of recent interest rate rises from the Reserve Bank.",
-      "pubDate": "Mon, 06 Apr 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Lomax's false start adds to anticipation ahead of pro rugby debut",
-      "link": "https://www.abc.net.au/news/2026-04-06/super-rugby-pacific-zac-lomax-western-force/106533104",
-      "snippet": "",
-      "pubDate": "Sun, 05 Apr 2026 18:48:23 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Inside the office where Trump’s words are turned into millions of dollars",
-      "link": "https://www.smh.com.au/business/markets/inside-the-office-where-trump-s-words-are-turned-into-millions-of-dollars-20260402-p5zky2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "As US B-2 bombers and F-35 fighter jets strafe Iran, another battle rages over the price of oil.",
-      "pubDate": "Sun, 05 Apr 2026 17:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Tim Tszyu dominates Denis Nurja to claim title in Wollongong",
-      "link": "https://www.abc.net.au/news/2026-04-05/tim-tszyu-claims-boxing-title-against-denis-nurja/106533078",
-      "snippet": "",
-      "pubDate": "Sun, 05 Apr 2026 06:16:50 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Even if the Strait of Hormuz opened tomorrow, it could take months for fuel prices to come down",
-      "link": "https://www.smh.com.au/business/markets/australia-s-high-petrol-prices-face-long-recovery-to-pre-war-levels-20260331-p5zkcy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Donald Trump says oil prices would fall rapidly if the US ended its war with Iran. Australian fuel companies are preparing for a longer setback.",
-      "pubDate": "Sun, 05 Apr 2026 15:46:30 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Bulldogs down plucky Bombers but lose two more players to injury",
-      "link": "https://www.abc.net.au/news/2026-04-05/afl-easter-sunday-live-blog/106530544",
-      "snippet": "",
-      "pubDate": "Sun, 05 Apr 2026 04:54:38 +0000",
-      "source": "ABC News"
     }
   ]
 }
