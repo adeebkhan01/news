@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-06T19:33:33.730Z",
+  "fetchedAt": "2026-04-06T21:55:34.587Z",
   "asx200": {
     "value": 8579.5,
     "change": -588,
@@ -201,6 +201,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-04-05",
+        "close": 0.69
+      },
+      {
         "date": "2026-04-06",
         "close": 0.69
       }
@@ -211,25 +215,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4675.8,
-      "change": -470.3,
-      "changePercent": -9.14
+      "price": 4676.1,
+      "change": -470,
+      "changePercent": -9.13
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 73.07,
-      "change": -10.75,
-      "changePercent": -12.83
+      "price": 72.82,
+      "change": -11,
+      "changePercent": -13.13
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 112.92,
-      "change": 22.02,
-      "changePercent": 24.22
+      "price": 112.61,
+      "change": 21.71,
+      "changePercent": 23.88
     },
     {
       "name": "Copper",
@@ -237,7 +241,7 @@
       "iconBg": "#fef0e6",
       "price": 5.61,
       "change": -0.15,
-      "changePercent": -2.58
+      "changePercent": -2.62
     },
     {
       "name": "BHP Group",
@@ -846,16 +850,16 @@
   ],
   "news": [
     {
-      "title": "ASX set to retreat, Wall Street loses steam after Trump’s threat to ‘take out’ Iran; Oil rises",
+      "title": "ASX set to rise, Wall Street drifts higher ahead of Trump deadline; Oil rises",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-retreat-wall-street-loses-steam-after-trump-s-threat-to-take-out-iran-oil-rises-20260407-p5zlpt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Wall Street has pared some of its earlier gains after President Donald Trump said Iran could be “taken out in one night” as his deadline approaches.",
-      "pubDate": "Tue, 07 Apr 2026 05:26:23 +1000",
+      "snippet": "US stocks drifted higher in hesitant trading, ahead of a deadline that President Donald Trump has set to bomb Iranian power plants.",
+      "pubDate": "Tue, 07 Apr 2026 07:01:32 +1000",
       "source": "SMH Business"
     },
     {
       "title": "Fake missile strikes, White House memes and ‘useful idiots’: the AI war within the war",
       "link": "https://www.smh.com.au/business/companies/fake-missile-strikes-white-house-memes-and-useful-idiots-the-ai-war-within-the-war-20260402-p5zl0y.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Former Secretary of State John Kerry once said the US had learned lessons of dignity and transparency from the failed Vietnam War. But the Trump Administration and Iran are playing by different rules.",
+      "snippet": "Former Secretary of State John Kerry once said the US had learnt lessons of dignity and transparency from the failed Vietnam War. But the Trump administration and Iran are playing by different rules.",
       "pubDate": "Tue, 07 Apr 2026 05:00:00 +1000",
       "source": "SMH Business"
     },
@@ -868,7 +872,7 @@
     },
     {
       "title": "Aussie stars testing the waters at Australian Open",
-      "link": "https://www.abc.net.au/news/2026-04-06/australian-open-swimming-molly-ocallaghan-sam-short-kyle-chalmer/106535948",
+      "link": "https://www.abc.net.au/news/2026-04-06/australian-open-swimming-mollie-ocallaghan-kyle-chalmers/106535948",
       "snippet": "",
       "pubDate": "Mon, 06 Apr 2026 12:19:28 +0000",
       "source": "ABC News"
@@ -916,7 +920,7 @@
       "source": "ABC News"
     },
     {
-      "title": "'I don't know': Moses baffled as Eels denied in controversial Easter Monday classic",
+      "title": "Marshall questions penalty against Tigers despite Eels star's ugly ankle injury",
       "link": "https://www.abc.net.au/news/2026-04-06/nrl-live-updates-parramatta-eels-wests-tigers/106535120",
       "snippet": "",
       "pubDate": "Mon, 06 Apr 2026 05:08:20 +0000",
