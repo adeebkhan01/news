@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-06T08:07:24.114Z",
+  "fetchedAt": "2026-04-06T10:35:06.736Z",
   "asx200": {
     "value": 8579.5,
     "change": -588,
@@ -112,7 +112,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.01,
-    "changePercent": -1.16,
+    "changePercent": -1.17,
     "previousClose": 0.7,
     "asOf": "2026-04-06",
     "history": [
@@ -211,33 +211,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4713.1,
-      "change": -433,
-      "changePercent": -8.41
+      "price": 4715.9,
+      "change": -430.2,
+      "changePercent": -8.36
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 72.79,
-      "change": -11.03,
-      "changePercent": -13.16
+      "price": 73.22,
+      "change": -10.6,
+      "changePercent": -12.65
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 109.26,
-      "change": 18.36,
-      "changePercent": 20.2
+      "price": 110.58,
+      "change": 19.68,
+      "changePercent": 21.65
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.62,
-      "change": -0.13,
-      "changePercent": -2.32
+      "price": 5.67,
+      "change": -0.09,
+      "changePercent": -1.6
     },
     {
       "name": "BHP Group",
@@ -846,6 +846,13 @@
   ],
   "news": [
     {
+      "title": "Trump has America embracing a dangerous future",
+      "link": "https://www.smh.com.au/business/the-economy/trump-has-america-embracing-a-dangerous-future-20260406-p5zlky.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Under President Donald Trump, America has adopted a new form of state capitalism, with huge consequences not just for the economy but the health of the republic.",
+      "pubDate": "Mon, 06 Apr 2026 18:15:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Battling Bombers stare down unwanted record",
       "link": "https://www.abc.net.au/news/2026-04-06/essendon-bombers-on-cusp-of-record-losing-streak-at-gather-round/106535556",
       "snippet": "",
@@ -867,7 +874,7 @@
       "source": "ABC News"
     },
     {
-      "title": "Maguire faces a Broncos first amid injury crisis",
+      "title": "Coach Maguire faces a Broncos first amid injury crisis",
       "link": "https://www.abc.net.au/news/2026-04-06/brisbane-broncos-nrl-injury-crisis-halfback-options/106535422",
       "snippet": "",
       "pubDate": "Mon, 06 Apr 2026 05:46:54 +0000",
@@ -881,14 +888,14 @@
       "source": "ABC News"
     },
     {
-      "title": "Live: Eels and Tigers go to golden point, super sub scores double on debut",
+      "title": "'I don't know': Moses baffled as Eels denied in controversial Easter Monday classic",
       "link": "https://www.abc.net.au/news/2026-04-06/nrl-live-updates-parramatta-eels-wests-tigers/106535120",
       "snippet": "",
       "pubDate": "Mon, 06 Apr 2026 05:08:20 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Live: Gunston kicks behind in dying seconds to win epic over Cats",
+      "title": "'I hate points': Gunston's last-second behind helps Hawthorn claim thriller",
       "link": "https://www.abc.net.au/news/2026-04-06/afl-round-4-hawthorn-hawks-geelong-cats-live-blog-easter-monday/106535162",
       "snippet": "",
       "pubDate": "Mon, 06 Apr 2026 04:18:22 +0000",
@@ -921,13 +928,6 @@
       "snippet": "",
       "pubDate": "Sun, 05 Apr 2026 22:42:00 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Our obsession with Qantas frequent flyer points faces a key test",
-      "link": "https://www.smh.com.au/business/companies/our-obsession-with-frequent-flyer-points-faces-a-key-test-20260402-p5zl3g.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Frequent flyer points are hugely popular and make big money for Qantas. But will people be as keen on racking up points if banks make them harder to earn?",
-      "pubDate": "Mon, 06 Apr 2026 05:15:00 +1000",
-      "source": "SMH Business"
     }
   ]
 }
