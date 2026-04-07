@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-07T10:31:52.506Z",
+  "fetchedAt": "2026-04-07T14:04:31.520Z",
   "asx200": {
     "value": 8728.8,
     "change": -122.2,
@@ -82,17 +82,13 @@
       {
         "date": "2026-04-01",
         "close": 8579.5
-      },
-      {
-        "date": "2026-04-07",
-        "close": 8728.8
       }
     ]
   },
   "audusd": {
     "value": 0.69,
     "change": -0.01,
-    "changePercent": -1.11,
+    "changePercent": -1.2,
     "previousClose": 0.7,
     "asOf": "2026-04-07",
     "history": [
@@ -191,33 +187,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4699.6,
-      "change": -446.5,
-      "changePercent": -8.68
+      "price": 4677.2,
+      "change": -468.9,
+      "changePercent": -9.11
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 72.81,
-      "change": -11.01,
-      "changePercent": -13.14
+      "price": 71.61,
+      "change": -12.21,
+      "changePercent": -14.56
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 113.04,
-      "change": 22.14,
-      "changePercent": 24.36
+      "price": 115.7,
+      "change": 24.8,
+      "changePercent": 27.28
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.62,
-      "change": -0.14,
-      "changePercent": -2.4
+      "price": 5.58,
+      "change": -0.18,
+      "changePercent": -3.14
     },
     {
       "name": "BHP Group",
@@ -826,6 +822,20 @@
   ],
   "news": [
     {
+      "title": "McKeown 'too harsh' on herself, fights off Gold Coast bugs at Aus Open",
+      "link": "https://www.abc.net.au/news/2026-04-07/australian-open-swimming-pallister-ocallaghan-mckeown/106539778",
+      "snippet": "",
+      "pubDate": "Tue, 07 Apr 2026 11:41:54 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "David Warner charged with mid-range drink driving",
+      "link": "https://www.abc.net.au/news/2026-04-07/australian-cricketer-david-warner-faces-drink-driving-charge/106539912",
+      "snippet": "",
+      "pubDate": "Tue, 07 Apr 2026 09:58:54 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Peninsula trims debt as lender backs equity swap for US uranium project",
       "link": "https://www.smh.com.au/business/companies/peninsula-trims-debt-as-lender-backs-equity-swap-for-us-uranium-project-20260407-p5zm08.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Peninsula Energy cut debt after US$4.1M of loans from Davidson Kempner were converted to equity, reducing debt to US$4.2M and marking a second trim of its US$15M facility.",
@@ -894,20 +904,6 @@
       "snippet": "",
       "pubDate": "Tue, 07 Apr 2026 06:44:28 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "TMK continues to turn up the gas at Mongolian pilot project",
-      "link": "https://www.smh.com.au/business/companies/tmk-continues-to-turn-up-the-gas-at-mongolian-pilot-project-20260407-p5zlyx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "TMK Energy has continued to increase gas flows at its Gurvantes XXXV project in Mongolia, with pilot wells hitting new highs and gaining momentum towards commercial production.",
-      "pubDate": "Tue, 07 Apr 2026 16:35:21 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Four-day week and robot tax: How tech giant plans to survive AI apocalypse",
-      "link": "https://www.smh.com.au/business/the-economy/four-day-week-and-robot-tax-how-tech-giant-plans-to-survive-ai-apocalypse-20260407-p5zlto.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "A blueprint released by OpenAI boss Sam Altman includes ideas to socialise the monetary gains from AI by giving people “a stake in AI driven economic growth”.",
-      "pubDate": "Tue, 07 Apr 2026 15:48:50 +1000",
-      "source": "SMH Business"
     }
   ]
 }
