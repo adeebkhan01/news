@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-07T19:35:11.915Z",
+  "fetchedAt": "2026-04-07T22:01:16.033Z",
   "asx200": {
     "value": 8728.8,
     "change": -122.2,
@@ -87,8 +87,8 @@
   },
   "audusd": {
     "value": 0.7,
-    "change": -0.01,
-    "changePercent": -0.77,
+    "change": 0,
+    "changePercent": -0.37,
     "previousClose": 0.7,
     "asOf": "2026-04-07",
     "history": [
@@ -177,6 +177,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-04-06",
+        "close": 0.69
+      },
+      {
         "date": "2026-04-07",
         "close": 0.7
       }
@@ -187,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4715.1,
-      "change": -431,
-      "changePercent": -8.38
+      "price": 4733.3,
+      "change": -412.8,
+      "changePercent": -8.02
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 72.32,
-      "change": -11.5,
-      "changePercent": -13.72
+      "price": 73.11,
+      "change": -10.71,
+      "changePercent": -12.77
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 112.94,
-      "change": 22.04,
-      "changePercent": 24.25
+      "price": 110.34,
+      "change": 19.44,
+      "changePercent": 21.39
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.56,
-      "change": -0.2,
-      "changePercent": -3.49
+      "price": 5.6,
+      "change": -0.16,
+      "changePercent": -2.81
     },
     {
       "name": "BHP Group",
@@ -822,7 +826,35 @@
   ],
   "news": [
     {
-      "title": "Mel Kawa 'felt like a fraud' promoting her sport while playing for nothing",
+      "title": "Blues recruit's striking ban upheld by AFL tribunal",
+      "link": "https://www.abc.net.au/news/2026-04-08/carlton-blues-player-will-hayward-to-miss-gather-round/106540542",
+      "snippet": "",
+      "pubDate": "Tue, 07 Apr 2026 21:43:52 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "DeChambeau hoping to continue rivalry with McIlroy at US Masters",
+      "link": "https://www.abc.net.au/news/2026-04-08/bryson-dechambeau-rory-mcilroy-us-masters-2026/106540442",
+      "snippet": "",
+      "pubDate": "Tue, 07 Apr 2026 21:19:14 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "De Minaur downs Norrie to advance to last 16 of Monte Carlo Masters",
+      "link": "https://www.abc.net.au/news/2026-04-08/alex-de-minaur-defeats-cameron-norrie-monte-carlo/106540410",
+      "snippet": "",
+      "pubDate": "Tue, 07 Apr 2026 20:42:15 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX to slide as looming Iran deadline unsettles investors",
+      "link": "https://www.smh.com.au/business/markets/asx-to-slide-as-looming-iran-deadline-unsettles-investors-20260408-p5zm1u.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Investors are nervously waiting for the latest deadline set by President Donald Trump, with futures pointing to a slight fall in the Australian sharemarket.",
+      "pubDate": "Wed, 08 Apr 2026 06:05:58 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Too much of not enough: Sport stars consider leaving over paltry pay",
       "link": "https://www.abc.net.au/news/2026-04-08/women-in-elite-sport-survey-pay-and-resources-rugby-soccer/106458982",
       "snippet": "",
       "pubDate": "Tue, 07 Apr 2026 18:52:29 +0000",
@@ -876,34 +908,6 @@
       "snippet": "A Citrini Research analyst went to Strait of Hormuz to see what exactly is happening to the globe’s most vital energy artery. Their findings were startling.",
       "pubDate": "Tue, 07 Apr 2026 17:46:15 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "ASX rises ahead of Trump deadline; Oil climbs",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-retreat-wall-street-loses-steam-after-trump-s-threat-to-take-out-iran-oil-rises-20260407-p5zlpt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket has closed higher ahead of a deadline that President Donald Trump has set to bomb Iranian power plants.",
-      "pubDate": "Tue, 07 Apr 2026 17:21:23 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Gibson jumps at chance to spearhead Australia against Great Britain",
-      "link": "https://www.abc.net.au/news/2026-04-07/talia-gibson-australia-great-britain-billie-jean-king-cup/106539416",
-      "snippet": "",
-      "pubDate": "Tue, 07 Apr 2026 07:18:25 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Red Metal spins out Maronan share bounty for holders",
-      "link": "https://www.smh.com.au/business/companies/red-metal-spins-out-maronan-share-bounty-for-holders-20260407-p5zlzk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Red Metal Ltd shareholders have scored an Easter bonus, set to receive a planned in-specie distribution of one Maronan Metals share for every 5.25 Red Metal shares held.",
-      "pubDate": "Tue, 07 Apr 2026 17:02:08 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Broncos name Walsh replacement, Rooster returns from 10-match suspension",
-      "link": "https://www.abc.net.au/news/2026-04-07/brisbane-broncos-name-jesse-arthurs-to-replace-reece-walsh/106539158",
-      "snippet": "",
-      "pubDate": "Tue, 07 Apr 2026 06:55:15 +0000",
-      "source": "ABC News"
     }
   ]
 }
