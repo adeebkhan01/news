@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-08T19:44:18.929Z",
+  "fetchedAt": "2026-04-08T22:03:27.404Z",
   "asx200": {
     "value": 8951.8,
     "change": 100.8,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.7,
     "change": 0,
-    "changePercent": 0.48,
+    "changePercent": 0.51,
     "previousClose": 0.7,
     "asOf": "2026-04-08",
     "history": [
@@ -185,6 +185,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-04-07",
+        "close": 0.71
+      },
+      {
         "date": "2026-04-08",
         "close": 0.7
       }
@@ -195,25 +199,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4741.3,
-      "change": -350.2,
-      "changePercent": -6.88
+      "price": 4745,
+      "change": -346.5,
+      "changePercent": -6.81
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 74.29,
-      "change": -9.75,
-      "changePercent": -11.6
+      "price": 74.25,
+      "change": -9.79,
+      "changePercent": -11.65
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 96.36,
-      "change": 1.59,
-      "changePercent": 1.68
+      "price": 96.5,
+      "change": 1.73,
+      "changePercent": 1.83
     },
     {
       "name": "Copper",
@@ -221,7 +225,7 @@
       "iconBg": "#fef0e6",
       "price": 5.75,
       "change": -0.05,
-      "changePercent": -0.83
+      "changePercent": -0.81
     },
     {
       "name": "BHP Group",
@@ -830,6 +834,41 @@
   ],
   "news": [
     {
+      "title": "Racquets smashed, tempers flare as Medvedev suffers 6-0, 6-0 meltdown",
+      "link": "https://www.abc.net.au/news/2026-04-09/daniil-medvedev-loses-matteo-berrettini-monte-carlo-masters/106544770",
+      "snippet": "",
+      "pubDate": "Wed, 08 Apr 2026 21:58:56 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Faldo says he will not comment on rival Norman until after Masters",
+      "link": "https://www.abc.net.au/news/2026-04-09/nick-faldo-greg-norman-us-masters-2026/106544686",
+      "snippet": "",
+      "pubDate": "Wed, 08 Apr 2026 21:23:36 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "As Hull chases elusive gold, Hollingsworth is looming over her shoulder",
+      "link": "https://www.abc.net.au/news/2026-04-09/jess-hull-claudia-hollingsworth-australian-athletics-champs/106544204",
+      "snippet": "",
+      "pubDate": "Wed, 08 Apr 2026 20:55:23 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "AC Milan confirms Perth match against arch rival",
+      "link": "https://www.abc.net.au/news/2026-04-09/ac-milan-and-inter-milan-to-play-preseason-match-at-perth/106544658",
+      "snippet": "",
+      "pubDate": "Wed, 08 Apr 2026 20:33:17 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to slide despite worldwide rally following ceasefire with Iran",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-despite-worldwide-rally-following-ceasefire-with-iran-20260409-p5zmds.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The early optimism that pushed oil down toward $US95 ($135) per barrel on Wednesday faded as Israel lashed Lebanon.",
+      "pubDate": "Thu, 09 Apr 2026 05:54:54 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Distance triples and comeback kings end Aus Open swimming",
       "link": "https://www.abc.net.au/news/2026-04-08/australian-open-swimming-championships/106541942",
       "snippet": "",
@@ -876,41 +915,6 @@
       "link": "https://www.smh.com.au/business/markets/oil-prices-plummet-after-us-iran-announce-hormuz-reopening-during-two-week-ceasefire-20260408-p5zm4l.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Iran says it will allow ships through the Strait of Hormuz for two weeks in co-ordination with its armed forces, but petrol price relief would not be immediate in Australia.",
       "pubDate": "Wed, 08 Apr 2026 16:00:45 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "The three reasons behind Penrith's unstoppable start to 2026",
-      "link": "https://www.abc.net.au/news/2026-04-08/panthers-nrl-analysis-start-to-2026-season/106543078",
-      "snippet": "",
-      "pubDate": "Wed, 08 Apr 2026 05:59:03 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Euphoric investors are savouring yet another Trump TACO moment",
-      "link": "https://www.smh.com.au/business/markets/euphoric-investors-are-savouring-yet-another-trump-taco-moment-20260408-p5zm67.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The US-Iran ceasefire has sparked the mother of all relief rallies on global markets, even though the full economic cost of the war remains unknown.",
-      "pubDate": "Wed, 08 Apr 2026 15:36:47 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Macarthur lands mining heavyweight to cornerstone WA iron ore dreams",
-      "link": "https://www.smh.com.au/business/companies/macarthur-lands-mining-heavyweight-to-cornerstone-wa-iron-ore-dreams-20260408-p5zm9e.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Macarthur Minerals has welcomed mining services heavyweight Steve Wyatt as a new cornerstone investor, following a $1.25M placement to advance its WA iron ore assets.",
-      "pubDate": "Wed, 08 Apr 2026 14:44:23 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "SA premier wants 'certainty' beyond a one-year Gather Round deal",
-      "link": "https://www.abc.net.au/news/2026-04-08/push-for-longer-term-deal-for-gather-round/106540834",
-      "snippet": "",
-      "pubDate": "Wed, 08 Apr 2026 03:51:09 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Trump backer offers $91.2 billion to buy Taylor Swift record label",
-      "link": "https://www.smh.com.au/business/companies/trump-backer-offers-91-2-billion-to-buy-taylor-swift-record-label-20260408-p5zm88.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Hedge fund billionaire and Donald Trump supporter Bill Ackman has made a bid to buy the label behind stars including Taylor Swift, Harry Styles and Kendrick Lamar.",
-      "pubDate": "Wed, 08 Apr 2026 13:36:16 +1000",
       "source": "SMH Business"
     }
   ]
