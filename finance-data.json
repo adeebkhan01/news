@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-08T10:33:56.893Z",
+  "fetchedAt": "2026-04-08T14:06:23.275Z",
   "asx200": {
     "value": 8951.8,
     "change": 100.8,
@@ -86,17 +86,13 @@
       {
         "date": "2026-04-07",
         "close": 8728.8
-      },
-      {
-        "date": "2026-04-08",
-        "close": 8951.8
       }
     ]
   },
   "audusd": {
-    "value": 0.7,
+    "value": 0.71,
     "change": 0,
-    "changePercent": 0.46,
+    "changePercent": 0.67,
     "previousClose": 0.7,
     "asOf": "2026-04-08",
     "history": [
@@ -190,7 +186,7 @@
       },
       {
         "date": "2026-04-08",
-        "close": 0.7
+        "close": 0.71
       }
     ]
   },
@@ -199,33 +195,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4807.6,
-      "change": -283.9,
-      "changePercent": -5.58
+      "price": 4802.8,
+      "change": -288.7,
+      "changePercent": -5.67
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 76.93,
-      "change": -7.11,
-      "changePercent": -8.46
+      "price": 76.61,
+      "change": -7.43,
+      "changePercent": -8.84
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 95.02,
-      "change": 0.25,
-      "changePercent": 0.26
+      "price": 92.87,
+      "change": -1.9,
+      "changePercent": -2
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.75,
-      "change": -0.05,
-      "changePercent": -0.91
+      "price": 5.77,
+      "change": -0.03,
+      "changePercent": -0.53
     },
     {
       "name": "BHP Group",
@@ -834,6 +830,13 @@
   ],
   "news": [
     {
+      "title": "Distance triples and comeback kings end Aus Open swimming",
+      "link": "https://www.abc.net.au/news/2026-04-08/australian-open-swimming-championships/106541942",
+      "snippet": "",
+      "pubDate": "Wed, 08 Apr 2026 11:42:17 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "ASX soars in $80 billion rally as investors cheer ceasefire",
       "link": "https://www.smh.com.au/business/markets/asx-to-slide-as-looming-iran-deadline-unsettles-investors-20260408-p5zm1u.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Markets around the region rose sharply on Wednesday and the Australian dollar strengthened above US70¢, as investors welcomed the prospect of lower oil prices.",
@@ -908,13 +911,6 @@
       "link": "https://www.smh.com.au/business/companies/trump-backer-offers-91-2-billion-to-buy-taylor-swift-record-label-20260408-p5zm88.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Hedge fund billionaire and Donald Trump supporter Bill Ackman has made a bid to buy the label behind stars including Taylor Swift, Harry Styles and Kendrick Lamar.",
       "pubDate": "Wed, 08 Apr 2026 13:36:16 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Jackie O demanded KIIS bosses stop ‘abusive relationship’ months before Sandilands’ blow-up",
-      "link": "https://www.smh.com.au/business/companies/jackie-o-demanded-kiis-bosses-stop-abusive-relationship-months-before-sandilands-blowup-20260408-p5zm42.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Court documents show Jackie “O” Henderson complained about Sandilands after an August broadcast where he berated her and said she was on “period time”.",
-      "pubDate": "Wed, 08 Apr 2026 13:01:34 +1000",
       "source": "SMH Business"
     }
   ]
