@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-09T16:45:04.103Z",
+  "fetchedAt": "2026-04-09T19:44:04.534Z",
   "asx200": {
     "value": 8973.2,
     "change": 374.2,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.71,
     "change": 0.01,
-    "changePercent": 1.74,
+    "changePercent": 1.72,
     "previousClose": 0.7,
     "asOf": "2026-04-09",
     "history": [
@@ -203,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4819.4,
-      "change": -272.1,
-      "changePercent": -5.34
+      "price": 4795.9,
+      "change": -295.6,
+      "changePercent": -5.81
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 76.4,
-      "change": -7.63,
-      "changePercent": -9.08
+      "price": 75.99,
+      "change": -8.04,
+      "changePercent": -9.57
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 97.49,
-      "change": 2.72,
-      "changePercent": 2.87
+      "price": 98.9,
+      "change": 4.13,
+      "changePercent": 4.36
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 5.77,
-      "change": -0.03,
-      "changePercent": -0.53
+      "change": -0.04,
+      "changePercent": -0.6
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,48 @@
   ],
   "news": [
     {
+      "title": "‘Nobody schedules meetings on Friday’: Is the four-day workweek already here?",
+      "link": "https://www.smh.com.au/business/workplace/nobody-schedules-meetings-on-friday-is-the-four-day-workweek-already-here-20260409-p5zmks.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "While no one likes being stuck in a meeting as the weekend fast approaches, for some businesses it’s become more than just a case of the end-of-week blues.",
+      "pubDate": "Fri, 10 Apr 2026 05:05:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Why is my work repeatedly asking me for a background check?",
+      "link": "https://www.smh.com.au/business/workplace/why-is-my-work-repeatedly-asking-me-for-a-background-check-20260409-p5zmki.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Job applications are difficult enough currently without the re-submission and double up you’ve described –  but there’s good reason for it.",
+      "pubDate": "Fri, 10 Apr 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Major spike in home owners cutting sale price as ‘negative energy’ dampens property market",
+      "link": "https://www.smh.com.au/business/companies/major-spike-in-home-owners-cutting-sale-price-as-negative-energy-dampens-property-market-20260408-p5zm41.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Asking prices for houses are being reduced amid milder appetite from risk-averse buyers",
+      "pubDate": "Fri, 10 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Real estate agents aren’t evil. But they need stricter rules",
+      "link": "https://www.smh.com.au/business/the-economy/real-estate-agents-aren-t-evil-but-they-need-stricter-rules-20260409-p5zmfi.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "There will always be real estate agents who bend and break the rules, but that doesn’t mean we should sit back and let it happen.",
+      "pubDate": "Fri, 10 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Wealthy Melbourne family to sell $60m St Kilda boulevard office",
+      "link": "https://www.smh.com.au/business/companies/wealthy-melbourne-family-to-sell-60m-st-kilda-boulevard-office-20260409-p5zmka.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The family of the late duty-free king David Mandie are cashing in on the leafy St Kilda Road boulevard.",
+      "pubDate": "Fri, 10 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Roxy Jacenko wants $10m for her office, as pub barons swoop on Imperial Hotel",
+      "link": "https://www.smh.com.au/business/small-business/roxy-jacenko-wants-10m-for-her-office-as-pub-barons-swoop-on-imperial-hotel-20260409-p5zmkn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "PR maven is aiming to get a handy $10 million from the sale of her former headquarters.",
+      "pubDate": "Fri, 10 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Bulldogs stun misfiring Panthers in big boilover victory",
       "link": "https://www.abc.net.au/news/2026-04-09/nrl-live-updates-bulldogs-vs-panthers/106548612",
       "snippet": "",
@@ -877,48 +919,6 @@
       "link": "https://www.smh.com.au/business/markets/the-ships-that-are-delivering-for-australia-under-new-fuel-scheme-20260409-p5zmfa.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Australia has opened its chequebook to buy up as much fuel as possible, as Anthony Albanese flies to Singapore seeking deals to bridge a looming shortfall.",
       "pubDate": "Thu, 09 Apr 2026 17:41:29 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Patient Aussie ousts 'idol' Moore in Bells Beach defence",
-      "link": "https://www.abc.net.au/news/2026-04-09/bells-beach-isabella-nichols-carissa-moore-surfing-wsl/106548108",
-      "snippet": "",
-      "pubDate": "Thu, 09 Apr 2026 07:24:34 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Canberra backs Ardea mammoth WA nickel project",
-      "link": "https://www.smh.com.au/business/companies/canberra-backs-ardea-mammoth-wa-nickel-project-20260409-p5zmo6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Ardea Resources has received Federal Government backing for its Kalgoorlie nickel project, gaining entry to a program designed to fast-track approvals.",
-      "pubDate": "Thu, 09 Apr 2026 16:56:23 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Dalaroo launches 9km-long West African gold soil sampling blitz",
-      "link": "https://www.smh.com.au/business/companies/dalaroo-launches-9km-long-west-african-gold-soil-sampling-blitz-20260409-p5zmno.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Dalaroo Metals has begun a 4400-sample soil geochemical program at the Goldridge prospect within its Bondoukou project in Côte d’Ivoire. The program is targeting a 9 km-long gold corridor to identify multiple drill targets, with soil assay results to guide follow-up trenching and scout reverse circu",
-      "pubDate": "Thu, 09 Apr 2026 16:45:49 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "TMK gas surge clears path to production at Mongolian project",
-      "link": "https://www.smh.com.au/business/companies/tmk-gas-surge-clears-path-to-production-at-mongolian-project-20260409-p5zmne.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "TMK Energy Limited lifted March gas output 48 per cent, hit record flows and signed a pivotal MoU to fast-track power generation and advance development.",
-      "pubDate": "Thu, 09 Apr 2026 16:30:23 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Larvotto lines up defence insider for NSW antimony push",
-      "link": "https://www.smh.com.au/business/companies/larvotto-lines-up-defence-insider-for-nsw-antimony-push-20260409-p5zmmu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Larvotto Resources appoints former Defence Minister David Fawcett as Strategic Advisor to embed its Hillgrove antimony within Australia’s national security supply chains.",
-      "pubDate": "Thu, 09 Apr 2026 16:05:14 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "The ‘race to the bottom’ on AI job cuts has already started",
-      "link": "https://www.smh.com.au/business/companies/the-race-to-the-bottom-on-ai-job-cuts-has-already-started-20260409-p5zmi5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Bendigo Bank is the latest to swing the axe as banks try to expand the use of AI to save costs. Unions are powerless to put that genie back in the bottle.",
-      "pubDate": "Thu, 09 Apr 2026 15:50:00 +1000",
       "source": "SMH Business"
     }
   ]
