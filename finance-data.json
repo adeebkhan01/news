@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-09T19:44:04.534Z",
+  "fetchedAt": "2026-04-09T22:01:07.252Z",
   "asx200": {
     "value": 8973.2,
     "change": 374.2,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.71,
     "change": 0.01,
-    "changePercent": 1.72,
+    "changePercent": 1.68,
     "previousClose": 0.7,
     "asOf": "2026-04-09",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.71
       },
       {
+        "date": "2026-04-08",
+        "close": 0.7
+      },
+      {
         "date": "2026-04-09",
         "close": 0.71
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4795.9,
-      "change": -295.6,
-      "changePercent": -5.81
+      "price": 4790.5,
+      "change": -301,
+      "changePercent": -5.91
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.99,
-      "change": -8.04,
-      "changePercent": -9.57
+      "price": 75.47,
+      "change": -8.56,
+      "changePercent": -10.18
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 98.9,
-      "change": 4.13,
-      "changePercent": 4.36
+      "price": 97.98,
+      "change": 3.21,
+      "changePercent": 3.39
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.77,
-      "change": -0.04,
-      "changePercent": -0.6
+      "price": 5.76,
+      "change": -0.05,
+      "changePercent": -0.78
     },
     {
       "name": "BHP Group",
@@ -838,6 +842,34 @@
   ],
   "news": [
     {
+      "title": "ASX to edge lower after Wall Street gains; oil prices rise",
+      "link": "https://www.smh.com.au/business/markets/asx-to-edge-lower-after-wall-street-gains-oil-prices-rise-20260410-p5zmqw.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The Australian sharemarket is expected to edge slightly lower at the open on Friday after Wall Street and oil prices rose overnight.",
+      "pubDate": "Fri, 10 Apr 2026 07:12:22 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Day among early Masters leaders, Scott slips despite eagle",
+      "link": "https://www.abc.net.au/news/2026-04-10/jason-day-among-early-masters-leaders-rory-mcilroy/106549556",
+      "snippet": "",
+      "pubDate": "Thu, 09 Apr 2026 21:03:00 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "The fourth-year med student from Broken Hill who won the Stawell Gift",
+      "link": "https://www.abc.net.au/news/2026-04-10/stawell-gift-2026-winner-olufemi-komolafe/106542734",
+      "snippet": "",
+      "pubDate": "Thu, 09 Apr 2026 20:00:03 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "We’re looking at Kyle and Jackie O fighting – investors are looking at their boss",
+      "link": "https://www.smh.com.au/business/companies/we-re-looking-at-kyle-and-jackie-o-fighting-investors-are-looking-at-their-boss-20260409-p5zmg9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "ARN chairman Hamish McLennan, who presided over the pair’s $100 million contracts and their termination, is up for re-election next month.",
+      "pubDate": "Fri, 10 Apr 2026 06:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "‘Nobody schedules meetings on Friday’: Is the four-day workweek already here?",
       "link": "https://www.smh.com.au/business/workplace/nobody-schedules-meetings-on-friday-is-the-four-day-workweek-already-here-20260409-p5zmks.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "While no one likes being stuck in a meeting as the weekend fast approaches, for some businesses it’s become more than just a case of the end-of-week blues.",
@@ -892,34 +924,6 @@
       "snippet": "",
       "pubDate": "Thu, 09 Apr 2026 08:46:40 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Saint to learn fate over alleged homophobic slur after marathon hearing",
-      "link": "https://www.abc.net.au/news/2026-04-09/afl-lance-collard-saints-alleged-homophobic-slur-tribunal/106548494",
-      "snippet": "",
-      "pubDate": "Thu, 09 Apr 2026 08:14:51 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX edges higher as fragile ceasefire tests investor optimism",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-despite-worldwide-rally-following-ceasefire-with-iran-20260409-p5zmds.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The sharemarket closed in the green, helped by a jump in energy stocks as the ceasefire between the US and Iran hangs in the balance.",
-      "pubDate": "Thu, 09 Apr 2026 18:06:12 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Strickland jags new base metals find in Serbia",
-      "link": "https://www.smh.com.au/business/companies/strickland-jags-new-base-metals-find-in-serbia-20260409-p5zmod.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Strickland Metals has jagged several noteworthy base metal hits from drilling at its Obradov Potok deposit, part of its huge Rogozna project in Serbia.",
-      "pubDate": "Thu, 09 Apr 2026 17:54:24 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "There are dozens of fuel ships on their way. Here’s when they’ll arrive, and how they’ll get here",
-      "link": "https://www.smh.com.au/business/markets/the-ships-that-are-delivering-for-australia-under-new-fuel-scheme-20260409-p5zmfa.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Australia has opened its chequebook to buy up as much fuel as possible, as Anthony Albanese flies to Singapore seeking deals to bridge a looming shortfall.",
-      "pubDate": "Thu, 09 Apr 2026 17:41:29 +1000",
-      "source": "SMH Business"
     }
   ]
 }
