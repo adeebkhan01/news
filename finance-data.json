@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-10T10:31:27.810Z",
+  "fetchedAt": "2026-04-10T13:53:00.225Z",
   "asx200": {
     "value": 8960.6,
     "change": 268,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.71,
     "change": 0,
-    "changePercent": -0.03,
+    "changePercent": 0.14,
     "previousClose": 0.71,
     "asOf": "2026-04-10",
     "history": [
@@ -207,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4775.4,
-      "change": -454.3,
-      "changePercent": -8.69
+      "price": 4792.5,
+      "change": -437.2,
+      "changePercent": -8.36
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.5,
-      "change": -13.59,
-      "changePercent": -15.25
+      "price": 76.17,
+      "change": -12.91,
+      "changePercent": -14.5
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 98.65,
-      "change": 15.2,
-      "changePercent": 18.21
+      "price": 98.75,
+      "change": 15.3,
+      "changePercent": 18.33
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.81,
-      "change": -0.09,
-      "changePercent": -1.58
+      "price": 5.88,
+      "change": -0.02,
+      "changePercent": -0.36
     },
     {
       "name": "BHP Group",
@@ -842,7 +842,14 @@
   ],
   "news": [
     {
-      "title": "Live: Magpies locked in tense encounter with Dockers at Gather Round",
+      "title": "Kennedy becomes first Australian to break 10-second barrier at home",
+      "link": "https://www.abc.net.au/news/2026-04-10/australian-athletics-championships-lachlan-kennedy-10-seconds/106553292",
+      "snippet": "",
+      "pubDate": "Fri, 10 Apr 2026 11:38:04 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Dockers launch late fightback to pip Magpies in frantic finish",
       "link": "https://www.abc.net.au/news/2026-04-10/afl-gather-round-collingwood-magpies-fremantle-dockers-adelaide/106553158",
       "snippet": "",
       "pubDate": "Fri, 10 Apr 2026 09:05:19 +0000",
@@ -870,7 +877,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Rampant Cowboys capitalise on Carrigan sin binning",
+      "title": "Cowboys claim thrilling Queensland derby victory with last-minute try",
       "link": "https://www.abc.net.au/news/2026-04-10/nrl-live-updates-dragons-vs-sea-eagles-broncos-vs-cowboys/106549958",
       "snippet": "",
       "pubDate": "Fri, 10 Apr 2026 07:07:53 +0000",
@@ -916,13 +923,6 @@
       "link": "https://www.smh.com.au/business/companies/mining-giant-speeds-up-plan-to-eliminate-diesel-use-amid-global-crunch-20260410-p5zmul.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Fortescue has cited the war in the Middle East as a major driver for the industry to end its reliance on volatile fossil fuels.",
       "pubDate": "Fri, 10 Apr 2026 14:18:28 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Zenith pushes Queensland gold system beyond 700m depth",
-      "link": "https://www.smh.com.au/business/companies/zenith-pushes-queensland-gold-system-beyond-700m-depth-20260410-p5zmwy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Zenith Minerals has pushed its Red Mountain gold system in Queensland past 700m vertical depth, with deep drilling and 3D modelling pointing to higher-grade zones.",
-      "pubDate": "Fri, 10 Apr 2026 14:16:30 +1000",
       "source": "SMH Business"
     }
   ]
