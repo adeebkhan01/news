@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-10T19:15:21.944Z",
+  "fetchedAt": "2026-04-10T21:58:56.820Z",
   "asx200": {
     "value": 8960.6,
     "change": 268,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.71,
     "change": 0,
-    "changePercent": 0.14,
+    "changePercent": -0.1,
     "previousClose": 0.71,
     "asOf": "2026-04-10",
     "history": [
@@ -203,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4792.1,
-      "change": -437.6,
-      "changePercent": -8.37
+      "price": 4771,
+      "change": -458.7,
+      "changePercent": -8.77
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 76.56,
-      "change": -12.52,
-      "changePercent": -14.06
+      "price": 76.03,
+      "change": -13.06,
+      "changePercent": -14.66
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 96.01,
-      "change": 12.56,
-      "changePercent": 15.05
+      "price": 95.63,
+      "change": 12.18,
+      "changePercent": 14.6
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.88,
-      "change": -0.03,
-      "changePercent": -0.47
+      "price": 5.87,
+      "change": -0.04,
+      "changePercent": -0.61
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,27 @@
   ],
   "news": [
     {
+      "title": "How the long bomb is making an impact this AFL season",
+      "link": "https://www.abc.net.au/news/2026-04-11/afl-long-range-goals-sydney-swans-charlie-curnow/106550594",
+      "snippet": "",
+      "pubDate": "Fri, 10 Apr 2026 21:31:08 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Alex de Minaur downed by local hero at Monte Carlo Masters",
+      "link": "https://www.abc.net.au/news/2026-04-11/alex-de-minaur-knocked-out-of-monte-carlo-masters-quarterfinal/106554042",
+      "snippet": "",
+      "pubDate": "Fri, 10 Apr 2026 21:16:45 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Hull 'robbed' at national champs as rival disqualified after 1,500m clash",
+      "link": "https://www.abc.net.au/news/2026-04-11/jess-hull-falls-claudia-hollingsworth-disqualified-athletics/106553294",
+      "snippet": "",
+      "pubDate": "Fri, 10 Apr 2026 19:48:52 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Why you might want to think twice before starting a side hustle",
       "link": "https://www.smh.com.au/business/workplace/why-you-might-want-to-think-twice-before-starting-a-side-hustle-20260409-p5zmkr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "If you’re not careful, starting up a side hustle can drain the joy and passion out of the very thing that once felt exciting and fun.",
@@ -899,27 +920,6 @@
       "snippet": "",
       "pubDate": "Fri, 10 Apr 2026 07:07:53 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Cricket record smashed as bowler takes nine wickets in three overs",
-      "link": "https://www.abc.net.au/news/2026-04-10/brazil-cricket-player-laura-cardoso-takes-nine-wickets-in-t20i/106552504",
-      "snippet": "",
-      "pubDate": "Fri, 10 Apr 2026 06:37:24 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX Runners of the Week: Sparc Tech, Resolution, Jindalee &amp; OD6 Metals",
-      "link": "https://www.smh.com.au/business/companies/asx-runners-of-the-week-sparc-tech-resolution-jindalee-and-od6-metals-20260410-p5zmyf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Bulls N’ Bears ASX Runner of the Week is… Sparc Technologies, after its shares soared on a podcast appearance that ignited its multi-billion-dollar graphene disruption story.",
-      "pubDate": "Fri, 10 Apr 2026 16:33:34 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Kaiser builds $45.6M war chest on steady Vic,Tassie gold output",
-      "link": "https://www.smh.com.au/business/companies/kaiser-builds-45-6m-war-chest-on-steady-vic-tassie-gold-output-20260410-p5zmy8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Kaiser Reef has bolstered its cash pile to A$45.6m after producing 5534 ounces of gold, while simultaneously slashing debt and clearing its gold loan.",
-      "pubDate": "Fri, 10 Apr 2026 15:58:06 +1000",
-      "source": "SMH Business"
     }
   ]
 }
