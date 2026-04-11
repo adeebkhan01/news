@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-11T03:22:32.642Z",
+  "fetchedAt": "2026-04-11T05:10:33.802Z",
   "asx200": {
     "value": 8960.6,
     "change": 268,
@@ -201,7 +201,7 @@
         "close": 0.71
       },
       {
-        "date": "2026-04-10",
+        "date": "2026-04-11",
         "close": 0.71
       }
     ]
@@ -211,33 +211,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4771,
-      "change": -458.7,
-      "changePercent": -8.77
+      "price": 4787.4,
+      "change": -442.3,
+      "changePercent": -8.46
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 76.03,
-      "change": -13.06,
-      "changePercent": -14.66
+      "price": 76.48,
+      "change": -12.6,
+      "changePercent": -14.15
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 95.63,
-      "change": 12.18,
-      "changePercent": 14.6
+      "price": 96.57,
+      "change": 13.12,
+      "changePercent": 15.72
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.87,
-      "change": -0.04,
-      "changePercent": -0.61
+      "price": 5.89,
+      "change": -0.02,
+      "changePercent": -0.3
     },
     {
       "name": "BHP Group",
@@ -846,7 +846,14 @@
   ],
   "news": [
     {
-      "title": "Live: Kangaroos take fight to Lions as Bombers search for first win",
+      "title": "Live: Broncos' crisis deepens as superstar faces ban",
+      "link": "https://www.abc.net.au/news/2026-04-11/nrl-live-broncos-souths-raiders-sharks-roosters-storm-warriors/106554540",
+      "snippet": "",
+      "pubDate": "Sat, 11 Apr 2026 04:36:53 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Lions-Kangaroos clash going down to the wire as Bombers show fight",
       "link": "https://www.abc.net.au/news/2026-04-11/afl-kangaroos-lions-bombers-demons-swans-suns-hawks-bulldogs/106542804",
       "snippet": "",
       "pubDate": "Sat, 11 Apr 2026 02:03:51 +0000",
@@ -921,13 +928,6 @@
       "snippet": "Australia’s controversial multibillion-dollar defence star has made an unusual pick to rehabilitate its corporate reputation.",
       "pubDate": "Sat, 11 Apr 2026 05:00:00 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Kennedy becomes first Australian to break 10-second barrier at home",
-      "link": "https://www.abc.net.au/news/2026-04-10/australian-athletics-championships-lachlan-kennedy-10-seconds/106553292",
-      "snippet": "",
-      "pubDate": "Fri, 10 Apr 2026 11:38:04 +0000",
-      "source": "ABC News"
     }
   ]
 }
