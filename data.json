@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-04-12T13:11:07.139Z",
-  "summary": "Bangladesh is navigating significant political and constitutional changes following recent unrest, with the government urging clarity on ordinances and constitutional reform while commemorating the 1971 Liberation War's role in shaping current elections. The nation faces economic challenges including declining RMG exports to the US and concerns about agricultural input costs, though some sectors like electric vehicles are seeing new investment. Notable cultural losses include the death of legendary singer Asha Bhosle, while domestic security remains a concern with over 36 deaths reported in political violence in recent months. The government continues efforts to strengthen sovereignty and institutional stability, including military directives and moves to address fraud in mobile banking systems.",
+  "fetchedAt": "2026-04-12T15:40:20.684Z",
+  "summary": "Bangladesh faces mounting economic headwinds as Middle East tensions threaten to disrupt upcoming IMF and World Bank discussions, while domestically political turbulence continues with former law minister Shafique Ahmed's death and ongoing constitutional reform debates. The country's financial sector faces scrutiny with the Islami Bank managing director on extended leave, and a significant diplomatic setback emerged with two influential countries blocking an unnamed official's appointment. On a somber cultural note, legendary singer Asha Bhosle passed away, while political violence has claimed 36 lives over three months and security forces arrested over 500 at a pro-Palestinian rally in London.",
   "sources": [
     {
       "id": "dailystar",
@@ -34,6 +34,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Economic shock of Middle East war to cast shadow over IMF, World Bank meetings",
+      "link": "https://www.thedailystar.net/business/news/economic-shock-middle-east-war-cast-shadow-over-imf-world-bank-meetings-4150021",
+      "desc": "Top finance officials from around the world will convene in Washington this week under the shadow of the war in the Middle East, which has delivered a third major shock to the global economy after the",
+      "pubDate": "Sun, 12 Apr 26 21:05:05 +0600",
+      "img": "https://www.thedailystar.net/sites/default/files/styles/social_share/public/2026-04/IMF-WB.jpg",
+      "sourceId": "dailystar",
+      "sourceName": "The Daily Star",
+      "sourceColor": "#1a7a4a",
+      "titleBn": "মধ্যপ্রাচ্য যুদ্ধের অর্থনৈতিক ধাক্কা আইএমএফ ও বিশ্ব ব্যাংক সম্মেলনে ছায়া ফেলবে",
+      "descBn": "বিশ্বের শীর্ষ আর্থিক কর্মকর্তারা এই সপ্তাহে ওয়াশিংটনে সমবেত হবেন মধ্যপ্রাচ্যের যুদ্ধের ছায়ায়, যা বৈশ্বিক অর্থনীতিতে তৃতীয় বড় ধাক্কা হিসেবে কাজ করেছে"
+    },
+    {
+      "title": "Islami Bank MD sent on leave for over 1.5 months",
+      "link": "https://www.thedailystar.net/business/news/islami-bank-md-sent-leave-over-15-months-4150006",
+      "desc": "Islami Bank Bangladesh PLC has placed its Managing Director Md Omar Faruk Khan on leave for more than one and a half months.",
+      "pubDate": "Sun, 12 Apr 26 20:54:53 +0600",
+      "img": "https://www.thedailystar.net/sites/default/files/styles/social_share/public/2026-04/Islami%20Bank%20MD_0.jpg",
+      "sourceId": "dailystar",
+      "sourceName": "The Daily Star",
+      "sourceColor": "#1a7a4a",
+      "titleBn": "ইসলামী ব্যাংকের এমডি দেড় মাসের বেশি সময়ের জন্য ছুটিতে পাঠানো হয়েছেন",
+      "descBn": "ইসলামী ব্যাংক বাংলাদেশ পিএলসি তার ব্যবস্থাপনা পরিচালক মো. ওমার ফারুক খানকে দেড় মাসের বেশি সময়ের জন্য ছুটি দিয়েছে।"
+    },
+    {
+      "title": "2 ‘influential countries’ block Aminul’s job with veto",
+      "link": "https://en.prothomalo.com/sports/cricket/5o6z8zzsfx",
+      "desc": "",
+      "pubDate": "Sun, 12 Apr 2026 14:47:52 +0000",
+      "img": "https://media.prothomalo.com/prothomalo-english/2026-04-12/8cs2jekf/Aminul-Islam-Bulbul.avif?w=280",
+      "sourceId": "prothomalo",
+      "sourceName": "Prothom Alo",
+      "sourceColor": "#c0392b",
+      "titleBn": "২ টি 'প্রভাবশালী দেশ' ভেটোর মাধ্যমে আমিনুলের চাকরি ব্লক করেছে",
+      "descBn": ""
+    },
+    {
+      "title": "Pahela Baishakh sales bounce back after two lean years",
+      "link": "https://www.thedailystar.net/business/news/pahela-baishakh-sales-bounce-back-after-two-lean-years-4149976",
+      "desc": "Sales of clothing items ahead of Pahela Baishakh, the first day of the Bengali new year and the second largest annual shopping season after Eid, have rebounded this year after two subdued seasons mark",
+      "pubDate": "Sun, 12 Apr 26 19:59:20 +0600",
+      "img": "https://www.thedailystar.net/sites/default/files/styles/social_share/public/2026-04/Pahela%20Baishakh%20Sales.jpg",
+      "sourceId": "dailystar",
+      "sourceName": "The Daily Star",
+      "sourceColor": "#1a7a4a",
+      "titleBn": "দুই বছরের মন্দার পর পহেলা বৈশাখে বিক্রয় পুনরুত্থান",
+      "descBn": "পহেলা বৈশাখের আগে পোশাক পণ্যের বিক্রয় এ বছর পুনরুজ্জীবিত হয়েছে যা ঈদের পরে বছরের দ্বিতীয় বৃহত্তম কেনাকাটার মৌসুম এবং গত দুই বছর মন্দা ছিল"
+    },
+    {
+      "title": "Shirin Sharmin Chaudhury released on bail from Kashimpur jail",
+      "link": "https://en.prothomalo.com/bangladesh/94uz54704b",
+      "desc": "",
+      "pubDate": "Sun, 12 Apr 2026 13:25:46 +0000",
+      "img": "https://media.prothomalo.com/prothomalo-english/2026-04-12/7509clxs/shirin.avif?w=280",
+      "sourceId": "prothomalo",
+      "sourceName": "Prothom Alo",
+      "sourceColor": "#c0392b",
+      "titleBn": "শিরিন শর্মিন চৌধুরী কাশিমপুর কারাগার থেকে জামিনে মুক্তি পান",
+      "descBn": ""
+    },
     {
       "title": "Former law minister Shafique Ahmed passes away",
       "link": "https://en.prothomalo.com/bangladesh/0zji5irloc",
