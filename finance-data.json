@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-13T19:45:09.733Z",
+  "fetchedAt": "2026-04-13T22:05:45.668Z",
   "asx200": {
     "value": 8926,
     "change": 308.9,
@@ -88,7 +88,7 @@
   "audusd": {
     "value": 0.71,
     "change": 0,
-    "changePercent": 0.3,
+    "changePercent": 0.37,
     "previousClose": 0.71,
     "asOf": "2026-04-13",
     "history": [
@@ -177,6 +177,10 @@
         "close": 0.71
       },
       {
+        "date": "2026-04-12",
+        "close": 0.7
+      },
+      {
         "date": "2026-04-13",
         "close": 0.71
       }
@@ -195,25 +199,25 @@
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.67,
-      "change": -5.24,
-      "changePercent": -6.48
+      "price": 75.74,
+      "change": -5.17,
+      "changePercent": -6.39
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 97.87,
-      "change": -0.84,
-      "changePercent": -0.85
+      "price": 98.01,
+      "change": -0.7,
+      "changePercent": -0.71
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.01,
-      "change": 0.3,
-      "changePercent": 5.23
+      "price": 6,
+      "change": 0.29,
+      "changePercent": 5.06
     },
     {
       "name": "BHP Group",
@@ -822,6 +826,27 @@
   ],
   "news": [
     {
+      "title": "St Kilda's Collard to learn sanction after being found guilty of homophobic slur",
+      "link": "https://www.abc.net.au/news/2026-04-14/st-kildas-collard-to-learn-afl-homophobic-slur-sanction/106561360",
+      "snippet": "",
+      "pubDate": "Mon, 13 Apr 2026 21:49:09 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Swimming becomes first major Olympic sport to lift restrictions on Russian athletes",
+      "link": "https://www.abc.net.au/news/2026-04-14/swimming-first-major-olympic-sport-to-lift-restrictions-russia/106561272",
+      "snippet": "",
+      "pubDate": "Mon, 13 Apr 2026 20:58:11 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Oil price up, local shares to bounce back; US markets steady",
+      "link": "https://www.smh.com.au/business/markets/oil-price-up-local-shares-to-bounce-back-us-markets-steady-20260414-p5znmb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Australia’s sharemarket is expected to open higher after US stocks held steady overnight despite ceasefire talks failing.",
+      "pubDate": "Tue, 14 Apr 2026 05:52:30 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Hollywood wants to turn this viral meme into a juggernaut. Fans aren’t happy",
       "link": "https://www.smh.com.au/business/companies/hollywood-wants-to-turn-this-viral-meme-into-a-juggernaut-fans-aren-t-happy-20260413-p5znd2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Could Skibidi Toilet, the bizarre animated YouTube series that gets more views than the NBA on the site, become the next Transformers?",
@@ -882,27 +907,6 @@
       "link": "https://www.smh.com.au/business/companies/dalaroo-lists-on-otcqb-market-to-meet-us-greenland-rare-earths-demand-20260413-p5znjo.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Dalaroo is now quoted in the US on the OTCQB under the ticker DALMF, giving North American traders a US-dollar line into its gold and critical minerals playbook.",
       "pubDate": "Mon, 13 Apr 2026 16:12:58 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "IKEA winds back its famous 365-day refund policy",
-      "link": "https://www.smh.com.au/business/companies/ikea-winds-back-its-famous-365-day-refund-policy-20260413-p5znd5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Swedish furniture giant’s refund policy has been wound back to 60 days for Australian consumers to “minimise misuse”.",
-      "pubDate": "Mon, 13 Apr 2026 15:56:20 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Beetaloo locks in $66.3M to fast-track to first NT gas",
-      "link": "https://www.smh.com.au/business/companies/beetaloo-locks-in-66-3m-to-fast-track-to-first-nt-gas-20260413-p5znje.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Beetaloo Energy has banked $66.3M and locked in a fully funded runway to first pilot gas this year, fast-tracking its Carpentaria project and broader Beetaloo Basin growth push.",
-      "pubDate": "Mon, 13 Apr 2026 15:43:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Electric cars and canned tomatoes: How shoppers are coping with the war",
-      "link": "https://www.smh.com.au/business/the-economy/electric-cars-and-canned-tomatoes-how-shoppers-are-coping-with-the-war-20260413-p5zngt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Indications shoppers are starting to hoard food items are beginning to show, alongside a decline in house prices and exploding demand for EVs.",
-      "pubDate": "Mon, 13 Apr 2026 15:41:25 +1000",
       "source": "SMH Business"
     }
   ]
