@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-13T16:39:55.646Z",
+  "fetchedAt": "2026-04-13T19:45:09.733Z",
   "asx200": {
     "value": 8926,
     "change": 308.9,
@@ -88,7 +88,7 @@
   "audusd": {
     "value": 0.71,
     "change": 0,
-    "changePercent": -0.01,
+    "changePercent": 0.3,
     "previousClose": 0.71,
     "asOf": "2026-04-13",
     "history": [
@@ -187,33 +187,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4754.7,
-      "change": -297.8,
-      "changePercent": -5.89
+      "price": 4766.6,
+      "change": -285.9,
+      "changePercent": -5.66
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.19,
-      "change": -5.73,
-      "changePercent": -7.08
+      "price": 75.67,
+      "change": -5.24,
+      "changePercent": -6.48
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 101.55,
-      "change": 2.84,
-      "changePercent": 2.88
+      "price": 97.87,
+      "change": -0.84,
+      "changePercent": -0.85
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.98,
-      "change": 0.26,
-      "changePercent": 4.57
+      "price": 6.01,
+      "change": 0.3,
+      "changePercent": 5.23
     },
     {
       "name": "BHP Group",
@@ -822,6 +822,13 @@
   ],
   "news": [
     {
+      "title": "Hollywood wants to turn this viral meme into a juggernaut. Fans aren’t happy",
+      "link": "https://www.smh.com.au/business/companies/hollywood-wants-to-turn-this-viral-meme-into-a-juggernaut-fans-aren-t-happy-20260413-p5znd2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Could Skibidi Toilet, the bizarre animated YouTube series that gets more views than the NBA on the site, become the next Transformers?",
+      "pubDate": "Tue, 14 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Who says money can’t buy happiness? Meet the unabashedly happy Mrs Sánchez Bezos",
       "link": "https://www.smh.com.au/business/companies/who-says-money-can-t-buy-happiness-meet-the-unabashedly-happy-mrs-s-nchez-bezos-20260413-p5znbh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "As half of an unfathomably powerful couple, Amazon founder Jeff Bezos’ wife, Lauren Sánchez Bezos, seems to have influenced the uber-rich to stop apologising, and start enjoying themselves.",
@@ -897,13 +904,6 @@
       "snippet": "Indications shoppers are starting to hoard food items are beginning to show, alongside a decline in house prices and exploding demand for EVs.",
       "pubDate": "Mon, 13 Apr 2026 15:41:25 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Borlase leads host of Opals stars to sign new WNBA free agency deals",
-      "link": "https://www.abc.net.au/news/2026-04-13/basketball-borlase-magbegor-opals-stars-sign-new-wnba-deals/106558812",
-      "snippet": "",
-      "pubDate": "Mon, 13 Apr 2026 04:19:31 +0000",
-      "source": "ABC News"
     }
   ]
 }
