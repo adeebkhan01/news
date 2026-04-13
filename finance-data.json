@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-13T08:25:43.734Z",
+  "fetchedAt": "2026-04-13T10:58:49.182Z",
   "asx200": {
     "value": 8926,
     "change": 308.9,
@@ -90,9 +90,9 @@
     ]
   },
   "audusd": {
-    "value": 0.71,
+    "value": 0.7,
     "change": 0,
-    "changePercent": -0.28,
+    "changePercent": -0.37,
     "previousClose": 0.71,
     "asOf": "2026-04-13",
     "history": [
@@ -182,7 +182,7 @@
       },
       {
         "date": "2026-04-13",
-        "close": 0.71
+        "close": 0.7
       }
     ]
   },
@@ -191,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4753.7,
-      "change": -298.8,
-      "changePercent": -5.91
+      "price": 4743,
+      "change": -309.5,
+      "changePercent": -6.13
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 74.76,
-      "change": -6.16,
-      "changePercent": -7.61
+      "price": 74.48,
+      "change": -6.43,
+      "changePercent": -7.95
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 104.09,
-      "change": 5.38,
-      "changePercent": 5.45
+      "price": 103.89,
+      "change": 5.18,
+      "changePercent": 5.25
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.86,
-      "change": 0.15,
-      "changePercent": 2.59
+      "price": 5.85,
+      "change": 0.14,
+      "changePercent": 2.43
     },
     {
       "name": "BHP Group",
@@ -826,6 +826,20 @@
   ],
   "news": [
     {
+      "title": "Who says money can’t buy happiness? Meet the unabashedly happy Mrs Sánchez Bezos",
+      "link": "https://www.smh.com.au/business/companies/who-says-money-can-t-buy-happiness-meet-the-unabashedly-happy-mrs-s-nchez-bezos-20260413-p5znbh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "As half of an unfathomably powerful couple, Amazon founder Jeff Bezos’ wife, Lauren Sánchez Bezos, seems to have influenced the uber-rich to stop apologising, and start enjoying themselves.",
+      "pubDate": "Mon, 13 Apr 2026 19:34:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Ultra-cheap Ozempic is coming. That’s a mixed blessing for Australians",
+      "link": "https://www.smh.com.au/business/companies/ultra-cheap-ozempic-is-coming-that-s-a-mixed-blessing-for-australians-20260408-p5zmb1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Generic versions of the drug can cost as little as $20 a month overseas, in a glimpse of the future for Australia.",
+      "pubDate": "Mon, 13 Apr 2026 19:30:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "ASX falls as tech stocks decline; Energy stocks rise, A2 tanks",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-open-higher-despite-failed-iran-talks-aussie-dollar-falls-20260413-p5znbm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The Australian sharemarket  closed lower after Donald Trump’s vow to blockade the Strait of Hormuz, which sent oil prices soaring and reignited fears for the global economy.",
@@ -894,20 +908,6 @@
       "snippet": "",
       "pubDate": "Mon, 13 Apr 2026 04:19:31 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Record crowd for AFL Gather Round as SA premier warns of 'lite' interstate version",
-      "link": "https://www.abc.net.au/news/2026-04-13/record-crowd-for-afl-gather-round/106557582",
-      "snippet": "",
-      "pubDate": "Mon, 13 Apr 2026 04:09:26 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Eclipse confirms broad rare earths system at surface in Greenland",
-      "link": "https://www.smh.com.au/business/companies/eclipse-confirms-broad-rare-earths-system-at-surface-in-greenland-20260413-p5zni0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Eclipse Metals has hit broad rare earths zones in all five drill holes at its Greenland project, with peak assays up to 2.84% TREO confirming a major mineralised system.",
-      "pubDate": "Mon, 13 Apr 2026 13:48:44 +1000",
-      "source": "SMH Business"
     }
   ]
 }
