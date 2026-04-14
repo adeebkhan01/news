@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-14T19:46:12.989Z",
+  "fetchedAt": "2026-04-14T22:08:02.653Z",
   "asx200": {
     "value": 8970.8,
     "change": 353.7,
@@ -177,6 +177,10 @@
         "close": 0.7
       },
       {
+        "date": "2026-04-13",
+        "close": 0.71
+      },
+      {
         "date": "2026-04-14",
         "close": 0.71
       }
@@ -187,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4863.5,
-      "change": -189,
-      "changePercent": -3.74
+      "price": 4864.5,
+      "change": -188,
+      "changePercent": -3.72
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 79.53,
-      "change": -1.38,
-      "changePercent": -1.71
+      "price": 79.63,
+      "change": -1.29,
+      "changePercent": -1.59
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 91.88,
-      "change": -6.83,
-      "changePercent": -6.92
+      "price": 92.07,
+      "change": -6.64,
+      "changePercent": -6.73
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.09,
+      "price": 6.08,
       "change": 0.37,
-      "changePercent": 6.49
+      "changePercent": 6.42
     },
     {
       "name": "BHP Group",
@@ -822,6 +826,27 @@
   ],
   "news": [
     {
+      "title": "NFL reporter resigns days after photos with Patriots coach are published",
+      "link": "https://www.abc.net.au/news/2026-04-15/nfl-reporter-dianna-russini-resigns-after-mike-vrabel-photos/106565734",
+      "snippet": "",
+      "pubDate": "Tue, 14 Apr 2026 21:22:57 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Cameron Green suffers IPL nightmare with bat and ball",
+      "link": "https://www.abc.net.au/news/2026-04-15/green-suffers-ipl-nightmare-with-bat-and-ball/106565678",
+      "snippet": "",
+      "pubDate": "Tue, 14 Apr 2026 20:52:36 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX to rally; Wall Street edges near all-time high; oil eases",
+      "link": "https://www.smh.com.au/business/markets/asx-to-rally-wall-street-edges-near-all-time-high-oil-eases-20260415-p5zny6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The Australian sharemarket is expected to rise on opening and follow global markets higher.",
+      "pubDate": "Wed, 15 Apr 2026 05:56:15 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "$200 a barrel: The oil contracts that show how fuel crisis could worsen",
       "link": "https://www.smh.com.au/business/markets/200-a-barrel-the-oil-contracts-that-show-how-fuel-crisis-could-worsen-20260414-p5znos.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Asian refineries are paying surging premiums to get hold of immediately available oil, driving up the cost of petrol and diesel they will deliver to Australia.",
@@ -883,27 +908,6 @@
       "snippet": "",
       "pubDate": "Tue, 14 Apr 2026 05:08:14 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Higher fares, fewer flights: Qantas goes into damage control",
-      "link": "https://www.smh.com.au/business/companies/higher-fares-fewer-flights-qantas-goes-into-damage-control-20260414-p5znrc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The airline is pulling every operational and pricing lever to blunt the hit on its profits resulting from the Iran war, which has blown out its jet fuel costs by hundreds of millions of dollars.",
-      "pubDate": "Tue, 14 Apr 2026 14:57:31 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Hastings lines up African feedstock for Thai rare earths plant",
-      "link": "https://www.smh.com.au/business/companies/hastings-lines-up-african-feedstock-for-thai-rare-earths-plant-20260414-p5znud.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Hastings Technology Metals has stitched up an African monazite supply for its new Thai hydromet plant, aiming to fast-track rare earths production and cash flow by year’s end.",
-      "pubDate": "Tue, 14 Apr 2026 14:48:11 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Sydney community radio station 2SER could shutter in July as funds run out",
-      "link": "https://www.smh.com.au/business/companies/sydney-community-radio-station-2ser-could-shutter-in-july-as-funds-run-out-20260414-p5znsd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The radio broadcaster could close its doors after more than 45 years, having failed to secure rescue funds after one of its two main financial backers walked away.",
-      "pubDate": "Tue, 14 Apr 2026 14:30:55 +1000",
-      "source": "SMH Business"
     }
   ]
 }
