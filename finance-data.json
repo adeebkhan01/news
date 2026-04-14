@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-14T16:38:03.980Z",
+  "fetchedAt": "2026-04-14T19:46:12.989Z",
   "asx200": {
     "value": 8970.8,
     "change": 353.7,
@@ -88,7 +88,7 @@
   "audusd": {
     "value": 0.71,
     "change": 0.01,
-    "changePercent": 0.78,
+    "changePercent": 0.73,
     "previousClose": 0.71,
     "asOf": "2026-04-14",
     "history": [
@@ -187,33 +187,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4841.3,
-      "change": -211.2,
-      "changePercent": -4.18
+      "price": 4863.5,
+      "change": -189,
+      "changePercent": -3.74
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 79.66,
-      "change": -1.25,
-      "changePercent": -1.55
+      "price": 79.53,
+      "change": -1.38,
+      "changePercent": -1.71
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 92.12,
-      "change": -6.59,
-      "changePercent": -6.68
+      "price": 91.88,
+      "change": -6.83,
+      "changePercent": -6.92
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 6.09,
-      "change": 0.38,
-      "changePercent": 6.56
+      "change": 0.37,
+      "changePercent": 6.49
     },
     {
       "name": "BHP Group",
@@ -822,6 +822,13 @@
   ],
   "news": [
     {
+      "title": "$200 a barrel: The oil contracts that show how fuel crisis could worsen",
+      "link": "https://www.smh.com.au/business/markets/200-a-barrel-the-oil-contracts-that-show-how-fuel-crisis-could-worsen-20260414-p5znos.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Asian refineries are paying surging premiums to get hold of immediately available oil, driving up the cost of petrol and diesel they will deliver to Australia.",
+      "pubDate": "Wed, 15 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "The tech jobs bust is real. Don’t blame AI (yet)",
       "link": "https://www.smh.com.au/business/the-economy/the-tech-jobs-bust-is-real-don-t-blame-ai-yet-20260414-p5znse.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Worries about a tech jobs AI-mageddon spread far beyond Silicon Valley. But what’s really behind the lay-off in the technology sector?",
@@ -897,13 +904,6 @@
       "snippet": "The radio broadcaster could close its doors after more than 45 years, having failed to secure rescue funds after one of its two main financial backers walked away.",
       "pubDate": "Tue, 14 Apr 2026 14:30:55 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Tornado forces Wallaroos to take refuge inside US hotel",
-      "link": "https://www.abc.net.au/news/2026-04-14/rugby-union-wallaroos-stuck-inside-hotel-tornado/106563346",
-      "snippet": "",
-      "pubDate": "Tue, 14 Apr 2026 04:04:23 +0000",
-      "source": "ABC News"
     }
   ]
 }
