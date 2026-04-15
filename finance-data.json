@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-15T16:34:13.457Z",
+  "fetchedAt": "2026-04-15T19:47:07.517Z",
   "asx200": {
     "value": 8978.7,
     "change": 361.6,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.01,
-    "changePercent": 1.3,
+    "changePercent": 1.4,
     "previousClose": 0.71,
     "asOf": "2026-04-15",
     "history": [
@@ -195,33 +195,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4832.7,
-      "change": -161.3,
-      "changePercent": -3.23
+      "price": 4822.2,
+      "change": -171.8,
+      "changePercent": -3.44
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 79.69,
-      "change": -0.58,
-      "changePercent": -0.72
+      "price": 79.58,
+      "change": -0.68,
+      "changePercent": -0.85
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 92.07,
-      "change": -1.43,
-      "changePercent": -1.53
+      "price": 91.02,
+      "change": -2.48,
+      "changePercent": -2.65
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 6.1,
-      "change": 0.3,
-      "changePercent": 5.26
+      "change": 0.31,
+      "changePercent": 5.28
     },
     {
       "name": "BHP Group",
@@ -830,6 +830,34 @@
   ],
   "news": [
     {
+      "title": "ASX set for flat open, Wall Street eyes record as rally continues; $A stronger",
+      "link": "https://www.smh.com.au/business/markets/asx-set-for-flat-open-wall-street-eyes-record-as-rally-continues-a-stronger-20260416-p5zoa0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "US stocks are flirting with a record following their big rally the last two weeks on hopes that the global economy can avoid a worst-case scenario because of the US-Iran war.",
+      "pubDate": "Thu, 16 Apr 2026 05:22:24 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Navigating turbulent times, airlines look to apps to keep travellers happy",
+      "link": "https://www.smh.com.au/business/companies/navigating-turbulent-times-airlines-look-to-apps-to-keep-travellers-happy-20260330-p5zjpy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Airlines now use AI-powered tools to explain flight delays and offer automatic rebooking for cancellations. Apps are becoming an increasingly important feature in improving their customer service.",
+      "pubDate": "Thu, 16 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Another interest rate rise will tip Australia into a recession we don’t have to have",
+      "link": "https://www.smh.com.au/business/the-economy/another-interest-rate-rise-will-tip-australia-into-a-recession-we-don-t-have-to-have-20260415-p5zo0r.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Higher fuel prices mean that households who have little choice about how much fuel they use have less to spend on other goods and services, which reduces demand in much the same way as higher interest rates do.",
+      "pubDate": "Thu, 16 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "‘Illogical and arbitrary’: Uber’s automatic sackings regime blasted",
+      "link": "https://www.smh.com.au/business/companies/illogical-and-arbitrary-uber-s-automatic-sackings-regime-blasted-20260415-p5zo4o.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Uber’s fully automated complaints-handling system has been scolded as unlawful by the Fair Work Commission as it orders yet another driver’s reinstatement.",
+      "pubDate": "Thu, 16 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Gina Rinehart’s son offered an olive branch. He got fighting words in return",
       "link": "https://www.smh.com.au/business/companies/gina-rinehart-s-epic-court-battle-exposes-rifts-in-billionaire-family-20260415-p5zo0o.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "All parties have claimed victory in a court battle over Gina Rinehart’s mining billions. But hopes for a thawing of relations within the family remain distant.",
@@ -877,34 +905,6 @@
       "snippet": "",
       "pubDate": "Wed, 15 Apr 2026 05:58:00 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Larvotto closes in on first antimony ingots at NSW mine",
-      "link": "https://www.smh.com.au/business/companies/larvotto-closes-in-on-first-antimony-ingots-at-nsw-mine-20260415-p5zo6k.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Larvotto Resources is on track for first antimony ingots by mid-year at its NSW antimony-gold mine, just as Canberra legislates a national stockpile for the critical mineral.",
-      "pubDate": "Wed, 15 Apr 2026 15:03:26 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "TMK throws doors open to partners for Mongolian gas project",
-      "link": "https://www.smh.com.au/business/companies/tmk-throws-doors-open-to-partners-for-mongolian-gas-project-20260415-p5zo4x.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "TMK Energy launched a farm-out for its Mongolian gas project as its pilot wells delivered results, desorption was achieved and a 1.2Tcf resource edges closer to development.",
-      "pubDate": "Wed, 15 Apr 2026 13:12:46 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "When the war is over, the world won’t be the same",
-      "link": "https://www.smh.com.au/business/the-economy/when-the-war-is-over-the-world-won-t-be-the-same-20260415-p5zo02.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The International Monetary Fund has produced gloomy scenarios for the economic impact of the war in the Middle East. The long-term outlook is worse.",
-      "pubDate": "Wed, 15 Apr 2026 12:08:38 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Amazon’s $16.3 billion deal amps up rivalry with Elon Musk",
-      "link": "https://www.smh.com.au/business/companies/amazon-s-16-3-billion-deal-amps-up-rivalry-with-elon-musk-20260415-p5zo18.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Jeff Bezos’ Amazon is buying satellite operator Globalstar in a landmark deal to step up competition with SpaceX billionaire Elon Musk in the satellite communications market.",
-      "pubDate": "Wed, 15 Apr 2026 11:49:31 +1000",
-      "source": "SMH Business"
     },
     {
       "title": "Moana Pasifika to leave Super Rugby at end of season",
