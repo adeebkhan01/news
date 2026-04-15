@@ -1,126 +1,363 @@
 {
-  "fetchedAt": "2026-04-15T14:08:27.602Z",
-  "asx200": null,
-  "audusd": null,
-  "commodities": [],
+  "fetchedAt": "2026-04-15T16:34:13.457Z",
+  "asx200": {
+    "value": 8978.7,
+    "change": 361.6,
+    "changePercent": 4.2,
+    "previousClose": 8617.1,
+    "asOf": "2026-04-15",
+    "history": [
+      {
+        "date": "2026-03-15",
+        "close": 8583.4
+      },
+      {
+        "date": "2026-03-16",
+        "close": 8614.3
+      },
+      {
+        "date": "2026-03-17",
+        "close": 8640.6
+      },
+      {
+        "date": "2026-03-18",
+        "close": 8497.8
+      },
+      {
+        "date": "2026-03-19",
+        "close": 8428.4
+      },
+      {
+        "date": "2026-03-22",
+        "close": 8365.9
+      },
+      {
+        "date": "2026-03-23",
+        "close": 8379.4
+      },
+      {
+        "date": "2026-03-24",
+        "close": 8557.6
+      },
+      {
+        "date": "2026-03-25",
+        "close": 8525.7
+      },
+      {
+        "date": "2026-03-26",
+        "close": 8516.3
+      },
+      {
+        "date": "2026-03-29",
+        "close": 8461
+      },
+      {
+        "date": "2026-03-30",
+        "close": 8481.8
+      },
+      {
+        "date": "2026-03-31",
+        "close": 8671.8
+      },
+      {
+        "date": "2026-04-01",
+        "close": 8579.5
+      },
+      {
+        "date": "2026-04-07",
+        "close": 8728.8
+      },
+      {
+        "date": "2026-04-08",
+        "close": 8951.8
+      },
+      {
+        "date": "2026-04-09",
+        "close": 8973.2
+      },
+      {
+        "date": "2026-04-10",
+        "close": 8960.6
+      },
+      {
+        "date": "2026-04-13",
+        "close": 8926
+      },
+      {
+        "date": "2026-04-14",
+        "close": 8970.8
+      }
+    ]
+  },
+  "audusd": {
+    "value": 0.72,
+    "change": 0.01,
+    "changePercent": 1.3,
+    "previousClose": 0.71,
+    "asOf": "2026-04-15",
+    "history": [
+      {
+        "date": "2026-03-16",
+        "close": 0.7
+      },
+      {
+        "date": "2026-03-17",
+        "close": 0.71
+      },
+      {
+        "date": "2026-03-18",
+        "close": 0.71
+      },
+      {
+        "date": "2026-03-19",
+        "close": 0.7
+      },
+      {
+        "date": "2026-03-20",
+        "close": 0.71
+      },
+      {
+        "date": "2026-03-23",
+        "close": 0.7
+      },
+      {
+        "date": "2026-03-24",
+        "close": 0.7
+      },
+      {
+        "date": "2026-03-25",
+        "close": 0.7
+      },
+      {
+        "date": "2026-03-26",
+        "close": 0.69
+      },
+      {
+        "date": "2026-03-27",
+        "close": 0.69
+      },
+      {
+        "date": "2026-03-29",
+        "close": 0.69
+      },
+      {
+        "date": "2026-03-30",
+        "close": 0.68
+      },
+      {
+        "date": "2026-03-31",
+        "close": 0.69
+      },
+      {
+        "date": "2026-04-01",
+        "close": 0.69
+      },
+      {
+        "date": "2026-04-02",
+        "close": 0.69
+      },
+      {
+        "date": "2026-04-05",
+        "close": 0.69
+      },
+      {
+        "date": "2026-04-06",
+        "close": 0.69
+      },
+      {
+        "date": "2026-04-07",
+        "close": 0.71
+      },
+      {
+        "date": "2026-04-08",
+        "close": 0.7
+      },
+      {
+        "date": "2026-04-09",
+        "close": 0.71
+      },
+      {
+        "date": "2026-04-12",
+        "close": 0.7
+      },
+      {
+        "date": "2026-04-13",
+        "close": 0.71
+      },
+      {
+        "date": "2026-04-15",
+        "close": 0.72
+      }
+    ]
+  },
+  "commodities": [
+    {
+      "name": "Gold",
+      "icon": "🥇",
+      "iconBg": "#fef9ee",
+      "price": 4832.7,
+      "change": -161.3,
+      "changePercent": -3.23
+    },
+    {
+      "name": "Silver",
+      "icon": "🥈",
+      "iconBg": "#f8f9fa",
+      "price": 79.69,
+      "change": -0.58,
+      "changePercent": -0.72
+    },
+    {
+      "name": "Crude Oil (WTI)",
+      "icon": "🛢️",
+      "iconBg": "#f3f0f9",
+      "price": 92.07,
+      "change": -1.43,
+      "changePercent": -1.53
+    },
+    {
+      "name": "Copper",
+      "icon": "🔶",
+      "iconBg": "#fef0e6",
+      "price": 6.1,
+      "change": 0.3,
+      "changePercent": 5.26
+    },
+    {
+      "name": "BHP Group",
+      "icon": "⛏️",
+      "iconBg": "#e6f2ec",
+      "price": 56.11,
+      "change": 6.31,
+      "changePercent": 12.67
+    },
+    {
+      "name": "Rio Tinto",
+      "icon": "🏗️",
+      "iconBg": "#eff6ff",
+      "price": 173.82,
+      "change": 15.93,
+      "changePercent": 10.09
+    }
+  ],
   "sectors": [
     {
       "name": "Financials",
-      "changePercent": 0,
+      "changePercent": -0.77,
       "stocks": [
         {
           "name": "CBA",
-          "price": 0,
-          "changePercent": 0
+          "price": 183.19,
+          "changePercent": -0.18
         },
         {
           "name": "WBC",
-          "price": 0,
-          "changePercent": 0
+          "price": 40.69,
+          "changePercent": -1.9
         },
         {
           "name": "ANZ",
-          "price": 0,
-          "changePercent": 0
+          "price": 38.22,
+          "changePercent": -0.62
         },
         {
           "name": "NAB",
-          "price": 0,
-          "changePercent": 0
+          "price": 44.52,
+          "changePercent": -0.38
         }
       ]
     },
     {
       "name": "Materials",
-      "changePercent": 0,
+      "changePercent": 0.18,
       "stocks": [
         {
           "name": "BHP",
-          "price": 0,
-          "changePercent": 0
+          "price": 56.11,
+          "changePercent": 0.02
         },
         {
           "name": "RIO",
-          "price": 0,
-          "changePercent": 0
+          "price": 173.82,
+          "changePercent": -0.27
         },
         {
           "name": "FMG",
-          "price": 0,
-          "changePercent": 0
+          "price": 20.77,
+          "changePercent": 0.83
         },
         {
           "name": "MIN",
-          "price": 0,
-          "changePercent": 0
+          "price": 58.32,
+          "changePercent": 0.15
         }
       ]
     },
     {
       "name": "Health Care",
-      "changePercent": 0,
+      "changePercent": 0.65,
       "stocks": [
         {
           "name": "CSL",
-          "price": 0,
-          "changePercent": 0
+          "price": 139.44,
+          "changePercent": 0.98
         },
         {
           "name": "COH",
-          "price": 0,
-          "changePercent": 0
+          "price": 172,
+          "changePercent": -1.75
         },
         {
           "name": "RMD",
-          "price": 0,
-          "changePercent": 0
+          "price": 32.7,
+          "changePercent": 1.52
         },
         {
           "name": "SHL",
-          "price": 0,
-          "changePercent": 0
+          "price": 20.46,
+          "changePercent": 1.84
         }
       ]
     },
     {
       "name": "Consumer Discretionary",
-      "changePercent": 0,
+      "changePercent": 0.7,
       "stocks": [
         {
           "name": "WES",
-          "price": 0,
-          "changePercent": 0
+          "price": 74.38,
+          "changePercent": -0.89
         },
         {
           "name": "HVN",
-          "price": 0,
-          "changePercent": 0
+          "price": 4.64,
+          "changePercent": 0.65
         },
         {
           "name": "JBH",
-          "price": 0,
-          "changePercent": 0
+          "price": 74.34,
+          "changePercent": 1.13
         },
         {
           "name": "ALL",
-          "price": 0,
-          "changePercent": 0
+          "price": 47.68,
+          "changePercent": 1.92
         }
       ]
     },
     {
       "name": "Industrials",
-      "changePercent": 0,
+      "changePercent": 0.18,
       "stocks": [
         {
           "name": "TCL",
-          "price": 0,
-          "changePercent": 0
+          "price": 13.54,
+          "changePercent": 0.3
         },
         {
           "name": "BXB",
-          "price": 0,
-          "changePercent": 0
+          "price": 22.25,
+          "changePercent": -0.8
         },
         {
           "name": "SYD",
@@ -129,164 +366,164 @@
         },
         {
           "name": "QAN",
-          "price": 0,
-          "changePercent": 0
+          "price": 9.09,
+          "changePercent": 1.22
         }
       ]
     },
     {
       "name": "Real Estate",
-      "changePercent": 0,
+      "changePercent": 0.37,
       "stocks": [
         {
           "name": "GMG",
-          "price": 0,
-          "changePercent": 0
+          "price": 28.4,
+          "changePercent": 1.25
         },
         {
           "name": "SGP",
-          "price": 0,
-          "changePercent": 0
+          "price": 4.22,
+          "changePercent": -0.71
         },
         {
           "name": "GPT",
-          "price": 0,
-          "changePercent": 0
+          "price": 4.63,
+          "changePercent": 0.65
         },
         {
           "name": "MGR",
-          "price": 0,
-          "changePercent": 0
+          "price": 1.75,
+          "changePercent": 0.29
         }
       ]
     },
     {
       "name": "Consumer Staples",
-      "changePercent": 0,
+      "changePercent": -0.46,
       "stocks": [
         {
           "name": "WOW",
-          "price": 0,
-          "changePercent": 0
+          "price": 36.75,
+          "changePercent": -0.86
         },
         {
           "name": "COL",
-          "price": 0,
-          "changePercent": 0
+          "price": 22.66,
+          "changePercent": -0.48
         },
         {
           "name": "TWE",
-          "price": 0,
-          "changePercent": 0
+          "price": 3.91,
+          "changePercent": 0.51
         },
         {
           "name": "A2M",
-          "price": 0,
-          "changePercent": 0
+          "price": 7.71,
+          "changePercent": -1.03
         }
       ]
     },
     {
       "name": "Energy",
-      "changePercent": 0,
+      "changePercent": -1.67,
       "stocks": [
         {
           "name": "WDS",
-          "price": 0,
-          "changePercent": 0
+          "price": 33.16,
+          "changePercent": -2.36
         },
         {
           "name": "STO",
-          "price": 0,
-          "changePercent": 0
+          "price": 7.73,
+          "changePercent": -2.89
         },
         {
           "name": "ORG",
-          "price": 0,
-          "changePercent": 0
+          "price": 12.19,
+          "changePercent": -1.3
         },
         {
           "name": "WHC",
-          "price": 0,
-          "changePercent": 0
+          "price": 8.5,
+          "changePercent": -0.12
         }
       ]
     },
     {
       "name": "Information Technology",
-      "changePercent": 0,
+      "changePercent": 1.41,
       "stocks": [
         {
           "name": "XRO",
-          "price": 0,
-          "changePercent": 0
+          "price": 75.1,
+          "changePercent": 2.62
         },
         {
           "name": "WTC",
-          "price": 0,
-          "changePercent": 0
+          "price": 39.96,
+          "changePercent": 3.63
         },
         {
           "name": "CPU",
-          "price": 0,
-          "changePercent": 0
+          "price": 29.82,
+          "changePercent": 0.44
         },
         {
           "name": "APX",
-          "price": 0,
-          "changePercent": 0
+          "price": 1.4,
+          "changePercent": -1.06
         }
       ]
     },
     {
       "name": "Communication Services",
-      "changePercent": 0,
+      "changePercent": -0.06,
       "stocks": [
         {
           "name": "TLS",
-          "price": 0,
-          "changePercent": 0
+          "price": 5.39,
+          "changePercent": -0.37
         },
         {
           "name": "REA",
-          "price": 0,
-          "changePercent": 0
+          "price": 161.83,
+          "changePercent": 0.2
         },
         {
           "name": "CAR",
-          "price": 0,
-          "changePercent": 0
+          "price": 24.03,
+          "changePercent": 0.67
         },
         {
           "name": "NWS",
-          "price": 0,
-          "changePercent": 0
+          "price": 40.41,
+          "changePercent": -0.74
         }
       ]
     },
     {
       "name": "Utilities",
-      "changePercent": 0,
+      "changePercent": -1.18,
       "stocks": [
         {
           "name": "AGL",
-          "price": 0,
-          "changePercent": 0
+          "price": 9.58,
+          "changePercent": -1.74
         },
         {
           "name": "APA",
-          "price": 0,
-          "changePercent": 0
+          "price": 9.77,
+          "changePercent": -1.91
         },
         {
           "name": "ORG",
-          "price": 0,
-          "changePercent": 0
+          "price": 12.19,
+          "changePercent": -1.3
         },
         {
           "name": "MEZ",
-          "price": 0,
-          "changePercent": 0
+          "price": 4.62,
+          "changePercent": 0.22
         }
       ]
     }
