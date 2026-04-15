@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-15T19:47:07.517Z",
+  "fetchedAt": "2026-04-15T22:07:02.713Z",
   "asx200": {
     "value": 8978.7,
     "change": 361.6,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.01,
-    "changePercent": 1.4,
+    "changePercent": 1.39,
     "previousClose": 0.71,
     "asOf": "2026-04-15",
     "history": [
@@ -185,6 +185,10 @@
         "close": 0.71
       },
       {
+        "date": "2026-04-14",
+        "close": 0.71
+      },
+      {
         "date": "2026-04-15",
         "close": 0.72
       }
@@ -195,33 +199,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4822.2,
-      "change": -171.8,
-      "changePercent": -3.44
+      "price": 4813.9,
+      "change": -180.1,
+      "changePercent": -3.61
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 79.58,
-      "change": -0.68,
-      "changePercent": -0.85
+      "price": 79.11,
+      "change": -1.15,
+      "changePercent": -1.44
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 91.02,
-      "change": -2.48,
-      "changePercent": -2.65
+      "price": 91.39,
+      "change": -2.11,
+      "changePercent": -2.26
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.1,
-      "change": 0.31,
-      "changePercent": 5.28
+      "price": 6.08,
+      "change": 0.29,
+      "changePercent": 4.96
     },
     {
       "name": "BHP Group",
@@ -830,11 +834,53 @@
   ],
   "news": [
     {
-      "title": "ASX set for flat open, Wall Street eyes record as rally continues; $A stronger",
+      "title": "Explosions, toxic smoke as massive fire breaks out at Geelong refinery",
+      "link": "https://www.smh.com.au/business/companies/significant-fire-breaks-out-at-viva-energy-s-refinery-in-geelong-20260416-p5zoa4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Flames up to 60 metres in height are engulfing the Corio refinery, which supplies more than 50 per cent of Victoria’s and 10 per cent of Australia’s fuel.",
+      "pubDate": "Thu, 16 Apr 2026 08:02:15 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Arsenal scrap through to semis, Munich win thriller over Real Madrid",
+      "link": "https://www.abc.net.au/news/2026-04-16/uefa-champions-league-arsenal-sporting-bayern-munich-real-madrid/106570008",
+      "snippet": "",
+      "pubDate": "Wed, 15 Apr 2026 21:49:57 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Phillip Island motoring festival proposed to fill MotoGP void",
+      "link": "https://www.abc.net.au/news/2026-04-16/philliip-island-motogp-replacement-proposal-festival/106445370",
+      "snippet": "",
+      "pubDate": "Wed, 15 Apr 2026 21:31:05 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "De Minaur suffers shock loss as Alcaraz withdraws from Barcelona Open",
+      "link": "https://www.abc.net.au/news/2026-04-16/alex-de-minaur-suffers-shock-loss-carlos-alcaraz-out-barcelona/106569846",
+      "snippet": "",
+      "pubDate": "Wed, 15 Apr 2026 20:56:34 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to dip, Wall Street hits record; $A stronger",
       "link": "https://www.smh.com.au/business/markets/asx-set-for-flat-open-wall-street-eyes-record-as-rally-continues-a-stronger-20260416-p5zoa0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "US stocks are flirting with a record following their big rally the last two weeks on hopes that the global economy can avoid a worst-case scenario because of the US-Iran war.",
-      "pubDate": "Thu, 16 Apr 2026 05:22:24 +1000",
+      "pubDate": "Thu, 16 Apr 2026 06:45:16 +1000",
       "source": "SMH Business"
+    },
+    {
+      "title": "Kerr scores landmark goal as Matildas win FIFA Series",
+      "link": "https://www.abc.net.au/news/2026-04-16/matildas-defeat-kenya-2-0-in-fifa-series/106569844",
+      "snippet": "",
+      "pubDate": "Wed, 15 Apr 2026 20:33:59 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Henderson 'content' knowing her epic reign will not last forever",
+      "link": "https://www.abc.net.au/news/2026-04-16/rebecca-henderson-cairns-rainforest-rumble-mountain-bike/106565938",
+      "snippet": "",
+      "pubDate": "Wed, 15 Apr 2026 20:12:46 +0000",
+      "source": "ABC News"
     },
     {
       "title": "Navigating turbulent times, airlines look to apps to keep travellers happy",
@@ -870,48 +916,6 @@
       "snippet": "A peace deal would have to be on terms closer to Iran’s demands than to Trump’s surrender ultimatum. We are a long way from that awful moment of realism in the Oval Office.",
       "pubDate": "Wed, 15 Apr 2026 18:00:00 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Workplace safety regulator investigating two suicides among NAB staff",
-      "link": "https://www.smh.com.au/business/workplace/workplace-safety-regulator-investigating-two-suicides-among-nab-staff-20260415-p5zo7c.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The federal workplace health and safety authority is investigating the circumstances surrounding two NAB employees who died by suicide just weeks apart.",
-      "pubDate": "Wed, 15 Apr 2026 17:26:52 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX edges higher as Virgin soars weathering the fuel shock, oil stocks fall",
-      "link": "https://www.smh.com.au/business/markets/asx-to-rally-wall-street-edges-near-all-time-high-oil-eases-20260415-p5zny6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket notched up another small gain on Wednesday amid optimism the US and Iran will meet for a second round of talks to end their war.",
-      "pubDate": "Wed, 15 Apr 2026 17:14:19 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Looksmaxxer Clavicular hospitalised with suspected overdose in Miami",
-      "link": "https://www.smh.com.au/business/companies/looksmaxxer-clavicular-hospitalised-with-suspected-overdose-in-miami-20260415-p5zo5z.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The 20-year-old was filmed rubbing his eyes and holding his hands behind his head during a livestream alongside fellow looksmaxxer “Androgenic”, who is Australian.",
-      "pubDate": "Wed, 15 Apr 2026 16:24:54 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "One group won the Rinehart v Wright case, and it wasn’t the brawling billionaires",
-      "link": "https://www.smh.com.au/business/companies/one-group-won-the-rinehart-v-wright-case-and-it-wasn-t-the-brawling-billionaire-families-20260415-p5zo6z.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "But much like the generational brawl between the extended billionaire iron ore Wright and Rinehart families, the legal verdict was as messy as it was mixed.",
-      "pubDate": "Wed, 15 Apr 2026 15:58:17 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Power confirms appeal after reasons released for Butters AFL Tribunal decision",
-      "link": "https://www.abc.net.au/news/2026-04-15/reasons-released-for-butters-tribunal-decision/106566018",
-      "snippet": "",
-      "pubDate": "Wed, 15 Apr 2026 05:58:00 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Moana Pasifika to leave Super Rugby at end of season",
-      "link": "https://www.abc.net.au/news/2026-04-15/moana-pasifika-confirm-super-rugby-exit/106566478",
-      "snippet": "",
-      "pubDate": "Wed, 15 Apr 2026 01:21:55 +0000",
-      "source": "ABC News"
     }
   ]
 }
