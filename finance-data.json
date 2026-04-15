@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-15T08:10:17.937Z",
+  "fetchedAt": "2026-04-15T10:40:02.790Z",
   "asx200": {
     "value": 8978.7,
     "change": 361.6,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.71,
     "change": 0.01,
-    "changePercent": 0.98,
+    "changePercent": 0.81,
     "previousClose": 0.71,
     "asOf": "2026-04-15",
     "history": [
@@ -199,33 +199,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4833.2,
-      "change": -160.8,
-      "changePercent": -3.22
+      "price": 4818.1,
+      "change": -175.9,
+      "changePercent": -3.52
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 79.32,
-      "change": -0.95,
-      "changePercent": -1.18
+      "price": 78.67,
+      "change": -1.6,
+      "changePercent": -1.99
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 90.79,
-      "change": -2.71,
-      "changePercent": -2.9
+      "price": 92.98,
+      "change": -0.52,
+      "changePercent": -0.56
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.11,
-      "change": 0.32,
-      "changePercent": 5.44
+      "price": 6.07,
+      "change": 0.28,
+      "changePercent": 4.86
     },
     {
       "name": "BHP Group",
@@ -834,6 +834,13 @@
   ],
   "news": [
     {
+      "title": "Gina Rinehart’s son offered an olive branch. He got fighting words in return",
+      "link": "https://www.smh.com.au/business/companies/gina-rinehart-s-epic-court-battle-exposes-rifts-in-billionaire-family-20260415-p5zo0o.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "All parties have claimed victory in a court battle over Gina Rinehart’s mining billions. But hopes for a thawing of relations within the family remain distant.",
+      "pubDate": "Wed, 15 Apr 2026 18:14:56 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Iran holds the trump card in this energy crisis",
       "link": "https://www.smh.com.au/business/markets/iran-holds-the-trump-card-in-this-energy-crisis-20260415-p5zo13.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "A peace deal would have to be on terms closer to Iran’s demands than to Trump’s surrender ultimatum. We are a long way from that awful moment of realism in the Oval Office.",
@@ -869,7 +876,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Reasons released for Butters AFL Tribunal decision",
+      "title": "Power confirms appeal after reasons released for Butters AFL Tribunal decision",
       "link": "https://www.abc.net.au/news/2026-04-15/reasons-released-for-butters-tribunal-decision/106566018",
       "snippet": "",
       "pubDate": "Wed, 15 Apr 2026 05:58:00 +0000",
@@ -908,13 +915,6 @@
       "link": "https://www.abc.net.au/news/2026-04-15/moana-pasifika-confirm-super-rugby-exit/106566478",
       "snippet": "",
       "pubDate": "Wed, 15 Apr 2026 01:21:55 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Collard hearing leaves no winners as queer community further bruised",
-      "link": "https://www.abc.net.au/news/2026-04-15/no-winners-from-lance-collard-hearing-decision/106563584",
-      "snippet": "",
-      "pubDate": "Tue, 14 Apr 2026 23:29:49 +0000",
       "source": "ABC News"
     }
   ]
