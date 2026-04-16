@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-16T16:51:57.121Z",
+  "fetchedAt": "2026-04-16T19:40:53.408Z",
   "asx200": {
     "value": 8955,
     "change": 371.6,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.02,
-    "changePercent": 2.17,
+    "changePercent": 2.24,
     "previousClose": 0.7,
     "asOf": "2026-04-16",
     "history": [
@@ -203,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4812.8,
-      "change": -181.2,
-      "changePercent": -3.63
+      "price": 4813.3,
+      "change": -180.7,
+      "changePercent": -3.62
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 78.6,
-      "change": -1.66,
-      "changePercent": -2.07
+      "price": 78.7,
+      "change": -1.56,
+      "changePercent": -1.95
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 90.94,
-      "change": -2.56,
-      "changePercent": -2.74
+      "price": 90.06,
+      "change": -3.44,
+      "changePercent": -3.68
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.07,
-      "change": 0.28,
-      "changePercent": 4.82
+      "price": 6.05,
+      "change": 0.26,
+      "changePercent": 4.51
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,76 @@
   ],
   "news": [
     {
+      "title": "ASX set to dip, Wall Street steady; Oil prices climb",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-dip-wall-street-steady-oil-prices-climb-20260417-p5zolv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The US stockmarket is holding near its record high as Wall Street waits for more clues about what will happen in the Iran war before making its next big move.",
+      "pubDate": "Fri, 17 Apr 2026 05:25:16 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "AFL-backed helmet company erases concussion protection claims",
+      "link": "https://www.abc.net.au/news/2026-04-17/afl-backed-helmet-gamegear-pulls-concussion-protection-claims/106572742",
+      "snippet": "",
+      "pubDate": "Thu, 16 Apr 2026 19:22:08 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "My job doesn’t take mental health seriously. How can I change this?",
+      "link": "https://www.smh.com.au/business/workplace/my-job-doesn-t-take-mental-health-seriously-how-can-i-change-this-20260416-p5zogv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Unfortunately, there’s no blanket solution for managing mental health in the workplace. But there are a few things you can do.",
+      "pubDate": "Fri, 17 Apr 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "AI is taking entry-level jobs. For young workers, it’s a huge problem",
+      "link": "https://www.smh.com.au/business/workplace/ai-is-taking-entry-level-jobs-for-young-workers-it-s-a-huge-problem-20260416-p5zohb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Entry-level and graduate roles are at their lowest levels in a decade, spurring concerns about AI’s impact on young workers’ development.",
+      "pubDate": "Fri, 17 Apr 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Scott quit his corporate job to be a cleaner. He’s not the only one",
+      "link": "https://www.smh.com.au/business/workplace/scott-quit-his-corporate-job-to-be-a-cleaner-he-s-not-the-only-one-20260416-p5zohd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Dissatisfaction with corporate jobs in Australia is on the rise in what some experts have labelled “The Great Burnout”.",
+      "pubDate": "Fri, 17 Apr 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "‘I gave everything’: Feuding Sydney pub barons face underpayment claims",
+      "link": "https://www.smh.com.au/business/workplace/i-gave-everything-feuding-sydney-pub-barons-face-underpayment-claims-20260331-p5zk5x.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Dozens of employees were allegedly underpaid at hospitality venues co-owned by Arthur Laundy and Fraser Short, according to a leaked audit.",
+      "pubDate": "Fri, 17 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Look beyond the headlines on Chalmers’ spending and you’ll see it’s not the main game",
+      "link": "https://www.smh.com.au/business/the-economy/look-beyond-the-headlines-on-chalmers-spending-and-you-ll-see-it-s-not-the-main-game-20260416-p5zodc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The treasurer’s spending isn’t as “out of control” as you might be led to believe – and it’s the wrong thing to judge him on when he reveals the budget in May.",
+      "pubDate": "Fri, 17 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Geelong explosion adds fuel to the fire of our national anxiety",
+      "link": "https://www.smh.com.au/business/companies/geelong-explosion-adds-fuel-to-the-fire-of-our-national-anxiety-20260416-p5zog5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Australians worry that an accident or an attack on a supply choke point like the Viva refinery could cause “cascading disruption to everyday life”.",
+      "pubDate": "Fri, 17 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "A lack of bling makes this seaside motel sing",
+      "link": "https://www.smh.com.au/business/consumer-affairs/a-lack-of-bling-makes-this-seaside-motel-sing-20260416-p5zogq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "In the NSW holiday town of Merimbula an iconic motel has been bought back to life.",
+      "pubDate": "Fri, 17 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Before the boat jaunt, ABC executive’s brag backfired",
+      "link": "https://www.smh.com.au/business/companies/before-the-boat-jaunt-abc-executive-s-brag-backfired-20260416-p5zoja.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "One of the national broadcaster’s top HR executives resigned after receiving questions about a team building day on a rich lister mate’s yacht on Sydney Harbour.",
+      "pubDate": "Fri, 17 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Bread, milk and fresh veggies: Grocery inflation is creeping back",
       "link": "https://www.smh.com.au/business/consumer-affairs/bread-milk-and-fresh-vegies-grocery-inflation-is-creeping-back-20260415-p5zo3d.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Australians have been warned there will be less fresh produce and higher prices as farmers slash their winter season planting.",
@@ -850,76 +920,6 @@
       "snippet": "",
       "pubDate": "Thu, 16 Apr 2026 09:06:32 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Refinery fire raises prospect of new emergency fuel-saving measures",
-      "link": "https://www.smh.com.au/business/companies/significant-fire-breaks-out-at-viva-energy-s-refinery-in-geelong-20260416-p5zoa4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The massive blaze at one of Australia’s two remaining refineries knocked out a fifth of its capacity, heightening fears about Australia’s fragile fuel security.",
-      "pubDate": "Thu, 16 Apr 2026 18:53:43 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Daicos inspires Magpies to win as Blues youngster misses kick after siren",
-      "link": "https://www.abc.net.au/news/2026-04-16/afl-round-6-carlton-blues-collingwood-magpies-mcg-live-blog/106573626",
-      "snippet": "",
-      "pubDate": "Thu, 16 Apr 2026 08:30:53 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "The widow of ‘Britain’s Bill Gates’ targeted in hunt for $1.7 billion",
-      "link": "https://www.smh.com.au/business/companies/the-widow-of-britain-s-bill-gates-targeted-in-hunt-for-1-7-billion-20260416-p5zobl.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Mike Lynch died alongside his daughter and five others when his superyacht sank off the coast of Sicily in 2024. Now a tech giant has zeroed in on his widow.",
-      "pubDate": "Thu, 16 Apr 2026 18:15:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "'No-one's committed murder here': Port CEO urges change to tribunal process",
-      "link": "https://www.abc.net.au/news/2026-04-16/port-adelaide-chief-executive-slams-afl-tribunal-process/106572368",
-      "snippet": "",
-      "pubDate": "Thu, 16 Apr 2026 07:51:29 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Who is Androgenic, the Australian looksmaxxer from Clavicular’s disastrous stream?",
-      "link": "https://www.smh.com.au/business/companies/who-is-androgenic-the-australian-looksmaxxer-from-clavicular-s-disaster-stream-20260416-p5zoc0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The self-proclaimed “#1 Chad” has responded to users who accused him of making a bad situation worse.",
-      "pubDate": "Thu, 16 Apr 2026 17:44:33 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Geelong Viva refinery fire exposes fragility of Australia’s jet fuel supplies",
-      "link": "https://www.smh.com.au/business/companies/geelong-viva-refinery-fire-deals-another-blow-to-australia-s-jet-fuel-supplies-20260416-p5zobw.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The blaze comes after Qantas disclosed a $600-$800 million blowout in fuel costs, the latest carrier to flag an impact from the US-Israel war on Iran.",
-      "pubDate": "Thu, 16 Apr 2026 17:24:19 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Top ABC executive resigns after questions about luxury yacht team meeting",
-      "link": "https://www.smh.com.au/business/companies/top-abc-hr-executive-resigns-after-questions-from-this-masthead-about-boat-trip-20260416-p5zoc5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Josh Keech led the ABC’s contentious pay negotiations with staff, which included the first strike in decades, before resigning on Thursday.",
-      "pubDate": "Thu, 16 Apr 2026 16:25:37 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Dalaroo scores stakeholder backing for West African gold hunt",
-      "link": "https://www.smh.com.au/business/companies/dalaroo-scores-stakeholder-backing-for-west-african-gold-hunt-20260416-p5zoj0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Dalaroo Metals has boosted its hunt for gold in Côte d’Ivoire, securing local support to fast-track soil sampling across a 9.5km trend at its Bondoukou project.",
-      "pubDate": "Thu, 16 Apr 2026 16:23:33 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "There’s a war raging! Why is the US sharemarket at all-time highs?",
-      "link": "https://www.smh.com.au/business/the-economy/there-s-a-war-raging-why-is-the-us-sharemarket-at-all-time-highs-20260416-p5zofa.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "It’s not that the US market didn’t get the war memo, it’s just that it has decided to ignore Trump’s bluster.",
-      "pubDate": "Thu, 16 Apr 2026 15:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Aurum unlocks deeper gold 220m below existing West African resource",
-      "link": "https://www.smh.com.au/business/companies/aurum-unlocks-deeper-gold-220m-below-existing-west-african-resource-20260416-p5zoht.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Aurum Resources has drilled to 220m vertically below its current BST1 resource at Boundiali in Côte d’Ivoire, confirming the gold system remains open at depth.",
-      "pubDate": "Thu, 16 Apr 2026 15:12:22 +1000",
-      "source": "SMH Business"
     }
   ]
 }
