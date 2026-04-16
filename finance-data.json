@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-16T19:40:53.408Z",
+  "fetchedAt": "2026-04-16T22:02:58.008Z",
   "asx200": {
     "value": 8955,
     "change": 371.6,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.02,
-    "changePercent": 2.24,
+    "changePercent": 2.23,
     "previousClose": 0.7,
     "asOf": "2026-04-16",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.71
       },
       {
+        "date": "2026-04-15",
+        "close": 0.72
+      },
+      {
         "date": "2026-04-16",
         "close": 0.72
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4813.3,
-      "change": -180.7,
-      "changePercent": -3.62
+      "price": 4810.9,
+      "change": -183.1,
+      "changePercent": -3.67
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 78.7,
-      "change": -1.56,
-      "changePercent": -1.95
+      "price": 78.46,
+      "change": -1.8,
+      "changePercent": -2.25
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 90.06,
-      "change": -3.44,
-      "changePercent": -3.68
+      "price": 89.65,
+      "change": -3.85,
+      "changePercent": -4.12
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.05,
-      "change": 0.26,
-      "changePercent": 4.51
+      "price": 6.04,
+      "change": 0.25,
+      "changePercent": 4.23
     },
     {
       "name": "BHP Group",
@@ -838,14 +842,28 @@
   ],
   "news": [
     {
-      "title": "ASX set to dip, Wall Street steady; Oil prices climb",
+      "title": "'Shattered' Blue feels he let Carlton down in narrow loss to Collingwood",
+      "link": "https://www.abc.net.au/news/2026-04-17/elijah-hollands-shattered-carlton-collingwood-afl-loss/106574584",
+      "snippet": "",
+      "pubDate": "Thu, 16 Apr 2026 21:18:37 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to dip, Wall Street resets record; Netflix co-founder to step down",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-dip-wall-street-steady-oil-prices-climb-20260417-p5zolv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The US stockmarket is holding near its record high as Wall Street waits for more clues about what will happen in the Iran war before making its next big move.",
-      "pubDate": "Fri, 17 Apr 2026 05:25:16 +1000",
+      "pubDate": "Fri, 17 Apr 2026 06:43:15 +1000",
       "source": "SMH Business"
     },
     {
-      "title": "AFL-backed helmet company erases concussion protection claims",
+      "title": "Socceroos confirm final warm-up opponent before World Cup",
+      "link": "https://www.abc.net.au/news/2026-04-17/socceroos-friendly-switzerland-fifia-world-cup/106574560",
+      "snippet": "",
+      "pubDate": "Thu, 16 Apr 2026 20:31:51 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "AFL-backed helmet company pulls concussion claims after ABC report",
       "link": "https://www.abc.net.au/news/2026-04-17/afl-backed-helmet-gamegear-pulls-concussion-protection-claims/106572742",
       "snippet": "",
       "pubDate": "Thu, 16 Apr 2026 19:22:08 +0000",
@@ -906,20 +924,6 @@
       "snippet": "One of the national broadcaster’s top HR executives resigned after receiving questions about a team building day on a rich lister mate’s yacht on Sydney Harbour.",
       "pubDate": "Fri, 17 Apr 2026 05:00:00 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Bread, milk and fresh veggies: Grocery inflation is creeping back",
-      "link": "https://www.smh.com.au/business/consumer-affairs/bread-milk-and-fresh-vegies-grocery-inflation-is-creeping-back-20260415-p5zo3d.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Australians have been warned there will be less fresh produce and higher prices as farmers slash their winter season planting.",
-      "pubDate": "Thu, 16 Apr 2026 19:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Trbojevic injures hamstring as Manly thrash Cowboys",
-      "link": "https://www.abc.net.au/news/2026-04-16/manly-sea-eagles-tom-trbojevic-hamstring-cowboys/106573478",
-      "snippet": "",
-      "pubDate": "Thu, 16 Apr 2026 09:06:32 +0000",
-      "source": "ABC News"
     }
   ]
 }
