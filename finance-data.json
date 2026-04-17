@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-17T08:09:02.041Z",
+  "fetchedAt": "2026-04-17T10:36:25.118Z",
   "asx200": {
     "value": 8946.9,
     "change": 332.6,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.01,
-    "changePercent": 1.49,
+    "changePercent": 1.51,
     "previousClose": 0.71,
     "asOf": "2026-04-17",
     "history": [
@@ -207,25 +207,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4805,
-      "change": -196,
-      "changePercent": -3.92
+      "price": 4811.7,
+      "change": -189.3,
+      "changePercent": -3.79
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 78.93,
-      "change": -0.61,
-      "changePercent": -0.76
+      "price": 79.55,
+      "change": 0.02,
+      "changePercent": 0.03
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 89.96,
-      "change": -6.25,
-      "changePercent": -6.5
+      "price": 87.56,
+      "change": -8.65,
+      "changePercent": -8.99
     },
     {
       "name": "Copper",
@@ -233,7 +233,7 @@
       "iconBg": "#fef0e6",
       "price": 6.05,
       "change": 0.33,
-      "changePercent": 5.72
+      "changePercent": 5.71
     },
     {
       "name": "BHP Group",
@@ -842,7 +842,28 @@
   ],
   "news": [
     {
-      "title": "Live: Battling Raiders and struggling Storm meet on the brink",
+      "title": "‘It’s the vibe’: Court brawl hinges on alleged industrial-scale data hack",
+      "link": "https://www.smh.com.au/business/companies/it-s-the-vibe-court-brawl-hinges-on-alleged-industrial-scale-data-hack-20260416-p5zok6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Was it industrial espionage on a massive scale, or is an Australian property data giant just hiding behind a case inspired by ‘The Castle’ in this bruising legal battle?",
+      "pubDate": "Fri, 17 Apr 2026 19:30:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Dogs star hobbles off in Geelong as Sydney heats up with Battle of the Bridge",
+      "link": "https://www.abc.net.au/news/2026-04-17/afl-friday-live-cats-dogs-swans-giants/106571282",
+      "snippet": "",
+      "pubDate": "Fri, 17 Apr 2026 08:43:19 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Trump’s oil gamble could blow up in his face",
+      "link": "https://www.smh.com.au/business/the-economy/trump-s-oil-gamble-could-blow-up-in-his-face-20260417-p5zom1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The world is flocking to the US for oil with the Strait of Hormuz closed. This could turn into a major problem for the president.",
+      "pubDate": "Fri, 17 Apr 2026 18:10:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Panthers hit with injury blow as Phins struggle to contain ladder leaders",
       "link": "https://www.abc.net.au/news/2026-04-17/nrl-live-updates-raiders-storm-dolphins-panthers/106578186",
       "snippet": "",
       "pubDate": "Fri, 17 Apr 2026 07:30:42 +0000",
@@ -903,27 +924,6 @@
       "snippet": "",
       "pubDate": "Fri, 17 Apr 2026 00:52:50 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Iranian footballers granted asylum in Australia 'overwhelmed' by support",
-      "link": "https://www.abc.net.au/news/2026-04-17/iran-footballers-who-sought-asylum-australia-overwhlemed-support/106574862",
-      "snippet": "",
-      "pubDate": "Thu, 16 Apr 2026 23:40:57 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Wealthy Maple-Browns to offload two Woollahra shops; Centennial Flats on the market",
-      "link": "https://www.smh.com.au/business/small-business/wealthy-maple-browns-to-offload-two-woollahra-shops-centennial-flats-on-the-market-20260416-p5zoib.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The wealthy Maple-Brown family is selling two shops in leafy Woollahra and a newly constructed Dan Murphy’s has hit the market.",
-      "pubDate": "Fri, 17 Apr 2026 08:19:54 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Pub price slump: Former Espy owners’ second go at selling historic Fitzroy hotel",
-      "link": "https://www.smh.com.au/business/companies/pub-price-slump-former-espy-owners-second-go-at-selling-historic-fitzroy-hotel-20260416-p5zogh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The five-level Brunswick Street pub is vacant and selling for far less than its previous asking price.",
-      "pubDate": "Fri, 17 Apr 2026 08:19:39 +1000",
-      "source": "SMH Business"
     }
   ]
 }
