@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-17T14:00:59.779Z",
+  "fetchedAt": "2026-04-17T16:28:30.533Z",
   "asx200": {
     "value": 8946.9,
     "change": 332.6,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.01,
-    "changePercent": 2.02,
+    "changePercent": 1.75,
     "previousClose": 0.71,
     "asOf": "2026-04-17",
     "history": [
@@ -203,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4887.8,
-      "change": -113.2,
-      "changePercent": -2.26
+      "price": 4892.9,
+      "change": -108.1,
+      "changePercent": -2.16
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 82.06,
-      "change": 2.53,
-      "changePercent": 3.18
+      "price": 82.51,
+      "change": 2.98,
+      "changePercent": 3.75
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 81.84,
-      "change": -14.37,
-      "changePercent": -14.94
+      "price": 81.13,
+      "change": -15.08,
+      "changePercent": -15.67
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.09,
-      "change": 0.37,
-      "changePercent": 6.4
+      "price": 6.12,
+      "change": 0.39,
+      "changePercent": 6.79
     },
     {
       "name": "BHP Group",
@@ -485,12 +485,12 @@
     },
     {
       "name": "Communication Services",
-      "changePercent": 1.53,
+      "changePercent": 1.49,
       "stocks": [
         {
           "name": "TLS",
-          "price": 5.17,
-          "changePercent": 0
+          "price": 5.33,
+          "changePercent": -0.19
         },
         {
           "name": "REA",
@@ -511,12 +511,12 @@
     },
     {
       "name": "Utilities",
-      "changePercent": 0.78,
+      "changePercent": 0.7,
       "stocks": [
         {
           "name": "AGL",
-          "price": 8.97,
-          "changePercent": 0.34
+          "price": 9.5,
+          "changePercent": 0
         },
         {
           "name": "APA",
