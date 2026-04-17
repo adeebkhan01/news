@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-17T16:28:30.533Z",
+  "fetchedAt": "2026-04-17T19:35:27.685Z",
   "asx200": {
     "value": 8946.9,
     "change": 332.6,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.01,
-    "changePercent": 1.75,
+    "changePercent": 1.5,
     "previousClose": 0.71,
     "asOf": "2026-04-17",
     "history": [
@@ -203,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4892.9,
-      "change": -108.1,
-      "changePercent": -2.16
+      "price": 4877.2,
+      "change": -123.8,
+      "changePercent": -2.48
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 82.51,
-      "change": 2.98,
-      "changePercent": 3.75
+      "price": 81.33,
+      "change": 1.8,
+      "changePercent": 2.26
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 81.13,
-      "change": -15.08,
-      "changePercent": -15.67
+      "price": 83.19,
+      "change": -13.02,
+      "changePercent": -13.53
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.12,
-      "change": 0.39,
-      "changePercent": 6.79
+      "price": 6.09,
+      "change": 0.36,
+      "changePercent": 6.33
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,20 @@
   ],
   "news": [
     {
+      "title": "That meeting you hate may stop AI from stealing your job",
+      "link": "https://www.smh.com.au/business/workplace/that-meeting-you-hate-may-stop-ai-from-stealing-your-job-20260416-p5zoh2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The job of presenting, debating, lobbying or just plain selling the work is rising in importance.",
+      "pubDate": "Sat, 18 Apr 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Healthy, wealthy &#xA;and retired",
+      "link": "https://www.smh.com.au/business/banking-and-finance/healthy-wealthy-and-retired-20260417-p5zouq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Join our Money columnist Bec Wilson as she outlines her comprehensive guide to wellbeing in retirement.",
+      "pubDate": "Sat, 18 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "‘It’s the vibe’: Court brawl hinges on alleged industrial-scale data hack",
       "link": "https://www.smh.com.au/business/companies/it-s-the-vibe-court-brawl-hinges-on-alleged-industrial-scale-data-hack-20260416-p5zok6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Was it industrial espionage on a massive scale, or is an Australian property data giant just hiding behind a case inspired by ‘The Castle’ in this bruising legal battle?",
@@ -905,20 +919,6 @@
       "link": "https://www.abc.net.au/news/2026-04-17/gout-gout-100m-australian-junior-athletics-championships/106577250",
       "snippet": "",
       "pubDate": "Fri, 17 Apr 2026 05:44:14 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "St Kilda announces appeal against Collard ban for homophobic slur",
-      "link": "https://www.abc.net.au/news/2026-04-17/st-kilda-appeal-suspension-lance-collard-using-homophobic-slur/106575702",
-      "snippet": "",
-      "pubDate": "Fri, 17 Apr 2026 02:41:15 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Former Arsenal, Juventus goalkeeper killed after car hit by train",
-      "link": "https://www.abc.net.au/news/2026-04-17/former-austria-goalkeeper-alex-manninger-killed-car-hit-train/106575124",
-      "snippet": "",
-      "pubDate": "Fri, 17 Apr 2026 00:52:50 +0000",
       "source": "ABC News"
     }
   ]
