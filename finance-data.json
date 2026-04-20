@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-20T19:37:56.469Z",
+  "fetchedAt": "2026-04-20T22:05:43.711Z",
   "asx200": {
     "value": 8953.3,
     "change": 524.9,
@@ -88,7 +88,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.01,
-    "changePercent": 1.37,
+    "changePercent": 1.38,
     "previousClose": 0.71,
     "asOf": "2026-04-20",
     "history": [
@@ -177,6 +177,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-04-19",
+        "close": 0.71
+      },
+      {
         "date": "2026-04-20",
         "close": 0.72
       }
@@ -187,25 +191,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4836.9,
-      "change": 266.5,
-      "changePercent": 5.83
+      "price": 4841,
+      "change": 270.6,
+      "changePercent": 5.92
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 79.99,
-      "change": 10.63,
-      "changePercent": 15.33
+      "price": 79.87,
+      "change": 10.51,
+      "changePercent": 15.15
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 87.16,
-      "change": -11.16,
-      "changePercent": -11.35
+      "price": 85.89,
+      "change": -12.43,
+      "changePercent": -12.64
     },
     {
       "name": "Copper",
@@ -213,7 +217,7 @@
       "iconBg": "#fef0e6",
       "price": 6.05,
       "change": 0.7,
-      "changePercent": 13.16
+      "changePercent": 13.14
     },
     {
       "name": "BHP Group",
@@ -822,10 +826,24 @@
   ],
   "news": [
     {
-      "title": "ASX set to edge up, Wall Street slips; Oil prices higher",
+      "title": "Apple CEO Tim Cook to stand down after 15 years in charge",
+      "link": "https://www.smh.com.au/business/companies/apple-ceo-tim-cook-to-end-nearly-15-year-reign-leading-the-iphone-maker-20260421-p5zplu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Apple has named its next CEO while Cook will remain with the company in a new role.",
+      "pubDate": "Tue, 21 Apr 2026 07:24:39 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Dragons name Flanagan's replacement after 12 hours without head coach",
+      "link": "https://www.abc.net.au/news/2026-04-21/dean-young-named-dragons-nrl-coach-after-shane-flanagan/106586602",
+      "snippet": "",
+      "pubDate": "Mon, 20 Apr 2026 21:12:00 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to rise, Wall Street slips; Oil prices higher",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-edge-up-wall-street-slips-oil-prices-higher-20260421-p5zpkt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Oil prices are climbing following the latest rise of tensions between the United States and Iran while stocks are giving back a bit of their record-breaking rally.",
-      "pubDate": "Tue, 21 Apr 2026 05:21:19 +1000",
+      "pubDate": "Tue, 21 Apr 2026 06:56:32 +1000",
       "source": "SMH Business"
     },
     {
@@ -850,6 +868,13 @@
       "source": "SMH Business"
     },
     {
+      "title": "NRL overhauls training rules in landmark player safety move",
+      "link": "https://www.abc.net.au/news/2026-04-21/nrl-limits-contact-training-in-bid-to-reduce-head-injuries/106584454",
+      "snippet": "",
+      "pubDate": "Mon, 20 Apr 2026 18:50:06 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Blues confirm Hollands has been admitted to hospital after concerning scenes",
       "link": "https://www.abc.net.au/news/2026-04-20/carlton-player-elijah-hollands-in-hospital/106585880",
       "snippet": "",
@@ -871,38 +896,17 @@
       "source": "SMH Business"
     },
     {
+      "title": "Chinese robot beats human half-marathon world record",
+      "link": "https://www.abc.net.au/news/2026-04-20/chinese-humanoid-robot-beats-human-half-marathon-world-record/106585368",
+      "snippet": "",
+      "pubDate": "Mon, 20 Apr 2026 08:08:30 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "ASX closes up; Viva Energy slumps; oil jumps after Hormuz closure",
       "link": "https://www.smh.com.au/business/markets/asx-set-for-uncertain-start-as-hormuz-closed-again-oil-set-to-jump-20260420-p5zp92.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "A sharp rise in oil prices put pressure on energy stocks, which were the biggest weight on the index.",
       "pubDate": "Mon, 20 Apr 2026 17:27:33 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Dalaroo Metals hires top gun to fast-track Greenland rare earths",
-      "link": "https://www.smh.com.au/business/companies/dalaroo-metals-hires-top-gun-to-fast-track-greenland-rare-earths-20260420-p5zpj3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Dalaroo Metals is pulling the trigger on its Blue Lagoon project in Greenland, appointing a new exploration manager to target a monster critical minerals system.",
-      "pubDate": "Mon, 20 Apr 2026 17:12:01 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Red Metal strikes fertile system in WA Paterson Province",
-      "link": "https://www.smh.com.au/business/companies/red-metal-strikes-fertile-system-in-wa-paterson-province-20260420-p5zpiv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Red Metal Ltd confirmed fertile geology at Pulkarrimarra in WA’s Paterson Province, with drilling hitting key host rocks and leaving multiple copper-gold targets untested.",
-      "pubDate": "Mon, 20 Apr 2026 16:57:05 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "AFL apologises after Butters appeal upheld, umpire abuse conviction quashed",
-      "link": "https://www.abc.net.au/news/2026-04-20/afl-tribunal-zak-butters-appeal-live-blog/106583582",
-      "snippet": "",
-      "pubDate": "Mon, 20 Apr 2026 06:44:05 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Lindian locks in fuel deal ahead of Malawi rare earths ramp-up",
-      "link": "https://www.smh.com.au/business/companies/lindian-locks-in-fuel-deal-ahead-of-malawi-rare-earths-ramp-up-20260420-p5zpih.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Lindian Resources has secured a fixed-price diesel supply for its Malawian rare earths project, de-risking its construction and commissioning ahead of first production later this year.",
-      "pubDate": "Mon, 20 Apr 2026 16:39:09 +1000",
       "source": "SMH Business"
     }
   ]
