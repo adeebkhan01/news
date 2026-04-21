@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-21T16:34:44.000Z",
+  "fetchedAt": "2026-04-21T19:42:52.444Z",
   "asx200": {
     "value": 8949.4,
     "change": 521,
@@ -86,9 +86,9 @@
     ]
   },
   "audusd": {
-    "value": 0.72,
+    "value": 0.71,
     "change": 0.01,
-    "changePercent": 1.07,
+    "changePercent": 0.8,
     "previousClose": 0.71,
     "asOf": "2026-04-21",
     "history": [
@@ -178,7 +178,7 @@
       },
       {
         "date": "2026-04-21",
-        "close": 0.72
+        "close": 0.71
       }
     ]
   },
@@ -187,33 +187,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4749,
-      "change": 178.6,
-      "changePercent": 3.91
+      "price": 4732.4,
+      "change": 162,
+      "changePercent": 3.54
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 76.8,
-      "change": 7.44,
-      "changePercent": 10.73
+      "price": 77.06,
+      "change": 7.7,
+      "changePercent": 11.09
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 90.04,
-      "change": -8.28,
-      "changePercent": -8.42
+      "price": 88.46,
+      "change": -9.86,
+      "changePercent": -10.03
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.02,
+      "price": 6.01,
       "change": 0.67,
-      "changePercent": 12.6
+      "changePercent": 12.52
     },
     {
       "name": "BHP Group",
@@ -822,6 +822,41 @@
   ],
   "news": [
     {
+      "title": "Retirement Roadmap",
+      "link": "https://www.smh.com.au/business/banking-and-finance/retirement-roadmap-20260420-p5zpio.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Our team of financial experts help you navigate to and through retirement in this six-part series.",
+      "pubDate": "Wed, 22 Apr 2026 05:30:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ASX set to fall, Wall Street slides as deadline nears; Trump’s Fed nominee grilled",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-wall-street-slides-as-deadline-nears-trump-s-fed-nominee-grilled-20260422-p5zpwx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "US stocks are losing ground as Wall Street weighs the latest round of profit reports from big companies with the lingering risks from the ongoing war between the US and Iran.",
+      "pubDate": "Wed, 22 Apr 2026 05:24:53 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "A $50 billion NDIS is proving too tempting for Australia’s rich-listers",
+      "link": "https://www.smh.com.au/business/companies/a-50-billion-ndis-is-proving-too-tempting-for-australia-s-rich-listers-20260420-p5zpf5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "One NDIS business recorded a 45 per cent revenue jump last financial year and could become the first $1 billion disability business to list on the ASX.",
+      "pubDate": "Wed, 22 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "How drivers could get bigger tax deductions for car expenses within months",
+      "link": "https://www.smh.com.au/business/workplace/how-drivers-could-get-bigger-tax-deductions-for-car-expenses-within-months-20260421-p5zpn1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The Australian Tax Office will decide in May whether to increase the cents-per-kilometre rate for work-related tax deductions, as fuel prices have surged.",
+      "pubDate": "Wed, 22 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Lovin’ democracy? You’re probably doing all right, then",
+      "link": "https://www.smh.com.au/business/the-economy/lovin-democracy-you-re-probably-doing-all-right-then-20260421-p5zps8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Those who aren’t doing well in the economy are less likely to be happy with the way our democracy is treating them. That’s a problem for everyone.",
+      "pubDate": "Wed, 22 Apr 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "What can we expect from Apple’s next boss?",
       "link": "https://www.smh.com.au/business/companies/what-can-we-expect-from-apple-s-next-boss-20260421-p5zprw.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "At 50, John Ternus has spent half his life working at Apple. In September, he’ll take over as chief executive.",
@@ -864,46 +899,11 @@
       "source": "ABC News"
     },
     {
-      "title": "Are we being cheated on prices? ACCC and supermarkets slug it out in court",
-      "link": "https://www.smh.com.au/business/consumer-affairs/are-we-being-cheated-on-prices-accc-and-supermarkets-slug-it-out-in-court-20260421-p5zpr7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "For the consumer watchdog, this court battle is about more than the prices of Tim Tams, Coke and dog food. It goes to the heart of the grocery giants’ pricing and marketing methods.",
-      "pubDate": "Tue, 21 Apr 2026 15:45:23 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Qantas, Virgin launch domestic ticket deals to fill cash coffers in Iran crisis",
-      "link": "https://www.smh.com.au/business/companies/qantas-virgin-launch-domestic-ticket-deals-to-fill-cash-coffers-in-iran-crisis-20260421-p5zppr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Just a week after Qantas warned of an $800 million fuel cost blowout due to the war in the Middle East, the airline and rival Virgin have announced extensive domestic ticket sales.",
-      "pubDate": "Tue, 21 Apr 2026 14:34:12 +1000",
-      "source": "SMH Business"
-    },
-    {
       "title": "'I know who my son is': Elijah Hollands's father posts heartfelt message",
       "link": "https://www.abc.net.au/news/2026-04-21/elijah-hollands-father-posts-about-carlton-player-mental-health/106588260",
       "snippet": "",
       "pubDate": "Tue, 21 Apr 2026 03:29:18 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Aurum rigs roar as thick high-grade gold hits stack up in West Africa",
-      "link": "https://www.smh.com.au/business/companies/aurum-rigs-roar-as-thick-high-grade-gold-hits-stack-up-in-west-africa-20260421-p5zprs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Aurum Resources has struck thick gold at Boundiali, extending BDT2 mineralisation beyond its resource as drilling ramps up ahead of key feasibility studies.",
-      "pubDate": "Tue, 21 Apr 2026 13:12:29 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "No crying wolf: Regulate the AI juggernaut before it’s too late",
-      "link": "https://www.smh.com.au/business/companies/no-crying-wolf-regulate-the-ai-juggernaut-before-it-s-too-late-20260421-p5zpms.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "No one denies the potential of AI to transform economies and societies, but those who know the technology best are cognisant of its dangers.",
-      "pubDate": "Tue, 21 Apr 2026 12:09:29 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Woolworths uses inflation defence to fight ‘fake discounts’ claim",
-      "link": "https://www.smh.com.au/business/companies/woolworths-used-subtle-magic-to-mislead-consumers-accc-20260421-p5zpn7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The consumer watchdog used the pricing of a packet of Oreos to illustrate its blockbuster case against Woolworths, which kicked off on Tuesday.",
-      "pubDate": "Tue, 21 Apr 2026 11:47:21 +1000",
-      "source": "SMH Business"
     }
   ]
 }
