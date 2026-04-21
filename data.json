@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-04-21T08:00:46.118Z",
-  "summary": "Bangladesh is grappling with cascading economic pressures as fuel price hikes ripple through agriculture, transportation, and manufacturing sectors, straining farmers, factory production, and restaurant operations while authorities warn the impact on inflation may be manageable. Power shortages and load shedding are compounding these challenges, affecting mobile networks and irrigation systems critical to rural livelihoods. The country faces mounting public health concerns including rising measles, rabies, and antibiotic misuse amid deteriorating conditions, while a tragic crime in Naogaon underscores security issues. On the diplomatic front, Bangladesh has formalized deepened ties with the European Union through a new Partnership and Cooperation Agreement, signaling strategic realignment during a period of regional tension involving US-Iran standoffs.",
+  "fetchedAt": "2026-04-21T10:20:52.093Z",
+  "summary": "Bangladesh faces mounting economic pressures as fuel price hikes ripple across agriculture, industry and households, with farmers, factories and restaurant operators reporting significant cost increases that threaten to strain ordinary Bangladeshis already struggling with affordability. Power shortages and load shedding compound these challenges, disrupting factory production and forcing reliance on expensive generators, while the government insists inflation impacts will be manageable. On the political front, an arrest warrant has been issued against MP Amir Hamza and the ruling party is finalizing nominations for reserved women's parliamentary seats, mixing established and new candidates. The country is also grappling with health concerns including rising measles cases treated in poor conditions and halted dog vaccination programs amid rabies outbreaks, while a severe heatwave affecting ten districts including Dhaka threatens further deterioration in coming days.",
   "sources": [
     {
       "id": "dailystar",
@@ -34,6 +34,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Fishing ban in Kaptai Lake from April 24",
+      "link": "https://www.thedailystar.net/business/news/fishing-ban-kaptai-lake-april-24-4156911",
+      "desc": "Fishing, transportation, and marketing of fish in the lake will be suspended from midnight on April 24 and remain in effect until further notice",
+      "pubDate": "Tue, 21 Apr 26 15:55:59 +0600",
+      "img": "https://www.thedailystar.net/sites/default/files/styles/social_share/public/images/2025/10/14/kaptai_lake.jpg",
+      "sourceId": "dailystar",
+      "sourceName": "The Daily Star",
+      "sourceColor": "#1a7a4a",
+      "titleBn": "কাপ্তাই হ্রদে ২৪ এপ্রিল থেকে মৎস্য শিকার নিষেধাজ্ঞা",
+      "descBn": "২৪ এপ্রিলের মধ্যরাত থেকে হ্রদে মৎস্য শিকার, পরিবহন এবং মৎস্য বিপণন স্থগিত করা হবে এবং আরও বিজ্ঞপ্তি না দেওয়া পর্যন্ত তা কার্যকর থাকবে"
+    },
+    {
+      "title": "Reserved women’s seats in parliament: BNP nominations blend new and old",
+      "link": "https://en.prothomalo.com/bangladesh/politics/ojii2w49yh",
+      "desc": "",
+      "pubDate": "Tue, 21 Apr 2026 09:11:34 +0000",
+      "img": "https://media.prothomalo.com/prothomalo-english/2023-10/03823c2d-4435-45be-a7c3-6d0e775179ea/FLag_of_BNP.webp",
+      "sourceId": "prothomalo",
+      "sourceName": "Prothom Alo",
+      "sourceColor": "#c0392b",
+      "titleBn": "সংসদে সংরক্ষিত নারী আসন: বিএনপি মনোনয়ন নতুন ও পুরানোর সমন্বয়",
+      "descBn": ""
+    },
+    {
+      "title": "Boosting renewable energy in Bangladesh: from design to implementation",
+      "link": "https://en.prothomalo.com/bangladesh/5lo673y5fw",
+      "desc": "",
+      "pubDate": "Tue, 21 Apr 2026 08:29:39 +0000",
+      "img": "https://media.prothomalo.com/prothomalo-english/2026-04-21/g8lzppuj/Renewable-energy1.jpg",
+      "sourceId": "prothomalo",
+      "sourceName": "Prothom Alo",
+      "sourceColor": "#c0392b",
+      "titleBn": "বাংলাদেশে নবায়নযোগ্য শক্তি বৃদ্ধি: ডিজাইন থেকে বাস্তবায়ন পর্যন্ত",
+      "descBn": ""
+    },
+    {
+      "title": "Arrest warrant against MP Amir Hamza in Sirajganj",
+      "link": "https://en.prothomalo.com/bangladesh/local-news/tsigtzf3i6",
+      "desc": "",
+      "pubDate": "Tue, 21 Apr 2026 08:04:06 +0000",
+      "img": "https://media.prothomalo.com/prothomalo-english/2026-01-20/bt66d2i2/Mufti-Amir-Hamza.avif?w=280",
+      "sourceId": "prothomalo",
+      "sourceName": "Prothom Alo",
+      "sourceColor": "#c0392b",
+      "titleBn": "সিরাজগঞ্জে সংসদ সদস্য আমির হামজার বিরুদ্ধে গ্রেপ্তারি পরোয়ানা",
+      "descBn": ""
+    },
+    {
+      "title": "Why should Bangladesh be concerned about the elections in Assam and West Bengal?",
+      "link": "https://en.prothomalo.com/opinion/op-ed/mb2if7n4ij",
+      "desc": "",
+      "pubDate": "Tue, 21 Apr 2026 08:04:02 +0000",
+      "img": "https://media.prothomalo.com/prothomalo-english/2026-04-21/nwq130fj/india.avif?w=280",
+      "sourceId": "prothomalo",
+      "sourceName": "Prothom Alo",
+      "sourceColor": "#c0392b",
+      "titleBn": "বাংলাদেশ কেন অসম এবং পশ্চিমবঙ্গের নির্বাচন নিয়ে চিন্তিত হবে?",
+      "descBn": ""
+    },
     {
       "title": "India fertiliser output drops a quarter on Mideast war",
       "link": "https://www.thedailystar.net/business/news/india-fertiliser-output-drops-quarter-mideast-war-4156791",
@@ -405,6 +465,18 @@
       "sourceColor": "#c0392b",
       "titleBn": "বাণিজ্য মন্ত্রী ব্যাখ্যা করেছেন কেন জ্বালানি মূল্য বৃদ্ধি 'উল্লেখযোগ্যভাবে মুদ্রাস্ফীতি বৃদ্ধি করবে না'",
       "descBn": ""
+    },
+    {
+      "title": "Revitalising Bangladesh’s corporate bond market",
+      "link": "https://www.thedailystar.net/business/news/revitalising-bangladeshs-corporate-bond-market-4156271",
+      "desc": "According to Bangladesh Bank data from December 2025, the banking sector's NPL ratio hit approximately 30.6 percent",
+      "pubDate": "Mon, 20 Apr 26 21:02:16 +0600",
+      "img": "https://www.thedailystar.net/sites/default/files/styles/social_share/public/2026-04/Untitled%20design.jpg",
+      "sourceId": "dailystar",
+      "sourceName": "The Daily Star",
+      "sourceColor": "#1a7a4a",
+      "titleBn": "বাংলাদেশের কর্পোরেট বন্ড বাজার পুনরুজ্জীবিত করা",
+      "descBn": "বাংলাদেশ ব্যাংকের ডিসেম্বর ২০২৫ সালের তথ্য অনুযায়ী, ব্যাংকিং খাতের এনপিএল অনুপাত প্রায় ৩০.৬ শতাংশে পৌঁছেছে"
     },
     {
       "title": "Eco-friendly handicraft venture creates 400 rural jobs",
@@ -17252,66 +17324,6 @@
       "sourceName": "Prothom Alo",
       "sourceColor": "#c0392b",
       "titleBn": "মধ্যপ্রাচ্যের যুদ্ধ অব্যাহত থাকলে অর্থনৈতিক চাপ বৃদ্ধি পাবে: অর্থমন্ত্রী",
-      "descBn": ""
-    },
-    {
-      "title": "People with weak hearts could keep their medicines close while watching Pressure Cooker: Snigdha Chowdhury",
-      "link": "https://en.prothomalo.com/video/u2an3e05au",
-      "desc": "",
-      "pubDate": "Sun, 22 Mar 2026 09:47:07 +0000",
-      "img": "https://media.prothomalo.com/prothomalo-english%2F2026-03-22%2Fik88x412%2FModel-Snigdha-Chowdhury.avif?rect=0%2C57%2C800%2C420&amp;w=1200&amp;ar=40%3A21&amp;auto=format%2Ccompress&amp;ogImage=true&amp;mode=crop&amp;overlay=&amp;overlay_position=bottom&amp;overlay_width_pct=1",
-      "sourceId": "prothomalo",
-      "sourceName": "Prothom Alo",
-      "sourceColor": "#c0392b",
-      "titleBn": "দুর্বল হৃদয়ের মানুষেরা প্রেশার কুকার: স্নিগ্ধা চৌধুরী দেখার সময় তাদের ওষুধ কাছে রাখতে পারেন",
-      "descBn": ""
-    },
-    {
-      "title": "Resolution in US Congress seeking recognition of 1971 genocide in Bangladesh",
-      "link": "https://en.prothomalo.com/bangladesh/a9mfq636hi",
-      "desc": "",
-      "pubDate": "Sun, 22 Mar 2026 09:34:59 +0000",
-      "img": "https://media.prothomalo.com/prothomalo-english/2026-03-22/omcza93z/US-Congress.avif?w=280",
-      "sourceId": "prothomalo",
-      "sourceName": "Prothom Alo",
-      "sourceColor": "#c0392b",
-      "titleBn": "বাংলাদেশে ১৯৭১ সালের গণহত্যা স্বীকৃতির জন্য মার্কিন কংগ্রেসে প্রস্তাব",
-      "descBn": ""
-    },
-    {
-      "title": "Politics and corruption: How corruption has become a ‘social practice’",
-      "link": "https://en.prothomalo.com/opinion/op-ed/oitcd6xpgr",
-      "desc": "",
-      "pubDate": "Sun, 22 Mar 2026 09:15:52 +0000",
-      "img": "https://media.prothomalo.com/prothomalo-english/2026-03-22/5htzhbva/Corruption.jpg",
-      "sourceId": "prothomalo",
-      "sourceName": "Prothom Alo",
-      "sourceColor": "#c0392b",
-      "titleBn": "রাজনীতি এবং দুর্নীতি: কীভাবে দুর্নীতি একটি 'সামাজিক অনুশীলনে' পরিণত হয়েছে",
-      "descBn": ""
-    },
-    {
-      "title": "Each family of 12 deceased will receive Tk 100,000: State Minister",
-      "link": "https://en.prothomalo.com/bangladesh/accident/kbad1a2ogm",
-      "desc": "",
-      "pubDate": "Sun, 22 Mar 2026 08:54:27 +0000",
-      "img": "https://media.prothomalo.com/prothomalo-english/2026-03-22/k1bm3wej/train-accident-in-Cumilla.avif?w=280",
-      "sourceId": "prothomalo",
-      "sourceName": "Prothom Alo",
-      "sourceColor": "#c0392b",
-      "titleBn": "প্রতিটি মৃত ব্যক্তির ১২ সদস্যের পরিবার ১ লক্ষ টাকা পাবে: রাষ্ট্র মন্ত্রী",
-      "descBn": ""
-    },
-    {
-      "title": "2 gatekeepers suspended, 3 probe bodies formed, rail link with Chittagong restored",
-      "link": "https://en.prothomalo.com/bangladesh/accident/pi39xcx28n",
-      "desc": "",
-      "pubDate": "Sun, 22 Mar 2026 08:11:39 +0000",
-      "img": "https://media.prothomalo.com/prothomalo-english/2026-03-22/llbcc4ju/Cumilla-Road-Accident-3.avif?w=280",
-      "sourceId": "prothomalo",
-      "sourceName": "Prothom Alo",
-      "sourceColor": "#c0392b",
-      "titleBn": "২ জন দারোয়ান স্থগিত, ৩টি তদন্ত সংস্থা গঠিত, চট্টগ্রামের সাথে রেল সংযোগ পুনরুদ্ধার",
       "descBn": ""
     }
   ]
