@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-21T19:42:52.444Z",
+  "fetchedAt": "2026-04-21T22:03:37.362Z",
   "asx200": {
     "value": 8949.4,
     "change": 521,
@@ -86,9 +86,9 @@
     ]
   },
   "audusd": {
-    "value": 0.71,
+    "value": 0.72,
     "change": 0.01,
-    "changePercent": 0.8,
+    "changePercent": 1.03,
     "previousClose": 0.71,
     "asOf": "2026-04-21",
     "history": [
@@ -177,8 +177,12 @@
         "close": 0.71
       },
       {
+        "date": "2026-04-20",
+        "close": 0.72
+      },
+      {
         "date": "2026-04-21",
-        "close": 0.71
+        "close": 0.72
       }
     ]
   },
@@ -187,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4732.4,
-      "change": 162,
-      "changePercent": 3.54
+      "price": 4738.5,
+      "change": 168.1,
+      "changePercent": 3.68
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 77.06,
-      "change": 7.7,
-      "changePercent": 11.09
+      "price": 76.67,
+      "change": 7.31,
+      "changePercent": 10.53
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 88.46,
-      "change": -9.86,
-      "changePercent": -10.03
+      "price": 90.22,
+      "change": -8.1,
+      "changePercent": -8.24
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.01,
+      "price": 6.02,
       "change": 0.67,
-      "changePercent": 12.52
+      "changePercent": 12.63
     },
     {
       "name": "BHP Group",
@@ -822,17 +826,24 @@
   ],
   "news": [
     {
+      "title": "Young benches ex-coach's son and fires assistant to start Dragons tenure",
+      "link": "https://www.abc.net.au/news/2026-04-22/kyle-flanagan-benched-dean-young-dragons-nrl-team/106590972",
+      "snippet": "",
+      "pubDate": "Tue, 21 Apr 2026 21:15:02 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to fall as Wall Street seesaws; US-Iran ceasefire extended; Trump’s Fed nominee grilled",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-wall-street-slides-as-deadline-nears-trump-s-fed-nominee-grilled-20260422-p5zpwx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Wall Street and oil prices flip-flopped as Middle East uncertainty hovers over markets, while Donald Trump announced after the closing bell that the US is extending its ceasefire with Iran",
+      "pubDate": "Wed, 22 Apr 2026 06:39:40 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Retirement Roadmap",
       "link": "https://www.smh.com.au/business/banking-and-finance/retirement-roadmap-20260420-p5zpio.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Our team of financial experts help you navigate to and through retirement in this six-part series.",
       "pubDate": "Wed, 22 Apr 2026 05:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX set to fall, Wall Street slides as deadline nears; Trump’s Fed nominee grilled",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-wall-street-slides-as-deadline-nears-trump-s-fed-nominee-grilled-20260422-p5zpwx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "US stocks are losing ground as Wall Street weighs the latest round of profit reports from big companies with the lingering risks from the ongoing war between the US and Iran.",
-      "pubDate": "Wed, 22 Apr 2026 05:24:53 +1000",
       "source": "SMH Business"
     },
     {
@@ -892,17 +903,10 @@
       "source": "SMH Business"
     },
     {
-      "title": "Boyd says other AFL players are struggling 'under the surface' after Hollands episode",
+      "title": "Boyd says other AFL players are struggling 'under the surface'",
       "link": "https://www.abc.net.au/news/2026-04-21/tom-boyd-afl-mental-health-elijah-hollands-carlton/106587734",
       "snippet": "",
       "pubDate": "Tue, 21 Apr 2026 07:11:41 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "'I know who my son is': Elijah Hollands's father posts heartfelt message",
-      "link": "https://www.abc.net.au/news/2026-04-21/elijah-hollands-father-posts-about-carlton-player-mental-health/106588260",
-      "snippet": "",
-      "pubDate": "Tue, 21 Apr 2026 03:29:18 +0000",
       "source": "ABC News"
     }
   ]
