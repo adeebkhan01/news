@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-22T19:44:37.173Z",
+  "fetchedAt": "2026-04-22T22:08:06.588Z",
   "asx200": {
     "value": 8843.6,
     "change": 415.2,
@@ -185,6 +185,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-04-21",
+        "close": 0.72
+      },
+      {
         "date": "2026-04-22",
         "close": 0.72
       }
@@ -195,25 +199,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4761,
-      "change": 356.9,
-      "changePercent": 8.1
+      "price": 4758.3,
+      "change": 354.2,
+      "changePercent": 8.04
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 77.71,
-      "change": 8.66,
-      "changePercent": 12.54
+      "price": 77.69,
+      "change": 8.64,
+      "changePercent": 12.51
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 92.63,
-      "change": 4.5,
-      "changePercent": 5.11
+      "price": 92.87,
+      "change": 4.74,
+      "changePercent": 5.38
     },
     {
       "name": "Copper",
@@ -221,7 +225,7 @@
       "iconBg": "#fef0e6",
       "price": 6.14,
       "change": 0.7,
-      "changePercent": 12.81
+      "changePercent": 12.82
     },
     {
       "name": "BHP Group",
@@ -830,17 +834,45 @@
   ],
   "news": [
     {
-      "title": "What impact will the fuel crisis have on your frequent flyer points?",
-      "link": "https://www.smh.com.au/business/companies/what-impact-will-the-fuel-crisis-have-on-your-frequent-flyer-points-20260421-p5zpun.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "If you’re hoping to use frequent flyer points on a big international trip soon, you might want to think again.",
-      "pubDate": "Thu, 23 Apr 2026 05:20:00 +1000",
+      "title": "Chelsea sack Rosenior as Manchester City move top of Premier League",
+      "link": "https://www.abc.net.au/news/2026-04-23/chelsea-sack-rosenior-manchester-city-go-top/106595430",
+      "snippet": "",
+      "pubDate": "Wed, 22 Apr 2026 21:46:09 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'Not a great look': Piastri weighs in on Verstappen's F1 frustrations",
+      "link": "https://www.abc.net.au/news/2026-04-23/f1-oscar-piastri-says-losing-max-verstappen-would-be-a-big-loss/106595472",
+      "snippet": "",
+      "pubDate": "Wed, 22 Apr 2026 21:41:08 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Aussies crash in Madrid as Kasatkina sinks to new ranking low",
+      "link": "https://www.abc.net.au/news/2026-04-23/daria-kasatkina-ranking-low-madrid-open-exit/106595408",
+      "snippet": "",
+      "pubDate": "Wed, 22 Apr 2026 21:11:14 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Marsh 50 not enough as Giants fall to Archer's pace",
+      "link": "https://www.abc.net.au/news/2026-04-23/mitch-marsh-scores-ipl-50-lucknow-super-giants-defeat/106595358",
+      "snippet": "",
+      "pubDate": "Wed, 22 Apr 2026 20:44:44 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to slide, Wall Street advances; Tesla results impress",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-wall-street-advances-oil-climbs-20260423-p5zq9s.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Wall Street rises on the back of strong company results but the Australian sharemarket is set to decline as uncertainty over the Iran war continues to cast a shadow over markets.",
+      "pubDate": "Thu, 23 Apr 2026 06:28:20 +1000",
       "source": "SMH Business"
     },
     {
-      "title": "ASX set to slide, Wall Street advances; Tesla results ahead",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-wall-street-advances-oil-climbs-20260423-p5zq9s.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Wall Street rises on the back of strong company results but the Australian sharemarket is set to decline as uncertainty over the Iran war continues to cast a shadow over markets.",
-      "pubDate": "Thu, 23 Apr 2026 05:19:33 +1000",
+      "title": "‘Be on the ball’: The warning about your frequent flyer points",
+      "link": "https://www.smh.com.au/business/companies/what-impact-will-the-fuel-crisis-have-on-your-frequent-flyer-points-20260421-p5zpun.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "If you’re hoping to use frequent flyer points on a big international trip soon, you might want to think again.",
+      "pubDate": "Thu, 23 Apr 2026 05:20:00 +1000",
       "source": "SMH Business"
     },
     {
@@ -883,34 +915,6 @@
       "link": "https://www.abc.net.au/news/2026-04-22/david-pocock-slams-vested-interests-in-gambling-reform-proposal/106594108",
       "snippet": "",
       "pubDate": "Wed, 22 Apr 2026 07:57:19 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Hastings eyes US$53M first-year revenue from Thai rare earths plant",
-      "link": "https://www.smh.com.au/business/companies/hastings-eyes-us-53m-first-year-revenue-from-thai-rare-earths-plant-20260422-p5zq7y.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Hastings Technology Metals is nearing first revenue from its Thai hydromet plant. The facility is due to start in Q4 and is forecast to generate US$53.4M in year one.",
-      "pubDate": "Wed, 22 Apr 2026 17:00:54 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX slumps on war uncertainty, Cochlear tanks; BHP gains on China breakthrough",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-wall-street-slides-as-deadline-nears-trump-s-fed-nominee-grilled-20260422-p5zpwx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The ASX has closed in the red as Middle East uncertainty hovers over markets, even after President Donald Trump agreed to extend a ceasefire.",
-      "pubDate": "Wed, 22 Apr 2026 16:48:58 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Gateway hits end-of-hole gold at WA Yandal play",
-      "link": "https://www.smh.com.au/business/companies/gateway-hits-end-of-hole-gold-at-wa-yandal-play-20260422-p5zq76.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Gateway Mining has hit a 32m gold in a hole that ended in mineralisation at its Mustang prospect in Western Australia, extending the target to 900m of strike.",
-      "pubDate": "Wed, 22 Apr 2026 15:55:36 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Netball Australia CEO steps down as sport prepares for new era",
-      "link": "https://www.abc.net.au/news/2026-04-22/netball-australia-ceo-stacey-west-steps-down/106593400",
-      "snippet": "",
-      "pubDate": "Wed, 22 Apr 2026 05:03:45 +0000",
       "source": "ABC News"
     }
   ]
