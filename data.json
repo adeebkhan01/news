@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-04-22T13:53:53.903Z",
-  "summary": "Bangladesh faces mounting economic pressures as businesses struggle with energy shortages and load-shedding, with the government implementing reforms including fertiliser dealer replacements and fuel purchases to address supply gaps. Domestically, political tensions persist over constitutional changes and opposition movements, while concerns about civil liberties have resurfaced following arrests tied to social media posts. The country is navigating international complications including Iranian tensions affecting regional shipping routes, though Iran has pledged safe passage for Bangladeshi vessels through the Strait of Hormuz. Education and administrative changes continue, with the HSC exam scheduled for July 2 and new appointments like Farida Khanam's elevation to Dhaka's Deputy Commissioner.",
+  "fetchedAt": "2026-04-22T16:11:03.634Z",
+  "summary": "Bangladesh faces mounting economic pressures as energy shortages deepen, with power plants shutting down and load-shedding spreading to rural areas, while the government scrambles to secure fuel supplies and seeks corporate tax cuts to support businesses amid order diversions. Political tensions are resurfacing around constitutional reforms and opposition movements, with eleven parties including Jamaat-e-Islami preparing to launch a major campaign, as fresh concerns emerge over arrests linked to social media posts. On the industrial front, a significant partnership between Rancon and Mitsubishi marks growth in vehicle manufacturing, though labor safety remains a contentious issue with renewed calls for justice on the Rana Plaza anniversary. International developments, including potential Iran-related oil supply disruptions and a US trade official's upcoming visit, add uncertainty to Bangladesh's economic outlook as the government works to stabilize finances and meet revenue targets.",
   "sources": [
     {
       "id": "dailystar",
@@ -34,6 +34,54 @@
     }
   ],
   "articles": [
+    {
+      "title": "Rancon, Mitsubishi form JV to make vehicles in Bangladesh",
+      "link": "https://www.thedailystar.net/business/news/rancon-mitsubishi-form-jv-make-vehicles-bangladesh-4158051",
+      "desc": "Rancon Auto Industries Ltd (RAIL) has entered a strategic partnership with Japan’s Mitsubishi Corporation to manufacture vehicles in Bangladesh for sale in domestic and regional markets.",
+      "pubDate": "Wed, 22 Apr 26 21:57:56 +0600",
+      "img": "https://www.thedailystar.net/sites/default/files/styles/social_share/public/2026-04/Rancon%20%20.jpg",
+      "sourceId": "dailystar",
+      "sourceName": "The Daily Star",
+      "sourceColor": "#1a7a4a",
+      "titleBn": "র্যানকন ও মিৎসুবিশি বাংলাদেশে গাড়ি উৎপাদনের জন্য জেভি গঠন করছে",
+      "descBn": "র্যানকন অটো ইন্ডাস্ট্রিজ লিমিটেড (RAIL) জাপানের মিৎসুবিশি কর্পোরেশনের সাথে একটি কৌশলগত অংশীদারিত্ব করেছে যা বাংলাদেশে গাড়ি উৎপাদন করবে এবং দেশীয় ও আঞ্চলিক বাজারে বিক্রয় করবে।"
+    },
+    {
+      "title": "Rana Plaza anniversary sparks renewed calls for worker safety, justice",
+      "link": "https://www.thedailystar.net/business/news/rana-plaza-anniversary-sparks-renewed-calls-worker-safety-justice-4158006",
+      "desc": "The Workers’ Safety Forum organised the discussion at the National Press Club",
+      "pubDate": "Wed, 22 Apr 26 20:47:09 +0600",
+      "img": "https://www.thedailystar.net/sites/default/files/styles/social_share/public/2026-04/WhatsApp%20Image%202026-04-22%20at%204.57.37%20PM.jpeg",
+      "sourceId": "dailystar",
+      "sourceName": "The Daily Star",
+      "sourceColor": "#1a7a4a",
+      "titleBn": "রানা প্লাজা বার্ষিকী শ্রমিক নিরাপত্তা ও ন্যায়বিচারের জন্য নবায়িত আহ্বান জানায়",
+      "descBn": "শ্রমিক নিরাপত্তা ফোরাম জাতীয় প্রেস ক্লাবে এই আলোচনার আয়োজন করেছে"
+    },
+    {
+      "title": "One unit of Adani power plant closed, load shedding increases",
+      "link": "https://en.prothomalo.com/business/local/muk5ez93e9",
+      "desc": "",
+      "pubDate": "Wed, 22 Apr 2026 14:05:13 +0000",
+      "img": "https://media.prothomalo.com/prothomalo-english/2026-04-22/fmltjsc5/prothomalo-bangla2026-04-22vqm8rwkv10-loadshedding-and-oil-crisis-pabna-22042026.webp",
+      "sourceId": "prothomalo",
+      "sourceName": "Prothom Alo",
+      "sourceColor": "#c0392b",
+      "titleBn": "অদানি পাওয়ার প্ল্যান্টের একটি ইউনিট বন্ধ, লোড শেডিং বৃদ্ধি পায়",
+      "descBn": ""
+    },
+    {
+      "title": "Tonu Murder Case: Former army member arrested after 10 years",
+      "link": "https://en.prothomalo.com/bangladesh/crime-and-law/8tnksh1bxx",
+      "desc": "",
+      "pubDate": "Wed, 22 Apr 2026 13:49:31 +0000",
+      "img": "https://media.prothomalo.com/prothomalo-english/2024-08-18/fy9634sm/5.%20Even%20after%208%20years,%20justice%20has%20not%20been%20served%20to%20Tonu.jpg",
+      "sourceId": "prothomalo",
+      "sourceName": "Prothom Alo",
+      "sourceColor": "#c0392b",
+      "titleBn": "টোনু হত্যা কেস: ১০ বছর পর সাবেক সেনাসদস্য গ্রেপ্তার",
+      "descBn": ""
+    },
     {
       "title": "Three ships targeted in Hormuz, Iran seizes two: monitors, Guards",
       "link": "https://en.prothomalo.com/international/utcsql57cp",
@@ -93,6 +141,18 @@
       "sourceColor": "#c0392b",
       "titleBn": "দর্শক সংগ্রহের প্রতিযোগিতায় নারীদের গোপনীয়তা লঙ্ঘিত হচ্ছে কারণ অপ্রস্তুত মুহূর্তগুলি 'কন্টেন্ট' হিসেবে ব্যবহৃত হচ্ছে",
       "descBn": ""
+    },
+    {
+      "title": "CCI, Ujjwala hold cancer awareness programme in Rajbari",
+      "link": "https://www.thedailystar.net/business/organisation-news/press-releases/news/cci-ujjwala-hold-cancer-awareness-programme-rajbari-4157961",
+      "desc": "The initiative was jointly organised by Ujjwala Women and Youth Welfare Foundation and CCI Foundation.",
+      "pubDate": "Wed, 22 Apr 26 16:50:43 +0600",
+      "img": "https://www.thedailystar.net/sites/default/files/styles/social_share/public/2026-04/cci-ujjwala.jpeg",
+      "sourceId": "dailystar",
+      "sourceName": "The Daily Star",
+      "sourceColor": "#1a7a4a",
+      "titleBn": "সিসিআই, উজ্জ্বলা রাজবাড়িতে ক্যান্সার সচেতনতা কর্মসূচি আয়োজন করেছে",
+      "descBn": "এই উদ্যোগটি উজ্জ্বলা নারী ও যুব কল্যাণ ফাউন্ডেশন এবং সিসিআই ফাউন্ডেশনের যৌথ আয়োজনে অনুষ্ঠিত হয়েছিল।"
     },
     {
       "title": "US March retail sales surge past expectations on energy cost spike",
@@ -17756,30 +17816,6 @@
       "sourceName": "Prothom Alo",
       "sourceColor": "#c0392b",
       "titleBn": "অপারেশন এপিক ফিউরি: পঞ্চম প্রজন্মের যুদ্ধের সূচনা",
-      "descBn": ""
-    },
-    {
-      "title": "Habibul Bashar named new chief selector",
-      "link": "https://en.prothomalo.com/sports/cricket/t143fnm6py",
-      "desc": "",
-      "pubDate": "Mon, 23 Mar 2026 14:24:47 +0000",
-      "img": "https://media.prothomalo.com/prothomalo-english/2021-09/36db072f-17ab-4aae-9e82-9acbfd2dc995/prothomalo_import_media_2020_04_23_7ccd107ec62a3b319a411828e405ffbb_5ea0fb46be8aa.jpg",
-      "sourceId": "prothomalo",
-      "sourceName": "Prothom Alo",
-      "sourceColor": "#c0392b",
-      "titleBn": "হাবিবুল বাশারকে নতুন চিফ সিলেক্টর নিয়োগ দেওয়া হয়েছে",
-      "descBn": ""
-    },
-    {
-      "title": "Public entry to National Memorial to stay closed from 23 to 25 March",
-      "link": "https://en.prothomalo.com/bangladesh/0g2m4y50mr",
-      "desc": "",
-      "pubDate": "Mon, 23 Mar 2026 13:55:52 +0000",
-      "img": "https://media.prothomalo.com/prothomalo-english/2026-03-13/qjv22gec/image-368436-1773388804.jpg",
-      "sourceId": "prothomalo",
-      "sourceName": "Prothom Alo",
-      "sourceColor": "#c0392b",
-      "titleBn": "জাতীয় স্মৃতিস্তম্ভে জনসাধারণের প্রবেশ ২৩ থেকে ২৫ মার্চ বন্ধ থাকবে",
       "descBn": ""
     }
   ]
