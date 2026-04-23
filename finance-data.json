@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-23T19:46:10.412Z",
+  "fetchedAt": "2026-04-23T22:04:51.017Z",
   "asx200": {
     "value": 8793.4,
     "change": 427.5,
@@ -193,6 +193,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-04-22",
+        "close": 0.72
+      },
+      {
         "date": "2026-04-23",
         "close": 0.71
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4707.8,
-      "change": 303.7,
-      "changePercent": 6.9
+      "price": 4708.6,
+      "change": 304.5,
+      "changePercent": 6.91
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.47,
-      "change": 6.43,
-      "changePercent": 9.31
+      "price": 75.46,
+      "change": 6.41,
+      "changePercent": 9.28
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 96.64,
-      "change": 8.51,
-      "changePercent": 9.66
+      "price": 97,
+      "change": 8.87,
+      "changePercent": 10.06
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.04,
-      "change": 0.6,
-      "changePercent": 10.95
+      "price": 6.03,
+      "change": 0.59,
+      "changePercent": 10.76
     },
     {
       "name": "BHP Group",
@@ -838,17 +842,52 @@
   ],
   "news": [
     {
-      "title": "‘Rents starting to grow’: Bars and restaurants fill city as shop vacancies plummet",
-      "link": "https://www.smh.com.au/business/markets/rents-starting-to-grow-bars-and-restaurants-fill-city-as-shop-vacancies-plummet-20260422-p5zq0o.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "A surge in restaurant and bar openings has filled nearly half of the city’s retail space.",
-      "pubDate": "Fri, 24 Apr 2026 05:30:00 +1000",
+      "title": "'Genuinely speechless': Appeal board's stunning claim in Collard homophobia case",
+      "link": "https://www.abc.net.au/news/2026-04-24/appeals-board-in-lance-collard-case-makes-stunning-claim/106600716",
+      "snippet": "",
+      "pubDate": "Thu, 23 Apr 2026 21:40:50 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Australia's most successful Winter Olympics team in history honoured",
+      "link": "https://www.abc.net.au/news/2026-04-24/australias-winter-olympic-stars-honoured-snow-australia-awards/106595798",
+      "snippet": "",
+      "pubDate": "Thu, 23 Apr 2026 21:22:47 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Walton's win arrests Aussie woes at Madrid Open",
+      "link": "https://www.abc.net.au/news/2026-04-24/adam-walton-madrid-open-tennis/106600630",
+      "snippet": "",
+      "pubDate": "Thu, 23 Apr 2026 20:30:37 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to slide as Wall Street stutters, oil climbs; Meta cuts 8000 jobs",
+      "link": "https://www.smh.com.au/business/companies/warner-bros-shareholders-approve-us110-billion-paramount-mega-merger-20260424-p5zqnk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "US stocks are pulling back from their record heights on a shaky Wall Street.",
+      "pubDate": "Fri, 24 Apr 2026 06:28:32 +1000",
       "source": "SMH Business"
     },
     {
-      "title": "ASX set to slide as Wall Street stutters, oil climbs; Meta cuts 8000 jobs; Warner Bros shareholders approve $US110b Paramount deal",
-      "link": "https://www.smh.com.au/business/companies/warner-bros-shareholders-approve-us110-billion-paramount-mega-merger-20260424-p5zqnk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "US stocks are pulling back from their record heights on a shaky Wall Street.",
-      "pubDate": "Fri, 24 Apr 2026 05:25:41 +1000",
+      "title": "Figure skating teen makes history for Australia",
+      "link": "https://www.abc.net.au/news/2026-04-24/figure-skating-teen-makes-history-for-australia/106559044",
+      "snippet": "",
+      "pubDate": "Thu, 23 Apr 2026 20:11:59 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Witches founder goes to police over Sandilands’ remarks",
+      "link": "https://www.smh.com.au/business/companies/witches-founder-goes-to-police-over-sandilands-remarks-20260423-p5zqc3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "ARN Media is not the only group unhappy with Kyle Sandilands, who said he could “get nasty” with the Witches activist group that campaigned against his show.",
+      "pubDate": "Fri, 24 Apr 2026 06:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "‘Rents starting to grow’: Bars and restaurants fill Melbourne as shop vacancies plummet",
+      "link": "https://www.smh.com.au/business/markets/rents-starting-to-grow-bars-and-restaurants-fill-city-as-shop-vacancies-plummet-20260422-p5zq0o.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "A surge in restaurant and bar openings has filled nearly half of the city’s retail space.",
+      "pubDate": "Fri, 24 Apr 2026 05:30:00 +1000",
       "source": "SMH Business"
     },
     {
@@ -885,41 +924,6 @@
       "snippet": "",
       "pubDate": "Thu, 23 Apr 2026 18:56:28 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "The advice Mackenzie Arnold gave her heir apparent, Chloe Lincoln",
-      "link": "https://www.abc.net.au/news/2026-04-24/brisbane-roar-chloe-lincoln-on-finding-her-voice/106595716",
-      "snippet": "",
-      "pubDate": "Thu, 23 Apr 2026 18:30:00 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Collard's 'crippling' ban for homophobic slur reduced on appeal",
-      "link": "https://www.abc.net.au/news/2026-04-23/afl-st-kilda-wins-lance-collard-appeal-over-homophobic-slur/106599898",
-      "snippet": "",
-      "pubDate": "Thu, 23 Apr 2026 09:58:47 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Rinehart to hand over financial records to court rivals",
-      "link": "https://www.smh.com.au/business/companies/rinehart-to-hand-over-financial-records-to-court-rivals-20260423-p5zqmj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The WA Supreme Court judge who handed down the ruling in the case may not be available to oversee the ultimate decision of the royalties involved.",
-      "pubDate": "Thu, 23 Apr 2026 19:40:21 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Marshall fumes at NRL refs as Koroisau faces hip-drop tackle verdict",
-      "link": "https://www.abc.net.au/news/2026-04-23/nrl-live-updates-wests-tigers-vs-canberra-raiders-blog/106591476",
-      "snippet": "",
-      "pubDate": "Thu, 23 Apr 2026 08:57:37 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX slides as war uncertainty lingers; Oil stocks rise, Temple &amp; Webster slumps",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-wall-street-advances-oil-climbs-20260423-p5zq9s.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket extended its losses on Thursday as uncertainty over the Iran war hangs over investors and the continued closure of the Strait of Hormuz drove oil prices higher.",
-      "pubDate": "Thu, 23 Apr 2026 16:53:29 +1000",
-      "source": "SMH Business"
     }
   ]
 }
