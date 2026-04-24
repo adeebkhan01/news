@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-24T08:26:51.131Z",
+  "fetchedAt": "2026-04-24T10:48:24.428Z",
   "asx200": {
     "value": 8786.5,
     "change": 407.1,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.71,
     "change": 0.01,
-    "changePercent": 1.81,
+    "changePercent": 1.86,
     "previousClose": 0.7,
     "asOf": "2026-04-24",
     "history": [
@@ -207,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4706,
-      "change": 306.7,
-      "changePercent": 6.97
+      "price": 4693,
+      "change": 293.7,
+      "changePercent": 6.68
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 74.72,
-      "change": 5.44,
-      "changePercent": 7.85
+      "price": 74.76,
+      "change": 5.49,
+      "changePercent": 7.92
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 97.16,
-      "change": 4.81,
-      "changePercent": 5.21
+      "price": 97.38,
+      "change": 5.03,
+      "changePercent": 5.45
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.02,
-      "change": 0.6,
-      "changePercent": 11.01
+      "price": 5.99,
+      "change": 0.57,
+      "changePercent": 10.51
     },
     {
       "name": "BHP Group",
@@ -842,6 +842,20 @@
   ],
   "news": [
     {
+      "title": "Live: Winless Tigers pushing hard against Demons in Anzac Day Eve clash",
+      "link": "https://www.abc.net.au/news/2026-04-24/afl-round-seven-friday-richmond-melbourne-live-blog/106604112",
+      "snippet": "",
+      "pubDate": "Fri, 24 Apr 2026 08:44:00 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Beware of resource-hungry Big Tech taking a foothold",
+      "link": "https://www.smh.com.au/business/small-business/beware-of-resource-hungry-big-tech-taking-a-foothold-20260424-p5zqpa.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Communities in the US oppose data centres for environmental and employment reasons so IT giants are rushing into Australia’s open arms.",
+      "pubDate": "Fri, 24 Apr 2026 18:30:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Blues star says Women's Origin timing 'not ideal' after six-month lay-off",
       "link": "https://www.abc.net.au/news/2026-04-24/kezie-apps-says-womens-state-of-origin-timing-not-ideal/106604306",
       "snippet": "",
@@ -863,7 +877,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Cowboys welcome back key players, Raiders call out vile online abuse",
+      "title": "Live: Bulldogs hit with injury blow as beat-up Broncos stand tall in the wet",
       "link": "https://www.abc.net.au/news/2026-04-24/nrl-live-updates-cowboys-sharks-broncos-bulldogs/106591508",
       "snippet": "",
       "pubDate": "Fri, 24 Apr 2026 06:55:54 +0000",
@@ -886,7 +900,7 @@
     {
       "title": "Kyle and Jackie O are finished, but The Kyle Show is just starting in court",
       "link": "https://www.smh.com.au/business/companies/kyle-and-jackie-o-are-finished-but-the-kyle-show-is-just-starting-in-court-20260424-p5zqtw.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The lewd shock jock is determined to be front and centre of an escalating legal battle involving Jackie O Henderson and their former employers ARN.",
+      "snippet": "The lewd shock jock is determined to be front and centre of an escalating legal battle involving his former studio partner and their erstwhile employers, ARN.",
       "pubDate": "Fri, 24 Apr 2026 15:56:57 +1000",
       "source": "SMH Business"
     },
@@ -905,25 +919,11 @@
       "source": "SMH Business"
     },
     {
-      "title": "AFL emphatically slams claim slurs commonplace, players 'deeply concerned'",
+      "title": "'Homophobia has no place': AFL boss rejects ruling on slurs in sport",
       "link": "https://www.abc.net.au/news/2026-04-24/afl-andrew-dillon-rejects-collard-appeal-board-chair-comments/106603490",
       "snippet": "",
       "pubDate": "Fri, 24 Apr 2026 05:15:02 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "‘Crazy and nasty’: Secrets revealed as the world’s richest man and his rival go to war",
-      "link": "https://www.smh.com.au/business/companies/crazy-and-nasty-secrets-revealed-as-the-world-s-richest-man-and-his-rival-go-to-war-20260424-p5zqp3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Hundreds of court filings have revealed cringey texts, emails and private diary entries of Elon Musk, Sam Altman and other prominent figures ahead of a blockbuster legal battle.",
-      "pubDate": "Fri, 24 Apr 2026 14:21:07 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Auric lures ex-Black Cat Syndicate boss to drive WA gold growth",
-      "link": "https://www.smh.com.au/business/companies/auric-lures-ex-black-cat-syndicate-boss-to-drive-wa-gold-growth-20260424-p5zqu8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Auric Mining has lured former Black Cat boss Gareth Solly as CEO to lead its charge towards becoming Western Australia’s next integrated mining house.",
-      "pubDate": "Fri, 24 Apr 2026 13:51:10 +1000",
-      "source": "SMH Business"
     }
   ]
 }
