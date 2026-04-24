@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-24T19:25:24.352Z",
+  "fetchedAt": "2026-04-24T22:05:55.035Z",
   "asx200": {
     "value": 8786.5,
     "change": 407.1,
@@ -193,6 +193,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-04-23",
+        "close": 0.71
+      },
+      {
         "date": "2026-04-24",
         "close": 0.72
       }
@@ -203,25 +207,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4739.7,
-      "change": 340.4,
-      "changePercent": 7.74
+      "price": 4725.4,
+      "change": 326.1,
+      "changePercent": 7.41
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 76.43,
-      "change": 7.15,
-      "changePercent": 10.32
+      "price": 75.69,
+      "change": 6.41,
+      "changePercent": 9.25
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 94.15,
-      "change": 1.8,
-      "changePercent": 1.95
+      "price": 94.88,
+      "change": 2.53,
+      "changePercent": 2.74
     },
     {
       "name": "Copper",
@@ -229,7 +233,7 @@
       "iconBg": "#fef0e6",
       "price": 6.03,
       "change": 0.61,
-      "changePercent": 11.25
+      "changePercent": 11.18
     },
     {
       "name": "BHP Group",
@@ -838,6 +842,13 @@
   ],
   "news": [
     {
+      "title": "Carlos Alcaraz's French Open three-peat dreams ended by wrist injury",
+      "link": "https://www.abc.net.au/news/2026-04-25/carlos-alcaraz-out-of-french-open-with-wrist-injury/106605514",
+      "snippet": "",
+      "pubDate": "Fri, 24 Apr 2026 20:57:45 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Family history drives Wallaroos star in Anzac Day Test against NZ",
       "link": "https://www.abc.net.au/news/2026-04-25/anzac-day-test-australia-new-zealand-wallaroos-piper-duck/106601970",
       "snippet": "",
@@ -845,7 +856,7 @@
       "source": "ABC News"
     },
     {
-      "title": "Ruthless Demons notch big win as Richmond's winless season continues",
+      "title": "Pickett takes mark of the year contender in Demon's stunning outing",
       "link": "https://www.abc.net.au/news/2026-04-24/afl-round-seven-friday-richmond-melbourne-live-blog/106604112",
       "snippet": "",
       "pubDate": "Fri, 24 Apr 2026 08:44:00 +0000",
@@ -880,7 +891,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Broncos score two NRL Try of the Year contenders in win over Bulldogs",
+      "title": "Injury-decimated Broncos score spectacular tries to heap more pain on Dogs",
       "link": "https://www.abc.net.au/news/2026-04-24/nrl-live-updates-cowboys-sharks-broncos-bulldogs/106591508",
       "snippet": "",
       "pubDate": "Fri, 24 Apr 2026 06:55:54 +0000",
@@ -912,13 +923,6 @@
       "link": "https://www.smh.com.au/business/consumer-affairs/error-in-hindsight-woolworths-broke-its-own-rules-manager-admits-20260424-p5zqrp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Yet another supermarket manager has conceded that the grocery giant broke its own internal guidelines, as Woolworths defends allegations of offering fake discounts.",
       "pubDate": "Fri, 24 Apr 2026 15:38:37 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Infini cleared for first Athabasca uranium drilling blitz in Canada",
-      "link": "https://www.smh.com.au/business/companies/infini-cleared-for-first-athabasca-uranium-drilling-blitz-in-canada-20260424-p5zqv5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Infini has secured maiden drilling permits for its Reynolds and Reitenbach Lake projects in Canada to test a large uranium system on the prized Athabasca Basin margin.",
-      "pubDate": "Fri, 24 Apr 2026 15:25:13 +1000",
       "source": "SMH Business"
     }
   ]
