@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-25T03:36:25.143Z",
+  "fetchedAt": "2026-04-25T07:49:02.272Z",
   "asx200": {
     "value": 8786.5,
     "change": 407.1,
@@ -201,7 +201,7 @@
         "close": 0.71
       },
       {
-        "date": "2026-04-24",
+        "date": "2026-04-25",
         "close": 0.72
       }
     ]
@@ -211,33 +211,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4725.4,
-      "change": 326.1,
-      "changePercent": 7.41
+      "price": 4740.9,
+      "change": 341.6,
+      "changePercent": 7.76
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.69,
-      "change": 6.41,
-      "changePercent": 9.25
+      "price": 76.41,
+      "change": 7.14,
+      "changePercent": 10.31
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 94.88,
-      "change": 2.53,
-      "changePercent": 2.74
+      "price": 94.4,
+      "change": 2.05,
+      "changePercent": 2.22
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 6.03,
-      "change": 0.61,
-      "changePercent": 11.18
+      "change": 0.6,
+      "changePercent": 11.15
     },
     {
       "name": "BHP Group",
@@ -846,7 +846,14 @@
   ],
   "news": [
     {
-      "title": "AFL sacks appeals board chair after Lance Collard case",
+      "title": "Live: Dragons suffer two sin bins as Roosters score six tries in first half",
+      "link": "https://www.abc.net.au/news/2026-04-25/anzac-day-nrl-dragons-roosters-warriors-dolphins-storm-rabbitohs/106591510",
+      "snippet": "",
+      "pubDate": "Sat, 25 Apr 2026 05:17:47 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "AFL sacks appeals boss after homophobia statement labelled 'disgusting'",
       "link": "https://www.abc.net.au/news/2026-04-25/afl-sacks-appeals-board-chair-after-lance-collard-case/106606332",
       "snippet": "",
       "pubDate": "Sat, 25 Apr 2026 03:09:55 +0000",
@@ -860,7 +867,7 @@
       "source": "ABC News"
     },
     {
-      "title": "Live: Hawks get the jump over Suns before Anzac Day blockbuster at the MCG",
+      "title": "Live: Magpies turn it on against Bombers in Anzac Day blockbuster at MCG",
       "link": "https://www.abc.net.au/news/2026-04-25/afl-round-seven-live-blog-haw-gc-ess-coll-pa-gee-freo-carl/106604198",
       "snippet": "",
       "pubDate": "Sat, 25 Apr 2026 02:12:35 +0000",
@@ -921,13 +928,6 @@
       "snippet": "",
       "pubDate": "Fri, 24 Apr 2026 07:44:04 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "ASX ends the week in the red as oil climbs on war uncertainty",
-      "link": "https://www.smh.com.au/business/companies/warner-bros-shareholders-approve-us110-billion-paramount-mega-merger-20260424-p5zqnk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket has closed slightly lower as uncertainty over the war in the Middle East continues to cast a shadow over markets.",
-      "pubDate": "Fri, 24 Apr 2026 17:35:29 +1000",
-      "source": "SMH Business"
     }
   ]
 }
