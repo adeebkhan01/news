@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-26T03:58:53.339Z",
+  "fetchedAt": "2026-04-26T07:56:54.638Z",
   "asx200": {
     "value": 8786.5,
     "change": 407.1,
@@ -201,7 +201,7 @@
         "close": 0.71
       },
       {
-        "date": "2026-04-25",
+        "date": "2026-04-26",
         "close": 0.72
       }
     ]
@@ -212,32 +212,32 @@
       "icon": "🥇",
       "iconBg": "#fef9ee",
       "price": 4740.9,
-      "change": 341.6,
-      "changePercent": 7.76
+      "change": 365.4,
+      "changePercent": 8.35
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
       "price": 76.41,
-      "change": 7.14,
-      "changePercent": 10.31
+      "change": 8.74,
+      "changePercent": 12.92
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
       "price": 94.4,
-      "change": 2.05,
-      "changePercent": 2.22
+      "change": -0.08,
+      "changePercent": -0.08
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 6.03,
-      "change": 0.6,
-      "changePercent": 11.15
+      "change": 0.58,
+      "changePercent": 10.66
     },
     {
       "name": "BHP Group",
@@ -846,14 +846,28 @@
   ],
   "news": [
     {
-      "title": "Live: NRL leading Panthers travel to Newcastle to face Knights",
+      "title": "Aussie stuns Brazil's fab four for first World Surf League title",
+      "link": "https://www.abc.net.au/news/2026-04-26/george-pittar-wins-margaret-river-pro-first-wsl-title/106608282",
+      "snippet": "",
+      "pubDate": "Sun, 26 Apr 2026 06:00:47 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "‘Hairdryer used to trick weather sensor’ to win $47,600 bet",
+      "link": "https://www.smh.com.au/business/companies/hairdryer-used-to-trick-weather-sensor-to-win-47-600-prediction-market-bet-20260426-p5zr5b.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "French police are investigating suspicions that a hairdryer may have been used to tamper with official weather readings to make thousands of dollars in Polymarket bets.",
+      "pubDate": "Sun, 26 Apr 2026 15:08:05 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Manly score three tries in seven-minute blitz to punish sloppy Eels",
       "link": "https://www.abc.net.au/news/2026-04-26/nrl-live-updates-knights-vs-panthers-sea-eagles-vs-eels/106591514",
       "snippet": "",
       "pubDate": "Sun, 26 Apr 2026 03:27:37 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Live: Focused Saints creating headaches for Eagles",
+      "title": "Live: Aleer takes mark of the year contender as Lions flex muscles against Crows",
       "link": "https://www.abc.net.au/news/2026-04-26/afl-live-blog-saints-eagles-lions-crows-giants-kangaroos/106607930",
       "snippet": "",
       "pubDate": "Sun, 26 Apr 2026 02:57:15 +0000",
@@ -914,20 +928,6 @@
       "snippet": "",
       "pubDate": "Sat, 25 Apr 2026 09:00:09 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Captain Grant bristles at 'silly question' as Storm sink to historic low",
-      "link": "https://www.abc.net.au/news/2026-04-25/anzac-day-nrl-dragons-roosters-warriors-dolphins-storm-rabbitohs/106591510",
-      "snippet": "",
-      "pubDate": "Sat, 25 Apr 2026 05:17:47 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Fabricated letters and the ‘lone wolf’ who CTM says overcharged UK government $240m",
-      "link": "https://www.smh.com.au/business/companies/fabricated-letters-and-the-lone-wolf-who-ctm-says-overcharged-uk-government-240m-20260423-p5zqly.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "ASX-listed Corporate Travel Management could face significant penalties after its shocking overcharging of the British government.",
-      "pubDate": "Sat, 25 Apr 2026 12:00:00 +1000",
-      "source": "SMH Business"
     }
   ]
 }
