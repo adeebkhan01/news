@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-27T19:51:48.595Z",
+  "fetchedAt": "2026-04-27T22:11:17.001Z",
   "asx200": {
     "value": 8766.4,
     "change": 250.1,
@@ -88,7 +88,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.03,
-    "changePercent": 4.39,
+    "changePercent": 4.4,
     "previousClose": 0.69,
     "asOf": "2026-04-27",
     "history": [
@@ -177,6 +177,10 @@
         "close": 0.71
       },
       {
+        "date": "2026-04-26",
+        "close": 0.71
+      },
+      {
         "date": "2026-04-27",
         "close": 0.72
       }
@@ -187,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4692.9,
-      "change": 200.9,
-      "changePercent": 4.47
+      "price": 4699.4,
+      "change": 207.4,
+      "changePercent": 4.62
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.43,
-      "change": 5.89,
-      "changePercent": 8.46
+      "price": 75.5,
+      "change": 5.95,
+      "changePercent": 8.56
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 96.18,
-      "change": -3.46,
-      "changePercent": -3.47
+      "price": 96.52,
+      "change": -3.12,
+      "changePercent": -3.13
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.09,
+      "price": 6.08,
       "change": 0.62,
-      "changePercent": 11.36
+      "changePercent": 11.25
     },
     {
       "name": "BHP Group",
@@ -822,18 +826,46 @@
   ],
   "news": [
     {
-      "title": "Aussie rugby may benefit from copying NZ's lateral thinking approach",
-      "link": "https://www.abc.net.au/news/2026-04-28/super-rugby-pacific-wrap-round-11-reds-brumbies-waratahs/106613730",
+      "title": "Indigenous players defend Lyon after comment at training led to 'emotional' meeting",
+      "link": "https://www.abc.net.au/news/2026-04-28/indigenous-players-defend-ross-lyon-after-training-comment/106614462",
       "snippet": "",
-      "pubDate": "Mon, 27 Apr 2026 19:31:46 +0000",
+      "pubDate": "Mon, 27 Apr 2026 21:29:07 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Laughing at a footballer's error helped save this sports fan's life",
+      "link": "https://www.abc.net.au/news/2026-04-28/nfl-kicker-error-reveals-brain-tumour-in-fan/106614460",
+      "snippet": "",
+      "pubDate": "Mon, 27 Apr 2026 21:26:36 +0000",
       "source": "ABC News"
     },
     {
       "title": "ASX set to fall, Wall Street steady as oil prices rise; Microsoft, OpenAI loosen partnership",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-wall-street-steady-as-oil-prices-rise-microsoft-openai-loosen-partnership-20260428-p5zril.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The US stock market’s record-breaking rally is stalling after uncertainty rose over the weekend about what will happen next in the Iran war, while oil prices rose.",
-      "pubDate": "Tue, 28 Apr 2026 05:26:26 +1000",
+      "pubDate": "Tue, 28 Apr 2026 06:36:49 +1000",
       "source": "SMH Business"
+    },
+    {
+      "title": "'The world's game should belong to the world': Free World Cup fan sites for New York",
+      "link": "https://www.abc.net.au/news/2026-04-28/new-york-announces-five-free-fifa-world-cup-fan-zones/106614404",
+      "snippet": "",
+      "pubDate": "Mon, 27 Apr 2026 20:29:10 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Josh Hazlewood crushes Capitals in IPL bowling clinic",
+      "link": "https://www.abc.net.au/news/2026-04-28/josh-hazlewood-delivers-ipl-masterclass/106614374",
+      "snippet": "",
+      "pubDate": "Mon, 27 Apr 2026 20:07:18 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Aussie rugby may benefit from copying NZ's lateral thinking approach",
+      "link": "https://www.abc.net.au/news/2026-04-28/super-rugby-pacific-wrap-round-11-reds-brumbies-waratahs/106613730",
+      "snippet": "",
+      "pubDate": "Mon, 27 Apr 2026 19:31:46 +0000",
+      "source": "ABC News"
     },
     {
       "title": "Scott was already working late on fuel supply when a call stopped him cold",
@@ -845,7 +877,7 @@
     {
       "title": "‘Basically sending someone unarmed into war’: The life-or-death decision Silke faces every day",
       "link": "https://www.smh.com.au/business/the-economy/basically-sending-someone-unarmed-into-war-the-life-or-death-decision-silke-faces-every-day-20260427-p5zr83.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Captain Silke Lehmköster grapples with the same question every day from her office in Germany.",
+      "snippet": "Captain Silke Lehmköster grapples with the same question every day far away from the Iran war. For nearly two months, the answer was no. Then, early last week, she saw a window of opportunity.",
       "pubDate": "Mon, 27 Apr 2026 18:10:00 +1000",
       "source": "SMH Business"
     },
@@ -876,34 +908,6 @@
       "snippet": "",
       "pubDate": "Mon, 27 Apr 2026 06:29:19 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Mick Malthouse fought off alleged intruders with exercise bar, court told",
-      "link": "https://www.abc.net.au/news/2026-04-27/mick-malthouse-house-break-in-bail-application-court/106611664",
-      "snippet": "",
-      "pubDate": "Mon, 27 Apr 2026 05:38:42 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Home-buying demand is falling off a cliff. Softer prices are a near-certainty",
-      "link": "https://www.smh.com.au/business/the-economy/home-buying-demand-is-falling-off-a-cliff-softer-prices-are-a-near-certainty-20260427-p5zrcb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "We may not be at a point of calling it a buyers’ market but this group is clearly recovering some of its bargaining power.",
-      "pubDate": "Mon, 27 Apr 2026 15:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Pogačar looks unbeatable, but Seixas could be France's next new hope",
-      "link": "https://www.abc.net.au/news/2026-04-27/tadej-pogacar-liege-bastogne-liege-paul-seixas-tour-de-france/106610816",
-      "snippet": "",
-      "pubDate": "Mon, 27 Apr 2026 03:35:52 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Viking advances Nevada tungsten play as prices hit record highs",
-      "link": "https://www.smh.com.au/business/companies/viking-advances-nevada-tungsten-play-as-prices-hit-record-highs-20260427-p5zrej.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Having produced a 63.6% tungsten concentrate, Viking Mines has moved its US Linka towards early-stage plant design, with cost studies and June-quarter drilling now in focus.",
-      "pubDate": "Mon, 27 Apr 2026 13:35:32 +1000",
-      "source": "SMH Business"
     }
   ]
 }
