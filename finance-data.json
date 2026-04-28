@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-28T08:41:10.946Z",
+  "fetchedAt": "2026-04-28T11:19:49.897Z",
   "asx200": {
     "value": 8710.7,
     "change": 194.4,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.03,
-    "changePercent": 4.27,
+    "changePercent": 4.02,
     "previousClose": 0.69,
     "asOf": "2026-04-28",
     "history": [
@@ -191,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4644.1,
-      "change": 152.1,
-      "changePercent": 3.39
+      "price": 4615.7,
+      "change": 123.7,
+      "changePercent": 2.75
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 73.9,
-      "change": 4.35,
-      "changePercent": 6.25
+      "price": 73.36,
+      "change": 3.81,
+      "changePercent": 5.49
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 98.4,
-      "change": -1.24,
-      "changePercent": -1.24
+      "price": 100.13,
+      "change": 0.49,
+      "changePercent": 0.49
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.02,
-      "change": 0.55,
-      "changePercent": 10.13
+      "price": 5.98,
+      "change": 0.51,
+      "changePercent": 9.29
     },
     {
       "name": "BHP Group",
@@ -826,6 +826,13 @@
   ],
   "news": [
     {
+      "title": "Netball's powerful statement on Anzac Day",
+      "link": "https://www.abc.net.au/news/2026-04-28/2026-super-netball-round-up-round7/106617878",
+      "snippet": "",
+      "pubDate": "Tue, 28 Apr 2026 10:13:14 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "ASX hits three-week low in war limbo; energy stocks gain",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-wall-street-steady-as-oil-prices-rise-microsoft-openai-loosen-partnership-20260428-p5zril.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The Australian sharemarket fell for a sixth day as uncertainty lingers about a resolution of two-month Iran war and ahead of a key inflation report.",
@@ -901,13 +908,6 @@
       "snippet": "",
       "pubDate": "Tue, 28 Apr 2026 04:31:54 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "AI heavyweights’ court battle could unravel the entire sector",
-      "link": "https://www.smh.com.au/business/companies/ai-heavyweights-court-battle-could-unravel-the-entire-sector-20260428-p5zrkw.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Elon Musk is suing to make OpenAI a non-profit again and remove Sam Altman as its CEO. If he succeeds, the complex web of deal between the world’s AI companies could fall apart.",
-      "pubDate": "Tue, 28 Apr 2026 12:03:05 +1000",
-      "source": "SMH Business"
     }
   ]
 }
