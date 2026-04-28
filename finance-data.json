@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-28T19:58:33.399Z",
+  "fetchedAt": "2026-04-28T22:28:17.148Z",
   "asx200": {
     "value": 8710.7,
     "change": 194.4,
@@ -88,7 +88,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.03,
-    "changePercent": 4.3,
+    "changePercent": 4.33,
     "previousClose": 0.69,
     "asOf": "2026-04-28",
     "history": [
@@ -177,6 +177,10 @@
         "close": 0.71
       },
       {
+        "date": "2026-04-27",
+        "close": 0.72
+      },
+      {
         "date": "2026-04-28",
         "close": 0.72
       }
@@ -187,25 +191,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4610.9,
-      "change": 118.9,
-      "changePercent": 2.65
+      "price": 4610.3,
+      "change": 118.3,
+      "changePercent": 2.63
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 73.71,
-      "change": 4.16,
-      "changePercent": 5.99
+      "price": 73.66,
+      "change": 4.11,
+      "changePercent": 5.92
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 99.91,
-      "change": 0.27,
-      "changePercent": 0.27
+      "price": 99.38,
+      "change": -0.26,
+      "changePercent": -0.26
     },
     {
       "name": "Copper",
@@ -822,17 +826,38 @@
   ],
   "news": [
     {
-      "title": "Are you ready for Australia’s $5 trillion wealth transfer?",
-      "link": "https://www.smh.com.au/business/banking-and-finance/are-you-ready-for-australia-s-5-trillion-wealth-transfer-20260428-p5zrnf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Even if your situation seems straightforward, you’re doing a huge favour for those you leave behind.",
-      "pubDate": "Wed, 29 Apr 2026 05:30:00 +1000",
-      "source": "SMH Business"
+      "title": "LIV Golf postpones US event amid tour's uncertain future",
+      "link": "https://www.abc.net.au/news/2026-04-29/liv-golf-louisiana-united-states-event-postponed/106619062",
+      "snippet": "",
+      "pubDate": "Tue, 28 Apr 2026 22:15:58 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Star Lions recruit facing three months on sidelines",
+      "link": "https://www.abc.net.au/news/2026-04-29/afl-brisbane-lions-oscar-allen-foot-injury/106618972",
+      "snippet": "",
+      "pubDate": "Tue, 28 Apr 2026 21:42:26 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Stoinis goes big but Royals dent crown of Ponting's Kings",
+      "link": "https://www.abc.net.au/news/2026-04-29/ipl-cricket-rajasthan-royals-punjab-kings-marcus-stoinis/106618888",
+      "snippet": "",
+      "pubDate": "Tue, 28 Apr 2026 20:43:24 +0000",
+      "source": "ABC News"
     },
     {
       "title": "ASX set to fall as sinking AI stocks weigh down Wall Street; UAE to leave OPEC oil cartel",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-as-sinking-ai-stocks-and-rising-oil-prices-weigh-down-wall-street-20260429-p5zrvj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Slumping AI stocks and another climb in oil prices because of the Iran war are helping to halt Wall Street’s record-setting rally.",
-      "pubDate": "Wed, 29 Apr 2026 05:15:56 +1000",
+      "pubDate": "Wed, 29 Apr 2026 06:40:03 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Are you ready for Australia’s $5 trillion wealth transfer?",
+      "link": "https://www.smh.com.au/business/banking-and-finance/are-you-ready-for-australia-s-5-trillion-wealth-transfer-20260428-p5zrnf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Even if your situation seems straightforward, you’re doing a huge favour for those you leave behind.",
+      "pubDate": "Wed, 29 Apr 2026 05:30:00 +1000",
       "source": "SMH Business"
     },
     {
@@ -883,27 +908,6 @@
       "snippet": "Lindian Resources has secured a domestic sulphuric acid supply for its Kazakh rare earths plant, insulating the project from a looming global reagent shortage.",
       "pubDate": "Tue, 28 Apr 2026 15:44:55 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Raiz funds under management reach $2.17B as customers keep piling in",
-      "link": "https://www.smh.com.au/business/companies/raiz-funds-under-management-reach-2-17b-as-customers-keep-piling-in-20260428-p5zrs9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Raiz Invest lifted funds under management 23.6% to $2.04B in Q3 and grew revenue per user 14% to $86.61, with a rebound pushing total funds to $2.17B in April.",
-      "pubDate": "Tue, 28 Apr 2026 15:39:02 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "A $700m super-yacht linked to a Russian oligarch just sailed through the Strait of Hormuz",
-      "link": "https://www.smh.com.au/business/companies/a-700m-super-yacht-linked-to-a-russian-oligarch-just-sailed-through-the-strait-of-hormuz-20260428-p5zrq0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "It is not clear how the multi-deck pleasure vessel, complete with a helipad and a submarine, was able to use the blockaded shipping lane at the heart of the US-Iran conflict.",
-      "pubDate": "Tue, 28 Apr 2026 15:22:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "NRL's greatest ever try-scorer hints at imminent PNG switch",
-      "link": "https://www.abc.net.au/news/2026-04-28/alex-johnston-hints-at-imminent-png-switch/106617140",
-      "snippet": "",
-      "pubDate": "Tue, 28 Apr 2026 05:17:04 +0000",
-      "source": "ABC News"
     }
   ]
 }
