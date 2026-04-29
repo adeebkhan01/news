@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-29T16:57:36.861Z",
+  "fetchedAt": "2026-04-29T19:57:29.482Z",
   "asx200": {
     "value": 8687,
     "change": 170.7,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.71,
     "change": 0.02,
-    "changePercent": 3.53,
+    "changePercent": 3.37,
     "previousClose": 0.69,
     "asOf": "2026-04-29",
     "history": [
@@ -195,9 +195,9 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4563.5,
-      "change": 37.5,
-      "changePercent": 0.83
+      "price": 4557.6,
+      "change": 31.6,
+      "changePercent": 0.7
     },
     {
       "name": "Silver",
@@ -211,17 +211,17 @@
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 106.61,
-      "change": 3.73,
-      "changePercent": 3.63
+      "price": 107.95,
+      "change": 5.07,
+      "changePercent": 4.93
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.94,
-      "change": 0.46,
-      "changePercent": 8.44
+      "price": 5.93,
+      "change": 0.45,
+      "changePercent": 8.24
     },
     {
       "name": "BHP Group",
@@ -830,6 +830,20 @@
   ],
   "news": [
     {
+      "title": "'No offence to Tassie': The infamous Sirengate mess 20 years on",
+      "link": "https://www.abc.net.au/news/2026-04-30/the-sirengate-mess-20-years-after-the-afl-drama/106570944",
+      "snippet": "",
+      "pubDate": "Wed, 29 Apr 2026 19:19:57 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to fall as Wall Street slides, oil jumps; A divided Fed keeps rates on hold",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-as-wall-street-slides-oil-jumps-a-divided-fed-keeps-rates-on-hold-20260430-p5zsck.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Oil prices kept spurting higher and neared their highest levels since 2022 while Federal Reserve kept rates on hold, but there was a lot of dissent over future cuts.",
+      "pubDate": "Thu, 30 Apr 2026 05:15:31 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "The next casualty of Trump’s war is already here",
       "link": "https://www.smh.com.au/business/the-economy/the-next-casualty-of-trump-s-war-is-already-here-20260429-p5zrvi.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "It is the coldest-known substance on Earth used in a number of crucial parts of the global economy. And we are running low.",
@@ -898,20 +912,6 @@
       "snippet": "",
       "pubDate": "Wed, 29 Apr 2026 05:16:32 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Eclipse shares surge on big upgrade at Greenland rare earths play",
-      "link": "https://www.smh.com.au/business/companies/eclipse-shares-surge-on-big-upgrade-at-greenland-rare-earths-play-20260429-p5zs6l.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Eclipse Metals has surged after doubling its Greenlandic rare earths project’s resource to 208Mt, including some 456,000 tonnes of the highly sought-after permanent magnet metals.",
-      "pubDate": "Wed, 29 Apr 2026 14:26:21 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Locksley taps Columbia Uni tech to fast-track US rare earths",
-      "link": "https://www.smh.com.au/business/companies/locksley-taps-columbia-uni-tech-to-fast-track-us-rare-earths-20260429-p5zs6c.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Locksley Resources is advancing rare earths processing options for its US Mojave project with Columbia University, aiming to simplify recovery and separation flowsheets.",
-      "pubDate": "Wed, 29 Apr 2026 14:10:42 +1000",
-      "source": "SMH Business"
     }
   ]
 }
