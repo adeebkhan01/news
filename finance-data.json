@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-29T19:57:29.482Z",
+  "fetchedAt": "2026-04-29T22:15:19.643Z",
   "asx200": {
     "value": 8687,
     "change": 170.7,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.71,
     "change": 0.02,
-    "changePercent": 3.37,
+    "changePercent": 3.35,
     "previousClose": 0.69,
     "asOf": "2026-04-29",
     "history": [
@@ -185,6 +185,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-04-28",
+        "close": 0.72
+      },
+      {
         "date": "2026-04-29",
         "close": 0.71
       }
@@ -195,25 +199,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4557.6,
-      "change": 31.6,
-      "changePercent": 0.7
+      "price": 4551.8,
+      "change": 25.8,
+      "changePercent": 0.57
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 72.07,
-      "change": 1.74,
-      "changePercent": 2.48
+      "price": 71.69,
+      "change": 1.36,
+      "changePercent": 1.94
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 107.95,
-      "change": 5.07,
-      "changePercent": 4.93
+      "price": 108.21,
+      "change": 5.33,
+      "changePercent": 5.18
     },
     {
       "name": "Copper",
@@ -221,7 +225,7 @@
       "iconBg": "#fef0e6",
       "price": 5.93,
       "change": 0.45,
-      "changePercent": 8.24
+      "changePercent": 8.22
     },
     {
       "name": "BHP Group",
@@ -830,18 +834,39 @@
   ],
   "news": [
     {
+      "title": "Travis Head makes stunning return to form in IPL",
+      "link": "https://www.abc.net.au/news/2026-04-30/ipl-cricket-travis-head-pat-cummins-sunrisers-indians/106623746",
+      "snippet": "",
+      "pubDate": "Wed, 29 Apr 2026 21:48:28 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "‘Unprecedented attacks’: Fed chair takes aim at Trump as he vows to stay on board",
+      "link": "https://www.smh.com.au/business/markets/unprecedented-fed-chair-powell-takes-aim-at-trump-20260430-p5zsdk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Jerome Powell said he plans to remain on the board of the Federal Reserve after his term as chair ends next month, saying legal attacks by the Trump administration have put the independence of the nation’s central bank at risk.",
+      "pubDate": "Thu, 30 Apr 2026 07:28:47 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Austrian 'lucky loser' makes WTA Tour history at Madrid Open",
+      "link": "https://www.abc.net.au/news/2026-04-30/wta-tour-madrid-open-anastasia-potapova-quarterfinals/106623626",
+      "snippet": "",
+      "pubDate": "Wed, 29 Apr 2026 20:50:33 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to fall as oil surge, Fed drive Wall Street lower; Tech giants’ results",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-as-wall-street-slides-oil-jumps-a-divided-fed-keeps-rates-on-hold-20260430-p5zsck.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Oil prices kept spurting higher and neared their highest levels since 2022 while Federal Reserve kept rates on hold, but there was a lot of dissent over future cuts.",
+      "pubDate": "Thu, 30 Apr 2026 06:49:32 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "'No offence to Tassie': The infamous Sirengate mess 20 years on",
       "link": "https://www.abc.net.au/news/2026-04-30/the-sirengate-mess-20-years-after-the-afl-drama/106570944",
       "snippet": "",
       "pubDate": "Wed, 29 Apr 2026 19:19:57 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "ASX set to fall as Wall Street slides, oil jumps; A divided Fed keeps rates on hold",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-as-wall-street-slides-oil-jumps-a-divided-fed-keeps-rates-on-hold-20260430-p5zsck.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Oil prices kept spurting higher and neared their highest levels since 2022 while Federal Reserve kept rates on hold, but there was a lot of dissent over future cuts.",
-      "pubDate": "Thu, 30 Apr 2026 05:15:31 +1000",
-      "source": "SMH Business"
     },
     {
       "title": "The next casualty of Trump’s war is already here",
@@ -891,27 +916,6 @@
       "snippet": "Kaiser Reef has pumped out a stellar $14.28M in operating net cash and boosted its cash stash to $45.6M at the end of March from its Henty gold mine in Tasmania.",
       "pubDate": "Wed, 29 Apr 2026 15:38:59 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Musk says he’s saving humanity as he battles Altman in court - but it may actually be xAI",
-      "link": "https://www.smh.com.au/business/companies/musk-says-he-s-saving-humanity-as-he-battles-altman-in-court-but-it-may-actually-be-xai-20260429-p5zs19.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Musk is playing up his role as AI’s - and indeed humanity’s - safety guard against a technology that “could kill us all”.",
-      "pubDate": "Wed, 29 Apr 2026 15:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "AFL pushes ahead with draft changes and not everyone is happy",
-      "link": "https://www.abc.net.au/news/2026-04-29/afl-pushes-ahead-with-draft-changes-and-not-everyone-is-happy/106621516",
-      "snippet": "",
-      "pubDate": "Wed, 29 Apr 2026 05:22:24 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "The six weeks from hell that whipped the Sky Blues into Origin shape",
-      "link": "https://www.abc.net.au/news/2026-04-29/nsw-state-of-origin-womens-queensland-maroons/106621490",
-      "snippet": "",
-      "pubDate": "Wed, 29 Apr 2026 05:16:32 +0000",
-      "source": "ABC News"
     }
   ]
 }
