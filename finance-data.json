@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-30T19:54:15.492Z",
+  "fetchedAt": "2026-04-30T22:14:27.478Z",
   "asx200": {
     "value": 8665.8,
     "change": 204.8,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.04,
-    "changePercent": 5.12,
+    "changePercent": 5.15,
     "previousClose": 0.69,
     "asOf": "2026-04-30",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-04-29",
+        "close": 0.71
+      },
+      {
         "date": "2026-04-30",
         "close": 0.72
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4635.4,
-      "change": 109.4,
-      "changePercent": 2.42
+      "price": 4640.3,
+      "change": 114.3,
+      "changePercent": 2.53
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 74.22,
-      "change": 3.9,
-      "changePercent": 5.54
+      "price": 74.66,
+      "change": 4.34,
+      "changePercent": 6.17
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 105.1,
-      "change": 2.22,
-      "changePercent": 2.16
+      "price": 105.41,
+      "change": 2.53,
+      "changePercent": 2.46
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.02,
-      "change": 0.54,
-      "changePercent": 9.88
+      "price": 6.03,
+      "change": 0.55,
+      "changePercent": 10.09
     },
     {
       "name": "BHP Group",
@@ -838,10 +842,24 @@
   ],
   "news": [
     {
-      "title": "ASX set to surge as Wall Street rises, oil retreats; Meta tumbles; $A jumps",
+      "title": "Hazlewood smashed for 24 off one over as Indian great fires in IPL",
+      "link": "https://www.abc.net.au/news/2026-05-01/ipl-josh-hazlewood-taken-to-task-by-shubman-gill/106629070",
+      "snippet": "",
+      "pubDate": "Thu, 30 Apr 2026 21:51:16 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Aussie one of several big names left in the lurch as LIV Golf funding pulled",
+      "link": "https://www.abc.net.au/news/2026-05-01/liv-golf-funding-pulled-by-saudi-arabia/106629024",
+      "snippet": "",
+      "pubDate": "Thu, 30 Apr 2026 21:11:47 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to surge as Wall Street rises, oil retreats; Meta tumbles, Apple reports",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-surge-as-wall-street-rises-oil-retreats-meta-tumbles-a-jumps-20260501-p5zss2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The US stock market is rising following strong profit reports from big companies like Alphabet while oil prices lost some steam after surging on Thursday.",
-      "pubDate": "Fri, 01 May 2026 05:19:51 +1000",
+      "snippet": "The US stock market motored to more records as profits keep piling up for big companies while oil prices lost some steam after surging on Thursday.",
+      "pubDate": "Fri, 01 May 2026 06:54:45 +1000",
       "source": "SMH Business"
     },
     {
@@ -901,24 +919,10 @@
       "source": "SMH Business"
     },
     {
-      "title": "NRL coach Craig Bellamy diagnosed with form of neurodegenerative disorder",
+      "title": "NRL coach Bellamy diagnosed with form of neurodegenerative disorder",
       "link": "https://www.abc.net.au/news/2026-04-30/nrl-coach-craig-bellamy-diagnosed-neurodegenerative-disorder/106628246",
       "snippet": "",
       "pubDate": "Thu, 30 Apr 2026 09:02:53 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Infini kicks off high-stakes drill test in Canadian uranium heartland",
-      "link": "https://www.smh.com.au/business/companies/infini-kicks-off-high-stakes-drill-test-in-canadian-uranium-heartland-20260430-p5zsqs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Infini Resources has launched a maiden uranium drill program at its Canadian Athabasca Basin project, targeting a suite of high-priority prospects.",
-      "pubDate": "Thu, 30 Apr 2026 18:53:20 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Moore goals after siren as Hawks and Pies settle for thrilling draw",
-      "link": "https://www.abc.net.au/news/2026-04-30/afl-round-8-collingwood-magpies-hawthorn-hawks-live-blog/106628104",
-      "snippet": "",
-      "pubDate": "Thu, 30 Apr 2026 08:30:30 +0000",
       "source": "ABC News"
     }
   ]
