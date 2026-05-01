@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-01T19:45:53.105Z",
+  "fetchedAt": "2026-05-01T22:08:52.298Z",
   "asx200": {
     "value": 8729.8,
     "change": 58,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.03,
-    "changePercent": 4.16,
+    "changePercent": 4.15,
     "previousClose": 0.69,
     "asOf": "2026-05-01",
     "history": [
@@ -185,6 +185,10 @@
         "close": 0.71
       },
       {
+        "date": "2026-04-30",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-01",
         "close": 0.72
       }
@@ -195,33 +199,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4628.6,
-      "change": -154.6,
-      "changePercent": -3.23
+      "price": 4625.6,
+      "change": -157.6,
+      "changePercent": -3.29
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 76.11,
-      "change": 0.24,
-      "changePercent": 0.31
+      "price": 75.84,
+      "change": -0.03,
+      "changePercent": -0.04
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 102.07,
-      "change": 1.95,
-      "changePercent": 1.95
+      "price": 102.5,
+      "change": 2.38,
+      "changePercent": 2.38
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.97,
-      "change": 0.35,
-      "changePercent": 6.17
+      "price": 5.96,
+      "change": 0.34,
+      "changePercent": 6.05
     },
     {
       "name": "BHP Group",
@@ -830,6 +834,27 @@
   ],
   "news": [
     {
+      "title": "Despite horrific Olympics crash, Vonn is not yet done",
+      "link": "https://www.abc.net.au/news/2026-05-02/lindsey-vonn-struggling-2026-winter-olympics-crash-comeback/106634180",
+      "snippet": "",
+      "pubDate": "Fri, 01 May 2026 21:55:05 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Iran says 'many issues to discuss' with FIFA ahead of World Cup games in US",
+      "link": "https://www.abc.net.au/news/2026-05-02/iran-officials-to-meet-fifa-ahead-of-usa-world-cup-games/106634146",
+      "snippet": "",
+      "pubDate": "Fri, 01 May 2026 21:25:39 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'That's why he's a legend': Starc dominant on IPL return",
+      "link": "https://www.abc.net.au/news/2026-05-02/mitchell-starc-in-ipl-return-marnus-labuschagne-in-psl-final/106634130",
+      "snippet": "",
+      "pubDate": "Fri, 01 May 2026 21:03:43 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "The ocean-facing home with mystique and stunning views on every level",
       "link": "https://www.smh.com.au/business/consumer-affairs/the-ocean-facing-home-with-mystique-and-stunning-views-on-every-level-20260430-p5zsmc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "There’s an endless blue horizon on offer for occupants of a newly built Newcastle home, which cascades over five levels towards the Pacific Ocean.",
@@ -891,27 +916,6 @@
       "snippet": "The Bulls N’ Bears ASX Runner of the Week is… 1414 Degrees, which exploded after its nanoparticle battery tech delivered a 50 per cent boost over traditional graphite.",
       "pubDate": "Fri, 01 May 2026 16:46:08 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Hardwick fires back at Lyon's 'compromised draft' call",
-      "link": "https://www.abc.net.au/news/2026-05-01/afl-damien-hardwick-suns-ross-lyon-saints-draft/106631928",
-      "snippet": "",
-      "pubDate": "Fri, 01 May 2026 05:14:29 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Critical Resources targets high-grade gold and tungsten in NZ blitz",
-      "link": "https://www.smh.com.au/business/companies/critical-resources-targets-high-grade-gold-and-tungsten-in-nz-blitz-20260501-p5zsys.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Critical Resources has completed fieldwork at its Lammerlaw and Croesus projects in New Zealand, confirming high-grade gold and tungsten targets amid surging prices.",
-      "pubDate": "Fri, 01 May 2026 15:04:53 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "From near-misses and cancer to Olympic success, Glaetzer bows out",
-      "link": "https://www.abc.net.au/news/2026-05-01/matt-glaetzer-retirement-track-cycling/106630176",
-      "snippet": "",
-      "pubDate": "Fri, 01 May 2026 03:32:04 +0000",
-      "source": "ABC News"
     }
   ]
 }
