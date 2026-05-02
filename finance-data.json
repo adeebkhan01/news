@@ -1,11 +1,11 @@
 {
-  "fetchedAt": "2026-05-01T22:08:52.298Z",
+  "fetchedAt": "2026-05-02T03:55:45.857Z",
   "asx200": {
     "value": 8729.8,
     "change": 58,
     "changePercent": 0.67,
     "previousClose": 8671.8,
-    "asOf": "2026-05-01",
+    "asOf": "2026-05-02",
     "history": [
       {
         "date": "2026-03-31",
@@ -86,6 +86,10 @@
       {
         "date": "2026-04-30",
         "close": 8665.8
+      },
+      {
+        "date": "2026-05-01",
+        "close": 8729.8
       }
     ]
   },
@@ -94,7 +98,7 @@
     "change": 0.03,
     "changePercent": 4.15,
     "previousClose": 0.69,
-    "asOf": "2026-05-01",
+    "asOf": "2026-05-02",
     "history": [
       {
         "date": "2026-03-31",
@@ -834,6 +838,27 @@
   ],
   "news": [
     {
+      "title": "Live: Bombers show effort but Lions well on top at Docklands",
+      "link": "https://www.abc.net.au/news/2026-05-02/afl-bombers-lions-eagles-tigers-cats-kangaroos-blues-saints/106634434",
+      "snippet": "",
+      "pubDate": "Sat, 02 May 2026 02:04:17 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Super shoes won't be banned despite 'technological doping' claims",
+      "link": "https://www.abc.net.au/news/2026-05-02/sebastian-coe-world-athletics-president-shoe-marathon-record/106634252",
+      "snippet": "",
+      "pubDate": "Sat, 02 May 2026 00:07:11 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Piastri qualifies third for Miami sprint, Norris pole",
+      "link": "https://www.abc.net.au/news/2026-05-02/oscar-piastri-third-for-miami-sprint-race/106634200",
+      "snippet": "",
+      "pubDate": "Fri, 01 May 2026 22:11:47 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Despite horrific Olympics crash, Vonn is not yet done",
       "link": "https://www.abc.net.au/news/2026-05-02/lindsey-vonn-struggling-2026-winter-olympics-crash-comeback/106634180",
       "snippet": "",
@@ -890,31 +915,10 @@
       "source": "SMH Business"
     },
     {
-      "title": "The $562 million LA mansion built for royals that just hit the market",
+      "title": "A $562 million Los Angeles mansion built for a royal family just hit the market",
       "link": "https://www.smh.com.au/business/banking-and-finance/the-562-million-la-mansion-built-for-royals-that-just-hit-the-market-20260430-p5zscm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "It could be the biggest US house sale ever but its owners are set to make a loss.",
+      "snippet": "It could be the biggest US house sale ever, but its owners are set to make a loss.",
       "pubDate": "Fri, 01 May 2026 17:20:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Kaiser doubles down in Victoria with round-the-clock gold",
-      "link": "https://www.smh.com.au/business/companies/kaiser-doubles-down-in-victoria-with-round-the-clock-gold-20260501-p5zt0x.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Kaiser Reef has officially ramped up throughput at its Porcupine Flat processing plant in Victoria, successfully moving to a two-shift operation at its Maldon gold project.",
-      "pubDate": "Fri, 01 May 2026 17:06:16 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Melbourne Storm lose seven in a row for the first time in club history",
-      "link": "https://www.abc.net.au/news/2026-05-01/nrl-live-updates-bulldogs-cowboys-dolphins-storm/106628550",
-      "snippet": "",
-      "pubDate": "Fri, 01 May 2026 06:57:19 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX Runners of the Week: 1414, Pathkey.AI, Eclipse &amp; European Lithium",
-      "link": "https://www.smh.com.au/business/companies/asx-runners-of-the-week-1414-pathkey-ai-eclipse-and-european-lithium-20260501-p5zszs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Bulls N’ Bears ASX Runner of the Week is… 1414 Degrees, which exploded after its nanoparticle battery tech delivered a 50 per cent boost over traditional graphite.",
-      "pubDate": "Fri, 01 May 2026 16:46:08 +1000",
       "source": "SMH Business"
     }
   ]
