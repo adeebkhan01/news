@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-02T03:55:45.857Z",
+  "fetchedAt": "2026-05-02T08:02:16.445Z",
   "asx200": {
     "value": 8729.8,
     "change": 58,
@@ -193,7 +193,7 @@
         "close": 0.72
       },
       {
-        "date": "2026-05-01",
+        "date": "2026-05-02",
         "close": 0.72
       }
     ]
@@ -203,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4625.6,
-      "change": -157.6,
-      "changePercent": -3.29
+      "price": 4644.5,
+      "change": -138.7,
+      "changePercent": -2.9
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.84,
-      "change": -0.03,
-      "changePercent": -0.04
+      "price": 76.43,
+      "change": 0.56,
+      "changePercent": 0.74
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 102.5,
-      "change": 2.38,
-      "changePercent": 2.38
+      "price": 101.94,
+      "change": 1.82,
+      "changePercent": 1.82
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.96,
-      "change": 0.34,
-      "changePercent": 6.05
+      "price": 5.98,
+      "change": 0.36,
+      "changePercent": 6.41
     },
     {
       "name": "BHP Group",
@@ -838,7 +838,14 @@
   ],
   "news": [
     {
-      "title": "Live: Bombers show effort but Lions well on top at Docklands",
+      "title": "Live: Broncos welcome back superstars after Raiders beat Titans",
+      "link": "https://www.abc.net.au/news/2026-05-02/nrl-live-titans-raiders-eels-warriors-roosters-broncos/106634596",
+      "snippet": "",
+      "pubDate": "Sat, 02 May 2026 04:44:06 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Fagan furious after Lions' notes on Bombers are 'illegally' leaked",
       "link": "https://www.abc.net.au/news/2026-05-02/afl-bombers-lions-eagles-tigers-cats-kangaroos-blues-saints/106634434",
       "snippet": "",
       "pubDate": "Sat, 02 May 2026 02:04:17 +0000",
@@ -912,13 +919,6 @@
       "link": "https://www.smh.com.au/business/markets/asx-set-to-surge-as-wall-street-rises-oil-retreats-meta-tumbles-a-jumps-20260501-p5zss2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Stocks in Australia gained ground to end the week higher after eight sessions of daily losses.",
       "pubDate": "Fri, 01 May 2026 17:29:02 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "A $562 million Los Angeles mansion built for a royal family just hit the market",
-      "link": "https://www.smh.com.au/business/banking-and-finance/the-562-million-la-mansion-built-for-royals-that-just-hit-the-market-20260430-p5zscm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "It could be the biggest US house sale ever, but its owners are set to make a loss.",
-      "pubDate": "Fri, 01 May 2026 17:20:00 +1000",
       "source": "SMH Business"
     }
   ]
