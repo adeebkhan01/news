@@ -304,9 +304,12 @@ async function main() {
   // ── Load existing data ──
   var existingArticles = [];
   var existingByLink = {};
-  if (fs.existsSync(dataFile)) {
+  var loadFile = fs.existsSync(dataFile) ? dataFile
+    : (regionArg === 'bd' && fs.existsSync('data.json')) ? 'data.json' : null;
+  if (loadFile) {
     try {
-      var existing = JSON.parse(fs.readFileSync(dataFile,'utf8'));
+      var existing = JSON.parse(fs.readFileSync(loadFile,'utf8'));
+      if (loadFile !== dataFile) console.log('Migrated existing articles from', loadFile);
       existingArticles = (existing.articles || []).filter(function(a) { return isRecent(a.pubDate); });
       existingArticles.forEach(function(a) {
         if (REGION.translate) {
@@ -316,7 +319,7 @@ async function main() {
         existingByLink[a.link] = true;
       });
       console.log('Loaded', existingArticles.length, 'existing articles (after 30-day prune)');
-    } catch(e) { console.warn('Could not read existing ' + dataFile + ':', e.message); }
+    } catch(e) { console.warn('Could not read existing ' + loadFile + ':', e.message); }
   }
 
   // ── Fetch fresh articles from feeds ──
