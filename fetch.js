@@ -5,16 +5,63 @@ const fs      = require('fs');
 
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
-const SOURCES = [
-  { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/business/rss.xml' },
-  { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/frontpage/rss.xml' },
-  { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/bangladesh/rss.xml' },
-  { id: 'bdnews24',         name: 'bdnews24',          color: '#e05c1a', url: 'https://bdnews24.com/?widgetName=rssfeed&widgetId=1150&getXmlFeed=true' },
-  { id: 'prothomalo',       name: 'Prothom Alo',       color: '#c0392b', url: 'https://en.prothomalo.com/feed/' },
-  { id: 'tbsnews',          name: 'TBS News',          color: '#2980b9', url: 'https://www.tbsnews.net/rss' },
-  { id: 'financialexpress', name: 'Financial Express', color: '#8e44ad', url: 'https://thefinancialexpress.com.bd/feed/' },
-  { id: 'dailysun',         name: 'Daily Sun',         color: '#16a085', url: 'https://www.daily-sun.com/rss' },
-];
+const REGIONS = {
+  bd: {
+    label: 'Bangladesh',
+    dataFile: 'data-bd.json',
+    translate: true,
+    summaryPrompt: 'You are a concise news briefing editor covering Bangladesh.',
+    sources: [
+      { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/business/rss.xml' },
+      { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/frontpage/rss.xml' },
+      { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/bangladesh/rss.xml' },
+      { id: 'bdnews24',         name: 'bdnews24',          color: '#e05c1a', url: 'https://bdnews24.com/?widgetName=rssfeed&widgetId=1150&getXmlFeed=true' },
+      { id: 'prothomalo',       name: 'Prothom Alo',       color: '#c0392b', url: 'https://en.prothomalo.com/feed/' },
+      { id: 'tbsnews',          name: 'TBS News',          color: '#2980b9', url: 'https://www.tbsnews.net/rss' },
+      { id: 'financialexpress', name: 'Financial Express', color: '#8e44ad', url: 'https://thefinancialexpress.com.bd/feed/' },
+      { id: 'dailysun',         name: 'Daily Sun',         color: '#16a085', url: 'https://www.daily-sun.com/rss' },
+    ]
+  },
+  au: {
+    label: 'Australia',
+    dataFile: 'data-au.json',
+    translate: false,
+    summaryPrompt: 'You are a concise news briefing editor covering Australia.',
+    sources: [
+      { id: 'abcnews',        name: 'ABC News',              color: '#E64626', url: 'https://www.abc.net.au/news/feed/51120/rss.xml' },
+      { id: 'guardianau',     name: 'The Guardian AU',       color: '#052962', url: 'https://www.theguardian.com/australia-news/rss' },
+      { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/feed.xml' },
+      { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/business.xml' },
+      { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/national.xml' },
+      { id: 'sbsnews',        name: 'SBS News',              color: '#0D1F3C', url: 'https://www.sbs.com.au/news/feed' },
+      { id: 'conversationau', name: 'The Conversation AU',   color: '#D8352A', url: 'https://theconversation.com/au/articles.atom' },
+    ]
+  },
+  global: {
+    label: 'Global',
+    dataFile: 'data-global.json',
+    translate: false,
+    summaryPrompt: 'You are a concise news briefing editor covering global affairs.',
+    sources: [
+      { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/world/rss.xml' },
+      { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/business/rss.xml' },
+      { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/science_and_environment/rss.xml' },
+      { id: 'aljazeera', name: 'Al Jazeera',  color: '#D2A02E', url: 'https://www.aljazeera.com/xml/rss/all.xml' },
+      { id: 'apnews',    name: 'AP News',     color: '#E41D13', url: 'https://apnews.com/world-news.rss' },
+      { id: 'apnews',    name: 'AP News',     color: '#E41D13', url: 'https://apnews.com/business.rss' },
+      { id: 'apnews',    name: 'AP News',     color: '#E41D13', url: 'https://apnews.com/science.rss' },
+      { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-all' },
+    ]
+  }
+};
+
+var regionArg = 'bd';
+process.argv.forEach(function(arg, i) {
+  if (arg === '--region' && process.argv[i+1]) regionArg = process.argv[i+1];
+});
+if (!REGIONS[regionArg]) { console.error('Unknown region:', regionArg); process.exit(1); }
+var REGION = REGIONS[regionArg];
+var SOURCES = REGION.sources;
 
 var UNIQUE_SOURCES = [];
 var seenIds = {};
@@ -206,12 +253,12 @@ function claudeComplete(systemPrompt, userPrompt) {
 
 async function generatePageSummary(articles) {
   if (!ANTHROPIC_API_KEY) return null;
-  console.log('Generating page summary...');
+  console.log('Generating page summary for', REGION.label, '...');
   var titles = articles.slice(0,40).map(function(a,i){ return (i+1)+'. '+a.title; }).join('\n');
   try {
     return await claudeComplete(
-      'You are a concise news briefing editor covering Bangladesh. Write in plain prose, no bullet points, no markdown.',
-      'Here are the top headlines from Bangladesh news sources today:\n\n'+titles+'\n\nWrite a 3-4 sentence briefing summarising the key themes and most significant stories. Be direct and informative.'
+      REGION.summaryPrompt + ' Write in plain prose, no bullet points, no markdown.',
+      'Here are the top headlines from ' + REGION.label + ' news sources today:\n\n'+titles+'\n\nWrite a 3-4 sentence briefing summarising the key themes and most significant stories. Be direct and informative.'
     );
   } catch(e) { console.error('Page summary failed:', e.message); return null; }
 }
@@ -240,8 +287,8 @@ async function translateArticles(articles) {
         a.descBn  = parsed.descBn  || '';
       } catch(e) {
         console.error('  Translation failed for "' + a.title.slice(0,40) + '":', e.message);
-        a.titleBn = null;
-        a.descBn  = null;
+        a.titleBn = false;
+        a.descBn  = false;
       }
     }));
     if (i+BATCH < articles.length) await new Promise(function(r){ setTimeout(r,500); });
@@ -249,18 +296,27 @@ async function translateArticles(articles) {
 }
 
 async function main() {
+  console.log('Running fetch for region:', REGION.label, '(' + regionArg + ')');
   if (!ANTHROPIC_API_KEY) console.warn('Warning: ANTHROPIC_API_KEY not set — AI summary and Bangla translations will be skipped');
 
-  // ── Load existing data.json ──
+  var dataFile = REGION.dataFile;
+
+  // ── Load existing data ──
   var existingArticles = [];
   var existingByLink = {};
-  if (fs.existsSync('data.json')) {
+  if (fs.existsSync(dataFile)) {
     try {
-      var existing = JSON.parse(fs.readFileSync('data.json','utf8'));
+      var existing = JSON.parse(fs.readFileSync(dataFile,'utf8'));
       existingArticles = (existing.articles || []).filter(function(a) { return isRecent(a.pubDate); });
-      existingArticles.forEach(function(a) { existingByLink[a.link] = true; });
+      existingArticles.forEach(function(a) {
+        if (REGION.translate) {
+          if (a.titleBn === null) a.titleBn = false;
+          if (a.descBn === null)  a.descBn  = false;
+        }
+        existingByLink[a.link] = true;
+      });
       console.log('Loaded', existingArticles.length, 'existing articles (after 30-day prune)');
-    } catch(e) { console.warn('Could not read existing data.json:', e.message); }
+    } catch(e) { console.warn('Could not read existing ' + dataFile + ':', e.message); }
   }
 
   // ── Fetch fresh articles from feeds ──
@@ -282,20 +338,30 @@ async function main() {
     } catch(e) { console.error('  Failed:', e.message); }
   }
 
-  // ── Translate articles missing Bangla text ──
-  var needsTranslation = existingArticles.filter(function(a) { return a.titleBn === null || a.titleBn === undefined; });
-  console.log(freshArticles.length, 'new articles,', needsTranslation.length, 'existing articles need translation');
-
-  var toTranslate = freshArticles.concat(needsTranslation);
   await enrichImages(freshArticles);
-  await translateArticles(toTranslate);
+
+  if (REGION.translate) {
+    var needsTranslation = existingArticles.filter(function(a) { return a.titleBn === undefined; });
+    var failedTranslation = existingArticles.filter(function(a) { return a.titleBn === false; });
+    console.log(freshArticles.length, 'new articles,', needsTranslation.length, 'existing need translation,', failedTranslation.length, 'previously failed (skipped)');
+    var toTranslate = freshArticles.concat(needsTranslation);
+    await translateArticles(toTranslate);
+  } else {
+    console.log(freshArticles.length, 'new articles (translation disabled for', REGION.label, ')');
+  }
 
   // ── Merge: new articles + existing ──
   var allArticles = freshArticles.concat(existingArticles);
   allArticles.sort(function(a,b){ return (parseDate(b.pubDate)||0)-(parseDate(a.pubDate)||0); });
 
-  // ── Generate page summary from latest headlines ──
-  var pageSummary = await generatePageSummary(allArticles);
+  // ── Generate page summary from latest headlines (skip if no new articles) ──
+  var pageSummary = null;
+  if (freshArticles.length > 0) {
+    pageSummary = await generatePageSummary(allArticles);
+  } else {
+    console.log('No new articles — reusing existing summary');
+    try { pageSummary = JSON.parse(fs.readFileSync(dataFile,'utf8')).summary || null; } catch(e) {}
+  }
 
   var output = {
     fetchedAt: new Date().toISOString(),
@@ -304,8 +370,13 @@ async function main() {
     articles:  allArticles
   };
 
-  fs.writeFileSync('data.json', JSON.stringify(output, null, 2));
-  console.log('Done. data.json now has', allArticles.length, 'articles (', freshArticles.length, 'new,', existingArticles.length, 'retained)');
+  fs.writeFileSync(dataFile, JSON.stringify(output, null, 2));
+  console.log('Done.', dataFile, 'now has', allArticles.length, 'articles (', freshArticles.length, 'new,', existingArticles.length, 'retained)');
+
+  if (regionArg === 'bd') {
+    fs.writeFileSync('data.json', JSON.stringify(output, null, 2));
+    console.log('Also wrote data.json for backward compatibility');
+  }
 }
 
 main().catch(function(e){ console.error(e); process.exit(1); });
