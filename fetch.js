@@ -26,6 +26,7 @@ const REGIONS = {
     label: 'Australia',
     dataFile: 'data-au.json',
     translate: false,
+    topicFilter: true,
     summaryPrompt: 'You are a concise news briefing editor covering Australia.',
     sources: [
       { id: 'abcnews',        name: 'ABC News',              color: '#E64626', url: 'https://www.abc.net.au/news/feed/51120/rss.xml' },
@@ -41,6 +42,7 @@ const REGIONS = {
     label: 'Global',
     dataFile: 'data-global.json',
     translate: false,
+    topicFilter: true,
     summaryPrompt: 'You are a concise news briefing editor covering global affairs.',
     sources: [
       { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/world/rss.xml' },
@@ -70,6 +72,13 @@ SOURCES.forEach(function(s) {
 });
 
 var THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+
+var TOPIC_KEYWORDS = /\b(econom|business|financ|fiscal|GDP|inflation|recession|trade|tariff|market|stock|shares|invest|bank|central bank|interest rate|budget|tax|revenue|deficit|surplus|export|import|manufactur|industr|commodit|crude|oil price|mining|agricultur|startup|IPO|merger|acquisit|regulat|subsid|debt|bond|currenc|forex|bankrupt|layoff|jobs|unemploy|wage|profit|earning|airline|tech giant|politic|elect|parliament|congress|senat|president|prime minister|governor|diplomac|sanction|legislat|bill|law|polic|reform|coalition|opposit|referendum|geopolit|summit|treaty|NATO|UN |EU |ASEAN|WHO|IMF|World Bank|WTO|G7|G20|war |ceasefire|conflict|military|weapon|nuclear|missile|invasion|occupied|siege|airstrike|scienc|research|study|discover|climate|environment|carbon|emission|renewable|energy|space|NASA|AI |artificial intelligen|quantum|biotech|pharma|vaccin|genome|CRISPR|neurosci|physicist|astrono|fossil|species|biodiversit|sustainab|pandem|epidemic)\b/i;
+
+function matchesTopic(article) {
+  var text = (article.title || '') + ' ' + (article.desc || '');
+  return TOPIC_KEYWORDS.test(text);
+}
 
 function parseDate(str) {
   if (!str) return null;
@@ -329,14 +338,16 @@ async function main() {
     try {
       console.log('Fetching:', source.name, '-', source.url);
       var xml=await fetchUrl(source.url);
-      var articles=parseFeed(xml,source)
+      var parsed=parseFeed(xml,source)
         .filter(function(a){ return isRecent(a.pubDate); })
         .filter(function(a){
           if(seenLinks[a.link]) return false;
           seenLinks[a.link]=true;
           return true;
         });
-      console.log('  Got', articles.length, 'new articles');
+      var articles = REGION.topicFilter ? parsed.filter(matchesTopic) : parsed;
+      var filtered = parsed.length - articles.length;
+      console.log('  Got', articles.length, 'new articles' + (filtered ? ' (' + filtered + ' off-topic filtered)' : ''));
       freshArticles=freshArticles.concat(articles);
     } catch(e) { console.error('  Failed:', e.message); }
   }
