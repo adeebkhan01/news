@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Bangladesh News — RSS Aggregator</title>
+<title>News Aggregator — BD · AU · Global</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&family=DM+Mono&display=swap" rel="stylesheet" />
 <style>
@@ -116,6 +116,12 @@ footer{margin-top:3rem;padding:1.5rem;text-align:center;font-size:.75rem;color:v
 
 .page-summary{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1rem 1.25rem;margin-bottom:1.25rem;font-size:.875rem;line-height:1.7;color:var(--text)}
 .page-summary-label{font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--green);margin-bottom:.4rem}
+
+.region-bar{background:var(--surface);border-bottom:1px solid var(--border);padding:0 1.5rem}
+.region-bar-inner{max-width:1280px;margin:0 auto;display:flex;gap:.5rem;padding:.6rem 0}
+.region-chip{font-size:.8rem;font-weight:500;padding:.4rem 1rem;border-radius:8px;border:2px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;white-space:nowrap;transition:all .15s;flex-shrink:0}
+.region-chip:hover{border-color:var(--green);color:var(--green)}
+.region-chip.active{background:var(--green);border-color:var(--green);color:#fff;font-weight:600}
 </style>
 </head>
 <body>
@@ -151,6 +157,14 @@ footer{margin-top:3rem;padding:1.5rem;text-align:center;font-size:.75rem;color:v
   </div>
 </div>
 
+<div class="region-bar">
+  <div class="region-bar-inner" id="region-bar">
+    <button class="region-chip active" data-region="bd" onclick="switchRegion('bd',this)">Bangladesh</button>
+    <button class="region-chip" data-region="au" onclick="switchRegion('au',this)">Australia</button>
+    <button class="region-chip" data-region="global" onclick="switchRegion('global',this)">Global</button>
+  </div>
+</div>
+
 <div class="filter-bar">
   <div class="filter-bar-inner" id="filter-bar">
     <button class="chip active" onclick="setFilter('all',this)">All Sources</button>
@@ -175,7 +189,7 @@ footer{margin-top:3rem;padding:1.5rem;text-align:center;font-size:.75rem;color:v
   </div>
 </div>
 
-<footer>Bangladesh News Feed · 7 outlets · refreshed hourly via GitHub Actions</footer>
+<footer id="footer">News Aggregator · BD · AU · Global · refreshed via GitHub Actions</footer>
 
 <script>
 let allArticles  = [];
@@ -183,7 +197,14 @@ let allSources   = [];
 let activeFilter = 'all';
 let searchQuery  = '';
 let loading      = false;
-let langMode     = 'en'; // 'en' or 'bn'
+let langMode     = 'en';
+let activeRegion = 'bd';
+
+const REGION_CONFIG = {
+  bd:     { label: 'Bangladesh News', dataFile: 'data-bd.json', hasLang: true },
+  au:     { label: 'Australia News',  dataFile: 'data-au.json', hasLang: false },
+  global: { label: 'Global News',     dataFile: 'data-global.json', hasLang: false }
+};
 
 function escapeHTML(str) {
   return String(str || '').replace(/[&<>"']/g, m =>
@@ -204,6 +225,33 @@ function toggleLang() {
   btn.classList.toggle('bn', langMode === 'bn');
   renderArticles();
   showHeadlines(allArticles);
+}
+
+function switchRegion(regionId, el) {
+  if (regionId === activeRegion) return;
+  activeRegion = regionId;
+  var cfg = REGION_CONFIG[regionId];
+
+  document.querySelectorAll('.region-chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+
+  document.querySelector('.logo').innerHTML =
+    (regionId === 'bd' ? '<div class="logo-flag"></div>' : '') + cfg.label;
+
+  var langBtn = document.getElementById('lang-toggle');
+  langBtn.style.display = cfg.hasLang ? '' : 'none';
+  if (!cfg.hasLang && langMode !== 'en') {
+    langMode = 'en';
+    langBtn.textContent = 'বাংলা';
+    langBtn.classList.remove('bn');
+  }
+
+  activeFilter = 'all';
+  searchQuery = '';
+  document.getElementById('search-input').value = '';
+  document.getElementById('search-clear').style.display = 'none';
+
+  loadData();
 }
 
 function timeAgo(dateStr) {
@@ -329,7 +377,8 @@ async function loadData() {
 
   try {
     const base = window.location.pathname.replace(/\/?$/, '/');
-    const res  = await fetch(base + 'data.json?t=' + Date.now());
+    const dataFile = REGION_CONFIG[activeRegion].dataFile;
+    const res  = await fetch(base + dataFile + '?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
 
     const data  = await res.json();
