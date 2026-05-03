@@ -26,31 +26,47 @@ const REGIONS = {
     label: 'Australia',
     dataFile: 'data-au.json',
     translate: false,
+    topicFilter: false,
     summaryPrompt: 'You are a concise news briefing editor covering Australia.',
     sources: [
-      { id: 'abcnews',        name: 'ABC News',              color: '#E64626', url: 'https://www.abc.net.au/news/feed/51120/rss.xml' },
-      { id: 'guardianau',     name: 'The Guardian AU',       color: '#052962', url: 'https://www.theguardian.com/australia-news/rss' },
-      { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/feed.xml' },
+      { id: 'abcnews',        name: 'ABC News',              color: '#E64626', url: 'https://www.abc.net.au/news/feed/51892/rss.xml' },
+      { id: 'abcnews',        name: 'ABC News',              color: '#E64626', url: 'https://www.abc.net.au/news/feed/1534/rss.xml' },
+      { id: 'guardianau',     name: 'The Guardian AU',       color: '#052962', url: 'https://www.theguardian.com/australia-news/australian-politics/rss' },
+      { id: 'guardianau',     name: 'The Guardian AU',       color: '#052962', url: 'https://www.theguardian.com/business/rss' },
+      { id: 'guardianau',     name: 'The Guardian AU',       color: '#052962', url: 'https://www.theguardian.com/science/rss' },
+      { id: 'guardianau',     name: 'The Guardian AU',       color: '#052962', url: 'https://www.theguardian.com/environment/rss' },
       { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/business.xml' },
       { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/national.xml' },
-      { id: 'sbsnews',        name: 'SBS News',              color: '#0D1F3C', url: 'https://www.sbs.com.au/news/feed' },
-      { id: 'conversationau', name: 'The Conversation AU',   color: '#D8352A', url: 'https://theconversation.com/au/articles.atom' },
+      { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/politics.xml' },
+      { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/environment.xml' },
+      { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/technology.xml' },
+      { id: 'sbsnews',        name: 'SBS News',              color: '#0D1F3C', url: 'https://www.sbs.com.au/news/topic/politics/feed' },
+      { id: 'sbsnews',        name: 'SBS News',              color: '#0D1F3C', url: 'https://www.sbs.com.au/news/topic/environment/feed' },
+      { id: 'conversationau', name: 'The Conversation AU',   color: '#D8352A', url: 'https://theconversation.com/au/business/articles.atom' },
+      { id: 'conversationau', name: 'The Conversation AU',   color: '#D8352A', url: 'https://theconversation.com/au/politics/articles.atom' },
+      { id: 'conversationau', name: 'The Conversation AU',   color: '#D8352A', url: 'https://theconversation.com/au/technology/articles.atom' },
+      { id: 'conversationau', name: 'The Conversation AU',   color: '#D8352A', url: 'https://theconversation.com/au/environment/articles.atom' },
     ]
   },
   global: {
     label: 'Global',
     dataFile: 'data-global.json',
     translate: false,
+    topicFilter: true,
     summaryPrompt: 'You are a concise news briefing editor covering global affairs.',
     sources: [
       { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/world/rss.xml' },
       { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/business/rss.xml' },
       { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/science_and_environment/rss.xml' },
+      { id: 'aljazeera', name: 'Al Jazeera',  color: '#D2A02E', url: 'https://www.aljazeera.com/xml/rss/economy.xml' },
       { id: 'aljazeera', name: 'Al Jazeera',  color: '#D2A02E', url: 'https://www.aljazeera.com/xml/rss/all.xml' },
       { id: 'apnews',    name: 'AP News',     color: '#E41D13', url: 'https://apnews.com/world-news.rss' },
       { id: 'apnews',    name: 'AP News',     color: '#E41D13', url: 'https://apnews.com/business.rss' },
       { id: 'apnews',    name: 'AP News',     color: '#E41D13', url: 'https://apnews.com/science.rss' },
-      { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-all' },
+      { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-bus' },
+      { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-eu' },
+      { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/xml/rss_en_science' },
+      { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/xml/rss_en_enviro' },
     ]
   }
 };
@@ -70,6 +86,13 @@ SOURCES.forEach(function(s) {
 });
 
 var THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+
+var TOPIC_KEYWORDS = /\b(econom|business|financ|fiscal|GDP|inflation|recession|trade|tariff|market|stock|shares|invest|bank|central bank|interest rate|budget|tax|revenue|deficit|surplus|export|import|manufactur|industr|commodit|crude|oil price|mining|agricultur|startup|IPO|merger|acquisit|regulat|subsid|debt|bond|currenc|forex|bankrupt|layoff|jobs|unemploy|wage|profit|earning|airline|tech giant|politic|elect|parliament|congress|senat|president|prime minister|governor|diplomac|sanction|legislat|bill|law|polic|reform|coalition|opposit|referendum|geopolit|summit|treaty|NATO|UN |EU |ASEAN|WHO|IMF|World Bank|WTO|G7|G20|war |ceasefire|conflict|military|weapon|nuclear|missile|invasion|occupied|siege|airstrike|scienc|research|study|discover|climate|environment|carbon|emission|renewable|energy|space|NASA|AI |artificial intelligen|quantum|biotech|pharma|vaccin|genome|CRISPR|neurosci|physicist|astrono|fossil|species|biodiversit|sustainab|pandem|epidemic)\b/i;
+
+function matchesTopic(article) {
+  var text = (article.title || '') + ' ' + (article.desc || '');
+  return TOPIC_KEYWORDS.test(text);
+}
 
 function parseDate(str) {
   if (!str) return null;
@@ -304,9 +327,12 @@ async function main() {
   // ── Load existing data ──
   var existingArticles = [];
   var existingByLink = {};
-  if (fs.existsSync(dataFile)) {
+  var loadFile = fs.existsSync(dataFile) ? dataFile
+    : (regionArg === 'bd' && fs.existsSync('data.json')) ? 'data.json' : null;
+  if (loadFile) {
     try {
-      var existing = JSON.parse(fs.readFileSync(dataFile,'utf8'));
+      var existing = JSON.parse(fs.readFileSync(loadFile,'utf8'));
+      if (loadFile !== dataFile) console.log('Migrated existing articles from', loadFile);
       existingArticles = (existing.articles || []).filter(function(a) { return isRecent(a.pubDate); });
       existingArticles.forEach(function(a) {
         if (REGION.translate) {
@@ -316,7 +342,7 @@ async function main() {
         existingByLink[a.link] = true;
       });
       console.log('Loaded', existingArticles.length, 'existing articles (after 30-day prune)');
-    } catch(e) { console.warn('Could not read existing ' + dataFile + ':', e.message); }
+    } catch(e) { console.warn('Could not read existing ' + loadFile + ':', e.message); }
   }
 
   // ── Fetch fresh articles from feeds ──
@@ -326,14 +352,16 @@ async function main() {
     try {
       console.log('Fetching:', source.name, '-', source.url);
       var xml=await fetchUrl(source.url);
-      var articles=parseFeed(xml,source)
+      var parsed=parseFeed(xml,source)
         .filter(function(a){ return isRecent(a.pubDate); })
         .filter(function(a){
           if(seenLinks[a.link]) return false;
           seenLinks[a.link]=true;
           return true;
         });
-      console.log('  Got', articles.length, 'new articles');
+      var articles = REGION.topicFilter ? parsed.filter(matchesTopic) : parsed;
+      var filtered = parsed.length - articles.length;
+      console.log('  Got', articles.length, 'new articles' + (filtered ? ' (' + filtered + ' off-topic filtered)' : ''));
       freshArticles=freshArticles.concat(articles);
     } catch(e) { console.error('  Failed:', e.message); }
   }
