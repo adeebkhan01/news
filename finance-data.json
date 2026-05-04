@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-04T19:59:12.878Z",
+  "fetchedAt": "2026-05-04T22:29:35.468Z",
   "asx200": {
     "value": 8697.1,
     "change": 117.6,
@@ -88,7 +88,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.03,
-    "changePercent": 3.81,
+    "changePercent": 3.75,
     "previousClose": 0.69,
     "asOf": "2026-05-04",
     "history": [
@@ -173,6 +173,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-03",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-04",
         "close": 0.72
       }
@@ -183,25 +187,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4531.7,
-      "change": -119.8,
-      "changePercent": -2.58
+      "price": 4529.6,
+      "change": -121.9,
+      "changePercent": -2.62
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 73.39,
-      "change": 0.66,
-      "changePercent": 0.9
+      "price": 73.22,
+      "change": 0.49,
+      "changePercent": 0.67
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 105.16,
-      "change": -6.38,
-      "changePercent": -5.72
+      "price": 105.13,
+      "change": -6.41,
+      "changePercent": -5.75
     },
     {
       "name": "Copper",
@@ -209,7 +213,7 @@
       "iconBg": "#fef0e6",
       "price": 5.86,
       "change": 0.3,
-      "changePercent": 5.42
+      "changePercent": 5.32
     },
     {
       "name": "BHP Group",
@@ -818,18 +822,39 @@
   ],
   "news": [
     {
-      "title": "Luai's shock NRL move means Australian and NZ rugby must be 'on their toes'",
+      "title": "You already work from home, so why not work from the cricket?",
+      "link": "https://www.abc.net.au/news/2026-05-05/work-from-the-oval-instead-of-work-from-home/106641578",
+      "snippet": "",
+      "pubDate": "Mon, 04 May 2026 22:23:30 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to fall, oil jumps as war tensions rise; Westpac posts $3.4b profit; RBA decision ahead",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-oil-jumps-on-war-uncertainty-rba-decision-ahead-gamestop-makes-78b-bid-for-ebay-20260505-p5ztq9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The US stock market is falling from its record heights while oil prices jump following escalations in the Middle East that may be undermining the ceasefire in the war with Iran.",
+      "pubDate": "Tue, 05 May 2026 08:10:16 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Players express 'deep disappointment' over French Open prize money",
+      "link": "https://www.abc.net.au/news/2026-05-05/french-open-prize-money-disappoints-top-players/106641510",
+      "snippet": "",
+      "pubDate": "Mon, 04 May 2026 21:34:44 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Gilmore's epic Gold Coast win shows young surfing stars how it's done",
+      "link": "https://www.abc.net.au/news/2026-05-05/steph-gilmore-gold-coast-pro-victory/106641468",
+      "snippet": "",
+      "pubDate": "Mon, 04 May 2026 21:04:25 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "What Luai's shock NRL move could mean for Australian and NZ rugby union",
       "link": "https://www.abc.net.au/news/2026-05-05/super-rugby-pacific-nrl-jarome-luai-png-chiefs-australia/106639154",
       "snippet": "",
       "pubDate": "Mon, 04 May 2026 19:33:27 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "ASX set to fall, oil jumps on war uncertainty; RBA decision ahead; GameStop makes $78b bid for eBay",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-oil-jumps-on-war-uncertainty-rba-decision-ahead-gamestop-makes-78b-bid-for-ebay-20260505-p5ztq9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The US stock market is falling from its record heights while oil prices jump following escalations in the Middle East that may be undermining the ceasefire in the war with Iran.",
-      "pubDate": "Tue, 05 May 2026 05:22:00 +1000",
-      "source": "SMH Business"
     },
     {
       "title": "Qantas, Virgin lag foreign airlines on customer satisfaction",
@@ -867,7 +892,7 @@
       "source": "ABC News"
     },
     {
-      "title": "Brisbane Lions player under investigation for alleged homophobic slur in VFL",
+      "title": "Lions player under investigation for alleged homophobic slur in VFL",
       "link": "https://www.abc.net.au/news/2026-05-04/brisbane-lions-player-under-investigation-homophobic-slur-in-afl/106639870",
       "snippet": "",
       "pubDate": "Mon, 04 May 2026 09:08:05 +0000",
@@ -878,27 +903,6 @@
       "link": "https://www.smh.com.au/business/companies/ardea-lands-japanese-government-backing-for-giant-wa-nickel-play-20260504-p5ztp2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Ardea Resources’ giant Goongarrie nickel-cobalt project has been named in an Australia-Japan pact, highlighting its scale, funding support and a role in global supply chains.",
       "pubDate": "Mon, 04 May 2026 19:03:16 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "AFL umpire Nick Foot's betting agency role over after tribunal case",
-      "link": "https://www.abc.net.au/news/2026-05-04/afl-umpire-ends-betting-agency-role-after-tribunal-case/106640362",
-      "snippet": "",
-      "pubDate": "Mon, 04 May 2026 08:13:06 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Iconic broadcaster Dennis Cometti farewelled at state memorial service",
-      "link": "https://www.abc.net.au/news/2026-05-04/dennis-cometti-state-memorial-service-broadcast-legend/106638368",
-      "snippet": "",
-      "pubDate": "Mon, 04 May 2026 07:32:09 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX dips as NAB warns on economic uncertainty; a2Milk recall",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-slip-wall-street-sets-more-records-20260504-p5ztd0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The local sharemarket lost ground as uncertainty over the war in Iran lingered, with Tuesday’s Reserve Bank decision on interest rates a focus for investors.",
-      "pubDate": "Mon, 04 May 2026 17:21:17 +1000",
       "source": "SMH Business"
     }
   ]
