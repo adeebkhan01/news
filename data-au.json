@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-05T16:28:13.613Z",
-  "summary": "Australia's government has axed $45 billion in funding for the Inland Rail project linking Melbourne to Brisbane, a major infrastructure reversal as households face soaring bills amid broader cost-of-living pressures. Victoria has delivered its first operating surplus in seven years and announced a new counter-terrorism centre, while Queensland faces reduced rail services due to industrial action. On international fronts, the world remains unprepared for the next pandemic despite warning signs, and Richard Dawkins has concluded that AI possesses consciousness. Several tragic incidents occurred including a yacht disaster off Ballina that killed three people and a school bus crash injuring two children.",
+  "fetchedAt": "2026-05-05T19:28:10.970Z",
+  "summary": "Australia's financial markets are poised to rise as global oil prices ease and Wall Street rebounds, though households continue to strain under higher living costs with over eight million now receiving income support. The government is axing funding for the $45 billion Inland Rail project while committing to counter-terrorism measures, reflecting shifting budget priorities as interest rate pressures mount across mortgages and essential services. Health system failures are creating urgent demands for reform, from patients delayed in cancer care to pregnant women homeless and living in tents, alongside a political realignment brewing on the conservative side as the Farrer contest looms. International concerns are mounting over pandemic preparedness and intelligence sharing, while domestic issues from terror financing online to a critical intelligence gap before the Bondi shooting raise questions about law enforcement coordination.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,156 @@
     }
   ],
   "articles": [
+    {
+      "title": "ASX set to rise, Wall Street rebounds as oil prices fall",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-rebounds-as-oil-prices-fall-20260506-p5zu4a.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "The US stock market is rising toward records after an easing of oil prices let Wall Street turn its focus back to the big profits that companies keep producing.",
+      "pubDate": "Wed, 06 May 2026 05:13:06 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2929%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_246%2C$y_0/t_crop_custom/q_86%2Cf_auto/db372e961c9023028225402170d85bdaa86c9b06",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Farrer contest could remake the conservative side of politics",
+      "link": "https://www.abc.net.au/news/2026-05-06/farrer-byelection-coalition-liberals-nationals-one-nation-margin/106639796",
+      "desc": "The first electoral test for both new coalition party leaders, Angus Taylor and Matt Canavan, sees the opposition at serious risk of losing Farrer for the first time since the seat was created in 1949",
+      "pubDate": "Tue, 05 May 2026 19:00:00 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/3c975cd7734c6693e802db6ec59f0dc5?impolicy=wcms_crop_resize&amp;cropH=3279&amp;cropW=2459&amp;xPos=1684&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "‘The health system will kill me before the cancer does’",
+      "link": "https://www.smh.com.au/national/nsw/the-health-system-will-kill-me-before-the-cancer-does-20260414-p5znu4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Manwell Cini’s excruciating wait in a Sydney emergency department underscores what happens when new hospitals and hospital beds lag population growth.",
+      "pubDate": "Wed, 06 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.33110092592592594%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_546%2C$y_245/t_crop_custom/q_86%2Cf_auto/9f826a445c8ab54c4998452649ca00a8c3e9559e",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "New hospital to bring researchers closer to the sick kids they help",
+      "link": "https://www.smh.com.au/national/nsw/new-hospital-to-bring-researchers-closer-to-the-sick-kids-they-help-20260505-p5ztst.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The new facility is one of only a few comprehensive children’s cancer centres globally, and the first of its kind in Australia.",
+      "pubDate": "Wed, 06 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.3132%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_708%2C$y_97/t_crop_custom/q_86%2Cf_auto/325343ec36b5ee2fe4e9517d46dd542818787602",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Jewish storytelling tells it like it is for all Australians",
+      "link": "https://www.smh.com.au/national/jewish-storytelling-tells-it-like-it-is-for-all-australians-20260505-p5zttq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The royal commission into antisemitism hears the lived experiences of Australia’s Jewish community.",
+      "pubDate": "Wed, 06 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1765%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/59df62fb80a66171812f802cd00d145757dbccad",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "The millionaires’ factory kicks off confession season with Taylor Swift and a cockroach",
+      "link": "https://www.smh.com.au/cbd/the-millionaires-factory-kicks-off-confession-season-with-taylor-swift-and-a-cockroach-20260505-p5ztwu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The high-profile investment conference got off to a bumpy start on Tuesday, when one CEO had her fireside panel waylaid by a cockroach.",
+      "pubDate": "Wed, 06 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5298%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_54/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/1164ccaf059f67c2cf95d533c9804db2aa3ee367",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘Critical gap’: The 2020 warning to police before Bondi terrorist bought guns",
+      "link": "https://www.smh.com.au/national/critical-gap-the-2020-warning-to-police-before-bondi-terrorist-bought-guns-20260505-p5ztxm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Officials from the NSW Police Firearms Registry were warned in December 2020 that too little was being done to encourage gun club members to report extremism in their ranks.",
+      "pubDate": "Wed, 06 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.6008%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_490%2C$y_172/t_crop_custom/q_86%2Cf_auto/90fef9264a003bfe3077a9971437706565add925",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "A mother had been living in a tent for months. Then she went into labour",
+      "link": "https://www.smh.com.au/national/a-mother-had-been-living-in-a-tent-for-months-then-she-went-into-labour-20260505-p5zty1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The 37-year-old who gave birth to twins, one of whom did not survive, had been living in at a makeshift camp amid a regional NSW housing shortage.",
+      "pubDate": "Wed, 06 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.30018074074074075%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_480%2C$y_333/t_crop_custom/q_86%2Cf_auto/346b9a9baf021c38399e708c817ac2325ab3f71e",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "This concept should turn capitalists from top dogs to lapdogs",
+      "link": "https://www.smh.com.au/national/this-concept-should-turn-capitalists-from-top-dogs-to-lapdogs-20260505-p5ztzb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "What economists don’t tell you about how the economy works. Here, I reveal all.",
+      "pubDate": "Wed, 06 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.1767%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_133/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/38c4bc659064ef259e129f7df30a51063b1b63d4",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Why Containers for Change expansion has WA’s winemakers and distillers in low spirits",
+      "link": "https://www.smh.com.au/national/western-australia/why-containers-for-change-expansion-has-wa-s-winemakers-and-distillers-in-low-spirits-20260505-p5zu2j.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Come July 1, wine and spirit bottles will be eligible for 10-cent refunds as part of the Containers for Change program. But the move has left a sour note with the state’s winemakers and distillers.",
+      "pubDate": "Wed, 06 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1293%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/ccf95d5b3a788b312d286c760aee6d6af5142ea6dd98732c65d11f12b1f44f9f",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "'Straw that broke the camel's back': Financial distress grows as rates rise",
+      "link": "https://www.abc.net.au/news/2026-05-06/may-interest-rate-hike-tips-people-into-mortgage-stress-debt/106642232",
+      "desc": "Almost 14,000 Australians rang the National Debt Helpline last month, with most callers saying they are struggling to pay their home loans and are facing mortgage stress, according to new data.",
+      "pubDate": "Tue, 05 May 2026 18:43:31 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/47d9363baeecd558e9f6d5e96549bc49?impolicy=wcms_crop_resize&amp;cropH=3335&amp;cropW=2501&amp;xPos=1239&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "More than 8 million Australians now receive income support",
+      "link": "https://www.abc.net.au/news/2026-05-06/income-support-grows-mental-health-work/106626692",
+      "desc": "The number of people accessing income support payments has risen by 2 million in the past decade, with more Australians unable to work due to deteriorating mental and physical health.",
+      "pubDate": "Tue, 05 May 2026 18:42:10 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/6a8c27986851da90b45e53e5aeed8772?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=1250&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Over the past 15 years, NZ moved its fuel safety net offshore – now it’s being exposed",
+      "link": "https://theconversation.com/over-the-past-15-years-nz-moved-its-fuel-safety-net-offshore-now-its-being-exposed-282056",
+      "desc": "NZ today stands as the only International Energy Agency member whose public oil reserves lie entirely offshore. How can it now rebuild its domestic fuel resilience?",
+      "pubDate": "2026-05-05T18:39:28Z",
+      "img": "https://images.theconversation.com/files/733866/original/file-20260505-57-m0uth.jpg?ixlib=rb-4.1.0&amp;rect=0%2C416%2C4984%2C2492&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "Two million airline seats cut amid soaring jet fuel prices",
+      "link": "https://www.theguardian.com/business/2026/may/05/airline-seats-cut-jet-fuel-prices",
+      "desc": "<p>Rescheduling in May could be followed by summer cancellations as Middle East war continues to disrupt fuel supplies</p><p>Two million airline seats have been cut from this month’s schedules as airl",
+      "pubDate": "Tue, 05 May 2026 18:08:42 GMT",
+      "img": "https://i.guim.co.uk/img/media/8f486843ca1f58821af100ec58c06a04c9c1a20d/1394_0_5456_4366/master/5456.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Hantavirus explained: how does it spread and who is most at risk? – podcast",
+      "link": "https://www.theguardian.com/science/audio/2026/may/05/hantavirus-explained-how-does-it-spread-and-who-is-most-at-risk-podcast",
+      "desc": "<p>Three people have died after an outbreak of hantavirus onboard a cruise ship travelling from Argentina to Cape Verde. The World Health Organization says a total of seven cases – two confirmed by la",
+      "pubDate": "Tue, 05 May 2026 17:13:14 GMT",
+      "img": "https://i.guim.co.uk/img/media/e0b7ef8bba28577b9ed5f03b206b43d68e947e72/281_0_2813_2250/master/2813.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
     {
       "title": "Richard Dawkins concludes AI is conscious, even if it doesn’t know it",
       "link": "https://www.theguardian.com/technology/2026/may/05/richard-dawkins-ai-consciousness-anthropic-claude-openai-chatgpt",
