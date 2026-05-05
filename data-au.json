@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-05T10:49:49.260Z",
-  "summary": "Victoria's newly elected government has delivered its first operating surplus in seven years, with the treasurer outlining budget priorities as the state heads toward an election, though opposition figures are already challenging the spending commitments. Multiple tragedies struck Australian communities today, including three people killed in a yacht disaster off Ballina, two children injured in a school bus crash, and several fatal car crashes across different states. Industrial action continues to disrupt Queensland rail services with reduced timetables, while a royal commission into antisemitism began its second day of hearings amid ongoing community concerns about social media companies' response to hate speech. Several high-profile legal matters are progressing, including the prosecution's final arguments in a drug-spiked smoothie murder case and continued proceedings over former Labor MP Eddie Obeid's seized coal assets.",
+  "fetchedAt": "2026-05-05T16:28:13.613Z",
+  "summary": "Australia's government has axed $45 billion in funding for the Inland Rail project linking Melbourne to Brisbane, a major infrastructure reversal as households face soaring bills amid broader cost-of-living pressures. Victoria has delivered its first operating surplus in seven years and announced a new counter-terrorism centre, while Queensland faces reduced rail services due to industrial action. On international fronts, the world remains unprepared for the next pandemic despite warning signs, and Richard Dawkins has concluded that AI possesses consciousness. Several tragic incidents occurred including a yacht disaster off Ballina that killed three people and a school bus crash injuring two children.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,136 @@
     }
   ],
   "articles": [
+    {
+      "title": "Richard Dawkins concludes AI is conscious, even if it doesn’t know it",
+      "link": "https://www.theguardian.com/technology/2026/may/05/richard-dawkins-ai-consciousness-anthropic-claude-openai-chatgpt",
+      "desc": "<p>Chats with AI bots have convinced evolutionary biologist but most experts say he is being misled by mimicry</p><p>When Richard Dawkins met Claudia it was like a whirlwind romance. Over three days l",
+      "pubDate": "Tue, 05 May 2026 15:17:19 GMT",
+      "img": "https://i.guim.co.uk/img/media/e8fb5f3b9f787d20b0f0c8cf58c0b94f294dee85/5_660_4099_3280/master/4099.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Romania's pro-EU government collapses after no-confidence vote",
+      "link": "https://www.abc.net.au/news/2026-05-06/romanian-government-collapses-eu/106645802",
+      "desc": "The country's currency falls to a record low against the euro as concerns mount about the state of its finances.",
+      "pubDate": "Tue, 05 May 2026 14:21:20 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/07cbf8c121eac18b503f9939f246babc?impolicy=wcms_crop_resize&amp;cropH=2060&amp;cropW=1545&amp;xPos=773&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Superquiz, Wednesday, May 6",
+      "link": "https://www.smh.com.au/national/superquiz-wednesday-may-6-20260505-p5ztrh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Trivia buffs, test your knowledge with today’s interactive superquiz.",
+      "pubDate": "Tue, 05 May 2026 23:59:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.9805555555555555%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_231/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/24d8c9ba98147348592ea2ed292e48328b593d46",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "World ‘unprepared’ for next pandemic as countries fail to agree on sharing information, tests and vaccines",
+      "link": "https://www.theguardian.com/global-development/2026/may/05/talks-stall-on-who-pandemic-treaty-global-response-disease-outbreaks",
+      "desc": "<p>Finalisation of pact governing global response to disease outbreaks delayed as talks on how to share benefits stall</p><p>A key deadline to finalise a global pandemic treaty has been missed by nego",
+      "pubDate": "Tue, 05 May 2026 13:34:58 GMT",
+      "img": "https://i.guim.co.uk/img/media/03af86d2e6e2bc3ab187bbba6c14da0d7286fa94/903_325_4073_3259/master/4073.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Budget provides for new counter-terrorism centre to fight online threat",
+      "link": "https://theconversation.com/budget-provides-for-new-counter-terrorism-centre-to-fight-online-threat-282154",
+      "desc": "A national centre to detect and disrupt the threat of online violent extremism and terrorism is to be set up by the federal government, in the upcoming budget.",
+      "pubDate": "2026-05-05T12:44:45Z",
+      "img": "https://images.theconversation.com/files/733930/original/file-20260505-57-dtuckg.jpg?ixlib=rb-4.1.0&amp;rect=0%2C624%2C4545%2C2272&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "UK’s long-term borrowing costs hit highest level since 1998",
+      "link": "https://www.theguardian.com/business/2026/may/05/uk-borrowing-costs-bond-yields-gilts-rachel-reeves",
+      "desc": "<p>Rise in bond yields due to fuel prices and political uncertainty will eat away at Rachel Reeves’s fiscal headroom</p><ul><li><p><a href=\"https://www.theguardian.com/business/live/2026/may/05/hsbc-4",
+      "pubDate": "Tue, 05 May 2026 12:05:12 GMT",
+      "img": "https://i.guim.co.uk/img/media/c5806f8bbbb0e7cdd8c0b5f39697e39059131c93/178_0_1779_1423/master/1779.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Labor axes funding for $45b Inland Rail project linking Melbourne to Brisbane",
+      "link": "https://www.abc.net.au/news/2026-05-05/albanese-government-slashes-funding-inland-rail-project/106644902",
+      "desc": "The federal government has halted plans for the Melbourne to Brisbane Inland Rail, amid concerns the project could cost more than $45 billion to complete.",
+      "pubDate": "Tue, 05 May 2026 11:59:06 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/78d69799df66366735ec1a646d63928b?impolicy=wcms_crop_resize&amp;cropH=2000&amp;cropW=1498&amp;xPos=751&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "As household bills soar, is it time for a ‘working-class climate agenda’?",
+      "link": "https://www.theguardian.com/us-news/2026/may/05/climate-crisis-working-class-economy",
+      "desc": "<p>Proposal from group that worked with AOC and Bernie Sanders seeks to counter claim that climate policy is politically toxic </p><p>Americans <a href=\"https://www.searchlightinstitute.org/research/t",
+      "pubDate": "Tue, 05 May 2026 11:30:38 GMT",
+      "img": "https://i.guim.co.uk/img/media/96daee949117ff818bd17a10b43d26e2a2008ce6/312_0_6829_5464/master/6829.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Comedian criticised after offensive post about little girl",
+      "link": "https://www.smh.com.au/national/comedian-criticised-after-offensive-post-about-little-girl-20260505-p5zu3m.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Comedian Alex &#34;Shooter&#34; Williamson has drawn widespread criticism for a post joking about a girl allegedly murdered in the Northern Territory.",
+      "pubDate": "Tue, 05 May 2026 21:12:23 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/fc84ac6f5eebe623c448e0ac089878f64a32ad9f",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Disgraced author Craig Silvey could face jail",
+      "link": "https://www.smh.com.au/national/disgraced-author-craig-silvey-could-face-jail-20260505-p5zu3l.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Disgraced Australian author Craig Silvey could face jail after admitting to possessing and distributing child exploitation material.",
+      "pubDate": "Tue, 05 May 2026 21:12:05 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/aac73a1a0d5480ce275bead646101a2545be40c3",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Slow Alzheimer’s diagnoses ‘mean UK patients missing out on experimental treatments’",
+      "link": "https://www.theguardian.com/society/2026/may/05/slow-alzheimers-diagnoses-means-uk-patients-missing-out-on-experimental-treatments-says-charity",
+      "desc": "<p>Alzheimer’s Research UK says patients at risk of being left behind as lack of formal or accurate diagnoses closes door to trials</p><p>People with Alzheimer’s disease are missing out on experimenta",
+      "pubDate": "Tue, 05 May 2026 11:00:27 GMT",
+      "img": "https://i.guim.co.uk/img/media/1a39c2978bdbaedd2979352520fbeb27c48f5b4a/0_0_5750_4597/master/5750.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Education gets a gee-up",
+      "link": "https://www.smh.com.au/national/nsw/education-gets-a-gee-up-20260505-p5ztrc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "While broadsheets return to the fold.",
+      "pubDate": "Tue, 05 May 2026 21:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.6556000000000002%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_48/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/d51781c5614995563bbf4ce4a8b06344486e0d25",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘It’s a special tree’: campaign to save mother of beloved bramley apple for nation",
+      "link": "https://www.theguardian.com/culture/2026/may/05/campaigners-hope-to-save-mother-tree-of-bramley-apple-nottinghamshire",
+      "desc": "<p>Appeal launched to buy Nottinghamshire cottage, where tree was planted in 19th century, and turn it into heritage centre</p><p>Campaigners have launched an appeal to try to save for the nation the ",
+      "pubDate": "Tue, 05 May 2026 10:51:48 GMT",
+      "img": "https://i.guim.co.uk/img/media/a42a3512504f27d14ec640944e944d0de10ec339/958_0_4016_3213/master/4016.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
     {
       "title": "How KIIS cashed in on Kyle & Jackie O’s ‘explosive fights’",
       "link": "https://www.smh.com.au/business/companies/how-kiis-cashed-in-on-kyle-and-jackie-o-s-explosive-fights-20260505-p5zu33.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
@@ -208,6 +338,16 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Explosion at fireworks factory in China kills at least 26",
+      "link": "https://www.theguardian.com/world/2026/may/05/fireworks-factory-explosion-china-kills-workers",
+      "desc": "<p>Other fireworks manufacturers in Liuyang, in central Hunan province, ordered to halt production after deadly blast</p><p>An explosion at a fireworks plant in a central Chinese province has killed a",
+      "pubDate": "Tue, 05 May 2026 08:34:19 GMT",
+      "img": "https://i.guim.co.uk/img/media/16933affa3d0e9f414a93a1c619a0a978f7f858e/904_0_5103_4082/master/5103.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
     },
     {
       "title": "Politics with Michelle Grattan: Alan Kohler says Labor’s tax changes probably won’t lower house prices",
@@ -1858,6 +1998,16 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Bitter aftertaste: Taiwan’s leading baristas forced to compete at global coffee championship as ‘Chinese Taipei’",
+      "link": "https://www.theguardian.com/world/2026/may/04/world-coffee-championships-taiwan-chinese-taipei",
+      "desc": "<p>Decision by the World Coffee Championships has enraged members of Taiwan’s coffee community, including previous winners of the competition</p><p>Berg Wu remembers the pride he felt when he was crow",
+      "pubDate": "Mon, 04 May 2026 02:17:13 GMT",
+      "img": "https://i.guim.co.uk/img/media/38f6be99420ae46b3aaddb30164faf3071d2383f/38_0_5001_4000/master/5001.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
     },
     {
       "title": "The cracks are widening in Trump’s America",
