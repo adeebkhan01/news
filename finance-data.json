@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-05T16:59:41.322Z",
+  "fetchedAt": "2026-05-05T19:55:37.628Z",
   "asx200": {
     "value": 8680.5,
     "change": 101,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.03,
-    "changePercent": 4.02,
+    "changePercent": 3.95,
     "previousClose": 0.69,
     "asOf": "2026-05-05",
     "history": [
@@ -191,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4567.6,
-      "change": -89.2,
-      "changePercent": -1.92
+      "price": 4566.8,
+      "change": -90,
+      "changePercent": -1.93
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 73.57,
-      "change": 0.91,
-      "changePercent": 1.25
+      "price": 73.31,
+      "change": 0.64,
+      "changePercent": 0.89
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 102.17,
-      "change": -10.24,
-      "changePercent": -9.11
+      "price": 102.67,
+      "change": -9.74,
+      "changePercent": -8.66
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.99,
-      "change": 0.41,
-      "changePercent": 7.35
+      "price": 5.98,
+      "change": 0.4,
+      "changePercent": 7.11
     },
     {
       "name": "BHP Group",
@@ -826,6 +826,13 @@
   ],
   "news": [
     {
+      "title": "ASX set to rise, Wall Street rebounds as oil prices fall",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-rebounds-as-oil-prices-fall-20260506-p5zu4a.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The US stock market is rising toward records after an easing of oil prices let Wall Street turn its focus back to the big profits that companies keep producing.",
+      "pubDate": "Wed, 06 May 2026 05:13:06 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "How KIIS cashed in on Kyle &amp; Jackie O’s ‘explosive fights’",
       "link": "https://www.smh.com.au/business/companies/how-kiis-cashed-in-on-kyle-and-jackie-o-s-explosive-fights-20260505-p5zu33.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Kyle Sandilands has admitted to berating Jackie ‘O’ Henderson on air – and detailed more clashes with his former co-host – but argued the network encouraged him.",
@@ -901,13 +908,6 @@
       "snippet": "",
       "pubDate": "Tue, 05 May 2026 05:06:11 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Westpac raises buffers for bad loans as it braces for slowdown",
-      "link": "https://www.smh.com.au/business/banking-and-finance/westpac-raises-buffers-for-bad-loans-as-it-braces-for-slowdown-20260505-p5ztws.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The banking giant is preparing for a softer economy and disruption from the energy crisis caused by the war in the Middle East.",
-      "pubDate": "Tue, 05 May 2026 13:54:23 +1000",
-      "source": "SMH Business"
     }
   ]
 }
