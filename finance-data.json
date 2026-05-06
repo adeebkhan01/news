@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-06T20:05:27.554Z",
+  "fetchedAt": "2026-05-06T22:11:39.345Z",
   "asx200": {
     "value": 8793.6,
     "change": 214.1,
@@ -189,6 +189,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-05",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-06",
         "close": 0.72
       }
@@ -199,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4706.2,
-      "change": 49.4,
-      "changePercent": 1.06
+      "price": 4702.4,
+      "change": 45.6,
+      "changePercent": 0.98
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 78,
-      "change": 5.34,
-      "changePercent": 7.35
+      "price": 77.87,
+      "change": 5.21,
+      "changePercent": 7.17
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 95.12,
-      "change": -17.29,
-      "changePercent": -15.38
+      "price": 95.86,
+      "change": -16.55,
+      "changePercent": -14.72
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.18,
-      "change": 0.6,
-      "changePercent": 10.73
+      "price": 6.19,
+      "change": 0.61,
+      "changePercent": 10.85
     },
     {
       "name": "BHP Group",
@@ -834,17 +838,31 @@
   ],
   "news": [
     {
+      "title": "Cummins clips centurion Connolly as Aussies light up IPL",
+      "link": "https://www.abc.net.au/news/2026-05-07/cummins-clips-centurion-connolly-as-aussies-light-up-ipl/106651150",
+      "snippet": "",
+      "pubDate": "Wed, 06 May 2026 21:33:21 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Nikita Tzsyu maintains incredible family record as world title bid looms",
+      "link": "https://www.abc.net.au/news/2026-05-07/nikita-tzsyu-stops-oscar-diaz-world-title-bid-looms/106651080",
+      "snippet": "",
+      "pubDate": "Wed, 06 May 2026 20:50:39 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "‘Mouth of the South’: Billionaire CNN founder Ted Turner dies",
       "link": "https://www.smh.com.au/business/companies/mouth-of-the-south-billionaire-cnn-founder-ted-turner-dies-aged-87-20260507-p5zuho.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Turner, who was once married to Jane Fonda, created the first 24-hour, all-news TV network in 1980. He once bragged: “If only I had a little humility, I’d be perfect.”",
-      "pubDate": "Thu, 07 May 2026 05:24:11 +1000",
+      "pubDate": "Thu, 07 May 2026 06:45:07 +1000",
       "source": "SMH Business"
     },
     {
-      "title": "ASX set to jump as oil falls and sharemarkets rally on Iran deal hopes",
+      "title": "ASX set to jump as oil falls and sharemarkets rally; AI giants surge",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-jump-as-oil-falls-and-sharemarkets-rally-on-iran-deal-hopes-20260507-p5zuhv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Oil prices are sinking and stock markets are bursting higher worldwide with hopes that the United States and Iran are nearing a deal to allow ships to deliver crude from the Persian Gulf once again to their customers.",
-      "pubDate": "Thu, 07 May 2026 05:15:01 +1000",
+      "pubDate": "Thu, 07 May 2026 06:44:15 +1000",
       "source": "SMH Business"
     },
     {
@@ -902,20 +920,6 @@
       "snippet": "",
       "pubDate": "Wed, 06 May 2026 04:53:58 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Blues hand bullocking Rooster Origin debut as Maroons keep cards close",
-      "link": "https://www.abc.net.au/news/2026-05-06/womens-state-of-origin-game-two-team-lists/106648716",
-      "snippet": "",
-      "pubDate": "Wed, 06 May 2026 04:38:30 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Advance launches major drill push for high-grade silver in Mexico",
-      "link": "https://www.smh.com.au/business/companies/advance-launches-major-drill-push-for-high-grade-silver-in-mexico-20260506-p5zucq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Advance Metals has kicked off a 4500m drilling program at its high-grade Gavilanes silver project in Mexico, aiming to upgrade a 22.4-million-ounce silver equivalent foreign estimate.",
-      "pubDate": "Wed, 06 May 2026 14:11:27 +1000",
-      "source": "SMH Business"
     }
   ]
 }
