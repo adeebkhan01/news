@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-06T15:06:37.139Z",
+  "fetchedAt": "2026-05-06T16:56:53.051Z",
   "asx200": {
     "value": 8793.6,
     "change": 214.1,
@@ -95,8 +95,8 @@
   },
   "audusd": {
     "value": 0.72,
-    "change": 0.04,
-    "changePercent": 5.16,
+    "change": 0.03,
+    "changePercent": 5,
     "previousClose": 0.69,
     "asOf": "2026-05-06",
     "history": [
@@ -199,33 +199,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4715.9,
-      "change": 59.1,
-      "changePercent": 1.27
+      "price": 4699.4,
+      "change": 42.6,
+      "changePercent": 0.91
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 78.12,
-      "change": 5.46,
-      "changePercent": 7.51
+      "price": 77.65,
+      "change": 4.99,
+      "changePercent": 6.87
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 94.93,
-      "change": -17.48,
-      "changePercent": -15.55
+      "price": 95.25,
+      "change": -17.16,
+      "changePercent": -15.27
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.18,
-      "change": 0.6,
-      "changePercent": 10.75
+      "price": 6.19,
+      "change": 0.61,
+      "changePercent": 10.94
     },
     {
       "name": "BHP Group",
@@ -834,6 +834,13 @@
   ],
   "news": [
     {
+      "title": "Atlassian billionaire boss, now solo, faces his biggest test yet",
+      "link": "https://www.smh.com.au/business/companies/atlassian-billionaire-boss-now-solo-faces-his-biggest-test-yet-20260504-p5ztjb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "After axing 1600 staff and watching the software giant’s shares collapse, the Atlassian co-founder arrives in California with his biggest product launch in years.",
+      "pubDate": "Thu, 07 May 2026 02:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Fed Square scraps World Cup screenings citing 'antisocial' behaviour",
       "link": "https://www.abc.net.au/news/2026-05-06/fed-square-cancels-world-cup-screenings/106649980",
       "snippet": "",
@@ -909,13 +916,6 @@
       "snippet": "",
       "pubDate": "Wed, 06 May 2026 03:43:04 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "The ‘besties’ behind the Kyle and Jackie O reckoning",
-      "link": "https://www.smh.com.au/business/companies/the-besties-behind-the-kyle-and-jackie-o-reckoning-20260427-p5zras.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Kyle Sandilands calls his manager a “slave”. Jackie ‘O’ Henderson’s helped her through an addiction battle. Now an explosive court case promises to force them into the limelight.",
-      "pubDate": "Wed, 06 May 2026 11:30:00 +1000",
-      "source": "SMH Business"
     }
   ]
 }
