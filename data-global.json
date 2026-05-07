@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-07T14:25:48.889Z",
-  "summary": "An escalating conflict between Iran and the United States dominates global headlines, with Trump claiming the war will end quickly while Iran reviews American peace proposals, as Israel continues bombing targets in Lebanon and the broader Middle East becomes destabilized by soaring oil prices affecting economies worldwide. Military developments are accelerating, including Turkey's unveiling of its first intercontinental ballistic missile and mounting international military deployments toward the Strait of Hormuz, while North Korea signals it rejects nuclear non-proliferation treaties. Beyond the Middle East, China is moving forward with anti-sanctions legislation and has announced suspended death sentences for former defense ministers, Australia is dealing with returning ISIS-linked women, and several nations face domestic political turbulence ranging from Korean court cases to German coalition tensions and UK local elections. Rising fuel costs and geopolitical uncertainty are creating economic stress across Asia, Africa, and the Gulf region, with some corporations like Shell seeing profits rise amid the turmoil.",
+  "fetchedAt": "2026-05-07T16:55:39.159Z",
+  "summary": "Global tensions have escalated sharply around Iran, with military strikes continuing despite diplomatic efforts to broker a ceasefire, while energy prices surge and regional economies face significant fallout from the conflict. Meanwhile, Israel's operations extend beyond Iran into Lebanon with ongoing bombing campaigns that undermine official ceasefire agreements, and persistent disagreements over Hamas disarmament threaten renewed Gaza violence. The international response remains divided, with the US pursuing UN intervention in the Strait of Hormuz and varying positions on proposed peace terms, while economic ripples from the Iran war are reshaping oil markets and tourism across the Middle East and Asia. Secondary but serious concerns include a hantavirus outbreak linked to a cruise ship, North Korea's nuclear posturing, governance crises in the DR Congo and Lebanon, and European efforts to regulate emerging technologies like AI-generated explicit images.",
   "sources": [
     {
       "id": "bbcnews",
@@ -25,6 +25,66 @@
   ],
   "articles": [
     {
+      "title": "WHO confirms five cases of hantavirus linked to cruise ship",
+      "link": "https://www.aljazeera.com/news/2026/5/7/who-confirms-five-cases-of-hantavirus-linked-to-cruise-ship?traffic_source=rss",
+      "desc": "Hantaviruses are a group of viruses carried by rodents that can cause severe disease in humans.",
+      "pubDate": "Thu, 07 May 2026 16:41:59 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_69fcab697606-1778166633.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Lebanon Latest Israeli strikes Beirut despite ‘ceasefire’",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/7/lebanon-latest-israeli-strikes-beirut-despite?traffic_source=rss",
+      "desc": "Israel has carried out its first airstrike on Beirut’s southern suburbs since the April 16 US-brokered ceasefire.",
+      "pubDate": "Thu, 07 May 2026 16:22:40 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1778170941.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran’s president says he has spoken to the country’s Supreme Leader",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/7/irans-president-says-he-has-spoken-to-the-countrys-supreme-leader?traffic_source=rss",
+      "desc": "Iranian President Masoud Pezeshkian says he has met with Iranian Supreme Leader Mojtaba Khamenei.",
+      "pubDate": "Thu, 07 May 2026 16:18:04 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1778170643.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Rosenberg: Russia's Victory Day parade with no tanks a sign Ukraine war not going to plan",
+      "link": "https://www.bbc.com/news/articles/cwy2gj2jlr8o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "For the first time in nearly two decades, there will be no military hardware, just soldiers during Saturday's parade in Moscow.",
+      "pubDate": "Thu, 07 May 2026 16:00:05 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aa5f/live/de8d56e0-4a06-11f1-9595-b54f38a93bc1.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Iran’s President Pezeshkian seeks to quash divided leadership narrative",
+      "link": "https://www.aljazeera.com/news/2026/5/7/irans-president-pezeshkian-seeks-to-quash-divided-leadership-narrative?traffic_source=rss",
+      "desc": "Tehran emphasises solidarity among top officials as Washington pressures Iran during Strait of Hormuz disputes.",
+      "pubDate": "Thu, 07 May 2026 15:58:28 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/03/2026-03-02T075710Z_692949232_RC27WJA20RG2_RTRMADP_3_IRAN-CRISIS-KHAMENEI-1773318386.jpg?resize=1200%2C630",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Fears of renewed Gaza war as Hamas disarmament talks stall",
+      "link": "https://www.bbc.com/news/articles/cd6p5l3n2q3o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Israeli media reports suggest Israel is preparing to resume fighting because of the impasse in talks with Hamas.",
+      "pubDate": "Thu, 07 May 2026 14:22:20 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a2c4/live/8d288e50-4a15-11f1-a7ce-b934bcb15ff4.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
       "title": "Race to trace passengers who left hantavirus cruise ship at island",
       "link": "https://www.bbc.com/news/articles/cnvpzgn26edo?at_medium=RSS&amp;at_campaign=rss",
       "desc": "A 69-year-old woman who later died in South Africa is among those who left MV Hondius at St Helena.",
@@ -33,6 +93,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "US-Israel war on Iran leaves Jordan’s Petra nearly empty of tourists",
+      "link": "https://www.aljazeera.com/gallery/2026/5/7/us-israel-war-on-iran-leaves-jordans-petra-nearly-empty-of-tourists?traffic_source=rss",
+      "desc": "Middle East war devastates tourism in Petra, leaving sites empty and Jordanians facing severe loss of income.",
+      "pubDate": "Thu, 07 May 2026 13:57:55 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AFP__20260506__A9B78NQ__v1__HighRes__JordanIranUsIsraelWarTourism-1778142390.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
     },
     {
       "title": "Why is the US seeking UN help to open Hormuz after undermining it?",
