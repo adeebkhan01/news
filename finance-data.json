@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-07T19:57:32.997Z",
+  "fetchedAt": "2026-05-07T22:32:08.588Z",
   "asx200": {
     "value": 8878.1,
     "change": 149.3,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.03,
-    "changePercent": 4.44,
+    "changePercent": 4.24,
     "previousClose": 0.69,
     "asOf": "2026-05-07",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-06",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-07",
         "close": 0.72
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4716.3,
-      "change": 59.2,
-      "changePercent": 1.27
+      "price": 4706.5,
+      "change": 49.4,
+      "changePercent": 1.06
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 79.67,
-      "change": 7.84,
-      "changePercent": 10.92
+      "price": 79.35,
+      "change": 7.52,
+      "changePercent": 10.48
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 96.35,
-      "change": -16.6,
-      "changePercent": -14.7
+      "price": 96.49,
+      "change": -16.46,
+      "changePercent": -14.57
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.16,
-      "change": 0.61,
-      "changePercent": 11.08
+      "price": 6.14,
+      "change": 0.59,
+      "changePercent": 10.68
     },
     {
       "name": "BHP Group",
@@ -838,11 +842,53 @@
   ],
   "news": [
     {
+      "title": "LeBron's new gear at 41 leads lessons from first round of NBA Playoffs",
+      "link": "https://www.abc.net.au/news/2026-05-08/basketball-five-lessons-first-round-nba-playoffs-lebron-knicks/106613426",
+      "snippet": "",
+      "pubDate": "Thu, 07 May 2026 22:26:53 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Dressing room fight leaves Real Madrid captain in hospital",
+      "link": "https://www.abc.net.au/news/2026-05-08/real-madrid-dressing-room-spat-sees-taken-to-hospital/106656622",
+      "snippet": "",
+      "pubDate": "Thu, 07 May 2026 21:28:15 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "International Olympic Committee lifts restrictions on Belarusian athletes",
+      "link": "https://www.abc.net.au/news/2026-05-08/ioc-lifts-restrictions-of-belarusian-athletes/106656544",
+      "snippet": "",
+      "pubDate": "Thu, 07 May 2026 21:00:04 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "ASX set to fall as Wall Street retreats from records",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-as-wall-street-retreats-from-records-20260508-p5zuwt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The US stock market is hanging just below its records while oil prices keep dropping on hopes that a deal may be nearing to allow tankers to deliver crude once again from the Persian Gulf to customers.",
-      "pubDate": "Fri, 08 May 2026 05:17:23 +1000",
+      "snippet": "US stocks fell from their records after oil prices yo-yoed as Wall Street waits to see whether its hopes for a deal to end the Iran war are warranted or just wishful.",
+      "pubDate": "Fri, 08 May 2026 06:56:22 +1000",
       "source": "SMH Business"
+    },
+    {
+      "title": "Players raise fears of French Open boycott",
+      "link": "https://www.abc.net.au/news/2026-05-08/french-open-boycott-fears/106656500",
+      "snippet": "",
+      "pubDate": "Thu, 07 May 2026 20:32:55 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Smashed by 1,000 points in four matches, these Dogs are refusing to lie down",
+      "link": "https://www.abc.net.au/news/2026-05-08/dennington-bulldogs-football-loss-refuses-die/106630996",
+      "snippet": "",
+      "pubDate": "Thu, 07 May 2026 20:21:54 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Aussie racers debut in Japanese all-female series",
+      "link": "https://www.abc.net.au/news/2026-05-08/paige-raddatz-and-joanne-ciconte-kyojo-cup/106651506",
+      "snippet": "",
+      "pubDate": "Thu, 07 May 2026 20:15:32 +0000",
+      "source": "ABC News"
     },
     {
       "title": "Why did my workplace agree to an idea we knew would fail?",
@@ -878,48 +924,6 @@
       "snippet": "Barrister Brian Dooley called last drinks at Newtown’s Courthouse pub. He’ll hand the keys to his thirsty tenant, pub baron Bruce Solomon, who has paid a frothy $24 million.",
       "pubDate": "Fri, 08 May 2026 05:00:00 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Hawthorn 'taught a bit of a lesson' after Fremantle's fourth-term blitz",
-      "link": "https://www.abc.net.au/news/2026-05-07/afl-round-9-fremantle-dockers-hawthorn-hawks-live-blog/106653120",
-      "snippet": "",
-      "pubDate": "Thu, 07 May 2026 09:17:52 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Aurum keeps piling on the ounces at giant Côte d’Ivoire gold play",
-      "link": "https://www.smh.com.au/business/companies/aurum-keeps-piling-on-the-ounces-at-giant-c-te-d-ivoire-gold-play-20260507-p5zuvn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Aurum Resources hit thick gold intersections at its Boundiali project in Cote d’Ivoire, with new drilling backing continuity at the BDT2 target as modelling continues.",
-      "pubDate": "Thu, 07 May 2026 18:46:24 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Dogs coach says they're 'an easy target' for referees after fourth straight loss",
-      "link": "https://www.abc.net.au/news/2026-05-07/nrl-live-dolphins-vs-canterbury-bulldogs-round-10/106654726",
-      "snippet": "",
-      "pubDate": "Thu, 07 May 2026 08:02:16 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Brisbane Lions player banned for four weeks for homophobic slur",
-      "link": "https://www.abc.net.au/news/2026-05-07/brisbane-lions-player-banned-for-four-weeks-for-homophobic-slur/106654848",
-      "snippet": "",
-      "pubDate": "Thu, 07 May 2026 07:39:45 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Zenith weighs corporate pathways for emerging WA gold hub",
-      "link": "https://www.smh.com.au/business/companies/zenith-weighs-corporate-pathways-for-emerging-wa-gold-hub-20260507-p5zuuq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Zenith Minerals has launched a strategic review to assess its corporate and asset-level options across its gold and lithium portfolio, appointing Argonaut as financial adviser.",
-      "pubDate": "Thu, 07 May 2026 17:02:06 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Adelaide Crows to feed off returning skipper's energy",
-      "link": "https://www.abc.net.au/news/2026-05-07/adelaide-crows-captain-jordan-dawson-returns/106654506",
-      "snippet": "",
-      "pubDate": "Thu, 07 May 2026 06:33:57 +0000",
-      "source": "ABC News"
     }
   ]
 }
