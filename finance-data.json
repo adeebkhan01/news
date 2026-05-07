@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-07T17:12:29.940Z",
+  "fetchedAt": "2026-05-07T19:57:32.997Z",
   "asx200": {
     "value": 8878.1,
     "change": 149.3,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.03,
-    "changePercent": 4.67,
+    "changePercent": 4.44,
     "previousClose": 0.69,
     "asOf": "2026-05-07",
     "history": [
@@ -203,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4722.8,
-      "change": 65.7,
-      "changePercent": 1.41
+      "price": 4716.3,
+      "change": 59.2,
+      "changePercent": 1.27
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 80.32,
-      "change": 8.49,
-      "changePercent": 11.82
+      "price": 79.67,
+      "change": 7.84,
+      "changePercent": 10.92
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 95.66,
-      "change": -17.29,
-      "changePercent": -15.31
+      "price": 96.35,
+      "change": -16.6,
+      "changePercent": -14.7
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.17,
-      "change": 0.63,
-      "changePercent": 11.31
+      "price": 6.16,
+      "change": 0.61,
+      "changePercent": 11.08
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,48 @@
   ],
   "news": [
     {
+      "title": "ASX set to fall as Wall Street retreats from records",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-as-wall-street-retreats-from-records-20260508-p5zuwt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The US stock market is hanging just below its records while oil prices keep dropping on hopes that a deal may be nearing to allow tankers to deliver crude once again from the Persian Gulf to customers.",
+      "pubDate": "Fri, 08 May 2026 05:17:23 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Why did my workplace agree to an idea we knew would fail?",
+      "link": "https://www.smh.com.au/business/workplace/why-did-my-workplace-agree-to-an-idea-we-knew-would-fail-20260507-p5zuq3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Rather than dwelling too much on the bad idea itself, it might be better to look at why it was suggested in the first place.",
+      "pubDate": "Fri, 08 May 2026 05:10:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Michele Bullock has made a bold move – and it’s not the rate rise",
+      "link": "https://www.smh.com.au/business/the-economy/michele-bullock-has-made-a-bold-move-and-it-s-not-the-rate-rise-20260507-p5zum6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The RBA governor is careful not to make her predecessor’s mistakes. But she’s changed her tune this week – in a good way.",
+      "pubDate": "Fri, 08 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Lefties Losing It goes on tour to MAGA-land",
+      "link": "https://www.smh.com.au/business/companies/lefties-losing-it-goes-on-tour-to-maga-land-20260507-p5zup2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Freed from the constraints of its soon-to-be-former name, one of Sky’s biggest segments is planning on taking to the road and delivering what everyone needs: merch.",
+      "pubDate": "Fri, 08 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "‘We offered to buy it’: Queer fetish shop Eagle Leather must look for a new eyrie",
+      "link": "https://www.smh.com.au/business/companies/we-offered-to-buy-it-queer-fetish-shop-eagle-leather-must-look-for-a-new-eyrie-20260507-p5zupo.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Abbotsford’s world-renowned fetish shop Eagle Leather will have to start looking for a new home after its landlord put the building up for sale.",
+      "pubDate": "Fri, 08 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Sydney silk sells Newtown’s Courthouse pub to a beer baron in a frothy $24m deal",
+      "link": "https://www.smh.com.au/business/small-business/sydney-silk-sells-newtown-s-courthouse-pub-to-a-beer-baron-in-a-frothy-24m-deal-20260507-p5zupt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Barrister Brian Dooley called last drinks at Newtown’s Courthouse pub. He’ll hand the keys to his thirsty tenant, pub baron Bruce Solomon, who has paid a frothy $24 million.",
+      "pubDate": "Fri, 08 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Hawthorn 'taught a bit of a lesson' after Fremantle's fourth-term blitz",
       "link": "https://www.abc.net.au/news/2026-05-07/afl-round-9-fremantle-dockers-hawthorn-hawks-live-blog/106653120",
       "snippet": "",
@@ -878,48 +920,6 @@
       "snippet": "",
       "pubDate": "Thu, 07 May 2026 06:33:57 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Lindian powers towards rare earths production lift off in Malawi",
-      "link": "https://www.smh.com.au/business/companies/lindian-powers-towards-rare-earths-production-lift-off-in-malawi-20260507-p5zuu1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Lindian Resources remains on track for first rare earths production in Malawi by late 2026, with mining activities and plant construction now ramping up on site.",
-      "pubDate": "Thu, 07 May 2026 16:28:56 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "‘Have you seen the share price!?’ Controversial AI founder slams short attack",
-      "link": "https://www.smh.com.au/business/companies/have-you-seen-the-share-price-controversial-ai-founder-slams-short-attack-20260507-p5zuoy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Short sellers behind a damning report on Aussie startup Sharon AI have been burnt spectacularly after its shares soared in a market enamoured with the boom in artificial intelligence.",
-      "pubDate": "Thu, 07 May 2026 16:28:47 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Points! Status! Virgin, Qantas woo travellers with loyalty deals",
-      "link": "https://www.smh.com.au/business/companies/points-status-virgin-qantas-woo-travellers-with-loyalty-deals-20260507-p5zunn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Competition between the two airlines to keep domestic flights full is heating up, while the international fuel crisis plays out.",
-      "pubDate": "Thu, 07 May 2026 16:27:28 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Thick, shallow gold extends Pacgold pit in South Australia",
-      "link": "https://www.smh.com.au/business/companies/thick-shallow-gold-extends-pacgold-pit-in-south-australia-20260507-p5zutv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Pacgold has hit thick, shallow gold mineralisation just outside its Vertigo resource in South Australia, with results likely to add ounces and potentially extend the existing open pit.",
-      "pubDate": "Thu, 07 May 2026 16:22:32 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "For this career move, getting older is actually an advantage",
-      "link": "https://www.smh.com.au/business/workplace/for-this-career-move-getting-older-is-actually-an-advantage-20260507-p5zupx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "There are a bunch of myths about work that we tend to believe. One of the most persistent is that that older you get, the harder it is to switch careers.",
-      "pubDate": "Thu, 07 May 2026 16:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Moonlight delivers 450m strike boost to Qld gold system",
-      "link": "https://www.smh.com.au/business/companies/moonlight-delivers-450m-strike-boost-to-qld-gold-system-20260507-p5zurt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Phase two drilling at Moonlight Resources’ Leo Grande prospect in Qld has extended the gold footprint, with wide near-surface gold hits and several holes ending in mineralisation.",
-      "pubDate": "Thu, 07 May 2026 15:15:07 +1000",
-      "source": "SMH Business"
     }
   ]
 }
