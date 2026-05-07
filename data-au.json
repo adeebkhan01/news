@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-07T19:47:03.314Z",
-  "summary": "Australia's domestic agenda is dominated by safety and integrity concerns, with revelations of employed banned childcare workers, construction industry breaches, and a case where a domestic violence victim's abuser stands to inherit her estate highlighting systemic failures across sectors. The economy faces headwinds as the ASX prepares to fall in line with Wall Street's retreat, housing demand softens, and debates intensify over tax policy including capital gains discounts and trust exploitation. Several stories reflect international tensions and domestic political shifts, from Labor governments cracking down on union corruption to concerns about populist politics gaining ground, while technology giants are pivoting toward AI investment despite mounting cybersecurity warnings. In lighter cultural notes, David Attenborough's centenary is being celebrated as a counterpoint to more troubling domestic narratives about Australian values and governance.",
+  "fetchedAt": "2026-05-07T22:04:42.606Z",
+  "summary": "Australia faces a series of critical policy crossroads this week. The government is preparing major tax changes affecting trusts and capital gains while simultaneously committing nearly four billion dollars to Victoria's rail infrastructure, signaling competing fiscal priorities. Three women described as ISIS brides have been arrested after returning to Australia, resuming a contentious national security debate. Elsewhere, the Nationals conceded ground in the Farrer by-election, councils are overhauling bin night arrangements nationwide, and supermarkets are under scrutiny over battery recycling failures.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,156 @@
     }
   ],
   "articles": [
+    {
+      "title": "Call for major banks to invest in First Nations community-led hub",
+      "link": "https://www.abc.net.au/news/2026-05-08/community-banking-hub-big-four-banks-djarindjin/106611666",
+      "desc": "A First Nations financial counselling service wants Australia's big four banks to collectively invest in an Indigenous-owned and led banking hub in remote Western Australia.",
+      "pubDate": "Thu, 07 May 2026 21:57:44 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/a29c1e7dd69685a817cda57a50f770ad?impolicy=wcms_crop_resize&amp;cropH=3750&amp;cropW=2813&amp;xPos=475&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Australia news live: woman to appear in court charged with joining Islamic State",
+      "link": "https://www.theguardian.com/australia-news/live/2026/may/08/woman-charged-with-joining-islamic-state-syria-sydney-royal-commission-antisemitism-hearings-anthony-albanese-labor-angus-taylor-coalition-farrer-byelection-nsw-victoria-queensland-politics-ntwnfb",
+      "desc": "<p>Woman arrested at Sydney airport after arriving back from Syria last night; two more women face charges in Melbourne. Follow updates</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/email",
+      "pubDate": "Thu, 07 May 2026 21:56:49 GMT",
+      "img": "https://i.guim.co.uk/img/media/dc01a8a5aaa33a97d359d8fd234057cbfbcaa27d/493_35_2497_1997/master/2497.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Bin night across Australia is changing as councils, households fight waste",
+      "link": "https://www.abc.net.au/news/2026-05-08/bin-pick-up-changes-as-waste-costs-rise-councils/106642598",
+      "desc": "How councils collect rubbish is changing as the cost of disposing of waste skyrockets and they scramble to meet environmental targets.",
+      "pubDate": "Thu, 07 May 2026 21:26:51 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/2f28561819c7cd7a9ca60e9d14247416?impolicy=wcms_crop_resize&amp;cropH=1987&amp;cropW=1489&amp;xPos=755&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Marsh brings up brilliant ton",
+      "link": "https://www.smh.com.au/national/marsh-brings-up-brilliant-ton-20260508-p5zuxj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Australia's Mitch Marsh brings up a brilliant ton in the IPL.",
+      "pubDate": "Fri, 08 May 2026 07:25:42 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/bfb69b88aa955493fb975ebc349cc8a8a7eb8d93",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Live: Nationals leader concedes it will be an 'uphill battle' to win Farrer by-election",
+      "link": "https://www.abc.net.au/news/2026-05-08/federal-politics-live-blog-farrer-gas-reservation/106654964",
+      "desc": "Voters in the federal seat of Farrer will head to the polls tomorrow to chose a replacement for former opposition leader Sussan Ley but Matt Canavan says it will be an uphill battle for the Nationals ",
+      "pubDate": "Thu, 07 May 2026 21:12:48 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/6e51f142e969d9f90d04f2c3ba37b8a9?impolicy=wcms_crop_resize&amp;cropH=3512&amp;cropW=2634&amp;xPos=1803&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Major hack steals school student data",
+      "link": "https://www.smh.com.au/national/major-hack-steals-school-student-data-20260508-p5zuxe.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A criminal group has claimed responsibility for stealing the data of Australian school students in a hack on Instructure.",
+      "pubDate": "Fri, 08 May 2026 07:10:52 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/ea6aeea60f0e55a8cd3d3c94ef65e5b04ddd7090",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Vigils for Kumanjayi Little Baby",
+      "link": "https://www.smh.com.au/national/vigils-for-kumanjayi-little-baby-20260508-p5zuxd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Vigils have been held in Alice Springs and other cities for Kumanjayi Little Baby a week after her alleged murder.",
+      "pubDate": "Fri, 08 May 2026 07:07:10 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/de117706de534f6c3f4ce3a39137eec68ada1dac",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "'ISIS brides' arrested on return to Australia",
+      "link": "https://www.smh.com.au/national/isis-brides-arrested-on-return-to-australia-20260508-p5zuxa.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Several so-called &#34;ISIS brides&#34; have been arrested after landing at Australian airports.",
+      "pubDate": "Fri, 08 May 2026 07:00:21 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/e88f5ef061c7007deb6fb5b00e490815328221d8",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Federal government to contribute nearly $4b extra to Victoria's Suburban Rail Loop",
+      "link": "https://www.abc.net.au/news/2026-05-08/commonwealth-funding-victoria-suburban-rail-loop/106656466",
+      "desc": "The federal government's contribution to Victoria's most expensive project in history has risen to $6 billion but falls short of the state government's request.",
+      "pubDate": "Thu, 07 May 2026 20:47:49 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/f2232805798dedeab225705de55dc8a0?impolicy=wcms_crop_resize&amp;cropH=3746&amp;cropW=2810&amp;xPos=1095&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Labor absence opens door for One Nation and independent in Farrer",
+      "link": "https://www.abc.net.au/news/2026-05-08/labor-absence-opens-door-for-one-nation-in-farrer/106642688",
+      "desc": "The Labor Party has opted not to run a candidate in tomorrow's Farrer by-election, which will result in a redistribution of votes as traditional Labor supporters are forced to look elsewhere.",
+      "pubDate": "Thu, 07 May 2026 20:41:16 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/d6bc640b38f8973122a3400bcb504f84?impolicy=wcms_crop_resize&amp;cropH=3024&amp;cropW=2268&amp;xPos=782&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Does 432Hz tuning improve your wellbeing? A music psychologist unpacks the evidence",
+      "link": "https://theconversation.com/does-432hz-tuning-improve-your-wellbeing-a-music-psychologist-unpacks-the-evidence-279759",
+      "desc": "While 432Hz might sound soothing to some ears, it’s not a shortcut to cosmic alignment.",
+      "pubDate": "2026-05-07T20:10:33Z",
+      "img": "https://images.theconversation.com/files/731561/original/file-20260422-57-7zt288.jpg?ixlib=rb-4.1.0&amp;rect=0%2C931%2C6016%2C3008&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "Australia news LIVE: Three ‘IS brides’ arrested after arriving in Sydney, Melbourne; US strikes Iran near Strait of Hormuz",
+      "link": "https://www.smh.com.au/national/australia-news-live-three-isis-brides-arrested-after-arriving-in-sydney-melbourne-us-awaits-iran-s-response-to-peace-proposal-20260508-p5zuwl.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Follow our live coverage of news in Australia and around the globe.",
+      "pubDate": "Fri, 08 May 2026 06:09:17 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.6051%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_1343%2C$y_603/t_crop_custom/q_86%2Cf_auto/57dd76dfe30cbe4657952042a1f6767378547cd4",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Family and business trusts could soon have to pay more tax – with a few likely exceptions",
+      "link": "https://theconversation.com/family-and-business-trusts-could-soon-have-to-pay-more-tax-with-a-few-likely-exceptions-282279",
+      "desc": "More than 1.8 million Australians earn money from trusts, which can be legally used to reduce people’s tax bills. There may be changes coming in Tuesday’s budget.",
+      "pubDate": "2026-05-07T20:08:52Z",
+      "img": "https://images.theconversation.com/files/734421/original/file-20260507-71-oi13zy.jpg?ixlib=rb-4.1.0&amp;rect=0%2C1040%2C8028%2C4014&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "Iran wants oil tariffs paid in Chinese yuan – is the power of the US petrodollar in decline?",
+      "link": "https://theconversation.com/iran-wants-oil-tariffs-paid-in-chinese-yuan-is-the-power-of-the-us-petrodollar-in-decline-281858",
+      "desc": "Iranian tariffs in the Strait of Hormuz may change how oil is traded and priced, with implications for currencies, alliances and global economic power.",
+      "pubDate": "2026-05-07T20:08:39Z",
+      "img": "https://images.theconversation.com/files/734370/original/file-20260506-57-s2vg23.jpg?ixlib=rb-4.1.0&amp;rect=0%2C207%2C2489%2C1244&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "After 8 years, decision on $30b gas project off WA coast looms",
+      "link": "https://www.abc.net.au/news/2026-05-08/woodside-browse-gas-project-epbc-decision-plan/106654260",
+      "desc": "Woodside's proposal to open up Australia's largest untapped gas resource, the Browse Basin, could be handed to the environment minister for a final decision as soon as next month.",
+      "pubDate": "Thu, 07 May 2026 19:46:40 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/3527b64f189784b6945b63e67c658726?impolicy=wcms_crop_resize&amp;cropH=1370&amp;cropW=1028&amp;xPos=510&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
     {
       "title": "Mary died after suffering domestic violence. Her abuser might financially benefit",
       "link": "https://www.abc.net.au/news/2026-05-08/superannuation-laws-risk-savings-handed-to-dv-perpetrators/106606748",
@@ -278,6 +428,16 @@
       "sourceId": "abcnews",
       "sourceName": "ABC News",
       "sourceColor": "#E64626"
+    },
+    {
+      "title": "Whirlpool warns of ‘recession-level’ slump as Iran war and tariff ruling hit sales",
+      "link": "https://www.theguardian.com/business/2026/may/07/whirlpool-recession-sales-iran-tariffs",
+      "desc": "<p>Appliance giant slashes earnings forecast and hikes prices by 10% with another 4% spike planned</p><p>With the <a href=\"https://www.theguardian.com/world/us-israel-war-on-iran\">war in Iran</a> and ",
+      "pubDate": "Thu, 07 May 2026 18:18:17 GMT",
+      "img": "https://i.guim.co.uk/img/media/3fa48850674312da7f15e6bbe638481f84d53046/357_207_3073_2459/master/3073.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
     },
     {
       "title": "Gas-fired power still looks a safe bet for Centrica in the renewables era",
