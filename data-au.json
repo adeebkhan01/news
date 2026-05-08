@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-08T19:25:12.778Z",
-  "summary": "Australia's federal budget dominates domestic news as Finance Minister Jim Chalmers prepares Tuesday's announcement amid ongoing economic pressures, with debates swirling around capital gains tax reform, energy policy including biofuels mandates, and whether the government can address cost-of-living concerns while managing political grievance from regional voters. Regulatory and social policy debates are heating up, spanning ASIC's enforcement capabilities under new leadership, discriminatory superannuation treatment of nannies, NDIS access for motor neurone disease patients, and questions about how Australia handles children linked to ISIS families returning from overseas. The Coalition faces criticism over its electric vehicle strategy appearing disconnected from market realities, while separate controversies involve media regulation, a leaked newspaper feud with councils, and broader questions about data privacy and AI's democratic implications. International stories include Trump's mixed signals on trade deals and continued tensions in the Iran conflict affecting shipping and employment figures.",
+  "fetchedAt": "2026-05-08T22:00:50.005Z",
+  "summary": "Australia faces a crucial political moment as the Farrer byelection unfolds amid growing disenchantment with major parties, with One Nation and independents gaining traction while the federal government prepares to deliver a budget addressing migration, economic growth and climate targets. Security concerns are highlighted by the arrest of a man allegedly involved in bringing ISIS-linked women to Australia, alongside broader debates about child welfare and national safety in cases involving extremist families. Economic policy dominates with discussions around tax reform, electric vehicle strategy, and emerging sectors like biofuels and data centres, while domestic issues including NDIS accessibility for motor neurone disease sufferers and superannuation gaps for nannies underscore inequality within Australia's support systems.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,76 @@
     }
   ],
   "articles": [
+    {
+      "title": "Teen hospitalised following alleged hit-and-run",
+      "link": "https://www.smh.com.au/national/teen-hospitalised-following-alleged-hit-and-run-20260509-p5zv96.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "An Adelaide teen is in hospital, after he and his mum were injured in an alleged hit-and-run in a shopping centre carpark.",
+      "pubDate": "Sat, 09 May 2026 07:35:00 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/f1c7da194a03d66b047fcdf447e7d2e50c77f4ae",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Man who reportedly helped bring so-called ISIS brides to Australia arrested",
+      "link": "https://www.smh.com.au/national/man-who-reportedly-helped-bring-so-called-isis-brides-to-australia-arrested-20260509-p5zv95.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A man who reportedly travelled to Syria to help bring the women to Australia, has been arrested on an unrelated assault charge.",
+      "pubDate": "Sat, 09 May 2026 07:30:21 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/25709ecf290796b799f9a3c7f3b4b94c634d9ee0",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Byelection day kicks-off in Farrer",
+      "link": "https://www.smh.com.au/national/byelection-day-kicks-off-in-farrer-20260509-p5zv94.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "NSW’s Farrer region has reached byelection day as voters decide who will replace the seat formerly held by Sussan Ley.",
+      "pubDate": "Sat, 09 May 2026 07:29:43 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/f023826c7235acac62868c09a10ef4e40ea62a4c",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Australia is breaking its carbon bond, but there's a cost",
+      "link": "https://www.abc.net.au/news/2026-05-09/australia-is-ditching-coal-but-theres-a-cost/106616676",
+      "desc": "As Australia weans itself away from coal, aging power stations across the country have been reduced to smoke and rubble. But for communities at the coalface, there are serious and dramatic consequence",
+      "pubDate": "Fri, 08 May 2026 21:19:06 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/b73e720b10ca4c1fc68b0c475b4a6000?impolicy=wcms_crop_resize&amp;cropH=794&amp;cropW=596&amp;xPos=336&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Victoria's treaty leaders are here and won't shy away from a challenge",
+      "link": "https://www.abc.net.au/news/2026-05-09/victoria-treaty-what-is-it-first-peoples-assembly-co-chairs/106649758",
+      "desc": "The new leaders of Victoria's First Peoples' Assembly say they're pushing ahead with promises made under the state's treaty, despite political uncertainty.",
+      "pubDate": "Fri, 08 May 2026 21:04:20 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/1367f095726db9ad902d6540348fb53e?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=1620&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Disability support group harvests last Mother's Day bloom after 35 years",
+      "link": "https://www.abc.net.au/news/2026-05-09/endeavour-foundation-last-year-of-mothers-day-flower-harvest/106651858",
+      "desc": "Disability support organisation Endeavour Foundation in Bundaberg is changing its business model away from growing flowers to packaging solutions.",
+      "pubDate": "Fri, 08 May 2026 20:30:00 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/f9eadbca49d3c320546f22f77d3fa3a3?impolicy=wcms_crop_resize&amp;cropH=2776&amp;cropW=2082&amp;xPos=867&amp;yPos=248&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "King Charles features in surprise birthday tribute to David Attenborough",
+      "link": "https://www.theguardian.com/tv-and-radio/2026/may/08/king-charles-birthday-tribute-film-david-attenborough-100",
+      "desc": "<p>Whimsical film shows relay of animals carrying centennial card from Balmoral Castle to naturalist in London</p><p>King Charles has featured in a surprise birthday tribute to David Attenborough, wit",
+      "pubDate": "Fri, 08 May 2026 19:50:36 GMT",
+      "img": "https://i.guim.co.uk/img/media/1667a85413b4ee6298df76de4bdb9625389a0b90/2727_0_10800_8640/master/10800.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
     {
       "title": "Some nannies working without superannuation due to 'discriminatory' law",
       "link": "https://www.abc.net.au/news/2026-05-09/super-law-denies-some-domestic-workers-retirement-contributions/106606612",
