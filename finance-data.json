@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-08T08:02:30.982Z",
+  "fetchedAt": "2026-05-08T10:51:08.266Z",
   "asx200": {
     "value": 8744.4,
     "change": -207.4,
@@ -104,7 +104,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.02,
-    "changePercent": 2.12,
+    "changePercent": 2.3,
     "previousClose": 0.71,
     "asOf": "2026-05-08",
     "history": [
@@ -207,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4718.6,
-      "change": -30.9,
-      "changePercent": -0.65
+      "price": 4735.7,
+      "change": -13.8,
+      "changePercent": -0.29
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 80.38,
-      "change": 5.16,
-      "changePercent": 6.85
+      "price": 81.3,
+      "change": 6.08,
+      "changePercent": 8.08
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 95.39,
-      "change": 0.98,
-      "changePercent": 1.04
+      "price": 94.53,
+      "change": 0.12,
+      "changePercent": 0.13
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.28,
-      "change": 0.52,
-      "changePercent": 9.05
+      "price": 6.3,
+      "change": 0.54,
+      "changePercent": 9.29
     },
     {
       "name": "BHP Group",
@@ -842,7 +842,21 @@
   ],
   "news": [
     {
-      "title": "Live: Titans hand debut to young gun half in search of answers to Roosters",
+      "title": "Live: Lions grab handy break against Blues, umpire floored by Bulldogs star",
+      "link": "https://www.abc.net.au/news/2026-05-08/afl-rd-9-friday-blog/106653452",
+      "snippet": "",
+      "pubDate": "Fri, 08 May 2026 08:53:56 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Warren Buffett’s big bets set to haunt the $1.4 trillion giant he built",
+      "link": "https://www.smh.com.au/business/companies/warren-buffett-s-big-bets-set-to-haunt-the-1-4-trillion-giant-he-built-20260507-p5zuib.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "He is known as the greatest investor of all time, but Warren Buffett has left the man taking over from him quite a dilemma.",
+      "pubDate": "Fri, 08 May 2026 18:15:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Plucky Eels pushing hard as Cowboys great features in milestone game",
       "link": "https://www.abc.net.au/news/2026-05-08/nrl-live-blog-roosters-titans-cowboys-eels/106660080",
       "snippet": "",
       "pubDate": "Fri, 08 May 2026 07:13:20 +0000",
@@ -910,20 +924,6 @@
       "snippet": "Aurum Resources hit thick gold intersections at its Boundiali project in Cote d’Ivoire, with new drilling backing continuity at the BDT2 target as modelling continues.",
       "pubDate": "Fri, 08 May 2026 09:38:40 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "ASX dives, wiping out $40b, as banks slide and oil climbs",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-as-wall-street-retreats-from-records-20260508-p5zuwt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The sharemarket had its largest one-day fall in seven weeks on Friday.",
-      "pubDate": "Fri, 08 May 2026 09:05:54 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Smith given 'every assurance' of LIV survival",
-      "link": "https://www.abc.net.au/news/2026-05-08/cameron-smith-told-liv-will-continue/106656810",
-      "snippet": "",
-      "pubDate": "Thu, 07 May 2026 22:35:34 +0000",
-      "source": "ABC News"
     }
   ]
 }
