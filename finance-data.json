@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-08T19:49:21.094Z",
+  "fetchedAt": "2026-05-08T22:28:36.405Z",
   "asx200": {
     "value": 8744.4,
     "change": -207.4,
@@ -193,8 +193,12 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-07",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-08",
-        "close": 0.73
+        "close": 0.72
       }
     ]
   },
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4732.3,
-      "change": -17.2,
-      "changePercent": -0.36
+      "price": 4723.7,
+      "change": -25.8,
+      "changePercent": -0.54
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 81.11,
-      "change": 5.89,
-      "changePercent": 7.83
+      "price": 80.83,
+      "change": 5.61,
+      "changePercent": 7.46
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 95.26,
-      "change": 0.85,
-      "changePercent": 0.9
+      "price": 94.68,
+      "change": 0.27,
+      "changePercent": 0.29
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.3,
-      "change": 0.54,
-      "changePercent": 9.31
+      "price": 6.28,
+      "change": 0.52,
+      "changePercent": 9.06
     },
     {
       "name": "BHP Group",
@@ -838,6 +842,34 @@
   ],
   "news": [
     {
+      "title": "F1 agrees engine changes for 'safer, fairer' racing",
+      "link": "https://www.abc.net.au/news/2026-05-09/formula-1-agrees-to-engine-changes-for-2027/106661348",
+      "snippet": "",
+      "pubDate": "Fri, 08 May 2026 21:49:20 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "The long road to recovery after concussion",
+      "link": "https://www.abc.net.au/news/2026-05-09/road-to-recovery-after-concussions/106636020",
+      "snippet": "",
+      "pubDate": "Fri, 08 May 2026 21:33:12 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "De Minaur's disastrous clay court form continues",
+      "link": "https://www.abc.net.au/news/2026-05-09/alex-de-minaur-destroys-racquet-in-italian-open-exit/106661302",
+      "snippet": "",
+      "pubDate": "Fri, 08 May 2026 21:11:25 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Huge crash sees Aussie sprint hope hit deck in Giro d'Italia opener",
+      "link": "https://www.abc.net.au/news/2026-05-09/giro-d-italia-2026-high-speed-crash/106657056",
+      "snippet": "",
+      "pubDate": "Fri, 08 May 2026 20:49:50 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Deaf and blind cricketers angered by changes to Cricket Australia's funding",
       "link": "https://www.abc.net.au/news/2026-05-09/cricket-australia-inclusive-blind-deaf-disabled-programs-funding/106284494",
       "snippet": "",
@@ -891,34 +923,6 @@
       "link": "https://www.abc.net.au/news/2026-05-08/russia-to-compete-at-sydney-water-polo-world-cup-final/106658240",
       "snippet": "",
       "pubDate": "Fri, 08 May 2026 07:05:14 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX Runners of the Week: Key Petroleum, Kaoko, Swift TV &amp; Caprice",
-      "link": "https://www.smh.com.au/business/companies/asx-runners-of-the-week-key-petroleum-kaoko-swift-tv-and-caprice-20260508-p5zv5w.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Bulls N’ Bears ASX Runner of the Week is… Key Petroleum, which surged after edging closer to State approvals over its permits in the oil-rich Cooper-Eromanga Basin amid ongoing global oil price volatility.",
-      "pubDate": "Fri, 08 May 2026 16:30:33 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Why there's no end in sight for Kezie Apps, Origin's ageless wonder",
-      "link": "https://www.abc.net.au/news/2026-05-08/kezie-apps-new-south-wales-state-of-origin/106659638",
-      "snippet": "",
-      "pubDate": "Fri, 08 May 2026 06:10:19 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Amplia targets ovarian cancer in new clinical protein inhibitor trial",
-      "link": "https://www.smh.com.au/business/companies/amplia-targets-ovarian-cancer-in-new-clinical-protein-inhibitor-trial-20260508-p5zv36.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Amplia Therapeutics is launching a new clinical trial of its protein inhibitor drug narmafotinib in ovarian cancer, partnering with research group ANZGOG.",
-      "pubDate": "Fri, 08 May 2026 13:57:35 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Aussie teen returns from injury to race in new Italian championship",
-      "link": "https://www.abc.net.au/news/2026-05-08/aiva-anagnostiadis-gt4-italy-series-promodrive-team/106657860",
-      "snippet": "",
-      "pubDate": "Fri, 08 May 2026 02:57:45 +0000",
       "source": "ABC News"
     }
   ]
