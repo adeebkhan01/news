@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-08T16:18:16.551Z",
-  "summary": "Australia's political landscape is roiling ahead of what appears to be a challenging federal budget, with Finance Minister Katy Gallagher and Treasurer Jim Chalmers facing criticism over unfulfilled promises and growing grievance politics, particularly from One Nation and independents gaining traction in seats like Farrer. The budget is expected to address economic growth through migration, cryptocurrency regulation, and reduced red tape, though it comes against a backdrop of broken election commitments that threaten Labor's credibility. Beyond politics, the country is grappling with serious issues including child safety scandals involving IS-linked families, transport disputes, industrial incidents at major steelworks, and concerning antisemitic incidents in schools. International developments include ongoing Middle East tensions affecting shipping and trade, while domestic concerns range from climate impacts on agriculture to workplace misconduct scandals.",
+  "fetchedAt": "2026-05-08T19:25:12.778Z",
+  "summary": "Australia's federal budget dominates domestic news as Finance Minister Jim Chalmers prepares Tuesday's announcement amid ongoing economic pressures, with debates swirling around capital gains tax reform, energy policy including biofuels mandates, and whether the government can address cost-of-living concerns while managing political grievance from regional voters. Regulatory and social policy debates are heating up, spanning ASIC's enforcement capabilities under new leadership, discriminatory superannuation treatment of nannies, NDIS access for motor neurone disease patients, and questions about how Australia handles children linked to ISIS families returning from overseas. The Coalition faces criticism over its electric vehicle strategy appearing disconnected from market realities, while separate controversies involve media regulation, a leaked newspaper feud with councils, and broader questions about data privacy and AI's democratic implications. International stories include Trump's mixed signals on trade deals and continued tensions in the Iran conflict affecting shipping and employment figures.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,216 @@
     }
   ],
   "articles": [
+    {
+      "title": "Some nannies working without superannuation due to 'discriminatory' law",
+      "link": "https://www.abc.net.au/news/2026-05-09/super-law-denies-some-domestic-workers-retirement-contributions/106606612",
+      "desc": "Despite working full-time hours, some private domestic workers are going years without superannuation contributions. Now, industry stakeholders are calling for change.",
+      "pubDate": "Fri, 08 May 2026 19:18:45 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/f289a53aabce8b152424d535d65ae35a?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=1350&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Australians with motor neurone disease fear losing fast-tracked NDIS",
+      "link": "https://www.abc.net.au/news/2026-05-09/motor-neurone-disease-advocates-fear-ndis-changes/106660350",
+      "desc": "Australians with MND who have rapidly changing needs fear they will lose a priority pathway to access the National Disability Insurance Scheme under Labor’s planned changes.",
+      "pubDate": "Fri, 08 May 2026 19:16:02 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/fa0352bc64af03f68ac23d38001b586d?impolicy=wcms_crop_resize&amp;cropH=1559&amp;cropW=1169&amp;xPos=153&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Rachel Ward’s Instagram post blew up – but the main pile-on came from a surprising source",
+      "link": "https://www.smh.com.au/national/rachel-ward-s-instagram-post-blew-up-but-the-main-pile-on-came-from-a-surprising-source-20260414-p5znrq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The actor-director turned cattle farmer discusses women, ageing and appearance – and the fallout from her social media post – with author and feminist Kathy Lette.",
+      "pubDate": "Sat, 09 May 2026 05:11:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.765%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_55/t_crop_custom/q_86%2Cf_auto/6673517ce254fd634dae9bda31821824545a3503c7de4a868f126901aae322ba",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Coalition's EV strategy risks appearing out of touch",
+      "link": "https://www.abc.net.au/news/2026-05-09/electric-vehicle-ev-fringe-benefits-tax-fuel-crisis-matt-canavan/106612434",
+      "desc": "The climate war is being won quietly, with nearly three in four One Nation voters eager to buy an EV.",
+      "pubDate": "Fri, 08 May 2026 19:00:00 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/6e51f142e969d9f90d04f2c3ba37b8a9?impolicy=wcms_crop_resize&amp;cropH=3512&amp;cropW=2634&amp;xPos=1803&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Keeping 'ISIS brides' out of sight will not make Australia safer",
+      "link": "https://www.abc.net.au/news/2026-05-09/isis-families-syria-terrorism-bondi-attack-security-intelligence/106657694",
+      "desc": "The political energy spent on the \"ISIS brides\" has not been matched by serious attention to the deficiencies in Australia's counterterrorism architecture.",
+      "pubDate": "Fri, 08 May 2026 19:00:00 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/7a77df92f1af986f53598304968d8ca3?impolicy=wcms_crop_resize&amp;cropH=3512&amp;cropW=2634&amp;xPos=1803&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "ASIC was dubbed a ‘watchdog with no teeth’. Has Joe Longo changed it?",
+      "link": "https://www.smh.com.au/business/banking-and-finance/asic-was-dubbed-a-watchdog-with-no-teeth-has-joe-longo-changed-it-20260507-p5zupd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "The outgoing chair of ASIC says he’s made the regulator more ambitious, pointing to more penalties it has extracted and more investigations launched.",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2845%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_273%2C$y_0/t_crop_custom/q_86%2Cf_auto/8d0bf5901457b47395a69d5caa2ea499a8f62237",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Beyond the fuchsia front door of this quaint 1893 house is an explosion of colour and art",
+      "link": "https://www.smh.com.au/business/consumer-affairs/beyond-the-fuchsia-front-door-of-this-quaint-1893-house-is-an-explosion-of-colour-and-art-20260508-p5zv21.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "I’ve reviewed many great architectural feats, and sometimes feel like I’ve seen everything, but this Prahran house opened up an entirely new world, leaving me in awe.",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_109/t_crop_custom/q_86%2Cf_auto/8d54587ab4d1825d7b3f164141e7a488f1cdd072",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Is it wrong to eavesdrop on someone detailing their intimate problems on the phone?",
+      "link": "https://www.smh.com.au/national/is-it-wrong-to-eavesdrop-on-someone-detailing-their-intimate-problems-on-the-phone-20260423-p5zqgq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Someone whinging about their marital and sexual issues in full-volume, XXX-rated audio can be a lively way to pass the time, says our Modern Guru.",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.353%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_457/t_crop_custom/q_86%2Cf_auto/e16ed878055ad4eafc76147b9e6d2695ffcfac18",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Sleepwear as outerwear: New reasons to enjoy slow mornings at home",
+      "link": "https://www.smh.com.au/national/sleepwear-as-outerwear-new-reasons-to-enjoy-slow-mornings-at-home-20260428-p5zrqt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Relaxed silhouettes, breathable fabrics … Fresh excuses to keep in those PJs just a little longer through the day.",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.8359%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_446%2C$y_70/t_crop_custom/q_86%2Cf_auto/bcd9ad48b789c241a03eae6a6374f1c960e4c2c6",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "He keeps ex-PMs on retainer, parties with Trump and dines with King Charles: this is Anthony Pratt",
+      "link": "https://www.smh.com.au/national/he-keeps-ex-pms-on-retainer-parties-with-trump-and-dines-with-king-charles-this-is-anthony-pratt-20260505-p5ztve.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "He’s one of Australia’s richest men, but this cardboard billionaire lived in a roadside hotel for two years while building his father’s American dream.",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.6619%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_7/t_crop_custom/q_86%2Cf_auto/df8a7286242a3fddfb4214392c9f6da9fccd9be2",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Nineteen years old, Mia is sleeping rough near the makeshift camp where a newborn died",
+      "link": "https://www.smh.com.au/national/nineteen-years-old-mia-is-sleeping-rough-near-the-makeshift-camp-where-a-newborn-died-20260505-p5zu11.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The young woman is just one of dozens of people making their homes in tents in riverside parks around Wagga Wagga.",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1765%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_96/t_crop_custom/q_86%2Cf_auto/5b554cd043d70d7419ad3406fc1bbbf1016d2827",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Soft feet, hard stomp: Why Victorian farmers are betting on alpacas",
+      "link": "https://www.smh.com.au/national/victoria/soft-feet-hard-stomp-why-victorian-farmers-are-betting-on-alpacas-20260506-p5zuc7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "In recent decades, these furry creatures with padded feet have become increasingly common on Victorian farms.",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1839%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_12/t_crop_custom/q_86%2Cf_auto/db86db25c6e8b11ad12d8ad54786b011394c074e",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "The Sydney newspaper banned from council meetings that has its own questions to answer",
+      "link": "https://www.smh.com.au/national/nsw/the-sydney-newspaper-banned-from-council-meetings-that-has-its-own-questions-to-answer-20260506-p5zud0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "At first glance, a council’s decision to ban a newspaper from its premises represents a remarkable intrusion on press freedom. But this fight is less cut and dried than it seems.",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.517361111111111%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/addeaefe852a67baed82cf4ffc3ade5d86849800",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "I feel brave, but scared too, torn between standing up and shrinking down",
+      "link": "https://www.smh.com.au/national/i-feel-brave-but-scared-too-torn-between-standing-up-and-shrinking-down-20260507-p5zusz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "What it’s like to tell the royal commission, and the world, about your experiences of life as a Jewish Australian.",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2645%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_377%2C$y_166/t_crop_custom/q_86%2Cf_auto/90da034e9f75480e2a15ac1879c116e1765a1199",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Capital gains tax and negative gearing reforms are overdue",
+      "link": "https://www.smh.com.au/national/capital-gains-tax-and-negative-gearing-reforms-are-overdue-20260508-p5zv1b.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Two decades of evidence shows that the generous CGT discount, when used along with negative gearing, has overcompensated property investors.",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2206%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_188/t_crop_custom/q_86%2Cf_auto/a44f7b9d7f09d7aca1240f95e8dd1d07701cb270cad080bb371ba00fb2d4e851",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "The May 9 edition",
+      "link": "https://www.smh.com.au/national/the-may-9-edition-20260508-p5zv4s.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "How Anthony Pratt conquered America | Rachel Ward and Kathy Lette on Botox, sexism and menopause | Wikipedia turns 25 | How to go grey",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.5172%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_55/t_crop_custom/q_86%2Cf_auto/cbce20f89854c60824600c8320e3c04b7c0a9c3ece04b50f8374ae816145686b",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "The rise and fall of Julie Bishop as chancellor of ANU",
+      "link": "https://www.smh.com.au/national/the-rise-and-fall-of-julie-bishop-as-chancellor-of-anu-20260508-p5zv4z.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The former foreign minister’s early resignation after years of turmoil has led to hopes that the beleaguered institution can get back on track.",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2441%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_36/t_crop_custom/q_86%2Cf_auto/850aecf210871518ad01601c2c27f3d7cb99b7f8",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Biofuels could ease our energy woes. But the industry says it needs a mandate",
+      "link": "https://www.abc.net.au/news/2026-05-09/biofuel-investment-needs-policy-certainty-super-industry-says/106606048",
+      "desc": "Billions of dollars worth of investment will flow if the federal government mandates a percentage of biofuels be added to the nation's fuel supply, major investors say.",
+      "pubDate": "Fri, 08 May 2026 18:56:43 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/7dd39661e69904515498eeeae8114000?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=1299&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Some people will hate Tuesday's federal budget but Jim Chalmers doesn't mind",
+      "link": "https://www.abc.net.au/news/2026-05-09/jim-chalmers-bracing-for-fear-campaign-after-tax-reform-budget/106660318",
+      "desc": "For once, the budget won't be a dull one. Jim Chalmers's tax reforms will create a stir and some question whether they will close the generation gap, but the treasurer is projecting a relaxed figure.",
+      "pubDate": "Fri, 08 May 2026 18:48:24 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/d05e29ae96b23bd135522c6327f88a45?impolicy=wcms_crop_resize&amp;cropH=2813&amp;cropW=2110&amp;xPos=1445&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "How a case of 'microplastic brain worm' led to this author's debut novel",
+      "link": "https://www.abc.net.au/news/2026-05-09/ellena-savage-author-new-book-the-ruiners/106647696",
+      "desc": "Ellena Savage's debut essay collection, Blueberries, was a surprise hit. In her new novel, The Ruiners, she takes on Charles Dickens and the illegal waste trade.",
+      "pubDate": "Fri, 08 May 2026 18:30:00 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/777be7dab6a3060f7fe94119d2bc45ad?impolicy=wcms_crop_resize&amp;cropH=1597&amp;cropW=1198&amp;xPos=0&amp;yPos=181&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "ABC lawyers accuse Trump’s FCC of punishing network for political reasons",
+      "link": "https://www.theguardian.com/media/2026/may/08/abc-lawyers-trump-fcc-targeting-network",
+      "desc": "<p>Network lawyers in a legal motion strongly pushed back against the FCC’s investigation into The View talkshow</p><p>Lawyers representing an ABC station have accused the Federal Communications Commi",
+      "pubDate": "Fri, 08 May 2026 17:34:42 GMT",
+      "img": "https://i.guim.co.uk/img/media/3cac1762d3588212a2d2999c7e053023b569b9a1/458_0_4585_3668/master/4585.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
     {
       "title": "Finance minister Katy Gallagher on her 'most challenging' budget - podcast",
       "link": "https://www.theguardian.com/australia-news/audio/2026/may/09/federal-budget-finance-minister-katy-gallagher-australian-politics-podcast",
