@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-08T16:47:59.241Z",
+  "fetchedAt": "2026-05-08T19:49:21.094Z",
   "asx200": {
     "value": 8744.4,
     "change": -207.4,
@@ -98,9 +98,9 @@
     ]
   },
   "audusd": {
-    "value": 0.72,
+    "value": 0.73,
     "change": 0.02,
-    "changePercent": 2.37,
+    "changePercent": 2.44,
     "previousClose": 0.71,
     "asOf": "2026-05-08",
     "history": [
@@ -194,7 +194,7 @@
       },
       {
         "date": "2026-05-08",
-        "close": 0.72
+        "close": 0.73
       }
     ]
   },
@@ -203,25 +203,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4727.2,
-      "change": -22.3,
-      "changePercent": -0.47
+      "price": 4732.3,
+      "change": -17.2,
+      "changePercent": -0.36
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 81.03,
-      "change": 5.8,
-      "changePercent": 7.71
+      "price": 81.11,
+      "change": 5.89,
+      "changePercent": 7.83
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 95.77,
-      "change": 1.36,
-      "changePercent": 1.44
+      "price": 95.26,
+      "change": 0.85,
+      "changePercent": 0.9
     },
     {
       "name": "Copper",
@@ -229,7 +229,7 @@
       "iconBg": "#fef0e6",
       "price": 6.3,
       "change": 0.54,
-      "changePercent": 9.38
+      "changePercent": 9.31
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,27 @@
   ],
   "news": [
     {
+      "title": "Deaf and blind cricketers angered by changes to Cricket Australia's funding",
+      "link": "https://www.abc.net.au/news/2026-05-09/cricket-australia-inclusive-blind-deaf-disabled-programs-funding/106284494",
+      "snippet": "",
+      "pubDate": "Fri, 08 May 2026 19:28:58 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASIC was dubbed a ‘watchdog with no teeth’. Has Joe Longo changed it?",
+      "link": "https://www.smh.com.au/business/banking-and-finance/asic-was-dubbed-a-watchdog-with-no-teeth-has-joe-longo-changed-it-20260507-p5zupd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The outgoing chair of ASIC says he’s made the regulator more ambitious, pointing to more penalties it has extracted and more investigations launched.",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Beyond the fuchsia front door of this quaint 1893 house is an explosion of colour and art",
+      "link": "https://www.smh.com.au/business/consumer-affairs/beyond-the-fuchsia-front-door-of-this-quaint-1893-house-is-an-explosion-of-colour-and-art-20260508-p5zv21.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "I’ve reviewed many great architectural feats, and sometimes feel like I’ve seen everything, but this Prahran house opened up an entirely new world, leaving me in awe.",
+      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "'I don't coach for my job': Voss defiant after latest loss, Dogs edge Port",
       "link": "https://www.abc.net.au/news/2026-05-08/afl-rd-9-friday-blog/106653452",
       "snippet": "",
@@ -899,27 +920,6 @@
       "snippet": "",
       "pubDate": "Fri, 08 May 2026 02:57:45 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "The $35 million Macquarie man who out-earned his own CEO",
-      "link": "https://www.smh.com.au/business/banking-and-finance/macquarie-chief-rakes-in-26-5-million-after-profit-surge-20260508-p5zuxv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Macquarie Bank chief Shemara Wikramanayake took home $26.5 million, but she wasn’t even the highest-paid executive at the company.",
-      "pubDate": "Fri, 08 May 2026 11:53:41 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "How the Aussies shape up ahead of the Giro d'Italia",
-      "link": "https://www.abc.net.au/news/2026-05-08/giro-d-italia-preview-how-to-watch-aussies/106641994",
-      "snippet": "",
-      "pubDate": "Thu, 07 May 2026 23:59:23 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Aurum keeps piling on the ounces at giant Côte d’Ivoire gold play",
-      "link": "https://www.smh.com.au/business/companies/aurum-keeps-piling-on-the-ounces-at-giant-c-te-d-ivoire-gold-play-20260507-p5zuvn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Aurum Resources hit thick gold intersections at its Boundiali project in Cote d’Ivoire, with new drilling backing continuity at the BDT2 target as modelling continues.",
-      "pubDate": "Fri, 08 May 2026 09:38:40 +1000",
-      "source": "SMH Business"
     }
   ]
 }
