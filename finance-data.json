@@ -1,11 +1,11 @@
 {
-  "fetchedAt": "2026-05-09T22:04:49.062Z",
+  "fetchedAt": "2026-05-10T04:29:17.655Z",
   "asx200": {
     "value": 8744.4,
     "change": -207.4,
     "changePercent": -2.32,
     "previousClose": 8951.8,
-    "asOf": "2026-05-09",
+    "asOf": "2026-05-10",
     "history": [
       {
         "date": "2026-04-08",
@@ -106,7 +106,7 @@
     "change": 0.02,
     "changePercent": 2.44,
     "previousClose": 0.71,
-    "asOf": "2026-05-09",
+    "asOf": "2026-05-10",
     "history": [
       {
         "date": "2026-04-07",
@@ -201,7 +201,7 @@
         "close": 0.72
       },
       {
-        "date": "2026-05-09",
+        "date": "2026-05-10",
         "close": 0.72
       }
     ]
@@ -212,32 +212,32 @@
       "icon": "🥇",
       "iconBg": "#fef9ee",
       "price": 4730.7,
-      "change": -18.8,
-      "changePercent": -0.4
+      "change": -31.2,
+      "changePercent": -0.66
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
       "price": 80.86,
-      "change": 5.64,
-      "changePercent": 7.5
+      "change": 4.54,
+      "changePercent": 5.95
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
       "price": 95.42,
-      "change": 1.01,
-      "changePercent": 1.07
+      "change": -1.15,
+      "changePercent": -1.19
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 6.3,
-      "change": 0.54,
-      "changePercent": 9.32
+      "change": 0.43,
+      "changePercent": 7.26
     },
     {
       "name": "BHP Group",
@@ -846,6 +846,62 @@
   ],
   "news": [
     {
+      "title": "$6b betting giant had 500 problem-gambling breaches, but the regulator took too long to fine it",
+      "link": "https://www.smh.com.au/business/companies/6b-betting-giant-had-500-problem-gambling-breaches-but-the-regulator-took-too-long-to-act-20260508-p5zv1m.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The lack of fines for the company behind Ladbrokes and Neds has sparked claims that current gaming laws are “useless” and the regulator is hamstrung.",
+      "pubDate": "Sun, 10 May 2026 14:05:38 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Storm score four tries in opening 13 minutes to stun Tigers",
+      "link": "https://www.abc.net.au/news/2026-05-10/nrl-live-updates-storm-tigers-raiders-panthers/106653964",
+      "snippet": "",
+      "pubDate": "Sun, 10 May 2026 03:18:14 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Eagles lose key defender to concussion against Demons",
+      "link": "https://www.abc.net.au/news/2026-05-10/afl-rd-9-sunday-blog/106654024",
+      "snippet": "",
+      "pubDate": "Sun, 10 May 2026 02:58:52 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "A security guard was sacked for sleeping at work. Could it happen to you?",
+      "link": "https://www.smh.com.au/business/workplace/a-security-guard-was-sacked-for-sleeping-at-work-could-it-happen-to-you-20260428-p5zrsy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Falling asleep at your desk may not be grounds for being fired, but it depends on your job, how often it happens and why.",
+      "pubDate": "Sun, 10 May 2026 12:21:17 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Fans left 'uncomfortable' as referee criticised in bloody heavyweight brawl",
+      "link": "https://www.abc.net.au/news/2026-05-10/daniel-dubois-wins-hideous-brawl-against-fabio-wardley/106663074",
+      "snippet": "",
+      "pubDate": "Sun, 10 May 2026 01:18:54 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Alexa Leary misses out on Commonwealth Games after reclassification",
+      "link": "https://www.abc.net.au/news/2026-05-10/alexa-leary-out-of-commonwealth-games-after-reclassification/106663094",
+      "snippet": "",
+      "pubDate": "Sun, 10 May 2026 01:11:52 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "From buckin' bulls to boxing: Aussie champ's new challenge",
+      "link": "https://www.abc.net.au/news/2026-05-10/legendary-australian-cowboy-troy-dunn-swaps-bulls-for-boxing/106654940",
+      "snippet": "",
+      "pubDate": "Sun, 10 May 2026 00:02:30 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Iran fears captain may be denied entry to US for World Cup",
+      "link": "https://www.abc.net.au/news/2026-05-10/iran-will-definitely-compete-in-fifa-world-cup-visa-demands/106662988",
+      "snippet": "",
+      "pubDate": "Sat, 09 May 2026 23:10:41 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Europe out, Maldives in: How the Iran war is affecting tour operators",
       "link": "https://www.smh.com.au/business/companies/europe-out-maldives-in-how-the-iran-war-is-affecting-tour-operators-20260505-p5ztw4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Falls of 75 to 80 per cent in bookings in the first few weeks of the Middle East war were “pretty standard” given the uncertain times, travel industry executives say. But things are looking up.",
@@ -853,7 +909,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Vine out of Giro after horrific crash",
+      "title": "Vine out of Giro after horrific crash, director called 'scared dog' by riders",
       "link": "https://www.abc.net.au/news/2026-05-10/giro-d-italia-2026-jay-vine-out-of-race/106661388",
       "snippet": "",
       "pubDate": "Sat, 09 May 2026 21:38:43 +0000",
@@ -872,62 +928,6 @@
       "snippet": "",
       "pubDate": "Sat, 09 May 2026 19:40:38 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Melbourne City surges into ALW grand final after young gun's stunning strike",
-      "link": "https://www.abc.net.au/news/2026-05-09/melbourne-city-book-alw-final-spot-with-mcmahon-stunner/106662066",
-      "snippet": "",
-      "pubDate": "Sat, 09 May 2026 08:31:35 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Longmuir confident Dockers can handle expectations after eight wins",
-      "link": "https://www.abc.net.au/news/2026-05-09/justin-longmuir-is-having-fun-as-dockers-sit-at-the-top/106661854",
-      "snippet": "",
-      "pubDate": "Sat, 09 May 2026 08:28:17 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Why NRL rules allowed for Eels' three-point winner",
-      "link": "https://www.abc.net.au/news/2026-05-09/nrl-explains-parramatta-eels-three-point-play-ruling/106661900",
-      "snippet": "",
-      "pubDate": "Sat, 09 May 2026 06:18:32 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Maroons dealt massive blow ahead of State of Origin series",
-      "link": "https://www.abc.net.au/news/2026-05-09/nrl-state-of-origin-queensland-maroons-tom-dearden-injury/106661932",
-      "snippet": "",
-      "pubDate": "Sat, 09 May 2026 06:10:29 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Ponga stunned as Queensland left 'shattered' by Dearden Origin blow",
-      "link": "https://www.abc.net.au/news/2026-05-09/nrl-live-dragons-knights-rabbitohs-sharks-sea-eagles-broncos/106653954",
-      "snippet": "",
-      "pubDate": "Sat, 09 May 2026 04:25:13 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Cats spoil Magpies' party as concussion floors Moore, Suns down Saints in Darwin",
-      "link": "https://www.abc.net.au/news/2026-05-09/afl-rd-9-saturday-blog-nm-syd-gws-ess-gc-stk-geel-coll/106653852",
-      "snippet": "",
-      "pubDate": "Sat, 09 May 2026 02:58:53 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Palestine Marathon returns after two-year hiatus",
-      "link": "https://www.abc.net.au/news/2026-05-09/palestine-marathon-2026/106661534",
-      "snippet": "",
-      "pubDate": "Sat, 09 May 2026 00:53:38 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASIC was dubbed a ‘watchdog with no teeth’. Has Joe Longo changed it?",
-      "link": "https://www.smh.com.au/business/banking-and-finance/asic-was-dubbed-a-watchdog-with-no-teeth-has-joe-longo-changed-it-20260507-p5zupd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The outgoing chair of ASIC says he’s made the regulator more ambitious, pointing to more penalties it has extracted and more investigations launched.",
-      "pubDate": "Sat, 09 May 2026 05:00:00 +1000",
-      "source": "SMH Business"
     }
   ]
 }
