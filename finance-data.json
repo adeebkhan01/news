@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-11T20:10:19.280Z",
+  "fetchedAt": "2026-05-11T22:31:14.936Z",
   "asx200": {
     "value": 8701.8,
     "change": -258.8,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.73,
     "change": 0.02,
-    "changePercent": 2.47,
+    "changePercent": 2.52,
     "previousClose": 0.71,
     "asOf": "2026-05-11",
     "history": [
@@ -177,6 +177,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-10",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-11",
         "close": 0.73
       }
@@ -187,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4745.1,
-      "change": -16.8,
-      "changePercent": -0.35
+      "price": 4748.9,
+      "change": -13,
+      "changePercent": -0.27
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 86.86,
-      "change": 10.54,
-      "changePercent": 13.8
+      "price": 87.03,
+      "change": 10.7,
+      "changePercent": 14.02
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 98.26,
-      "change": 1.69,
-      "changePercent": 1.75
+      "price": 98.14,
+      "change": 1.57,
+      "changePercent": 1.63
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.48,
-      "change": 0.61,
-      "changePercent": 10.41
+      "price": 6.49,
+      "change": 0.62,
+      "changePercent": 10.52
     },
     {
       "name": "BHP Group",
@@ -822,10 +826,38 @@
   ],
   "news": [
     {
+      "title": "‘We are witnessing history’: The Big Short investor warns of Wall Street crash",
+      "link": "https://www.smh.com.au/business/markets/we-are-witnessing-history-the-big-short-investor-warns-of-wall-street-crash-20260512-p5zvua.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Michael Burry says Wall Street’s surge to record highs resembles the peak of the dot-com bubble just before it burst.",
+      "pubDate": "Tue, 12 May 2026 08:21:15 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Breaking: Voss resigns as Carlton coach after run of seven losses",
+      "link": "https://www.abc.net.au/news/2026-05-12/carlton-coach-michael-voss-resigns/106668770",
+      "snippet": "",
+      "pubDate": "Mon, 11 May 2026 21:58:15 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'Work to do': AFL targets Indigenous player boost",
+      "link": "https://www.abc.net.au/news/2026-05-12/afl-needs-to-do-more-to-encourage-indigenous-players/106668704",
+      "snippet": "",
+      "pubDate": "Mon, 11 May 2026 21:39:57 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Popyrin brushed aside by world number one Sinner at Italian Open",
+      "link": "https://www.abc.net.au/news/2026-05-12/alexei-popyrin-beaten-by-jannik-sinner-at-italian-open/106668640",
+      "snippet": "",
+      "pubDate": "Mon, 11 May 2026 21:12:19 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "ASX set to climb as Wall Street rises; Oil higher",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-climb-as-wall-street-rises-oil-higher-20260512-p5zvu9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Oil prices are rising as the war with Iran threatens to drag on for longer, but the US stock market is nevertheless inching toward more records.",
-      "pubDate": "Tue, 12 May 2026 05:15:58 +1000",
+      "pubDate": "Tue, 12 May 2026 06:48:29 +1000",
       "source": "SMH Business"
     },
     {
@@ -876,34 +908,6 @@
       "snippet": "",
       "pubDate": "Mon, 11 May 2026 07:09:20 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "ASX loses ground as Iran stalemate pushes up oil prices",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-slip-on-war-uncertainty-oil-steady-20260511-p5zvix.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket closed in negative territory as the ongoing uncertainty over the war in the Middle East casts a shadow over global markets.",
-      "pubDate": "Mon, 11 May 2026 16:54:41 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Larvotto eyes tungsten windfall at NSW gold-antimony mine",
-      "link": "https://www.smh.com.au/business/companies/larvotto-eyes-tungsten-windfall-at-nsw-gold-antimony-mine-20260511-p5zvrk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Larvotto has defined strong tungsten upside at its Hillgrove project in NSW, with high grade targets at Curry’s Block and tungsten recovery tests delivering up to 90%.",
-      "pubDate": "Mon, 11 May 2026 16:18:11 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "$88b bloodbath shows Trump is not the only problem for Aussie pharma giant",
-      "link": "https://www.smh.com.au/business/companies/88b-bloodbath-shows-trump-is-not-the-only-problem-for-aussie-pharma-giant-20260511-p5zvlu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "One of Australia’s biggest companies and most lauded success stories has become an investing disaster of historic proportions.",
-      "pubDate": "Mon, 11 May 2026 15:59:10 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Zenith bags missing link to unite 6km WA gold corridor",
-      "link": "https://www.smh.com.au/business/companies/zenith-bags-missing-link-to-unite-6km-wa-gold-corridor-20260511-p5zvr6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Zenith Minerals has consolidated its 6km Dulcie gold corridor in WA, securing a key untested 600m strike ahead of a major 5000m resource expansion drill blitz.",
-      "pubDate": "Mon, 11 May 2026 15:43:36 +1000",
-      "source": "SMH Business"
     }
   ]
 }
