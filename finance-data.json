@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-12T20:12:25.418Z",
+  "fetchedAt": "2026-05-12T22:38:05.936Z",
   "asx200": {
     "value": 8670.7,
     "change": -289.9,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.02,
-    "changePercent": 2.32,
+    "changePercent": 2.37,
     "previousClose": 0.71,
     "asOf": "2026-05-12",
     "history": [
@@ -185,6 +185,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-11",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-12",
         "close": 0.72
       }
@@ -195,33 +199,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4725,
-      "change": -17.4,
-      "changePercent": -0.37
+      "price": 4722.8,
+      "change": -19.6,
+      "changePercent": -0.41
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 87.45,
-      "change": 11.93,
-      "changePercent": 15.79
+      "price": 87.54,
+      "change": 12.01,
+      "changePercent": 15.91
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 102.41,
-      "change": 3.33,
-      "changePercent": 3.36
+      "price": 101.85,
+      "change": 2.77,
+      "changePercent": 2.8
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.65,
-      "change": 0.67,
-      "changePercent": 11.27
+      "price": 6.64,
+      "change": 0.66,
+      "changePercent": 11.09
     },
     {
       "name": "BHP Group",
@@ -830,9 +834,51 @@
   ],
   "news": [
     {
-      "title": "‘Eating bitterness’: China is set up to outlast America as Trump’s war rolls on",
+      "title": "Former national rugby captain banned over urine-swapping drug test scheme",
+      "link": "https://www.abc.net.au/news/2026-05-13/georgia-rugby-players-banned-for-drug-test-scheme/106673274",
+      "snippet": "",
+      "pubDate": "Tue, 12 May 2026 22:25:52 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Voss says Carlton in a better place than when he took charge",
+      "link": "https://www.abc.net.au/news/2026-05-13/michael-voss-says-carlton-in-btter-place-following-resignation/106673218",
+      "snippet": "",
+      "pubDate": "Tue, 12 May 2026 21:52:12 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to slide as tech slump, rising oil prices hurt Wall Street; eBay rejects GameStop",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-as-tech-slump-rising-oil-prices-hurt-wall-street-ebay-rejects-gamestop-20260513-p5zw69.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The Australian sharemarket is set to slide lower on the back of a negative Wall Street lead while investors will also have to digest the ramifications of the federal budget.",
+      "pubDate": "Wed, 13 May 2026 07:14:48 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Sinner equals Djokovic's 31-match Masters record at Italian Open",
+      "link": "https://www.abc.net.au/news/2026-05-13/jannik-sinner-equals-record-novak-djokovic-masters-1000/106673136",
+      "snippet": "",
+      "pubDate": "Tue, 12 May 2026 20:57:08 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'We are heartbroken': NBA in shock after death of Grizzlies forward",
+      "link": "https://www.abc.net.au/news/2026-05-13/memphis-grizzlies-forward-brandon-clarke-dies-aged-29/106673088",
+      "snippet": "",
+      "pubDate": "Tue, 12 May 2026 20:44:35 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "LIV Golf has triggered a turf war in Adelaide's park lands — here are the battlelines",
+      "link": "https://www.abc.net.au/news/2026-05-13/liv-golf-has-triggered-a-turf-war-in-adelaide-green-belt/106670710",
+      "snippet": "",
+      "pubDate": "Tue, 12 May 2026 20:13:30 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "‘Eating bitterness’: China is set up to outlast Trump’s America",
       "link": "https://www.smh.com.au/business/the-economy/china-can-far-outlast-america-over-the-middle-east-conflict-20260511-p5zviv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "In a contest of enduring economic pain, China has infinitely greater staying power than unruly, grievance-ridden America.",
+      "snippet": "Donald Trump goes to Beijing badly needing Chinese help to extricate himself from a quagmire that threatens to destroy his presidency and is entirely of his own making.",
       "pubDate": "Wed, 13 May 2026 05:40:25 +1000",
       "source": "SMH Business"
     },
@@ -848,13 +894,6 @@
       "link": "https://www.smh.com.au/business/banking-and-finance/the-checklist-that-proves-you-re-ready-to-retire-20260414-p5znv4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Visualising the ‘retirement version’ of you helps to reveal whether the time is right.",
       "pubDate": "Wed, 13 May 2026 05:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX set to slide as tech slump, rising oil prices hurt Wall Street; eBay rejects GameStop",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-as-tech-slump-rising-oil-prices-hurt-wall-street-ebay-rejects-gamestop-20260513-p5zw69.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket is set to slide lower on the back of a negative Wall Street lead while investors will also have to digest the ramifications of the federal budget.",
-      "pubDate": "Wed, 13 May 2026 05:21:20 +1000",
       "source": "SMH Business"
     },
     {
@@ -876,41 +915,6 @@
       "link": "https://www.smh.com.au/business/the-federal-budget-at-a-glance-20260512-p5zw4z.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "While some budgets seek to play it safe, the government is taking risks this year. Economics writer Millie Muroi explains what you need to know.",
       "pubDate": "Tue, 12 May 2026 19:41:05 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "LeBron contemplates potential retirement after NBA playoff exit",
-      "link": "https://www.abc.net.au/news/2026-05-12/basketball-lebron-james-considering-retirement-nba-playoff-exit/106672002",
-      "snippet": "",
-      "pubDate": "Tue, 12 May 2026 09:02:18 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Rankine says he has 'come a long way' since homophobic slur ban",
-      "link": "https://www.abc.net.au/news/2026-05-12/afl-izak-rankine-says-he-has-come-long-way-since-homophobic-slur/106671916",
-      "snippet": "",
-      "pubDate": "Tue, 12 May 2026 08:27:20 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX slides lower as tech stocks, banks and CSL fall; BHP hits record",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-climb-as-wall-street-rises-oil-higher-20260512-p5zvu9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket finished lower ahead of budget night, amid concerns the Iran war will drag on after the US rejected Tehran’s latest peace offer.",
-      "pubDate": "Tue, 12 May 2026 17:52:23 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "'Terrible conversation': Smith opens up on call to sack childhood coach",
-      "link": "https://www.abc.net.au/news/2026-05-12/golf-cameron-smith-grant-field-sacking-terrible-conversation/106671834",
-      "snippet": "",
-      "pubDate": "Tue, 12 May 2026 07:43:34 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "TMK Energy gas flow surge sparks Mongolian energy supply talks",
-      "link": "https://www.smh.com.au/business/companies/tmk-energy-gas-flow-surge-sparks-mongolian-energy-supply-talks-20260512-p5zw3g.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "TMK Energy lifted April gas production 13 per cent as talks commenced with the Mongolian government and industry groups on gas supply for the nation’s power sector.",
-      "pubDate": "Tue, 12 May 2026 16:46:31 +1000",
       "source": "SMH Business"
     }
   ]
