@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-12T08:47:02.401Z",
-  "summary": "Global tensions dominate headlines as the Iran-Israel conflict shows no signs of resolution, with ceasefire negotiations hanging by a thread on day 74 as Tehran rejects US proposals and both sides prepare for further escalation. The Middle East turmoil is reshaping international policy, from the EU sanctioning Israeli settlers to questions over Israel's participation in Eurovision, while regional instability has triggered a global energy crisis that threatens developing nations lacking adequate oil reserves. Political upheaval spans continents with UK Prime Minister Starmer facing cabinet divisions and resignation calls, South African President Ramaphosa resisting impeachment efforts, and Bolivia's Evo Morales now sought by arrest warrant amid street protests. Separately, Trump prepares a high-profile China visit with Silicon Valley CEOs, signaling a reset in superpower relations while announcing moves to suspend fuel taxes at home and release additional oil stockpiles to address US energy prices.",
+  "fetchedAt": "2026-05-12T11:23:56.640Z",
+  "summary": "Global tensions are escalating across multiple fronts, with the Iran-Israel conflict intensifying on day 74 as Tehran signals readiness for escalation while ceasefire negotiations remain precarious, and Israeli military operations in Lebanon and the West Bank continuing to draw international condemnation and EU sanctions. Political upheaval is affecting major Western democracies, notably the UK where Prime Minister Starmer faces mounting pressure to resign amid borrowing cost spikes, while Pakistan grapples with mounting civilian casualties in ongoing conflicts that have killed hundreds of Afghans in recent months. The EU is advancing new regulatory measures on social media access for children and medicines availability, while economic pressures mount globally from energy crises and inflation, prompting responses from the US stockpile releases to potential fuel tax suspensions. Significant diplomatic engagement is underway with the Trump-Xi summit expected to shape superpower relations and Trump preparing a major visit to China accompanied by top US CEOs.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,96 @@
     }
   ],
   "articles": [
+    {
+      "title": "EU needs to delay social media access for children - von der Leyen",
+      "link": "https://www.bbc.com/news/articles/c9q3x19ddl7o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "She told an EU summit that an expert panel was due to come up with steps on how to protect minors online by July.",
+      "pubDate": "Tue, 12 May 2026 11:00:34 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8d26/live/7afc2660-4de9-11f1-9cc8-93479330ab4b.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Over 370 Afghans killed in Pakistan conflict in first 3 months of 2026: UN",
+      "link": "https://www.aljazeera.com/news/2026/5/12/over-370-afghans-killed-in-pakistan-conflict-in-first-3-months-of-2026-un?traffic_source=rss",
+      "desc": "Fighting between the Taliban and Pakistani forces intensified in February, with many civilians killed in air raids.",
+      "pubDate": "Tue, 12 May 2026 10:48:16 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/03/afp_69b90404adf2-1773732868.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "UK borrowing costs jump amid uncertainty over PM's future",
+      "link": "https://www.bbc.com/news/articles/cqjpqy19npxo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The possibility of a change of leadership in the UK has unsettled some investors and sent bond yields higher.",
+      "pubDate": "Tue, 12 May 2026 10:36:40 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ad02/live/867b2760-4dea-11f1-9cc8-93479330ab4b.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "At least nine people killed in explosion at Pakistan market",
+      "link": "https://www.aljazeera.com/news/2026/5/12/at-least-nine-people-killed-in-explosion-at-pakistan-market?traffic_source=rss",
+      "desc": "About 30 people wounded in blast in town of Sarai Naurang, in Lakki Marwat district, northwestern Pakistan.",
+      "pubDate": "Tue, 12 May 2026 10:31:54 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/ap_6a02f02873e9d-1778577448.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Canvas hack: company pays criminals to delete students' stolen data",
+      "link": "https://www.bbc.com/news/articles/cdepzg83x87o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The company behind Canvas says it has \"reached an agreement\" with the hackers who disrupted thousands of colleges and universities.",
+      "pubDate": "Tue, 12 May 2026 10:31:23 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4f96/live/d1a431b0-4dee-11f1-8191-8bac3ae59130.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Israeli military kills six in Lebanon, issues more displacement threats",
+      "link": "https://www.aljazeera.com/news/2026/5/12/israeli-military-kills-six-in-lebanon-issues-more-displacement-threats?traffic_source=rss",
+      "desc": "The deadly air attack comes just days before Israeli and Lebanese officials are due to meet in Washington.",
+      "pubDate": "Tue, 12 May 2026 09:40:29 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_6a02e6e31306-1778575075.jpg?resize=1920%2C1429",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "No sign of larger hantavirus outbreak, says UN health agency",
+      "link": "https://www.bbc.com/news/articles/cqjpqynj1nlo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The situation could still change and there might be more confirmed cases, warns the head of the World Health Organization.",
+      "pubDate": "Tue, 12 May 2026 09:35:32 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/62d4/live/48741b80-4dee-11f1-8191-8bac3ae59130.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "LIVE: UK’s Starmer vows to ‘get on with governing’ as MPs urge him to quit",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/5/12/live-first-uk-minister-resigns-amid-calls-for-pm-stamers-resignation?traffic_source=rss",
+      "desc": "The British prime minister is under pressure after his Labour Party suffered election losses.",
+      "pubDate": "Tue, 12 May 2026 09:02:15 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-04-16T085235Z_819335829_RC28QKAHXZM1_RTRMADP_3_BRITAIN-SOCIALMEDIA-STARMER-1778580670.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "France’s Macron announces $27bn investment in Africa at Kenya summit",
+      "link": "https://www.aljazeera.com/news/2026/5/12/frances-macron-announces-27bn-investment-in-africa-at-kenya-summit?traffic_source=rss",
+      "desc": "Africa Forward summit comes amid France&#039;s fading ties with its former African colonies, as Kenya seeks greater trade.",
+      "pubDate": "Tue, 12 May 2026 08:34:20 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/reuters_6a01a4c6-1778492614.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Trump and Xi: The history of encounters between two superpower leaders",
       "link": "https://www.aljazeera.com/news/2026/5/12/trump-and-xi-a-recap-of-talks-between-two-of-the-worlds-most-powerful-men?traffic_source=rss",
