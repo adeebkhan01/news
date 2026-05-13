@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-13T14:44:38.991Z",
-  "summary": "Australia's federal budget has dominated policy debate, with the Coalition positioning immigration controls tied to new housing construction as a response to migration outpacing residential development, while Labor upgraded migration numbers by 55,000 and faced criticism from state premiers over funding fairness and tax reforms. Security concerns feature prominently with arrests related to a terror attack plot, a bikie sentenced for orchestrating murder, and multiple violent crimes including carjackings and assaults on paramedics. Housing remains a central issue with local councils and lord mayors calling for zoning changes and federal investment in infrastructure to address supply shortages. Global market movements show US producer price inflation at a four-year high amid geopolitical tensions, while Australian concerns span workplace safety, healthcare access including paramedic assaults and hantavirus repatriation issues, and environmental matters from microplastics to tree preservation.",
+  "fetchedAt": "2026-05-13T17:20:28.326Z",
+  "summary": "Australia's political agenda is dominated by housing and migration, with the Coalition pledging to link immigration caps to new housing construction and councils facing pressure to fast-track development. Western Australia emerges as a significant worry for the federal government, with reporting suggesting state resources projects could undermine national climate targets and local government dysfunction hampering service delivery. In international news, Kate Middleton has completed her first overseas visit since cancer treatment, while the Ukraine conflict continues with Russia launching over 800 drones, and global oil markets tighten amid tensions with Iran. Domestically, authorities are investigating serious crimes including alleged terror plot preparations and organised crime murders, while health authorities urge thousands who visited a Sydney dental clinic to get blood tests.",
   "sources": [
     {
       "id": "abcnews",
@@ -30,11 +30,101 @@
   ],
   "articles": [
     {
+      "title": "Roots of resilience: the experts working to bolster apples against the climate crisis",
+      "link": "https://www.theguardian.com/environment/2026/may/13/apples-orchards-climate-crisis-scientists",
+      "desc": "<p>Scientists are focusing on improving apples’ resilience after stressors like wild temperature swings and drought</p><p>Terence Robinson still remembers the Valentine’s Day Massacre – of 2015, not 1",
+      "pubDate": "Wed, 13 May 2026 17:00:03 GMT",
+      "img": "https://i.guim.co.uk/img/media/b29ccfeae9d9398846b821559e536b0e5c25bfce/0_39_4480_3584/master/4480.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Kate tours Italy in first overseas visit since cancer recovery",
+      "link": "https://www.abc.net.au/news/2026-05-14/princess-kate-italy-first-visit-since-cancer/106677234",
+      "desc": "The royal is visiting Reggio Emilia, the Italian city famed for its approach to early childhood education.",
+      "pubDate": "Wed, 13 May 2026 16:49:39 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/67535d65adf5a512e8e0911a9ca587ff?impolicy=wcms_crop_resize&amp;cropH=3133&amp;cropW=2350&amp;xPos=1960&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Peer Bork obituary",
+      "link": "https://www.theguardian.com/science/2026/may/13/peer-bork-obituary",
+      "desc": "<p>My husband Peer Bork, who has died unexpectedly aged 62, was a bioinformatician with a remarkable ability to identify new directions in science and carry out world-class research to push them forwa",
+      "pubDate": "Wed, 13 May 2026 16:33:54 GMT",
+      "img": "https://i.guim.co.uk/img/media/4ac97c58be340bee2aa584aa8bdd8ab6d43d318e/0_26_875_700/master/875.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Councils on notice: What’s behind WA’s ‘dysfunctional’ local government saga?",
+      "link": "https://www.smh.com.au/national/western-australia/councils-on-notice-what-s-behind-wa-s-dysfunctional-local-government-saga-20260513-p5zwl2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "With more councils falling apart across WA, the state government hopes local government inspectors, monitors and adjudicators will be enough to get them back on track.",
+      "pubDate": "Thu, 14 May 2026 02:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.252022846263684%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_75/t_crop_custom/q_86%2Cf_auto/f68020d6ae4adbc39c21b9893899170fd7a2f781",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Six dead as Russia launches over 800 drones at Ukraine",
+      "link": "https://www.abc.net.au/news/2026-05-14/ukraine-russia-drone-attack-deadly/106677160",
+      "desc": "Volodymyr Zelenskyy accuses Russia of attempting to overload Ukraine's defences in an hours-long onslaught.",
+      "pubDate": "Wed, 13 May 2026 16:25:25 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/0713cc5740b42c44930d216c27911778?impolicy=wcms_crop_resize&amp;cropH=1698&amp;cropW=1274&amp;xPos=872&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Obesity rates in some countries levelling off or potentially falling, study finds",
+      "link": "https://www.theguardian.com/society/2026/may/13/obesity-trends-levelling-off-falling-study",
+      "desc": "<p>Researchers say rise not inevitable and it is important to unpick what is behind differences in obesity trends</p><p>A continuing rise in obesity around the world is not inevitable, research sugges",
+      "pubDate": "Wed, 13 May 2026 15:00:03 GMT",
+      "img": "https://i.guim.co.uk/img/media/6403ead2c9f076a34f67085fd177febdbd5bc8d4/0_0_6636_5309/master/6636.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "New revelations show WA is putting Australia’s climate targets at risk. Will Anthony Albanese do anything about it? | Clear Air",
+      "link": "https://www.theguardian.com/environment/2026/may/14/wa-western-australia-climate-targets-at-risk",
+      "desc": "<p>Premier Roger Cook has the prime minister’s implicit support but he’s making it harder for federal Labor to meet its much-vaunted climate targets</p><ul><li><p>Want to get this in your inbox when i",
+      "pubDate": "Wed, 13 May 2026 15:00:02 GMT",
+      "img": "https://i.guim.co.uk/img/media/a30d25f486525ebee6f28648c75bf91489dba2e7/358_22_3105_2485/master/3105.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Trump mega-donors pause Wisconsin development project, citing economic uncertainty",
+      "link": "https://www.theguardian.com/us-news/2026/may/13/uline-trump-donors-pause-wisconsin-development-project",
+      "desc": "<p>Uline, owned by billionaire Republicans Richard and Liz Uihlein, halts construction of a new facility in Kenosha</p><p>Uline, a business and shipping supplies company owned by billionaire Trump sup",
+      "pubDate": "Wed, 13 May 2026 14:47:51 GMT",
+      "img": "https://i.guim.co.uk/img/media/6e430ed1bd65d05dacf2335169de457ebc548eb6/244_292_4551_3643/master/4551.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
       "title": "Global oil inventories falling at record pace amid Iran war; US producer price inflation hits four-year high – as it happened",
       "link": "https://www.theguardian.com/business/live/2026/may/13/uk-bond-market-yields-political-turmoil-oil-inflation-housing-market-live-updates",
       "desc": "<p>IEA warns that mounting supply losses from the Strait of Hormuz are depleting global oil inventories at a record pace</p><p><strong>Global oil stocks are being run down at a record pace as supply l",
       "pubDate": "Wed, 13 May 2026 14:34:14 GMT",
       "img": "https://i.guim.co.uk/img/media/b5e33962f75563f683c78735e78a3502099f560f/401_0_3728_2982/master/3728.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "‘I don’t think about Americans’ financial situation,’ says Trump amid Iran talks",
+      "link": "https://www.theguardian.com/us-news/2026/may/13/trump-iran-war-americans-finances",
+      "desc": "<p>With US inflation at a three-year high, US president insisted he’s not focused on economic hardship sparked by the conflict</p><ul><li><p><a href=\"https://www.theguardian.com/news/2026/feb/17/sign-",
+      "pubDate": "Wed, 13 May 2026 14:03:24 GMT",
+      "img": "https://i.guim.co.uk/img/media/ce841b49dae644be6921fa9786d51075d86a95ea/686_136_4613_3692/master/4613.jpg",
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
@@ -17148,16 +17238,6 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Did you solve it? Are you smarter than a Navy admiral?",
-      "link": "https://www.theguardian.com/science/2026/apr/13/did-you-solve-it-are-you-as-smarter-than-a-navy-admiral",
-      "desc": "<p>The solutions to today’s puzzles</p><p><a href=\"https://www.theguardian.com/science/2026/apr/13/can-you-solve-it-are-you-smarter-than-a-navy-admiral\">Earlier today </a>I asked you these three puzzl",
-      "pubDate": "Mon, 13 Apr 2026 16:01:26 GMT",
-      "img": "https://i.guim.co.uk/img/media/88dc1a3459f5143f561a183a2e8bdeba6f8de04b/168_114_1211_969/master/1211.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
     }
   ]
 }
