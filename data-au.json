@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-13T03:49:32.502Z",
-  "summary": "Australia's federal budget dominated news coverage today, with debate centring on whether Treasurer Jim Chalmers' package adequately addresses housing affordability and environmental concerns through capital gains tax and negative gearing reforms that opposition parties vow to reverse. The budget sparked wider discussion about intergenerational equity and tax fairness, with analysis showing the changes primarily benefit lower and middle-income earners while critics argue the housing measures don't go far enough. In other news, a Sydney dentist's patients face urgent testing for blood-borne viruses, a Gold Coast Trump Tower development worth $1.5 billion has been axed, and a swimmer remains missing off Perth's Trigg Beach.",
+  "fetchedAt": "2026-05-13T08:50:14.605Z",
+  "summary": "Australia's federal budget dominated news coverage with the government increasing migration numbers by 55,000 and signalling a shift toward electric transport, while moves to increase overseas travel costs and questions about tax reform generated debate about who bears the burden of fiscal policy. Corruption allegations escalated as a premier and ministers were referred to the corruption watchdog and Parramatta council officials faced scrutiny over a restructure allegedly plotted during a holiday, adding to pressure on political integrity. Several crime and safety stories emerged, including the search for a man after a woman's body was found on a paramedic's stretcher and an inquest into a 95-year-old's death following a police Taser incident, highlighting concerns about violence against essential workers and policing practices. A number of economic and business matters made headlines, from a miner's $22 million road dispute case and compensation claims from Indigenous communities to industry concerns about infrastructure funding for steelworks and transport projects.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,426 @@
     }
   ],
   "articles": [
+    {
+      "title": "Premier and romantic ministers referred to corruption watchdog",
+      "link": "https://www.smh.com.au/national/queensland/premier-and-romantic-ministers-referred-to-corruption-watchdog-20260513-p5zwk8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Labor has asked the CCC to investigate the romance between Tim Mander and Amanda Camm, and whether David Crisafulli failed to act.",
+      "pubDate": "Wed, 13 May 2026 18:37:39 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.7155%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_103%2C$y_119/t_crop_custom/q_86%2Cf_auto/b9b117d9d40bb18122bb1831fbe5e442a45624735107a7fb83998dee16245f02",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Big Hits – Haranga Resources, NexGen Energy and Greentech Metals",
+      "link": "https://www.smh.com.au/business/companies/big-hits-haranga-resources-nexgen-energy-and-greentech-metals-20260513-p5zwl3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "Bulls N’ Bears Big Hits looks at notable drill intercepts reported to the ASX last week, led by Haranga Resources’ gold hits, NexGen Energy’s uranium and Greentech Metals’ platinum.",
+      "pubDate": "Wed, 13 May 2026 18:29:43 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_381%2C$y_125/t_crop_custom/q_86%2Cf_auto/3c00f94877cb2ad86ad91237913cc7abd8013d515252a8c5783840647ae21ab9",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘Is my baby OK?’ Pregnant paramedics speak out about assaults on the job",
+      "link": "https://www.smh.com.au/national/victoria/is-my-baby-ok-pregnant-paramedics-speak-out-about-assaults-on-the-job-20260513-p5zwju.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Early in their pregnancies, two Victorian paramedics made the difficult decision to leave their jobs. “Irrespective of what we want ... it’s too real,” they said.",
+      "pubDate": "Wed, 13 May 2026 18:05:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.3269%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/a8563a0aadacd7c8c56c2b36dedfa96672fd9a80",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Metro expansion into suburbs dead in the water without federal funding, says lord mayor",
+      "link": "https://www.smh.com.au/national/queensland/metro-expansion-into-suburbs-dead-in-the-water-without-federal-funding-says-lord-mayor-20260513-p5zwij.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "And while a bridge linking Toowong to West End could still be on the cards, Adrian Schrinner ruled out one linking West End to St Lucia.",
+      "pubDate": "Wed, 13 May 2026 18:03:18 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1854%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_68/t_crop_custom/q_86%2Cf_auto/fc61ddcd41875e5395f7c182a6a334c4a59e4a3695d48ac16bcf9c54f6e1c7e9",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘You have to be where the pollution is’: the inventor hoping to fix your washing machine to stop microplastics",
+      "link": "https://www.theguardian.com/environment/2026/may/13/you-have-to-be-where-the-pollution-is-the-inventor-hoping-to-fix-your-washing-machine-to-stop-microplastics",
+      "desc": "<p>Matter Industries founder Adam Root has developed a filter to trap microfibres at home and on an industrial scale. But is it just a drop in the ocean?</p><p></p><p>The dinky device slots seamlessly",
+      "pubDate": "Wed, 13 May 2026 08:00:23 GMT",
+      "img": "https://i.guim.co.uk/img/media/0d3757504071329900ddef46f9b4d83698586afa/204_0_2042_1633/master/2042.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Labor upgrades migration numbers by 55,000 in federal budget",
+      "link": "https://www.abc.net.au/news/2026-05-13/one-million-more-migrants-expected-before-2030/106674228",
+      "desc": "The federal budget reveals the government expects more migrants to arrive to Australia than previously thought, even as it faces a campaign from the Coalition and One Nation to slash migration rates.",
+      "pubDate": "Wed, 13 May 2026 07:18:59 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/56a5744014fde7635dc7ba65f1630965?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=1250&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Leaving Australia is about to get more expensive after budget change",
+      "link": "https://www.smh.com.au/business/consumer-affairs/leaving-australia-is-about-to-get-more-expensive-after-budget-change-20260513-p5zwam.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "Among all the big-ticket changes in the federal budget, the government is making international departures more expensive as the war in the Middle East pushes up airfares.",
+      "pubDate": "Wed, 13 May 2026 17:12:41 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/dd451badfdff73c19d3a6fe5ea2168ced773dec3",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "New UFO files offer no answers – but something is happening in the skies",
+      "link": "https://theconversation.com/new-ufo-files-offer-no-answers-but-something-is-happening-in-the-skies-282608",
+      "desc": "A new release of US government documents offers more detail about ‘unidentified anomalous phenomena’ but explanations are hard to find.",
+      "pubDate": "2026-05-13T07:12:37Z",
+      "img": "https://images.theconversation.com/files/735510/original/file-20260513-57-w5eqvw.png?ixlib=rb-4.1.0&amp;rect=0%2C30%2C1520%2C760&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "Police search for man after woman’s body dumped on paramedic’s stretcher in Joondalup",
+      "link": "https://www.smh.com.au/national/western-australia/police-search-for-man-after-woman-s-body-dumped-on-paramedic-s-stretcher-in-joondalup-20260513-p5zwjn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "This masthead understands the man approached an ambulance crew who were stationed and working near Joondalup’s largest shopping centre on Wednesday morning.",
+      "pubDate": "Wed, 13 May 2026 17:11:04 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.30762527233115466%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_132%2C$y_613/t_crop_custom/q_86%2Cf_auto/02e4852e6d01148a578104f9922377f572c807bb71120798c3bf4cd762764cfc",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Alleged plot to blow up Melbourne ATM backfires",
+      "link": "https://www.smh.com.au/national/alleged-plot-to-blow-up-melbourne-atm-backfires-20260513-p5zwh6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A bumbling thief has landed himself in hospital, after he and two accomplices allegedly tried to blow up an ATM at Melbourne's Queen Victoria Market.",
+      "pubDate": "Wed, 13 May 2026 17:05:43 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/8deb04a50b69ad1df7bef3dff510f7f2e1916803",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Inquest into death of 95-year-old Tasered by police",
+      "link": "https://www.smh.com.au/national/inquest-into-death-of-95-year-old-tasered-by-police-20260513-p5zwke.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "An inquest has begun into the death of Clare Nowland, a 95-year-old grandmother who was Tasered by a police officer in 2023.",
+      "pubDate": "Wed, 13 May 2026 17:00:48 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/f738e5cbdad489514017e009f118859131d13db8",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Mum set to be charged over listening device",
+      "link": "https://www.smh.com.au/national/mum-set-to-be-charged-over-listening-device-20260513-p5zwkc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A mother who sent her non-verbal son to school wearing a listening device is being investigated by police.",
+      "pubDate": "Wed, 13 May 2026 17:00:33 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/ec18a848a1ad35e23bf270a2a54ea4fd7af27b55",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "David Attenborough is not just a national treasure: he is also the most radical person on TV | Jonathan Liew",
+      "link": "https://www.theguardian.com/commentisfree/2026/may/13/david-attenborough-most-radical-person-tv",
+      "desc": "<p>The naturalist is venerated as a cuddly Paddington Bear, but he’s more than that. Don’t let the superficial backslaps obscure the political critique he makes</p><p>The excesses the capitalist syste",
+      "pubDate": "Wed, 13 May 2026 07:00:23 GMT",
+      "img": "https://i.guim.co.uk/img/media/4ea1595856e6e40da0e0543a13d924be9d4898ec/516_0_2918_2335/master/2918.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Football academy praises student who became trapped under train",
+      "link": "https://www.smh.com.au/national/football-academy-praises-student-who-became-trapped-under-train-20260513-p5zwkd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "An elite Melbourne football academy has thrown its support behind a Melbourne schoolboy who was pulled onto train tracks in a horror accident.",
+      "pubDate": "Wed, 13 May 2026 17:00:03 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/613d7642cb984f1df434e9d25e016c7f7d983964",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Miner wins right to sue council for $22m in years-long road dispute",
+      "link": "https://www.abc.net.au/news/2026-05-13/bravus-carmichael-mine-access-road-counterclaim/106674664",
+      "desc": "A legal stoush between a Central Queensland council and one of Australia's largest coal mines deepens in Queensland's Supreme Court.",
+      "pubDate": "Wed, 13 May 2026 06:57:27 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/ed80d28d3a894237fa6e7fff46cd3ad2?impolicy=wcms_crop_resize&amp;cropH=2462&amp;cropW=1847&amp;xPos=573&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "‘Serious allegation’: Senior WHS officer accused of ‘working’ for CFMEU",
+      "link": "https://www.smh.com.au/national/queensland/serious-allegation-senior-whs-officer-accused-of-working-for-cfmeu-20250507-p5lxaq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The CFMEU inquiry has heard explosive accusations against a senior Workplace Health and Safety Queensland official.",
+      "pubDate": "Wed, 13 May 2026 16:57:08 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1301%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_15%2C$y_0/t_crop_custom/q_86%2Cf_auto/a8e0af0a28e13f25d87052b262efdda0551413ab",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Treasurer says sticking with tax system would be ‘unacceptable’",
+      "link": "https://www.smh.com.au/national/treasurer-says-sticking-with-tax-system-would-be-unacceptable-20260513-p5zwk7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Treasurer Jim Chalmers says sticking with the current tax system would be “unacceptable” after the federal budget confirmed changes to capital gains tax and negative gearing.",
+      "pubDate": "Wed, 13 May 2026 16:55:46 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/b68c605682e261301aeed8fed598ffd268eab023",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Your burning 2026 federal budget questions, answered – video",
+      "link": "https://www.theguardian.com/australia-news/video/2026/may/13/australia-budget-2026-questions-answered-tax-changes-capital-gains-cgt-negative-gearing-explained",
+      "desc": "<p>How can Labor say changes to property taxes are a win for young people, when they also lock in boomers’ ability to negatively gear their investment properties? Why is the NDIS receiving such severe",
+      "pubDate": "Wed, 13 May 2026 06:53:33 GMT",
+      "img": "https://i.guim.co.uk/img/media/c35d679783a3e79696a866d883169351e3e4e1ac/451_0_4555_3647/master/4555.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Electric transport is no longer niche. This year’s budget shows it’s the future",
+      "link": "https://theconversation.com/electric-transport-is-no-longer-niche-this-years-budget-shows-its-the-future-282846",
+      "desc": "Transport policy used to be about roads, rails and pollution. But this year’s fuel crisis has shown it’s far more than that.",
+      "pubDate": "2026-05-13T06:53:06Z",
+      "img": "https://images.theconversation.com/files/735459/original/file-20260513-142-47si2z.jpg?ixlib=rb-4.1.0&amp;rect=0%2C249%2C1999%2C999&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "Parramatta’s ‘Pink Ladies’ plotted council restructure while on holiday together, ICAC hears",
+      "link": "https://www.smh.com.au/national/nsw/parramatta-s-pink-ladies-plotted-council-restructure-while-on-holiday-together-icac-hears-20260513-p5zwd0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Justin Mulder, the former chief of staff at the council, told the inquiry he took a redundancy payout because he was concerned about being disparaged.",
+      "pubDate": "Wed, 13 May 2026 16:45:08 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5822%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_3%2C$y_0/t_crop_custom/q_86%2Cf_auto/2472a8428b3fb5552602b6f84e5eb3e102a6e60914d237f91ceb1d12d448c6db",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Whyalla steelworks remains 'fiscal risk' in budget as SA waits for freight bypass funding",
+      "link": "https://www.abc.net.au/news/2026-05-13/sa-federal-budget-reaction-whyalla/106675028",
+      "desc": "The federal government's ongoing financial support for the Whyalla steelworks remains a \"fiscal risk\" to the budget. Meanwhile, the South Australian government continues to hold out for more Commonwea",
+      "pubDate": "Wed, 13 May 2026 06:43:55 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/7f269236358fa8439893fb31b9898174?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=1250&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "The 25-year ocean mystery solved with a nod to Mr Snuffleupagus",
+      "link": "https://www.smh.com.au/national/the-25-year-ocean-mystery-solved-with-a-nod-to-mr-snuffleupagus-20260510-p5zvg4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Thanks to fate, luck or instinct, an Australian marine scientist made a “rarest of the rare” find. A quarter-century later it became his most extraordinary discovery.",
+      "pubDate": "Wed, 13 May 2026 16:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5043%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_110/t_crop_custom/q_86%2Cf_auto/dbdb944efe46559b8c2ba087c6e3a571c50b47df7abca15a7c2a4796d2c79d86",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "$150m compensation payout for Yindjibarndi slammed as too little",
+      "link": "https://www.abc.net.au/news/2026-05-13/federal-court-judgement-slammed-yindjibarndi-appeal-possible/106673420",
+      "desc": "Andrew Forrest's Fortescue has been ordered to hand over the largest native title compensation payout in Australian history. But some say it falls painfully short of what is owed.",
+      "pubDate": "Wed, 13 May 2026 06:29:02 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/16a9478425c013c67b434e24b43c15e9?impolicy=wcms_crop_resize&amp;cropH=1716&amp;cropW=1287&amp;xPos=643&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Forget the generation gap, this budget is about 'the 1 per cent' and the rest",
+      "link": "https://www.abc.net.au/news/2026-05-13/labor-budget-pits-the-one-per-cent-against-the-rest/106675628",
+      "desc": "Just like it did in 2019, Labor is making an argument about wealth in Australia when it proposes negative gearing and capital gains tax changes.",
+      "pubDate": "Wed, 13 May 2026 06:28:07 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/3b0dd9e6f560b2caa7d199c6624ed543?impolicy=wcms_crop_resize&amp;cropH=1152&amp;cropW=864&amp;xPos=765&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "PLC readies drill rig for untouched WA high-grade gold prospect",
+      "link": "https://www.smh.com.au/business/companies/plc-readies-drill-rig-for-untouched-wa-high-grade-gold-prospect-20260513-p5zwjq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "PLC Resources is set to drill its Rochefort gold prospect in WA’s Murchison, targeting a large soil anomaly with high-grade rock chips near a producing gold mine.",
+      "pubDate": "Wed, 13 May 2026 16:27:46 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.7354%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_109/t_crop_custom/q_86%2Cf_auto/11b9c28da44cd445198228e106fa2de3fc75329575838a6e9dac39431a439b6f",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Colleague of officer who fatally Tasered 95-year-old says use was not justified",
+      "link": "https://www.smh.com.au/national/nsw/paramedic-apologises-to-family-of-great-grandmother-fatally-tasered-by-police-20260513-p5zw8w.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A three-day inquest is examining the death of 95-year-old Clare Nowland, who was Tasered by police inside her Cooma nursing home three years ago.",
+      "pubDate": "Wed, 13 May 2026 16:24:11 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.2289%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/74830e18a01644c3a40d10c9c33a9d529082c165",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Man allegedly launched lengthy attack on teen before killing her",
+      "link": "https://www.smh.com.au/national/queensland/man-allegedly-launched-lengthy-attack-on-teen-before-killing-her-20260513-p5zwb2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A teenager who was allegedly killed by her partner suffered a lengthy assault before a fatal blow to the head, a court has heard.",
+      "pubDate": "Wed, 13 May 2026 16:05:22 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.4747%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_165/t_crop_custom/q_86%2Cf_auto/fdcedab2ace8f6d006951f7a131c47b541b7100f",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Could cars save this struggling country mall?",
+      "link": "https://www.abc.net.au/news/2026-05-13/bendigo-hargreaves-mall-proposal-reopen-vehicles/106673946",
+      "desc": "A Victorian council is proposing to reopen a regional mall to vehicles after 44 years in an attempt to breathe new life into the area.",
+      "pubDate": "Wed, 13 May 2026 06:03:55 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/a37e345d6e7acbe554a183a300d08573?impolicy=wcms_crop_resize&amp;cropH=1448&amp;cropW=1086&amp;xPos=14&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Former high-flying Melbourne socialite facing bankruptcy claim",
+      "link": "https://www.smh.com.au/national/victoria/former-high-flying-melbourne-socialite-facing-bankruptcy-claim-20260513-p5zwcy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Once married to a Miss Universe Australia beauty queen, Justin McKeone has mounting legal troubles as he faces claims he has failed to pay back his former employer.",
+      "pubDate": "Wed, 13 May 2026 15:55:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_143%2C$y_99/t_crop_custom/q_86%2Cf_auto/88e524892990639e33cf30919b955c5b14ff3cb1",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Motorists face wait to find out fix for Great Western Highway",
+      "link": "https://www.smh.com.au/national/nsw/motorists-face-wait-to-find-out-fix-for-great-western-highway-20260513-p5zwfx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Residents near the closed section of the critical road link over the Blue Mountains say they feel like they have been “bypassed and dropped in a black hole”.",
+      "pubDate": "Wed, 13 May 2026 15:50:06 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2012%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/d24c26d812146c65a03e160ca9881437fac0be08",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Jewish aged care homes hire armed guards as police briefing warns of antisemitism",
+      "link": "https://www.smh.com.au/national/jewish-aged-care-homes-hire-armed-guards-as-police-briefing-warns-of-antisemitism-20260507-p5zuks.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Holocaust survivors are now being protected by security after a bomb threat, hate mail and threats to kill were directed at three homes managed by Jewish Care Victoria.",
+      "pubDate": "Wed, 13 May 2026 15:50:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.6189%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/2ad82b14cb31c1bce1041dde7905633cbebd5d2cfda77b9e0b1390e89eb579d0",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Trump-Xi summit: 3 ways the US and China can compete without going to war",
+      "link": "https://theconversation.com/trump-xi-summit-3-ways-the-us-and-china-can-compete-without-going-to-war-281328",
+      "desc": "Both sides need to realise there will be no ‘winner’ in their rivalry. Instead, they can learn to coexist through mutual restraint and continued engagement.",
+      "pubDate": "2026-05-13T05:46:52Z",
+      "img": "https://images.theconversation.com/files/735246/original/file-20260512-57-sy05iz.png?ixlib=rb-4.1.0&amp;rect=0%2C0%2C1600%2C800&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "A moment that changed me: I saw my first total solar eclipse – and its beauty shook me to my core",
+      "link": "https://www.theguardian.com/lifeandstyle/2026/may/13/a-moment-that-changed-me-i-saw-my-first-total-solar-eclipse-and-its-beauty-shook-me-to-my-core",
+      "desc": "<p>As an astronomer, I had witnessed many celestial phenomena. But nothing prepared me for those few minutes in 2017 when the world fell silent</p><p>I have never driven with more determination than w",
+      "pubDate": "Wed, 13 May 2026 05:45:20 GMT",
+      "img": "https://i.guim.co.uk/img/media/e8f4824f417bdf0763b78ffdef6a1c27bdba0091/73_0_1923_1538/master/1923.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Life for Pye: WA bikie boss to spend 34 years behind bars for speedway killing",
+      "link": "https://www.smh.com.au/national/western-australia/wa-bikie-boss-to-spend-34-years-behind-bars-for-speedway-killing-20260513-p5zwf9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "David Pye was found guilty of murder after trained sniper Ben Johnston told a court how he was paid to shoot bikie heavyweight Nick Martin at Kwinana Motorplex in 2020.",
+      "pubDate": "Wed, 13 May 2026 15:39:32 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5516%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_40/t_crop_custom/q_86%2Cf_auto/b6a100339bd499227b90cf2b3fe1ffde02d1c3caad8cbe81b18abf53afece13c",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Jim Chalmers on why Labor didn’t scrap negative gearing completely in budget – video",
+      "link": "https://www.theguardian.com/australia-news/video/2026/may/13/federal-budget-2026-jim-chalmers-why-labor-didnt-scrap-negative-gearing-completely-video",
+      "desc": "<p>In response to a question from Guardian Australia’s economics editor, Patrick Commins, about whether fully abolishing negative gearing would have raised more revenue, and why the government didn’t ",
+      "pubDate": "Wed, 13 May 2026 05:28:09 GMT",
+      "img": "https://i.guim.co.uk/img/media/2749ab47dac35bd28feb92a8feba32489d32a576/491_0_2953_2362/master/2953.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Politics with Michelle Grattan: Tim Wilson on the budget’s hidden hits on young Australians",
+      "link": "https://theconversation.com/politics-with-michelle-grattan-tim-wilson-on-the-budgets-hidden-hits-on-young-australians-282848",
+      "desc": "The shadow treasurer plans to fight Labor’s tax changes, arguing they would increase pressure on rents and ‘kneecap’ young Australians trying to get ahead.",
+      "pubDate": "2026-05-13T05:27:15Z",
+      "img": "https://images.theconversation.com/files/735476/original/file-20260513-71-i5hio2.jpg?ixlib=rb-4.1.0&amp;rect=0%2C677%2C8116%2C4058&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "One Nation senator Malcolm Roberts again fails to rule out Bondi beach terror attack being ‘false flag’",
+      "link": "https://www.theguardian.com/australia-news/2026/may/13/one-nation-senator-malcolm-roberts-bondi-beach-terror-attack-false-flag-ntwnfb",
+      "desc": "<p>Queenslander under pressure after YouTube interview where he said he was ‘not ruling it out’ but ‘I don’t have the facts yet’</p><ul><li><p><a href=\"https://www.theguardian.com/australia-news/live/",
+      "pubDate": "Wed, 13 May 2026 05:26:15 GMT",
+      "img": "https://i.guim.co.uk/img/media/e461c8e3f2ea0e226d84aebeb6326fd2251c3d47/611_0_2897_2317/master/2897.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "David spent $100,000 waiting for his WA home to be built. This law change could save others",
+      "link": "https://www.smh.com.au/national/western-australia/david-spent-100-000-waiting-for-his-wa-home-to-be-built-this-law-change-could-save-others-20260513-p5zwdg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The state government has now announced legislation to give WA’s Building Commissioner more power to stop building companies trading while they’re in financial trouble.",
+      "pubDate": "Wed, 13 May 2026 15:20:19 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1765%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_11/t_crop_custom/q_86%2Cf_auto/d339b6c6212358474a908fa1f4d2cdbd15d881e823decb23b69ddac2f4f1969e",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Homebuilding reforms to let WA customers walk away from failing builders sooner",
+      "link": "https://www.abc.net.au/news/2026-05-13/proposed-new-laws-to-protect-wa-home-buyers-if-builder-folds/106674312",
+      "desc": "New legislation introduced to state parliament aim to prevent Western Australians from having to suffer the financial and emotional strain of not having a home if their building company collapses.",
+      "pubDate": "Wed, 13 May 2026 04:43:12 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/13f91e23dede3a682798f087b67540ce?impolicy=wcms_crop_resize&amp;cropH=4128&amp;cropW=3096&amp;xPos=1548&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Ship owner bid to limit payout over tugboats sinking fails",
+      "link": "https://www.abc.net.au/news/2026-05-13/goliath-v-tug-boats-liability-high-court-decision/106673794",
+      "desc": "A shipping company's attempt to avoid paying millions of dollars to Tasmania's port authority over the sinking of two tugboats in Devonport has been overturned by Australia's High Court.",
+      "pubDate": "Wed, 13 May 2026 04:24:35 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/0458979e89dec74220ace2d420631c5b?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=1250&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Rinehart court saga set for new chapter after Hancock lodges appeal",
+      "link": "https://www.smh.com.au/national/western-australia/rinehart-court-saga-set-for-new-chapter-after-hancock-lodges-appeal-20260513-p5zwfs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Gina Rinehart’s companies Hancock Prospecting and Hope Downs Iron Ore have filed two appeal notices to the finding delivered by Justice Jennifer Smith in April.",
+      "pubDate": "Wed, 13 May 2026 14:18:45 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.0341796875%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_6/t_crop_custom/q_86%2Cf_auto/b67e71f4d5bda0dfa1e077841d4ae7ee3388344b",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Getting children to eat their vegetables starts in the womb, researchers suggest",
+      "link": "https://www.theguardian.com/society/2026/may/13/children-eat-vegetables-starts-in-womb-researchers-suggest",
+      "desc": "<p>Rather than bribery, or hiding carrots under ketchup, the key may be to expose foetuses to healthy flavours</p><p>It is an age-old battle with small children that most parents will recognise: pleas",
+      "pubDate": "Wed, 13 May 2026 04:00:21 GMT",
+      "img": "https://i.guim.co.uk/img/media/9608d701d253e603b352aae6378d2c1ea8888161/0_0_5000_4000/master/5000.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
     {
       "title": "A Zara dress, the Jim Reaper and a communist state: how Australia’s media interpreted the budget",
       "link": "https://www.theguardian.com/australia-news/2026/may/13/australia-federal-budget-2026-in-the-papers-coverage-response",
@@ -340,6 +760,16 @@
       "sourceColor": "#0A5CA8"
     },
     {
+      "title": "Daily pill can help people maintain weight loss after they come off jabs, trial shows",
+      "link": "https://www.theguardian.com/science/2026/may/12/daily-orforglipron-pill-can-help-people-maintain-weight-loss-after-they-come-off-jabs-trial-shows",
+      "desc": "<p>Data shows orforglipron could in future avoid need to take other long-term medications for diseases associated with obesity</p><p>A daily pill could help people keep weight off and stop them needin",
+      "pubDate": "Tue, 12 May 2026 22:01:11 GMT",
+      "img": "https://i.guim.co.uk/img/media/8ab60cf701b423b4314400f790fa4f6d2b65c5db/0_149_1728_1382/master/1728.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
       "title": "Business owner says budget a 'sugar hit'",
       "link": "https://www.smh.com.au/national/business-owner-says-budget-a-sugar-hit-20260513-p5zw7i.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
       "desc": "Brisbane small business owner Kristina Carson says the federal budget is a &#34;sugar hit&#34; offering the sector no long-term support.",
@@ -368,6 +798,16 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Commonwealth Bank shares slump 10.4pc in biggest one-day fall on record",
+      "link": "https://www.abc.net.au/news/2026-05-13/asx-markets-business-news-live-updates-may-13/106672080",
+      "desc": "It was the worst day on the stock market for Australia's biggest bank since March 2020, when it dropped about 10 per cent, with sentiment also weighed by a trading update and broader weakness in bank ",
+      "pubDate": "Tue, 12 May 2026 21:05:01 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/f998fd577cbd69fffa9535904896ed04?impolicy=wcms_crop_resize&amp;cropH=667&amp;cropW=499&amp;xPos=250&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
     },
     {
       "title": "Live: Chalmers says $250 tax perk for working Australians could help future bracket creep",
@@ -16445,16 +16885,6 @@
       "desc": "<p>The solutions to today’s puzzles</p><p><a href=\"https://www.theguardian.com/science/2026/apr/13/can-you-solve-it-are-you-smarter-than-a-navy-admiral\">Earlier today </a>I asked you these three puzzl",
       "pubDate": "Mon, 13 Apr 2026 16:01:26 GMT",
       "img": "https://i.guim.co.uk/img/media/88dc1a3459f5143f561a183a2e8bdeba6f8de04b/168_114_1211_969/master/1211.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Can you solve it? Are you smarter than a Navy admiral?",
-      "link": "https://www.theguardian.com/science/2026/apr/13/can-you-solve-it-are-you-smarter-than-a-navy-admiral",
-      "desc": "<p>A trio of tricky teasers</p><p><a href=\"https://www.theguardian.com/science/2026/apr/13/did-you-solve-it-are-you-as-smarter-than-a-navy-admiral\">UPDATE: Solutions are now up</a></p><p>Tanya Khovano",
-      "pubDate": "Mon, 13 Apr 2026 06:10:13 GMT",
-      "img": "https://i.guim.co.uk/img/media/2c3d4eda5de0c077e96ed36760a517d0a0d2a161/180_236_1025_820/master/1025.jpg",
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
