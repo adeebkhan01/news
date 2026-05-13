@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-13T20:14:20.563Z",
+  "fetchedAt": "2026-05-13T22:42:06.610Z",
   "asx200": {
     "value": 8630.4,
     "change": -295.6,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.73,
     "change": 0.02,
-    "changePercent": 3.39,
+    "changePercent": 3.46,
     "previousClose": 0.7,
     "asOf": "2026-05-13",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-12",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-13",
         "close": 0.73
       }
@@ -203,25 +207,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4694.8,
-      "change": -47.6,
-      "changePercent": -1
+      "price": 4703.5,
+      "change": -38.9,
+      "changePercent": -0.82
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 88.17,
-      "change": 12.65,
-      "changePercent": 16.75
+      "price": 88.45,
+      "change": 12.93,
+      "changePercent": 17.12
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 101.42,
-      "change": 2.34,
-      "changePercent": 2.36
+      "price": 100.85,
+      "change": 1.77,
+      "changePercent": 1.79
     },
     {
       "name": "Copper",
@@ -229,7 +233,7 @@
       "iconBg": "#fef0e6",
       "price": 6.62,
       "change": 0.65,
-      "changePercent": 10.84
+      "changePercent": 10.83
     },
     {
       "name": "BHP Group",
@@ -838,7 +842,49 @@
   ],
   "news": [
     {
-      "title": "Ian Walker's death haunted his friends. His sister's love solved the mystery",
+      "title": "Australia launches first America's Cup challenge in 25 years",
+      "link": "https://www.abc.net.au/news/2026-05-14/australia-launches-first-americas-cup-challenge-in-25-years/106677500",
+      "snippet": "",
+      "pubDate": "Wed, 13 May 2026 22:09:38 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Runner takes on mountainous 231km to honour son's memory",
+      "link": "https://www.abc.net.au/news/2026-05-14/ben-mack-to-run-231km-west-macs-monster/106674842",
+      "snippet": "",
+      "pubDate": "Wed, 13 May 2026 21:44:58 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to slide, Wall Street rises; Coles judgment ahead; Warsh confirmed as new Fed chair",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-wall-street-boosted-by-tech-stocks-warsh-narrowly-confirmed-as-new-fed-chair-20260514-p5zwmp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Wall Street is drifting in mixed trading after another discouraging update on inflation and a recovery for technology stocks.",
+      "pubDate": "Thu, 14 May 2026 07:25:25 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Voss exit shuts door on Carlton's premiership era that never was",
+      "link": "https://www.abc.net.au/news/2026-05-14/afl-michael-voss-exit-carlton-blues-tenure-analysis/106674314",
+      "snippet": "",
+      "pubDate": "Wed, 13 May 2026 20:47:46 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Swans move annual Pride Game away from St Kilda after Collard case",
+      "link": "https://www.abc.net.au/news/2026-05-14/sydney-swans-move-annual-pride-game-away-from-st-kilda/106677390",
+      "snippet": "",
+      "pubDate": "Wed, 13 May 2026 20:43:33 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Former Australian cricketer named first foreign English selector",
+      "link": "https://www.abc.net.au/news/2026-05-14/australia-test-cricketer-marcus-north-named-england-selector/106677350",
+      "snippet": "",
+      "pubDate": "Wed, 13 May 2026 20:27:53 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Sexual abuse, a thwarted Olympic dream, and the sister who uncovered the truth",
       "link": "https://www.abc.net.au/news/2026-05-14/tragic-death-of-ian-walker-and-how-his-abuse-was-uncovered/106591296",
       "snippet": "",
       "pubDate": "Wed, 13 May 2026 20:08:14 +0000",
@@ -849,13 +895,6 @@
       "link": "https://www.smh.com.au/business/companies/friction-free-virgin-calls-time-on-the-check-in-kiosk-20260508-p5zv5f.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Passengers will now be able to walk directly to the bag drop, tag their luggage and leave. That’s good for the airline and airports, leaving passengers with more time to shop.",
       "pubDate": "Thu, 14 May 2026 06:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX set to slide, Wall Street boosted by tech stocks; Warsh narrowly confirmed as new Fed chair",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-wall-street-boosted-by-tech-stocks-warsh-narrowly-confirmed-as-new-fed-chair-20260514-p5zwmp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Wall Street is drifting in mixed trading after another discouraging update on inflation and a recovery for technology stocks.",
-      "pubDate": "Thu, 14 May 2026 05:20:40 +1000",
       "source": "SMH Business"
     },
     {
@@ -885,41 +924,6 @@
       "snippet": "",
       "pubDate": "Wed, 13 May 2026 07:45:27 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Why Cleary's decision to leave Penrith is as unprecedented as his success",
-      "link": "https://www.abc.net.au/news/2026-05-13/ivan-cleary-leaving-penrith-panthers-coaching-2027/106676200",
-      "snippet": "",
-      "pubDate": "Wed, 13 May 2026 07:17:08 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Leaving Australia is about to get more expensive after budget change",
-      "link": "https://www.smh.com.au/business/consumer-affairs/leaving-australia-is-about-to-get-more-expensive-after-budget-change-20260513-p5zwam.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Among all the big-ticket changes in the federal budget, the government is making international departures more expensive as the war in the Middle East pushes up airfares.",
-      "pubDate": "Wed, 13 May 2026 17:12:41 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "PLC readies drill rig for untouched WA high-grade gold prospect",
-      "link": "https://www.smh.com.au/business/companies/plc-readies-drill-rig-for-untouched-wa-high-grade-gold-prospect-20260513-p5zwjq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "PLC Resources is set to drill its Rochefort gold prospect in WA’s Murchison, targeting a large soil anomaly with high-grade rock chips near a producing gold mine.",
-      "pubDate": "Wed, 13 May 2026 16:27:46 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "May reveals 'mental breakdown' led to abrupt AFL retirement",
-      "link": "https://www.abc.net.au/news/2026-05-13/afl-steven-may-mental-breakdown-caused-retirement/106675854",
-      "snippet": "",
-      "pubDate": "Wed, 13 May 2026 06:19:30 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "CBA leads big bank slump on fears budget changes will hit home loans",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-as-tech-slump-rising-oil-prices-hurt-wall-street-ebay-rejects-gamestop-20260513-p5zw69.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Investors wiped close to $30 billon off the Commonwealth Bank’s market value on Wednesday amid concerns about housing credit growth and an earnings miss.",
-      "pubDate": "Wed, 13 May 2026 16:01:37 +1000",
-      "source": "SMH Business"
     }
   ]
 }
