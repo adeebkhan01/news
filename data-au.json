@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-14T14:24:57.166Z",
-  "summary": "The federal Opposition has released its budget reply speech with Angus Taylor unveiling major policy commitments including indexing income tax brackets to inflation in a $22.5 billion measure and a significant reduction in migration numbers, though business groups have criticized the migration plan. The government faces broader economic challenges including pressure on cost-of-living issues, with stories emerging about pricing practices at major retailers and concerns about vulnerable populations. A series of transport incidents have raised safety questions, from a bus rollover on the Bruce Highway to ongoing disputes over Magic Round train arrangements. Meanwhile, infrastructure projects continue to generate headlines, from the Snowy Hydro cost blow-out to approvals for developments like Andrew Forrest's Ningaloo Reef resort.",
+  "fetchedAt": "2026-05-14T17:03:06.117Z",
+  "summary": "The federal budget has dominated political commentary this week, with Labor's housing measures and tax changes drawing scrutiny over whether they adequately address cost-of-living pressures facing young Australians and renters, while the Opposition's budget reply promises substantial tax reform including indexing brackets to inflation. Major infrastructure and policy developments include concerns about NDIS funding gaps, a decision to abandon a controversial $600 million Perth data centre project, and mounting problems with the Snowy Hydro expansion facing a ten-fold cost blow-out. Social issues have also surfaced, with emerging warnings about gambling-related suicides among young men and a council's controversial plan to confiscate belongings from homeless people. On international matters, China and the US have expressed willingness to cooperate while tensions remain over Taiwan, while Russia's assault on Kyiv continues with significant casualties reported.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Craig Venter obituary",
+      "link": "https://www.theguardian.com/science/2026/may/14/craig-venter-obituary",
+      "desc": "<p>Pioneering and controversial geneticist who was one of the first to sequence the human genome, in part by using his own DNA</p><p>At the international BioVision conference in Lyon in February 2001,",
+      "pubDate": "Thu, 14 May 2026 16:33:33 GMT",
+      "img": "https://i.guim.co.uk/img/media/2c1ff0bd8f512901e2c3f35eb88da99824578525/492_67_1460_1168/master/1460.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Seven dead, scores missing in Kyiv as Russia continues onslaught",
+      "link": "https://www.abc.net.au/news/2026-05-15/russia-drone-apartments-kyiv-ukraine-war/106682148",
+      "desc": "Russia launches hundreds of drones at Ukraine in the third straight day of widespread attacks on targets across the country.",
+      "pubDate": "Thu, 14 May 2026 15:55:41 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/aa7f93dc817d69e8a3951c02db258811?impolicy=wcms_crop_resize&amp;cropH=3332&amp;cropW=2499&amp;xPos=1251&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "What do the federal budget’s housing measures do for Australia’s ‘forever renters’?",
+      "link": "https://www.theguardian.com/australia-news/2026/may/15/what-do-the-federal-budgets-housing-measures-do-for-australias-forever-renters",
+      "desc": "<p>The reforms are ‘bold first steps’ towards structural change, but won’t really affect the outlook for long-term renters, academic says</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/ema",
+      "pubDate": "Thu, 14 May 2026 15:00:12 GMT",
+      "img": "https://i.guim.co.uk/img/media/4f11a52b28bd49111773eb3e7257f3f5b24a33e6/673_0_4476_3581/master/4476.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Newsroom Edition: Labor broke a promise for bold reform. Does it matter? – podcast",
+      "link": "https://www.theguardian.com/australia-news/audio/2026/may/15/newsroom-edition-labor-broke-a-promise-for-bold-reform-does-it-matter-full-story-podcast",
+      "desc": "<p>In a big gamble, Labor broke a big promise. In this week’s budget, the government announced changes to capital gains tax and negative gearing. Treasurer Jim Chalmers is suggesting it’s the broken p",
+      "pubDate": "Thu, 14 May 2026 15:00:12 GMT",
+      "img": "https://i.guim.co.uk/img/media/6c209061b216e62b89c7427918d3d7d6c40ef01c/0_0_1875_1500/master/1875.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Labor’s budget will benefit the young – but does little to woo voters drawn to One Nation",
+      "link": "https://www.theguardian.com/australia-news/2026/may/15/australia-2026-budget-labor-one-nation-voters-ntwnfb",
+      "desc": "<p>Jim Chalmers’ budget tips the scales in favour of younger and less well-off households – but it’s middle-class gen X that are turning to the rightwing party</p><ul><li><p>Explore all of our<a href=",
+      "pubDate": "Thu, 14 May 2026 15:00:11 GMT",
+      "img": "https://i.guim.co.uk/img/media/2f2e207949ad090c473aeeeb1421794b7a964e85/434_0_5177_4142/master/5177.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "NDIS cuts could leave some participants with a funding gap. How will the changes affect you?",
+      "link": "https://www.theguardian.com/world/2026/may/15/budget-ndis-cuts-funding-gap-changes-strict-criteria",
+      "desc": "<p>Proposals also grant the health minister power to change disability support rules without state or territory approval. Here’s what you need to know</p><ul><li><p>Get our <a href=\"https://www.thegua",
+      "pubDate": "Thu, 14 May 2026 15:00:10 GMT",
+      "img": "https://i.guim.co.uk/img/media/9d04dadefb99b37549a95f32a090280c96a2ab5f/1075_0_6343_5077/master/6343.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
     {
       "title": "Superquiz, Friday, May 15",
       "link": "https://www.smh.com.au/national/superquiz-friday-may-15-20260514-p5zws7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",

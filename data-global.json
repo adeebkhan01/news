@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-14T14:25:12.601Z",
-  "summary": "Global tensions dominate today's news as the Iran conflict escalates into its 76th day, with hundreds of Russian drones striking Ukrainian cities despite supposed ceasefire agreements, while Israel intensifies operations against Hezbollah in Lebanon ahead of direct US-brokered negotiations. The Trump administration is actively engaged in high-stakes diplomacy, with the US president in Beijing for a summit with Xi Jinping where trade, technology, and Iran feature prominently on the agenda, though tensions over Taiwan remain unresolved. Multiple governments face domestic political upheaval, including resignations in Latvia and the UK, though international legal frameworks continue to struggle with enforcing accountability for mass atrocities amid ongoing regional conflicts.",
+  "fetchedAt": "2026-05-14T17:03:22.892Z",
+  "summary": "Global attention is sharply divided between the Trump-Xi summit in Beijing, where the US and China are discussing trade and geopolitical tensions including Taiwan and the Strait of Hormuz, and intensifying conflicts in Eastern Europe and the Middle East. Latvia's prime minister resigned over drone incidents as Russia continues massive drone strikes on Ukraine, while Israel is escalating attacks in Lebanon ahead of ceasefire negotiations and Iran is increasingly asserting itself militarily in the region. The UK is experiencing political turbulence with Health Secretary Wes Streeting's resignation potentially threatening Prime Minister Keir Starmer's position, though the economy showed unexpected growth. International law appears inadequate to prevent mass atrocities, with conflicts in Sudan, Palestine, and elsewhere highlighting the gap between global institutions and humanitarian crises on the ground.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Latvian PM resigns over handling of stray Ukrainian drones",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/14/latvian-pm-resigns-over-handling-of-stray-ukrainian-drones?traffic_source=rss",
+      "desc": "Latvia’s Prime Minister Evika Silina resigned following criticism of her government’s handling of stray drones",
+      "pubDate": "Thu, 14 May 2026 16:00:09 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1778774398.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "No Exit From El Fasher",
+      "link": "https://www.aljazeera.com/video/fault-lines/2026/5/14/no-exit-from-el-fasher?traffic_source=rss",
+      "desc": "Fault Lines and Lighthouse investigate the siege of Sudan’s el-Fasher, where civilians were trapped, starved and killed.",
+      "pubDate": "Thu, 14 May 2026 15:30:00 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1778761047.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "‘The world is sounding an alarm’: Why big tech is the new colonist",
+      "link": "https://www.aljazeera.com/features/2026/5/14/the-world-is-sounding-an-alarm-why-big-tech-is-the-new-colonist?traffic_source=rss",
+      "desc": "Power is no longer exercised through military force alone, but via technology, finance and control over information.",
+      "pubDate": "Thu, 14 May 2026 15:08:38 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AP26115346831983-1778767551.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "UK: Health Secretary Wes Streeting resigns, likely in bid to topple PM Keir Starmer",
+      "link": "https://www.dw.com/en/uk-health-secretary-wes-streeting-resigns-likely-in-bid-to-topple-pm-keir-starmer/a-77161937?maca=en-rss-en-eu-2092-rdf",
+      "desc": "Two Labour Party politicians have positioned themselves to challenge Prime Minister Keir Starmer for the leadership. Health Secretary Wes Streeting resigned, and Angela Rayner said her tax affairs wer",
+      "pubDate": "2026-05-14T15:06:00Z",
+      "img": "https://static.dw.com/image/77162074_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
+    },
+    {
+      "title": "Who is Mario Draghi, this year's Charlemagne Prize winner?",
+      "link": "https://www.dw.com/en/who-is-mario-draghi-this-year-s-charlemagne-prize-winner/a-77115925?maca=en-rss-en-eu-2092-rdf",
+      "desc": "The Charlemagne Prize honors those who advance European unity. This year's winner is Italy's Mario Draghi, a former European Central Bank chief and a key architect of European stability during a time ",
+      "pubDate": "2026-05-14T14:25:00Z",
+      "img": "https://static.dw.com/image/77160092_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
+    },
+    {
+      "title": "Trump, Xi discuss Strait of Hormuz as Chinese vessels transit key waterway",
+      "link": "https://www.aljazeera.com/news/2026/5/14/trump-xi-discuss-strait-of-hormuz-as-chinese-vessels-transit-key-waterway?traffic_source=rss",
+      "desc": "White House says the two leaders agree that the strait &#039;must remain open to support the free flow of energy&#039;.",
+      "pubDate": "Thu, 14 May 2026 14:23:21 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/reuters_6a05bc38-1778760760_fde934-1778763318.jpg?resize=1200%2C630&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Why international law can’t stop mass atrocities",
       "link": "https://www.aljazeera.com/video/all-hail/2026/5/14/why-international-law-cant-stop-mass-atrocities?traffic_source=rss",
@@ -193,6 +253,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Latvia: Prime Minister Evika Silina resigns over handling of drone incidents after coalition ally's withdrawal",
+      "link": "https://www.dw.com/en/latvia-prime-minister-evika-silina-resigns-over-handling-of-drone-incidents-after-coalition-ally-s-withdrawal/a-77159518?maca=en-rss-en-eu-2092-rdf",
+      "desc": "Evika Silina says she is resigning her post, following the defense minister's resignation and the coalition government's collapse amid controversy over Ukrainian drones aimed at Russia that landed in ",
+      "pubDate": "2026-05-14T09:51:00Z",
+      "img": "https://static.dw.com/image/76920128_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "In pictures: Trump hosted by Xi Jinping in Beijing on two-day summit",
