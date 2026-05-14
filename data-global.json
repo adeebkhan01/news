@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-14T19:52:21.052Z",
-  "summary": "Global tensions are intensifying across multiple fronts as diplomatic efforts attempt damage control. The US is pursuing Lebanon-Israel negotiations while Russia continues its assault on Ukrainian cities with drone attacks that killed civilians in Kyiv, and Iran is leveraging BRICS meetings to condemn Western-Israeli actions. Meanwhile, Trump's Beijing summit with Xi Jinping is underway with both leaders emphasizing their relationship's importance, though Taiwan and trade disputes remain unresolved obstacles. Domestically, political upheaval is affecting allies including the UK where Health Secretary Wes Streeting resigned, and Latvia where the prime minister stepped down over drone incident mishandling, while international law faces criticism for its inability to prevent mass atrocities and war crimes.",
+  "fetchedAt": "2026-05-14T22:14:49.089Z",
+  "summary": "The Trump administration is in Beijing for high-stakes talks with China's Xi Jinping, though no trade deal has emerged yet as both leaders discuss Taiwan, the Strait of Hormuz, and broader economic tensions. The Middle East remains volatile with cautious progress on Lebanon-Israel direct negotiations, Palestinian elections pledges at a Fatah conference, and escalating Israeli military operations in southern Lebanon. Ukraine faces continued Russian bombardment as Moscow launches fresh drone strikes on Kyiv despite ceasefire discussions, while Iran is leveraging diplomatic channels with BRICS nations to counter what it views as US-Israeli aggression. Domestic political turbulence is affecting several key allies, including the UK where Health Secretary Wes Streeting's resignation signals potential instability in Keir Starmer's government, and Latvia where Prime Minister Evika Silina stepped down over drone incident mishandling.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,56 @@
     }
   ],
   "articles": [
+    {
+      "title": "Trump and Xi hold talks but no trade deal agreed",
+      "link": "https://www.bbc.com/news/articles/clypj01189lo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "There was plenty of choreographed ceremonies, but there was no sweeping trade breakthrough as Trump met Xi in Beijing.",
+      "pubDate": "Thu, 14 May 2026 21:06:44 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5cfd/live/e7105d40-4faa-11f1-b2ff-f5e2d2fddf7e.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "‘China is gaining from what the US is doing in Iran’",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/14/china-is-gaining-from-what-the-us-is-doing-in?traffic_source=rss",
+      "desc": "Geopolitical analyst Steve Okun says says China is benefiting from the war on Iran.",
+      "pubDate": "Thu, 14 May 2026 20:56:22 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/Screenshot-2026-05-14-at-21.47.52-1778792070.png?resize=1770%2C1080",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Cautious optimism in Lebanon as direct talks with Israel progress",
+      "link": "https://www.aljazeera.com/news/2026/5/14/cautious-optimism-in-lebanon-as-direct-talks-with-israel-progress?traffic_source=rss",
+      "desc": "Lebanese officials are hoping that two-day ambassador-level negotiations in the US will yield a new ceasefire deal.",
+      "pubDate": "Thu, 14 May 2026 20:25:19 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_6a0625d9bb58-1778787801.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Palestinian President Abbas pledges elections, reform at Fatah conference",
+      "link": "https://www.aljazeera.com/news/2026/5/14/palestinian-president-abbas-pledges-elections-reform-at-fatah-conference?traffic_source=rss",
+      "desc": "Palestinian Authority President Mahmoud Abbas has been unanimously re-elected leader of the Fatah movement.",
+      "pubDate": "Thu, 14 May 2026 20:07:21 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AFP__20260514__B2UM8Q6__v1__HighRes__PalestinianIsraelConflictPolitics-1778786580.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran, Taiwan, and trade: Trump’s high‑stakes return to Beijing",
+      "link": "https://www.aljazeera.com/video/the-take-2/2026/5/14/aje-onl-chn_trumpvisit2026_av_v2-140526?traffic_source=rss",
+      "desc": "As Trump meets Xi in Beijing for the first time in nine years, can trade war, Taiwan and Iran tensions be contained?",
+      "pubDate": "Thu, 14 May 2026 19:34:25 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1778787153.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "What does the US hope to achieve from Lebanon-Israel talks?",
       "link": "https://www.aljazeera.com/video/inside-story/2026/5/14/what-does-the-us-hope-to-achieve-from-lebanese-israeli-talks?traffic_source=rss",
