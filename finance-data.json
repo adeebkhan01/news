@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-14T17:16:37.430Z",
+  "fetchedAt": "2026-05-14T20:10:42.225Z",
   "asx200": {
     "value": 8640.7,
     "change": -330.1,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0.01,
-    "changePercent": 1.77,
+    "changePercent": 1.75,
     "previousClose": 0.71,
     "asOf": "2026-05-14",
     "history": [
@@ -203,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4687.3,
-      "change": -137.7,
-      "changePercent": -2.85
+      "price": 4659.9,
+      "change": -165.1,
+      "changePercent": -3.42
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 85.32,
-      "change": 5.92,
-      "changePercent": 7.46
+      "price": 84.16,
+      "change": 4.76,
+      "changePercent": 6
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 101.13,
-      "change": 9.85,
-      "changePercent": 10.79
+      "price": 102.07,
+      "change": 10.79,
+      "changePercent": 11.82
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.61,
-      "change": 0.54,
-      "changePercent": 8.95
+      "price": 6.58,
+      "change": 0.51,
+      "changePercent": 8.45
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,69 @@
   ],
   "news": [
     {
+      "title": "ASX set to rise as Wall Street climbs again",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-as-wall-street-climbs-again-20260515-p5zx6g.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The US stock market is rising toward more records after Cisco Systems joined the parade of US companies reporting fatter profits for the start of 2026 than analysts expected.",
+      "pubDate": "Fri, 15 May 2026 05:26:12 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "How the wisdom of experience won the State of Origin series for New South Wales",
+      "link": "https://www.abc.net.au/news/2026-05-15/womens-state-of-origin-2-new-south-wales-queensland/106681828",
+      "snippet": "",
+      "pubDate": "Thu, 14 May 2026 19:19:25 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "My colleagues turned against me in a meeting. Why did this happen?",
+      "link": "https://www.smh.com.au/business/workplace/my-colleagues-turned-against-me-in-a-meeting-why-did-this-happen-20260514-p5zwyp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "If an influential colleague is turning your workmates against you, there’s a chance you could be a victim of groupthink.",
+      "pubDate": "Fri, 15 May 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Why staying in your ‘safe’ job is costing you $5700 a year",
+      "link": "https://www.smh.com.au/business/workplace/why-staying-in-your-safe-job-is-costing-you-5700-a-year-20260514-p5zwyt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "In our unstable world it’s no surprise many see secure employment as a victory. But what if I told you this could come at a cost?",
+      "pubDate": "Fri, 15 May 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Silent treatment: Why the ABC is staying quiet on One Nation’s lockout",
+      "link": "https://www.smh.com.au/business/companies/silent-treatment-why-the-abc-is-staying-quiet-on-one-nation-s-lockout-20260514-p5zwpp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "In 2017, the ABC took aim at One Nation’s decision to deny the broadcaster access to events. This time, its leaders haven’t commented.",
+      "pubDate": "Fri, 15 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Labor’s property taxes are worth the pain",
+      "link": "https://www.smh.com.au/business/the-economy/labor-s-property-taxes-are-worth-the-pain-20260514-p5zwpu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The latest tax changes will hurt people, including some of the people they’re meant to help. But they’re the right move to make.",
+      "pubDate": "Fri, 15 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Truck carpark’s value jumps seventeenfold in 21 years. Not bad for a patch of dirt in Dingley",
+      "link": "https://www.smh.com.au/business/companies/truck-carpark-s-value-jumps-seventeenfold-in-21-years-not-bad-for-a-patch-of-dirt-in-dingley-20260514-p5zwvs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "It last changed hands in 2005 for $450,000. Now it’s likely to fetch around $8 million, a seventeenfold increase or a compound annual growth rate of 14.7 per cent.",
+      "pubDate": "Fri, 15 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "A truck stop called Plan B Whitsunday just sold for $13m. What’s Plan A worth?",
+      "link": "https://www.smh.com.au/business/small-business/a-truck-stop-called-plan-b-whitsunday-just-sold-for-13m-what-s-plan-a-worth-20260514-p5zwzm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Selling a northbound truck stop in Halfway Creek, anchored by ASX-listed tenant Ampol, for around $13 million appears to be a great outcome.",
+      "pubDate": "Fri, 15 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Sam Kerr to leave Chelsea after six years at London club",
+      "link": "https://www.abc.net.au/news/2026-05-15/sam-kerr-to-leave-chelsea-football-club-/106682420",
+      "snippet": "",
+      "pubDate": "Thu, 14 May 2026 17:37:34 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "A bursary helped Joseph become a doctor. He fears trust changes will deny others that opportunity",
       "link": "https://www.smh.com.au/business/the-economy/a-bursary-helped-joseph-become-a-doctor-he-fears-trust-changes-will-deny-others-that-opportunity-20260513-p5zwho.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Hundreds of thousands of Australians with trusts could be affected by the latest tax change, with some warning small businesses will suffer.",
@@ -857,69 +920,6 @@
       "snippet": "",
       "pubDate": "Thu, 14 May 2026 08:47:40 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Miraculous try-savers hand NSW second straight Origin series win",
-      "link": "https://www.abc.net.au/news/2026-05-14/womens-state-of-origin-live-qld-maroons-nsw-blues-lang-park/106679346",
-      "snippet": "",
-      "pubDate": "Thu, 14 May 2026 08:23:52 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Coles to face fines ‘in the hundreds of millions’ after discounts ruled a sham",
-      "link": "https://www.smh.com.au/business/consumer-affairs/watch-live-coles-learns-its-fate-in-fake-down-down-discounts-case-20260514-p5zwoi.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "In a landmark decision, Justice Michael O’Bryan found the discounts were based on previous prices that were offered for too short a period to be considered real.",
-      "pubDate": "Thu, 14 May 2026 18:04:23 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Coles loses credibility with less-than-meets-the-eye discounts",
-      "link": "https://www.smh.com.au/business/consumer-affairs/coles-loses-credibility-with-less-than-meets-the-eye-discounts-20260514-p5zwts.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The court finding delivers a huge blow to Coles’ reputation as a reliable and trustworthy business.",
-      "pubDate": "Thu, 14 May 2026 16:44:26 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Critical widens NZ tungsten hunt as prices explode",
-      "link": "https://www.smh.com.au/business/companies/critical-widens-nz-tungsten-hunt-as-prices-explode-20260514-p5zx37.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Critical Resources has moved to expand its New Zealand critical minerals footprint as global tungsten prices skyrocket past $US2900 per metric tonne unit.",
-      "pubDate": "Thu, 14 May 2026 16:34:51 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Aurum pushes flagship Côte d’Ivoire gold resource beyond 3.2Moz",
-      "link": "https://www.smh.com.au/business/companies/aurum-pushes-flagship-c-te-d-ivoire-gold-resource-beyond-3-2moz-20260514-p5zx2v.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Aurum’s Boundiali gold resource in Côte d’Ivoire has expanded 6% to 3.22M ounces, with indicated resources up 24% to 1.70M ounces, ahead of a prefeasibility study due this quarter.",
-      "pubDate": "Thu, 14 May 2026 16:05:14 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Ronda Rousey back for redemption after being burnt out",
-      "link": "https://www.abc.net.au/news/2026-05-14/ufc-great-ronda-rousey-gina-carano-mma-bout/106678994",
-      "snippet": "",
-      "pubDate": "Thu, 14 May 2026 06:04:30 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "‘What happened?’: Why Gen Z workers are revolting against AI",
-      "link": "https://www.smh.com.au/business/workplace/what-happened-why-gen-z-workers-are-revolting-against-ai-20260514-p5zwx9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "A poorly received commencement speech made by a real estate executive in the US has shown just how quickly young people are turning against AI.",
-      "pubDate": "Thu, 14 May 2026 15:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Larvotto unlocks hidden antimony-gold value in NSW Hillgrove waste",
-      "link": "https://www.smh.com.au/business/companies/larvotto-unlocks-hidden-antimony-gold-value-in-nsw-hillgrove-waste-20260514-p5zx1f.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Larvotto Resources says it can recover up to 95 per cent antimony and 75 per cent gold from a 1.4Mt legacy tailings facility at its Hillgrove project in New South Wales.",
-      "pubDate": "Thu, 14 May 2026 14:50:34 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Locksley snaps up high-grade NSW copper-gold play",
-      "link": "https://www.smh.com.au/business/companies/locksley-snaps-up-high-grade-nsw-copper-gold-play-20260514-p5zx0t.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Locksley Resources has secured an option over the Iron Duke copper-gold project in New South Wales from Sky Metals, adding drill-ready targets.",
-      "pubDate": "Thu, 14 May 2026 14:42:38 +1000",
-      "source": "SMH Business"
     }
   ]
 }
