@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-14T09:11:46.629Z",
+  "fetchedAt": "2026-05-14T11:23:39.289Z",
   "asx200": {
     "value": 8640.7,
     "change": -330.1,
@@ -102,9 +102,9 @@
     ]
   },
   "audusd": {
-    "value": 0.73,
-    "change": 0.02,
-    "changePercent": 2.18,
+    "value": 0.72,
+    "change": 0.01,
+    "changePercent": 2.07,
     "previousClose": 0.71,
     "asOf": "2026-05-14",
     "history": [
@@ -198,7 +198,7 @@
       },
       {
         "date": "2026-05-14",
-        "close": 0.73
+        "close": 0.72
       }
     ]
   },
@@ -207,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4698.6,
-      "change": -126.4,
-      "changePercent": -2.62
+      "price": 4703.9,
+      "change": -121.1,
+      "changePercent": -2.51
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 87.59,
-      "change": 8.19,
-      "changePercent": 10.32
+      "price": 87.53,
+      "change": 8.14,
+      "changePercent": 10.25
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 101.42,
-      "change": 10.14,
-      "changePercent": 11.11
+      "price": 100.91,
+      "change": 9.63,
+      "changePercent": 10.55
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.61,
-      "change": 0.54,
-      "changePercent": 8.81
+      "price": 6.64,
+      "change": 0.57,
+      "changePercent": 9.36
     },
     {
       "name": "BHP Group",
@@ -842,14 +842,28 @@
   ],
   "news": [
     {
-      "title": "Live: Lions welcome Cats to the Gabba for grand final rematch",
+      "title": "A bursary helped Joseph become a doctor. He fears trust changes will deny others that opportunity",
+      "link": "https://www.smh.com.au/business/the-economy/a-bursary-helped-joseph-become-a-doctor-he-fears-trust-changes-will-deny-others-that-opportunity-20260513-p5zwho.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Hundreds of thousands of Australians with trusts could be affected by the latest tax change, with some warning small businesses will suffer.",
+      "pubDate": "Thu, 14 May 2026 19:20:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Peninsula bags US$56M for Wyoming uranium ramp up",
+      "link": "https://www.smh.com.au/business/companies/peninsula-bags-us-56m-for-wyoming-uranium-ramp-up-20260514-p5zx59.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Peninsula Energy has locked in US$56 million (A$77M) in funding to fast-track its Lance uranium project in Wyoming, backed by a substantial investment from Soul Patts.",
+      "pubDate": "Thu, 14 May 2026 19:13:55 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Cameron ignites Gabba and Lions comeback after Cats start hot",
       "link": "https://www.abc.net.au/news/2026-05-14/afl-round-10-thursday-live-blog-lions-cats/106681388",
       "snippet": "",
       "pubDate": "Thu, 14 May 2026 08:47:40 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Live: Maroons face must-win Origin clash at Lang Park",
+      "title": "Live: Miraculous try-savers hand NSW second straight Origin series win",
       "link": "https://www.abc.net.au/news/2026-05-14/womens-state-of-origin-live-qld-maroons-nsw-blues-lang-park/106679346",
       "snippet": "",
       "pubDate": "Thu, 14 May 2026 08:23:52 +0000",
@@ -910,20 +924,6 @@
       "snippet": "Locksley Resources has secured an option over the Iron Duke copper-gold project in New South Wales from Sky Metals, adding drill-ready targets.",
       "pubDate": "Thu, 14 May 2026 14:42:38 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Woolworths will be battening down the hatches after ACCC slays Coles’ false discounts",
-      "link": "https://www.smh.com.au/business/companies/woolworths-will-be-battening-down-the-hatches-after-accc-slays-coles-false-discounts-20260514-p5zwp9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "If battling Aussies were shopping for another reason to hate Australia’s supermarket duopoly, the competition watchdog has handed it to them on a platter.",
-      "pubDate": "Thu, 14 May 2026 13:51:08 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Hardwick defends Suns staffer amid AFL betting probe",
-      "link": "https://www.abc.net.au/news/2026-05-14/gold-coast-suns-damien-hardwick-defends-mark-opie-betting-links/106678276",
-      "snippet": "",
-      "pubDate": "Thu, 14 May 2026 03:47:14 +0000",
-      "source": "ABC News"
     }
   ]
 }
