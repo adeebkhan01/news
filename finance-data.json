@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-15T19:57:16.082Z",
+  "fetchedAt": "2026-05-15T22:14:45.152Z",
   "asx200": {
     "value": 8630.8,
     "change": -347.9,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0,
-    "changePercent": 0.31,
+    "changePercent": 0.34,
     "previousClose": 0.71,
     "asOf": "2026-05-15",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.73
       },
       {
+        "date": "2026-05-14",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-15",
         "close": 0.72
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4556.2,
-      "change": -243.8,
-      "changePercent": -5.08
+      "price": 4543.6,
+      "change": -256.4,
+      "changePercent": -5.34
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 76.83,
-      "change": -2.66,
-      "changePercent": -3.34
+      "price": 76.3,
+      "change": -3.2,
+      "changePercent": -4.02
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 101,
-      "change": 9.71,
-      "changePercent": 10.64
+      "price": 101.16,
+      "change": 9.87,
+      "changePercent": 10.81
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 6.29,
-      "change": 0.21,
-      "changePercent": 3.54
+      "change": 0.22,
+      "changePercent": 3.58
     },
     {
       "name": "BHP Group",
@@ -838,6 +842,41 @@
   ],
   "news": [
     {
+      "title": "'Cricket is a funny game': Cruel dismissal denies Marsh IPL century",
+      "link": "https://www.abc.net.au/news/2026-05-16/cricket-mitch-marsh-denied-ipl-century-cruel-dismissal/106687630",
+      "snippet": "",
+      "pubDate": "Fri, 15 May 2026 21:43:11 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Aussies climb into podium contention as Vingegaard claims win",
+      "link": "https://www.abc.net.au/news/2026-05-16/jonas-vingegaard-wins-giro-ditalia-stage-seven-blockhaus/106687576",
+      "snippet": "",
+      "pubDate": "Fri, 15 May 2026 21:31:19 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Sick of the AFL and all its changes? The SANFL is quietly kicking goals",
+      "link": "https://www.abc.net.au/news/2026-05-16/sanfl-kicking-goals-growing-crowds-viewership-streaming-afl/106680718",
+      "snippet": "",
+      "pubDate": "Fri, 15 May 2026 21:20:48 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "How a Wallabies winger uses art to connect with his culture",
+      "link": "https://www.abc.net.au/news/2026-05-16/wallabies-rugby-union-dylan-pietsch-first-nations-art-painting/106684414",
+      "snippet": "",
+      "pubDate": "Fri, 15 May 2026 21:04:49 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Big money and a free degree: Athletes choose US college football over AFL",
+      "link": "https://www.abc.net.au/news/2026-05-16/american-football-afl-players-hopefuls-punters-college-kickers/106665500",
+      "snippet": "",
+      "pubDate": "Fri, 15 May 2026 20:30:00 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "First Qantas, now Coles: the star corporate lawyer beating her one-time clients",
       "link": "https://www.smh.com.au/business/companies/first-qantas-now-coles-the-star-corporate-lawyer-beating-her-one-time-clients-20260515-p5zxav.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Kevin Rudd implied that Gina Cass-Gottlieb would be a patsy for the corporate world she had represented as a lawyer when she came to the ACCC. The accusation hasn’t held up.",
@@ -884,41 +923,6 @@
       "link": "https://www.smh.com.au/business/consumer-affairs/the-messy-task-of-calculating-the-harm-coles-caused-shoppers-20260515-p5zxd2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "A diabolical legal process is set to play out as huge teams of lawyers attempt to quantify damages that Coles may have to pay after its loss in court this week.",
       "pubDate": "Fri, 15 May 2026 17:59:26 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Invaded: The billionaire who bought Epstein Island is under siege from trespassers",
-      "link": "https://www.smh.com.au/business/banking-and-finance/invaded-the-billionaire-who-bought-epstein-island-is-under-siege-from-trespassers-20260514-p5zwmr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The latest reports from “Little St. Jeff’s,” the notorious Caribbean hideaway of Jeffrey Epstein, are startling.",
-      "pubDate": "Fri, 15 May 2026 17:35:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Bennett insists Latrell will be fit for Origin despite injury exit in loss to Dolphins",
-      "link": "https://www.abc.net.au/news/2026-05-15/nrl-magic-round-live-sharks-bulldogs-rabbitohs-dolphins/106669964",
-      "snippet": "",
-      "pubDate": "Fri, 15 May 2026 07:20:14 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX ends week lower as miners slump, banks gain ground",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-as-wall-street-climbs-again-20260515-p5zx6g.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Financial stocks, which suffered sharp losses after changes to negative gearing and capital gains tax were announced in the budget, bounced higher.",
-      "pubDate": "Fri, 15 May 2026 16:59:29 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX Runners of the Week: Myeco, Elixinol, Stelar Metals &amp; 1414 Degrees",
-      "link": "https://www.smh.com.au/business/companies/asx-runners-of-the-week-myeco-elixinol-stelar-metals-and-1414-degrees-20260515-p5zxjm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Bulls N’ Bears ASX Runner of the Week is… Myeco Group, which exploded after securing an exclusive deal with Woolworths to launch a new range of certified recycled bin bags",
-      "pubDate": "Fri, 15 May 2026 16:20:06 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Lottery boss criminally charged after Australians’ $US95m win",
-      "link": "https://www.smh.com.au/business/consumer-affairs/lottery-boss-criminally-charged-after-australians-us95m-win-20260515-p5zx9x.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Gary Grief has been accused of abusing his office after Australian gamblers were allowed to buy nearly 26 million tickets in 72 hours.",
-      "pubDate": "Fri, 15 May 2026 16:07:38 +1000",
       "source": "SMH Business"
     }
   ]
