@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-15T16:53:45.528Z",
-  "summary": "Global tensions are rising on multiple fronts as the United States and China hold high-level talks in Beijing with limited concrete outcomes, while an escalating conflict with Iran dominates international attention and reshapes geopolitical alliances. Trump and Xi discussed Taiwan and trade but failed to reach breakthroughs on Iran or trade disputes, with China appearing to benefit from American involvement in Middle Eastern conflict. Ukraine continues pressing for international accountability with dozens of European countries backing a special tribunal to prosecute Russia, while regional stability deteriorates from Pakistan to Lebanon as ceasefires face mounting pressure. Beyond diplomacy, the week has seen developments ranging from France addressing gang violence and prepayment meter abuses to tech titans clashing over artificial intelligence governance.",
+  "fetchedAt": "2026-05-15T19:44:28.907Z",
+  "summary": "The Middle East dominates global headlines as Israel and Lebanon move toward extending their ceasefire while Iran tensions escalate, with Trump's Beijing visit failing to produce a breakthrough on the conflict. Ukraine continues absorbing Russian strikes while securing international support through a planned tribunal to prosecute war crimes, as dozens of European countries commit to the mechanism. Trump's China summit reflects diverging narratives on trade and Taiwan, with the US warning Beijing against independence declarations while discussing arms sales and regional security. Domestically, Britain faces political turbulence with senior figures challenging PM Starmer's leadership as his grip on power weakens.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,76 @@
     }
   ],
   "articles": [
+    {
+      "title": "Israel and Lebanon agree to extend ceasefire, US state department says",
+      "link": "https://www.bbc.com/news/articles/cqlpzzl0d67o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "President Trump announced the truce last month, but Israel and Hezbollah have continued to exchange fire since then.",
+      "pubDate": "Fri, 15 May 2026 19:30:39 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cc2c/live/b1a99d90-508d-11f1-b682-cf91850925ea.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "WHO confirms 10 global hantavirus cases, Hondius crew remain symptom-free",
+      "link": "https://www.aljazeera.com/news/2026/5/15/who-confirms-10-global-hantavirus-cases-hondius-crew-remain-symptom-free?traffic_source=rss",
+      "desc": "World Health Organization has reiterated that the risk of hantavirus spreading is &#039;low&#039;.",
+      "pubDate": "Fri, 15 May 2026 18:49:20 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AFP__20260510__B2DN2ZL__v2__HighRes__TopshotSpainHealthHantavirusIllnessTourism-1778397136.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Canada’s Carney travels to Alberta as separatists face legal setback",
+      "link": "https://www.aljazeera.com/news/2026/5/15/canadas-carney-travels-to-alberta-as-separatists-face-legal-setback?traffic_source=rss",
+      "desc": "Trip comes as court rules separatists did not follow proper procedure in collecting referendum signatures.",
+      "pubDate": "Fri, 15 May 2026 18:40:05 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/reuters_6a075fa9-1778868137.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Zelenskyy vows response after Russian strike kills 24 in Kyiv",
+      "link": "https://www.aljazeera.com/news/2026/5/15/zelenskyy-vows-response-after-russian-strike-kills-24-in-kyiv?traffic_source=rss",
+      "desc": "Ukraine’s air force says the attack on Thursday was part of the largest aerial assault since the war began.",
+      "pubDate": "Fri, 15 May 2026 18:08:51 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/getty_6a07596c2a-1778866540.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Trump warns Taiwan against declaring independence, hours after summit with China's Xi",
+      "link": "https://www.bbc.com/news/articles/ce8p61v7l68o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The US president says he wants Beijing and Taipei to \"cool down\" tensions over the self-governing island.",
+      "pubDate": "Fri, 15 May 2026 17:50:59 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fc97/live/44d90680-5077-11f1-8b8c-6d33e1d5abb6.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "BRICS talks end without joint statement as divisions over Iran war deepen",
+      "link": "https://www.aljazeera.com/news/2026/5/15/brics-talks-end-without-joint-statement-as-divisions-over-iran-war-deepen?traffic_source=rss",
+      "desc": "Iran&#039;s FM had urged member states to condemn &#039;violations of international law by the United States and Israel&#039;.",
+      "pubDate": "Fri, 15 May 2026 16:39:44 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_6a06f56b4041-1778840939.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Israel kills seven in Lebanon, agrees ‘ceasefire’ extension at talks in US",
+      "link": "https://www.aljazeera.com/news/2026/5/15/lebanon-talks-israel-attack?traffic_source=rss",
+      "desc": "Delegations meet in Washington as Lebanon demands an end to Israeli attacks and occupation of its territory.",
+      "pubDate": "Fri, 15 May 2026 16:34:31 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_6a0717c94234-1778849737.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "New York Times defends journalist after Israel threatens to sue",
       "link": "https://www.bbc.com/news/articles/c9wedpk155jo?at_medium=RSS&amp;at_campaign=rss",
@@ -93,6 +163,16 @@
       "sourceId": "dwnews",
       "sourceName": "DW News",
       "sourceColor": "#002B55"
+    },
+    {
+      "title": "Burnham set to run for UK parliament increasing pressure on PM Starmer",
+      "link": "https://www.aljazeera.com/news/2026/5/15/pressure-mounts-on-embattled-uk-pm-keir-starmer-as-rivals-circle?traffic_source=rss",
+      "desc": "Greater ⁠Manchester Mayor Andy Burnham seeks a return to parliament, among the favourites to challenge Starmer.",
+      "pubDate": "Fri, 15 May 2026 13:59:37 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp-newsml.afp_.com_.20260515T091849Z.doc-b2x338w-1778849123.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
     },
     {
       "title": "Trump-Xi summit: China, US disagree on what they agreed on",
