@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-15T11:31:45.347Z",
+  "fetchedAt": "2026-05-15T14:42:38.705Z",
   "asx200": {
     "value": 8630.8,
     "change": -347.9,
@@ -94,10 +94,6 @@
       {
         "date": "2026-05-14",
         "close": 8640.7
-      },
-      {
-        "date": "2026-05-15",
-        "close": 8630.8
       }
     ]
   },
@@ -207,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4568.1,
-      "change": -231.9,
-      "changePercent": -4.83
+      "price": 4561.3,
+      "change": -238.7,
+      "changePercent": -4.97
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 79.18,
-      "change": -0.31,
-      "changePercent": -0.39
+      "price": 77.24,
+      "change": -2.25,
+      "changePercent": -2.83
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 99.5,
-      "change": 8.21,
-      "changePercent": 8.99
+      "price": 99.74,
+      "change": 8.45,
+      "changePercent": 9.26
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.35,
-      "change": 0.28,
-      "changePercent": 4.56
+      "price": 6.31,
+      "change": 0.24,
+      "changePercent": 3.96
     },
     {
       "name": "BHP Group",
@@ -842,6 +838,13 @@
   ],
   "news": [
     {
+      "title": "Auckland cruises past Adelaide to reach maiden ALM grand final",
+      "link": "https://www.abc.net.au/news/2026-05-15/auckland-cruises-past-adelaide-to-reach-alm-grand-final/106686710",
+      "snippet": "",
+      "pubDate": "Fri, 15 May 2026 13:30:17 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Boeing ordered to pay $69m to the family of woman killed in plane crash",
       "link": "https://www.smh.com.au/business/consumer-affairs/boeing-ordered-to-pay-69m-to-the-family-of-woman-killed-in-plane-crash-20260515-p5zx85.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The 24-year-old American was travelling to Uganda for her job with a non-profit organisation when the plane crashed minutes after take-off in 2019.",
@@ -849,7 +852,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Undermanned Pies threatening gritty Swans boilover, Suns tackle Power",
+      "title": "Swans hold on for gritty victory over Pies, Suns see off Port",
       "link": "https://www.abc.net.au/news/2026-05-15/afl-round-10-friday-live-blog-syd-coll-gc-pa/106686476",
       "snippet": "",
       "pubDate": "Fri, 15 May 2026 08:45:00 +0000",
@@ -870,7 +873,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Dolphins put on wet weather masterclass, Bulldogs' season sinks further",
+      "title": "Bennett insists Latrell will be fit for Origin despite injury exit in loss to Dolphins",
       "link": "https://www.abc.net.au/news/2026-05-15/nrl-magic-round-live-sharks-bulldogs-rabbitohs-dolphins/106669964",
       "snippet": "",
       "pubDate": "Fri, 15 May 2026 07:20:14 +0000",
@@ -917,13 +920,6 @@
       "snippet": "",
       "pubDate": "Fri, 15 May 2026 04:01:48 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Dateline strikes huge gold zones beyond Californian pit shell",
-      "link": "https://www.smh.com.au/business/companies/dateline-strikes-huge-gold-zones-beyond-californian-pit-shell-20260515-p5zxc4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Dateline has hit ultra-wide gold intercepts outside its resource boundary and confirmed high-density rare earths targets at its Colosseum project in California.",
-      "pubDate": "Fri, 15 May 2026 12:51:04 +1000",
-      "source": "SMH Business"
     }
   ]
 }
