@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-15T09:26:08.517Z",
+  "fetchedAt": "2026-05-15T11:31:45.347Z",
   "asx200": {
     "value": 8630.8,
     "change": -347.9,
@@ -102,9 +102,9 @@
     ]
   },
   "audusd": {
-    "value": 0.71,
+    "value": 0.72,
     "change": 0,
-    "changePercent": 0.21,
+    "changePercent": 0.46,
     "previousClose": 0.71,
     "asOf": "2026-05-15",
     "history": [
@@ -198,7 +198,7 @@
       },
       {
         "date": "2026-05-15",
-        "close": 0.71
+        "close": 0.72
       }
     ]
   },
@@ -207,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4546.3,
-      "change": -253.7,
-      "changePercent": -5.29
+      "price": 4568.1,
+      "change": -231.9,
+      "changePercent": -4.83
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 78.08,
-      "change": -1.41,
-      "changePercent": -1.77
+      "price": 79.18,
+      "change": -0.31,
+      "changePercent": -0.39
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 100.35,
-      "change": 9.06,
-      "changePercent": 9.92
+      "price": 99.5,
+      "change": 8.21,
+      "changePercent": 8.99
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.32,
-      "change": 0.25,
-      "changePercent": 4.07
+      "price": 6.35,
+      "change": 0.28,
+      "changePercent": 4.56
     },
     {
       "name": "BHP Group",
@@ -842,7 +842,14 @@
   ],
   "news": [
     {
-      "title": "Live: Swans set for Magpies challenge while Suns tackle Power",
+      "title": "Boeing ordered to pay $69m to the family of woman killed in plane crash",
+      "link": "https://www.smh.com.au/business/consumer-affairs/boeing-ordered-to-pay-69m-to-the-family-of-woman-killed-in-plane-crash-20260515-p5zx85.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The 24-year-old American was travelling to Uganda for her job with a non-profit organisation when the plane crashed minutes after take-off in 2019.",
+      "pubDate": "Fri, 15 May 2026 19:30:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Undermanned Pies threatening gritty Swans boilover, Suns tackle Power",
       "link": "https://www.abc.net.au/news/2026-05-15/afl-round-10-friday-live-blog-syd-coll-gc-pa/106686476",
       "snippet": "",
       "pubDate": "Fri, 15 May 2026 08:45:00 +0000",
@@ -863,7 +870,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: 'Forgot they were playing tackle': Dogs rinsed for 'soft' start to Magic Round",
+      "title": "Live: Dolphins put on wet weather masterclass, Bulldogs' season sinks further",
       "link": "https://www.abc.net.au/news/2026-05-15/nrl-magic-round-live-sharks-bulldogs-rabbitohs-dolphins/106669964",
       "snippet": "",
       "pubDate": "Fri, 15 May 2026 07:20:14 +0000",
@@ -886,7 +893,7 @@
     {
       "title": "Lottery boss criminally charged after Australians’ $US95m win",
       "link": "https://www.smh.com.au/business/consumer-affairs/lottery-boss-criminally-charged-after-australians-us95m-win-20260515-p5zx9x.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Gary Grief has been accused of abusing his office after his lottery allowed Australian gamblers to buy nearly 26 million tickets in 72 hours.",
+      "snippet": "Gary Grief has been accused of abusing his office after Australian gamblers were allowed to buy nearly 26 million tickets in 72 hours.",
       "pubDate": "Fri, 15 May 2026 16:07:38 +1000",
       "source": "SMH Business"
     },
@@ -917,13 +924,6 @@
       "snippet": "Dateline has hit ultra-wide gold intercepts outside its resource boundary and confirmed high-density rare earths targets at its Colosseum project in California.",
       "pubDate": "Fri, 15 May 2026 12:51:04 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Carlton interim coach Fraser pulls out of running for full-time role",
-      "link": "https://www.abc.net.au/news/2026-05-15/afl-josh-fraser-not-ready-for-full-time-carlton-coaching-role/106683800",
-      "snippet": "",
-      "pubDate": "Fri, 15 May 2026 02:15:05 +0000",
-      "source": "ABC News"
     }
   ]
 }
