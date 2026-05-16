@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-16T16:01:07.134Z",
-  "summary": "Australian politics dominated headlines today with Labor narrowly holding the Stafford byelection seat despite a swing to the opposition LNP, while Attorney-General Mark Taylor announced plans to amend the Sex Discrimination Act following the Tickle v Giggle court ruling and faces scrutiny over a failed attempt to test negative gearing policies. The country dealt with several tragic incidents including a teenage driver killed in a stolen car crash, a fatal shark attack on the West Australian coast, and an investigation into a couple found dead in a Melbourne home. Other significant issues included protests over Sydney council's proposed paid beach parking plan, criticism of regional courthouse closures, and ongoing concerns about the Inland Rail project stalling on seized farmland, while international stories featured the search continuing for Italian scuba divers who drowned in the Maldives and a deadly train-bus collision in Bangkok.",
+  "fetchedAt": "2026-05-16T19:11:51.084Z",
+  "summary": "Australia's political landscape is shifting with Labor securing a knife-edge victory in the Stafford byelection despite significant swings to the LNP, while both major parties are showing renewed ideological conviction amid broader political realignment. On the social policy front, there are mixed developments: youth mental health appears to be turning a corner, but concerning trends are emerging around online harms to children, unsafe peptide products, and unregulated platforms like Roblox. The country is also grappling with infrastructure and environmental challenges, from a critical transport worker shortage sending passenger numbers back to pre-COVID levels to invasive species threatening urban ecosystems. Several significant rulings and initiatives are reshaping Australian society, including amendments to discrimination law following the Tickle v Giggle case and renewed scrutiny of practices harming vulnerable communities.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,126 @@
     }
   ],
   "articles": [
+    {
+      "title": "Fifty years ago, these men set out to defeat an insidious disease. A fortnight ago, they did",
+      "link": "https://www.smh.com.au/healthcare/fifty-years-ago-these-men-set-out-to-defeat-an-insidious-disease-a-fortnight-ago-they-did-20260511-p5zvn7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Fred Hollows was a true mentor and teacher. Following his example, on April 29, Australia finally defeated the world’s leading infectious cause of preventable blindness.",
+      "pubDate": "Sun, 17 May 2026 05:04:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.3863063516004692%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_144/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/67891533dbc9cd48ee7c84ab22878c7cdd46ce78",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘Something is working’: Why Australia has reached a turning point for youth mental health",
+      "link": "https://www.smh.com.au/national/nsw/something-is-working-why-australia-has-reached-a-turning-point-for-youth-mental-health-20260512-p5zvzj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "One cohort of young people was significantly lonelier than its peers – but almost twice as likely to seek help.",
+      "pubDate": "Sun, 17 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.254%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_221/t_crop_custom/q_86%2Cf_auto/d8a3d8cbfc701c70569f0b458a4883bf27fd81a6",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "How this regional town became a caravan community",
+      "link": "https://www.smh.com.au/national/victoria/how-this-regional-town-became-a-caravan-community-20260513-p5zwcj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Dozens of houses burnt and farms destroyed. Can this community ever be the same again after one of the worst fires in its history?",
+      "pubDate": "Sun, 17 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1893%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_110/t_crop_custom/q_86%2Cf_auto/579e5278fec5edff2114788fe462c4265bec94ee",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Backlash against Lord Mayor’s Little India vision for Docklands",
+      "link": "https://www.smh.com.au/national/victoria/backlash-against-lord-mayor-s-little-india-vision-for-docklands-20260515-p5zx89.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "City of Melbourne is pursuing a multimillion dollar Little India cultural precinct in the Docklands, but not everybody is happy about it.",
+      "pubDate": "Sun, 17 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1765%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_110/t_crop_custom/q_86%2Cf_auto/d488f55a3f08e73bb887e79be05d9877460e52d9",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "She sued the Pope, defended Julian Assange and just won the Sydney Peace Prize. Is Jennifer Robinson our most fascinating lawyer?",
+      "link": "https://www.smh.com.au/national/she-sued-the-pope-defended-julian-assange-and-just-won-the-sydney-peace-prize-is-jennifer-robinson-our-most-fascinating-lawyer-20260515-p5zx91.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Jennifer Robinson is an internationally renowned human rights lawyer. Her documentary, Silenced, will open the Sydney Film Festival next month.",
+      "pubDate": "Sun, 17 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2798%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_225%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/515d4d7dca4f81c7825dba26d243f8934fef37ae",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Can you believe it? Our major parties suddenly find their beliefs",
+      "link": "https://www.smh.com.au/national/can-you-believe-it-our-major-parties-suddenly-find-their-beliefs-20260515-p5zxbv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "From taxation to welfare for non-citizens, the lines are starkly drawn.",
+      "pubDate": "Sun, 17 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.3312218908610222%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_457%2C$y_255/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/cb8eb8dee3a4263f777ee819cd5b0fee3da5d550",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Amputations, heart attacks, days of vomiting: The horror toll of ‘backyard’ peptides",
+      "link": "https://www.smh.com.au/national/victoria/amputations-heart-attacks-days-of-vomiting-the-horror-toll-of-backyard-peptides-20260515-p5zxga.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Victorians are taking peptides for everything from weight loss and body building to skin improvements. Many end up in hospitals with severe side effects.",
+      "pubDate": "Sun, 17 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5519%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/76283a2ccadfb2a6f55b1f78417531ac7e4b0996a15cf936ebed08756c78d533",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Free fares send passenger numbers surging back to pre-COVID levels",
+      "link": "https://www.smh.com.au/national/victoria/free-fares-send-passenger-numbers-surging-back-to-pre-covid-levels-20260516-p5zxoy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "High petrol prices also contributed to the jump in patronage, as April became the busiest month on the network in more than six years.",
+      "pubDate": "Sun, 17 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1765%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/6f3d46e82b762097d3cc8959a3925eaaab54cb06",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Roblox should be stopped from manipulating kids",
+      "link": "https://www.smh.com.au/national/roblox-should-be-stopped-from-manipulating-kids-20260516-p5zxpm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The popular online gaming platform is using hidden gambling-like tricks and scams that exploit children.",
+      "pubDate": "Sun, 17 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2486%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_78/t_crop_custom/q_86%2Cf_auto/b68dacaf2b33d5ed92d5ac695efe86388fa5a67d",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "The tiny beetle that could wipe out half the trees in our cities",
+      "link": "https://www.smh.com.au/environment/conservation/the-tiny-beetle-that-could-wipe-out-half-the-trees-in-our-cities-20260512-p5zw2b.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_environment",
+      "desc": "Sydney, Melbourne and Brisbane are at huge risk if the shot-hole borer makes its way from Western Australia because the climate is more favourable to the pest.",
+      "pubDate": "Sun, 17 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.4814%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_109/t_crop_custom/q_86%2Cf_auto/e1073c46d6b464f65272081f17477868a4abe474",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "From Farage to Farrer, Pauline Hanson’s politics are on the march, and major parties are running scared",
+      "link": "https://www.theguardian.com/australia-news/2026/may/17/pauline-hanson-australia-nigel-farage-uk-politics-rightwing-populism-ntwnfb",
+      "desc": "<p>As public support for One Nation surges, the Coalition are chasing populist policies as Labor desperately tries to combat the economic anxieties pushing voters right</p><p>She’s the flame-haired 71",
+      "pubDate": "Sat, 16 May 2026 18:00:16 GMT",
+      "img": "https://i.guim.co.uk/img/media/e68a21e6787441f3065855c5c7d4b228a8603f65/411_0_2953_2362/master/2953.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Timmy the whale confirmed dead by Danish authorities",
+      "link": "https://www.theguardian.com/environment/2026/may/16/timmy-the-whale-confirmed-dead-by-danish-authorities",
+      "desc": "<p>Humpback had been found deceased on Friday after rescue attempt criticised as ‘pure animal cruelty’</p><p>Timmy the whale has been confirmed dead by Danish authorities two weeks after the beached h",
+      "pubDate": "Sat, 16 May 2026 17:22:22 GMT",
+      "img": "https://i.guim.co.uk/img/media/1658429f3002f18904cb298b64633d8442b81980/296_0_1350_1080/master/1350.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
     {
       "title": "Eight dead and 35 injured after train collides with public bus in Bangkok",
       "link": "https://www.abc.net.au/news/2026-05-17/bangkok-train-crash-killes-eight-injures-35/106688532",
@@ -20768,26 +20888,6 @@
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
-    },
-    {
-      "title": "Inside Canva’s $100 billion gamble on an AI-first rebuild",
-      "link": "https://www.smh.com.au/technology/inside-canva-s-100-billion-gamble-on-an-ai-first-rebuild-20260415-p5znxz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_technology",
-      "desc": "Melanie Perkins pitched the idea in 2011 and was knocked back by 100 investors. Fifteen years later, Canva is finally building it.",
-      "pubDate": "Fri, 17 Apr 2026 05:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.16932144219026793%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_205%2C$y_228/t_crop_custom/q_86%2Cf_auto/6a131d5b13fb17b542990c452eafdb877bff495d",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "No one has been prosecuted for wage theft since it became a crime. 2 inquiries want answers",
-      "link": "https://theconversation.com/no-one-has-been-prosecuted-for-wage-theft-since-it-became-a-crime-2-inquiries-want-answers-280578",
-      "desc": "For workers still being deliberately underpaid, it’s vital to ensure these laws are actually working.",
-      "pubDate": "2026-04-16T18:42:22Z",
-      "img": "https://images.theconversation.com/files/730073/original/file-20260415-63-s9xc3y.jpg?ixlib=rb-4.1.0&amp;rect=0%2C487%2C5222%2C2611&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
     }
   ]
 }

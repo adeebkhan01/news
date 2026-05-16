@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-16T16:01:24.107Z",
-  "summary": "Global tensions simmer across multiple fronts as the Trump administration engages in high-stakes diplomacy with Iran and China. The Middle East remains volatile, with Israel extending a ceasefire agreement with Lebanon while continuing military operations in the West Bank and Gaza, where Hamas confirmed the killing of a top commander. International divisions are widening, as evidenced by BRICS talks ending without agreement over the Iran war and ongoing disagreements between Washington and Beijing over what was actually settled during Trump's China summit. In other major developments, Ukraine's Zelenskyy vowed retaliation after a Russian strike killed 24 in Kyiv, while dozens of European countries advanced plans for a tribunal to prosecute Russian officials.",
+  "fetchedAt": "2026-05-16T19:11:55.787Z",
+  "summary": "Global tensions dominate today's headlines as diplomatic efforts show mixed signals across multiple flashpoints. The Israel-Lebanon ceasefire has been extended with US involvement, while Iran signals willingness for nuclear talks with the Trump administration even as regional conflict persists, including ongoing Israeli operations in the West Bank and strikes on Lebanese targets. In Asia, Trump has warned Taiwan against independence while discussing arms sales with China's Xi Jinping during his summit visit, as Russia prepares Putin's reciprocal trip to Beijing. Domestically, political transitions are underway in the UK and Palestine, while ongoing conflicts in Ukraine and counter-terrorism operations against ISIL in West Africa round out a notably volatile news cycle.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,76 @@
     }
   ],
   "articles": [
+    {
+      "title": "Palestinian President Abbas casts vote in decisive Fatah elections",
+      "link": "https://www.aljazeera.com/news/2026/5/16/palestinian-president-abbas-casts-vote-in-decisive-fatah-elections?traffic_source=rss",
+      "desc": "Internal Fatah leadership elections take place amid questions of who will eventually succeed the 90-year-old leader.",
+      "pubDate": "Sat, 16 May 2026 18:03:38 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AFP__20260514__B2UM8Q6__v1__HighRes__PalestinianIsraelConflictPolitics-1778786580.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "UK ex-health minister says will run to replace Prime Minister Keir Starmer",
+      "link": "https://www.aljazeera.com/news/2026/5/16/uk-ex-health-minister-says-will-run-to-replace-prime-minister-keir-starmer?traffic_source=rss",
+      "desc": "Pressure mounts on Starmer&#039;s government, as Labour rivals including recently resigned Wes Streeting circle.",
+      "pubDate": "Sat, 16 May 2026 17:32:31 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-05-16T142012Z_431773176_RC2EALASI6W7_RTRMADP_3_BRITAIN-POLITICS-1778948732.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Taiwan insists it is independent after Trump warning",
+      "link": "https://www.bbc.com/news/articles/cx2132w81jqo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Fresh from his summit in Beijing, the US president warned against a formal declaration of independence by the island.",
+      "pubDate": "Sat, 16 May 2026 17:01:53 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9b3f/live/fab5e450-513f-11f1-b682-cf91850925ea.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Al Jazeera’s exclusive report from the Strait of Hormuz",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/16/al-jazeeras-exclusive-report-from-the-strait-of-hormuz?traffic_source=rss",
+      "desc": "Heavy ship traffic and rising regional tensions over one of the world’s most critical energy routes.",
+      "pubDate": "Sat, 16 May 2026 16:59:26 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1778950722.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Democratic governor under fire over clemency for 2020 election denier",
+      "link": "https://www.bbc.com/news/articles/c0l2kln7dzgo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Tina Peters, a Republican former county clerk, is serving a nine-year sentence for tampering with election equipment.",
+      "pubDate": "Sat, 16 May 2026 16:32:48 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e3fe/live/7a579e90-5142-11f1-8a79-a1e2421260e1.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Abu-Bilal al-Minuki: ISIL’s shadow commander in West Africa",
+      "link": "https://www.aljazeera.com/news/2026/5/16/abu-bilal-al-minuki-isils-shadow-commander-in-west-africa?traffic_source=rss",
+      "desc": "Nigeria and the US say &#039;key&#039; ISIL leader was killed in joint military operation in Borno state.",
+      "pubDate": "Sat, 16 May 2026 15:58:15 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2025-11-07T114119Z_1516978017_RC2LRHAPQY9Z_RTRMADP_3_USA-TRUMP-NIGERIA-1778938261.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran warns of readiness for war and economic costs as US talks falter",
+      "link": "https://www.aljazeera.com/news/2026/5/16/iran_warns_of_readiness_for_war_and_economic_costs_as_us_talks_falter?traffic_source=rss",
+      "desc": "Iranian leaders and TV have ramped up pressure on the US with a stream of messaging to domestic and foreign audiences.",
+      "pubDate": "Sat, 16 May 2026 15:33:13 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/04/ap_69e8e0605ba05-1776869472.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Iran warns of readiness for war and economic costs as US talks falter",
       "link": "https://www.aljazeera.com/economy/2026/5/16/iran_warns_of_readiness_for_war_and_economic_costs_as_us_talks_falter?traffic_source=rss",
