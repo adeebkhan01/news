@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-16T08:09:45.714Z",
-  "summary": "Australia faces several urgent safety and governance concerns today. A fatal shark attack in Western Australia and a deadly car crash in Queensland underscore persistent public safety issues, while a police shooting incident and unclear circumstances around deaths in Melbourne suburbs raise questions about accountability. The government grapples with major policy challenges including amendments to discrimination laws following a court ruling, climate emergency declarations being pushed by health experts, and accusations that key accountability bodies lack adequate resources. Regional infrastructure gaps and housing affordability concerns feature prominently, with disputes over inland rail development and capital gains tax impacts on the property market.",
+  "fetchedAt": "2026-05-16T10:19:34.977Z",
+  "summary": "Australia faces multiple tragic incidents today, with a fatal shark attack on the West Australian coast and a stolen car crash killing one teenager while two others fight for life. The government is progressing with controversial policy reforms including new anti-hate speech laws targeting extremist groups, negative gearing changes affecting housing markets, and amendments to sex discrimination law following the Giggle app ruling. Regional services are under strain, with state opposition criticizing courthouse closures as systemic failure while water and rail infrastructure projects struggle for federal funding. Police are investigating several deaths including a couple found in a Melbourne home and pursuing leads in connection with an unrelated fatal stabbing.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,86 @@
     }
   ],
   "articles": [
+    {
+      "title": "Truck rollover on South Australian freeway",
+      "link": "https://www.smh.com.au/national/truck-rollover-on-south-australian-freeway-20260516-p5zxrg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A truck has rolled and narrowly missed traffic on the South Eastern Freeway in Adelaide.",
+      "pubDate": "Sat, 16 May 2026 20:10:41 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/df1a4b53e463b96c0ebc22f8e0447661266c558b",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Florida tightens rules on capturing giant manta rays but stops short of full ban",
+      "link": "https://www.theguardian.com/us-news/2026/may/16/florida-giant-manta-rays-capture-rules",
+      "desc": "<p>Move follows upsetting viral video of ray being manhandled into unmarked boat in Florida waters last year</p><p>Wildlife officials in <a href=\"https://www.theguardian.com/us-news/florida\">Florida</",
+      "pubDate": "Sat, 16 May 2026 10:00:07 GMT",
+      "img": "https://i.guim.co.uk/img/media/e7562ae64d4095c87453363eed77e22fde16eb1d/1039_0_4922_3938/master/4922.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Two girls charged after Woolies store in lockdown",
+      "link": "https://www.smh.com.au/national/two-girls-charged-after-woolies-store-in-lockdown-20260516-p5zxr5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Two teenage girls have been charged after allegedly sending a Brisbane Woolworths store into lockdown.",
+      "pubDate": "Sat, 16 May 2026 18:51:50 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/ea820f88f8cd60ac7aedc1df2d8b02d050966577",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "New allegations in deadly Queensland bus crash",
+      "link": "https://www.smh.com.au/national/new-allegations-in-deadly-queensland-bus-crash-20260516-p5zxr4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A survivor of a bus crash has spoken of their terror after a tourist was killed.",
+      "pubDate": "Sat, 16 May 2026 18:50:58 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/3341bffe7b8b9cee0aede0130d7052eaeebe0b17",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Investigation after couple found dead in Melbourne",
+      "link": "https://www.smh.com.au/national/investigation-after-couple-found-dead-in-melbourne-20260516-p5zxr3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Homicide detectives are investigating the mystery deaths of a young couple whose bodies were found in a Werribee home.",
+      "pubDate": "Sat, 16 May 2026 18:41:06 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/41ea531df199325f6f4b4b4d3fdcc625080c416a",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Neo-Nazi group to test new anti-hate laws",
+      "link": "https://www.smh.com.au/national/neo-nazi-group-to-test-new-anti-hate-laws-20260516-p5zxr0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A neo-Nazi group banned by the federal government will fight in the High Court for its right to exist, testing new anti-hate laws.",
+      "pubDate": "Sat, 16 May 2026 18:36:40 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/92586b965ab70a58c7641fb269d3e19148411327",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Negative gearing test kicks in",
+      "link": "https://www.smh.com.au/national/negative-gearing-test-kicks-in-20260516-p5zxqy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Auctions across the country mark the first test of the government's negative gearing overhaul.",
+      "pubDate": "Sat, 16 May 2026 18:31:21 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/b2ce558aaafea3628a225a740c5a9177b68486b1",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "One teen killed, two fighting for life after crashing stolen car",
+      "link": "https://www.smh.com.au/national/victoria/one-teen-killed-two-fighting-for-life-after-crashing-stolen-car-20260516-p5zxqq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Police say the car was stolen from a Mildura home overnight before the crash on Saturday morning.",
+      "pubDate": "Sat, 16 May 2026 18:24:13 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.7148518518518517%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_190%2C$y_66/t_crop_custom/q_86%2Cf_auto/d8a75dafb6decf7a20d0aed78db62f4ae137a4a6",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
     {
       "title": "‘Just be calm’: Dezi Freeman’s landlord breaks silence on police shooting",
       "link": "https://www.smh.com.au/national/victoria/just-be-calm-dezi-freeman-s-landlord-breaks-silence-on-police-shooting-20260516-p5zxqh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",

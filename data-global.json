@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-16T08:10:01.608Z",
-  "summary": "The Trump administration is reshaping US foreign policy through high-stakes diplomatic maneuvers, most notably a China summit with Xi Jinping that yielded ambiguous results on critical issues like Taiwan and the Middle East conflict. Iran remains a central tension point, with nuclear talks at an impasse as Trump suggests a twenty-year suspension would suffice and BRICS nations fracture over the broader conflict. The Middle East ceasefire between Israel and Lebanon has been extended following US-brokered talks, though violence continues in both regions, while Russia's war in Ukraine persists with new casualties and growing international support for a prosecution tribunal. Domestically, the UK faces political turbulence with senior figures eyeing leadership challenges to Prime Minister Starmer, and Canada navigates separatist movements as legal obstacles mount.",
+  "fetchedAt": "2026-05-16T10:19:49.977Z",
+  "summary": "The Middle East remains the dominant international story, with Hamas confirming a top commander's death in Israeli strikes while Israel and Lebanon extended their ceasefire, and Iran signaling willingness to resume nuclear talks with the Trump administration despite deep mistrust over verification terms. Trump's visit to China underscored deepening US-China competition, with the two powers disagreeing on what they actually agreed to, particularly regarding Taiwan, as Putin prepares his own visit to Beijing in response. Global security concerns are compounding across multiple fronts, from Russian attacks killing dozens in Kyiv to a potential Afghan ceasefire collapse following a deadly Pakistani military outpost assault, while the international community moves toward establishing mechanisms to prosecute Russian war crimes. Domestically, political turbulence is evident in the UK as Labour faces pressure from challengers, while in France a teenage shooting in drug violence and an AI vigilante operation capturing an alleged predator highlight growing social fractures.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,46 @@
     }
   ],
   "articles": [
+    {
+      "title": "Hamas confirms top commander killed in Israeli air strike",
+      "link": "https://www.bbc.com/news/articles/cx21jjwz1k1o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Friday's strike is the latest launched by Israel on Gaza despite a ceasefire with Hamas.",
+      "pubDate": "Sat, 16 May 2026 10:12:16 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/86e2/live/d0adc620-5093-11f1-8b8c-6d33e1d5abb6.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Israeli settler blindfolds and detains Palestinian in occupied West Bank",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/16/israeli-settler-blindfolds-and-detains-palestinian-in-occupied-west-bank?traffic_source=rss",
+      "desc": "An armed Israeli settler blindfolded and detained a Palestinian man in the occupied West Bank.",
+      "pubDate": "Sat, 16 May 2026 09:37:13 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1778924921.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Russia’s Putin to visit China following Trump’s trip",
+      "link": "https://www.aljazeera.com/news/2026/5/16/russias-putin-to-visit-china-following-trumps-trip?traffic_source=rss",
+      "desc": "Putin and Chinese President Xi Jinping plan to &#039;further strengthen the comprehensive partnership&#039;, the Kremlin says.",
+      "pubDate": "Sat, 16 May 2026 08:38:46 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2025/09/AP25245170505338-1756795816.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran war day 78: Trump, Tehran signal talks as Lebanon truce extended",
+      "link": "https://www.aljazeera.com/news/2026/5/16/iran-war-day-78-trump-tehran-signal-talks-as-lebanon-truce-extended?traffic_source=rss",
+      "desc": "Iran says Trump signalled openness to talks as deadlock remains over Tehran’s nuclear programme.",
+      "pubDate": "Sat, 16 May 2026 08:02:43 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-05-15T165609Z_764780773_RC2N9LAPUTJ1_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-1778914537.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Trump says senior IS leader killed by US and Nigerian forces",
       "link": "https://www.bbc.com/news/articles/cy72p2kpd03o?at_medium=RSS&amp;at_campaign=rss",
@@ -53,6 +93,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "'They took £20,000 I didn't owe': Parents hit by child maintenance errors",
+      "link": "https://www.bbc.com/news/articles/cq8wjn98y85o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "John Hammond is one of 30 parents who told BBC Your Voice they'd experienced problems with the CMS.",
+      "pubDate": "Fri, 15 May 2026 23:44:32 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/573b/live/7bb468b0-3fd9-11f1-ac78-2112837ce2aa.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
     },
     {
       "title": "Switzerland to open secret files on Auschwitz 'Angel of Death' Mengele",
