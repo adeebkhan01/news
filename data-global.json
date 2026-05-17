@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-17T03:53:09.299Z",
-  "summary": "The Middle East remains the dominant global concern, with escalating tensions between Iran and the United States overshadowing diplomatic efforts, while Israel extends a ceasefire with Lebanon and conducts operations in the occupied West Bank amid ongoing conflict with Hamas. Political transitions are underway across multiple regions: Iraq's new prime minister has taken office, Latvia's opposition leader is forming a government, and British leadership faces a challenge from a former health minister seeking to unseat Prime Minister Starmer. Trump's recent visit to China has produced warnings to Taiwan against independence and signals of potential US-Iran negotiations, though broader geopolitical divisions are widening as BRICS countries fail to reach consensus on the Iran conflict. Additional crises include Bolivia's military efforts to end mass protests, humanitarian concerns from diving accidents and disease outbreaks, and Russia preparing a reciprocal visit to China following the Trump summit.",
+  "fetchedAt": "2026-05-17T08:26:31.098Z",
+  "summary": "Global tensions remain elevated as Iran signals readiness for renewed negotiations with the United States while simultaneously warning of military preparedness, even as Trump administration officials indicate willingness to discuss a nuclear programme suspension. Israel and Lebanon have extended their ceasefire following military operations, though sporadic Israeli strikes in southern Lebanon continue amid broader regional instability that includes ongoing conflict in the occupied West Bank and confirmed deaths of senior Hamas and ISIS commanders. The WHO has declared Ebola outbreaks in the Democratic Republic of Congo and Uganda a global health emergency, representing a significant public health threat requiring urgent international response. Political shifts are underway across multiple democracies, with Taiwan insisting on its independence following Trump warnings, Latvia seeking a new government formation, and domestic political challenges emerging in the US, UK, and Bolivia.",
   "sources": [
     {
       "id": "bbcnews",
@@ -25,6 +25,66 @@
   ],
   "articles": [
     {
+      "title": "Modest fashion’s global turn",
+      "link": "https://www.aljazeera.com/features/2026/5/17/modest-fashions-global?traffic_source=rss",
+      "desc": "From Instagram to Paris catwalks, modest fashion is booming as the global Muslim market heads toward $433bn by 2028.",
+      "pubDate": "Sun, 17 May 2026 08:02:03 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/French-label-Soutoura-at-Paris-Modest-Fashion-Week-1-1778963317.jpg?resize=1200%2C675",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "India’s Tata and Dutch giant ASML sign semiconductor deal during Modi visit",
+      "link": "https://www.aljazeera.com/news/2026/5/17/indias-tata-and-dutch-giant-asml-sign-semiconductor-deal-during-modi-visit?traffic_source=rss",
+      "desc": "Prime Minister Modi says his talks with the Dutch PM also focused on expanding cooperation in defence and security.",
+      "pubDate": "Sun, 17 May 2026 07:24:21 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_6a095a34a6e5-1778997812.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran war day 79: Tehran to unveil Hormuz toll plan; Israel bombs Lebanon",
+      "link": "https://www.aljazeera.com/news/2026/5/17/iran-war-day-79-tehran-to-unveil-hormuz-toll-plan-israel-bombs-lebanon?traffic_source=rss",
+      "desc": "Iran says it will soon reveal the plan as Trump warns Tehran it will have a &#039;very bad time&#039; if deal not reached soon.",
+      "pubDate": "Sun, 17 May 2026 07:19:53 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_6a0717c94234-1778849737.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "WHO declares Ebola outbreak in DR Congo a global health emergency",
+      "link": "https://www.bbc.com/news/articles/c2l2p0wwzzdo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The agency added that the outbreak, with around 246 cases and 80 deaths, does not meet the criteria of pandemic emergency.",
+      "pubDate": "Sun, 17 May 2026 07:08:26 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/404c/live/7be494d0-51be-11f1-a61d-97b09d8870ae.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "WHO declares Ebola outbreak in DR Congo, Uganda a global health emergency",
+      "link": "https://www.aljazeera.com/news/2026/5/17/who-declares-ebola-outbreak-in-dr-congo-uganda-a-global-health-emergency?traffic_source=rss",
+      "desc": "DR Congo accounts for all except two of the suspected cases, both of which were reported in neighbouring Uganda.",
+      "pubDate": "Sun, 17 May 2026 06:55:53 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AP26136413586187-1778997993.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Trump-backed challenger defeats Republican senator who voted to convict president",
+      "link": "https://www.bbc.com/news/articles/cx21d4pxq23o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Trump threw his full support behind Julia Letlow in Louisiana's high-stakes contest, branding the incumbent \"disloyal\".",
+      "pubDate": "Sun, 17 May 2026 03:23:08 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5a2c/live/abce2a10-5198-11f1-b57e-4930d304e43a.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
       "title": "Iraq’s new PM Ali al-Zaidi formally takes over",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/17/aje-onl-nf_clip-iraqs-new-pm-al-zaidi-formally-takes-over-160526?traffic_source=rss",
       "desc": "Iraq’s new prime minister Ali al‑Zaidi has formally taken office in Baghdad, pledging reforms.",
@@ -43,6 +103,26 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Robert paid £726 to skip the driving test waiting list. New laws mean others won't be able to",
+      "link": "https://www.bbc.com/news/articles/cx219pn5g70o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The government is cracking down on third parties who use bots to buy tests and resell them at inflated prices.",
+      "pubDate": "Sat, 16 May 2026 23:27:55 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8b80/live/c2ebd8a0-5053-11f1-8b8c-6d33e1d5abb6.png",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "The girl group who've sold out venues and toured the world - without releasing a record",
+      "link": "https://www.bbc.com/news/articles/cz721w33ve1o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The all-female supergroup has sold out venues across the UK and Ireland, toured stadiums with Ed Sheeran, and built a global following - all without releasing a debut record.",
+      "pubDate": "Sat, 16 May 2026 23:14:03 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d194/live/8f78b630-5073-11f1-8b8c-6d33e1d5abb6.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
     },
     {
       "title": "Bolivian army attempts to clear roads after 11 days of protests",
