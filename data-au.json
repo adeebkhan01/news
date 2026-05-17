@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-17T08:26:17.204Z",
-  "summary": "Australia's political landscape is shifting as two high-profile Liberals defect to One Nation, while Labor faces internal challenges backing embattled Queensland Premier Miles following his party's humbling loss in the Stafford byelection. A Qantas passenger diverted an international flight after allegedly biting a flight attendant, one of several transport-related incidents including a Gold Coast bus attacked by e-bike riders and a Sydney bus hitting a pedestrian. The government's recent budget changes are proving contentious, with tech founders using AI imagery to protest tax reforms and first home buyers responding positively to negative gearing changes, while concerns mount about AUKUS submarine spending delays and cost blowouts. In other significant developments, a Perth father was identified as a shark attack victim on Rottnest Island, and Western Australia is intensifying enforcement against illegal tobacco with multiple store closures.",
+  "fetchedAt": "2026-05-17T10:25:05.478Z",
+  "summary": "Australia's headline news today reflects a mix of serious incidents and policy debates shaping the nation. A fatal shark attack off Rottnest Island claimed a Perth father, while multiple Qantas disruptions involving passenger incidents and a bus attack on the Gold Coast highlight growing safety concerns across transport. On the political and economic front, the Coalition faces pressure over proposed capital gains tax changes that have sparked business concerns, two high-profile Liberals have defected to One Nation, and a failed Stafford byelection has raised questions about Labor's direction. Meanwhile, regulatory crackdowns in Western Australia on illegal tobacco and emerging concerns about AI-generated deepfake videos targeting women signal shifting priorities in public safety and consumer protection.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,176 @@
     }
   ],
   "articles": [
+    {
+      "title": "Tributes flow for father killed by shark in WA",
+      "link": "https://www.smh.com.au/national/tributes-flow-for-father-killed-by-shark-in-wa-20260517-p5zxx6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A Perth father killed by a shark off popular holiday spot Rottnest Island has been described as a devoted father and true gentleman.",
+      "pubDate": "Sun, 17 May 2026 20:15:26 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/aabad3144daec9f9878ca5977c06203ff1756014",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘Green card for the planet’? Fifa’s World Cup is on pace to be a climate catastrophe",
+      "link": "https://www.theguardian.com/football/2026/may/17/world-cup-climate-change",
+      "desc": "<p>The 2022 World Cup failed to deliver on its environmental promises. From air travel emissions to heat-related dangers, the 2026 edition will be even worse</p><p>Soccer fans are increasingly watchin",
+      "pubDate": "Sun, 17 May 2026 10:00:35 GMT",
+      "img": "https://i.guim.co.uk/img/media/47bbc787d0a03fc6128bb1a7df27633e7938ace3/364_0_3640_2912/master/3640.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "‘You don’t need to whisper rumours any more’: How AI sex videos are harming women",
+      "link": "https://www.smh.com.au/national/nsw/you-don-t-need-to-whisper-rumours-any-more-how-ai-sex-videos-are-harming-women-20260515-p5zxng.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Kate Bell thought she had enough evidence of digital abuse on her partner’s laptop. The legal system had not yet caught up to technology.",
+      "pubDate": "Sun, 17 May 2026 20:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.8638%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_98%2C$y_0/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/3c1da03f7539eabd8dae07235adabda5524946a7274ff6b8ab08f6e1e6f8c559",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘Insane amount of trades’: Trump’s multi-million dollar flurry astonishes Wall Street",
+      "link": "https://www.smh.com.au/business/markets/insane-amount-of-trades-trump-s-multi-million-dollar-flurry-astonishes-wall-street-20260517-p5zxt8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "The President’s trading totals tens of millions of dollars and involves major companies that have dealings with his administration.",
+      "pubDate": "Sun, 17 May 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2977%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/c1157a474879b108351a46473e6753aef1922347",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Public menace or kids having fun? Swarms of young riders draw police ire",
+      "link": "https://www.smh.com.au/national/victoria/public-menace-or-kids-having-fun-swarms-of-young-riders-draw-police-ire-20260510-p5zvie.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Victoria Police say increasingly popular “ride-out” events pose an unacceptable risk to public safety. But the boys who participate say the events are keeping kids out of trouble.",
+      "pubDate": "Sun, 17 May 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.7028622222222222%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_814%2C$y_781/t_crop_custom/q_86%2Cf_auto/f4b7edc32f73b96e1f34a43144c1d3824fedcb52",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Modern evolution for medical students as Sydney Uni change revealed",
+      "link": "https://www.smh.com.au/national/nsw/modern-evolution-for-medical-students-as-sydney-uni-change-revealed-20260513-p5zwis.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Sydney University has become the first university in Australia to offer the new model to its postgrad medical students.",
+      "pubDate": "Sun, 17 May 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.4113103703703704%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_87%2C$y_48/t_crop_custom/q_86%2Cf_auto/c48c284219026eeb7f5a8931190b1cbe6a603a11",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Levelling the HSC playing field, one subject at a time",
+      "link": "https://www.smh.com.au/national/nsw/levelling-the-hsc-playing-field-one-subject-at-a-time-20260517-p5zxs8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Students locked out of challenging subjects will have better opportunities next year.",
+      "pubDate": "Sun, 17 May 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.604618418164142%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_2597%2C$y_746/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/d9fb76652dffd770e840547ee7ee7a79e7e2f246",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Former top medical officer calls for cut to tobacco taxes",
+      "link": "https://www.smh.com.au/national/former-top-medical-officer-calls-for-cut-to-tobacco-taxes-20260517-p5zxv8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Dr Nick Coatsworth is preparing to call the flourishing illegal tobacco market a “whole-of-government policy failure” at a Senate inquiry into Australia’s tobacco crisis.",
+      "pubDate": "Sun, 17 May 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.20547147846332944%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_54/t_crop_custom/q_86%2Cf_auto/d19677cb65d770512a3c1eeaa35030785d007c37",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Bus driver attacked on the Gold Coast",
+      "link": "https://www.smh.com.au/national/bus-driver-attacked-on-the-gold-coast-20260517-p5zxsi.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Police say a group of e-bike riders pelted rocks at a bus windscreen causing the driver to lose control and crash.",
+      "pubDate": "Sun, 17 May 2026 19:20:30 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/63e46efb4004f160a297c1f2396112ded5866f86",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Sudden storm hits South Australia",
+      "link": "https://www.smh.com.au/national/sudden-storm-hits-south-australia-20260517-p5zxxe.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A sudden and fierce downpour has left dozens needing help in South Australia.",
+      "pubDate": "Sun, 17 May 2026 19:14:54 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/f9ebf12245fe47fdd4b5f3476f2d9139dd5afdee",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Returned Australians learn hantavirus test results",
+      "link": "https://www.smh.com.au/national/returned-australians-learn-hantavirus-test-results-20260517-p5zxxd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The returned cruise passengers quarantining in Western Australia have learned the results of their hantavirus tests.",
+      "pubDate": "Sun, 17 May 2026 19:09:38 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/9a9da4b190528572feb3192e9b3814cb2a6bd1a5",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Qantas flight diverted after man ‘bites crew member’",
+      "link": "https://www.smh.com.au/national/qantas-flight-diverted-after-man-bites-crew-member-20260517-p5zxxb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A passenger has forced a Qantas flight from Melbourne to the US to divert to Tahiti after allegedly biting a crew member.",
+      "pubDate": "Sun, 17 May 2026 19:04:44 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/745b3cbd191c4b9fa97bb6166c7666c9eddf9899",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Thousands join rival rallies in London",
+      "link": "https://www.smh.com.au/national/thousands-join-rival-rallies-in-london-20260517-p5zxxa.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Tens of thousands of people have marched through the streets of London at rival rallies.",
+      "pubDate": "Sun, 17 May 2026 18:59:39 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/d6c72e532b8415be20671a186ea24077a25382de",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Businesses fear capital gains tax change",
+      "link": "https://www.smh.com.au/national/businesses-fear-capital-gains-tax-change-20260517-p5zxx7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Aussie start-ups and small business owners are warning the changes to capital gains tax could crush them.",
+      "pubDate": "Sun, 17 May 2026 18:52:56 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/ad307bfaf4da5f6288a253d569d491751e34f8d3",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Man dies after falling from Sydney unit block",
+      "link": "https://www.smh.com.au/national/man-dies-after-falling-from-sydney-unit-block-20260517-p5zxx8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A man in his forties has died after plunging more than a dozen metres from the balcony of a unit block in Sydney.",
+      "pubDate": "Sun, 17 May 2026 18:51:25 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/aeb5358a12ed5a77f22487857c19fd344e3b463c",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Driver back on streets after allegedly hitting 108km/h in pursuit",
+      "link": "https://www.smh.com.au/national/driver-back-on-streets-after-allegedly-hitting-108km-h-in-pursuit-20260517-p5zxx5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A driver is accused of leading police on a chase in Sydney allegedly hitting speeds of 108km/h in suburban streets.",
+      "pubDate": "Sun, 17 May 2026 18:45:33 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/93f6695dff0381071d85779cfcd936ce1ea0994b",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Taylor’s prejudiced vision will cost the Coalition dearly",
+      "link": "https://www.smh.com.au/national/nsw/taylor-s-prejudiced-vision-will-cost-the-coalition-dearly-20260517-p5zxtn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Liberal leader’s clumsy attempt to appeal to potential One Nation voters may well have come from the pages of George Orwell’s 1984.",
+      "pubDate": "Sun, 17 May 2026 18:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2234%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_11/t_crop_custom/q_86%2Cf_auto/eb6fa11488d7f1904b4ec16353f6e424d2b41acc",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
     {
       "title": "Fire and ‘sheer volume’: how Britain’s 6m-vape problem is putting recycling under strain",
       "link": "https://www.theguardian.com/society/2026/may/17/disposable-vapes-suez-uk",
