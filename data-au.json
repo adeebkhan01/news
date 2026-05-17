@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-17T13:40:07.528Z",
-  "summary": "Australian news today reflects domestic turbulence across multiple fronts. Most prominently, two high-profile Liberal MPs have defected to One Nation, signalling political realignment ahead of critical electoral contests, while Queensland's Labor government faces pressure following a humbling byelection loss. On the transport front, Qantas dealt with unruly passengers including one removed for allegedly biting a crew member, echoing broader concerns about airline safety and passenger conduct. Major policy debates centre on proposed capital gains tax changes that have spooked businesses, Western Australia's escalating crackdown on tobacco sales, and the contentious Aukus submarine base decision, with unions warning it poses national security risks.",
+  "fetchedAt": "2026-05-17T16:01:54.817Z",
+  "summary": "Health and regulation dominate today's Australian news, with tobacco control efforts intensifying across Western Australia amid warnings that big tobacco is exploiting illicit market fears to reverse public health gains, while a former senior medical officer controversially calls for tax cuts on cigarettes. Domestic incidents include a fatal shark attack in Western Australia, a man biting a Qantas crew member, and a bus driver assault on the Gold Coast, reflecting ongoing community safety concerns. The government faces pushback on multiple fronts including capital gains tax changes that worry businesses and tech founders, union warnings that a proposed nuclear submarine base poses security risks, and criticism over pandemic preparedness shortcomings. International stories touching Australia range from the German-led rescue of whale Timmy to concerns about AI-generated sexual imagery harming women and climate concerns around FIFA's World Cup preparations.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,56 @@
     }
   ],
   "articles": [
+    {
+      "title": "Big tobacco is exploiting fears of the illicit market to unwind health gains, Australian experts warn",
+      "link": "https://www.theguardian.com/australia-news/2026/may/18/big-tobacco-is-exploiting-fears-of-the-illicit-market-to-unwind-health-gains-australian-experts-warn",
+      "desc": "<p>Cigarettes kill 66 Australians every day, coalition says, criticising MPs who heard evidence from Philip Morris in secret</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/email-newsletter",
+      "pubDate": "Sun, 17 May 2026 15:00:44 GMT",
+      "img": "https://i.guim.co.uk/img/media/a69ac5a7306840be447df19fc0784d02588b8244/48_0_4280_3425/master/4280.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Sway a crowd, wear a martyr’s crown: how one NSW politician went from scandal to political success – and wrote a playbook still used today",
+      "link": "https://www.theguardian.com/australia-news/2026/may/18/richard-denis-meagher-nsw-solicitor-politician-the-stained-man-book",
+      "desc": "<p>At the turn of last century, an ambitious young solicitor caused a scandal in a high-profile murder case. Years later he was a political leader in a new nation. How did he do it?</p><p>In June 1896",
+      "pubDate": "Sun, 17 May 2026 15:00:43 GMT",
+      "img": "https://i.guim.co.uk/img/media/0a547b0131a94885a870b8555fd777d7b894feb3/0_0_5000_4000/master/5000.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "German minister defends decision to allow attempt to rescue whale Timmy",
+      "link": "https://www.theguardian.com/environment/2026/may/17/german-minister-defends-decision-rescue-stranded-whale-timmy",
+      "desc": "<p>Humpback stranded on sandbank was unlikely to survive, experts had said, recommending it be left to die in peace</p><p>The German authorities have defended their decision to allow a risky rescue at",
+      "pubDate": "Sun, 17 May 2026 14:56:47 GMT",
+      "img": "https://i.guim.co.uk/img/media/a69edd79620d278853a4945abecd317ac7b8d830/570_0_1350_1080/master/1350.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "‘You only have so much space’: the limits of reducing infection risk on cruise ships",
+      "link": "https://www.theguardian.com/science/2026/may/17/limits-of-reducing-infection-risk-on-cruise-ships",
+      "desc": "<p>It is hardly a surprise that outbreaks can occur and experts say many of the factors involved are not easy to change</p><p>It was a voyage that promised such stuff as dreams are made of, yet within",
+      "pubDate": "Sun, 17 May 2026 14:00:40 GMT",
+      "img": "https://i.guim.co.uk/img/media/c04372a374fb30688e03c707d5ca6d7927a72113/490_0_3333_2667/master/3333.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Superquiz, Monday, May 18",
+      "link": "https://www.smh.com.au/national/superquiz-monday-may-18-20260515-p5zxdr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Trivia buffs, test your knowledge with today’s interactive superquiz.",
+      "pubDate": "Sun, 17 May 2026 23:59:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.9805555555555555%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_234/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/24d8c9ba98147348592ea2ed292e48328b593d46",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
     {
       "title": "The American epoch of oil is collapsing. What comes next could be ugly | Jonathan Watts",
       "link": "https://www.theguardian.com/us-news/ng-interactive/2026/may/17/america-china-energy-oil-renewables",
@@ -21558,16 +21608,6 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Scientists dig broad-shelled turtles stuck under mud in dried up wetlands – video",
-      "link": "https://www.theguardian.com/environment/video/2026/apr/18/scientists-dig-broad-shelled-turtles-stuck-under-mud-in-dried-up-wetlands-video",
-      "desc": "<p>Footage supplied by the office of the Greens legislative council member Cate Faehrmann shows scientists digging to reach broad-shelled turtles stuck under boggy mud in the Gingham watercourse. Rese",
-      "pubDate": "Fri, 17 Apr 2026 15:00:48 GMT",
-      "img": "https://i.guim.co.uk/img/media/9242502015ed0f19dd8e41da8dce9e6331dba713/0_800_3000_2400/master/3000.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
     }
   ]
 }
