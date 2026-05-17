@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-17T16:01:54.817Z",
-  "summary": "Health and regulation dominate today's Australian news, with tobacco control efforts intensifying across Western Australia amid warnings that big tobacco is exploiting illicit market fears to reverse public health gains, while a former senior medical officer controversially calls for tax cuts on cigarettes. Domestic incidents include a fatal shark attack in Western Australia, a man biting a Qantas crew member, and a bus driver assault on the Gold Coast, reflecting ongoing community safety concerns. The government faces pushback on multiple fronts including capital gains tax changes that worry businesses and tech founders, union warnings that a proposed nuclear submarine base poses security risks, and criticism over pandemic preparedness shortcomings. International stories touching Australia range from the German-led rescue of whale Timmy to concerns about AI-generated sexual imagery harming women and climate concerns around FIFA's World Cup preparations.",
+  "fetchedAt": "2026-05-17T19:15:11.260Z",
+  "summary": "Australia's green energy transition is advancing with a steel mill switching to mostly renewable power, though infrastructure projects face delays as Sydney's electric ferry rollout slips two years behind schedule. Government spending and policy changes dominate political coverage, with concerns mounting over proposed capital gains tax reforms affecting businesses and property investors, while Defense Minister Richard Marles faces scrutiny over a costly US diplomatic visit. Significant social issues emerging include exploitation of women through AI-generated intimate content, threats to paramedics from hidden patient ban lists, and tobacco industry pushback against health regulations. International tensions loom with reports of helium supply concerns due to the Iran conflict and warnings about climate impacts from next year's FIFA World Cup.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,96 @@
     }
   ],
   "articles": [
+    {
+      "title": "Steel mill becomes nation’s first to switch on mostly green power",
+      "link": "https://www.smh.com.au/business/companies/steel-mill-becomes-nation-s-first-to-switch-on-mostly-green-power-20260517-p5zxtt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "A plant on the edge of Melbourne has made a breakthrough in the long-running push to clean up the carbon-heavy manufacturing sector.",
+      "pubDate": "Mon, 18 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.3152066727295422%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_62%2C$y_276/t_crop_custom/q_86%2Cf_auto/030c330faacaaeec5d83fe7b2ac224fdd6d00e4d",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "It began with one simple oval: Inside the $20 million saga plaguing a Sydney council",
+      "link": "https://www.smh.com.au/national/nsw/it-began-with-one-simple-oval-inside-the-20-million-saga-plaguing-a-sydney-council-20260504-p5zthn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Beneath the cost blowouts and delays are conflict-of-interest concerns, and emails that reveal staff raised issues internally long before shovels broke ground.",
+      "pubDate": "Mon, 18 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.137%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_55/t_crop_custom/q_86%2Cf_auto/9a7ca2c207e6506164c6044640ea927d63720889",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘Write what you can’t bear to admit’ – plus two more rules Kae lives by to make art",
+      "link": "https://www.smh.com.au/national/write-what-you-can-t-bear-to-admit-plus-two-more-rules-kae-lives-by-to-make-art-20260507-p5zulp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "British writer, performer and poet Kae Tempest on his sources of inspiration, plus: the power of being active through love, rather than inactive through fear.",
+      "pubDate": "Mon, 18 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5359%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_205/t_crop_custom/q_86%2Cf_auto/18343dead64dbcec623384b76660957e5d6c8074",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "The secret list of banned hospital patients that’s endangering paramedics",
+      "link": "https://www.smh.com.au/national/victoria/the-secret-list-of-banned-hospital-patients-that-s-endangering-paramedics-20260511-p5zvq8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "“Not welcome lists” are leaving unwitting paramedics unloading violent or aggressive patients at hospital emergency departments for care, only to be turned away.",
+      "pubDate": "Mon, 18 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.3531%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/33d228e4d56c27baf68a2a09a2bda8401bb6eb79",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Sydney’s first electric ferry two years off as ambitions for entire fleet sink",
+      "link": "https://www.smh.com.au/national/nsw/sydney-s-first-electric-ferry-two-years-off-as-ambitions-for-entire-fleet-sink-20260511-p5zvrb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Installing charging infrastructure at wharves is expected to one of the main challenges in running electric ferries on Sydney’s popular routes.",
+      "pubDate": "Mon, 18 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.6667148148148148%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_153%2C$y_5/t_crop_custom/q_86%2Cf_auto/d06d1207f23739250dc370b154add4f5801786e2",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘Repeated acts of deceit’: Bankrupt businessman behind bars",
+      "link": "https://www.smh.com.au/national/nsw/repeated-acts-of-deceit-bankrupt-businessman-behind-bars-20260517-p5zxvn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A twice-bankrupted, twice-jailed pretend property developer is back behind bars, this time for contempt of court.",
+      "pubDate": "Mon, 18 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.8278%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/c9e7e4c7780f82e46a048420fd653e8849628fc8",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Richard Marles and Penny Wong spend $179,401 on US trip",
+      "link": "https://www.smh.com.au/cbd/richard-marles-and-penny-wong-spend-179-401-on-us-trip-20260517-p5zxw0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "An expenses scandal that sent the Albanese government into a tailspin late last year hasn’t deterred Labor ministers from shelling out to discharge their duties.",
+      "pubDate": "Mon, 18 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.6237%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_162%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/2db3e326251d642439666a5c9cf0f324c7e86c76",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Push for Australia to extract helium as Iran war impacts global supply",
+      "link": "https://www.abc.net.au/news/2026-05-18/push-for-austraila-to-extract-helium-as-iran-war-impacts-supply/106666710",
+      "desc": "Helium is needed in health care and to make microchips and semiconductors, but the Middle East war has affected supply. Some think it is an opportunity for Australia's gas industry.",
+      "pubDate": "Sun, 17 May 2026 18:54:54 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/c8ceae9ca2b09e71e333c5a9bfad7d66?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=1555&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "UAE slams 'dangerous escalation' after drone hits near nuclear plant",
+      "link": "https://www.abc.net.au/news/2026-05-18/drone-strike-in-uae-nuclear-station/106690388",
+      "desc": "Abu Dhabi officials say radiation levels are normal and there was no damage to the plant, but authorities are now working to determine who carried out the attack.",
+      "pubDate": "Sun, 17 May 2026 18:51:31 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/6769e5847fb432c9a74798bdc37638bf?impolicy=wcms_crop_resize&amp;cropH=1334&amp;cropW=1001&amp;xPos=500&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
     {
       "title": "Big tobacco is exploiting fears of the illicit market to unwind health gains, Australian experts warn",
       "link": "https://www.theguardian.com/australia-news/2026/may/18/big-tobacco-is-exploiting-fears-of-the-illicit-market-to-unwind-health-gains-australian-experts-warn",
