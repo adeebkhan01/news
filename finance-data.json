@@ -1,24 +1,12 @@
 {
-  "fetchedAt": "2026-05-17T22:10:43.178Z",
+  "fetchedAt": "2026-05-18T04:48:03.872Z",
   "asx200": {
-    "value": 8630.8,
-    "change": -347.9,
-    "changePercent": -3.87,
-    "previousClose": 8978.7,
-    "asOf": "2026-05-17",
+    "value": 8510.6,
+    "change": -436.3,
+    "changePercent": -4.88,
+    "previousClose": 8946.9,
+    "asOf": "2026-05-18",
     "history": [
-      {
-        "date": "2026-04-15",
-        "close": 8978.7
-      },
-      {
-        "date": "2026-04-16",
-        "close": 8955
-      },
-      {
-        "date": "2026-04-17",
-        "close": 8946.9
-      },
       {
         "date": "2026-04-20",
         "close": 8953.3
@@ -98,28 +86,20 @@
       {
         "date": "2026-05-15",
         "close": 8630.8
+      },
+      {
+        "date": "2026-05-18",
+        "close": 8510.6
       }
     ]
   },
   "audusd": {
-    "value": 0.72,
+    "value": 0.71,
     "change": 0,
-    "changePercent": 0.38,
-    "previousClose": 0.71,
-    "asOf": "2026-05-17",
+    "changePercent": -0.29,
+    "previousClose": 0.72,
+    "asOf": "2026-05-18",
     "history": [
-      {
-        "date": "2026-04-14",
-        "close": 0.71
-      },
-      {
-        "date": "2026-04-15",
-        "close": 0.72
-      },
-      {
-        "date": "2026-04-16",
-        "close": 0.72
-      },
       {
         "date": "2026-04-19",
         "close": 0.71
@@ -201,8 +181,8 @@
         "close": 0.72
       },
       {
-        "date": "2026-05-17",
-        "close": 0.72
+        "date": "2026-05-18",
+        "close": 0.71
       }
     ]
   },
@@ -211,169 +191,169 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4561.9,
-      "change": -295.7,
-      "changePercent": -6.09
+      "price": 4544.5,
+      "change": -313.1,
+      "changePercent": -6.45
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 77.55,
-      "change": -4.19,
-      "changePercent": -5.13
+      "price": 75.77,
+      "change": -5.97,
+      "changePercent": -7.31
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 101.02,
-      "change": 17.17,
-      "changePercent": 20.48
+      "price": 103.17,
+      "change": 19.32,
+      "changePercent": 23.04
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.3,
-      "change": 0.19,
-      "changePercent": 3.15
+      "price": 6.24,
+      "change": 0.14,
+      "changePercent": 2.24
     },
     {
       "name": "BHP Group",
       "icon": "⛏️",
       "iconBg": "#e6f2ec",
-      "price": 60.46,
-      "change": 4.35,
-      "changePercent": 7.75
+      "price": 58.83,
+      "change": 2.91,
+      "changePercent": 5.2
     },
     {
       "name": "Rio Tinto",
       "icon": "🏗️",
       "iconBg": "#eff6ff",
-      "price": 185.75,
-      "change": 11.93,
-      "changePercent": 6.86
+      "price": 179.47,
+      "change": 5.72,
+      "changePercent": 3.29
     }
   ],
   "sectors": [
     {
       "name": "Financials",
-      "changePercent": 0.9,
+      "changePercent": -0.01,
       "stocks": [
         {
           "name": "CBA",
-          "price": 159.4,
-          "changePercent": 1.91
+          "price": 160.82,
+          "changePercent": 0.89
         },
         {
           "name": "WBC",
-          "price": 35.84,
-          "changePercent": 0.34
+          "price": 35.83,
+          "changePercent": -0.04
         },
         {
           "name": "ANZ",
-          "price": 35.21,
-          "changePercent": 1.06
+          "price": 35.15,
+          "changePercent": -0.17
         },
         {
           "name": "NAB",
-          "price": 36.52,
-          "changePercent": 0.27
+          "price": 36.26,
+          "changePercent": -0.73
         }
       ]
     },
     {
       "name": "Materials",
-      "changePercent": -3.8,
+      "changePercent": -2.55,
       "stocks": [
         {
           "name": "BHP",
-          "price": 60.46,
-          "changePercent": -2.58
+          "price": 58.83,
+          "changePercent": -2.7
         },
         {
           "name": "RIO",
-          "price": 185.75,
-          "changePercent": -3.24
+          "price": 179.49,
+          "changePercent": -3.37
         },
         {
           "name": "FMG",
-          "price": 22.6,
-          "changePercent": -1.7
+          "price": 21.97,
+          "changePercent": -2.79
         },
         {
           "name": "MIN",
-          "price": 64.77,
-          "changePercent": -7.68
+          "price": 63.9,
+          "changePercent": -1.34
         }
       ]
     },
     {
       "name": "Health Care",
-      "changePercent": 1.01,
+      "changePercent": -1.4,
       "stocks": [
         {
           "name": "CSL",
-          "price": 97.96,
-          "changePercent": 0.72
+          "price": 96.56,
+          "changePercent": -1.43
         },
         {
           "name": "COH",
-          "price": 96.33,
-          "changePercent": 0.95
+          "price": 94.05,
+          "changePercent": -2.37
         },
         {
           "name": "RMD",
-          "price": 28.33,
-          "changePercent": 1.18
+          "price": 28.19,
+          "changePercent": -0.51
         },
         {
           "name": "SHL",
-          "price": 18.73,
-          "changePercent": 1.19
+          "price": 18.49,
+          "changePercent": -1.31
         }
       ]
     },
     {
       "name": "Consumer Discretionary",
-      "changePercent": 0.25,
+      "changePercent": -0.78,
       "stocks": [
         {
           "name": "WES",
-          "price": 71.67,
-          "changePercent": -0.08
+          "price": 71.2,
+          "changePercent": -0.66
         },
         {
           "name": "HVN",
-          "price": 4.4,
-          "changePercent": 0.69
+          "price": 4.37,
+          "changePercent": -0.8
         },
         {
           "name": "JBH",
-          "price": 71.33,
-          "changePercent": 0.1
+          "price": 70.69,
+          "changePercent": -0.9
         },
         {
           "name": "ALL",
-          "price": 51.53,
-          "changePercent": 0.27
+          "price": 51.15,
+          "changePercent": -0.75
         }
       ]
     },
     {
       "name": "Industrials",
-      "changePercent": 0.18,
+      "changePercent": -5.24,
       "stocks": [
         {
           "name": "TCL",
-          "price": 14.6,
-          "changePercent": 0
+          "price": 14.41,
+          "changePercent": -1.3
         },
         {
           "name": "BXB",
-          "price": 22.1,
-          "changePercent": 1.28
+          "price": 18.03,
+          "changePercent": -18.42
         },
         {
           "name": "SYD",
@@ -382,164 +362,164 @@
         },
         {
           "name": "QAN",
-          "price": 8.54,
-          "changePercent": -0.58
+          "price": 8.44,
+          "changePercent": -1.23
         }
       ]
     },
     {
       "name": "Real Estate",
-      "changePercent": 0.48,
+      "changePercent": -2.73,
       "stocks": [
         {
           "name": "GMG",
-          "price": 31.38,
-          "changePercent": -0.06
+          "price": 30.45,
+          "changePercent": -2.96
         },
         {
           "name": "SGP",
-          "price": 3.97,
-          "changePercent": 0.25
+          "price": 3.85,
+          "changePercent": -3.02
         },
         {
           "name": "GPT",
-          "price": 4.75,
-          "changePercent": 0.85
+          "price": 4.68,
+          "changePercent": -1.47
         },
         {
           "name": "MGR",
-          "price": 1.73,
-          "changePercent": 0.88
+          "price": 1.67,
+          "changePercent": -3.48
         }
       ]
     },
     {
       "name": "Consumer Staples",
-      "changePercent": 1,
+      "changePercent": -1.37,
       "stocks": [
         {
           "name": "WOW",
-          "price": 32.98,
-          "changePercent": 1.35
+          "price": 32.92,
+          "changePercent": -0.18
         },
         {
           "name": "COL",
-          "price": 20.81,
-          "changePercent": 0.73
+          "price": 20.9,
+          "changePercent": 0.41
         },
         {
           "name": "TWE",
-          "price": 4.25,
-          "changePercent": 1.92
+          "price": 4.2,
+          "changePercent": -1.29
         },
         {
           "name": "A2M",
-          "price": 6.13,
-          "changePercent": 0
+          "price": 5.86,
+          "changePercent": -4.4
         }
       ]
     },
     {
       "name": "Energy",
-      "changePercent": 1.67,
+      "changePercent": 1.27,
       "stocks": [
         {
           "name": "WDS",
-          "price": 31.25,
-          "changePercent": 2.06
+          "price": 32.1,
+          "changePercent": 2.7
         },
         {
           "name": "STO",
-          "price": 7.88,
-          "changePercent": 2.74
+          "price": 8.07,
+          "changePercent": 2.47
         },
         {
           "name": "ORG",
-          "price": 11.49,
-          "changePercent": -1.37
+          "price": 11.48,
+          "changePercent": -0.13
         },
         {
           "name": "WHC",
-          "price": 7.97,
-          "changePercent": 3.24
+          "price": 7.98,
+          "changePercent": 0.06
         }
       ]
     },
     {
       "name": "Information Technology",
-      "changePercent": 4.43,
+      "changePercent": -0.09,
       "stocks": [
         {
           "name": "XRO",
-          "price": 79.67,
-          "changePercent": 8.13
+          "price": 78.42,
+          "changePercent": -1.57
         },
         {
           "name": "WTC",
-          "price": 38.01,
-          "changePercent": 3.65
+          "price": 38.2,
+          "changePercent": 0.5
         },
         {
           "name": "CPU",
-          "price": 31.07,
-          "changePercent": 3.43
+          "price": 31.88,
+          "changePercent": 2.61
         },
         {
           "name": "APX",
-          "price": 1.23,
-          "changePercent": 2.51
+          "price": 1.2,
+          "changePercent": -1.88
         }
       ]
     },
     {
       "name": "Communication Services",
-      "changePercent": 0.1,
+      "changePercent": 0.11,
       "stocks": [
         {
           "name": "TLS",
           "price": 5.38,
-          "changePercent": 1.13
+          "changePercent": 0
         },
         {
           "name": "REA",
-          "price": 162.01,
-          "changePercent": 0.48
+          "price": 164.54,
+          "changePercent": 1.56
         },
         {
           "name": "CAR",
-          "price": 26.11,
-          "changePercent": -0.23
+          "price": 25.9,
+          "changePercent": -0.8
         },
         {
           "name": "NWS",
-          "price": 41.83,
-          "changePercent": -0.97
+          "price": 41.69,
+          "changePercent": -0.33
         }
       ]
     },
     {
       "name": "Utilities",
-      "changePercent": -1.19,
+      "changePercent": -1.23,
       "stocks": [
         {
           "name": "AGL",
-          "price": 9.09,
-          "changePercent": -2.88
+          "price": 8.99,
+          "changePercent": -1.16
         },
         {
           "name": "APA",
-          "price": 10.56,
-          "changePercent": -0.94
+          "price": 10.24,
+          "changePercent": -3.03
         },
         {
           "name": "ORG",
-          "price": 11.49,
-          "changePercent": -1.37
+          "price": 11.48,
+          "changePercent": -0.13
         },
         {
           "name": "MEZ",
-          "price": 4.83,
-          "changePercent": 0.42
+          "price": 4.8,
+          "changePercent": -0.62
         }
       ]
     }
@@ -846,87 +826,87 @@
   ],
   "news": [
     {
-      "title": "Live: Daley's slip of the tongue as he names NSW debutants for Origin I",
+      "title": "Making sense of Reece Walsh's State of Origin omission",
+      "link": "https://www.abc.net.au/news/2026-05-18/reece-walsh-state-of-origin-omission-billy-slater/106691944",
+      "snippet": "",
+      "pubDate": "Mon, 18 May 2026 04:42:18 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "TMK taps local LPG giant in new Mongolian gas-to-power deal",
+      "link": "https://www.smh.com.au/business/companies/tmk-taps-local-lpg-giant-in-new-mongolian-gas-to-power-deal-20260518-p5zyeb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "TMK Energy has partnered with Mongolia’s biggest LPG distributor, Dashvaanjil Group, to launch a 1MW gas-to-power project at its Gurvantes XXXV coal seam gas play.",
+      "pubDate": "Mon, 18 May 2026 14:24:25 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Horror MotoGP crash leaves rider with broken neck",
+      "link": "https://www.abc.net.au/news/2026-05-18/motogp-catalan-grand-prix-alex-marquez-broken-neck/106692508",
+      "snippet": "",
+      "pubDate": "Mon, 18 May 2026 03:53:56 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Chinese investors ordered to sell millions of shares in Australian miner",
+      "link": "https://www.smh.com.au/business/companies/chinese-investors-ordered-to-sell-millions-of-shares-in-australian-miner-20260223-p5o4rf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Six companies and individuals based in China, Hong Kong and the British Virgin Islands who dominate the investor base of rare earth miner Northern Minerals have been ordered by Treasurer Jim Chalmers to divest their shareholdings.",
+      "pubDate": "Mon, 18 May 2026 13:48:03 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Auric gets mine-to-mill firepower with new CEO",
+      "link": "https://www.smh.com.au/business/companies/auric-gets-mine-to-mill-firepower-with-new-ceo-20260518-p5zydh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Auric Mining has welcomed Gareth Solly as CEO and executive director, boosting its leadership as the company drives the Burbanks plant rebuild and prepares for a Munda gold restart.",
+      "pubDate": "Mon, 18 May 2026 13:43:15 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ASX losses accelerate as oil prices rattle markets; Elders tumbles",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-retreat-as-tech-stocks-rising-oil-prices-weigh-on-wall-street-20260518-p5zxy4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The Australian sharemarket has extended early losses after higher oil prices and growing inflation concerns sent a shiver through the bond market over the weekend.",
+      "pubDate": "Mon, 18 May 2026 13:21:20 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Viking gets nod for tungsten drilling blitz in Nevada",
+      "link": "https://www.smh.com.au/business/companies/viking-gets-nod-for-tungsten-drilling-blitz-in-nevada-20260518-p5zyay.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Viking Mines has secured federal US approval for an expansive 63-hole maiden drilling blitz at its historic Linka tungsten project in Nevada.",
+      "pubDate": "Mon, 18 May 2026 12:56:24 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Hindley climbs into podium contention, Giro 'not over' despite Vingegaard win",
+      "link": "https://www.abc.net.au/news/2026-05-18/jonas-vingegaard-second-giro-d-italia-stage-win/106691924",
+      "snippet": "",
+      "pubDate": "Mon, 18 May 2026 02:29:02 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Trump faces a reckoning as the markets start to wobble",
+      "link": "https://www.smh.com.au/business/markets/trump-faces-a-reckoning-as-the-markets-start-to-wobble-20260518-p5zy08.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The US president returned home from his trip to China without the main thing markets wanted.",
+      "pubDate": "Mon, 18 May 2026 11:59:22 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Payday Super is here. The businesses that thrive are the ones that prepare",
+      "link": "https://www.smh.com.au/business/small-business/payday-super-is-here-the-businesses-that-thrive-are-the-ones-that-prepare-20260506-p5zubh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "From July 1, super becomes a part of every pay run. Discover how this shift will ultimately simplify admin and help small businesses gain real-time control over their finances.",
+      "pubDate": "Mon, 18 May 2026 09:30:47 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "'Make it legal next time': Another blistering 100m for Aussie Nketia",
+      "link": "https://www.abc.net.au/news/2026-05-18/eddie-nketia-smashes-australian-all-conditions-100m-record-again/106691106",
+      "snippet": "",
+      "pubDate": "Sun, 17 May 2026 23:19:48 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "No Walsh for Queensland as Blues coach accidentally lists former Maroon",
       "link": "https://www.abc.net.au/news/2026-05-18/state-of-origin-teams-named-live-blog/106689518",
       "snippet": "",
       "pubDate": "Sun, 17 May 2026 21:08:16 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Late bogey costs Cameron Smith after PGA Championship surge",
-      "link": "https://www.abc.net.au/news/2026-05-18/cameron-smith-pga-championship-leaderboard-in-final-round/106690768",
-      "snippet": "",
-      "pubDate": "Sun, 17 May 2026 20:39:49 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "The banks’ rivers of gold are facing another blow",
-      "link": "https://www.smh.com.au/business/banking-and-finance/the-banks-rivers-of-gold-are-facing-another-blow-20260515-p5zxcc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "On top of a weakening economy and an energy crisis, banking giants now face a softer market in their most important type of lending: mortgages.",
-      "pubDate": "Mon, 18 May 2026 06:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX set to retreat as tech stocks, rising oil prices weigh on Wall Street",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-retreat-as-tech-stocks-rising-oil-prices-weigh-on-wall-street-20260518-p5zxy4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The US stock market fell from its records on Friday and joined a worldwide drop for stocks after higher oil prices sent a shiver through the bond market.",
-      "pubDate": "Mon, 18 May 2026 05:18:40 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "The dilemma Wallabies and All Blacks face when players head overseas",
-      "link": "https://www.abc.net.au/news/2026-05-18/australia-wallabies-new-zealand-all-blacks-super-rugby-pacific/106690066",
-      "snippet": "",
-      "pubDate": "Sun, 17 May 2026 19:17:00 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Steel mill becomes nation’s first to switch on mostly green power",
-      "link": "https://www.smh.com.au/business/companies/steel-mill-becomes-nation-s-first-to-switch-on-mostly-green-power-20260517-p5zxtt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "A plant on the edge of Melbourne has made a breakthrough in the long-running push to clean up the carbon-heavy manufacturing sector.",
-      "pubDate": "Mon, 18 May 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "‘Insane amount of trades’: Trump’s multimillion-dollar flurry astonishes Wall Street",
-      "link": "https://www.smh.com.au/business/markets/insane-amount-of-trades-trump-s-multi-million-dollar-flurry-astonishes-wall-street-20260517-p5zxt8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The president’s trading totals tens of millions of dollars and involves major companies that have dealings with his administration.",
-      "pubDate": "Sun, 17 May 2026 19:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Rousey stops Carano 17 seconds into their double comeback MMA bout",
-      "link": "https://www.abc.net.au/news/2026-05-17/ronda-rousey-gina-carano-mma-los-angeles-bout/106689718",
-      "snippet": "",
-      "pubDate": "Sun, 17 May 2026 04:49:45 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Airlines, advocates warn of bureaucratic maze for passenger complaints",
-      "link": "https://www.smh.com.au/business/consumer-affairs/airlines-advocates-warn-of-bureaucratic-maze-for-passenger-complaints-20260515-p5zx8k.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "New consumer protections to protect air travellers risk them getting stuck in a ‘referral roundabout’.",
-      "pubDate": "Sun, 17 May 2026 14:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Blues suffer Origin blow, Ponga will 'play anywhere' for Maroons",
-      "link": "https://www.abc.net.au/news/2026-05-17/nrl-magic-round-titans-knights-warriors-broncos-panthers-dragons/106669968",
-      "snippet": "",
-      "pubDate": "Sun, 17 May 2026 03:19:48 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Harley heroics lift Eagles to stunning upset win over Giants",
-      "link": "https://www.abc.net.au/news/2026-05-17/afl-r10-bombers-dockers-saints-tigers-eagles-giants-live-blog/106689516",
-      "snippet": "",
-      "pubDate": "Sun, 17 May 2026 02:24:43 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Cameron Smith springs to life at golf major after rough week",
-      "link": "https://www.abc.net.au/news/2026-05-17/cameron-smith-min-woo-lee-in-pga-championship-contention/106689354",
-      "snippet": "",
-      "pubDate": "Sun, 17 May 2026 01:16:02 +0000",
       "source": "ABC News"
     }
   ]
