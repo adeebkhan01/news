@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-18T20:07:53.499Z",
+  "fetchedAt": "2026-05-18T22:30:03.717Z",
   "asx200": {
     "value": 8505.3,
     "change": -441.6,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0,
-    "changePercent": 0.18,
+    "changePercent": 0.21,
     "previousClose": 0.72,
     "asOf": "2026-05-18",
     "history": [
@@ -177,6 +177,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-17",
+        "close": 0.71
+      },
+      {
         "date": "2026-05-18",
         "close": 0.72
       }
@@ -187,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4564.7,
-      "change": -292.9,
-      "changePercent": -6.03
+      "price": 4577.9,
+      "change": -279.7,
+      "changePercent": -5.76
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 77.82,
-      "change": -3.92,
-      "changePercent": -4.79
+      "price": 78.4,
+      "change": -3.34,
+      "changePercent": -4.08
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 101.65,
-      "change": 17.8,
-      "changePercent": 21.23
+      "price": 102.32,
+      "change": 18.47,
+      "changePercent": 22.03
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.33,
-      "change": 0.22,
-      "changePercent": 3.64
+      "price": 6.34,
+      "change": 0.23,
+      "changePercent": 3.82
     },
     {
       "name": "BHP Group",
@@ -822,17 +826,38 @@
   ],
   "news": [
     {
-      "title": "ASX set to rise, Wall Street mixed; Oil prices swing",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-mixed-oil-prices-swing-20260519-p5zyj3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Oil prices swung after a scare overnight where prices popped and then moderated, and the yo-yo moves kept stock markets worldwide unsettled.",
-      "pubDate": "Tue, 19 May 2026 05:17:51 +1000",
+      "title": "Boomers star Joe Ingles thrilled to come 'home' in coup NBL signing",
+      "link": "https://www.abc.net.au/news/2026-05-19/basketball-joe-ingles-signs-nbl-melbourne-united/106693056",
+      "snippet": "",
+      "pubDate": "Mon, 18 May 2026 22:00:33 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Tomic edges closer to French Open amid Aussie qualifying nightmare",
+      "link": "https://www.abc.net.au/news/2026-05-19/tennis-bernard-tomic-wins-french-open-qualifier/106695290",
+      "snippet": "",
+      "pubDate": "Mon, 18 May 2026 21:50:02 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "‘Hypocrite’: Elon Musk loses lawsuit against OpenAI",
+      "link": "https://www.smh.com.au/business/companies/elon-musk-loses-lawsuit-against-openai-20260519-p5zyj1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Elon Musk has lost his landmark case over OpenAI, with a jury finding the world’s richest person filed his claim too late.",
+      "pubDate": "Tue, 19 May 2026 07:39:40 +1000",
       "source": "SMH Business"
     },
     {
-      "title": "Elon Musk loses lawsuit against OpenAI",
-      "link": "https://www.smh.com.au/business/companies/elon-musk-loses-lawsuit-against-openai-20260519-p5zyj1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Elon Musk has lost his landmark case over OpenAI, with a jury finding the world’s richest person filed his claim too late.",
-      "pubDate": "Tue, 19 May 2026 05:03:13 +1000",
+      "title": "Cummins stars as Sunrisers Hyderabad book spot in IPL playoffs",
+      "link": "https://www.abc.net.au/news/2026-05-19/cricket-pat-cummins-stars-sunrisers-hyderabad-ipl-playoffs/106695208",
+      "snippet": "",
+      "pubDate": "Mon, 18 May 2026 20:53:49 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to rebound, Wall Street scuffles on war uncertainty; Oil prices swing",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-mixed-oil-prices-swing-20260519-p5zyj3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Oil prices swung after a scare overnight where prices popped and then moderated, and the yo-yo moves kept stock markets worldwide unsettled.",
+      "pubDate": "Tue, 19 May 2026 06:41:35 +1000",
       "source": "SMH Business"
     },
     {
@@ -882,27 +907,6 @@
       "link": "https://www.smh.com.au/business/companies/aguia-gets-green-light-kicks-off-brazilian-phosphate-mine-20260518-p5zyhj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Aguia gets green light, kicks off Brazilian phosphate mine",
       "pubDate": "Mon, 18 May 2026 18:25:22 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Scott Pendlebury not looking too far into future as record looms",
-      "link": "https://www.abc.net.au/news/2026-05-18/scott-pendlebury-not-looking-into-the-future-as-afl-games-record/106693942",
-      "snippet": "",
-      "pubDate": "Mon, 18 May 2026 08:13:21 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX falls to seven-week low as oil prices rattle markets",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-retreat-as-tech-stocks-rising-oil-prices-weigh-on-wall-street-20260518-p5zxy4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket dropped after higher oil prices and growing inflation concerns sent a shiver through the bond market over the weekend.",
-      "pubDate": "Mon, 18 May 2026 18:03:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Ex-transport minister, directors allegedly kept market in the dark about airline’s dire straits",
-      "link": "https://www.smh.com.au/business/companies/ex-transport-minister-directors-allegedly-kept-market-in-the-dark-about-airline-s-dire-straits-20260518-p5zy4r.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Rex told the market in early 2023 it expected to make a profit that financial year, then announced a major loss. By mid-2024, it had collapsed into administration.",
-      "pubDate": "Mon, 18 May 2026 17:24:38 +1000",
       "source": "SMH Business"
     }
   ]
