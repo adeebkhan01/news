@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-18T10:13:27.868Z",
-  "summary": "Australia faces a volatile day of hard news and policy debates as violence and crime dominate the headlines, with incidents ranging from carjackings and assaults to a child in a coma following a contaminated cake dust recall. Weather disruptions are hitting south-east Queensland while authorities grapple with enforcement challenges including a backlog of seized illegal cigarettes and industrial disputes over alleged corporate misconduct in transport and mining sectors. The government continues promoting its budget amid broader debates on contentious issues like tobacco tax cuts and inheritance tax claims, while Western Australia's mining sector shows robust activity with multiple gold and rare earth drilling operations advancing. Beyond domestic concerns, geopolitical tensions with Iran and the broader energy security debate underscore Australia's ongoing vulnerability to global conflicts despite domestic fossil fuel production.",
+  "fetchedAt": "2026-05-18T15:42:01.763Z",
+  "summary": "Australia is facing emerging public health concerns as experts warn of rising infectious disease threats including hantavirus and Ebola, while a tragic domestic violence incident has claimed the lives of a woman and two children. The political landscape shows the Liberal Party grappling with internal direction, while globally, Trump administration policies on weather data, immigration and trade are creating ripple effects for Australian interests, with potential tax losses and inflation concerns. Several infrastructure and community issues dominate locally, from aged care breaches resulting in substantial fines to transport challenges in Queensland and housing pressures affecting regional rental markets.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,146 @@
     }
   ],
   "articles": [
+    {
+      "title": "Returning to the centre may be the only way the walking dead Liberals can rise again",
+      "link": "https://www.theguardian.com/australia-news/2026/may/19/liberals-one-nation-defections-return-to-centre-analysis-ntwnfb",
+      "desc": "<p>After the weekend defections to One Nation, and with more possibly to come, the task for remaining party loyalists is to regroup and reorient</p><ul><li><p>Get our <a href=\"https://www.theguardian.",
+      "pubDate": "Mon, 18 May 2026 15:00:05 GMT",
+      "img": "https://i.guim.co.uk/img/media/3919551f75b37377b0b936e1cb2471e5a0076cad/0_0_5000_4000/master/5000.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Infectious diseases such as hantavirus and Ebola becoming more frequent and damaging, say experts",
+      "link": "https://www.theguardian.com/global-development/2026/may/18/infectious-diseases-hantavirus-ebola-more-frequent-damaging-pandemic-outbreak",
+      "desc": "<p>Pandemic report warns of growing global threat as health teams in Africa move to contain Ebola outbreak </p><p>The world is becoming less resilient to outbreaks of infectious diseases, experts have",
+      "pubDate": "Mon, 18 May 2026 14:18:42 GMT",
+      "img": "https://i.guim.co.uk/img/media/f48a9ffe4e7999fd038c9240bf52a0403d1b8cf4/314_0_2994_2395/master/2994.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Woman and two children killed in ‘particularly violent’ alleged domestic violence attack",
+      "link": "https://www.smh.com.au/national/nsw/three-people-found-dead-in-south-west-sydney-home-20260518-p5zyic.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A 48-year-old man was arrested at his Campbelltown home after calling Triple Zero.",
+      "pubDate": "Tue, 19 May 2026 00:02:20 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.3002%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_126/t_crop_custom/q_86%2Cf_auto/7304a2f69c361890a5b232f2808676d22816f90a",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Signs of ‘feeding’ ritual at dingo burial site shed new light on bond between First Nations people and canines",
+      "link": "https://www.theguardian.com/science/2026/may/19/dingo-burial-site-first-nations-people-relationship-to-animals",
+      "desc": "<p>Never documented archaeologically before, evidence points to First Nations people caring for and nursing the animal</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/email-newsletters?CMP=",
+      "pubDate": "Mon, 18 May 2026 14:01:49 GMT",
+      "img": "https://i.guim.co.uk/img/media/7fef4223e3684427188374586c52fe5486fdbe2c/126_0_3780_3024/master/3780.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Superquiz, Tuesday, May 19, 2026",
+      "link": "https://www.smh.com.au/national/superquiz-tuesday-may-19-2026-20260518-p5zyam.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Trivia buffs, test your knowledge with today’s interactive superquiz.",
+      "pubDate": "Mon, 18 May 2026 23:59:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.9805555555555555%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_242/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/24d8c9ba98147348592ea2ed292e48328b593d46",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Trump cuts to weather data could make forecasts less reliable, warn experts",
+      "link": "https://www.theguardian.com/us-news/2026/may/18/trump-cuts-ai-weather-prediction-forecasts",
+      "desc": "<p>Use of AI is a valuable tool for weather prediction but only when it’s trained with ample data, experts say</p><p>As the US prepares for hurricane season and a summer of record-breaking heat, exper",
+      "pubDate": "Mon, 18 May 2026 12:00:46 GMT",
+      "img": "https://i.guim.co.uk/img/media/2445be40575ff2f0236aa36f0f8b697decae86ac/80_0_3333_2667/master/3333.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Brisbane nightclub Fridays Riverside to close doors after 40 years",
+      "link": "https://www.smh.com.au/national/queensland/brisbane-nightclub-fridays-riverside-to-close-doors-after-40-years-20260518-p5zyih.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The longstanding venue has revealed it is closing after cementing itself as an Eagle Street institution for several decades.",
+      "pubDate": "Mon, 18 May 2026 21:34:44 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.235235216979454%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_107/t_crop_custom/q_86%2Cf_auto/83c9b4d806454897a01ae368d0fe4ba21875ae1f1f2f93dcb7e4d702f49c9a9d",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Magic mushrooms could be effective treatment for cocaine addiction, study shows",
+      "link": "https://www.theguardian.com/science/2026/may/18/magic-mushrooms-treatment-cocaine-addiction-study",
+      "desc": "<p>Participants who got single dose of psilocybin were more likely to abstain from cocaine than those who got placebo</p><p>Results from a new clinical trial show that a single dose of psilocybin coul",
+      "pubDate": "Mon, 18 May 2026 11:00:45 GMT",
+      "img": "https://i.guim.co.uk/img/media/07ed81f052900813de31b396d5a8bf0a1f4d98b5/409_0_3333_2667/master/3333.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Woodies go west",
+      "link": "https://www.smh.com.au/national/nsw/woodies-go-west-20260518-p5zxzv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "And learn how to lubricate their lineout.",
+      "pubDate": "Mon, 18 May 2026 21:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.6556000000000002%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_47/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/d51781c5614995563bbf4ce4a8b06344486e0d25",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Ex-deputy premier and chief spinner reunite around regional water cooler",
+      "link": "https://www.smh.com.au/national/queensland/ex-deputy-premier-and-chief-spinner-reunite-around-regional-water-cooler-20260513-p5zw9j.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "This week in our Queensland public sector column, Public Circus circles Sunwater and CS Energy, a council U-turn on e-bikes, arts funding funny business, and more.",
+      "pubDate": "Mon, 18 May 2026 20:30:18 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/815df0e65f49e5bb34709fd96a70a021b1f01faf",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Plans to fix dangerous ‘weak link’ on cycling route revealed",
+      "link": "https://www.smh.com.au/national/queensland/plans-to-fix-dangerous-weak-link-on-cycling-route-revealed-20260518-p5zyg2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "It’s the road that Brisbane cyclists say they are least comfortable riding along. Now it’s set to be overhauled, with the council asking for feedback on two bikeway options.",
+      "pubDate": "Mon, 18 May 2026 20:30:04 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5171%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_70/t_crop_custom/q_86%2Cf_auto/cff5e1e08027d56242a8595943703875900a139c1b6c2dc403bd8a88965df92c",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "The WA towns where rentals are rare – unless you’re on holiday",
+      "link": "https://www.smh.com.au/national/western-australia/the-wa-towns-where-rentals-are-rare-unless-you-re-on-holiday-20260518-p5zyh1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A surge in short-term accommodation such as Airbnbs has left some West Australian towns and suburbs without a rental in sight.",
+      "pubDate": "Mon, 18 May 2026 20:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5519%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_45/t_crop_custom/q_86%2Cf_auto/67ab20542f36e6ee6828f9b87dcb8ba4d95b9f1d",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Trump’s immigration crackdown could cost up to $479bn in lost taxes over 10 years",
+      "link": "https://www.theguardian.com/business/2026/may/18/trump-immigration-crackdown-lost-taxes-ice",
+      "desc": "<p>Proposed IRS data sharing with immigration authorities and ICE raids have made filing risky for those who are undocumented</p><p>The Trump administration’s immigration crackdown could cause the US ",
+      "pubDate": "Mon, 18 May 2026 10:00:56 GMT",
+      "img": "https://i.guim.co.uk/img/media/58a9d29cb2e615f9616af2b61612d05383485965/418_0_4164_3333/master/4164.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "‘You can bet on it’: Utah lawmakers form united front in push to ban prediction markets",
+      "link": "https://www.theguardian.com/us-news/2026/may/18/you-can-bet-on-it-utah-lawmakers-form-united-front-in-push-to-ban-prediction-markets",
+      "desc": "<p>Utah’s heavily Mormon population is largely opposed to all gambling, even on financial exchange platforms</p><p><a href=\"https://www.theguardian.com/us-news/utah\">Utah</a> is home to some of the st",
+      "pubDate": "Mon, 18 May 2026 10:00:55 GMT",
+      "img": "https://i.guim.co.uk/img/media/2e3ebdfc403854d42f8ca4b03090221062f02703/683_0_6827_5464/master/6827.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
     {
       "title": "The Iran war reminds us: we’ll never be energy-independent with fossil fuels | Lloyd Doggett and Michael Shank",
       "link": "https://www.theguardian.com/commentisfree/2026/may/18/iran-war-energy-independence-fossil-fuels",
@@ -208,6 +348,16 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Oil prices rise and bonds wobble as Iran war stokes inflation fears",
+      "link": "https://www.theguardian.com/business/2026/may/18/oil-prices-rise-bonds-iran-war-peace-talks-inflation-trump-crude-gilts-starmer",
+      "desc": "<p>Trump warning over peace talks drives up crude price as UK gilts hit by uncertainty over Starmer leadership</p><ul><li><p><a href=\"https://www.theguardian.com/business/live/2026/may/18/bond-market-",
+      "pubDate": "Mon, 18 May 2026 08:55:24 GMT",
+      "img": "https://i.guim.co.uk/img/media/9be3fd0a77938349a59f7ee04cc1de2632111c9a/823_0_5020_4016/master/5020.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
     },
     {
       "title": "Man who stomped on off-duty cop’s head spared jail time",
@@ -1098,6 +1248,16 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘It was like a mosh pit’: Swatch closes stores as watch launch causes crowding and scuffles",
+      "link": "https://www.theguardian.com/world/2026/may/17/swatch-royal-pop-launch-chaos-closures",
+      "desc": "<p>Paris police used teargas on Saturday and UK shops stayed shut on Sunday after rush for Royal Pop timepieces</p><p>Swatch closed its stores in the UK and in some cities in Europe and the US at the ",
+      "pubDate": "Sun, 17 May 2026 10:50:55 GMT",
+      "img": "https://i.guim.co.uk/img/media/62795d723c9c0cc0b4cc472adada9284fce53451/753_0_4615_3692/master/4615.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
     },
     {
       "title": "Tributes flow for father killed by shark in WA",
@@ -2188,6 +2348,16 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Stateside with Kai and Carter: Stacey Abrams on why gutting of the US Voting Rights Act is ‘evil’ – podcast",
+      "link": "https://www.theguardian.com/science/audio/2026/may/16/stateside-with-kai-and-carter-stacey-abrams-us-voting-rights-act-podcast",
+      "desc": "<p>The US supreme court dealt a devastating blow to the 1965 Voting Rights Act when it ruled in Louisiana v Callais in April that states cannot consider race in redistricting. Southern states from Ten",
+      "pubDate": "Sat, 16 May 2026 04:00:02 GMT",
+      "img": "https://i.guim.co.uk/img/media/f44b6dbf1cb785ab80bbd1aebacf927425990b49/0_0_3750_3000/master/3750.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
     },
     {
       "title": "Declare climate crisis a global public health emergency, experts tell WHO",
