@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-18T15:59:38.457Z",
+  "fetchedAt": "2026-05-18T20:07:53.499Z",
   "asx200": {
     "value": 8505.3,
     "change": -441.6,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0,
-    "changePercent": 0.04,
+    "changePercent": 0.18,
     "previousClose": 0.72,
     "asOf": "2026-05-18",
     "history": [
@@ -187,33 +187,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4546.7,
-      "change": -310.9,
-      "changePercent": -6.4
+      "price": 4564.7,
+      "change": -292.9,
+      "changePercent": -6.03
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 77.15,
-      "change": -4.59,
-      "changePercent": -5.61
+      "price": 77.82,
+      "change": -3.92,
+      "changePercent": -4.79
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 102.76,
-      "change": 18.91,
-      "changePercent": 22.55
+      "price": 101.65,
+      "change": 17.8,
+      "changePercent": 21.23
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.31,
-      "change": 0.2,
-      "changePercent": 3.33
+      "price": 6.33,
+      "change": 0.22,
+      "changePercent": 3.64
     },
     {
       "name": "BHP Group",
@@ -822,6 +822,34 @@
   ],
   "news": [
     {
+      "title": "ASX set to rise, Wall Street mixed; Oil prices swing",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-mixed-oil-prices-swing-20260519-p5zyj3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Oil prices swung after a scare overnight where prices popped and then moderated, and the yo-yo moves kept stock markets worldwide unsettled.",
+      "pubDate": "Tue, 19 May 2026 05:17:51 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Elon Musk loses lawsuit against OpenAI",
+      "link": "https://www.smh.com.au/business/companies/elon-musk-loses-lawsuit-against-openai-20260519-p5zyj1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Elon Musk has lost his landmark case over OpenAI, with a jury finding the world’s richest person filed his claim too late.",
+      "pubDate": "Tue, 19 May 2026 05:03:13 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ABC, SBS reject federal government, special envoy’s definition of antisemitism",
+      "link": "https://www.smh.com.au/business/companies/abc-sbs-reject-federal-government-special-envoy-s-definition-of-antisemitism-20260518-p5zy2i.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The ABC warned that examples associated with the definition could “risk conflating legitimate political and policy critique with antisemitism”.",
+      "pubDate": "Tue, 19 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Prepare for an AI jobs apocalypse",
+      "link": "https://www.smh.com.au/business/the-economy/prepare-for-an-ai-jobs-apocalypse-20260518-p5zyem.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Given how fast artificial intelligence is improving, it would be rash to dismiss fears of widespread job destruction. Governments should lay a safety net.",
+      "pubDate": "Tue, 19 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "How netball's 'super' veteran left retirement to break 12-year record",
       "link": "https://www.abc.net.au/news/2026-05-18/2026-super-netball-round-up-round10-aiken-george-games-record/106694016",
       "snippet": "",
@@ -875,34 +903,6 @@
       "link": "https://www.smh.com.au/business/companies/ex-transport-minister-directors-allegedly-kept-market-in-the-dark-about-airline-s-dire-straits-20260518-p5zy4r.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Rex told the market in early 2023 it expected to make a profit that financial year, then announced a major loss. By mid-2024, it had collapsed into administration.",
       "pubDate": "Mon, 18 May 2026 17:24:38 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Critica lifts WA mixed rare earth oxide to 97% purity",
-      "link": "https://www.smh.com.au/business/companies/critica-lifts-wa-mixed-rare-earth-oxide-to-97-percent-purity-20260518-p5zygp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Critica Ltd has produced a mixed rare earth oxide grading 97.1 per cent TREO, with strong TREO and magnet rare earth oxide recoveries from WA’s Mid West",
-      "pubDate": "Mon, 18 May 2026 17:02:32 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "King River targets forgotten WA goldfield riches",
-      "link": "https://www.smh.com.au/business/companies/king-river-targets-forgotten-wa-goldfield-riches-20260518-p5zygf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "King River Resources’ LiDAR survey has uncovered a massive gap between recorded mining and actual excavation at its WA Mindoolah gold project.",
-      "pubDate": "Mon, 18 May 2026 16:41:44 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Mark Latham’s ex-partner denies insider trading tips from billionaire Richard White",
-      "link": "https://www.smh.com.au/business/companies/mark-latham-s-ex-partner-denies-insider-trading-tips-from-billionaire-richard-white-20260518-p5zydw.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Nathalie Matthews, former partner of NSW MP Mark Latham has refuted his claims that the WiseTech founder gave her insider trading tips and a $145,000 payment.",
-      "pubDate": "Mon, 18 May 2026 16:17:22 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Kaiser targets untapped reefs beneath old Victorian goldfield",
-      "link": "https://www.smh.com.au/business/companies/kaiser-targets-untapped-reefs-beneath-old-victorian-goldfield-20260518-p5zyft.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Kaiser Reef has launched underground decline works at its Maldon gold mine to spearhead a fresh drilling blitz across multiple high-grade targets.",
-      "pubDate": "Mon, 18 May 2026 16:08:52 +1000",
       "source": "SMH Business"
     }
   ]
