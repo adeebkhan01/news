@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-19T03:58:42.960Z",
-  "summary": "Australia faces multiple crises today with severe weather dominating the news as intense rainfall breaks two-decade records across Queensland and northern NSW, causing flooding and evacuations including a dramatic overnight rescue of nearly fifty schoolchildren from mountains. The political landscape shows tension within the Coalition as a Liberal senator criticizes Angus Taylor's immigration stance, while regulatory action intensifies against illicit tobacco operators and deepfake technology comes under scrutiny following New Zealand's criminalization moves. Notable criminal investigations are underway with inquests beginning into police deaths and domestic violence murders, while regional broadcast services face disruption as WIN Television's deal with Network Ten lapses in South Australia and NSW. Economic developments include mining exploration advances for rare earths and copper, infrastructure spending to combat South Australian blackouts, and media industry movements with major radio personalities signing new deals.",
+  "fetchedAt": "2026-05-19T09:54:42.668Z",
+  "summary": "Australia faced multiple crises today across environmental, legal and economic fronts. Severe flooding swept NSW and Queensland, forcing school evacuations, while investigations intensified into serious crimes including alleged sexual assaults by a Queensland doctor and domestic violence cases. The government grappled with major policy challenges including a controversial $11 billion submarine fleet extension amid delayed AUKUS commitments and warnings from the Reserve Bank of recession risks tied to oil shocks. Corporate sectors from airlines to small businesses flagged cost pressures, while scientific advances in geothermal energy and pancreatic cancer treatment offered some positive developments.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,376 @@
     }
   ],
   "articles": [
+    {
+      "title": "The Brisbane creeks with 4000 microplastics in just a kilo of sludge",
+      "link": "https://www.smh.com.au/national/queensland/the-brisbane-creeks-with-4000-microplastics-in-just-a-kilo-of-sludge-20260519-p5zyrt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "QUT researchers sampled sediment from Kedron Brook, Enoggera and Bulimba creeks four times a year looking for plastics. They found a lot.",
+      "pubDate": "Tue, 19 May 2026 19:41:11 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.4258373205741623%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/9e42a39184a30fafbd050e111ce29d878463120a992a14b2715a84c44acf4f20",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Notorious serial killer unmasked as suppression order lifted",
+      "link": "https://www.smh.com.au/national/notorious-serial-killer-unmasked-as-suppression-order-lifted-20260519-p5zyu1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The face of the killer responsible for one of the most notorious criminal cases in Australian history has been revealed to the public for the first time.&#xA;",
+      "pubDate": "Tue, 19 May 2026 19:36:58 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/3992cb9e4a8370549a6f0e363cde37b82b918c28",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Peter Hollingworth, former governor-general and Anglican archbishop, dies at 91",
+      "link": "https://www.smh.com.au/national/peter-hollingworth-former-governor-general-and-retired-anglican-bishop-dies-at-91-20260519-p5zytt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Australia’s 23rd governor-general resigned less than two years into the role, after pressure over his handling of child sex abuse complaints while Anglican archbishop of Brisbane.",
+      "pubDate": "Tue, 19 May 2026 19:36:07 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.3238%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_140/t_crop_custom/q_86%2Cf_auto/9c27fcdf0b1684e86db7638a776595110fd9253b",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Former Beauty and the Geek star faces court",
+      "link": "https://www.smh.com.au/national/former-beauty-and-the-geek-star-faces-court-20260519-p5zyu0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A former Beauty and the Geek star who is accused of murdering her partner before dismembering his body and setting it on fire has faced court.",
+      "pubDate": "Tue, 19 May 2026 19:35:48 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/6306940581a85c96d6ccfa5b5c5a7db3f4829b48",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "The $1 billion spent compensating universities for students who weren’t",
+      "link": "https://www.smh.com.au/national/the-1-billion-spent-compensating-universities-for-students-who-weren-t-20260507-p5zunw.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Search our table to see how much of the $1 billion compensation your university was given.",
+      "pubDate": "Tue, 19 May 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5174%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/84f2ec5a7a9444f9658baa1c467498055152aca1",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Australians made a pill to protect us from nuclear attack. We could lose it to the US",
+      "link": "https://www.smh.com.au/national/australians-made-a-pill-to-protect-us-from-nuclear-attack-we-could-lose-it-to-the-us-20260518-p5zy4o.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Extra funding for government science agencies has come at the cost of addressing a key weak spot for Australia science – keeping innovations and their economic benefits here.",
+      "pubDate": "Tue, 19 May 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5171%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_53/t_crop_custom/q_86%2Cf_auto/6155629b5a1dbc1a3a485cdcdfd446d794281ce696820628e5e689cfe5e5d79f",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "CFMEU scandal ‘semantics’ further proof of zero-tolerance furphy",
+      "link": "https://www.smh.com.au/national/victoria/cfmeu-scandal-semantics-further-proof-of-zero-tolerance-furphy-20260519-p5zync.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The idea that the state government has no tolerance for corruption is being demolished by a torrent of reporting.",
+      "pubDate": "Tue, 19 May 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.7313%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_69%2C$y_0/t_crop_custom/q_86%2Cf_auto/16f91928fc53261308fef78191d302ae5c5e59fb",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Sydney should make share e-bikes work this time around",
+      "link": "https://www.smh.com.au/national/nsw/sydney-should-make-share-e-bikes-work-this-time-around-20260519-p5zyov.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The popularity of dockless bike sharing is outpacing the ability of authorities to cope with the increase.",
+      "pubDate": "Tue, 19 May 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.3502%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_369/t_crop_custom/q_86%2Cf_auto/4f21ddd7c452de04e9667efaf5af605e25f1c75b",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "School students rescued from camp as deluge floods two states",
+      "link": "https://www.smh.com.au/national/school-students-rescued-from-camp-as-deluge-floods-two-states-20260519-p5zyty.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A group of school students were rescued from a flooded campground after a sudden deluge across south-east Queensland and northern NSW.",
+      "pubDate": "Tue, 19 May 2026 19:21:31 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/8e28602a24de0f6951bfb78bb205d8f54b33ed35",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Toddler out of hospital after cake decorating mishap",
+      "link": "https://www.smh.com.au/national/toddler-out-of-hospital-after-cake-decorating-mishap-20260519-p5zytv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A Gold Coast toddler who suffered a life-threatening reaction to a popular cake decorating dust is finally out of hospital.",
+      "pubDate": "Tue, 19 May 2026 19:10:45 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/1238a1b83c93efc90bd593cb1e836659fcd74899",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Queensland doctor allegedly sexually assaulted 15 women",
+      "link": "https://www.smh.com.au/national/queensland-doctor-allegedly-sexually-assaulted-15-women-20260519-p5zytu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A Queensland man has been charged with alleged historical sexual assaults of 15 women while working as a doctor at a private health centre more than 10 years ago.",
+      "pubDate": "Tue, 19 May 2026 19:09:56 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/6675913760c251ab1ef1e4c2727e0fdf51223b98",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Contaminated booze that killed teens found in Australian liquor stores",
+      "link": "https://www.smh.com.au/national/contaminated-booze-that-killed-teens-found-in-australian-liquor-stores-20260519-p5zytr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The father of a young woman who died after drinking alcohol laced with methanol in Laos has issued a warning after traces of the deadly substance were found in Australian bottle shops.",
+      "pubDate": "Tue, 19 May 2026 19:00:02 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/38bb603cc2bd4810e2a7b93ee04224e57f9efe8b",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "These students finally found education that worked for them. Now their program is ending",
+      "link": "https://www.smh.com.au/national/victoria/these-students-finally-found-education-that-worked-for-them-now-their-program-is-ending-20260515-p5zxdj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A Montessori program at Templestowe College that has run since 2012 is being cut, which has upset students and parents.",
+      "pubDate": "Tue, 19 May 2026 19:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.4403%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_255%2C$y_189/t_crop_custom/q_86%2Cf_auto/82e8221b57b799c64f5dc015aa0ff6e57555bf1b",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Definition of antisemitism is the starting point for getting rid of it",
+      "link": "https://www.smh.com.au/national/nsw/definition-of-antisemitism-is-the-starting-point-for-getting-rid-of-it-20260519-p5zyks.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The view that criticism of Israel is antisemitic undermines efforts to rid society of this prejudice.",
+      "pubDate": "Tue, 19 May 2026 18:42:09 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2904%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/b6efe93e9a30be7db776dbfe67221dd4f19fa1cf",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Notorious Australian serial killer unmasked for the first time",
+      "link": "https://www.smh.com.au/national/notorious-australian-serial-killer-unmasked-for-the-first-time-20260519-p5zytp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The face of the killer responsible for one of the most notorious criminal cases in Australian history has been revealed to the public for the first time since the 1998 murders.",
+      "pubDate": "Tue, 19 May 2026 18:40:53 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/59321e04d20b9f909135d8c6bad1e2ed4ebd9445",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Wild weather belts NSW and Queensland",
+      "link": "https://www.smh.com.au/national/wild-weather-belts-nsw-and-queensland-20260519-p5zyto.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A weather system straddling NSW and Queensland has dumped a month's worth of rain in a single day.",
+      "pubDate": "Tue, 19 May 2026 18:40:52 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/7b495cabf7e99c23ca56c8efe8353de17ea8cd45",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Amplia takes aim at billion-dollar pancreatic cancer drug market",
+      "link": "https://www.smh.com.au/business/companies/amplia-takes-aim-at-billion-dollar-pancreatic-cancer-drug-market-20260519-p5zytl.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "Amplia Therapeutics has launched a pivotal registration-enabling trial of narmafotinib for pancreatic cancer, testing better efficacy with daily dosing.",
+      "pubDate": "Tue, 19 May 2026 18:36:09 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.7354%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/be5c33c3dae4e3f948fcf6eb7733608be16583ce606726441822c0187fdbd491",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Small businesses fear budget changes will take profits",
+      "link": "https://www.smh.com.au/national/small-businesses-fear-budget-changes-will-take-profits-20260519-p5zytn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Start-up founders are concerned capital gains tax changes will take their profits and stifle future innovation.",
+      "pubDate": "Tue, 19 May 2026 18:35:26 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/13094c9d7c638a7aabc002791ab443fba85da1f2",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Accused domestic violence killer was full-time carer for slain boys",
+      "link": "https://www.smh.com.au/national/accused-domestic-violence-killer-was-full-time-carer-for-slain-boys-20260519-p5zyp7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A father charged with the murder of his partner and their two children in a Sydney home was the full-time carer for his sons, it's been revealed.",
+      "pubDate": "Tue, 19 May 2026 18:35:23 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/bdd625d2dae152dc4a9b3e4aaa422ba4a6736311",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Pocock urges CGT changes as Albanese laughs off AI meme campaign",
+      "link": "https://www.theguardian.com/australia-news/2026/may/19/australia-federal-budget-responses-albanese-ai-memes-david-pocock-warning",
+      "desc": "<p>Independent senator warns budget reform could drive tech investment offshore, as PM thanks startups for ‘very flattering’ images</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/email-new",
+      "pubDate": "Tue, 19 May 2026 08:23:33 GMT",
+      "img": "https://i.guim.co.uk/img/media/bc5d892db4a82e2e8effccfcc801ebb0311a8180/0_103_1046_837/master/1046.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Virgin Australia cuts corporate staff as costs spiral for airlines",
+      "link": "https://www.smh.com.au/business/workplace/virgin-australia-cuts-corporate-staff-as-costs-spiral-for-airlines-20260519-p5zyrn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "The job cuts come as the aviation industry grapples with higher jet fuel costs caused by the Middle East conflict.",
+      "pubDate": "Tue, 19 May 2026 17:50:03 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.14914271236125856%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/e9d9f9e9d58cbab47c7889eb40225ea3fd3f3143",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Gas giants’ $11.2m ad blitz before government killed off windfall profit tax idea",
+      "link": "https://www.smh.com.au/business/companies/gas-giants-11-2m-ad-blitz-before-government-killed-off-windfall-profit-tax-idea-20260519-p5zyn7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "The industry increased its spending by about 50 per cent from the year before as it battled a major tax change that could have cost it billions.",
+      "pubDate": "Tue, 19 May 2026 17:24:32 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2648%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_110/t_crop_custom/q_86%2Cf_auto/949a273976a65c49a59e43128c143155b50ec806",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘It’s not too late’: Judge implores agreement in rugby legal scrum",
+      "link": "https://www.smh.com.au/national/victoria/it-s-not-too-late-judge-implores-agreement-in-rugby-legal-scrum-20260519-p5zyku.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The second day of the lawsuit by the Melbourne Rebels against Rugby Australia began with the judge warning both sides that the trial would be costly and could harm reputations.",
+      "pubDate": "Tue, 19 May 2026 17:24:19 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5555%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_7%2C$y_0/t_crop_custom/q_86%2Cf_auto/898cf9189fea85f4433ca6f92864d1574a8ec3e5",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Planned upgrades to ageing submarine fleet scaled back",
+      "link": "https://www.abc.net.au/news/2026-05-19/planned-upgrades-to-collins-class-submarines-scaled-back/106698460",
+      "desc": "A massive program of upgrades to Australia's aging fleet of Collins Class submarines, aimed at keeping them in the water a decade longer, is being scaled back.",
+      "pubDate": "Tue, 19 May 2026 07:17:48 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/aa1a771be4fa3b62a762663496f34a14?impolicy=wcms_crop_resize&amp;cropH=2400&amp;cropW=1800&amp;xPos=1499&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Elon Musk sued OpenAI and lost. But the core question of the case remains unanswered",
+      "link": "https://theconversation.com/elon-musk-sued-openai-and-lost-but-the-core-question-of-the-case-remains-unanswered-283256",
+      "desc": "OpenAI now has a clear path to take its next big step in the AI race.",
+      "pubDate": "2026-05-19T06:34:23Z",
+      "img": "https://images.theconversation.com/files/736602/original/file-20260518-57-55oxdi.jpg?ixlib=rb-4.1.0&amp;rect=0%2C243%2C5368%2C2684&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "Gas giant warns Labor on risk of ‘Argentina-style’ industry collapse",
+      "link": "https://www.smh.com.au/business/companies/gas-giant-warns-labor-on-risk-of-argentina-style-industry-collapse-20260519-p5zypi.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "One of Australia’s largest oil and gas companies says aggressive LNG export curbs could “kill investment” in critical future energy supplies.",
+      "pubDate": "Tue, 19 May 2026 16:04:10 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.265%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_105%2C$y_0/t_crop_custom/q_86%2Cf_auto/81727a1bbb85979078df53b12ce80d0e5330afdf",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "High levels of toxic ‘forever chemicals’ found off coast of southern England",
+      "link": "https://www.theguardian.com/environment/2026/may/19/toxic-pfa-forever-chemicals-channel-southern-england-solent",
+      "desc": "<p>Study of Channel finds levels of toxic Pfas in Solent at 13 times safe limits in some places, with much coming from treated sewage</p><p>Scientists have found high levels of toxic <a href=\"https://",
+      "pubDate": "Tue, 19 May 2026 06:00:04 GMT",
+      "img": "https://i.guim.co.uk/img/media/651da897183e80f87d43debe275697d10e5c9b3e/672_0_6142_4912/master/6142.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Australian taxpayers to pay $11bn to extend lifespan of ageing Collins-class submarines amid Aukus delay",
+      "link": "https://www.theguardian.com/world/2026/may/19/richard-males-11bn-collins-class-submarines-aukus-delay",
+      "desc": "<p>HMAS Farncomb had been due to be retired this year, but is now expected to operate until about 2036</p><ul><li><p><a href=\"https://www.theguardian.com/australia-news/live/2026/may/19/australia-news",
+      "pubDate": "Tue, 19 May 2026 05:42:50 GMT",
+      "img": "https://i.guim.co.uk/img/media/731b59af930dfd6dc28b74c4b072a805f078b837/295_0_2953_2362/master/2953.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Geothermal 2.0: how superhot rocks underground could help power Australia",
+      "link": "https://theconversation.com/geothermal-2-0-how-superhot-rocks-underground-could-help-power-australia-280277",
+      "desc": "Geothermal power used to be limited to volcanic areas. But advances in exploration and drilling technology mean huge new areas can be tapped.",
+      "pubDate": "2026-05-19T05:37:38Z",
+      "img": "https://images.theconversation.com/files/735727/original/file-20260514-57-ipngvz.jpg?ixlib=rb-4.1.0&amp;rect=0%2C210%2C2400%2C1200&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "RBA warns Australia risks slipping into a '1990s recession' as oil shock mounts",
+      "link": "https://www.abc.net.au/news/2026-05-19/reserve-bank-sarah-hunter-mentions-recession-inflation/106695446",
+      "desc": "The Reserve Bank is growing increasingly anxious about price pressures building in the economy and its chief economist has raised the risk of a recession in post-budget remarks.",
+      "pubDate": "Tue, 19 May 2026 05:19:17 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/53d9e4665c2b8526f487b45d5ceab0b1?impolicy=wcms_crop_resize&amp;cropH=1080&amp;cropW=810&amp;xPos=655&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Economist blames ACT's fiscal deterioration entirely on 'policy decisions'",
+      "link": "https://www.abc.net.au/news/2026-05-19/act-final-report-on-fiscal-situation-policy-decisions-spending/106696346",
+      "desc": "An independent economist warns Canberrans will need to pay higher taxes and charges if the ACT government continues the same amount of spending on infrastructure and services.",
+      "pubDate": "Tue, 19 May 2026 05:19:14 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/486e70f0a7050d9a4f2958cec86b5b45?impolicy=wcms_crop_resize&amp;cropH=6255&amp;cropW=4691&amp;xPos=2345&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Can you trademark identity? The new legal strategy celebrities are using against AI",
+      "link": "https://theconversation.com/can-you-trademark-identity-the-new-legal-strategy-celebrities-are-using-against-ai-282976",
+      "desc": "It’s a relatively new legal tactic and not yet tested in court.",
+      "pubDate": "2026-05-19T05:17:06Z",
+      "img": "https://images.theconversation.com/files/736615/original/file-20260519-71-bbeqzz.png?ixlib=rb-4.1.0&amp;rect=0%2C0%2C1600%2C800&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "ARIA winner TISM causes $18,000 in damage to Sydney Opera House",
+      "link": "https://www.abc.net.au/news/2026-05-19/tism-sydney-opera-house-damage-18000-fine-national-tour/106696580",
+      "desc": "The anarchic, ARIA-winning group has been hit with a hefty fine by the Sydney Opera House before its first national tour in more than 30 years.",
+      "pubDate": "Tue, 19 May 2026 04:57:03 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/791483ee9a080708aee496ee9cbd50b1?impolicy=wcms_crop_resize&amp;cropH=1023&amp;cropW=767&amp;xPos=385&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "ClearVue clears key hurdle for global solar tech rollout",
+      "link": "https://www.smh.com.au/business/companies/clearvue-clears-key-hurdle-for-global-solar-tech-rollout-20260519-p5zyr0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "ClearVue has secured global certification for a key junction box used in its building-integrated solar panels, supporting wider international rollout.",
+      "pubDate": "Tue, 19 May 2026 14:35:11 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.7354%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_109/t_crop_custom/q_86%2Cf_auto/f65837843e5b466b7a6485f8868edfe9daa0da4d448755f5034a81c9fe5e39af",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "The effectiveness of private prisons is debatable – why does Australia have so many?",
+      "link": "https://theconversation.com/the-effectiveness-of-private-prisons-is-debatable-why-does-australia-have-so-many-282721",
+      "desc": "The Adelaide Remand Centre furore has reignited Australia’s private prison debate. Are they managed as well as state-run services?",
+      "pubDate": "2026-05-19T04:33:12Z",
+      "img": "https://images.theconversation.com/files/735722/original/file-20260514-69-65zdf3.jpg?ixlib=rb-4.1.0&amp;rect=0%2C1002%2C6000%2C3000&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "Plan to reduce private health rebates for older Australians to have ‘almost no impact’ on hospital system, expert says",
+      "link": "https://www.theguardian.com/australia-news/2026/may/19/private-health-insurance-rebates-older-australians-labor-budget",
+      "desc": "<p>Labor will push ahead with a plan to reduce insurance rebates, meaning three million older Australians to pay $250 extra a year for private health</p><ul><li><p><a href=\"https://www.theguardian.com",
+      "pubDate": "Tue, 19 May 2026 04:32:07 GMT",
+      "img": "https://i.guim.co.uk/img/media/17290b5eb5dd29aa8aceb65b8936c7af864ad353/952_0_5073_4060/master/5073.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Organic meat giant Hewitt to buy Nolan Meats for undisclosed sum",
+      "link": "https://www.abc.net.au/news/rural/2026-05-19/hewitt-to-acquire-nolan-meats/106695854",
+      "desc": "Australia's largest organic meat company has agreed to buy the family-owned meatworks, subject to conditions and regulatory approvals.",
+      "pubDate": "Tue, 19 May 2026 03:59:34 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/ae48d800f319d7cb4ca444a4c209811b?impolicy=wcms_crop_resize&amp;cropH=1333&amp;cropW=1000&amp;xPos=862&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
     {
       "title": "NZ is criminalising sexualised deepfakes – banning apps that make them should be next",
       "link": "https://theconversation.com/nz-is-criminalising-sexualised-deepfakes-banning-apps-that-make-them-should-be-next-282127",
@@ -415,6 +785,16 @@
       "desc": "A community group in Victoria's south-east will appeal a council planning decision to approve the development of a regional caravan park, which it says would be an \"absolute disaster\" for the region.",
       "pubDate": "Mon, 18 May 2026 21:28:08 +0000",
       "img": "https://live-production.wcms.abc-cdn.net.au/20859b2e5eb42fb83d3e9d9b73dc1ff9?impolicy=wcms_crop_resize&amp;cropH=2986&amp;cropW=2239&amp;xPos=920&amp;yPos=38&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "ASX jumps more than 1 per cent in rebound rally — as it happened",
+      "link": "https://www.abc.net.au/news/2026-05-19/asx-markets-business-live-news-may-18-2026/106694576",
+      "desc": "The local share market rebounded Monday's heavy selling, as shares in Tuas made back some of their heavy losses. Look back on the day's events and insights from our business reporters on the ABC News ",
+      "pubDate": "Mon, 18 May 2026 21:20:00 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/2bcc5de27112144035164dd51dacf77e?impolicy=wcms_crop_resize&amp;cropH=724&amp;cropW=543&amp;xPos=32&amp;yPos=0&amp;width=862&amp;height=1149",
       "sourceId": "abcnews",
       "sourceName": "ABC News",
       "sourceColor": "#E64626"
@@ -23508,26 +23888,6 @@
       "sourceId": "conversationau",
       "sourceName": "The Conversation AU",
       "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Done and dusted: The best high-end stick vacuums for infrequent emptying",
-      "link": "https://www.smh.com.au/technology/done-and-dusted-the-best-high-end-stick-vacuums-for-infrequent-emptying-20260416-p5zocf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_technology",
-      "desc": "Want a high performing vacuum that you don’t need to be pulling dust out of every day? Here are our top four choices.",
-      "pubDate": "Sun, 19 Apr 2026 19:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.5171%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/c5839ed772dce449e3ff4b698ba584d5b3b84b58",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "The five buzziest AI office tools, and what they do",
-      "link": "https://www.smh.com.au/technology/the-five-buzziest-ai-office-tools-and-what-they-do-20260414-p5znoh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_technology",
-      "desc": "From your own personal executive assistant to a way to access all chatbots in the one app, here are five of the fastest-growing AI tools.",
-      "pubDate": "Sun, 19 Apr 2026 16:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_1.0382%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_106/t_crop_custom/q_86%2Cf_auto/9fc0eff97bf1ff78453f5e33619b57e78c1f239e6361a01c2cd9039f0839b67c",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
     }
   ]
 }
