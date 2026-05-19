@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-19T20:09:43.201Z",
+  "fetchedAt": "2026-05-19T22:41:11.829Z",
   "asx200": {
     "value": 8604.7,
     "change": -342.2,
@@ -95,8 +95,8 @@
   },
   "audusd": {
     "value": 0.71,
-    "change": 0,
-    "changePercent": -0.67,
+    "change": -0.01,
+    "changePercent": -0.7,
     "previousClose": 0.72,
     "asOf": "2026-05-19",
     "history": [
@@ -185,6 +185,10 @@
         "close": 0.71
       },
       {
+        "date": "2026-05-18",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-19",
         "close": 0.71
       }
@@ -195,25 +199,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4485.9,
-      "change": -320.7,
-      "changePercent": -6.67
+      "price": 4481.5,
+      "change": -325.1,
+      "changePercent": -6.76
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 74.25,
-      "change": -5.71,
-      "changePercent": -7.14
+      "price": 74.19,
+      "change": -5.76,
+      "changePercent": -7.21
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 104.46,
-      "change": 14.85,
-      "changePercent": 16.57
+      "price": 104.23,
+      "change": 14.62,
+      "changePercent": 16.32
     },
     {
       "name": "Copper",
@@ -221,7 +225,7 @@
       "iconBg": "#fef0e6",
       "price": 6.2,
       "change": 0.16,
-      "changePercent": 2.63
+      "changePercent": 2.7
     },
     {
       "name": "BHP Group",
@@ -830,7 +834,42 @@
   ],
   "news": [
     {
-      "title": "Tasmania's footy turf war is over, but the Devils must now deliver",
+      "title": "Southampton expelled from Premier League playoffs for spying on rivals",
+      "link": "https://www.abc.net.au/news/2026-05-20/football-southampton-expelled-premier-league-playoffs-spying/106699630",
+      "snippet": "",
+      "pubDate": "Tue, 19 May 2026 21:33:06 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Arsenal ends 22-year Premier League drought after Man City draw",
+      "link": "https://www.abc.net.au/news/2026-05-20/arsenal-wins-english-premier-league-man-city-draw-bournemouth/106699566",
+      "snippet": "",
+      "pubDate": "Tue, 19 May 2026 20:41:07 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Son of billionaire fashion tycoon arrested as suspect in father’s death",
+      "link": "https://www.smh.com.au/business/companies/son-of-billionaire-fashion-tycoon-arrested-as-suspect-in-his-death-20260520-p5zyv9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Mango founder Isak Andic died after falling more than 100 metres from a cliff while hiking with his son near Barcelona in 2024.",
+      "pubDate": "Wed, 20 May 2026 06:34:53 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "The young women chasing 'pure adrenaline' in motorsport drifting",
+      "link": "https://www.abc.net.au/news/2026-05-20/a-look-at-young-australian-women-in-motorsport/106659156",
+      "snippet": "",
+      "pubDate": "Tue, 19 May 2026 20:24:41 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to slip, Wall Street extends losing streak as bond markets crank up pressure",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slip-wall-street-retreats-as-bond-markets-crank-up-the-pressure-20260520-p5zyul.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The US stock market gave back more of its record-setting rally as bond markets rattled by high inflation keep ramping up the pressure.",
+      "pubDate": "Wed, 20 May 2026 06:12:26 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "The battle for Tasmania's north has been won, but locals aren't convinced",
       "link": "https://www.abc.net.au/news/2026-05-20/hawthorn-football-club-relationship-northern-tasmania-afl/106695958",
       "snippet": "",
       "pubDate": "Tue, 19 May 2026 19:32:58 +0000",
@@ -841,13 +880,6 @@
       "link": "https://www.smh.com.au/business/banking-and-finance/down-sized-and-debt-free-can-you-retire-with-a-mortgage-20260518-p5zybs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Many people assume it’s best to reach retirement with zero debt, but it’s not the be-all and end-all, according to financial experts.",
       "pubDate": "Wed, 20 May 2026 05:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX set to slip, Wall Street retreats as bond markets crank up the pressure",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-slip-wall-street-retreats-as-bond-markets-crank-up-the-pressure-20260520-p5zyul.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The US stock market is giving back more of its record-setting rally as bond markets rattled by high inflation keep cranking up the pressure.",
-      "pubDate": "Wed, 20 May 2026 05:16:14 +1000",
       "source": "SMH Business"
     },
     {
@@ -884,34 +916,6 @@
       "snippet": "",
       "pubDate": "Tue, 19 May 2026 07:40:35 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Gas giants’ $11.2m ad blitz before government killed off windfall profit tax idea",
-      "link": "https://www.smh.com.au/business/companies/gas-giants-11-2m-ad-blitz-before-government-killed-off-windfall-profit-tax-idea-20260519-p5zyn7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The industry increased its spending by about 50 per cent from the year before as it battled a major tax change that could have cost it billions.",
-      "pubDate": "Tue, 19 May 2026 17:24:32 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX rebounds, oil slides as Trump calls off Iran attacks; RBA warns on inflation",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-mixed-oil-prices-swing-20260519-p5zyj3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket bounced back after hitting a seven-week low as President Donald Trump said the US would postpone fresh strikes on Iran.",
-      "pubDate": "Tue, 19 May 2026 17:21:45 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Heat back CA plan to open BBL season in India",
-      "link": "https://www.abc.net.au/news/2026-05-19/heat-back-ca-plan-to-open-bbl-season-in-india/106698236",
-      "snippet": "",
-      "pubDate": "Tue, 19 May 2026 06:53:11 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Gas giant warns Labor on risk of ‘Argentina-style’ industry collapse",
-      "link": "https://www.smh.com.au/business/companies/gas-giant-warns-labor-on-risk-of-argentina-style-industry-collapse-20260519-p5zypi.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "One of Australia’s largest oil and gas companies says aggressive LNG export curbs could “kill investment” in critical future energy supplies.",
-      "pubDate": "Tue, 19 May 2026 16:04:10 +1000",
-      "source": "SMH Business"
     }
   ]
 }
