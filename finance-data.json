@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-20T16:01:54.344Z",
+  "fetchedAt": "2026-05-20T20:32:25.519Z",
   "asx200": {
     "value": 8496.6,
     "change": -456.7,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0,
-    "changePercent": 0.29,
+    "changePercent": 0.32,
     "previousClose": 0.71,
     "asOf": "2026-05-20",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-19",
+        "close": 0.71
+      },
+      {
         "date": "2026-05-20",
         "close": 0.72
       }
@@ -203,25 +207,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4540.9,
-      "change": -265.7,
-      "changePercent": -5.53
+      "price": 4548.1,
+      "change": -258.5,
+      "changePercent": -5.38
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 76.44,
-      "change": -3.51,
-      "changePercent": -4.39
+      "price": 76.2,
+      "change": -3.75,
+      "changePercent": -4.69
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 98.83,
-      "change": 9.22,
-      "changePercent": 10.29
+      "price": 98.39,
+      "change": 8.78,
+      "changePercent": 9.8
     },
     {
       "name": "Copper",
@@ -229,7 +233,7 @@
       "iconBg": "#fef0e6",
       "price": 6.34,
       "change": 0.3,
-      "changePercent": 4.97
+      "changePercent": 5.02
     },
     {
       "name": "BHP Group",
@@ -838,10 +842,38 @@
   ],
   "news": [
     {
+      "title": "Pendlebury's 433rd game simply his latest of many AFL records",
+      "link": "https://www.abc.net.au/news/2026-05-21/afl-scott-pendlebury-games-record-analysis/106700422",
+      "snippet": "",
+      "pubDate": "Wed, 20 May 2026 20:11:30 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "James Murdoch buys New York magazine, Vox podcasts for $419 million",
       "link": "https://www.smh.com.au/business/companies/james-murdoch-buys-new-york-magazine-vox-podcasts-for-419-million-20260520-p5zz94.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Murdoch said the acquisition “reflects both our interest in the forward edge of culture and our deep commitment to ambitious journalism and agenda-setting conversations”.",
-      "pubDate": "Thu, 21 May 2026 01:05:51 +1000",
+      "pubDate": "Thu, 21 May 2026 05:43:25 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ASX set to jump as Wall Street rebounds; Nvidia results ahead",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-jump-as-wall-street-rebounds-nvidia-results-ahead-20260521-p5zz9g.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The US stock market is bouncing back after pressure eased on Wall Street from the bond market and oil prices gave back some of their big gains.",
+      "pubDate": "Thu, 21 May 2026 05:12:55 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "From protein Weet-Bix to protein coffee, food makers are cashing in on Australians’ body dreams",
+      "link": "https://www.smh.com.au/business/companies/from-protein-weet-bix-to-protein-coffee-food-makers-are-cashing-in-on-australians-body-dreams-20260410-p5zmxl.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Protein water, protein cereal, protein popcorn and protein jelly: the recent flood of products boasting this macronutrient has astonished even those in the industry.",
+      "pubDate": "Thu, 21 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "‘Desperate cash grab’: Australian casino billionaire named alongside Drake in lawsuit",
+      "link": "https://www.smh.com.au/business/companies/desperate-cash-grab-australian-casino-billionaire-named-alongside-drake-in-lawsuit-20260520-p5zyxe.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The megastar rapper is accused of using an Australian-founded online casino to inflate streaming numbers and prey on vulnerable consumers.",
+      "pubDate": "Thu, 21 May 2026 05:00:00 +1000",
       "source": "SMH Business"
     },
     {
@@ -892,34 +924,6 @@
       "snippet": "Bruce McWilliam has become one of the largest shareholders in the company, which has been gripped by a struggle for control.",
       "pubDate": "Wed, 20 May 2026 15:10:57 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Ex-Rex boss admits hiding news of airline’s financial woes",
-      "link": "https://www.smh.com.au/business/companies/ex-rex-chairman-admits-hiding-news-of-airline-s-financial-woes-20260520-p5zz1p.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Former Rex executive chair Lim Kim Hai admitted “to all alleged contraventions against him,” on the third day of the trial in NSW Supreme Court.",
-      "pubDate": "Wed, 20 May 2026 15:01:56 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Maroons hit with triple injury blow as Blues look for whitewash",
-      "link": "https://www.abc.net.au/news/2026-05-20/queensland-hit-by-triple-injury-blow-for-state-of-origin-iii/106701680",
-      "snippet": "",
-      "pubDate": "Wed, 20 May 2026 04:53:52 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Aguia tune-up delivers major Colombian gold grade jump",
-      "link": "https://www.smh.com.au/business/companies/aguia-tune-up-delivers-major-colombian-gold-grade-jump-20260520-p5zz3p.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Aguia Resources has transformed Colombian operations with gold head grades soaring to 12g/t after switching to narrow-vein mining strategies.",
-      "pubDate": "Wed, 20 May 2026 14:32:46 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "'What I need right now isn't sympathy': Souths star retires after MND diagnosis",
-      "link": "https://www.abc.net.au/news/2026-05-20/jai-arrow-retires-from-nrl-due-to-neurological-condition/106701748",
-      "snippet": "",
-      "pubDate": "Wed, 20 May 2026 03:52:11 +0000",
-      "source": "ABC News"
     }
   ]
 }
