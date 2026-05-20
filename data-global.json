@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-20T20:23:24.363Z",
-  "summary": "Global tensions are escalating across multiple regions as geopolitical alignments shift. Russia and China are deepening ties following Putin's Beijing summit, where they announced plans for the Power of Siberia 2 pipeline and a multipolar world order, while the US military presence near Cuba and Britain's concerns over Russian Black Sea interceptions signal mounting US-Russia friction. In the Middle East, Israel's airstrikes on Lebanon have killed at least eight people and sparked international diplomatic pushback, with the UN warning the crisis is depressing global economic growth. Meanwhile, trade reshuffles are underway with the UK securing Gulf state deals and China agreeing to purchase 200 Boeing jets after Trump's summit visit, though Meta's job cuts and an expanding Ebola outbreak highlight broader corporate and public health challenges.",
+  "fetchedAt": "2026-05-20T22:25:43.353Z",
+  "summary": "Global tensions are escalating across multiple fronts, with Russia and China deepening strategic ties following Putin's Beijing summit while simultaneously provoking Western powers through military incidents like the interception of a British spy plane over the Black Sea. The Middle East remains volatile as Israel intensifies operations against Lebanon while settlers expand activities in occupied Palestinian territories, prompting international diplomatic responses. Space and technology sectors are experiencing major shifts with SpaceX pursuing an IPO that could dramatically increase Elon Musk's wealth and Meta implementing significant workforce reductions amid broader economic pressures. In parallel, the WHO warns of a growing Ebola outbreak requiring urgent vaccine development while political instability continues in Bolivia and the Philippines faces pressure over ICC-related arrests.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "SpaceX files for IPO that could make Elon Musk a trillionaire",
+      "link": "https://www.bbc.com/news/articles/cg4pe2953q1o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Musk's rocket-maker and satellite internet provider will trade under the ticker SPCX",
+      "pubDate": "Wed, 20 May 2026 22:14:37 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a257/live/e755c9b0-5497-11f1-b691-3398bf815b45.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Why Russian jets intercepting an RAF spy plane is 'serious incident'",
+      "link": "https://www.bbc.com/news/videos/cx21y59q35wo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The BBC's Frank Gardner explained how the incident highlighted tense relations between Russia and Nato.",
+      "pubDate": "Wed, 20 May 2026 21:46:32 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bee5/live/dd77aed0-5493-11f1-b682-cf91850925ea.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Bolivian president to reshuffle cabinet amid antigovernment protests",
+      "link": "https://www.aljazeera.com/news/2026/5/20/bolivian-president-to-reshuffle-cabinet-amid-anti-government-protests?traffic_source=rss",
+      "desc": "Rodrigo Paz is under pressure from weeks of demonstrations and poor economic conditions.",
+      "pubDate": "Wed, 20 May 2026 21:07:38 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_6a0e0189951b-1779302793.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Why has the US indicted Cuba’s Raul Castro now?",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/20/why-has-the-us-indicted-cubas-raul-castro-now?traffic_source=rss",
+      "desc": "The indictment of former Cuban President Raul Castro over a 1996 plane shootdown revives a decades-old case.",
+      "pubDate": "Wed, 20 May 2026 20:58:48 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1779310667.jpg?resize=1619%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Woman's debts reach £26k as she battles poverty",
+      "link": "https://www.bbc.com/news/articles/c7v907yqzz9o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Gaynor Lake tells how she struggled to pay for heating, rent and council tax and saw her debts grow.",
+      "pubDate": "Wed, 20 May 2026 20:56:39 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0ee6/live/1339cb50-5469-11f1-97ab-4b256b476233.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Israeli settlers burn vehicles, install caravans in occupied West Bank",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/20/israeli-settlers-burn-vehicles-install-caravans-in-occupied-west-bank?traffic_source=rss",
+      "desc": "Palestinian residents say Israeli settlers burned vehicles, sprayed racist graffiti, and installed new outposts.",
+      "pubDate": "Wed, 20 May 2026 20:53:28 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1779310295.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "UK agrees £3.7bn trade deal with six Gulf states",
       "link": "https://www.bbc.com/news/articles/c4g85dryv24o?at_medium=RSS&amp;at_campaign=rss",
@@ -233,6 +293,16 @@
       "sourceId": "dwnews",
       "sourceName": "DW News",
       "sourceColor": "#002B55"
+    },
+    {
+      "title": "Domestic rates bills debt hits £1m in Northern Ireland",
+      "link": "https://www.bbc.com/news/articles/ckgpyxg9ykwo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Advice NI said its debt advice service last year dealt with more than £1 million pounds in total rates debts for the first time.",
+      "pubDate": "Wed, 20 May 2026 12:09:44 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e3af/live/2eea80c0-543b-11f1-be9a-315565996c62.png",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
     },
     {
       "title": "UK eases sanctions on Russian oil imports as fuel prices soar",
@@ -10243,16 +10313,6 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Tim Cook to step down as Apple CEO, John Ternus to take over",
-      "link": "https://www.dw.com/en/tim-cook-to-step-down-as-apple-ceo-john-ternus-to-take-over/a-76873245?maca=en-rss-en-bus-2091-rdf",
-      "desc": "John Ternus, who has long focused ​on design and ‌products at Apple, will lead the iPhone maker as it gears up for an industry change spurred by artificial intelligence.",
-      "pubDate": "2026-04-20T21:25:00Z",
-      "img": "https://static.dw.com/image/76873332_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
     }
   ]
 }
