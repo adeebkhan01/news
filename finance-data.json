@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-21T15:53:40.672Z",
+  "fetchedAt": "2026-05-21T20:15:49.543Z",
   "asx200": {
     "value": 8621.7,
     "change": -327.7,
@@ -98,9 +98,9 @@
     ]
   },
   "audusd": {
-    "value": 0.71,
+    "value": 0.72,
     "change": 0,
-    "changePercent": -0.56,
+    "changePercent": -0.29,
     "previousClose": 0.72,
     "asOf": "2026-05-21",
     "history": [
@@ -194,7 +194,7 @@
       },
       {
         "date": "2026-05-21",
-        "close": 0.71
+        "close": 0.72
       }
     ]
   },
@@ -203,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4509.6,
-      "change": -188.8,
-      "changePercent": -4.02
+      "price": 4544.7,
+      "change": -153.7,
+      "changePercent": -3.27
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.68,
-      "change": -0.73,
-      "changePercent": -0.96
+      "price": 77.05,
+      "change": 0.64,
+      "changePercent": 0.84
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 101.39,
-      "change": 9.26,
-      "changePercent": 10.05
+      "price": 97.38,
+      "change": 5.25,
+      "changePercent": 5.7
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.29,
-      "change": 0.29,
-      "changePercent": 4.81
+      "price": 6.34,
+      "change": 0.34,
+      "changePercent": 5.71
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,55 @@
   ],
   "news": [
     {
+      "title": "ASX set to advance, Wall Street seesaws as oil prices swing",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-advance-wall-street-seesaws-as-oil-prices-swing-20260522-p5zznl.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Hour-to-hour swings for oil prices keep jerking financial markets around, and US stocks are drifting  following the latest reversal.",
+      "pubDate": "Fri, 22 May 2026 06:13:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Businesses, like runners, thrive on competition – at least, most do",
+      "link": "https://www.smh.com.au/business/the-economy/businesses-like-runners-thrive-on-competition-at-least-most-do-20260521-p5zzfq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "It’s not just customers who like to see companies fighting for their money. Many businesses like the rivalry, too.",
+      "pubDate": "Fri, 22 May 2026 05:30:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "A colleague suddenly stopped coming to work. Do we deserve to know why?",
+      "link": "https://www.smh.com.au/business/workplace/a-colleague-suddenly-stopped-coming-to-work-do-we-deserve-to-know-why-20260521-p5zzid.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "To me, this sounds like a personal matter being sensitively handled by your organisation’s decision makers.",
+      "pubDate": "Fri, 22 May 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "The corporate ladder is dead, but your career doesn’t have to be",
+      "link": "https://www.smh.com.au/business/workplace/the-corporate-ladder-is-dead-but-your-career-doesn-t-have-to-be-20260521-p5zzii.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "We’re living through the biggest shift in how people work since the industrial era, and that requires a radical new way of thinking.",
+      "pubDate": "Fri, 22 May 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Illegal Lara waste dump sells for $16m. It cost $71m to clean up",
+      "link": "https://www.smh.com.au/business/companies/illegal-lara-waste-dump-sells-for-16m-it-cost-71m-to-clean-up-20260520-p5zz1o.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Builder Hickory has bought what was once a bogus recycling plant in Lara where a 20-metre-high pile of rubbish cost the state $71 million to clean up.",
+      "pubDate": "Fri, 22 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Lisa Wilkinson goes another round with Ten over Lehrmann trial",
+      "link": "https://www.smh.com.au/business/companies/lisa-wilkinson-goes-another-round-with-ten-over-lehrmann-trial-20260521-p5zzbz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The former breakfast TV star is still trying to extract her legal fees from the network.",
+      "pubDate": "Fri, 22 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Green Elephant commercial building looks for peak price of $30m",
+      "link": "https://www.smh.com.au/business/small-business/green-elephant-commercial-building-looks-for-peak-price-of-30m-20260521-p5zzip.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Peak Equities, led by Trevor O’Hoy, is looking to sell a fully leased property in Sydney’s Green Square precinct for more than $30 million.",
+      "pubDate": "Fri, 22 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "'I've never been so confused': Raiders slam officials, fall to Dolphins in thrilling Canberra clash",
       "link": "https://www.abc.net.au/news/2026-05-21/nrl-live-updates-canberra-raiders-vs-dolphins-thursday-football/106697156",
       "snippet": "",
@@ -871,55 +920,6 @@
       "snippet": "Critical Resources has secured exclusive global battery cooling tech rights, expanding its push into thermal management for batteries, GPU’s and CPU’s.",
       "pubDate": "Thu, 21 May 2026 17:08:11 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "No, the Iran War won’t ground your European holiday flight",
-      "link": "https://www.smh.com.au/business/consumer-affairs/no-the-iran-war-won-t-ground-your-european-holiday-flight-20260519-p5zyqs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Tickets will be more expensive. The odd disruption may occur, too. But barring a worst-case scenario, the invisible hand of the market is already doing enough to keep most planes flying.",
-      "pubDate": "Thu, 21 May 2026 17:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Drug testing of athletes to expand as influencers fuel illicit peptides boom",
-      "link": "https://www.abc.net.au/news/2026-05-21/anti-doping-agency-drug-testing-illicit-peptides-boom/106693040",
-      "snippet": "",
-      "pubDate": "Thu, 21 May 2026 06:47:38 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "West Wits bags A$74.4M funding for South African gold push",
-      "link": "https://www.smh.com.au/business/companies/west-wits-bags-a-74-4m-funding-for-south-african-gold-push-20260521-p5zzkp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "West Wits has secured A$74.4 million in funding with top South African tier-one lenders to power the production ramp-up at its flagship Qala Shallows gold mine.",
-      "pubDate": "Thu, 21 May 2026 16:30:30 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Mum wins WFH rights, late start time, so she can drop kids at school",
-      "link": "https://www.smh.com.au/business/workplace/mum-wins-wfh-rights-late-start-for-school-drop-off-20260521-p5zzc0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Fair Work Commission ruling follows another case last year when a mother who had moved far from her office defeated a return to office mandate.",
-      "pubDate": "Thu, 21 May 2026 16:12:53 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Blues fighting for an Origin dynasty a decade in the making",
-      "link": "https://www.abc.net.au/news/2026-05-21/nsw-womens-origin-isabelle-kelly-whitewash/106707156",
-      "snippet": "",
-      "pubDate": "Thu, 21 May 2026 06:07:02 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ABC chair hits back at News Corp’s ‘divisive’ antisemitism reporting",
-      "link": "https://www.smh.com.au/business/companies/abc-chair-hits-back-at-news-corp-s-divisive-antisemitism-reporting-20260521-p5zzfp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Kim Williams declared that “inflammatory” reporting based on flimsy evidence was undermining social cohesion after The Australian ran an article attacking the ABC.",
-      "pubDate": "Thu, 21 May 2026 15:56:09 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "AFLW's 2026 fixture to feature women's and men's double-headers",
-      "link": "https://www.abc.net.au/news/2026-05-21/aflw-2026-fixture-released-featuring-double-headers/106706530",
-      "snippet": "",
-      "pubDate": "Thu, 21 May 2026 05:52:41 +0000",
-      "source": "ABC News"
     }
   ]
 }
