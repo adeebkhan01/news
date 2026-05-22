@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-22T14:47:43.271Z",
-  "summary": "Tony Abbott is returning to Australian politics after being elected federal president of the Liberal Party, marking a significant comeback for the former prime minister. The government faces pushback on its budget with concerns raised about tax changes affecting green energy investment and small businesses expressing worry about pharmacy pill prescription reforms. Major criminal matters dominating the news include a maritime drug haul at an Australian port, charges laid over a Sydney balcony death, and various organised crime investigations. Several human interest stories underscore broader issues including a Rottnest shark attack fatality, a drunk driving boating incident, and reports on Indigenous persecution in Russia.",
+  "fetchedAt": "2026-05-22T17:10:58.146Z",
+  "summary": "Australian news today is dominated by transport tragedies, with a fatal crash in Sydney and separate incidents involving a drunk boat driver and a Victorian police officer's death in Peru. The government faces mounting domestic pressure on multiple fronts: Tony Abbott's return as Liberal Party president signals internal party dynamics, while Labor's NDIS reforms and tax changes draw criticism from welfare advocates and the renewable energy sector respectively. Security concerns loom with a major drugs haul at an Australian port, police warnings of gang-related violence, and reports of Australian IS-linked families arriving in Damascus. Healthcare remains contentious, with GPs expressing concerns about changes to contraceptive prescriptions and warnings that the NDIS overhaul could leave participants more isolated.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Three dead after horror crash in Sydney’s south",
+      "link": "https://www.smh.com.au/national/nsw/three-dead-after-horror-crash-in-sydney-s-south-20260523-p5zzxx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Two drivers and a passenger have died after an Audi and Camry collided head-on in Sans Souci.",
+      "pubDate": "Sat, 23 May 2026 03:06:55 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.25503045808966857%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_101%2C$y_334/t_crop_custom/q_86%2Cf_auto/0792494abb3cfcac2905cbc4aa57673779b67052",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Health blame game doesn’t hold water | Brief letters",
+      "link": "https://www.theguardian.com/science/2026/may/22/health-blame-game-doesnt-hold-water",
+      "desc": "<p>Sink or swim? | Deep vision | Sacrificial candidate | Diverting days out</p><p>Sir Christopher Ball telling people their future longevity is in their own hands and to stop blaming others (<a href=\"",
+      "pubDate": "Fri, 22 May 2026 16:55:19 GMT",
+      "img": "https://i.guim.co.uk/img/media/bf740359d74e7ed04302cac4bac6a9c7bc5e10fb/401_0_3480_2784/master/3480.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Australian government plans for ‘worst-case scenario’ retail fuel rationing, documents reveal",
+      "link": "https://www.theguardian.com/australia-news/2026/may/23/australia-planned-in-march-for-worst-case-scenario-fuel-rationing-documents-reveal",
+      "desc": "<p>Exclusive: With warnings world oil supplies are expected to hit ‘red zone’ by August, the Albanese government has outlined its powers to enforce daily purchase limits for motorists</p><ul><li><p>Ge",
+      "pubDate": "Fri, 22 May 2026 15:00:05 GMT",
+      "img": "https://i.guim.co.uk/img/media/68e48dbf6ff4a029f52fa286a4d9e3ec44e6cfb8/619_0_6188_4950/master/6188.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "As the wheels threaten to fall off the budget roadshow, a defensive Albanese could take a tip from the UK | Tom McIlroy",
+      "link": "https://www.theguardian.com/australia-news/2026/may/23/australia-labor-federal-budget-tax-reform-explanation-albanese",
+      "desc": "<p>British MP Wes Streeting has given a simple and arresting explanation of the need for tax reform – something that continues to elude the Labor government</p><ul><li><p>Get our <a href=\"https://www.",
+      "pubDate": "Fri, 22 May 2026 15:00:05 GMT",
+      "img": "https://i.guim.co.uk/img/media/025982a32daee4e0eb71cf7d11f2c7233d1d4933/733_0_5385_4310/master/5385.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Trouble in the ‘kingdom of Maranoa’: could a Nationals stronghold turn to One Nation?",
+      "link": "https://www.theguardian.com/australia-news/2026/may/23/trouble-in-the-kingdom-of-maranoa-could-a-nationals-stronghold-turn-to-one-nation",
+      "desc": "<p>Some in rural Queensland are fed up with the status quo, but not everyone’s convinced by Pauline Hanson</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/email-newsletters?CMP=cvau_sfl\">br",
+      "pubDate": "Fri, 22 May 2026 15:00:04 GMT",
+      "img": "https://i.guim.co.uk/img/media/bb2c75ed7dca5d804beddf2f1feeda681cda5513/0_0_3136_2509/master/3136.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Labor’s NDIS overhaul will leave participants more ‘isolated’ and ‘segregated’, former royal commissioner warns",
+      "link": "https://www.theguardian.com/australia-news/2026/may/23/albanese-government-ndis-legislation-cuts-changes-reform-australians-more-isolated",
+      "desc": "<p><strong>Exclusive:</strong> Warning comes as Albanese government’s own NDIS reform advisers issue ‘brutal’ assessment of proposed cuts to the scheme</p><ul><li><p>Get our <a href=\"https://www.thegu",
+      "pubDate": "Fri, 22 May 2026 15:00:03 GMT",
+      "img": "https://i.guim.co.uk/img/media/54c752ef21dc5009580bf8c6cca40b3e55b581fe/603_0_6033_4826/master/6033.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
     {
       "title": "Tax changes 'threaten to chill' record federal green energy support",
       "link": "https://www.abc.net.au/news/2026-05-23/renewables-cgt-tax-threatens-investor-flight-say-investors/106713200",
