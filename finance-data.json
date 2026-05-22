@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-22T17:21:10.577Z",
+  "fetchedAt": "2026-05-22T20:16:00.903Z",
   "asx200": {
     "value": 8657,
     "change": -186.6,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.71,
     "change": 0,
-    "changePercent": -0.22,
+    "changePercent": -0.31,
     "previousClose": 0.72,
     "asOf": "2026-05-22",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-21",
+        "close": 0.71
+      },
+      {
         "date": "2026-05-22",
         "close": 0.71
       }
@@ -203,25 +207,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4522.3,
-      "change": -210.2,
-      "changePercent": -4.44
+      "price": 4507.9,
+      "change": -224.6,
+      "changePercent": -4.75
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 76.43,
-      "change": -1.47,
-      "changePercent": -1.88
+      "price": 75.81,
+      "change": -2.09,
+      "changePercent": -2.68
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 96.41,
-      "change": 3.45,
-      "changePercent": 3.71
+      "price": 96.45,
+      "change": 3.49,
+      "changePercent": 3.75
     },
     {
       "name": "Copper",
@@ -838,6 +842,41 @@
   ],
   "news": [
     {
+      "title": "'Life is football' here but without money, Australia's most unique club won't survive",
+      "link": "https://www.abc.net.au/news/2026-05-23/willie-rioli-drugs-afl-footy-racism-tiwi-islands-homecoming/106702046",
+      "snippet": "",
+      "pubDate": "Fri, 22 May 2026 20:04:18 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Natalie’s redundancy was gut-wrenching. Her story is becoming more common",
+      "link": "https://www.smh.com.au/business/workplace/natalie-s-redundancy-was-gut-wrenching-her-story-is-becoming-more-common-20260521-p5zzig.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "No longer a last resort reserved for business restructures, redundancies are now a regular feature of the employment landscape.",
+      "pubDate": "Sat, 23 May 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Striking gold is the dream for thousands of Australians. But there’s a ‘paradox’ holding them back",
+      "link": "https://www.smh.com.au/business/markets/striking-gold-is-the-dream-for-thousands-of-australians-but-there-s-a-paradox-holding-them-back-20260512-p5zvyz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Hundreds of thousands of Australians are prospecting, fossicking and mining as the price of the elusive precious metal soars.",
+      "pubDate": "Sat, 23 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "‘Wild West’: How an RFK-inspired startup is cashing in on the peptide craze",
+      "link": "https://www.smh.com.au/business/companies/wild-west-how-an-rfk-inspired-startup-is-cashing-in-on-the-peptide-craze-20260522-p5zzrc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Nick Bell is a reality TV startup judge, but in real life he’s running a company on the bleeding edge of medicine that’s offering $500 of peptides after a 15-minute phone call.",
+      "pubDate": "Sat, 23 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "How a 3,400yo ball game survives in Mexico against all odds",
+      "link": "https://www.abc.net.au/news/2026-05-23/mexicos-ancient-ball-sport-revival-ulama/106663068",
+      "snippet": "",
+      "pubDate": "Fri, 22 May 2026 18:52:56 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Freo notches 10th straight win with Saints triumph, Tigers down Bombers",
       "link": "https://www.abc.net.au/news/2026-05-22/afl-round-11-friday-live-blog-rich-ess-freo-stk/106712866",
       "snippet": "",
@@ -884,41 +923,6 @@
       "link": "https://www.smh.com.au/business/companies/like-trying-to-become-a-gyros-chain-in-athens-what-went-wrong-for-gyg-in-america-20260522-p5zzss.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Private equity and investment bankers convinced Aussies they could sell burritos to the Yanks – and they swallowed it.",
       "pubDate": "Fri, 22 May 2026 15:58:14 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "The Olympic past behind Tolu Koula's rise to State of Origin",
-      "link": "https://www.abc.net.au/news/2026-05-22/tolu-koula-nsw-origin-olympics-story/106712358",
-      "snippet": "",
-      "pubDate": "Fri, 22 May 2026 05:51:23 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Flagship bags A$2.75M for multi-million-ounce Chilean gold project",
-      "link": "https://www.smh.com.au/business/companies/flagship-bags-a-2-75m-for-multi-million-ounce-chilean-gold-project-20260522-p5zzv3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Flagship Minerals has secured A$2.75M in a strategic placement to accelerate development studies at its 2.1-million-ounce Isidora gold project in Chile.",
-      "pubDate": "Fri, 22 May 2026 15:39:22 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "A health bill is coming, and it&#39;s entirely predictable",
-      "link": "https://www.smh.com.au/business/a-health-bill-is-coming-and-its-entirely-predictable-20260522-p5zzuu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "It’s like our body is sending invoices for things we did, and didn’t do, in our 40s and 50s. And no one explains that it’s coming, or how to prepare, says money columnist Bec Wilson.",
-      "pubDate": "Fri, 22 May 2026 15:27:01 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Ponga explains why he's in an Origin sweet spot after controversial selection",
-      "link": "https://www.abc.net.au/news/2026-05-22/state-of-origin-i-kalyn-ponga-on-being-in-the-sweet-spot/106711388",
-      "snippet": "",
-      "pubDate": "Fri, 22 May 2026 03:28:41 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Dateline taps global project manager for California gold push",
-      "link": "https://www.smh.com.au/business/companies/dateline-taps-global-project-manager-for-california-gold-push-20260522-p5zztd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Dateline Resources has secured global project powerhouse Alvarez &amp; Marsal to manage construction and accelerate development at its Colosseum gold mine.",
-      "pubDate": "Fri, 22 May 2026 12:53:09 +1000",
       "source": "SMH Business"
     }
   ]
