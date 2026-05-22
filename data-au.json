@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-22T19:53:41.257Z",
-  "summary": "Australia's political and economic landscape is being tested by budget pressures and leadership tensions, with the Albanese government facing backlash over NDIS changes and green energy tax proposals while Tony Abbott's return as Liberal Party president signals shifting conservative dynamics. Domestically, cost-of-living concerns dominate, evident in rising digital tipping frustration, growing redundancies affecting workers like Natalie, and government contingency planning for retail fuel rationing in worst-case scenarios. Environmental and social issues are also in focus, from pollution concerns at Sydney Harbour during Vivid to Western Australian schools hitting enrollment booms and calls to protect Manly's penguin colony. International and lifestyle coverage rounds out the news cycle, featuring travel destinations, celebrity profiles, and emerging industry trends from peptide startups to native spirit producers.",
+  "fetchedAt": "2026-05-22T22:11:27.771Z",
+  "summary": "Australia faces a political landscape in flux as questions mount over the viability of the two-party system, while the government navigates mounting criticism of its recent budget measures, from tax changes affecting green energy investment to NDIS overhaul concerns. Tragic incidents dominated the day with multiple fatal road accidents in Sydney and a destructive house fire in the west, while an Australian's death during a Peru hiking expedition highlighted the risks of adventure travel. The news cycle also reflected broader economic challenges facing Australians, including rising redundancies, concerns over fuel supply and potential rationing, and growing digital economy friction points like unwanted tipping prompts. The government confronts a defensive position on multiple fronts as it attempts to justify budget policy decisions amid signs of political pressure from minor parties and criticism over implementation details.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,76 @@
     }
   ],
   "articles": [
+    {
+      "title": "Is Australia's two-party political system dead?",
+      "link": "https://www.abc.net.au/news/2026-05-23/political-strategist-says-australian-two-party-system-is-gone/106704546",
+      "desc": "With the rise of One Nation's popularity and younger voters increasingly turning to the Greens, the traditional two-party system in Australian politics has been dismantled, a former political strategi",
+      "pubDate": "Fri, 22 May 2026 21:43:33 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/e2dc98379c6e2df79342dae92fdc29fc?impolicy=wcms_crop_resize&amp;cropH=600&amp;cropW=450&amp;xPos=181&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "House destroyed by fire in Sydney’s west",
+      "link": "https://www.smh.com.au/national/house-destroyed-by-fire-in-sydney-s-west-20260523-p5zzy7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A house has been destroyed by fire in Sydney's west overnight after a blaze broke out in the garage overnight.",
+      "pubDate": "Sat, 23 May 2026 07:16:51 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/7e032248513ae3c7a37538fc0875319ec042683b",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Three dead following head-on collision in Sydney’s south",
+      "link": "https://www.smh.com.au/national/three-dead-following-head-on-collision-in-sydney-s-south-20260523-p5zzy5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Three people are dead after a major high speed head-on crash in Sydney's south overnight.",
+      "pubDate": "Sat, 23 May 2026 07:15:11 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/6322adef3a9af2349959109ddc8e0e24525c69ec",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Australian who died in hiking accident in Peru remembered as selfless",
+      "link": "https://www.smh.com.au/national/australian-who-died-in-hiking-accident-in-peru-remembered-as-selfless-20260523-p5zzy6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A member of Victoria Police, who died in a horror hiking accident while on holiday in Peru, is this morning being remembered for his selflessness.",
+      "pubDate": "Sat, 23 May 2026 07:14:47 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/30331ba8d3eb29421d8037c7261d0584ebd2776a",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Shipping containers of water slide parts left idle as park plans axed",
+      "link": "https://www.abc.net.au/news/2026-05-23/residents-concerned-future-the-palms-development-far-north-qld/106707000",
+      "desc": "A developer blames the Iran war for his decision to axe a water park and resort project in regional Queensland despite already spending $21 million.",
+      "pubDate": "Fri, 22 May 2026 21:01:24 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/7eba430e0f2299df08db950858105f8d?impolicy=wcms_crop_resize&amp;cropH=2268&amp;cropW=1701&amp;xPos=1151&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Confused about Labor's tax changes? Here's what they really mean",
+      "link": "https://www.abc.net.au/news/2026-05-23/labor-capital-gains-tax-changes-explained-in-detail/106713208",
+      "desc": "Labor's capital gains tax changes have set off a firestorm of debate about the implications for small businesses, start-ups, share owners and plenty more. Here's who will really pay more.",
+      "pubDate": "Fri, 22 May 2026 20:59:57 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/3829f9f1da7fad90022ee4729b6dcbe7?impolicy=wcms_crop_resize&amp;cropH=3190&amp;cropW=2392&amp;xPos=1638&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Fracking could open the door to 10 years of gas supply but is there a risk?",
+      "link": "https://www.abc.net.au/news/2026-05-23/sa-government-talks-fracking-potential-despite-opposition/106705148",
+      "desc": "A decade's worth of gas supply for South Australia is potentially sitting below the Limestone Coast region. But will it ever be extracted?",
+      "pubDate": "Fri, 22 May 2026 20:00:00 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/1edac3e41e1b0c5c9d54246307d9d152?impolicy=wcms_crop_resize&amp;cropH=3750&amp;cropW=2813&amp;xPos=189&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
     {
       "title": "Digital tipping prompts on the rise but not all venue owners are fans",
       "link": "https://www.abc.net.au/news/2026-05-23/digital-tipping-prompts-on-the-rise/106705536",
@@ -28018,26 +28088,6 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Why Native Title rulings need a system to value cultural loss",
-      "link": "https://theconversation.com/why-native-title-rulings-need-a-system-to-value-cultural-loss-279743",
-      "desc": "Unlike economic damages, there is no formal method for deciding on compensation for cultural loss when a court rules land has been damaged or taken away.",
-      "pubDate": "2026-04-22T20:11:46Z",
-      "img": "https://images.theconversation.com/files/731533/original/file-20260422-57-8ag41p.jpg?ixlib=rb-4.1.0&amp;rect=0%2C153%2C4896%2C2448&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "The science of cosiness: a textiles expert explains feather down, bamboo, polyester duvets",
-      "link": "https://theconversation.com/the-science-of-cosiness-a-textiles-expert-explains-feather-down-bamboo-polyester-duvets-280450",
-      "desc": "Shopping for a duvet? There’s solid textile science to guide you – and it’s less complicated than the marketing would have you believe.",
-      "pubDate": "2026-04-22T20:11:34Z",
-      "img": "https://images.theconversation.com/files/730310/original/file-20260416-57-u4ku93.jpg?ixlib=rb-4.1.0&amp;rect=0%2C240%2C3840%2C1920&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
     }
   ]
 }
