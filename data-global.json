@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-22T04:03:38.481Z",
-  "summary": "Global tensions are escalating across multiple regions, with the US pausing a $14 billion Taiwan arms sale amid Iran conflict complications and Russia conducting joint nuclear exercises with Belarus while NATO scrambles jets in the Baltic. Peace negotiations between the US and Iran show signs of progress even as the conflict threatens ripple effects across world economies and aid distributions, including the postponement of an India-Africa summit due to Ebola spread. Major political shifts are underway, from Alberta's Canadian independence referendum to Greenlanders protesting Trump at a new US consulate, while Trump signals willingness to break diplomatic protocol by speaking directly with Taiwan's president. Beyond geopolitics, corporate giants like Nvidia and SpaceX face investor skepticism despite strong fundamentals, and humanitarian crises continue in Gaza and Lebanon where displaced communities are organizing grassroots relief efforts.",
+  "fetchedAt": "2026-05-22T09:36:22.151Z",
+  "summary": "Geopolitical tensions are escalating on multiple fronts, with NATO reinforcing Eastern Europe as the US deploys five thousand troops to Poland while simultaneously managing an ongoing Iran conflict that has forced a pause on Taiwan's fourteen billion dollar arms package. Russia is conducting nuclear exercises with Belarus and tensions are rising over Cuba as the Trump administration signals military considerations, while regional conflicts in Gaza and Lebanon continue causing humanitarian crises with widespread civilian suffering. Major institutional developments include potential shifts in US economic policy as a Trump ally moves toward the Federal Reserve, and democratic opposition to Middle East aid policy is growing within the Democratic Party. Meanwhile, supply chain and environmental concerns persist from trade disruptions in Canadian ports to continued climate-driven extreme weather threats.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,76 @@
     }
   ],
   "articles": [
+    {
+      "title": "Nato chief welcomes US sending 5,000 troops to Poland",
+      "link": "https://www.bbc.com/news/articles/cedpz9669deo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The announcement comes a week after the Pentagon cancelled a planned deployment of 4,000 troops to the country.",
+      "pubDate": "Fri, 22 May 2026 09:29:33 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cb4f/live/0b4bb9f0-55c0-11f1-99e4-4d92e48ba181.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "US deepens European uncertainty with deployment of 5,000 troops to Poland",
+      "link": "https://www.aljazeera.com/news/2026/5/22/us-deepens-european-uncertainty-with-deployment-of-5000-troops-to-poland?traffic_source=rss",
+      "desc": "Erratic US policy moves leave European NATO partners increasingly unclear about which areas they should prioritise.",
+      "pubDate": "Fri, 22 May 2026 08:51:56 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/03/2019-05-28T042720Z_966337166_RC1B7DA03490_RTRMADP_3_JAPAN-USA-TRUMP-NAVY-1772540852.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Lebanon’s economy struggles under renewed war and global fuel crisis",
+      "link": "https://www.aljazeera.com/features/2026/5/22/lebanons-economy-struggles-under-renewed-war-and-global-fuel-crisis?traffic_source=rss",
+      "desc": "Lebanon&#039;s ongoing war and financial crises threaten to render the nation economically unviable, experts warn.",
+      "pubDate": "Fri, 22 May 2026 08:49:07 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/ap_6a0e9f403b314-1779343168.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "US navy chief says $14bn arms sale to Taiwan paused due to Iran war",
+      "link": "https://www.bbc.com/news/articles/c232z4yk437o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Hung Cao told a Senate hearing they were \"doing a pause\" on the sale to make sure they had munitions for the Iran war.",
+      "pubDate": "Fri, 22 May 2026 08:12:47 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/48b0/live/2c1d2b70-55a5-11f1-a3f4-25da51d330b4.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Africa summit in India postponed over Ebola outbreak fears",
+      "link": "https://www.bbc.com/news/articles/cp8p1l7gp1po?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The India-Africa summit was set to be held next week in Delhi after more than a decade.",
+      "pubDate": "Fri, 22 May 2026 07:56:53 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6c92/live/625c58a0-55a5-11f1-9f36-1dfd3d7f0f3a.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "US raises threat of military action against Cuba",
+      "link": "https://www.aljazeera.com/news/2026/5/22/us-raises-threat-of-military-action-against-cuba?traffic_source=rss",
+      "desc": "Secretary of State Marco Rubio says Cuba poses a national security threat.",
+      "pubDate": "Fri, 22 May 2026 07:22:58 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-04-23T214841Z_783879716_RC29VKAU0PCA_RTRMADP_3_USA-TRUMP-1779427746.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran war day 84: US-Iran talks advance amid mediation push",
+      "link": "https://www.aljazeera.com/news/2026/5/22/iran-war-day-84-us-iran-talks-advance-amid-mediation-push?traffic_source=rss",
+      "desc": "US and Iran continue mediated talks, exchanging draft proposals aimed at reaching a formal agreement.",
+      "pubDate": "Fri, 22 May 2026 06:55:08 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-05-21T221158Z_1506684705_RC2ODLA99SEF_RTRMADP_3_IRAN-CRISIS-1779410583.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "US pausing $14bn arms sale to Taiwan due to Iran war, navy chief says",
       "link": "https://www.aljazeera.com/news/2026/5/22/us-pausing-14bn-arms-sale-to-taiwan-due-to-iran-war-navy-chief-says?traffic_source=rss",
@@ -253,6 +323,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Kevin Warsh: Trump ally at the Federal Reserve?",
+      "link": "https://www.dw.com/en/kevin-warsh-trump-ally-at-the-federal-reserve/a-77248236?maca=en-rss-en-bus-2091-rdf",
+      "desc": "Never before has a chair of the US Federal Reserve been so controversial. Who is Kevin Warsh? Can he preserve the Fed's independence, or will he become Donald Trump's puppet?",
+      "pubDate": "2026-05-21T14:15:00Z",
+      "img": "https://static.dw.com/image/75729895_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "Kevin Warsh: Trump's man at the Fed or independent voice?",
@@ -10883,16 +10963,6 @@
       "sourceId": "dwnews",
       "sourceName": "DW News",
       "sourceColor": "#002B55"
-    },
-    {
-      "title": "Woman who unlocked the secrets of the stars honoured",
-      "link": "https://www.bbc.com/news/articles/c75k04zplwwo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Cecilia Payne-Gaposchkin is described as \"a scientist of exceptional brilliance and determination\".",
-      "pubDate": "Wed, 22 Apr 2026 05:11:12 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f619/live/169b0350-3da2-11f1-b377-d7765ac78768.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
     }
   ]
 }
