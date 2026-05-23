@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-23T16:04:32.122Z",
-  "summary": "Australia's political landscape faces potential upheaval with polling suggesting One Nation could become the federal opposition while Labor remains positioned for re-election, though Anthony Albanese has shown visible emotion defending contested tax changes affecting capital gains and negative gearing. Domestically, several tragic incidents dominated coverage including a fatal Queensland crash killing a woman and child, a Rottnest shark attack fatality, and multiple transport-related deaths highlighting ongoing road safety concerns. The government is managing budget pressures with the health minister confirming no mental health levy cuts while seeking nearly $700 million in savings elsewhere, and internationally, Australia joined calls for ending Israeli settlement expansion in the West Bank. In broader news, SpaceX achieved its largest rocket test flight while a separate landing attempt ended in flames, and local stories ranged from organised crime developments to cultural projects winning public commissions.",
+  "fetchedAt": "2026-05-23T19:17:37.802Z",
+  "summary": "Australia's political landscape is shifting as polling suggests One Nation could become the federal opposition, with Labor facing voter backlash over tax policies despite Prime Minister Albanese's emotional defence of capital gains tax changes. Major domestic concerns include a looming prison capacity crisis, ongoing mental health challenges, and violent crime spanning from alleged terrorism threats to organised crime investigations involving siphoned club funds. International relations are in focus with the government calling for an end to Israeli settlement expansion, while tragic road and water incidents continue claiming Australian lives, including a recent shark attack at Rottnest and multiple traffic fatalities across the country.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,106 @@
     }
   ],
   "articles": [
+    {
+      "title": "Labor's tax defence is backfiring with young voters",
+      "link": "https://www.abc.net.au/news/2026-05-24/labor-budget-defence-backlash-capital-gains-housing-wages/106692288",
+      "desc": "Labor is banking on younger generations, who are overwhelmingly wage earners, being more interested in owning their own home than pocketing higher profits on a lucky crypto trade.",
+      "pubDate": "Sat, 23 May 2026 19:00:00 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/0b1e7a918e8a4061485349d833f279c4?impolicy=wcms_crop_resize&amp;cropH=2464&amp;cropW=1848&amp;xPos=1265&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "The innovative program that helped this couple beat cancer",
+      "link": "https://www.smh.com.au/national/nsw/the-innovative-program-that-helped-this-couple-beat-cancer-20260513-p5zwi8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "“Prehabilitation” rebuilds strength in cancer patients before they face surgery, to help speed up their recovery.",
+      "pubDate": "Sun, 24 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.49339999999999995%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_301%2C$y_358/t_crop_custom/q_86%2Cf_auto/982a754ec4461fd351ce8cdfbea84ad65a0c1859",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘I thought it was crazy’: Inside the Sydney boarding school experience",
+      "link": "https://www.smh.com.au/national/nsw/i-thought-it-was-crazy-inside-the-sydney-boarding-school-experience-20260513-p5zwkh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Traditionally, boarding schools a place for rural students. But times have changed.",
+      "pubDate": "Sun, 24 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2779527559055118%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_840/t_crop_custom/q_86%2Cf_auto/7d4bafbc2d6bfb744f32afb67a907ba61a19f652",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Russian organised crime links, affairs with rappers: The updated book about Andrew and Fergie is shocking",
+      "link": "https://www.smh.com.au/national/russian-organised-crime-links-affairs-with-rappers-the-updated-book-about-andrew-and-fergie-is-shocking-20260518-p5zyhb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Andrew was a risk to national security and a sexual predator with an interest in Japanese rope bondage, alleges the author.",
+      "pubDate": "Sun, 24 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2933%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_338%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/6d6c9d4e912db292398dcca5fa90ea1bc5207e26",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Victoria’s data centre push could force state back onto gas-fired power",
+      "link": "https://www.smh.com.au/national/victoria/victoria-s-data-centre-push-could-force-state-back-onto-gas-fired-power-20260520-p5zz6j.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Surging electricity demands have raised questions about whether the state government’s planned renewable energy transition is compatible to its courting of global tech players.",
+      "pubDate": "Sun, 24 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5171%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_19/t_crop_custom/q_86%2Cf_auto/4b627a161342b888d35a1b3483c7871a2b7234453031cf39e50f344e614ff12d",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "There something dangerous and deadly lurking in Victoria that no one wants to discuss",
+      "link": "https://www.smh.com.au/national/victoria/there-something-dangerous-and-deadly-lurking-in-victoria-that-no-one-wants-to-discuss-20260521-p5zzlb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The state government supposedly has a strategy to make this problem half as bad. It’s heading the other direction.",
+      "pubDate": "Sun, 24 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.19019396551724135%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_96/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/a5de4e61af913faf1c273c76e063232d2e7fd6ac",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "An oyster farmer, a firefighter, a Kennedy: The Democrats taking the fight to the Republicans",
+      "link": "https://www.smh.com.au/national/an-oyster-farmer-a-firefighter-a-kennedy-the-democrats-taking-the-fight-to-the-republicans-20260521-p5zzm3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Across the United States, parties are choosing their candidates for the midterm elections in November. Who are the emerging Democrat stars? And who’s in the frame to run for the presidency in 2028?",
+      "pubDate": "Sun, 24 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.3311111111111111%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_explainer_no_age_social_wm/73adc244f7e6e87f3b6b45d7b217cbbb014aedf5",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "This Glebe townhouse sold for $2.19 million. Its quiet auction revealed something about the property market",
+      "link": "https://www.smh.com.au/national/this-glebe-townhouse-sold-for-2-19-million-its-quiet-auction-revealed-something-about-the-property-market-20260522-p5zztc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The three-bedroom fixer-upper would usually whip up interest among investors and first home-buyers. Not on a subdued Saturday in Sydney.",
+      "pubDate": "Sun, 24 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.3005%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_300%2C$y_284/t_crop_custom/q_86%2Cf_auto/fc5c449755456c8ff1778e77250e65caa0df1b0c",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Rachel Ward gave up glamour for cows and a not-so-simple country life",
+      "link": "https://www.abc.net.au/news/2026-05-24/rachel-ward-gave-up-glamour-farm-cattle-regeneration-anti-aging-/106616338",
+      "desc": "With the country wind in her grey hair, cow dung on her boots and not a skerrick of make-up, former actor Rachel Ward has found her place, sharing her passion for regenerative farming.",
+      "pubDate": "Sat, 23 May 2026 18:58:03 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/fc5393503cfe9d74d9a77bdde9af9331?impolicy=wcms_crop_resize&amp;cropH=270&amp;cropW=203&amp;xPos=139&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "‘Tragic magic’: The unlikely connection between Matt Corby and a magpie",
+      "link": "https://www.smh.com.au/national/western-australia/tragic-magic-the-unlikely-connection-between-matt-corby-and-a-magpie-20260522-p5zzwn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "From a song with a magpie, to tales about life and heartbreak, Matt Corby is set to bring his new album Tragic Magic to Perth next month.",
+      "pubDate": "Sun, 24 May 2026 03:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.353%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_80/t_crop_custom/q_86%2Cf_auto/d82ec40c79be355453fba78e7c5f2c458a4de41b628068055ccc4770024ba810",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
     {
       "title": "Superquiz, Sunday, May 24",
       "link": "https://www.smh.com.au/national/superquiz-sunday-may-24-20260521-p5zzm5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
@@ -28368,26 +28468,6 @@
       "sourceId": "conversationau",
       "sourceName": "The Conversation AU",
       "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Seismic ‘whiplash’ – new research shows what happens when earthquakes stop suddenly",
-      "link": "https://theconversation.com/seismic-whiplash-new-research-shows-what-happens-when-earthquakes-stop-suddenly-280846",
-      "desc": "A new study uncovers a hidden pattern of ground motions at the end of big earthquakes that could help scientists and planners identify likely danger zones.",
-      "pubDate": "2026-04-23T19:00:02Z",
-      "img": "https://images.theconversation.com/files/731779/original/file-20260422-71-ii1pk9.jpg?ixlib=rb-4.1.0&amp;rect=0%2C252%2C5472%2C2736&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Could gene-edited ‘super quolls’ fight back against cane toads?",
-      "link": "https://www.smh.com.au/environment/conservation/could-gene-edited-super-quolls-fight-back-against-cane-toads-20260421-p5zpq1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_environment",
-      "desc": "This marsupial carnivore is endangered, mainly because it tries to eat toxic cane toads. Some scientists think they can stave off extinction by fast-tracking 10,000 years of evolution to provide resis",
-      "pubDate": "Fri, 24 Apr 2026 05:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_1.8677%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_191/t_crop_custom/q_86%2Cf_auto/d5e35d0c430be314b2310846dc76967d09e07c62",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
     }
   ]
 }
