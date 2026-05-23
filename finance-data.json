@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-23T04:12:20.600Z",
+  "fetchedAt": "2026-05-23T08:33:28.609Z",
   "asx200": {
     "value": 8657,
     "change": -186.6,
@@ -201,7 +201,7 @@
         "close": 0.71
       },
       {
-        "date": "2026-05-22",
+        "date": "2026-05-23",
         "close": 0.71
       }
     ]
@@ -211,25 +211,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4510.5,
-      "change": -222,
-      "changePercent": -4.69
+      "price": 4523.2,
+      "change": -209.3,
+      "changePercent": -4.42
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.92,
-      "change": -1.98,
-      "changePercent": -2.54
+      "price": 76.2,
+      "change": -1.69,
+      "changePercent": -2.17
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 97,
-      "change": 4.04,
-      "changePercent": 4.35
+      "price": 96.6,
+      "change": 3.64,
+      "changePercent": 3.92
     },
     {
       "name": "Copper",
@@ -237,7 +237,7 @@
       "iconBg": "#fef0e6",
       "price": 6.38,
       "change": 0.26,
-      "changePercent": 4.25
+      "changePercent": 4.23
     },
     {
       "name": "BHP Group",
@@ -846,7 +846,14 @@
   ],
   "news": [
     {
-      "title": "Live: Roos face Suns ahead of Pendlebury's record-breaking game",
+      "title": "Live: Warriors piling more pain on still-winless Dragons",
+      "link": "https://www.abc.net.au/news/2026-05-23/nrl-live-updates-dragons-warriors-manly-titans/106714578",
+      "snippet": "",
+      "pubDate": "Sat, 23 May 2026 07:09:29 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Pendlebury honoured in record-breaking game, Roos beat Suns after the siren",
       "link": "https://www.abc.net.au/news/2026-05-23/afl-round-11-live-blog-nm-gc-gee-syd-col-wc-pa-car-pendlebury/106713536",
       "snippet": "",
       "pubDate": "Sat, 23 May 2026 02:56:39 +0000",
@@ -920,13 +927,6 @@
       "link": "https://www.abc.net.au/news/2026-05-22/afl-round-11-friday-live-blog-rich-ess-freo-stk/106712866",
       "snippet": "",
       "pubDate": "Fri, 22 May 2026 09:05:55 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Bulldogs coach slams 'bulls***' rumours after downing Storm",
-      "link": "https://www.abc.net.au/news/2026-05-22/nrl-live-updates-bulldogs-vs-storm-friday-football/106697158",
-      "snippet": "",
-      "pubDate": "Fri, 22 May 2026 09:02:05 +0000",
       "source": "ABC News"
     }
   ]
