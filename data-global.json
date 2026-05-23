@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-23T08:25:23.183Z",
-  "summary": "A deadly coal mine explosion in China has killed at least ninety people, marking a major industrial disaster. In the Middle East, regional tensions remain elevated with Israeli forces continuing operations in Gaza despite ceasefire agreements, while diplomatic efforts between the United States and Iran have stalled with significant gaps remaining in negotiations. Global health authorities have raised concerns over escalating Ebola cases in the Democratic Republic of Congo and detected cases in the Netherlands, prompting vaccine development efforts. Political shifts are underway across multiple countries, including new US Federal Reserve leadership and ongoing leadership transitions in Europe and Canada, while trade and military posturing between the United States and its rivals—particularly over Iran and the Philippines—signal broader strategic competition.",
+  "fetchedAt": "2026-05-23T10:38:55.069Z",
+  "summary": "A deadly coal mine explosion in China has killed at least 90 people in one of the worst industrial disasters in recent years. Political instability is spreading across multiple regions, with Senegal's president sacking his prime minister amid escalating tensions, France preparing for a presidential race against populist challengers, and Bolivia experiencing deepening social unrest. The Middle East remains volatile despite ceasefire agreements, with Israeli forces continuing attacks in Gaza and southern Lebanon while Iran signals diplomatic stalling in nuclear negotiations with the United States. Public health emergencies are mounting, notably an Ebola outbreak in the Democratic Republic of Congo now rated as a very high risk by the WHO, alongside a hantavirus cluster detected in the Netherlands.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,76 @@
     }
   ],
   "articles": [
+    {
+      "title": "At least 90 killed in Chinese coal mine explosion, state media reports",
+      "link": "https://www.bbc.com/news/articles/c5y0ve18qlko?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The blast in Shanxi province constitutes the country's worst mining disaster in 17 years.",
+      "pubDate": "Sat, 23 May 2026 10:26:56 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f7d9/live/d56919b0-5685-11f1-afe6-09264f8da456.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Senegal’s President Faye sacks PM Sonko as deepening rift erupts",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/23/senegals-president-faye-sacks-pm-sonko-as-deepening-rift-erupts?traffic_source=rss",
+      "desc": "Supporters of Senegal’s ousted prime minister have rallied outside his home in Dakar.",
+      "pubDate": "Sat, 23 May 2026 10:19:48 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1779531512.jpg?resize=1654%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Zelenskyy says ‘time is right’ for Ukraine to start process of joining EU",
+      "link": "https://www.aljazeera.com/news/2026/5/23/zelenskyy-says-time-is-right-for-ukraine-to-start-process-of-joining-eu?traffic_source=rss",
+      "desc": "His comments come as both Kyiv and Moscow try to advance their interests on the battlefield.",
+      "pubDate": "Sat, 23 May 2026 10:10:13 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2024/12/AP24354510502872-1735579384.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Senegal's president sacks prime minister Sonko after months of tensions",
+      "link": "https://www.bbc.com/news/articles/c202jwpd24go?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Bassirou Diomaye Faye also dissolved the government, creating uncertainty amid a debt crisis in the country.",
+      "pubDate": "Sat, 23 May 2026 09:50:00 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a632/live/7be53410-567f-11f1-8b8c-6d33e1d5abb6.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Israel attacks southern Lebanon and near Syrian border despite ‘ceasefire’",
+      "link": "https://www.aljazeera.com/news/2026/5/23/israel-attacks-southern-lebanon-and-near-syrian-border-despite-ceasefire?traffic_source=rss",
+      "desc": "People in southern Lebanon are living under \"psychological terror\" from Israeli air attacks and displacement orders.",
+      "pubDate": "Sat, 23 May 2026 09:30:24 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AFP__20260523__B3TH8WE__v1__HighRes__LebanonIsraelIranUsWar-1779517052.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Missiles to munitions: Does the US risk running out of key weapons?",
+      "link": "https://www.aljazeera.com/features/2026/5/23/missiles-to-munitions-does-the-us-risk-running-out-of-key-weapons?traffic_source=rss",
+      "desc": "The US projects confidence in weapons stockpiles, but analysts say dwindling munitions are shaping its war decisions.",
+      "pubDate": "Sat, 23 May 2026 09:22:58 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-04-23T071710Z_787943666_RC2TUKAYHZCU_RTRMADP_3_IRAN-CRISIS-BRITAIN-1779455296.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Not just the US: India to Brazil, 51 nations armed Israel amid Gaza war",
+      "link": "https://www.aljazeera.com/news/longform/2026/5/23/not-just-the-us-india-to-brazil-51-nations-armed-israel-amid-gaza-war?traffic_source=rss",
+      "desc": "Despite ICJ genocide warnings, 51 nations kept arming Israel, even after pledging to halt support.",
+      "pubDate": "Sat, 23 May 2026 07:56:12 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2023/10/2023-10-14T160254Z_284320201_RC2ES3A8GAD1_RTRMADP_3_ISRAEL-PALESTINIANS-KFAR-AZA-1-1697375329.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Gas explosion at Chinese coal mine kills at least 90",
       "link": "https://www.aljazeera.com/news/2026/5/23/gas-explosion-at-chinese-coal-mine-kills-at-least-90?traffic_source=rss",
