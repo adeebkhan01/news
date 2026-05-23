@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-22T22:11:43.978Z",
-  "summary": "Global affairs are marked by escalating regional conflicts and geopolitical realignment. Russia's war in Ukraine continues to intensify with mutual accusations of attacks on civilian targets, while the US is deploying additional troops to Poland and reasserting pressure on adversaries including Cuba and Iran. Health emergencies are commanding international attention with rising Ebola cases in Democratic Republic of Congo prompting the WHO to raise risk levels to very high, the Netherlands detecting hantavirus infections, and UK scientists advancing an Ebola vaccine. Meanwhile, political upheaval is roiling several nations, from Bolivia's social unrest demanding presidential resignation to Canada's Alberta province considering separation, to Slovenia's parliament confirming a right-wing prime minister, reflecting broader pressures on institutional stability worldwide.",
+  "fetchedAt": "2026-05-23T03:40:36.654Z",
+  "summary": "Global tensions are escalating across multiple fronts as the US intensifies military positioning and diplomatic pressure, with joint Philippines war games raising concerns about potential conflict, Rubio's energy diplomacy offsetting Iran sanctions, and Trump deploying additional troops to Poland amid ongoing Ukraine conflict. The Middle East remains volatile, with Israeli military operations expanding into Lebanon while Palestinian unrest grows, and both Russia and Ukraine report strikes with mounting civilian casualties. Public health crises are intensifying, particularly in Congo where Ebola risk has been elevated to very high with growing case numbers, while the Netherlands reports its first hantavirus infections. Domestically, political shifts include Gabbard's resignation as US intelligence director, Kevin Warsh taking over the Federal Reserve, and notable developments in Canada where separation sentiment in Alberta is gaining traction alongside French and other international electoral contests.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,76 @@
     }
   ],
   "articles": [
+    {
+      "title": "Some fear US-Philippines war games are drawing conflict closer to home",
+      "link": "https://www.aljazeera.com/news/2026/5/23/some-fear-us-philippines-war-games-are-drawing-conflict-closer-to-home?traffic_source=rss",
+      "desc": "Critics of US, Philippine military cooperation say closely aligning with Washington makes Manila a possible target.",
+      "pubDate": "Sat, 23 May 2026 03:19:47 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2023-04-13T082959Z_1693936379_RC2ID0AN07E1_RTRMADP_3_PHILIPPINES-USA-DEFENCE-1779435758.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran war live: Tehran says diplomacy continues but no deal yet with US",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/5/23/iran-war-live-tehran-says-diplomacy-continues-but-no-deal-yet-with-us?traffic_source=rss",
+      "desc": "Israeli attacks on Lebanon have killed at least 3,111 people since March 2, with 9,432 injured: Health Ministry.",
+      "pubDate": "Sat, 23 May 2026 00:00:00 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AFP__20260522__B3RH9KF__v1__HighRes__PakistanWarIranUsIsrael-1779492796_f0b692-1779493137.jpg?resize=1200%2C630&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "The space race to create gym equipment for future astronauts",
+      "link": "https://www.bbc.com/news/articles/cg4pe6dl03ro?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Scientists are attempting to build exercise equipment to be used on future space flights.",
+      "pubDate": "Fri, 22 May 2026 23:42:07 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6cd0/live/e73aafd0-55c4-11f1-99e4-4d92e48ba181.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "How to keep cool at your summer festivals",
+      "link": "https://www.bbc.com/news/articles/clypzp9drq0o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "As the summer festival season kicks off, temperatures are set to soar this bank holiday weekend.",
+      "pubDate": "Fri, 22 May 2026 23:40:30 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/77d1/live/486c9be0-5509-11f1-b61b-7bb15f916dcd.png",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Race for French presidency sees ex-PM Philippe as early favourite to beat populists",
+      "link": "https://www.bbc.com/news/articles/c4g0410gnv5o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Latest polls suggest the centre-right figure is the only candidate who can defeat Marine Le Pen or Jean-Luc Mélenchon.",
+      "pubDate": "Fri, 22 May 2026 23:07:55 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f59b/live/89f9ba00-55f1-11f1-b682-cf91850925ea.png",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "'Speed, money and compassion' - lessons from an Ebola survivor and other experts",
+      "link": "https://www.bbc.com/news/articles/cj3p2rdx0l8o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Those caught up in West Africa's Ebola outbreak a decade ago on how best to tackle the current epidemic.",
+      "pubDate": "Fri, 22 May 2026 23:07:41 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/68b3/live/8445c700-55d0-11f1-8b8c-6d33e1d5abb6.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Rubio visits India to sell energy as Iran oil shock persists",
+      "link": "https://www.bbc.com/news/articles/c87qrwyyrn2o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The top US diplomat has made statements offering to support India’s energy needs - but should Delhi give in?",
+      "pubDate": "Fri, 22 May 2026 23:01:04 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/83ff/live/1c0d22f0-54db-11f1-8a44-d3e9da00a02a.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
     {
       "title": "Judge dismisses criminal case against Kilmar Abrego Garcia",
       "link": "https://www.bbc.com/news/articles/cx21r04wg8qo?at_medium=RSS&amp;at_campaign=rss",
@@ -213,6 +283,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "US or Iran: Who will win the Hormuz endurance game?",
+      "link": "https://www.dw.com/en/us-or-iran-who-will-win-the-hormuz-endurance-game/a-77211690?maca=en-rss-en-bus-2091-rdf",
+      "desc": "Tehran is betting that its sanctions‑hardened economy can outlast the Strait of Hormuz crisis. Washington, meanwhile, is contending with elevated oil prices, renewed inflation pressure and rising glob",
+      "pubDate": "2026-05-22T15:38:00Z",
+      "img": "https://static.dw.com/image/77267943_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "WHO raises Ebola public health risk to ‘very high’ in DR Congo",
@@ -11280,26 +11360,6 @@
       "desc": "Jack Hathaway tells Cranfield University he had to wait for a break in the British weather.",
       "pubDate": "Thu, 23 Apr 2026 04:34:53 GMT",
       "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bfc0/live/5a8f0590-3e59-11f1-8887-e93160959470.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Ban 'forever chemicals' in uniforms and frying pans, MPs urge",
-      "link": "https://www.bbc.com/news/articles/ckg98q1yx9vo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "School uniforms and non-stick pans are some of the everyday products that should stop using chemicals called PFAS, MPs say.",
-      "pubDate": "Wed, 22 Apr 2026 23:11:24 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ba3e/live/5fbcb360-3e3f-11f1-bb02-b7764f8dd2b3.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "How a pivot to hair accessories led to business success",
-      "link": "https://www.bbc.com/news/articles/c23992zv9rko?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Jenny Lennick's colourful hair clips are sold across the US and around the world.",
-      "pubDate": "Wed, 22 Apr 2026 23:04:39 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/23b1/live/acb55400-38a5-11f1-a963-91d9e730d487.jpg",
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
