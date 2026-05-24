@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-24T16:03:46.371Z",
-  "summary": "Australian households face immediate cost pressures as electricity bills ease for half a million homes while concerns mount over currency speculation through US prediction markets betting on local elections and the Prime Minister's statements. Domestically, violent crime continues to dominate with fatal shark and stabbing incidents, a teenager fighting for life after a west Brisbane stabbing, and police shooting a gunman at the White House. Labor faces pressure to restore confidence in its anti-corruption commission while managing broader economic challenges including tax policy debates and infrastructure spending. International developments include ongoing Russia-Ukraine tensions and China's advancing space program, though most headlines reflect pressing local safety and cost-of-living concerns facing Australians.",
+  "fetchedAt": "2026-05-24T19:22:58.447Z",
+  "summary": "Australia's domestic agenda is being shaped by economic pressures and infrastructure challenges, with inflation tensions affecting wage negotiations, significant government debt requiring careful management, and delayed public services including a new western hospital already facing cuts and a stalled metro line. Political focus is increasingly influenced by global events, from rising international tensions affecting Australian policy to international betting markets scrutinising local elections. Beyond these major themes, the country continues to grapple with security concerns at public events, education disruption from AI, and persistent cost-of-living pressures on working Australians including truck drivers affected by fuel prices.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,136 @@
     }
   ],
   "articles": [
+    {
+      "title": "Why global conflict is reshaping Australian politics",
+      "link": "https://www.abc.net.au/news/2026-05-25/iran-hormuz-trump-ceasefire-cost-living-one-nation/106716020",
+      "desc": "US President Donald Trump was yesterday touting an end to the war in Iran, but declaring mission accomplished in Washington will not spare Australian consumers, and politicians, from the economic fall",
+      "pubDate": "Sun, 24 May 2026 19:00:00 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/b548b7e96a0eea2828c4f242fa9fb7e9?impolicy=wcms_crop_resize&amp;cropH=3512&amp;cropW=2634&amp;xPos=1803&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Inflation spike casts a shadow over minimum wage debate",
+      "link": "https://www.smh.com.au/business/workplace/inflation-spike-casts-a-shadow-over-minimum-wage-debate-20260519-p5zysj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "Unions say low-paid workers should be shielded from rising prices, but others say a large pay increase could feed into further upward pressure on costs.",
+      "pubDate": "Mon, 25 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1898%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_41/t_crop_custom/q_86%2Cf_auto/t_metro_analysis_no_age_social_wm/d868536e960314e97a7b1fced1753fa6395dd7a2",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Our $1 trillion debt doesn’t scare markets - but it still has a cost",
+      "link": "https://www.smh.com.au/business/the-economy/our-1-trillion-debt-doesn-t-scare-markets-but-it-still-has-a-cost-20260521-p5zzfo.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "Markets appear unfussed about a looming milestone for public debt. Should taxpayers be a bit more concerned about it?",
+      "pubDate": "Mon, 25 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2198%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_57/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/b79a0765a15bc51e20cb6ccf2b612ec6e393d4a5",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Plans to hand over historic West End police station to community services scrapped",
+      "link": "https://www.smh.com.au/national/queensland/plans-to-hand-over-historic-west-end-police-station-to-community-services-scrapped-20260410-p5zmwt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The building on Boundary Street was announced as a health and community services hub by the former Labor government in 2023.",
+      "pubDate": "Mon, 25 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1854%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_57/t_crop_custom/q_86%2Cf_auto/3db836dcdb0d43c4bc01326093a1bd049341ba4c948c77487d9be1dbd9480979",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘Why keep it secret?’ Commuters demand a date for metro line’s opening",
+      "link": "https://www.smh.com.au/national/nsw/why-keep-it-secret-commuters-demand-a-date-for-metro-line-s-opening-20260518-p5zy4f.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The NSW government is refusing to release documents detailing the date it is targeting for opening the long-delayed final stage of Sydney’s M1 metro line.",
+      "pubDate": "Mon, 25 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5553%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_3%2C$y_0/t_crop_custom/q_86%2Cf_auto/3255a00bf6c32a3174594a43cbab2e4f7caced5cf305f2c3a03ff6ee1252475b",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "New hospital in the west opened three months ago but already faces cuts",
+      "link": "https://www.smh.com.au/national/victoria/new-hospital-in-the-west-opened-three-months-ago-but-already-faces-cuts-20260521-p5zze3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Patients, surgeons and Western Health are concerned about a plan to strip cancer surgeries from the new Footscray Hospital.",
+      "pubDate": "Mon, 25 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2207%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_265%2C$y_0/t_crop_custom/q_86%2Cf_auto/37cd153928f868a19620d409d2d1ce3292eee731",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "The Bondi image that raises questions about security at Jewish event",
+      "link": "https://www.smh.com.au/national/nsw/the-bondi-image-that-raises-questions-about-security-at-jewish-event-20260521-p5zzhg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Counter-terror authorities and police will face the royal commission this week as haunting photographs of the festival later targeted by terrorists emerge.",
+      "pubDate": "Mon, 25 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.3501984126984127%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_235/t_crop_custom/q_86%2Cf_auto/ebcfbb67d7cec2d33a26fddac66a1e9dda35d527",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "AI poses ‘urgent threat’ to student learning and the HSC",
+      "link": "https://www.smh.com.au/national/nsw/ai-poses-urgent-threat-to-student-learning-and-the-hsc-20260521-p5zzlx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A major report says the new tech is endangering learning with cheating so rife it’s undermining the credibility of the education system.",
+      "pubDate": "Mon, 25 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1765%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_55/t_crop_custom/q_86%2Cf_auto/ccaca365ef79b9ec3ec5b5e05611ced6b74e1680",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Inside Cranbrook’s quiet $4m plan to make more space for girls",
+      "link": "https://www.smh.com.au/cbd/inside-cranbrook-s-quiet-4m-plan-to-make-more-space-for-girls-20260524-p6003t.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "In February, the school opened its doors to its first female cohort. So it was only a matter of time before it started making space for more of them.",
+      "pubDate": "Mon, 25 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2649%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/a672b2aa57018c9ec347e7971e7608b7279a86fe",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Australia’s most seen bird? After 5 million sightings, the answer’s in",
+      "link": "https://www.smh.com.au/environment/conservation/australia-s-most-seen-bird-after-5-million-sightings-the-answer-s-in-20260521-p5zziu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_environment",
+      "desc": "More than 64,000 enthusiastic twitchers took place in BirdLife Australia’s Aussie Bird Count, counting and recording 5.27 million birds.",
+      "pubDate": "Mon, 25 May 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.3128%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_94/t_crop_custom/q_86%2Cf_auto/f244620839682b2f41d2821375a8d853c356c3ff",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Turkish police raid opposition party HQ, fire tear gas at supporters",
+      "link": "https://www.abc.net.au/news/2026-05-25/turkiye-opposition-hq-raided/106716688",
+      "desc": "The raid marks the end of a three-day stand-off between members of the opposition CHP party and police.",
+      "pubDate": "Sun, 24 May 2026 18:59:49 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/deecac28c5e7b0d91cb9ed48bafdc36d?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=1250&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Soldier crabs and sunset walks: Why nobody wants to leave this seaside suburb",
+      "link": "https://www.smh.com.au/national/queensland/soldier-crabs-and-sunset-walks-why-nobody-wants-to-leave-this-seaside-suburb-20260501-p5zsux.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Once a sleepy haven for retirees and holiday makers, this bayside suburb’s smug secret is out – along with some of the unfortunate renters who can no longer afford to stay.",
+      "pubDate": "Mon, 25 May 2026 04:59:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5171%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_109/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/6e12e5428560006d3ad16ca50bd5a1c18110de04e0b7ed62d730e5afce70293c",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Not moving jobs, states or starting businesses: Data says Australians are stuck",
+      "link": "https://www.abc.net.au/news/2026-05-25/not-moving-jobs-not-starting-businesses-not-moving-states-data/106599004",
+      "desc": "People are less mobile, less dynamic and more risk-averse than we used to be, a series of economic indicators shows.",
+      "pubDate": "Sun, 24 May 2026 18:48:20 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/d0fc6aca13e1d9710bbca1a44dbe2fe6?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=1655&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
     {
       "title": "‘It’s taking all of our money’: truck drivers in Iowa lament gas price surge sparked by Trump’s Iran war",
       "link": "https://www.theguardian.com/us-news/2026/may/24/iowa-truck-stop-gas-prices",
