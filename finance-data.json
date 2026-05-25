@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-25T20:05:03.732Z",
+  "fetchedAt": "2026-05-25T22:32:11.064Z",
   "asx200": {
     "value": 8692,
     "change": -94.5,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0,
-    "changePercent": 0.69,
+    "changePercent": 0.63,
     "previousClose": 0.71,
     "asOf": "2026-05-25",
     "history": [
@@ -177,6 +177,10 @@
         "close": 0.71
       },
       {
+        "date": "2026-05-24",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-25",
         "close": 0.72
       }
@@ -187,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4523.2,
-      "change": -199.1,
-      "changePercent": -4.22
+      "price": 4576.3,
+      "change": -146,
+      "changePercent": -3.09
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 76.2,
-      "change": -0.18,
-      "changePercent": -0.24
+      "price": 78.54,
+      "change": 2.16,
+      "changePercent": 2.82
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 96.6,
-      "change": 2.2,
-      "changePercent": 2.33
+      "price": 90.51,
+      "change": -3.89,
+      "changePercent": -4.12
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.38,
-      "change": 0.36,
-      "changePercent": 5.91
+      "price": 6.47,
+      "change": 0.44,
+      "changePercent": 7.37
     },
     {
       "name": "BHP Group",
@@ -822,21 +826,70 @@
   ],
   "news": [
     {
-      "title": "ASX set to rise, oil falls as optimism on Iran deal grows",
+      "title": "Breaking: Socceroos dealt World Cup injury blow with star midfielder ruled out",
+      "link": "https://www.abc.net.au/news/2026-05-26/riley-mcgree-to-miss-fifa-world-cup-for-socceroos/106721264",
+      "snippet": "",
+      "pubDate": "Mon, 25 May 2026 22:11:26 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Power bills set to fall despite Iran uncertainty",
+      "link": "https://www.smh.com.au/business/consumer-affairs/power-bills-set-to-fall-despite-iran-uncertainty-20260525-p600kr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "After years of price rises, power bills are set to fall for millions of households. This is why.",
+      "pubDate": "Tue, 26 May 2026 07:55:17 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Breaking: Brad Scott sacked as Essendon coach",
+      "link": "https://www.abc.net.au/news/2026-05-26/essendon-part-ways-with-brad-scott-has-afl-head-coach/106721334",
+      "snippet": "",
+      "pubDate": "Mon, 25 May 2026 21:55:13 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Super Netball record broken by 16yo school captain Eva Carneiro",
+      "link": "https://www.abc.net.au/news/2026-05-26/2026-super-netball-round-up-round11/106720046",
+      "snippet": "",
+      "pubDate": "Mon, 25 May 2026 21:25:43 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "The $30 billion windfall for the secretive brothers behind Chanel",
+      "link": "https://www.smh.com.au/business/companies/the-30-billion-windfall-for-the-secretive-brothers-behind-chanel-20260525-p6007f.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Alain and Gérard Wertheimer inherited the company from their grandfather, one of the original business partners of creator Gabrielle “Coco” Chanel.",
+      "pubDate": "Tue, 26 May 2026 07:02:27 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Kokkinakis wins French Open five-set thriller on mixed day for Aussies",
+      "link": "https://www.abc.net.au/news/2026-05-26/thanasi-kokkinakis-alex-de-minaur-daria-kasatkina-french-open/106721114",
+      "snippet": "",
+      "pubDate": "Mon, 25 May 2026 20:39:43 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Cricket's next generation of pace knows fast bowling can take a toll",
+      "link": "https://www.abc.net.au/news/2026-05-26/cricket-injuries-take-toll-on-young-fast-bowlers/106659210",
+      "snippet": "",
+      "pubDate": "Mon, 25 May 2026 20:11:23 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to rise, oil falls on hopes for Iran deal",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-oil-falls-as-optimism-on-iran-deal-grows-20260526-p600lf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Global stocks rose to record highs as crude oil fell after officials signalled the US was nearing a deal with Iran to reopen the Strait of Hormuz and restore oil flows.",
       "pubDate": "Tue, 26 May 2026 05:15:06 +1000",
       "source": "SMH Business"
     },
     {
-      "title": "The Enhanced Games flattered to deceive, but that's probably the point",
+      "title": "One world record and a whole lot of regret for Enhanced Games athletes",
       "link": "https://www.abc.net.au/news/2026-05-26/enhanced-games-financial-reality-underwhelming-performance/106718134",
       "snippet": "",
       "pubDate": "Mon, 25 May 2026 19:07:19 +0000",
       "source": "ABC News"
     },
     {
-      "title": "From 'the Reverend' to the 'Big Freeze', Neale Daniher never stopped leading",
+      "title": "'My time to go': The words that showed Daniher's humanity in tragedy",
       "link": "https://www.abc.net.au/news/2026-05-26/from-reverend-to-big-freeze-neale-daniher-never-stopped-leading/106719924",
       "snippet": "",
       "pubDate": "Mon, 25 May 2026 19:03:43 +0000",
@@ -855,55 +908,6 @@
       "snippet": "Investment in the clean energy transition tanked over the past year, collapsing by 50 per cent.",
       "pubDate": "Tue, 26 May 2026 00:01:00 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Blues send out SOS as playmaker struggles with injury",
-      "link": "https://www.abc.net.au/news/2026-05-25/mitchell-moses-in-doubt-for-state-of-origin-matt-burton/106719960",
-      "snippet": "",
-      "pubDate": "Mon, 25 May 2026 08:44:48 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Tesla’s newest electric vehicle could give it a much-needed spark",
-      "link": "https://www.smh.com.au/business/companies/tesla-s-newest-electric-vehicle-could-give-it-a-much-needed-spark-20260520-p5zyum.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The company hasn’t had a blockbuster new product in years. But early reviews of the Tesla Semi suggest it could be a hit.",
-      "pubDate": "Mon, 25 May 2026 18:10:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX advances, oil dives on hopes of US-Iran deal",
-      "link": "https://www.smh.com.au/business/markets/asx-on-edge-as-war-uncertainty-lingers-20260525-p6007d.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket closed in the green while oil prices fell, amid rising hopes of an end to the Middle East conflict.",
-      "pubDate": "Mon, 25 May 2026 17:46:16 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Augustus launches follow-up gold hunt near Leonora in WA",
-      "link": "https://www.smh.com.au/business/companies/augustus-launches-follow-up-gold-hunt-near-leonora-in-wa-20260525-p600j3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Augustus has begun follow-up drilling at Music Well near Leonora after strong maiden gold hits and a recent $2.5M raising to help fast-track the next phase.",
-      "pubDate": "Mon, 25 May 2026 16:43:06 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Neale Daniher to be remembered with state funeral, premier reveals",
-      "link": "https://www.abc.net.au/news/2026-05-25/neale-daniher-death-mourned-by-afl-state-funeral/106719368",
-      "snippet": "",
-      "pubDate": "Mon, 25 May 2026 06:25:11 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Australian fuel prices face July surge if Strait of Hormuz remains shut",
-      "link": "https://www.smh.com.au/business/consumer-affairs/australian-fuel-prices-face-july-surge-if-strait-of-hormuz-remains-shut-20260525-p600fd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Australia faces a race against time to avoid another fuel price shock as analysts watch to see if the US and Iran can agree to a peace deal before a temporary cut to fuel excise ends.",
-      "pubDate": "Mon, 25 May 2026 16:06:21 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "V'landys to take over as NRL CEO after Abdo quits to join Tennis Australia",
-      "link": "https://www.abc.net.au/news/2026-05-25/andrew-abdo-quits-nrl-chief-eying-tennis-australia-role/106717492",
-      "snippet": "",
-      "pubDate": "Mon, 25 May 2026 06:02:44 +0000",
-      "source": "ABC News"
     }
   ]
 }
