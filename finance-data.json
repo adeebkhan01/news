@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-26T20:28:07.891Z",
+  "fetchedAt": "2026-05-26T22:44:17.937Z",
   "asx200": {
     "value": 8657.8,
     "change": -128.7,
@@ -199,33 +199,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4509.5,
-      "change": -165.9,
-      "changePercent": -3.55
+      "price": 4502.1,
+      "change": -173.3,
+      "changePercent": -3.71
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 77.32,
-      "change": 2.31,
-      "changePercent": 3.08
+      "price": 77.39,
+      "change": 2.39,
+      "changePercent": 3.18
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 93.56,
-      "change": -2.81,
-      "changePercent": -2.92
+      "price": 93.57,
+      "change": -2.8,
+      "changePercent": -2.91
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.43,
+      "price": 6.42,
       "change": 0.41,
-      "changePercent": 6.76
+      "changePercent": 6.73
     },
     {
       "name": "BHP Group",
@@ -834,10 +834,45 @@
   ],
   "news": [
     {
+      "title": "'Kidding ourselves': Daley whacks talk of Cleary's losing Origin record",
+      "link": "https://www.abc.net.au/news/2026-05-27/state-of-origin-laurie-daley-defends-nathan-cleary-losing-record/106725592",
+      "snippet": "",
+      "pubDate": "Tue, 26 May 2026 22:07:29 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Brad Scott reveals he wanted Essendon to trade Zach Merrett, confirms bumper Harley Reid offer",
+      "link": "https://www.abc.net.au/news/2026-05-27/afl-brad-scott-zach-merrett-trade-harley-reid-essendon-offer/106725506",
+      "snippet": "",
+      "pubDate": "Tue, 26 May 2026 21:19:46 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Australian underdog stuns former world number one at French Open",
+      "link": "https://www.abc.net.au/news/2026-05-27/french-open-tennis-adam-walton-downs-daniil-medvedev/106725526",
+      "snippet": "",
+      "pubDate": "Tue, 26 May 2026 21:19:11 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'Can't put it into words': Origin star's mum reveals heartbreaking call",
+      "link": "https://www.abc.net.au/news/2026-05-27/cameron-munster-family-heartbreak-state-of-origin-game-1-sydney/106696294",
+      "snippet": "",
+      "pubDate": "Tue, 26 May 2026 21:02:59 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "‘Unacceptable’: BP chair fired over ‘serious concerns’ over conduct",
       "link": "https://www.smh.com.au/business/companies/unacceptable-bp-chair-fired-over-serious-concerns-over-conduct-20260527-p600yt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "BP unexpectedly fired chairman Albert Manifold just months into the job, continuing a period of turmoil at the oil major.",
-      "pubDate": "Wed, 27 May 2026 06:16:25 +1000",
+      "snippet": "Two people close to BP said that there had been complaints about aggressive behaviour by Albert Manifold toward employees, as well as of him mishandling sensitive information.",
+      "pubDate": "Wed, 27 May 2026 06:47:32 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ASX set to slide, Wall Street hits records; Tech company joins $US1tr club",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-wall-street-rises-toward-records-bp-ousts-chairman-over-standards-oversight-and-conduct-20260527-p600yh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The US stock market is ticking toward records as it catches up with climbs for others around the world, when President Donald Trump said negotiations were “proceeding nicely” with Iran on ending their war.",
+      "pubDate": "Wed, 27 May 2026 06:47:10 +1000",
       "source": "SMH Business"
     },
     {
@@ -845,13 +880,6 @@
       "link": "https://www.smh.com.au/business/banking-and-finance/the-five-step-plan-to-maximising-your-pension-20260525-p600fa.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Many Australians are missing out on their full age pension entitlement – here’s how to fix that.",
       "pubDate": "Wed, 27 May 2026 05:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX set to slide, Wall Street eyes records; Tech company joins $US1tr club",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-wall-street-rises-toward-records-bp-ousts-chairman-over-standards-oversight-and-conduct-20260527-p600yh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The US stock market is ticking toward records as it catches up with climbs for others around the world, when President Donald Trump said negotiations were “proceeding nicely” with Iran on ending their war.",
-      "pubDate": "Wed, 27 May 2026 05:24:13 +1000",
       "source": "SMH Business"
     },
     {
@@ -883,39 +911,11 @@
       "source": "ABC News"
     },
     {
-      "title": "ASX falls, oil rebounds after US strikes Iran; Kogan jumps, ASX Ltd tanks",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-oil-falls-as-optimism-on-iran-deal-grows-20260526-p600lf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket slipped after the US military said it carried out “self-defence” strikes in southern Iran, triggering doubts about an imminent end to the war.",
-      "pubDate": "Tue, 26 May 2026 17:14:25 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Aguia wins final approval to launch Brazil phosphate sales",
-      "link": "https://www.smh.com.au/business/companies/aguia-wins-final-approval-to-launch-brazil-phosphate-sales-20260526-p600wu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Aguia Resources has secured final approval to commercialise its phosphate in Brazil, enabling sales and deliveries through a discounted campaign designed to accelerate cash flow into July 2026.",
-      "pubDate": "Tue, 26 May 2026 17:09:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "PLC Resources fires first drill shots into major WA gold anomaly",
-      "link": "https://www.smh.com.au/business/companies/plc-resources-fires-first-drill-shots-into-major-wa-gold-anomaly-20260526-p600vv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "PLC Resources has completed its first drill test at Rochefort in WA’s Murchison region, hitting quartz veins, sulphides and alteration ahead of assays due within weeks.",
-      "pubDate": "Tue, 26 May 2026 16:20:07 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "OpenAI boss downplays jobs apocalypse as ‘threats of violence’ hit Aussie tech giant",
-      "link": "https://www.smh.com.au/business/companies/openai-boss-downplays-jobs-apocalypse-as-threats-of-violence-hit-aussie-tech-giant-20260526-p600tn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Sam Altman no longer thinks AI will replace workers en masse, but admits businesses are yet to see a return on their massive AI spending.",
-      "pubDate": "Tue, 26 May 2026 15:57:15 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Critical Resources jags rich gold and fresh upside in NZ",
-      "link": "https://www.smh.com.au/business/companies/critical-resources-jags-rich-gold-and-fresh-upside-in-nz-20260526-p600vh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Critical Resources has defined a new 600-metre arsenic soil anomaly and bagged rock-chip assays up to 5.42g/t gold at its Lammerlaw project in New Zealand.",
-      "pubDate": "Tue, 26 May 2026 15:36:32 +1000",
-      "source": "SMH Business"
+      "title": "More or Less quiz: We need you to rank five State of Origin greats",
+      "link": "https://www.abc.net.au/news/2026-05-27/state-of-origin-more-or-less-sydney/106718366",
+      "snippet": "",
+      "pubDate": "Tue, 26 May 2026 18:30:00 +0000",
+      "source": "ABC News"
     }
   ]
 }
