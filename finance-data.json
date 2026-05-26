@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-26T16:13:42.488Z",
+  "fetchedAt": "2026-05-26T20:28:07.891Z",
   "asx200": {
     "value": 8657.8,
     "change": -128.7,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0,
-    "changePercent": 0.5,
+    "changePercent": 0.58,
     "previousClose": 0.71,
     "asOf": "2026-05-26",
     "history": [
@@ -185,6 +185,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-25",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-26",
         "close": 0.72
       }
@@ -195,33 +199,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4507,
-      "change": -168.4,
-      "changePercent": -3.6
+      "price": 4509.5,
+      "change": -165.9,
+      "changePercent": -3.55
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 76.29,
-      "change": 1.29,
-      "changePercent": 1.72
+      "price": 77.32,
+      "change": 2.31,
+      "changePercent": 3.08
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 93.99,
-      "change": -2.38,
-      "changePercent": -2.47
+      "price": 93.56,
+      "change": -2.81,
+      "changePercent": -2.92
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.39,
-      "change": 0.37,
-      "changePercent": 6.16
+      "price": 6.43,
+      "change": 0.41,
+      "changePercent": 6.76
     },
     {
       "name": "BHP Group",
@@ -830,6 +834,55 @@
   ],
   "news": [
     {
+      "title": "‘Unacceptable’: BP chair fired over ‘serious concerns’ over conduct",
+      "link": "https://www.smh.com.au/business/companies/unacceptable-bp-chair-fired-over-serious-concerns-over-conduct-20260527-p600yt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "BP unexpectedly fired chairman Albert Manifold just months into the job, continuing a period of turmoil at the oil major.",
+      "pubDate": "Wed, 27 May 2026 06:16:25 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "The five-step plan to maximising your pension",
+      "link": "https://www.smh.com.au/business/banking-and-finance/the-five-step-plan-to-maximising-your-pension-20260525-p600fa.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Many Australians are missing out on their full age pension entitlement – here’s how to fix that.",
+      "pubDate": "Wed, 27 May 2026 05:30:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ASX set to slide, Wall Street eyes records; Tech company joins $US1tr club",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-wall-street-rises-toward-records-bp-ousts-chairman-over-standards-oversight-and-conduct-20260527-p600yh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The US stock market is ticking toward records as it catches up with climbs for others around the world, when President Donald Trump said negotiations were “proceeding nicely” with Iran on ending their war.",
+      "pubDate": "Wed, 27 May 2026 05:24:13 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "As the housing market slows, there are three things not to do",
+      "link": "https://www.smh.com.au/business/the-economy/as-the-housing-market-slows-there-are-three-things-not-to-do-20260525-p600kv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Most economists aren’t expecting house prices to drop –  just to increase at a slower rate.",
+      "pubDate": "Wed, 27 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Scott's sacking gives Essendon another chance to step out of Hird shadow",
+      "link": "https://www.abc.net.au/news/2026-05-27/afl-brad-scott-sacking-analysis-essendon-james-hird-shadow/106721916",
+      "snippet": "",
+      "pubDate": "Tue, 26 May 2026 18:52:45 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "The NSW Blues made a 'tough' selection call, so will the Wallabies",
+      "link": "https://www.abc.net.au/news/2026-05-27/wallabies-selection-headache-state-of-origin-nsw-blues/106723110",
+      "snippet": "",
+      "pubDate": "Tue, 26 May 2026 18:51:44 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "State of Origin is tonight. Here is what you need to know for Game I",
+      "link": "https://www.abc.net.au/news/2026-05-27/state-of-origin-game-i-nsw-blues-qld-maroons-teams-kick-off-time/106721866",
+      "snippet": "",
+      "pubDate": "Tue, 26 May 2026 18:50:48 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "ASX falls, oil rebounds after US strikes Iran; Kogan jumps, ASX Ltd tanks",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-oil-falls-as-optimism-on-iran-deal-grows-20260526-p600lf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The Australian sharemarket slipped after the US military said it carried out “self-defence” strikes in southern Iran, triggering doubts about an imminent end to the war.",
@@ -863,55 +916,6 @@
       "snippet": "Critical Resources has defined a new 600-metre arsenic soil anomaly and bagged rock-chip assays up to 5.42g/t gold at its Lammerlaw project in New Zealand.",
       "pubDate": "Tue, 26 May 2026 15:36:32 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Liddell power station chimneys come crashing down in controlled explosion",
-      "link": "https://www.smh.com.au/business/companies/liddell-power-station-chimneys-come-crashing-down-20260526-p600r5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "For more than half a century, the Liddell power station burned black coal to generate electricity to power New South Wales. On Tuesday, its two 168-metre tall concrete chimney stacks were demolished.",
-      "pubDate": "Tue, 26 May 2026 15:35:31 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Capitalism trumps climate: Why BHP’s green ambitions turned to empty promises",
-      "link": "https://www.smh.com.au/business/companies/capitalism-trumps-climate-why-bhp-s-green-ambitions-turned-to-empty-promises-20260526-p600s8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Was then chief executive Andrew Mackenzie just virtue signalling when he declared in 2019 that the mining giant would lead the capitalist pack on greening the world?",
-      "pubDate": "Tue, 26 May 2026 15:22:56 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ClearVue cracks booming Indian solar market with major glass pact",
-      "link": "https://www.smh.com.au/business/companies/clearvue-cracks-booming-indian-solar-market-with-major-glass-pact-20260526-p600v1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "ClearVue has entered India through a deal with Aria Glass to locally manufacture and sell its solar glazing products, backed by Aria’s US$240.5M investment in an Indian plant.",
-      "pubDate": "Tue, 26 May 2026 14:57:46 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Fan in Australian jersey catches Aussie-hit homer in 15-year first",
-      "link": "https://www.abc.net.au/news/2026-05-26/curtis-mead-travis-bazzana-fan-in-aussie-shirt-catch/106722402",
-      "snippet": "",
-      "pubDate": "Tue, 26 May 2026 04:55:06 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Viking locks in driller for Nevada tungsten blitz",
-      "link": "https://www.smh.com.au/business/companies/viking-locks-in-driller-for-nevada-tungsten-blitz-20260526-p600uf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Viking Mines has hired drill contractor DrilCor for a 63-hole maiden drilling program at its Linka tungsten project in Nevada, aiming to kick off in late June.",
-      "pubDate": "Tue, 26 May 2026 14:11:12 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Infini lights up next-generation uranium targets in Canada",
-      "link": "https://www.smh.com.au/business/companies/infini-lights-up-next-generation-uranium-targets-in-canada-20260526-p600uh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Infini Resources has fine-tuned its hunt for higher-grade uranium at Portland Creek after combining project-wide geophysics and drilling data to target key mineralised corridors.",
-      "pubDate": "Tue, 26 May 2026 14:10:23 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Can State of Origin save an NRL season that's losing its way?",
-      "link": "https://www.abc.net.au/news/2026-05-26/state-of-origin-nrl-season-set-restarts-record-margins/106721556",
-      "snippet": "",
-      "pubDate": "Tue, 26 May 2026 02:46:53 +0000",
-      "source": "ABC News"
     }
   ]
 }
