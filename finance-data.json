@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-27T10:33:46.753Z",
+  "fetchedAt": "2026-05-27T16:14:54.944Z",
   "asx200": {
     "value": 8717.7,
     "change": -48.7,
@@ -94,17 +94,13 @@
       {
         "date": "2026-05-26",
         "close": 8657.8
-      },
-      {
-        "date": "2026-05-27",
-        "close": 8717.7
       }
     ]
   },
   "audusd": {
     "value": 0.71,
     "change": 0,
-    "changePercent": -0.03,
+    "changePercent": -0.07,
     "previousClose": 0.71,
     "asOf": "2026-05-27",
     "history": [
@@ -207,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4512.4,
-      "change": -163,
-      "changePercent": -3.49
+      "price": 4468.7,
+      "change": -206.7,
+      "changePercent": -4.42
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.61,
-      "change": 0.6,
-      "changePercent": 0.8
+      "price": 74.77,
+      "change": -0.23,
+      "changePercent": -0.31
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 90.1,
-      "change": -6.27,
-      "changePercent": -6.51
+      "price": 90.26,
+      "change": -6.11,
+      "changePercent": -6.34
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.4,
-      "change": 0.38,
-      "changePercent": 6.33
+      "price": 6.33,
+      "change": 0.32,
+      "changePercent": 5.23
     },
     {
       "name": "BHP Group",
@@ -842,6 +838,20 @@
   ],
   "news": [
     {
+      "title": "Kalyn Ponga's Origin send-off leaves Queensland legend 'in shock'",
+      "link": "https://www.abc.net.au/news/2026-05-27/kalyn-ponga-send-off-state-of-origin-i-reaction/106730106",
+      "snippet": "",
+      "pubDate": "Wed, 27 May 2026 13:47:58 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Quick hits: Blues' selection gamble pays off, bunker sparks controversy",
+      "link": "https://www.abc.net.au/news/2026-05-27/state-of-origin-i-nsw-blues-queensland-maroons-five-quick-hits/106729716",
+      "snippet": "",
+      "pubDate": "Wed, 27 May 2026 13:19:34 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Drivers will get bigger tax deductions for car expenses from July",
       "link": "https://www.smh.com.au/business/workplace/drivers-will-get-bigger-tax-deductions-for-car-expenses-from-july-20260522-p5zzth.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Australians using their cars for business will be able to claim bigger tax deductions for trips made from July 1 this year.",
@@ -849,7 +859,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Blues great labels NSW 'a disgrace' as Maroons start Origin red hot",
+      "title": "Maroons let 20-0 lead slip in Origin I after Kalyn Ponga sent off late",
       "link": "https://www.abc.net.au/news/2026-05-27/state-of-origin-game-1-live-updates-blues-vs-maroons/106724102",
       "snippet": "",
       "pubDate": "Wed, 27 May 2026 07:55:28 +0000",
@@ -910,20 +920,6 @@
       "snippet": "",
       "pubDate": "Wed, 27 May 2026 03:33:59 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Concussion saw Macy lose her 'spark', but a new trial helped her recover",
-      "link": "https://www.abc.net.au/news/2026-05-27/concussion-kids-research-mcri-trial/106534866",
-      "snippet": "",
-      "pubDate": "Wed, 27 May 2026 02:58:36 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "‘Idolatry of profit’: Pope Leo takes on AI’s wannabe trillionaires",
-      "link": "https://www.smh.com.au/business/markets/idolatry-of-profit-pope-leo-takes-on-ai-s-wannabe-trillionaires-20260527-p60100.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Pope takes a stand against those who want the morality and ethics of artificial intelligence to be entirely in the hands of its creators.",
-      "pubDate": "Wed, 27 May 2026 12:11:15 +1000",
-      "source": "SMH Business"
     }
   ]
 }
