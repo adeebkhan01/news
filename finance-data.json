@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-27T16:14:54.944Z",
+  "fetchedAt": "2026-05-27T20:30:49.407Z",
   "asx200": {
     "value": 8717.7,
     "change": -48.7,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.71,
     "change": 0,
-    "changePercent": -0.07,
+    "changePercent": 0.01,
     "previousClose": 0.71,
     "asOf": "2026-05-27",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-26",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-27",
         "close": 0.71
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4468.7,
-      "change": -206.7,
-      "changePercent": -4.42
+      "price": 4490,
+      "change": -185.4,
+      "changePercent": -3.97
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 74.77,
-      "change": -0.23,
-      "changePercent": -0.31
+      "price": 74.98,
+      "change": -0.02,
+      "changePercent": -0.03
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 90.26,
-      "change": -6.11,
-      "changePercent": -6.34
+      "price": 89.47,
+      "change": -6.9,
+      "changePercent": -7.16
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.33,
+      "price": 6.34,
       "change": 0.32,
-      "changePercent": 5.23
+      "changePercent": 5.3
     },
     {
       "name": "BHP Group",
@@ -838,6 +842,27 @@
   ],
   "news": [
     {
+      "title": "ASX set to slide, Wall Street hangs near its records as oil prices ease",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-wall-street-hangs-near-its-records-as-oil-prices-ease-20260528-p601ee.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "US stocks are hanging near their records as oil prices fall and ease the pressure on households and businesses worldwide.",
+      "pubDate": "Thu, 28 May 2026 05:18:57 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Young saviour and an answered prayer deliver Blues incredible Origin win",
+      "link": "https://www.abc.net.au/news/2026-05-28/state-of-origin-i-nsw-blues-qld-maroons-analysis/106729836",
+      "snippet": "",
+      "pubDate": "Wed, 27 May 2026 19:01:58 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "FIFA faces investigation over 'impossibly high' World Cup ticket prices",
+      "link": "https://www.abc.net.au/news/2026-05-28/fifa-world-cup-investigation-ticket-prices-new-jersey-new-york/106730322",
+      "snippet": "",
+      "pubDate": "Wed, 27 May 2026 16:59:22 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Kalyn Ponga's Origin send-off leaves Queensland legend 'in shock'",
       "link": "https://www.abc.net.au/news/2026-05-27/kalyn-ponga-send-off-state-of-origin-i-reaction/106730106",
       "snippet": "",
@@ -899,27 +924,6 @@
       "snippet": "A fight for control of one of Australia’s last steelworks has narrowed to two potential buyers, pitting a billionaire against India’s third-largest steelmaker.",
       "pubDate": "Wed, 27 May 2026 15:26:46 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Critica cracks WA rare earths upgrade code in pilot breakthrough",
-      "link": "https://www.smh.com.au/business/companies/critica-cracks-wa-rare-earths-upgrade-code-in-pilot-breakthrough-20260527-p6018t.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Critica Limited has upgraded its WA rare earths feed 14-fold to a 3% TREO concentrate in pilot beneficiation work in Vietnam, rejecting 95 per cent of the feed mass.",
-      "pubDate": "Wed, 27 May 2026 14:54:32 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ABC’s head of news quits, and his successor will probably be external",
-      "link": "https://www.smh.com.au/business/companies/abc-s-head-of-news-to-exit-making-way-for-external-appointment-20260527-p6012s.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Justin Stevens, the ABC’s most senior news executive, resigned on Wednesday after four years in the job.",
-      "pubDate": "Wed, 27 May 2026 14:40:37 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "24yo who placed first bet at 15 says he's lost $900k to gambling",
-      "link": "https://www.abc.net.au/news/2026-05-27/underage-gambling/106649686",
-      "snippet": "",
-      "pubDate": "Wed, 27 May 2026 03:33:59 +0000",
-      "source": "ABC News"
     }
   ]
 }
