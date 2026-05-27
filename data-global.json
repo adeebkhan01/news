@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-26T22:23:21.345Z",
-  "summary": "The Middle East dominates global headlines as tensions escalate sharply between the US and Iran, with American strikes on Iranian targets prompting threats of retaliation and raising questions about the viability of any ceasefire agreement. Diplomatic friction is mounting across multiple theaters, from Russia's objections over UN representation to European countries summoning Russian envoys over threats to Kyiv, while Israel continues operations with Netanyahu vowing intensified action against Hezbollah. In domestic politics, Trump's congressional redistricting agenda faces resistance in Southern states, and the White House proposes new restrictions on federal workers, while international developments include Armenia signing a strategic partnership with the US and Senegal's ousted prime minister unexpectedly becoming parliament speaker. Environmental and space initiatives provide a brighter narrative, with Scotland's green economy contribution reaching £10.2 billion and NASA advancing plans for a permanent moon base.",
+  "fetchedAt": "2026-05-27T04:13:23.737Z",
+  "summary": "Global markets reacted sharply to technological shifts as Ferrari's share price fell following its electric vehicle unveiling, while AI chip demand surged past expectations and created two new trillion-dollar companies. The Middle East dominates geopolitical concerns, with escalating tensions between Israel, Iran, and Hezbollah threatening regional stability and potentially raising household energy costs, while a ceasefire deal appears increasingly fragile amid accusations of violations from multiple sides. Ukraine faces renewed Russian threats of strikes on Kyiv as international mediators search for diplomatic solutions, and the United States is reshaping its foreign policy with new ambassadorial appointments and strategic partnerships in Africa and the Caucasus. Climate records continue breaking at unprecedented rates as global temperatures rise, while several nations grapple with domestic political upheaval including leadership challenges in South Africa and Senegal.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,86 @@
     }
   ],
   "articles": [
+    {
+      "title": "Ferrari shares slump after it unveils first fully electric car",
+      "link": "https://www.bbc.com/news/articles/cwy22rddy5no?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The new Luce model has divided opinion on social media, and comes despite intense pressure from Chinese EV makers.",
+      "pubDate": "Wed, 27 May 2026 04:02:43 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8d99/live/303f3030-58ad-11f1-9cb9-b10f27a755d1.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Booming AI chip demand helps create two new $1tn club members",
+      "link": "https://www.bbc.com/news/articles/cnvp9dq0p3go?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "SK Hynix and Micron are the latest tech firms to join the growing list of stocks with mega valuations.",
+      "pubDate": "Wed, 27 May 2026 02:15:10 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b8ee/live/f9aa1360-5973-11f1-8898-d9c0304099c7.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Brazil’s Flavio Bolsonaro meets with Trump amid troubled presidential bid",
+      "link": "https://www.aljazeera.com/news/2026/5/27/brazils-flavio-bolsonaro-meets-with-trump-amid-troubled-presidential-bid?traffic_source=rss",
+      "desc": "Son of former President Jair Bolsonaro is fighting to recover from a scandal that has rocked his presidential campaign.",
+      "pubDate": "Wed, 27 May 2026 01:18:58 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/ap_6a161ff02678d-1779834864_73521f-1779842398.jpg?resize=1200%2C630&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Champion ethical hacker warns AI tools like Mythos could put her out of business",
+      "link": "https://www.bbc.com/news/articles/c3r2zjpryzro?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Chompie, one of the world's tops ethical hackers, says AI like Claude Mythos will make it harder for people like her to compete.",
+      "pubDate": "Wed, 27 May 2026 00:43:55 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/529a/live/5a4cd470-58dc-11f1-a182-6b602140f589.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "UN chief ‘deeply concerned’ by Moscow plan for Kyiv strikes",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/27/aje-onl-nf_clip_-un-chief-deeply-concerned-kyiv-strikes-260526?traffic_source=rss",
+      "desc": "UN Secretary-General Guterres said he was “deeply concerned” after Russia announced plans to strike Ukraine.",
+      "pubDate": "Wed, 27 May 2026 00:01:38 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1779840066.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran war live: Israel kills 31 in Lebanon; Tehran blasts US truce violation",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/5/27/iran-war-live-israel-kills-31-in-lebanon-tehran-blasts-us-truce-violation?traffic_source=rss",
+      "desc": "Lebanon&#039;s Health Ministry reports that Israeli attacks have killed 3,213 people and injured 9,737 since March 2.",
+      "pubDate": "Wed, 27 May 2026 00:00:00 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/14020921-1779838417.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran war impact to hit household energy bills for the first time",
+      "link": "https://www.bbc.com/news/articles/ce8pw464986o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "A household using a typical amount of gas and electricity is forecast to pay about £200 more a year.",
+      "pubDate": "Tue, 26 May 2026 23:28:51 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/798d/live/04583080-55eb-11f1-b851-ed1f362c74c1.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Can EU find a Russia whisperer to mediate an end to war in Ukraine?",
+      "link": "https://www.bbc.com/news/articles/cqxpp73wqero?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "With the US pulling out of trilateral talks with Russia and Ukraine, the EU is looking for potential candidates to step in.",
+      "pubDate": "Tue, 26 May 2026 23:15:47 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cebd/live/892a4c70-595c-11f1-8b8c-6d33e1d5abb6.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
     {
       "title": "Green jobs contributing £10.2bn to Scotland's economy, says CBI",
       "link": "https://www.bbc.com/news/articles/c7599zez4rxo?at_medium=RSS&amp;at_campaign=rss",
@@ -12653,26 +12733,6 @@
       "sourceId": "dwnews",
       "sourceName": "DW News",
       "sourceColor": "#002B55"
-    },
-    {
-      "title": "How climate change threatens the economic backbone of the Pacific",
-      "link": "https://www.bbc.com/news/articles/cq57vxjvdy4o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Tuna populations around the Pacific Islands could move away as ocean temperatures increase.",
-      "pubDate": "Sun, 26 Apr 2026 23:16:41 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8987/live/c8459010-22f5-11f1-8620-17795c093e86.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "UK's biggest ever environmental pollution claim reaches High Court",
-      "link": "https://www.bbc.com/news/articles/cqxl5rjw58po?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "One of the UK's largest chicken producers and a water company accused of polluting three rivers including the River Wye",
-      "pubDate": "Sun, 26 Apr 2026 23:01:47 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4e75/live/a4f7bc10-3fdc-11f1-9365-9d68a044e038.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
     }
   ]
 }
