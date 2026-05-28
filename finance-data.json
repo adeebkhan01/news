@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-28T16:36:13.263Z",
+  "fetchedAt": "2026-05-28T20:39:10.718Z",
   "asx200": {
     "value": 8592.9,
     "change": -117.8,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0,
-    "changePercent": -0.32,
+    "changePercent": -0.36,
     "previousClose": 0.72,
     "asOf": "2026-05-28",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-27",
+        "close": 0.71
+      },
+      {
         "date": "2026-05-28",
         "close": 0.72
       }
@@ -203,25 +207,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4530.1,
-      "change": -61.4,
-      "changePercent": -1.34
+      "price": 4529.7,
+      "change": -61.8,
+      "changePercent": -1.35
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.83,
-      "change": 2.63,
-      "changePercent": 3.59
+      "price": 75.93,
+      "change": 2.72,
+      "changePercent": 3.72
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 88.93,
-      "change": -11,
-      "changePercent": -11.01
+      "price": 88.81,
+      "change": -11.12,
+      "changePercent": -11.13
     },
     {
       "name": "Copper",
@@ -229,7 +233,7 @@
       "iconBg": "#fef0e6",
       "price": 6.42,
       "change": 0.5,
-      "changePercent": 8.47
+      "changePercent": 8.54
     },
     {
       "name": "BHP Group",
@@ -303,7 +307,7 @@
     },
     {
       "name": "Health Care",
-      "changePercent": -0.84,
+      "changePercent": -0.98,
       "stocks": [
         {
           "name": "CSL",
@@ -312,8 +316,8 @@
         },
         {
           "name": "COH",
-          "price": 0,
-          "changePercent": 0
+          "price": 97.4,
+          "changePercent": -0.58
         },
         {
           "name": "RMD",
@@ -485,7 +489,7 @@
     },
     {
       "name": "Communication Services",
-      "changePercent": -0.24,
+      "changePercent": 0.13,
       "stocks": [
         {
           "name": "TLS",
@@ -499,8 +503,8 @@
         },
         {
           "name": "CAR",
-          "price": 24.31,
-          "changePercent": -1.46
+          "price": 0,
+          "changePercent": 0
         },
         {
           "name": "NWS",
@@ -838,88 +842,88 @@
   ],
   "news": [
     {
+      "title": "There’s a sneaky way taxes are creeping up. But that might be OK",
+      "link": "https://www.smh.com.au/business/the-economy/there-s-a-sneaky-way-taxes-are-creeping-up-but-that-might-be-ok-20260528-p601mx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Opposition Leader Angus Taylor might be onto something when it comes to bracket creep. But it’s not as simple as we might think.",
+      "pubDate": "Fri, 29 May 2026 06:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Aussies facing 'most important day' of World Championship campaign",
+      "link": "https://www.abc.net.au/news/2026-05-29/australia-rugby-sevens-world-championship-valladolid-bordeaux/106733222",
+      "snippet": "",
+      "pubDate": "Thu, 28 May 2026 19:40:05 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to rise, Wall Street advances as tentative Iran deal drives down oil prices",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-advances-as-tentative-iran-deal-drives-down-oil-prices-20260529-p601u1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Wall Street is pushing to more records as companies keep piling up profits while a tentative deal to extend the ceasefire in the war with Iran by 60 days also helped lift the market and rein in oil prices.",
+      "pubDate": "Fri, 29 May 2026 05:12:45 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Melbourne’s Catholic Church offloads another $30m in property",
+      "link": "https://www.smh.com.au/business/companies/melbourne-s-catholic-church-offloads-another-30m-in-property-20260528-p601os.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The church has now sold almost a whole row of properties lining the block between Lansdowne Street and Morrison Place in East Melbourne.",
+      "pubDate": "Fri, 29 May 2026 05:09:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "What does it mean to be the best jack of all trades, but master of none?",
+      "link": "https://www.abc.net.au/news/2026-05-29/tori-west-commonwealth-games-heptathlon/106550974",
+      "snippet": "",
+      "pubDate": "Thu, 28 May 2026 19:01:27 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "I don’t trust my company’s HR department. Is my scepticism warranted?",
+      "link": "https://www.smh.com.au/business/workplace/i-don-t-trust-my-company-s-hr-department-is-my-scepticism-warranted-20260528-p601oj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Not all human resources teams are the same, and not every human resources manager automatically sides with management.",
+      "pubDate": "Fri, 29 May 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Is your boss asking you to work with AI? Watch out for these four things",
+      "link": "https://www.smh.com.au/business/workplace/is-your-boss-asking-you-to-work-with-ai-watch-out-for-these-four-things-20260528-p601om.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Many employees are already using AI, often without clear rules or guidelines. Here’s where that can pose problems.",
+      "pubDate": "Fri, 29 May 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Renovated, bluestone Victorian cottage conceals an edgy Fitzroy pad",
+      "link": "https://www.smh.com.au/business/consumer-affairs/renovated-bluestone-victorian-cottage-conceals-an-edgy-fitzroy-pad-20260521-p5zzhj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Some of the best architecture can often be discovered behind modest facades where it’s not screaming for attention.",
+      "pubDate": "Fri, 29 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "‘Back soon’: RFK Jr-inspired health start-up goes offline",
+      "link": "https://www.smh.com.au/business/companies/back-soon-rfk-jr-inspired-health-start-up-goes-offline-20260528-p601jg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Bobbi, a telehealth provider founded by an Australian multimillionaire and named after the US health secretary, has taken down its website after this masthead’s reporting on its prescribing practices.",
+      "pubDate": "Fri, 29 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "He has no TV experience and is little known in Australia. The ABC just handed him its biggest news job",
+      "link": "https://www.smh.com.au/business/companies/he-has-no-tv-experience-and-is-little-known-in-australia-the-abc-just-handed-him-its-biggest-news-job-20260528-p601jn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The new boss of ABC News is an Aussie, but he’s been living and working outside the country since the 20th century.",
+      "pubDate": "Fri, 29 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Glenfiddich’s Sydney home goes up for sale in $100m deal",
+      "link": "https://www.smh.com.au/business/companies/glenfiddich-s-sydney-home-goes-up-for-sale-in-100m-deal-20260528-p601ny.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "German-backed Deutsche Wealth and Asset Management, is selling its prime North Sydney office tower with a value of about $100 million.",
+      "pubDate": "Fri, 29 May 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Saints' tough loss made worse as midfielder injures Achilles",
       "link": "https://www.abc.net.au/news/2026-05-28/afl-round-12-thursday-live-blog-st-kilda-saints-hawthorn-hawks/106723706",
       "snippet": "",
       "pubDate": "Thu, 28 May 2026 08:50:14 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "'Unfair' Women's Origin timing criticised as Blues sweep Maroons aside",
-      "link": "https://www.abc.net.au/news/2026-05-28/womens-state-of-origin-live-blog-qld-maroons-nsw-blues/106732038",
-      "snippet": "",
-      "pubDate": "Thu, 28 May 2026 08:27:16 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "NRL backs referee's decision to send off Ponga in Origin I",
-      "link": "https://www.abc.net.au/news/2026-05-28/state-of-origin-nrl-blues-maroons-ashley-klein-kalyn-ponga/106734746",
-      "snippet": "",
-      "pubDate": "Thu, 28 May 2026 08:11:33 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX slumps after fresh US strikes on Iran; banks fall, gold stocks plunge",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-wall-street-hangs-near-its-records-as-oil-prices-ease-20260528-p601ee.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket closed sharply lower and oil prices spiked after US forces carried out fresh airstrikes on Iran, with a deal to end the three-month war remaining elusive.",
-      "pubDate": "Thu, 28 May 2026 17:16:04 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Young finds method in the madness for long-awaited Origin arrival",
-      "link": "https://www.abc.net.au/news/2026-05-28/nsw-state-of-origin-hudson-young-blues-game-1/106733938",
-      "snippet": "",
-      "pubDate": "Thu, 28 May 2026 06:33:07 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Supercars ref sorry for calling driver 'a grub' over controversial crash",
-      "link": "https://www.abc.net.au/news/2026-05-28/supercars-referee-craig-baird-apologises-ryan-wood-grub/106733678",
-      "snippet": "",
-      "pubDate": "Thu, 28 May 2026 06:13:53 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Viking de-risks Nevada tungsten project with big metallurgy win",
-      "link": "https://www.smh.com.au/business/companies/viking-de-risks-nevada-tungsten-project-with-big-metallurgy-win-20260528-p601qe.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Viking Mines has produced premium 62.5 per cent tungsten concentrate at a 59.8 per cent recovery rate from metallurgical testwork at its Nevada project.",
-      "pubDate": "Thu, 28 May 2026 16:02:12 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "‘Corporate bullying’: Melbourne brothel sues bank for discrimination",
-      "link": "https://www.smh.com.au/business/companies/corporate-bullying-melbourne-brothel-sues-bank-for-discrimination-20260527-p60146.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The owner of South Melbourne brothel Gotham City is suing Bendigo Bank after it closed his accounts, the bank claims, to comply with anti-money laundering laws.",
-      "pubDate": "Thu, 28 May 2026 15:59:17 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "‘Like an episode of Utopia’: Why are Australian workplace comedies so good?",
-      "link": "https://www.smh.com.au/business/workplace/like-an-episode-of-utopia-why-are-australian-workplace-comedies-so-good-20260528-p601k3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Every time a character has an awkward conversation next to the coffee machine, or struggles with the photocopier settings, it triggers an uncomfortable familiarity.",
-      "pubDate": "Thu, 28 May 2026 15:45:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Business groups are howling over the budget, and it’s getting messy",
-      "link": "https://www.smh.com.au/business/the-economy/business-groups-are-howling-over-the-budget-and-it-s-getting-messy-20260528-p601ld.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The chorus of detractors hasn’t faded since budget night, but has risen to a full-throated roar just as the treasurer introduced the tax legislation to federal parliament.",
-      "pubDate": "Thu, 28 May 2026 15:15:05 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Critical Resources hails sulphur-free battery breakthrough",
-      "link": "https://www.smh.com.au/business/companies/critical-resources-hails-sulphur-free-battery-breakthrough-20260528-p601oo.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Critical Resources says its sulphur-free battery electrolyte has delivered room-temperature results comparable to those of leading sulphide-class materials.",
-      "pubDate": "Thu, 28 May 2026 13:58:35 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Pacgold kicks off aggressive gold growth push at SA production play",
-      "link": "https://www.smh.com.au/business/companies/pacgold-kicks-off-aggressive-gold-growth-push-at-sa-production-play-20260528-p601ns.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Pacgold Ltd has fired up the drill rig at its South Australian Vertigo deposit, kicking off follow-up resource growth campaigns as production ramps up at its fresh White Dam project.",
-      "pubDate": "Thu, 28 May 2026 13:08:02 +1000",
-      "source": "SMH Business"
     }
   ]
 }
