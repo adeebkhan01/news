@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-28T20:39:10.718Z",
+  "fetchedAt": "2026-05-28T22:49:44.979Z",
   "asx200": {
     "value": 8592.9,
     "change": -117.8,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0,
-    "changePercent": -0.36,
+    "changePercent": -0.35,
     "previousClose": 0.72,
     "asOf": "2026-05-28",
     "history": [
@@ -207,25 +207,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4529.7,
-      "change": -61.8,
-      "changePercent": -1.35
+      "price": 4525.8,
+      "change": -65.7,
+      "changePercent": -1.43
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
       "price": 75.93,
-      "change": 2.72,
+      "change": 2.73,
       "changePercent": 3.72
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 88.81,
-      "change": -11.12,
-      "changePercent": -11.13
+      "price": 88.62,
+      "change": -11.31,
+      "changePercent": -11.32
     },
     {
       "name": "Copper",
@@ -233,7 +233,7 @@
       "iconBg": "#fef0e6",
       "price": 6.42,
       "change": 0.5,
-      "changePercent": 8.54
+      "changePercent": 8.5
     },
     {
       "name": "BHP Group",
@@ -489,7 +489,7 @@
     },
     {
       "name": "Communication Services",
-      "changePercent": 0.13,
+      "changePercent": -0.24,
       "stocks": [
         {
           "name": "TLS",
@@ -503,8 +503,8 @@
         },
         {
           "name": "CAR",
-          "price": 0,
-          "changePercent": 0
+          "price": 24.31,
+          "changePercent": -1.46
         },
         {
           "name": "NWS",
@@ -842,6 +842,27 @@
   ],
   "news": [
     {
+      "title": "Australia's Kasatkina sets up French Open clash with top seed Sabalenka",
+      "link": "https://www.abc.net.au/news/2026-05-29/french-open-daria-kasatkina-aryna-sabalenka-second-round/106735940",
+      "snippet": "",
+      "pubDate": "Thu, 28 May 2026 21:18:09 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to rise, Wall Street advances as tentative Iran deal drives down oil prices",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-advances-as-tentative-iran-deal-drives-down-oil-prices-20260529-p601u1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Wall Street is pushing to more records as companies keep piling up profits while a tentative deal to extend the ceasefire in the war with Iran by 60 days also helped lift the market and rein in oil prices.",
+      "pubDate": "Fri, 29 May 2026 06:47:43 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "French Open favourite loses to 56th-ranked amid dizzy spell",
+      "link": "https://www.abc.net.au/news/2026-05-29/french-open-tennis-jannik-sinner-loses-to-juan-manuel-cerundolo/106735888",
+      "snippet": "",
+      "pubDate": "Thu, 28 May 2026 20:44:09 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "There’s a sneaky way taxes are creeping up. But that might be OK",
       "link": "https://www.smh.com.au/business/the-economy/there-s-a-sneaky-way-taxes-are-creeping-up-but-that-might-be-ok-20260528-p601mx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Opposition Leader Angus Taylor might be onto something when it comes to bracket creep. But it’s not as simple as we might think.",
@@ -854,13 +875,6 @@
       "snippet": "",
       "pubDate": "Thu, 28 May 2026 19:40:05 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "ASX set to rise, Wall Street advances as tentative Iran deal drives down oil prices",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-advances-as-tentative-iran-deal-drives-down-oil-prices-20260529-p601u1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Wall Street is pushing to more records as companies keep piling up profits while a tentative deal to extend the ceasefire in the war with Iran by 60 days also helped lift the market and rein in oil prices.",
-      "pubDate": "Fri, 29 May 2026 05:12:45 +1000",
-      "source": "SMH Business"
     },
     {
       "title": "Melbourne’s Catholic Church offloads another $30m in property",
@@ -910,20 +924,6 @@
       "snippet": "The new boss of ABC News is an Aussie, but he’s been living and working outside the country since the 20th century.",
       "pubDate": "Fri, 29 May 2026 05:00:00 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Glenfiddich’s Sydney home goes up for sale in $100m deal",
-      "link": "https://www.smh.com.au/business/companies/glenfiddich-s-sydney-home-goes-up-for-sale-in-100m-deal-20260528-p601ny.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "German-backed Deutsche Wealth and Asset Management, is selling its prime North Sydney office tower with a value of about $100 million.",
-      "pubDate": "Fri, 29 May 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Saints' tough loss made worse as midfielder injures Achilles",
-      "link": "https://www.abc.net.au/news/2026-05-28/afl-round-12-thursday-live-blog-st-kilda-saints-hawthorn-hawks/106723706",
-      "snippet": "",
-      "pubDate": "Thu, 28 May 2026 08:50:14 +0000",
-      "source": "ABC News"
     }
   ]
 }
