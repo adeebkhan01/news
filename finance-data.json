@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-28T10:35:25.272Z",
+  "fetchedAt": "2026-05-28T16:36:13.263Z",
   "asx200": {
     "value": 8592.9,
     "change": -117.8,
@@ -94,17 +94,13 @@
       {
         "date": "2026-05-27",
         "close": 8717.7
-      },
-      {
-        "date": "2026-05-28",
-        "close": 8592.9
       }
     ]
   },
   "audusd": {
-    "value": 0.71,
-    "change": -0.01,
-    "changePercent": -0.97,
+    "value": 0.72,
+    "change": 0,
+    "changePercent": -0.32,
     "previousClose": 0.72,
     "asOf": "2026-05-28",
     "history": [
@@ -198,7 +194,7 @@
       },
       {
         "date": "2026-05-28",
-        "close": 0.71
+        "close": 0.72
       }
     ]
   },
@@ -207,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4426.3,
-      "change": -165.2,
-      "changePercent": -3.6
+      "price": 4530.1,
+      "change": -61.4,
+      "changePercent": -1.34
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 73.52,
-      "change": 0.31,
-      "changePercent": 0.43
+      "price": 75.83,
+      "change": 2.63,
+      "changePercent": 3.59
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 90.33,
-      "change": -9.6,
-      "changePercent": -9.61
+      "price": 88.93,
+      "change": -11,
+      "changePercent": -11.01
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.33,
-      "change": 0.41,
-      "changePercent": 7
+      "price": 6.42,
+      "change": 0.5,
+      "changePercent": 8.47
     },
     {
       "name": "BHP Group",
@@ -307,7 +303,7 @@
     },
     {
       "name": "Health Care",
-      "changePercent": -0.98,
+      "changePercent": -0.84,
       "stocks": [
         {
           "name": "CSL",
@@ -316,8 +312,8 @@
         },
         {
           "name": "COH",
-          "price": 97.4,
-          "changePercent": -0.58
+          "price": 0,
+          "changePercent": 0
         },
         {
           "name": "RMD",
@@ -842,14 +838,14 @@
   ],
   "news": [
     {
-      "title": "Live: Hawks in control at Docklands after minute's silence for Daniher",
+      "title": "Saints' tough loss made worse as midfielder injures Achilles",
       "link": "https://www.abc.net.au/news/2026-05-28/afl-round-12-thursday-live-blog-st-kilda-saints-hawthorn-hawks/106723706",
       "snippet": "",
       "pubDate": "Thu, 28 May 2026 08:50:14 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Live: Blues hunting Women's Origin clean sweep on soaked Gold Coast",
+      "title": "'Unfair' Women's Origin timing criticised as Blues sweep Maroons aside",
       "link": "https://www.abc.net.au/news/2026-05-28/womens-state-of-origin-live-blog-qld-maroons-nsw-blues/106732038",
       "snippet": "",
       "pubDate": "Thu, 28 May 2026 08:27:16 +0000",
