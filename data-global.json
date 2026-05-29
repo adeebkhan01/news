@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-28T22:42:37.133Z",
-  "summary": "Global tensions remain dangerously elevated following a breakdown in US-Iran negotiations, with the two nations trading military strikes and conflicting statements about ceasefire prospects while oil prices surge and inflation pressures mount internationally. The Middle East faces deepening humanitarian crises as Israel expands operations in Gaza and Lebanon, prompting UN intervention on sexual violence allegations and sparking broader regional instability that threatens global energy security. Europe confronts internal challenges ranging from coalition instability in Latvia to enforcement actions against illegal commerce, while the developing world grapples with disease outbreaks including a major Ebola surge in the DRC and rising economic hardship reflected in youth unemployment and job market collapses.",
+  "fetchedAt": "2026-05-29T04:03:24.902Z",
+  "summary": "A ceasefire between the US and Iran appears to be holding after officials confirmed a tentative 60-day truce extension deal, though Trump's approval remains pending and questions linger about whether a lasting peace is achievable. The Middle East remains volatile, with Israel continuing military operations in Gaza and Lebanon, the UN blacklisting Israel for conflict-related sexual violence, and the EU sanctioning Israeli settlers in the West Bank. Beyond the region, major stories include a Blue Origin rocket explosion in Florida, a Swiss train station stabbing labelled terrorism, mounting inflation in the US partly tied to Iran tensions, and the UN warning that 2030 will likely see the hottest year on record.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Blue Origin rocket explodes into huge ball of flame on Florida launch pad",
+      "link": "https://www.bbc.com/news/articles/cvgzl5wd8xeo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Amazon billionaire Jeff Bezos, who founded Blue Origin, said it was a \"very rough day\".",
+      "pubDate": "Fri, 29 May 2026 02:59:49 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3767/live/d8d6b8e0-5b09-11f1-89a3-d1f559421220.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "US Treasury secretary confirms plans for banknote featuring Trump’s face",
+      "link": "https://www.aljazeera.com/news/2026/5/29/us-treasury-secretary-confirms-plans-for-banknote-featuring-trumps-face?traffic_source=rss",
+      "desc": "Proposed $250 bill would mark the first time a living person has appeared on US currency in more than a century.",
+      "pubDate": "Fri, 29 May 2026 02:13:18 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-05-28T184923Z_1121751325_RC2IILA6MCCL_RTRMADP_3_USA-TRUMP-1780018582.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "US to designate two Brazilian gangs as ‘terrorist’ organisations",
+      "link": "https://www.aljazeera.com/news/2026/5/29/us-to-designate-two-brazilian-gangs-as-terrorist-organisations?traffic_source=rss",
+      "desc": "Trump administration has used crime and drug trafficking to push for greater US military influence across Latin America.",
+      "pubDate": "Fri, 29 May 2026 00:12:42 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/getty_6a18be95b3-1780006549.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran war live: Tehran, Trump yet to comment on 60-day truce extension plan",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/5/29/iran-war-live-tehran-trump-yet-to-comment-on-60-day-truce-extension-plan?traffic_source=rss",
+      "desc": "Lebanese PM Nawaf Salam says &#039;nothing can justify&#039; Israel&#039;s military onslaught against &#039;peaceful people&#039; in Lebanon.",
+      "pubDate": "Fri, 29 May 2026 00:00:00 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AP26148324885386-1780011301.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Netanyahu orders Israeli army to seize 70 percent of Gaza",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/28/netanyahu-orders-israeli-army-to-seize-70-percent-of-gaza?traffic_source=rss",
+      "desc": "Israeli Prime Minister Benjamin Netanyahu says he has ordered the military to take control of 70 percent of Gaza.",
+      "pubDate": "Thu, 28 May 2026 23:48:28 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1780011919.jpg?resize=1920%2C1079&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "When trade soured, this American liquor maker moved to Canada",
+      "link": "https://www.bbc.com/news/articles/c2l22ypl909o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Phillips Distilling lost 70% of its Canadian business after provinces banned the sale of US liquor. It has since found a way to sell its products in Canada again.",
+      "pubDate": "Thu, 28 May 2026 23:29:46 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5a9d/live/c815fa50-5908-11f1-a656-5bf9ca1d9342.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
     {
       "title": "US and Iran reach tentative deal to extend ceasefire, US officials say",
       "link": "https://www.bbc.com/news/articles/c87qng40wz9o?at_medium=RSS&amp;at_campaign=rss",
@@ -153,6 +213,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Learning from Ukraine war, Hezbollah is now using fibre-optic drones to hit Israel",
+      "link": "https://www.bbc.com/news/articles/c0r2ydlvk41o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Fibre-optic drones are now Hezbollah's primary weapon against Israel's soldiers and civilians.",
+      "pubDate": "Thu, 28 May 2026 16:39:30 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0c63/live/e5a53b30-5a84-11f1-b721-e3714617440a.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
     },
     {
       "title": "WHO chief heads to ‘hardest hit’ Ituri as DRC’s 17th Ebola outbreak spreads",
@@ -13550,26 +13620,6 @@
       "desc": "Blank negative photographic film sealed in a bag is sent to edge of space using a helium balloon.",
       "pubDate": "Wed, 29 Apr 2026 05:23:12 GMT",
       "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1f71/live/88861470-4327-11f1-86fa-b5b1f146da5b.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Extreme weather and green energy on the rise in Europe",
-      "link": "https://www.dw.com/en/extreme-weather-and-green-energy-on-the-rise-in-europe/a-76962870?maca=en-rss-en-eu-2092-rdf",
-      "desc": "Europe's climate extremes have hit new highs — but renewables are now supplying nearly half of the continent's electricity.",
-      "pubDate": "2026-04-29T02:00:00Z",
-      "img": "https://static.dw.com/image/73207794_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "£20m mystery gift buys London Zoo new hospital where you can watch vets work",
-      "link": "https://www.bbc.com/news/articles/cpqpj7wy4x4o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Visitors will be able to watch live veterinary procedures inside a state-of-the-art new animal hospital.",
-      "pubDate": "Tue, 28 Apr 2026 23:20:26 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7db5/live/847cb040-431e-11f1-ac78-2112837ce2aa.jpg",
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
