@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-29T20:40:12.740Z",
+  "fetchedAt": "2026-05-29T22:50:32.972Z",
   "asx200": {
     "value": 8731.7,
     "change": 44.7,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0,
-    "changePercent": 0,
+    "changePercent": -0.01,
     "previousClose": 0.72,
     "asOf": "2026-05-29",
     "history": [
@@ -207,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4574.2,
-      "change": 29,
-      "changePercent": 0.64
+      "price": 4569.9,
+      "change": 24.7,
+      "changePercent": 0.54
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.78,
-      "change": 4.21,
-      "changePercent": 5.88
+      "price": 75.58,
+      "change": 4.02,
+      "changePercent": 5.61
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 87.84,
-      "change": -19.04,
-      "changePercent": -17.81
+      "price": 87.76,
+      "change": -19.12,
+      "changePercent": -17.89
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 6.39,
-      "change": 0.51,
-      "changePercent": 8.66
+      "change": 0.52,
+      "changePercent": 8.78
     },
     {
       "name": "BHP Group",
@@ -842,7 +842,14 @@
   ],
   "news": [
     {
-      "title": "Bullying, racism, homophobia met with silence in grassroots footy",
+      "title": "De Minaur and Djokovic bundled out of French Open leaving draw wide open",
+      "link": "https://www.abc.net.au/news/2026-05-30/tennis-de-minaur-djokovic-out-of-french-open-roland-garros/106740386",
+      "snippet": "",
+      "pubDate": "Fri, 29 May 2026 21:34:09 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'Heart ripped out on repeat': Auskick parents say they have been failed by AFL",
       "link": "https://www.abc.net.au/news/2026-05-30/auskick-parents-say-they-have-been-failed-by-afl/106700366",
       "snippet": "",
       "pubDate": "Fri, 29 May 2026 19:59:26 +0000",
@@ -863,7 +870,7 @@
       "source": "ABC News"
     },
     {
-      "title": "Blues complete famous win over Cats as skipper nails golden moment",
+      "title": "Scott calls for high ARC standards, laments missed 'howler' in loss",
       "link": "https://www.abc.net.au/news/2026-05-29/afl-rd-12-friday-live-blog-carl-geel/106723972",
       "snippet": "",
       "pubDate": "Fri, 29 May 2026 08:47:44 +0000",
@@ -917,13 +924,6 @@
       "snippet": "The consulting group has lost its top two executives after confirming another case where confidential customer information was allegedly shared for financial gain.",
       "pubDate": "Fri, 29 May 2026 15:00:55 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Kiwi goalkeeper gets bride's blessing to ditch wedding for World Cup",
-      "link": "https://www.abc.net.au/news/2026-05-29/fifa-world-cup-michael-woud-wedding-postpone/106738172",
-      "snippet": "",
-      "pubDate": "Fri, 29 May 2026 04:48:59 +0000",
-      "source": "ABC News"
     }
   ]
 }
