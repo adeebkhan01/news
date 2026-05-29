@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-29T16:11:34.755Z",
+  "fetchedAt": "2026-05-29T20:40:12.740Z",
   "asx200": {
     "value": 8731.7,
     "change": 44.7,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0,
-    "changePercent": 0.07,
+    "changePercent": 0,
     "previousClose": 0.72,
     "asOf": "2026-05-29",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.71
       },
       {
+        "date": "2026-05-28",
+        "close": 0.72
+      },
+      {
         "date": "2026-05-29",
         "close": 0.72
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4601.1,
-      "change": 55.9,
-      "changePercent": 1.23
+      "price": 4574.2,
+      "change": 29,
+      "changePercent": 0.64
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.96,
-      "change": 4.39,
-      "changePercent": 6.13
+      "price": 75.78,
+      "change": 4.21,
+      "changePercent": 5.88
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 87.77,
-      "change": -19.11,
-      "changePercent": -17.88
+      "price": 87.84,
+      "change": -19.04,
+      "changePercent": -17.81
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.4,
-      "change": 0.52,
-      "changePercent": 8.83
+      "price": 6.39,
+      "change": 0.51,
+      "changePercent": 8.66
     },
     {
       "name": "BHP Group",
@@ -838,6 +842,20 @@
   ],
   "news": [
     {
+      "title": "Bullying, racism, homophobia met with silence in grassroots footy",
+      "link": "https://www.abc.net.au/news/2026-05-30/auskick-parents-say-they-have-been-failed-by-afl/106700366",
+      "snippet": "",
+      "pubDate": "Fri, 29 May 2026 19:59:26 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "We’re working harder than ever. So why don’t the metrics show it?",
+      "link": "https://www.smh.com.au/business/workplace/we-re-working-harder-than-ever-so-why-don-t-the-metrics-show-it-20260528-p601ol.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "It feels like we’re all working hard for the salary we take home, so why do we keep hearing about a productivity slump?",
+      "pubDate": "Sat, 30 May 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Blues rookie in doubt for Origin II after injury in Cronulla's win over Manly",
       "link": "https://www.abc.net.au/news/2026-05-29/nrl-live-updates-cronulla-sharks-manly-sea-eagles/106739546",
       "snippet": "",
@@ -905,20 +923,6 @@
       "link": "https://www.abc.net.au/news/2026-05-29/fifa-world-cup-michael-woud-wedding-postpone/106738172",
       "snippet": "",
       "pubDate": "Fri, 29 May 2026 04:48:59 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Eels reveal Moses injury outlook ahead of Origin II",
-      "link": "https://www.abc.net.au/news/2026-05-29/eels-reveal-moses-injury-outlook-state-of-origin-ii/106737956",
-      "snippet": "",
-      "pubDate": "Fri, 29 May 2026 04:26:47 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Newly discovered ancient wasp species named after F1 driver Piastri",
-      "link": "https://www.abc.net.au/news/2026-05-29/ancient-wasp-species-named-after-f1-driver-oscar-piastri/106737446",
-      "snippet": "",
-      "pubDate": "Fri, 29 May 2026 03:12:20 +0000",
       "source": "ABC News"
     }
   ]
