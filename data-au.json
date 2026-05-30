@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-30T10:49:15.187Z",
-  "summary": "Australia faces escalating violence and public safety concerns, with multiple serious incidents reported including a deadly Gold Coast fire, a violent brawl at a soccer match involving forty people, and several vehicle-related attacks on citizens and police. The country is also grappling with significant policy challenges, including looming NDIS changes that will cut disability worker positions and a first home deposit scheme producing unintended consequences. Natural disasters are on the horizon with a monster storm bearing down on Western Australia featuring destructive winds and potential tornadoes. Health and research matters round out the briefing, with a koala chlamydia vaccine undermined by a critical error and new findings linking poor sleep to rising cancer risk in younger Australians.",
+  "fetchedAt": "2026-05-30T13:48:27.150Z",
+  "summary": "Western Australia faces severe weather today with a once-in-five-year storm expected to bring destructive winds, heavy rain and potential tornadoes to Perth and surrounding areas. Meanwhile, the federal government's first home deposit scheme is failing to deliver its intended benefits as house prices decline, and significant policy changes to the NDIS are set to result in job cuts for disability support workers. In other significant developments, a koala chlamydia vaccine research project has been undermined by a critical error, and hospital systems have successfully managed a suspected Ebola case in Melbourne. The news landscape also reflects ongoing concerns about public safety, with multiple violent incidents reported across the country including brawls, vehicle-related attacks and deadly fires.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "First home deposit scheme backfires as house prices tumble",
+      "link": "https://www.smh.com.au/national/first-home-deposit-scheme-backfires-as-house-prices-tumble-20260530-p602a6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "More than 50,000 first home buyers are at risk of losing money after house prices tumbled in some capital cities.",
+      "pubDate": "Sat, 30 May 2026 23:44:28 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/8ac33c8bfadcb94af649061baff259141e5f92ab",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Animal welfare violations swarm Miami zoo owned by ex-drug kingpin in Tiger King",
+      "link": "https://www.theguardian.com/us-news/2026/may/30/miami-zoo-violations-mario-tabraue-tiger-king",
+      "desc": "<p>Endangered snow leopard had leg amputated and capybara died at Mario Tabraue’s controversial roadside facility</p><p>An endangered clouded leopard had a leg amputated and a capybara died following ",
+      "pubDate": "Sat, 30 May 2026 13:00:19 GMT",
+      "img": "https://i.guim.co.uk/img/media/2b30c3448d8faaf0ef9d88924200688a0fda386b/285_0_1678_1344/master/1678.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Trial of multi-cancer blood test among 142,000 NHS patients fails to meet main aim",
+      "link": "https://www.theguardian.com/science/2026/may/30/trial-of-multi-cancer-blood-test-among-142000-nhs-patients-fails-to-meet-main-aim",
+      "desc": "<p>Results presented at oncology conference in Chicago show Galleri test failed to reduce late-stage cancer diagnoses</p><p>A blood test for more than 50 types of cancer that was billed as the holy gr",
+      "pubDate": "Sat, 30 May 2026 12:16:31 GMT",
+      "img": "https://i.guim.co.uk/img/media/c4fad121a86627a5e6b94cb83464fd2ad04f7108/68_0_1350_1080/master/1350.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "US garbage incinerators are failing to eliminate ‘forever chemical’ air pollution, experts warn",
+      "link": "https://www.theguardian.com/us-news/2026/may/30/garbage-incinerators-pfas-forever-chemicals",
+      "desc": "<p>The virtually indestructible Pfas waste puts largely low-income neighborhoods at risk, public health advocates say</p><p>The nation’s garbage incinerators are largely failing to eliminate Pfas “for",
+      "pubDate": "Sat, 30 May 2026 12:00:19 GMT",
+      "img": "https://i.guim.co.uk/img/media/c8b79c9c1e6d4ca11948ce03b830b379c146a17e/500_0_5000_4000/master/5000.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Once-in-five-year storm due to hit Perth in coming hours",
+      "link": "https://www.smh.com.au/national/once-in-five-year-storm-due-to-hit-perth-in-coming-hours-20260530-p602bt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "As the massive storm's set to bare down on parts of WA, the coastal town of Lancelin is tonight on high alert as huge swells threaten to breach its already eroded coastline.",
+      "pubDate": "Sat, 30 May 2026 21:16:02 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/12cbe10690427d2d432f74ca8ff69cf7daa2745d",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘Agree to disagree’: Festival gave ‘silenced’ writers a voice",
+      "link": "https://www.smh.com.au/national/nsw/agree-to-disagree-festival-gave-silenced-writers-a-voice-20260524-p6003n.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "I have just spent some days at the Sydney Writers’ Festival – and I am more convinced than ever that these face-to-face forums are important.",
+      "pubDate": "Sat, 30 May 2026 21:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.6619%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/10f77499827204838f1541f5c823fe2a98092ca9",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
     {
       "title": "Monster fish caught off South Australia",
       "link": "https://www.smh.com.au/national/monster-fish-caught-off-south-australia-20260530-p602bj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
@@ -34908,46 +34968,6 @@
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
-    },
-    {
-      "title": "Oil price tops $126 a barrel after Trump warns Iran blockade could last ‘months’",
-      "link": "https://www.theguardian.com/world/2026/apr/30/oil-price-news-highest-since-2022-us-iran-ceasefire-strait-of-hormuz",
-      "desc": "<p>Markets spooked as US president appears willing to keep up naval blockade and Iran keeps strait of Hormuz all but shut</p><p>The global oil price hit $126 a barrel on Thursday, its highest level si",
-      "pubDate": "Thu, 30 Apr 2026 13:38:54 GMT",
-      "img": "https://i.guim.co.uk/img/media/be90c9a4670a617a75dd872b3e6b0a8a992c710e/730_0_4505_3604/master/4505.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "US economic growth rebounds 2% as consumer spending slows amid Iran war",
-      "link": "https://www.theguardian.com/business/2026/apr/30/gdp-consumer-spending-slows-iran-war",
-      "desc": "<p>First quarter output, driven by AI investment and government spending, rose as oil shock fuels inflation fears</p><p>US <a href=\"https://www.theguardian.com/business/economicgrowth\">gross domestic ",
-      "pubDate": "Thu, 30 Apr 2026 13:11:23 GMT",
-      "img": "https://i.guim.co.uk/img/media/a0000146c07dc8fccb7fb0eb89b7b9eb4cbb8e5a/1140_0_5903_4724/master/5903.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "UK terrorism threat level raised to 'severe' after London stabbing attack",
-      "link": "https://www.sbs.com.au/news/article/new-powers-uk-vows-to-tackle-state-backed-threats-after-stabbings/y2dnwyr57",
-      "desc": "The recent incidents come amid a rising number of antisemitic attacks worldwide.",
-      "pubDate": "Thu, 30 Apr 2026 11:13:57 +0000",
-      "img": "https://assets.sbs.com.au/dims4/default/d72bf5c/2147483647/strip/false/crop/8193x3765+0+846/resize/1234x567!/format/jpeg/quality/90/?url=https%3A%2F%2Fsbs-au-brightspot.s3.ap-southeast-2.amazonaws.com%2F44%2F01%2F96bebe4e4a2f99ab4d1ddefd7e23%2F20260430186325752248-original.jpg",
-      "sourceId": "sbsnews",
-      "sourceName": "SBS News",
-      "sourceColor": "#0D1F3C"
-    },
-    {
-      "title": "'Not one phone call': Families' plea for Australians detained by Israel, as DFAT assists in Crete",
-      "link": "https://www.sbs.com.au/news/article/israel-sumudarrests-approximately-175-gaza-flotilla-activists-in-international-waters-near-greece/w99w04idl",
-      "desc": "The Israel Defense Forces intercepted the Global Sumud Flotilla on Thursday near the Greek island of Crete.",
-      "pubDate": "Thu, 30 Apr 2026 10:51:08 +0000",
-      "img": "https://assets.sbs.com.au/dims4/default/7aefd2b/2147483647/strip/false/crop/8595x3949+0+890/resize/1234x567!/format/jpeg/quality/90/?url=https%3A%2F%2Fsbs-au-brightspot.s3.ap-southeast-2.amazonaws.com%2F35%2Fa5%2F6cb320a9494f852367e42f74d51f%2F20260430155748754972-original.jpg",
-      "sourceId": "sbsnews",
-      "sourceName": "SBS News",
-      "sourceColor": "#0D1F3C"
     }
   ]
 }
