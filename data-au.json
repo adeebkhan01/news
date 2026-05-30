@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-30T03:50:44.918Z",
-  "summary": "Australia faces mounting health and social pressures reflected in today's headlines, with concerning trends emerging around cancer risk in younger people, school violence and sexism, and poor workforce productivity despite longer hours. A suspected Ebola case in Melbourne has tested hospital systems, while sporting and cultural events continue with modifications as Vivid replaces drones with fireworks. Economic and governance challenges dominate coverage, from affordable housing shortages and online booking monopolies affecting small business, to corruption concerns around the Brisbane Olympics and NRL leadership questions. The week also highlights broader cultural shifts including workplace well-being struggles and environmental anxieties, though some positive notes emerge from medical breakthroughs offering breast cancer patients alternatives to chemotherapy.",
+  "fetchedAt": "2026-05-30T08:32:50.871Z",
+  "summary": "Australia faced a spate of fire incidents today with multiple properties destroyed and at least one death reported on the Gold Coast, while severe weather warnings were issued for Western Australia ahead of an incoming monster storm. The nation's crime headlines were dominated by violent incidents including a mass brawl at a soccer match, multiple ram raids, and assaults involving vehicles. On the policy front, the government's first home deposit scheme faced scrutiny while affordable housing challenges persisted, and corruption concerns emerged around Brisbane's Olympic stadium plans. Health and science stories offered more positive developments, with a groundbreaking genomic breast cancer test potentially sparing patients chemotherapy and researchers advancing koala vaccine research.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,176 @@
     }
   ],
   "articles": [
+    {
+      "title": "Fire wrecks three homes",
+      "link": "https://www.smh.com.au/national/fire-wrecks-three-homes-20260530-p602a4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A major fire north of Brisbane has destroyed three homes and sent several streets into lockdown.",
+      "pubDate": "Sat, 30 May 2026 18:21:30 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/e6231a079362104574cf0b0226de321a1de8284f",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Woman killed in Gold Coast fire",
+      "link": "https://www.smh.com.au/national/woman-killed-in-gold-coast-fire-20260530-p602aa.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A woman has died after a fire in Broadbeach on the Gold Coast with police investigating the circumstances around the death.",
+      "pubDate": "Sat, 30 May 2026 18:21:27 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/28c56c0ffd4bba7fec23a6a0cfd4ce4d80b84d40",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "First home deposit scheme backfires",
+      "link": "https://www.smh.com.au/national/first-home-deposit-scheme-backfires-20260530-p602a6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "More than 50,000 first home buyers are at risk of losing money after house prices tumbled in some capital, as the government's five-per cent deposit scheme backfires.",
+      "pubDate": "Sat, 30 May 2026 18:20:54 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/8ac33c8bfadcb94af649061baff259141e5f92ab",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Thug hit by car during wild brawl",
+      "link": "https://www.smh.com.au/national/thug-hit-by-car-during-wild-brawl-20260530-p602a8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Armed thugs attacked each other with metal poles during a wild street brawl in Melbourne, with one run down by a car.",
+      "pubDate": "Sat, 30 May 2026 18:20:53 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/bb909bff198f50ebf69a1c900efce936028bf452",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Liberals leader fires up party faithful following Tony Abbott's presidency",
+      "link": "https://www.smh.com.au/national/liberals-leader-fires-up-party-faithful-following-tony-abbotts-presidency-20260530-p602a5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Angus Taylor has issued a rallying cry for his party at the final day of the federal Liberal Council in Melbourne.",
+      "pubDate": "Sat, 30 May 2026 18:20:49 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/bd967f9cb1adca21b91b6489e54deacef56c2b4a",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Teen fighting for life after motocross crash",
+      "link": "https://www.smh.com.au/national/teen-fighting-for-life-after-motocross-crash-20260530-p602a7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A teenager is fighting for life after crashing during the Victorian Motocross Championships in Horsham.",
+      "pubDate": "Sat, 30 May 2026 18:20:24 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/8df2388fa2fd5ab47054e668f89a1054873d9504",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Forty people involved in brawl at suburban soccer match",
+      "link": "https://www.smh.com.au/national/nsw/forty-people-involved-in-brawl-at-suburban-soccer-match-20260530-p6029p.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The fight erupted after spectators reportedly went onto the field during the Saturday afternoon game.",
+      "pubDate": "Sat, 30 May 2026 18:07:06 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1936%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_57/t_crop_custom/q_86%2Cf_auto/a2ced74e1967e2c079a8fb86de27641d44f22876",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Crime scene declared after person dies in resort fire, as second blaze engulfs houses",
+      "link": "https://www.smh.com.au/national/queensland/two-fires-either-side-of-brisbane-with-grave-fears-for-person-pulled-from-smoking-resort-20260530-p6026y.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A person has died after they were pulled from a unit fire on the Gold Coast, prompting a police investigation, while a second fire engulfed houses in Brisbane’s north and forced an exclusion zone.",
+      "pubDate": "Sat, 30 May 2026 17:26:09 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.883%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/6ad01ef73fbdd6472fd86989751bca7c24ad89811fb6c4845363ef0117209ed6",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘Crazy mistake’ undermines historic koala chlamydia vaccine, researcher says",
+      "link": "https://www.smh.com.au/national/queensland/crazy-mistake-undermines-historic-koala-chlamydia-vaccine-researcher-says-20260530-p6026b.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The vaccine a decade in the making had been heralded as a cure for one of the biggest koala killers out there.",
+      "pubDate": "Sat, 30 May 2026 17:14:18 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.16860566301779814%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_90/t_crop_custom/q_86%2Cf_auto/8d782dd7bfbff0ff7d63e05f446f1eeab4c9650f",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "On-street EV charging in UK is postcode lottery as drivers face council objections",
+      "link": "https://www.theguardian.com/environment/2026/may/30/on-street-ev-charging-uk-postcode-lottery-council-objections-gullies-safety-legal-parking",
+      "desc": "<p>Despite government pledges, more than 20 authorities will not allow gullies, citing safety, legal and parking concerns</p><p>The energy secretary, Ed Miliband, has <a href=\"https://www.gov.uk/gover",
+      "pubDate": "Sat, 30 May 2026 07:00:12 GMT",
+      "img": "https://i.guim.co.uk/img/media/612ec0dc5cded6408f77cfc80cf462cc7b5a152b/244_0_3820_3056/master/3820.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Pedestrian seriously injured after being hit by out-of-control car in North Beach",
+      "link": "https://www.smh.com.au/national/western-australia/pedestrian-seriously-injured-after-being-hit-by-out-of-control-car-in-north-beach-20260530-p6028m.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The man in his 60s was struck by a second car that mounted the footpath and pushed him over a limestone wall and into bushes.",
+      "pubDate": "Sat, 30 May 2026 16:46:14 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_3270%2C$y_1456/t_crop_custom/q_86%2Cf_auto/1261ccd80ea1dc9704e9382372e3f4d297eac901",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Long famed for its food, this Sydney suburb is about to get a nightlife boost",
+      "link": "https://www.smh.com.au/national/nsw/long-famed-for-its-food-this-sydney-suburb-is-about-to-get-a-nightlife-boost-20260529-p601y2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Sydneysiders are increasingly looking beyond the CBD for a nightlife fix – and Eastwood is the next go-to.",
+      "pubDate": "Sat, 30 May 2026 16:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1765%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_110/t_crop_custom/q_86%2Cf_auto/a476b6aba12d9c7d2414c830578a0ae8513404bc",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘There is no way to stop this’: ‘Biotech Barbie’ Cathy Tie on her mission to genetically modify babies",
+      "link": "https://www.theguardian.com/science/2026/may/30/there-is-no-way-to-stop-this-biotech-barbie-cathy-tie-on-her-mission-to-genetically-modify-babies",
+      "desc": "<p>The Canadian entrepreneur has always pushed the boundaries of gene editing, once attempting to turn horses into unicorns. Now she is set on modifying human embryos – something her controversial ex-",
+      "pubDate": "Sat, 30 May 2026 05:00:11 GMT",
+      "img": "https://i.guim.co.uk/img/media/45345eaf84e4ffabb83d2ed743d88b9167e0acd9/99_0_4928_3941/master/4928.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "What is a blue micromoon and when is the best time to see it this weekend?",
+      "link": "https://www.theguardian.com/science/2026/may/30/what-is-rare-blue-micromoon",
+      "desc": "<p>A blue micromoon is a rare spectacle, though it’s not as blue or as micro as you might imagine</p><p>This weekend the night skies will feature a rare spectacle – a blue micromoon. We take a look at",
+      "pubDate": "Sat, 30 May 2026 05:00:11 GMT",
+      "img": "https://i.guim.co.uk/img/media/fd8eede86823b271afb711918275b912e600c906/380_0_5000_4000/master/5000.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "US won't let China impose 'hegemony' in Asia, Hegseth says",
+      "link": "https://www.abc.net.au/news/2026-05-30/pete-hegseth-us-will-prevent-china-hegemony-shangri-la-dialogue/106740596",
+      "desc": "The US Defense Secretary addressed Asia's most important defence summit, but did not mention Taiwan as questions remain over a stalled weapons package.",
+      "pubDate": "Sat, 30 May 2026 04:19:53 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/820419ccc95d29bd4f59c06b6510ddbb?impolicy=wcms_crop_resize&amp;cropH=1107&amp;cropW=830&amp;xPos=548&amp;yPos=221&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "‘Destructive winds, heavy rain, tornadoes’: Monster storm bearing down on WA",
+      "link": "https://www.smh.com.au/national/western-australia/destructive-winds-heavy-rain-tornadoes-monster-storm-bearing-down-on-wa-20260530-p6026r.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Warnings have been issued for residents throughout the state as the weather amps up on Saturday evening.",
+      "pubDate": "Sat, 30 May 2026 14:18:37 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.226%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_13/t_crop_custom/q_86%2Cf_auto/677a6c4562ee6c68522901826c07a8c285138541",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Thieves make off with ATM after ramming ute into shopping centre",
+      "link": "https://www.smh.com.au/national/thieves-make-off-with-atm-after-ramming-ute-into-shopping-centre-20260530-p6026u.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Wild footage shows the moment a ute smashes through the glass shopping centre doors before masked offenders steal an ATM.",
+      "pubDate": "Sat, 30 May 2026 14:00:11 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/de6900b57d294ec9ac42d193efc623644d9e651b",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
     {
       "title": "The Age photos of the week, May 30, 2026",
       "link": "https://www.smh.com.au/national/victoria/the-age-photos-of-the-week-may-30-2026-20260530-p6026g.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
@@ -34778,186 +34948,6 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "‘Nightmare’ queues and missed flights: a turbulent start to EU entry-exit system",
-      "link": "https://www.theguardian.com/business/2026/apr/30/eu-entry-exit-system-ees-queues-missed-flights-readers",
-      "desc": "<p>Some travellers spent hours in lines at airport, with kiosks not working, little seating and few staff on hand to help</p><p>Some travellers passing through the new EU entry-exit system (EES) have ",
-      "pubDate": "Thu, 30 Apr 2026 08:25:04 GMT",
-      "img": "https://i.guim.co.uk/img/media/f9cc54c66ae5de3ed9ca724cc6dec0dd299a4464/3_473_6243_4995/master/6243.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Grattan on Friday: Antisemitism royal commission’s interim report leaves key questions dangling",
-      "link": "https://theconversation.com/grattan-on-friday-antisemitism-royal-commissions-interim-report-leaves-key-questions-dangling-281144",
-      "desc": "Perhaps no one should be surprised the report leaves a lot unsaid. The decision to have this report was a case of putting the cart before the horse.",
-      "pubDate": "2026-04-30T08:16:07Z",
-      "img": "https://images.theconversation.com/files/733188/original/file-20260430-57-gqxh9v.jpg?ixlib=rb-4.1.0&amp;rect=0%2C242%2C5702%2C2851&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "A world record, a media frenzy and Earth's wonder: Guardian Australia's top photos of April – video",
-      "link": "https://www.theguardian.com/artanddesign/video/2026/apr/30/a-world-record-a-media-frenzy-and-earths-wonder-guardian-australias-top-photos-of-april-video",
-      "desc": "<p>From world record breakers to the most iconic image of all time, these are Guardian Australia’s top three photos for April. Photographer and picture editor, Carly Earl, hand-picks three photographs",
-      "pubDate": "Thu, 30 Apr 2026 07:34:08 GMT",
-      "img": "https://i.guim.co.uk/img/media/a4309612c3ea2711a6e93f558590642084811aa2/1_0_4998_4000/master/4998.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Chalmers does little to quell CGT debate as budget looms",
-      "link": "https://www.abc.net.au/news/2026-04-30/jim-chalmers-podcast-budget-capital-gains-tax-tim-wilson-housing/106612410",
-      "desc": "Seven years ago, proposed changes to capital gains tax and negative gearing were named as part of the reason Labor lost the unlosable election. Times have changed.",
-      "pubDate": "Thu, 30 Apr 2026 06:34:18 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/31bb600fcc2f1019017cf3234e21bbfa?impolicy=wcms_crop_resize&amp;cropH=3029&amp;cropW=2271&amp;xPos=1556&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Royal commission report doesn’t help us start making sense of Bondi terror attack",
-      "link": "https://theconversation.com/royal-commission-report-doesnt-help-us-start-making-sense-of-bondi-terror-attack-281859",
-      "desc": "More akin to an intelligence review, the 14 recommendations in the interim report might help government agencies, but don’t yet reckon with the biggest questions.",
-      "pubDate": "2026-04-30T06:01:20Z",
-      "img": "https://images.theconversation.com/files/733187/original/file-20260430-86-7o8h0m.jpg?ixlib=rb-4.1.0&amp;rect=0%2C443%2C5347%2C2673&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "What is OPEC and how does it shape global oil markets?",
-      "link": "https://theconversation.com/what-is-opec-and-how-does-it-shape-global-oil-markets-281731",
-      "desc": "An energy law expert explains what makes this group of oil-producing nations so influential.",
-      "pubDate": "2026-04-30T05:53:11Z",
-      "img": "https://images.theconversation.com/files/732915/original/file-20260429-57-tokosk.jpg?ixlib=rb-4.1.0&amp;rect=0%2C143%2C2045%2C1022&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "$50,000 arts degrees look set to stay, despite a new bill trying to slash uni fees",
-      "link": "https://theconversation.com/50-000-arts-degrees-look-set-to-stay-despite-a-new-bill-trying-to-slash-uni-fees-281739",
-      "desc": "Only the federal government can fix the problems created by the Job-ready Graduates scheme. Ahead of the budget on May 12, it shows no interest in doing that.",
-      "pubDate": "2026-04-30T05:49:22Z",
-      "img": "https://images.theconversation.com/files/733192/original/file-20260430-71-masjac.jpg?ixlib=rb-4.1.0&amp;rect=0%2C1252%2C7499%2C3749&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Police condemn violence in Alice Springs after arrest over death of Kumanjayi Little Baby",
-      "link": "https://www.sbs.com.au/news/article/police-find-body-of-missing-alice-springs-five-year-old-as-chief-minister-calls-for-justice/k114mk3ez",
-      "desc": "Jefferson Lewis, who was arrested on Thursday night, has been moved to Darwin over \"safety concerns\", the NT police commissioner said.",
-      "pubDate": "Thu, 30 Apr 2026 05:35:31 +0000",
-      "img": "https://assets.sbs.com.au/dims4/default/f4197f0/2147483647/strip/false/crop/9504x4367+0+695/resize/1234x567!/format/jpeg/quality/90/?url=https%3A%2F%2Fsbs-au-brightspot.s3.ap-southeast-2.amazonaws.com%2Fca%2F7a%2F321f602448608e5cf36c262e5ad7%2Falice-springs-unrest-kumanjayi-little-baby.jpg",
-      "sourceId": "sbsnews",
-      "sourceName": "SBS News",
-      "sourceColor": "#0D1F3C"
-    },
-    {
-      "title": "Why does squishing NeeDoh, slime, or putty feel so satisfying?",
-      "link": "https://theconversation.com/why-does-squishing-needoh-slime-or-putty-feel-so-satisfying-280710",
-      "desc": "NeeDoh is the latest squishable toy to go viral. But not all sensory objects are toys. Here’s the difference and why it matters.",
-      "pubDate": "2026-04-30T05:23:34Z",
-      "img": "https://images.theconversation.com/files/732965/original/file-20260429-57-tj7wp3.png?ixlib=rb-4.1.0&amp;rect=0%2C0%2C1277%2C638&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Australia isn’t getting a fair share of tax on gas exports. Queensland has shown how to raise the bar",
-      "link": "https://theconversation.com/australia-isnt-getting-a-fair-share-of-tax-on-gas-exports-queensland-has-shown-how-to-raise-the-bar-281526",
-      "desc": "As gas prices soared in recent years, Queensland actually earned more money – for less gas – than the federal government. Here’s why.",
-      "pubDate": "2026-04-30T05:22:14Z",
-      "img": "https://images.theconversation.com/files/733193/original/file-20260430-57-flkflq.jpg?ixlib=rb-4.1.0&amp;rect=0%2C465%2C5184%2C2592&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Albanese is prioritising politics over the responsible handling of ISIS families, setting a dangerous precedent",
-      "link": "https://theconversation.com/albanese-is-prioritising-politics-over-the-responsible-handling-of-isis-families-setting-a-dangerous-precedent-281643",
-      "desc": "The government is outsourcing the risks and logistics of returning ISIS families instead of taking a more proactive, humane approach.",
-      "pubDate": "2026-04-30T05:22:11Z",
-      "img": "https://images.theconversation.com/files/733195/original/file-20260430-71-w76wqy.jpg?ixlib=rb-4.1.0&amp;rect=0%2C500%2C6000%2C3000&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Emotions run high at inquiry into Victorian bushfires",
-      "link": "https://www.abc.net.au/news/2026-04-30/victoria-harcourt-fire-inquiry/106625974",
-      "desc": "A parliamentary inquiry into the devastating bushfires across Victoria over the summer hears the emotional plea of those impacted.",
-      "pubDate": "Thu, 30 Apr 2026 05:22:06 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/bc2a361150f1ffdba10ca3eadeee3d97?impolicy=wcms_crop_resize&amp;cropH=1125&amp;cropW=844&amp;xPos=697&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Chalmers has signalled a negative gearing shake-up ahead of the budget. Here's what might change",
-      "link": "https://www.sbs.com.au/news/article/chalmers-signals-housing-tax-shake-up-ahead-of-budget-heres-what-might-change/rgzfmgvbk",
-      "desc": "Treasurer Jim Chalmers said even if speculation is correct, \"people shouldn’t expect there to be this huge amount of new revenue\".",
-      "pubDate": "Thu, 30 Apr 2026 05:15:48 +0000",
-      "img": "https://assets.sbs.com.au/dims4/default/8cf752a/2147483647/strip/false/crop/6681x3070+0+774/resize/1234x567!/format/jpeg/quality/90/?url=https%3A%2F%2Fsbs-au-brightspot.s3.ap-southeast-2.amazonaws.com%2F5f%2F71%2F9f67db504fe09e95dcdcf8ac8497%2F20260429156879075860-original.jpg",
-      "sourceId": "sbsnews",
-      "sourceName": "SBS News",
-      "sourceColor": "#0D1F3C"
-    },
-    {
-      "title": "Crack and crime to confident and qualified: is the future about to change for Rhyl’s youth?",
-      "link": "https://www.theguardian.com/environment/2026/apr/30/seascapes-rhyl-wales-poverty-youth-jobs-drugs-training-barod",
-      "desc": "<p>The Welsh seaside resort has already seen a fall in offending and drug use, now a £20m investment and a fresh approach to building job skills is bringing new opportunities for under-25s</p><p>Killi",
-      "pubDate": "Thu, 30 Apr 2026 05:00:09 GMT",
-      "img": "https://i.guim.co.uk/img/media/18cf0fe94f7768bd80a10c0bac77391d3b2cb59a/151_0_6250_5000/master/6250.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Hold your nose and don’t stop for a selfie: why getting up close to a beached whale is a really bad idea",
-      "link": "https://theconversation.com/hold-your-nose-and-dont-stop-for-a-selfie-why-getting-up-close-to-a-beached-whale-is-a-really-bad-idea-281850",
-      "desc": "Don’t be a selfie tragic. Avoid dead whales, rock ledges and hungry sharks. Oh, and the carcass might explode.",
-      "pubDate": "2026-04-30T04:42:41Z",
-      "img": "https://images.theconversation.com/files/733185/original/file-20260430-72-fujnno.png?ixlib=rb-4.1.0&amp;rect=0%2C113%2C1999%2C999&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Counterterrorism funds 'significantly declined' ahead of Bondi attack",
-      "link": "https://www.sbs.com.au/news/article/counterterrorism-funds-significantly-declined-ahead-of-bondi-attack/rr04m33rb",
-      "desc": "The prime minister says the Bondi royal commission interim report shows \"the opposite\" and security funding had increased overall.",
-      "pubDate": "Thu, 30 Apr 2026 04:20:33 +0000",
-      "img": "https://assets.sbs.com.au/dims4/default/6bb2e99/2147483647/strip/false/crop/8256x3793+0+0/resize/1234x567!/format/jpeg/quality/90/?url=https%3A%2F%2Fsbs-au-brightspot.s3.ap-southeast-2.amazonaws.com%2Fcf%2F18%2F55d0c2144d22b3b0497f4214abc3%2F20251221181271507364-original.jpg",
-      "sourceId": "sbsnews",
-      "sourceName": "SBS News",
-      "sourceColor": "#0D1F3C"
-    },
-    {
-      "title": "‘1930s policing’: the tactics police used in the hunt for Alice Springs girl Kumanjayi Little Baby",
-      "link": "https://theconversation.com/1930s-policing-the-tactics-police-used-in-the-hunt-for-alice-springs-girl-kumanjayi-little-baby-281856",
-      "desc": "Police relied on old-fashioned bushcraft, human persistence and the expert knowledge of Indigenous Elders.",
-      "pubDate": "2026-04-30T04:16:05Z",
-      "img": "https://images.theconversation.com/files/733179/original/file-20260430-57-fpyxue.jpg?ixlib=rb-4.1.0&amp;rect=0%2C476%2C2588%2C1294&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Sub-two-hour marathon, spooky houses explained and why is UK health in decline? – podcast",
-      "link": "https://www.theguardian.com/science/audio/2026/apr/30/sub-two-hour-marathon-spooky-houses-explained-and-why-is-uk-health-in-decline-podcast",
-      "desc": "<p>Madeleine Finlay sits down with co-host and Guardian science editor Ian Sample to talk through three eye-catching stories from the week, including the news that the number of years people in the UK",
-      "pubDate": "Thu, 30 Apr 2026 04:00:08 GMT",
-      "img": "https://i.guim.co.uk/img/media/61a2ca15ab89cc022df41476af639f07fb9b1eab/1157_0_5199_4159/master/5199.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
     }
   ]
 }
