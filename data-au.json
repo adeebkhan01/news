@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-31T08:52:04.126Z",
-  "summary": "Australia's political landscape is shifting as One Nation polls ahead of Labor, while the government pushes forward with major infrastructure and defence commitments including Olympic stadium construction and a significant pivot to secondhand nuclear submarines under Aukus. Crime dominates the news cycle with multiple stabbing incidents across Queensland and Victoria, a fugitive from a Melbourne attack, and a man arrested over an alleged Vietnam cafe rampage. A spike in violence against vulnerable people, including a guide dog handler and a tradie attacked with an axe, reflects broader community safety concerns. On lighter notes, the NFL is making serious inroads in Australia while a ship carrying cargo has arrived with potential to transform Australian motoring.",
+  "fetchedAt": "2026-05-31T11:01:59.978Z",
+  "summary": "Australia faces escalating security concerns with multiple stabbing incidents across Melbourne and Queensland leaving people injured and on the run, while heavily armed police respond to reports of shots fired. The government is advancing major infrastructure and defence commitments, including starting construction on an Olympic stadium and switching to secondhand nuclear submarines from the US under the Aukus agreement. Political pressure is mounting on Labor over its gas policy with Asian concerns rising, while One Nation's polling surge signals shifting voter sentiment ahead of key policy debates. Severe weather has hit Western Australia, leaving thousands without power, as the nation grapples with various safety, economic and environmental challenges.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,56 @@
     }
   ],
   "articles": [
+    {
+      "title": "Storm hits parts of Western Australia",
+      "link": "https://www.smh.com.au/national/storm-hits-parts-of-western-australia-20260531-p602iy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A rare storm event has pummelled Western Australia's south, sending trampolines and sheds flying.",
+      "pubDate": "Sun, 31 May 2026 20:31:32 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/7f2be124471d5aece9a96960e54d5f9d83d019db",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘Deep concerns’: Labor gas plan triggers alarm in Asia",
+      "link": "https://www.smh.com.au/business/companies/deep-concerns-labor-gas-plan-triggers-alarm-in-asia-20260529-p601yv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "A new federal mandate for LNG exporters to keep more gas in Australia is threatening to strain critical trade relationships in Asia at a sensitive time.",
+      "pubDate": "Sun, 31 May 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/95aec59d876d439695690cc10db0fd5c89be59d3",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘You have some explaining to do’: The taboo story that earned Anthony HSC top marks",
+      "link": "https://www.smh.com.au/national/nsw/you-have-some-explaining-to-do-the-taboo-story-that-earned-anthony-hsc-top-marks-20260525-p600ib.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The work of the state’s top HSC English students has been released. You can read their stories here.",
+      "pubDate": "Sun, 31 May 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2214178584525119%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_169%2C$y_0/t_crop_custom/q_86%2Cf_auto/a250fc346f84d3745f46668daed8aacb2409af38",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Don’t tell young people to walk away from university. For many, it’s the only way",
+      "link": "https://www.smh.com.au/national/don-t-tell-young-people-to-walk-away-from-university-for-many-it-s-the-only-way-20260529-p601y7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "For students without inherited privilege, a university degree is their only lever.",
+      "pubDate": "Sun, 31 May 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2606%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_96/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/27023ed4185a4b3d954b7abe0eba9c8bdf266ba3",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Court to probe death of Samantha Knight’s heinous killer",
+      "link": "https://www.smh.com.au/national/nsw/court-to-probe-death-of-samantha-knight-s-heinous-killer-20260531-p602ev.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Serial child abuser and killer Michael Guider briefly tasted freedom before he was returned to prison to die, ensuring a court must probe the final months of his life.",
+      "pubDate": "Sun, 31 May 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5516%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/ad960e3eea249cec7fd79394f2652455bf3bd1b0",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
     {
       "title": "One Nation leapfrogs Labor in poll",
       "link": "https://www.smh.com.au/national/one-nation-leapfrogs-labor-in-poll-20260531-p602hq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
@@ -34848,56 +34898,6 @@
       "sourceId": "conversationau",
       "sourceName": "The Conversation AU",
       "sourceColor": "#D8352A"
-    },
-    {
-      "title": "We are preparing to transform the moon and Mars. The public must have a say in this future | Ben Bramble",
-      "link": "https://www.theguardian.com/commentisfree/2026/may/01/artemis-moon-mars",
-      "desc": "<p>The Artemis missions are paving the way to civilizational decisions. It’s time to ask not just what we can do – but whether we should do it</p><p>This month’s splashdown of Artemis II was rightly c",
-      "pubDate": "Fri, 01 May 2026 11:00:28 GMT",
-      "img": "https://i.guim.co.uk/img/media/0af21d5ad3a6400a44dfaf3142c2862826814d8d/464_0_4640_3712/master/4640.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "CEO pay soared in 2025, 20 times faster than workers’ pay",
-      "link": "https://www.theguardian.com/business/2026/may/01/ceo-pay-workers-minimum-wages",
-      "desc": "<p>Analysis finds real wages fell 12% since 2019, with inequality widening in the US beyond global levels</p><p>CEO pay increased 20 times faster than <a href=\"https://www.theguardian.com/money/pay+wo",
-      "pubDate": "Fri, 01 May 2026 10:00:43 GMT",
-      "img": "https://i.guim.co.uk/img/media/855c3f358b44bfa1510a8154764000a08942d7b9/0_0_1500_1200/master/1500.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Chinese company launches legal action over forced sale of Port of Darwin",
-      "link": "https://www.abc.net.au/news/2026-05-01/chinese-owned-darwin-port-launches-legal-action/106633362",
-      "desc": "Anthony Albanese pledged at the federal election that Labor would return the port to Australian hands, saying it necessary for national security.",
-      "pubDate": "Fri, 01 May 2026 09:21:34 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/e8fe10fed2aae88cd4b9b497e46e7837?impolicy=wcms_crop_resize&amp;cropH=3777&amp;cropW=2833&amp;xPos=1559&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Defend the rich: Enhanced Games founder turns to AI to challenge the media",
-      "link": "https://www.smh.com.au/business/companies/defend-the-rich-enhanced-games-founder-turns-to-ai-to-challenge-the-media-20260429-p5zs8a.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "Aron D’Souza, the entrepreneur behind the controversial “doping Olympics”, has unveiled a billionaire-backed AI platform to take on media reports.",
-      "pubDate": "Fri, 01 May 2026 19:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.2242%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_257/t_crop_custom/q_86%2Cf_auto/db7e100a39dca9c2c2b8a0a4134c91e2d08fd4f6",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Trump’s war has been a gift to an industry he detests",
-      "link": "https://www.smh.com.au/business/the-economy/trump-s-war-has-been-a-gift-to-an-industry-he-detests-20260501-p5zssg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "The US president would be furious at the unintended consequences of his war on Iran.",
-      "pubDate": "Fri, 01 May 2026 19:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.5842803703703704%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_34%2C$y_93/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/26b70722c2927803f4665e357a27abf3124868c7",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
     }
   ]
 }
