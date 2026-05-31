@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-30T22:04:06.497Z",
-  "summary": "Middle East tensions dominated today's news as Israel expanded its military operations into Lebanon with forces reaching major cities, while the Palestinian-Israeli conflict intensified with reported civilian casualties in Gaza, and Egypt warned of escalating dangers to any ceasefire. Separately, Iran remained engaged in elusive nuclear negotiations with the Trump administration, though both sides dispute whether a final deal is imminent. The humanitarian situation in the Democratic Republic of Congo deteriorated sharply as confirmed Ebola cases nearly doubled within days despite a WHO chief's visit to the outbreak zone. Ukraine continued its drone offensive against Russian infrastructure as analysts questioned whether the war was entering a new phase, while Russia moved to isolate Armenia over its European Union ties.",
+  "fetchedAt": "2026-05-31T04:15:39.514Z",
+  "summary": "Global tensions are escalating across multiple fronts, with Israel's ongoing military operations in Lebanon and Gaza drawing international concern while the US-Iran nuclear deal remains in limbo despite diplomatic efforts. The Middle East conflict is reshaping regional alliances, including deepening US-Israeli military ties and spillover tensions in the Philippines among Muslim populations. Beyond the conflict zone, a concerning Ebola outbreak in Democratic Republic of Congo is spreading rapidly and straining resources, while Ukraine continues its drone warfare against Russian supply lines amid signs the conflict may be entering a new phase. Regional power shifts are also evident, with Rwanda's nuclear deal with Russia and EU pressure on Hungary signaling broader geopolitical realignments.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,56 @@
     }
   ],
   "articles": [
+    {
+      "title": "Cuba’s blackouts leave high-rise residents with constant uncertainty",
+      "link": "https://www.bbc.com/news/videos/c809nj57drxo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Will Grant spoke to a 70-year-old widow who says the inability to use her building's elevator during a power outage trapped her and her husband when he needed medical care.",
+      "pubDate": "Sun, 31 May 2026 00:11:56 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/50d6/live/db12fec0-5b81-11f1-89a3-d1f559421220.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Iran war live: Lebanon slams Israel’s invasion; US-Tehran deal in limbo",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/5/31/iran-war-live-lebanon-accuses-israel-of-scorched-earth-policy?traffic_source=rss",
+      "desc": "Lebanese PM describes Israel&#039;s attacks as collective punishment as US warns Iran of strikes if no deal is reached.",
+      "pubDate": "Sun, 31 May 2026 00:00:50 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AP26150782688475-1780183482.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "'Killer fungus' could be good news for habitats decimated by invasive moss",
+      "link": "https://www.bbc.com/news/articles/c4g48jy4j1yo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "A newly discovered species raises hope that some native British habitats could be restored.",
+      "pubDate": "Sat, 30 May 2026 23:03:12 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2e80/live/6e235920-5aca-11f1-824c-2d27d300392d.png",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "US Congress advances American-Israeli military integration plan",
+      "link": "https://www.aljazeera.com/news/2026/5/30/us-congress-advances-american-israeli-military-integration-plan?traffic_source=rss",
+      "desc": "A provision in the 2027 draft US defence bill could bind the two countries&#039; weapons industries closer than ever.",
+      "pubDate": "Sat, 30 May 2026 22:28:09 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-05-07T100217Z_226406943_RC294LATSO39_RTRMADP_3_USA-ELECTION-AIPAC-DEMOCRATS-1779304179.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Al Jazeera exclusive interview with rebel FARC faction in Colombia",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/30/al-jazeera-exclusive-interview-with-rebel-farc-faction-in-colombia?traffic_source=rss",
+      "desc": "In Colombia, FARC dissidents say they returned to war after a historic peace deal failed to deliver security",
+      "pubDate": "Sat, 30 May 2026 21:54:55 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/WD-TN-1780178155.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Lebanese army ‘overly stretched’ to fight off latest Israeli invasion",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/30/lebanese-army-overly-stretched-to-fight-off-latest-israeli-invasion?traffic_source=rss",
@@ -203,6 +253,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "What Hungary must do to receive EU funds frozen under Orban",
+      "link": "https://www.dw.com/en/what-hungary-must-do-to-receive-eu-funds-frozen-under-orban/a-77354206?maca=en-rss-en-eu-2092-rdf",
+      "desc": "Prime Minister Peter Magyar and European Commission President Ursula von der Leyen announced a deal that could free up over €16 billion in EU funds for Hungary. Now, Magyar's new government needs to d",
+      "pubDate": "2026-05-30T11:11:00Z",
+      "img": "https://static.dw.com/image/77349715_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "Four more men freed from flooded Laos cave after 10 days",
@@ -14040,66 +14100,6 @@
       "desc": "Lindsay and Craig Foreman are facing the reality of a 10-year prison sentence following their arrest in Iran while on a motorcycle tour last year.",
       "pubDate": "Fri, 01 May 2026 05:04:08 GMT",
       "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/68be/live/06449360-4525-11f1-bd52-e755d604ece4.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Myanmar ex-leader Aung San Suu Kyi moved to house arrest, military says",
-      "link": "https://www.bbc.com/news/articles/cz72j8eex4eo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The Nobel Peace Prize laureate has been in detention since she was ousted in a military coup in 2021.",
-      "pubDate": "Fri, 01 May 2026 04:11:53 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/44f6/live/fc5303a0-4538-11f1-ac78-2112837ce2aa.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Violence in Australian town after arrest of man over girl's murder",
-      "link": "https://www.bbc.com/news/articles/cddp4j7p8pzo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Unrest took place outside hospital where man suspected of murdering a five-year-old girl was being treated.",
-      "pubDate": "Fri, 01 May 2026 04:08:19 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7443/live/e4c26360-44da-11f1-ac78-2112837ce2aa.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Chippies sell catfish as 'traditional fish supper'",
-      "link": "https://www.bbc.com/news/articles/cvg0337n0y1o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "A BBC investigation finds chip shop owners passing off cheaper species as \"traditional fish and chips\".",
-      "pubDate": "Fri, 01 May 2026 00:11:27 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c4fa/live/a21983f0-37dc-11f1-a488-f5dec36f7fff.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "China scraps tariffs for all but one African nation",
-      "link": "https://www.bbc.com/news/articles/cwy2v509217o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The zero-tariff regime gives China's soft power a boost, but may lead to uneven gains, say analysts.",
-      "pubDate": "Fri, 01 May 2026 00:02:57 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fc2b/live/32624640-4480-11f1-86c2-d17d046f16a4.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Will AI lead to more accurate opinion polls?",
-      "link": "https://www.bbc.com/news/articles/cwyw6rylzepo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "It's cheaper and faster to collect people's opinions using AI, but will it make polls more accurate?",
-      "pubDate": "Thu, 30 Apr 2026 23:11:37 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a7fa/live/645fc940-3726-11f1-9d5c-8ba507d7dbde.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "'There were letters I didn't want to open': Rise in unpaid debt court cases",
-      "link": "https://www.bbc.com/news/articles/cwy2ldl1k7do?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The number of county court judgements rose by 17.5% in the first quarter of this year compared to last, data suggests.",
-      "pubDate": "Thu, 30 Apr 2026 23:07:00 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5938/live/c471ab80-44b1-11f1-b55d-0f258dce1735.png",
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
