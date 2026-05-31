@@ -1,11 +1,11 @@
 {
-  "fetchedAt": "2026-05-30T22:29:09.330Z",
+  "fetchedAt": "2026-05-31T04:56:53.741Z",
   "asx200": {
     "value": 8731.7,
     "change": 44.7,
     "changePercent": 0.51,
     "previousClose": 8687,
-    "asOf": "2026-05-30",
+    "asOf": "2026-05-31",
     "history": [
       {
         "date": "2026-04-29",
@@ -106,7 +106,7 @@
     "change": 0,
     "changePercent": -0.01,
     "previousClose": 0.72,
-    "asOf": "2026-05-30",
+    "asOf": "2026-05-31",
     "history": [
       {
         "date": "2026-04-28",
@@ -201,7 +201,7 @@
         "close": 0.72
       },
       {
-        "date": "2026-05-30",
+        "date": "2026-05-31",
         "close": 0.72
       }
     ]
@@ -212,32 +212,32 @@
       "icon": "🥇",
       "iconBg": "#fef9ee",
       "price": 4593,
-      "change": 47.8,
-      "changePercent": 1.05
+      "change": -21.7,
+      "changePercent": -0.47
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
       "price": 75.88,
-      "change": 4.31,
-      "changePercent": 6.02
+      "change": 2.34,
+      "changePercent": 3.18
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
       "price": 87.36,
-      "change": -19.52,
-      "changePercent": -18.26
+      "change": -17.71,
+      "changePercent": -16.86
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 6.39,
-      "change": 0.51,
-      "changePercent": 8.69
+      "change": 0.46,
+      "changePercent": 7.81
     },
     {
       "name": "BHP Group",
@@ -846,6 +846,55 @@
   ],
   "news": [
     {
+      "title": "Live: Giants chasing key win against dangerous Demons at MCG",
+      "link": "https://www.abc.net.au/news/2026-05-31/afl-rd-12-live-blog-melb-gws-wce-ess/106726984",
+      "snippet": "",
+      "pubDate": "Sun, 31 May 2026 04:49:05 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Winless Dragons bossing scoreless Broncos, as Maroons forward leaves field",
+      "link": "https://www.abc.net.au/news/2026-05-31/nrl-live-score-broncos-dragons-raiders-cowboys-panthers-warriors/106740882",
+      "snippet": "",
+      "pubDate": "Sun, 31 May 2026 03:28:24 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Team 'astonished' as rider kicked out of Giro d'Italia Women",
+      "link": "https://www.abc.net.au/news/2026-05-31/lorena-wiebes-kicked-out-of-giro-ditalia-women-stage-one/106742328",
+      "snippet": "",
+      "pubDate": "Sun, 31 May 2026 03:23:28 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "The accidental barista who sparked Brisbane’s strawberry matcha craze",
+      "link": "https://www.smh.com.au/business/small-business/the-accidental-barista-who-sparked-brisbane-s-strawberry-matcha-craze-20260411-p5zn2x.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Marie David jumped into Brisbane’s cafe scene with zero experience. Four years later, her TikTok-famous drinks have competitors coming in to watch.",
+      "pubDate": "Sun, 31 May 2026 11:59:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Dozens of arrests during Champions League celebrations on Paris streets",
+      "link": "https://www.abc.net.au/news/2026-05-31/psg-fans-arrested-after-champions-league-final/106742174",
+      "snippet": "",
+      "pubDate": "Sun, 31 May 2026 01:47:58 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Socceroos defeated by Mexico despite encouraging second-half showing",
+      "link": "https://www.abc.net.au/news/2026-05-31/socceroos-vs-mexico-live-blog-world-cup-warm-up/106739316",
+      "snippet": "",
+      "pubDate": "Sun, 31 May 2026 01:22:47 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Under-strength Australia undone by debutant in first Pakistan ODI",
+      "link": "https://www.abc.net.au/news/2026-05-31/australia-loses-first-pakistan-odi-arafat-minhas/106742040",
+      "snippet": "",
+      "pubDate": "Sun, 31 May 2026 00:28:06 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Last Australian knocked out of French Open as Gauff's title defence ended",
       "link": "https://www.abc.net.au/news/2026-05-31/coco-gauff-french-open-defence-daria-kasatkina-aryna-sabalenka/106741960",
       "snippet": "",
@@ -860,7 +909,7 @@
       "source": "ABC News"
     },
     {
-      "title": "Steve took GYG to the US and failed. It cost $115 million, but he’s not done yet",
+      "title": "Guzman y Gomez founder Steve Marks has not given up on his American dream",
       "link": "https://www.smh.com.au/business/companies/steve-took-gyg-to-the-us-and-failed-it-cost-115-million-but-he-s-not-done-yet-20260525-p600jm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Investors are glad to see the Mexican fast food chain abandon the US. The irrepressible burrito salesman behind the company wants to have another crack.",
       "pubDate": "Sun, 31 May 2026 05:45:00 +1000",
@@ -879,55 +928,6 @@
       "snippet": "",
       "pubDate": "Sat, 30 May 2026 19:19:04 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Women abandon football club after sex offender's return",
-      "link": "https://www.abc.net.au/news/2026-05-31/tyrendarra-football-sexual-assault-minor-return-club/106691104",
-      "snippet": "",
-      "pubDate": "Sat, 30 May 2026 19:03:24 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Liverpool sack manager Arne Slot after underwhelming season",
-      "link": "https://www.abc.net.au/news/2026-05-30/liverpool-premier-league-side-fires-manager-coach-arne-slot/106741426",
-      "snippet": "",
-      "pubDate": "Sat, 30 May 2026 12:13:06 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Young motorbike rider critical after crash at motocross event",
-      "link": "https://www.abc.net.au/news/2026-05-30/teenage-boy-crash-victoria-junior-state-titles-motocross-dooen/106741302",
-      "snippet": "",
-      "pubDate": "Sat, 30 May 2026 09:20:39 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "AFL concedes umpire error as Cats lament 'howler' call",
-      "link": "https://www.abc.net.au/news/2026-05-30/afl-concedes-umpire-error-in-geelong-clash/106741038",
-      "snippet": "",
-      "pubDate": "Sat, 30 May 2026 05:34:26 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Tigers 'dodged a bullet' as Bulldogs fume over controversial ref calls",
-      "link": "https://www.abc.net.au/news/2026-05-30/nrl-live-updates-knights-eels-tigers-bulldogs-storm-roosters/106737598",
-      "snippet": "",
-      "pubDate": "Sat, 30 May 2026 04:21:51 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Hindley conquers 'epic' day to climb onto Giro podium",
-      "link": "https://www.abc.net.au/news/2026-05-30/giro-ditalia-jai-hindley-third-overall-after-stage-19/106740668",
-      "snippet": "",
-      "pubDate": "Sat, 30 May 2026 02:59:25 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Taxpayers, not Big Tobacco, are paying for our illegal smoke habit",
-      "link": "https://www.smh.com.au/business/companies/taxpayers-not-big-tobacco-are-paying-for-our-illegal-smoke-habit-20260521-p5zzek.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Big Tobacco is still making a fortune in Australia, even as government revenue plunges – but organised crime will soon snuff this out.",
-      "pubDate": "Sat, 30 May 2026 12:46:18 +1000",
-      "source": "SMH Business"
     }
   ]
 }
