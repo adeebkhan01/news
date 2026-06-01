@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-06-01T04:43:34.289Z",
-  "summary": "Global tensions are escalating across multiple regions with Israel expanding military operations into Lebanon past the Litani River while the US deepens military cooperation despite congressional resistance, Iran's nuclear deal remains stalled amid threats, and China intensifies regional military buildup prompting Japanese rebuttals. Colombia holds a pivotal presidential election today that could reshape US relations, while Mexico accuses Washington of interference as it probes officials, highlighting hemispheric friction. The Middle East remains the dominant flashpoint as satellite imagery documents Gaza's transformation under Israeli control, and an Ebola outbreak in the Democratic Republic of Congo raises fresh health alarms. Domestic political shifts are underway in the US with California's gubernatorial race potentially excluding Democrats, while technological innovation addresses social challenges like senior loneliness in South Korea.",
+  "fetchedAt": "2026-06-01T11:44:11.029Z",
+  "summary": "The dominant story today is escalating military conflict across the Middle East, with the US conducting strikes on Iranian radar sites and infrastructure while Iran and its allies including Hezbollah and Kuwait report retaliatory attacks, marking what appears to be a significant escalation in ongoing hostilities. Israel has dramatically expanded its ground offensive into Lebanon, capturing the strategic Beaufort Castle and pushing past the Litani River, while simultaneously conducting airstrikes on Beirut suburbs as the conflict with Hezbollah intensifies, though Washington is proposing a de-escalation roadmap. Beyond the Middle East, Colombia is holding a pivotal presidential election today with significant implications for US relations, while elections are also underway in Ethiopia under disputed voting restrictions. In technology and business news, Nvidia announced a new AI chip for personal computers and the US imposed restrictions on semiconductor shipments to Chinese firms, while separately EasyJet rejected a takeover bid as opportunistic.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,136 @@
     }
   ],
   "articles": [
+    {
+      "title": "Nvidia announces new AI chip for personal computers",
+      "link": "https://www.bbc.com/news/articles/crmp9mppvzro?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The technology giant's boss Jensen Huang called the move the \"reinvention of the computer\".",
+      "pubDate": "Mon, 01 Jun 2026 11:14:13 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fd19/live/7becaec0-5d7d-11f1-9ce5-234247f246fc.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "What is Lebanon’s Beaufort Castle, and why has Israel captured it?",
+      "link": "https://www.aljazeera.com/news/2026/6/1/what-is-lebanons-beaufort-castle-and-why-has-israel-captured-it?traffic_source=rss",
+      "desc": "The fortress, a historical battleground, is playing a central role in Israel’s military campaign against Hezbollah.",
+      "pubDate": "Mon, 01 Jun 2026 10:58:07 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_6a1be65d8c0a-1780213341.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Kuwait condemns Iranian attack as Iran-US trade new strikes",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/1/kuwait-condemns-iranian-attack-as-iran-us-trade-new-strikes?traffic_source=rss",
+      "desc": "Kuwait activated its air defences after what its foreign ministry later described as a ‘heinous Iranian attack’.",
+      "pubDate": "Mon, 01 Jun 2026 10:45:04 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/IMG_2014.MP4.00_00_08_27.Still002-1780310684.jpg?resize=1200%2C675",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "US, Iran trade new attacks amid talks: Here’s what we know",
+      "link": "https://www.aljazeera.com/news/2026/6/1/us-iran-trade-new-attacks-amid-talks-heres-what-we-know?traffic_source=rss",
+      "desc": "Washington and Tehran are attacking each other despite a ceasefire that came into effect on April 8.",
+      "pubDate": "Mon, 01 Jun 2026 10:13:39 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-05-30T075752Z_968363709_RC2JJLAKKRZQ_RTRMADP_3_IRAN-CRISIS-1780176139.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "EasyJet says possible takeover bid 'opportunistic'",
+      "link": "https://www.bbc.com/news/articles/c042071p96po?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "US investment firm Castlelake is considering making an offer for the budget airline.",
+      "pubDate": "Mon, 01 Jun 2026 09:47:11 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2bc7/live/ba364640-5d97-11f1-b199-9da46582c1b0.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "US says it struck Iranian radar sites as Kuwait reports missile and drone attacks",
+      "link": "https://www.bbc.com/news/articles/crlpy8n7pr6o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Iran and the US say they have carried out fresh strikes around the Strait of Hormuz, with Kuwait condemning \"repeated\" Iranian attacks.",
+      "pubDate": "Mon, 01 Jun 2026 09:32:04 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d2c1/live/fd6bc8a0-5d8c-11f1-89a3-d1f559421220.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Israel PM orders strikes on Beirut suburbs as Hezbollah conflict escalates",
+      "link": "https://www.bbc.com/news/articles/c4g419e2xlvo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Benjamin Netanyahu says the Hezbollah stronghold of Dahieh will be targeted in response to attacks on Israeli civilians.",
+      "pubDate": "Mon, 01 Jun 2026 09:28:35 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bde6/live/974794b0-5d9f-11f1-8b8c-6d33e1d5abb6.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Washington proposes ‘roadmap’ for de-escalation in Lebanon: US official",
+      "link": "https://www.aljazeera.com/news/2026/6/1/washington-proposes-roadmap-for-de-escalation-in-lebanon-us-official?traffic_source=rss",
+      "desc": "Plan aims to create conducive environment for a gradual de-escalation and cessation of all hostilities, official says.",
+      "pubDate": "Mon, 01 Jun 2026 08:22:11 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_6a1be65d8c0a-1780213341.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran war day 94: US strikes Iranian sites; Kuwait intercepts missiles",
+      "link": "https://www.aljazeera.com/news/2026/6/1/iran-war-day-94-us-strikes-iranian-sites-kuwait-intercepts-missiles?traffic_source=rss",
+      "desc": "While a peace deal between the US and Iran remains elusive, Israel has deepened its offensive into southern Lebanon.",
+      "pubDate": "Mon, 01 Jun 2026 07:40:23 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26148670508129-1780299913.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran attacks damage 20 US military sites since start of war, satellite images show",
+      "link": "https://www.bbc.com/news/articles/c2l2yl7r8r2o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Analysts told BBC Verify that Tehran's strikes were more extensive than publicly acknowledged.",
+      "pubDate": "Mon, 01 Jun 2026 05:33:18 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e83f/live/9cb0d640-5aa3-11f1-8b8c-6d33e1d5abb6.png",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Israel airstrike kills at least two Palestinians at Gaza port",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/1/israel-airstrike-kills-at-least-two-palestinians-at-gaza-port?traffic_source=rss",
+      "desc": "At least two Palestinians were killed and around a dozen wounded when an Israeli air strike hit a crowded cafe.",
+      "pubDate": "Mon, 01 Jun 2026 05:16:51 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1780290831.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Ex-US Fed Chair Powell warns against politicisation amid Trump’s attacks",
+      "link": "https://www.aljazeera.com/economy/2026/6/1/ex-us-fed-chair-powell-warns-against-politicisation-amid-trumps-attacks?traffic_source=rss",
+      "desc": "Jerome Powell says the US central bank is undergoing a &#039;stress test&#039; like other institutions in the current era.",
+      "pubDate": "Mon, 01 Jun 2026 04:51:06 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-01T013623Z_1565586683_RC2PKLA66F2Y_RTRMADP_3_USA-PROFILE-IN-COURAGE-1780282688.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Ethiopia election under way, but not everyone can vote",
+      "link": "https://www.bbc.com/news/articles/cn0pngz2rego?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Prime Minister Abiy Ahmed's party is expected to dominate the election as conflicts overshadow the vote.",
+      "pubDate": "Mon, 01 Jun 2026 04:36:30 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fc3a/live/a3323750-5d75-11f1-860b-7bba4d9031fa.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
     {
       "title": "Sheinbaum accuses US of ‘interference’ amid probe of Mexican officials",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/1/sheinbaum-accuses-us-of-interference-amid-probe-of-mexican-officials?traffic_source=rss",
@@ -63,6 +193,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "A year of grief after Air India crash: What remains when a plane falls from the sky",
+      "link": "https://www.bbc.com/news/articles/ce9pp53ky42o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "A mother still speaks about her son who died in the crash in the present tense and a brother waits for answers.",
+      "pubDate": "Mon, 01 Jun 2026 00:24:47 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bec0/live/edcaa0c0-5d81-11f1-9eb5-ab3a963c44d3.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
     },
     {
       "title": "Iran war live: US bombs Qeshm, Goruk; Kuwait reports missile, drone attacks",
@@ -193,6 +333,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Space race: Why Portugal is reaching for the stars",
+      "link": "https://www.dw.com/en/space-race-why-portugal-is-reaching-for-the-stars/a-77303795?maca=en-rss-en-bus-2091-rdf",
+      "desc": "A spaceport is being built on a small Portuguese island in the Atlantic. Is Portugal on the verge of becoming a space nation?",
+      "pubDate": "2026-05-31T13:51:00Z",
+      "img": "https://static.dw.com/image/77137167_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "Israeli forces push past Lebanon’s Litani River: How significant is it?",
@@ -1063,6 +1213,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Farmers warn food security can't be taken for granted",
+      "link": "https://www.bbc.com/news/articles/cy024zvrdl1o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Farmers at the Bath and West Show say there are strong parallels between energy and food security.",
+      "pubDate": "Fri, 29 May 2026 05:16:12 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/09b4/live/d55c26a0-5a91-11f1-b5ae-83d5964726ad.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
     },
     {
       "title": "Blue Origin’s New Glenn rocket explodes on launchpad in Florida",
@@ -13843,166 +14003,6 @@
       "sourceId": "dwnews",
       "sourceName": "DW News",
       "sourceColor": "#002B55"
-    },
-    {
-      "title": "Sewage and agricultural pollution having 'alarming' impact on UK's underwater forests",
-      "link": "https://www.bbc.com/news/articles/cn0pl9j88gno?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Scientists found seagrass meadows affected by sewage had far fewer small invertebrates, like crabs.",
-      "pubDate": "Sat, 02 May 2026 10:46:54 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/83e1/live/5a09a100-4540-11f1-be1a-bdd45fc37339.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Ex-F1 driver and Paralympic champion Zanardi dies",
-      "link": "https://www.bbc.com/sport/formula1/articles/cvgz0kpxjpgo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Former Formula 1 driver and Paralympic champion Alex Zanardi dies at the age of 59.",
-      "pubDate": "Sat, 02 May 2026 09:08:43 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/edfd/live/22226c40-4608-11f1-8c0c-ab5033af5d80.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Iran: Jailed Nobel winner Narges Mohammadi hospitalized",
-      "link": "https://www.dw.com/en/iran-jailed-nobel-winner-narges-mohammadi-hospitalized/a-77017010?maca=en-rss-en-all-1573-rdf",
-      "desc": "Iranian activist Narges Mohammadi is in hospital after suffering a \"cardiac crisis\" in prison, her family says. Mohammadi won the 2023 Nobel Peace Prize for her advocacy of women's rights and freedom.",
-      "pubDate": "2026-05-02T08:18:00Z",
-      "img": "https://static.dw.com/image/75094124_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "How the Iran war is hurting travelers, airline industry",
-      "link": "https://www.dw.com/en/how-the-iran-war-is-hurting-travelers-airline-industry/a-77000742?maca=en-rss-en-eu-2092-rdf",
-      "desc": "Europeans may have to reconsider their summer travel plans, as a jet fuel shortage triggered by the blockade of the Strait of Hormuz could lead airlines to set higher ticket prices.",
-      "pubDate": "2026-05-02T07:57:00Z",
-      "img": "https://static.dw.com/image/72628325_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "How the Iran war is hurting travelers, airline industry",
-      "link": "https://www.dw.com/en/how-the-iran-war-is-hurting-travelers-airline-industry/a-77000742?maca=en-rss-en-all-1573-rdf",
-      "desc": "Europeans may have to reconsider their summer travel plans, as a jet fuel shortage triggered by the blockade of the Strait of Hormuz could lead airlines to set higher ticket prices.",
-      "pubDate": "2026-05-02T07:57:00Z",
-      "img": "https://static.dw.com/image/72628325_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "US to withdraw thousands of troops from Germany",
-      "link": "https://www.dw.com/en/us-to-withdraw-thousands-of-troops-from-germany/a-77016071?maca=en-rss-en-all-1573-rdf",
-      "desc": "The decision to cut US troops comes amid rising tensions after German Chancellor Friedrich Merz said the US was being \"humiliated\" by Iran's leadership.",
-      "pubDate": "2026-05-02T07:52:00Z",
-      "img": "https://static.dw.com/image/77016572_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "Kosovo to hold snap elections in June",
-      "link": "https://www.dw.com/en/kosovo-to-hold-snap-elections-in-june/a-77003278?maca=en-rss-en-eu-2092-rdf",
-      "desc": "Kosovo will soon hold its third parliamentary election in a year and a half. Prime Minister Albin Kurti was able to form a government in February, but now there's political deadlock over who should be",
-      "pubDate": "2026-05-02T07:46:00Z",
-      "img": "https://static.dw.com/image/76247848_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "Kosovo to hold snap elections in June",
-      "link": "https://www.dw.com/en/kosovo-to-hold-snap-elections-in-june/a-77003278?maca=en-rss-en-all-1573-rdf",
-      "desc": "Kosovo will soon hold its third parliamentary election in a year and a half. Prime Minister Albin Kurti was able to form a government in February, but now there's political deadlock over who should be",
-      "pubDate": "2026-05-02T07:46:00Z",
-      "img": "https://static.dw.com/image/76247848_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "Humpback whale Timmy released in North Sea but risk remains",
-      "link": "https://www.dw.com/en/humpback-whale-timmy-released-in-north-sea-but-risk-remains/a-77016789?maca=en-rss-en-all-1573-rdf",
-      "desc": "After weeks of drama, the stranded humpback whale is back in his natural habitat, but still not out of harm's way.",
-      "pubDate": "2026-05-02T07:43:00Z",
-      "img": "https://static.dw.com/image/77017721_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "Thousands of trees creating habitat 'powerhouses'",
-      "link": "https://www.bbc.com/news/articles/cdxprr5p18wo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Friends of the Lake District say the hedgerows will create new habitats and boost biodiversity.",
-      "pubDate": "Sat, 02 May 2026 07:26:33 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ea99/live/889a4b90-43de-11f1-a133-a9dbeae5d5f3.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "The significance of US military bases in Germany",
-      "link": "https://www.dw.com/en/the-significance-of-us-military-bases-in-germany/a-77015428?maca=en-rss-en-all-1573-rdf",
-      "desc": "President Trump is planning to cut US troop numbers in Germany. How many US bases are there in the country and what's their strategic importance?",
-      "pubDate": "2026-05-02T07:04:00Z",
-      "img": "https://static.dw.com/image/74635477_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "Spirit Airlines says they are going out of business",
-      "link": "https://www.dw.com/en/spirit-airlines-says-they-are-going-out-of-business/a-77016867?maca=en-rss-en-all-1573-rdf",
-      "desc": "All flights by the troubled US carrier Spirit Airlines have been cancelled, with the company saying it was ending operations \"immediately\" after talks on a government bailout faltered.",
-      "pubDate": "2026-05-02T06:43:00Z",
-      "img": "https://static.dw.com/image/77016967_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "Red squirrels 'close to extinction' in England",
-      "link": "https://www.bbc.com/news/articles/cjwpd9d399wo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "A petition set up by campaign group Save Our Reds, has attracted more than 75,000 signatures.",
-      "pubDate": "Sat, 02 May 2026 06:25:56 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c7fe/live/27a3e2d0-4553-11f1-a4b0-8306ec2ff5e9.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "How ospreys were 'tricked' into breeding in Dorset",
-      "link": "https://www.bbc.com/news/articles/c15d52y4dnwo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Reintroducing ospreys to Dorset involved convincing birds they had been born there.",
-      "pubDate": "Sat, 02 May 2026 06:21:27 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bdb1/live/10149920-42e7-11f1-81c3-47eb51fdc53e.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "'If we sleep, they bite': Rats and weasels infest camps for displaced Gazans",
-      "link": "https://www.bbc.com/news/articles/c202m54xp0mo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "In the Gaza Strip, the daily battles are now with rats, weasels, and other pests spreading diseases.",
-      "pubDate": "Sat, 02 May 2026 05:02:14 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8b68/live/6087e2b0-457e-11f1-ac78-2112837ce2aa.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Cuba condemns new US sanctions as 'illegal' and 'abusive'",
-      "link": "https://www.bbc.com/news/articles/cwy21n1970vo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The new measures come on top of a US blockade of oil to Cuba that has caused widespread blackouts and fuel shortages.",
-      "pubDate": "Sat, 02 May 2026 04:57:02 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/88e6/live/5b418be0-45dc-11f1-b55d-0f258dce1735.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
     }
   ]
 }
