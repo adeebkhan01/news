@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-01T18:20:28.123Z",
+  "fetchedAt": "2026-06-01T21:45:57.636Z",
   "asx200": {
     "value": 8729.4,
     "change": -0.4,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0,
-    "changePercent": -0.46,
+    "changePercent": -0.49,
     "previousClose": 0.72,
     "asOf": "2026-06-01",
     "history": [
@@ -185,6 +185,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-05-31",
+        "close": 0.72
+      },
+      {
         "date": "2026-06-01",
         "close": 0.72
       }
@@ -195,33 +199,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4519.8,
-      "change": -110.1,
-      "changePercent": -2.38
+      "price": 4514.8,
+      "change": -115.1,
+      "changePercent": -2.49
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.61,
-      "change": -0.35,
-      "changePercent": -0.46
+      "price": 75.15,
+      "change": -0.8,
+      "changePercent": -1.05
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 91.55,
-      "change": -10.39,
-      "changePercent": -10.19
+      "price": 92.47,
+      "change": -9.47,
+      "changePercent": -9.29
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.58,
-      "change": 0.65,
-      "changePercent": 10.97
+      "price": 6.57,
+      "change": 0.64,
+      "changePercent": 10.76
     },
     {
       "name": "BHP Group",
@@ -830,7 +834,35 @@
   ],
   "news": [
     {
-      "title": "The sliding door moment for 'awestruck' Diamonds bolter",
+      "title": "'Excited to be back': Serena Williams announces return to pro-tennis at 44",
+      "link": "https://www.abc.net.au/news/2026-06-02/serena-williams-returning-to-professional-tennis-at-queens-club/106748208",
+      "snippet": "",
+      "pubDate": "Mon, 01 Jun 2026 20:45:14 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to slip, Wall Street advances; Anthropic files for IPO; OpenAI, Altman sued by Florida",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slip-wall-street-mixed-as-oil-prices-rise-anthropic-files-for-ipo-20260602-p602yv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Oil prices are rising following the latest fighting to threaten the US-Iran ceasefire, but Wall Street isn’t very worried, and US stocks are hanging near their records.",
+      "pubDate": "Tue, 02 Jun 2026 06:22:10 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "This brother and sister helped start a company five years ago. Now they are worth $11 billion each",
+      "link": "https://www.smh.com.au/business/companies/this-brother-and-sister-helped-start-a-company-five-years-ago-now-they-are-worth-11-billion-each-20260601-p602kp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The seven founders of an AI juggernaut, including a pair of siblings, have just jumped into the ranks of the world’s 500 richest people. And now the company has set its sights on Wall Street.",
+      "pubDate": "Tue, 02 Jun 2026 05:35:04 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "When police charged an NRL star, one detective broke ranks",
+      "link": "https://www.abc.net.au/news/2026-06-02/police-charged-nrl-star-starling-assault-detective-broke-ranks/106743554",
+      "snippet": "",
+      "pubDate": "Mon, 01 Jun 2026 18:45:33 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "The sliding doors moment for 'awestruck' Diamonds bolter",
       "link": "https://www.abc.net.au/news/2026-06-01/2026-super-netball-round-up-round12/106746962",
       "snippet": "",
       "pubDate": "Mon, 01 Jun 2026 08:51:52 +0000",
@@ -841,13 +873,6 @@
       "link": "https://www.smh.com.au/business/the-economy/trump-needs-to-eat-humble-pie-and-make-a-deal-20260601-p602kv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Trump needs to move on to other things so that by this time next year, today’s global energy panic will be seen as just another passing squall.",
       "pubDate": "Mon, 01 Jun 2026 18:05:47 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "This brother and sister helped start a company five years ago. Now they are worth $11 billion each",
-      "link": "https://www.smh.com.au/business/companies/this-brother-and-sister-helped-start-a-company-five-years-ago-now-they-are-worth-11-billion-each-20260601-p602kp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The seven founders of an AI juggernaut, including a pair of siblings, have just jumped into the ranks of the world’s 500 richest people.",
-      "pubDate": "Mon, 01 Jun 2026 17:15:00 +1000",
       "source": "SMH Business"
     },
     {
@@ -865,7 +890,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "'One more to go': Aussies on cusp of winning rugby 7s World Championship",
+      "title": "'One more to go': Aussies on cusp of winning rugby 7s world champs",
       "link": "https://www.abc.net.au/news/2026-06-01/australia-win-rugby-7s-world-championship-round-in-spain/106746068",
       "snippet": "",
       "pubDate": "Mon, 01 Jun 2026 05:14:38 +0000",
@@ -890,27 +915,6 @@
       "link": "https://www.smh.com.au/business/companies/kpmg-faces-first-major-client-loss-from-whistleblower-scandal-20260601-p602rf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Just days after cutting ties with its CEO, KPMG faces the loss of a major corporate client with Lendlease triggering a process to end a relationship dating back to the 1950s.",
       "pubDate": "Mon, 01 Jun 2026 12:39:49 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Trump’s war is starting to strangle the world",
-      "link": "https://www.smh.com.au/business/the-economy/trump-s-war-is-starting-to-strangle-the-global-economy-20260601-p602nc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The impact of the global energy shock sparked by the war is starting to hit economies. And there is more pain coming.",
-      "pubDate": "Mon, 01 Jun 2026 12:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Why Naomi Osaka and Taylor Townsend's dinner party 'caused a stir'",
-      "link": "https://www.abc.net.au/news/2026-06-01/naomi-osaka-taylor-townsend-french-open-dinner/106744350",
-      "snippet": "",
-      "pubDate": "Mon, 01 Jun 2026 01:34:35 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Big Hits: GoldArc Resources, Raptor Metals and Western Yilgarn make the grade",
-      "link": "https://www.smh.com.au/business/companies/big-hits-goldarc-resources-raptor-metals-and-western-yilgarn-make-the-grade-20260601-p602qc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Bulls N’ Bears Big Hits looks at big drill hits recently reported to the ASX, led by GoldArc Resources gold, followed by Raptor Metals copper, and Western Yilgarn’s gallium.",
-      "pubDate": "Mon, 01 Jun 2026 11:23:19 +1000",
       "source": "SMH Business"
     }
   ]
