@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-02T21:26:49.843Z",
+  "fetchedAt": "2026-06-02T23:13:29.028Z",
   "asx200": {
     "value": 8724.4,
     "change": -5.4,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.72,
     "change": 0,
-    "changePercent": -0.25,
+    "changePercent": -0.31,
     "previousClose": 0.72,
     "asOf": "2026-06-02",
     "history": [
@@ -199,33 +199,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4519.2,
-      "change": -110.7,
-      "changePercent": -2.39
+      "price": 4513.8,
+      "change": -116.1,
+      "changePercent": -2.51
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 75.44,
-      "change": -0.51,
-      "changePercent": -0.67
+      "price": 75.19,
+      "change": -0.76,
+      "changePercent": -1
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 93.39,
-      "change": -8.55,
-      "changePercent": -8.39
+      "price": 94.64,
+      "change": -7.3,
+      "changePercent": -7.16
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.68,
-      "change": 0.75,
-      "changePercent": 12.57
+      "price": 6.66,
+      "change": 0.73,
+      "changePercent": 12.32
     },
     {
       "name": "BHP Group",
@@ -834,6 +834,13 @@
   ],
   "news": [
     {
+      "title": "ASX set to rise, Wall Street gets AI boost; Bitcoin slide accelerates",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-gets-ai-boost-20260603-p603c1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The US stock market is ticking toward more records as winners of the artificial-intelligence boom keep driving higher.",
+      "pubDate": "Wed, 03 Jun 2026 07:38:24 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Green top-scores and Ellis stands tall as Australia levels ODI series",
       "link": "https://www.abc.net.au/news/2026-06-03/australia-levels-odi-series-with-pakistan/106752472",
       "snippet": "",
@@ -846,13 +853,6 @@
       "snippet": "",
       "pubDate": "Tue, 02 Jun 2026 20:48:05 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "ASX set to rise, Wall Street gets AI boost",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-gets-ai-boost-20260603-p603c1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The US stock market is ticking toward more records as winners of the artificial-intelligence boom keep driving higher.",
-      "pubDate": "Wed, 03 Jun 2026 06:46:24 +1000",
-      "source": "SMH Business"
     },
     {
       "title": "Stress fractures in emergency departments",
