@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-06-02T20:54:41.927Z",
-  "summary": "Australia's defence and energy sectors are dominating headlines as the government confirms it always intended to acquire secondhand submarines under the Aukus agreement, while a separate debate intensifies over the spiralling electricity costs from an AI data centre boom. Industrial tensions are rising with unions and government backing minimum wage increases opposed by business groups, emergency healthcare systems buckling under pressure with doctors threatening to quit, and growing criticism of the NDIS overhaul for harming people with disabilities. Weather-related destruction in South Australia compounds the domestic challenges, while controversial energy policy announcements from One Nation and Santos drilling plans signal ongoing political divisions over Australia's energy future.",
+  "fetchedAt": "2026-06-02T23:04:26.319Z",
+  "summary": "Australia's defence and foreign policy is in focus as the country clarifies it always preferred secondhand submarines under the Aukus alliance, while officials express dismay at Trump administration plans to dismantle ocean monitoring systems. Domestically, the AI boom is reshaping the economy with data centre expansion threatening to drive electricity prices up by 26 percent, though the technology also offers benefits like access to restricted AI models. Cost-of-living pressures continue affecting Australians across multiple sectors, from fitness and healthcare to wages, while environmental concerns mount over proposed gas drilling in the Beetaloo Basin. South Australia faces major cleanup after severe weather, and emergency departments report critical stress with doctors struggling for beds and threatening to leave the profession.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,76 @@
     }
   ],
   "articles": [
+    {
+      "title": "Sheepskins go from being worthless to in demand in a year",
+      "link": "https://www.abc.net.au/news/2026-06-03/sheepskin-prices-rebound-short-supply-china-merino-wool/106724110",
+      "desc": "Just 12 months ago, Australian sheepskins were worthless and being dumped in landfill. They are now in hot demand amid a surging merino wool industry.",
+      "pubDate": "Tue, 02 Jun 2026 23:00:53 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/45e4daded4176238b6375623924ead84?impolicy=wcms_crop_resize&amp;cropH=3200&amp;cropW=2400&amp;xPos=658&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Dismay as Trump officials to dismantle key ocean monitoring system",
+      "link": "https://www.theguardian.com/environment/2026/jun/02/trump-administration-ocean-observatories-initiative",
+      "desc": "<p>Ocean Observatories Initiative, $368m network that has provided crucial climate data, latest victim of Trump cuts</p><p>The Trump administration plans to dismantle a $368m deep-sea observation syst",
+      "pubDate": "Tue, 02 Jun 2026 22:35:44 GMT",
+      "img": "https://i.guim.co.uk/img/media/548532b0d813502995fb48af25527a063425864b/63_0_1890_1512/master/1890.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Major green bridge closed for police operation",
+      "link": "https://www.smh.com.au/national/queensland/major-green-bridge-closed-for-police-operation-20260603-p603dt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The bridge was shut down just before 6.20am, and remained closed for more than two hours.",
+      "pubDate": "Wed, 03 Jun 2026 08:16:52 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2626%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/b7ae59fc363abbc94f67e689a3ef1432862c04264aa364322257e8b10be3ab45",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Australia gets access to AI model ‘too dangerous to release’",
+      "link": "https://www.smh.com.au/technology/australia-gets-access-to-ai-model-too-dangerous-to-release-20260603-p603ds.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_technology",
+      "desc": "Mythos is so good at finding software flaws that its maker won’t release it. Now Australia is on the access list.",
+      "pubDate": "Wed, 03 Jun 2026 08:13:39 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_95/t_crop_custom/q_86%2Cf_auto/803da14245694117c7d371662253092adcca0cfa",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Ellis lands lucky first over blow",
+      "link": "https://www.smh.com.au/national/ellis-lands-lucky-first-over-blow-20260603-p603dh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Pakistan opener Maaz Sadaqat was out in the first over after he chopped on off the bowling of Aussie fast bowler Nathan Ellis.",
+      "pubDate": "Wed, 03 Jun 2026 07:41:39 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/a0f528282aa8eeb3de3902d20490351c8fb6ca8f",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Car crashes into Hyde Park fountain in Sydney",
+      "link": "https://www.smh.com.au/national/car-crashes-into-hyde-park-fountain-in-sydney-20260603-p603d6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A rental car has crashed into the water of a Hyde Park fountain in central Sydney.",
+      "pubDate": "Wed, 03 Jun 2026 07:06:00 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/9fdb17ba13e3e9739c229a63d64fff40ad3c3358",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Live: Marles says Australia wanted three second-hand subs all along",
+      "link": "https://www.abc.net.au/news/2026-06-03/federal-politics-live-blog-june-3/106751592",
+      "desc": "The defence minister says the new AUKUS deal that will see Australia buy three second-hand Virginia-class submarines from the US is what the government had wanted all along. Follow live.",
+      "pubDate": "Tue, 02 Jun 2026 21:01:18 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/f30c3fde2d108b519ae62808807435cc?impolicy=wcms_crop_resize&amp;cropH=3338&amp;cropW=2503&amp;xPos=1346&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
     {
       "title": "Politics live: Australia always preferred secondhand Aukus submarines, defence secretary says",
       "link": "https://www.theguardian.com/australia-news/live/2026/jun/03/politics-live-australia-aukus-submarines-pauline-hanson-anthony-albanese-angus-taylor-question-time-senate-estimates-labor-one-nation-coaliton-ntwnfb",
@@ -35348,86 +35418,6 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "‘They know they’re safe’: beagles saved from US research facility after protests",
-      "link": "https://www.theguardian.com/us-news/2026/may/03/beagles-rescued-ridglan-farms-wisconsin",
-      "desc": "<p>Big Dog Ranch Rescue made deal to buy 1,500 dogs from Ridglan Farms, a Wisconsin breeding and research facility</p><p>The first beagles removed from a <a href=\"https://www.theguardian.com/world/wis",
-      "pubDate": "Sun, 03 May 2026 22:59:17 GMT",
-      "img": "https://i.guim.co.uk/img/media/94a4d6252f6c7ac0851a7f40429230d9d18202f6/94_0_1546_1237/master/1546.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Busloads of tourists turn quiet street into 'internet sensation'",
-      "link": "https://www.abc.net.au/news/2026-05-04/gerringong-tasman-drive-tourism-social-media/106624670",
-      "desc": "For years, the residents of Tasman Drive in Gerringong knew they lived in a stunningly beautiful part of the world, but then social media discovered it too.",
-      "pubDate": "Sun, 03 May 2026 22:04:05 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/55c77174aac25c9987df813e6e094aae?impolicy=wcms_crop_resize&amp;cropH=1140&amp;cropW=855&amp;xPos=533&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Driver ‘rammed man with 4WD’ in car park, charged with attempted murder",
-      "link": "https://www.smh.com.au/national/queensland/driver-rammed-man-with-4wd-in-car-park-charged-with-attempted-murder-20260504-p5ztdt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Police said the 29-year-old had driven at the alleged victim three times, striking him once and inflicting serious head injuries.",
-      "pubDate": "Mon, 04 May 2026 07:51:55 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.2585%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/65dadc21af457dc01dc715c318cfb9ac67aa10af",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Australia news live: Chalmers says budget will pay down more debt; families of Bondi shooting victims to take stand at royal commission",
-      "link": "https://www.theguardian.com/australia-news/live/2026/may/04/australia-news-live-jim-chalmers-budget-inflation-labor-cost-of-living-interest-rates-bondi-shooting-royal-commission-antisemitism-ntwnfb",
-      "desc": "<p>Treasurer says next week’s budget will save more than it spends. Follow today’s news live</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/email-newsletters?CMP=cvau_sfl\">breaking news em",
-      "pubDate": "Sun, 03 May 2026 21:48:52 GMT",
-      "img": "https://i.guim.co.uk/img/media/1677db68b82d7f6748e708df037551c6d1864af0/760_0_5498_4400/master/5498.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Australia news LIVE: Ship attacked near Strait of Hormuz as Iran says it is reviewing US response to 14-point proposal to end war",
-      "link": "https://www.smh.com.au/national/australia-news-live-ship-attacked-near-strait-of-hormuz-as-iran-says-it-is-reviewing-us-response-to-14-point-proposal-to-end-war-20260503-p5ztcm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Follow our live coverage of news in Australia and around the globe.",
-      "pubDate": "Mon, 04 May 2026 07:36:47 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.3371%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_333%2C$y_133/t_crop_custom/q_86%2Cf_auto/ec7d816eec1b95cfc1a7635519bb0a264076cfef",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Council struggling with erosion wants big polluters to pay to fix it",
-      "link": "https://www.abc.net.au/news/2026-05-04/bass-coast-council-pushes-fossil-fuel-levy-for-recovery-fund/106624424",
-      "desc": "Councillors in a Victorian shire battling coastal erosion say fossil fuel giants should help pay for damage caused by climate-related environmental disasters.",
-      "pubDate": "Sun, 03 May 2026 21:29:57 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/2c116bcab1be9223dddec2a9d0c74162?impolicy=wcms_crop_resize&amp;cropH=2218&amp;cropW=1664&amp;xPos=1681&amp;yPos=936&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Live: Japan's PM touches down in Canberra for first visit to Australia",
-      "link": "https://www.abc.net.au/news/2026-05-04/federal-politics-live-blog-sanae-takaichi-/106637392",
-      "desc": "Japanese Prime Minister Sanae Takaichi has touched down in Canberra for her first visit to Australia. Follow live.",
-      "pubDate": "Sun, 03 May 2026 21:04:52 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/c4962a7d0dfc4b76a75ca85faa9968ea?impolicy=wcms_crop_resize&amp;cropH=3332&amp;cropW=2499&amp;xPos=1251&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "NAB profit drops as bank warns of Middle East uncertainty — as it happened",
-      "link": "https://www.abc.net.au/news/2026-05-04/asx-markets-business-news-live-updates/106636410",
-      "desc": "The ASX has slipped to its ninth loss in 10 sessions despite strong corporate earnings propelling the S&P 500 to a new record close. Look back at how the trading session unfolded on our business blog.",
-      "pubDate": "Sun, 03 May 2026 20:59:31 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/1580af3c87bff61a597ee4f387f9f7c7?impolicy=wcms_crop_resize&amp;cropH=485&amp;cropW=362&amp;xPos=359&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
     }
   ]
 }
