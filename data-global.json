@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-06-01T21:37:49.078Z",
-  "summary": "The Middle East dominates global news as military tensions escalate between Iran and the US, with Washington striking Iranian radar sites while Iranian attacks have damaged multiple American military installations across the region. Israel's offensive in Lebanon intensifies with airstrikes on Beirut as the ceasefire framework remains fragile, while separate fighting in Gaza continues to claim civilian lives. In technology, AI companies are making major moves with Anthropic filing for a US IPO and Nvidia launching new chips for personal computers, reflecting sustained investor confidence in the sector despite regulatory scrutiny. European politics sees Hungary's PM challenging the presidency while Armenia rejects Russian pressure, underscoring ongoing tensions within the former Soviet sphere and NATO-adjacent regions.",
+  "fetchedAt": "2026-06-02T04:22:54.720Z",
+  "summary": "Global tensions escalated sharply today as the Middle East conflict intensified, with the US striking Iranian radar sites while Iran warns Israeli attacks on Lebanon and Gaza threaten ceasefire negotiations, and President Trump attempts to broker an end to hostilities. Meanwhile, major developments unfolded in technology and politics: Anthropic filed for a US IPO as investors bet heavily on artificial intelligence, Nvidia unveiled new AI chips for personal computers, and Denmark's Mette Frederiksen advanced toward forming a government after months of talks. Domestically, the US Defense Department blocked journalists from its press office, while Hungary's Prime Minister threatened to remove President Tamas Sulyok through constitutional amendment. Additional concerns emerged from Sudan's humanitarian crisis as war disrupts insulin supplies, and violent protests erupted in Chile over government social program cuts.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "US Defense Department bars journalists from its press office",
+      "link": "https://www.aljazeera.com/economy/2026/6/2/us-defense-department-bars-journalists-from-its-press-office?traffic_source=rss",
+      "desc": "Media freedom advocates condemn move as latest effort to curtail independent reporting on the US military.",
+      "pubDate": "Tue, 02 Jun 2026 02:13:10 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26152829867592-1780361371_9a946a-1780364888.jpg?resize=1200%2C630&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "President Trump attempts to end hostilities in Lebanon",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/2/president-trump-attempts-to-end-hostilities-in-lebanon?traffic_source=rss",
+      "desc": "US President Trump claims a diplomatic breakthrough after speaking with Israeli PM to halt escalation toward Beirut.",
+      "pubDate": "Tue, 02 Jun 2026 01:48:49 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1780364882.jpg?resize=1620%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Denmark's Mette Frederiksen to form government after months of negotiations",
+      "link": "https://www.bbc.com/news/articles/cn7p3e34x5no?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The leader of Denmark's Social Democratic Party is forming a centre-left coalition minority government, giving her a third term as prime minister.",
+      "pubDate": "Tue, 02 Jun 2026 01:19:15 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3c28/live/307a81b0-5e22-11f1-a6fd-eda29808c5f6.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Iran war live: Trump talks to Hezbollah, Israel as Lebanon fighting surges",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/6/2/iran-war-live-trump-talks-to-hezbollah-israel-as-lebanon-fighting-surges?traffic_source=rss",
+      "desc": "Israeli National Security Minister Ben-Gvir says &#039;time&#039; to say &#039;no&#039; to Trump and continue striking Hezbollah in Lebanon.",
+      "pubDate": "Tue, 02 Jun 2026 00:00:00 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26152576900536-1780357099.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Violent protests erupt in Chile over government cuts of social programmes",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/1/aje-onl-nf_clip_violent-protests-erupt-in-chile-010626?traffic_source=rss",
+      "desc": "Labour unions and student groups protested in Chile as President Kast delivered his first State of the Nation.",
+      "pubDate": "Mon, 01 Jun 2026 23:22:52 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1780356119.jpg?resize=1620%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "How 'confused' AI rollout hurts firms and baffles staff",
+      "link": "https://www.bbc.com/news/articles/c74d1ydv01eo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Some firms are putting pressure on staff to use AI, but have not thought through their AI rollout.",
+      "pubDate": "Mon, 01 Jun 2026 23:05:11 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b7c7/live/85925530-5033-11f1-89a3-d1f559421220.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
     {
       "title": "Who attended this year’s Israel Day Parade in New York?",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/1/who-attended-this-years-israel-day-parade-in-new-york?traffic_source=rss",
@@ -13630,186 +13690,6 @@
       "desc": "BBC's Nadine Yousif and Eloise Alanna spent five days travelling with the country's military rangers through frostbite and sub-zero temperatures.",
       "pubDate": "Sun, 03 May 2026 04:30:41 GMT",
       "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/33c4/live/e97112c0-4337-11f1-bd52-e755d604ece4.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Germany says US troop withdrawal 'foreseeable' as Trump warns of more 'cuts'",
-      "link": "https://www.bbc.com/news/articles/cd9pn541jjlo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "In the US, two senior Republicans voice concern over President Trump's decision to pull out 5,000 troops.",
-      "pubDate": "Sun, 03 May 2026 04:09:34 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2be1/live/a8b851f0-463c-11f1-aa14-ad910202f501.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "US approves $8.6bn in arms sales to Middle East allies",
-      "link": "https://www.aljazeera.com/economy/2026/5/3/us-approves-8-6bn-in-arms-sales-to-middle-east-allies?traffic_source=rss",
-      "desc": "US State Department cites emergency circumstances to fast-track sales without the approval of Congress.",
-      "pubDate": "Sun, 03 May 2026 04:05:28 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AP963129121700-1777768444_655b66-1777768605.jpg?resize=1200%2C630&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "North Korea rejects US cybercrime claims as 'absurd slander'",
-      "link": "https://www.dw.com/en/north-korea-rejects-us-cybercrime-claims-as-absurd-slander/a-77021832?maca=en-rss-en-all-1573-rdf",
-      "desc": "Pyongyang refutes allegations of hacking and crypto theft, even as a UN panel estimated billions stolen by North Korea-linked cyberattacks.",
-      "pubDate": "2026-05-03T04:03:00Z",
-      "img": "https://static.dw.com/image/38913731_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "DW",
-      "link": "https://www.dw.com/english/?maca=en-rss-en-all-1573-rdf",
-      "desc": "News, Analysis and Service from Germany and Europe - in 30 Languages",
-      "pubDate": "2026-05-03T04:03:00Z",
-      "img": null,
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "UAE lifts all air traffic restrictions introduced since Iran war",
-      "link": "https://www.aljazeera.com/news/2026/5/3/uae-lifts-all-air-traffic-restrictions-introduced-since-iran-war?traffic_source=rss",
-      "desc": "UAE aviation authority&#039;s announcement is the latest sign of the travel sector&#039;s recovery across the Middle East.",
-      "pubDate": "Sun, 03 May 2026 03:29:44 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AFP__20260316__A3F89Z8__v4__HighRes__TopshotUaeIranUsIsraelWar-1773654471-1777774799.jpg?resize=1200%2C630&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Trump expresses doubt that Iran’s peace proposal is ‘acceptable’",
-      "link": "https://www.aljazeera.com/news/2026/5/3/trump-reviews-iranian-peace-proposal-warns-strikes-could-resume?traffic_source=rss",
-      "desc": "US president says he is considering the 14-point peace plan, but warns strikes could resume if Tehran &#039;misbehaves&#039;.",
-      "pubDate": "Sun, 03 May 2026 02:37:38 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/ap_69f69b390912e-1777769273_e8efdd-1777772888.jpg?resize=1200%2C630&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Man charged with murder and sexual assault of 5-year-old Australian girl",
-      "link": "https://www.bbc.com/news/articles/cy92qennznjo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The girl's death sparked an outbreak of violence in the central Australian town from where she disappeared.",
-      "pubDate": "Sun, 03 May 2026 01:48:01 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2466/live/843ef730-4690-11f1-b55d-0f258dce1735.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Iran war: Trump says reviewing new Tehran proposal with doubt",
-      "link": "https://www.dw.com/en/iran-war-trump-says-reviewing-new-tehran-proposal-with-doubt/live-77021634?maca=en-rss-en-all-1573-rdf",
-      "desc": "US President Donald Trump has said he \"can't imagine\" the proposal is acceptable. Tehran said the \"ball is in the US' court\" to choose whether to pursue diplomacy or confrontation. DW has more.",
-      "pubDate": "2026-05-03T01:38:00Z",
-      "img": "https://static.dw.com/image/77016178_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "Iran war live: Trump to review 14-point plan; Israel pounds Lebanon",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/5/3/iran-war-live-trump-says-reviewing-14-point-plan-israel-pounds-lebanon?traffic_source=rss",
-      "desc": "US president says he will &#039;soon be reviewing the plan Iran has just sent to us&#039;, but doesn&#039;t think he can make a deal.",
-      "pubDate": "Sun, 03 May 2026 00:00:00 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AP26122371681861-1777763531.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Voters will judge Trump on the economy - how is it doing?",
-      "link": "https://www.bbc.com/news/articles/cgepyv20vrpo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "How much Donald Trump can do with the time he has left as president will depend massively on the cost of living.",
-      "pubDate": "Sat, 02 May 2026 23:40:15 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7849/live/7ebe8ee0-44d0-11f1-8de1-593a7bb5acaa.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "The Iran war has strengthened Ukraine in surprising ways. Could a ceasefire with Russia be closer?",
-      "link": "https://www.bbc.com/news/articles/cgjp7vpee03o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "President Zelensky has been visiting the Gulf to demonstrate his country's military nous.",
-      "pubDate": "Sat, 02 May 2026 23:19:27 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e40e/live/8c9eb970-4626-11f1-ac78-2112837ce2aa.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "The clandestine network smuggling Starlink tech into Iran to beat internet blackout",
-      "link": "https://www.bbc.com/news/articles/cvgzk91leweo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Sahand tells the BBC World Service he sends satellite internet terminals into Iran to help show \"the real picture\".",
-      "pubDate": "Sat, 02 May 2026 23:17:17 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8c14/live/20b8b580-44c8-11f1-ac78-2112837ce2aa.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Philippines volcano erupts, blanketing ash across the sky",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/2/philippines-volcano-erupts-blanketing-ash-across-the-sky?traffic_source=rss",
-      "desc": "The Mayon Volcano has erupted, spewing a cloud of ash and debris across Bicol, in the Philippines.",
-      "pubDate": "Sat, 02 May 2026 23:16:50 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1777763800.jpg?resize=1909%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Spirit Airlines shutting down after rescue talks collapse",
-      "link": "https://www.bbc.com/news/articles/cqxlnrqjvzyo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The airline had been in talks with the Trump administration about a $500m bailout.",
-      "pubDate": "Sat, 02 May 2026 23:16:13 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d76c/live/82575fa0-3e86-11f1-89c2-a710be29e252.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Laufey on making jazz cool again (and the fish that brought out her inner rage)",
-      "link": "https://www.bbc.com/news/articles/c99lvggdy4jo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The Icelandic star reflects on a phenomenal year, and the music video that let her go \"primal\".",
-      "pubDate": "Sat, 02 May 2026 23:05:34 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c08b/live/cfab1ad0-446c-11f1-97e2-ede52d59c1ad.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Trump tells Congress ceasefire means he does not need their approval for Iran war",
-      "link": "https://www.bbc.com/news/articles/c4g4xexy4w7o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The president writes that hostilities \"have terminated\" because of the ceasefire, arguing he does not need congressional authorisation.",
-      "pubDate": "Sat, 02 May 2026 23:03:03 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/26ce/live/cba9b850-4594-11f1-b55d-0f258dce1735.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "'Mournes could take centuries to recover from wildfires'",
-      "link": "https://www.bbc.com/news/articles/cevpy8r2e22o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "One conservation expert says repeated fires in The Mournes are like \"death by a thousand cuts\".",
-      "pubDate": "Sat, 02 May 2026 23:01:57 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/870e/live/2ee262e0-4573-11f1-b442-c37a8b277356.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Dragonflies in distress: Scientists sound alarm in India's ecological hotspot",
-      "link": "https://www.bbc.com/news/articles/cx2107kzyreo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "A new study reveals a decline in dragonfly and damselfly species in India's Western Ghats.",
-      "pubDate": "Sat, 02 May 2026 22:13:11 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/977d/live/56375760-4500-11f1-ac10-efe18ee947fe.jpg",
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
