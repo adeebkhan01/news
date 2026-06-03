@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-03T17:23:26.656Z",
+  "fetchedAt": "2026-06-03T21:32:51.193Z",
   "asx200": {
     "value": 8785.7,
     "change": 55.9,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.71,
     "change": -0.01,
-    "changePercent": -0.93,
+    "changePercent": -0.96,
     "previousClose": 0.72,
     "asOf": "2026-06-03",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.72
       },
       {
+        "date": "2026-06-02",
+        "close": 0.72
+      },
+      {
         "date": "2026-06-03",
         "close": 0.71
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4472.2,
-      "change": -47.3,
-      "changePercent": -1.05
+      "price": 4462.7,
+      "change": -56.8,
+      "changePercent": -1.26
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 73.72,
-      "change": 0.65,
-      "changePercent": 0.89
+      "price": 72.98,
+      "change": -0.09,
+      "changePercent": -0.13
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 95.94,
-      "change": -10.48,
-      "changePercent": -9.85
+      "price": 96.2,
+      "change": -10.22,
+      "changePercent": -9.6
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.51,
-      "change": 0.71,
-      "changePercent": 12.27
+      "price": 6.48,
+      "change": 0.69,
+      "changePercent": 11.89
     },
     {
       "name": "BHP Group",
@@ -838,6 +842,55 @@
   ],
   "news": [
     {
+      "title": "Why clothing giant Patagonia is suing a drag queen",
+      "link": "https://www.smh.com.au/business/consumer-affairs/why-clothing-giant-patagonia-is-suing-a-drag-queen-20260603-p603f1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Drag queen and environmental activist Pattie Gonia is ready to take on a retail titan in court.",
+      "pubDate": "Thu, 04 Jun 2026 07:19:29 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ASX set to slip as oil prices drive markets lower; Musk eyes trillionaire status after SpaceX sets IPO price",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slip-as-oil-prices-drive-markets-lower-spacex-price-rumours-20260604-p603qg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Oil prices are rising following the latest flare-up in fighting to threaten the US-Iran ceasefire, sending Wall Street lower.",
+      "pubDate": "Thu, 04 Jun 2026 07:01:55 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Aryna Sabalenka 'just wants to quit tennis' after shock French Open loss",
+      "link": "https://www.abc.net.au/news/2026-06-04/aryna-sabalenka-french-open-diana-shnaider/106757330",
+      "snippet": "",
+      "pubDate": "Wed, 03 Jun 2026 20:52:58 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "The NBA's new face is here and he is unlike anything we've ever seen",
+      "link": "https://www.abc.net.au/news/2026-06-04/nba-finals-analysis-preview-wembanyama-knicks-spurs/106745572",
+      "snippet": "",
+      "pubDate": "Wed, 03 Jun 2026 20:05:17 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Aussies embracing 'the stress' as they chase rugby sevens world title",
+      "link": "https://www.abc.net.au/news/2026-06-04/word-championship-rugby-sevens-australia-james-turner-bordeaux/106756792",
+      "snippet": "",
+      "pubDate": "Wed, 03 Jun 2026 19:39:34 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Australian drivers flock to staff-free servos as fuel prices bite",
+      "link": "https://www.smh.com.au/business/companies/drivers-flock-to-staff-free-servos-as-fuel-prices-bite-20260603-p603k6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "A major fuel supplier will add more than 100 self-serve sites to its discount chain amid a rush of demand from motorists seeking relief from record prices.",
+      "pubDate": "Thu, 04 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Sportsbet owner expands from gambling into less-regulated 'rewards club'",
+      "link": "https://www.abc.net.au/news/2026-06-04/sportsbet-owner-flutter-expands-from-gambling-to-rewards-club/106752820",
+      "snippet": "",
+      "pubDate": "Wed, 03 Jun 2026 18:53:05 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Sex offender evicted after women footballers abandon bush club",
       "link": "https://www.abc.net.au/news/2026-06-03/tyrendarra-football-netball-sex-offender-decision-reversal/106756270",
       "snippet": "",
@@ -871,55 +924,6 @@
       "snippet": "",
       "pubDate": "Wed, 03 Jun 2026 07:10:54 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Ardea fine-tunes WA nickel giant ahead of DFS delivery",
-      "link": "https://www.smh.com.au/business/companies/ardea-fine-tunes-wa-nickel-giant-ahead-of-dfs-delivery-20260603-p603nx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Ardea Resources has extended its definitive feasibility study timeline past June to include value-engineering upgrades at its monster nickel project near Kalgoorlie.",
-      "pubDate": "Wed, 03 Jun 2026 17:06:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Hollywood legend set to bring Finke Desert Race to the big screen",
-      "link": "https://www.abc.net.au/news/2026-06-03/chris-hemsworth-to-bring-finke-desert-race-to-big-screen/106748736",
-      "snippet": "",
-      "pubDate": "Wed, 03 Jun 2026 06:57:00 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "The brands that Australians are now hating on, and why",
-      "link": "https://www.smh.com.au/business/consumer-affairs/the-brands-that-australians-are-now-hating-on-and-why-20260603-p603h2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Artificial intelligence businesses and other technology giants have ranked poorly in a new survey of the brands that Australians trust most and least.",
-      "pubDate": "Wed, 03 Jun 2026 16:06:55 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Litchfield boosts NT base metals case with broad drill hits",
-      "link": "https://www.smh.com.au/business/companies/litchfield-boosts-nt-base-metals-case-with-broad-drill-hits-20260603-p603m5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Litchfield Minerals has landed broad base metal drill hits at its Oonagalabi project in the NT, with new assays refining drill targeting and improving understanding of the broader mineral system.",
-      "pubDate": "Wed, 03 Jun 2026 15:41:47 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Pacgold to spin out QLD gold assets into Emerald Resources-backed IPO",
-      "link": "https://www.smh.com.au/business/companies/pacgold-to-spin-out-qld-gold-assets-into-emerald-resources-backed-ipo-20260603-p603le.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Pacgold Ltd will demerge its Qld gold assets into the IPO-bound vehicle Manda Resources, creating a new 1.33Moz gold exploration play, backed by the $4B giant Emerald Resources.",
-      "pubDate": "Wed, 03 Jun 2026 15:04:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "'We can scare them': Kiss confident he can stay Reds coach for another week",
-      "link": "https://www.abc.net.au/news/2026-06-03/queensland-reds-super-rugby-finals/106753808",
-      "snippet": "",
-      "pubDate": "Wed, 03 Jun 2026 04:57:20 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Qantas’ Project Sunrise plane completes first test flight over France",
-      "link": "https://www.smh.com.au/business/companies/qantas-project-sunrise-plane-completes-first-test-flight-over-france-20260603-p603im.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The war in the Middle East may bolster the business case for the aircraft, which will be able to travel at least 1000 kilometres further than existing A350s.",
-      "pubDate": "Wed, 03 Jun 2026 14:49:36 +1000",
-      "source": "SMH Business"
     }
   ]
 }
