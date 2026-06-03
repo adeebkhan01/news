@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-06-03T04:42:35.214Z",
-  "summary": "The Middle East remains a flashpoint as the US and Iran escalate military operations around the Strait of Hormuz, with Washington striking Iran's Qeshm Island while Tehran targets regional allies, disrupting global shipping and exhausting international crews. In North America, trade tensions simmer as Mexico and Canada push to extend the USMCA agreement while the Trump administration pursues tariff actions against Brazil. Israeli-Palestinian dynamics continue deteriorating with Netanyahu facing domestic backlash over Lebanon strategy despite claims of ceasefire commitments, while Ukraine's war persists with limited signs of diplomatic resolution despite changing Russian public discourse. Domestically across multiple nations, technology advances and political appointments signal shifting priorities, though climate warnings about potential severe El Niño conditions underscore mounting environmental pressures.",
+  "fetchedAt": "2026-06-03T11:08:37.553Z",
+  "summary": "Conflict dominates global headlines as Israel's military operations in Lebanon draw regional attention while the US and Iran exchange strikes, with sailors reporting severe strain from the resulting shipping disruptions in the Strait of Hormuz. A deadly apartment fire in Delhi killed at least 21 people, highlighting humanitarian emergencies alongside geopolitical tensions. The Trump administration is reshaping US policy through tariff announcements targeting multiple nations, personnel appointments including a new intelligence chief, and shifts in spending priorities, while California holds a competitive governor's race. Tech and economic developments include Japan's stock market reaching record highs on AI enthusiasm, Microsoft's quantum computing advances, and ongoing trade negotiations between North America and other partners.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,126 @@
     }
   ],
   "articles": [
+    {
+      "title": "Foreign nationals among at least 21 killed in Delhi fire",
+      "link": "https://www.bbc.com/news/articles/czd29327qzvo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Many victims were South Asians who had travelled to India for treatment or to accompany relatives.",
+      "pubDate": "Wed, 03 Jun 2026 10:41:26 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/89f0/live/0ba018f0-5f2b-11f1-9b94-1bf27e494d9e.png",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Israel’s invasion of southern Lebanon devastates centuries of history",
+      "link": "https://www.aljazeera.com/news/2026/6/3/israels-invasion-of-southern-lebanon-devastates-centuries-of-history?traffic_source=rss",
+      "desc": "From Phoenician temples to Crusader castles, heritage sites bear the brunt of Israel&#039;s expanding military offensive.",
+      "pubDate": "Wed, 03 Jun 2026 10:41:06 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/INTERACTIVE_LEBANON_UNESCO-02-1780440287.jpg?resize=1200%2C630",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Seven killed after drone hits bus in Russia-controlled part of Ukraine",
+      "link": "https://www.bbc.com/news/articles/cp3peyykxd5o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The bus was travelling between Moscow and Simferopol, in Russian-occupied Crimea, an official says.",
+      "pubDate": "Wed, 03 Jun 2026 10:31:50 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e122/live/1fbe2850-5f34-11f1-b682-cf91850925ea.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "US announces new tariffs over forced labour concerns",
+      "link": "https://www.bbc.com/news/articles/cq6pe7nvldmo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "It comes after the US Supreme Court struck down many of US President Donald Trump's previous duties in February.",
+      "pubDate": "Wed, 03 Jun 2026 10:31:12 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8644/live/78de3db0-5f27-11f1-9da4-8b99067aa239.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Hilton, Becerra lead California governor race: Key primary election results",
+      "link": "https://www.aljazeera.com/news/2026/6/3/hilton-becerra-lead-california-governor-race-key-primary-election-results?traffic_source=rss",
+      "desc": "California, Iowa, New Jersey, New Mexico, Montana and South Dakota held key primaries on Tuesday.",
+      "pubDate": "Wed, 03 Jun 2026 09:52:13 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/asw1-1780469927.jpg?resize=1920%2C1308",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "How social media changes the way we see war",
+      "link": "https://www.aljazeera.com/video/all-hail/2026/6/3/how-social-media-changes-the-way-we-see-war?traffic_source=rss",
+      "desc": "We see war now as we see everything else - through a screen.",
+      "pubDate": "Wed, 03 Jun 2026 09:29:25 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/04/ALL-HAIL-2026-EP5-v2-1776296759.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Democrat and Republican go head-to-head in California governor race",
+      "link": "https://www.aljazeera.com/news/2026/6/3/democrat-and-republican-go-head-to-head-in-california-governor-race?traffic_source=rss",
+      "desc": "California could have its first Republican governor since Arnold Schwarzenegger ended his two terms in 2011.",
+      "pubDate": "Wed, 03 Jun 2026 09:08:15 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AP26135094740405-1779758840.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Can a US president promote stock they’ve invested in",
+      "link": "https://www.aljazeera.com/video/money-works/2026/6/3/can-a-us-president-promote-stock-theyve-invested-in?traffic_source=rss",
+      "desc": "Can a US president promote stock they’ve invested in",
+      "pubDate": "Wed, 03 Jun 2026 08:24:11 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/16x9-1780473654.png?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Japan’s stock market hits new record as AI boom gathers steam",
+      "link": "https://www.aljazeera.com/economy/2026/6/3/japans-stock-market-hits-new-record-as-ai-boom-gathers-steam?traffic_source=rss",
+      "desc": "Benchmark Nikkei 225 tops 68,000 for first time as AI-driven buying frenzy shows no signs of slowing down.",
+      "pubDate": "Wed, 03 Jun 2026 05:56:30 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26153040385199-1780463912_0f71a2-1780464561.jpg?resize=1200%2C630&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "What’s happening on day 96 of Iran war as US, Iran engage in new attacks",
+      "link": "https://www.aljazeera.com/news/2026/6/3/whats-happening-on-day-96-of-iran-war-as-us-iran-engage-in-new-attacks?traffic_source=rss",
+      "desc": "Rubio says the US will lift sanctions on Iran only if it gives up enriched uranium, rejecting a Hormuz-linked deal.",
+      "pubDate": "Wed, 03 Jun 2026 05:26:04 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/epa_6a1fbb5fe431-1780464479.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Publishers in UK can opt out of Google AI search results",
+      "link": "https://www.bbc.com/news/articles/c775pp26yz5o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The Competition and Markets Authority says it would put publishers \"in a stronger position to negotiate content deals with Google\".",
+      "pubDate": "Wed, 03 Jun 2026 05:18:00 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f805/live/92789b10-5e9d-11f1-be30-5d712cf191bd.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Shell pumped oil through Nigeria pipeline for years despite pollution evidence, documents show",
+      "link": "https://www.bbc.com/news/articles/cdrp8v7407ro?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The oil giant says the documents ignore the critical context of the complex operating environment at the time.",
+      "pubDate": "Wed, 03 Jun 2026 05:13:02 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c045/live/b1ca0800-5e9d-11f1-8b8c-6d33e1d5abb6.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
     {
       "title": "Benjamin Netanyahu faces Israeli backlash over Lebanon strategy",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/3/benjamin-netanyahu-faces-israeli-backlash-over-lebanon-strategy?traffic_source=rss",
@@ -373,6 +493,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Kosovo general election: the cost of political polarization",
+      "link": "https://www.dw.com/en/kosovo-general-election-the-cost-of-political-polarization/a-77390725?maca=en-rss-en-eu-2092-rdf",
+      "desc": "Sunday's election in Kosovo — the third in under 16 months — is marked by a clash between former allies PM Albin Kurti and ex-President Vjosa Osmani, deadlock in the dialogue with Serbia and obstacles",
+      "pubDate": "2026-06-02T13:45:00Z",
+      "img": "https://static.dw.com/image/75319578_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "Why Google wants to release millions of mosquitoes in the US",
@@ -13583,106 +13713,6 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "New alliances shakes up Nigerian political landscape",
-      "link": "https://www.bbc.com/news/articles/c0q20xzwppdo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Peter Obi and Rabiu Kwankwaso, who came third and fourth respectively in the last elections, switch parties.",
-      "pubDate": "Mon, 04 May 2026 10:34:39 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/826a/live/8ada4e00-47a3-11f1-a815-8703cc282724.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "NATO chief says Europeans have ‘gotten the message’ from Trump on defence",
-      "link": "https://www.aljazeera.com/news/2026/5/4/nato-chief-says-europeans-have-gotten-the-message-from-trump-on-defence?traffic_source=rss",
-      "desc": "The US president has accused some NATO countries of not doing enough to support the US-Israel war on Iran.",
-      "pubDate": "Mon, 04 May 2026 09:57:05 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-04-22T101235Z_3674467_RC28UKAKR8HR_RTRMADP_3_NATO-TURKEY-RUTTE-1777885664.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Ukrainian drone hits upmarket Moscow high-rise ahead of Victory Day celebrations",
-      "link": "https://www.bbc.com/news/articles/cwy234llx3vo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The attack comes as the Kremlin prepares to hold a scaled-back military parade on Saturday.",
-      "pubDate": "Mon, 04 May 2026 09:49:05 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9519/live/86d66810-479a-11f1-ac78-2112837ce2aa.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "‘I can’t feel my leg’: Israeli gunfire disables teenagers in West Bank",
-      "link": "https://www.aljazeera.com/news/2026/5/4/i-cant-feel-my-leg-israeli-gunfire-disables-teenagers-in-west-bank?traffic_source=rss",
-      "desc": "Al Jazeera visits refugee camp in the occupied West Bank where Israeli soldiers have killed or maimed many young people.",
-      "pubDate": "Mon, 04 May 2026 09:44:41 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/Boys-from-the-camp-have-only-the-streets-to-play-in-1777666223.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Met Gala 2026: How to watch, the price of tickets and this year's theme",
-      "link": "https://www.bbc.com/news/articles/cdrm7gp5er3o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Beyoncé, who last attended the Met Gala in 2016, is returning as a co-chair of fashion's biggest night.",
-      "pubDate": "Mon, 04 May 2026 08:41:42 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a599/live/b9f91f20-431d-11f1-89cc-ff708b4a3776.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Iran warns US to stay out of Hormuz after Trump says US will ‘guide’ ships",
-      "link": "https://www.aljazeera.com/news/2026/5/4/iran-warns-us-to-stay-out-of-hormuz-after-trump-says-us-will-guide-ships?traffic_source=rss",
-      "desc": "President Trump said the US will begin Project Freedom on Monday to guide stranded ships out of the Strait of Hormuz.",
-      "pubDate": "Mon, 04 May 2026 08:20:54 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AP26108447361822-1-1777883810.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Trump says US to 'guide' stranded ships through Strait of Hormuz",
-      "link": "https://www.bbc.com/news/articles/c775jevkyv2o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "More than 100 aircraft and 15,000 personnel will be part of the operation due to start on Monday, the US military says.",
-      "pubDate": "Mon, 04 May 2026 08:10:45 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/41c4/live/cbafdfa0-4751-11f1-9f5f-fb44c02de893.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Former NYC Mayor Giuliani hospitalised in ‘critical condition’",
-      "link": "https://www.aljazeera.com/news/2026/5/4/former-nyc-mayor-giuliani-hospitalised-in-critical-condition-spokesman?traffic_source=rss",
-      "desc": "Spokesman says Giuliani in &#039;critical but stable&#039; condition as President Trump hails &#039;true warrior&#039;.",
-      "pubDate": "Mon, 04 May 2026 07:19:47 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/reuters_69f83b07-1777875719.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Japan PM says Iran war oil crisis having ‘enormous impact’ in Asia Pacific",
-      "link": "https://www.aljazeera.com/news/2026/5/4/japan-pm-says-iran-war-oil-crisis-having-enormous-impact-in-asia-pacific?traffic_source=rss",
-      "desc": "Sanae Takaichi makes comments during a visit to Australia, where she signs agreements on energy supplies.",
-      "pubDate": "Mon, 04 May 2026 06:45:13 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/13949868-1777878913.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "What an empty car park tells us about the UK's debt problem",
-      "link": "https://www.bbc.com/news/articles/cy816xdp226o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The BBC has been speaking to people living in one of England's poorest communities.",
-      "pubDate": "Mon, 04 May 2026 05:00:06 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c629/live/ae0d1610-447d-11f1-88ff-575186ed76aa.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
     }
   ]
 }
