@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-04T20:28:54.728Z",
+  "fetchedAt": "2026-06-04T22:50:23.190Z",
   "asx200": {
     "value": 8686.1,
     "change": -11,
@@ -104,7 +104,7 @@
   "audusd": {
     "value": 0.71,
     "change": -0.01,
-    "changePercent": -1.07,
+    "changePercent": -1.08,
     "previousClose": 0.72,
     "asOf": "2026-06-04",
     "history": [
@@ -215,25 +215,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4506.9,
-      "change": -12.6,
-      "changePercent": -0.28
+      "price": 4506,
+      "change": -13.5,
+      "changePercent": -0.3
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 74.25,
+      "price": 74.24,
       "change": 1.17,
-      "changePercent": 1.61
+      "changePercent": 1.6
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 92.99,
-      "change": -13.43,
-      "changePercent": -12.62
+      "price": 92.81,
+      "change": -13.61,
+      "changePercent": -12.79
     },
     {
       "name": "Copper",
@@ -241,7 +241,7 @@
       "iconBg": "#fef0e6",
       "price": 6.53,
       "change": 0.74,
-      "changePercent": 12.76
+      "changePercent": 12.68
     },
     {
       "name": "BHP Group",
@@ -850,6 +850,41 @@
   ],
   "news": [
     {
+      "title": "Socceroo Aiden O'Neill shakes off injury scare to be fit for World Cup debut",
+      "link": "https://www.abc.net.au/news/2026-06-05/aiden-oneill-over-injury-scare-ahead-of-world-cup/106762498",
+      "snippet": "",
+      "pubDate": "Thu, 04 Jun 2026 22:35:58 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Qualifier makes French Open history, reaching final against Russian teen star",
+      "link": "https://www.abc.net.au/news/2026-06-05/mirra-andreeva-maja-chwalinska-reach-womens-french-open-final/106762296",
+      "snippet": "",
+      "pubDate": "Thu, 04 Jun 2026 21:23:23 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Russian billionaires see their empires crumble as Putin seizes assets",
+      "link": "https://www.smh.com.au/business/banking-and-finance/russian-billionaires-see-their-empires-crumble-as-putin-seizes-assets-20260604-p603vv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The country’s wealthiest business titans are coming under increasing pressure from Moscow.",
+      "pubDate": "Fri, 05 Jun 2026 07:11:49 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Australia drops ODI series in Pakistan after losing third game",
+      "link": "https://www.abc.net.au/news/2026-06-05/pakistan-wraps-up-odi-series-win-over-australia/106762242",
+      "snippet": "",
+      "pubDate": "Thu, 04 Jun 2026 20:59:44 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to rise as Wall Street rebounds on sliding oil prices",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-as-oil-prices-slide-ai-stocks-slump-20260605-p60457.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Most US stocks are rising as oil prices ease, but slumps for influential artificial-intelligence winners are keeping Wall Street in check.",
+      "pubDate": "Fri, 05 Jun 2026 06:48:34 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Aussie 7s star has 'unfinished business' after injury ended 2024 Olympic debut",
       "link": "https://www.abc.net.au/news/2026-06-05/rugby-7s-australia-world-championship-kaitlin-shave/106761438",
       "snippet": "",
@@ -871,16 +906,9 @@
       "source": "SMH Business"
     },
     {
-      "title": "ASX set to rise as oil prices slide; AI stocks slump",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-as-oil-prices-slide-ai-stocks-slump-20260605-p60457.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Most US stocks are rising as oil prices ease, but slumps for influential artificial-intelligence winners are keeping Wall Street in check.",
-      "pubDate": "Fri, 05 Jun 2026 05:16:49 +1000",
-      "source": "SMH Business"
-    },
-    {
       "title": "I told my colleagues their project was terrible. Should I have kept quiet?",
       "link": "https://www.smh.com.au/business/workplace/i-told-my-colleagues-their-project-was-terrible-should-i-have-kept-quiet-20260604-p603ys.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "There��s something laughable about excitedly asking for someone’s true opinion and then instantly rejecting it.",
+      "snippet": "There’s something laughable about excitedly asking for someone’s true opinion and then instantly rejecting it.",
       "pubDate": "Fri, 05 Jun 2026 05:07:00 +1000",
       "source": "SMH Business"
     },
@@ -903,34 +931,6 @@
       "link": "https://www.smh.com.au/business/companies/last-drinks-at-mount-druitt-pub-as-owner-seeks-80m-sale-20260604-p603y5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Hotel investor and operator Geoff Redmond has called time at the Club Hotel pub in Mount Druitt after 30 years of continuous ownership.",
       "pubDate": "Fri, 05 Jun 2026 05:01:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "New Four Corners boss begins shake-up at current affairs flagship",
-      "link": "https://www.smh.com.au/business/companies/new-four-corners-boss-begins-shake-up-at-current-affairs-flagship-20260604-p603sz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Only a few months into the role, the new boss of Four Corners plans to change editorial processes at the longest-running show on Australian television.",
-      "pubDate": "Fri, 05 Jun 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "The start-up airline hopeful eyeing off Australia’s market",
-      "link": "https://www.smh.com.au/business/companies/the-start-up-airline-hopeful-eyeing-off-australia-s-market-20260604-p603wi.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Zinc Airlines aims to take advantage of the opening of Western Sydney International to launch an ultra-low-cost carrier bringing competition to the market.",
-      "pubDate": "Fri, 05 Jun 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Piastri hunting Monaco silverware to mark historic F1 milestone",
-      "link": "https://www.abc.net.au/news/2026-06-05/oscar-piastri-seeking-monaco-grand-prix-success/106760600",
-      "snippet": "",
-      "pubDate": "Thu, 04 Jun 2026 18:56:00 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Whey protein is running out as food companies put it in everything",
-      "link": "https://www.smh.com.au/business/companies/whey-protein-is-running-out-as-food-companies-put-it-in-everything-20260602-p6032a.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Our insatiable demand for protein has Big Food grappling with shortages and skyrocketing prices of whey protein.",
-      "pubDate": "Thu, 04 Jun 2026 19:56:32 +1000",
       "source": "SMH Business"
     }
   ]
