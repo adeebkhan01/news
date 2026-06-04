@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-06-04T20:10:47.181Z",
-  "summary": "Middle Eastern tensions dominate global news with Israel and Lebanon reaching a ceasefire framework in US-led talks, though Hezbollah rejected the renewed agreement, while separate Israeli military operations continued in Gaza and the occupied West Bank. Political friction in the US has intensified as the House voted to restrict Trump's authority to wage war against Iran, drawing sharp condemnation from the president and allies. In other major developments, North Korea's Kim Jong Un announced plans for exponential nuclear expansion, and Germany acknowledged its UN Security Council bid likely failed due to its support for Israel. Sports headlines feature several football luminaries potentially playing their final World Cup tournament.",
+  "fetchedAt": "2026-06-04T22:23:50.177Z",
+  "summary": "Middle East tensions dominated global headlines as Israel and Lebanon agreed on a US-brokered ceasefire framework, though Hezbollah rejected the deal, casting doubt on its durability. Separately, Israeli forces continued strikes in Gaza while the Israeli government advanced settlement plans in occupied Palestinian territory, prompting international pressure including a US House vote to restrict Iran war powers and a Supreme Court ruling on prisoner access. Political turmoil flared across multiple regions, with Bolivia's government facing protest movements, Ecuador investigating enforced disappearances, and North Korea announcing nuclear expansion plans. Technology and business stories ranged from AI safety concerns to platform regulation disputes, alongside coverage of the upcoming World Cup.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,46 @@
     }
   ],
   "articles": [
+    {
+      "title": "AI needs a 'brake pedal', warns Anthropic co-founder",
+      "link": "https://www.bbc.com/news/articles/cx2124z7g45o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Jack Clark tells BBC's Newsnight AI could get to the point where it develops without human input.",
+      "pubDate": "Thu, 04 Jun 2026 21:53:25 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f663/live/f9d74be0-602c-11f1-95b8-61705f259545.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Zelensky proposes face-to-face talks in open letter to Putin",
+      "link": "https://www.bbc.com/news/articles/cwy2ypyp4x4o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Ukraine's president tells the Russian leader that only \"direct engagement\" between the two countries could end the war, with the US focused on Iran.",
+      "pubDate": "Thu, 04 Jun 2026 21:34:14 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2b28/live/06172180-6052-11f1-9e88-654a746d9a45.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Hezbollah rejects US-brokered ceasefire deal between Israel and Lebanon",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/4/hezbollah-rejects-us-brokered-ceasefire-deal-between-israel-and-lebanon?traffic_source=rss",
+      "desc": "Hezbollah has condemned a US-brokered ceasefire framework accepted by Israel and Lebanon",
+      "pubDate": "Thu, 04 Jun 2026 21:07:18 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1780607227.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "US defence secretary compares Bolivia protests to government ‘overthrow’",
+      "link": "https://www.aljazeera.com/news/2026/6/4/us-defence-secretary-compares-bolivia-protests-to-government-overthrow?traffic_source=rss",
+      "desc": "The Trump administration has supported Bolivian President Rodrigo Paz after his electoral victory over left-wing MAS.",
+      "pubDate": "Thu, 04 Jun 2026 21:01:12 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/ap_6a21e2b4412a6-1780605620.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "BBC Inside Science",
       "link": "https://www.bbc.co.uk/sounds/play/w3ct977p?at_medium=RSS&amp;at_campaign=rss",
@@ -263,6 +303,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Trump says Eiffel Tower-like UFC structure may stay",
+      "link": "https://www.bbc.com/sport/mixed-martial-arts/articles/cx21778x81zo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "President Donald Trump says he may choose to leave a purpose-built UFC arena standing at the White House because it is \"attractive to a lot of people\".",
+      "pubDate": "Thu, 04 Jun 2026 10:28:43 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b402/live/30148570-5ffa-11f1-a129-231866914bc9.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
     },
     {
       "title": "Israel and Lebanon agree on ceasefire framework in US-led talks",
@@ -14010,26 +14060,6 @@
       "desc": "He was saved by a Jersey family after escaping a Nazi labour camp, but after the war he disappeared in the Soviet Union.",
       "pubDate": "Tue, 05 May 2026 23:24:33 GMT",
       "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/203a/live/052444b0-48a6-11f1-90e6-350a323e11ac.png",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Could OPEC break lead to era of energy volatility?",
-      "link": "https://www.aljazeera.com/video/the-take-2/2026/5/5/aje-onl-tt_uae_opec_video_v1-050526?traffic_source=rss",
-      "desc": "How unstable is the global oil market?",
-      "pubDate": "Tue, 05 May 2026 20:23:16 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1778012490.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "US to safety test new AI models from Google, Microsoft, xAI",
-      "link": "https://www.bbc.com/news/articles/cgjp2we2j8go?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "New agreements between the companies and the Commerce department build on Biden-era pacts.",
-      "pubDate": "Tue, 05 May 2026 20:16:24 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/78a3/live/9a5fdc10-48b5-11f1-90e6-350a323e11ac.jpg",
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
