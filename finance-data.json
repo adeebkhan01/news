@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-05T15:30:51.393Z",
+  "fetchedAt": "2026-06-05T20:19:50.919Z",
   "asx200": {
     "value": 8625.1,
     "change": -55.4,
@@ -102,9 +102,9 @@
     ]
   },
   "audusd": {
-    "value": 0.71,
+    "value": 0.7,
     "change": -0.01,
-    "changePercent": -1.3,
+    "changePercent": -1.74,
     "previousClose": 0.72,
     "asOf": "2026-06-05",
     "history": [
@@ -202,7 +202,7 @@
       },
       {
         "date": "2026-06-05",
-        "close": 0.71
+        "close": 0.7
       }
     ]
   },
@@ -211,33 +211,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4373.9,
-      "change": -181.9,
-      "changePercent": -3.99
+      "price": 4339.5,
+      "change": -216.3,
+      "changePercent": -4.75
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 68.83,
-      "change": -4.28,
-      "changePercent": -5.85
+      "price": 67.81,
+      "change": -5.3,
+      "changePercent": -7.25
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 91.49,
-      "change": -10.78,
-      "changePercent": -10.54
+      "price": 90.33,
+      "change": -11.94,
+      "changePercent": -11.67
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.31,
-      "change": 0.36,
-      "changePercent": 6.11
+      "price": 6.25,
+      "change": 0.31,
+      "changePercent": 5.22
     },
     {
       "name": "BHP Group",
@@ -846,6 +846,20 @@
   ],
   "news": [
     {
+      "title": "Zverev books French Open final berth as Cobolli advances via walkover",
+      "link": "https://www.abc.net.au/news/2026-06-06/french-open-final-alexander-zverev-flavio-coboli/106767272",
+      "snippet": "",
+      "pubDate": "Fri, 05 Jun 2026 19:53:20 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Legal threats, backend hacks: How real estate agents can block honest reviews",
+      "link": "https://www.smh.com.au/business/consumer-affairs/legal-threats-backend-hacks-how-real-estate-agents-can-block-honest-reviews-20260520-p5zz7r.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Real estate agents who give the least accurate price guides also have near-perfect star ratings and scant negative reviews, sparking concerns buyers are being duped.",
+      "pubDate": "Sat, 06 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Brumbies set unwanted records as winless Aussie finals run continues",
       "link": "https://www.abc.net.au/news/2026-06-05/super-rugby-pacific-finals-act-brumbies-versus-hurricanes/106765904",
       "snippet": "",
@@ -860,7 +874,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Bulldogs erase 29-point deficit to claim spiteful thriller against Hawks",
+      "title": "Bulldogs defender calls out abusive fan after fiery clash with Hawks star",
       "link": "https://www.abc.net.au/news/2026-06-05/afl-round-13-live-blog-hawthorn-hawks-western-bulldogs/106754292",
       "snippet": "",
       "pubDate": "Fri, 05 Jun 2026 08:29:10 +0000",
@@ -913,20 +927,6 @@
       "link": "https://www.abc.net.au/news/2026-06-05/four-australians-in-the-hunt-after-women-s-us-open-first-round/106764468",
       "snippet": "",
       "pubDate": "Fri, 05 Jun 2026 04:46:35 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Viral Kiwi star meets Argentine influencer who boosted following to 5M",
-      "link": "https://www.abc.net.au/news/2026-06-05/nz-soccer-player-tim-payne-meets-social-media-influencer/106764438",
-      "snippet": "",
-      "pubDate": "Fri, 05 Jun 2026 04:12:43 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Mary Fowler has crossed the threshold from athlete to cultural icon",
-      "link": "https://www.abc.net.au/news/2026-06-05/matildas-star-mary-fowler-manchester-city-making-an-impact/106760620",
-      "snippet": "",
-      "pubDate": "Fri, 05 Jun 2026 03:50:23 +0000",
       "source": "ABC News"
     }
   ]
