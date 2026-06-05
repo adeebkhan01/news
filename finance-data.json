@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-05T20:19:50.919Z",
+  "fetchedAt": "2026-06-05T22:37:48.302Z",
   "asx200": {
     "value": 8625.1,
     "change": -55.4,
@@ -102,9 +102,9 @@
     ]
   },
   "audusd": {
-    "value": 0.7,
+    "value": 0.71,
     "change": -0.01,
-    "changePercent": -1.74,
+    "changePercent": -1.63,
     "previousClose": 0.72,
     "asOf": "2026-06-05",
     "history": [
@@ -201,6 +201,10 @@
         "close": 0.71
       },
       {
+        "date": "2026-06-04",
+        "close": 0.71
+      },
+      {
         "date": "2026-06-05",
         "close": 0.7
       }
@@ -211,33 +215,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4339.5,
-      "change": -216.3,
-      "changePercent": -4.75
+      "price": 4353.9,
+      "change": -201.9,
+      "changePercent": -4.43
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 67.81,
-      "change": -5.3,
-      "changePercent": -7.25
+      "price": 68,
+      "change": -5.11,
+      "changePercent": -6.99
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 90.33,
-      "change": -11.94,
-      "changePercent": -11.67
+      "price": 90.25,
+      "change": -12.02,
+      "changePercent": -11.75
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.25,
-      "change": 0.31,
-      "changePercent": 5.22
+      "price": 6.28,
+      "change": 0.33,
+      "changePercent": 5.59
     },
     {
       "name": "BHP Group",
@@ -846,6 +850,13 @@
   ],
   "news": [
     {
+      "title": "Fox ecstatic after winning first World Cup gold since surgery",
+      "link": "https://www.abc.net.au/news/2026-06-06/jessica-fox-claims-world-cup-gold-canoe-slalom-prague/106767396",
+      "snippet": "",
+      "pubDate": "Fri, 05 Jun 2026 22:25:10 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Zverev books French Open final berth as Cobolli advances via walkover",
       "link": "https://www.abc.net.au/news/2026-06-06/french-open-final-alexander-zverev-flavio-coboli/106767272",
       "snippet": "",
@@ -888,7 +899,7 @@
       "source": "ABC News"
     },
     {
-      "title": "Shattered Storm superstar to miss entire NRL season",
+      "title": "Ponga injured in Knights' loss ahead of Origin II",
       "link": "https://www.abc.net.au/news/2026-06-05/xavier-coates-injury-update-melbourne-storm-achilles/106766022",
       "snippet": "",
       "pubDate": "Fri, 05 Jun 2026 07:41:44 +0000",
@@ -921,13 +932,6 @@
       "snippet": "Sarytogan Graphite has begun graphite purification trials following the arrival of bulk concentrate samples from its Kazakhstan project with US graphite specialist AETC in Chicago.",
       "pubDate": "Fri, 05 Jun 2026 15:28:35 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Aussies in the hunt after opening round of US Open",
-      "link": "https://www.abc.net.au/news/2026-06-05/four-australians-in-the-hunt-after-women-s-us-open-first-round/106764468",
-      "snippet": "",
-      "pubDate": "Fri, 05 Jun 2026 04:46:35 +0000",
-      "source": "ABC News"
     }
   ]
 }
