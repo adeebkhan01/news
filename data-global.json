@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-06-04T22:23:50.177Z",
-  "summary": "Middle East tensions dominated global headlines as Israel and Lebanon agreed on a US-brokered ceasefire framework, though Hezbollah rejected the deal, casting doubt on its durability. Separately, Israeli forces continued strikes in Gaza while the Israeli government advanced settlement plans in occupied Palestinian territory, prompting international pressure including a US House vote to restrict Iran war powers and a Supreme Court ruling on prisoner access. Political turmoil flared across multiple regions, with Bolivia's government facing protest movements, Ecuador investigating enforced disappearances, and North Korea announcing nuclear expansion plans. Technology and business stories ranged from AI safety concerns to platform regulation disputes, alongside coverage of the upcoming World Cup.",
+  "fetchedAt": "2026-06-05T04:10:20.130Z",
+  "summary": "Middle East tensions dominate global news as Israel and Lebanon tentatively agreed to a ceasefire framework, though Hezbollah has repeatedly rejected the deal while Israeli strikes continue in Gaza and the West Bank. The incoming Trump administration is signaling significant policy shifts, from using wartime powers to invest in coal domestically to constraining Iran military cooperation, with Republicans publicly rebuking his approach on the latter. Ukraine's Zelensky has proposed direct talks with Putin as diplomatic pressure mounts, while concerns over AI governance intensify with industry figures calling for regulatory safeguards. Elsewhere, economic pressures are mounting across sectors—the British Heart Foundation is closing 150 charity shops—alongside humanitarian crises from Kenya to Ecuador drawing international scrutiny.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,106 @@
     }
   ],
   "articles": [
+    {
+      "title": "British Heart Foundation plans to close 150 charity shops",
+      "link": "https://www.bbc.com/news/articles/cvgzg48d9q0o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The charity says it is facing \"an exceptionally challenging trading environment\".",
+      "pubDate": "Fri, 05 Jun 2026 02:32:16 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3b5b/live/452c6a40-6068-11f1-89f7-47e36b8faab0.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Trump announces $700m coal investment using wartime powers",
+      "link": "https://www.bbc.com/news/articles/cy0209r62k5o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The president is directing money into coal as the Iran war drives up energy costs for Americans.",
+      "pubDate": "Fri, 05 Jun 2026 00:03:36 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c871/live/46bc1be0-6071-11f1-87ff-e9c4a52fea2b.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Iran war live: Hezbollah rejects truce as Israel continues Lebanon strikes",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/6/5/iran-war-live-hezbollah-rejects-truce-as-israel-continues-lebanon-strikes?traffic_source=rss",
+      "desc": "Israel&#039;s supreme court annuls government ban on international Red Cross visiting Palestinian prisoners in Israeli jails.",
+      "pubDate": "Fri, 05 Jun 2026 00:00:00 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AA-20260604-41579190-41579186-LEBANESE_ARMY_ANNOUNCED_THAT_IT_HAS_DEPLOYED_TO_THE_TOWN_OF_DIBBIN-1-1780615878.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Democrat fails to block US measure to deepen Israel military cooperation",
+      "link": "https://www.aljazeera.com/news/2026/6/4/democrat-fails-to-block-us-measure-to-deepen-israel-military-cooperation?traffic_source=rss",
+      "desc": "Congressman Ro Khanna says the integration push only boosts Netanyahu, but his push to revoke the measure fell short.",
+      "pubDate": "Thu, 04 Jun 2026 23:28:13 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-05-27T144509Z_608504914_RC2QHLA2ORKF_RTRMADP_3_IRAN-CRISIS-LEBANON-ISRAEL-1780607245.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Mangrove forests are healing after decades of human destruction",
+      "link": "https://www.bbc.com/news/articles/cn4pk07npvvo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Swampy mangrove forests are staging a surprise comeback - which is good news for coastal communities and the climate.",
+      "pubDate": "Thu, 04 Jun 2026 23:11:15 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/145c/live/90921d20-6024-11f1-95e8-2f6b295436fc.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Single 20-somethings need AI to make first move on dating apps - Hinge boss",
+      "link": "https://www.bbc.com/news/articles/c052397y6ygo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Jackie Jantos says loneliness and lack of confidence were challenges for young adults looking for relationships.",
+      "pubDate": "Thu, 04 Jun 2026 23:05:54 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d364/live/1376fe00-6033-11f1-9792-c579e9d62a5f.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Mark Zuckerberg's longest-serving employee on AI, jobs - and her boss",
+      "link": "https://www.bbc.com/news/articles/c5y71106g07o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Naomi Gleit has weathered many controversies at Meta, but remains in what she tells the BBC is her \"dream job\".",
+      "pubDate": "Thu, 04 Jun 2026 23:05:39 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e3e4/live/b6ae4610-600a-11f1-b2a6-1d4191f0f436.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Kenyan president defends US Ebola facility amid deadly protests",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/4/clip-kenyan-president-ebola-facility?traffic_source=rss",
+      "desc": "Kenyan President William Ruto said allowing the US to build an Ebola quarantine facility in Kenya was the “right thing”.",
+      "pubDate": "Thu, 04 Jun 2026 22:38:37 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1780612429.jpg?resize=1619%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Tough cookies: How pop group Le Sserafim overcame internal conflict and internet trolls",
+      "link": "https://www.bbc.com/news/articles/c7752znyle6o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The K-pop band say accepting their flaws and embracing humour took them to a new level of success.",
+      "pubDate": "Thu, 04 Jun 2026 22:22:56 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5499/live/d6657c40-6063-11f1-8b8c-6d33e1d5abb6.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Here's why election results in the second largest US city are so slow",
+      "link": "https://www.bbc.com/news/articles/c2020jrpxz3o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "It could take weeks - or even a month - before we know who won elections in California and Los Angeles.",
+      "pubDate": "Thu, 04 Jun 2026 22:20:24 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bf26/live/5f4c10e0-6065-11f1-89a3-d1f559421220.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
     {
       "title": "AI needs a 'brake pedal', warns Anthropic co-founder",
       "link": "https://www.bbc.com/news/articles/cx2124z7g45o?at_medium=RSS&amp;at_campaign=rss",
@@ -13963,106 +14063,6 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "US pauses plan to guide ships through the Strait of Hormuz",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/6/us-pauses-plan-to-guide-ships-through-the-strait-of-hormuz?traffic_source=rss",
-      "desc": "Donald Trump has said that the US military operation guiding ships through the Strait of Hormuz will be paused.",
-      "pubDate": "Wed, 06 May 2026 03:39:28 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/WIDE-THUMB-Hormuz-project-freedom-paused-1778038684.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Oil prices ease as US pauses Project Freedom to seek deal with Iran",
-      "link": "https://www.bbc.com/news/articles/c4g8zejyyr3o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "President Donald Trump raised hopes of an agreement between the US and Iran after days of escalation.",
-      "pubDate": "Wed, 06 May 2026 03:05:16 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3a69/live/9a1232a0-48f4-11f1-9086-afe40fef0c44.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "What is Trump's 'Project Freedom' in the Strait of Hormuz?",
-      "link": "https://www.bbc.com/news/articles/c4g437depzpo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The US president said the operation has been paused after starting on Monday.",
-      "pubDate": "Wed, 06 May 2026 02:23:36 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/959a/live/50900610-48e6-11f1-b75b-95129d40843d.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Trump says US to pause operation to guide vessels through Strait of Hormuz",
-      "link": "https://www.bbc.com/news/articles/clypekl71gdo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "\"Project Freedom\", which began on Monday, will be halted because progress has been made toward a deal with Iran, the US president says.",
-      "pubDate": "Wed, 06 May 2026 02:18:45 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2c3f/live/af9c9120-48da-11f1-ac78-2112837ce2aa.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Vivek Ramaswamy wins Republican nomination for Ohio governor",
-      "link": "https://www.bbc.com/news/articles/c4g0xe4qlzxo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "He spent much of the race criticising the state's response to the Covid-19 pandemic led by the Democrat nominee.",
-      "pubDate": "Wed, 06 May 2026 01:55:26 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9b5f/live/65fea100-4891-11f1-b55d-0f258dce1735.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Apple to pay $250m to US iPhone buyers over AI features lawsuit",
-      "link": "https://www.bbc.com/news/articles/c0j2nydnzy7o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Claims from last year said the tech firm’s advertising of Apple Intelligence fooled iPhone buyers.",
-      "pubDate": "Wed, 06 May 2026 00:15:14 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/74c2/live/8a9268b0-48d9-11f1-b64a-cbdeb0211cb5.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Iran war live: Trump says Hormuz operation paused amid US, Tehran talks",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/5/6/iran-war-live-trump-says-hormuz-operation-paused-amid-us-tehran-talks?traffic_source=rss",
-      "desc": "US Defense Secretary Pete Hegseth says ceasefire with Iran remains in place despite growing tensions in Hormuz Strait.",
-      "pubDate": "Wed, 06 May 2026 00:00:00 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_69fa572f0ca4-1778013999.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "What do a teenager's clothes tell us about North Korea's future?",
-      "link": "https://www.bbc.com/news/videos/c072k1x1rylo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Analysts say the daughter of North Korea’s leader Kim Jong Un is not just growing up - she’s being styled for succession.",
-      "pubDate": "Tue, 05 May 2026 23:58:58 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cb54/live/8b5f06c0-4845-11f1-b55d-0f258dce1735.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Trump pauses US operation in Strait of Hormuz in push for deal with Iran",
-      "link": "https://www.aljazeera.com/news/2026/5/5/trump-announces-pause-on-us-operation-to-unblock-strait-of-hormuz?traffic_source=rss",
-      "desc": "US president says &#039;Project Freedom&#039; suspended to see whether an agreement with Iran can be finalised and signed.",
-      "pubDate": "Tue, 05 May 2026 23:40:09 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-05-04T131617Z_851851461_RC221LADEVV2_RTRMADP_3_IRAN-CRISIS-1778024951.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Finding soldier Tom: Solving family mystery of WW2 Soviet prisoner of war",
-      "link": "https://www.bbc.com/news/articles/cdjpdzvzy41o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "He was saved by a Jersey family after escaping a Nazi labour camp, but after the war he disappeared in the Soviet Union.",
-      "pubDate": "Tue, 05 May 2026 23:24:33 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/203a/live/052444b0-48a6-11f1-90e6-350a323e11ac.png",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
     }
   ]
 }
