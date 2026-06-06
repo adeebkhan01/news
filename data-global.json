@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-06-06T16:10:27.221Z",
-  "summary": "Global tensions remain exceptionally high as the Middle East veers toward escalation, with the US and Iran exchanging military strikes over the Gulf, Ukraine continuing drone attacks deep into Russian territory, and the Israel-Gaza conflict showing no signs of abating despite ceasefire claims. Major geopolitical shifts are underway elsewhere, including Armenia bracing for elections amid Russian pressure, Germany pushing Western Balkans integration, and North Korea expanding its military capabilities. Domestically, political figures from Trump to Argentina's Milei are making aggressive policy moves on tariffs and energy, while humanitarian crises deepen in Gaza, Iran, and across Africa. Technology and space also feature prominently, with AI safety concerns surfacing and NASA preparing potential ISS evacuation procedures.",
+  "fetchedAt": "2026-06-06T19:38:36.224Z",
+  "summary": "Global tensions are escalating across multiple fronts as the Trump administration intensifies conflicts with Iran, with the US and Iran exchanging strikes in the Gulf while Iranian missiles target regional allies. The Middle East remains volatile with continued Israeli military operations in Gaza and Lebanon claiming civilian lives despite ceasefire discussions, while an ongoing war crimes investigation into Israel's Gaza conduct underscores deepening international scrutiny. In Europe, geopolitical pressure mounts as Russia opposes Ukraine peace talks and manipulates Armenia's political situation, while right-wing populist leaders gain ground in Peru and Argentina. Domestic US politics show Trump rallying supporters on tariff impacts and AI investment while managing international crises that show little sign of resolution.",
   "sources": [
     {
       "id": "bbcnews",
@@ -25,11 +25,61 @@
   ],
   "articles": [
     {
+      "title": "Hegseth attacks Europe over 'invasion' of migrants on its beaches in D-Day speech",
+      "link": "https://www.bbc.com/news/articles/c802e7jk458o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The US defence secretary was speaking in Normandy, 82 years after allied forces launched their operation to liberate Nazi-occupied north-western Europe.",
+      "pubDate": "Sat, 06 Jun 2026 19:22:23 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1ac8/live/00068510-61dd-11f1-a211-b739dafd566d.png",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "From first lady to president? Inside the rise of Peru’s Keiko Fujimori",
+      "link": "https://www.aljazeera.com/features/longform/2026/6/6/from-first-lady-to-president-inside-the-rise-of-perus-keiko-fujimori?traffic_source=rss",
+      "desc": "In her fourth bid to be president, Fujimori faces her best odds yet. But can she overcome scandal and her father&#039;s past?",
+      "pubDate": "Sat, 06 Jun 2026 18:51:53 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/reuters_6a22364d-1780627021.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Pope begins Spain visit with praise for country's opposition to war and support for migrants",
+      "link": "https://www.bbc.com/news/articles/c8d2pgjy4qgo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "On the first day of his official seven-day tour of Spain, the Pope praises the country's \"active commitment to peace and solidarity among peoples\".",
+      "pubDate": "Sat, 06 Jun 2026 18:34:26 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/473f/live/8e6e1370-61cb-11f1-8c97-a551be738222.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "100 days into the war on Iran, Trump fails to rally US support",
+      "link": "https://www.aljazeera.com/news/2026/6/6/100-days-into-the-war-on-iran-trump-fails-to-rally-us-support?traffic_source=rss",
+      "desc": "Unpopularity of the war may affect the US approach to the conflict and hurt Republicans in the elections, analysts say.",
+      "pubDate": "Sat, 06 Jun 2026 17:04:38 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26099020828813-1780692145.jpg?resize=1200%2C675",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
       "title": "Activists disrupt German military exhibit over arms sales to Israel",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/6/activists-disrupt-german-military-exhibit-over-arms-sales-to-israel?traffic_source=rss",
       "desc": "Activists disrupt German military exhibit over arms sales to Israel.",
       "pubDate": "Sat, 06 Jun 2026 15:34:47 +0000",
       "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/still-1780760033.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Israeli attack on Gaza City tent camp kills at least six",
+      "link": "https://www.aljazeera.com/news/2026/6/6/israeli-strike-kills-at-least-five-people-at-wedding-in-gaza?traffic_source=rss",
+      "desc": "Latest Israeli attack comes as Hamas readies for meetings in Egypt on full implementation of Gaza &#039;ceasefire&#039; agreement.",
+      "pubDate": "Sat, 06 Jun 2026 14:38:50 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/reuters_6a244e77-1780764279.jpg?resize=1920%2C1440",
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
@@ -13640,146 +13690,6 @@
       "desc": "Latest sanctions target military-controlled conglomerate, come as effective US fuel blockade continues.",
       "pubDate": "Thu, 07 May 2026 20:10:44 +0000",
       "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_69fcea5d9a18-1778182749.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Gulf states urge UN action to ensure Strait of Hormuz safety",
-      "link": "https://www.aljazeera.com/news/2026/5/7/gulf-states-urge-un-action-to-ensure-strait-of-hormuz-safety?traffic_source=rss",
-      "desc": "Draft resolution demands Iran halt attacks, pin-point mines and ensure passage of humanitarian aid through strait.",
-      "pubDate": "Thu, 07 May 2026 19:32:23 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_69fce126a4d4-1778180390.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Marco Rubio meets Pope Leo amid tensions with Trump over Iran war",
-      "link": "https://www.bbc.com/news/videos/cq8py99p2jzo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Leo, the first American pontiff, drew Trump's ire after becoming a firm critic of the war and the administration's hardline immigration policies.",
-      "pubDate": "Thu, 07 May 2026 19:06:43 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e532/live/25169120-4a49-11f1-b55d-0f258dce1735.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Who is Kumanjayi Little Baby and why has her death caused outrage in Australia?",
-      "link": "https://www.bbc.com/news/videos/czr2n44pknxo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The BBC's Katy Watson explains the case, the cultural sensitivities and why it has caused so much anger.",
-      "pubDate": "Thu, 07 May 2026 19:03:39 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1dc6/live/03030fe0-49fa-11f1-a9e7-0f8f590f205b.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Can China help end the Iran war?",
-      "link": "https://www.aljazeera.com/video/inside-story/2026/5/7/can-china-help-end-the-iran-war?traffic_source=rss",
-      "desc": "Chinese and Iranian foreign ministers meet while a tense ceasefire holds.",
-      "pubDate": "Thu, 07 May 2026 19:02:17 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1778179028.jpg?resize=1920%2C1061&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "'I wouldn't pay it' - Trump on USA ticket price",
-      "link": "https://www.bbc.com/sport/football/articles/cdxpq70grzlo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "US President Donald Trump says he \"wouldn't pay it either\" when asked about the potential ticket price to watch his country play Paraguay in their 2026 World Cup opener.",
-      "pubDate": "Thu, 07 May 2026 18:53:49 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/08ee/live/9204fa20-4a43-11f1-987f-67d7398c79db.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Israel’s attacks and pressure sowing seeds for division in tense Lebanon",
-      "link": "https://www.aljazeera.com/news/2026/5/7/israels-attacks-and-pressure-sowing-seeds-for-division-in-tense-lebanon?traffic_source=rss",
-      "desc": "Analysts say Israel aiming to exploit Lebanon’s divisions to force concessions amid military and political pressures.",
-      "pubDate": "Thu, 07 May 2026 18:41:42 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/epa_69fa29e7d3c8-1778002407.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Brazil’s Lula meets Trump amid efforts to avert new US trade tariffs",
-      "link": "https://www.aljazeera.com/news/2026/5/7/brazils-lula-meets-trump-amid-efforts-to-avert-new-us-trade-tariffs?traffic_source=rss",
-      "desc": "Brazilian officials are hoping for the best outcome from the meeting, given tensions over Trump&#039;s tariff policy.",
-      "pubDate": "Thu, 07 May 2026 18:33:36 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2025/10/2025-10-26T080955Z_476235525_RC2KJHAYJR35_RTRMADP_3_ASEAN-SUMMIT-1761548567.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Trump's 'irresponsible war' to blame for economic slowdown, German minister says",
-      "link": "https://www.bbc.com/news/articles/cwy2d0v3p2po?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Finance Minister Lars Klingbeil blamed the US president's \"irresponsible war in Iran\" for harming the Germany economy.",
-      "pubDate": "Thu, 07 May 2026 18:13:11 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3a50/live/05bdb9e0-4a38-11f1-a70d-c72ff4101914.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "EU closely monitoring hantavirus outbreak on cruise ship",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/7/eu-closely-monitoring-hantavirus-outbreak-on-cruise-ship?traffic_source=rss",
-      "desc": "The EU says it is closely monitoring suspected hantavirus cases aboard the Dutch cruise ship MV Hondius",
-      "pubDate": "Thu, 07 May 2026 18:04:36 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/CLIP-EU-monitoring-hantavirus-outbreak-1778176996.png?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Why has the US sanctioned Iraq’s deputy oil minister for helping Iran?",
-      "link": "https://www.aljazeera.com/news/2026/5/7/why-has-the-us-sanctioned-iraqs-deputy-oil-minister-for-helping-iran?traffic_source=rss",
-      "desc": "The US accuses Ali Maarij al-Bahadly of helping Iran avoid sanctions and export its oil through Iraq.",
-      "pubDate": "Thu, 07 May 2026 17:36:05 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/04/2026-04-06T151139Z_1221499297_RC2RJKAIF2BN_RTRMADP_3_IRAN-CRISIS-IRAQ-OIL-1775489118.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Trump calls for ‘incitement’ charges against top Democrat Hakeem Jeffries",
-      "link": "https://www.aljazeera.com/news/2026/5/7/trump-calls-for-incitement-charges-against-top-democrat-hakeem-jeffries?traffic_source=rss",
-      "desc": "US president says House minority leader should be indicted over &#039;maximum warfare&#039; remarks in relation to election maps.",
-      "pubDate": "Thu, 07 May 2026 16:55:37 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AP26112566472105-1778167397.jpg?resize=1200%2C675",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "WHO confirms five cases of hantavirus linked to cruise ship",
-      "link": "https://www.aljazeera.com/news/2026/5/7/who-confirms-five-cases-of-hantavirus-linked-to-cruise-ship?traffic_source=rss",
-      "desc": "Hantaviruses are a group of viruses carried by rodents that can cause severe disease in humans.",
-      "pubDate": "Thu, 07 May 2026 16:41:59 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_69fcab697606-1778166633.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Lebanon Latest Israeli strikes Beirut despite ‘ceasefire’",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/7/lebanon-latest-israeli-strikes-beirut-despite?traffic_source=rss",
-      "desc": "Israel has carried out its first airstrike on Beirut’s southern suburbs since the April 16 US-brokered ceasefire.",
-      "pubDate": "Thu, 07 May 2026 16:22:40 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1778170941.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Iran’s president says he has spoken to the country’s Supreme Leader",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/7/irans-president-says-he-has-spoken-to-the-countrys-supreme-leader?traffic_source=rss",
-      "desc": "Iranian President Masoud Pezeshkian says he has met with Iranian Supreme Leader Mojtaba Khamenei.",
-      "pubDate": "Thu, 07 May 2026 16:18:04 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1778170643.jpg?resize=1920%2C1080&amp;quality=80",
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
