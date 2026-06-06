@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-06-06T19:38:36.224Z",
-  "summary": "Global tensions are escalating across multiple fronts as the Trump administration intensifies conflicts with Iran, with the US and Iran exchanging strikes in the Gulf while Iranian missiles target regional allies. The Middle East remains volatile with continued Israeli military operations in Gaza and Lebanon claiming civilian lives despite ceasefire discussions, while an ongoing war crimes investigation into Israel's Gaza conduct underscores deepening international scrutiny. In Europe, geopolitical pressure mounts as Russia opposes Ukraine peace talks and manipulates Armenia's political situation, while right-wing populist leaders gain ground in Peru and Argentina. Domestic US politics show Trump rallying supporters on tariff impacts and AI investment while managing international crises that show little sign of resolution.",
+  "fetchedAt": "2026-06-06T22:07:15.369Z",
+  "summary": "Major military escalations are dominating global headlines, with the Pentagon raising Israel's threat level to critical amid spying concerns, while the US and Iran exchange strikes across the Gulf in their ongoing conflict. The Israeli-Palestinian conflict continues to generate significant coverage following reports of civilians killed, including infants, alongside a crackdown on activists and military exhibit disruptions in Europe. Regional tensions extend to Ukraine, where drone strikes on Russian cities continue, and Armenia faces Russian pressure ahead of elections. On the domestic front, Trump administration moves on tariffs, wind energy, and AI regulation are reshaping US policy while he claims progress in Iran negotiations.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Pentagon said to raise threat level on Israel spying to ‘critical’",
+      "link": "https://www.aljazeera.com/news/2026/6/6/pentagon-said-to-raise-threat-level-on-israel-spying-to-critical?traffic_source=rss",
+      "desc": "Department reports raise concerns about increased espionage activity amid US-Israeli war with Iran, ceasefire talks.",
+      "pubDate": "Sat, 06 Jun 2026 21:10:36 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/getty_6a2470db94-1780773083.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Cuba’s Raul Castro makes first public appearance since US charges",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/6/cubas-raul-castro-makes-first-public-appearance-since-us-charges?traffic_source=rss",
+      "desc": "Former Cuban president Raul Castro made his first public appearance in Havana since being indicted by the United States",
+      "pubDate": "Sat, 06 Jun 2026 20:55:31 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1780779321.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Rights group says drone strike kills 11 in central Sudan market",
+      "link": "https://www.aljazeera.com/news/2026/6/6/rights-group-says-drone-strike-kills-11-in-central-sudan-market?traffic_source=rss",
+      "desc": "Emergency Lawyers said dozens were also wounded in the strike that came less than 24 hours after similar drone attacks.",
+      "pubDate": "Sat, 06 Jun 2026 20:54:09 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-01-21T071533Z_1756732575_RC221JAPN5RZ_RTRMADP_3_SUDAN-POLITICS-OBEID-ATTACKS-1780779093.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Funeral held for baby shot dead by Israeli troops in occupied West Bank",
+      "link": "https://www.bbc.com/news/articles/cly8lgn0x30o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The seven-month-old boy's shrouded body was wrapped in a Palestinian flag and carried by his father to the graveyard.",
+      "pubDate": "Sat, 06 Jun 2026 19:57:42 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/57df/live/389640b0-61d7-11f1-a211-b739dafd566d.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Video shows Israeli soldier and settlers assaulting two Palestinians",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/6/video-shows-israeli-soldier-and-settlers-assaulting-two-palestinians?traffic_source=rss",
+      "desc": "A surveillance camera caught a brutal assault by an Israeli soldier and settlers on two men in the occupied West Bank.",
+      "pubDate": "Sat, 06 Jun 2026 19:48:22 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1780775291.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Palestinian father buries baby killed by Israeli gunfire in West Bank",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/6/palestinian-father-buries-baby-killed-by-israeli-gunfire-in-west-bank?traffic_source=rss",
+      "desc": "A Palestinian father in Hebron has buried his seven-month-old son after the baby was killed by Israeli gunfire",
+      "pubDate": "Sat, 06 Jun 2026 19:38:13 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1780774675.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Hegseth attacks Europe over 'invasion' of migrants on its beaches in D-Day speech",
       "link": "https://www.bbc.com/news/articles/c802e7jk458o?at_medium=RSS&amp;at_campaign=rss",
@@ -13633,66 +13693,6 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
-    },
-    {
-      "title": "US trade court rules against Trump’s 10 percent global tariffs",
-      "link": "https://www.aljazeera.com/economy/2026/5/7/us-trade-court-rules-against-trumps-10-percent-global-tariffs?traffic_source=rss",
-      "desc": "The court ruled in favour of small businesses that challenged the tariffs that took place in February.",
-      "pubDate": "Thu, 07 May 2026 21:34:37 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2025/10/2025-05-12T163923Z_241304327_RC2FGEAHM0QA_RTRMADP_3_USA-TRUMP-TARIFFS-1760366950.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Iran says it attacked US Navy ships after they targeted Iranian tanker",
-      "link": "https://www.aljazeera.com/news/2026/5/7/explosions-heard-in-iran-as-state-media-reports-clashes-with-us-navy?traffic_source=rss",
-      "desc": "US military says it intercepted and responded to &#039;unprovoked&#039; Iranian attack, stressing that it doesn&#039;t seek escalation.",
-      "pubDate": "Thu, 07 May 2026 21:11:00 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-03-16T214134Z_1549962050_RC29U4AUW5UY_RTRMADP_3_IRAN-NUCLEAR-HORMUZ-STRAIT-1778188076.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Trump sets July 4 deadline for EU tariff hike decision",
-      "link": "https://www.aljazeera.com/economy/2026/5/7/trump-sets-july-4-deadline-for-eu-tariff-hike-decision?traffic_source=rss",
-      "desc": "Trump claimed he had a &#039;great call&#039; European Commission President Ursula von der Leyen about the looming tariffs.",
-      "pubDate": "Thu, 07 May 2026 20:58:55 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-05-06T190916Z_1953626497_RC2V3LAVFQ3I_RTRMADP_3_USA-TRUMP-1778183836.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Trump gives 4 July ultimatum to EU to approve trade deal with US",
-      "link": "https://www.bbc.com/news/articles/cp3pyk4nw3lo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The US president said the European Union must enact the trade deal agreed last year and drop tariffs on American goods to zero.",
-      "pubDate": "Thu, 07 May 2026 20:57:17 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2a75/live/be129770-4a4e-11f1-bd52-e755d604ece4.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Senators press US military on Israel’s displacement campaign in Lebanon",
-      "link": "https://www.aljazeera.com/news/2026/5/7/senators-press-us-military-on-israels-displacement-campaign-in-lebanon?traffic_source=rss",
-      "desc": "In letter to CENTCOM commander, 12 Democrats raise questions about possible US role in Israel&#039;s &#039;mass evacuation zones&#039;.",
-      "pubDate": "Thu, 07 May 2026 20:53:11 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AP26119554741173-1778185289.jpg?resize=1200%2C675",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "US issues new Cuba sanctions as UN experts warn of ‘energy starvation’",
-      "link": "https://www.aljazeera.com/news/2026/5/7/us-issues-new-cuba-sanctions-as-un-experts-warn-of-energy-starvation?traffic_source=rss",
-      "desc": "Latest sanctions target military-controlled conglomerate, come as effective US fuel blockade continues.",
-      "pubDate": "Thu, 07 May 2026 20:10:44 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/afp_69fcea5d9a18-1778182749.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
     }
   ]
 }
