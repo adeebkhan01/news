@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-08T16:32:07.805Z",
+  "fetchedAt": "2026-06-08T20:37:26.466Z",
   "asx200": {
     "value": 8625.1,
     "change": -55.4,
@@ -106,9 +106,9 @@
     ]
   },
   "audusd": {
-    "value": 0.71,
+    "value": 0.7,
     "change": -0.02,
-    "changePercent": -2.14,
+    "changePercent": -2.23,
     "previousClose": 0.72,
     "asOf": "2026-06-08",
     "history": [
@@ -197,8 +197,12 @@
         "close": 0.71
       },
       {
+        "date": "2026-06-07",
+        "close": 0.7
+      },
+      {
         "date": "2026-06-08",
-        "close": 0.71
+        "close": 0.7
       }
     ]
   },
@@ -207,33 +211,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4366.2,
-      "change": -354.2,
-      "changePercent": -7.5
+      "price": 4350,
+      "change": -370.4,
+      "changePercent": -7.85
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 68.83,
-      "change": -11.57,
-      "changePercent": -14.39
+      "price": 68.27,
+      "change": -12.13,
+      "changePercent": -15.09
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 91.45,
-      "change": -3.97,
-      "changePercent": -4.16
+      "price": 91.33,
+      "change": -4.09,
+      "changePercent": -4.29
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.37,
-      "change": 0.12,
-      "changePercent": 1.88
+      "price": 6.33,
+      "change": 0.08,
+      "changePercent": 1.32
     },
     {
       "name": "BHP Group",
@@ -842,6 +846,27 @@
   ],
   "news": [
     {
+      "title": "ASX set to rise, Wall Street steadies as tech stocks rebound",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-ai-stocks-drive-wall-street-rebound-20260609-p604yo.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Wall Street is recovering some of its sell-off from Friday, as stocks swept up in the artificial-intelligence boom bounce back.",
+      "pubDate": "Tue, 09 Jun 2026 06:22:45 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Rugby league must rise to Kane Evans's level of courage",
+      "link": "https://www.abc.net.au/news/2026-06-09/kane-evans-comes-out-gay-sydney-roosters-nrl/106774592",
+      "snippet": "",
+      "pubDate": "Mon, 08 Jun 2026 20:15:45 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Four-time veterans to late bolters, here's your Socceroos pocket guide",
+      "link": "https://www.abc.net.au/news/2026-06-09/your-pocket-guide-to-the-2026-world-cup-socceroos-squad/106652998",
+      "snippet": "",
+      "pubDate": "Mon, 08 Jun 2026 18:47:12 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Green energy is shielding Australia from a global power price shock",
       "link": "https://www.smh.com.au/business/the-economy/green-energy-is-shielding-australia-from-a-global-power-price-shock-20260608-p604sc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The rollout of renewables and batteries is buffering Australian electricity bills from the Iran war energy crisis.",
@@ -902,27 +927,6 @@
       "link": "https://www.abc.net.au/news/2026-06-08/three-time-chicago-bulls-nba-champion-stacey-king-dies/106771374",
       "snippet": "",
       "pubDate": "Sun, 07 Jun 2026 23:12:30 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Billy Slater to play peacemaker after Maroons stars' fiery club clash",
-      "link": "https://www.abc.net.au/news/2026-06-08/queensland-maroons-state-of-origin-ii-team-named-live/106771130",
-      "snippet": "",
-      "pubDate": "Sun, 07 Jun 2026 21:59:46 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Aussie pole vaulter hands Duplantis first loss in more than 1,000 days",
-      "link": "https://www.abc.net.au/news/2026-06-08/stockholm-diamond-league-kurtis-marschall-mondo-duplantis/106771090",
-      "snippet": "",
-      "pubDate": "Sun, 07 Jun 2026 21:26:34 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Aussies crowned rugby sevens world champions after conquering NZ",
-      "link": "https://www.abc.net.au/news/2026-06-08/australia-wins-rugby-sevens-world-championship/106770984",
-      "snippet": "",
-      "pubDate": "Sun, 07 Jun 2026 20:40:02 +0000",
       "source": "ABC News"
     }
   ]
