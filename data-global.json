@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-06-08T04:24:52.145Z",
-  "summary": "The dominant story across global news is an intensifying military confrontation between Iran and Israel that has now stretched to around one hundred days, with Iran launching missiles at Israel following an Israeli attack on Beirut, while the US weighs whether to unfreeze Iranian assets as ceasefire negotiations continue. The conflict is destabilizing the broader Middle East, with Gaza remaining a flashpoint and Lebanon's military sustaining losses, while countries like Pakistan and Armenia are reassessing their regional alignments. In other significant developments, Peru's political crisis deepens as votes are counted following an ex-president's arrest, North Korea's weapons production is accelerating amid international tensions, and Russia continues striking Ukrainian infrastructure near critical nuclear sites. Domestically, Donald Trump is navigating legal challenges and controversial statements about election integrity as his political profile remains central to American news cycles.",
+  "fetchedAt": "2026-06-08T11:05:29.449Z",
+  "summary": "The Middle East dominates global news as Iran and Israel exchange airstrikes, with tensions escalating following an Israeli attack on Beirut that Iran says crossed red lines, threatening any fragile ceasefire and roiling financial markets worldwide. Regional instability is compounded by Ukraine-Russia fighting that shows no signs of abating, with Zelenskyy's allies backing direct talks, while North Korea's weapons production signals another flashpoint of concern. Political upheaval spans the globe from Armenia's pro-Western election victory against Russian pressure to Peru's political crisis and Bolivia's controversial military deployment against protesters. Markets have tumbled in response to Middle East violence and technology sector weakness, reflecting investor anxiety over geopolitical risk and economic headwinds.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,116 @@
     }
   ],
   "articles": [
+    {
+      "title": "Iran and Israel bomb each other: Is the ceasefire over?",
+      "link": "https://www.aljazeera.com/news/2026/6/8/iran-and-israel-bomb-each-other-is-the-ceasefire-over?traffic_source=rss",
+      "desc": "Analysts say both sides are pushing the ceasefire to its limits while seeking greater leverage.",
+      "pubDate": "Mon, 08 Jun 2026 10:38:36 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/reuters_6a267080-1780904064.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Armenia's pro-West government wins election despite Russian pressure",
+      "link": "https://www.bbc.com/news/articles/cvgel990n51o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Prime Minister Nikol Pashinyan's Civil Contract Party secures nearly 50% of the vote, comfortably beating the other contenders.",
+      "pubDate": "Mon, 08 Jun 2026 10:28:40 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1783/live/0075ad00-630e-11f1-89a3-d1f559421220.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Stock markets fall on tech plunge and renewed Middle East attacks",
+      "link": "https://www.bbc.com/news/articles/c78yd5g9qx0o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Markets in Europe and Asia were hit by a tech sell-off, and oil rises as Iran and Israel launch attacks at each other",
+      "pubDate": "Mon, 08 Jun 2026 09:27:46 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bfa4/live/426f4c70-62e1-11f1-9a4b-dd5933001427.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Asia’s stock markets dive amid Iran-Israel conflict, Wall Street jitters",
+      "link": "https://www.aljazeera.com/economy/2026/6/8/asias-stock-markets-dive-amid-iran-israel-conflict-wall-street-jitters?traffic_source=rss",
+      "desc": "South Korea’s main index plunges nearly 9 percent, while stocks in Japan, Taiwan and Hong Kong also see sharp falls.",
+      "pubDate": "Mon, 08 Jun 2026 08:49:41 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26159092667776-1780898054.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Ukraine, Russia trade fire as Zelenskyy allies back call for direct talks",
+      "link": "https://www.aljazeera.com/news/2026/6/8/ukraine-russia-trade-fire-as-zelenskyy-allies-back-call-for-direct-talks?traffic_source=rss",
+      "desc": "UK, France, and Germany support Zelenskyy&#039;s proposal for a meeting with Putin, as drone attacks continue.",
+      "pubDate": "Mon, 08 Jun 2026 08:48:53 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/getty_6a266763c6-1780901731.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Israel and Iran exchange attacks as ceasefire falters",
+      "link": "https://www.aljazeera.com/news/2026/6/8/israel-and-iran-exchange-attacks-as-ceasefire-falters?traffic_source=rss",
+      "desc": "In effort to contain escalation, US President Donald Trump spoke with Israel&#039;s Benjamin Netanyahu, US media reported.",
+      "pubDate": "Mon, 08 Jun 2026 07:55:46 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-08T063921Z_1895698728_RC2IPLA6KKKP_RTRMADP_3_IRAN-CRISIS-ISRAEL-1780901216.jpg?resize=1920%2C1365",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Secret Service-level security for NBA Finals with Trump attending Game 3",
+      "link": "https://www.aljazeera.com/sports/2026/6/8/secret-service-level-security-for-nba-finals-with-trump-attending-game-3?traffic_source=rss",
+      "desc": "Watch party bans, road closures and bag bans in place as US President Trump plans to attend Game 3 with Knicks in lead.",
+      "pubDate": "Mon, 08 Jun 2026 07:38:16 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26158662689020-1780899929.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "How Lebanon and Iran’s war of words became backdrop for latest Israel clash",
+      "link": "https://www.aljazeera.com/features/2026/6/8/how-lebanon-and-irans-war-of-words-became-backdrop-for-latest-israel-war?traffic_source=rss",
+      "desc": "Iran had warned that talks could be stopped and attacks would resume if Israel continued to hit Lebanon.",
+      "pubDate": "Mon, 08 Jun 2026 07:26:39 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26157677353691-1780818181.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran war day 101: Tensions escalate as Iran and Israel trade air attacks",
+      "link": "https://www.aljazeera.com/news/2026/6/8/iran-war-day-101-tensions-escalate-as-iran-and-israel-trade-air-attacks?traffic_source=rss",
+      "desc": "Tensions have escalated between Iran and Israel while ongoing diplomatic efforts have failed to yield lasting peace.",
+      "pubDate": "Mon, 08 Jun 2026 07:16:28 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/reuters_6a26578e-1780897678.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Missiles intercepted over occupied East Jerusalem and West Bank",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/8/missiles-intercepted-over-occupied-east-jerusalem-and-west-bank-2?traffic_source=rss",
+      "desc": "The Israeli army said it intercepted missiles launched from Iran on Monday in response to attacks from Israel.",
+      "pubDate": "Mon, 08 Jun 2026 07:14:34 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1780902868.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Satellite images show destruction of the US-Israel war on Iran",
+      "link": "https://www.aljazeera.com/features/2026/6/8/satellite-images-show-destruction-of-the-us-israel-war-on-iran?traffic_source=rss",
+      "desc": "From Iranian naval ports to US military bases across the Gulf, Al Jazeera shows 15 sites before and after the attacks.",
+      "pubDate": "Mon, 08 Jun 2026 04:47:08 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/Screenshot-2026-06-07-at-8.17.45-AM-1780809535.png?resize=1200%2C630",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Peru’s Sanchez visits jailed ex-president as votes are counted",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/8/perus-sanchez-visits-jailed-ex-president-as-votes-are-counted?traffic_source=rss",
@@ -13550,76 +13660,6 @@
       "desc": "US President Donald Trump says a hantavirus cruise ship cluster is ‘under very good control.’",
       "pubDate": "Sat, 09 May 2026 12:35:02 +0000",
       "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/image-1778330088.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "US military kills two people in new eastern Pacific Ocean attack",
-      "link": "https://www.aljazeera.com/news/2026/5/9/us-military-kills-two-people-in-new-eastern-pacific-ocean-attack?traffic_source=rss",
-      "desc": "The killings mark the third attack in May alone by the US military in the eastern Pacific Ocean.",
-      "pubDate": "Sat, 09 May 2026 10:32:48 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/Screenshot-2026-05-09-114654-1778320055.png?resize=1200%2C675",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Scaled-back Victory Day parade held in Moscow",
-      "link": "https://www.aljazeera.com/gallery/2026/5/9/scaled-back-victory-day-parade-held-in-moscow?traffic_source=rss",
-      "desc": "Russia marks downsized Victory Day parade as Putin pledges victory in Ukraine &#039;special military operation&#039;.",
-      "pubDate": "Sat, 09 May 2026 10:04:45 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-05-09T083912Z_1295856005_RC2K5LAENB9I_RTRMADP_3_WW2-ANNIVERSARY-RUSSIA-1778317698.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Barcelona vs Real Madrid: La Liga – preview, team news, start and lineups",
-      "link": "https://www.aljazeera.com/sports/2026/5/9/barcelona-vs-real-madrid-la-liga-preview-team-news-start-lineups?traffic_source=rss",
-      "desc": "Real Madrid desperate to beat bitter rivals Barca, who only need a draw in the Clasico to be crowned champions again.",
-      "pubDate": "Sat, 09 May 2026 09:38:14 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/reuters_69ff01c4-1778319812.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Putin denounces Nato at scaled back Victory Day parade",
-      "link": "https://www.bbc.com/news/articles/c626xjq0q0vo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The Russian leader used his annual speech to justify his so-called special military operation in Ukraine.",
-      "pubDate": "Sat, 09 May 2026 09:26:54 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a03b/live/8a1de840-4b87-11f1-963a-870d5c61b753.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "The war on Iran will likely end in American retreat",
-      "link": "https://www.aljazeera.com/opinions/2026/5/9/the-war-on-iran-will-likely-end-in-american-retreat?traffic_source=rss",
-      "desc": "The American empire cannot win the war against Iran at acceptable financial, military, and political costs.",
-      "pubDate": "Sat, 09 May 2026 09:14:33 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/epa_69fefab10547-1778318001.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Russia holds downsized Victory Day parade",
-      "link": "https://www.aljazeera.com/news/2026/5/9/russia-holds-downsized-victory-day?traffic_source=rss",
-      "desc": "Putin invoked the Soviet victory in World War II to rally his army in Ukraine, saying &#039;our heroes move forward&#039;.",
-      "pubDate": "Sat, 09 May 2026 08:07:57 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/reuters_69fee5c1-1778312641.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Israeli settlers set fire to homes and cars in violent West Bank raids",
-      "link": "https://www.aljazeera.com/news/2026/5/9/israeli-settlers-set-fire-to-homes-and-cars-in-violent-west-bank-raids?traffic_source=rss",
-      "desc": "Dozens of Israeli settlers stormed various areas of the West Bank, set cars on fire, and attacked Palestinians.",
-      "pubDate": "Sat, 09 May 2026 07:18:27 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/02/AA-20260214-40556867-40556843-ISRAELI_ILLEGAL_SETTLERS_RAID_HEBRON_WEST_BANK_UNDER_PROTECTION_OF_ISRAELI_FORCES-1-1771167767.jpg?resize=1200%2C630",
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
