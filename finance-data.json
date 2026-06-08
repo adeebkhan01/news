@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-08T20:37:26.466Z",
+  "fetchedAt": "2026-06-08T22:53:15.280Z",
   "asx200": {
     "value": 8625.1,
     "change": -55.4,
@@ -108,7 +108,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.02,
-    "changePercent": -2.23,
+    "changePercent": -2.26,
     "previousClose": 0.72,
     "asOf": "2026-06-08",
     "history": [
@@ -211,25 +211,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4350,
-      "change": -370.4,
-      "changePercent": -7.85
+      "price": 4349.2,
+      "change": -371.2,
+      "changePercent": -7.86
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
       "price": 68.27,
-      "change": -12.13,
-      "changePercent": -15.09
+      "change": -12.12,
+      "changePercent": -15.08
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 91.33,
-      "change": -4.09,
-      "changePercent": -4.29
+      "price": 91.31,
+      "change": -4.11,
+      "changePercent": -4.31
     },
     {
       "name": "Copper",
@@ -237,7 +237,7 @@
       "iconBg": "#fef0e6",
       "price": 6.33,
       "change": 0.08,
-      "changePercent": 1.32
+      "changePercent": 1.31
     },
     {
       "name": "BHP Group",
@@ -846,14 +846,49 @@
   ],
   "news": [
     {
-      "title": "ASX set to rise, Wall Street steadies as tech stocks rebound",
+      "title": "ASX set to rise, Wall Street steadies as tech stocks rebound; OpenAI files for IPO",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-ai-stocks-drive-wall-street-rebound-20260609-p604yo.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Wall Street is recovering some of its sell-off from Friday, as stocks swept up in the artificial-intelligence boom bounce back.",
-      "pubDate": "Tue, 09 Jun 2026 06:22:45 +1000",
+      "pubDate": "Tue, 09 Jun 2026 08:34:03 +1000",
       "source": "SMH Business"
     },
     {
-      "title": "Rugby league must rise to Kane Evans's level of courage",
+      "title": "Aussies dominate England in Women's T20 World Cup warm-up",
+      "link": "https://www.abc.net.au/news/2026-06-09/t20-world-cup-warm-up-match-australia-defeats-england-cardiff/106774970",
+      "snippet": "",
+      "pubDate": "Mon, 08 Jun 2026 22:19:26 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Somali referee denied entry to US days out from start of World Cup",
+      "link": "https://www.abc.net.au/news/2026-06-09/world-cup-2026-referee-omar-artan-denied-entry-to-us/106774940",
+      "snippet": "",
+      "pubDate": "Mon, 08 Jun 2026 21:53:17 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Aussie swim star gives world record a shake at national selection trials",
+      "link": "https://www.abc.net.au/news/2026-06-09/australian-swimming-trials-sam-short-kaylee-mckeown/106774910",
+      "snippet": "",
+      "pubDate": "Mon, 08 Jun 2026 21:11:40 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Eriksen 'doing well' after on-field collapse during Denmark game",
+      "link": "https://www.abc.net.au/news/2026-06-09/eriksen-doing-well-after-onfield-collapse-during-denmark-game/106774852",
+      "snippet": "",
+      "pubDate": "Mon, 08 Jun 2026 21:04:11 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "England skipper Stokes under investigation over nightclub incident",
+      "link": "https://www.abc.net.au/news/2026-06-09/ben-stokes-under-investigation-england-wales-cricket-board/106774864",
+      "snippet": "",
+      "pubDate": "Mon, 08 Jun 2026 20:35:22 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Evans's coming out took extraordinary courage and the NRL must match it",
       "link": "https://www.abc.net.au/news/2026-06-09/kane-evans-comes-out-gay-sydney-roosters-nrl/106774592",
       "snippet": "",
       "pubDate": "Mon, 08 Jun 2026 20:15:45 +0000",
@@ -881,7 +916,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Kings and Queens of the Desert crowned as outback Finke race wraps up",
+      "title": "Kings and Queens of the Desert crowned as outback Finke race ends",
       "link": "https://www.abc.net.au/news/2026-06-08/finke-desert-race-winners-results-alice-springs-king-of-desert/106772188",
       "snippet": "",
       "pubDate": "Mon, 08 Jun 2026 06:48:47 +0000",
@@ -893,41 +928,6 @@
       "snippet": "It’s off to the races for the Musk believers, who appreciate that no matter how many times his big promises have not been met, some of them have.",
       "pubDate": "Mon, 08 Jun 2026 16:18:35 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Blues centre Stephen Crichton ruled out of State of Origin II",
-      "link": "https://www.abc.net.au/news/2026-06-08/nrl-live-updates-state-of-origin-new-south-wales-team/106773300",
-      "snippet": "",
-      "pubDate": "Mon, 08 Jun 2026 05:39:33 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Nestory Irankunda the face of changing Socceroos at World Cup",
-      "link": "https://www.abc.net.au/news/2026-06-08/nestory-irankunda-face-of-socceroos-world-cup/106772822",
-      "snippet": "",
-      "pubDate": "Mon, 08 Jun 2026 04:56:42 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Mihocek experienced 'lack of feeling' before hospital visit says coach",
-      "link": "https://www.abc.net.au/news/2026-06-08/afl-collingwood-magpies-melbourne-demons-big-freeze-live-blog/106772362",
-      "snippet": "",
-      "pubDate": "Mon, 08 Jun 2026 03:31:43 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Trump will be furious but his man’s hands are tied",
-      "link": "https://www.smh.com.au/business/markets/trump-will-be-furious-but-his-man-s-hands-are-tied-20260608-p604q7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "A surprising jump in the latest jobs figures is good news for America but it spells doom for one of the US president’s biggest wishes.",
-      "pubDate": "Mon, 08 Jun 2026 12:27:54 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "'Cherished' Bulls player and ex-Michael Jordan teammate dies",
-      "link": "https://www.abc.net.au/news/2026-06-08/three-time-chicago-bulls-nba-champion-stacey-king-dies/106771374",
-      "snippet": "",
-      "pubDate": "Sun, 07 Jun 2026 23:12:30 +0000",
-      "source": "ABC News"
     }
   ]
 }
