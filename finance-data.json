@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-09T20:22:38.604Z",
+  "fetchedAt": "2026-06-09T22:54:33.668Z",
   "asx200": {
     "value": 8604.2,
     "change": -140.2,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.02,
-    "changePercent": -2.47,
+    "changePercent": -2.62,
     "previousClose": 0.72,
     "asOf": "2026-06-09",
     "history": [
@@ -195,33 +195,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4282.4,
-      "change": -438,
-      "changePercent": -9.28
+      "price": 4273.7,
+      "change": -446.7,
+      "changePercent": -9.46
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 65.41,
-      "change": -14.99,
-      "changePercent": -18.65
+      "price": 65.11,
+      "change": -15.29,
+      "changePercent": -19.02
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 88.47,
-      "change": -6.95,
-      "changePercent": -7.28
+      "price": 88.95,
+      "change": -6.47,
+      "changePercent": -6.78
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.35,
-      "change": 0.1,
-      "changePercent": 1.57
+      "price": 6.34,
+      "change": 0.09,
+      "changePercent": 1.44
     },
     {
       "name": "BHP Group",
@@ -830,18 +830,46 @@
   ],
   "news": [
     {
+      "title": "Cam McEvoy says his 50m freestyle world record is just the beginning",
+      "link": "https://www.abc.net.au/news/2026-06-10/cam-mcevoy-50m-freestyle-world-record-can-go-faster/106513376",
+      "snippet": "",
+      "pubDate": "Tue, 09 Jun 2026 22:14:37 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Kyrgios wins Stuttgart opener after five-month tour absence",
+      "link": "https://www.abc.net.au/news/2026-06-10/nick-kyrgios-wins-in-stuttgart-atp-tour/106779122",
+      "snippet": "",
+      "pubDate": "Tue, 09 Jun 2026 21:38:36 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to edge up, Wall Street closes lower after wild swings",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-advances-wall-street-lower-in-rollercoaster-session-20260610-p605d1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Another sell-off for high-flying artificial-intelligence stocks whipsawed Wall Street.",
+      "pubDate": "Wed, 10 Jun 2026 07:09:40 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Serena Williams makes winning return to court at Queen's",
+      "link": "https://www.abc.net.au/news/2026-06-10/tennis-serena-williams-makes-winning-return-in-queens-doubles/106779032",
+      "snippet": "",
+      "pubDate": "Tue, 09 Jun 2026 20:46:14 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Aussies record first ODI loss to Bangladesh in 21 years",
+      "link": "https://www.abc.net.au/news/2026-06-10/cricket-odi-australia-bangladesh-86-run-win/106779006",
+      "snippet": "",
+      "pubDate": "Tue, 09 Jun 2026 20:37:53 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Gary Ablett Jr joins dad in Australian Football Hall of Fame",
       "link": "https://www.abc.net.au/news/2026-06-10/gary-ablett-jr-in-australian-football-hall-of-fame/106778484",
       "snippet": "",
       "pubDate": "Tue, 09 Jun 2026 19:51:14 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "ASX set to advance, Wall Street lower in rollercoaster session",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-advances-wall-street-lower-in-rollercoaster-session-20260610-p605d1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Another sell-off for high-flying artificial-intelligence stocks whipsawed Wall Street.",
-      "pubDate": "Wed, 10 Jun 2026 05:18:41 +1000",
-      "source": "SMH Business"
     },
     {
       "title": "When does the FIFA World Cup start and who are the favourites?",
@@ -884,34 +912,6 @@
       "snippet": "",
       "pubDate": "Tue, 09 Jun 2026 08:37:23 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Foord scores in game 150 as Matildas beat Mexico",
-      "link": "https://www.abc.net.au/news/2026-06-09/live-updates-matildas-vs-mexico-sydney/106777476",
-      "snippet": "",
-      "pubDate": "Tue, 09 Jun 2026 08:03:02 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Forrestania swoops on Zenith in $93M WA gold growth play",
-      "link": "https://www.smh.com.au/business/companies/forrestania-swoops-on-zenith-in-93m-wa-gold-growth-play-20260609-p605b2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Zenith Minerals has agreed to a $93.5m off-market scrip takeover by Forrestania Resources to consolidate the gold-rich Forrestania Belt in WA.",
-      "pubDate": "Tue, 09 Jun 2026 17:18:05 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Barbeques Galore to close; up to 500 jobs to go",
-      "link": "https://www.smh.com.au/business/companies/barbeques-galore-to-close-up-to-500-jobs-to-go-20260609-p6059e.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "A deal to resurrect the speciality retailer from financial failure has collapsed – a development that will lead to its closure.",
-      "pubDate": "Tue, 09 Jun 2026 16:50:33 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Kuniko locks in rig for multi-target NSW gold-silver drill blitz",
-      "link": "https://www.smh.com.au/business/companies/kuniko-locks-in-rig-for-multi-target-nsw-gold-silver-drill-blitz-20260609-p605ap.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Kuniko has secured a specialist diamond rig for a high-impact July drilling blitz targeting major gold-silver extensions at its flagship NSW Commonwealth project.",
-      "pubDate": "Tue, 09 Jun 2026 16:40:01 +1000",
-      "source": "SMH Business"
     }
   ]
 }
