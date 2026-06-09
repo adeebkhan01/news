@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-09T15:31:25.109Z",
+  "fetchedAt": "2026-06-09T20:22:38.604Z",
   "asx200": {
     "value": 8604.2,
     "change": -140.2,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.02,
-    "changePercent": -2.44,
+    "changePercent": -2.47,
     "previousClose": 0.72,
     "asOf": "2026-06-09",
     "history": [
@@ -181,6 +181,10 @@
         "close": 0.7
       },
       {
+        "date": "2026-06-08",
+        "close": 0.7
+      },
+      {
         "date": "2026-06-09",
         "close": 0.7
       }
@@ -191,33 +195,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4315.4,
-      "change": -405,
-      "changePercent": -8.58
+      "price": 4282.4,
+      "change": -438,
+      "changePercent": -9.28
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 66.19,
-      "change": -14.21,
-      "changePercent": -17.68
+      "price": 65.41,
+      "change": -14.99,
+      "changePercent": -18.65
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 87.66,
-      "change": -7.76,
-      "changePercent": -8.13
+      "price": 88.47,
+      "change": -6.95,
+      "changePercent": -7.28
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.39,
-      "change": 0.15,
-      "changePercent": 2.32
+      "price": 6.35,
+      "change": 0.1,
+      "changePercent": 1.57
     },
     {
       "name": "BHP Group",
@@ -826,6 +830,34 @@
   ],
   "news": [
     {
+      "title": "Gary Ablett Jr joins dad in Australian Football Hall of Fame",
+      "link": "https://www.abc.net.au/news/2026-06-10/gary-ablett-jr-in-australian-football-hall-of-fame/106778484",
+      "snippet": "",
+      "pubDate": "Tue, 09 Jun 2026 19:51:14 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to advance, Wall Street lower in rollercoaster session",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-advances-wall-street-lower-in-rollercoaster-session-20260610-p605d1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Another sell-off for high-flying artificial-intelligence stocks whipsawed Wall Street.",
+      "pubDate": "Wed, 10 Jun 2026 05:18:41 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "When does the FIFA World Cup start and who are the favourites?",
+      "link": "https://www.abc.net.au/news/2026-06-10/fifa-world-cup-2026-tournament-explainer/106546094",
+      "snippet": "",
+      "pubDate": "Tue, 09 Jun 2026 19:09:21 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Australia needs more renewables. This 900-kilometre cable will help",
+      "link": "https://www.smh.com.au/business/the-economy/australia-needs-more-renewables-this-900-kilometre-cable-will-help-20260609-p6057v.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "A new high-voltage “superhighway” with a $4.1 billion price tag will soon make it easier to add wind and solar farms to the network.",
+      "pubDate": "Wed, 10 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "No friends but a Commonwealth Games berth? Worth it, says Sienna Toohey",
       "link": "https://www.abc.net.au/news/2026-06-09/australian-swimming-trials-commonwealth-games-toohey-mckeown/106777740",
       "snippet": "",
@@ -879,34 +911,6 @@
       "link": "https://www.smh.com.au/business/companies/kuniko-locks-in-rig-for-multi-target-nsw-gold-silver-drill-blitz-20260609-p605ap.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Kuniko has secured a specialist diamond rig for a high-impact July drilling blitz targeting major gold-silver extensions at its flagship NSW Commonwealth project.",
       "pubDate": "Tue, 09 Jun 2026 16:40:01 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Horizon drills up fresh high-grade WA gold near Sandstone",
-      "link": "https://www.smh.com.au/business/companies/horizon-drills-up-fresh-high-grade-wa-gold-near-sandstone-20260609-p6059y.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Horizon Gold has extended Eagle by 300m and triggered resource estimation work near Sandstone in WA, building value beyond its pending Gum Creek feasibility study.",
-      "pubDate": "Tue, 09 Jun 2026 15:59:51 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Olympio chases scale after bonanza Quebec gold hit",
-      "link": "https://www.smh.com.au/business/companies/olympio-chases-scale-after-bonanza-quebec-gold-hit-20260609-p60581.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Olympio Metals has started drilling again in Canada, chasing extensions to a bonanza 19.4m hit grading 17.29 grams per tonne gold at its Bousquet project in Quebec.",
-      "pubDate": "Tue, 09 Jun 2026 14:23:38 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Viking uncovers tungsten-rich stockpile at Nevada mine",
-      "link": "https://www.smh.com.au/business/companies/viking-uncovers-tungsten-rich-stockpile-at-nevada-mine-20260609-p6057z.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Viking Mines has confirmed grades up to 1.1 per cent tungsten trioxide at its Linka stockpile in Nevada, with ore sorting test work now underway.",
-      "pubDate": "Tue, 09 Jun 2026 14:18:51 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Chariot reclaims highly prospective US lithium ground",
-      "link": "https://www.smh.com.au/business/companies/chariot-reclaims-highly-prospective-us-lithium-ground-20260609-p6057b.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Chariot Resources has expanded its US lithium footprint by staking 573 new claims at its Resurgent project within the premier McDermitt Caldera.",
-      "pubDate": "Tue, 09 Jun 2026 14:06:30 +1000",
       "source": "SMH Business"
     }
   ]
