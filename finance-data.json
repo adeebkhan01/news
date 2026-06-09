@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-09T10:06:04.349Z",
+  "fetchedAt": "2026-06-09T15:31:25.109Z",
   "asx200": {
     "value": 8604.2,
     "change": -140.2,
@@ -86,17 +86,13 @@
       {
         "date": "2026-06-05",
         "close": 8625.1
-      },
-      {
-        "date": "2026-06-09",
-        "close": 8604.2
       }
     ]
   },
   "audusd": {
-    "value": 0.71,
+    "value": 0.7,
     "change": -0.02,
-    "changePercent": -2.12,
+    "changePercent": -2.44,
     "previousClose": 0.72,
     "asOf": "2026-06-09",
     "history": [
@@ -186,7 +182,7 @@
       },
       {
         "date": "2026-06-09",
-        "close": 0.71
+        "close": 0.7
       }
     ]
   },
@@ -195,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4356.9,
-      "change": -363.5,
-      "changePercent": -7.7
+      "price": 4315.4,
+      "change": -405,
+      "changePercent": -8.58
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 68.51,
-      "change": -11.89,
-      "changePercent": -14.79
+      "price": 66.19,
+      "change": -14.21,
+      "changePercent": -17.68
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 88.99,
-      "change": -6.43,
-      "changePercent": -6.74
+      "price": 87.66,
+      "change": -7.76,
+      "changePercent": -8.13
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.41,
-      "change": 0.16,
-      "changePercent": 2.53
+      "price": 6.39,
+      "change": 0.15,
+      "changePercent": 2.32
     },
     {
       "name": "BHP Group",
@@ -830,6 +826,13 @@
   ],
   "news": [
     {
+      "title": "No friends but a Commonwealth Games berth? Worth it, says Sienna Toohey",
+      "link": "https://www.abc.net.au/news/2026-06-09/australian-swimming-trials-commonwealth-games-toohey-mckeown/106777740",
+      "snippet": "",
+      "pubDate": "Tue, 09 Jun 2026 10:55:36 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Aussie star calls out $130k prize money disparity at tennis tournament",
       "link": "https://www.abc.net.au/news/2026-06-09/priscilla-hon-libema-open-prize-money/106778074",
       "snippet": "",
@@ -844,7 +847,14 @@
       "source": "ABC News"
     },
     {
-      "title": "Live: Matildas re-take the lead in frenetic Mexico rematch",
+      "title": "Iran says ticket allocation for World Cup withdrawn days before tournament",
+      "link": "https://www.abc.net.au/news/2026-06-09/us-removes-iran-ticket-allocation-for-world-cup/106778062",
+      "snippet": "",
+      "pubDate": "Tue, 09 Jun 2026 08:37:23 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Foord scores in game 150 as Matildas beat Mexico",
       "link": "https://www.abc.net.au/news/2026-06-09/live-updates-matildas-vs-mexico-sydney/106777476",
       "snippet": "",
       "pubDate": "Tue, 09 Jun 2026 08:03:02 +0000",
@@ -897,20 +907,6 @@
       "link": "https://www.smh.com.au/business/companies/chariot-reclaims-highly-prospective-us-lithium-ground-20260609-p6057b.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Chariot Resources has expanded its US lithium footprint by staking 573 new claims at its Resurgent project within the premier McDermitt Caldera.",
       "pubDate": "Tue, 09 Jun 2026 14:06:30 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Mihocek 'up and walking' after surgery on neck fracture",
-      "link": "https://www.abc.net.au/news/2026-06-09/afl-melbourne-demons-magpies-brody-mihocek-neck-fracture-surgery/106776260",
-      "snippet": "",
-      "pubDate": "Tue, 09 Jun 2026 03:23:28 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX pares losses as banks recover, miners slide, oOh!media jumps on bid",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-ai-stocks-drive-wall-street-rebound-20260609-p604yo.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket closed slightly lower, recovering from a sharp sell-off in early trade, amid easing tensions in the Middle East.",
-      "pubDate": "Tue, 09 Jun 2026 13:06:15 +1000",
       "source": "SMH Business"
     }
   ]
