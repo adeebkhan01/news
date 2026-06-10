@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-10T16:11:41.075Z",
+  "fetchedAt": "2026-06-10T21:04:28.406Z",
   "asx200": {
     "value": 8653.3,
     "change": -91.1,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.02,
-    "changePercent": -2.58,
+    "changePercent": -2.83,
     "previousClose": 0.72,
     "asOf": "2026-06-10",
     "history": [
@@ -189,6 +189,10 @@
         "close": 0.7
       },
       {
+        "date": "2026-06-09",
+        "close": 0.7
+      },
+      {
         "date": "2026-06-10",
         "close": 0.7
       }
@@ -199,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4146,
-      "change": -572.7,
-      "changePercent": -12.14
+      "price": 4090.7,
+      "change": -628,
+      "changePercent": -13.31
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 64.92,
-      "change": -20.56,
-      "changePercent": -24.06
+      "price": 63.49,
+      "change": -21.99,
+      "changePercent": -25.73
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 90.79,
-      "change": -7.28,
-      "changePercent": -7.42
+      "price": 91.75,
+      "change": -6.32,
+      "changePercent": -6.44
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.29,
-      "change": -0.13,
-      "changePercent": -2
+      "price": 6.2,
+      "change": -0.22,
+      "changePercent": -3.38
     },
     {
       "name": "BHP Group",
@@ -834,6 +838,48 @@
   ],
   "news": [
     {
+      "title": "A peculiar peace prize, sky-high tickets, threatened boycotts. The rocky road to the World Cup",
+      "link": "https://www.abc.net.au/news/2026-06-11/fifa-world-cup-controversies-2026-tournament/106674736",
+      "snippet": "",
+      "pubDate": "Wed, 10 Jun 2026 19:59:32 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "The controversial deal feeding the Trump family’s biggest money-maker",
+      "link": "https://www.smh.com.au/business/companies/the-controversial-deal-feeding-the-trump-family-s-biggest-money-maker-20260608-p604on.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The Trump family’s foray into the world of crypto has been lucrative, but has attracted a lot of scrutiny. One agreement in particular stands out.",
+      "pubDate": "Thu, 11 Jun 2026 05:42:05 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ASX set to fall as AI stocks, Middle East tensions weigh on Wall Street",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-as-ai-stocks-middle-east-tensions-weigh-on-wall-street-20260611-p605p4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Wall Street is sharply lower in late trade with AI stocks again weighing on the market while escalating tensions in the Middle East are casting doubt on when United States and Iran can reach a deal to reopen the Strait of Hormuz to oil tankers.",
+      "pubDate": "Thu, 11 Jun 2026 05:22:17 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Gout sixth in Diamond League debut as Olympic champ claims victory",
+      "link": "https://www.abc.net.au/news/2026-06-11/gout-gout-oslo-diamond-league-200-metres-letsile-tebogo/106780278",
+      "snippet": "",
+      "pubDate": "Wed, 10 Jun 2026 19:06:18 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "England captain Stokes dropped for second NZ Test over nightclub incident",
+      "link": "https://www.abc.net.au/news/2026-06-11/stokes-out-from-nz-second-test-ecb/106783768",
+      "snippet": "",
+      "pubDate": "Wed, 10 Jun 2026 17:02:45 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "O'Callaghan chasing Titmus and 'the impossible' as she misses world record",
+      "link": "https://www.abc.net.au/news/2026-06-10/australian-swimming-trials-ocallaghan-mcevoy-pallister/106782482",
+      "snippet": "",
+      "pubDate": "Wed, 10 Jun 2026 12:40:42 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "ASX finishes higher as retailers advance; Sigma slumps on Boots talks",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-advances-wall-street-lower-in-rollercoaster-session-20260610-p605d1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The Australian sharemarket rose today as investors shrugged off the latest escalation in the Middle East and another tech sell-off on Wall Street.",
@@ -862,60 +908,18 @@
       "source": "SMH Business"
     },
     {
+      "title": "Schwarzer confident 'written off' Socceroos can stun American doubters",
+      "link": "https://www.abc.net.au/news/2026-06-10/mark-schwarzer-backing-socceroos-fifa-world-cup-abc-sport/106779866",
+      "snippet": "",
+      "pubDate": "Wed, 10 Jun 2026 06:02:24 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Viking nails 76% tungsten recoveries in Nevada",
       "link": "https://www.smh.com.au/business/companies/viking-nails-76-percent-tungsten-recoveries-in-nevada-20260610-p605k8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Viking Mines has hit a 76% tungsten recovery at its historic Linka project in Nevada, with the result stemming from simple processing ahead of maiden drilling.",
       "pubDate": "Wed, 10 Jun 2026 14:17:42 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Up to 200 staff to go as Seven’s owner swings the axe",
-      "link": "https://www.smh.com.au/business/companies/up-to-200-staff-to-go-as-seven-s-owner-swings-the-axe-20260604-p603ye.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Seven Network staff are bracing for mass job cuts, which are expected to amount to as many as 200 redundancies across the company.",
-      "pubDate": "Wed, 10 Jun 2026 14:04:08 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Moonlight drill results build Qld gold system scale",
-      "link": "https://www.smh.com.au/business/companies/moonlight-drill-results-build-qld-gold-system-scale-20260610-p605kc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Drilling at Moonlight Resources’ Clermont project in Qld has intersected 20m at 1g/t gold, extending its Leo Grande Central system towards the Leo Grande South target.",
-      "pubDate": "Wed, 10 Jun 2026 13:31:42 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Critical hits multiple pegmatites in Canadian lithium blitz",
-      "link": "https://www.smh.com.au/business/companies/critical-hits-multiple-pegmatites-in-canadian-lithium-blitz-20260610-p605j1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Critical Resources has uncovered a swarm of pegmatites, six of them new, at its Mavis Lake lithium project in Canada, expanding the footprint ahead of drilling.",
-      "pubDate": "Wed, 10 Jun 2026 12:27:02 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Barkly scores NT cash for rare earths met work",
-      "link": "https://www.smh.com.au/business/companies/barkly-scores-nt-cash-for-rare-earths-met-work-20260610-p605iz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Barkly Rare Earths has scored a $100,000 NT Government grant for metallurgical testwork at its namesake rare earths project ahead of a 10,000m drill program.",
-      "pubDate": "Wed, 10 Jun 2026 12:15:27 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Will the AI boom lead to lower interest rates?",
-      "link": "https://www.smh.com.au/business/the-economy/will-the-ai-boom-lead-to-lower-interest-rates-20260610-p605em.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "New US Federal Reserve Chair Kevin Warsh says the productivity gains from artificial intelligence will allow significant cuts in interest rates. More like the opposite.",
-      "pubDate": "Wed, 10 Jun 2026 12:11:24 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "FIFA prioritising profit over fans at World Cup, ex-official says",
-      "link": "https://www.abc.net.au/news/2026-06-10/fifa-prioritising-profit-over-fans-at-world-cup-ex-official-says/106778894",
-      "snippet": "",
-      "pubDate": "Wed, 10 Jun 2026 02:00:39 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Socceroos are a long way from home but have a special Oakland connection",
-      "link": "https://www.abc.net.au/news/2026-06-10/magic-in-oakland-drives-socceroos-at-fifa-world-cup/106779254",
-      "snippet": "",
-      "pubDate": "Wed, 10 Jun 2026 00:39:14 +0000",
-      "source": "ABC News"
     }
   ]
 }
