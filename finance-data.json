@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-11T20:40:11.087Z",
+  "fetchedAt": "2026-06-11T23:00:12.727Z",
   "asx200": {
     "value": 8633.2,
     "change": -68.6,
@@ -100,14 +100,10 @@
   "audusd": {
     "value": 0.71,
     "change": -0.02,
-    "changePercent": -2.58,
+    "changePercent": -2.65,
     "previousClose": 0.72,
     "asOf": "2026-06-11",
     "history": [
-      {
-        "date": "2026-05-10",
-        "close": 0.72
-      },
       {
         "date": "2026-05-11",
         "close": 0.72
@@ -199,10 +195,6 @@
       {
         "date": "2026-06-10",
         "close": 0.7
-      },
-      {
-        "date": "2026-06-11",
-        "close": 0.71
       }
     ]
   },
@@ -211,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4236.7,
-      "change": -482,
-      "changePercent": -10.21
+      "price": 4253.5,
+      "change": -465.2,
+      "changePercent": -9.86
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 67.5,
-      "change": -17.98,
-      "changePercent": -21.04
+      "price": 67.91,
+      "change": -17.58,
+      "changePercent": -20.57
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 85.98,
-      "change": -12.09,
-      "changePercent": -12.33
+      "price": 85.92,
+      "change": -12.15,
+      "changePercent": -12.39
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.39,
+      "price": 6.4,
       "change": -0.02,
-      "changePercent": -0.37
+      "changePercent": -0.25
     },
     {
       "name": "BHP Group",
@@ -846,6 +838,20 @@
   ],
   "news": [
     {
+      "title": "Socceroos vs Türkiye: How to watch Australia's World Cup opener",
+      "link": "https://www.abc.net.au/news/2026-06-12/socceroos-vs-turkiye-how-to-watch-australia-world-cup/106779556",
+      "snippet": "",
+      "pubDate": "Thu, 11 Jun 2026 22:34:44 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to soar, Wall Street surges, oil dives as Trump says peace deal near; SpaceX prices IPO at $US135 a share",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-jump-wall-street-rebounds-as-trump-calls-off-iran-attacks-20260612-p6065a.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Wall Street powered a rally in stocks as oil sank after President Donald Trump signalled the US is close to a deal with Iran, fuelling hopes for an end to the war that has roiled global markets.",
+      "pubDate": "Fri, 12 Jun 2026 06:44:55 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Golf legend kicked out of club after employee allegations, report says",
       "link": "https://www.abc.net.au/news/2026-06-12/phil-mickelson-booted-from-san-diego-golf-club/106789152",
       "snippet": "",
@@ -881,13 +887,6 @@
       "source": "ABC News"
     },
     {
-      "title": "ASX set to jump, Wall Street rebounds as Trump calls off Iran attacks",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-jump-wall-street-rebounds-as-trump-calls-off-iran-attacks-20260612-p6065a.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "US stocks are climbing, and oil prices are falling after President Donald Trump called off his threat to bomb Iran.",
-      "pubDate": "Fri, 12 Jun 2026 05:15:36 +1000",
-      "source": "SMH Business"
-    },
-    {
       "title": "Australia cops three ducks in first two overs to lose Bangladesh series",
       "link": "https://www.abc.net.au/news/2026-06-12/australia-loses-odi-series-to-bangladesh/106789094",
       "snippet": "",
@@ -895,7 +894,7 @@
       "source": "ABC News"
     },
     {
-      "title": "State government offloads former Supreme Court building in $25m sale",
+      "title": "State government looks to offload former Supreme Court building in $25m sale",
       "link": "https://www.smh.com.au/business/companies/state-government-offloads-former-supreme-court-building-in-25m-sale-20260610-p605ii.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The Allan government will be hoping for a better result than the last time the building was on the market in the early 1990s.",
       "pubDate": "Fri, 12 Jun 2026 05:01:00 +1000",
@@ -921,13 +920,6 @@
       "snippet": "Rookie One Nation senator Sean Bell, who was embarrassed on 2GB last week, has a talk radio veteran running his media.",
       "pubDate": "Fri, 12 Jun 2026 05:00:00 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "A record number of over 40s are at this World Cup. Here's why",
-      "link": "https://www.abc.net.au/news/2026-06-12/world-cup-older-players-impact-ronaldo-messi-dzeko-modric/106765668",
-      "snippet": "",
-      "pubDate": "Thu, 11 Jun 2026 18:50:45 +0000",
-      "source": "ABC News"
     }
   ]
 }
