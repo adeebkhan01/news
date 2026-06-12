@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-06-12T10:20:53.672Z",
-  "summary": "Australia's news landscape today spans crime and justice stories—including a paedophile's failed sentence appeal and multiple murder cases—alongside significant political and business developments. SpaceX's US stock market listing is dominating business coverage with implications for global wealth concentration, while domestically, One Nation faces ongoing controversy with venue cancellations of Pauline Hanson fundraisers amid protests. Defence matters occupy attention with Richard Marles' AUKUS visit disrupted by Britain's defence secretary resignation, and industrial relations feature prominently as the mines minister backs unions' right to strike at BHP. Health and social policy concerns round out the day, with reports on HIV epidemic risks from funding cuts and various community issues affecting Australians.",
+  "fetchedAt": "2026-06-12T15:24:43.967Z",
+  "summary": "Australia's political landscape is dominated by concerns about One Nation's rising influence, with Labor and the Coalition facing pressure to challenge Pauline Hanson's policies more directly, while separate controversies involving the party's funding and cancelled events highlight growing scrutiny. Major international business stories include SpaceX's anticipated stock market debut that could make Elon Musk the world's first trillionaire, alongside fallout from the Sam Bankman-Fried FTX fraud conviction. Domestically, significant policy debates are emerging around the NDIS changes drawing criticism as regressive, housing affordability concerns for first-home buyers, and industrial relations issues including union strike rights at BHP and VicRoads privatisation backlash. Environmental stories include alarming sea ice loss near Antarctica and a rare scientific observation of a goblin shark in its natural habitat, while crime and justice issues continue with sentencings related to serious offences.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,156 @@
     }
   ],
   "articles": [
+    {
+      "title": "SpaceX set to surge past $2.8 trillion valuation in Wall Street debut",
+      "link": "https://www.smh.com.au/business/markets/spacex-set-to-surge-past-2-8-trillion-valuation-in-wall-street-debut-20260612-p606fx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "Speaking shortly before the Nasdaq opening bell, founder Elon Musk said: “SpaceX wants to be able to take you to the moon, take you to Mars and ultimately beyond.”",
+      "pubDate": "Sat, 13 Jun 2026 01:23:56 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5842803703703704%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_80%2C$y_140/t_crop_custom/q_86%2Cf_auto/10fb02b0a1e712d4c67e688495d7366e89e81593",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Liberals are scaring first-home buyers with warnings of negative equity – but experts believe there’s little to worry about",
+      "link": "https://www.theguardian.com/australia-news/2026/jun/13/liberals-are-scaring-first-home-buyers-with-warnings-of-negative-equity-but-experts-believe-theres-little-to-worry-about",
+      "desc": "<p><strong>Exclusive: </strong>Economists say falling house prices are largely in the more expensive parts of Sydney and Melbourne’s markets and are less likely to affect first-time property owners</p",
+      "pubDate": "Fri, 12 Jun 2026 15:00:51 GMT",
+      "img": "https://i.guim.co.uk/img/media/bb6e6aa4c60aa543f90570d25b72674ac09e8246/576_0_6601_5281/master/6601.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Who is donating to One Nation? – Back to Back Barries podcast",
+      "link": "https://www.theguardian.com/global/6a2c00ca8f08b3c2b5d2db8c",
+      "desc": "<p><strong>Tony Barry</strong> and <strong>Barrie Cassidy</strong> discuss One Nation’s successful fundraising drive which raised nearly $3m this week. They look at how the major parties are handling ",
+      "pubDate": "Fri, 12 Jun 2026 15:00:51 GMT",
+      "img": "https://i.guim.co.uk/img/media/19f38f3051587d97a48f7df66ef49beef5fbf8bd/316_0_1349_1080/master/1349.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Labor and the Coalition must force Pauline Hanson to ‘please explain’ her policies if they are to win back voters | Tom McIlroy",
+      "link": "https://www.theguardian.com/australia-news/2026/jun/13/labor-and-the-coalition-must-force-pauline-hanson-to-please-explain-her-policies-if-they-are-to-win-back-voters-ntwnfb",
+      "desc": "<p>Her strongest supporters don’t care that her positions often don’t make sense, but first-time One Nation voters could swing back if the party faced more scrutiny</p><ul><li><p>Get our <a href=\"http",
+      "pubDate": "Fri, 12 Jun 2026 15:00:48 GMT",
+      "img": "https://i.guim.co.uk/img/media/75ebd207da5136dfc1745498cdafe87075a26205/0_0_5828_4665/master/5828.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "NDIS changes ‘retrogressive’ and out of step with review, MPs say",
+      "link": "https://www.theguardian.com/australia-news/2026/jun/13/ndis-changes-retrogressive-and-out-of-step-with-review-mps-say",
+      "desc": "<p>Report by Labor-led joint human rights committee says cuts to the $50bn scheme could limit support for those in need</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/email-newsletters?CMP",
+      "pubDate": "Fri, 12 Jun 2026 15:00:48 GMT",
+      "img": "https://i.guim.co.uk/img/media/9d04dadefb99b37549a95f32a090280c96a2ab5f/708_0_6343_5077/master/6343.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Antarctica’s west coast missing an area of sea ice the size of France as temperatures peak 20C above average",
+      "link": "https://www.theguardian.com/world/2026/jun/13/antarcticas-west-coast-missing-an-area-of-sea-ice-the-size-of-france-as-temperatures-peak-20c-above-average",
+      "desc": "<p><strong>Exclusive </strong>A vast area of the Bellingshausen Sea should be covered by sea ice by now, with one expert calling the loss of ice ‘depressing’</p><ul><li><p>Get our <a href=\"https://www",
+      "pubDate": "Fri, 12 Jun 2026 15:00:48 GMT",
+      "img": "https://i.guim.co.uk/img/media/78d9aa55c0ffaa0fc386490eee32edd79a66063a/106_0_3200_2560/master/3200.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "‘It’s massive destruction’: outcry in Texas over waivers to allow border wall in Big Bend national park",
+      "link": "https://www.theguardian.com/us-news/2026/jun/13/texas-border-wall-big-bend-national-park",
+      "desc": "<p>Despite plunging border crossings, the Trump administration is circumventing laws to expedite building in a vast, pristine wilderness </p><p>The <a href=\"https://www.theguardian.com/us-news/trump-a",
+      "pubDate": "Fri, 12 Jun 2026 14:00:46 GMT",
+      "img": "https://i.guim.co.uk/img/media/002aedd6858b43524a23cf1e39ea7e470e582693/539_0_2751_2202/master/2751.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Perth’s newest university campus lauded at major architecture awards",
+      "link": "https://www.smh.com.au/national/western-australia/perth-s-newest-university-campus-lauded-at-major-architecture-awards-20260612-p606d9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The building was praised for linking Perth’s central district back together with a “dramatic new insertion into the blighted and divisive strip of railway land separating the CBD from the entertainmen",
+      "pubDate": "Sat, 13 Jun 2026 00:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.14701529353724715%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/384d91d85243d4621a8c2350c982553c806abd5792f83670a85e21443f6b81fd",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Test your general knowledge with the Good Weekend quiz",
+      "link": "https://www.smh.com.au/national/test-your-general-knowledge-with-the-good-weekend-quiz-20260609-p6053k.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Trivia buffs: can you get a perfect score in the interactive superquiz?",
+      "pubDate": "Fri, 12 Jun 2026 23:59:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.103125%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_58/t_crop_custom/q_86%2Cf_auto/297b54b43fec49dc75ceb1969fd1a88bc723fd9a",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Sam Bankman-Fried loses bid to appeal against fraud conviction in FTX case",
+      "link": "https://www.theguardian.com/business/2026/jun/12/sam-bankman-fried-loses-appeal",
+      "desc": "<p>Decision to not overturn fallen crypto mogul’s 25-year prison sentence was handed down by three-judge panel </p><p><a href=\"https://www.theguardian.com/business/sam-bankman-fried\">Sam Bankman-Fried",
+      "pubDate": "Fri, 12 Jun 2026 13:52:59 GMT",
+      "img": "https://i.guim.co.uk/img/media/e5b3cc98f314ea4639900d8e28eb61ac8ff65b3c/640_0_5789_4629/master/5789.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Elon Musk set to become world's first trillionaire as SpaceX lists on US stock market",
+      "link": "https://www.abc.net.au/news/2026-06-12/spacex-ipo-elon-musk-stock-market-launch/106793326",
+      "desc": "\"SpaceX wants to be able to take you to the moon, take you to Mars, and ultimately beyond,\" Mr Musk said at a launch event in Starbase, Texas.",
+      "pubDate": "Fri, 12 Jun 2026 13:44:21 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/edd96489e568a15ec44f046c0689a911?impolicy=wcms_crop_resize&amp;cropH=3337&amp;cropW=2503&amp;xPos=1249&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Uber appeals against reinstating driver accused of speeding, racist remarks",
+      "link": "https://www.smh.com.au/business/consumer-affairs/uber-appeals-against-reinstating-driver-accused-of-speeding-racist-remarks-20260611-p605uu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "The ride-share giant has appealed against an order to reinstate a driver with 16 misconduct allegations against him as the government updates deactivation laws.",
+      "pubDate": "Fri, 12 Jun 2026 22:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.9934%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_358/t_crop_custom/q_86%2Cf_auto/aaba87e3ecf193384843b4f4b2bc7aa8c6234b95fb876deddd407b5f54907a37",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Autistic children injected with unapproved stem cell treatments supported by RFK Jr",
+      "link": "https://www.theguardian.com/society/2026/jun/12/autism-stem-cell-infusions-rfk-jr",
+      "desc": "<p>Desperate US parents pay up to $20,000 a session for a procedure scientists say could be bogus</p><p><a href=\"https://www.theguardian.com/society/autism\">Autistic</a> children as young as 18 months",
+      "pubDate": "Fri, 12 Jun 2026 11:00:45 GMT",
+      "img": "https://i.guim.co.uk/img/media/c618d0e4c6178ab27e4e882ca6896e8c8aa1eec3/0_0_3000_2400/master/3000.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Aussie researchers get first-of-its kind glimpse of elusive goblin shark",
+      "link": "https://www.smh.com.au/national/aussie-researchers-get-first-of-its-kind-glimpse-of-elusive-goblin-shark-20260612-p606fn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "In the past, they’ve only been seen alive after being hooked on a fishing line but they die soon after.",
+      "pubDate": "Fri, 12 Jun 2026 20:53:29 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/9edeec1b1889ea1aee54637b078b089d0979a2cc",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Daughter stares down father's killers in court",
+      "link": "https://www.smh.com.au/national/daughter-stares-down-fathers-killers-in-court-20260612-p606fh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A daughter whose father was murdered in WA's south-west has stared down his killers as they were sentenced to lengthy jail terms.",
+      "pubDate": "Fri, 12 Jun 2026 20:32:22 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/6b2d96dec778b2bc757fcc2f70936335ca0a20b3",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
     {
       "title": "Elon Musk on track to become world’s first trillionaire today as SpaceX lists on US stock market – business live",
       "link": "https://www.theguardian.com/business/live/2026/jun/12/spacex-float-us-stock-market-share-elon-musk-trillionaire-largest-ipo-ever-live-news-updates",
@@ -33998,176 +34148,6 @@
       "sourceId": "abcnews",
       "sourceName": "ABC News",
       "sourceColor": "#E64626"
-    },
-    {
-      "title": "Has Labor’s tax reform killed ‘rent-vesting’ for young Australians seeking a foothold in the housing market?",
-      "link": "https://www.theguardian.com/australia-news/2026/may/14/has-labor-killed-rentvesting-housing-australia-capital-gains-tax-negative-gearing-reform",
-      "desc": "<p>Changes to capital gains tax and negative gearing will make the strategy of renting in a preferred area while buying a cheaper property elsewhere less attractive, experts say</p><ul><li><p>Explore ",
-      "pubDate": "Wed, 13 May 2026 15:00:03 GMT",
-      "img": "https://i.guim.co.uk/img/media/52df7a24737e7e3572cb6a647c58206bc15b6383/399_0_4680_3746/master/4680.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Obesity rates in some countries levelling off or potentially falling, study finds",
-      "link": "https://www.theguardian.com/society/2026/may/13/obesity-trends-levelling-off-falling-study",
-      "desc": "<p>Researchers say rise not inevitable and it is important to unpick what is behind differences in obesity trends</p><p>A continuing rise in obesity around the world is not inevitable, research sugges",
-      "pubDate": "Wed, 13 May 2026 15:00:03 GMT",
-      "img": "https://i.guim.co.uk/img/media/6403ead2c9f076a34f67085fd177febdbd5bc8d4/0_0_6636_5309/master/6636.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "New revelations show WA is putting Australia’s climate targets at risk. Will Anthony Albanese do anything about it? | Clear Air",
-      "link": "https://www.theguardian.com/environment/2026/may/14/wa-western-australia-climate-targets-at-risk",
-      "desc": "<p>Premier Roger Cook has the prime minister’s implicit support but he’s making it harder for federal Labor to meet its much-vaunted climate targets</p><ul><li><p>Want to get this in your inbox when i",
-      "pubDate": "Wed, 13 May 2026 15:00:02 GMT",
-      "img": "https://i.guim.co.uk/img/media/a30d25f486525ebee6f28648c75bf91489dba2e7/358_22_3105_2485/master/3105.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Trump mega-donors pause Wisconsin development project, citing economic uncertainty",
-      "link": "https://www.theguardian.com/us-news/2026/may/13/uline-trump-donors-pause-wisconsin-development-project",
-      "desc": "<p>Uline, owned by billionaire Republicans Richard and Liz Uihlein, halts construction of a new facility in Kenosha</p><p>Uline, a business and shipping supplies company owned by billionaire Trump sup",
-      "pubDate": "Wed, 13 May 2026 14:47:51 GMT",
-      "img": "https://i.guim.co.uk/img/media/6e430ed1bd65d05dacf2335169de457ebc548eb6/244_292_4551_3643/master/4551.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Global oil inventories falling at record pace amid Iran war; US producer price inflation hits four-year high – as it happened",
-      "link": "https://www.theguardian.com/business/live/2026/may/13/uk-bond-market-yields-political-turmoil-oil-inflation-housing-market-live-updates",
-      "desc": "<p>IEA warns that mounting supply losses from the Strait of Hormuz are depleting global oil inventories at a record pace</p><p><strong>Global oil stocks are being run down at a record pace as supply l",
-      "pubDate": "Wed, 13 May 2026 14:34:14 GMT",
-      "img": "https://i.guim.co.uk/img/media/b5e33962f75563f683c78735e78a3502099f560f/401_0_3728_2982/master/3728.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "‘I don’t think about Americans’ financial situation,’ says Trump amid Iran talks",
-      "link": "https://www.theguardian.com/us-news/2026/may/13/trump-iran-war-americans-finances",
-      "desc": "<p>With US inflation at a three-year high, US president insisted he’s not focused on economic hardship sparked by the conflict</p><ul><li><p><a href=\"https://www.theguardian.com/news/2026/feb/17/sign-",
-      "pubDate": "Wed, 13 May 2026 14:03:24 GMT",
-      "img": "https://i.guim.co.uk/img/media/ce841b49dae644be6921fa9786d51075d86a95ea/686_136_4613_3692/master/4613.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Do we judge people by the way they sound? How accents shape our lives",
-      "link": "https://www.theguardian.com/science/2026/may/13/valerie-fridland-linguistics-accents",
-      "desc": "<p>A new book by linguistics professor Valerie Fridland, who was raised in Memphis by parents with French accents, explores the power behind the way we speak</p><p>Valerie Fridland writes in her new b",
-      "pubDate": "Wed, 13 May 2026 14:00:04 GMT",
-      "img": "https://i.guim.co.uk/img/media/f15fe77bb8b959a21f3d7466293ba38d58fc2fad/42_0_1266_1013/master/1266.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Superquiz, Thursday, May 14",
-      "link": "https://www.smh.com.au/national/superquiz-thursday-may-14-20260513-p5zwem.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Trivia buffs, test your knowledge with today’s interactive superquiz.",
-      "pubDate": "Wed, 13 May 2026 23:59:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.9819%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_1%2C$y_285/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/24d8c9ba98147348592ea2ed292e48328b593d46",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Angus Taylor’s budget reply to tie Net Overseas Migration to new housing",
-      "link": "https://theconversation.com/angus-taylors-budget-reply-to-tie-net-overseas-migration-to-new-housing-282865",
-      "desc": "A Coalition government would cap Net Overseas Migration at the number of new homes completed, under a further installment of the opposition’s migration policy.",
-      "pubDate": "2026-05-13T12:31:59Z",
-      "img": "https://images.theconversation.com/files/735509/original/file-20260513-57-fmngwv.jpg?ixlib=rb-4.1.0&amp;rect=0%2C88%2C3997%2C1998&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Coalition to link immigration limits to new builds as Taylor says ‘migration has run miles ahead of housing’",
-      "link": "https://www.theguardian.com/australia-news/2026/may/13/coalition-immigration-policy-housing-budget-reply-angus-taylor",
-      "desc": "<p>Opposition leader to unveil plan to dramatically cut number of migrants in budget reply speech on Thursday</p><ul><li><p>Explore all of our<a href=\"https://www.theguardian.com/australia-news/austra",
-      "pubDate": "Wed, 13 May 2026 12:30:00 GMT",
-      "img": "https://i.guim.co.uk/img/media/337dc21629c3bd5c1f9d10d0d627268540cdc7b8/295_0_2953_2362/master/2953.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Nissan ponders building cars for Chinese rivals at Sunderland plant",
-      "link": "https://www.theguardian.com/business/2026/may/13/nissan-ponders-building-cars-for-chinese-rivals-at-sunderland-plant-chery",
-      "desc": "<p>CEO admits talks with Chery as other European carmakers discuss plans with Chinese firms to share factory space</p><ul><li><p><a href=\"https://www.theguardian.com/business/live/2026/may/13/uk-bond-",
-      "pubDate": "Wed, 13 May 2026 11:54:50 GMT",
-      "img": "https://i.guim.co.uk/img/media/a27e1979ab8d7d341567ac204ad8430d96ba07eb/688_0_7200_5760/master/7200.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "‘Irresponsible’: backlash as Utah approves datacenter twice the size of Manhattan",
-      "link": "https://www.theguardian.com/us-news/2026/may/13/utah-approves-datacenter-backlash",
-      "desc": "<p>Facility would require more power than entire state uses and suck up vast amount of water in drought-stricken area</p><p>A plan to create one of the world’s largest datacenters, a gargantuan projec",
-      "pubDate": "Wed, 13 May 2026 11:30:56 GMT",
-      "img": "https://i.guim.co.uk/img/media/79c8662e52b56a119045586e7ce809422f785fb9/0_0_5001_4002/master/5001.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "More charges for man accused of mass terror attack plan",
-      "link": "https://www.smh.com.au/national/more-charges-for-man-accused-of-mass-terror-attack-plan-20260513-p5zwm0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "A man accused of plotting a mass casualty terror attack targeting public buildings and places of worship has been hit with a slew of new charges.",
-      "pubDate": "Wed, 13 May 2026 21:09:15 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/4f98cef857658a40c900b0983e7660eeebd74238",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Bikie sentenced for orchestrating murder of Rebels leader",
-      "link": "https://www.smh.com.au/national/bikie-sentenced-for-orchestrating-murder-of-rebels-leader-20260513-p5zwlz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "David Pye, the bikie who orchestrated the murder of Rebels leader Nick Marti, has been sentenced to life behind bars.",
-      "pubDate": "Wed, 13 May 2026 21:05:03 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/a4a9afd3b621c88943767abaab89d11c36f725a2",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Discovery of woman’s body on Perth street sparks seven-hour manhunt",
-      "link": "https://www.smh.com.au/national/discovery-of-woman-s-body-on-perth-street-sparks-seven-hour-manhunt-20260513-p5zwly.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "A major police operation has unfolded in Perth after a woman's body was dumped on a busy street in broad daylight.",
-      "pubDate": "Wed, 13 May 2026 21:04:46 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/190a16e7d8d8fb85f96b8d1cabd31fa596680a3a",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Stardust trapped in Antarctic ice reveals tens of thousands of years of Solar System’s past",
-      "link": "https://theconversation.com/stardust-trapped-in-antarctic-ice-reveals-tens-of-thousands-of-years-of-solar-systems-past-279745",
-      "desc": "We can study the cosmos by tracing debris from exploding stars right here on Earth.",
-      "pubDate": "2026-05-13T11:01:18Z",
-      "img": "https://images.theconversation.com/files/733865/original/file-20260505-71-9qmxdp.jpg?ixlib=rb-4.1.0&amp;rect=0%2C823%2C6750%2C3375&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Beer budget, vintage spirit",
-      "link": "https://www.smh.com.au/national/nsw/beer-budget-vintage-spirit-20260513-p5zw74.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Retailers should respect our future elders.",
-      "pubDate": "Wed, 13 May 2026 21:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_1.6556000000000002%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_48/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/d51781c5614995563bbf4ce4a8b06344486e0d25",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
     }
   ]
 }
