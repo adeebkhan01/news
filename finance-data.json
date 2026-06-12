@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-12T15:44:03.757Z",
+  "fetchedAt": "2026-06-12T20:31:40.726Z",
   "asx200": {
     "value": 8804,
     "change": 133.3,
@@ -98,9 +98,9 @@
     ]
   },
   "audusd": {
-    "value": 0.71,
+    "value": 0.7,
     "change": -0.02,
-    "changePercent": -2.68,
+    "changePercent": -2.72,
     "previousClose": 0.72,
     "asOf": "2026-06-12",
     "history": [
@@ -197,8 +197,12 @@
         "close": 0.7
       },
       {
+        "date": "2026-06-11",
+        "close": 0.7
+      },
+      {
         "date": "2026-06-12",
-        "close": 0.71
+        "close": 0.7
       }
     ]
   },
@@ -207,33 +211,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4241.2,
-      "change": -436.4,
-      "changePercent": -9.33
+      "price": 4236.4,
+      "change": -441.2,
+      "changePercent": -9.43
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 67.71,
-      "change": -17.42,
-      "changePercent": -20.46
+      "price": 68.13,
+      "change": -17,
+      "changePercent": -19.97
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 84.65,
-      "change": -17.53,
-      "changePercent": -17.16
+      "price": 84.27,
+      "change": -17.91,
+      "changePercent": -17.53
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.43,
-      "change": -0.05,
-      "changePercent": -0.83
+      "price": 6.48,
+      "change": -0.01,
+      "changePercent": -0.09
     },
     {
       "name": "BHP Group",
@@ -842,11 +846,32 @@
   ],
   "news": [
     {
-      "title": "SpaceX set to surge past $2.8 trillion valuation in Wall Street debut",
+      "title": "Elon Musk becomes world’s first trillionaire as SpaceX soars in Wall Street debut",
       "link": "https://www.smh.com.au/business/markets/spacex-set-to-surge-past-2-8-trillion-valuation-in-wall-street-debut-20260612-p606fx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Speaking shortly before the Nasdaq opening bell, founder Elon Musk said: “SpaceX wants to be able to take you to the moon, take you to Mars and ultimately beyond.”",
-      "pubDate": "Sat, 13 Jun 2026 01:23:56 +1000",
+      "snippet": "Elon Musk is now worth more than the world’s next four richest people combined.",
+      "pubDate": "Sat, 13 Jun 2026 06:29:01 +1000",
       "source": "SMH Business"
+    },
+    {
+      "title": "From Azteca to LA, your guide to every World Cup stadium",
+      "link": "https://www.abc.net.au/news/2026-06-13/fifa-world-cup-2026-stadiums/106763814",
+      "snippet": "",
+      "pubDate": "Fri, 12 Jun 2026 19:44:40 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "How far can the Socceroos really go at the FIFA World Cup?",
+      "link": "https://www.abc.net.au/news/2026-06-13/how-far-can-the-socceroos-go-and-what-is-a-pass-mark/106543794",
+      "snippet": "",
+      "pubDate": "Fri, 12 Jun 2026 19:35:44 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Canada's World Cup party crashed by underdogs, Ghana star denied visa",
+      "link": "https://www.abc.net.au/news/2026-06-13/world-cup-live-canada-bosnia-and-herzegovina-usa-paraguay/106790614",
+      "snippet": "",
+      "pubDate": "Fri, 12 Jun 2026 18:01:56 +0000",
+      "source": "ABC News"
     },
     {
       "title": "Uber appeals against reinstating driver accused of speeding, racist remarks",
@@ -886,7 +911,7 @@
     {
       "title": "‘One could not ask for a better friend’: Elon Musk’s mate eyes $100 billion windfall",
       "link": "https://www.smh.com.au/business/companies/one-could-not-ask-for-a-better-friend-elon-musk-s-mate-eyes-a-100-billion-windfall-20260611-p605p6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "When SpaceX, Elon Musk’s rocket company, starts trading on the stock market, Antonio Gracias and his private equity firm will reap one of the largest-ever returns from a private investment.",
+      "snippet": "For 25 years, Antonio Gracias has dedicated himself to serving as one of Elon Musk’s most loyal lieutenants, doing anything and everything to aid the tech mogul. On Saturday, it’s payday.",
       "pubDate": "Fri, 12 Jun 2026 17:15:00 +1000",
       "source": "SMH Business"
     },
@@ -903,27 +928,6 @@
       "snippet": "",
       "pubDate": "Fri, 12 Jun 2026 06:06:23 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Big Hits: Lac Gold, American Tungsten &amp; Antimony and Breakthrough",
-      "link": "https://www.smh.com.au/business/companies/big-hits-lac-gold-american-tungsten-and-antimony-and-breakthrough-20260612-p606di.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Bulls N’ Bears Big Hits looks at notable drill hits recently reported to the ASX, led by Lac Gold in Quebec, American Tungsten &amp; Antimony in Utah and Breakthrough Minerals in Queensland.",
-      "pubDate": "Fri, 12 Jun 2026 15:59:53 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX Runners of the Week: 333D, Boresight, Southern Hemi &amp; White Cliff",
-      "link": "https://www.smh.com.au/business/companies/asx-runners-of-the-week-333d-boresight-southern-hemi-and-white-cliff-20260612-p606d2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Bulls N’ Bears ASX Runner of the Week is… 333D Limited, which increased fivefold after a strategic investment into NVIDIA-backed AI data centre operator Firmus on Tuesday.",
-      "pubDate": "Fri, 12 Jun 2026 15:31:38 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Amplia eyes major role in new cancer drug frontier",
-      "link": "https://www.smh.com.au/business/companies/amplia-eyes-major-role-in-new-cancer-drug-frontier-20260612-p606cx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Amplia Therapeutics is positioning its “shield-breaker” cancer drug as a key partner for a new class of kRAS inhibitors, a major theme at a recent global oncology conference.",
-      "pubDate": "Fri, 12 Jun 2026 15:21:58 +1000",
-      "source": "SMH Business"
     }
   ]
 }
