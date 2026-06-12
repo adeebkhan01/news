@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-12T10:44:20.614Z",
+  "fetchedAt": "2026-06-12T15:44:03.757Z",
   "asx200": {
     "value": 8804,
     "change": 133.3,
@@ -94,17 +94,13 @@
       {
         "date": "2026-06-11",
         "close": 8633.2
-      },
-      {
-        "date": "2026-06-12",
-        "close": 8804
       }
     ]
   },
   "audusd": {
-    "value": 0.7,
+    "value": 0.71,
     "change": -0.02,
-    "changePercent": -2.76,
+    "changePercent": -2.68,
     "previousClose": 0.72,
     "asOf": "2026-06-12",
     "history": [
@@ -202,7 +198,7 @@
       },
       {
         "date": "2026-06-12",
-        "close": 0.7
+        "close": 0.71
       }
     ]
   },
@@ -211,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4236.1,
-      "change": -441.5,
-      "changePercent": -9.44
+      "price": 4241.2,
+      "change": -436.4,
+      "changePercent": -9.33
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 67.18,
-      "change": -17.95,
-      "changePercent": -21.09
+      "price": 67.71,
+      "change": -17.42,
+      "changePercent": -20.46
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 85.03,
-      "change": -17.15,
-      "changePercent": -16.78
+      "price": 84.65,
+      "change": -17.53,
+      "changePercent": -17.16
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.4,
-      "change": -0.09,
-      "changePercent": -1.39
+      "price": 6.43,
+      "change": -0.05,
+      "changePercent": -0.83
     },
     {
       "name": "BHP Group",
@@ -846,14 +842,42 @@
   ],
   "news": [
     {
-      "title": "Live: Dolphin double act has Roosters on the ropes",
+      "title": "SpaceX set to surge past $2.8 trillion valuation in Wall Street debut",
+      "link": "https://www.smh.com.au/business/markets/spacex-set-to-surge-past-2-8-trillion-valuation-in-wall-street-debut-20260612-p606fx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Speaking shortly before the Nasdaq opening bell, founder Elon Musk said: “SpaceX wants to be able to take you to the moon, take you to Mars and ultimately beyond.”",
+      "pubDate": "Sat, 13 Jun 2026 01:23:56 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Uber appeals against reinstating driver accused of speeding, racist remarks",
+      "link": "https://www.smh.com.au/business/consumer-affairs/uber-appeals-against-reinstating-driver-accused-of-speeding-racist-remarks-20260611-p605uu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The ride-share giant has appealed against an order to reinstate a driver with 16 misconduct allegations against him as the government updates deactivation laws.",
+      "pubDate": "Fri, 12 Jun 2026 22:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "After years in the shadows, Meg Harris is ready for her close-up",
+      "link": "https://www.abc.net.au/news/2026-06-12/australian-swimming-trials-meg-harris-100m-freestyle/106792514",
+      "snippet": "",
+      "pubDate": "Fri, 12 Jun 2026 11:47:43 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Gasly reinstated to Monaco GP podium after timekeepers' error revealed",
+      "link": "https://www.abc.net.au/news/2026-06-12/pierre-gasly-reinstated-to-monaco-gp-podium/106793372",
+      "snippet": "",
+      "pubDate": "Fri, 12 Jun 2026 11:47:40 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Dolphins make it six on the trot with Rooster thrashing",
       "link": "https://www.abc.net.au/news/2026-06-12/nrl-live-updates-dolphins-sydney-roosters-katoa/106793152",
       "snippet": "",
       "pubDate": "Fri, 12 Jun 2026 09:44:34 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Live: Cats in control despite controversial call in crucial clash with Suns",
+      "title": "Cats continue alarming Suns slide as Hardwick lashes 'ridiculous' rule",
       "link": "https://www.abc.net.au/news/2026-06-12/afl-rd-14-live-blog-geelong-cats-gold-coast-suns/106780142",
       "snippet": "",
       "pubDate": "Fri, 12 Jun 2026 08:37:12 +0000",
@@ -871,6 +895,13 @@
       "link": "https://www.abc.net.au/news/2026-06-12/world-cup-mexico-all-night-party-usa-canada-to-follow/106791288",
       "snippet": "",
       "pubDate": "Fri, 12 Jun 2026 07:02:38 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Australian sprinter's death in Thailand came weeks after her 25th birthday",
+      "link": "https://www.abc.net.au/news/2026-06-12/australian-sprinter-jemma-stapleton-mourned-death-in-thailand/106791778",
+      "snippet": "",
+      "pubDate": "Fri, 12 Jun 2026 06:06:23 +0000",
       "source": "ABC News"
     },
     {
@@ -892,41 +923,6 @@
       "link": "https://www.smh.com.au/business/companies/amplia-eyes-major-role-in-new-cancer-drug-frontier-20260612-p606cx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Amplia Therapeutics is positioning its “shield-breaker” cancer drug as a key partner for a new class of kRAS inhibitors, a major theme at a recent global oncology conference.",
       "pubDate": "Fri, 12 Jun 2026 15:21:58 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Socceroos coach Tony Popovic signs extension through to Asian Cup",
-      "link": "https://www.abc.net.au/news/2026-06-12/socceroos-coach-tony-popovic-signs-extension-to-asian-cup/106791704",
-      "snippet": "",
-      "pubDate": "Fri, 12 Jun 2026 05:16:18 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Manhattan rolls out Canadian gold strategy under new leadership",
-      "link": "https://www.smh.com.au/business/companies/manhattan-rolls-out-canadian-gold-strategy-under-new-leadership-20260612-p606by.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Following a board overhaul, Manhattan Gold Corp has unveiled a new exploration strategy, launching a 4000m RC drill program at its Hook Lake gold project in Nunavut, Canada.",
-      "pubDate": "Fri, 12 Jun 2026 14:13:07 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Quick hits: Opening ceremony delights, drinks break drama and Haiti's jersey ban",
-      "link": "https://www.abc.net.au/news/2026-06-12/world-cup-quick-hits-day-one-opening-ceremony-haiti-drinks-break/106789384",
-      "snippet": "",
-      "pubDate": "Fri, 12 Jun 2026 03:20:08 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Victoria’s Secret fends off reclusive Aussie billionaire",
-      "link": "https://www.smh.com.au/business/companies/victoria-s-secret-fends-off-reclusive-aussie-billionaire-20260612-p60682.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Retail kingpin Brett Blundy’s bid to gain control of the iconic lingerie brand’s board met a disastrous reception.",
-      "pubDate": "Fri, 12 Jun 2026 12:01:04 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "We’re spending bucket loads on the thing that could kill us. Here’s why",
-      "link": "https://www.smh.com.au/business/the-economy/we-re-spending-bucket-loads-on-the-thing-that-could-kill-us-here-s-why-20260609-p6057f.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Business investment is finally driving our economy forward. But what we’re investing in could end humanity as we know it.",
-      "pubDate": "Fri, 12 Jun 2026 11:55:52 +1000",
       "source": "SMH Business"
     }
   ]
