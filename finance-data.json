@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-14T20:02:16.921Z",
+  "fetchedAt": "2026-06-14T22:37:16.871Z",
   "asx200": {
     "value": 8804,
     "change": 133.3,
@@ -102,9 +102,9 @@
     ]
   },
   "audusd": {
-    "value": 0.7,
+    "value": 0.71,
     "change": -0.02,
-    "changePercent": -2.72,
+    "changePercent": -2.32,
     "previousClose": 0.72,
     "asOf": "2026-06-14",
     "history": [
@@ -206,7 +206,7 @@
       },
       {
         "date": "2026-06-14",
-        "close": 0.7
+        "close": 0.71
       }
     ]
   },
@@ -215,33 +215,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4238.8,
-      "change": -439.3,
-      "changePercent": -9.39
+      "price": 4305,
+      "change": -373.1,
+      "changePercent": -7.98
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 67.97,
-      "change": -16.94,
-      "changePercent": -19.95
+      "price": 69.91,
+      "change": -15,
+      "changePercent": -17.67
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 84.88,
-      "change": -16.29,
-      "changePercent": -16.1
+      "price": 81.44,
+      "change": -19.73,
+      "changePercent": -19.5
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.45,
-      "change": -0.12,
-      "changePercent": -1.87
+      "price": 6.51,
+      "change": -0.06,
+      "changePercent": -0.93
     },
     {
       "name": "BHP Group",
@@ -850,18 +850,46 @@
   ],
   "news": [
     {
+      "title": "‘Ships of the World, start your engines’: ASX set to jump as Trump says peace deal reached",
+      "link": "https://www.smh.com.au/business/markets/asx-set-for-unsteady-start-spacex-soars-in-its-debut-on-wall-street-20260615-p606qk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The Australian sharemarket is set to jump after Donald Trump announced a peace deal that includes an immediate ceasefire “on all fronts” of the war in the Middle East.",
+      "pubDate": "Mon, 15 Jun 2026 08:12:23 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "De Minaur falls short in Dutch ATP final as Wimbledon preparation continues",
+      "link": "https://www.abc.net.au/news/2026-06-15/alex-de-minaur-runner-up-in-he-rosmalen-championships/106797572",
+      "snippet": "",
+      "pubDate": "Sun, 14 Jun 2026 21:35:41 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'Let them talk': Socceroos hero bites back at claim Türkiye 'dominated'",
+      "link": "https://www.abc.net.au/news/2026-06-15/world-cup-socceroos-nestory-irankunda-respond-turkiye-dominated/106797546",
+      "snippet": "",
+      "pubDate": "Sun, 14 Jun 2026 21:33:18 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Rising star Connolly fights cramp to hit stunning ton in Aussie victory",
+      "link": "https://www.abc.net.au/news/2026-06-15/australia-vs-bangladesh-cooper-connolly-hits-century/106797512",
+      "snippet": "",
+      "pubDate": "Sun, 14 Jun 2026 20:51:35 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Beach's dream is Ryan's nightmare, and Schwarzer can relate to both",
+      "link": "https://www.abc.net.au/news/2026-06-15/mark-schwarzer-socceroos-pat-beach-mat-ryan/106797360",
+      "snippet": "",
+      "pubDate": "Sun, 14 Jun 2026 20:20:22 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "When Irankunda ran to the corner to emulate Cahill, it was a pre-planned tribute",
       "link": "https://www.abc.net.au/news/2026-06-15/nestory-irankunda-knew-how-he-was-going-to-celebrate/106797358",
       "snippet": "",
       "pubDate": "Sun, 14 Jun 2026 19:32:25 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "ASX set for unsteady start; SpaceX soars in its debut on Wall Street",
-      "link": "https://www.smh.com.au/business/markets/asx-set-for-unsteady-start-spacex-soars-in-its-debut-on-wall-street-20260615-p606qk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket is set for an unsteady start amid a fresh escalation in tensions in the Middle East while SpaceX soared in its highly anticipated debut on Wall Street.",
-      "pubDate": "Mon, 15 Jun 2026 05:28:11 +1000",
-      "source": "SMH Business"
     },
     {
       "title": "Cowboy country turns into World Cup epicentre in Dallas",
@@ -873,12 +901,12 @@
     {
       "title": "SpaceX’s $3 trillion debut expected to kick off wave of AI mega IPOs",
       "link": "https://www.smh.com.au/business/companies/spacex-s-3-trillion-debut-expected-to-kick-off-wave-of-ai-mega-ipos-20260614-p606lw.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The spectacular debut of SpaceX paves the way for an unprecedented series of floats this year as AI giants like Anthropic and OpenAI plan to go public.",
+      "snippet": "The spectacular debut of SpaceX paves the way for an unprecedented series of floats this year as AI giants such as Anthropic and OpenAI plan to go public.",
       "pubDate": "Mon, 15 Jun 2026 05:01:00 +1000",
       "source": "SMH Business"
     },
     {
-      "title": "Live: Curaçao enjoys magic moment before Germany powers ahead",
+      "title": "Live: Japan breaks Dutch hearts with late equaliser in thrilling clash",
       "link": "https://www.abc.net.au/news/2026-06-15/world-cup-live-ger-cur-ned-jpn-cot-ecu-swe-tun/106796132",
       "snippet": "",
       "pubDate": "Sun, 14 Jun 2026 16:18:36 +0000",
@@ -903,34 +931,6 @@
       "link": "https://www.abc.net.au/news/2026-06-14/f1-live-barcelona-catalunya-grand-prix-oscar-piastri/106794790",
       "snippet": "",
       "pubDate": "Sun, 14 Jun 2026 11:30:07 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Socceroos boast heavy Adelaide connection, as SA fans show support",
-      "link": "https://www.abc.net.au/news/2026-06-14/socceroos-win-adelaide-reacts/106796588",
-      "snippet": "",
-      "pubDate": "Sun, 14 Jun 2026 08:35:42 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "The Socceroos' greatest ever World Cup gamble just paid off",
-      "link": "https://www.abc.net.au/news/2026-06-14/socceroos-tony-popovic-greatest-world-cup-gamble-pays-off/106796402",
-      "snippet": "",
-      "pubDate": "Sun, 14 Jun 2026 07:10:40 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Socceroos quick hits: Irankunda's stunning strike and Beach's brilliance",
-      "link": "https://www.abc.net.au/news/2026-06-14/world-cup-australia-vs-turkiye-quick-hits/106796368",
-      "snippet": "",
-      "pubDate": "Sun, 14 Jun 2026 06:03:51 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Luai leads Tigers to epic final Leichhardt win",
-      "link": "https://www.abc.net.au/news/2026-06-14/nrl-live-updates-wests-tigers-gold-coast-titans/106796246",
-      "snippet": "",
-      "pubDate": "Sun, 14 Jun 2026 05:27:37 +0000",
       "source": "ABC News"
     }
   ]
