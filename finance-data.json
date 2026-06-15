@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-15T12:45:58.528Z",
+  "fetchedAt": "2026-06-15T19:09:57.364Z",
   "asx200": {
     "value": 8914,
     "change": 283.2,
@@ -86,17 +86,13 @@
       {
         "date": "2026-06-12",
         "close": 8804
-      },
-      {
-        "date": "2026-06-15",
-        "close": 8914
       }
     ]
   },
   "audusd": {
     "value": 0.71,
     "change": -0.01,
-    "changePercent": -1.95,
+    "changePercent": -1.94,
     "previousClose": 0.72,
     "asOf": "2026-06-15",
     "history": [
@@ -195,25 +191,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4363.9,
-      "change": -191.9,
-      "changePercent": -4.21
+      "price": 4347,
+      "change": -208.8,
+      "changePercent": -4.58
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 71.06,
-      "change": -6.1,
-      "changePercent": -7.91
+      "price": 70.24,
+      "change": -6.93,
+      "changePercent": -8.98
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 80.14,
-      "change": -25.28,
-      "changePercent": -23.98
+      "price": 80.9,
+      "change": -24.52,
+      "changePercent": -23.26
     },
     {
       "name": "Copper",
@@ -221,7 +217,7 @@
       "iconBg": "#fef0e6",
       "price": 6.5,
       "change": 0.25,
-      "changePercent": 3.92
+      "changePercent": 3.98
     },
     {
       "name": "BHP Group",
@@ -830,7 +826,28 @@
   ],
   "news": [
     {
-      "title": "Lachlan Murdoch’s Fox Corp to buy streaming platform in $22 billion deal",
+      "title": "Why Gina Rinehart’s company is fighting with a country music star",
+      "link": "https://www.smh.com.au/business/companies/why-gina-rinehart-s-company-is-fighting-with-a-country-music-star-20260615-p606qg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Australia’s richest woman wants to mine coal in the Rocky Mountains. One of Canada’s most famous country music singers is standing in her way.",
+      "pubDate": "Tue, 16 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "The AFL teams that are holding their nerve the best in clutch moments",
+      "link": "https://www.abc.net.au/news/2026-06-16/the-best-afl-teams-in-the-clutch/106797888",
+      "snippet": "",
+      "pubDate": "Mon, 15 Jun 2026 18:42:51 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Cabo Verde denies Spain in one of World Cup's biggest-ever upsets",
+      "link": "https://www.abc.net.au/news/2026-06-16/world-cup-live-esp-cab-bel-egy-sau-uru-ira-nzl/106797716",
+      "snippet": "",
+      "pubDate": "Mon, 15 Jun 2026 15:33:05 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Lachlan Murdoch’s Fox Corp to buy streaming platform in $31 billion deal",
       "link": "https://www.smh.com.au/business/companies/lachlan-murdoch-s-fox-corp-to-buy-streaming-platform-in-22-billion-deal-20260615-p60729.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Fox Corp CEO Lachlan Murdoch said the deal will bring together Fox’s live news and sports content with a streaming platform that has a large viewership.",
       "pubDate": "Mon, 15 Jun 2026 22:11:25 +1000",
@@ -891,27 +908,6 @@
       "snippet": "The signs are difficult to ignore: an avalanche of sellers, increasing levels of stale stock sitting on property portal shelves, and auction clearance rates wallowing around 50 per cent.",
       "pubDate": "Mon, 15 Jun 2026 15:50:15 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Aussie swimming great McKeown weighing up Olympic future",
-      "link": "https://www.abc.net.au/news/2026-06-15/kaylee-mckeown-on-olympic-future-beyond-2028-los-angeles-games/106799900",
-      "snippet": "",
-      "pubDate": "Mon, 15 Jun 2026 05:49:00 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "'Smiling since last night': Community joy after Irankunda's World Cup goal",
-      "link": "https://www.abc.net.au/news/2026-06-15/south-australia-world-cup-goal-nestory-irankunda/106798640",
-      "snippet": "",
-      "pubDate": "Mon, 15 Jun 2026 05:15:29 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Why Cameron Munster is always Queensland's Origin saviour",
-      "link": "https://www.abc.net.au/news/2026-06-15/state-of-origin-ii-cameron-munster-mcg/106799578",
-      "snippet": "",
-      "pubDate": "Mon, 15 Jun 2026 04:43:10 +0000",
-      "source": "ABC News"
     }
   ]
 }
