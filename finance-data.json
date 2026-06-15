@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-15T19:09:57.364Z",
+  "fetchedAt": "2026-06-15T23:13:31.090Z",
   "asx200": {
     "value": 8914,
     "change": 283.2,
@@ -92,14 +92,10 @@
   "audusd": {
     "value": 0.71,
     "change": -0.01,
-    "changePercent": -1.94,
+    "changePercent": -1.95,
     "previousClose": 0.72,
     "asOf": "2026-06-15",
     "history": [
-      {
-        "date": "2026-05-14",
-        "close": 0.72
-      },
       {
         "date": "2026-05-17",
         "close": 0.71
@@ -181,6 +177,10 @@
         "close": 0.7
       },
       {
+        "date": "2026-06-14",
+        "close": 0.71
+      },
+      {
         "date": "2026-06-15",
         "close": 0.71
       }
@@ -191,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4347,
-      "change": -208.8,
-      "changePercent": -4.58
+      "price": 4334.4,
+      "change": -221.4,
+      "changePercent": -4.86
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 70.24,
-      "change": -6.93,
-      "changePercent": -8.98
+      "price": 70.04,
+      "change": -7.13,
+      "changePercent": -9.24
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 80.9,
-      "change": -24.52,
-      "changePercent": -23.26
+      "price": 81.4,
+      "change": -24.02,
+      "changePercent": -22.79
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.5,
-      "change": 0.25,
-      "changePercent": 3.98
+      "price": 6.48,
+      "change": 0.23,
+      "changePercent": 3.69
     },
     {
       "name": "BHP Group",
@@ -826,9 +826,37 @@
   ],
   "news": [
     {
+      "title": "Australian ref explains gesture after World Cup monitor calls for sacking",
+      "link": "https://www.abc.net.au/news/2026-06-16/fifa-world-cup-discrimination-body-calls-for-evans-to-be-sacked/106801784",
+      "snippet": "",
+      "pubDate": "Mon, 15 Jun 2026 21:25:22 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "McCullum goes from 'angry to gutted' after Stokes nightclub incident",
+      "link": "https://www.abc.net.au/news/2026-06-16/brendon-mccullum-ben-stokes-nightclub/106801782",
+      "snippet": "",
+      "pubDate": "Mon, 15 Jun 2026 21:07:49 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to fall, global stocks jump on peace deal; SpaceX rises again",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-global-stocks-jump-on-peace-deal-spacex-rises-again-20260616-p6072k.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The US-Iran peace deal brought relief to global stocks overnight but the Australian sharemarket is set to fall at the open. The RBA announces its interest rates decision this afternoon.",
+      "pubDate": "Tue, 16 Jun 2026 06:35:25 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "KPMG hit with de facto ban on new government contracts",
+      "link": "https://www.smh.com.au/business/companies/kpmg-hit-with-de-facto-ban-on-new-government-contracts-20260615-p6070w.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The consulting giant has effectively been banned from new federal government work while the Department of Finance reviews its suitability as a contractor.",
+      "pubDate": "Tue, 16 Jun 2026 05:19:16 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Why Gina Rinehart’s company is fighting with a country music star",
       "link": "https://www.smh.com.au/business/companies/why-gina-rinehart-s-company-is-fighting-with-a-country-music-star-20260615-p606qg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Australia’s richest woman wants to mine coal in the Rocky Mountains. One of Canada’s most famous country music singers is standing in her way.",
+      "snippet": "Australia’s richest person wants to get to work in the Rocky Mountains. One of Canada’s most famous country music singers is standing in her way.",
       "pubDate": "Tue, 16 Jun 2026 05:00:00 +1000",
       "source": "SMH Business"
     },
@@ -840,7 +868,7 @@
       "source": "ABC News"
     },
     {
-      "title": "Live: Cabo Verde denies Spain in one of World Cup's biggest-ever upsets",
+      "title": "Live: Saudi Arabia threatens shock against Uruguay, Cabo Verde denies Spain",
       "link": "https://www.abc.net.au/news/2026-06-16/world-cup-live-esp-cab-bel-egy-sau-uru-ira-nzl/106797716",
       "snippet": "",
       "pubDate": "Mon, 15 Jun 2026 15:33:05 +0000",
@@ -879,34 +907,6 @@
       "link": "https://www.smh.com.au/business/companies/guardian-australia-appoints-new-editor-flown-in-from-the-uk-20260615-p60711.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The Guardian Australia has appointed David Munk, a British journalist who had been a deputy chief here before going on to be managing editor in the UK, as its new boss.",
       "pubDate": "Mon, 15 Jun 2026 18:00:17 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX jumps on peace deal; Gold miners and travel stocks rally, oil stocks fall",
-      "link": "https://www.smh.com.au/business/markets/asx-set-for-unsteady-start-spacex-soars-in-its-debut-on-wall-street-20260615-p606qk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket rallied after Donald Trump announced a peace deal that includes an immediate ceasefire “on all fronts” of the war in the Middle East.",
-      "pubDate": "Mon, 15 Jun 2026 17:50:22 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "AI executive fined $3000 for breaking musician’s nose, punching another",
-      "link": "https://www.smh.com.au/business/companies/ai-executive-fined-3000-for-breaking-musician-s-nose-punching-another-20260615-p606xy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Tim Bentley was a vice-president at Abnormal AI when he assaulted two musicians at a Sydney bar in February.",
-      "pubDate": "Mon, 15 Jun 2026 17:24:34 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Sarytogan launches deep hunt for Kazakh copper prize",
-      "link": "https://www.smh.com.au/business/companies/sarytogan-launches-deep-hunt-for-kazakh-copper-prize-20260615-p606zv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Sarytogan Graphite has begun diamond drilling at its Ilkin copper prospect in Kazakhstan, targeting a large-scale porphyry system defined by a 600m-wide bedrock anomaly.",
-      "pubDate": "Mon, 15 Jun 2026 16:00:07 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Two big banks have slashed their house price forecasts. The numbers are hair-raising",
-      "link": "https://www.smh.com.au/business/banking-and-finance/two-big-banks-have-slashed-their-house-price-forecasts-the-numbers-are-hair-raising-20260615-p606u9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The signs are difficult to ignore: an avalanche of sellers, increasing levels of stale stock sitting on property portal shelves, and auction clearance rates wallowing around 50 per cent.",
-      "pubDate": "Mon, 15 Jun 2026 15:50:15 +1000",
       "source": "SMH Business"
     }
   ]
