@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-16T17:27:04.341Z",
+  "fetchedAt": "2026-06-16T21:23:18.064Z",
   "asx200": {
     "value": 8917.7,
     "change": 286.9,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.71,
     "change": -0.01,
-    "changePercent": -1.93,
+    "changePercent": -2,
     "previousClose": 0.72,
     "asOf": "2026-06-16",
     "history": [
@@ -181,6 +181,10 @@
         "close": 0.71
       },
       {
+        "date": "2026-06-15",
+        "close": 0.71
+      },
+      {
         "date": "2026-06-16",
         "close": 0.71
       }
@@ -191,33 +195,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4356,
-      "change": -199.8,
-      "changePercent": -4.39
+      "price": 4353,
+      "change": -202.8,
+      "changePercent": -4.45
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 70.04,
-      "change": -7.12,
-      "changePercent": -9.23
+      "price": 70.13,
+      "change": -7.04,
+      "changePercent": -9.12
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 75.22,
-      "change": -30.2,
-      "changePercent": -28.65
+      "price": 75.83,
+      "change": -29.59,
+      "changePercent": -28.07
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.49,
-      "change": 0.24,
-      "changePercent": 3.82
+      "price": 6.48,
+      "change": 0.23,
+      "changePercent": 3.66
     },
     {
       "name": "BHP Group",
@@ -826,6 +830,62 @@
   ],
   "news": [
     {
+      "title": "'Unfair on him': Origin coaches back ref after gambling history revealed",
+      "link": "https://www.abc.net.au/news/2026-06-17/state-of-origin-game-two-coaches-back-referee-ashley-klein/106806528",
+      "snippet": "",
+      "pubDate": "Tue, 16 Jun 2026 20:49:45 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to slide, oil prices fall to lowest since March; Pizza Hut sold in $3.8b deal",
+      "link": "https://www.smh.com.au/business/markets/asx-eyes-flat-start-oil-prices-fall-pizza-hut-sold-in-3-8b-deal-20260617-p607ft.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Oil prices sank again and dropped below $US80 per barrel for the first time since early March, while US stocks drifted near their all-time highs in mixed trading.",
+      "pubDate": "Wed, 17 Jun 2026 06:40:30 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Gout runs a stunning third as Lyles breaks world record",
+      "link": "https://www.abc.net.au/news/2026-06-17/gout-gout-third-in-150m-ostrava-golden-spike-event/106806422",
+      "snippet": "",
+      "pubDate": "Tue, 16 Jun 2026 19:40:15 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Smart Succession",
+      "link": "https://www.smh.com.au/business/banking-and-finance/smart-succession-20260612-p606c9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "With billions in assets set to pass between generations, our six-part series simplifies the daunting world of inheritance planning.",
+      "pubDate": "Wed, 17 Jun 2026 05:30:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "What time is State of Origin Game II tonight?",
+      "link": "https://www.abc.net.au/news/2026-06-17/what-time-is-state-of-origin-game-ii-tonight-how-to-watch/106802416",
+      "snippet": "",
+      "pubDate": "Tue, 16 Jun 2026 19:10:21 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Female talent takes the brunt of Seven’s on-air job cuts",
+      "link": "https://www.smh.com.au/business/companies/female-talent-takes-the-brunt-of-seven-s-on-air-job-cuts-20260615-p606w5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "After Seven’s parent company announced job cuts, nine female on-air presenters are departing the Sydney and Melbourne newsrooms.",
+      "pubDate": "Wed, 17 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Normally, I’m a friend of the taxman. But now ...",
+      "link": "https://www.smh.com.au/business/the-economy/normally-i-m-a-friend-of-the-taxman-but-now-20260616-p607c4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Have you tried contacting the Australian Tax Office recently? I have, unsuccessfully, and the taxman owes me money.",
+      "pubDate": "Wed, 17 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Mbappe scores worldie after Aussie ref's 'nonsensical' VAR call",
+      "link": "https://www.abc.net.au/news/2026-06-17/world-cup-live-fra-sen-irq-nor-arg-alg-aut-jor/106801964",
+      "snippet": "",
+      "pubDate": "Tue, 16 Jun 2026 18:09:03 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "High-profile private equity boss faces investigation following car crash",
       "link": "https://www.smh.com.au/business/companies/high-profile-private-equity-boss-faces-investigation-following-car-crash-20260616-p607ef.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "TPG Capital has brought in a law firm to investigate the circumstances of Joel Thickins’ alleged car crash and separate allegations raised following the collision.",
@@ -852,62 +912,6 @@
       "snippet": "The move will clear a major hurdle for Australians flying to Europe for summer, after travel insurers refused to issue coverage for trips via the Middle East.",
       "pubDate": "Tue, 16 Jun 2026 18:26:33 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Grill’d could be forced to donate millions for allegedly burying the fine print",
-      "link": "https://www.smh.com.au/business/companies/grill-d-allegedly-misled-customers-over-tree-day-tuesday-charity-donations-20260616-p6074w.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The burger chain claimed it was donating $1 per burger sold during a promotion, but the consumer watchdog alleges only 4 per cent of purchases actually qualified.",
-      "pubDate": "Tue, 16 Jun 2026 17:51:04 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX ends flat after RBA rate call; Wall Street rallies on peace deal",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-global-stocks-jump-on-peace-deal-spacex-rises-again-20260616-p6072k.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket trod water as investors paused to assess the durability of the relief rally fuelled by the US-Iran deal to reopen the Strait of Hormuz.",
-      "pubDate": "Tue, 16 Jun 2026 17:17:10 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Australia’s oil price hits three-month low on US-Iran peace hopes",
-      "link": "https://www.smh.com.au/business/the-economy/australia-s-oil-price-hits-three-month-low-on-us-iran-peace-hopes-20260616-p6074f.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The price drop is fuelling hopes for lower prices at the bowser as the federal government’s 32¢-a-litre fuel discount ends.",
-      "pubDate": "Tue, 16 Jun 2026 15:57:03 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Munster backs Maroons teammate to honour late dad in Origin II",
-      "link": "https://www.abc.net.au/news/2026-06-16/state-of-origin-maroons-blues-tino-faasuamaleaui-cameron-munster/106804476",
-      "snippet": "",
-      "pubDate": "Tue, 16 Jun 2026 05:38:49 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Lachlan Murdoch pulls on his big boy pants to do a ‘Dad’ deal",
-      "link": "https://www.smh.com.au/business/companies/lachlan-murdoch-pulls-on-his-big-boy-pants-to-do-a-dad-deal-20260616-p6075r.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The deal for Roku marks the first major move by Lachlan Murdoch since last year’s resolution of the family succession drama. Investors are already asking questions.",
-      "pubDate": "Tue, 16 Jun 2026 15:15:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Iran's players celebrated at World Cup but complicated feelings remain",
-      "link": "https://www.abc.net.au/news/2026-06-16/world-cup-iran-new-zealand-mixed-emotions-diaspora/106802470",
-      "snippet": "",
-      "pubDate": "Tue, 16 Jun 2026 04:16:49 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Quick hits: Cabo Verde finds player on LinkedIn, meet Merlin the Duck",
-      "link": "https://www.abc.net.au/news/2026-06-16/world-cup-quick-hits-cabo-verde-tunisia-merlin-the-duck/106802100",
-      "snippet": "",
-      "pubDate": "Tue, 16 Jun 2026 03:27:43 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Ashes, tears and power rise in a farewell to old Leichhardt",
-      "link": "https://www.abc.net.au/news/2026-06-16/leichhardt-oval-last-game-wests-tigers-redevelopment/106801770",
-      "snippet": "",
-      "pubDate": "Tue, 16 Jun 2026 03:18:20 +0000",
-      "source": "ABC News"
     }
   ]
 }
