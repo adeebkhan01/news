@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-17T16:08:47.500Z",
+  "fetchedAt": "2026-06-17T20:32:30.022Z",
   "asx200": {
     "value": 8966.3,
     "change": 335.5,
@@ -94,9 +94,9 @@
     ]
   },
   "audusd": {
-    "value": 0.71,
-    "change": -0.01,
-    "changePercent": -1.97,
+    "value": 0.7,
+    "change": -0.02,
+    "changePercent": -2.74,
     "previousClose": 0.72,
     "asOf": "2026-06-17",
     "history": [
@@ -189,8 +189,12 @@
         "close": 0.71
       },
       {
-        "date": "2026-06-17",
+        "date": "2026-06-16",
         "close": 0.71
+      },
+      {
+        "date": "2026-06-17",
+        "close": 0.7
       }
     ]
   },
@@ -199,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4383.1,
-      "change": -169.4,
-      "changePercent": -3.72
+      "price": 4284,
+      "change": -268.5,
+      "changePercent": -5.9
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 70.82,
-      "change": -6.25,
-      "changePercent": -8.11
+      "price": 68.04,
+      "change": -9.03,
+      "changePercent": -11.72
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 75.92,
-      "change": -32.74,
-      "changePercent": -30.13
+      "price": 75.23,
+      "change": -33.43,
+      "changePercent": -30.77
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.49,
-      "change": 0.22,
-      "changePercent": 3.53
+      "price": 6.37,
+      "change": 0.1,
+      "changePercent": 1.52
     },
     {
       "name": "BHP Group",
@@ -834,6 +838,48 @@
   ],
   "news": [
     {
+      "title": "ASX set to fall, Wall Street slumps as Fed holds but signals rate rise this year",
+      "link": "https://www.smh.com.au/business/markets/asx-set-for-flat-start-wall-street-wobbles-as-fed-stays-on-hold-rate-rise-possible-this-year-20260618-p607tm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "US stocks slumped on speculation the Federal Reserve may hike interest rates this year to keep a lid on inflation.",
+      "pubDate": "Thu, 18 Jun 2026 06:25:07 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Perry makes ominous return with the ball in T20 World Cup trouncing",
+      "link": "https://www.abc.net.au/news/2026-06-18/womens-t20-world-cup-australia-dominates-bangladesh/106811828",
+      "snippet": "",
+      "pubDate": "Wed, 17 Jun 2026 19:51:41 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Devils coaching choice both a blessing and a curse",
+      "link": "https://www.abc.net.au/news/2026-06-18/tasmania-devils-afl-coach-choice-dilemma/106810738",
+      "snippet": "",
+      "pubDate": "Wed, 17 Jun 2026 19:22:28 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "What to know about the Socceroos's next World Cup match",
+      "link": "https://www.abc.net.au/news/2026-06-18/socceroos-world-cup-group-stage-game-two-usa/106807694",
+      "snippet": "",
+      "pubDate": "Wed, 17 Jun 2026 19:13:27 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "‘We were never going to win that race’: Lincraft’s 88-year battle to survive isn’t over",
+      "link": "https://www.smh.com.au/business/companies/we-were-never-going-to-win-that-race-lincraft-s-88-year-battle-to-survive-isn-t-over-20260617-p607nt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Over the decades, the specialty fabric and crafts retailer has had to reinvent itself to keep up with the times – and its boss isn’t ready to give up yet.",
+      "pubDate": "Thu, 18 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: England scores retaken penalty to lead Croatia, DR Congo holds Portugal",
+      "link": "https://www.abc.net.au/news/2026-06-18/world-cup-live-portugal-congo-england-croatia-ghana-panama-uz-co/106807430",
+      "snippet": "",
+      "pubDate": "Wed, 17 Jun 2026 16:29:35 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Vega: Qantas shows off its first ultra-long-haul plane",
       "link": "https://www.smh.com.au/business/companies/qantas-names-london-as-first-destination-for-project-sunrise-flights-20260612-p606bq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Nearly a decade after Project Sunrise was announced by Qantas, the specially built plane will allow Australians to travel non-stop to London.",
@@ -841,10 +887,17 @@
       "source": "SMH Business"
     },
     {
-      "title": "Quick hits: They did the Munster mash, so why no Walsh?",
+      "title": "Quick hits: Munster's HIA miracle and Klein listens to his bunker",
       "link": "https://www.abc.net.au/news/2026-06-17/state-of-origin-ii-blues-maroons-quick-hits-walsh-cobbo-staggs/106803222",
       "snippet": "",
       "pubDate": "Wed, 17 Jun 2026 13:46:06 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Debutant stars for Australia in T20 win over Bangladesh",
+      "link": "https://www.abc.net.au/news/2026-06-17/australia-bangladesh-t20-men/106811350",
+      "snippet": "",
+      "pubDate": "Wed, 17 Jun 2026 12:55:24 +0000",
       "source": "ABC News"
     },
     {
@@ -866,55 +919,6 @@
       "link": "https://www.abc.net.au/news/2026-06-17/state-of-origin-game-ii-live-nsw-vs-queensland-mcg-blog/106802642",
       "snippet": "",
       "pubDate": "Wed, 17 Jun 2026 07:59:56 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Star Casino’s Chinese money laundering scandal claims another pair",
-      "link": "https://www.smh.com.au/business/companies/star-casino-s-chinese-money-laundering-scandal-claims-another-pair-20260617-p607is.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Two former executives of The Star Entertainment Group Ltd  have been handed penalties for breaching the Corporations Act.",
-      "pubDate": "Wed, 17 Jun 2026 17:58:39 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX finishes higher as gold miners rise; ARN soars on Sandilands settlement",
-      "link": "https://www.smh.com.au/business/markets/asx-eyes-flat-start-oil-prices-fall-pizza-hut-sold-in-3-8b-deal-20260617-p607ft.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket reversed early losses to close in the green, as oil prices slumped further after the peace deal in the Middle East.",
-      "pubDate": "Wed, 17 Jun 2026 17:44:02 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Jackie O’s talks with KIIS broke down ahead of Sandilands settlement",
-      "link": "https://www.smh.com.au/business/companies/kyle-sandilands-closes-in-on-15m-settlement-with-kiis-fm-owner-20260616-p607e1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The controversial broadcaster had been seeking up to $85 million, but settled for $13.6 million on Wednesday while KIIS’ talks with his former co-host stall.",
-      "pubDate": "Wed, 17 Jun 2026 16:56:37 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Iraqi scores goal in World Cup debut after being detained by US customs",
-      "link": "https://www.abc.net.au/news/2026-06-17/world-cup-2026-iraq-norway-aymen-hussein-us-customs/106810216",
-      "snippet": "",
-      "pubDate": "Wed, 17 Jun 2026 06:27:30 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "King River deploys drone tech to unlock hidden WA gold",
-      "link": "https://www.smh.com.au/business/companies/king-river-deploys-drone-tech-to-unlock-hidden-wa-gold-20260617-p607pr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "King River Resources has launched a drone-borne magnetic survey at its historic WA Mindoolah gold project, targeting the source of high-grade gold mined in the early 1900’s.",
-      "pubDate": "Wed, 17 Jun 2026 16:18:53 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "New Zealanders become first World Cup mother-son duo",
-      "link": "https://www.abc.net.au/news/2026-06-17/world-cup-2026-new-zealand-tyler-jenny-bindon-mother-son/106808218",
-      "snippet": "",
-      "pubDate": "Wed, 17 Jun 2026 05:51:45 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "England enjoying 'right to dream' about winning World Cup",
-      "link": "https://www.abc.net.au/news/2026-06-17/world-cup-2026-england-harry-kane-thomas-tuchel-croatia/106809564",
-      "snippet": "",
-      "pubDate": "Wed, 17 Jun 2026 05:43:21 +0000",
       "source": "ABC News"
     }
   ]
