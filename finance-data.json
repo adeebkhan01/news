@@ -1,11 +1,11 @@
 {
-  "fetchedAt": "2026-06-17T22:54:29.566Z",
+  "fetchedAt": "2026-06-18T05:10:30.872Z",
   "asx200": {
-    "value": 8966.3,
-    "change": 335.5,
-    "changePercent": 3.89,
-    "previousClose": 8630.8,
-    "asOf": "2026-06-17",
+    "value": 8922.4,
+    "change": 417.1,
+    "changePercent": 4.9,
+    "previousClose": 8505.3,
+    "asOf": "2026-06-18",
     "history": [
       {
         "date": "2026-05-18",
@@ -90,15 +90,23 @@
       {
         "date": "2026-06-16",
         "close": 8917.7
+      },
+      {
+        "date": "2026-06-17",
+        "close": 8966.3
+      },
+      {
+        "date": "2026-06-18",
+        "close": 8922.4
       }
     ]
   },
   "audusd": {
     "value": 0.7,
-    "change": -0.02,
-    "changePercent": -2.72,
-    "previousClose": 0.72,
-    "asOf": "2026-06-17",
+    "change": -0.01,
+    "changePercent": -1.29,
+    "previousClose": 0.71,
+    "asOf": "2026-06-18",
     "history": [
       {
         "date": "2026-05-17",
@@ -193,7 +201,7 @@
         "close": 0.71
       },
       {
-        "date": "2026-06-17",
+        "date": "2026-06-18",
         "close": 0.7
       }
     ]
@@ -203,169 +211,169 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4282.8,
-      "change": -269.7,
-      "changePercent": -5.92
+      "price": 4334.8,
+      "change": -217.7,
+      "changePercent": -4.78
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 67.98,
-      "change": -9.09,
-      "changePercent": -11.8
+      "price": 69.07,
+      "change": -8.01,
+      "changePercent": -10.39
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 75.4,
-      "change": -33.26,
-      "changePercent": -30.61
+      "price": 74.12,
+      "change": -34.54,
+      "changePercent": -31.79
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.37,
-      "change": 0.1,
-      "changePercent": 1.63
+      "price": 6.38,
+      "change": 0.11,
+      "changePercent": 1.75
     },
     {
       "name": "BHP Group",
       "icon": "⛏️",
       "iconBg": "#e6f2ec",
-      "price": 65.59,
-      "change": 5.13,
-      "changePercent": 8.48
+      "price": 65.33,
+      "change": 6.56,
+      "changePercent": 11.16
     },
     {
       "name": "Rio Tinto",
       "icon": "🏗️",
       "iconBg": "#eff6ff",
-      "price": 186.91,
-      "change": 1.16,
-      "changePercent": 0.62
+      "price": 183.64,
+      "change": 4.63,
+      "changePercent": 2.59
     }
   ],
   "sectors": [
     {
       "name": "Financials",
-      "changePercent": 0.18,
+      "changePercent": -0.53,
       "stocks": [
         {
           "name": "CBA",
-          "price": 163.71,
-          "changePercent": 1.13
+          "price": 162.29,
+          "changePercent": -0.87
         },
         {
           "name": "WBC",
-          "price": 35.56,
-          "changePercent": -0.53
+          "price": 35.17,
+          "changePercent": -1.1
         },
         {
           "name": "ANZ",
-          "price": 35.05,
-          "changePercent": 0.69
+          "price": 35.31,
+          "changePercent": 0.73
         },
         {
           "name": "NAB",
-          "price": 37.67,
-          "changePercent": -0.58
+          "price": 37.34,
+          "changePercent": -0.88
         }
       ]
     },
     {
       "name": "Materials",
-      "changePercent": 0.06,
+      "changePercent": -1.62,
       "stocks": [
         {
           "name": "BHP",
-          "price": 65.59,
-          "changePercent": 0.61
+          "price": 65.33,
+          "changePercent": -0.39
         },
         {
           "name": "RIO",
-          "price": 186.91,
-          "changePercent": -0.96
+          "price": 183.64,
+          "changePercent": -1.75
         },
         {
           "name": "FMG",
-          "price": 20.32,
-          "changePercent": -1.07
+          "price": 19.9,
+          "changePercent": -2.09
         },
         {
           "name": "MIN",
-          "price": 71.97,
-          "changePercent": 1.67
+          "price": 70.35,
+          "changePercent": -2.25
         }
       ]
     },
     {
       "name": "Health Care",
-      "changePercent": 1.6,
+      "changePercent": -0.36,
       "stocks": [
         {
           "name": "CSL",
-          "price": 106.79,
-          "changePercent": 0.51
+          "price": 107.68,
+          "changePercent": 0.83
         },
         {
           "name": "COH",
-          "price": 111.32,
-          "changePercent": 4.17
+          "price": 113.33,
+          "changePercent": 1.81
         },
         {
           "name": "RMD",
-          "price": 27.55,
-          "changePercent": 0.58
+          "price": 26.58,
+          "changePercent": -3.52
         },
         {
           "name": "SHL",
-          "price": 19.88,
-          "changePercent": 1.12
+          "price": 19.77,
+          "changePercent": -0.58
         }
       ]
     },
     {
       "name": "Consumer Discretionary",
-      "changePercent": 1.31,
+      "changePercent": -0.26,
       "stocks": [
         {
           "name": "WES",
-          "price": 85.49,
-          "changePercent": 0.27
+          "price": 86.51,
+          "changePercent": 1.19
         },
         {
           "name": "HVN",
-          "price": 4.87,
-          "changePercent": 1.25
+          "price": 4.81,
+          "changePercent": -1.23
         },
         {
           "name": "JBH",
-          "price": 78.73,
-          "changePercent": 0.61
+          "price": 78.51,
+          "changePercent": -0.28
         },
         {
           "name": "ALL",
-          "price": 53.87,
-          "changePercent": 3.12
+          "price": 53.47,
+          "changePercent": -0.74
         }
       ]
     },
     {
       "name": "Industrials",
-      "changePercent": -0.25,
+      "changePercent": 0.56,
       "stocks": [
         {
           "name": "TCL",
-          "price": 14.89,
-          "changePercent": -1.19
+          "price": 15.05,
+          "changePercent": 1.07
         },
         {
           "name": "BXB",
-          "price": 18.71,
-          "changePercent": 0
+          "price": 18.93,
+          "changePercent": 1.18
         },
         {
           "name": "SYD",
@@ -375,163 +383,163 @@
         {
           "name": "QAN",
           "price": 9.98,
-          "changePercent": 0.2
+          "changePercent": 0
         }
       ]
     },
     {
       "name": "Real Estate",
-      "changePercent": 0.71,
+      "changePercent": -1.11,
       "stocks": [
         {
           "name": "GMG",
-          "price": 32.7,
-          "changePercent": 1.36
+          "price": 32.56,
+          "changePercent": -0.43
         },
         {
           "name": "SGP",
-          "price": 4.3,
-          "changePercent": 0.94
+          "price": 4.26,
+          "changePercent": -0.93
         },
         {
           "name": "GPT",
-          "price": 5.07,
-          "changePercent": -0.59
+          "price": 4.97,
+          "changePercent": -2.07
         },
         {
           "name": "MGR",
-          "price": 1.78,
-          "changePercent": 1.14
+          "price": 1.76,
+          "changePercent": -1.01
         }
       ]
     },
     {
       "name": "Consumer Staples",
-      "changePercent": -0.32,
+      "changePercent": 1.07,
       "stocks": [
         {
           "name": "WOW",
-          "price": 37.78,
-          "changePercent": -1.25
+          "price": 38.13,
+          "changePercent": 0.93
         },
         {
           "name": "COL",
-          "price": 23.12,
-          "changePercent": -1.32
+          "price": 23.4,
+          "changePercent": 1.19
         },
         {
           "name": "TWE",
-          "price": 4.83,
+          "price": 4.81,
           "changePercent": -0.41
         },
         {
           "name": "A2M",
-          "price": 6.01,
-          "changePercent": 1.69
+          "price": 6.17,
+          "changePercent": 2.58
         }
       ]
     },
     {
       "name": "Energy",
-      "changePercent": -1.94,
+      "changePercent": -1.2,
       "stocks": [
         {
           "name": "WDS",
-          "price": 28.96,
-          "changePercent": -3.6
+          "price": 28.79,
+          "changePercent": -0.6
         },
         {
           "name": "STO",
-          "price": 7.36,
-          "changePercent": -1.21
+          "price": 7.29,
+          "changePercent": -1.02
         },
         {
           "name": "ORG",
-          "price": 10.86,
-          "changePercent": -0.73
+          "price": 10.85,
+          "changePercent": -0.14
         },
         {
           "name": "WHC",
-          "price": 8.36,
-          "changePercent": -2.22
+          "price": 8.11,
+          "changePercent": -3.05
         }
       ]
     },
     {
       "name": "Information Technology",
-      "changePercent": 2.25,
+      "changePercent": -1.39,
       "stocks": [
         {
           "name": "XRO",
-          "price": 74.58,
-          "changePercent": 3.45
+          "price": 71.89,
+          "changePercent": -3.61
         },
         {
           "name": "WTC",
-          "price": 38.3,
-          "changePercent": 4.1
+          "price": 36.66,
+          "changePercent": -4.3
         },
         {
           "name": "CPU",
-          "price": 36.55,
-          "changePercent": 0.99
+          "price": 36.91,
+          "changePercent": 0.97
         },
         {
           "name": "APX",
-          "price": 1.1,
-          "changePercent": 0.46
+          "price": 1.11,
+          "changePercent": 1.37
         }
       ]
     },
     {
       "name": "Communication Services",
-      "changePercent": 1.34,
+      "changePercent": 0.11,
       "stocks": [
         {
           "name": "TLS",
-          "price": 5.08,
-          "changePercent": -0.78
+          "price": 5.07,
+          "changePercent": -0.2
         },
         {
           "name": "REA",
-          "price": 145.48,
-          "changePercent": 1.13
+          "price": 143.34,
+          "changePercent": -1.47
         },
         {
           "name": "CAR",
-          "price": 27.62,
-          "changePercent": 3.95
+          "price": 27.93,
+          "changePercent": 1.12
         },
         {
           "name": "NWS",
-          "price": 41.77,
-          "changePercent": 1.06
+          "price": 42.18,
+          "changePercent": 0.98
         }
       ]
     },
     {
       "name": "Utilities",
-      "changePercent": -1.74,
+      "changePercent": -0.37,
       "stocks": [
         {
           "name": "AGL",
-          "price": 8.54,
-          "changePercent": -1.61
+          "price": 8.53,
+          "changePercent": -0.18
         },
         {
           "name": "APA",
-          "price": 10.42,
-          "changePercent": -2.98
+          "price": 10.45,
+          "changePercent": 0.29
         },
         {
           "name": "ORG",
-          "price": 10.86,
-          "changePercent": -0.73
+          "price": 10.85,
+          "changePercent": -0.14
         },
         {
           "name": "MEZ",
-          "price": 4.78,
-          "changePercent": -1.65
+          "price": 4.71,
+          "changePercent": -1.46
         }
       ]
     }
@@ -838,87 +846,87 @@
   ],
   "news": [
     {
-      "title": "Walker's breakout Origin performance showed us both sides of his coin",
-      "link": "https://www.abc.net.au/news/2026-06-18/queensland-maroons-state-of-origin-game-two-sam-walker/106729708",
+      "title": "Red Metal heap leach breakthrough fires up Qld rare earths play",
+      "link": "https://www.smh.com.au/business/companies/red-metal-heap-leach-breakthrough-fires-up-qld-rare-earths-play-20260618-p6083p.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Red Metal Limited says leach tests at its huge Sybella rare earths project near Mount Isa back a heap-leach pathway, with coarse saprock and transitional ore delivering stunning recoveries.",
+      "pubDate": "Thu, 18 Jun 2026 14:16:18 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Australia is crying out for more tradies. Why aren’t young people answering?",
+      "link": "https://www.smh.com.au/business/workplace/australia-is-crying-out-for-more-tradies-why-aren-t-young-people-answering-20260618-p607xj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "All around the world, young people are hedging their bets on tangible skills they can hold on to in an unpredictable future. But that’s not happening here.",
+      "pubDate": "Thu, 18 Jun 2026 14:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Flagship unveils monster Canadian copper opportunity",
+      "link": "https://www.smh.com.au/business/companies/flagship-unveils-monster-canadian-copper-opportunity-20260618-p6083k.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Flagship Minerals has landed the Whipsaw copper project in British Columbia, Canada, unveiling a massive drill-supported exploration target of up to 1.02 billion tonnes.",
+      "pubDate": "Thu, 18 Jun 2026 13:58:29 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Viking hits ore sorting success at Nevada tungsten play",
+      "link": "https://www.smh.com.au/business/companies/viking-hits-ore-sorting-success-at-nevada-tungsten-play-20260618-p6082v.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Viking Mines has proven sensor-based ore sorting can successfully upgrade tungsten feed and reject barren waste rocks at its Linka project in Nevada.",
+      "pubDate": "Thu, 18 Jun 2026 13:20:07 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "How Max Plath became Queensland's newest Origin cult hero",
+      "link": "https://www.abc.net.au/news/2026-06-18/queensland-state-of-origin-max-plath-game-ii/106813208",
       "snippet": "",
-      "pubDate": "Wed, 17 Jun 2026 21:36:46 +0000",
+      "pubDate": "Thu, 18 Jun 2026 02:37:30 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Maroons star reveals dad's message before heartbreaking death",
-      "link": "https://www.abc.net.au/news/2026-06-18/state-of-origin-ii-tino-faasuamaleaui-reveals-dads-dying-message/106811940",
+      "title": "World Cup quick hits: Star whacks US pundit and Mabil's heartwarming moment",
+      "link": "https://www.abc.net.au/news/2026-06-18/world-cup-quick-hits-with-ronaldo-and-tartan-army-in-boston/106811764",
       "snippet": "",
-      "pubDate": "Wed, 17 Jun 2026 21:27:33 +0000",
+      "pubDate": "Thu, 18 Jun 2026 02:06:51 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Hope turns to expectation as Fremantle flexes flag muscle",
-      "link": "https://www.abc.net.au/news/2026-06-18/fremantle-dockers-afl-premiership-favourites-can-they-win/106808708",
+      "title": "So far, so good: The Warsh era at the Fed gets under way",
+      "link": "https://www.smh.com.au/business/the-economy/so-far-so-good-the-warsh-era-at-the-fed-gets-underway-20260618-p607uv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The new Federal Reserve chair has been keen to show the world he’s not Trump’s “sock puppet”. His first performance suggests he’ll be his own man.",
+      "pubDate": "Thu, 18 Jun 2026 11:56:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Jackie O fights to keep date for $82m court battle after Kyle settles case",
+      "link": "https://www.smh.com.au/business/companies/jackie-o-pushes-to-keep-court-date-after-kyle-settles-case-20260617-p607qf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Lawyers acting for Jackie “O” Henderson want to keep an October trial date for her $82 million wrongful dismissal claim against her former employers at KIIS FM despite preparation delays.",
+      "pubDate": "Thu, 18 Jun 2026 11:52:24 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "England's high-octane start betrays World Cup nerves",
+      "link": "https://www.abc.net.au/news/2026-06-18/world-cup-england-croatia-fear-nerves/106811876",
       "snippet": "",
-      "pubDate": "Wed, 17 Jun 2026 21:11:45 +0000",
+      "pubDate": "Thu, 18 Jun 2026 01:27:31 +0000",
       "source": "ABC News"
     },
     {
-      "title": "ASX set to fall, Wall Street slumps as Fed holds but signals rate rise this year",
+      "title": "ASX steady after Fed spooks Wall Street",
       "link": "https://www.smh.com.au/business/markets/asx-set-for-flat-start-wall-street-wobbles-as-fed-stays-on-hold-rate-rise-possible-this-year-20260618-p607tm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "US stocks slumped on speculation the Federal Reserve may hike interest rates this year to keep a lid on inflation.",
-      "pubDate": "Thu, 18 Jun 2026 06:25:07 +1000",
+      "snippet": "The Australian sharemarket has dipped at the open while Wall Street slumped as new Fed chair Kevin Warsh began his tenure with a solemn vow to curb inflation.",
+      "pubDate": "Thu, 18 Jun 2026 11:23:55 +1000",
       "source": "SMH Business"
     },
     {
-      "title": "Perry makes ominous return with the ball in T20 World Cup trouncing",
-      "link": "https://www.abc.net.au/news/2026-06-18/womens-t20-world-cup-australia-dominates-bangladesh/106811828",
+      "title": "Olympic medallist undergoes CPR after collapsing during event",
+      "link": "https://www.abc.net.au/news/2026-06-18/jenny-simpson-undergoes-cpr-after-collapsing-at-event/106812602",
       "snippet": "",
-      "pubDate": "Wed, 17 Jun 2026 19:51:41 +0000",
+      "pubDate": "Thu, 18 Jun 2026 00:36:17 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Devils coaching choice both a blessing and a curse",
-      "link": "https://www.abc.net.au/news/2026-06-18/tasmania-devils-afl-coach-choice-dilemma/106810738",
+      "title": "Cycling star to miss Tour de France in major blow to Vingegaard's hopes",
+      "link": "https://www.abc.net.au/news/2026-06-18/tour-de-france-wout-van-aert-confirmed-out-with-elbow-injury/106812318",
       "snippet": "",
-      "pubDate": "Wed, 17 Jun 2026 19:22:28 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "What to know about the Socceroos's next World Cup match",
-      "link": "https://www.abc.net.au/news/2026-06-18/socceroos-world-cup-group-stage-game-two-usa/106807694",
-      "snippet": "",
-      "pubDate": "Wed, 17 Jun 2026 19:13:27 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "‘We were never going to win that race’: Lincraft’s 88-year battle to survive isn’t over",
-      "link": "https://www.smh.com.au/business/companies/we-were-never-going-to-win-that-race-lincraft-s-88-year-battle-to-survive-isn-t-over-20260617-p607nt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Over the decades, the specialty fabric and crafts retailer has had to reinvent itself to keep up with the times – and its boss isn’t ready to give up yet.",
-      "pubDate": "Thu, 18 Jun 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Live: England claims victory over Croatia in frenetic clash",
-      "link": "https://www.abc.net.au/news/2026-06-18/world-cup-live-portugal-congo-england-croatia-ghana-panama-uz-co/106807430",
-      "snippet": "",
-      "pubDate": "Wed, 17 Jun 2026 16:29:35 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Vega: Qantas shows off its first ultra-long-haul plane",
-      "link": "https://www.smh.com.au/business/companies/qantas-names-london-as-first-destination-for-project-sunrise-flights-20260612-p606bq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Nearly a decade after Project Sunrise was announced by Qantas, the specially built plane will allow Australians to travel non-stop to London.",
-      "pubDate": "Thu, 18 Jun 2026 01:43:47 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Quick hits: Munster's HIA miracle and Klein listens to his bunker",
-      "link": "https://www.abc.net.au/news/2026-06-17/state-of-origin-ii-blues-maroons-quick-hits-walsh-cobbo-staggs/106803222",
-      "snippet": "",
-      "pubDate": "Wed, 17 Jun 2026 13:46:06 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Debutant stars for Australia in T20 win over Bangladesh",
-      "link": "https://www.abc.net.au/news/2026-06-17/australia-bangladesh-t20-men/106811350",
-      "snippet": "",
-      "pubDate": "Wed, 17 Jun 2026 12:55:24 +0000",
+      "pubDate": "Wed, 17 Jun 2026 23:32:49 +0000",
       "source": "ABC News"
     }
   ]
