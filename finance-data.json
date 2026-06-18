@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-18T20:41:03.595Z",
+  "fetchedAt": "2026-06-18T23:13:35.623Z",
   "asx200": {
     "value": 8911.1,
     "change": 405.8,
@@ -99,15 +99,11 @@
   },
   "audusd": {
     "value": 0.7,
-    "change": -0.01,
-    "changePercent": -1.56,
-    "previousClose": 0.71,
+    "change": -0.02,
+    "changePercent": -2.13,
+    "previousClose": 0.72,
     "asOf": "2026-06-18",
     "history": [
-      {
-        "date": "2026-05-17",
-        "close": 0.71
-      },
       {
         "date": "2026-05-18",
         "close": 0.72
@@ -211,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4236.6,
-      "change": -315.9,
-      "changePercent": -6.94
+      "price": 4217.9,
+      "change": -334.6,
+      "changePercent": -7.35
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 66,
-      "change": -11.08,
-      "changePercent": -14.37
+      "price": 65.57,
+      "change": -11.51,
+      "changePercent": -14.93
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 75.41,
-      "change": -33.25,
-      "changePercent": -30.6
+      "price": 75.44,
+      "change": -33.22,
+      "changePercent": -30.57
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.39,
-      "change": 0.11,
-      "changePercent": 1.82
+      "price": 6.37,
+      "change": 0.1,
+      "changePercent": 1.57
     },
     {
       "name": "BHP Group",
@@ -846,6 +842,41 @@
   ],
   "news": [
     {
+      "title": "KPMG inquiry live stream: Lendlease bosses slam consultancy’s ‘fundamental breach of trust’",
+      "link": "https://www.smh.com.au/business/companies/watch-live-kpmg-clients-and-associates-face-senate-questioning-20260618-p6083v.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The committee is probing allegations that KPMG misused confidential client information to win work, which have already led to several resignations.",
+      "pubDate": "Fri, 19 Jun 2026 09:03:08 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ASX set to fall, Wall Street rebounds; Intel surges as Trump announces Apple deal; SpaceX declines again",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-wall-street-rebounds-intel-surges-as-trump-announces-apple-deal-20260619-p6088p.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Stocks rose on Wall Street, taking back most of their losses from a day earlier, and are on track to notch weekly gains.",
+      "pubDate": "Fri, 19 Jun 2026 08:01:50 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "The little-known sport unlocking Florence's competitive edge",
+      "link": "https://www.abc.net.au/news/2026-06-19/boccia-inclusive-school-sport-paralympic-goals/106806578",
+      "snippet": "",
+      "pubDate": "Thu, 18 Jun 2026 21:31:24 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'Pumped' Australian battler stuns Czech star in Queen's Club boilover",
+      "link": "https://www.abc.net.au/news/2026-06-19/tennis-queens-club-championships-rinky-hijikata-beats-lehecka/106816972",
+      "snippet": "",
+      "pubDate": "Thu, 18 Jun 2026 21:26:55 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Messi calls for 'humanity' as father receives treatment",
+      "link": "https://www.abc.net.au/news/2026-06-19/world-cup-lionel-messi-father-jorges-medical-treatment/106816932",
+      "snippet": "",
+      "pubDate": "Thu, 18 Jun 2026 21:08:38 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "The 'mental toughness' that created an Aussie World Cup 'superstar'",
       "link": "https://www.abc.net.au/news/2026-06-19/patrick-beach-socceroos-fifa-world-cup-western-sydney/106803764",
       "snippet": "",
@@ -853,17 +884,10 @@
       "source": "ABC News"
     },
     {
-      "title": "Qantas’ Project Sunrise is no sonic boom, but an incremental ‘moonshot’",
+      "title": "Qantas’ Project Sunrise could be the Concorde in reverse",
       "link": "https://www.smh.com.au/business/companies/qantas-project-sunrise-is-no-sonic-boom-but-an-incremental-moonshot-20260612-p606bs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Qantas’ new 22-hour mega-long-haul plane represents something rare in the commercial aviation sector: engineering progress. Whether travellers buy it is another question.",
+      "snippet": "The supersonic airliner was an infamously niche service. Qantas’ new ultra long haul flights could start that way, but find a broader audience.",
       "pubDate": "Fri, 19 Jun 2026 05:50:35 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX set to fall, Wall Street rebounds; Intel surges as Trump announces Apple deal",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-wall-street-rebounds-intel-surges-as-trump-announces-apple-deal-20260619-p6088p.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Stocks rose on Wall Street, taking back most of their losses from a day earlier, and are on track to notch weekly gains.",
-      "pubDate": "Fri, 19 Jun 2026 05:21:01 +1000",
       "source": "SMH Business"
     },
     {
@@ -900,34 +924,6 @@
       "snippet": "Hot on the heels of the Midtown Plaza’s $154 million sale comes another big Bourke Street Mall listing, next door to the wildly popular Mecca superstore.",
       "pubDate": "Fri, 19 Jun 2026 05:00:00 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "24 hour party people to return to the Cross",
-      "link": "https://www.smh.com.au/business/small-business/24-hour-party-people-to-return-to-the-cross-20260618-p6083r.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Redevelopment of a square block in Kings Cross that housed some of the suburb’s most famed late-night establishments – The Bourbon and Beefsteak, and Les Girls – is one step closer to completion.",
-      "pubDate": "Fri, 19 Jun 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Live: American superstar in doubt for Socceroos clash, South Africa leaves it late",
-      "link": "https://www.abc.net.au/news/2026-06-19/world-cup-live-cze-south-africa-sui-bhi-can-qat-mex-kor/106812430",
-      "snippet": "",
-      "pubDate": "Thu, 18 Jun 2026 15:43:18 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Crows legend Tony Modra seriously injured in crash",
-      "link": "https://www.abc.net.au/news/2026-06-18/tony-modra-involved-in-serious-crash-sa/106731684",
-      "snippet": "",
-      "pubDate": "Thu, 18 Jun 2026 13:01:18 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Dockers down Cats as Bolton takes mark of the year contender",
-      "link": "https://www.abc.net.au/news/2026-06-18/afl-rd-15-live-fremantle-geelong/106811332",
-      "snippet": "",
-      "pubDate": "Thu, 18 Jun 2026 09:41:53 +0000",
-      "source": "ABC News"
     }
   ]
 }
