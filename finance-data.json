@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-18T10:50:46.436Z",
+  "fetchedAt": "2026-06-18T15:56:47.282Z",
   "asx200": {
     "value": 8911.1,
     "change": 405.8,
@@ -94,17 +94,13 @@
       {
         "date": "2026-06-17",
         "close": 8966.3
-      },
-      {
-        "date": "2026-06-18",
-        "close": 8911.1
       }
     ]
   },
   "audusd": {
     "value": 0.7,
     "change": -0.01,
-    "changePercent": -1.65,
+    "changePercent": -1.5,
     "previousClose": 0.71,
     "asOf": "2026-06-18",
     "history": [
@@ -211,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4285.8,
-      "change": -266.7,
-      "changePercent": -5.86
+      "price": 4247.5,
+      "change": -305,
+      "changePercent": -6.7
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 68.26,
-      "change": -8.82,
-      "changePercent": -11.44
+      "price": 66.17,
+      "change": -10.9,
+      "changePercent": -14.15
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 74.66,
-      "change": -34,
-      "changePercent": -31.29
+      "price": 73.8,
+      "change": -34.86,
+      "changePercent": -32.08
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.41,
+      "price": 6.4,
       "change": 0.13,
-      "changePercent": 2.14
+      "changePercent": 2.02
     },
     {
       "name": "BHP Group",
@@ -846,7 +842,14 @@
   ],
   "news": [
     {
-      "title": "Live: Dockers, Cats meet in Perth blockbuster to start round 15",
+      "title": "Live: Czechia, South Africa desperate to get on the board as World Cup continues",
+      "link": "https://www.abc.net.au/news/2026-06-19/world-cup-live-cze-south-africa-sui-bhi-can-qat-mex-kor/106812430",
+      "snippet": "",
+      "pubDate": "Thu, 18 Jun 2026 15:43:18 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Dockers beat Cats for 13th straight win, as Bolton takes incredible mark",
       "link": "https://www.abc.net.au/news/2026-06-18/afl-rd-15-live-fremantle-geelong/106811332",
       "snippet": "",
       "pubDate": "Thu, 18 Jun 2026 09:41:53 +0000",
@@ -920,13 +923,6 @@
       "link": "https://www.smh.com.au/business/companies/forrestania-stakes-claim-as-next-emerging-gold-force-in-wa-20260618-p60860.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Forrestania Resources completes its rapid WA transformation, targeting a late-2026 gold pour backed by a massive 3.2Mtpa regional processing hub and 1.68Moz.",
       "pubDate": "Thu, 18 Jun 2026 16:45:10 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Kuniko hits high-grade gold-silver in old NSW workings",
-      "link": "https://www.smh.com.au/business/companies/kuniko-hits-high-grade-gold-silver-in-old-nsw-workings-20260618-p6085u.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Kuniko has nailed more high-grade gold and silver at two historic prospects just 1km from its main NSW project, with rock chips hitting up to 4.7g/t gold equivalent, including 118g/t silver.",
-      "pubDate": "Thu, 18 Jun 2026 16:34:23 +1000",
       "source": "SMH Business"
     }
   ]
