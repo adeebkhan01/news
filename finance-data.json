@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-18T15:56:47.282Z",
+  "fetchedAt": "2026-06-18T20:41:03.595Z",
   "asx200": {
     "value": 8911.1,
     "change": 405.8,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.01,
-    "changePercent": -1.5,
+    "changePercent": -1.56,
     "previousClose": 0.71,
     "asOf": "2026-06-18",
     "history": [
@@ -197,6 +197,10 @@
         "close": 0.71
       },
       {
+        "date": "2026-06-17",
+        "close": 0.7
+      },
+      {
         "date": "2026-06-18",
         "close": 0.7
       }
@@ -207,33 +211,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4247.5,
-      "change": -305,
-      "changePercent": -6.7
+      "price": 4236.6,
+      "change": -315.9,
+      "changePercent": -6.94
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 66.17,
-      "change": -10.9,
-      "changePercent": -14.15
+      "price": 66,
+      "change": -11.08,
+      "changePercent": -14.37
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 73.8,
-      "change": -34.86,
-      "changePercent": -32.08
+      "price": 75.41,
+      "change": -33.25,
+      "changePercent": -30.6
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.4,
-      "change": 0.13,
-      "changePercent": 2.02
+      "price": 6.39,
+      "change": 0.11,
+      "changePercent": 1.82
     },
     {
       "name": "BHP Group",
@@ -842,88 +846,88 @@
   ],
   "news": [
     {
-      "title": "Live: Czechia, South Africa desperate to get on the board as World Cup continues",
+      "title": "The 'mental toughness' that created an Aussie World Cup 'superstar'",
+      "link": "https://www.abc.net.au/news/2026-06-19/patrick-beach-socceroos-fifa-world-cup-western-sydney/106803764",
+      "snippet": "",
+      "pubDate": "Thu, 18 Jun 2026 20:27:35 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Qantas’ Project Sunrise is no sonic boom, but an incremental ‘moonshot’",
+      "link": "https://www.smh.com.au/business/companies/qantas-project-sunrise-is-no-sonic-boom-but-an-incremental-moonshot-20260612-p606bs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Qantas’ new 22-hour mega-long-haul plane represents something rare in the commercial aviation sector: engineering progress. Whether travellers buy it is another question.",
+      "pubDate": "Fri, 19 Jun 2026 05:50:35 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ASX set to fall, Wall Street rebounds; Intel surges as Trump announces Apple deal",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-wall-street-rebounds-intel-surges-as-trump-announces-apple-deal-20260619-p6088p.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Stocks rose on Wall Street, taking back most of their losses from a day earlier, and are on track to notch weekly gains.",
+      "pubDate": "Fri, 19 Jun 2026 05:21:01 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "AFL matriarch stored guns for Dezi Freeman, helped wife get to Australia",
+      "link": "https://www.abc.net.au/news/2026-06-19/dezi-freeman-kay-reid-stored-guns-for-police-killer/106813888",
+      "snippet": "",
+      "pubDate": "Thu, 18 Jun 2026 19:05:57 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "I wrote a stinging letter to an employer who rejected me. Was that wise?",
+      "link": "https://www.smh.com.au/business/workplace/i-wrote-a-stinging-letter-to-an-employer-who-rejected-me-was-that-wise-20260618-p607xg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "After waiting weeks or months to hear back from a dream role, it’s understandable to want to vent your frustration when you hear nothing back.",
+      "pubDate": "Fri, 19 Jun 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Kyle needed to settle. He had a new $2 million mortgage charging up to 30% interest",
+      "link": "https://www.smh.com.au/business/companies/kyle-needed-to-settle-he-had-a-new-2-million-mortgage-charging-up-to-30-percent-interest-20260617-p607h2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The shock jock projects a wealthy image, but a month after being sacked he signed up to a second mortgage on one Sydney property charging an eye-watering rate.",
+      "pubDate": "Fri, 19 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Pauline Hanson is picking up support but won’t fix our one true problem",
+      "link": "https://www.smh.com.au/business/the-economy/pauline-hanson-is-picking-up-support-but-won-t-fix-our-one-true-problem-20260618-p6082q.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "One Nation’s rise reflects some real worries Australians have. But backing their leader is a sign of short-sightedness.",
+      "pubDate": "Fri, 19 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Mall gets a makeover; Bourke Street buildings sell; Moon sets on North Fitzroy reception centre",
+      "link": "https://www.smh.com.au/business/companies/mall-gets-a-makeover-bourke-street-buildings-sell-moon-sets-on-north-fitzroy-reception-centre-20260618-p6083f.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Hot on the heels of the Midtown Plaza’s $154 million sale comes another big Bourke Street Mall listing, next door to the wildly popular Mecca superstore.",
+      "pubDate": "Fri, 19 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "24 hour party people to return to the Cross",
+      "link": "https://www.smh.com.au/business/small-business/24-hour-party-people-to-return-to-the-cross-20260618-p6083r.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Redevelopment of a square block in Kings Cross that housed some of the suburb’s most famed late-night establishments – The Bourbon and Beefsteak, and Les Girls – is one step closer to completion.",
+      "pubDate": "Fri, 19 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: American superstar in doubt for Socceroos clash, South Africa leaves it late",
       "link": "https://www.abc.net.au/news/2026-06-19/world-cup-live-cze-south-africa-sui-bhi-can-qat-mex-kor/106812430",
       "snippet": "",
       "pubDate": "Thu, 18 Jun 2026 15:43:18 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Dockers beat Cats for 13th straight win, as Bolton takes incredible mark",
+      "title": "Crows legend Tony Modra seriously injured in crash",
+      "link": "https://www.abc.net.au/news/2026-06-18/tony-modra-involved-in-serious-crash-sa/106731684",
+      "snippet": "",
+      "pubDate": "Thu, 18 Jun 2026 13:01:18 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Dockers down Cats as Bolton takes mark of the year contender",
       "link": "https://www.abc.net.au/news/2026-06-18/afl-rd-15-live-fremantle-geelong/106811332",
       "snippet": "",
       "pubDate": "Thu, 18 Jun 2026 09:41:53 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "‘Sexualisation was the point’: Grill’d workers demand apology over ‘buns’ ad",
-      "link": "https://www.smh.com.au/business/companies/sexualisation-was-the-point-grill-d-workers-demand-apology-over-buns-ad-20260618-p6080c.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "A suggestive new campaign has sparked backlash from Grill’d employees, compounding its woes after a separate lawsuit from the consumer watchdog.",
-      "pubDate": "Thu, 18 Jun 2026 19:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "True North bags neighbouring deposit to supercharge QLD copper play",
-      "link": "https://www.smh.com.au/business/companies/true-north-bags-neighbouring-deposit-to-supercharge-qld-copper-play-20260618-p6087n.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "True North Copper has consolidated its Cloncurry copper project, by acquiring the adjacent Mongoose resource, combining the Taipan-Mongoose resources into a bigger system.",
-      "pubDate": "Thu, 18 Jun 2026 18:38:59 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Aureka swells Vic gold bounty above 450,000 ounces",
-      "link": "https://www.smh.com.au/business/companies/aureka-swells-vic-gold-bounty-above-450-000-ounces-20260618-p60878.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Aureka has lifted its global inferred gold inventory 26 per cent to 454,800oz after a sharp upgrade at its Irvine project in Victoria’s richly endowed Stawell corridor.",
-      "pubDate": "Thu, 18 Jun 2026 18:02:30 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "‘He’s a legend’: Sandilands reveals he has united with Hanson",
-      "link": "https://www.smh.com.au/business/companies/he-s-a-legend-sandilands-reveals-he-has-united-with-hanson-20260618-p6086i.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The former radio host says he has helped One Nation spread its message, but the party has denied he has any formal role in its organisation.",
-      "pubDate": "Thu, 18 Jun 2026 17:59:09 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "HSBC cops $35m penalty over scam call failings that left a toll on customers",
-      "link": "https://www.smh.com.au/business/banking-and-finance/hsbc-cops-35m-penalty-over-scam-call-failings-that-left-a-toll-on-customers-20260618-p607x9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "More than 1000 of HSBC’s Australian customers were targeted by the scheme where scammers used text messages and spoofed numbers to convince customers to transfer large sums of cash.",
-      "pubDate": "Thu, 18 Jun 2026 17:55:24 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Giants not sweating on Greene contract extension talks",
-      "link": "https://www.abc.net.au/news/2026-06-18/afl-gws-giants-toby-greene-off-contract/106815560",
-      "snippet": "",
-      "pubDate": "Thu, 18 Jun 2026 07:33:01 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX falls after Fed spooks Wall Street; Miners and energy stocks decline",
-      "link": "https://www.smh.com.au/business/markets/asx-set-for-flat-start-wall-street-wobbles-as-fed-stays-on-hold-rate-rise-possible-this-year-20260618-p607tm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket finished lower after speculation that the US central bank would hike interest rates this year weighed on prices for base metals, sending down miners.",
-      "pubDate": "Thu, 18 Jun 2026 17:24:49 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Magpies admit Hill is 'a long way away from playing footy'",
-      "link": "https://www.abc.net.au/news/2026-06-18/afl-collingwood-magpies-bobby-hill-craig-mcrae/106815252",
-      "snippet": "",
-      "pubDate": "Thu, 18 Jun 2026 06:57:05 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Litchfield maps out new NT copper-nickel search zone",
-      "link": "https://www.smh.com.au/business/companies/litchfield-maps-out-new-nt-copper-nickel-search-zone-20260618-p60868.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Litchfield Minerals says its BHP Xplor-backed work has recast its Harts Range project in the NT as a broad copper-nickel system, with new geophysics refining drill targets.",
-      "pubDate": "Thu, 18 Jun 2026 16:50:08 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Forrestania stakes claim as next emerging gold force in WA",
-      "link": "https://www.smh.com.au/business/companies/forrestania-stakes-claim-as-next-emerging-gold-force-in-wa-20260618-p60860.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Forrestania Resources completes its rapid WA transformation, targeting a late-2026 gold pour backed by a massive 3.2Mtpa regional processing hub and 1.68Moz.",
-      "pubDate": "Thu, 18 Jun 2026 16:45:10 +1000",
-      "source": "SMH Business"
     }
   ]
 }
