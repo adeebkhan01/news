@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-19T15:45:36.019Z",
+  "fetchedAt": "2026-06-19T20:09:34.375Z",
   "asx200": {
     "value": 8828.7,
     "change": 224,
@@ -90,13 +90,17 @@
       {
         "date": "2026-06-17",
         "close": 8966.3
+      },
+      {
+        "date": "2026-06-18",
+        "close": 8911.1
       }
     ]
   },
   "audusd": {
     "value": 0.7,
     "change": -0.02,
-    "changePercent": -2.24,
+    "changePercent": -2.2,
     "previousClose": 0.72,
     "asOf": "2026-06-19",
     "history": [
@@ -203,17 +207,17 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4170.2,
-      "change": -382.3,
-      "changePercent": -8.4
+      "price": 4172.9,
+      "change": -379.6,
+      "changePercent": -8.34
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 64.82,
-      "change": -12.26,
-      "changePercent": -15.9
+      "price": 64.91,
+      "change": -12.16,
+      "changePercent": -15.78
     },
     {
       "name": "Crude Oil (WTI)",
@@ -227,9 +231,9 @@
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.33,
+      "price": 6.34,
       "change": 0.06,
-      "changePercent": 0.96
+      "changePercent": 1.04
     },
     {
       "name": "BHP Group",
@@ -838,6 +842,27 @@
   ],
   "news": [
     {
+      "title": "How blind faith in the internet helped a man fulfill a World Cup promise",
+      "link": "https://www.abc.net.au/news/2026-06-20/blind-faith-in-the-internet-sent-ash-jurberg-to-the-world-cup/106822368",
+      "snippet": "",
+      "pubDate": "Fri, 19 Jun 2026 18:58:56 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "The road to Australian citizenship for separated Afghan sisters",
+      "link": "https://www.abc.net.au/news/2026-06-20/afghan-sisters-reunited-and-obtain-citizenship/106804410",
+      "snippet": "",
+      "pubDate": "Fri, 19 Jun 2026 18:51:29 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Socceroos trail US 2-0 as VAR call breaks Aussie hearts",
+      "link": "https://www.abc.net.au/news/2026-06-20/world-cup-socceroos-vs-usa-live-australia/106817274",
+      "snippet": "",
+      "pubDate": "Fri, 19 Jun 2026 17:45:32 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Renshaw shines with bat and ball as Aussies seal Bangladesh T20 series",
       "link": "https://www.abc.net.au/news/2026-06-20/australia-wins-t20-series-with-six-run-win-over-bangladesh/106821852",
       "snippet": "",
@@ -898,27 +923,6 @@
       "link": "https://www.smh.com.au/business/companies/west-wits-locks-in-a-96-7m-to-drive-south-african-gold-ramp-up-20260619-p608hs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "West Wits Mining has secured a $96.7 million funding package to fully fund its Qala Shallows gold mine, positioning it for a ramp-up to 70,000-ounce-per-annum production.",
       "pubDate": "Fri, 19 Jun 2026 16:51:16 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Superbikes move leaves Phillip Island community in limbo",
-      "link": "https://www.abc.net.au/news/2026-06-19/superbikes-move-phillip-island-to-south-australia/106819704",
-      "snippet": "",
-      "pubDate": "Fri, 19 Jun 2026 06:41:01 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Big Hits: Aruma Resources, McLaren Minerals and BMC Minerals",
-      "link": "https://www.smh.com.au/business/companies/big-hits-aruma-resources-mclaren-minerals-and-bmc-minerals-20260619-p608hb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Bulls N’ Bears Big Hits looks at notable drill hits recently reported to the ASX, led by Aruma Resources in Ontario, with McLaren Minerals in WA and BMC Minerals in Yukon, Canada.",
-      "pubDate": "Fri, 19 Jun 2026 16:13:19 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "‘I resigned’: Former premier rues trust in KPMG at fiery hearing",
-      "link": "https://www.smh.com.au/business/companies/i-resigned-former-premier-rues-trust-in-kpmg-at-fiery-hearing-20260619-p608bb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Former KPMG director Mike Baird has savaged the consultancy’s use of legal professional privilege to shield key documents in a whistleblower scandal from public view.",
-      "pubDate": "Fri, 19 Jun 2026 16:09:38 +1000",
       "source": "SMH Business"
     }
   ]
