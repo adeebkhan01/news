@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-22T12:28:49.662Z",
+  "fetchedAt": "2026-06-22T17:15:16.033Z",
   "asx200": {
     "value": 8816.1,
     "change": 159.1,
@@ -86,17 +86,13 @@
       {
         "date": "2026-06-19",
         "close": 8828.7
-      },
-      {
-        "date": "2026-06-22",
-        "close": 8816.1
       }
     ]
   },
   "audusd": {
     "value": 0.7,
     "change": -0.01,
-    "changePercent": -1.9,
+    "changePercent": -2,
     "previousClose": 0.71,
     "asOf": "2026-06-22",
     "history": [
@@ -195,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4225.3,
-      "change": -295.7,
-      "changePercent": -6.54
+      "price": 4205.7,
+      "change": -315.3,
+      "changePercent": -6.97
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 66.44,
-      "change": -9.45,
-      "changePercent": -12.46
+      "price": 65.62,
+      "change": -10.27,
+      "changePercent": -13.54
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 74.83,
-      "change": -21.77,
-      "changePercent": -22.54
+      "price": 73.68,
+      "change": -22.92,
+      "changePercent": -23.73
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.37,
-      "change": 0.03,
-      "changePercent": 0.5
+      "price": 6.36,
+      "change": 0.02,
+      "changePercent": 0.31
     },
     {
       "name": "BHP Group",
@@ -830,6 +826,13 @@
   ],
   "news": [
     {
+      "title": "Live: Messi misses penalty with World Cup goal record beckoning",
+      "link": "https://www.abc.net.au/news/2026-06-23/world-cup-live-argentina-messi-aut-france-irq-nor-sen-jdn-alg/106826184",
+      "snippet": "",
+      "pubDate": "Mon, 22 Jun 2026 16:32:29 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Where’s the tap? Why public bathrooms give me a sinking feeling",
       "link": "https://www.smh.com.au/business/consumer-affairs/where-s-the-tap-why-public-bathrooms-give-me-a-sinking-feeling-20260622-p6090b.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "I used to wonder at the technological wonder that was the public-bathroom electric hand dryer. Now I just want to know how to turn it on.",
@@ -904,13 +907,6 @@
       "link": "https://www.smh.com.au/business/companies/the-new-david-jones-boss-needs-a-turnaround-miracle-20260622-p608yh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The crucial news at Australia’s oldest department store isn’t the sudden change in chief executive, it’s that the chain lives to fight another day.",
       "pubDate": "Mon, 22 Jun 2026 14:58:39 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Gateway nails high-grade gold in new WA Yandal discovery",
-      "link": "https://www.smh.com.au/business/companies/gateway-nails-high-grade-gold-in-new-wa-yandal-discovery-20260622-p60921.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Gateway Mining’s new Cowza discovery has delivered 4m at 4.7g/t gold, highlighting a 4.5km untested gap between another recent find at its Yandal project in WA.",
-      "pubDate": "Mon, 22 Jun 2026 14:53:09 +1000",
       "source": "SMH Business"
     }
   ]
