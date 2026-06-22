@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-22T17:15:16.033Z",
+  "fetchedAt": "2026-06-22T21:17:03.284Z",
   "asx200": {
     "value": 8816.1,
     "change": 159.1,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.01,
-    "changePercent": -2,
+    "changePercent": -1.99,
     "previousClose": 0.71,
     "asOf": "2026-06-22",
     "history": [
@@ -181,6 +181,10 @@
         "close": 0.7
       },
       {
+        "date": "2026-06-21",
+        "close": 0.7
+      },
+      {
         "date": "2026-06-22",
         "close": 0.7
       }
@@ -191,33 +195,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4205.7,
-      "change": -315.3,
-      "changePercent": -6.97
+      "price": 4209.7,
+      "change": -311.3,
+      "changePercent": -6.89
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 65.62,
-      "change": -10.27,
-      "changePercent": -13.54
+      "price": 65.19,
+      "change": -10.71,
+      "changePercent": -14.11
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 73.68,
-      "change": -22.92,
-      "changePercent": -23.73
+      "price": 74.08,
+      "change": -22.52,
+      "changePercent": -23.31
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.36,
-      "change": 0.02,
-      "changePercent": 0.31
+      "price": 6.37,
+      "change": 0.03,
+      "changePercent": 0.39
     },
     {
       "name": "BHP Group",
@@ -826,7 +830,42 @@
   ],
   "news": [
     {
-      "title": "Live: Messi misses penalty with World Cup goal record beckoning",
+      "title": "Ex-Wimbledon champ handed four-year suspension for refusing doping test",
+      "link": "https://www.abc.net.au/news/2026-06-23/tennis-wimbledon-champion-marketa-vondrousova-doping-ban/106830194",
+      "snippet": "",
+      "pubDate": "Mon, 22 Jun 2026 21:14:43 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Australian sprinter feels 'absolutely robbed' after Commonwealth Games snub",
+      "link": "https://www.abc.net.au/news/2026-06-23/commonwealth-games-australian-athletics-squad-josh-azzopardi/106830120",
+      "snippet": "",
+      "pubDate": "Mon, 22 Jun 2026 20:37:22 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "The 31-year-old billionaire Ray-Ban heir fighting to control the family’s fortune",
+      "link": "https://www.smh.com.au/business/companies/the-31-year-old-billionaire-ray-ban-heir-fighting-to-control-the-family-s-fortune-20260622-p608t9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Leonardo Maria Del Vecchio has escalated a battle over one of Europe’s biggest business empires.",
+      "pubDate": "Tue, 23 Jun 2026 06:24:29 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ASX set to rise, SpaceX slumps; Former Fed chair Greenspan dies at 100",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-spacex-weighs-on-wall-street-former-fed-chair-greenspan-dies-at-100-20260623-p6095g.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "US stocks drifted through a mixed day of trading after resuming following a three-day weekend, with SpaceX falling again.",
+      "pubDate": "Tue, 23 Jun 2026 06:20:01 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Messi's record-breaking World Cup goals make believers of us all",
+      "link": "https://www.abc.net.au/news/2026-06-23/world-cup-argentina-austria-dallas-lionel-messi-record-goals/106824684",
+      "snippet": "",
+      "pubDate": "Mon, 22 Jun 2026 20:00:36 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Messi breaks World Cup goal scoring record with another brilliant double",
       "link": "https://www.abc.net.au/news/2026-06-23/world-cup-live-argentina-messi-aut-france-irq-nor-sen-jdn-alg/106826184",
       "snippet": "",
       "pubDate": "Mon, 22 Jun 2026 16:32:29 +0000",
@@ -872,41 +911,6 @@
       "link": "https://www.smh.com.au/business/markets/while-the-world-scrambles-for-oil-china-sits-on-full-tanks-20260622-p608u6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "China finds itself in a very different position from much of the world, which is emerging from the war in Iran with depleted oil supplies.",
       "pubDate": "Mon, 22 Jun 2026 17:15:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "King River moves to wake sleeping WA Murchison goldfield",
-      "link": "https://www.smh.com.au/business/companies/king-river-moves-to-wake-sleeping-wa-murchison-goldfield-20260622-p6093c.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "King River Resources has kicked off a drilling program where the old-timers left off at its historic Mindoolah gold project near Cue, targeting stockpiles and deeper lodes.",
-      "pubDate": "Mon, 22 Jun 2026 16:51:56 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Knight facing judiciary over homophobic slur, Mitchell limps at training",
-      "link": "https://www.abc.net.au/news/2026-06-22/newcastle-knight-alleged-homophobic-slur-nsw-cup/106828628",
-      "snippet": "",
-      "pubDate": "Mon, 22 Jun 2026 06:33:02 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Lindian readies first blast at Malawian rare earths mine",
-      "link": "https://www.smh.com.au/business/companies/lindian-lines-up-first-blast-at-malawian-rare-earths-mine-20260622-p6092u.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Lindian Resources has shifted its giant Kangankunde rare earths project in Malawi into mining mode, with ore stockpiled and first production targeted for Q4 2026 as the first blast nears.",
-      "pubDate": "Mon, 22 Jun 2026 16:12:27 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "I banned an obnoxious diner for the first time. It started with the burnt tuile",
-      "link": "https://www.smh.com.au/business/small-business/i-banned-an-obnoxious-diner-for-the-first-time-it-started-with-the-burnt-tuile-20260622-p608xt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The night had been going well at my restaurant, especially considering the earlier dramas. But then I got a whisper in my ear: “Unhappy lady in pink.”",
-      "pubDate": "Mon, 22 Jun 2026 15:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "The new David Jones boss needs a turnaround miracle",
-      "link": "https://www.smh.com.au/business/companies/the-new-david-jones-boss-needs-a-turnaround-miracle-20260622-p608yh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The crucial news at Australia’s oldest department store isn’t the sudden change in chief executive, it’s that the chain lives to fight another day.",
-      "pubDate": "Mon, 22 Jun 2026 14:58:39 +1000",
       "source": "SMH Business"
     }
   ]
