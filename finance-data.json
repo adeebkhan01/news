@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-23T20:28:19.981Z",
+  "fetchedAt": "2026-06-23T22:41:57.328Z",
   "asx200": {
     "value": 8787,
     "change": 130,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.02,
-    "changePercent": -3.23,
+    "changePercent": -3.22,
     "previousClose": 0.71,
     "asOf": "2026-06-23",
     "history": [
@@ -181,6 +181,10 @@
         "close": 0.7
       },
       {
+        "date": "2026-06-22",
+        "close": 0.7
+      },
+      {
         "date": "2026-06-23",
         "close": 0.69
       }
@@ -191,25 +195,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4126.7,
-      "change": -394.3,
-      "changePercent": -8.72
+      "price": 4122.2,
+      "change": -398.8,
+      "changePercent": -8.82
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 61.61,
-      "change": -14.28,
-      "changePercent": -18.82
+      "price": 61.58,
+      "change": -14.31,
+      "changePercent": -18.86
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 73.34,
-      "change": -23.26,
-      "changePercent": -24.08
+      "price": 73.13,
+      "change": -23.47,
+      "changePercent": -24.3
     },
     {
       "name": "Copper",
@@ -217,7 +221,7 @@
       "iconBg": "#fef0e6",
       "price": 6.13,
       "change": -0.21,
-      "changePercent": -3.34
+      "changePercent": -3.39
     },
     {
       "name": "BHP Group",
@@ -826,6 +830,34 @@
   ],
   "news": [
     {
+      "title": "Injury mars Australia's crushing T20 World Cup win over Pakistan",
+      "link": "https://www.abc.net.au/news/2026-06-24/cricket-australia-beats-pakistan-t20-world-cup-england/106834732",
+      "snippet": "",
+      "pubDate": "Tue, 23 Jun 2026 21:38:57 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Stefanovic’s controversial podcast with far-right extremist pulled from YouTube",
+      "link": "https://www.smh.com.au/business/companies/stefanovic-praises-courage-of-far-right-activist-on-controversial-podcast-20260623-p609fn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Far-right activist Tommy Robinson praised Pauline Hanson in the interview with Nine Network star Karl Stefanovic, who said he admired Robinson’s “tenacity” and “courage”.",
+      "pubDate": "Wed, 24 Jun 2026 07:08:54 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Aussies produce mixed results in Wimbledon qualifying",
+      "link": "https://www.abc.net.au/news/2026-06-24/wimbledon-qualifying-emerson-jones-storm-hunter/106834664",
+      "snippet": "",
+      "pubDate": "Tue, 23 Jun 2026 20:53:20 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set for gains, AI stocks weigh on Wall Street; SpaceX swings higher",
+      "link": "https://www.smh.com.au/business/markets/asx-set-for-gains-tech-giants-weigh-on-wall-street-spacex-swings-higher-20260624-p609hh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Stocks fell on Wall Street  as a sell-off in big technology companies spread from Asia back to the US over worries about potentially higher interest rates by the end of the year.",
+      "pubDate": "Wed, 24 Jun 2026 06:33:20 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Ronaldo roars back to life, with his moments off the ball the most telling",
       "link": "https://www.abc.net.au/news/2026-06-24/world-cup-cristiano-ronaldo-portugal-uzbekistan-houston/106824686",
       "snippet": "",
@@ -840,11 +872,11 @@
       "source": "ABC News"
     },
     {
-      "title": "ASX set for gains, tech giants weigh on Wall Street; SpaceX swings higher; Alibaba sues US",
-      "link": "https://www.smh.com.au/business/markets/asx-set-for-gains-tech-giants-weigh-on-wall-street-spacex-swings-higher-20260624-p609hh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Stocks fell on Wall Street  as a sell-off in big technology companies spread from Asia back to the US over worries about potentially higher interest rates by the end of the year.",
-      "pubDate": "Wed, 24 Jun 2026 05:18:28 +1000",
-      "source": "SMH Business"
+      "title": "'Proud to come from this place': Devils captain Jye Menzie on his upbringing",
+      "link": "https://www.abc.net.au/news/2026-06-24/devils-captain-jye-menzie-on-growing-up-in-bridgewater/106833298",
+      "snippet": "",
+      "pubDate": "Tue, 23 Jun 2026 19:27:37 +0000",
+      "source": "ABC News"
     },
     {
       "title": "Virgin set to pocket up to $93m as customers run out of time to cash in COVID credits",
@@ -854,7 +886,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Ronaldo makes a statement, England takes on Ghana",
+      "title": "Live: England frustrated by resolute Ghana, Ronaldo makes a statement",
       "link": "https://www.abc.net.au/news/2026-06-24/fifa-world-cup-live-portugal-cristiano-ronaldo-england-ghana/106833962",
       "snippet": "",
       "pubDate": "Tue, 23 Jun 2026 16:13:39 +0000",
@@ -880,34 +912,6 @@
       "snippet": "The KPMG scandal has claimed another three scalps, with its chairman among the latest to accept accountability for the misuse of confidential customer information.",
       "pubDate": "Tue, 23 Jun 2026 17:57:21 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "ASX falls as tech stocks, gold miners decline; WiseTech extends its slump",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-spacex-weighs-on-wall-street-former-fed-chair-greenspan-dies-at-100-20260623-p6095g.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket finished lower after a tech sell-down weighed on Wall Street and as investors remained cautious awaiting the outcome of the peace talks between the US and Iran.",
-      "pubDate": "Tue, 23 Jun 2026 17:43:12 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ClearVue powers up with $6.25M and key EU solar glass approval",
-      "link": "https://www.smh.com.au/business/companies/clearvue-powers-up-with-6-25m-and-key-eu-solar-glass-approval-20260623-p609fk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "ClearVue has passed European certification for its Gen 3 solar glass and boosted its recent capital raise to $6.25M, helping fund product testing and global growth.",
-      "pubDate": "Tue, 23 Jun 2026 17:01:15 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Hastings scores $1M and processing muscle from Malaysian ally",
-      "link": "https://www.smh.com.au/business/companies/hastings-scores-1m-and-processing-muscle-from-malaysian-ally-20260623-p609ev.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Hastings has secured a $1M strategic investment from Malaysia’s Malaco Mining to support its rare earths strategy and Thai hydromet plant push.",
-      "pubDate": "Tue, 23 Jun 2026 16:31:26 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Alessandro Circati chose Australia over Italy. His dad approves",
-      "link": "https://www.abc.net.au/news/2026-06-23/alessandro-circati-dad-happy-his-son-chose-socceroos-over-italy/106831668",
-      "snippet": "",
-      "pubDate": "Tue, 23 Jun 2026 06:18:40 +0000",
-      "source": "ABC News"
     }
   ]
 }
