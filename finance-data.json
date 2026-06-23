@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-23T15:28:24.652Z",
+  "fetchedAt": "2026-06-23T17:24:21.262Z",
   "asx200": {
     "value": 8787,
     "change": 130,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.02,
-    "changePercent": -3.06,
+    "changePercent": -3.19,
     "previousClose": 0.71,
     "asOf": "2026-06-23",
     "history": [
@@ -191,25 +191,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4146.3,
-      "change": -374.7,
-      "changePercent": -8.29
+      "price": 4156.7,
+      "change": -364.3,
+      "changePercent": -8.06
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 62.03,
-      "change": -13.86,
-      "changePercent": -18.27
+      "price": 62.2,
+      "change": -13.69,
+      "changePercent": -18.04
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 73.31,
-      "change": -23.29,
-      "changePercent": -24.11
+      "price": 73.2,
+      "change": -23.4,
+      "changePercent": -24.22
     },
     {
       "name": "Copper",
@@ -826,6 +826,13 @@
   ],
   "news": [
     {
+      "title": "Live: Ronaldo scores opener as Portugal bounces back against Uzbekistan",
+      "link": "https://www.abc.net.au/news/2026-06-24/fifa-world-cup-live-portugal-cristiano-ronaldo-england-ghana/106833962",
+      "snippet": "",
+      "pubDate": "Tue, 23 Jun 2026 16:13:39 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Some A380s grounded amid emergency inspections for wing spar cracks",
       "link": "https://www.smh.com.au/business/companies/qantas-a380-grounded-amid-emergency-inspections-for-wing-spar-cracks-20260623-p609df.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The air safety directive to Qantas and other airlines for some of their A380s comes amid reports that the Australian carrier is eyeing a replacement plane for the superjumbo.",
@@ -901,13 +908,6 @@
       "snippet": "Dalaroo Metals has launched its biggest Greenland campaign yet, testing whether a 2.7km critical minerals discovery extends offshore and grows into a much bigger opportunity.",
       "pubDate": "Tue, 23 Jun 2026 13:56:34 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Quick hits: Wild weather, Messi magic and Merlin meets the president",
-      "link": "https://www.abc.net.au/news/2026-06-23/world-cup-quick-hits-june-23-messi-merlin-doku-weather/106830190",
-      "snippet": "",
-      "pubDate": "Tue, 23 Jun 2026 02:58:57 +0000",
-      "source": "ABC News"
     }
   ]
 }
