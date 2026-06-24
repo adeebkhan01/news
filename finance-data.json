@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-24T09:53:41.532Z",
+  "fetchedAt": "2026-06-24T15:14:20.156Z",
   "asx200": {
     "value": 8808.4,
     "change": 151.4,
@@ -90,17 +90,13 @@
       {
         "date": "2026-06-23",
         "close": 8787
-      },
-      {
-        "date": "2026-06-24",
-        "close": 8808.4
       }
     ]
   },
   "audusd": {
     "value": 0.69,
     "change": -0.03,
-    "changePercent": -3.55,
+    "changePercent": -3.53,
     "previousClose": 0.71,
     "asOf": "2026-06-24",
     "history": [
@@ -203,33 +199,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4083.4,
-      "change": -417,
-      "changePercent": -9.27
+      "price": 4021,
+      "change": -479.4,
+      "changePercent": -10.65
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 61.17,
-      "change": -15.14,
-      "changePercent": -19.84
+      "price": 58.94,
+      "change": -17.37,
+      "changePercent": -22.76
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 71.84,
-      "change": -22.05,
-      "changePercent": -23.48
+      "price": 69.77,
+      "change": -24.12,
+      "changePercent": -25.69
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.11,
-      "change": -0.25,
-      "changePercent": -3.96
+      "price": 5.96,
+      "change": -0.4,
+      "changePercent": -6.24
     },
     {
       "name": "BHP Group",
@@ -838,6 +834,13 @@
   ],
   "news": [
     {
+      "title": "Today show host Karl Stefanovic to leave Nine after Tommy Robinson podcast fallout",
+      "link": "https://www.smh.com.au/business/companies/today-show-host-karl-stefanovic-to-leave-nine-after-tommy-robinson-podcast-fallout-20260624-p609j0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The decision clears the way for a major shake-up of breakfast television, but also risks attracting the ire of the presenter’s new army of conservative backers.",
+      "pubDate": "Wed, 24 Jun 2026 20:29:53 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Stefanovic’s future at Nine under a cloud amid emergency meetings",
       "link": "https://www.smh.com.au/business/companies/stefanovic-s-controversial-podcast-with-far-right-extremist-pulled-offline-20260624-p609ij.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The Nine presenter’s controversial podcast interview with Tommy Robinson disappeared just 12 hours after going live. Sources said it was not removed by tech platforms.",
@@ -905,13 +908,6 @@
       "link": "https://www.smh.com.au/business/companies/lindian-brings-rare-earths-sales-in-house-with-singapore-hub-20260624-p609qn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Lindian Resources will open a Singapore sales office, taking marketing in-house to handle huge demand for its rare earths ahead of production in late 2026.",
       "pubDate": "Wed, 24 Jun 2026 15:09:51 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Rio2 beefs up Peru copper mine with big resource upgrade",
-      "link": "https://www.smh.com.au/business/companies/rio2-beefs-up-peru-copper-mine-with-big-resource-upgrade-20260624-p609qe.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Rio2 Ltd has tabled a hefty resource and reserve upgrade for its Condestable copper mine in Peru, extending its life to 14 years and underpinning a robust after-tax NPV of US$710 million.",
-      "pubDate": "Wed, 24 Jun 2026 14:53:19 +1000",
       "source": "SMH Business"
     },
     {
