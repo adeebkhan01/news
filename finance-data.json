@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-24T17:23:41.415Z",
+  "fetchedAt": "2026-06-24T20:14:46.126Z",
   "asx200": {
     "value": 8808.4,
     "change": 151.4,
@@ -95,8 +95,8 @@
   },
   "audusd": {
     "value": 0.69,
-    "change": -0.03,
-    "changePercent": -3.54,
+    "change": -0.02,
+    "changePercent": -3.47,
     "previousClose": 0.71,
     "asOf": "2026-06-24",
     "history": [
@@ -189,6 +189,10 @@
         "close": 0.7
       },
       {
+        "date": "2026-06-23",
+        "close": 0.69
+      },
+      {
         "date": "2026-06-24",
         "close": 0.69
       }
@@ -199,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4024.6,
-      "change": -475.8,
-      "changePercent": -10.57
+      "price": 4015,
+      "change": -485.4,
+      "changePercent": -10.79
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 58.58,
-      "change": -17.73,
-      "changePercent": -23.24
+      "price": 57.54,
+      "change": -18.77,
+      "changePercent": -24.59
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 70.48,
-      "change": -23.41,
-      "changePercent": -24.93
+      "price": 69.97,
+      "change": -23.92,
+      "changePercent": -25.48
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 5.95,
-      "change": -0.41,
-      "changePercent": -6.51
+      "price": 5.98,
+      "change": -0.39,
+      "changePercent": -6.07
     },
     {
       "name": "BHP Group",
@@ -834,6 +838,48 @@
   ],
   "news": [
     {
+      "title": "Knights player Kepaoa banned for six weeks for homophobic slur",
+      "link": "https://www.abc.net.au/news/2026-06-25/asu-kepaoa-banned-for-six-weeks-over-homophobic-slur/106839020",
+      "snippet": "",
+      "pubDate": "Wed, 24 Jun 2026 19:49:15 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "The passion, pride and chaos of World Cup fan culture",
+      "link": "https://www.abc.net.au/news/2026-06-25/world-cup-fan-traditions-by-country-norway-scotland-japan/106827790",
+      "snippet": "",
+      "pubDate": "Wed, 24 Jun 2026 19:37:40 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to decline as Wall Street scuffles; Oil prices fall",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-decline-as-wall-street-scuffles-oil-prices-fall-20260625-p609vf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Stocks wavered in afternoon trading on Wall Street as big technology stocks slipped and weighed on the broader market.",
+      "pubDate": "Thu, 25 Jun 2026 05:17:50 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Hanson's Socceroos own goal should have been a free kick for Taylor",
+      "link": "https://www.abc.net.au/news/2026-06-25/multiculturalism-monoculture-pauline-hanson-angus-taylor-nestory/106836992",
+      "snippet": "",
+      "pubDate": "Wed, 24 Jun 2026 19:00:00 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "WFH is linked to worse mental health – but it’s a big boost for some",
+      "link": "https://www.smh.com.au/business/workplace/wfh-is-linked-to-worse-mental-health-but-it-s-a-big-boost-for-some-20260623-p609bq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Some remote workers go days without human contact and many have worse mental health, according to one study. But experts say that link is tenuous, with strong benefits for some groups.",
+      "pubDate": "Thu, 25 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Jam-packed day as last round of World Cup group clashes kicks off",
+      "link": "https://www.abc.net.au/news/2026-06-25/world-cup-2026-live-final-round-of-group-games/106838458",
+      "snippet": "",
+      "pubDate": "Wed, 24 Jun 2026 18:11:30 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Today show host Karl Stefanovic to leave Nine after Tommy Robinson podcast fallout",
       "link": "https://www.smh.com.au/business/companies/today-show-host-karl-stefanovic-to-leave-nine-after-tommy-robinson-podcast-fallout-20260624-p609j0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The decision clears the way for a major shake-up of breakfast television, but also risks attracting the ire of the presenter’s new army of conservative backers.",
@@ -874,48 +920,6 @@
       "snippet": "True North Copper has folded Mongoose into its Qld Cloncurry project, while chasing Wallace North growth and targeting a Q4 PFS as its copper production comeback gathers momentum.",
       "pubDate": "Wed, 24 Jun 2026 17:02:06 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Gold Fields places strategic bet on Augustus Minerals",
-      "link": "https://www.smh.com.au/business/companies/gold-fields-places-strategic-bet-on-augustus-minerals-20260624-p609st.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Gold major Gold Fields has taken a 5.33% stake in Augustus Minerals, grabbing a strategic foothold in its sprawling Music Well gold project in WA.",
-      "pubDate": "Wed, 24 Jun 2026 16:40:06 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Activewear brand Stax, worn by Jennifer Lopez and Lizzo, goes under",
-      "link": "https://www.smh.com.au/business/companies/activewear-brand-stax-worn-by-lizzo-and-jennifer-lopez-goes-under-20260624-p609sb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian brand famous for its black tights and fleeces announced on Wednesday that it had gone into receivership.",
-      "pubDate": "Wed, 24 Jun 2026 16:17:46 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "From Kyle to Karl: Media companies nurture personalities they ultimately can’t control",
-      "link": "https://www.smh.com.au/business/companies/from-kyle-to-karl-media-companies-nurture-personalities-they-ultimately-can-t-control-20260624-p609kp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "How far Nine pushes back to distance itself from Karl Stefanovic’s new identity is now up to the network.",
-      "pubDate": "Wed, 24 Jun 2026 16:04:44 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Great Southern fires up rig for WA gold drilling blitz",
-      "link": "https://www.smh.com.au/business/companies/great-southern-fires-up-rig-for-wa-gold-drilling-blitz-20260624-p609rl.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Great Southern Mining has begun RC drilling at its Mon Ami gold project near Laverton in WA as part of a fully funded 20,000m drilling blitz.",
-      "pubDate": "Wed, 24 Jun 2026 15:51:24 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Lindian brings rare earths sales in-house with Singapore hub",
-      "link": "https://www.smh.com.au/business/companies/lindian-brings-rare-earths-sales-in-house-with-singapore-hub-20260624-p609qn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Lindian Resources will open a Singapore sales office, taking marketing in-house to handle huge demand for its rare earths ahead of production in late 2026.",
-      "pubDate": "Wed, 24 Jun 2026 15:09:51 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "When do the Socceroos play Paraguay and what time is the game?",
-      "link": "https://www.abc.net.au/news/2026-06-24/world-cup-2026-what-time-is-socceroos-vs-paraguay-game/106836976",
-      "snippet": "",
-      "pubDate": "Wed, 24 Jun 2026 04:49:22 +0000",
-      "source": "ABC News"
     }
   ]
 }
