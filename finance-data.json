@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-25T17:26:50.766Z",
+  "fetchedAt": "2026-06-25T20:26:20.745Z",
   "asx200": {
     "value": 8748.7,
     "change": 56.7,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.02,
-    "changePercent": -3.31,
+    "changePercent": -3.4,
     "previousClose": 0.72,
     "asOf": "2026-06-25",
     "history": [
@@ -197,6 +197,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-06-24",
+        "close": 0.69
+      },
+      {
         "date": "2026-06-25",
         "close": 0.69
       }
@@ -207,25 +211,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4047.1,
-      "change": -453.3,
-      "changePercent": -10.07
+      "price": 4042.4,
+      "change": -458,
+      "changePercent": -10.18
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 58.48,
-      "change": -17.83,
-      "changePercent": -23.36
+      "price": 57.93,
+      "change": -18.38,
+      "changePercent": -24.09
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 71.57,
-      "change": -22.32,
-      "changePercent": -23.77
+      "price": 71.98,
+      "change": -21.91,
+      "changePercent": -23.34
     },
     {
       "name": "Copper",
@@ -233,7 +237,7 @@
       "iconBg": "#fef0e6",
       "price": 6.14,
       "change": -0.22,
-      "changePercent": -3.53
+      "changePercent": -3.5
     },
     {
       "name": "BHP Group",
@@ -842,6 +846,76 @@
   ],
   "news": [
     {
+      "title": "Karl Stefanovic to leave Nine ‘immediately’ after network axes multimillion-dollar contract",
+      "link": "https://www.smh.com.au/business/companies/karl-stefanovic-to-leave-nine-immediately-after-network-axes-multimillion-dollar-contract-20260626-p60a8i.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Nine and the presenter have agreed it was no longer possible for him to continue hosting Today while also fronting his independent podcast.",
+      "pubDate": "Fri, 26 Jun 2026 05:58:59 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: World Cup's smallest-ever nation still a chance to progress",
+      "link": "https://www.abc.net.au/news/2026-06-26/fifa-world-cup-live-cur-civ-ecu-ger-tun-ned-jpn-swe/106843058",
+      "snippet": "",
+      "pubDate": "Thu, 25 Jun 2026 19:26:19 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Coles and Woolies are being banned from price-gouging. No one knows what exactly that means",
+      "link": "https://www.smh.com.au/business/companies/coles-and-woolies-are-being-banned-from-price-gouging-no-one-knows-what-exactly-that-means-20260625-p609xv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "From July 1, Australia’s dominant supermarkets will have their prices monitored for “significantly excessive” pricing – whatever that entails.",
+      "pubDate": "Fri, 26 Jun 2026 05:25:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Paraguay's Australian-made commune nervous for crucial Cup clash",
+      "link": "https://www.abc.net.au/news/2026-06-26/socceroos-paraguay-neuva-australia-world-cup/106840492",
+      "snippet": "",
+      "pubDate": "Thu, 25 Jun 2026 19:19:03 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to edge up, Wall Street drifts higher; Apple dives after hiking prices",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-edge-up-wall-street-drifts-higher-apple-dives-after-hiking-prices-20260626-p60a8l.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The stock market is drifting in mixed trading after several artificial-intelligence stocks veered back up their roller-coaster ride, while Apple dropped after hiking prices on many of its products.",
+      "pubDate": "Fri, 26 Jun 2026 05:18:07 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "My colleague called another worker ‘toxic’. What did they mean?",
+      "link": "https://www.smh.com.au/business/workplace/my-colleague-called-another-worker-toxic-what-did-they-mean-20260625-p60a2t.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Like many words we use at work today, “toxic” in the broader, non-scientific sense, began its move into the vernacular when it was employed by psychologists.",
+      "pubDate": "Fri, 26 Jun 2026 05:04:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "‘The CBD is back’: Sizzling auction sees two bidders push Wazi Dumpling House to $6m",
+      "link": "https://www.smh.com.au/business/companies/the-cbd-is-back-sizzling-auction-sees-two-bidders-push-wazi-dumpling-house-to-6m-20260625-p60a05.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Chinatown abuzz as 200 spectators watched two bidders in a heated 40-minute contest.",
+      "pubDate": "Fri, 26 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Karl’s unfinished castle gives him one big reason to flog podcast ads",
+      "link": "https://www.smh.com.au/business/companies/karl-s-unfinished-castle-gives-him-one-big-reason-to-flog-podcast-ads-20260625-p60a34.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The outgoing Nine star has a half-finished home under way in a harbourside Sydney suburb, replete with the obligatory pool, basement car park, wine storage and spiral staircase.",
+      "pubDate": "Fri, 26 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Justin Hemmes turns up, bids big, and buys himself a $19m club",
+      "link": "https://www.smh.com.au/business/companies/justin-hemmes-turns-up-bids-big-and-barracks-himself-a-19m-club-20260625-p60a4g.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Hospitality tzar successfully outbids three other buyers in a spirited auction and snatches a former RSL club, The Barracks.",
+      "pubDate": "Fri, 26 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Why the RBA has been so chill about putting jobs on the line",
+      "link": "https://www.smh.com.au/business/the-economy/why-the-rba-has-been-so-chill-about-putting-jobs-on-the-line-20260625-p60a5m.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "If the Reserve Bank has seemed more intent on hammering down inflation than preserving jobs, that’s because it is. The reason? It comes down, partly, to shapes.",
+      "pubDate": "Fri, 26 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "NFL player faces life in prison over kidnapping, armed robbery allegations",
       "link": "https://www.abc.net.au/news/2026-06-26/detroit-lions-player-terrion-arnold-arrested/106843266",
       "snippet": "",
@@ -853,76 +927,6 @@
       "link": "https://www.smh.com.au/business/companies/karl-stefanovic-pulls-out-of-radio-show-tomorrow-amid-robinson-controversy-20260625-p60a37.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Nine executives have spent much of Thursday finalising the terms of the Today host’s departure from the network.",
       "pubDate": "Thu, 25 Jun 2026 19:33:19 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "How Stefanovic went from Nine’s ‘heart and soul’ to persona non grata",
-      "link": "https://www.smh.com.au/business/companies/how-stefanovic-went-from-nine-s-heart-and-soul-to-persona-non-grata-20260625-p609xl.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Karl Stefanovic was Nine’s golden boy. But his bold play to become Australia’s Joe Rogan has led to his ouster from the network.",
-      "pubDate": "Thu, 25 Jun 2026 19:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Lions roar back in form with big win over Swans",
-      "link": "https://www.abc.net.au/news/2026-06-25/afl-round-16-thursday-live-blog-brisbane-vs-sydney/106838718",
-      "snippet": "",
-      "pubDate": "Thu, 25 Jun 2026 09:04:40 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "'Nowhere near good enough': Eels coach fumes over error-ridden performance",
-      "link": "https://www.abc.net.au/news/2026-06-25/nrl-live-updates-parramatta-eels-south-sydney-rabbitohs/106828916",
-      "snippet": "",
-      "pubDate": "Thu, 25 Jun 2026 08:07:00 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX slips as banks and miners fall; Judo Bank plummets",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-decline-as-wall-street-scuffles-oil-prices-fall-20260625-p609vf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket closed in the red as weaker commodity prices dragged down miners, while the banking sector also lost ground.",
-      "pubDate": "Thu, 25 Jun 2026 17:54:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "I’ve held hundreds of job interviews. We shouldn’t trust AI with it",
-      "link": "https://www.smh.com.au/business/workplace/i-ve-held-hundreds-of-job-interviews-we-shouldn-t-trust-ai-with-it-20260625-p60a1a.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "At their best, using AI to screen candidates can save time for the business. At their worst, they add complications to the already emotional toll of job hunting.",
-      "pubDate": "Thu, 25 Jun 2026 17:50:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Ex-AFL umpire to stand trial over alleged Brownlow fraud",
-      "link": "https://www.abc.net.au/news/2026-06-25/vic-ex-umpire-ordered-to-stand-trial-on-alleged-brownlow-fraud/106841732",
-      "snippet": "",
-      "pubDate": "Thu, 25 Jun 2026 07:22:47 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Barkly cranks up 10,000m rare earths drilling in NT Gulf",
-      "link": "https://www.smh.com.au/business/companies/barkly-cranks-up-10-000m-rare-earths-drilling-in-nt-gulf-20260625-p60a68.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Barkly Rare Earths is mobilising for a 10,000m drilling push in the NT, chasing growth beyond its 40Mt inferred rare earths resource.",
-      "pubDate": "Thu, 25 Jun 2026 17:07:58 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "The calls for Australia to play its best attacking weapons are loud",
-      "link": "https://www.abc.net.au/news/2026-06-25/tony-popovic-has-a-selection-headache/106839150",
-      "snippet": "",
-      "pubDate": "Thu, 25 Jun 2026 05:59:41 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "How Stefanovic’s epic miscalculation crossed a line for Nine",
-      "link": "https://www.smh.com.au/business/companies/how-stefanovic-s-epic-miscalculation-crossed-a-line-for-nine-20260625-p60a0t.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Karl Stefanovic’s decision to interview a far-right activist on his podcast fundamentally clashed with his persona on breakfast TV.",
-      "pubDate": "Thu, 25 Jun 2026 15:57:15 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ClearVue solar glass clears key building safety code hurdle",
-      "link": "https://www.smh.com.au/business/companies/clearvue-solar-glass-clears-key-building-safety-code-hurdle-20260625-p60a4k.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "ClearVue Technologies’ solar glass has won top safety certification, supporting its claim that power-generating glazing can perform like standard architectural glass.",
-      "pubDate": "Thu, 25 Jun 2026 15:14:29 +1000",
       "source": "SMH Business"
     }
   ]
