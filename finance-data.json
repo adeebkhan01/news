@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-25T09:48:25.842Z",
+  "fetchedAt": "2026-06-25T15:20:47.328Z",
   "asx200": {
     "value": 8748.7,
     "change": 56.7,
@@ -94,17 +94,13 @@
       {
         "date": "2026-06-24",
         "close": 8808.4
-      },
-      {
-        "date": "2026-06-25",
-        "close": 8748.7
       }
     ]
   },
   "audusd": {
     "value": 0.69,
-    "change": -0.03,
-    "changePercent": -3.59,
+    "change": -0.02,
+    "changePercent": -3.38,
     "previousClose": 0.72,
     "asOf": "2026-06-25",
     "history": [
@@ -211,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4007.6,
-      "change": -492.8,
-      "changePercent": -10.95
+      "price": 4029.6,
+      "change": -470.8,
+      "changePercent": -10.46
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 57.46,
-      "change": -18.85,
-      "changePercent": -24.7
+      "price": 57.92,
+      "change": -18.39,
+      "changePercent": -24.09
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 69.47,
-      "change": -24.42,
-      "changePercent": -26.01
+      "price": 71.44,
+      "change": -22.45,
+      "changePercent": -23.91
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.1,
-      "change": -0.26,
-      "changePercent": -4.07
+      "price": 6.13,
+      "change": -0.23,
+      "changePercent": -3.69
     },
     {
       "name": "BHP Group",
@@ -846,6 +842,13 @@
   ],
   "news": [
     {
+      "title": "NFL player faces life in prison over kidnapping, armed robbery allegations",
+      "link": "https://www.abc.net.au/news/2026-06-26/detroit-lions-player-terrion-arnold-arrested/106843266",
+      "snippet": "",
+      "pubDate": "Thu, 25 Jun 2026 14:04:48 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "‘I didn’t think it was that bad’: Billionaire James Packer defends Karl Stefanovic",
       "link": "https://www.smh.com.au/business/companies/karl-stefanovic-pulls-out-of-radio-show-tomorrow-amid-robinson-controversy-20260625-p60a37.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Nine executives have spent much of Thursday finalising the terms of the Today host’s departure from the network.",
@@ -860,14 +863,14 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Lions, Swans start round 16 with a bang at the Gabba",
+      "title": "Lions roar back in form with big win over Swans",
       "link": "https://www.abc.net.au/news/2026-06-25/afl-round-16-thursday-live-blog-brisbane-vs-sydney/106838718",
       "snippet": "",
       "pubDate": "Thu, 25 Jun 2026 09:04:40 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Live: Moses returns for milestone NRL match as Eels try to upset Rabbitohs",
+      "title": "'Nowhere near good enough': Eels coach fumes over error-ridden performance",
       "link": "https://www.abc.net.au/news/2026-06-25/nrl-live-updates-parramatta-eels-south-sydney-rabbitohs/106828916",
       "snippet": "",
       "pubDate": "Thu, 25 Jun 2026 08:07:00 +0000",
@@ -921,13 +924,6 @@
       "snippet": "ClearVue Technologies’ solar glass has won top safety certification, supporting its claim that power-generating glazing can perform like standard architectural glass.",
       "pubDate": "Thu, 25 Jun 2026 15:14:29 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Quick hits: Kane's curse lifted, historic goals for Haiti, 40yo keeper's big moment",
-      "link": "https://www.abc.net.au/news/2026-06-25/world-cup-quick-hits-harry-kane-haiti-guillermo-ochoa/106839132",
-      "snippet": "",
-      "pubDate": "Thu, 25 Jun 2026 05:00:09 +0000",
-      "source": "ABC News"
     }
   ]
 }
