@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-26T20:14:32.301Z",
+  "fetchedAt": "2026-06-26T22:39:41.803Z",
   "asx200": {
     "value": 8764.2,
     "change": 106.4,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.03,
-    "changePercent": -3.77,
+    "changePercent": -3.75,
     "previousClose": 0.72,
     "asOf": "2026-06-26",
     "history": [
@@ -197,6 +197,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-06-25",
+        "close": 0.69
+      },
+      {
         "date": "2026-06-26",
         "close": 0.69
       }
@@ -207,33 +211,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4086.6,
-      "change": -413.8,
-      "changePercent": -9.19
+      "price": 4103,
+      "change": -397.4,
+      "changePercent": -8.83
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 59.28,
-      "change": -17.03,
-      "changePercent": -22.32
+      "price": 59.61,
+      "change": -16.7,
+      "changePercent": -21.89
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 69.38,
-      "change": -24.51,
-      "changePercent": -26.11
+      "price": 70.24,
+      "change": -23.65,
+      "changePercent": -25.19
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.19,
-      "change": -0.17,
-      "changePercent": -2.75
+      "price": 6.2,
+      "change": -0.16,
+      "changePercent": -2.57
     },
     {
       "name": "BHP Group",
@@ -842,6 +846,20 @@
   ],
   "news": [
     {
+      "title": "Ireland stuns India in T20 to record historic first win over champions",
+      "link": "https://www.abc.net.au/news/2026-06-27/t20-international-ireland-beats-india-in-historic-win/106850488",
+      "snippet": "",
+      "pubDate": "Fri, 26 Jun 2026 22:26:40 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'It's an honour': Australian drawn to face Serena in Wimbledon opener",
+      "link": "https://www.abc.net.au/news/2026-06-27/wimbledon-draw-released-serena-williams-alex-de-minaur/106849658",
+      "snippet": "",
+      "pubDate": "Fri, 26 Jun 2026 21:23:04 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Tony Popovic hits back at discussions about his World Cup selections",
       "link": "https://www.abc.net.au/news/2026-06-27/surprising-selection-calls-at-the-world-cup/106850282",
       "snippet": "",
@@ -863,14 +881,14 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: France superstar bags first-half hat-trick against Norway",
+      "title": "Live: France star bags rapid hat-trick, goalfest set to send Senegal through",
       "link": "https://www.abc.net.au/news/2026-06-27/world-cup-live-mbappe-france-norway-sen-irq-cpv-ksa-uru-esp/106848646",
       "snippet": "",
       "pubDate": "Fri, 26 Jun 2026 18:29:58 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Giants 'obliterated' at stoppage as Hawks win at MCG on night of injuries",
+      "title": "Star Hawk hurt as Giants count the injury cost of stinging loss",
       "link": "https://www.abc.net.au/news/2026-06-26/afl-rd-16-live-hawks-giants/106838740",
       "snippet": "",
       "pubDate": "Fri, 26 Jun 2026 08:58:52 +0000",
@@ -910,20 +928,6 @@
       "snippet": "The corporate watchdog alleges $305 million of investor money was transferred to private companies associated with the Melbourne property developer to pay marketers and for projects that never turned a sod.",
       "pubDate": "Fri, 26 Jun 2026 15:15:53 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "'Glint in their eyes': How Aussies watched the Socceroos match against Paraguay",
-      "link": "https://www.abc.net.au/news/2026-06-26/fans-gather-to-watch-socceroos-paraguay-world-cup-match/106846710",
-      "snippet": "",
-      "pubDate": "Fri, 26 Jun 2026 05:07:27 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Quick hits: Selection shocks shine as kids skip school to watch Socceroos progress",
-      "link": "https://www.abc.net.au/news/2026-06-26/world-cup-socceroos-vs-paraguay-quick-hits-paraguay-bos-irvine/106846604",
-      "snippet": "",
-      "pubDate": "Fri, 26 Jun 2026 05:00:04 +0000",
-      "source": "ABC News"
     }
   ]
 }
