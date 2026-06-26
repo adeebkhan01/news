@@ -1,9 +1,9 @@
 {
-  "fetchedAt": "2026-06-26T04:46:45.936Z",
+  "fetchedAt": "2026-06-26T09:55:07.237Z",
   "asx200": {
-    "value": 8746.6,
-    "change": 88.8,
-    "changePercent": 1.03,
+    "value": 8764.2,
+    "change": 106.4,
+    "changePercent": 1.23,
     "previousClose": 8657.8,
     "asOf": "2026-06-26",
     "history": [
@@ -97,14 +97,14 @@
       },
       {
         "date": "2026-06-26",
-        "close": 8746.6
+        "close": 8764.2
       }
     ]
   },
   "audusd": {
     "value": 0.69,
     "change": -0.03,
-    "changePercent": -3.91,
+    "changePercent": -3.65,
     "previousClose": 0.72,
     "asOf": "2026-06-26",
     "history": [
@@ -211,65 +211,65 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4018.8,
-      "change": -481.6,
-      "changePercent": -10.7
+      "price": 4062.8,
+      "change": -437.6,
+      "changePercent": -9.72
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 56.32,
-      "change": -19.99,
-      "changePercent": -26.2
+      "price": 58.67,
+      "change": -17.64,
+      "changePercent": -23.12
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 70.47,
-      "change": -23.42,
-      "changePercent": -24.94
+      "price": 69.3,
+      "change": -24.59,
+      "changePercent": -26.19
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.04,
-      "change": -0.32,
-      "changePercent": -5.09
+      "price": 6.13,
+      "change": -0.23,
+      "changePercent": -3.57
     },
     {
       "name": "BHP Group",
       "icon": "⛏️",
       "iconBg": "#e6f2ec",
-      "price": 58.63,
-      "change": -1.72,
-      "changePercent": -2.85
+      "price": 58.99,
+      "change": -1.36,
+      "changePercent": -2.25
     },
     {
       "name": "Rio Tinto",
       "icon": "🏗️",
       "iconBg": "#eff6ff",
-      "price": 172.59,
-      "change": -15.72,
-      "changePercent": -8.35
+      "price": 173.64,
+      "change": -14.67,
+      "changePercent": -7.79
     }
   ],
   "sectors": [
     {
       "name": "Financials",
-      "changePercent": 0.08,
+      "changePercent": 0.12,
       "stocks": [
         {
           "name": "CBA",
-          "price": 162.07,
-          "changePercent": -0.39
+          "price": 162.02,
+          "changePercent": -0.42
         },
         {
           "name": "WBC",
-          "price": 35.22,
-          "changePercent": 0.46
+          "price": 35.14,
+          "changePercent": 0.23
         },
         {
           "name": "ANZ",
@@ -278,92 +278,92 @@
         },
         {
           "name": "NAB",
-          "price": 37.34,
-          "changePercent": -0.29
+          "price": 37.51,
+          "changePercent": 0.16
         }
       ]
     },
     {
       "name": "Materials",
-      "changePercent": 0.25,
+      "changePercent": 0.52,
       "stocks": [
         {
           "name": "BHP",
-          "price": 58.62,
-          "changePercent": 0.17
+          "price": 58.99,
+          "changePercent": 0.8
         },
         {
           "name": "RIO",
-          "price": 172.59,
-          "changePercent": 1.53
+          "price": 173.64,
+          "changePercent": 2.15
         },
         {
           "name": "FMG",
-          "price": 19.02,
-          "changePercent": 0.42
+          "price": 19.07,
+          "changePercent": 0.69
         },
         {
           "name": "MIN",
-          "price": 63.43,
-          "changePercent": -1.11
+          "price": 63.14,
+          "changePercent": -1.56
         }
       ]
     },
     {
       "name": "Health Care",
-      "changePercent": -0.26,
+      "changePercent": -0.69,
       "stocks": [
         {
           "name": "CSL",
-          "price": 115.64,
-          "changePercent": -1.71
+          "price": 114.87,
+          "changePercent": -2.36
         },
         {
           "name": "COH",
-          "price": 118.65,
-          "changePercent": 1.8
+          "price": 118.03,
+          "changePercent": 1.27
         },
         {
           "name": "RMD",
-          "price": 29.02,
-          "changePercent": -0.63
+          "price": 28.94,
+          "changePercent": -0.89
         },
         {
           "name": "SHL",
-          "price": 20.48,
-          "changePercent": -0.49
+          "price": 20.42,
+          "changePercent": -0.78
         }
       ]
     },
     {
       "name": "Consumer Discretionary",
-      "changePercent": 0.52,
+      "changePercent": 0.24,
       "stocks": [
         {
           "name": "WES",
-          "price": 90.45,
-          "changePercent": 1.1
+          "price": 90.74,
+          "changePercent": 1.42
         },
         {
           "name": "HVN",
-          "price": 4.91,
-          "changePercent": 1.03
+          "price": 4.88,
+          "changePercent": 0.41
         },
         {
           "name": "JBH",
-          "price": 82.25,
-          "changePercent": 0.8
+          "price": 81.84,
+          "changePercent": 0.29
         },
         {
           "name": "ALL",
-          "price": 58.89,
-          "changePercent": -0.83
+          "price": 58.69,
+          "changePercent": -1.16
         }
       ]
     },
     {
       "name": "Industrials",
-      "changePercent": 0.45,
+      "changePercent": 0.63,
       "stocks": [
         {
           "name": "TCL",
@@ -372,8 +372,8 @@
         },
         {
           "name": "BXB",
-          "price": 19.58,
-          "changePercent": 1.01
+          "price": 19.64,
+          "changePercent": 1.34
         },
         {
           "name": "SYD",
@@ -382,14 +382,14 @@
         },
         {
           "name": "QAN",
-          "price": 10.64,
-          "changePercent": -0.65
+          "price": 10.68,
+          "changePercent": -0.28
         }
       ]
     },
     {
       "name": "Real Estate",
-      "changePercent": 0.78,
+      "changePercent": 0.86,
       "stocks": [
         {
           "name": "GMG",
@@ -398,112 +398,112 @@
         },
         {
           "name": "SGP",
-          "price": 4.31,
-          "changePercent": 2.13
+          "price": 4.32,
+          "changePercent": 2.37
         },
         {
           "name": "GPT",
-          "price": 5.14,
-          "changePercent": 0.59
+          "price": 5.15,
+          "changePercent": 0.78
         },
         {
           "name": "MGR",
           "price": 1.79,
-          "changePercent": 0.96
+          "changePercent": 0.85
         }
       ]
     },
     {
       "name": "Consumer Staples",
-      "changePercent": 0.29,
+      "changePercent": 0.76,
       "stocks": [
         {
           "name": "WOW",
-          "price": 40.2,
-          "changePercent": 0.65
+          "price": 40.24,
+          "changePercent": 0.75
         },
         {
           "name": "COL",
-          "price": 24.35,
-          "changePercent": 1.21
+          "price": 24.41,
+          "changePercent": 1.45
         },
         {
           "name": "TWE",
-          "price": 4.67,
-          "changePercent": -1.27
+          "price": 4.71,
+          "changePercent": -0.42
         },
         {
           "name": "A2M",
-          "price": 7.14,
-          "changePercent": 0.56
+          "price": 7.19,
+          "changePercent": 1.27
         }
       ]
     },
     {
       "name": "Energy",
-      "changePercent": 0.51,
+      "changePercent": 1.07,
       "stocks": [
         {
           "name": "WDS",
-          "price": 27.7,
-          "changePercent": 0.98
+          "price": 27.65,
+          "changePercent": 0.8
         },
         {
           "name": "STO",
-          "price": 7.11,
-          "changePercent": 0.99
+          "price": 7.14,
+          "changePercent": 1.42
         },
         {
           "name": "ORG",
-          "price": 10.84,
-          "changePercent": -0.18
+          "price": 10.96,
+          "changePercent": 0.92
         },
         {
           "name": "WHC",
-          "price": 8,
-          "changePercent": 0.25
+          "price": 8.07,
+          "changePercent": 1.13
         }
       ]
     },
     {
       "name": "Information Technology",
-      "changePercent": -1.62,
+      "changePercent": -0.26,
       "stocks": [
         {
           "name": "XRO",
-          "price": 68.04,
-          "changePercent": 0.28
+          "price": 69.05,
+          "changePercent": 1.77
         },
         {
           "name": "WTC",
-          "price": 30.73,
-          "changePercent": -2.1
+          "price": 31.55,
+          "changePercent": 0.51
         },
         {
           "name": "CPU",
-          "price": 36.59,
-          "changePercent": -2.02
+          "price": 36.88,
+          "changePercent": -1.23
         },
         {
           "name": "APX",
           "price": 0.93,
-          "changePercent": -2.63
+          "changePercent": -2.11
         }
       ]
     },
     {
       "name": "Communication Services",
-      "changePercent": -1.48,
+      "changePercent": -1.6,
       "stocks": [
         {
           "name": "TLS",
-          "price": 5.18,
-          "changePercent": 0.68
+          "price": 5.15,
+          "changePercent": 0.19
         },
         {
           "name": "REA",
-          "price": 133.19,
-          "changePercent": -0.52
+          "price": 133.54,
+          "changePercent": -0.25
         },
         {
           "name": "CAR",
@@ -512,34 +512,34 @@
         },
         {
           "name": "NWS",
-          "price": 41.03,
-          "changePercent": -0.87
+          "price": 40.93,
+          "changePercent": -1.11
         }
       ]
     },
     {
       "name": "Utilities",
-      "changePercent": 0.03,
+      "changePercent": -0.1,
       "stocks": [
         {
           "name": "AGL",
-          "price": 8.41,
-          "changePercent": 0.42
+          "price": 8.42,
+          "changePercent": 0.48
         },
         {
           "name": "APA",
-          "price": 10.8,
-          "changePercent": 1.55
+          "price": 10.77,
+          "changePercent": 1.32
         },
         {
           "name": "ORG",
-          "price": 10.84,
-          "changePercent": -0.18
+          "price": 10.96,
+          "changePercent": 0.92
         },
         {
           "name": "MEZ",
-          "price": 4.71,
-          "changePercent": -1.67
+          "price": 4.64,
+          "changePercent": -3.13
         }
       ]
     }
@@ -846,18 +846,74 @@
   ],
   "news": [
     {
-      "title": "The Socceroos are through, but they still have a big problem to solve",
+      "title": "Live: Hawks try to hold top four spot against Giants at the 'G",
+      "link": "https://www.abc.net.au/news/2026-06-26/afl-rd-16-live-hawks-giants/106838740",
+      "snippet": "",
+      "pubDate": "Fri, 26 Jun 2026 08:58:52 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Andrew Forrest warns workers over ‘disturbing’ sex harassment allegations",
+      "link": "https://www.smh.com.au/business/companies/andrew-forrest-warns-workers-over-disturbing-sex-harassment-allegations-20260626-p60ahv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The executive chairman told staff that “losing your job is the beginning of the consequences, not the end”.",
+      "pubDate": "Fri, 26 Jun 2026 18:38:17 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Socceroos heap praise on 'best player' Bos after knockouts progression",
+      "link": "https://www.abc.net.au/news/2026-06-26/socceroos-players-praise-jordy-bos-paraguay/106849034",
+      "snippet": "",
+      "pubDate": "Fri, 26 Jun 2026 08:02:00 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Payne Haas to captain desperate Broncos against Roosters",
+      "link": "https://www.abc.net.au/news/2026-06-26/nrl-live-titans-bulldogs-broncos-roosters/106848662",
+      "snippet": "",
+      "pubDate": "Fri, 26 Jun 2026 07:06:39 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Essendon announces selection panel to pick next AFL coach",
+      "link": "https://www.abc.net.au/news/2026-06-26/essendon-announces-selection-panel-to-pick-next-afl-coach/106847772",
+      "snippet": "",
+      "pubDate": "Fri, 26 Jun 2026 05:47:15 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Shield Master fund boss Paul Chiodo could face fines, ban in ASIC action",
+      "link": "https://www.smh.com.au/business/banking-and-finance/shield-master-fund-boss-paul-chiodo-could-face-fines-ban-in-asic-action-20260626-p60ae9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The corporate watchdog alleges $305 million of investor money was transferred to private companies associated with the Melbourne property developer to pay marketers and for projects that never turned a sod.",
+      "pubDate": "Fri, 26 Jun 2026 15:15:53 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "'Glint in their eyes': How Aussies watched the Socceroos match against Paraguay",
+      "link": "https://www.abc.net.au/news/2026-06-26/fans-gather-to-watch-socceroos-paraguay-world-cup-match/106846710",
+      "snippet": "",
+      "pubDate": "Fri, 26 Jun 2026 05:07:27 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Quick hits: Selection shocks shine as kids skip school to watch Socceroos progress",
+      "link": "https://www.abc.net.au/news/2026-06-26/world-cup-socceroos-vs-paraguay-quick-hits-paraguay-bos-irvine/106846604",
+      "snippet": "",
+      "pubDate": "Fri, 26 Jun 2026 05:00:04 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Nine, Foxtel win NRL rights in massive Australian sport media deal",
+      "link": "https://www.smh.com.au/business/companies/foxtel-nine-win-nrl-rights-in-massive-australian-sport-media-deal-20260626-p60aet.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The $5 billion deal would keep the sporting code with its current media partners and hand the NRL more money than the AFL’s rival arrangement.",
+      "pubDate": "Fri, 26 Jun 2026 14:54:37 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "The Socceroos are through but they still have a big problem to solve",
       "link": "https://www.abc.net.au/news/2026-06-26/socceroos-through-in-world-cup-but-goals-still-hard-to-find/106846922",
       "snippet": "",
       "pubDate": "Fri, 26 Jun 2026 04:29:30 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Foxtel, Nine win NRL rights in massive Australian sport media deal",
-      "link": "https://www.smh.com.au/business/companies/foxtel-nine-win-nrl-rights-in-massive-australian-sport-media-deal-20260626-p60aet.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The $5 billion deal would keep the sporting code with its current media partners and hand the NRL more money than the AFL’s rival arrangement.",
-      "pubDate": "Fri, 26 Jun 2026 14:17:59 +1000",
-      "source": "SMH Business"
     },
     {
       "title": "ASX Runners of the Week: Norwood, Orcoda, Unity Metals &amp; Visionflex",
@@ -872,62 +928,6 @@
       "snippet": "",
       "pubDate": "Fri, 26 Jun 2026 04:11:01 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Dateline chairman backs US gold, rare earths push with $1.95M bet",
-      "link": "https://www.smh.com.au/business/companies/dateline-chairman-backs-us-gold-rare-earths-push-with-1-95m-bet-20260626-p60adu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Dateline Resources’ chairman has injected $1.95M into the company, to boost his stake to 15.3%, signalling serious confidence in its suite of US gold and critical minerals assets.",
-      "pubDate": "Fri, 26 Jun 2026 12:38:40 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Unsung Aussie sitting second in Women's PGA Championship",
-      "link": "https://www.abc.net.au/news/2026-06-26/women-s-pga-championship-round-one-karis-davidson/106847178",
-      "snippet": "",
-      "pubDate": "Fri, 26 Jun 2026 02:37:13 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "The Dolphins-Warriors game is the NRL's unlikeliest blockbuster",
-      "link": "https://www.abc.net.au/news/2026-06-26/nrl-dolphins-warriors-lang-park-ladder-premiership/106841410",
-      "snippet": "",
-      "pubDate": "Fri, 26 Jun 2026 02:14:24 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Quick hits: Ecuador does the impossible, Sweden trains the house down",
-      "link": "https://www.abc.net.au/news/2026-06-26/world-cup-quick-hits-june-26/106843874",
-      "snippet": "",
-      "pubDate": "Fri, 26 Jun 2026 01:56:17 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX edges higher, Apple weighs on Wall Street after price rises",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-edge-up-wall-street-drifts-higher-apple-dives-after-hiking-prices-20260626-p60a8l.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket has made a steady start to the session after Wall Street meandered to a mixed finish, with Apple stocks down after the company lifted prices on many products.",
-      "pubDate": "Fri, 26 Jun 2026 11:19:43 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "India set for crucial clash against Australia at women's T20 World Cup",
-      "link": "https://www.abc.net.au/news/2026-06-26/womens-t20-world-cup-india-ready-for-australian-clash/106844400",
-      "snippet": "",
-      "pubDate": "Fri, 26 Jun 2026 00:47:35 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Live: Socceroos seal World Cup progression with gritty draw against Paraguay",
-      "link": "https://www.abc.net.au/news/2026-06-26/socceroos-paraguay-live-fifa-world-cup-2026/106843060",
-      "snippet": "",
-      "pubDate": "Fri, 26 Jun 2026 00:14:36 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Tone-deaf Stefanovic has the hide to bag the network that made him a star and paid him millions",
-      "link": "https://www.smh.com.au/business/companies/tone-deaf-stefanovic-has-the-hide-to-bag-the-network-that-made-him-a-star-and-paid-him-millions-20260625-p60a6r.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Karl Stefanovic has espoused the virtues of free speech and the airing of different perspectives. Few would disagree. But it is hard to swallow such a sermon from the axed Today host.",
-      "pubDate": "Fri, 26 Jun 2026 09:49:39 +1000",
-      "source": "SMH Business"
     }
   ]
 }
