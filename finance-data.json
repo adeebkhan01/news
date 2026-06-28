@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-28T19:50:20.720Z",
+  "fetchedAt": "2026-06-28T22:32:19.407Z",
   "asx200": {
     "value": 8764.2,
     "change": 106.4,
@@ -104,7 +104,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.03,
-    "changePercent": -3.75,
+    "changePercent": -3.82,
     "previousClose": 0.72,
     "asOf": "2026-06-28",
     "history": [
@@ -215,33 +215,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4096.3,
-      "change": -403,
-      "changePercent": -8.96
+      "price": 4074.6,
+      "change": -424.7,
+      "changePercent": -9.44
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 59.67,
-      "change": -15.97,
-      "changePercent": -21.11
+      "price": 59.08,
+      "change": -16.57,
+      "changePercent": -21.9
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 69.23,
-      "change": -19.67,
-      "changePercent": -22.13
+      "price": 70.21,
+      "change": -18.69,
+      "changePercent": -21.02
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.21,
-      "change": -0.19,
-      "changePercent": -2.95
+      "price": 6.2,
+      "change": -0.2,
+      "changePercent": -3.14
     },
     {
       "name": "BHP Group",
@@ -850,7 +850,28 @@
   ],
   "news": [
     {
-      "title": "ASX set to advance, Wall Street’s AI slump picks up pace",
+      "title": "Quick hits: Canada's emotional match-winner and scenes in rural Kansas",
+      "link": "https://www.abc.net.au/news/2026-06-29/world-cup-quick-hits-canada-algeria-lawrence/106853790",
+      "snippet": "",
+      "pubDate": "Sun, 28 Jun 2026 21:55:43 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Maroons recall veteran for Origin decider after Blues' bombshell",
+      "link": "https://www.abc.net.au/news/2026-06-29/queensland-maroons-team-announcement-live-state-of-origin-iii/106852432",
+      "snippet": "",
+      "pubDate": "Sun, 28 Jun 2026 21:24:17 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Perry and Gardner dominate India to get World Cup revenge",
+      "link": "https://www.abc.net.au/news/2026-06-29/australia-beats-india-to-reach-t20-world-cup-semifinals/106853948",
+      "snippet": "",
+      "pubDate": "Sun, 28 Jun 2026 21:05:07 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set for uncertain start, Wall Street’s AI slump picks up pace",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-advance-wall-street-s-ai-slump-picks-up-pace-20260629-p60ary.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Most of the US stock market rose after oil prices eased back to where they were before the war with Iran, but drops for stocks swept up in the mania around AI kept the market in check.",
       "pubDate": "Mon, 29 Jun 2026 05:21:47 +1000",
@@ -864,6 +885,13 @@
       "source": "SMH Business"
     },
     {
+      "title": "Dozens of former Australian Rules footballers diagnosed with CTE",
+      "link": "https://www.abc.net.au/news/2026-06-29/afl-australian-rules-players-diagnosed-cte-brain-disease/106847638",
+      "snippet": "",
+      "pubDate": "Sun, 28 Jun 2026 19:00:21 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "‘Deeply concerning’: ASIC warns on gaps in oversight of $300b in super",
       "link": "https://www.smh.com.au/business/banking-and-finance/deeply-concerning-asic-warns-on-gaps-in-oversight-of-300b-in-super-20260626-p60acg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Businesses that allow members to have greater control over their super investments are not doing enough to monitor for high fees, the corporate watchdog says.",
@@ -871,14 +899,14 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Canada and South Africa in frenetic start to historic knockout clash",
+      "title": "Canada 'heroes' score stunning injury time winner to down South Africa",
       "link": "https://www.abc.net.au/news/2026-06-29/world-cup-live-blog-2026-round-of-32-south-africa-vs-canada/106852760",
       "snippet": "",
       "pubDate": "Sun, 28 Jun 2026 18:15:12 +0000",
       "source": "ABC News"
     },
     {
-      "title": "England captain Ben Stokes announces retirement during Test match",
+      "title": "As Ben Stokes retires, a former captain warns 'he won't be the last'",
       "link": "https://www.abc.net.au/news/2026-06-29/england-captain-ben-stokes-to-retire-from-international-cricket/106853428",
       "snippet": "",
       "pubDate": "Sun, 28 Jun 2026 14:39:27 +0000",
@@ -903,34 +931,6 @@
       "link": "https://www.abc.net.au/news/2026-06-28/world-cup-austria-algeria-iran-qualification-chaos/106852904",
       "snippet": "",
       "pubDate": "Sun, 28 Jun 2026 08:21:49 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Jackson the star as Dockers make it 14 wins in a row",
-      "link": "https://www.abc.net.au/news/2026-06-28/afl-rd-16-live-kangaroos-bombers-dockers-suns/106838820",
-      "snippet": "",
-      "pubDate": "Sun, 28 Jun 2026 04:56:08 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Who plays who in the World Cup round of 32?",
-      "link": "https://www.abc.net.au/news/2026-06-28/world-cup-who-plays-in-the-round-of-32-what-time/106851976",
-      "snippet": "",
-      "pubDate": "Sun, 28 Jun 2026 04:34:31 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Australia’s fuel prices are back to pre-war levels, but there’s no room for complacency",
-      "link": "https://www.smh.com.au/business/consumer-affairs/fuel-prices-in-australia-are-back-to-prewar-levels-will-it-last-20260628-p60aoh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Fuel prices are about 40 per cent lower than they were at the height of the Iran conflict. They may not stay at these subdued levels for long.",
-      "pubDate": "Sun, 28 Jun 2026 13:58:13 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Blues ring in the changes as To'o dumped for decider",
-      "link": "https://www.abc.net.au/news/2026-06-28/nrl-state-of-origin-new-south-wales-laurie-daley/106852534",
-      "snippet": "",
-      "pubDate": "Sun, 28 Jun 2026 03:35:19 +0000",
       "source": "ABC News"
     }
   ]
