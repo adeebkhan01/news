@@ -1,11 +1,11 @@
 {
-  "fetchedAt": "2026-06-27T22:33:23.593Z",
+  "fetchedAt": "2026-06-28T04:56:37.270Z",
   "asx200": {
     "value": 8764.2,
     "change": 106.4,
     "changePercent": 1.23,
     "previousClose": 8657.8,
-    "asOf": "2026-06-27",
+    "asOf": "2026-06-28",
     "history": [
       {
         "date": "2026-05-26",
@@ -94,6 +94,10 @@
       {
         "date": "2026-06-25",
         "close": 8748.7
+      },
+      {
+        "date": "2026-06-26",
+        "close": 8764.2
       }
     ]
   },
@@ -102,7 +106,7 @@
     "change": -0.03,
     "changePercent": -3.75,
     "previousClose": 0.72,
-    "asOf": "2026-06-27",
+    "asOf": "2026-06-28",
     "history": [
       {
         "date": "2026-05-25",
@@ -201,7 +205,7 @@
         "close": 0.69
       },
       {
-        "date": "2026-06-27",
+        "date": "2026-06-28",
         "close": 0.69
       }
     ]
@@ -212,32 +216,32 @@
       "icon": "🥇",
       "iconBg": "#fef9ee",
       "price": 4096.3,
-      "change": -404.1,
-      "changePercent": -8.98
+      "change": -403,
+      "changePercent": -8.96
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
       "price": 59.67,
-      "change": -16.63,
-      "changePercent": -21.8
+      "change": -15.97,
+      "changePercent": -21.11
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
       "price": 69.23,
-      "change": -24.66,
-      "changePercent": -26.26
+      "change": -19.67,
+      "changePercent": -22.13
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 6.21,
-      "change": -0.15,
-      "changePercent": -2.42
+      "change": -0.19,
+      "changePercent": -2.95
     },
     {
       "name": "BHP Group",
@@ -846,6 +850,55 @@
   ],
   "news": [
     {
+      "title": "Who plays who in the World Cup round of 32?",
+      "link": "https://www.abc.net.au/news/2026-06-28/world-cup-who-plays-in-the-round-of-32-what-time/106851976",
+      "snippet": "",
+      "pubDate": "Sun, 28 Jun 2026 04:34:31 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Fuel prices in Australia are back to pre-war levels. Will it last?",
+      "link": "https://www.smh.com.au/business/consumer-affairs/fuel-prices-in-australia-are-back-to-prewar-levels-will-it-last-20260628-p60aoh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Fuel prices are about 40 per cent lower than they were at the height of the Iran conflict, but they may not remain at these subdued levels for long.",
+      "pubDate": "Sun, 28 Jun 2026 13:58:13 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Can star's return reignite Ricky's Raiders?",
+      "link": "https://www.abc.net.au/news/2026-06-28/nrl-live-updates-raiders-dragons-knights-tigers/106852534",
+      "snippet": "",
+      "pubDate": "Sun, 28 Jun 2026 03:35:19 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "World Cup quick hits: Salah's Socceroos boost and the tightest call",
+      "link": "https://www.abc.net.au/news/2026-06-28/world-cup-quick-hits-mo-salah-injury-socceroos-scotland-coach/106852320",
+      "snippet": "",
+      "pubDate": "Sun, 28 Jun 2026 02:43:32 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Pre-made plans falter as England labours again",
+      "link": "https://www.abc.net.au/news/2026-06-28/england-world-cup-qualify-win-against-panama/106852072",
+      "snippet": "",
+      "pubDate": "Sun, 28 Jun 2026 00:57:58 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Wallabies and All Blacks locked in for 123-year Bledisloe Cup first",
+      "link": "https://www.abc.net.au/news/2026-06-28/wallabies-and-all-blacks-to-play-bledisloe-cup-anzac-day-game/106852110",
+      "snippet": "",
+      "pubDate": "Sun, 28 Jun 2026 00:28:28 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Aussie Davidson cuts into PGA lead heading into dramatic final round",
+      "link": "https://www.abc.net.au/news/2026-06-28/women-s-pga-championship-third-round-karis-davidson/106852130",
+      "snippet": "",
+      "pubDate": "Sun, 28 Jun 2026 00:11:16 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Serena Williams's return to All England Club sparks fan frenzy",
       "link": "https://www.abc.net.au/news/2026-06-28/serena-williams-wimbledon-return-fans-novak-djokovic/106852016",
       "snippet": "",
@@ -853,7 +906,7 @@
       "source": "ABC News"
     },
     {
-      "title": "How golf helped man walk again after bike accident left him paralysed",
+      "title": "Paralysed man walks again after golf 'lit a fire' in recovery from bike crash",
       "link": "https://www.abc.net.au/news/2026-06-28/chris-perry-pushing-for-golf-to-feature-in-paralympic-games/106847016",
       "snippet": "",
       "pubDate": "Sat, 27 Jun 2026 22:15:18 +0000",
@@ -867,52 +920,10 @@
       "source": "ABC News"
     },
     {
-      "title": "Live: England finally breaks through against stubborn Panama",
+      "title": "Live: Stunning late Austria-Algeria drama sees Iran exit tournament",
       "link": "https://www.abc.net.au/news/2026-06-28/world-cup-live-eng-pan-cro-gha-col-por-ronaldo-messi-arg-jor/106851162",
       "snippet": "",
       "pubDate": "Sat, 27 Jun 2026 20:15:00 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "They didn't know what footy was doing to their boy. 'Now it's too late'",
-      "link": "https://www.abc.net.au/news/2026-06-28/afl-cte-brain-disease-youngest-player-nick-lowden/106837650",
-      "snippet": "",
-      "pubDate": "Sat, 27 Jun 2026 18:44:41 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Vixens reach third straight Super Netball Grand Final",
-      "link": "https://www.abc.net.au/news/2026-06-27/super-netball-live-melbourne-vixens-west-coast-fever-finals/106847510",
-      "snippet": "",
-      "pubDate": "Sat, 27 Jun 2026 09:24:02 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Panthers coach gives 13-word press conference after consecutive losses",
-      "link": "https://www.abc.net.au/news/2026-06-27/nrl-live-dolphins-warriors-cowboys-panthers-sea-eagles-storm/106828922",
-      "snippet": "",
-      "pubDate": "Sat, 27 Jun 2026 04:19:19 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "'Entitled to dream': Cabo Verde's World Cup run inspires the nation",
-      "link": "https://www.abc.net.au/news/2026-06-27/world-cup-cabo-verde-continues-unlikely-run-to-football-glory/106850822",
-      "snippet": "",
-      "pubDate": "Sat, 27 Jun 2026 03:21:15 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Butters coy about Power future after starring in upset Showdown win",
-      "link": "https://www.abc.net.au/news/2026-06-27/afl-rd-16-live-carl-wc-coll-rich-ptad-adel/106838790",
-      "snippet": "",
-      "pubDate": "Sat, 27 Jun 2026 02:59:31 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Quick hits: Bedlam in Group H, Dua Lipa surprise and superstars warm the bench",
-      "link": "https://www.abc.net.au/news/2026-06-27/world-cup-quick-hits-june-28-messi-haaland-dua-lipa/106850510",
-      "snippet": "",
-      "pubDate": "Sat, 27 Jun 2026 02:57:45 +0000",
       "source": "ABC News"
     },
     {
@@ -920,13 +931,6 @@
       "link": "https://www.smh.com.au/business/workplace/partner-blew-the-whistle-on-kpmg-five-years-ago-he-knows-why-history-has-repeated-20260624-p609jw.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The all-powerful, and secretive, consulting sector is in crisis again as a whistleblower scandal tears an industry giant apart.",
       "pubDate": "Sat, 27 Jun 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Andrew Forrest warns workers over ‘disturbing’ sex harassment allegations",
-      "link": "https://www.smh.com.au/business/companies/andrew-forrest-warns-workers-over-disturbing-sex-harassment-allegations-20260626-p60ahv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The executive chairman told staff that “losing your job is the beginning of the consequences, not the end”.",
-      "pubDate": "Fri, 26 Jun 2026 18:38:17 +1000",
       "source": "SMH Business"
     }
   ]
