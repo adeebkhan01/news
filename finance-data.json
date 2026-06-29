@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-29T16:14:33.716Z",
+  "fetchedAt": "2026-06-29T20:18:34.499Z",
   "asx200": {
     "value": 8823.4,
     "change": 91.7,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.03,
-    "changePercent": -3.85,
+    "changePercent": -3.78,
     "previousClose": 0.72,
     "asOf": "2026-06-29",
     "history": [
@@ -191,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4040.7,
-      "change": -519.8,
-      "changePercent": -11.4
+      "price": 4028,
+      "change": -532.5,
+      "changePercent": -11.68
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 58.55,
-      "change": -17.07,
-      "changePercent": -22.58
+      "price": 58.65,
+      "change": -16.97,
+      "changePercent": -22.44
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 70.75,
-      "change": -16.61,
-      "changePercent": -19.01
+      "price": 70.56,
+      "change": -16.8,
+      "changePercent": -19.23
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 6.17,
-      "change": -0.19,
-      "changePercent": -3
+      "change": -0.18,
+      "changePercent": -2.91
     },
     {
       "name": "BHP Group",
@@ -826,6 +826,27 @@
   ],
   "news": [
     {
+      "title": "ASX set to edge up, tech shares drive Wall Street rebound",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-edge-up-tech-shares-drive-wall-street-rebound-20260630-p60b4r.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "US stocks are rising and recovering some of their losses from a rare losing week.",
+      "pubDate": "Tue, 30 Jun 2026 05:19:05 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "‘Bring food and water’: Australians face six-hour lines for Euro summer",
+      "link": "https://www.smh.com.au/business/consumer-affairs/bring-food-and-water-australians-face-six-hour-lines-for-euro-summer-20260629-p60ayx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The EU’s automated digital border management system, called the Entry/Exit System, was rolled out in April just in time for the northern summer crush of tourism.",
+      "pubDate": "Tue, 30 Jun 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Brazil breaks Japan hearts with last-minute winner",
+      "link": "https://www.abc.net.au/news/2026-06-30/world-cup-live-brazil-japan-germany-paraguay-netherland-morocco/106854744",
+      "snippet": "",
+      "pubDate": "Mon, 29 Jun 2026 16:32:53 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Sam Kerr returns to the United States after Chelsea exit",
       "link": "https://www.abc.net.au/news/2026-06-30/sam-kerr-s-future-confirmed-/106858822",
       "snippet": "",
@@ -886,27 +907,6 @@
       "link": "https://www.smh.com.au/business/the-economy/how-far-is-too-far-the-risks-of-a-tumbling-property-market-20260629-p60aw0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The government’s decision to use policy to let more air out of the housing market could push prices too hard.",
       "pubDate": "Mon, 29 Jun 2026 15:24:23 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Forrestania lands Edna May in $300M WA gold hub coup",
-      "link": "https://www.smh.com.au/business/companies/forrestania-lands-edna-may-in-300m-wa-gold-hub-coup-20260629-p60b0s.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Forrestania Resources has signed a binding $300m deal to swallow Ramelius Resources’ Edna May gold hub, creating a powerhouse dual-hub processing network in WA.",
-      "pubDate": "Mon, 29 Jun 2026 15:20:03 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Aurum strikes bonanza gold at growing West African Boundiali project",
-      "link": "https://www.smh.com.au/business/companies/aurum-strikes-bonanza-gold-at-growing-west-african-boundiali-project-20260629-p60b04.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Aurum Resources has nailed another high-grade intercept in West Africa, this time with 1.7m at a whopping 70.35g/t gold to further boost Boundiali ahead of a resource update.",
-      "pubDate": "Mon, 29 Jun 2026 14:40:14 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Tech share rally drives ASX higher; US markets set to rise",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-advance-wall-street-s-ai-slump-picks-up-pace-20260629-p60ary.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket finished the day in positive territory following a strong rally by the country’s tech stocks.",
-      "pubDate": "Mon, 29 Jun 2026 14:18:02 +1000",
       "source": "SMH Business"
     }
   ]
