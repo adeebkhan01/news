@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-29T20:18:34.499Z",
+  "fetchedAt": "2026-06-29T22:33:49.460Z",
   "asx200": {
     "value": 8823.4,
     "change": 91.7,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.03,
-    "changePercent": -3.78,
+    "changePercent": -3.81,
     "previousClose": 0.72,
     "asOf": "2026-06-29",
     "history": [
@@ -181,6 +181,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-06-28",
+        "close": 0.69
+      },
+      {
         "date": "2026-06-29",
         "close": 0.69
       }
@@ -191,33 +195,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4028,
-      "change": -532.5,
-      "changePercent": -11.68
+      "price": 4031.5,
+      "change": -529,
+      "changePercent": -11.6
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 58.65,
-      "change": -16.97,
-      "changePercent": -22.44
+      "price": 58.79,
+      "change": -16.83,
+      "changePercent": -22.25
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 70.56,
-      "change": -16.8,
-      "changePercent": -19.23
+      "price": 70.4,
+      "change": -16.96,
+      "changePercent": -19.41
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.17,
+      "price": 6.18,
       "change": -0.18,
-      "changePercent": -2.91
+      "changePercent": -2.89
     },
     {
       "name": "BHP Group",
@@ -826,10 +830,38 @@
   ],
   "news": [
     {
+      "title": "Stokes backs Brook but coach stops short of captaincy endorsement",
+      "link": "https://www.abc.net.au/news/2026-06-30/ben-stokes-backs-harry-brook-as-england-captain/106859254",
+      "snippet": "",
+      "pubDate": "Mon, 29 Jun 2026 22:04:41 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "How a punt on a trial in Italy created the Socceroos' next star",
+      "link": "https://www.abc.net.au/news/2026-06-30/socceroos-volpato-not-immune-to-criticism/106859142",
+      "snippet": "",
+      "pubDate": "Mon, 29 Jun 2026 21:58:25 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Osaka channels Kill Bill as Sinner and Sabalenka reverse French misery",
+      "link": "https://www.abc.net.au/news/2026-06-30/sinner-djokovic-sabalenka-osaka-wimbledon-first-round/106859168",
+      "snippet": "",
+      "pubDate": "Mon, 29 Jun 2026 21:44:30 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Australian Kasatkina finally wins on grass to kick off Wimbledon run",
+      "link": "https://www.abc.net.au/news/2026-06-30/daria-kasatkina-reverses-australian-fortunes-at-wimbledon/106859134",
+      "snippet": "",
+      "pubDate": "Mon, 29 Jun 2026 20:41:27 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "ASX set to edge up, tech shares drive Wall Street rebound",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-edge-up-tech-shares-drive-wall-street-rebound-20260630-p60b4r.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "US stocks are rising and recovering some of their losses from a rare losing week.",
-      "pubDate": "Tue, 30 Jun 2026 05:19:05 +1000",
+      "pubDate": "Tue, 30 Jun 2026 06:34:13 +1000",
       "source": "SMH Business"
     },
     {
@@ -840,7 +872,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Brazil breaks Japan hearts with last-minute winner",
+      "title": "Live: Germany and Paraguay off to extra-time, Brazil breaks Japan hearts",
       "link": "https://www.abc.net.au/news/2026-06-30/world-cup-live-brazil-japan-germany-paraguay-netherland-morocco/106854744",
       "snippet": "",
       "pubDate": "Mon, 29 Jun 2026 16:32:53 +0000",
@@ -880,34 +912,6 @@
       "snippet": "",
       "pubDate": "Mon, 29 Jun 2026 06:48:45 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Viking pockets up to $5M from asset sale to supercharge US tungsten",
-      "link": "https://www.smh.com.au/business/companies/viking-pockets-up-to-5m-from-asset-sale-to-supercharge-us-tungsten-20260629-p60b1f.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Viking Mines has signed a binding deal to divest its non-core First Hit gold project in WA to First Au, raising up to $5 million to focus on US tungsten.",
-      "pubDate": "Mon, 29 Jun 2026 15:56:31 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "‘We know the bloke’: Karl Stefanovic sponsor backs ousted broadcaster",
-      "link": "https://www.smh.com.au/business/companies/we-know-the-bloke-karl-stefanovic-sponsor-backs-ousted-broadcaster-20260629-p60aty.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "An energy supplement company that has a paid partnership with the media personality’s podcast has not been deterred by his culture wars podcast programming.",
-      "pubDate": "Mon, 29 Jun 2026 15:56:21 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Blues coach Daley to answer critics after Origin III",
-      "link": "https://www.abc.net.au/news/2026-06-29/state-of-origin-nsw-blues-laurie-daley-queensland-maroons/106857264",
-      "snippet": "",
-      "pubDate": "Mon, 29 Jun 2026 05:43:27 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "How far is too far? The risks of a tumbling property market",
-      "link": "https://www.smh.com.au/business/the-economy/how-far-is-too-far-the-risks-of-a-tumbling-property-market-20260629-p60aw0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The government’s decision to use policy to let more air out of the housing market could push prices too hard.",
-      "pubDate": "Mon, 29 Jun 2026 15:24:23 +1000",
-      "source": "SMH Business"
     }
   ]
 }
