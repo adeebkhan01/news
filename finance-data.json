@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-29T11:28:14.337Z",
+  "fetchedAt": "2026-06-29T16:14:33.716Z",
   "asx200": {
     "value": 8823.4,
     "change": 91.7,
@@ -86,17 +86,13 @@
       {
         "date": "2026-06-26",
         "close": 8764.2
-      },
-      {
-        "date": "2026-06-29",
-        "close": 8823.4
       }
     ]
   },
   "audusd": {
     "value": 0.69,
     "change": -0.03,
-    "changePercent": -3.67,
+    "changePercent": -3.85,
     "previousClose": 0.72,
     "asOf": "2026-06-29",
     "history": [
@@ -195,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4048.3,
-      "change": -512.2,
-      "changePercent": -11.23
+      "price": 4040.7,
+      "change": -519.8,
+      "changePercent": -11.4
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 58.19,
-      "change": -17.43,
-      "changePercent": -23.05
+      "price": 58.55,
+      "change": -17.07,
+      "changePercent": -22.58
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 69.85,
-      "change": -17.51,
-      "changePercent": -20.04
+      "price": 70.75,
+      "change": -16.61,
+      "changePercent": -19.01
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.19,
-      "change": -0.17,
-      "changePercent": -2.66
+      "price": 6.17,
+      "change": -0.19,
+      "changePercent": -3
     },
     {
       "name": "BHP Group",
@@ -830,6 +826,13 @@
   ],
   "news": [
     {
+      "title": "Sam Kerr returns to the United States after Chelsea exit",
+      "link": "https://www.abc.net.au/news/2026-06-30/sam-kerr-s-future-confirmed-/106858822",
+      "snippet": "",
+      "pubDate": "Mon, 29 Jun 2026 16:05:54 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "New budget airline could fly you from Sydney, Melbourne and Brisbane",
       "link": "https://www.smh.com.au/business/companies/new-budget-airline-could-fly-you-from-sydney-melbourne-and-brisbane-20260629-p60ayr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "VietJet is eyeing an Australian domestic entry that could come under a fresh name to compete with Qantas, Jetstar and Virgin.",
@@ -904,13 +907,6 @@
       "link": "https://www.smh.com.au/business/markets/asx-set-to-advance-wall-street-s-ai-slump-picks-up-pace-20260629-p60ary.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The Australian sharemarket finished the day in positive territory following a strong rally by the country’s tech stocks.",
       "pubDate": "Mon, 29 Jun 2026 14:18:02 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Venus royalty windfall breathes new life into WA gold hunt",
-      "link": "https://www.smh.com.au/business/companies/venus-royalty-windfall-breathes-new-life-into-wa-gold-hunt-20260629-p60azh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Fresh from reshaping its balance sheet through the sale of its Youanmi royalty, Venus Metals has sharpened drill-ready gold targets in Western Australia’s Eastern Goldfields.",
-      "pubDate": "Mon, 29 Jun 2026 13:58:33 +1000",
       "source": "SMH Business"
     }
   ]
