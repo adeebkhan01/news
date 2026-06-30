@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-30T15:04:31.954Z",
+  "fetchedAt": "2026-06-30T17:19:45.667Z",
   "asx200": {
     "value": 8778.7,
     "change": 47,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.02,
-    "changePercent": -3.28,
+    "changePercent": -3.46,
     "previousClose": 0.72,
     "asOf": "2026-06-30",
     "history": [
@@ -191,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4056.4,
-      "change": -504.1,
-      "changePercent": -11.05
+      "price": 4036.5,
+      "change": -524,
+      "changePercent": -11.49
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 60.37,
-      "change": -15.25,
-      "changePercent": -20.17
+      "price": 59.86,
+      "change": -15.76,
+      "changePercent": -20.84
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 70.42,
-      "change": -16.94,
-      "changePercent": -19.39
+      "price": 69.79,
+      "change": -17.57,
+      "changePercent": -20.11
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.27,
-      "change": -0.09,
-      "changePercent": -1.43
+      "price": 6.25,
+      "change": -0.11,
+      "changePercent": -1.79
     },
     {
       "name": "BHP Group",
@@ -826,6 +826,13 @@
   ],
   "news": [
     {
+      "title": "Live: Côte d'Ivoire takes on Norway as round of 32 continues",
+      "link": "https://www.abc.net.au/news/2026-07-01/world-cup-live-cote-divoire-norway-france-sweden-mexico-ecuador/106861886",
+      "snippet": "",
+      "pubDate": "Tue, 30 Jun 2026 16:33:00 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Ex-transport minister John Sharp, directors cleared of breaching duties at Rex",
       "link": "https://www.smh.com.au/business/companies/ex-transport-minister-john-sharp-cleared-of-breaching-duties-at-rex-20260630-p60bfd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Rex Airlines has been found to have misled the sharemarket, but the corporate cop did not prove its case against some former non-executive directors.",
@@ -901,13 +908,6 @@
       "snippet": "Donald Trump’s push to stack the board of the US central bank with loyalists has hit a roadblock after a Supreme Court decision. But the slim majority ruling suggests the Fed may still be vulnerable.",
       "pubDate": "Tue, 30 Jun 2026 11:59:16 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Lifeless Germany fall at World Cup as Paraguay show tenacity to die another day",
-      "link": "https://www.abc.net.au/news/2026-06-30/world-cup-germany-paraguay-analysis-boston-stadium/106858982",
-      "snippet": "",
-      "pubDate": "Tue, 30 Jun 2026 01:45:29 +0000",
-      "source": "ABC News"
     }
   ]
 }
