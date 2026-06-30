@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-30T17:19:45.667Z",
+  "fetchedAt": "2026-06-30T20:25:05.128Z",
   "asx200": {
     "value": 8778.7,
     "change": 47,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.02,
-    "changePercent": -3.46,
+    "changePercent": -3.34,
     "previousClose": 0.72,
     "asOf": "2026-06-30",
     "history": [
@@ -181,6 +181,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-06-29",
+        "close": 0.69
+      },
+      {
         "date": "2026-06-30",
         "close": 0.69
       }
@@ -191,25 +195,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4036.5,
-      "change": -524,
-      "changePercent": -11.49
+      "price": 4034.6,
+      "change": -525.9,
+      "changePercent": -11.53
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 59.86,
-      "change": -15.76,
-      "changePercent": -20.84
+      "price": 59.73,
+      "change": -15.89,
+      "changePercent": -21.01
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 69.79,
-      "change": -17.57,
-      "changePercent": -20.11
+      "price": 70.08,
+      "change": -17.28,
+      "changePercent": -19.78
     },
     {
       "name": "Copper",
@@ -217,7 +221,7 @@
       "iconBg": "#fef0e6",
       "price": 6.25,
       "change": -0.11,
-      "changePercent": -1.79
+      "changePercent": -1.66
     },
     {
       "name": "BHP Group",
@@ -826,7 +830,56 @@
   ],
   "news": [
     {
-      "title": "Live: Côte d'Ivoire takes on Norway as round of 32 continues",
+      "title": "‘Destroyed lives’: Chinese billionaire sentenced to 30 years in US prison",
+      "link": "https://www.smh.com.au/business/companies/destroyed-hundreds-of-lives-chinese-billionaire-sentenced-to-30-years-in-us-prison-20260701-p60bi7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Guo Wengui convinced hundreds of thousands of people to invest more than $US1 billion but instead spent their money on a lavish lifestyle that included a superyacht and a New York penthouse.",
+      "pubDate": "Wed, 01 Jul 2026 06:17:06 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ASX set to edge up as Wall Street advances",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-edge-up-as-wall-street-advances-20260701-p60bhx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The ASX is set to inch higher at the open while US stocks are trimming their losses from a rocky June.",
+      "pubDate": "Wed, 01 Jul 2026 06:10:18 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Socceroos coy on penalty preparations for World Cup knockout game",
+      "link": "https://www.abc.net.au/news/2026-07-01/world-socceroos-penalty-plans-ajdin-hrustic-say-ask-the-boss/106863700",
+      "snippet": "",
+      "pubDate": "Tue, 30 Jun 2026 19:26:42 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Why we should think twice before anointing Brisbane Olympians",
+      "link": "https://www.abc.net.au/news/2026-07-01/brisbane-olympics-athlete-pressure-already-arrived/106832970",
+      "snippet": "",
+      "pubDate": "Tue, 30 Jun 2026 19:05:50 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Consulting giants face break-up threat to restore trust after scandals",
+      "link": "https://www.smh.com.au/business/companies/consulting-giants-face-break-up-threat-to-restore-trust-after-scandals-20260629-p60aws.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The federal government is proposing harsh new measures to address the misbehaviour of Australia’s global consulting giants.",
+      "pubDate": "Wed, 01 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Grill’d flips on racy SuperBuns burger ad, pulls image",
+      "link": "https://www.smh.com.au/business/companies/grill-d-flips-on-racy-superbuns-burger-ad-pulls-image-20260630-p60b94.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The burger chain has U-turned on its ad featuring a burger resting on the hip of a woman in active wear that had outraged staff.",
+      "pubDate": "Wed, 01 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "I’m in two minds about climate change. But not like Hanson",
+      "link": "https://www.smh.com.au/business/the-economy/i-m-in-two-minds-about-climate-change-but-not-like-hanson-20260630-p60bcm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "When I decided to check on our progress in limiting climate change, I discovered the news wasn’t good. But then I realised we’re not dead yet.",
+      "pubDate": "Wed, 01 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Haaland Norway's hero again with late winner against Côte d'Ivoire",
       "link": "https://www.abc.net.au/news/2026-07-01/world-cup-live-cote-divoire-norway-france-sweden-mexico-ecuador/106861886",
       "snippet": "",
       "pubDate": "Tue, 30 Jun 2026 16:33:00 +0000",
@@ -858,55 +911,6 @@
       "link": "https://www.smh.com.au/business/consumer-affairs/accc-sues-amazon-for-introducing-ads-to-prime-using-unfair-contracts-20260630-p60b71.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The watchdog has taken the Seattle-headquartered company’s local business to court for allegedly burying unfair terms in contracts that Amazon Prime customers had signed.",
       "pubDate": "Tue, 30 Jun 2026 16:08:37 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "‘Better than smelling like fear’: How a perfumed private equity boss faced the judge",
-      "link": "https://www.smh.com.au/business/companies/high-profile-private-equity-boss-faces-court-following-car-crash-20260630-p60b75.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Joel Thickins, the local boss of one of the world’s largest private equity firms, TPG Capital, this morning fronted court after crashing his car and refusing a breathalyser.",
-      "pubDate": "Tue, 30 Jun 2026 16:01:27 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Amplia reshapes board for next phase of cancer drug push",
-      "link": "https://www.smh.com.au/business/companies/amplia-reshapes-board-for-next-phase-of-cancer-drug-push-20260630-p60bf1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Amplia Therapeutics has handed the chairman’s role to Jane Bell AM as pancreatic cancer trial results and US regulatory progress prepare it for the next phase of drug development.",
-      "pubDate": "Tue, 30 Jun 2026 15:56:03 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "North-west Victorian sporting league adopts new concussion app",
-      "link": "https://www.abc.net.au/news/2026-06-30/regional-victorian-sporting-league-adopt-concussion-initiative/106859656",
-      "snippet": "",
-      "pubDate": "Tue, 30 Jun 2026 05:46:51 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Can Bradman Best be a Blues saviour one more time?",
-      "link": "https://www.abc.net.au/news/2026-06-30/bradman-best-state-of-origin-new-south-wales/106861384",
-      "snippet": "",
-      "pubDate": "Tue, 30 Jun 2026 04:22:57 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Litchfield eyes fresh NT targets after BHP Xplor model review",
-      "link": "https://www.smh.com.au/business/companies/litchfield-eyes-fresh-nt-targets-after-bhp-xplor-model-review-20260630-p60bcw.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Litchfield Minerals is set to launch three geophysical surveys in July across two key NT projects to test target models refined through its recent BHP Xplor studies.",
-      "pubDate": "Tue, 30 Jun 2026 14:00:02 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Quick hits: Shootout drama, VAR controversy make for German nightmare",
-      "link": "https://www.abc.net.au/news/2026-06-30/world-cup-quick-hits-paraguay-germany-shootout-var/106859918",
-      "snippet": "",
-      "pubDate": "Tue, 30 Jun 2026 03:06:11 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Trump unleashes as his Fed plan dealt a major blow",
-      "link": "https://www.smh.com.au/business/banking-and-finance/trump-furious-as-his-fed-plan-dealt-a-blow-20260630-p60b6l.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Donald Trump’s push to stack the board of the US central bank with loyalists has hit a roadblock after a Supreme Court decision. But the slim majority ruling suggests the Fed may still be vulnerable.",
-      "pubDate": "Tue, 30 Jun 2026 11:59:16 +1000",
       "source": "SMH Business"
     }
   ]
