@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-30T10:04:41.794Z",
+  "fetchedAt": "2026-06-30T15:04:31.954Z",
   "asx200": {
     "value": 8778.7,
     "change": 47,
@@ -86,17 +86,13 @@
       {
         "date": "2026-06-29",
         "close": 8823.4
-      },
-      {
-        "date": "2026-06-30",
-        "close": 8778.7
       }
     ]
   },
   "audusd": {
     "value": 0.69,
-    "change": -0.03,
-    "changePercent": -3.88,
+    "change": -0.02,
+    "changePercent": -3.28,
     "previousClose": 0.72,
     "asOf": "2026-06-30",
     "history": [
@@ -195,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4036.3,
-      "change": -524.2,
-      "changePercent": -11.49
+      "price": 4056.4,
+      "change": -504.1,
+      "changePercent": -11.05
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 59.2,
-      "change": -16.42,
-      "changePercent": -21.72
+      "price": 60.37,
+      "change": -15.25,
+      "changePercent": -20.17
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 70.87,
-      "change": -16.49,
-      "changePercent": -18.88
+      "price": 70.42,
+      "change": -16.94,
+      "changePercent": -19.39
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.24,
-      "change": -0.12,
-      "changePercent": -1.82
+      "price": 6.27,
+      "change": -0.09,
+      "changePercent": -1.43
     },
     {
       "name": "BHP Group",
