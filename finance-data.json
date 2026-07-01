@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-01T17:25:55.093Z",
+  "fetchedAt": "2026-07-01T20:19:37.616Z",
   "asx200": {
     "value": 8722.9,
     "change": -6.5,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.03,
-    "changePercent": -3.84,
+    "changePercent": -3.98,
     "previousClose": 0.72,
     "asOf": "2026-07-01",
     "history": [
@@ -189,6 +189,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-06-30",
+        "close": 0.69
+      },
+      {
         "date": "2026-07-01",
         "close": 0.69
       }
@@ -199,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4085.4,
-      "change": -389.8,
-      "changePercent": -8.71
+      "price": 4047.6,
+      "change": -427.6,
+      "changePercent": -9.55
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 60.51,
-      "change": -14.5,
-      "changePercent": -19.33
+      "price": 59.69,
+      "change": -15.32,
+      "changePercent": -20.43
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 68.35,
-      "change": -23.81,
-      "changePercent": -25.84
+      "price": 67.97,
+      "change": -24.19,
+      "changePercent": -26.25
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.17,
-      "change": -0.35,
-      "changePercent": -5.36
+      "price": 6.16,
+      "change": -0.37,
+      "changePercent": -5.66
     },
     {
       "name": "BHP Group",
@@ -834,7 +838,28 @@
   ],
   "news": [
     {
-      "title": "Live: England stunned as DR Congo takes shock lead in Atlanta",
+      "title": "Biscoff maker now a $15.5 billion giant as viral biscuit takes over the world",
+      "link": "https://www.smh.com.au/business/companies/biscoff-maker-surges-as-viral-biscuit-takes-over-the-world-20260701-p60bhu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Soaring global sales of the caramelised cookies have sent the shares of a 94-year-old Belgian food company through the roof.",
+      "pubDate": "Thu, 02 Jul 2026 05:44:10 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ASX set to slide, tech stocks weigh down Wall Street",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-tech-stocks-weigh-down-wall-street-20260702-p60but.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Most of Wall Street is rising, but drops for some influential technology stocks are keeping the market in check.",
+      "pubDate": "Thu, 02 Jul 2026 05:23:33 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Under-fire private equity giant paid Australian staff more than $2m on average",
+      "link": "https://www.smh.com.au/business/companies/under-fire-private-equity-giant-paid-australian-staff-more-than-2m-on-average-20260701-p60bo3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Buyout giant TPG is facing intense scrutiny over the conduct of its local boss Joel Thickins and wider corporate culture, but staff have good reason to stay.",
+      "pubDate": "Thu, 02 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Kane saves England after DR Congo scare, Belgium faces Senegal",
       "link": "https://www.abc.net.au/news/2026-07-02/world-cup-live-england-drc-belgium-senegal-usa-bosnia/106867650",
       "snippet": "",
       "pubDate": "Wed, 01 Jul 2026 15:33:17 +0000",
@@ -845,13 +870,6 @@
       "link": "https://www.smh.com.au/business/companies/karl-stefanovic-dumped-from-radio-show-on-gold-20260701-p60bp8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The broadcaster is set to lose a weekly radio show after he was dumped from Nine following a controversial podcast with British far-right activist Tommy Robinson.",
       "pubDate": "Wed, 01 Jul 2026 20:05:45 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Biscoff maker surges as viral biscuit takes over the world",
-      "link": "https://www.smh.com.au/business/companies/biscoff-maker-surges-as-viral-biscuit-takes-over-the-world-20260701-p60bhu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Soaring global sales of Biscoff cookies are helping a Belgian food company extend a remarkable decade of stock market outperformance.",
-      "pubDate": "Wed, 01 Jul 2026 19:30:00 +1000",
       "source": "SMH Business"
     },
     {
@@ -901,20 +919,6 @@
       "link": "https://www.smh.com.au/business/companies/wharfie-who-showed-bikini-photo-of-coworkers-to-colleagues-reinstated-20260701-p60bjy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "A Melbourne port employee alleged to have used crude language and zoomed into a bikini photo of co-workers has kept his job after the Fair Work umpire maintained his dismissal was unfair.",
       "pubDate": "Wed, 01 Jul 2026 16:02:18 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Worst in class: Why our sharemarket performance is a global outlier",
-      "link": "https://www.smh.com.au/business/markets/worst-in-class-why-our-sharemarket-performance-is-a-global-outlier-20260701-p60bm4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "While markets around the world have enjoyed a buoyant financial year, our sharemarket went backwards after accounting for inflation.",
-      "pubDate": "Wed, 01 Jul 2026 15:58:40 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Augustus set to drill deeper into WA gold story at Music Well",
-      "link": "https://www.smh.com.au/business/companies/augustus-set-to-drill-deeper-into-wa-gold-story-at-music-well-20260701-p60bro.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Augustus Minerals is set to launch into a diamond drilling program at its Music Well project near Leonora in Western Australia’s Eastern Goldfields region.",
-      "pubDate": "Wed, 01 Jul 2026 15:57:46 +1000",
       "source": "SMH Business"
     }
   ]
