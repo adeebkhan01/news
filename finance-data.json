@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-02T19:57:47.446Z",
+  "fetchedAt": "2026-07-02T22:32:44.880Z",
   "asx200": {
     "value": 8724.5,
     "change": 0.1,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.02,
-    "changePercent": -3.36,
+    "changePercent": -3.38,
     "previousClose": 0.72,
     "asOf": "2026-07-02",
     "history": [
@@ -189,6 +189,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-07-01",
+        "close": 0.69
+      },
+      {
         "date": "2026-07-02",
         "close": 0.69
       }
@@ -199,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4127.3,
-      "change": -361.8,
-      "changePercent": -8.06
+      "price": 4137,
+      "change": -352.1,
+      "changePercent": -7.84
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 61.13,
-      "change": -14.18,
-      "changePercent": -18.83
+      "price": 61.44,
+      "change": -13.87,
+      "changePercent": -18.42
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 68.48,
-      "change": -25.28,
-      "changePercent": -26.96
+      "price": 68.54,
+      "change": -25.22,
+      "changePercent": -26.9
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.16,
-      "change": -0.49,
-      "changePercent": -7.31
+      "price": 6.17,
+      "change": -0.48,
+      "changePercent": -7.17
     },
     {
       "name": "BHP Group",
@@ -834,25 +838,60 @@
   ],
   "news": [
     {
-      "title": "Concussion awareness leaving parents 'terrified', experts say",
+      "title": "Knights launch new NRLW season with dominant win over Cronulla",
+      "link": "https://www.abc.net.au/news/2026-07-03/nrlw-2026-knights-defeat-sharks-in-heated-opening/106874378",
+      "snippet": "",
+      "pubDate": "Thu, 02 Jul 2026 22:08:56 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Egypt to give Salah until last minute to prove fitness for Socceroos clash",
+      "link": "https://www.abc.net.au/news/2026-07-03/mo-salah-egypt-world-cup-fitness-australia-socceroos/106873366",
+      "snippet": "",
+      "pubDate": "Thu, 02 Jul 2026 21:57:56 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Private equity boss keeps his job but hit with ‘disciplinary action’ after guilty plea",
+      "link": "https://www.smh.com.au/business/companies/tpg-retains-joel-thickins-but-imposes-disciplinary-action-after-guilty-plea-20260703-p60c8p.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Joel Thickins pleaded guilty this week to two charges involving drink-driving relating to an incident in Sydney in early June, when he crashed his BMW into five cars and then twice refused to take an alcohol breath test.",
+      "pubDate": "Fri, 03 Jul 2026 07:47:40 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Giant-killer Maya Joint out of Wimbledon as Australians tumble",
+      "link": "https://www.abc.net.au/news/2026-07-03/wimbledon-2026-maya-joint-losses-to-alexandra-eala/106874276",
+      "snippet": "",
+      "pubDate": "Thu, 02 Jul 2026 21:09:44 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'This sport is unpredictable': De Minaur keeps Wimbledon dream alive",
+      "link": "https://www.abc.net.au/news/2026-07-03/wimbledon-2026-alex-de-minaur-defeats-adrian-mannarino/106874256",
+      "snippet": "",
+      "pubDate": "Thu, 02 Jul 2026 20:55:47 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to rise, Dow hits record but tech stocks weigh on Wall Street",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-tech-stocks-weigh-on-wall-street-20260703-p60c7m.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Most US stocks rose, and the Dow Jones Industrial Average rallied to another record, but more drops for computer chip companies and other winners of the artificial-intelligence boom kept indexes mixed.",
+      "pubDate": "Fri, 03 Jul 2026 06:52:39 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Parents warned against pulling kids out of sport over concussion anxiety",
       "link": "https://www.abc.net.au/news/2026-07-03/qld-stateline-parents-terrified-concussions-in-children-sport/106859490",
       "snippet": "",
       "pubDate": "Thu, 02 Jul 2026 19:40:28 +0000",
       "source": "ABC News"
     },
     {
-      "title": "'The best feeling in the world' for Lachie Kennedy is more than winning",
+      "title": "Sprinter Lachie Kennedy gets his wish ahead of Commonwealth Games debut",
       "link": "https://www.abc.net.au/news/2026-07-03/lachie-kennedy-prefontaine-classic-100m-commonwealth-games/106803044",
       "snippet": "",
       "pubDate": "Thu, 02 Jul 2026 19:28:22 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "ASX set to rise, tech stocks weigh on Wall Street",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-tech-stocks-weigh-on-wall-street-20260703-p60c7m.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Most US stocks are rising after the latest update on the job market suggested the Federal Reserve may feel less pressure to hike interest rates, but tech stocks again weighed on the market.",
-      "pubDate": "Fri, 03 Jul 2026 05:20:39 +1000",
-      "source": "SMH Business"
     },
     {
       "title": "This counterintuitive career move could make you happier (and wealthier)",
@@ -862,7 +901,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "How World Cup watch parties in pubs and cafes took over Australia",
+      "title": "Pub for breakfast: How World Cup watch parties took over Australia",
       "link": "https://www.abc.net.au/news/2026-07-03/why-world-cup-watch-parties-are-australias-new-favourite-hobby/106828634",
       "snippet": "",
       "pubDate": "Thu, 02 Jul 2026 19:06:16 +0000",
@@ -881,41 +920,6 @@
       "snippet": "A new player emerging in Victoria’s pub market has purchased the Central Hotel in Beaconsfield.",
       "pubDate": "Fri, 03 Jul 2026 05:00:00 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Looks like I bought at the peak of the housing market, but that’s OK",
-      "link": "https://www.smh.com.au/business/the-economy/looks-like-i-bought-at-the-peak-of-the-housing-market-but-that-s-ok-20260702-p60c24.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "My bank balance may disagree, but here’s why I’m not bothered by the fall in house prices.",
-      "pubDate": "Fri, 03 Jul 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Former Seven producer claims bid to force Lehrmann judge to testify is ‘plainly logical’",
-      "link": "https://www.smh.com.au/business/companies/former-seven-producer-claims-bid-to-force-lehrmann-judge-to-testify-is-plainly-logical-20260702-p60c2e.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "One-time Seven producer Taylor Auerbach is refusing to give up on his quixotic quest to get Justice Michael Lee to testify in a defamation case.",
-      "pubDate": "Fri, 03 Jul 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Microsoft agrees to pay Nine for journalism in major AI deal",
-      "link": "https://www.smh.com.au/business/companies/microsoft-agrees-to-pay-nine-for-journalism-in-major-ai-deal-20260702-p60c3z.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Nine has signed a major deal with Microsoft which will ensure users of the tech giant’s Copilot chatbot will access original, trusted journalism.",
-      "pubDate": "Fri, 03 Jul 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Waste is not worthless for entrepreneur Le Ho. She’s set to make $50m",
-      "link": "https://www.smh.com.au/business/small-business/waste-is-not-worthless-for-entrepreneur-le-ho-she-s-set-to-make-50m-20260702-p60c43.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Ho, known as the Garbage Queen, is selling her Cleanaway industrial property portfolio for an estimated $50 million.",
-      "pubDate": "Fri, 03 Jul 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Live: Spain takes the lead agianst Austria as Yamal dazzles",
-      "link": "https://www.abc.net.au/news/2026-07-03/world-cup-live-updates-esp-aus-por-cro-sui-alg/106871216",
-      "snippet": "",
-      "pubDate": "Thu, 02 Jul 2026 18:43:56 +0000",
-      "source": "ABC News"
     }
   ]
 }
