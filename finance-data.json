@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-03T19:54:52.056Z",
+  "fetchedAt": "2026-07-03T22:29:58.090Z",
   "asx200": {
     "value": 8844.4,
     "change": 58.7,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.02,
-    "changePercent": -3.28,
+    "changePercent": -3.22,
     "previousClose": 0.72,
     "asOf": "2026-07-03",
     "history": [
@@ -186,6 +186,10 @@
       },
       {
         "date": "2026-07-01",
+        "close": 0.69
+      },
+      {
+        "date": "2026-07-02",
         "close": 0.69
       },
       {
@@ -834,6 +838,34 @@
   ],
   "news": [
     {
+      "title": "Live: Messi and Argentina in World Cup action again against Cabo Verde",
+      "link": "https://www.abc.net.au/news/2026-07-04/world-cup-live-updates-argentina-cabo-verde-colombia-ghana/106879426",
+      "snippet": "",
+      "pubDate": "Fri, 03 Jul 2026 21:54:02 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Quick hits: Beach makes a stunning save and Socceroos teen feels the heat",
+      "link": "https://www.abc.net.au/news/2026-07-04/world-cup-australia-vs-egypt-quick-hits/106879162",
+      "snippet": "",
+      "pubDate": "Fri, 03 Jul 2026 21:53:00 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Socceroos' World Cup ends in heartbreak, but path forward now clear",
+      "link": "https://www.abc.net.au/news/2026-07-04/socceroos-world-cup-australia-egypt-penalty-heartbreak/106879354",
+      "snippet": "",
+      "pubDate": "Fri, 03 Jul 2026 21:46:55 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "How Michael Matthews twice dodged death to line up at the Tour de France",
+      "link": "https://www.abc.net.au/news/2026-07-04/tour-de-france-michael-matthews-dodging-death/106871116",
+      "snippet": "",
+      "pubDate": "Fri, 03 Jul 2026 21:13:19 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Ange Postecoglou appointed head coach at Saudi club Al-Nassr",
       "link": "https://www.abc.net.au/news/2026-07-04/ange-postecoglou-al-nassr/106879152",
       "snippet": "",
@@ -848,7 +880,7 @@
       "source": "ABC News"
     },
     {
-      "title": "Live: Socceroos find equaliser against Egypt, star Aussie injured by 'terrible tackle'",
+      "title": "Live: Heartbreaking penalty shootout ends Australia's World Cup dreams",
       "link": "https://www.abc.net.au/news/2026-07-04/world-cup-live-blog-2026-socceroos-australia-vs-egypt/106877594",
       "snippet": "",
       "pubDate": "Fri, 03 Jul 2026 16:51:15 +0000",
@@ -876,13 +908,6 @@
       "source": "ABC News"
     },
     {
-      "title": "History beckons for Socceroos and Egypt, but only one will taste glory",
-      "link": "https://www.abc.net.au/news/2026-07-03/socceroos-chasing-history-when-they-face-egypt-in-dallas/106875824",
-      "snippet": "",
-      "pubDate": "Fri, 03 Jul 2026 05:50:54 +0000",
-      "source": "ABC News"
-    },
-    {
       "title": "Uber goes back to the future with plans to start accepting cash in Australia",
       "link": "https://www.smh.com.au/business/companies/uber-goes-back-to-the-future-with-plans-to-start-accepting-cash-in-australia-20260703-p60c9q.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The ride-share giant will make the change from July 16. This is how it will work.",
@@ -894,27 +919,6 @@
       "link": "https://www.smh.com.au/business/companies/asx-runners-of-the-week-baumart-nuenergy-and-wide-open-agriculture-20260703-p60cg4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The Bulls N’ Bears ASX Runner of the Week is… Baumart Holdings, after it kicked off work on its inaugural BuildMart modular housing project, with delivery of its first-ever units.",
       "pubDate": "Fri, 03 Jul 2026 15:21:21 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Big Hits: FireFly Metals, Azzuro Resources and Kingston Resources",
-      "link": "https://www.smh.com.au/business/companies/big-hits-firefly-metals-azzuro-resources-and-kingston-resources-20260703-p60cfr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Bulls N’ Bears Big Hits looks at notable drill hits recently reported to the ASX, led by FireFly Metals in Canada, Azzuro Resources in Mongolia and Kingston Resources in NSW.",
-      "pubDate": "Fri, 03 Jul 2026 15:16:22 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "West Coast star Adam Hunter's 'grieving best mate' slams AFL leadership",
-      "link": "https://www.abc.net.au/news/2026-07-03/west-coast-player-adam-hunter-friends-open-letter-to-afl-cte/106875486",
-      "snippet": "",
-      "pubDate": "Fri, 03 Jul 2026 04:20:12 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "The world’s financial system has been upended",
-      "link": "https://www.smh.com.au/business/the-economy/the-world-s-financial-system-has-been-upended-20260702-p60buz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "We are discovering just how much it costs to deal with the climate change mess we have created and the consequences are alarming.",
-      "pubDate": "Fri, 03 Jul 2026 12:50:18 +1000",
       "source": "SMH Business"
     }
   ]
