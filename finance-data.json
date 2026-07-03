@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-03T09:38:33.373Z",
+  "fetchedAt": "2026-07-03T14:36:04.477Z",
   "asx200": {
     "value": 8844.4,
     "change": 58.7,
@@ -90,17 +90,13 @@
       {
         "date": "2026-07-02",
         "close": 8724.5
-      },
-      {
-        "date": "2026-07-03",
-        "close": 8844.4
       }
     ]
   },
   "audusd": {
     "value": 0.69,
     "change": -0.02,
-    "changePercent": -3.22,
+    "changePercent": -3.25,
     "previousClose": 0.72,
     "asOf": "2026-07-03",
     "history": [
@@ -203,33 +199,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4186.3,
-      "change": -302.8,
-      "changePercent": -6.75
+      "price": 4175.5,
+      "change": -313.6,
+      "changePercent": -6.99
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 63.06,
-      "change": -12.26,
-      "changePercent": -16.27
+      "price": 62.73,
+      "change": -12.58,
+      "changePercent": -16.71
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 68.69,
-      "change": -25.07,
-      "changePercent": -26.74
+      "price": 68.64,
+      "change": -25.12,
+      "changePercent": -26.79
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.23,
-      "change": -0.42,
-      "changePercent": -6.38
+      "price": 6.22,
+      "change": -0.43,
+      "changePercent": -6.51
     },
     {
       "name": "BHP Group",
@@ -838,14 +834,14 @@
   ],
   "news": [
     {
-      "title": "Live: Swans, Bulldogs clash in Sydney, Thilthorpe out of Crows-Eagles meeting",
+      "title": "Curnow hits front in Coleman Medal race as Swans and Crows record wins",
       "link": "https://www.abc.net.au/news/2026-07-03/afl-r17-swans-bulldogs-eagles-crows-live-blog/106869754",
       "snippet": "",
       "pubDate": "Fri, 03 Jul 2026 08:40:09 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Live: Blues bring in Burton on stand-by with Game I hero under injury cloud",
+      "title": "Souths captain Cody Walker apologises after kicking opponent",
       "link": "https://www.abc.net.au/news/2026-07-03/nrl-live-updates-penrith-panthers-south-sydney-rabbitohs/106866354",
       "snippet": "",
       "pubDate": "Fri, 03 Jul 2026 07:56:57 +0000",
@@ -882,7 +878,7 @@
     {
       "title": "The world’s financial system has been upended",
       "link": "https://www.smh.com.au/business/the-economy/the-world-s-financial-system-has-been-upended-20260702-p60buz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "We are discovering how just how much it costs to deal with the climate change mess that we have already created. And the consequences are alarming.",
+      "snippet": "We are discovering just how much it costs to deal with the climate change mess we have created and the consequences are alarming.",
       "pubDate": "Fri, 03 Jul 2026 12:50:18 +1000",
       "source": "SMH Business"
     },
