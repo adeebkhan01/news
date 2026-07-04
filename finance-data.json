@@ -1,11 +1,11 @@
 {
-  "fetchedAt": "2026-07-03T22:29:58.090Z",
+  "fetchedAt": "2026-07-04T04:07:29.883Z",
   "asx200": {
     "value": 8844.4,
     "change": 58.7,
     "changePercent": 0.67,
     "previousClose": 8785.7,
-    "asOf": "2026-07-03",
+    "asOf": "2026-07-04",
     "history": [
       {
         "date": "2026-06-03",
@@ -90,6 +90,10 @@
       {
         "date": "2026-07-02",
         "close": 8724.5
+      },
+      {
+        "date": "2026-07-03",
+        "close": 8844.4
       }
     ]
   },
@@ -98,7 +102,7 @@
     "change": -0.02,
     "changePercent": -3.22,
     "previousClose": 0.72,
-    "asOf": "2026-07-03",
+    "asOf": "2026-07-04",
     "history": [
       {
         "date": "2026-06-02",
@@ -838,14 +842,49 @@
   ],
   "news": [
     {
-      "title": "Live: Messi and Argentina in World Cup action again against Cabo Verde",
+      "title": "Live: Demons blitz Hawks early as Giants, Dockers meet in Canberra",
+      "link": "https://www.abc.net.au/news/2026-07-04/afl-r17-hawks-dees-gws-freo-suns-pies-tigers-blues-live-blog/106870812",
+      "snippet": "",
+      "pubDate": "Sat, 04 Jul 2026 03:00:48 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'I didn't know': Keeper sub gamble a failed shot in the dark",
+      "link": "https://www.abc.net.au/news/2026-07-04/world-cup-socceroos-pat-beach-mat-ryan/106879496",
+      "snippet": "",
+      "pubDate": "Sat, 04 Jul 2026 00:10:46 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "The Hollywood reason why McLaren is green and white for the British GP",
+      "link": "https://www.abc.net.au/news/2026-07-04/f1-british-gp-why-mclaren-is-in-green-and-white/106879570",
+      "snippet": "",
+      "pubDate": "Fri, 03 Jul 2026 23:40:25 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Property crash? Unlikely, but if Joe Hockey’s right, watch out Australia",
+      "link": "https://www.smh.com.au/business/the-economy/property-crash-unlikely-but-if-joe-hockey-s-right-watch-out-australia-20260703-p60cc4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Contemplating a negative wealth effect from falling house prices is a venture into unknown territory for most because it hasn’t happened in Australia for a generation.",
+      "pubDate": "Sat, 04 Jul 2026 09:30:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Irvine says Socceroos have to feel the pain before looking ahead",
+      "link": "https://www.abc.net.au/news/2026-07-04/socceroos-have-to-feel-the-pain-before-they-look-ahead/106879422",
+      "snippet": "",
+      "pubDate": "Fri, 03 Jul 2026 22:46:57 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Argentina survives massive scare against Cabo Verde, Colombia downs Ghana",
       "link": "https://www.abc.net.au/news/2026-07-04/world-cup-live-updates-argentina-cabo-verde-colombia-ghana/106879426",
       "snippet": "",
       "pubDate": "Fri, 03 Jul 2026 21:54:02 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Quick hits: Beach makes a stunning save and Socceroos teen feels the heat",
+      "title": "Quick hits: Socceroos teen feels the heat, Aussies take over Walmart",
       "link": "https://www.abc.net.au/news/2026-07-04/world-cup-australia-vs-egypt-quick-hits/106879162",
       "snippet": "",
       "pubDate": "Fri, 03 Jul 2026 21:53:00 +0000",
@@ -880,45 +919,10 @@
       "source": "ABC News"
     },
     {
-      "title": "Live: Heartbreaking penalty shootout ends Australia's World Cup dreams",
-      "link": "https://www.abc.net.au/news/2026-07-04/world-cup-live-blog-2026-socceroos-australia-vs-egypt/106877594",
-      "snippet": "",
-      "pubDate": "Fri, 03 Jul 2026 16:51:15 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Curnow hits front in Coleman Medal race as Swans and Crows record wins",
-      "link": "https://www.abc.net.au/news/2026-07-03/afl-r17-swans-bulldogs-eagles-crows-live-blog/106869754",
-      "snippet": "",
-      "pubDate": "Fri, 03 Jul 2026 08:40:09 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Souths captain Cody Walker apologises after kicking opponent",
-      "link": "https://www.abc.net.au/news/2026-07-03/nrl-live-updates-penrith-panthers-south-sydney-rabbitohs/106866354",
-      "snippet": "",
-      "pubDate": "Fri, 03 Jul 2026 07:56:57 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "The concerning stat that shows Australia's attack needs to lift",
-      "link": "https://www.abc.net.au/news/2026-07-03/how-can-the-socceroos-defeat-egypt/106875136",
-      "snippet": "",
-      "pubDate": "Fri, 03 Jul 2026 06:46:58 +0000",
-      "source": "ABC News"
-    },
-    {
       "title": "Uber goes back to the future with plans to start accepting cash in Australia",
       "link": "https://www.smh.com.au/business/companies/uber-goes-back-to-the-future-with-plans-to-start-accepting-cash-in-australia-20260703-p60c9q.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The ride-share giant will make the change from July 16. This is how it will work.",
       "pubDate": "Fri, 03 Jul 2026 15:50:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX Runners of the Week: Baumart, NuEnergy &amp; Wide Open Agriculture",
-      "link": "https://www.smh.com.au/business/companies/asx-runners-of-the-week-baumart-nuenergy-and-wide-open-agriculture-20260703-p60cg4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Bulls N’ Bears ASX Runner of the Week is… Baumart Holdings, after it kicked off work on its inaugural BuildMart modular housing project, with delivery of its first-ever units.",
-      "pubDate": "Fri, 03 Jul 2026 15:21:21 +1000",
       "source": "SMH Business"
     }
   ]
