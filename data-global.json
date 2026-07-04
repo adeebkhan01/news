@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-04T10:56:35.244Z",
-  "summary": "Global tensions are escalating across multiple fronts, with Iran preparing massive funeral ceremonies for deceased Supreme Leader Ali Khamenei amid regional standoffs, while conflicts in the Middle East intensify as Israel approves new West Bank settlements and Saudi forces prepare unprecedented operations against Houthi threats. Political upheaval is reshaping key regions, including Peru's delayed presidential election result, Moldova's government resignation, and South Africa's leadership crisis. Climate concerns dominate the international agenda as Europe braces for increasingly severe heatwaves, extreme weather patterns worsen globally, and environmental crises mount from Sudan's humanitarian catastrophe to energy demands from AI infrastructure. Meanwhile, humanitarian and rights issues remain urgent, with the Pope advocating for migrant protections, UN warnings of human rights catastrophes, and ongoing surveillance and repression concerns from Hong Kong to Tibet.",
+  "fetchedAt": "2026-07-04T13:42:39.575Z",
+  "summary": "Today's global news is dominated by escalating Middle East tensions following Iran's supreme leader Ali Khamenei's death, with millions expected at his Tehran funeral while the region braces for potential conflict. Ukraine continues striking Russian oil and military infrastructure near St Petersburg as the war grinds on, while the Israeli-Palestinian conflict intensifies with new settlement approvals and West Bank attacks drawing international condemnation. Across Africa, Sudan faces a catastrophic human rights crisis in el-Obeid, and Venezuela's government deflects criticism over earthquake response failures. Europe grapples with climate change impacts and migration pressures, highlighted by the Pope's advocacy for migrants during a Mediterranean visit, while NATO members debate defense spending amid Trump's criticism.",
   "sources": [
     {
       "id": "bbcnews",
@@ -25,6 +25,16 @@
   ],
   "articles": [
     {
+      "title": "Ukraine hits major oil terminal in Russia's St Petersburg",
+      "link": "https://www.bbc.co.uk/news/articles/c8j2vmzxezro?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Ukrainian President Volodymyr Zelensky says the target is key infrastructure \"that generates revenue for Russia's war\".",
+      "pubDate": "Sat, 04 Jul 2026 13:13:52 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/737c/live/fec2f110-779f-11f1-90c7-73fde41eb72e.png",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
       "title": "Pope urges Europe to do more for migrants while visiting gateway island",
       "link": "https://www.bbc.co.uk/news/articles/c5yz83n7q5no?at_medium=RSS&amp;at_campaign=rss",
       "desc": "The pontiff pays tribute to migrants who lost their lives at sea at a cemetery on the Italian island of Lampedusa.",
@@ -33,6 +43,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Ukraine hits oil and military facilities near Russia’s St Petersburg",
+      "link": "https://www.aljazeera.com/news/2026/7/4/ukraine-hits-oil-and-military-facilities-near-russias-st-petersburg?traffic_source=rss",
+      "desc": "Kyiv&#039;s drones disrupt St Petersburg internet and flights as Russian strikes halt a gas facility in central Ukraine.",
+      "pubDate": "Sat, 04 Jul 2026 10:29:19 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/reuters_6a48d1ab-1783157163.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
     },
     {
       "title": "Saudi-led coalition pledges ‘unprecedented’ force against Houthi threats",
@@ -12350,76 +12370,6 @@
       "desc": "Iran national players Saeid Ezatolahi and Mohammad Ghorbani talk about how war is overshadowing a World Cup dream.",
       "pubDate": "Thu, 04 Jun 2026 14:13:24 +0000",
       "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-05-28T160401Z_1785084685_UP1EM5S18MN86_RTRMADP_3_SOCCER-FRIENDLY-IRN-GMB-PREVIEW-1780577870.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "N Korea’s Kim Jong Un calls for ‘exponential’ expansion of nuclear arsenal",
-      "link": "https://www.aljazeera.com/news/2026/6/4/n-koreas-kim-jong-un-calls-for-exponential-expansion-of-nuclear-arsenal?traffic_source=rss",
-      "desc": "Kim says expansion necessary due to worsening security threats, long-term confrontations with &#039;most ferocious enemies&#039;.",
-      "pubDate": "Thu, 04 Jun 2026 12:50:09 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a212778cb1c-1780557688.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Who are the World Cup Golden Boot favourites? Mbappe, Ronaldo, Messi, Kane?",
-      "link": "https://www.aljazeera.com/sports/2026/6/4/who-are-the-world-cup-golden-boot-favourites-mbappe-ronaldo-messi-kane?traffic_source=rss",
-      "desc": "There are a host of top players who could claim the coveted title of top goal scorer, including two from the same team.",
-      "pubDate": "Thu, 04 Jun 2026 12:13:20 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/GettyImages-2219523484-1780397355.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Germans at Russia's SPIEF: Who's really there?",
-      "link": "https://www.dw.com/en/germans-at-russia-s-spief-who-s-really-there/a-77416709?maca=en-rss-en-bus-2091-rdf",
-      "desc": "Russian officials and media claim German businesses are comming back to the St. Petersburg Economic Forum despite the war in Ukraine. But who is actually attending Russia's flagship event this year?",
-      "pubDate": "2026-06-04T12:13:00Z",
-      "img": "https://static.dw.com/image/77394411_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "Israel’s Smotrich announces plan for 2,162 homes in occupied West Bank",
-      "link": "https://www.aljazeera.com/news/2026/6/4/israels-smotrich-announces-plan-for-2162-homes-in-occupied-west-bank?traffic_source=rss",
-      "desc": "The far-right finance minister says the new houses will &#039;strengthen our hold on the land&#039;.",
-      "pubDate": "Thu, 04 Jun 2026 12:06:17 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a21539c484e-1780568988.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Who is the Indian guru Venezuelan acting President Delcy Rodriguez follows?",
-      "link": "https://www.aljazeera.com/news/2026/6/4/who-is-the-indian-guru-venezuelan-acting-president-delcy-rodriguez-follows?traffic_source=rss",
-      "desc": "The Venezuelan leader, who is a devotee of Sathya Sai Baba, is in India as the two countries aim to boost energy ties.",
-      "pubDate": "Thu, 04 Jun 2026 11:04:16 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-04T060731Z_1718416434_RC2TMLARJSSE_RTRMADP_3_INDIA-VENEZUELA-1780567841.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Watch: Lebanon-Israel ceasefire deal made in 'hope rather than expectation'",
-      "link": "https://www.bbc.com/news/videos/cwy20yggenxo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "BBC correspondent John Sudworth reports from the Beirut stronghold of Hezbollah support, Dahieh.",
-      "pubDate": "Thu, 04 Jun 2026 11:02:17 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0493/live/15e953d0-6002-11f1-8b8c-6d33e1d5abb6.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "‘Grossly unfair’: Meta slams Australia’s bid to make platforms pay for news",
-      "link": "https://www.aljazeera.com/economy/2026/6/4/grossly-unfair-meta-slams-australias-bid-to-make-platforms-pay-for-news?traffic_source=rss",
-      "desc": "Facebook parent company says proposals violate Australia&#039;s commitments under its free trade agreement with the US.",
-      "pubDate": "Thu, 04 Jun 2026 10:56:33 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-02T115015Z_1864288788_RC28DLAQGP18_RTRMADP_3_META-PLATFORMS-SAFETY-1780545103_5d971c-1780557258.jpg?resize=1200%2C630&amp;quality=80",
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
