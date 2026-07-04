@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-04T08:43:22.182Z",
-  "summary": "Global attention is focused on several critical humanitarian and geopolitical crises: Iran is mourning its slain leader Ali Khamenei with massive state ceremonies as tensions simmer in the Middle East, while Sudan faces a devastating human rights catastrophe in el-Obeid that UN officials warn could exceed previous atrocities. Political realignments are reshaping multiple regions, from Peru's contentious presidential outcome to Moldova's government collapse and South Africa's corruption turmoil, alongside deepening Israeli-Palestinian tensions marked by new West Bank settlements and escalating settler violence. Climate emergencies are intensifying across Europe and triggering global concerns about extreme weather and AI data center energy demands, while technological and scientific innovation continues with NASA's telescope rescue mission and Ebola vaccine trials in Congo.",
+  "fetchedAt": "2026-07-04T10:56:35.244Z",
+  "summary": "Global tensions are escalating across multiple fronts, with Iran preparing massive funeral ceremonies for deceased Supreme Leader Ali Khamenei amid regional standoffs, while conflicts in the Middle East intensify as Israel approves new West Bank settlements and Saudi forces prepare unprecedented operations against Houthi threats. Political upheaval is reshaping key regions, including Peru's delayed presidential election result, Moldova's government resignation, and South Africa's leadership crisis. Climate concerns dominate the international agenda as Europe braces for increasingly severe heatwaves, extreme weather patterns worsen globally, and environmental crises mount from Sudan's humanitarian catastrophe to energy demands from AI infrastructure. Meanwhile, humanitarian and rights issues remain urgent, with the Pope advocating for migrant protections, UN warnings of human rights catastrophes, and ongoing surveillance and repression concerns from Hong Kong to Tibet.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,26 @@
     }
   ],
   "articles": [
+    {
+      "title": "Pope urges Europe to do more for migrants while visiting gateway island",
+      "link": "https://www.bbc.co.uk/news/articles/c5yz83n7q5no?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The pontiff pays tribute to migrants who lost their lives at sea at a cemetery on the Italian island of Lampedusa.",
+      "pubDate": "Sat, 04 Jul 2026 10:42:47 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0f69/live/f6627020-7788-11f1-a627-714adb4eed6e.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Saudi-led coalition pledges ‘unprecedented’ force against Houthi threats",
+      "link": "https://www.aljazeera.com/news/2026/7/4/saudi-led-coalition-pledges-unprecedented-force-against-houthi-threats?traffic_source=rss",
+      "desc": "Threats escalate after Houthis block Saudi warplanes, allowing Iranian plane to land in Sanaa for first time in decade.",
+      "pubDate": "Sat, 04 Jul 2026 08:59:17 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/afp_6a48b6f6b582-1783150326.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Keiko Fujimori declared winner of Peru's presidential election weeks after vote",
       "link": "https://www.bbc.co.uk/news/articles/cr5jpvv06e1o?at_medium=RSS&amp;at_campaign=rss",
@@ -53,6 +73,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Kielce pogrom in Poland: 80th anniversary of 1946 massacre",
+      "link": "https://www.dw.com/en/kielce-pogrom-in-poland-80th-anniversary-of-1946-massacre/a-77826002?maca=en-rss-en-eu-2092-rdf",
+      "desc": "Just over a year after World War II ended, a mob in the Polish city of Kielce killed around 40 Jews, some of them Holocaust survivors. A lie about ritual child murder escalated the violence.",
+      "pubDate": "2026-07-04T04:24:00Z",
+      "img": "https://static.dw.com/image/77818576_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "FIFA World Cup: Round of 16 match schedule and which teams qualified",
@@ -12390,66 +12420,6 @@
       "desc": "Facebook parent company says proposals violate Australia&#039;s commitments under its free trade agreement with the US.",
       "pubDate": "Thu, 04 Jun 2026 10:56:33 +0000",
       "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-02T115015Z_1864288788_RC28DLAQGP18_RTRMADP_3_META-PLATFORMS-SAFETY-1780545103_5d971c-1780557258.jpg?resize=1200%2C630&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Trump says Eiffel Tower-like UFC structure may stay",
-      "link": "https://www.bbc.com/sport/mixed-martial-arts/articles/cx21778x81zo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "President Donald Trump says he may choose to leave a purpose-built UFC arena standing at the White House because it is \"attractive to a lot of people\".",
-      "pubDate": "Thu, 04 Jun 2026 10:28:43 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b402/live/30148570-5ffa-11f1-a129-231866914bc9.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Israel and Lebanon agree on ceasefire framework in US-led talks",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/4/israel-and-lebanon-agree-on-ceasefire-framework-in-us-led-talks?traffic_source=rss",
-      "desc": "The US announced an Israel-Lebanon ceasefire framework, but Hezbollah&#039;s absence leaves questions over enforcement.",
-      "pubDate": "Thu, 04 Jun 2026 09:50:17 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1780566605.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "US House votes to end Trump’s Iran war: Does it matter?",
-      "link": "https://www.aljazeera.com/news/2026/6/4/us-house-votes-to-end-trumps-iran-war-does-it-matter?traffic_source=rss",
-      "desc": "Four Republicans join Democrats in rare rebuke of president. But Congress still far from able to stop further attacks.",
-      "pubDate": "Thu, 04 Jun 2026 09:49:24 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26113618417024-1780560194.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Kushner-backed Albania resort sparks protests, EU concerns",
-      "link": "https://www.dw.com/en/kushner-backed-albania-resort-sparks-protests-eu-concerns/a-77409540?maca=en-rss-en-eu-2092-rdf",
-      "desc": "Donald Trump's son-in-law is linked to a megaproject on Albania's protected coast that has triggered protests and EU scrutiny over risks to flamingos and endangered habitats.",
-      "pubDate": "2026-06-04T09:11:00Z",
-      "img": "https://static.dw.com/image/77413089_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "Ukraine accused of killing four in occupied Crimea",
-      "link": "https://www.bbc.com/news/articles/c0r2klj0nyxo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "At least 10 people have been injured in the attacks, according to Russian-backed officials.",
-      "pubDate": "Thu, 04 Jun 2026 09:07:06 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ba03/live/958b2530-5ff0-11f1-b682-cf91850925ea.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Who is Khalilur Rahman, Bangladesh FM who beat Cyprus to UNGA presidency?",
-      "link": "https://www.aljazeera.com/news/2026/6/4/who-is-khalilur-rahman-bangladesh-fm-who-beat-cyprus-to-unga-presidency?traffic_source=rss",
-      "desc": "Rahman, a career diplomat who held several portfolios at the global body, beats Cyprus’s Ambassador Andreas Kakouris.",
-      "pubDate": "Thu, 04 Jun 2026 08:50:04 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/ap_6a204f7515185-1780502389.jpg?resize=1920%2C1333",
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
