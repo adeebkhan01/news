@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-05T16:12:59.302Z",
-  "summary": "Global news today is dominated by the US marking its 250th anniversary amid severe weather disruptions and internal debates over immigration and national identity. Iran continues mourning its supreme leader with massive funeral crowds while regional tensions escalate, with Trump pledging to help end the Russia-Ukraine war during a Kremlin call and Ukraine striking Russian oil facilities near St. Petersburg. Major political developments include France's Le Pen facing a verdict that could reshape her presidential prospects and Peru declaring Keiko Fujimori the winner of its disputed election. Climate concerns mount across Europe and the US, with a heatwave raising questions about energy demands from AI data centers, while humanitarian crises persist in Yemen, Gaza, and Sudan with limited international action.",
+  "fetchedAt": "2026-07-05T19:24:19.408Z",
+  "summary": "The United States marked its 250th anniversary with celebrations dampened by severe weather and political tensions, as President Trump used the occasion to emphasize military strength while facing questions about his political future. International conflicts dominated headlines across multiple regions: Ukraine continued strikes on Russian infrastructure near St. Petersburg, Trump indicated willingness to mediate the Russia-Ukraine war in a call with Putin, while Iran held massive funeral crowds for its supreme leader amid broader regional instability. Political upheaval reshapes several nations, including Peru confirming Keiko Fujimori's election victory, France awaiting a pivotal verdict on Marine Le Pen's political future, and migration remaining a contentious issue across Europe and the United States. Climate emergencies escalated with severe European heatwaves and new questions about energy demands from AI data centers competing with environmental sustainability efforts.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,36 @@
     }
   ],
   "articles": [
+    {
+      "title": "Russia says Ukraine rejects local ceasefire in dispute over Kostiantynivka",
+      "link": "https://www.aljazeera.com/news/2026/7/5/russia-says-ukraine-rejects-local-ceasefire-in-dispute-over-kostiantynivka?traffic_source=rss",
+      "desc": "Russia says its forces have taken the city of Kostiantynivka in Donestk, Ukraine denies that.",
+      "pubDate": "Sun, 05 Jul 2026 19:06:39 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1783159320.jpg?resize=1920%2C1066&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "EasyJet reaches 'agreement in principle' over potential takeover",
+      "link": "https://www.bbc.co.uk/news/articles/cgjxx7ngz51o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The low-cost airline had previously rejected four takeover offers from US investment firm Castlelake.",
+      "pubDate": "Sun, 05 Jul 2026 17:30:55 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e030/live/4c0dc8e0-7873-11f1-ab53-3dbca6ef5ee1.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Syria delays first session of transitional parliament without explanation",
+      "link": "https://www.aljazeera.com/news/2026/7/5/syria-delays-first-session-of-transitional-parliament-without-explanation?traffic_source=rss",
+      "desc": "The transitional parliament aims to draft a new elections law during its 30-month term.",
+      "pubDate": "Sun, 05 Jul 2026 16:19:03 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/afp_6a4a7853e7a9-1783265363.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Iran's supreme leader absent as senior officials attend ayatollah's funeral",
       "link": "https://www.bbc.co.uk/news/articles/cevllyj9vv3o?at_medium=RSS&amp;at_campaign=rss",
@@ -83,6 +113,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Albania PM Rama: Protests a stage for anti-Trump forces",
+      "link": "https://www.dw.com/en/albania-pm-rama-protests-a-stage-for-anti-trump-forces/a-77833383?maca=en-rss-en-eu-2092-rdf",
+      "desc": "Protesters in Albania say their government is selling the country its nature out to foreign investors and luxury developers. Albanian Prime Minister Edi Rama tells DW why he thinks people are so upset",
+      "pubDate": "2026-07-05T06:27:00Z",
+      "img": "https://static.dw.com/image/77556930_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "Trump lauds Americans in storm-delayed 250th anniversary speech",
@@ -11863,106 +11903,6 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
-    },
-    {
-      "title": "From Nescafe to Ted Lasso: Anthony Head's life in pictures",
-      "link": "https://www.bbc.com/news/articles/cy42428yx8go?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Anthony Head, who first came to public attention for his role in 1980s Nescafe ads, has died at the age of 72.",
-      "pubDate": "Fri, 05 Jun 2026 19:17:48 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fef6/live/53834750-6101-11f1-ae0d-afcc10479766.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Anthropic urges AI labs to pause, warns humans risk losing control",
-      "link": "https://www.aljazeera.com/economy/2026/6/5/anthropic-urges-ai-labs-to-pause-warns-humans-risk-losing-control?traffic_source=rss",
-      "desc": "It warned that rapid advances in technology could soon allow AI systems to improve themselves faster than human control.",
-      "pubDate": "Fri, 05 Jun 2026 19:13:55 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AP26127571392608-1-1780015397_13c669-1780016460.jpg?resize=1200%2C630&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Is the latest US ceasefire deal for Lebanon meaningless?",
-      "link": "https://www.aljazeera.com/video/inside-story/2026/6/5/is-the-latest-us-ceasefire-deal-for-lebanon-meaningless?traffic_source=rss",
-      "desc": "Israel and Hezbollah continue fighting after truce announcement.",
-      "pubDate": "Fri, 05 Jun 2026 18:45:16 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1780682559.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Putin says there is 'no point' meeting Zelensky over ending Ukraine war",
-      "link": "https://www.bbc.com/news/articles/cpqpqx5qe40o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The Russian president's refusal comes after his Ukrainian counterpart wrote an open letter calling for face-to-face talks.",
-      "pubDate": "Fri, 05 Jun 2026 18:16:15 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3a6e/live/d52d0df0-6100-11f1-ae0d-afcc10479766.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Trump admin’s cancellation of wind energy projects causes business turmoil",
-      "link": "https://www.aljazeera.com/economy/2026/6/5/trump-admins-cancellation-of-wind-energy-projects-causes-business-turmoil?traffic_source=rss",
-      "desc": "Seven northeastern states have sued US gov&#039;t for paying TotalEnergies to withdraw from offshore wind projects.",
-      "pubDate": "Fri, 05 Jun 2026 18:12:44 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26113547771823-1780676764.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Russia’s Putin says ‘no point’ meeting Ukraine’s Zelenskyy for now",
-      "link": "https://www.aljazeera.com/news/2026/6/5/russias-putin-says-no-point-meeting-ukraines-zelenskyy-for-now?traffic_source=rss",
-      "desc": "The Russian leader insisted military action would only stop after Moscow achieves its &#039;goals&#039;.",
-      "pubDate": "Fri, 05 Jun 2026 18:04:27 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a2301beced7-1780679102_8ef613-1780680920.jpg?resize=1200%2C630&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Ukraine and Russia exchange 185 prisoners of war each",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/5/ukraine-and-russia-exchange-185-prisoners-of-war-each?traffic_source=rss",
-      "desc": "Russia and Ukraine have each released 185 prisoners in a major exchange, which Russia says was mediated by the UAE.",
-      "pubDate": "Fri, 05 Jun 2026 17:54:01 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/wide-thumb-Ukraine-brings-home-185-1780681984.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Germany’s Merz says EU to initiate integration of Western Balkans",
-      "link": "https://www.aljazeera.com/news/2026/6/5/germanys-merz-says-eu-to-initiate-integration-of-western-balkans?traffic_source=rss",
-      "desc": "Alongside Ukraine and Moldova, six Western Balkan nations wish to join the European Union.",
-      "pubDate": "Fri, 05 Jun 2026 17:40:07 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AFP__20260605__B64P27A__v1__HighRes__MontenegroEuBalkanSummit-1780675831.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Somalia declares order restored after two days of fighting in Mogadishu",
-      "link": "https://www.aljazeera.com/news/2026/6/5/somalia-declares-order-restored-after-two-days-of-fighting-in-mogadishu?traffic_source=rss",
-      "desc": "Violence that paralysed two Mogadishu districts subsides, but opposition rejects president&#039;s rule and vows to fight on.",
-      "pubDate": "Fri, 05 Jun 2026 17:03:11 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/IMG_9732-1780675879.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "US Senate passes $70bn ICE funding bill: What comes next?",
-      "link": "https://www.aljazeera.com/news/2026/6/5/us-senate-passes-70bn-ice-funding-bill-what-comes-next?traffic_source=rss",
-      "desc": "Republicans pass key Trump initiative after marathon vote-a-rama, avoid barring controversial &#039;anti-weaponisation&#039; fund.",
-      "pubDate": "Fri, 05 Jun 2026 16:40:37 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a22f564d37c-1780675940.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
     }
   ]
 }
