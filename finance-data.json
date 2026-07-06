@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-06T15:57:19.442Z",
+  "fetchedAt": "2026-07-06T20:18:22.708Z",
   "asx200": {
     "value": 8831,
     "change": 205.9,
@@ -86,9 +86,9 @@
     ]
   },
   "audusd": {
-    "value": 0.69,
+    "value": 0.7,
     "change": -0.02,
-    "changePercent": -2.61,
+    "changePercent": -2.45,
     "previousClose": 0.71,
     "asOf": "2026-07-06",
     "history": [
@@ -173,8 +173,12 @@
         "close": 0.69
       },
       {
-        "date": "2026-07-06",
+        "date": "2026-07-05",
         "close": 0.69
+      },
+      {
+        "date": "2026-07-06",
+        "close": 0.7
       }
     ]
   },
@@ -183,33 +187,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4160.1,
-      "change": -177,
-      "changePercent": -4.08
+      "price": 4173.4,
+      "change": -163.7,
+      "changePercent": -3.77
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 62.3,
-      "change": -6.64,
-      "changePercent": -9.64
+      "price": 62.44,
+      "change": -6.5,
+      "changePercent": -9.43
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 68.75,
-      "change": -21.79,
-      "changePercent": -24.07
+      "price": 68.65,
+      "change": -21.89,
+      "changePercent": -24.18
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.24,
-      "change": -0.03,
-      "changePercent": -0.45
+      "price": 6.26,
+      "change": -0.01,
+      "changePercent": -0.13
     },
     {
       "name": "BHP Group",
@@ -818,6 +822,41 @@
   ],
   "news": [
     {
+      "title": "Severe blowback over FIFA's 'shameful, incomprehensible' Balogun decision",
+      "link": "https://www.abc.net.au/news/2026-07-07/world-cup-folarin-balogun-fifa-red-card-donald-trump-infantino/106886784",
+      "snippet": "",
+      "pubDate": "Mon, 06 Jul 2026 19:33:33 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "When and how to watch State of Origin Game III between Maroons and Blues",
+      "link": "https://www.abc.net.au/news/2026-07-07/when-is-state-of-origin-game-iii-2026-qld-maroons-nsw-blues/106866870",
+      "snippet": "",
+      "pubDate": "Mon, 06 Jul 2026 19:04:41 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Capital Guard offered Sydney Harbour legitimacy, but its director looked out on an outer Melbourne field",
+      "link": "https://www.smh.com.au/business/companies/capital-guard-offered-sydney-harbour-legitimacy-but-its-director-looked-out-on-an-outer-melbourne-field-20260703-p60cg5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Capital Guard reassured clients with a prestigious address overlooking the best of Sydney Harbour, but its sole director lived far away.",
+      "pubDate": "Tue, 07 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Portugal and Spain deadlocked in battle of generational stars",
+      "link": "https://www.abc.net.au/news/2026-07-07/world-cup-live-blog-portugal-vs-spain-usa-vs-belgium/106885332",
+      "snippet": "",
+      "pubDate": "Mon, 06 Jul 2026 18:17:47 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Trump says he asked FIFA to review US striker's World Cup red card",
+      "link": "https://www.abc.net.au/news/2026-07-07/world-cup-red-card-suspended-us-striker-balogun-condemned-uefa/106886512",
+      "snippet": "",
+      "pubDate": "Mon, 06 Jul 2026 14:03:01 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Suburban footballer dies after suffering head injury during game",
       "link": "https://www.abc.net.au/news/2026-07-06/nathan-fitzgerald-football-death-head-injury/106884556",
       "snippet": "",
@@ -825,7 +864,7 @@
       "source": "ABC News"
     },
     {
-      "title": "ABC barred from reporting high-profile sports figures’ ‘crude descriptions of sexual acts’",
+      "title": "ABC barred from reporting high-profile sports figures�� ‘crude descriptions of sexual acts’",
       "link": "https://www.smh.com.au/business/companies/abc-barred-from-reporting-high-profile-sports-figures-crude-descriptions-of-sexual-acts-20260706-p60cyy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The athletes, two of whom are married, argued that releasing the messages would cause serious harm to their reputations and financial interests.",
       "pubDate": "Mon, 06 Jul 2026 17:56:12 +1000",
@@ -865,41 +904,6 @@
       "snippet": "Customers who placed an order with the popular activewear label face an uncertain wait after receivers revealed an array of supply chain partners who are all owed money.",
       "pubDate": "Mon, 06 Jul 2026 16:05:24 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Soft-touch gambling reforms will keep money flowing to media giants, sports",
-      "link": "https://www.smh.com.au/business/companies/soft-touch-gambling-reforms-will-keep-money-flowing-to-media-giants-sports-20260706-p60cy5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "For broadcast networks, marquee sports have become their programming lifeblood, and gambling advertising is a meaningful contributor to that revenue.",
-      "pubDate": "Mon, 06 Jul 2026 15:53:31 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "England's Azteca thriller a stunning deliverance from ghosts of the past",
-      "link": "https://www.abc.net.au/news/2026-07-06/england-mexico-azteca-world-cup-thriller/106884972",
-      "snippet": "",
-      "pubDate": "Mon, 06 Jul 2026 05:44:13 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Barkly kicks off major NT rare earths drill-out",
-      "link": "https://www.smh.com.au/business/companies/barkly-kicks-off-major-nt-rare-earths-drill-out-20260706-p60d0y.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Barkly Rare Earths is launching a major 10,000m drill program in the NT to expand its 40Mt rare earths resource, with drilling to begin next week.",
-      "pubDate": "Mon, 06 Jul 2026 14:56:14 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Quick hits: England star hurt in celebrations, Haaland surprises himself",
-      "link": "https://www.abc.net.au/news/2026-07-06/world-cup-quick-hits-england-jordan-henderson-erling-haaland/106883532",
-      "snippet": "",
-      "pubDate": "Mon, 06 Jul 2026 04:34:56 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Molineux proves inspired choice after leading Aussies to World Cup win",
-      "link": "https://www.abc.net.au/news/2026-07-06/cricket-t20-world-cup-australia-england-final-sophie-molineux/106884886",
-      "snippet": "",
-      "pubDate": "Mon, 06 Jul 2026 04:19:04 +0000",
-      "source": "ABC News"
     }
   ]
 }
