@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-06T20:03:27.288Z",
-  "summary": "Australia's news cycle today spans domestic politics, environmental concerns, and social issues. A Western Australian minister's resignation has triggered a cabinet reshuffle and sparked a byelection, while across the country concerns mount about the EV charger infrastructure rollout lacking coordinated oversight. The climate crisis continues to dominate discussion with research linking extreme heat to youth mental health admissions and warnings about approaching carbon tipping points, alongside reporting on China's missile testing in the South Pacific that Australia has condemned. Local issues include debates around court transparency in Victoria, cooling housing market expectations, and ongoing concerns about tobacco shop firebombings targeting retailers despite their innocence in illegal trade networks.",
+  "fetchedAt": "2026-07-06T22:17:13.057Z",
+  "summary": "Melbourne police are managing a standoff with a graffiti artist perched on the 120-metre Bolte Bridge, causing traffic disruptions across the city. China's recent missile test spanning the Pacific has drawn sharp criticism from Australian foreign affairs officials Wong and Marles as destabilising, adding to regional tensions. Health officials are addressing growing bird flu cases by advising poultry farmers to house birds indoors, while the government grapples with fragmented oversight of the EV charger rollout. The broader backdrop includes economic concerns about Australia's cooling housing market and emerging questions about governance, from court secrecy in Victoria to accountability issues in local councils.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Australia news live: Melbourne police in standoff with alleged graffiti artist perched on 120m tower of Bolte Bridge",
+      "link": "https://www.theguardian.com/australia-news/live/2026/jul/07/australia-news-live-penny-wong-china-missile-test-pacific-anthony-albanese-solomon-islands-defence-royal-commission-antisemitism-meta-ntwnfb",
+      "desc": "<p>Meanwhile Wong says China’s missile test in Pacific a ‘destabilising act’ that could ‘lead to miscalculation’. Follow today’s news live</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/em",
+      "pubDate": "Mon, 06 Jul 2026 22:16:37 GMT",
+      "img": "https://i.guim.co.uk/img/media/269bc88c1fd7395e52a00ea1b141f56a1c160a19/925_590_2982_2387/master/2982.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "What Alcoa's looming alumina monopoly could mean for WA's jarrah forests",
+      "link": "https://www.abc.net.au/news/2026-07-07/alcoa-purchase-south32-refinery-unlocks-jarrah-forest-mining/106871002",
+      "desc": "Alcoa's $8 billion purchase of South32 could be key to unlocking untouched areas of WA's northern jarrah forest for bauxite mining, raising the concern of environmentalists.",
+      "pubDate": "Mon, 06 Jul 2026 22:01:04 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/49be6960de9207814e9ec56dcdf33456?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=2348&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Australia news LIVE: China missile test ‘destabilising’, says Wong, Marles; bird flu cases grow as poultry farmers advised to house birds indoors",
+      "link": "https://www.smh.com.au/national/australia-news-live-china-tests-nuclear-capable-missile-australia-signs-1b-defence-pact-pm-in-solomon-islands-20260707-p60d57.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Follow the day’s news live.",
+      "pubDate": "Tue, 07 Jul 2026 07:47:04 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.7331%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_1669%2C$y_457/t_crop_custom/q_86%2Cf_auto/100643112cfd1c14687f65c414667bcd1a0d50f1",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Live: Taiwan reports flight path of Chinese missile test that spanned Pacific",
+      "link": "https://www.abc.net.au/news/2026-07-07/federal-politics-live-blog-chinese-missile-test-july-7/106887106",
+      "desc": "The nuclear-capable missile test, which China fired into the Pacific yesterday, appears to have landed near the exclusive economic zones of Pacific nations Nauru and Tuvalu. Follow live.",
+      "pubDate": "Mon, 06 Jul 2026 21:09:30 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/64e5a3962d8478b286413a9fe1f06ba7?impolicy=wcms_crop_resize&amp;cropH=1311&amp;cropW=984&amp;xPos=572&amp;yPos=191&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Bolte Bridge traffic delays as police stand off with Pam the Bird vandal",
+      "link": "https://www.smh.com.au/national/victoria/police-stand-off-as-pam-the-bird-vandal-climbs-bolte-bridge-20260707-p60d56.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "An intruder has refused to come down from the massive structure after spray-painting the infamous tag, triggering a lane closure and morning peak delays.",
+      "pubDate": "Tue, 07 Jul 2026 07:09:08 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.1748055885066562%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_115%2C$y_78/t_crop_custom/q_86%2Cf_auto/e95d3a9b518936f5334e28106b95cf16120fd08a",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "ASX to slip on open; Tech stocks rebound in US",
+      "link": "https://www.smh.com.au/business/markets/asx-to-slip-on-open-tech-stocks-rebound-in-us-20260707-p60d4x.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "Shares on the Australian stock exchange are expected to slip on opening.",
+      "pubDate": "Tue, 07 Jul 2026 06:37:25 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1839%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_110/t_crop_custom/q_86%2Cf_auto/7a0a84fefa88e5363a9d31ed6e63045eca7b95e3",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
     {
       "title": "Trump admits to calling FIFA chief over red card decision",
       "link": "https://www.smh.com.au/national/trump-admits-to-calling-fifa-chief-over-red-card-decision-20260707-p60d52.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
@@ -235,6 +295,16 @@
       "desc": "<p><strong>Exclusive </strong>University of Sydney study finds heat-related hospital admissions to increase by 6% to 7.7% by the end of the century</p><ul><li><p>Get our <a href=\"https://www.theguardi",
       "pubDate": "Mon, 06 Jul 2026 15:00:15 GMT",
       "img": "https://i.guim.co.uk/img/media/88212a6302045118a4298c2c7f8beb70b6ef57e0/1109_0_4363_3491/master/4363.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Labor’s draft policy platform waters down rather than scraps its longheld opposition to mandatory jail sentences",
+      "link": "https://www.theguardian.com/australia-news/2026/jul/07/labor-mandatory-jail-sentences-ntwnfb",
+      "desc": "<p>Updated document also commits party to cracking down on inducements for online gambling, putting pressure on Albanese government to toughen reforms</p><ul><li><p><a href=\"https://www.theguardian.co",
+      "pubDate": "Mon, 06 Jul 2026 15:00:14 GMT",
+      "img": "https://i.guim.co.uk/img/media/cd2a98fd77c0922afe1be3acbfe77a33d3664d81/300_0_4451_3563/master/4451.jpg",
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
@@ -32125,46 +32195,6 @@
       "desc": "Four teenagers have allegedly led police in Queensland on a car chase in an allegedly stolen car.",
       "pubDate": "Sun, 07 Jun 2026 09:16:42 +1000",
       "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/ddf2befb30ccf346813ea88016927242bb2b6566",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Noise limits, curfew lifted for Opera House",
-      "link": "https://www.smh.com.au/national/noise-limits-curfew-lifted-for-opera-house-20260607-p604jt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Noise limits have been lifted and curfews have been extended for concerts on the steps of the Sydney Opera House.",
-      "pubDate": "Sun, 07 Jun 2026 07:26:17 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/8fcf0df0e81aeb0f3747c00c3ebd1641c00a3746",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Rescue operation frees trapped Sydney driver",
-      "link": "https://www.smh.com.au/national/rescue-operation-frees-trapped-sydney-driver-20260607-p604ju.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "A driver in south-west Sydney had to be freed from his car after crashing at Picnic Point last night.",
-      "pubDate": "Sun, 07 Jun 2026 07:25:44 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/3210453ddd47f48feab35a60d13b91363ce0914f",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Third spearfisher killed in four weeks off WA coast",
-      "link": "https://www.smh.com.au/national/third-spearfisher-killed-in-four-weeks-off-wa-coast-20260607-p604jr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "A 35-year-old man has become the third spearfisher killed in four weeks by a shark attack after being mauled off the coast of Albany in WA.",
-      "pubDate": "Sun, 07 Jun 2026 07:23:00 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/e0afb6c2f7f41bb04a037f2a607b31e8aeec3129",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Minister questioned over comcar use",
-      "link": "https://www.smh.com.au/national/minister-questioned-over-comcar-use-20260607-p604js.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Sports Minister Anika Wells has been questioned after using hundreds of taxpayer dollars on short trips in government cars.",
-      "pubDate": "Sun, 07 Jun 2026 07:22:39 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/1878014a50a550f730bbbd14ca6b7eb4effac557",
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
