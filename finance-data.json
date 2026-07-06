@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-06T11:09:10.804Z",
+  "fetchedAt": "2026-07-06T15:57:19.442Z",
   "asx200": {
     "value": 8831,
     "change": 205.9,
@@ -82,17 +82,13 @@
       {
         "date": "2026-07-03",
         "close": 8844.4
-      },
-      {
-        "date": "2026-07-06",
-        "close": 8831
       }
     ]
   },
   "audusd": {
     "value": 0.69,
     "change": -0.02,
-    "changePercent": -2.76,
+    "changePercent": -2.61,
     "previousClose": 0.71,
     "asOf": "2026-07-06",
     "history": [
@@ -187,33 +183,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4167.3,
-      "change": -169.8,
-      "changePercent": -3.92
+      "price": 4160.1,
+      "change": -177,
+      "changePercent": -4.08
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 62.54,
-      "change": -6.4,
-      "changePercent": -9.29
+      "price": 62.3,
+      "change": -6.64,
+      "changePercent": -9.64
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 68.64,
-      "change": -21.9,
-      "changePercent": -24.19
+      "price": 68.75,
+      "change": -21.79,
+      "changePercent": -24.07
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.23,
-      "change": -0.04,
-      "changePercent": -0.57
+      "price": 6.24,
+      "change": -0.03,
+      "changePercent": -0.45
     },
     {
       "name": "BHP Group",
@@ -822,6 +818,13 @@
   ],
   "news": [
     {
+      "title": "Suburban footballer dies after suffering head injury during game",
+      "link": "https://www.abc.net.au/news/2026-07-06/nathan-fitzgerald-football-death-head-injury/106884556",
+      "snippet": "",
+      "pubDate": "Mon, 06 Jul 2026 11:13:25 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "ABC barred from reporting high-profile sports figures’ ‘crude descriptions of sexual acts’",
       "link": "https://www.smh.com.au/business/companies/abc-barred-from-reporting-high-profile-sports-figures-crude-descriptions-of-sexual-acts-20260706-p60cyy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The athletes, two of whom are married, argued that releasing the messages would cause serious harm to their reputations and financial interests.",
@@ -896,13 +899,6 @@
       "link": "https://www.abc.net.au/news/2026-07-06/cricket-t20-world-cup-australia-england-final-sophie-molineux/106884886",
       "snippet": "",
       "pubDate": "Mon, 06 Jul 2026 04:19:04 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Ice-cold Haaland triumphs again at World Cup, Brazil with a long road back",
-      "link": "https://www.abc.net.au/news/2026-07-06/world-cup-brazil-norway-erling-haaland-analysis/106882950",
-      "snippet": "",
-      "pubDate": "Mon, 06 Jul 2026 03:35:00 +0000",
       "source": "ABC News"
     }
   ]
