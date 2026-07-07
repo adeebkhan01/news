@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-07T10:03:21.892Z",
+  "fetchedAt": "2026-07-07T15:21:27.131Z",
   "asx200": {
     "value": 8803.9,
     "change": 178.8,
@@ -86,17 +86,13 @@
       {
         "date": "2026-07-06",
         "close": 8831
-      },
-      {
-        "date": "2026-07-07",
-        "close": 8803.9
       }
     ]
   },
   "audusd": {
     "value": 0.69,
     "change": -0.02,
-    "changePercent": -2.62,
+    "changePercent": -2.72,
     "previousClose": 0.71,
     "asOf": "2026-07-07",
     "history": [
@@ -195,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4139.5,
-      "change": -196.4,
-      "changePercent": -4.53
+      "price": 4163,
+      "change": -172.9,
+      "changePercent": -3.99
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 61.27,
-      "change": -7.16,
-      "changePercent": -10.46
+      "price": 61.31,
+      "change": -7.12,
+      "changePercent": -10.41
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 69.22,
-      "change": -22.08,
-      "changePercent": -24.18
+      "price": 70.24,
+      "change": -21.06,
+      "changePercent": -23.07
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.25,
-      "change": -0.08,
-      "changePercent": -1.34
+      "price": 6.24,
+      "change": -0.09,
+      "changePercent": -1.5
     },
     {
       "name": "BHP Group",
@@ -830,6 +826,20 @@
   ],
   "news": [
     {
+      "title": "Live: Lionel Messi's Argentina takes on Mo Salah's Egypt",
+      "link": "https://www.abc.net.au/news/2026-07-08/world-cup-live-blog-argentina-vs-egypt-switzerland-vs-colombia/106889234",
+      "snippet": "",
+      "pubDate": "Tue, 07 Jul 2026 15:17:30 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "‘Proof, not promises’: Indian steel giant makes final pitch for Whyalla",
+      "link": "https://www.smh.com.au/business/companies/proof-not-promises-indian-steel-giant-makes-final-pitch-for-whyalla-20260707-p60d8e.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "India’s third-largest steelmaker has placed its decarbonisation credentials and global record at the centre of its final-stage pitch for the Whyalla steelworks.",
+      "pubDate": "Wed, 08 Jul 2026 00:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Ailing Europe declares war on sick leave as lengthy absences soar",
       "link": "https://www.smh.com.au/business/workplace/ailing-europe-declares-war-on-sick-leave-as-lengthy-absences-soar-20260707-p60d6w.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Germany’s “big bang” of economic reforms includes requiring workers to get a doctor’s note on the very first day of their illness, and get it in person.",
@@ -898,20 +908,6 @@
       "snippet": "",
       "pubDate": "Tue, 07 Jul 2026 02:52:32 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Execs try to hose down Kayo cost concerns as NRL rights deal revealed",
-      "link": "https://www.abc.net.au/news/2026-07-07/nrl-new-broadcast-rights-deal/106888646",
-      "snippet": "",
-      "pubDate": "Tue, 07 Jul 2026 02:32:57 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Manhattan sampling and terrain mapping sharpen Canadian gold play",
-      "link": "https://www.smh.com.au/business/companies/manhattan-sampling-and-terrain-mapping-sharpen-canadian-gold-play-20260707-p60dar.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Manhattan Gold has completed a LiDAR survey and channel sampling at its Hook Lake project in Canada, adding new data as maiden drill program continues.",
-      "pubDate": "Tue, 07 Jul 2026 12:31:17 +1000",
-      "source": "SMH Business"
     }
   ]
 }
