@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-07T20:19:37.887Z",
+  "fetchedAt": "2026-07-07T22:33:33.313Z",
   "asx200": {
     "value": 8803.9,
     "change": 178.8,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.02,
-    "changePercent": -2.8,
+    "changePercent": -2.86,
     "previousClose": 0.71,
     "asOf": "2026-07-07",
     "history": [
@@ -195,33 +195,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4124.9,
-      "change": -211,
-      "changePercent": -4.87
+      "price": 4112.9,
+      "change": -223,
+      "changePercent": -5.14
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 60.7,
-      "change": -7.72,
-      "changePercent": -11.29
+      "price": 60.21,
+      "change": -8.21,
+      "changePercent": -12.01
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 72.05,
-      "change": -19.25,
-      "changePercent": -21.08
+      "price": 72.31,
+      "change": -18.99,
+      "changePercent": -20.8
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.19,
-      "change": -0.14,
-      "changePercent": -2.26
+      "price": 6.17,
+      "change": -0.16,
+      "changePercent": -2.46
     },
     {
       "name": "BHP Group",
@@ -830,10 +830,66 @@
   ],
   "news": [
     {
+      "title": "Telstra investigating outage affecting thousands of customers",
+      "link": "https://www.smh.com.au/business/consumer-affairs/telstra-investigating-outage-affecting-thousands-of-customers-20260708-p60dho.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The widespread outage is affecting mobile calls and data connections, and has even prevented some businesses from processing payments.",
+      "pubDate": "Wed, 08 Jul 2026 08:27:54 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "'Perversion of justice': Politicians launch bid to investigate FIFA boss",
+      "link": "https://www.abc.net.au/news/2026-07-08/world-cup-2026-eu-politicans-launch-infantino-investigation/106891368",
+      "snippet": "",
+      "pubDate": "Tue, 07 Jul 2026 22:19:21 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Breaking: Djokovic wins five-hour Wimbledon epic to set up Sinner blockbuster",
+      "link": "https://www.abc.net.au/news/2026-07-08/wimbledon-2026-novak-djokovic-wins-epic-over-canadian/106891408",
+      "snippet": "",
+      "pubDate": "Tue, 07 Jul 2026 22:14:56 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Russia could compete at 2028 Olympics after suspension provisionally lifted",
+      "link": "https://www.abc.net.au/news/2026-07-08/russia-could-compete-at-la-2028-olympics-after-suspension-lifted/106891174",
+      "snippet": "",
+      "pubDate": "Tue, 07 Jul 2026 21:53:05 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'We have suffered injustice': Egypt coach fumes at ref after Argentina loss",
+      "link": "https://www.abc.net.au/news/2026-07-08/world-cup-egypt-coach-fumes-at-ref-after-argentina-loss/106891186",
+      "snippet": "",
+      "pubDate": "Tue, 07 Jul 2026 21:11:15 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'I'm getting old': 28yo Osaka's Wimbledon run ends at quarterfinals",
+      "link": "https://www.abc.net.au/news/2026-07-08/wimbledon-2026-naomi-osaka-loses-to-karolina-muchova/106891218",
+      "snippet": "",
+      "pubDate": "Tue, 07 Jul 2026 21:01:41 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Hormuz attacks, AI stock falls set to weigh on the ASX",
+      "link": "https://www.smh.com.au/business/markets/hormuz-attacks-ai-stock-falls-set-to-weigh-on-the-asx-20260708-p60dgx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Tensions in the Strait of Hormuz and worries about over-inflated AI stocks are expected to weigh on the Australian sharemarket.",
+      "pubDate": "Wed, 08 Jul 2026 06:27:34 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Teen SA country footballer forced to find new sport after eight concussions",
       "link": "https://www.abc.net.au/news/2026-07-08/footy-player-angus-pitman-takes-up-rowing-after-concussions-sa/106866016",
       "snippet": "",
       "pubDate": "Tue, 07 Jul 2026 19:31:08 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Teammates of Melbourne footballer will sit next match out after death",
+      "link": "https://www.abc.net.au/news/2026-07-08/epping-footy-club-nathan-fitzgerald-match-service/106889536",
+      "snippet": "",
+      "pubDate": "Tue, 07 Jul 2026 19:14:43 +0000",
       "source": "ABC News"
     },
     {
@@ -856,62 +912,6 @@
       "snippet": "When politicians and economists bang on about the need to increase productivity, they’re arguing about a concept that is nothing more than a puff of smoke.",
       "pubDate": "Wed, 08 Jul 2026 05:00:00 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "What time is the State of Origin Game III decider tonight?",
-      "link": "https://www.abc.net.au/news/2026-07-08/what-time-is-state-of-origin-game-iii-tonight-how-to-watch/106866884",
-      "snippet": "",
-      "pubDate": "Tue, 07 Jul 2026 18:51:41 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Live: Messi leads incredible Argentina comeback against Egypt, Switzerland faces Colombia",
-      "link": "https://www.abc.net.au/news/2026-07-08/world-cup-live-blog-argentina-vs-egypt-switzerland-vs-colombia/106889234",
-      "snippet": "",
-      "pubDate": "Tue, 07 Jul 2026 15:17:30 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "‘Proof, not promises’: Indian steel giant makes final pitch for Whyalla",
-      "link": "https://www.smh.com.au/business/companies/proof-not-promises-indian-steel-giant-makes-final-pitch-for-whyalla-20260707-p60d8e.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "India’s third-largest steelmaker has placed its decarbonisation credentials and global record at the centre of its final-stage pitch for the Whyalla steelworks.",
-      "pubDate": "Wed, 08 Jul 2026 00:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Ailing Europe declares war on sick leave as lengthy absences soar",
-      "link": "https://www.smh.com.au/business/workplace/ailing-europe-declares-war-on-sick-leave-as-lengthy-absences-soar-20260707-p60d6w.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Germany’s “big bang” of economic reforms includes requiring workers to get a doctor’s note on the very first day of their illness, and get it in person.",
-      "pubDate": "Tue, 07 Jul 2026 18:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Smart Succession",
-      "link": "https://www.smh.com.au/business/banking-and-finance/smart-succession-20260612-p606c9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "With billions in assets set to pass between generations, our six-part series simplifies the daunting world of inheritance planning.",
-      "pubDate": "Tue, 07 Jul 2026 16:11:55 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Billionaire Richard White is now more a liability for WiseTech than an asset",
-      "link": "https://www.smh.com.au/business/companies/billionaire-richard-white-is-now-more-a-liability-for-wisetech-than-an-asset-20260707-p60d9h.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "While he remains on the board as an executive director, the company’s independent board has effectively only half killed the king.",
-      "pubDate": "Tue, 07 Jul 2026 15:21:17 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "What you need to know about the NRL’s blockbuster rights deal",
-      "link": "https://www.smh.com.au/business/companies/nrl-to-unveil-record-rights-deal-with-nine-foxtel-20260707-p60d95.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The multibillion-dollar deal will make the NRL more valuable than the AFL while keeping the sport with its existing broadcast partners.",
-      "pubDate": "Tue, 07 Jul 2026 15:09:19 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "'Not his fault': Belgium coach consoles Balogun after World Cup controversy",
-      "link": "https://www.abc.net.au/news/2026-07-07/world-cup-fifa-belgium-us-folarin-balogun-donald-trump/106889224",
-      "snippet": "",
-      "pubDate": "Tue, 07 Jul 2026 04:34:03 +0000",
-      "source": "ABC News"
     }
   ]
 }
