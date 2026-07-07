@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-07T14:45:57.689Z",
-  "summary": "Australia's domestic agenda is dominated by political turbulence, with former NSW Liberal minister John Sidoti facing corruption charges and a Sydney private school heading toward parliamentary inquiry over serious allegations. International tensions are rising as Prime Minister Albanese condemns China's missile exercises near Taiwan, while domestically, Western Australia features prominently across multiple stories ranging from industrial concerns over Indian steel giant Nippon Steel's Whyalla bid to a cryptocurrency businessman's spectacular $60 million casino loss. Crime and safety issues are scattered throughout the headlines, from e-bike sexual assaults in Perth to motorcycle theft networks exploiting online marketplaces. In lighter news, scientific discoveries including 3.1 billion-year-old rocks revealing Earth's water cycle history and WA research into dietary benefits for different genders offer some respite from the heavier stories dominating the news cycle.",
+  "fetchedAt": "2026-07-07T17:20:41.318Z",
+  "summary": "Australia's economic outlook remains uncertain despite recession being averted, with households facing financial pressures as half of Americans struggle with groceries and fuel costs. Domestically, corruption charges against former NSW Liberal minister John Sidoti and a parliamentary inquiry into a Sydney private school signal governance concerns, while India's Prime Minister Modi's visit will bring both diplomatic engagement and human rights protests. Scientific developments include research on declining testosterone levels, natural mosquito repellents, and ancient Australian rocks revealing new insights into Earth's water cycle. The country continues to grapple with crime issues ranging from e-bike assault allegations to motorbike thefts, while infrastructure challenges persist including water crises in Western reservoirs.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Men’s average testosterone levels have halved in last 50 years, say scientists",
+      "link": "https://www.theguardian.com/society/2026/jul/07/mens-average-testosterone-levels-have-halved-in-last-50-years-say-scientists",
+      "desc": "<p>Exclusive: Researchers warn of ‘major crisis in male reproductive health’ partly driven by obesity and diabetes</p><p>Men’s average testosterone levels have halved over the past 50 years, according",
+      "pubDate": "Tue, 07 Jul 2026 15:41:59 GMT",
+      "img": "https://i.guim.co.uk/img/media/c23c80a46ec7648ca0f34ff20068806934b90df1/985_0_5397_4320/master/5397.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Catnip lotion as effective as Deet at repelling mosquitoes, study finds",
+      "link": "https://www.theguardian.com/global-development/2026/jul/07/catnip-lotion-as-effective-as-deet-at-repelling-mosquitoes-study-finds",
+      "desc": "<p>Researchers testing a cheap, homegrown oil in Uganda found what cats knew all along – it worked as well as the artificial chemical used globally </p><p>A homegrown catnip lotion has proven “just as",
+      "pubDate": "Tue, 07 Jul 2026 15:17:19 GMT",
+      "img": "https://i.guim.co.uk/img/media/20d778fb2769f5911f1d87e9581af1c62bd71648/0_0_5000_4000/master/5000.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Recession off the cards but Australia faces dreary outlook, economists say",
+      "link": "https://www.theguardian.com/business/2026/jul/08/economy-of-australia-avoids-recession-consumer-pessimism-lingers-economists",
+      "desc": "<p>De-escalation of war in the Middle East has lowered oil prices and eased fears of economic downturn but households are still feeling the pinch</p><ul><li><p>Get our <a href=\"https://www.theguardian",
+      "pubDate": "Tue, 07 Jul 2026 15:00:06 GMT",
+      "img": "https://i.guim.co.uk/img/media/68a52bbbdbe2d0b05b5fd79240aa4d846b439242/331_0_5160_4128/master/5160.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "A rock star welcome and human rights protests to greet India’s prime minister Narendra Modi in Australia",
+      "link": "https://www.theguardian.com/australia-news/2026/jul/07/india-prime-minister-modi-australia-melbourne-visit-reaction-indian-diaspora-ntwnfb",
+      "desc": "<p>Amnesty International says Albanese has opportunity to ‘reaffirm mutual commitment’ to rule of law as thousands in diaspora expected at stadium event</p><ul><li><p>Get our <a href=\"https://www.theg",
+      "pubDate": "Tue, 07 Jul 2026 15:00:04 GMT",
+      "img": "https://i.guim.co.uk/img/media/dbaa7887378d9773a2a464fa2ae757b735dbcd17/371_0_4240_3392/master/4240.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Washington records world’s worst air quality for a city after 850,000 Fourth of July fireworks",
+      "link": "https://www.theguardian.com/us-news/2026/jul/07/washington-air-quality-fireworks-independence-day",
+      "desc": "<p>Hourly concentrations of particulate matter rose to 6.7 times their pre-fireworks levels, according to an analysis</p><p>Washington DC residents breathed in “unhealthy” air for hours after a 40-min",
+      "pubDate": "Tue, 07 Jul 2026 15:00:04 GMT",
+      "img": "https://i.guim.co.uk/img/media/afc558eb767e34e1cc3461181192ea8dfd1cc178/601_0_5880_4703/master/5880.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "M&S invests in fridges that can cope with weather as hot as 45C",
+      "link": "https://www.theguardian.com/business/2026/jul/07/marks-and-spencer-fridges-hot-weather-45c",
+      "desc": "<p>Retailer admits it struggled in June heatwave and also had to order more ice-cream to keep pace with demand</p><p>Marks &amp; Spencer is investing in refrigeration equipment that can cope with weat",
+      "pubDate": "Tue, 07 Jul 2026 15:00:04 GMT",
+      "img": "https://i.guim.co.uk/img/media/95f5ccbaa69f2d3b57452b33ad53211a1c796595/569_25_1572_1258/master/1572.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
     {
       "title": "NZ’s unique fossil record of marine molluscs helps scientists predict extinction risk – before it’s too late",
       "link": "https://theconversation.com/nzs-unique-fossil-record-of-marine-molluscs-helps-scientists-predict-extinction-risk-before-its-too-late-285783",
@@ -32548,36 +32608,6 @@
       "sourceId": "abcnews",
       "sourceName": "ABC News",
       "sourceColor": "#E64626"
-    },
-    {
-      "title": "The Guardian view on cancer treatments: new hope for patients now and in the future | Editorial",
-      "link": "https://www.theguardian.com/commentisfree/2026/jun/07/the-guardian-view-on-cancer-treatments-new-hope-for-patients-now-and-in-the-future",
-      "desc": "<p>A drug for pancreatic cancer shows immense promise, but we shouldn’t forget research in the field is a story of small victories</p><p>It is unlikely that we will ever declare a final victory over c",
-      "pubDate": "Sun, 07 Jun 2026 16:25:02 GMT",
-      "img": "https://i.guim.co.uk/img/media/dd3b0c87ea239e92e7aa0f024b57b43c1e29b398/724_0_6250_5000/master/6250.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "A high court justice warned of US-style judge ‘stacking’ and created a new front in Australia’s culture wars",
-      "link": "https://www.theguardian.com/law/2026/jun/08/high-court-justice-us-style-judge-stacking-australia-culture-wars",
-      "desc": "<p>Justice Robert Beech-Jones has accused the Samual Griffith Society of a US-style attempt to stack the high court with conservatives, exposing a partisan rift in the process</p><ul><li><p>Get our <a",
-      "pubDate": "Sun, 07 Jun 2026 15:00:04 GMT",
-      "img": "https://i.guim.co.uk/img/media/53741afbc77acba79230ee40ca456021f30b5e00/789_0_5033_4024/master/5033.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Australia’s housing market is cooling – but a Sydney flat with a broken shower still costs nearly $1m",
-      "link": "https://www.theguardian.com/australia-news/2026/jun/08/australias-housing-market-is-cooling-but-a-sydney-flat-with-a-broken-shower-still-costs-nearly-1m",
-      "desc": "<p>Linly and Lena needed steady incomes, Linly’s parents’ help, the federal 5% deposit scheme and NSW’s stamp duty discount to buy a two-bedroom flat in Ashfield</p><ul><li><p>Get our <a href=\"https:/",
-      "pubDate": "Sun, 07 Jun 2026 15:00:04 GMT",
-      "img": "https://i.guim.co.uk/img/media/45d8ed1a0168a0632a4d404964d022f14359718c/316_0_2461_1970/master/2461.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
     }
   ]
 }
