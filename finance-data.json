@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-08T16:53:50.769Z",
+  "fetchedAt": "2026-07-08T19:59:20.967Z",
   "asx200": {
     "value": 8785.1,
     "change": 160,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.01,
-    "changePercent": -1.62,
+    "changePercent": -1.46,
     "previousClose": 0.7,
     "asOf": "2026-07-08",
     "history": [
@@ -189,6 +189,10 @@
         "close": 0.7
       },
       {
+        "date": "2026-07-07",
+        "close": 0.69
+      },
+      {
         "date": "2026-07-08",
         "close": 0.69
       }
@@ -199,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4063.4,
-      "change": -272.5,
-      "changePercent": -6.28
+      "price": 4089.9,
+      "change": -246,
+      "changePercent": -5.67
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 58.2,
-      "change": -10.22,
-      "changePercent": -14.94
+      "price": 58.85,
+      "change": -9.58,
+      "changePercent": -14
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 74.7,
-      "change": -16.6,
-      "changePercent": -18.18
+      "price": 74.22,
+      "change": -17.08,
+      "changePercent": -18.71
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.1,
-      "change": -0.23,
-      "changePercent": -3.59
+      "price": 6.13,
+      "change": -0.2,
+      "changePercent": -3.18
     },
     {
       "name": "BHP Group",
@@ -834,6 +838,27 @@
   ],
   "news": [
     {
+      "title": "The other edge cuts back on the Maroons in shock Origin loss",
+      "link": "https://www.abc.net.au/news/2026-07-09/state-of-origin-queensland-maroons-reece-walsh-billy-slater/106831910",
+      "snippet": "",
+      "pubDate": "Wed, 08 Jul 2026 19:43:24 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Cash injections, write-downs: Inside youth retailer General Pants’ struggle to stay afloat",
+      "link": "https://www.smh.com.au/business/companies/cash-injections-write-downs-inside-youth-retailer-general-pants-struggle-to-stay-afloat-20260707-p60dad.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "After Glue shut its remaining stores, General Pants is one of the last streetwear fashion chains still standing. But latest accounts show its owner has racked up tens of millions in losses.",
+      "pubDate": "Thu, 09 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Green energy giants see $155b data centre boom as win for net zero",
+      "link": "https://www.smh.com.au/business/the-economy/green-energy-giants-see-155b-data-centre-boom-as-win-for-net-zero-20260708-p60dmz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Major renewable investors have thrown support behind Australia’s data centre boom, colliding with critics who fear it will derail the shift to cleaner power.",
+      "pubDate": "Thu, 09 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "NRL admits bunker error in awarding crucial Blues try in Origin decider",
       "link": "https://www.abc.net.au/news/2026-07-09/nrl-admits-bunker-error-in-state-of-origin/106894958",
       "snippet": "",
@@ -895,27 +920,6 @@
       "snippet": "",
       "pubDate": "Wed, 08 Jul 2026 04:53:14 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Proteomics bags US patent for endometriosis test",
-      "link": "https://www.smh.com.au/business/companies/proteomics-bags-us-patent-for-endometriosis-test-20260708-p60dog.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Proteomics International Laboratories has won a US patent for its endometriosis test, advancing plans to roll out the diagnostic product in the world’s biggest healthcare market.",
-      "pubDate": "Wed, 08 Jul 2026 14:28:01 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Seasoned Mt Isa geo joins True North to boost Qld copper search",
-      "link": "https://www.smh.com.au/business/companies/seasoned-mt-isa-geo-joins-true-north-to-boost-qld-copper-search-20260708-p60do1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "True North Copper has boosted its exploration firepower with the appointment of Mt Isa region veteran Matt Porter, as drilling continues at its Aquila copper discovery in Queensland.",
-      "pubDate": "Wed, 08 Jul 2026 14:01:30 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Patriot nails high-grade copper-silver find beside Zambian giant",
-      "link": "https://www.smh.com.au/business/companies/patriot-nails-high-grade-copper-silver-find-beside-zambian-giant-20260708-p60dnd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Patriot Resources has hit high-grade copper from surface in maiden drilling at its Tonic prospect in Zambia, including 2.56 per cent copper and 62.3g/t silver.",
-      "pubDate": "Wed, 08 Jul 2026 13:49:05 +1000",
-      "source": "SMH Business"
     }
   ]
 }
