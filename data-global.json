@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-08T14:24:34.988Z",
-  "summary": "The US and Iran are locked in an escalating military conflict, with American strikes on Iranian targets continuing despite a supposed pause for Supreme Leader Khamenei's funeral, driving oil prices higher and raising regional tensions. At a NATO summit in Ankara, Trump is pressuring European allies on defense spending and making contentious demands including a push for US control of Greenland and threats against Spain, while allies announce new missile funding. In domestic political news, Britain's Nigel Farage has resigned as an MP to run in a by-election, France's Marine Le Pen will contest the presidency despite a criminal conviction, and questions are mounting over Meta's use of Instagram photos to train AI without explicit consent. Humanitarian crises continue across Gaza, Sudan, and the Democratic Republic of Congo, with reports of potential massacres and escalating conflict-driven displacement.",
+  "fetchedAt": "2026-07-08T16:43:14.729Z",
+  "summary": "Global tensions have escalated sharply with the United States and Iran trading military strikes, disrupting ceasefire efforts and driving oil prices to two-week highs as markets react to the uncertainty. The NATO summit in Ankara is underway with escalating friction, as Trump demands control of Greenland and threatens trade action against Spain while criticizing allies over their response to the Iran conflict. In the Middle East, Syria experienced blasts during a French presidential visit, Iran's Supreme Leader's funeral proceeds in Iraq, and the Israeli-Palestinian crisis continues with international calls for the release of detained Palestinians. Elsewhere, Pakistan reported militant attacks in Balochistan, France's Marine Le Pen will run for president despite criminal conviction, and Russia's war in Ukraine drives a surge in bankruptcies among Russian citizens.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,46 @@
     }
   ],
   "articles": [
+    {
+      "title": "Pakistan military says 42 killed in fighter attacks in Balochistan",
+      "link": "https://www.aljazeera.com/news/2026/7/8/pakistan-military-says-42-killed-in-fighter-attacks-in-balochistan?traffic_source=rss",
+      "desc": "Military spokesman warns fighters &#039;we will chase you, we will hurt you&#039; amid the spate of deadly ambushes.",
+      "pubDate": "Wed, 08 Jul 2026 16:07:45 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/AP26188385300813-1783520007.jpg?resize=1920%2C1405",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Trump’s Iran strike comments shake markets, Brent crude hits two-week high",
+      "link": "https://www.aljazeera.com/economy/2026/7/8/trumps-iran-strike-comments-shake-markets-brent-crude-hits-two-week-high?traffic_source=rss",
+      "desc": "Travel stocks plunged as fuel costs rise, United Airlines fell 3 percent, while energy stocks saw gains.",
+      "pubDate": "Wed, 08 Jul 2026 15:53:23 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/afp_6a4e5784b9a6-1783519108.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Zelenskyy seeks NATO support as Russia continues attacks",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/8/zelenskyy-seeks-nato-support-as-russia-continues-attacks?traffic_source=rss",
+      "desc": "At the NATO summit, Ukrainian President Volodymyr Zelenskyy had urged European allies to build missiles.",
+      "pubDate": "Wed, 08 Jul 2026 15:18:30 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1783523894.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Trump on Iran: ‘We’ll probably hit them hard again tonight’",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/8/trump-on-iran-well-probably-hit-them-hard-again?traffic_source=rss",
+      "desc": "US President Donald Trump says the US will ‘probably’ carry out another round of strikes on Iran on Wednesday night.",
+      "pubDate": "Wed, 08 Jul 2026 14:20:03 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/WIDE-THUMB-Trump-says-he-will-hit-Iran-tonight-1783520293.png?resize=1728%2C1080",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Why has UK Reform’s Nigel Farage resigned as MP? What happens next?",
       "link": "https://www.aljazeera.com/news/2026/7/8/why-has-uk-reforms-nigel-farage-resigned-as-mp-what-happens-next?traffic_source=rss",
@@ -323,6 +363,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Attacks on Kyiv ahead of NATO summit: What is Putin's goal?",
+      "link": "https://www.dw.com/en/attacks-on-kyiv-ahead-of-nato-summit-what-is-putin-s-goal/a-77867330?maca=en-rss-en-eu-2092-rdf",
+      "desc": "Kyiv suffered heavy Russian strikes ahead of the NATO summit in Ankara. Experts say Russian President Vladimir Putin is trying to send a message.",
+      "pubDate": "2026-07-07T19:46:00Z",
+      "img": "https://static.dw.com/image/77847561_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "Trump criticises NATO allies over Iran conflict support",
@@ -12133,66 +12183,6 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
-    },
-    {
-      "title": "How Lebanon became the breaking point for the Iran war ceasefire",
-      "link": "https://www.aljazeera.com/news/2026/6/8/how-lebanon-became-the-breaking-point-for-the-iran-war-ceasefire?traffic_source=rss",
-      "desc": "Iran has switched from projecting power via its proxies to using its own firepower to protect them, analysts say.",
-      "pubDate": "Mon, 08 Jun 2026 16:13:03 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/ap_6a2583744c704-1780843380.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "‘Strategic doctrine’: Iran hails military shift after Beirut raid response",
-      "link": "https://www.aljazeera.com/news/2026/6/8/strategic-doctrine-iran-hails-military-shift-after-beirut-raid-response?traffic_source=rss",
-      "desc": "Iranians describe attacks on Israel as part of military approach prioritising &#039;taking initiative and offensive power&#039;.",
-      "pubDate": "Mon, 08 Jun 2026 16:06:47 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26158775277886-1780932204.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Lebanon’s children face physical, psychological trauma amid Israel’s war",
-      "link": "https://www.aljazeera.com/features/2026/6/8/lebanon-children-face-physical-psychological-trauma-israel-war?traffic_source=rss",
-      "desc": "Experts warn of lasting trauma for Lebanon&#039;s children as war continues to shatter their sense of safety.",
-      "pubDate": "Mon, 08 Jun 2026 16:01:27 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/04/getty_69f0a61ed3-1777378846.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Lebanon Latest: Israel pushes deeper as conflict escalates",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/8/aje-onl-aje_onl_lebanon_wrap-080626?traffic_source=rss",
-      "desc": "The latest developments from southern Lebanon amid escalating Israeli attacks.",
-      "pubDate": "Mon, 08 Jun 2026 15:30:48 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1780932394.jpg?resize=1200%2C675",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "‘Lives turned in a second’: Family of baby Sam, shot dead by Israel, grieve",
-      "link": "https://www.aljazeera.com/news/2026/6/8/lives-turned-in-a-second-family-of-baby-sam-shot-dead-by-israel-grieve?traffic_source=rss",
-      "desc": "A father speaks of the moment his seven-month-old Palestinian son was shot dead in the West Bank by an Israeli soldier.",
-      "pubDate": "Mon, 08 Jun 2026 15:06:44 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image00009-1780904036.jpeg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "IAEA chief says Iran-US nuclear talks in ‘complicated phase’",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/8/iaea-chief-says-iran-us-nuclear-talks-in-complicated-phase?traffic_source=rss",
-      "desc": "IAEA chief says Iran-US nuclear talks in &#039;complicated phase&#039;.",
-      "pubDate": "Mon, 08 Jun 2026 14:52:35 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/Screenshot-2026-06-08-at-5.51.13-PM-1780930308.png?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
     }
   ]
 }
