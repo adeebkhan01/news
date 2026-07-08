@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-08T19:59:20.967Z",
+  "fetchedAt": "2026-07-08T22:29:15.161Z",
   "asx200": {
     "value": 8785.1,
     "change": 160,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.01,
-    "changePercent": -1.46,
+    "changePercent": -1.56,
     "previousClose": 0.7,
     "asOf": "2026-07-08",
     "history": [
@@ -203,9 +203,9 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4089.9,
-      "change": -246,
-      "changePercent": -5.67
+      "price": 4085.6,
+      "change": -250.3,
+      "changePercent": -5.77
     },
     {
       "name": "Silver",
@@ -219,17 +219,17 @@
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 74.22,
-      "change": -17.08,
-      "changePercent": -18.71
+      "price": 74.63,
+      "change": -16.67,
+      "changePercent": -18.26
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.13,
-      "change": -0.2,
-      "changePercent": -3.18
+      "price": 6.12,
+      "change": -0.21,
+      "changePercent": -3.29
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,41 @@
   ],
   "news": [
     {
+      "title": "NSW coach Daley slams media over 'hidden agendas' after Origin triumph",
+      "link": "https://www.abc.net.au/news/2026-07-09/laurie-daley-slams-hidden-agendas-after-nsw-origin-victory/106895378",
+      "snippet": "",
+      "pubDate": "Wed, 08 Jul 2026 22:11:54 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'Can't believe it': British wildcard books Wimbledon semifinal spot",
+      "link": "https://www.abc.net.au/news/2026-07-09/tennis-arthur-fery-advances-wimbledon-semis-zverev-wns/106895326",
+      "snippet": "",
+      "pubDate": "Wed, 08 Jul 2026 21:24:45 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "AFL heavyweights Fremantle, Sydney primed for showdown",
+      "link": "https://www.abc.net.au/news/2026-07-09/fremantle-dockers-sydney-swans-preview/106894770",
+      "snippet": "",
+      "pubDate": "Wed, 08 Jul 2026 21:14:40 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Shares drop worldwide; Oil spikes; Telstra hit by fresh faults",
+      "link": "https://www.smh.com.au/business/markets/stocks-drop-worldwide-oil-spikes-telstra-hit-by-fresh-faults-20260709-p60dtg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Escalating strikes in the war with Iran and a spike in oil prices are expected to further rattle Australia’s sharemarket.",
+      "pubDate": "Thu, 09 Jul 2026 06:30:24 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Racist commentary called out in World Cup coverage",
+      "link": "https://www.abc.net.au/news/2026-07-09/world-cup-racist-commentary-media-coverage/106895166",
+      "snippet": "",
+      "pubDate": "Wed, 08 Jul 2026 20:07:27 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "The other edge cuts back on the Maroons in shock Origin loss",
       "link": "https://www.abc.net.au/news/2026-07-09/state-of-origin-queensland-maroons-reece-walsh-billy-slater/106831910",
       "snippet": "",
@@ -884,41 +919,6 @@
       "link": "https://www.abc.net.au/news/2026-07-08/state-of-origin-iii-decider-maroons-blues-lang-park/106866366",
       "snippet": "",
       "pubDate": "Wed, 08 Jul 2026 07:59:36 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Larvotto digs in as Hammer takeover battle heats up",
-      "link": "https://www.smh.com.au/business/companies/larvotto-digs-in-as-hammer-takeover-battle-heats-up-20260708-p60drc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Larvotto Resources has fired back at Austral’s rival Hammer bid, saying its own bid offers more certainty through Hillgrove’s looming cash flow, antimony exposure and financial clout.",
-      "pubDate": "Wed, 08 Jul 2026 17:34:43 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Hundreds of Triple Zero calls failed after ‘time travel’ bug caused catastrophic Telstra outage",
-      "link": "https://www.smh.com.au/business/consumer-affairs/telstra-investigating-outage-affecting-thousands-of-customers-20260708-p60dho.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The widespread outage led to at least 300 Triple Zero calls failing, and six customers told Telstra they needed more help when welfare checks were conducted.",
-      "pubDate": "Wed, 08 Jul 2026 17:30:59 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Kuniko chases bonanza silver repeats in NSW with new drilling",
-      "link": "https://www.smh.com.au/business/companies/kuniko-chases-bonanza-silver-repeats-in-nsw-with-new-drilling-20260708-p60dqx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Kuniko is set to drill again at its Commonwealth gold-silver project in NSW, chasing extensions to a bonanza discovery and other high-grade hits from its first campaign.",
-      "pubDate": "Wed, 08 Jul 2026 16:45:29 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Telstra has broken a critical rule of corporate crisis management",
-      "link": "https://www.smh.com.au/business/companies/telstra-has-broken-a-critical-rule-of-corporate-crisis-management-20260708-p60dly.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The telco giant has let itself down in how transparent it was about the full impact of Wednesday’s outage.",
-      "pubDate": "Wed, 08 Jul 2026 16:00:59 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "World Cup quarterfinals are upon us. Here's what you need to know",
-      "link": "https://www.abc.net.au/news/2026-07-08/world-cup-quarterfinals-france-england-argentina-spain/106891448",
-      "snippet": "",
-      "pubDate": "Wed, 08 Jul 2026 04:53:14 +0000",
       "source": "ABC News"
     }
   ]
