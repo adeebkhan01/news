@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-08T11:20:27.767Z",
+  "fetchedAt": "2026-07-08T14:44:29.375Z",
   "asx200": {
     "value": 8785.1,
     "change": 160,
@@ -90,17 +90,13 @@
       {
         "date": "2026-07-07",
         "close": 8803.9
-      },
-      {
-        "date": "2026-07-08",
-        "close": 8785.1
       }
     ]
   },
   "audusd": {
     "value": 0.69,
     "change": -0.01,
-    "changePercent": -1.72,
+    "changePercent": -1.65,
     "previousClose": 0.7,
     "asOf": "2026-07-08",
     "history": [
@@ -203,33 +199,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4061.8,
-      "change": -274.1,
-      "changePercent": -6.32
+      "price": 4067.4,
+      "change": -268.5,
+      "changePercent": -6.19
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 58.73,
-      "change": -9.7,
-      "changePercent": -14.18
+      "price": 58.56,
+      "change": -9.86,
+      "changePercent": -14.42
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 74.21,
-      "change": -17.09,
-      "changePercent": -18.72
+      "price": 75.51,
+      "change": -15.79,
+      "changePercent": -17.29
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.07,
-      "change": -0.26,
-      "changePercent": -4.06
+      "price": 6.1,
+      "change": -0.23,
+      "changePercent": -3.59
     },
     {
       "name": "BHP Group",
@@ -838,7 +834,28 @@
   ],
   "news": [
     {
-      "title": "Live: Walsh injected into Origin decider as Blues and Maroons loses stars",
+      "title": "NRL admits bunker error in awarding crucial Blues try in Origin decider",
+      "link": "https://www.abc.net.au/news/2026-07-09/nrl-admits-bunker-error-in-state-of-origin/106894958",
+      "snippet": "",
+      "pubDate": "Wed, 08 Jul 2026 14:25:35 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "New South Wales writes a new fate in blood after epic decider",
+      "link": "https://www.abc.net.au/news/2026-07-08/new-south-wales-state-of-origin-blues-cleary/106894772",
+      "snippet": "",
+      "pubDate": "Wed, 08 Jul 2026 13:24:34 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Quick hits: Arrow's standing 'O' and Queensland 'ripped off'",
+      "link": "https://www.abc.net.au/news/2026-07-08/state-of-origin-decider-quick-hits-qld-maroons-nsw-blues/106894792",
+      "snippet": "",
+      "pubDate": "Wed, 08 Jul 2026 13:16:35 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Cleary 'silences the critics' as NSW make Origin history with decider win",
       "link": "https://www.abc.net.au/news/2026-07-08/state-of-origin-iii-decider-maroons-blues-lang-park/106866366",
       "snippet": "",
       "pubDate": "Wed, 08 Jul 2026 07:59:36 +0000",
@@ -898,27 +915,6 @@
       "link": "https://www.smh.com.au/business/companies/patriot-nails-high-grade-copper-silver-find-beside-zambian-giant-20260708-p60dnd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Patriot Resources has hit high-grade copper from surface in maiden drilling at its Tonic prospect in Zambia, including 2.56 per cent copper and 62.3g/t silver.",
       "pubDate": "Wed, 08 Jul 2026 13:49:05 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "With women's game short on resources this AFLW player went to Doha for ACL rehab",
-      "link": "https://www.abc.net.au/news/2026-07-08/essendon-aflw-player-emily-gough-acl-rehab-doha/106854452",
-      "snippet": "",
-      "pubDate": "Wed, 08 Jul 2026 03:38:11 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Elon Musk’s SpaceX blockbuster gets a market reality check",
-      "link": "https://www.smh.com.au/business/markets/elon-musk-s-spacex-blockbuster-gets-a-market-reality-check-20260708-p60die.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "SpaceX shares have tumbled amid growing concern that the AI boom won’t deliver the returns investors had priced into the sector.",
-      "pubDate": "Wed, 08 Jul 2026 12:13:02 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Phone outages have become normal in Australia. That’s not normal",
-      "link": "https://www.smh.com.au/business/companies/phone-outages-have-become-normal-in-australia-that-s-not-normal-20260708-p60dif.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "These outages have exhausted public patience, and promised fixes aren’t being felt yet.",
-      "pubDate": "Wed, 08 Jul 2026 12:01:02 +1000",
       "source": "SMH Business"
     }
   ]
