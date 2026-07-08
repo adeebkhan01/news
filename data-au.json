@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-08T11:08:50.047Z",
-  "summary": "Australia's attention today is split between a major national infrastructure failure and emerging domestic challenges. A significant Telstra outage disrupted train services across Victoria and raised questions about corporate crisis management and government notification delays, while the government dismissed opposition claims linking the incident to China. On the home front, concerns are mounting over artificial intelligence's impact on Australian workers, particularly women and graduates, even as the nation celebrates advances in vaccine technology and mental health treatments. The broader news cycle reflects persistent tensions around climate policy, child safety, and rising violent crime in major cities.",
+  "fetchedAt": "2026-07-08T14:24:16.298Z",
+  "summary": "Australia's critical infrastructure came under intense scrutiny today following a major Telstra outage that disrupted services nationwide, stranded train passengers, and delayed the communications minister's notification of the incident. The country is grappling with a housing crisis as rental costs hit record highs while a separate report warns that women and university graduates face the greatest job displacement risk from artificial intelligence. On the global stage, Australia's neighbours have unified their response to Chinese military activity, while domestically, health officials confirmed a second bird flu case in South Australia and scientists announced a painless vaccine alternative.",
   "sources": [
     {
       "id": "abcnews",
@@ -30,6 +30,86 @@
   ],
   "articles": [
     {
+      "title": "Wyoming tightens wastewater rules after Meta datacenter contractor flushed contaminated water",
+      "link": "https://www.theguardian.com/us-news/2026/jul/08/meta-datacenter-ai-wyoming-water",
+      "desc": "<p>Meta said it was working with officials to be a ‘good neighbor’ and drinking water supplies were not affected</p><p>Officials in Wyoming said a contractor for <a href=\"https://www.theguardian.com/t",
+      "pubDate": "Wed, 08 Jul 2026 14:08:00 GMT",
+      "img": "https://i.guim.co.uk/img/media/e3b93d6666c7c862fed2b4ed8e9618f0ba1ce629/0_0_1555_1244/master/1555.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Australians face record high rents as agents see 'inquiries flooding in'",
+      "link": "https://www.abc.net.au/news/2026-07-08/record-high-rents-across-capital-cities-led-by-sydney-domain/106890418",
+      "desc": "Rents are soaring in several capital cities as low vacancy rates collide with rising interest rates and population growth.",
+      "pubDate": "Wed, 08 Jul 2026 13:59:40 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/790bb43ff15e696b46595ec0fb75521a?impolicy=wcms_crop_resize&amp;cropH=2479&amp;cropW=1859&amp;xPos=580&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Superquiz, Thursday, July 9",
+      "link": "https://www.smh.com.au/national/superquiz-thursday-july-9-20260708-p60dn0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Trivia buffs, test your knowledge with today’s interactive superquiz.",
+      "pubDate": "Wed, 08 Jul 2026 23:59:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.9819%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_1%2C$y_285/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/24d8c9ba98147348592ea2ed292e48328b593d46",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Oil prices jump over 5% after Trump suggests ceasefire with Iran has ended following fresh US strikes – business live",
+      "link": "https://www.theguardian.com/business/live/2026/jul/08/oil-prices-rise-fresh-us-strikes-iran-return-sanctions-tehran-federal-reserve-minutes-live-updates",
+      "desc": "<p>Brent crude spikes to a daily high of $79.26, gas prices rise, stock markets slide and government bond yields surge on inflation and rate hike fears</p><ul><li><p><a href=\"https://www.theguardian.c",
+      "pubDate": "Wed, 08 Jul 2026 13:15:05 GMT",
+      "img": "https://i.guim.co.uk/img/media/74e1a8c43d8793f32601975f1df2dea8c5049d6d/280_0_3345_2676/master/3345.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "The Hill is capitalizing on reader interest in the second Trump administration",
+      "link": "https://www.theguardian.com/media/2026/jul/08/the-hill-insider-trump-bill-sammon",
+      "desc": "<p>The Washington-based publication is announcing plans for a new digital subscription product called the Hill Insider</p><p>The most-visited digital-first news publication dedicated to politics wasn’",
+      "pubDate": "Wed, 08 Jul 2026 13:00:32 GMT",
+      "img": "https://i.guim.co.uk/img/media/2e53862856b3bc9e7bdc70eb26c0d497325432a3/0_113_3340_2671/master/3340.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Telstra hit by fresh Triple Zero fault hours after outage fixed",
+      "link": "https://www.smh.com.au/technology/telstra-hit-by-fresh-triple-zero-fault-hours-after-outage-fixed-20260708-p60dsp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_technology",
+      "desc": "The telco says a “secondary issue” is stopping some Triple Zero calls from connecting, hours after it declared the day’s outage resolved.",
+      "pubDate": "Wed, 08 Jul 2026 22:09:49 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2735%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/1063e830cba1ddb92e889ae21775f99d871c94f0",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Progress against cancer not shared by poorer countries, WHO report finds",
+      "link": "https://www.theguardian.com/global-development/2026/jul/08/health-who-global-persistent-inequities-progress-cancer-prevention-diagnosis-treatment-care",
+      "desc": "<p>‘Persistent’ inequities found to exist in access to prevention, diagnosis, treatment and care, annual global review says </p><p>Remarkable scientific progress against cancer has changed very little",
+      "pubDate": "Wed, 08 Jul 2026 12:00:32 GMT",
+      "img": "https://i.guim.co.uk/img/media/b36a2f83e6e13d2ccc1f3187fd10398472c4fbd6/499_0_3333_2667/master/3333.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Items found behind a Georgia Cracker Barrel lead to charges in 1985 Ohio murder",
+      "link": "https://www.theguardian.com/us-news/2026/jul/08/modern-forensic-evidence-1985-georgia-murder",
+      "desc": "<p>Modern forensic analysis leads to arrest in murder of traveling salesman John Warren, authorities say</p><p>Items that were found discarded behind a Cracker Barrel restaurant in <a href=\"https://ww",
+      "pubDate": "Wed, 08 Jul 2026 12:00:31 GMT",
+      "img": "https://i.guim.co.uk/img/media/ab6e76e887f980b57ac611276eb4f76504f5dcdf/0_0_4690_3752/master/4690.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
       "title": "Trump says Iran ceasefire 'over'",
       "link": "https://www.smh.com.au/national/trump-says-iran-ceasefire-over-20260708-p60dry.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
       "desc": "Donald Trump has said the ceasefire with Iran is 'over' and that it's &#34;just a waste of time&#34; negotiating with Tehran.",
@@ -50,6 +130,16 @@
       "sourceColor": "#0A5CA8"
     },
     {
+      "title": "Unions in Europe press for new worker protections to counter heat stress",
+      "link": "https://www.theguardian.com/environment/2026/jul/08/unions-europe-worker-protections-heat-stress-climate-crisis",
+      "desc": "<p>Climate crisis prompts calls for workplace temperature limits and rights to heat breaks and adjusted working hours</p><p>As Europe’s sweltering summer continues, trades unions are mounting a push f",
+      "pubDate": "Wed, 08 Jul 2026 11:00:52 GMT",
+      "img": "https://i.guim.co.uk/img/media/a4e13cab039decd986f6b82d2ccc5b9ce6faa431/190_362_1759_1408/master/1759.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
       "title": "AI to the Max",
       "link": "https://www.smh.com.au/national/nsw/ai-to-the-max-20260708-p60di9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
       "desc": "And a lecturer who’s a slave to the piles.",
@@ -58,6 +148,16 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Severn Trent spared Ofwat fine after ‘serious’ waterwaste and sewage failures",
+      "link": "https://www.theguardian.com/business/2026/jul/08/severn-trent-spared-ofwat-fine-serious-waterwaste-sewage-failures",
+      "desc": "<p>Regulator found ‘unacceptable’ breaches in water company’s handling of drainage and sewage network</p><ul><li><p><a href=\"https://www.theguardian.com/business/live/2026/jul/08/oil-prices-rise-fresh",
+      "pubDate": "Wed, 08 Jul 2026 10:44:08 GMT",
+      "img": "https://i.guim.co.uk/img/media/5d59e6123c72df4aa4e72748c0e5c98a272e16c0/268_0_2665_2133/master/2665.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
     },
     {
       "title": "UK waters hit with extreme heatwave as global sea temperatures reach record levels",
@@ -75,6 +175,16 @@
       "desc": "<p>Estonia, Luxembourg and UK are the top three in biennial Yale University index in tackling pollution and other issues</p><p>Much of the world has made encouraging strides in reducing toxic problems",
       "pubDate": "Wed, 08 Jul 2026 10:00:27 GMT",
       "img": "https://i.guim.co.uk/img/media/5fe9027804671f89cb6985f41c60e802c2d6247f/319_0_3741_2992/master/3741.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Trump’s policy mayhem is making even the Maga faithful consider walking away",
+      "link": "https://www.theguardian.com/business/2026/jul/08/trump-maga-faithful-economy",
+      "desc": "<p>Even voters who identify as foot soldiers of his political army are increasingly willing to blame Trump for their economic troubles</p><p>The political consequences of Donald Trump’s policy mayhem ",
+      "pubDate": "Wed, 08 Jul 2026 10:00:26 GMT",
+      "img": "https://i.guim.co.uk/img/media/da9d643daef5aed46abdabc54e59353a6c8bbf18/293_0_2915_2333/master/2915.jpg",
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
@@ -32885,46 +32995,6 @@
       "desc": "<p>We cannot afford to make the same mistake as we did with gas. If tech companies are going to use our land, energy and water for AI, they must pay their fair share of tax</p><p>Over the past few mon",
       "pubDate": "Mon, 08 Jun 2026 15:00:28 GMT",
       "img": "https://i.guim.co.uk/img/media/3b361147d8c044fb7df8048c37d10b1186d8240a/991_37_1831_1466/master/1831.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Call to phase out ‘inhumane’ guga hunt by working with Hebridean islanders",
-      "link": "https://www.theguardian.com/environment/2026/jun/08/call-phase-out-inhumane-guga-hunt-working-hebridean-islanders",
-      "desc": "<p>Annual killing of infant gannets has been carried out on a remote Scottish island for at least 400 years</p><p>Animal welfare campaigners have called for talks on phasing out the “inhumane” hunt fo",
-      "pubDate": "Mon, 08 Jun 2026 14:05:09 GMT",
-      "img": "https://i.guim.co.uk/img/media/7f117ecf717d5af68a644849db549497c03e52c0/876_274_4203_3363/master/4203.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Green energy is shielding Australia from a global power price shock",
-      "link": "https://www.smh.com.au/business/the-economy/green-energy-is-shielding-australia-from-a-global-power-price-shock-20260608-p604sc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "The rollout of renewables and batteries is buffering Australian electricity bills from the Iran war energy crisis.",
-      "pubDate": "Tue, 09 Jun 2026 00:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.1938%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_41/t_crop_custom/q_86%2Cf_auto/38e8eecaae45b665b1b43643e689a9fcffb7d8f7",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Superquiz, Tuesday, June 9, 2026",
-      "link": "https://www.smh.com.au/national/superquiz-tuesday-june-9-2026-20260605-p604e0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Trivia buffs, test your knowledge with today’s interactive superquiz.",
-      "pubDate": "Mon, 08 Jun 2026 23:59:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.9805555555555555%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_242/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/24d8c9ba98147348592ea2ed292e48328b593d46",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Arizona lake closes indefinitely to visitors after all of its fish die",
-      "link": "https://www.theguardian.com/us-news/2026/jun/08/san-carlos-lake-arizona-fish-kill",
-      "desc": "<p>Wildlife department says drought conditions and water released from dam led to ‘major fish kill’ at San Carlos Lake</p><p><a href=\"https://www.theguardian.com/us-news/arizona\">Arizona</a> officials",
-      "pubDate": "Mon, 08 Jun 2026 11:33:49 GMT",
-      "img": "https://i.guim.co.uk/img/media/1744290982027de4f57f3a8056fb5d25e039314e/78_0_1166_933/master/1166.jpg",
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
