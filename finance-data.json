@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-09T10:04:35.539Z",
+  "fetchedAt": "2026-07-09T15:38:27.154Z",
   "asx200": {
     "value": 8762.5,
     "change": 158.3,
@@ -94,17 +94,13 @@
       {
         "date": "2026-07-08",
         "close": 8785.1
-      },
-      {
-        "date": "2026-07-09",
-        "close": 8762.5
       }
     ]
   },
   "audusd": {
     "value": 0.69,
     "change": -0.01,
-    "changePercent": -1.42,
+    "changePercent": -1.35,
     "previousClose": 0.7,
     "asOf": "2026-07-09",
     "history": [
@@ -207,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4115.7,
-      "change": -144.3,
-      "changePercent": -3.39
+      "price": 4138.7,
+      "change": -121.3,
+      "changePercent": -2.85
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 59.54,
-      "change": -5.55,
-      "changePercent": -8.53
+      "price": 60.79,
+      "change": -4.31,
+      "changePercent": -6.62
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 73.47,
-      "change": -14.73,
-      "changePercent": -16.7
+      "price": 72.2,
+      "change": -16,
+      "changePercent": -18.14
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.22,
-      "change": -0.08,
-      "changePercent": -1.31
+      "price": 6.27,
+      "change": -0.03,
+      "changePercent": -0.51
     },
     {
       "name": "BHP Group",
@@ -842,7 +838,7 @@
   ],
   "news": [
     {
-      "title": "Live: Dockers and Swans battle for top spot as Lions recall big guns",
+      "title": "Dockers stun the Swans in last quarter blitz to own the top of the ladder",
       "link": "https://www.abc.net.au/news/2026-07-09/afl-rd-18-live-dockers-swans/106891664",
       "snippet": "",
       "pubDate": "Thu, 09 Jul 2026 09:04:42 +0000",
