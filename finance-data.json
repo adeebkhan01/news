@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-09T20:13:09.429Z",
+  "fetchedAt": "2026-07-09T22:46:20.949Z",
   "asx200": {
     "value": 8762.5,
     "change": 158.3,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.01,
-    "changePercent": -1.38,
+    "changePercent": -1.36,
     "previousClose": 0.7,
     "asOf": "2026-07-09",
     "history": [
@@ -207,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4131.6,
-      "change": -128.4,
-      "changePercent": -3.01
+      "price": 4132.6,
+      "change": -127.4,
+      "changePercent": -2.99
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 60.32,
-      "change": -4.77,
-      "changePercent": -7.33
+      "price": 60.34,
+      "change": -4.75,
+      "changePercent": -7.3
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 71.9,
-      "change": -16.3,
-      "changePercent": -18.48
+      "price": 71.82,
+      "change": -16.38,
+      "changePercent": -18.57
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.24,
+      "price": 6.25,
       "change": -0.06,
-      "changePercent": -0.95
+      "changePercent": -0.89
     },
     {
       "name": "BHP Group",
@@ -842,6 +842,48 @@
   ],
   "news": [
     {
+      "title": "Volkswagen to slash half of its models as sales fall",
+      "link": "https://www.smh.com.au/business/companies/volkswagen-to-slash-half-of-its-models-as-sales-fall-20260710-p60e67.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The German automaker has struggled to compete with fast-growing Chinese companies that offer more affordable and sophisticated electric vehicles.",
+      "pubDate": "Fri, 10 Jul 2026 08:37:26 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Pogačar's daring knows no bounds as he crushes Tour rivals",
+      "link": "https://www.abc.net.au/news/2026-07-10/tadej-pogacar-tour-de-france-tourmalet/106900030",
+      "snippet": "",
+      "pubDate": "Thu, 09 Jul 2026 22:08:07 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Gauff's horror miss sets up historic all-Czech Wimbledon women's final",
+      "link": "https://www.abc.net.au/news/2026-07-10/muchova-noskova-into-wimbledon-final-gauf-misses-chance/106900204",
+      "snippet": "",
+      "pubDate": "Thu, 09 Jul 2026 22:05:19 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "McKeown 'gutted' as illness forces Commonwealth Games withdrawal",
+      "link": "https://www.abc.net.au/news/2026-07-10/kaylee-mckeown-medically-withdraws-commonwealth-games/106900100",
+      "snippet": "",
+      "pubDate": "Thu, 09 Jul 2026 20:52:16 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Calm returns to financial markets as oil eases",
+      "link": "https://www.smh.com.au/business/markets/calm-returns-to-financial-markets-as-oil-eases-20260710-p60e5m.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Futures are pointing to a flat opening for the key S&amp;P/ASX 200 index on Friday.",
+      "pubDate": "Fri, 10 Jul 2026 06:25:14 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: France's superstars step up to beat Morocco and reach World Cup semis",
+      "link": "https://www.abc.net.au/news/2026-07-10/world-cup-france-vs-morocco-quarterfinal-live-blog/106898962",
+      "snippet": "",
+      "pubDate": "Thu, 09 Jul 2026 19:25:30 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Should older workers still be expected to do night shifts?",
       "link": "https://www.smh.com.au/business/workplace/should-older-workers-still-be-expected-to-do-night-shifts-20260709-p60e19.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "It’s important organisations don’t assume that all older workers are less capable of taking night shifts than their younger colleagues.",
@@ -863,6 +905,13 @@
       "source": "SMH Business"
     },
     {
+      "title": "Dockers stun the Swans in last quarter blitz to own the top of the ladder",
+      "link": "https://www.abc.net.au/news/2026-07-09/afl-rd-18-live-dockers-swans/106891664",
+      "snippet": "",
+      "pubDate": "Thu, 09 Jul 2026 09:04:42 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Telstra boss Vicki Brady, the CEO who wasn’t there",
       "link": "https://www.smh.com.au/business/companies/telstra-boss-vicki-brady-the-ceo-who-wasn-t-there-20260709-p60dv2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The absent Telstra CEO is expected to face intense scrutiny when she returns to the country following the telco’s nationwide outages.",
@@ -870,46 +919,11 @@
       "source": "SMH Business"
     },
     {
-      "title": "Larvotto locks in Mt Isa copper prize after drill win",
-      "link": "https://www.smh.com.au/business/companies/larvotto-locks-in-mt-isa-copper-prize-after-drill-win-20260709-p60e1h.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Larvotto Resources has exercised its option with Kilo Copper over the historic Blockade copper mine near Mount Isa after its drilling confirmed broad copper hits beneath the old pit.",
-      "pubDate": "Thu, 09 Jul 2026 14:25:29 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Wikipedia is battling for the soul of the internet",
-      "link": "https://www.smh.com.au/business/companies/wikipedia-is-battling-for-the-soul-of-the-internet-20260706-p60cte.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Under threat from the MAGA right, artificial intelligence and repressive governments, Wikipedia has never had to fight this hard.",
-      "pubDate": "Thu, 09 Jul 2026 14:23:36 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "More workers are back in the office. Could our WFH days be numbered?",
-      "link": "https://www.smh.com.au/business/workplace/more-workers-are-back-in-the-office-could-our-wfh-days-be-numbered-20260709-p60e0t.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "While WFH has embedded itself into the fabric of our workforces, subtle but surprising trends continue to emerge in the tug-of-war.",
-      "pubDate": "Thu, 09 Jul 2026 13:53:58 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Nigerian regulators move Chariot lithium prize a step closer",
-      "link": "https://www.smh.com.au/business/companies/nigerian-regulators-move-chariot-lithium-prize-a-step-closer-20260709-p60e0s.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Chariot Resources has edged closer to finalising its Nigerian lithium deal, with three more licence transfers approved and key mining lease conversion applications now accepted.",
-      "pubDate": "Thu, 09 Jul 2026 13:27:47 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Locksley cracks cleaner path to US antimony processing",
-      "link": "https://www.smh.com.au/business/companies/locksley-cracks-cleaner-path-to-us-antimony-processing-20260709-p60dyh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Locksley Resources and Rice University have cracked the antimony code, upgrading low-grade ore to 93% purity to produce a near-pure metal, a major processing breakthrough.",
-      "pubDate": "Thu, 09 Jul 2026 12:37:28 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "The Fed is divided. But its ‘hawks’ are likely to prevail and face Trump’s wrath",
-      "link": "https://www.smh.com.au/business/the-economy/the-fed-is-divided-but-its-hawks-are-likely-to-prevail-and-face-trump-s-wrath-20260709-p60duj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "If the AI boom, the war in the Middle East and Donald Trump’s tariffs continue to fuel inflation, “almost all” members of the Federal Reserve Board’s rate-setting committee believe US interest rates will have to rise.",
-      "pubDate": "Thu, 09 Jul 2026 12:08:55 +1000",
-      "source": "SMH Business"
+      "title": "State of Origin decider breaks broadcast record",
+      "link": "https://www.abc.net.au/news/2026-07-09/state-of-origin-decider-breaks-broadcast-record/106897540",
+      "snippet": "",
+      "pubDate": "Thu, 09 Jul 2026 06:36:45 +0000",
+      "source": "ABC News"
     }
   ]
 }
