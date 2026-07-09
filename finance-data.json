@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-09T15:38:27.154Z",
+  "fetchedAt": "2026-07-09T20:13:09.429Z",
   "asx200": {
     "value": 8762.5,
     "change": 158.3,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.01,
-    "changePercent": -1.35,
+    "changePercent": -1.38,
     "previousClose": 0.7,
     "asOf": "2026-07-09",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-07-08",
+        "close": 0.69
+      },
+      {
         "date": "2026-07-09",
         "close": 0.69
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4138.7,
-      "change": -121.3,
-      "changePercent": -2.85
+      "price": 4131.6,
+      "change": -128.4,
+      "changePercent": -3.01
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 60.79,
-      "change": -4.31,
-      "changePercent": -6.62
+      "price": 60.32,
+      "change": -4.77,
+      "changePercent": -7.33
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 72.2,
-      "change": -16,
-      "changePercent": -18.14
+      "price": 71.9,
+      "change": -16.3,
+      "changePercent": -18.48
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.27,
-      "change": -0.03,
-      "changePercent": -0.51
+      "price": 6.24,
+      "change": -0.06,
+      "changePercent": -0.95
     },
     {
       "name": "BHP Group",
@@ -838,11 +842,25 @@
   ],
   "news": [
     {
-      "title": "Dockers stun the Swans in last quarter blitz to own the top of the ladder",
-      "link": "https://www.abc.net.au/news/2026-07-09/afl-rd-18-live-dockers-swans/106891664",
-      "snippet": "",
-      "pubDate": "Thu, 09 Jul 2026 09:04:42 +0000",
-      "source": "ABC News"
+      "title": "Should older workers still be expected to do night shifts?",
+      "link": "https://www.smh.com.au/business/workplace/should-older-workers-still-be-expected-to-do-night-shifts-20260709-p60e19.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "It’s important organisations don’t assume that all older workers are less capable of taking night shifts than their younger colleagues.",
+      "pubDate": "Fri, 10 Jul 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Karl Stefanovic’s love affair with the British far right blooms",
+      "link": "https://www.smh.com.au/business/companies/karl-stefanovic-s-love-affair-with-the-british-far-right-blooms-20260709-p60dve.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Former Today host Stefanovic is doing better than his old show weeks after leaving Nine, at least on a superficial measure. But that success might not last forever.",
+      "pubDate": "Fri, 10 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Why skyscrapers in my hometown don’t bother me",
+      "link": "https://www.smh.com.au/business/the-economy/why-skyscrapers-in-my-hometown-don-t-bother-me-20260709-p60dxb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Higher housing density gets a bad rap from many sensible Australians. But here’s why the alternative is worse for us all.",
+      "pubDate": "Fri, 10 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
     },
     {
       "title": "Telstra boss Vicki Brady, the CEO who wasn’t there",
@@ -850,20 +868,6 @@
       "snippet": "The absent Telstra CEO is expected to face intense scrutiny when she returns to the country following the telco’s nationwide outages.",
       "pubDate": "Thu, 09 Jul 2026 18:21:18 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "State of Origin decider breaks broadcast record",
-      "link": "https://www.abc.net.au/news/2026-07-09/state-of-origin-decider-breaks-broadcast-record/106897540",
-      "snippet": "",
-      "pubDate": "Thu, 09 Jul 2026 06:36:45 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Gout Gout ruled out of World Under-20 athletics titles after training injury",
-      "link": "https://www.abc.net.au/news/2026-07-09/gout-gout-hamstring-injury-means-no-world-under-20-titles/106897772",
-      "snippet": "",
-      "pubDate": "Thu, 09 Jul 2026 05:05:17 +0000",
-      "source": "ABC News"
     },
     {
       "title": "Larvotto locks in Mt Isa copper prize after drill win",
@@ -887,27 +891,6 @@
       "source": "SMH Business"
     },
     {
-      "title": "Swimming Australia fights 'scary' fake news in world-first initiative",
-      "link": "https://www.abc.net.au/news/2026-07-09/swimming-australia-world-first-fake-news-initiative/106896916",
-      "snippet": "",
-      "pubDate": "Thu, 09 Jul 2026 03:44:39 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "'Cannot remain silent': Egypt demands FIFA investigate World Cup referees",
-      "link": "https://www.abc.net.au/news/2026-07-09/egypt-demands-fifa-investigate-world-cup-referees/106896584",
-      "snippet": "",
-      "pubDate": "Thu, 09 Jul 2026 03:30:55 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Can Fremantle keep rolling to the AFL minor premiership?",
-      "link": "https://www.abc.net.au/news/2026-07-09/can-fremantle-keep-rolling-to-the-afl-minor-premiership/106896166",
-      "snippet": "",
-      "pubDate": "Thu, 09 Jul 2026 03:29:47 +0000",
-      "source": "ABC News"
-    },
-    {
       "title": "Nigerian regulators move Chariot lithium prize a step closer",
       "link": "https://www.smh.com.au/business/companies/nigerian-regulators-move-chariot-lithium-prize-a-step-closer-20260709-p60e0s.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Chariot Resources has edged closer to finalising its Nigerian lithium deal, with three more licence transfers approved and key mining lease conversion applications now accepted.",
@@ -915,11 +898,18 @@
       "source": "SMH Business"
     },
     {
-      "title": "How new Blues bash brothers blasted their way to State of Origin glory",
-      "link": "https://www.abc.net.au/news/2026-07-09/new-south-wales-state-of-origin-young-martin/106896612",
-      "snippet": "",
-      "pubDate": "Thu, 09 Jul 2026 02:58:47 +0000",
-      "source": "ABC News"
+      "title": "Locksley cracks cleaner path to US antimony processing",
+      "link": "https://www.smh.com.au/business/companies/locksley-cracks-cleaner-path-to-us-antimony-processing-20260709-p60dyh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Locksley Resources and Rice University have cracked the antimony code, upgrading low-grade ore to 93% purity to produce a near-pure metal, a major processing breakthrough.",
+      "pubDate": "Thu, 09 Jul 2026 12:37:28 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "The Fed is divided. But its ‘hawks’ are likely to prevail and face Trump’s wrath",
+      "link": "https://www.smh.com.au/business/the-economy/the-fed-is-divided-but-its-hawks-are-likely-to-prevail-and-face-trump-s-wrath-20260709-p60duj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "If the AI boom, the war in the Middle East and Donald Trump’s tariffs continue to fuel inflation, “almost all” members of the Federal Reserve Board’s rate-setting committee believe US interest rates will have to rise.",
+      "pubDate": "Thu, 09 Jul 2026 12:08:55 +1000",
+      "source": "SMH Business"
     }
   ]
 }
