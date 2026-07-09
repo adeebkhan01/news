@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-09T09:47:13.179Z",
-  "summary": "Australia's telecommunications sector faces mounting pressure following Telstra's massive nationwide outage, which crippled services across the country and could cost hundreds of millions of dollars, with authorities investigating a potential death linked to the incident and calls for regulatory reform. Indian Prime Minister Modi is in Melbourne to deepen trade relations, sealing a multibillion-dollar uranium deal that strengthens Australia-India strategic ties. The political landscape is heating up with Coalition members warning strongly against One Nation, while regional issues range from train service disruptions in Victoria to planned redevelopment of Brisbane's Wintergarden mall. Several other stories are capturing attention, including the return of an elephant seal to Tasmanian waters, investigations into misconduct by a doctor and a senator, and growing debate around AI's role in government policy.",
+  "fetchedAt": "2026-07-09T15:18:31.538Z",
+  "summary": "Australia's infrastructure and technology sectors face mounting scrutiny following Telstra's major nationwide outage, which has prompted investigations into whether it contributed to at least one death and sparked calls for systemic telecommunications improvements. Domestically, political attention is turning to One Nation with Energy Minister Angus Taylor launching sharp attacks on Pauline Hanson's party, while Indian Prime Minister Modi's Melbourne visit has cemented a significant multibillion-dollar uranium deal with Australia. Environmental and social issues also feature prominently, including concerns about AI data center expansion, species extinction revealed by conservation lists, and Victoria's medical assistance in dying scheme gaining attention. International developments include escalating US-Iran tensions following ceasefire breakdown and Germany facing major labour disputes over Volkswagen's proposed factory closures.",
   "sources": [
     {
       "id": "abcnews",
@@ -30,11 +30,161 @@
   ],
   "articles": [
     {
+      "title": "This huge hairy-legged Australian arachnid may be the fastest spider on the planet",
+      "link": "https://www.theguardian.com/australia-news/2026/jul/09/fastest-spider-on-the-planet-brown-huntsman",
+      "desc": "<p>A brown huntsman<em> </em>is the quickest of more than 250 species analysed by scientists in the UK and Germany</p><p>If arachnophobes were not frightened enough by the <a href=\"https://www.theguar",
+      "pubDate": "Thu, 09 Jul 2026 15:00:55 GMT",
+      "img": "https://i.guim.co.uk/img/media/66d3c30ff4576f91bb49ab4c31b14a0b7e979cdc/285_0_1349_1080/master/1349.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "The fight against AI data centers is important – but it’s just a starting point | Bruce Schneier and Nathan E Sanders",
+      "link": "https://www.theguardian.com/commentisfree/2026/jul/09/ai-datacenter-company-politics",
+      "desc": "<p>AI companies want to capture the value created by entire industries. That concentration of wealth and power is society’s greatest risk</p><p>Opposition to AI datacenters has emerged as a primary th",
+      "pubDate": "Thu, 09 Jul 2026 15:00:54 GMT",
+      "img": "https://i.guim.co.uk/img/media/2df615d7038e5cbe337454b6a7691a533b8975bb/986_0_2318_1856/master/2318.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Superquiz, Friday, July 10",
+      "link": "https://www.smh.com.au/national/superquiz-friday-july-10-20260709-p60dxr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Trivia buffs, test your knowledge with today’s interactive superquiz.",
+      "pubDate": "Thu, 09 Jul 2026 23:59:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.9819%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_1%2C$y_236/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/24d8c9ba98147348592ea2ed292e48328b593d46",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Licensed to drill? How a Trump-linked Texas oil company is elbowing its way into Greenland",
+      "link": "https://www.theguardian.com/world/2026/jul/09/licence-to-drill-trump-linked-texas-oil-company-elbowing-into-greenland",
+      "desc": "<p>Greenland Energy says billions of barrels of crude lie beneath territory and claims it has exploration permits – a claim flatly denied by Nuuk</p><p>On 10 June, a snowy-haired American in his 60s a",
+      "pubDate": "Thu, 09 Jul 2026 13:52:19 GMT",
+      "img": "https://i.guim.co.uk/img/media/540200a81ead06748ce5ee895f50d67e67a1b23e/728_0_3560_2848/master/3560.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Pets can suffer heatstroke even when resting, UK vets warn",
+      "link": "https://www.theguardian.com/environment/2026/jul/09/extreme-temperatures-heatstroke-pets-uk-vets",
+      "desc": "<p>Most cases used to be seen after exertion or being left in cars, but extreme heat has widened risk</p><p>Extreme temperatures are causing heatstroke in pets even when they are restricted to homes a",
+      "pubDate": "Thu, 09 Jul 2026 12:34:40 GMT",
+      "img": "https://i.guim.co.uk/img/media/4721eb38f08a81fd159e210d07613e13fed14e05/307_0_4165_3335/master/4165.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Species’ ingenious survival strategies no match for human destruction, red list reveals",
+      "link": "https://www.theguardian.com/environment/2026/jul/09/species-ingenious-survival-strategies-no-match-human-destruction-red-list",
+      "desc": "<p>Newly endangered animals include desert frogs and snails in extreme ocean depths, both threatened by mining</p><p>Life has colonised every corner of the planet by evolving ingenious survival strate",
+      "pubDate": "Thu, 09 Jul 2026 12:20:09 GMT",
+      "img": "https://i.guim.co.uk/img/media/1187bdfd3c4a3cbb71340e89c8fc9f455b7f72b5/501_358_1830_1464/master/1830.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "NZ legalised homosexuality 40 years ago – but even today, justice issues remain",
+      "link": "https://theconversation.com/nz-legalised-homosexuality-40-years-ago-but-even-today-justice-issues-remain-286844",
+      "desc": "Same-sex marriages and an apology from the state followed the homosexual law reform, but gaps remain for some people trying to have historic convictions expunged.",
+      "pubDate": "2026-07-09T11:55:31Z",
+      "img": "https://images.theconversation.com/files/746786/original/file-20260709-57-i7nk4b.jpg?ixlib=rb-4.1.0&amp;rect=0%2C475%2C5699%2C2849&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "EU’s ‘unpleasant and dangerous’ border checks need overhaul, says Greek airports boss",
+      "link": "https://www.theguardian.com/business/2026/jul/09/eu-unpleasant-and-dangerous-border-checks-need-overhaul-says-greek-airports-boss",
+      "desc": "<p>Airports have had to use gazebos to shield passengers from sun as they wait to be processed, says Alexander Zinell</p><p>The boss of 14 Greek airports has called for a serious overhaul of the EU’s ",
+      "pubDate": "Thu, 09 Jul 2026 11:02:31 GMT",
+      "img": "https://i.guim.co.uk/img/media/9eb01767bcc29016a873e6df7f515b9b5209e6de/21_7_1779_1424/master/1779.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "US chemical accidents rising as Trump rolls back protections, report finds",
+      "link": "https://www.theguardian.com/us-news/2026/jul/09/us-chemical-accidents-trump",
+      "desc": "<p>Deaths and injuries up as critics condemn administration’s ‘appalling’ plan to gut federal disaster management system</p><p>The number of US chemical accidents is rising just as the <a href=\"https:",
+      "pubDate": "Thu, 09 Jul 2026 11:00:03 GMT",
+      "img": "https://i.guim.co.uk/img/media/981f937777b733e93e471d84afa05d19ccaf5087/358_0_3575_2860/master/3575.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "The old-boy network has your cards marked",
+      "link": "https://www.smh.com.au/national/nsw/the-old-boy-network-has-your-cards-marked-20260709-p60dw0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Don’t leave the beach without it.",
+      "pubDate": "Thu, 09 Jul 2026 21:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.6556000000000002%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_50/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/d51781c5614995563bbf4ce4a8b06344486e0d25",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Perth teen reunited with paramedics who saved her life",
+      "link": "https://www.smh.com.au/national/perth-teen-reunited-with-paramedics-who-saved-her-life-20260709-p60e50.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A 16-year-old girl who was left unconscious after she suffered a severe seizure has reunited with the paramedics who helped save her life.",
+      "pubDate": "Thu, 09 Jul 2026 20:48:17 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/0d8181b3817f70abdf9a10a74a133861feb41b37",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Singer Bonnie Tyler dies",
+      "link": "https://www.smh.com.au/national/singer-bonnie-tyler-dies-20260709-p60e4z.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Singer Bonnie Tyler, best known for the hit Total Eclipse of the Heart, has died in a hospital in Portugal where she was being treated for illness.",
+      "pubDate": "Thu, 09 Jul 2026 20:42:40 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/a9056d9ebb09c4b9051eebcfa53245e86d544357",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Charlie’s dad died of a rare disease often misdiagnosed that made him ‘angry and rude’",
+      "link": "https://www.smh.com.au/national/nsw/charlie-s-dad-died-of-a-rare-disease-often-misdiagnosed-that-made-him-angry-and-rude-20260706-p60cvp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Richard Stowe was diagnosed with early onset dementia at 53, and slowly deteriorated over the decade that followed.",
+      "pubDate": "Thu, 09 Jul 2026 19:59:17 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.28582995951417%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_392/t_crop_custom/q_86%2Cf_auto/8b5007e14588437cd60fc21d47616935b1e3d15a",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Test your knowledge of the year so far with the Brisbane Times Quiz",
+      "link": "https://www.smh.com.au/national/queensland/test-your-knowledge-of-the-year-so-far-with-the-brisbane-times-quiz-20260703-p60cen.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "With 2026 half over, how much can you recall of local, national and international news?",
+      "pubDate": "Thu, 09 Jul 2026 19:55:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2649%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_9%2C$y_0/t_crop_custom/q_86%2Cf_auto/64b5d557e881bdefd6e1dac2f82c91fe254d9a3f1cabfe01a4fbfc6e86ff9ee0",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
       "title": "Neil the one-tonne elephant seal causing traffic jams in rural Tasmania has returned to sea – for now",
       "link": "https://www.theguardian.com/australia-news/2026/jul/09/neil-the-seal-returns-to-sea-tasmania-australia",
       "desc": "<p>Premier Jeremy Rockliff says the ‘traffic cones and street signs of Tasmania can breathe a small sigh of relief’</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/email-newsletters?CMP=cva",
       "pubDate": "Thu, 09 Jul 2026 09:19:37 GMT",
       "img": "https://i.guim.co.uk/img/media/7161157875121a0dd4e378cb0cc4d37117d39073/335_0_3000_2400/master/3000.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "VW faces protests in Germany over proposed job cuts and factory closures",
+      "link": "https://www.theguardian.com/business/2026/jul/09/vw-protests-germany-proposed-job-cuts-factory-closures",
+      "desc": "<p>Demonstrations at 18 sites set up as radical transformation plan put to board of Europe’s biggest carmaker</p><p>Volkswagen’s proposal to slash up to 100,000 jobs and close factories faces a major ",
+      "pubDate": "Thu, 09 Jul 2026 09:19:26 GMT",
+      "img": "https://i.guim.co.uk/img/media/784928861859c324a7760bacebfa6473aabb31bc/14_305_4154_3326/master/4154.jpg",
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
@@ -1025,6 +1175,16 @@
       "desc": "<p>Plans for a mega-resort, backed by Ivanka Trump and Jared Kushner, have spurred broader questions about who politics is serving</p><p>For more than a month, thousands have taken to the streets of T",
       "pubDate": "Wed, 08 Jul 2026 17:25:37 GMT",
       "img": "https://i.guim.co.uk/img/media/6235188d260734b4b37e7f773db57dd28f0f54b2/745_0_5923_4739/master/5923.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Pakistan locates wreckage of Boeing 737 cargo plane that went missing off coast",
+      "link": "https://www.theguardian.com/world/2026/jul/08/boeing-737-cargo-plane-missing-near-karachi",
+      "desc": "<p>Early flight data shows K2 Airways plane crashed into sea with five crew on board south-west of Karachi</p><p>Pakistan has located the wreckage of a Boeing cargo plane, the country’s airports autho",
+      "pubDate": "Wed, 08 Jul 2026 15:56:38 GMT",
+      "img": "https://i.guim.co.uk/img/media/4e119d788fb720dfa9f126d4bc307724d37a21ad/441_0_7125_5700/master/7125.jpg",
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
@@ -32745,226 +32905,6 @@
       "desc": "<p>Earthquake was region’s strongest tremor in nearly 150 years and was also felt in parts of Mexico including Cancún</p><p>An earthquake on Monday off the coast of <a href=\"https://www.theguardian.co",
       "pubDate": "Tue, 09 Jun 2026 16:30:08 GMT",
       "img": "https://i.guim.co.uk/img/media/99f53848aaace7d54ba425ef81dcef67700d32f7/0_0_6882_5504/master/6882.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Trump claims US fuel prices ‘not very high’ as costs surge amid Iran war",
-      "link": "https://www.theguardian.com/business/2026/jun/09/trump-gas-prices-not-very-high",
-      "desc": "<p>National average gas price stands at about $4.16 per gallon as Americans grapple with price hikes sparked by the war</p><p><a href=\"https://www.theguardian.com/us-news/donaldtrump\">Donald Trump</a>",
-      "pubDate": "Tue, 09 Jun 2026 15:01:05 GMT",
-      "img": "https://i.guim.co.uk/img/media/da33554d23c2ae18716fa1e2044b6a27a0350467/460_0_3334_2667/master/3334.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "‘Osprey cam’ streams life of nesting seabirds perched at tip of 55 metre-long Queensland rainforest canopy crane",
-      "link": "https://www.theguardian.com/australia-news/2026/jun/10/osprey-cam-streams-nesting-seabirds-queensland-rainforest-canopy-crane",
-      "desc": "<p>Researchers believe the same pair of birds have been mating and nesting in the unusual spot in the Daintree Rainforest for 15 consecutive years</p><ul><li><p>Get our <a href=\"https://www.theguardia",
-      "pubDate": "Tue, 09 Jun 2026 15:00:02 GMT",
-      "img": "https://i.guim.co.uk/img/media/a59382f7f3ac103d6116eb99356d4801e7ca189c/0_0_1350_1080/master/1350.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "UK watchdog to look at Paramount’s $110bn takeover of Warner Bros Discovery",
-      "link": "https://www.theguardian.com/business/2026/jun/09/uk-watchdog-paramount-110bn-takeover-warner-bros-discover",
-      "desc": "<p>Deal to create a streaming and sports powerhouse will be scrutinised by Competition and Markets Authority</p><p>The UK competition watchdog has opened an investigation into Paramount Skydance’s <a ",
-      "pubDate": "Tue, 09 Jun 2026 14:53:45 GMT",
-      "img": "https://i.guim.co.uk/img/media/dd0620195f6c4bcbb0a02b9514f628e879cc163c/197_0_4167_3333/master/4167.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Chip stocks bouncing back on Wall Street and South Korea; UK investigating Paramount-Warner Bros merger – business live",
-      "link": "https://www.theguardian.com/business/live/2026/jun/09/chip-stocks-bounce-back-kospi-openai-wall-street-float-stock-markets-oil-live-news-updates",
-      "desc": "<p>Rolling coverage of the latest economic and financial news, as the AI trade bounces back</p><ul><li><p><a href=\"https://www.theguardian.com/technology/2026/jun/08/openai-ipo-files-for-public-stock-",
-      "pubDate": "Tue, 09 Jun 2026 14:48:46 GMT",
-      "img": "https://i.guim.co.uk/img/media/9b9986361f494bbf8406860532ad3663db42de0d/0_0_1500_1200/master/1500.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Press Council adjudication",
-      "link": "https://www.smh.com.au/national/press-council-adjudication-20260608-p604tl.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "The Press Council has decided that a cartoon breached its Standards of Practice.",
-      "pubDate": "Wed, 10 Jun 2026 00:03:27 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.8146%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/405efe900050ebfba3f6570424981f2c82dbcce3",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Whey protein shortage looms as use of weight-loss drugs fuels global demand",
-      "link": "https://www.theguardian.com/business/2026/jun/09/fears-whey-protein-shortage-weight-loss-drugs-global-demand",
-      "desc": "<p>Price of dairy product has risen fivefold after users of GLP-1 medications advised to increase protein consumption</p><p>The growing popularity of weight-loss drugs has fuelled global demand for wh",
-      "pubDate": "Tue, 09 Jun 2026 14:00:53 GMT",
-      "img": "https://i.guim.co.uk/img/media/9aebfe95a13063679916ef0f7d11834a3cd25305/291_0_4148_3320/master/4148.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Superquiz, Wednesday, June 10",
-      "link": "https://www.smh.com.au/national/superquiz-wednesday-june-10-20260609-p6050y.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Trivia buffs, test your knowledge with today’s interactive superquiz.",
-      "pubDate": "Tue, 09 Jun 2026 23:59:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.9805555555555555%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_231/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/24d8c9ba98147348592ea2ed292e48328b593d46",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "This US neighborhood is full of hazardous air pollution. Can a network of sensors make ‘the invisible visible’?",
-      "link": "https://www.theguardian.com/us-news/2026/jun/09/pacoima-pollution-air-sensors-monitoring",
-      "desc": "<p>Pacoima is hemmed in by highways and heavy industry, and its residents are fighting pollution with hyperlocal air quality monitoring</p><p>Jose Luis Salas looks up at the ladder. “Are you ready?” h",
-      "pubDate": "Tue, 09 Jun 2026 13:00:52 GMT",
-      "img": "https://i.guim.co.uk/img/media/e46de040c7f83b3037e3225c2356d7c45b3c00ba/464_229_2214_1772/master/2214.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "‘Woefully unprepared’: extreme heat will double US hospitalizations by 2040, study finds",
-      "link": "https://www.theguardian.com/environment/2026/jun/09/extreme-heat-double-hospitalizations-2040-study",
-      "desc": "<p>Sharp rise in hospital visits will in turn drive up annual healthcare costs for heat-related conditions to over $1bn</p><p>People in the US are poised to endure another summer of unusually ferociou",
-      "pubDate": "Tue, 09 Jun 2026 13:00:51 GMT",
-      "img": "https://i.guim.co.uk/img/media/00aadf5356a9467673851048ce8fbaeaceeacddb/1114_0_5602_4480/master/5602.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Western Sydney International Airport opening date announced",
-      "link": "https://www.abc.net.au/news/2026-06-09/western-sydney-international-airport-opening-date-october-25/106778500",
-      "desc": "After 15 years of planning, seven years of construction and a year of testing, Western Sydney International Airport has confirmed its opening date for passengers.",
-      "pubDate": "Tue, 09 Jun 2026 12:06:40 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/1c64a5be725e37427615de17cc1e0bd9?impolicy=wcms_crop_resize&amp;cropH=2160&amp;cropW=1620&amp;xPos=1110&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Here are 10 ways a ‘super’ El Niño could impact the planet | Benjamin Selwyn",
-      "link": "https://www.theguardian.com/commentisfree/2026/jun/09/super-el-nino-global-economy",
-      "desc": "<p>The climate phenomenon is intensifying an already unequal global economy</p> <a href=\"https://www.theguardian.com/commentisfree/2026/jun/09/super-el-nino-global-economy\">Continue reading...</a>",
-      "pubDate": "Tue, 09 Jun 2026 12:00:50 GMT",
-      "img": "https://i.guim.co.uk/img/media/236341ecdc24cf6f2028bd4029fbfec8d88e3731/950_0_4244_3396/master/4244.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Jetstar flights lock in date for opening of Sydney’s new airport",
-      "link": "https://www.smh.com.au/national/nsw/jetstar-flights-lock-in-date-for-opening-of-sydney-s-new-airport-20260604-p603u4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "The long-awaited launch of passenger flights to Western Sydney Airport will follow the start of cargo aircraft taking off from the new aviation hub next month.",
-      "pubDate": "Tue, 09 Jun 2026 22:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.2012%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/70fb2c3b0a72952c8d5cb02ddf99cc4bfddcaef5",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "A philosopher’s take on NZ’s bill to define who counts as a woman or man",
-      "link": "https://theconversation.com/a-philosophers-take-on-nzs-bill-to-define-who-counts-as-a-woman-or-man-284288",
-      "desc": "The bill treats a complex cluster of biological traits as if it were one settled thing, and ties legal meaning to the pretence.",
-      "pubDate": "2026-06-09T11:21:48Z",
-      "img": "https://images.theconversation.com/files/740400/original/file-20260608-57-tvdvp4.jpg?ixlib=rb-4.1.0&amp;rect=0%2C647%2C6000%2C3000&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Unit parking requirements slashed as details of suburban renewal plans emerge",
-      "link": "https://www.smh.com.au/national/queensland/unit-parking-requirements-slashed-as-details-of-suburban-renewal-plans-emerge-20260609-p605bj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Brisbane council has slashed mandatory apartment car spaces, while debating proposals around tower heights in Mount Gravatt, Alderley and Cannon Hill.",
-      "pubDate": "Tue, 09 Jun 2026 21:19:21 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.442%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/807daa4b8de65ecf83cc23d15fa6cd55f3896bd58731250e6205ff114f9fc027",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "The Galápagos is a wildlife haven. But is that enough to protect the rare scalloped hammerhead shark?",
-      "link": "https://www.theguardian.com/environment/2026/jun/09/galapagos-scalloped-hammerhead-sharks-industrial-fishing-baby-pregnant-conservation",
-      "desc": "<p>The species is abundant within the protected archipelago but when they migrate outside the marine reserve to give birth they run the gauntlet of industrial fishing</p><p>The unmistakable fluted T-s",
-      "pubDate": "Tue, 09 Jun 2026 11:00:50 GMT",
-      "img": "https://i.guim.co.uk/img/media/f7b420c2e91fc751c1888ddf3c73440a286f9774/0_0_2545_2037/master/2545.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "US stadium and hotel workers threaten strikes ‘to make things fair’ during World Cup",
-      "link": "https://www.theguardian.com/football/2026/jun/09/stadium-hotel-workers-strike-world-cup",
-      "desc": "<p>Low wages and fears of ICE crackdowns have set workers on edge of strike as thousands set to arrive during World Cup</p><p>Hospitality and food service workers in several US cities hosting World Cu",
-      "pubDate": "Tue, 09 Jun 2026 11:00:49 GMT",
-      "img": "https://i.guim.co.uk/img/media/364e211e8a95a2cc02cf49afdfed585c925a65df/642_0_6810_5448/master/6810.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "‘Electrify daily life’, urges Cop31 host",
-      "link": "https://www.theguardian.com/environment/2026/jun/09/third-of-world-energy-electricity-by-2035-says-turkey-cop31-host",
-      "desc": "<p>Third of world’s energy needs should come from electricity by 2035, says Murat Kurum, as priorities set out for this year’s UN climate summit</p><p>The world should aim to meet a third of its energ",
-      "pubDate": "Tue, 09 Jun 2026 11:00:49 GMT",
-      "img": "https://i.guim.co.uk/img/media/2a7595fed15091914cc7026f8c9d2f657ad03622/397_0_7212_5773/master/7212.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "The fight for fame",
-      "link": "https://www.smh.com.au/national/nsw/the-fight-for-fame-20260609-p60512.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Even Scully has to take a back seat.",
-      "pubDate": "Tue, 09 Jun 2026 21:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_1.6556000000000002%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_48/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/d51781c5614995563bbf4ce4a8b06344486e0d25",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Dismissed ‘friend of the CFMEU’ has appeal thrown out",
-      "link": "https://www.smh.com.au/national/queensland/dismissed-friend-of-the-cfmeu-has-appeal-thrown-out-20260609-p605bs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "An investigation has found senior industrial relations figure Helen Burgess was “blatantly” dishonest about her relationship with a successful job applicant.",
-      "pubDate": "Tue, 09 Jun 2026 20:59:43 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.2819%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_38/t_crop_custom/q_86%2Cf_auto/b91a7b7a438cf70bf3ccb5c971c273cabdbc48a5",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Shark attack victim farewelled",
-      "link": "https://www.smh.com.au/national/shark-attack-victim-farewelled-20260609-p605cd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Hundreds of people have turned out to say a final farewell to Rottnest shark attack victim Steven Mattaboni in Perth.",
-      "pubDate": "Tue, 09 Jun 2026 20:32:17 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/a3071051d67f14c7df188905e00c19592492022a",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Grandmother’s home ransacked",
-      "link": "https://www.smh.com.au/national/grandmother-s-home-ransacked-20260609-p605ce.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "A grandmother is too frightened to leave her home after it was ransacked and $200,000 in cash stolen.",
-      "pubDate": "Tue, 09 Jun 2026 20:32:07 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/cd5097262d64aebcf98c55ceb455c22f92c1399f",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "BYD and Alibaba among big names aiding China’s military, Pentagon says",
-      "link": "https://www.theguardian.com/world/2026/jun/09/china-military-tech-companies-byd-alibaba-baidu-pentagon-claims",
-      "desc": "<p>Updated Pentagon list includes swathe of China’s top technology firms in move that could inflame tensions between the countries</p><p>The US added Chinese e-commerce company Alibaba, internet searc",
-      "pubDate": "Tue, 09 Jun 2026 10:06:58 GMT",
-      "img": "https://i.guim.co.uk/img/media/10d10eb1e0b2e338d636dfce6288283045a008d7/671_0_3357_2686/master/3357.jpg",
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
