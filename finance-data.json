@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-10T17:13:38.325Z",
+  "fetchedAt": "2026-07-10T19:55:29.896Z",
   "asx200": {
     "value": 8806,
     "change": 152.7,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.01,
-    "changePercent": -0.9,
+    "changePercent": -0.98,
     "previousClose": 0.7,
     "asOf": "2026-07-10",
     "history": [
@@ -203,25 +203,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4112.7,
-      "change": 4.5,
-      "changePercent": 0.11
+      "price": 4111.4,
+      "change": 3.2,
+      "changePercent": 0.08
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 60.1,
-      "change": -4.5,
-      "changePercent": -6.96
+      "price": 60.05,
+      "change": -4.55,
+      "changePercent": -7.04
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 71.06,
-      "change": -18.97,
-      "changePercent": -21.07
+      "price": 71.63,
+      "change": -18.4,
+      "changePercent": -20.44
     },
     {
       "name": "Copper",
@@ -229,7 +229,7 @@
       "iconBg": "#fef0e6",
       "price": 6.28,
       "change": 0.03,
-      "changePercent": 0.45
+      "changePercent": 0.51
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,20 @@
   ],
   "news": [
     {
+      "title": "Australia’s miners were racing to decarbonise. Why are some tapping the brakes?",
+      "link": "https://www.smh.com.au/business/the-economy/australia-s-miners-were-racing-to-decarbonise-why-are-some-tapping-the-brakes-20260624-p609kt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "A few years ago, BHP and Rio Tinto expected they would be deploying battery-powered trucks by the end of this decade. Now, those timelines have slipped into the 2030s.",
+      "pubDate": "Sat, 11 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Spain's lead short-lived as Belgium strikes back in quarterfinal",
+      "link": "https://www.abc.net.au/news/2026-07-11/spain-vs-belgium-world-cup-quarterfinal-live-blog/106900918",
+      "snippet": "",
+      "pubDate": "Fri, 10 Jul 2026 18:28:53 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "'Not gonna talk about that': Luai dodges press conference after another Tigers loss",
       "link": "https://www.abc.net.au/news/2026-07-10/nrl-live-wests-tigers-warriors-jarome-luai/106903582",
       "snippet": "",
@@ -905,20 +919,6 @@
       "link": "https://www.abc.net.au/news/2026-07-10/big-bash-season-opener-to-be-played-in-india/106901576",
       "snippet": "",
       "pubDate": "Fri, 10 Jul 2026 02:33:27 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Rough start for Aussie stars at Evian Championship",
-      "link": "https://www.abc.net.au/news/2026-07-10/struggles-for-aussie-champs-at-evian-championship-launch/106900696",
-      "snippet": "",
-      "pubDate": "Fri, 10 Jul 2026 01:46:25 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Hewitt continues frightening form to reach Wimbledon juniors semifinal",
-      "link": "https://www.abc.net.au/news/2026-07-10/tennis-hewitt-wimbledon-boys-semi-polman-hunter-lose-doubles/106900666",
-      "snippet": "",
-      "pubDate": "Fri, 10 Jul 2026 00:02:16 +0000",
       "source": "ABC News"
     }
   ]
