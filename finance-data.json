@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-10T19:55:29.896Z",
+  "fetchedAt": "2026-07-10T22:28:56.702Z",
   "asx200": {
     "value": 8806,
     "change": 152.7,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.01,
-    "changePercent": -0.98,
+    "changePercent": -0.97,
     "previousClose": 0.7,
     "asOf": "2026-07-10",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-07-09",
+        "close": 0.69
+      },
+      {
         "date": "2026-07-10",
         "close": 0.7
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4111.4,
-      "change": 3.2,
-      "changePercent": 0.08
+      "price": 4128.9,
+      "change": 20.7,
+      "changePercent": 0.5
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 60.05,
-      "change": -4.55,
-      "changePercent": -7.04
+      "price": 60.3,
+      "change": -4.3,
+      "changePercent": -6.65
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 71.63,
-      "change": -18.4,
-      "changePercent": -20.44
+      "price": 71.51,
+      "change": -18.52,
+      "changePercent": -20.57
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.28,
-      "change": 0.03,
-      "changePercent": 0.51
+      "price": 6.29,
+      "change": 0.04,
+      "changePercent": 0.58
     },
     {
       "name": "BHP Group",
@@ -838,6 +842,13 @@
   ],
   "news": [
     {
+      "title": "Hewitt qualifies for Wimbledon boys' final, first Aussie since de Minaur",
+      "link": "https://www.abc.net.au/news/2026-07-11/tennis-cruz-hewitt-into-wimbledon-boys-final/106904652",
+      "snippet": "",
+      "pubDate": "Fri, 10 Jul 2026 21:27:03 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Australia’s miners were racing to decarbonise. Why are some tapping the brakes?",
       "link": "https://www.smh.com.au/business/the-economy/australia-s-miners-were-racing-to-decarbonise-why-are-some-tapping-the-brakes-20260624-p609kt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "A few years ago, BHP and Rio Tinto expected they would be deploying battery-powered trucks by the end of this decade. Now, those timelines have slipped into the 2030s.",
@@ -845,7 +856,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Spain's lead short-lived as Belgium strikes back in quarterfinal",
+      "title": "Live: Spain strikes late to seal semi berth after Belgium keeper howler",
       "link": "https://www.abc.net.au/news/2026-07-11/spain-vs-belgium-world-cup-quarterfinal-live-blog/106900918",
       "snippet": "",
       "pubDate": "Fri, 10 Jul 2026 18:28:53 +0000",
@@ -912,13 +923,6 @@
       "link": "https://www.abc.net.au/news/2026-07-10/world-cup-france-morocco-quarter-final-boston-analysis/106900008",
       "snippet": "",
       "pubDate": "Fri, 10 Jul 2026 03:19:18 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Big Bash to play historic season-opener in India",
-      "link": "https://www.abc.net.au/news/2026-07-10/big-bash-season-opener-to-be-played-in-india/106901576",
-      "snippet": "",
-      "pubDate": "Fri, 10 Jul 2026 02:33:27 +0000",
       "source": "ABC News"
     }
   ]
