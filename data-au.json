@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-10T14:36:36.339Z",
-  "summary": "Australia's news cycle today was dominated by the death of veteran broadcaster and former senator Derryn Hinch at 82, reflecting on his controversial career in media and politics. Major domestic issues included Telstra's nationwide outage and subsequent CEO accountability, revelations about a Perth paediatrician facing new child sex charges, and ongoing searches for missing persons in Queensland and Victoria. Internationally, stories ranged from Pauline Hanson's global far-right networking to climate concerns including pacific gray whales facing catastrophic die-offs and Spanish wildfires. Technology and clean energy featured prominently with humanoid robots completing their first live surgical operation and debates over uranium mining and coal policy.",
+  "fetchedAt": "2026-07-10T16:59:29.545Z",
+  "summary": "Australia's news landscape today is dominated by infrastructure failures and security challenges. Telstra faces mounting scrutiny after a nationwide outage that saw executives slow to respond, while the government balances competing priorities in national security and trade amid deteriorating geopolitical tensions. Notable international developments include the death of broadcaster Derryn Hinch and concerns over Pauline Hanson's growing influence with far-right movements globally. Several crime stories, including a murder investigation in Victoria and allegations against a Perth doctor, round out the day's most pressing local issues.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Delta says higher airfares expected to last despite drop in oil prices",
+      "link": "https://www.theguardian.com/business/2026/jul/10/delta-airfare-prices-quarterly-results",
+      "desc": "<p>Company reports $1.4bn profit despite its highest quarterly fuel expense in history</p><p>Delta Airlines saidelevated airfares are likely to last despite a recent drop in oil prices, reporting stro",
+      "pubDate": "Fri, 10 Jul 2026 16:15:22 GMT",
+      "img": "https://i.guim.co.uk/img/media/a21f84ac70e17274b1aa7cefc55271e9958da1a2/530_0_3813_3051/master/3813.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Back to Back Barries: The worst political gaffe of the week - podcast",
+      "link": "https://www.theguardian.com/australia-news/audio/2026/jul/11/back-to-back-barries-the-worst-political-gaffe-of-the-week",
+      "desc": "<p><strong>Barrie Cassidy</strong> and <strong>Tony Barry</strong> examine a long list of stumbles and missteps made by politicians this week.</p><p>They also discuss the prime minister’s Pacific push",
+      "pubDate": "Fri, 10 Jul 2026 15:00:26 GMT",
+      "img": "https://i.guim.co.uk/img/media/c0eafecd02c1544567ad7de41b4ed4fad72e70c4/625_0_3750_3000/master/3750.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "How ‘space balls’ launched a sleepy Queensland beach town into the global spotlight at warp speed",
+      "link": "https://www.theguardian.com/australia-news/2026/jul/11/how-space-balls-launched-a-sleepy-queensland-beach-town-into-the-global-spotlight-at-warp-speed",
+      "desc": "<p>Shop owner Lisa Scobie says Forrest Beach is usually a place where ‘kids go fishing before school’. Then six mysterious objects washed up</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/",
+      "pubDate": "Fri, 10 Jul 2026 15:00:25 GMT",
+      "img": "https://i.guim.co.uk/img/media/a3f9accd53fb680756db3b6b7f6efd02b7696aab/50_0_1500_1200/master/1500.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Albanese juggles national security and trade in foreign policy bonanza. The stakes could not be higher | Tom McIlroy",
+      "link": "https://www.theguardian.com/australia-news/commentisfree/2026/jul/11/albanese-juggles-national-security-and-trade-in-foreign-policy-bonanza-the-stakes-could-not-be-higher",
+      "desc": "<p>China may be the biggest loser in landmark week where the PM met leaders of India, Fiji, Tonga, Samoa, Solomon Islands and Papua New Guinea</p><ul><li><p>Get our <a href=\"https://www.theguardian.co",
+      "pubDate": "Fri, 10 Jul 2026 15:00:24 GMT",
+      "img": "https://i.guim.co.uk/img/media/aba6e51ae3924858ac4d3e8e0ea6a8993f15f6fe/499_0_4316_3455/master/4316.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "The worst political gaffe of the week – Back to Back Barries podcast",
+      "link": "https://www.theguardian.com/australia-news/video/2026/jul/11/the-worst-political-gaffe-of-the-week-back-to-back-barries-podcast",
+      "desc": "<p>In this episode of the Barries podcast, co-hosts Barrie Cassidy and Tony Barry examine a long list of stumbles and missteps in what was a busy week in Australian politics. They also examine the pri",
+      "pubDate": "Fri, 10 Jul 2026 15:00:24 GMT",
+      "img": "https://i.guim.co.uk/img/media/f32ec8bfaf6abefb2dd01a3f2a8f6a8436cec2a5/243_0_1350_1080/master/1350.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Democrat running for Texas AG claims $110m in grants for Starlink ‘sure looks’ like corruption",
+      "link": "https://www.theguardian.com/us-news/2026/jul/10/democrat-texas-ag-candidate-spacex-starlink-investigation",
+      "desc": "<p>Nathan Johnson says if elected he’ll investigate state’s deal with Elon Musk’s SpaceX to provide rural internet</p><ul><li><p><a href=\"https://www.theguardian.com/us-news/live/2026/jul/10/donald-tr",
+      "pubDate": "Fri, 10 Jul 2026 14:57:08 GMT",
+      "img": "https://i.guim.co.uk/img/media/167d7e05fbe83b6508aead3d2d8e176f1759aec1/336_0_4968_3977/master/4968.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
     {
       "title": "Apollo gatecrashes easyJet sale with surprise £5.7bn takeover offer – as it happened",
       "link": "https://www.theguardian.com/business/live/2026/jul/10/apollo-easyjet-takeover-offer-business-ftse-markets-latest-news-updates",
@@ -578,6 +638,16 @@
       "sourceId": "conversationau",
       "sourceName": "The Conversation AU",
       "sourceColor": "#D8352A"
+    },
+    {
+      "title": "The missing scientists at the centre of a UFO conspiracy",
+      "link": "https://www.theguardian.com/news/audio/2026/jul/10/the-missing-scientists-at-the-centre-of-a-ufo-conspiracy",
+      "desc": "<p>Are the disappearances or deaths of 11 US scientists really linked in a nefarious plot? Or just a conspiracy theory with roots in a bizarre broadcast that rocked Britain in the 1970s?</p><p>In the ",
+      "pubDate": "Fri, 10 Jul 2026 02:00:07 GMT",
+      "img": "https://i.guim.co.uk/img/media/90144e6e61f9eca09611c5cc61758f1506c65932/86_0_2828_2262/master/2828.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
     },
     {
       "title": "Meet Darcy Byrne, the Labor mayor taking on pokies reform - podcast",
@@ -32765,66 +32835,6 @@
       "desc": "<p>Temperatures above 15C ‘very strange’ say scientists, as snow melts and rain falls on glaciers in usually frozen region</p><p>Temperatures in the Antarctic climbed above 15C this month, shattering ",
       "pubDate": "Wed, 10 Jun 2026 18:32:16 GMT",
       "img": "https://i.guim.co.uk/img/media/1877798b0cdfff7ba2e5cd6d4faaa6c0d23f1ab3/88_0_1500_1200/master/1500.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Four days of extreme rain in Indonesia killed 7% of world’s rarest great apes, study finds",
-      "link": "https://www.theguardian.com/world/2026/jun/10/rainfall-landslides-climate-crisis-tapanuli-orangutan-indonesia-extreme-weather",
-      "desc": "<p>Critically endangered Tapanuli orangutan population falls after heavy rain and landslides, fuelled by climate crisis, in North Sumatra</p><p>Extreme rainfall and landslides fuelled by the climate c",
-      "pubDate": "Wed, 10 Jun 2026 16:18:05 GMT",
-      "img": "https://i.guim.co.uk/img/media/8c24d843b7436f3f696fc1c2a360e9a848c702cc/1215_263_3442_2754/master/3442.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Toby Carvery to pay for orchard planting after causing outrage by felling 500-year-old oak",
-      "link": "https://www.theguardian.com/environment/2026/jun/10/toby-carvery-to-pay-for-orchard-planting-after-causing-outrage-by-felling-500-year-old-oak",
-      "desc": "<p>Restaurant chain took chainsaw to ancient oak tree in Enfield without permission</p><p>The restaurant chain Toby Carvery has settled a legal dispute after taking a chainsaw to an ancient oak tree w",
-      "pubDate": "Wed, 10 Jun 2026 15:30:27 GMT",
-      "img": "https://i.guim.co.uk/img/media/8299d549c1df9886ed5c2636bdfe620a1933dda3/683_0_6827_5464/master/6827.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "One Nation’s ‘incredibly sloppy’ financial reports reveal more than $1m in missing or worthless assets",
-      "link": "https://www.theguardian.com/australia-news/2026/jun/11/one-nation-party-financial-reports-returns-fair-trading-ntwnfb",
-      "desc": "<p><strong>Exclusive:</strong> Financial returns, obtained by the Guardian, are ‘very poor and unprofessional’ and call into question party’s fitness to govern, expert says</p><p>• Get our <a href=\"ht",
-      "pubDate": "Wed, 10 Jun 2026 15:00:51 GMT",
-      "img": "https://i.guim.co.uk/img/media/139fb16d9f6dc7a6f2e900f5eb982a2b53ad0e04/443_0_3762_3011/master/3762.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Labor scraps plan to make spy agency’s 9/11-era questioning powers permanent",
-      "link": "https://www.theguardian.com/australia-news/2026/jun/11/australian-government-scraps-asio-compulsory-questioning-plans",
-      "desc": "<p>But Australian government will expand offences covered by rules to include promotion of communal violence and attacks on defence system</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/em",
-      "pubDate": "Wed, 10 Jun 2026 15:00:50 GMT",
-      "img": "https://i.guim.co.uk/img/media/772577b113e4aa54222bf531854e57c3bdb0259e/515_0_4680_3744/master/4680.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Breast cancer and endometriosis drug Zoladex is being pulled from Australia. How will women be affected?",
-      "link": "https://www.theguardian.com/australia-news/2026/jun/11/zoladex-breast-cancer-endometriosis-drug-pulled-australia-how-women-affected",
-      "desc": "<p>The vital medicine, made by AstraZeneca, will not be available from November, possibly leaving thousands of women without treatment</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/email-",
-      "pubDate": "Wed, 10 Jun 2026 15:00:50 GMT",
-      "img": "https://i.guim.co.uk/img/media/1a1e73adf96ee8b3418a1158abf713a0f897f1fb/911_0_4539_3633/master/4539.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Deepest and most extensive whale graveyard discovered in Indian Ocean",
-      "link": "https://www.theguardian.com/environment/2026/jun/10/deepest-most-extensive-whale-graveyard-discovered-indian-ocean",
-      "desc": "<p>Some remains found in Diamantina fracture zone date back more than 5m years and reveal species and ecosystems unknown to science</p><p>The oldest, deepest and most extensive whale graveyard yet dis",
-      "pubDate": "Wed, 10 Jun 2026 15:00:50 GMT",
-      "img": "https://i.guim.co.uk/img/media/6253a2c697c6011cef357455376de3ec8d3d0d02/938_0_4398_3517/master/4398.jpg",
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
