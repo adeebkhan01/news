@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-10T03:42:20.041Z",
-  "summary": "The dominant story today is rapidly escalating military conflict between the US and Iran, with both sides trading strikes for consecutive nights despite diplomatic efforts by Pakistan and others to preserve existing agreements, and shipping through the critical Strait of Hormuz now grinding to a halt. The Gaza crisis continues with Israeli operations killing civilians even amid ceasefire claims, while Palestinian legislative elections are scheduled for November 28. Elsewhere, SK Hynix's record $26.5 billion share sale signals continued tech investment confidence, European politics intensifies with France's far-right National Rally positioning itself as a governing force and UK Labour beginning leadership elections, and a UN probe confirms genocide by Sudan's RSF forces. Environmental and corporate governance stories round out the day, from port sustainability demands to FIFA scrutiny and OpenAI's copyright lawsuit.",
+  "fetchedAt": "2026-07-10T09:42:33.182Z",
+  "summary": "Global tensions are escalating across multiple fronts, with the US and Iran trading military strikes near the Strait of Hormuz while shipping halts and international mediators warn of broader conflict, as Middle Eastern instability deepens amid continued Israeli operations in Gaza and Palestinian political developments. In corporate news, South Korea's SK Hynix completed a record-breaking IPO raising $26.5 billion while EasyJet faces a surprise takeover bid, signaling significant capital movements in global markets. Separately, Ukraine continues striking Russian assets to disrupt fuel supplies, Europe debates institutional independence and far-right political gains, and the UN documents genocide allegations in Sudan's ongoing conflict. These developments underscore widening geopolitical divisions as traditional alliances face strain and regional conflicts threaten international commerce and stability.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,76 @@
     }
   ],
   "articles": [
+    {
+      "title": "EasyJet agrees to surprise takeover bid as rival US firm swoops in",
+      "link": "https://www.bbc.co.uk/news/articles/cgjxqq9jg8yo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The airline says a bid from US firm Apollo has trumped a recent takeover offer from Castlelake.",
+      "pubDate": "Fri, 10 Jul 2026 09:38:07 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/18e4/live/9e552290-7c30-11f1-b3bb-a3d4161295ad.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "EU states do not need ‘consensus’ to hold Israel accountable",
+      "link": "https://www.aljazeera.com/opinions/2026/7/10/eu-states-do-not-need-consensus-to-hold-israel-accountable?traffic_source=rss",
+      "desc": "As foreign ministers meet on Gaza and the West Bank, national governments cannot hide behind EU paralysis.",
+      "pubDate": "Fri, 10 Jul 2026 09:28:32 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/epa_6a50ba7894eb-1783675512.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Degree but no job: The battle against unemployment in Gaza",
+      "link": "https://www.aljazeera.com/features/2026/7/10/degree-but-no-job-the-battle-against-unemployment-in-gaza?traffic_source=rss",
+      "desc": "Gaza&#039;s young graduates face sky-high unemployment as Israel&#039;s war devastates job market.",
+      "pubDate": "Fri, 10 Jul 2026 08:48:59 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a39785e5668-1782151262.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Administration without sovereignty will not free Palestine",
+      "link": "https://www.aljazeera.com/opinions/2026/7/10/administration-without-sovereignty-will-not-free-palestine?traffic_source=rss",
+      "desc": "The end of Hamas governance in Gaza may change who administers it, but not who holds power over Palestinian life.",
+      "pubDate": "Fri, 10 Jul 2026 08:03:44 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/afp_6a50a74150dd-1783670593.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "The US is building a new pressure architecture against Iran",
+      "link": "https://www.aljazeera.com/opinions/2026/7/10/the-us-is-building-a-new-pressure-architecture-against-iran?traffic_source=rss",
+      "desc": "Trump’s NATO diplomacy is part of a wider effort to weaken Tehran by reshaping the region around it.",
+      "pubDate": "Fri, 10 Jul 2026 07:29:09 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/getty_6a509ee36c-1783668451.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "South Korea’s SK Hynix raises $26.5bn in record-breaking US IPO",
+      "link": "https://www.aljazeera.com/economy/2026/7/10/south-koreas-sk-hynix-raises-26-5bn-in-record-breaking-us-ipo?traffic_source=rss",
+      "desc": "South Korean chip giant makes largest-ever debut by a foreign firm in the US, eclipsing Alibaba&#039;s 2014 IPO.",
+      "pubDate": "Fri, 10 Jul 2026 07:02:05 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/AP26112311738483-1783655012_cc612c-1783663547.jpg?resize=1200%2C630&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Zelenskyy urges urgent efforts in Ukraine to start Patriot production",
+      "link": "https://www.aljazeera.com/news/2026/7/10/zelenskyy-urges-urgent-efforts-in-ukraine-to-start-patriot-production?traffic_source=rss",
+      "desc": "US President Donald Trump gave his blessing earlier this week to domestic Ukrainian production of the missiles.",
+      "pubDate": "Fri, 10 Jul 2026 04:03:36 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/getty_6a4e912cdb-1783533868.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Iran says strikes hit southern areas, but US denies it carried attacks",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/10/iran-says-strikes-hit-southern-areas-but-us-denies-it-carried-attacks?traffic_source=rss",
@@ -12060,116 +12130,6 @@
       "desc": "Poland is threatening to strip Ukraine's president of a state honour over the naming Ukrainian military unit after controversial World War Two fighters.",
       "pubDate": "Wed, 10 Jun 2026 09:57:20 GMT",
       "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2043/live/875c77e0-64ad-11f1-b1db-af71d47507d6.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "War in Ukraine: Kyiv strikes key Russian supply lines",
-      "link": "https://www.dw.com/en/war-in-ukraine-kyiv-strikes-key-russian-supply-lines/a-77480640?maca=en-rss-en-eu-2092-rdf",
-      "desc": "Russian troops rely on supplies via the land corridor to Crimea, but Ukrainian forces are now able to launch concentrated attacks along the critical route. Experts say this indicates growing Russian v",
-      "pubDate": "2026-06-10T08:32:00Z",
-      "img": "https://static.dw.com/image/77320466_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "Rising from the rubble: A Gaza tech incubator defies Israel’s war",
-      "link": "https://www.aljazeera.com/economy/2026/6/10/rising-from-the-rubble-a-gaza-tech-incubator-defies-israels-war?traffic_source=rss",
-      "desc": "Israel&#039;s war on Gaza has decimated the tech sector, killing experts and destroying incubators that offered opportunity.",
-      "pubDate": "Wed, 10 Jun 2026 08:27:28 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/3-1780742615-1781002288.jpeg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Baltic states fear Russia-Ukraine war spillover after drone incursions",
-      "link": "https://www.aljazeera.com/news/longform/2026/6/10/baltic-states-fear-russia-ukraine-war-spillover-after-drone-incursions?traffic_source=rss",
-      "desc": "A spate of drone incursions fuels anxieties about a possible military conflict with Russia.",
-      "pubDate": "Wed, 10 Jun 2026 07:57:57 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/4-1780637934-1-1781078714.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Explosion in Bahrain as Iran attacks US bases",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/10/explosion-in-bahrain-as-iran-attacks-us-bases?traffic_source=rss",
-      "desc": "CCTV footage shows an explosion in Bahrain’s capital Manama after what authorities say was an Iranian missile strike.",
-      "pubDate": "Wed, 10 Jun 2026 07:40:53 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781077239.jpg?resize=1920%2C871&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Iran war day 103: US strikes after helicopter shot down, Tehran hits back",
-      "link": "https://www.aljazeera.com/news/2026/6/10/iran-war-day-103-us-strikes-after-helicopter-shot-down-tehran-hits-back?traffic_source=rss",
-      "desc": "Analysts warn of further escalation after tit-for-tat attacks between Tehran and Washington.",
-      "pubDate": "Wed, 10 Jun 2026 07:16:39 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-08T064735Z_710994211_RC2HPLA5KV99_RTRMADP_3_IRAN-CRISIS-1781061163.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Indonesia jails four military officers for acid attack on rights activist",
-      "link": "https://www.aljazeera.com/news/2026/6/10/indonesia-jails-four-military-officers-for-acid-attack-on-rights-activist?traffic_source=rss",
-      "desc": "Prosecutors argued in court that the soldiers were motivated by anger over Yunus’s activism.",
-      "pubDate": "Wed, 10 Jun 2026 06:54:09 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-10T035808Z_2126605882_RC2QQLATAAZD_RTRMADP_3_INDONESIA-POLITICS-RIGHTS-1781071897.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Women prepare for 'space jobs that don't exist yet'",
-      "link": "https://www.bbc.com/news/articles/cy49d000kgwo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Hundreds of women attend the annual AeroWomen women event in Yeovil.",
-      "pubDate": "Wed, 10 Jun 2026 05:21:06 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1803/live/0431e780-6357-11f1-8b15-6100cfbc3083.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "NASA picks first European astronaut for Artemis mission",
-      "link": "https://www.dw.com/en/nasa-picks-first-european-astronaut-for-artemis-mission/a-77482632?maca=en-rss-en-eu-2092-rdf",
-      "desc": "Italian astronaut Luca Parmitano will be the lead pilot for the Artemis III test flight. The NASA mission is expected to launch in 2027 to test technology for a future moon landing.",
-      "pubDate": "2026-06-10T05:06:00Z",
-      "img": "https://static.dw.com/image/77482514_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "Model who alleges Kanye West choked her tells BBC she felt 'suffocated and scared'",
-      "link": "https://www.bbc.com/news/articles/c0q2jgkwk0no?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "West claims the encounter on a music video set was part of a \"provocative theatrical performance\".",
-      "pubDate": "Wed, 10 Jun 2026 05:02:46 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/22ed/live/336c83c0-5f2e-11f1-8b8c-6d33e1d5abb6.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "UN report: Israeli forces shield settlers during attacks on Palestinians",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/10/un-report-israeli-forces-shield-settlers-during-attacks-on-palestinians?traffic_source=rss",
-      "desc": "The UN says Israeli security forces routinely accompany settlers and act as a shield for their violence.",
-      "pubDate": "Wed, 10 Jun 2026 04:33:46 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781066014.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Illegal mini-marts to shut for up to 12 months under law change prompted by BBC",
-      "link": "https://www.bbc.com/news/articles/cqj1rkqqrgro?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Under current rules, shops breaking the law can only be closed for up to six months in England and Wales.",
-      "pubDate": "Wed, 10 Jun 2026 04:17:02 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8084/live/8a0ee320-64ac-11f1-8e1d-bbbb1017d210.jpg",
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
