@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-10T09:56:34.352Z",
+  "fetchedAt": "2026-07-10T15:06:38.057Z",
   "asx200": {
     "value": 8806,
     "change": 152.7,
@@ -94,17 +94,13 @@
       {
         "date": "2026-07-09",
         "close": 8762.5
-      },
-      {
-        "date": "2026-07-10",
-        "close": 8806
       }
     ]
   },
   "audusd": {
-    "value": 0.7,
+    "value": 0.69,
     "change": -0.01,
-    "changePercent": -1.04,
+    "changePercent": -1.07,
     "previousClose": 0.7,
     "asOf": "2026-07-10",
     "history": [
@@ -207,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4111.9,
-      "change": 3.7,
-      "changePercent": 0.09
+      "price": 4105.6,
+      "change": -2.6,
+      "changePercent": -0.06
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 59.87,
-      "change": -4.73,
-      "changePercent": -7.33
+      "price": 59.98,
+      "change": -4.62,
+      "changePercent": -7.16
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 71.93,
-      "change": -18.1,
-      "changePercent": -20.1
+      "price": 71.89,
+      "change": -18.14,
+      "changePercent": -20.15
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.26,
-      "change": 0.01,
-      "changePercent": 0.12
+      "price": 6.27,
+      "change": 0.02,
+      "changePercent": 0.38
     },
     {
       "name": "BHP Group",
@@ -248,8 +244,8 @@
       "icon": "🏗️",
       "iconBg": "#eff6ff",
       "price": 164.49,
-      "change": -14.95,
-      "changePercent": -8.33
+      "change": -15.51,
+      "changePercent": -8.62
     }
   ],
   "sectors": [
@@ -842,14 +838,14 @@
   ],
   "news": [
     {
-      "title": "Live: Jarome Luai returns as rumours swirl about Tigers future",
+      "title": "'Not gonna talk about that': Luai dodges press conference after another Tigers loss",
       "link": "https://www.abc.net.au/news/2026-07-10/nrl-live-wests-tigers-warriors-jarome-luai/106903582",
       "snippet": "",
       "pubDate": "Fri, 10 Jul 2026 08:56:35 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Live: Pies clash with Roos as Crows confirm player involved in car crash",
+      "title": "Pies win a thriller against Kangaroos as veteran faces MRO scrutiny",
       "link": "https://www.abc.net.au/news/2026-07-10/afl-rd-18-live-magpies-kangaroos/106892258",
       "snippet": "",
       "pubDate": "Fri, 10 Jul 2026 08:42:38 +0000",
