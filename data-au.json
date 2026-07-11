@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-11T10:18:14.340Z",
-  "summary": "Australia faces mounting infrastructure and public health challenges as the Telstra nationwide outage prompts a Senate inquiry, with old servers identified as the likely culprit, while NSW grapples with a spike in flu cases heading into winter. Multiple death investigations dominate the crime agenda, including a teenager charged with murder over a 13-year-old girl's death and several suspicious deaths under police examination. Prime Minister Anthony Albanese is poised to deliver a major speech on artificial intelligence next week as tech companies face increased scrutiny, including Apple's lawsuit against OpenAI for alleged trade secret theft. On international matters, extreme heat continues to impact the UK and Europe, while Australia's regional partners face their own crises including Uganda's vulnerable children and India's bamboo-triggered ecological disasters.",
+  "fetchedAt": "2026-07-11T13:35:53.391Z",
+  "summary": "Australia faces serious domestic crises today with multiple violent incidents reported across states, including suspicious deaths under investigation and a teenager charged with murder following a thirteen-year-old girl's death. Major infrastructure and corporate issues dominate the agenda: Telstra faces a Senate inquiry after a nationwide outage traced to old servers, while data centres are driving tech giants' carbon emissions to alarming levels, and celebrity chef Scott Pickett has secured new backing for his restaurant enterprise. The Prime Minister is preparing a significant artificial intelligence speech for next week as the nation grapples with emerging tech sector challenges. International stories reveal a passenger partially sucked from a plane window and ongoing investigations into sex trafficking networks and high-profile legal cases.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,36 @@
     }
   ],
   "articles": [
+    {
+      "title": "Man dead and three others pulled unconscious from SA home",
+      "link": "https://www.smh.com.au/national/man-dead-and-three-others-pulled-unconscious-from-sa-home-20260711-p60ek5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "One man was found dead and three others unconscious inside a home on South Australia’s Limestone Coast, in what police say was a freak gas accident.",
+      "pubDate": "Sat, 11 Jul 2026 23:11:52 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/6f2cbd7f5e2027dd41821b0e1161384a2f70725f",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Drones are detecting more sharks at US beaches but do they make public safer?",
+      "link": "https://www.theguardian.com/environment/2026/jul/11/sharks-drones-public-safety-beaches",
+      "desc": "<p>Increase in sightings may not reflect increase in sharks with little evidence that threat to swimmers has risen</p><p>Experts say that despite recent increased investment in drones to monitor for s",
+      "pubDate": "Sat, 11 Jul 2026 12:00:49 GMT",
+      "img": "https://i.guim.co.uk/img/media/885304d350812016cbbd20583808ddf611ca5740/599_0_3258_2607/master/3258.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Datacentres drive up big tech’s carbon emissions to a third of those of France",
+      "link": "https://www.theguardian.com/us-news/2026/jul/11/microsoft-amazon-google-datacentre-carbon-emissions-france",
+      "desc": "<p>Microsoft, Amazon and Google say they still aim to achieve net zero output despite construction boom</p><p>Microsoft, Amazon and Google’s collective <a href=\"https://www.theguardian.com/technology/",
+      "pubDate": "Sat, 11 Jul 2026 11:00:49 GMT",
+      "img": "https://i.guim.co.uk/img/media/759518978daf02dee0d450e98f9f76de047cf552/0_0_3333_2667/master/3333.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
     {
       "title": "Police investigate suspicious death of man in his 60s",
       "link": "https://www.smh.com.au/national/police-investigate-suspicious-death-of-man-in-his-60s-20260711-p60ekf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
@@ -32298,56 +32328,6 @@
       "sourceId": "abcnews",
       "sourceName": "ABC News",
       "sourceColor": "#E64626"
-    },
-    {
-      "title": "El Nino has officially begun, bringing risk of drought, extreme heat and bushfires",
-      "link": "https://www.smh.com.au/environment/climate-change/el-nino-has-officially-begun-bringing-risk-of-drought-extreme-heat-and-bushfires-20260611-p6064x.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_environment",
-      "desc": "The US National Oceanic and Atmospheric Administration confirmed the existence of the El Nino, expected to grow to historic strength and turbocharge extreme weather.",
-      "pubDate": "Thu, 11 Jun 2026 23:21:52 +1000",
-      "img": "https://static.ffx.io/images/$zoom_2.3533%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_54/t_crop_custom/q_86%2Cf_auto/c72556ff16855dad2692582ee4427ce0eb250fb58837a12c2baf983de99af551",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Workers at one of Australia’s most crucial ports are going on strike",
-      "link": "https://www.smh.com.au/national/western-australia/workers-at-one-of-australia-s-most-crucial-ports-are-going-on-strike-20260611-p6064r.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "The Australian Manufacturing Workers Union (AMWU) confirmed 90 per cent of its members at BHP’s Pilbara port operations had backed the proposal to stop work, with strike action expected to be imminent",
-      "pubDate": "Thu, 11 Jun 2026 22:21:29 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.2119%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_82/t_crop_custom/q_86%2Cf_auto/0d7c99edccdf5a8d84a42057d9211ccd1d71ae96",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "A nuts and bolts narrative",
-      "link": "https://www.smh.com.au/national/nsw/a-nuts-and-bolts-narrative-20260611-p605sa.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "While pondering a lack of wax.",
-      "pubDate": "Thu, 11 Jun 2026 21:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_1.6556000000000002%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_48/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/d51781c5614995563bbf4ce4a8b06344486e0d25",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Hundreds of BHP staff vote to strike following stalled pay negotiations",
-      "link": "https://www.smh.com.au/national/hundreds-of-bhp-staff-vote-to-strike-following-stalled-pay-negotiations-20260611-p6064c.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Hundreds of BHP Port Hedland staff are a step closer to walking off the job at Australia's biggest iron ore hub.",
-      "pubDate": "Thu, 11 Jun 2026 20:58:08 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/a2385d6920e4509100ada59beaf11d9dacb2b052",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Calls for inquest into Virginia Giuffre's death",
-      "link": "https://www.smh.com.au/national/calls-for-inquest-into-virginia-giuffres-death-20260611-p6064b.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Women's safety advocates have written to the WA coroner calling for an inquest into the death of former prince Andrew accuser Virginia Giuffre.",
-      "pubDate": "Thu, 11 Jun 2026 20:52:49 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/060fc82fe03f37345b40ecc96471936bafe1e9b2",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
     }
   ]
 }
