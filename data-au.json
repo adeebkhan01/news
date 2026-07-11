@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-11T02:56:25.993Z",
-  "summary": "Australia faces a convergence of infrastructure and safety crises today, with a major Telstra outage linked to old servers and the first local bird flu detection raising urgent public health concerns. Political turmoil continues in New South Wales with anti-corruption investigations into Liberal factional disputes, while workers at troubled steelmaker GFG face potential permanent loss of entitlements. International scandals loom large, including allegations that Australia failed trafficking victim Virginia Giuffre despite promises of safety, and an Apple lawsuit against OpenAI over trade secrets signalling escalating tech sector tensions. On the economic front, Sydney's housing market shows signs of cooling after a remarkable 730 percent surge over three decades, whilst airlines and major corporates face questions over pricing practices and accountability.",
+  "fetchedAt": "2026-07-11T05:45:23.487Z",
+  "summary": "Australia's telecommunications sector faces regulatory scrutiny after Telstra's nationwide outage, caused by outdated servers, prompted a Senate inquiry to examine the major provider's infrastructure vulnerabilities. The nation's law enforcement and judicial system continues to dominate headlines, with significant developments including the unraveling of a sex-trafficking ring that produced landmark legal outcomes and the ongoing investigation into a killer's final interview. Amid these serious matters, broader economic concerns loom with reports that workers waiting for entitlements from troubled employer GFG face potential non-payment, while Sydney's property market shows signs of cooling after three decades of extraordinary growth. International stories with Australian connections include the harrowing revelations about Virginia Giuffre's experience in Australia and a dramatic incident involving a passenger partially sucked from a window on a budget flight to Germany.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,96 @@
     }
   ],
   "articles": [
+    {
+      "title": "Old servers found to be the likely reason behind Telstra outage",
+      "link": "https://www.smh.com.au/national/old-servers-found-to-be-the-likely-reason-behind-telstra-outage-20260711-p60eh4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Old servers were the likely culprit behind the nationwide Telstra blackout, as the telco potentially faces hefty fines.",
+      "pubDate": "Sat, 11 Jul 2026 15:37:00 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/cf2d91af4f1b77795d437dc92817adf06b93997f",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Family allowed into Australia to care for slain woman’s children after commissioner’s intervention",
+      "link": "https://www.smh.com.au/national/victoria/family-allowed-into-australia-to-care-for-slain-woman-s-children-after-commissioner-s-intervention-20260711-p60eib.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The dead woman’s sister and her husband made an urgent travel application to come to Melbourne and comfort her children on Wednesday but were immediately rejected. On Friday night, Micaela Cronin help",
+      "pubDate": "Sat, 11 Jul 2026 15:08:23 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.3789%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_40/t_crop_custom/q_86%2Cf_auto/a955656dc3a92413c7590f3a422012228dd2a668",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Telstra will face Senate inquiry after nationwide outage",
+      "link": "https://www.abc.net.au/news/2026-07-11/telstra-to-appear-before-senate-inquiry-after-nationwide-outage/106905204",
+      "desc": "The telco will face a grilling from politicians about this week's nationwide outage that brought businesses and transport systems into chaos.",
+      "pubDate": "Sat, 11 Jul 2026 05:00:07 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/02106585136de76b22473dc6461f1574?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=572&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Man found injured in Sydney's west",
+      "link": "https://www.smh.com.au/national/man-found-injured-in-sydneys-west-20260711-p60eit.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A man is fighting for life after being found on the side of a road suffering head injuries in Sydney's west.",
+      "pubDate": "Sat, 11 Jul 2026 14:38:24 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/49cda4f1dabebedc4d71da2b5e1b019bb9b8195f",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "How police unravelled a sex-trafficking ring that sparked a landmark ruling",
+      "link": "https://www.smh.com.au/national/nsw/how-police-unravelled-a-sex-trafficking-ring-that-sparked-a-landmark-ruling-20260709-p60e34.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Whispers of a syndicate helmed in Sydney by “Batman” – a Coles and Krispy Kreme manager – helped police to identify 20 brothels.",
+      "pubDate": "Sat, 11 Jul 2026 13:45:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.0342%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_1/t_crop_custom/q_86%2Cf_auto/61b9537474c8c56ecb95e31bdc31850cd126d0d70ca1c92be6ca44d3ad57c7bf",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "When a bushfire threatened my home, I had to choose what to save. The feeling never left me",
+      "link": "https://www.smh.com.au/national/when-a-bushfire-threatened-my-home-i-had-to-choose-what-to-save-the-feeling-never-left-me-20260710-p60e8q.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "We should also ask ourselves which belongings are truly priceless before disaster makes that decision for us.",
+      "pubDate": "Sat, 11 Jul 2026 13:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5321%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_192%2C$y_268/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/f274d7d734e167458e0f6e15b94885a11bb2c7f0",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Crocs, sharks and an Aussie cricket legend: All the action from the Barra Classic",
+      "link": "https://www.abc.net.au/news/2026-07-11/nt-barra-classic-remote-daly-river/106904902",
+      "desc": "Crocs, sharks and an Australian cricket legend have all turned up for one of Australia's biggest barra fishing tournaments on the Daly River.",
+      "pubDate": "Sat, 11 Jul 2026 03:22:40 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/b1add0808dde903c598a3c7889307452?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=1250&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Two men arrested after man in his 60s found dead on Fremantle Street",
+      "link": "https://www.smh.com.au/national/western-australia/two-men-arrested-after-man-in-his-60s-found-dead-on-fremantle-street-20260711-p60eim.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Paramedics were called to South Terrace just after 2am.",
+      "pubDate": "Sat, 11 Jul 2026 13:05:21 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2626%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_189/t_crop_custom/q_86%2Cf_auto/0452eb0d9a5676f361b9c5376c139a3f8d4b6da0cc6e5892a60a7ed1db894c24",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "The heartbreaking detail that 13-year-old Layla left behind",
+      "link": "https://www.smh.com.au/national/victoria/the-heartbreaking-detail-that-13-year-old-layla-left-behind-20260711-p60ehy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The young teenager loved fashion, her friends and shopping. Now her family are struggling to comprehend why she was found dead in a bushland near their home.",
+      "pubDate": "Sat, 11 Jul 2026 12:57:09 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.6895%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_219/t_crop_custom/q_86%2Cf_auto/55052c74ecc8a73f2810df8a3d4fb1d953cb9299",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
     {
       "title": "Indonesia 'needs innovation', but one case makes young people reluctant",
       "link": "https://www.abc.net.au/news/2026-07-11/indonesian-fears-after-gojek-startup-founder-makarim-jailed/106888002",
@@ -32445,146 +32535,6 @@
       "desc": "Even when there’s no one else around, we are bombarded with constant virtual pings from new messages and emails all day long.",
       "pubDate": "Thu, 11 Jun 2026 15:50:00 +1000",
       "img": "https://static.ffx.io/images/$zoom_0.1765%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/d2c6238a78ff96f6aa24a791120caec34b9d2d19",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Sydney Harbour is getting electric hydrofoils. What’s it like to ‘fly’ in one?",
-      "link": "https://www.smh.com.au/environment/sustainability/sydney-harbour-is-getting-electric-hydrofoils-what-s-it-like-to-fly-in-one-20260610-p605ey.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_environment",
-      "desc": "The boats skate up to a metre above the water, using technology honed for the America’s Cup.",
-      "pubDate": "Thu, 11 Jun 2026 15:45:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_1.765%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_55/t_crop_custom/q_86%2Cf_auto/c51ae08c224afe5b0699b7d48709c6407a84f7361a87a1e95b1789274b7d24d2",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "A High Court ruling could allow hundreds of former detainees to sue the government. A legal expert explains why",
-      "link": "https://theconversation.com/a-high-court-ruling-could-allow-hundreds-of-former-detainees-to-sue-the-government-a-legal-expert-explains-why-285052",
-      "desc": "The judgment allows a man who was unlawfully detained to claim compensation from the government. It’s the latest in the ongoing fallout of the “NZYQ” case.",
-      "pubDate": "2026-06-11T05:12:47Z",
-      "img": "https://images.theconversation.com/files/741185/original/file-20260611-57-iiie2v.jpg?ixlib=rb-4.1.0&amp;rect=0%2C929%2C5568%2C2784&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Millions of homes in London, Essex and Kent at risk of sinking as climate crisis worsens",
-      "link": "https://www.theguardian.com/environment/2026/jun/11/millions-homes-london-essex-and-kent-sinking-climate-crisis-subsidence",
-      "desc": "<p>Analysis pinpoints areas most vulnerable to hotter, drier weather causing ground to shrink and drag foundations down</p><p>Millions of homes are at risk from climate-related subsidence, according t",
-      "pubDate": "Thu, 11 Jun 2026 05:00:07 GMT",
-      "img": "https://i.guim.co.uk/img/media/db2c93994d5c9f62b218709b733c35fb9317c439/63_0_4720_3776/master/4720.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Aurum unveils billion-dollar West African gold giant",
-      "link": "https://www.smh.com.au/business/companies/aurum-unveils-billion-dollar-west-african-gold-giant-20260611-p6060b.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "Aurum Resources has delivered a blockbuster PFS valuing the project at US$1.5B and reported a maiden reserve of 1.21 million gold ounces for its West African Boundiali project.",
-      "pubDate": "Thu, 11 Jun 2026 14:34:01 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.7354%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_12/t_crop_custom/q_86%2Cf_auto/6074b8da918b8bed7e6e9681f29dad6dd8440586f30bbc7eec87c1dbb160907e",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Aguia launches Brazilian phosphate play with capacity surprise",
-      "link": "https://www.smh.com.au/business/companies/aguia-launches-brazilian-phosphate-play-with-capacity-surprise-20260611-p6060e.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "Aguia Resources has officially transitioned from developer to producer after commissioning its Tres Estradas phosphate project in southern Brazil, upping its expected capacity by 30%.",
-      "pubDate": "Thu, 11 Jun 2026 14:29:24 +1000",
-      "img": "https://static.ffx.io/images/$zoom_1%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_285%2C$y_173/t_crop_custom/q_86%2Cf_auto/b70d563c489ebb5338e86510678e04fd9c53ccc1511d10b186fc1f14044b4a20",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Labor to set terms for datacentre and AI growth as it vows not to repeat mistakes of resources boom",
-      "link": "https://www.theguardian.com/australia-news/2026/jun/11/datacentre-ai-growth-economy-resources-australia-labor-government",
-      "desc": "<p>Assistant minister agrees concerns over resource usage are legitimate but argues Australia cannot ignore ‘consequential’ economic wave</p><ul><li><p><a href=\"https://www.theguardian.com/australia-n",
-      "pubDate": "Thu, 11 Jun 2026 04:27:57 GMT",
-      "img": "https://i.guim.co.uk/img/media/44594205576f37ea0cc7dcddacaaf06eaaa42386/333_0_3333_2667/master/3333.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "The $2.5 trillion space invasion coming to Wall Street",
-      "link": "https://www.smh.com.au/business/markets/the-2-5-trillion-space-invasion-coming-to-wall-street-20260611-p605uc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "This week’s SpaceX float is set to be the biggest in history and make Elon Musk the world’s first trillionaire. Here’s what you need to know.",
-      "pubDate": "Thu, 11 Jun 2026 14:27:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.5171%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_51/t_crop_custom/q_86%2Cf_auto/3b0739a0afce6122a9844b45a910cd4eacab082a8d5ead9b240325f6180b1233",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Are the US and Iran back at war, or negotiating? Why bombing your way to peace won’t work",
-      "link": "https://theconversation.com/are-the-us-and-iran-back-at-war-or-negotiating-why-bombing-your-way-to-peace-wont-work-284952",
-      "desc": "Escalating a conflict is paradoxically one way to end it. But this strategy can be flawed, particularly in a region like the Middle East.",
-      "pubDate": "2026-06-11T04:11:20Z",
-      "img": "https://images.theconversation.com/files/741190/original/file-20260611-57-mw4vnc.jpg?ixlib=rb-4.1.0&amp;rect=0%2C120%2C1920%2C960&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Are the US and Iran back at war? Why bombing your way to peace won’t work",
-      "link": "https://theconversation.com/are-the-us-and-iran-back-at-war-why-bombing-your-way-to-peace-wont-work-284952",
-      "desc": "Escalating a conflict is paradoxically one way to end it. But this strategy can be flawed, particularly in a region like the Middle East.",
-      "pubDate": "2026-06-11T04:11:20Z",
-      "img": "https://images.theconversation.com/files/741190/original/file-20260611-57-mw4vnc.jpg?ixlib=rb-4.1.0&amp;rect=0%2C120%2C1920%2C960&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "ICAC Operation Navarra LIVE updates: Gail Connolly reappears as investigation into Parramatta Council continues",
-      "link": "https://www.smh.com.au/national/nsw/icac-operation-navarra-live-updates-gail-connolly-set-to-reappear-as-investigation-into-parramatta-council-continues-20260611-p605r1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Connolly’s evidence last week ended in tears. She returns as the inquiry enters its fifth week.",
-      "pubDate": "Thu, 11 Jun 2026 14:09:40 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.4779%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_67%2C$y_0/t_crop_custom/q_86%2Cf_auto/d50f2f366f39506c0be8bd0a765edcf3f01352dd",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Referees, athletes, fans: how the US border crackdowns are tarnishing the World Cup",
-      "link": "https://theconversation.com/referees-athletes-fans-how-the-us-border-crackdowns-are-tarnishing-the-world-cup-284957",
-      "desc": "Instead of bringing people together, the World Cup is in danger of being remembered for the climate of exclusion and fear generated by one of its host nations.",
-      "pubDate": "2026-06-11T04:01:46Z",
-      "img": "https://images.theconversation.com/files/741174/original/file-20260611-63-f86u2b.jpg?ixlib=rb-4.1.0&amp;rect=190%2C676%2C6120%2C3060&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Prisoner on the run after fleeing brother’s Melbourne funeral",
-      "link": "https://www.smh.com.au/national/victoria/prisoner-on-the-run-after-fleeing-brother-s-melbourne-funeral-20260611-p605wh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Minutes after carrying his brother’s coffin to its final resting place, 47-year-old Orijol Rukaj evaded police detection and went on the run.",
-      "pubDate": "Thu, 11 Jun 2026 14:01:05 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.8539%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_374%2C$y_0/t_crop_custom/q_86%2Cf_auto/0059aa5f6622a6524d8bc66a365297d2a25eeb41",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Critical hits high-grade gold, confirms NZ gold-antimony system",
-      "link": "https://www.smh.com.au/business/companies/critical-hits-high-grade-gold-confirms-nz-gold-antimony-system-20260611-p605zo.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "Critical Resources has hit high-grade gold and antimony in NZ’s Reefton Goldfield, with samples up to 13.3 g/t gold and 0.7 per cent antimony from historic mine material.",
-      "pubDate": "Thu, 11 Jun 2026 14:00:27 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.7354%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/1290f2c38baa59dd70106a992dba445132a82946aa398d377abc2f255b97d810",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Inglis cops fiery send-off",
-      "link": "https://www.smh.com.au/national/inglis-cops-fiery-send-off-20260611-p605zu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Australian captain Josh Inglis cops a send off after being dismissed against Bangladesh.",
-      "pubDate": "Thu, 11 Jun 2026 13:52:21 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/17a97748bad76d48682edcd378930dc0ba270615",
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
