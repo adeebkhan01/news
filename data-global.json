@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-12T03:22:03.725Z",
-  "summary": "Global tensions are escalating sharply with the United States and Iran engaged in direct military confrontation over the Strait of Hormuz, with Iran closing the strategic waterway and the US demanding its reopening, while the Trump administration simultaneously pursues aggressive domestic policies including subpoenaing New York Times reporters and signing controversial legislation. Regional conflicts are intensifying across the Middle East and beyond, with Gaza hospitals darkened by Israeli operations, Russian missile strikes hitting Kyiv, and Sudan's student population facing exile amid ongoing humanitarian crisis. On the technology front, Meta has backtracked on AI image features following privacy concerns, and Apple is suing OpenAI over alleged trade secret theft, reflecting growing corporate tensions in the AI sector. Meanwhile, several diplomatic developments are unfolding, including Moldova's new prime ministerial nomination and Trump signaling continued talks with Iran despite declaring their ceasefire over.",
+  "fetchedAt": "2026-07-12T08:23:31.453Z",
+  "summary": "The United States and Iran are locked in an escalating military confrontation following American strikes on Iranian targets, with Tehran launching retaliatory attacks and closing the Strait of Hormuz, prompting Washington to demand passage guarantees. Domestically, the Trump administration is pursuing aggressive legal actions against media outlets and tech companies, including subpoenas of New York Times journalists and a lawsuit against OpenAI, while Congress has passed a landmark housing bill despite Trump's opposition. In other significant developments, Senator Lindsey Graham has died, the former Emir of Qatar has passed away, and Poland's tensions with Ukraine over historical grievances threaten to complicate military aid flows. Regional conflicts continue to destabilize multiple areas, with Russian strikes hitting Kyiv, Gaza hospitals losing power amid Israeli operations, and Sudan's civilian population facing humanitarian crisis.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,36 @@
     }
   ],
   "articles": [
+    {
+      "title": "US Senator Lindsey Graham dies after 'brief and sudden illness', his office says",
+      "link": "https://www.bbc.co.uk/news/articles/cvgj25j6nmeo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The influential politician has just returned from Kyiv, where he met Ukraine's President Volodymyr Zelensky on Friday.",
+      "pubDate": "Sun, 12 Jul 2026 08:14:08 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0992/live/576e9b70-7dc2-11f1-b976-0b9c15b0ccfc.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Former Emir of Qatar Sheikh Hamad bin Khalifa Al Thani dies aged 74",
+      "link": "https://www.aljazeera.com/news/2026/7/12/former-emir-of-qatar-sheikh-hamad-bin-khalifa-al-thani-dies-at-74?traffic_source=rss",
+      "desc": "Sheikh Hamad, who ruled Qatar from 1995 to 2013, was a key architect of the energy-rich Gulf country&#039;s development.",
+      "pubDate": "Sun, 12 Jul 2026 05:15:01 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/2026-07-12T051317Z_1461111289_RC25CMAT5IGV_RTRMADP_3_QATAR-EMIR-HAMAD-DEATH-1783833448.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran launches attacks across the Gulf after more US strikes",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/12/iran-launches-attacks-across-the-gulf-after-more-us-strikes?traffic_source=rss",
+      "desc": "Iran says it launched missile attacks on US military sites in Bahrain, Kuwait, Jordan and Qatar.",
+      "pubDate": "Sun, 12 Jul 2026 04:59:27 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1783832345.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Iran war live: US bombs Iranian port cities as IRGC closes Strait of Hormuz",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/12/iran-war-live-irgc-declares-strait-of-hormuz-closed-over-us-interference?traffic_source=rss",
@@ -193,6 +223,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Poland could cut arms aid to Ukraine as WWII spat continues",
+      "link": "https://www.dw.com/en/poland-could-cut-arms-aid-to-ukraine-as-wwii-spat-continues/a-77893170?maca=en-rss-en-eu-2092-rdf",
+      "desc": "As Poland observes a day of remembrance for the victims of a Ukrainian nationalist military unit, there are increasing signs that it could cut off its neighbor from military aid, even as the war again",
+      "pubDate": "2026-07-11T05:19:00Z",
+      "img": "https://static.dw.com/image/77426072_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "Are the US and Iran at war again?",
@@ -11713,116 +11753,6 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Tehran says 'nothing' finalised after Trump claims deal to end Iran war near",
-      "link": "https://www.bbc.com/news/articles/c78y6w78828o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Iran says reports of a deal are \"speculative\" after the US president says a \"great settlement\" to end the conflict has been reached.",
-      "pubDate": "Fri, 12 Jun 2026 08:09:37 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/19ee/live/31485490-661b-11f1-ac3e-c1a2e88f59e9.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "US-Iran ceasefire? Not for Indian sailors being killed in Hormuz",
-      "link": "https://www.aljazeera.com/news/2026/6/12/us-iran-ceasefire-not-for-indian-sailors-being-killed-in-hormuz?traffic_source=rss",
-      "desc": "The United States military has struck three vessels in the Strait of Hormuz this week, killing three Indian sailors.",
-      "pubDate": "Fri, 12 Jun 2026 07:49:29 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/reuters_6a2a8ff8-1781174264.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Elon Musk poised to make history as world’s first trillionaire",
-      "link": "https://www.aljazeera.com/economy/2026/6/12/elon-musk-poised-to-make-history-as-worlds-first-trillionaire?traffic_source=rss",
-      "desc": "SpaceX&#039;s record-breaking IPO catapults Musk to unprecedented wealth amid rising angst over global inequality.",
-      "pubDate": "Fri, 12 Jun 2026 07:32:24 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP25345619479975-1781235510_e67615-1781235949.jpg?resize=1200%2C630&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Mountain of war: The India-Pakistan conflict’s deadliest battle zone",
-      "link": "https://www.aljazeera.com/news/longform/2026/6/12/mountain-of-war-the-india-pakistan-conflicts-deadliest-battle-zone?traffic_source=rss",
-      "desc": "After their war last May, India and Pakistan reached a truce. But deaths continued on the world&#039;s highest battlefield.",
-      "pubDate": "Fri, 12 Jun 2026 07:14:52 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/shutterstock_1702720045-1781083274.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Thai Princess Bajrakitiyabha dies at 47 after three years in coma",
-      "link": "https://www.aljazeera.com/news/2026/6/12/thai-princess-bajrakitiyabha-dies-at-47-after-three-years-in-coma?traffic_source=rss",
-      "desc": "The princess, who was known for her legal work, died in a Bangkok hospital after years of illness.",
-      "pubDate": "Fri, 12 Jun 2026 07:00:32 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-12T045931Z_226507522_RC24SLA19S8M_RTRMADP_3_THAILAND-ROYALS-1781245628.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Iran war day 105: Trump halts attacks after Kharg Island threat",
-      "link": "https://www.aljazeera.com/news/2026/6/12/iran-war-day-105-trump-halts-attacks-after-kharg-island-threat?traffic_source=rss",
-      "desc": "Trump cancels planned Iran attacks, saying talks are close to a result as Tehran reviews a proposed US deal.",
-      "pubDate": "Fri, 12 Jun 2026 06:32:38 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-09T051153Z_1934998091_RC23QLAYEU01_RTRMADP_3_IRAN-CRISIS-HORMUZ-USA-1781238535.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "'I was employee number one': SpaceX co-founder reacts to firm's market debut",
-      "link": "https://www.bbc.com/news/videos/cvgjx68nyvmo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The BBC's Michelle Fleury spoke to Tom Mueller, who was one of the company's founders alongside Elon Musk in 2002.",
-      "pubDate": "Fri, 12 Jun 2026 06:25:10 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0e6b/live/d55152a0-6641-11f1-8546-8f19e4fe30f4.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Ex-UK political aide Steve Hilton would overhaul California as governor, he tells BBC",
-      "link": "https://www.bbc.com/news/articles/cd95x25e2nqo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The Trump-backed candidate is running as a Republican in the deeply liberal state on a platform that he says isn't beholden to party ideology.",
-      "pubDate": "Fri, 12 Jun 2026 05:02:15 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7c6e/live/a43d7e60-65dc-11f1-94fa-99c9438be586.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "'They destroyed the future': Palestinian anger at rise in Israeli demolitions in East Jerusalem",
-      "link": "https://www.bbc.com/news/articles/cewpwjr9rj4o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Palestinian homes are being pulled down in occupied East Jerusalem to make way for a park.",
-      "pubDate": "Fri, 12 Jun 2026 05:01:48 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6b81/live/46872030-60d4-11f1-b808-9f0a293e0062.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "South Korea’s ex-President Yoon gets 30 years over drone operation",
-      "link": "https://www.aljazeera.com/news/2026/6/12/south-koreas-ex-president-yoon-gets-30-years-over-drone-operation?traffic_source=rss",
-      "desc": "Seoul court sentences former leader for sending military drones into North Korea.",
-      "pubDate": "Fri, 12 Jun 2026 03:44:39 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AFP__20260612__B6U68ZQ__v1__MidRes__FilesSkoreaNkoreaPolitics-1781234427.jpg?resize=1200%2C630",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Amnesty and Oxfam warn of displacement in the occupied West Bank",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/12/amnesty-and-oxfam-warn-of-displacement-in-the-occupied-west-bank?traffic_source=rss",
-      "desc": "Amnesty International and Oxfam released reports this week documenting a rise in state-backed Israeli settler violence.",
-      "pubDate": "Fri, 12 Jun 2026 03:38:45 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781235515.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
     }
   ]
 }
