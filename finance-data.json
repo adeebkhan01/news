@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-13T17:26:07.819Z",
+  "fetchedAt": "2026-07-13T19:54:50.768Z",
   "asx200": {
     "value": 8808.5,
     "change": 4.5,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.01,
-    "changePercent": -1.72,
+    "changePercent": -1.83,
     "previousClose": 0.7,
     "asOf": "2026-07-13",
     "history": [
@@ -177,6 +177,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-07-12",
+        "close": 0.69
+      },
+      {
         "date": "2026-07-13",
         "close": 0.69
       }
@@ -187,25 +191,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4005.3,
-      "change": -209.7,
-      "changePercent": -4.98
+      "price": 4006.5,
+      "change": -208.5,
+      "changePercent": -4.95
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 58.04,
-      "change": -9.82,
-      "changePercent": -14.48
+      "price": 57.9,
+      "change": -9.96,
+      "changePercent": -14.68
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 75.87,
-      "change": -9.01,
-      "changePercent": -10.61
+      "price": 77.92,
+      "change": -6.96,
+      "changePercent": -8.2
     },
     {
       "name": "Copper",
@@ -213,7 +217,7 @@
       "iconBg": "#fef0e6",
       "price": 6.28,
       "change": -0.15,
-      "changePercent": -2.3
+      "changePercent": -2.38
     },
     {
       "name": "BHP Group",
@@ -822,6 +826,20 @@
   ],
   "news": [
     {
+      "title": "ASX set to slip, oil surges as Trump reinstates Hormuz blockade",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slip-oil-surges-as-us-reinstates-hormuz-blockade-20260714-p60f0o.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Oil prices are climbing following a weekend of attacks in the Middle East, while more losses for computer chipmakers and other winners of the artificial-intelligence boom weigh on stock markets.",
+      "pubDate": "Tue, 14 Jul 2026 05:21:49 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "‘OK, can you spell your surname’: How a super fund responded to a call for compassion",
+      "link": "https://www.smh.com.au/business/banking-and-finance/ok-can-you-spell-your-surname-how-a-super-fund-responded-to-a-call-for-compassion-20260713-p60ewy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Testing of Australia’s superannuation funds has revealed poor call answer times, with many fobbing customers off to their websites.",
+      "pubDate": "Tue, 14 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Geelong set star Cat timeline, Hawk sent for surgery",
       "link": "https://www.abc.net.au/news/2026-07-13/geelong-set-star-cat-timeline-hawk-sent-for-surgery/106910974",
       "snippet": "",
@@ -889,20 +907,6 @@
       "link": "https://www.smh.com.au/business/companies/critica-boosts-wa-rare-earths-prize-with-bumper-high-grade-drill-hits-20260713-p60ex2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Critica Limited has confirmed high-grade rare earth zones at its Jupiter project in Western Australia, feeding into an updated resource estimate due later this year.",
       "pubDate": "Mon, 13 Jul 2026 14:36:33 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "'Psychopath' Tuchel gives England a chance to prove its mettle",
-      "link": "https://www.abc.net.au/news/2026-07-13/tuchel-bellingham-exchange-england-world-cup-analysis/106909314",
-      "snippet": "",
-      "pubDate": "Mon, 13 Jul 2026 04:31:26 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Aguia triples gold output as Colombian mine gathers steam",
-      "link": "https://www.smh.com.au/business/companies/aguia-triples-gold-output-as-colombian-mine-gathers-steam-20260713-p60ewp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Aguia Resources has transformed its Colombian gold project, tripling production, lifting grades above 10g/t gold, slashing costs and building momentum towards break-even.",
-      "pubDate": "Mon, 13 Jul 2026 14:15:51 +1000",
       "source": "SMH Business"
     }
   ]
