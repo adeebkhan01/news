@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-13T19:54:50.768Z",
+  "fetchedAt": "2026-07-13T22:14:57.234Z",
   "asx200": {
     "value": 8808.5,
     "change": 4.5,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.69,
     "change": -0.01,
-    "changePercent": -1.83,
+    "changePercent": -1.79,
     "previousClose": 0.7,
     "asOf": "2026-07-13",
     "history": [
@@ -191,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4006.5,
-      "change": -208.5,
-      "changePercent": -4.95
+      "price": 4008.4,
+      "change": -206.6,
+      "changePercent": -4.9
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 57.9,
-      "change": -9.96,
-      "changePercent": -14.68
+      "price": 57.92,
+      "change": -9.94,
+      "changePercent": -14.65
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 77.92,
-      "change": -6.96,
-      "changePercent": -8.2
+      "price": 77.99,
+      "change": -6.89,
+      "changePercent": -8.12
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.28,
-      "change": -0.15,
-      "changePercent": -2.38
+      "price": 6.27,
+      "change": -0.16,
+      "changePercent": -2.44
     },
     {
       "name": "BHP Group",
@@ -826,11 +826,32 @@
   ],
   "news": [
     {
+      "title": "Dutch football 'deeply saddened' as axed World Cup referee dies at 38",
+      "link": "https://www.abc.net.au/news/2026-07-14/dutch-referee-rob-dieperink-dies-after-world-cup-removal/106911984",
+      "snippet": "",
+      "pubDate": "Mon, 13 Jul 2026 21:56:01 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "De Minaur ends 17-year Australian drought with career-high ranking",
+      "link": "https://www.abc.net.au/news/2026-07-14/tennis-alex-de-minaur-career-high-ranking-wimbledon-exit/106911900",
+      "snippet": "",
+      "pubDate": "Mon, 13 Jul 2026 21:02:50 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "ASX set to slip, oil surges as Trump reinstates Hormuz blockade",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-slip-oil-surges-as-us-reinstates-hormuz-blockade-20260714-p60f0o.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Oil prices are climbing following a weekend of attacks in the Middle East, while more losses for computer chipmakers and other winners of the artificial-intelligence boom weigh on stock markets.",
-      "pubDate": "Tue, 14 Jul 2026 05:21:49 +1000",
+      "pubDate": "Tue, 14 Jul 2026 06:30:45 +1000",
       "source": "SMH Business"
+    },
+    {
+      "title": "Gift register reveals incredible largesse heaped on Brisbane Olympic committee",
+      "link": "https://www.abc.net.au/news/2026-07-14/brisbane-olympic-gifts-register-revealed/106896242",
+      "snippet": "",
+      "pubDate": "Mon, 13 Jul 2026 19:54:17 +0000",
+      "source": "ABC News"
     },
     {
       "title": "‘OK, can you spell your surname’: How a super fund responded to a call for compassion",
@@ -886,27 +907,6 @@
       "link": "https://www.smh.com.au/business/companies/kaiser-reef-lifts-gold-production-8-percent-from-tassie-and-vic-mines-20260713-p60exu.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Kaiser Reef has poured 6000 ounces of gold across Henty and Maldon this quarter and reaffirmed its 32,000-ounce guidance for 2027, with $37.2M in the bank.",
       "pubDate": "Mon, 13 Jul 2026 15:33:19 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Chairman’s challenge: Finding a cleanskin to head the KPMG board",
-      "link": "https://www.smh.com.au/business/companies/chairman-s-challenge-finding-a-cleanskin-to-head-the-kpmg-board-20260713-p60ett.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Given the depth of partner anger, it would be prudent for KPMG to have a plan B.",
-      "pubDate": "Mon, 13 Jul 2026 15:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "'I won't backflip': Samoa star Payne Haas reveals plan for World Cup",
-      "link": "https://www.abc.net.au/news/2026-07-13/payne-haas-rugby-league-world-cup-plan-to-stay-with-samoa/106909656",
-      "snippet": "",
-      "pubDate": "Mon, 13 Jul 2026 04:54:58 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Critica boosts WA rare earths prize with bumper high-grade drill hits",
-      "link": "https://www.smh.com.au/business/companies/critica-boosts-wa-rare-earths-prize-with-bumper-high-grade-drill-hits-20260713-p60ex2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Critica Limited has confirmed high-grade rare earth zones at its Jupiter project in Western Australia, feeding into an updated resource estimate due later this year.",
-      "pubDate": "Mon, 13 Jul 2026 14:36:33 +1000",
       "source": "SMH Business"
     }
   ]
