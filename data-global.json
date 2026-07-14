@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-14T13:53:30.341Z",
-  "summary": "Global tensions are escalating sharply between the United States and Iran, with military strikes intensifying around the Strait of Hormuz and threats directed at Iranian nuclear facilities, while energy prices surge amid fears of disrupted oil flows. Domestically, the US faces major political transitions following Senator Lindsey Graham's death and significant policy shifts under Trump, including aggressive immigration enforcement that has resulted in multiple deaths. Meanwhile, humanitarian crises continue to worsen across Africa and the Middle East, with the DR Congo facing a potentially massive Ebola outbreak, Sudan's civil war prompting gold import bans, and Israeli military operations in Gaza claiming more Palestinian lives. Economic indicators show mixed signals, with US inflation easing to 3.5 percent while regional instability threatens broader supply chains and geopolitical stability.",
+  "fetchedAt": "2026-07-14T16:19:42.346Z",
+  "summary": "Escalating tensions between the United States and Iran dominate global headlines, with military strikes, threats targeting Iranian nuclear facilities, and warnings about threats to vital shipping routes in the Strait of Hormuz. The conflict is rippling across multiple regions: Houthi threats against Saudi Arabia, Indian protests over an Iranian missile strike, and concerns about energy market disruption. Meanwhile, the Middle East faces additional crises with Israeli military operations in Gaza and instability in Sudan, where the International Criminal Court has sentenced a rebel commander to death. In other major developments, the US inflation rate has eased to 3.5 percent, and several EU nations are questioning the readmission of Russia to international events including the Olympics.",
   "sources": [
     {
       "id": "bbcnews",
@@ -25,11 +25,81 @@
   ],
   "articles": [
     {
+      "title": "Watch: New ISS crew blasts off from Kazakhstan",
+      "link": "https://www.bbc.co.uk/news/videos/ckg4gjwz20qo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The Soyuz spacecraft will carry Nasa astronaut Anil Menon and cosmonauts Pyotr Dubrov and Anna Kikina to the ISS for an eight-month mission.",
+      "pubDate": "Tue, 14 Jul 2026 15:50:33 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/26e2/live/a574a6e0-7f9b-11f1-bee8-53ce494e1abc.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Leading Houthi threatens ‘siege’ on Saudi Arabia after Yemen airport attack",
+      "link": "https://www.aljazeera.com/news/2026/7/14/leading-houthi-threatens-siege-on-saudi-arabia-after-yemen-airport-attack?traffic_source=rss",
+      "desc": "Speaking to Al Jazeera, leading Houthi Mohammed al-Bukhaiti warns of attacks on Saudi Arabia.",
+      "pubDate": "Tue, 14 Jul 2026 15:20:28 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/afp_6a564e842066-1784041092.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Even if the Iran war ends, the next fossil fuel shock is already on its way",
+      "link": "https://www.aljazeera.com/opinions/2026/7/14/even-if-the-iran-war-ends-the-next-fossil-fuel-shock-is-already-on-its-way?traffic_source=rss",
+      "desc": "To prepare, the world needs to focus on building energy independence through renewables and decentralisation.",
+      "pubDate": "Tue, 14 Jul 2026 14:56:21 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/2026-03-29T091116Z_415985711_RC2BAKAEB79W_RTRMADP_3_IRAN-CRISIS-INDIA-1784040840.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "India summons Iranian diplomat over missile killing of seafarer",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/india-summons-iranian-diplomat-over-missile-killing-of-seafarer?traffic_source=rss",
+      "desc": "India summoned Iran&#039;s deputy ambassador after an Indian crew member was killed in the Strait of Hormuz.",
+      "pubDate": "Tue, 14 Jul 2026 14:32:19 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/Screenshot-2026-07-14-at-15.24.53-1784039353.png?resize=1920%2C1299",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Olympic funding questioned by nine EU nations over Russia readmission",
+      "link": "https://www.aljazeera.com/sports/2026/7/14/olympic-funding-questioned-by-nine-eu-nations-over-russia-readmission?traffic_source=rss",
+      "desc": "Nine EU nations urge funding cuts for sports bodies including International Olympic Committee over readmitting Russians.",
+      "pubDate": "Tue, 14 Jul 2026 14:29:30 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/2026-07-07T151542Z_206835849_RC2G0MAUVDRD_RTRMADP_3_OLYMPICS-IOC-1784037950.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Russia-Ukraine war: What is Europe’s new ballistic missile shield plan?",
+      "link": "https://www.aljazeera.com/news/2026/7/14/russia-ukraine-war-what-is-europes-new-ballistic-missile-shield-plan?traffic_source=rss",
+      "desc": "Nine European countries and Ukraine have launched a coalition to build Europe&#039;s own defence against ballistic missiles.",
+      "pubDate": "Tue, 14 Jul 2026 14:03:52 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/ap_6a562f5ecb10d-1784033118.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
       "title": "US inflation rate eases to 3.5% as gasoline prices fall",
       "link": "https://www.bbc.co.uk/news/articles/c98289j7lg7o?at_medium=RSS&amp;at_campaign=rss",
       "desc": "While the US inflation rate fell in June, concerns remain over price rises increasing again due to the renewed conflict in the Middle East.",
       "pubDate": "Tue, 14 Jul 2026 13:51:22 GMT",
       "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9c00/live/75181c70-7f7d-11f1-b1fb-a927e22d7e8b.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Israeli strike on police post in north Gaza kills seven, officials say",
+      "link": "https://www.bbc.co.uk/news/articles/cqj1jqeyl5ro?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "A senior officer in the Hamas-run police force was among those killed in the strike, which Israel's military says targeted \"terrorists\".",
+      "pubDate": "Tue, 14 Jul 2026 13:46:14 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/13bb/live/d7d46710-7f87-11f1-a47a-d94293d2b0e4.jpg",
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
@@ -12030,56 +12100,6 @@
       "desc": "Activists rally in Geneva to denounce policies of G7 countries ahead of group&#039;s annual meeting this week in France.",
       "pubDate": "Sun, 14 Jun 2026 16:49:25 +0000",
       "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/ap_6a2ec609a0a46-1781450249.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "‘Unacceptable’: London protesters slam illegal Israeli settlement land sale",
-      "link": "https://www.aljazeera.com/news/2026/6/14/unacceptable-london-protesters-slam-illegal-israeli-settlement-land-sale?traffic_source=rss",
-      "desc": "Demonstrators denounce event promoting Israeli settlement land and property sales as a violation of international law.",
-      "pubDate": "Sun, 14 Jun 2026 15:49:33 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/reuters_6a2eb9b9-1781447097.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "UK forces seize suspected Russian oil tanker accused of funding Ukraine war",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/14/uk-forces-seize-suspected-russian-oil-tanker-accused-of-funding-ukraine-war?traffic_source=rss",
-      "desc": "British armed forces intercepted an oil tanker believed to be part of Russia’s sanctioned shadow fleet.",
-      "pubDate": "Sun, 14 Jun 2026 15:39:23 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AFP__20260614__B6ZQ99E__v1__JPEG__UkForcesInterceptRussianShadowFleetVesselInEnglish-1781451485.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Trump makes endorsement in key Georgia Republican US Senate run-off",
-      "link": "https://www.aljazeera.com/news/2026/6/14/trump-makes-endorsement-in-key-georgia-republican-us-senate-run-off?traffic_source=rss",
-      "desc": "Trump picks Mike Collins over Derek Dooley in race to determine who will face Democrat Jon Ossoff in November midterms.",
-      "pubDate": "Sun, 14 Jun 2026 15:38:02 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26133659424998-1781447170.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "EU set to hold membership talks with Ukraine",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/14/eu-set-to-hold-membership-talks-with-ukraine?traffic_source=rss",
-      "desc": "EU set to hold membership talks with Ukraine",
-      "pubDate": "Sun, 14 Jun 2026 14:39:12 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/UKRAINE-EU-HORIZONTAL-THUMB-1781447515.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "US asks Anthropic to block global access to top AI models: Why it matters",
-      "link": "https://www.aljazeera.com/news/2026/6/14/us-asks-anthropic-to-block-global-access-to-top-ai-models-why-it-matters?traffic_source=rss",
-      "desc": "Foreigners barred from accessing top AI models, underscoring Donald Trump&#039;s policy of export controls over high tech.",
-      "pubDate": "Sun, 14 Jun 2026 13:57:22 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/02/reuters_69a20fba-1772228538.jpg?resize=1920%2C1440",
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
