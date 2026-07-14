@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-14T19:48:44.104Z",
+  "fetchedAt": "2026-07-14T22:26:36.977Z",
   "asx200": {
     "value": 8808.5,
     "change": 4.5,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.01,
-    "changePercent": -1.01,
+    "changePercent": -1.02,
     "previousClose": 0.7,
     "asOf": "2026-07-14",
     "history": [
@@ -185,6 +185,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-07-13",
+        "close": 0.69
+      },
+      {
         "date": "2026-07-14",
         "close": 0.7
       }
@@ -195,25 +199,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4058.2,
-      "change": -269.8,
-      "changePercent": -6.23
+      "price": 4055.7,
+      "change": -272.3,
+      "changePercent": -6.29
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 59.07,
-      "change": -11,
-      "changePercent": -15.7
+      "price": 59.03,
+      "change": -11.04,
+      "changePercent": -15.75
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 79.78,
-      "change": -0.97,
-      "changePercent": -1.2
+      "price": 79.89,
+      "change": -0.86,
+      "changePercent": -1.07
     },
     {
       "name": "Copper",
@@ -221,7 +225,7 @@
       "iconBg": "#fef0e6",
       "price": 6.37,
       "change": -0.12,
-      "changePercent": -1.82
+      "changePercent": -1.8
     },
     {
       "name": "BHP Group",
@@ -830,10 +834,31 @@
   ],
   "news": [
     {
-      "title": "ASX set to rise, Wall Street advances after inflation data; IBM plunges",
+      "title": "NRLW players eye off longer season and full-time salaries",
+      "link": "https://www.abc.net.au/news/2026-07-15/nrlw-players-eye-off-longer-season-full-time-salaries/106916332",
+      "snippet": "",
+      "pubDate": "Tue, 14 Jul 2026 21:29:48 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'They give us more power': Pogačar wins Tour stage, dismisses booing fans",
+      "link": "https://www.abc.net.au/news/2026-07-15/pogacar-powers-to-third-stage-win-to-demoralise-tour-rivals/106916250",
+      "snippet": "",
+      "pubDate": "Tue, 14 Jul 2026 20:43:10 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Warren Buffett snubs Bill Gates, reveals plans to donate $200 billion",
+      "link": "https://www.smh.com.au/business/companies/warren-buffett-snubs-bill-gates-reveals-plans-to-donate-200-billion-20260715-p60fcm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The 95-year-old announced a new round of donations to charities tied to his family but left a major beneficiary off the list for the first time in decades.",
+      "pubDate": "Wed, 15 Jul 2026 06:33:22 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ASX set to rise, Wall Street advances after inflation data; IBM’s historic share plunge",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-steady-after-inflation-data-ibm-plunges-20260715-p60fcn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Stocks are holding steadier after a report showed US inflation was not as bad last month as economists expected.",
-      "pubDate": "Wed, 15 Jul 2026 05:15:16 +1000",
+      "snippet": "Stocks held steady after a report showed US inflation was not as bad last month as economists expected.",
+      "pubDate": "Wed, 15 Jul 2026 06:17:50 +1000",
       "source": "SMH Business"
     },
     {
@@ -851,14 +876,14 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Spain takes early lead over France in World Cup semifinal",
+      "title": "Spain soars into World Cup final with stunning upset over favourite France",
       "link": "https://www.abc.net.au/news/2026-07-15/world-cup-live-blog-semifinal-france-vs-spain/106915652",
       "snippet": "",
       "pubDate": "Tue, 14 Jul 2026 18:00:12 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Shayna Jack announces swimming retirement on eve of Commonwealth Games",
+      "title": "Jack announces swimming retirement on eve of Commonwealth Games",
       "link": "https://www.abc.net.au/news/2026-07-14/shayna-jack-announces-swimming-retirement-comm-games/106915006",
       "snippet": "",
       "pubDate": "Tue, 14 Jul 2026 09:21:47 +0000",
@@ -891,27 +916,6 @@
       "snippet": "Australia has frozen the rights of a group of Chinese-linked investors it fears are seeking to illegally gain control over a key Australian rare earth mine.",
       "pubDate": "Tue, 14 Jul 2026 17:42:40 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Smart Succession",
-      "link": "https://www.smh.com.au/business/banking-and-finance/smart-succession-20260612-p606c9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "With billions in assets set to pass between generations, our six-part series simplifies the daunting world of inheritance planning.",
-      "pubDate": "Tue, 14 Jul 2026 16:22:30 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Aureka seals mill deal to fast-track Victorian gold production",
-      "link": "https://www.smh.com.au/business/companies/aureka-seals-mill-deal-to-fast-track-victorian-gold-production-20260714-p60f9o.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Aureka Ltd has inked a toll milling deal, de-risking the path to production at its Comstock gold project and providing long-term processing optionality for its larger Irvine asset.",
-      "pubDate": "Tue, 14 Jul 2026 16:16:57 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Stingers see home cup as chance to grow legacy",
-      "link": "https://www.abc.net.au/news/2026-07-14/australia-stingers-home-water-polo-world-cup/106914616",
-      "snippet": "",
-      "pubDate": "Tue, 14 Jul 2026 05:59:55 +0000",
-      "source": "ABC News"
     }
   ]
 }
