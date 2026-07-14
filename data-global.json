@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-14T10:51:22.095Z",
-  "summary": "Escalating tensions between the United States and Iran dominate global headlines, with Trump threatening strikes on Iranian nuclear facilities, reinstating naval blockades of Iranian ports, and demanding Gulf nations pay for US military protection. Senate Republican Darline Graham, sister of the late Senator Lindsey Graham, will replace him with Trump's backing, signaling continuity in the former president's political alliance. Economic pressures mount across multiple sectors, from Volkswagen announcing up to 100,000 job cuts to oil prices hitting one-month highs amid Middle Eastern conflict concerns. Separately, the EU is directing resources toward Gaza reconstruction while Hungary's parliament moves to remove its president in an anti-Orban political shift.",
+  "fetchedAt": "2026-07-14T13:53:30.341Z",
+  "summary": "Global tensions are escalating sharply between the United States and Iran, with military strikes intensifying around the Strait of Hormuz and threats directed at Iranian nuclear facilities, while energy prices surge amid fears of disrupted oil flows. Domestically, the US faces major political transitions following Senator Lindsey Graham's death and significant policy shifts under Trump, including aggressive immigration enforcement that has resulted in multiple deaths. Meanwhile, humanitarian crises continue to worsen across Africa and the Middle East, with the DR Congo facing a potentially massive Ebola outbreak, Sudan's civil war prompting gold import bans, and Israeli military operations in Gaza claiming more Palestinian lives. Economic indicators show mixed signals, with US inflation easing to 3.5 percent while regional instability threatens broader supply chains and geopolitical stability.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,76 @@
     }
   ],
   "articles": [
+    {
+      "title": "US inflation rate eases to 3.5% as gasoline prices fall",
+      "link": "https://www.bbc.co.uk/news/articles/c98289j7lg7o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "While the US inflation rate fell in June, concerns remain over price rises increasing again due to the renewed conflict in the Middle East.",
+      "pubDate": "Tue, 14 Jul 2026 13:51:22 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9c00/live/75181c70-7f7d-11f1-b1fb-a927e22d7e8b.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Which world leaders are visiting Qatar to pay their condolences?",
+      "link": "https://www.aljazeera.com/news/2026/7/14/which-world-leaders-are-visiting-qatar-to-pay-their-condolences?traffic_source=rss",
+      "desc": "Sheikh Hamad, who ruled the country from 1995 to 2013 and revolutionised modern-day Qatar, died on Thursday aged 74.",
+      "pubDate": "Tue, 14 Jul 2026 13:32:14 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/afp_6a56105c0bb7-1784025180.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran lawmakers present Hormuz management bill as US war heats up",
+      "link": "https://www.aljazeera.com/news/2026/7/14/iran-lawmakers-present-hormuz-management-bill-as-us-war-heats-up?traffic_source=rss",
+      "desc": "Hardline MPs table plan that aims to formalise control over the strait and undermine any negotiations.",
+      "pubDate": "Tue, 14 Jul 2026 13:30:00 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/AFP__20260710__B9UE4C4__v2__HighRes__TopshotUaeIranUsIsraelWar-1783813844.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "WHO warns DR Congo Ebola outbreak may be double the official tally",
+      "link": "https://www.aljazeera.com/news/2026/7/14/who-warns-dr-congo-ebola-outbreak-may-be-double-the-official-tally?traffic_source=rss",
+      "desc": "UN health agency says cases are underreported while doctors at outbreak epicentre threaten to go on strike.",
+      "pubDate": "Tue, 14 Jul 2026 13:07:34 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/PHOTO-2026-07-01-17-13-49-1782965041.jpg?resize=1200%2C630",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Sudan sentences RSF chief Hemedti to death: Who’s he, what’s he accused of?",
+      "link": "https://www.aljazeera.com/news/2026/7/14/sudan-sentences-rsf-chief-hemedti-to-death-whos-he-whats-he-accused-of?traffic_source=rss",
+      "desc": "Port Sudan trial of paramilitary leaders centres on atrocities in West Darfur.",
+      "pubDate": "Tue, 14 Jul 2026 12:02:37 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2025/11/ap_6924bf1fea8ce-1764015903.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "How new Yemen tensions could complicate the global energy crisis",
+      "link": "https://www.aljazeera.com/economy/2026/7/14/how-new-yemen-tensions-could-complicate-the-global-energy-crisis?traffic_source=rss",
+      "desc": "If the fighting in Yemen expands, and the Houthis try to block Bab al-Mandeb, the world economy faces a new shock.",
+      "pubDate": "Tue, 14 Jul 2026 11:22:29 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2023/12/AP23364555857228-1704055593.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Tour de France crash and concussion cases expose limits of roadside checks",
+      "link": "https://www.aljazeera.com/sports/2026/7/14/tour-de-france-crash-and-concussion-cases-expose-limits-of-roadside-checks?traffic_source=rss",
+      "desc": "Three of the eight riders who have abandoned the Tour de France in the opening week have suffered concussions.",
+      "pubDate": "Tue, 14 Jul 2026 11:12:11 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/2026-07-12T165820Z_413022913_UP1EM7C14QA7O_RTRMADP_3_CYCLING-FRANCE-1784022927.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Schumer slams Trump over Iran war",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/schumer-slams-trump-over-iran-war?traffic_source=rss",
