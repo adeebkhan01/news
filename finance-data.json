@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-14T16:41:24.611Z",
+  "fetchedAt": "2026-07-14T19:48:44.104Z",
   "asx200": {
     "value": 8808.5,
     "change": 4.5,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.01,
-    "changePercent": -0.96,
+    "changePercent": -1.01,
     "previousClose": 0.7,
     "asOf": "2026-07-14",
     "history": [
@@ -195,33 +195,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4067.3,
-      "change": -260.7,
-      "changePercent": -6.02
+      "price": 4058.2,
+      "change": -269.8,
+      "changePercent": -6.23
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 59.16,
-      "change": -10.91,
-      "changePercent": -15.57
+      "price": 59.07,
+      "change": -11,
+      "changePercent": -15.7
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 79.37,
-      "change": -1.38,
-      "changePercent": -1.71
+      "price": 79.78,
+      "change": -0.97,
+      "changePercent": -1.2
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.39,
-      "change": -0.1,
-      "changePercent": -1.51
+      "price": 6.37,
+      "change": -0.12,
+      "changePercent": -1.82
     },
     {
       "name": "BHP Group",
@@ -830,6 +830,34 @@
   ],
   "news": [
     {
+      "title": "ASX set to rise, Wall Street advances after inflation data; IBM plunges",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-steady-after-inflation-data-ibm-plunges-20260715-p60fcn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Stocks are holding steadier after a report showed US inflation was not as bad last month as economists expected.",
+      "pubDate": "Wed, 15 Jul 2026 05:15:16 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Uber stands by sacking of driver who refused guide dog",
+      "link": "https://www.smh.com.au/business/companies/uber-stands-by-sacking-of-driver-who-refused-guide-dog-20260713-p60erz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Uber is fighting what it says is a “test case” challenging the limits of anti-discrimination laws and gig economy worker protections.",
+      "pubDate": "Wed, 15 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Half of the ASX’s highest-paid CEOs lead US-based companies",
+      "link": "https://www.smh.com.au/business/companies/half-of-the-asx-s-highest-paid-ceos-lead-us-based-companies-20260714-p60f6v.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "A new report shows that companies based in the United States are paying the biggest salaries on the ASX.",
+      "pubDate": "Wed, 15 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Spain takes early lead over France in World Cup semifinal",
+      "link": "https://www.abc.net.au/news/2026-07-15/world-cup-live-blog-semifinal-france-vs-spain/106915652",
+      "snippet": "",
+      "pubDate": "Tue, 14 Jul 2026 18:00:12 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Shayna Jack announces swimming retirement on eve of Commonwealth Games",
       "link": "https://www.abc.net.au/news/2026-07-14/shayna-jack-announces-swimming-retirement-comm-games/106915006",
       "snippet": "",
@@ -883,34 +911,6 @@
       "link": "https://www.abc.net.au/news/2026-07-14/australia-stingers-home-water-polo-world-cup/106914616",
       "snippet": "",
       "pubDate": "Tue, 14 Jul 2026 05:59:55 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Treat Sky News like a ‘drunk raving at the moon’: Turnbull",
-      "link": "https://www.smh.com.au/business/companies/treat-sky-news-like-a-drunk-raving-at-the-moon-turnbull-20260713-p60eyp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The former prime minister has told Labor and the ABC to stop paying attention to the Murdoch media empire.",
-      "pubDate": "Tue, 14 Jul 2026 15:58:40 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Luai joins Parramatta, Marshall slams relationship breakdown rumours",
-      "link": "https://www.abc.net.au/news/2026-07-14/jarome-luai-to-play-for-parramatta-eels-in-2027-before-png-move/106914016",
-      "snippet": "",
-      "pubDate": "Tue, 14 Jul 2026 05:48:28 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ABC Melbourne’s ratings jump despite Pickering’s Grace Tame controversy",
-      "link": "https://www.smh.com.au/business/companies/abc-melbourne-s-ratings-jump-despite-pickering-s-grace-tame-controversy-20260714-p60f2j.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "ABC Radio Melbourne has lifted itself off the mat, aided by a boost from Charlie Pickering in his first survey period as new host of its Drive program.",
-      "pubDate": "Tue, 14 Jul 2026 15:41:49 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Suns secure key signing, Bulldogs lose All-Australian defender",
-      "link": "https://www.abc.net.au/news/2026-07-14/gold-coast-suns-extend-jed-walter-contract/106914110",
-      "snippet": "",
-      "pubDate": "Tue, 14 Jul 2026 05:10:51 +0000",
       "source": "ABC News"
     }
   ]
