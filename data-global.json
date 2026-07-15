@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-14T22:02:16.260Z",
-  "summary": "Tensions between the US and Iran continue to escalate as military posturing over the Strait of Hormuz intensifies, with President Trump abandoning his earlier 20 percent shipping fee proposal amid threats of deeper conflict. The humanitarian crisis deepens across multiple regions, with Sudan facing severe hunger exacerbated by war and potential supply disruptions, while the Gaza conflict persists with continued Israeli military operations. On a more cooperative note, US and Russian astronauts launched jointly to the space station despite geopolitical tensions, and domestic US inflation eased to 3.5 percent as energy prices fell. Political developments included Senate Democrats blocking a defence bill over Iran and Israel concerns, the resignation of Ukraine's prime minister, and Trump meeting with Iraq's leadership to discuss economic cooperation.",
+  "fetchedAt": "2026-07-15T02:46:59.267Z",
+  "summary": "China's economic growth has sharply underperformed, adding to global concerns about the world's second-largest economy, while Middle Eastern tensions are escalating dangerously as Trump reverses a controversial plan to impose tolls on ships through the Strait of Hormuz amid rising Iran-US hostilities threatening energy markets. Domestically in the US, inflation continues easing with consumer prices dropping in June, though major tech layoffs at Xbox signal broader employment concerns across the sector. The humanitarian situation is deteriorating in conflict zones, particularly Sudan facing a worsening hunger crisis compounded by regional disruptions, while the Gaza conflict persists with reported Israeli strikes on civilian infrastructure drawing international attention.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,86 @@
     }
   ],
   "articles": [
+    {
+      "title": "China economic growth falls sharply, missing target",
+      "link": "https://www.bbc.co.uk/news/articles/cd959x4edy8o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Weak demand domestically and the impact of the Iran war on oil prices overshadowed the country's strong exports.",
+      "pubDate": "Wed, 15 Jul 2026 02:22:23 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c8de/live/7e6a3480-7f40-11f1-ba68-9b76167cb04b.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Xbox workers stunned after jobs 'bloodbath'",
+      "link": "https://www.bbc.co.uk/news/articles/c932eynvq1do?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The video game giant owned by Microsoft plans to let 3,200 workers go. Will it be a big reset or a system crash?",
+      "pubDate": "Wed, 15 Jul 2026 00:09:04 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4e23/live/fa524280-7f8c-11f1-bee8-53ce494e1abc.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Trump retreat over Hormuz tolls suggests he is struggling to end Iran war",
+      "link": "https://www.bbc.co.uk/news/articles/crele3r8j19o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The abrupt about-face from the US president was the latest twist in a conflict that has now lasted more than four months.",
+      "pubDate": "Tue, 14 Jul 2026 23:17:27 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/87df/live/cb49bc70-7fc8-11f1-82bc-eb96a9eb8087.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "US Congress takes next step to make daylight saving time permanent",
+      "link": "https://www.bbc.co.uk/news/articles/cz9l9venjd8o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The House of Representatives passed a Trump-backed bill that would end decades of Americans having to reset their clocks twice a year.",
+      "pubDate": "Tue, 14 Jul 2026 23:15:53 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8854/live/13a1fe10-7fce-11f1-82bc-eb96a9eb8087.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "I changed jobs 10 times in 10 years to get the career I wanted",
+      "link": "https://www.bbc.co.uk/news/articles/ce8kxgpe3kdo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The lily-padding trend sees young people repeatedly move jobs to try to advance in the workplace.",
+      "pubDate": "Tue, 14 Jul 2026 23:04:15 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b112/live/176aa4b0-7c32-11f1-b976-0b9c15b0ccfc.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Heating oil customers to get compensation after price hikes",
+      "link": "https://www.bbc.co.uk/news/articles/cy494yypnv3o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The cost of hearing oil spike following the US-Israel war with Iran which forced up crude prices.",
+      "pubDate": "Tue, 14 Jul 2026 23:00:41 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6cb5/live/a97b22b0-7f95-11f1-ac71-510b51a60620.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "From Wimbledon towels to Scotch: What India-UK trade deal could mean for shoppers",
+      "link": "https://www.bbc.co.uk/news/articles/c0kymrz0vkgo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The free trade agreement between the world's fifth and sixth largest economies has come into effect - can it deliver?",
+      "pubDate": "Tue, 14 Jul 2026 22:17:43 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b761/live/c7a2b980-7e80-11f1-926f-c90d1bcfbc84.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "To drill or not to drill? Andy Burnham faces North Sea oil dilemma",
+      "link": "https://www.bbc.co.uk/news/articles/cg5350rp3z2o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Burnham, who is expected to become the UK's next prime minister, has been handed a letter from the oil and gas industry calling for his support.",
+      "pubDate": "Tue, 14 Jul 2026 22:02:36 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0ea7/live/1a7b8920-7f9e-11f1-a5f4-433bb9aa2e5a.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
     {
       "title": "Are countries prepared to cope with extreme weather?",
       "link": "https://www.aljazeera.com/video/inside-story/2026/7/14/are-countries-prepared-to-cope-with-extreme-weather?traffic_source=rss",
@@ -12103,106 +12183,6 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Trump heralds Iran deal but questions - and risks - remain",
-      "link": "https://www.bbc.com/news/articles/c9824e0rz75o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The announcement of an Iran deal was a welcome birthday gift for the president – but its success or failure may hinge on the details.",
-      "pubDate": "Mon, 15 Jun 2026 02:41:25 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2693/live/1ac2c340-6850-11f1-a06b-c973532480bb.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Lebanese remain sceptical despite US-Iran ceasefire announcement",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/15/lebanese-remain-sceptical-despite-us-iran-ceasefire-announcement?traffic_source=rss",
-      "desc": "The US-Iran ceasefire announcement has raised hopes in Lebanon.",
-      "pubDate": "Mon, 15 Jun 2026 02:26:06 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781490300.jpg?resize=1620%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Zimbabwe’s climate migrants fear eviction as crackdown intensifies",
-      "link": "https://www.aljazeera.com/news/2026/6/15/zimbabwes-climate-migrants-fear-eviction-as-crackdown-intensifies?traffic_source=rss",
-      "desc": "Many settled in Zimbabwe’s fertile Eastern Highlands after drought left their home areas unable to support farming.",
-      "pubDate": "Mon, 15 Jun 2026 00:54:32 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/A-climate-migrants-homestead-in-Zimbabwes-Eastern-Highlands-Photo-by-Andrew-Mambondiyani-1781180981.jpg?resize=1200%2C630",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Stock markets soar, oil falls as US, Iran confirm deal to end war",
-      "link": "https://www.aljazeera.com/economy/2026/6/15/stock-markets-soar-oil-falls-as-us-iran-confirm-deal-to-end-war?traffic_source=rss",
-      "desc": "Asian stock markets surge as Washington and Tehran announce agreement to end hostilities and reopen Strait of Hormuz.",
-      "pubDate": "Mon, 15 Jun 2026 00:37:07 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AFP__20260615__B7387PA__v1__MidRes__JapanEconomyStocks-1781492156.jpg?resize=1200%2C630",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Claims Israel’s Beirut strike pushed Trump on Iran announcement",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/15/claims-israels-beirut-strike-pushed-trump-on-iran-announcement?traffic_source=rss",
-      "desc": "US diplomat Alan Eyre says despite the US-Iran ceasefire announcement, there is no deal until it has been formalised.",
-      "pubDate": "Mon, 15 Jun 2026 00:15:27 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781482439.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Why I sold my business to my staff",
-      "link": "https://www.bbc.co.uk/news/articles/c0ey87z1ggjo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "As more US company owners reach retirement age many are selling up to their employees.",
-      "pubDate": "Sun, 14 Jun 2026 23:26:01 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/10d8/live/38db3400-689d-11f1-8546-8f19e4fe30f4.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "As more US business owners retire many are selling up to their staff",
-      "link": "https://www.bbc.com/news/articles/c0ey87z1ggjo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Some six million bosses of American firms will be entering retirement between now and 2035.",
-      "pubDate": "Sun, 14 Jun 2026 23:26:01 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c966/live/69f94f00-6671-11f1-b1db-af71d47507d6.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Surge in scams as fraudsters use AI to target people",
-      "link": "https://www.bbc.com/news/articles/cwykp9ygxlvo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "On average, nearly eight cases of fraud in which money is stolen are reported in the UK every minute.",
-      "pubDate": "Sun, 14 Jun 2026 23:25:15 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5333/live/5995e9a0-6597-11f1-99b8-5530f29d65f4.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "BREAKING: US, Iran announce ceasefire agreement",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/14/breaking-us-iran-announce-ceasefire-agreement?traffic_source=rss",
-      "desc": "US President Donald Trump has announced a ceasefire agreement with Iran.",
-      "pubDate": "Sun, 14 Jun 2026 22:54:36 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781477581.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "US-Iran ‘peace deal’ announced; Trump says Strait of Hormuz reopening",
-      "link": "https://www.aljazeera.com/news/2026/6/14/us-iran-ceasefire-deal-announced-trump-says-strait-of-hormuz-reopening?traffic_source=rss",
-      "desc": "Trump announces that a ceasefire deal with Iran has been agreed, and that the Strait of Hormuz will reopen for shipping.",
-      "pubDate": "Sun, 14 Jun 2026 22:43:19 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/WIDE-THUMB-Trump-says-deal-tomorrow-1781373673.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
     }
   ]
 }
