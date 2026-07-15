@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-15T19:42:30.436Z",
+  "fetchedAt": "2026-07-15T22:26:11.196Z",
   "asx200": {
     "value": 8841.1,
     "change": -72.9,
@@ -193,6 +193,10 @@
         "close": 0.69
       },
       {
+        "date": "2026-07-14",
+        "close": 0.7
+      },
+      {
         "date": "2026-07-15",
         "close": 0.7
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4062.9,
-      "change": -265.1,
-      "changePercent": -6.13
+      "price": 4069.4,
+      "change": -258.6,
+      "changePercent": -5.98
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 58.13,
-      "change": -11.94,
-      "changePercent": -17.04
+      "price": 58.16,
+      "change": -11.91,
+      "changePercent": -16.99
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 80.14,
-      "change": -0.61,
-      "changePercent": -0.76
+      "price": 80.23,
+      "change": -0.52,
+      "changePercent": -0.64
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.39,
+      "price": 6.38,
       "change": -0.1,
-      "changePercent": -1.5
+      "changePercent": -1.54
     },
     {
       "name": "BHP Group",
@@ -838,10 +842,31 @@
   ],
   "news": [
     {
-      "title": "ASX set to edge up, Wall Street rises as oil prices swing",
+      "title": "Backs against the wall, Messi weaves his magic to inspire Argentina",
+      "link": "https://www.abc.net.au/news/2026-07-16/world-cup-2026-lionel-messi-inspires-argentina-to-victory/106920896",
+      "snippet": "",
+      "pubDate": "Wed, 15 Jul 2026 22:15:32 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to edge up, Wall Street rises as oil prices swing; SpaceX falls below IPO price",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-edge-up-wall-street-rises-as-oil-prices-swing-20260716-p60fow.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "US stocks are gaining ground following strong profit reports from BlackRock and other big companies and an update on the path of inflation.",
-      "pubDate": "Thu, 16 Jul 2026 05:18:17 +1000",
+      "pubDate": "Thu, 16 Jul 2026 06:28:53 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Fastest-ever Tour de France stage sees Norwegian win in 'crazy' result",
+      "link": "https://www.abc.net.au/news/2026-07-16/tour-de-france-stage-11-soeren-waerenskjold-wins/106920678",
+      "snippet": "",
+      "pubDate": "Wed, 15 Jul 2026 20:14:09 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "‘Distasteful’: Warren Buffett opens up on Bill Gates’ ties to Epstein",
+      "link": "https://www.smh.com.au/business/companies/warren-buffett-snubs-bill-gates-reveals-plans-to-donate-200-billion-20260715-p60fcm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The 95-year-old billionaire said his decision to cut the Gates Foundation out of his charitable giving is more about believing his three kids are ready to handle giving away his entire fortune than it is about Bill Gates’ ties to convicted sex offender Jeffrey Epstein.",
+      "pubDate": "Thu, 16 Jul 2026 05:44:53 +1000",
       "source": "SMH Business"
     },
     {
@@ -852,7 +877,7 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Feisty start as England and Argentina renew World Cup rivalry in semifinal",
+      "title": "Live: Argentina into World Cup final as England suffers heartbreaking collapse",
       "link": "https://www.abc.net.au/news/2026-07-16/world-cup-live-blog-semifinal-england-vs-argentina/106917676",
       "snippet": "",
       "pubDate": "Wed, 15 Jul 2026 17:57:45 +0000",
@@ -898,27 +923,6 @@
       "link": "https://www.smh.com.au/business/companies/lindian-nails-98-percent-rare-earths-recovery-in-independent-tests-20260715-p60fl6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Lindian Resources says Australian-based ANSTO has confirmed 98% recoveries and non-radioactive mixed rare earths carbonate from its Kangankunde rare earths concentrate in Malawi.",
       "pubDate": "Wed, 15 Jul 2026 15:24:15 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "'They hate us and we hate them': England-Argentina semi will come with extra feeling",
-      "link": "https://www.abc.net.au/news/2026-07-15/world-cup-england-argentina-semifinal-atlanta-preview/106916064",
-      "snippet": "",
-      "pubDate": "Wed, 15 Jul 2026 05:12:12 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "17m viewers and counting: World Cup bargain delivers ratings screamer for SBS",
-      "link": "https://www.smh.com.au/business/companies/17m-viewers-and-counting-world-cup-bargain-delivers-ratings-screamer-for-sbs-20260713-p60exo.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The 2026 FIFA World Cup is a ratings bonanza - which could make it harder for SBS to retain the rights in future. Here are the five most-watched games so far.",
-      "pubDate": "Wed, 15 Jul 2026 14:53:50 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Sydney firm faces liquidation over missing $17 million, fake bonds",
-      "link": "https://www.smh.com.au/business/companies/sydney-firm-faces-liquidation-over-missing-17-million-fake-bonds-20260715-p60fh3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The corporate regulator is seeking to wind up Sydney investment firm Capital Guard, raising concerns about the company’s handling of investor funds.",
-      "pubDate": "Wed, 15 Jul 2026 13:57:06 +1000",
       "source": "SMH Business"
     }
   ]
