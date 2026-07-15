@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-15T16:48:20.824Z",
+  "fetchedAt": "2026-07-15T19:42:30.436Z",
   "asx200": {
     "value": 8841.1,
     "change": -72.9,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.01,
-    "changePercent": -1.14,
+    "changePercent": -0.93,
     "previousClose": 0.71,
     "asOf": "2026-07-15",
     "history": [
@@ -203,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4036.2,
-      "change": -291.8,
-      "changePercent": -6.74
+      "price": 4062.9,
+      "change": -265.1,
+      "changePercent": -6.13
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 57.07,
-      "change": -13,
-      "changePercent": -18.55
+      "price": 58.13,
+      "change": -11.94,
+      "changePercent": -17.04
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 79.44,
-      "change": -1.31,
-      "changePercent": -1.62
+      "price": 80.14,
+      "change": -0.61,
+      "changePercent": -0.76
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.34,
-      "change": -0.15,
-      "changePercent": -2.28
+      "price": 6.39,
+      "change": -0.1,
+      "changePercent": -1.5
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,27 @@
   ],
   "news": [
     {
+      "title": "ASX set to edge up, Wall Street rises as oil prices swing",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-edge-up-wall-street-rises-as-oil-prices-swing-20260716-p60fow.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "US stocks are gaining ground following strong profit reports from BlackRock and other big companies and an update on the path of inflation.",
+      "pubDate": "Thu, 16 Jul 2026 05:18:17 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Labor threatens oil giants with emergency offshore clean-up levy",
+      "link": "https://www.smh.com.au/business/companies/labor-threatens-oil-giants-with-emergency-offshore-clean-up-levy-20260715-p60fgf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The oil and gas sector is on notice that Labor will have ‘no hesitation’ extending an emergency levy to fund a $200 million offshore clean-up bill if required.",
+      "pubDate": "Thu, 16 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Feisty start as England and Argentina renew World Cup rivalry in semifinal",
+      "link": "https://www.abc.net.au/news/2026-07-16/world-cup-live-blog-semifinal-england-vs-argentina/106917676",
+      "snippet": "",
+      "pubDate": "Wed, 15 Jul 2026 17:57:45 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "How China’s EV boom spun dangerously out of control",
       "link": "https://www.smh.com.au/business/companies/how-china-s-ev-boom-spun-dangerously-out-of-control-20260714-p60f1g.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "China never intended to create so many carmakers. Now the electric vehicle explosion could backfire on Beijing.",
@@ -899,27 +920,6 @@
       "snippet": "The corporate regulator is seeking to wind up Sydney investment firm Capital Guard, raising concerns about the company’s handling of investor funds.",
       "pubDate": "Wed, 15 Jul 2026 13:57:06 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "The sledge that helped lighten Diamonds camp after brutal grand final",
-      "link": "https://www.abc.net.au/news/2026-07-15/kate-moloney-australian-diamonds-prepare-for-commonwealth-games/106917284",
-      "snippet": "",
-      "pubDate": "Wed, 15 Jul 2026 03:40:26 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Aguia banks $2.3M in phosphate sales as Brazilian demand builds",
-      "link": "https://www.smh.com.au/business/companies/aguia-banks-2-3m-in-phosphate-sales-as-brazilian-demand-builds-20260715-p60fjb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Aguia Resources has booked $2.3m in early sales from its new Brazilian phosphate operation, marking a swift transition from launch to revenue generation.",
-      "pubDate": "Wed, 15 Jul 2026 13:00:03 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Why 10 years later stadiums are still a major bugbear of the AFLW",
-      "link": "https://www.abc.net.au/news/2026-07-15/aflw-frustrations-linger-with-stadium-and-venue-use/106911126",
-      "snippet": "",
-      "pubDate": "Wed, 15 Jul 2026 03:00:00 +0000",
-      "source": "ABC News"
     }
   ]
 }
