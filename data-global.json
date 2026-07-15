@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-15T02:46:59.267Z",
-  "summary": "China's economic growth has sharply underperformed, adding to global concerns about the world's second-largest economy, while Middle Eastern tensions are escalating dangerously as Trump reverses a controversial plan to impose tolls on ships through the Strait of Hormuz amid rising Iran-US hostilities threatening energy markets. Domestically in the US, inflation continues easing with consumer prices dropping in June, though major tech layoffs at Xbox signal broader employment concerns across the sector. The humanitarian situation is deteriorating in conflict zones, particularly Sudan facing a worsening hunger crisis compounded by regional disruptions, while the Gaza conflict persists with reported Israeli strikes on civilian infrastructure drawing international attention.",
+  "fetchedAt": "2026-07-15T05:36:37.759Z",
+  "summary": "Global tensions are escalating in the Middle East with intensifying Iran-US military confrontations, including US strikes on Iranian positions and disputes over Strait of Hormuz tolls, while President Trump meets with Iraq's PM to pursue regional deals. China's economy is slowing sharply below target, and a US scientist studying North Korea has been detained in Beijing, signaling deteriorating US-China relations. The Gaza conflict continues with reported Israeli strikes on civilian areas, and the broader region faces disruption to shipping and food security from regional instability. On the domestic front, the US consumer prices have eased and Congress is advancing permanent daylight saving time legislation, while major corporate and political figures navigate significant shifts in leadership and compensation cases.",
   "sources": [
     {
       "id": "bbcnews",
@@ -25,11 +25,41 @@
   ],
   "articles": [
     {
+      "title": "Saving shea: How a Ugandan woman is turning waste into clean energy",
+      "link": "https://www.aljazeera.com/news/2026/7/15/saving-shea-how-a-ugandan-woman-is-turning-waste-into-clean-energy?traffic_source=rss",
+      "desc": "As demand for charcoal threatens indigenous trees, communities are finding new value in what was once treated as waste.",
+      "pubDate": "Wed, 15 Jul 2026 03:47:45 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/Lucy-Everlyn-Atim-in-her-store-were-she-keeps-harvested-shea-nuts.-Photo-by-John-Okot.-1783958304.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Trump welcomes Iraqi PM to White House, vows ‘a lot of deals’",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/15/aje-onl-nf_trump-welcomes-iraqi-pm-to-white-house-140726?traffic_source=rss",
+      "desc": "US President Donald Trump and Iraqi PM Ali al-Zaidi have met at the White House pledging to deepen economic ties.",
+      "pubDate": "Wed, 15 Jul 2026 02:46:31 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1784083581.jpg?resize=1656%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
       "title": "China economic growth falls sharply, missing target",
       "link": "https://www.bbc.co.uk/news/articles/cd959x4edy8o?at_medium=RSS&amp;at_campaign=rss",
       "desc": "Weak demand domestically and the impact of the Iran war on oil prices overshadowed the country's strong exports.",
       "pubDate": "Wed, 15 Jul 2026 02:22:23 GMT",
       "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c8de/live/7e6a3480-7f40-11f1-ba68-9b76167cb04b.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "China detains US scientist who studied North Korea nuclear tests",
+      "link": "https://www.bbc.co.uk/news/articles/cqx1xdn3g4eo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Chen Youlin's family says he has been wrongfully detained for nearly two years on spying charges.",
+      "pubDate": "Wed, 15 Jul 2026 02:14:37 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b742/live/a647fbd0-7ff0-11f1-b7c7-fd8fa12609bd.jpg",
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
@@ -43,6 +73,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Iran war live: US carries out strikes, IRGC claims damage on US Gulf bases",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/7/15/live-trump-says-strikes-on-iran-will-continue-until-i-say?traffic_source=rss",
+      "desc": "Iran&#039;s bridges, power plants possible targets, Trump says, adding that strikes on Iran will continue until he says.",
+      "pubDate": "Wed, 15 Jul 2026 00:00:15 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/afp_6a56c21b9326-1784070683.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
     },
     {
       "title": "Trump retreat over Hormuz tolls suggests he is struggling to end Iran war",
@@ -12163,26 +12203,6 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "New microplastics research examines River Thames",
-      "link": "https://www.bbc.com/news/articles/cq81qvdknv3o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Water samples are assessed for pollution levels and any impact climate pressures may be having on the river system.",
-      "pubDate": "Mon, 15 Jun 2026 05:14:23 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2262/live/48a42940-65b5-11f1-9fd1-0b44a7e33c3f.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Oil prices slide after Pakistan announces deal between US and Iran",
-      "link": "https://www.bbc.com/news/articles/c6217106px6o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Under the agreement, the key Strait of Hormuz waterway will be reopened, US President Donald Trump said.",
-      "pubDate": "Mon, 15 Jun 2026 03:17:36 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7640/live/4688b200-67d3-11f1-9c4b-77e30dd66647.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
     }
   ]
 }
