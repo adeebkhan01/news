@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-15T16:26:21.422Z",
-  "summary": "Australian news today is dominated by concerns over government support and infrastructure challenges, with nearly 145,000 autistic Australians facing cuts to NDIS assistance under planned reforms, while water supply failures and broader service delivery issues frustrate residents. Prime Minister Albanese's new AI strategy aims to position Australia competitively against tech giants, though experts warn of implementation challenges. Industrial action looms as iron ore workers prepare their first strike in two decades, and health sector vulnerabilities are exposed through cyberattacks compromising patient data at multiple providers. Several tragic incidents including deaths in Perth and Adelaide vehicle incidents feature prominently, alongside broader economic concerns about CEO pay disparities and cost-of-living pressures on education and essential services.",
+  "fetchedAt": "2026-07-15T19:17:46.530Z",
+  "summary": "Prime Minister Albanese is positioning Australia as a responsible AI hub while pursuing revenue from fossil fuel companies through an offshore cleanup levy, signalling a balancing act between economic opportunity and environmental responsibility. Industrial action is escalating across key sectors, with iron ore workers preparing their first strike in two decades and BHP's Port Hedland operations set to halt, reflecting broader labour tensions in the resources industry. A significant NDIS reform could strip support from nearly 145,000 autistic Australians, while questions persist around corporate accountability, from optometrist sales practices to Telstra's service failures and cyberattacks on health clinics.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,166 @@
     }
   ],
   "articles": [
+    {
+      "title": "Albanese rolls out a rule book and a red carpet for AI companies",
+      "link": "https://www.abc.net.au/news/2026-07-16/albanese-artficial-intelligence-speech-sydney-university/106917888",
+      "desc": "If Australia is truly going to coax major AI companies to choose us rather than the other suitor nations with similar ambitions, some tough decisions need to be made soon.",
+      "pubDate": "Wed, 15 Jul 2026 19:00:00 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/e8c515397693907aaef799822824d976?impolicy=wcms_crop_resize&amp;cropH=2735&amp;cropW=2051&amp;xPos=224&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Labor threatens oil giants with emergency offshore clean-up levy",
+      "link": "https://www.smh.com.au/business/companies/labor-threatens-oil-giants-with-emergency-offshore-clean-up-levy-20260715-p60fgf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "The oil and gas sector is on notice that Labor will have ‘no hesitation’ extending an emergency levy to fund a $200 million offshore clean-up bill if required.",
+      "pubDate": "Thu, 16 Jul 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.7354%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_109/t_crop_custom/q_86%2Cf_auto/bd12fc4a3c0887f21868a7fc94df0a71700a85f630fbc4f30472723440b6bf95",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Revealed: The optometrists punished for putting patients before sales",
+      "link": "https://www.smh.com.au/healthcare/revealed-the-optometrists-punished-for-putting-patients-before-sales-20260625-p60a64.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Senior management threatened pay cuts or performance reviews if optometrists failed to sell enough glasses.",
+      "pubDate": "Thu, 16 Jul 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1765%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_10/t_crop_custom/q_86%2Cf_auto/b4026280da6a7bd5c1551d15ec0eb5e7a6eddb1f",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Parts of Brisbane are ‘up-zoning’. How crowded is your suburb already?",
+      "link": "https://www.smh.com.au/national/queensland/parts-of-brisbane-are-up-zoning-how-crowded-is-your-suburb-already-20260713-p60eyx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Some might say Brisbane is bursting at the seams. But is that really the case? Find out how crowded your suburb is.",
+      "pubDate": "Thu, 16 Jul 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2353333333333333%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_110/t_crop_custom/q_86%2Cf_auto/7b56cbb3f30e96cf1d2b776a5fc4ab45f23de90a",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Big chain optometrists are straining customer relations",
+      "link": "https://www.smh.com.au/national/nsw/big-chain-optometrists-are-straining-customer-relations-20260715-p60ffl.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Corporate imperatives are making the delivery of quality optometry problematic.",
+      "pubDate": "Thu, 16 Jul 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1828%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/3963ac69687c726a00c02381ef831e0810402ab7",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "From London to Rome: Jet-setting Bridget McKenzie takes in St Peter’s Basilica",
+      "link": "https://www.smh.com.au/cbd/from-london-to-rome-jet-setting-bridget-mckenzie-takes-in-st-peter-s-basilica-20260715-p60fgr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "McKenzie was seen touring the holy hotspot in Rome and talking on the phone, only to catch the attention of a nearby CBD spy.",
+      "pubDate": "Thu, 16 Jul 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.643707320601852%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_320%2C$y_2078/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/7dab768879f0709fe73c2d6143c5730a2b7cc6dd",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Gangland and bikie-linked brothers won work on troubled state prison project",
+      "link": "https://www.smh.com.au/national/victoria/gangland-and-bikie-linked-brothers-won-work-on-troubled-state-prison-project-20260715-p60fjo.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A CFMEU-backed plastering company run by two underworld and bikie gang-linked brothers has also helped deliver a social housing project opened by Premier Jacinta Allan.",
+      "pubDate": "Thu, 16 Jul 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_54%2C$y_0/t_crop_custom/q_86%2Cf_auto/77b21b28a1950a833e987d0c88294ae0e8c8b853",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "A union strike is set to halt BHP’s Port Hedland operations. It may not be the last",
+      "link": "https://www.smh.com.au/national/western-australia/a-union-strike-is-set-to-halt-bhp-s-port-hedland-operations-it-may-not-be-the-last-20260715-p60fnq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Workers at BHP’s Port Hedland operations will down tools on Thursday. One expert says he believes more industrial action is on its way for the Pilbara.",
+      "pubDate": "Thu, 16 Jul 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2118%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_110/t_crop_custom/q_86%2Cf_auto/c9bdbcf4c4a2759bb7264c8ca4c2acabb98115b8",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "‘It’s dirty’: Stoush over whether burning waste for energy is renewable",
+      "link": "https://www.smh.com.au/environment/climate-change/it-s-dirty-stoush-over-whether-burning-waste-for-energy-is-renewable-20260714-p60f5a.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_environment",
+      "desc": "The Smart Energy Council says waste-to-energy technology is not renewable, not clean and has high emissions. The waste sector begs to differ.",
+      "pubDate": "Thu, 16 Jul 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.353%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_109/t_crop_custom/q_86%2Cf_auto/0201573b79d29ccf70a82ff6ae0cdee0af7e3648",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Nowhere to run to: why angry Telstra users may stay put",
+      "link": "https://www.smh.com.au/technology/nowhere-to-run-to-why-angry-telstra-users-may-stay-put-20260714-p60f9a.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_technology",
+      "desc": "Customers frustrated by last week’s nationwide Telstra outage have few reliable alternatives to switch to, according to telecommunications analysts.",
+      "pubDate": "Thu, 16 Jul 2026 05:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2735%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_96/t_crop_custom/q_86%2Cf_auto/70933152eed2363a02212e0075b74a69bddf7d0e",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Businesses claw back $110b in Trump's unlawful tariffs",
+      "link": "https://www.abc.net.au/news/2026-07-16/tariff-refund-for-businesses-globally-trump-us-interest/106909340",
+      "desc": "Businesses globally are clawing back tens of billions of dollars paid to United States customs after Donald Trump's so-called liberation day tariffs were deemed unlawful.",
+      "pubDate": "Wed, 15 Jul 2026 18:52:13 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/58bbf596b626fe327b471285c683960c?impolicy=wcms_crop_resize&amp;cropH=3329&amp;cropW=2497&amp;xPos=1252&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Domestic fuel price rises will be 'muted' compared to start of war, experts say",
+      "link": "https://www.abc.net.au/news/2026-07-16/petrol-temperature-check-what-happens-with-prices/106917442",
+      "desc": "With the price of oil rising and the fuel excise cut due to end, drivers are facing twin threats when it comes to the price of fuel, but experts say Australia is in a much better position compared wit",
+      "pubDate": "Wed, 15 Jul 2026 18:48:56 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/bc1ab9c96678db0235f3d99d18ae2756?impolicy=wcms_crop_resize&amp;cropH=4672&amp;cropW=3504&amp;xPos=1752&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Telstra and telco regulator prepare for grilling over widespread outage",
+      "link": "https://www.abc.net.au/news/2026-07-16/telstra-prepares-for-grilling-consumer-group-threatened/106915896",
+      "desc": "Telstra prepares for a grilling in parliament about the recent network outage that disrupted Australia, with the communications regulator also set to face tough questions.",
+      "pubDate": "Wed, 15 Jul 2026 18:47:04 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/b48baffb1cdf5f9357b9bbcd06509746?impolicy=wcms_crop_resize&amp;cropH=1080&amp;cropW=810&amp;xPos=555&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Artists seek 'seat at table' in AI office",
+      "link": "https://www.abc.net.au/news/2026-07-16/ai-office-urged-to-include-artists/106920388",
+      "desc": "The creative sector hopes there is a space to contribute to the Office of AI, given its content powers a lot of these tools.",
+      "pubDate": "Wed, 15 Jul 2026 18:42:20 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/c9bcf0a2612536adcbe4d93f2d8b6da1?impolicy=wcms_crop_resize&amp;cropH=1080&amp;cropW=810&amp;xPos=523&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Deaf people excluded from gene-editing debate | Letter",
+      "link": "https://www.theguardian.com/science/2026/jul/15/deaf-people-excluded-from-gene-editing-debate",
+      "desc": "<p>There is no majority support for use of gene editing on non-life-threatening conditions, writes <strong>Tom Lichy</strong> of the British Deaf Association</p><p>Your editorial (<a href=\"https://www",
+      "pubDate": "Wed, 15 Jul 2026 16:51:56 GMT",
+      "img": "https://i.guim.co.uk/img/media/a3748aadbd99c54061025d6e741e938a39ccc906/769_0_4336_3469/master/4336.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Wally Funk obituary",
+      "link": "https://www.theguardian.com/science/2026/jul/15/wally-funk-obituary",
+      "desc": "<p>Pioneering American aviator who was the oldest woman to fly into space aged 82 in 2021</p><p>As an aviator, Wally Funk, who has died aged 87, was a trailblazing pioneer for women, breaking barriers",
+      "pubDate": "Wed, 15 Jul 2026 16:48:45 GMT",
+      "img": "https://i.guim.co.uk/img/media/5f0d3499cd9e9a892e76a7856ea8ab432e703c6e/0_272_2521_2017/master/2521.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
     {
       "title": "My neighbours and I were left with no water this week. Why was I the only one who seemed annoyed?",
       "link": "https://www.theguardian.com/commentisfree/2026/jul/15/no-water-burst-pipe-neighbours",
@@ -32868,136 +33028,6 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "For countries contesting the FIFA World Cup, size doesn’t always mean goals and glory",
-      "link": "https://theconversation.com/for-countries-contesting-the-fifa-world-cup-size-doesnt-always-mean-goals-and-glory-285150",
-      "desc": "Among the 48 nations contesting the FIFA World Cup, how much do demographic factors like population and median age matter? See how your national squad compares.",
-      "pubDate": "2026-06-15T19:04:47Z",
-      "img": "https://images.theconversation.com/files/741472/original/file-20260612-69-jj39lb.jpg?ixlib=rb-4.1.0&amp;rect=0%2C425%2C5590%2C2795&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Why Gina Rinehart’s company is fighting with a country music star",
-      "link": "https://www.smh.com.au/business/companies/why-gina-rinehart-s-company-is-fighting-with-a-country-music-star-20260615-p606qg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "Australia’s richest woman wants to mine coal in the Rocky Mountains. One of Canada’s most famous country music singers is standing in her way.",
-      "pubDate": "Tue, 16 Jun 2026 05:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.5171%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/b1b3678bd4555bc1b808d8fd101df9b5d250ef9b47bd4a70dec04399f546d869",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Bus routes axed, new ones added under sweeping changes to Sydney network",
-      "link": "https://www.smh.com.au/national/nsw/bus-routes-axed-new-ones-added-under-sweeping-changes-to-sydney-network-20260612-p606dg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "The shake-up will affect bus routes from the northern beaches and north shore to the Hills, north-west and city’s south-west.",
-      "pubDate": "Tue, 16 Jun 2026 05:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.4483%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_108/t_crop_custom/q_86%2Cf_auto/62c47017733d299ebb0bcba280dc29dbd793e510",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Bat boom sparks backlash as 50,000 flying foxes descend on Sydney suburb",
-      "link": "https://www.smh.com.au/national/nsw/bat-boom-sparks-backlash-as-50-000-flying-foxes-descend-on-sydney-suburb-20260614-p606mt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "A colony of 50,000 bats has set up camp in a Sydney suburb, leaving residents battling noise, droppings and odour – and authorities searching for answers.",
-      "pubDate": "Tue, 16 Jun 2026 05:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.1765%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/32107a47f2355c06c8563dd119a3ad3cb4b78533",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "The Australians most likely to die from accidental drug overdoses",
-      "link": "https://www.smh.com.au/national/the-australians-most-likely-to-die-from-accidental-drug-overdoses-20260615-p606wg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "For the first time since records began, accidental fatality rates are being driven by this middle-aged group.",
-      "pubDate": "Tue, 16 Jun 2026 05:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.2122%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_27/t_crop_custom/q_86%2Cf_auto/a477fd716b49ac119d4ae10eef64bc3332a62062",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Catalano wins fight to build $29m Byron mansion – but there’s a catch",
-      "link": "https://www.smh.com.au/cbd/catalano-wins-fight-to-build-29m-byron-mansion-but-there-s-a-catch-20260615-p606xc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "The NSW Land & Environment Court has upheld Catalano’s appeal against Byron Shire Council’s decision to knock back his proposed Wategos compound.",
-      "pubDate": "Tue, 16 Jun 2026 05:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_1.6971%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_458/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/7ac70248c183a6246af9380825d37c8b4301ffd0576240327a85eadc3591ee67",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Plans for new inner-city cycleway and footpath revealed, construction to start next year",
-      "link": "https://www.smh.com.au/national/queensland/plans-for-new-inner-city-cycleway-and-footpath-revealed-construction-to-start-next-year-20260615-p606xn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "The new path will be funded in this week’s Brisbane City Council budget, even though a final price is yet to be announced.",
-      "pubDate": "Tue, 16 Jun 2026 05:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.2478932584269663%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_110/t_crop_custom/q_86%2Cf_auto/eb8c000c2ffe93c1a67d5939f76945aa63d5692e6ffc931fb44c348d17682fe3",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "‘Queensland has the money that we need’: Doctors’ $600m request for budget",
-      "link": "https://www.smh.com.au/national/queensland/queensland-has-the-money-that-we-need-doctors-600m-request-for-budget-20260615-p606zh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "The peak medical body said a recent audit of the mental health levy proved there was money to address chronic underinvestment across the sector.",
-      "pubDate": "Tue, 16 Jun 2026 05:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.1283%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_110/t_crop_custom/q_86%2Cf_auto/bc106862d21332a3ce4746254af89d8f26a4ebdb",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "As a teen, Connor was ‘half the size of everybody else’. On Sunday, he made history",
-      "link": "https://www.smh.com.au/national/as-a-teen-connor-was-half-the-size-of-everybody-else-on-sunday-he-made-history-20260615-p606zt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "For Connor Metcalfe’s high school soccer coaches in Melbourne, his incredible goal against Turkey was something they had long known was possible.",
-      "pubDate": "Tue, 16 Jun 2026 05:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.5516%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/e2304756ba6e28c333f6d8748df8e46fc45900837f96568ff7eaf1564344a07c",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Consumers on the hook for $1b powerline cost blowout",
-      "link": "https://www.abc.net.au/news/2026-06-16/transgrid-seeks-billion-dollar-bailout-over-bungled-power-line/106772276",
-      "desc": "Transgrid wants to claw back huge cost increases for a major transmission line from consumers. Experts say the regulator's decision will have far-reaching consequences.",
-      "pubDate": "Mon, 15 Jun 2026 18:43:45 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/ee63643e23fd5585cede543f78491e69?impolicy=wcms_crop_resize&amp;cropH=2160&amp;cropW=1620&amp;xPos=483&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Property market shifts from 'urgency to caution' as buyers step back",
-      "link": "https://www.abc.net.au/news/2026-06-16/property-market-buyer-demand-weakens-interest-rates-tax-changes/106753882",
-      "desc": "Interest rate hikes, tax changes and global economic uncertainty force first home buyers and investors to press pause on property purchases.",
-      "pubDate": "Mon, 15 Jun 2026 18:41:21 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/4f3097286e5763631ba6da7dac4ef379?impolicy=wcms_crop_resize&amp;cropH=1536&amp;cropW=1152&amp;xPos=352&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Canada eliminates human rights watchdog that oversees companies operating abroad",
-      "link": "https://www.theguardian.com/world/2026/jun/15/canada-eliminates-human-rights-watchdog-companies-abroad",
-      "desc": "<p>Mark Carney says Canadian Ombudsperson for Responsible Enterprise office hasn’t been ‘effective’ since its 2019 setup</p><p>Canada is eliminating a watchdog that investigates alleged human rights v",
-      "pubDate": "Mon, 15 Jun 2026 18:36:55 GMT",
-      "img": "https://i.guim.co.uk/img/media/acd0488e2c536174b24a927a66c4e4e695fecdeb/133_0_3333_2667/master/3333.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Raphaël Dubois knew why we walk anticlockwise | Letters",
-      "link": "https://www.theguardian.com/science/2026/jun/15/raphael-dubois-knew-why-we-walk-anticlockwise",
-      "desc": "<p>Readers respond to an report on experiments that have shown a left-turn bias among humans</p><p>It is not quite true to say that no one knows why people prefer to turn left and walk anticlockwise (",
-      "pubDate": "Mon, 15 Jun 2026 17:17:33 GMT",
-      "img": "https://i.guim.co.uk/img/media/e1509fc234cf4a84c011781455857f562c9c3a85/728_0_3640_2912/master/3640.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
     }
   ]
 }
