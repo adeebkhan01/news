@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-15T22:05:22.896Z",
-  "summary": "Global tensions are intensifying across multiple flashpoints, with the US and Iran engaged in direct military strikes amid growing threats to regional stability, while the Gaza conflict continues producing civilian casualties and humanitarian concerns. Political upheaval is reshaping several nations, including Ukraine's government reshuffle, Britain's change of prime minister, and Turkey marking a decade since its failed coup attempt. Western democracies are grappling with contentious domestic issues, from France legalizing assisted dying to debates over AI regulation and copyright, as public opinion surveys suggest a broader geopolitical shift with more people globally favoring China over the US. Climate change has reached a critical threshold according to the Met Office, which warns the 20th century climate has fundamentally changed.",
+  "fetchedAt": "2026-07-16T02:53:41.683Z",
+  "summary": "A major escalation between the US and Iran dominates global headlines, with American forces disabling Iranian vessels and conducting fresh strikes as Tehran threatens to block trade routes and warns it will defend every inch of its territory. The conflict's ripple effects are visible across the Middle East, from missile alerts in the Gulf to ongoing Israeli-Palestinian tensions and questions about US military capacity. Away from the region, significant domestic shifts are reshaping major countries: France has approved an assisted-dying law after years of debate, Britain's Prime Minister Keir Starmer is stepping down, and a new study suggests global sentiment is shifting toward China over the United States. Tech companies face mounting legal pressure over AI practices, from copyright infringement lawsuits against Google to a case against xAI over child exploitation.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "US military to start screening for testosterone deficiency, Hegseth says",
+      "link": "https://www.bbc.co.uk/news/articles/cn0nlx18rz0o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Hegseth says he is authorising hormone screening to ensure US troops \"operate at your absolute best\".",
+      "pubDate": "Thu, 16 Jul 2026 02:33:40 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d5dc/live/04f4b590-8093-11f1-9946-258bcfdcbe12.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Iran war live: Sirens in Bahrain, Kuwait; US ‘disables’ Iranian oil tanker",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/7/16/iran-war-live-sirens-in-bahrain-kuwait-us-disables-iranian-oil-tanker?traffic_source=rss",
+      "desc": "Iranian media report explosions on Qeshm Island, Bandar Abbas and Chabahar, as Bahrain and Kuwait sound air raid sirens.",
+      "pubDate": "Thu, 16 Jul 2026 00:00:48 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/2026-07-15T124225Z_2083184903_RC27EMA0BTZ8_RTRMADP_3_IRAN-CRISIS-1784159884.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "A Cold War bunker gets a luxury makeover as 'doomsday' condos",
+      "link": "https://www.bbc.co.uk/news/articles/cn4d3lpjkggo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "A former Canadian government nuclear bomb shelter in rural Nova Scotia may soon be home to the country’s first large-scale luxury survival shelter.",
+      "pubDate": "Wed, 15 Jul 2026 23:35:39 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e360/live/a8a2b180-7628-11f1-ac11-19a4319081d7.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "New monkey species with orange lips found 'hiding' in DRC forest",
+      "link": "https://www.bbc.co.uk/news/articles/c15y5wgj4x8o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Scientists describe \"amazing feeling\" to look into the face of an animal that so few people knew existed.",
+      "pubDate": "Wed, 15 Jul 2026 23:02:49 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7e22/live/d37622b0-805b-11f1-bee8-53ce494e1abc.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Buffett calls Bill Gates relationship with Epstein 'distasteful'",
+      "link": "https://www.bbc.co.uk/news/articles/cz97wx2zj78o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The billionaire investor's firm has stopped giving donations to the Microsoft co-founder's charity.",
+      "pubDate": "Wed, 15 Jul 2026 22:25:35 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/40d0/live/4b8920c0-8090-11f1-bee8-53ce494e1abc.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "'I must get out into the free world', dissident who fled China on boat tells BBC",
+      "link": "https://www.bbc.co.uk/news/articles/cm2j2jw117lo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Dong Guangping, who has resettled in Canada, recounts his perilous escape from China to South Korea.",
+      "pubDate": "Wed, 15 Jul 2026 22:04:12 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8f86/live/acfc0010-8019-11f1-9317-f3c8d3f68726.png",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
     {
       "title": "xAI sues user for exploiting AI tool to sexualise minors",
       "link": "https://www.aljazeera.com/economy/2026/7/15/xai-sues-user-for-exploiting-ai-tool-to-sexualise-minors?traffic_source=rss",
@@ -12190,96 +12250,6 @@
       "desc": "The Bank of Japan has been raising rates from near-zero since 2024.",
       "pubDate": "Tue, 16 Jun 2026 03:21:49 GMT",
       "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3a76/live/d7e33c30-6872-11f1-8d7f-231b457c3604.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Who is Vozinha, Cape Verde’s viral goalkeeper at the World Cup?",
-      "link": "https://www.aljazeera.com/sports/2026/6/16/who-is-vozinha-cape-verdes-viral-goalkeeper-at-the-world-cup?traffic_source=rss",
-      "desc": "From his hometown of Sao Vicente in Cape Verde, Vozinha has been his jersey name throughout his club career.",
-      "pubDate": "Tue, 16 Jun 2026 02:52:13 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a3064fdc478-1781556477.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "US stock market climbs as US-Iran deal stirs hopes for end to energy chaos",
-      "link": "https://www.aljazeera.com/economy/2026/6/16/us-stock-market-climbs-as-us-iran-deal-stirs-hopes-for-end-to-energy-chaos?traffic_source=rss",
-      "desc": "Benchmark S&P 500 rises 1.7 percent, while tech-heavy Nasdaq jumps 3.1 percent.",
-      "pubDate": "Tue, 16 Jun 2026 02:06:56 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26166534007757-1781571419_715b1a-1781574552.jpg?resize=1200%2C630&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Netanyahu says Israel will remain in Lebanon, Syria, and Gaza",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/16/netanyahu-says-israel-will-remain-in-lebanon-syria-and-gaza?traffic_source=rss",
-      "desc": "Prime Minister Benjamin Netanyahu says Israeli forces will maintain a ‘security zone’ in occupied Lebanon.",
-      "pubDate": "Tue, 16 Jun 2026 01:38:36 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781573731.jpg?resize=1620%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "South Sudan’s Jonglei: Who burned homes and silenced hospitals?",
-      "link": "https://www.aljazeera.com/news/2026/6/16/south-sudans-jonglei-who-burned-homes-and-silenced-hospitals?traffic_source=rss",
-      "desc": "Government and opposition forces accused of destruction in Jonglei amid burned villages and mass displacement.",
-      "pubDate": "Tue, 16 Jun 2026 01:01:02 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-04-23-at-14.42.54-1781418095.jpeg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "US fuel prices to take ‘months’ to normalise after US-Iran deal to end war",
-      "link": "https://www.aljazeera.com/economy/2026/6/16/us-fuel-prices-to-take-months-to-normalise-after-us-iran-deal-to-end-war?traffic_source=rss",
-      "desc": "Producers will need time to ramp up output, while port bottlenecks and heightened demand will keep US prices up.",
-      "pubDate": "Tue, 16 Jun 2026 00:13:17 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/reuters_6a305cc5-1781554373.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Thames Water moves step closer to nationalisation after government objects to rescue deal",
-      "link": "https://www.bbc.com/news/articles/cly089d0wl7o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "A government spokesman tells the BBC that the current offer \"does not do enough to protect consumers or the environment\".",
-      "pubDate": "Tue, 16 Jun 2026 00:08:54 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8193/live/9e5a3f20-690a-11f1-8e1d-bbbb1017d210.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Gavin Newsom says he’s being investigated by Trump",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/16/gavin-newsom-says-hes-being-investigated-by-trump?traffic_source=rss",
-      "desc": "California’s Democratic Governor claims President Donald Trump has launched a criminal investigation against him.",
-      "pubDate": "Tue, 16 Jun 2026 00:01:58 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781568036.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Iran war live: Trump says MoU with Tehran signed electronically",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/6/16/iran-war-live-trump-says-mou-with-tehran-signed-electronically?traffic_source=rss",
-      "desc": "Backlash to US-Iran deal grows in Israel as Iranian vessels pass through Strait of Hormuz after US lifts naval blockade.",
-      "pubDate": "Tue, 16 Jun 2026 00:00:00 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-15T165639Z_481537235_RC2EULA4UNIN_RTRMADP_3_IRAN-CRISIS-LEBANON-ISRAEL-1781565865.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Married at First Sight Australia allegations 'disturbing', says country's watchdog",
-      "link": "https://www.bbc.com/news/articles/c4gyp099vl7o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The claims also prompted a response from UK media regulator Ofcom, who called them \"deeply concerning\".",
-      "pubDate": "Mon, 15 Jun 2026 23:40:31 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2961/live/b6042340-68e5-11f1-8e1d-bbbb1017d210.jpg",
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
