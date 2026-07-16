@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-16T11:03:52.965Z",
-  "summary": "Escalating tensions in the Middle East dominate global news as Iran and the US exchange military strikes, with Iran vowing to defend every inch of its territory while the US targets Iranian assets including oil tankers. In Ukraine, Russia continues intensive bombardment while domestic turmoil emerges over Zelensky's removal of the defence minister, and the country advances EU ties through a drone manufacturing deal. Major geopolitical shifts underway include growing global preference for China over the US according to new polling, tech giants like TSMC expanding US manufacturing with record investments, and Europe grappling with falling behind in AI development. Domestically across major democracies, significant policy changes are advancing, from France approving landmark assisted-dying legislation to Pentagon directives on military health screening, while Trump's intelligence chief nominee signals openness to questioning the 2020 election outcome.",
+  "fetchedAt": "2026-07-16T14:02:44.239Z",
+  "summary": "The Middle East remains the dominant global flashpoint as the US escalates military strikes against Iran and enforces a new naval blockade on tankers, while Tehran vows to defend its territory and displays inflammatory anti-Trump messaging. Ukraine's domestic crisis deepens with hundreds protesting Zelenskyy's defence minister dismissal even as lawmakers confirm a new prime minister, all while Russian attacks continue relentlessly. In Europe, France grapples with an arson crisis and parliament approves assisted dying legislation, while the EU upholds Spain's amnesty law and sounds alarms about its competitive lag in artificial intelligence. Elsewhere, Sudan's war reshapes demographics catastrophically, climate change drives extreme weather as a new normal, and tech giants including TSMC pledge massive US investments despite broader economic uncertainty.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,96 @@
     }
   ],
   "articles": [
+    {
+      "title": "Sudanese minister says war has ‘profoundly reshaped’ nation’s demographics",
+      "link": "https://www.aljazeera.com/news/2026/7/16/sudanese-minister-says-war-has-profoundly-reshaped-nations-demography?traffic_source=rss",
+      "desc": "Sudan faces a population shift as conflict empties areas, burdens cities, and disrupts economic and social stability.",
+      "pubDate": "Thu, 16 Jul 2026 13:45:43 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/GettyImages-2149636680-2-1781781627.jpg?resize=1200%2C675",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "'A true miracle of destiny' - Messi and Yamal's incredible first meeting",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c9w0j104rvgo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "BBC Sport explores a bond between two world-class footballers from different generations who appear bound by destiny",
+      "pubDate": "Thu, 16 Jul 2026 12:52:08 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7ba3/live/787f39f0-80f6-11f1-b983-cbe246fcd5da.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Volunteer firefighter suspected of starting devastating France forest fire",
+      "link": "https://www.bbc.co.uk/news/articles/ce97zd8yx1xo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "President Macron said there would be no leniency for arsonists, as France - along with much of Europe - deals with a series of unusual heatwaves.",
+      "pubDate": "Thu, 16 Jul 2026 12:44:26 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9403/live/b01f09c0-8110-11f1-926f-c90d1bcfbc84.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "US hosts global meet on ‘far-left terror’: Who’s attending, why it matters",
+      "link": "https://www.aljazeera.com/news/2026/7/16/us-hosts-global-meet-on-far-left-terror-whos-attending-why-it-matters?traffic_source=rss",
+      "desc": "More than 65 countries expected to address &#039;renewed threats&#039; from &#039;far-left political violence and terrorism&#039;.",
+      "pubDate": "Thu, 16 Jul 2026 12:42:17 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/AFP__20260706__2284910616__v1__HighRes__SecretaryOfStateRubioMeetsWithChileanForeign-1784196191.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "US strikes first tanker with missiles as it enforces new blockade",
+      "link": "https://www.bbc.co.uk/news/articles/clyqwkegqk0o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The US military targeted an unladen oil tanker which it said was heading for the key Iranian oil terminal on Kharg island.",
+      "pubDate": "Thu, 16 Jul 2026 12:09:26 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/796a/live/75bc39a0-8107-11f1-b976-0b9c15b0ccfc.png",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Extreme weather in the UK is the 'new normal'",
+      "link": "https://www.bbc.co.uk/news/videos/cp8e1jm1delo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Sarah Keith-Lucas details five things you need to know about how the UK climate has changed.",
+      "pubDate": "Thu, 16 Jul 2026 12:02:49 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8fca/live/cc8ef5e0-80f5-11f1-926f-c90d1bcfbc84.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "EU court upholds Spanish amnesty law as compatible with EU law",
+      "link": "https://www.aljazeera.com/news/2026/7/16/eu-court-upholds-spanish-amnesty-law-as-compatible-with-eu-law?traffic_source=rss",
+      "desc": "Amnesty for people involved in Catalonia independence movement introduced in 2024 by PM Pedro Sanchez&#039;s government.",
+      "pubDate": "Thu, 16 Jul 2026 11:56:14 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2022/09/AP22254684085046.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Palestinians fight fires after settler attacks in the occupied West Bank",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/palestinians-fight-fires-after-settler-attacks-in-the-occupied-west-bank?traffic_source=rss",
+      "desc": "Overnight Israeli settler attacks set farmlands ablaze in Masafer Yatta and burned vehicles near Tulkarem.",
+      "pubDate": "Thu, 16 Jul 2026 11:36:47 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1784201798.jpg?resize=1918%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Hundreds protest in Kyiv over Zelenskyy’s dismissal of defence minister",
+      "link": "https://www.aljazeera.com/news/2026/7/16/hundreds-protest-in-kyiv-over-zelenskyys-dismissal-of-defence-minister?traffic_source=rss",
+      "desc": "The Ukrainian parliament has elected Serhii Koretskyi as the country&#039;s new prime minister.",
+      "pubDate": "Thu, 16 Jul 2026 10:45:36 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/afp_6a589de29057-1784192482.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Climate funding: Who pays for the transition?",
       "link": "https://www.aljazeera.com/video/counting-the-cost/2026/7/16/climate-funding-who-pays-for-the-transition?traffic_source=rss",
@@ -53,6 +143,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Ukraine lawmakers approve Koretskyi as new PM amid protests",
+      "link": "https://www.dw.com/en/ukraine-lawmakers-approve-koretskyi-as-new-pm-amid-protests/live-77980338?maca=en-rss-en-eu-2092-rdf",
+      "desc": "It is President Volodymyr Zelenskyy's second Cabinet shakeup in a year. He faces criticism for dismissing reformist Defense Minister Mykhailo Fedorov. Follow DW for more.",
+      "pubDate": "2026-07-16T09:36:00Z",
+      "img": "https://static.dw.com/image/77979007_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "Protests in Ukraine's cities against Zelensky's removal of defence minister",
@@ -12183,56 +12283,6 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Hungary's MPs block return of Orbán, limiting rule of PM to eight years",
-      "link": "https://www.bbc.com/news/articles/c621zplqrrno?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The vote fulfils a promise by new PM Péter Magyar to stop his predecessor from becoming prime minister again.",
-      "pubDate": "Tue, 16 Jun 2026 12:42:15 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b138/live/13ff5dc0-697c-11f1-a63b-a7cb529e1ca8.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Red Cross warns Ebola outbreak in DRC not yet peaked, could last a year",
-      "link": "https://www.aljazeera.com/news/2026/6/16/red-cross-warns-ebola-outbreak-in-drc-not-yet-peaked-could-last-a-year?traffic_source=rss",
-      "desc": "The Red Cross says it is &#039;very difficult&#039; to know the extent at which the epidemic is spreading.",
-      "pubDate": "Tue, 16 Jun 2026 12:30:31 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a312da2a950-1781607842.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "How Germany and Poland rebooted relations 35 years ago",
-      "link": "https://www.dw.com/en/how-germany-and-poland-rebooted-relations-35-years-ago/a-77576779?maca=en-rss-en-eu-2092-rdf",
-      "desc": "When Germany and Poland signed the Treaty on Good Neighborliness, Friendship and Cooperation in June 1991, they chose partnership over enmity and became close NATO and EU allies. But it hasn't all bee",
-      "pubDate": "2026-06-16T11:52:00Z",
-      "img": "https://static.dw.com/image/77500590_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "How the Iran war affects your money and bills",
-      "link": "https://www.bbc.com/news/articles/c2e4ygndjpwo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The conflict in the Middle East has increased pressure on the cost of petrol, household energy bills and even food.",
-      "pubDate": "Tue, 16 Jun 2026 11:22:56 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/afaf/live/7cc7a4a0-1bc2-11f1-964c-87b629a369ca.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "European Parliament approves US trade deal to lower tariffs",
-      "link": "https://www.dw.com/en/european-parliament-approves-us-trade-deal-to-lower-tariffs/a-77577033?maca=en-rss-en-eu-2092-rdf",
-      "desc": "The European Parliament has approved cutting tariffs on many US imports to comply with a deal signed last year. US President Trump had given the bloc a July 4 deadline to meet its side of the deal.",
-      "pubDate": "2026-06-16T11:09:00Z",
-      "img": "https://static.dw.com/image/77311671_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
     }
   ]
 }
