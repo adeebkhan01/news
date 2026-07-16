@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-16T19:37:07.422Z",
+  "fetchedAt": "2026-07-16T22:26:36.677Z",
   "asx200": {
     "value": 8840.7,
     "change": -77,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.01,
-    "changePercent": -1.12,
+    "changePercent": -1.05,
     "previousClose": 0.71,
     "asOf": "2026-07-16",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.7
       },
       {
+        "date": "2026-07-15",
+        "close": 0.7
+      },
+      {
         "date": "2026-07-16",
         "close": 0.7
       }
@@ -203,25 +207,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 3983.4,
-      "change": -347.5,
-      "changePercent": -8.02
+      "price": 3979.8,
+      "change": -351.1,
+      "changePercent": -8.11
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 55.82,
-      "change": -14.08,
-      "changePercent": -20.15
+      "price": 55.8,
+      "change": -14.1,
+      "changePercent": -20.17
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 78.33,
-      "change": 2.28,
-      "changePercent": 3
+      "price": 79.04,
+      "change": 2.99,
+      "changePercent": 3.93
     },
     {
       "name": "Copper",
@@ -229,7 +233,7 @@
       "iconBg": "#fef0e6",
       "price": 6.29,
       "change": -0.2,
-      "changePercent": -3.07
+      "changePercent": -3.11
     },
     {
       "name": "BHP Group",
@@ -838,11 +842,39 @@
   ],
   "news": [
     {
+      "title": "More struggles for Aussie golfers at The Open as shock leader emerges",
+      "link": "https://www.abc.net.au/news/2026-07-17/the-open-2026-australians-struggle-as-jackson-suber-leads/106926034",
+      "snippet": "",
+      "pubDate": "Thu, 16 Jul 2026 22:03:49 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Rider suffers fractured collarbone in chaotic end to Tour de France stage",
+      "link": "https://www.abc.net.au/news/2026-07-17/tour-de-france-stage-12-tim-merlier-claims-victory/106925960",
+      "snippet": "",
+      "pubDate": "Thu, 16 Jul 2026 21:03:51 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "ASX set to slide, AI stock slump hurts Wall Street",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-ai-stock-slump-hurts-wall-street-20260717-p60g1s.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Computer chipmakers and other winners of the artificial-intelligence boom are slumping again and weighing on stock markets worldwide.",
-      "pubDate": "Fri, 17 Jul 2026 05:19:12 +1000",
+      "pubDate": "Fri, 17 Jul 2026 06:16:40 +1000",
       "source": "SMH Business"
+    },
+    {
+      "title": "How Brondello's Opals plan to solve women's basketball's USA problem",
+      "link": "https://www.abc.net.au/news/2026-07-17/womens-basketball-sandy-brondello-life-with-opals-tempo/106912698",
+      "snippet": "",
+      "pubDate": "Thu, 16 Jul 2026 19:49:28 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Four years away from racing, Raddatz is taking every chance in Japan",
+      "link": "https://www.abc.net.au/news/2026-07-17/paige-raddatz-racing-kyojo-cup-female-series/106744080",
+      "snippet": "",
+      "pubDate": "Thu, 16 Jul 2026 19:48:29 +0000",
+      "source": "ABC News"
     },
     {
       "title": "My colleague is constantly negative. How can I make them cheer up?",
@@ -887,38 +919,10 @@
       "source": "SMH Business"
     },
     {
-      "title": "Geelong win over Saints soured by injury to star Holmes",
+      "title": "'I covered my ears': Scott responds as Cats injury crisis worsens",
       "link": "https://www.abc.net.au/news/2026-07-16/afl-round-19-live-cats-saints-geelong-st-kilda/106912736",
       "snippet": "",
       "pubDate": "Thu, 16 Jul 2026 08:57:02 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "'Reece Walsh was unbelievable': Broncos keep season alive with upset win",
-      "link": "https://www.abc.net.au/news/2026-07-16/nrl-live-updates-penrith-panthers-vs-brisbane-broncos/106913406",
-      "snippet": "",
-      "pubDate": "Thu, 16 Jul 2026 08:31:36 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Credit card rewards points slashed up to 50% ahead of surcharge ban",
-      "link": "https://www.smh.com.au/business/consumer-affairs/credit-card-rewards-points-slashed-up-to-50-percent-ahead-of-surcharge-ban-20260716-p60fvs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Banks have begun reining in generous credit card points earning and associated perks ahead of Reserve Bank changes that cut their revenue from the schemes.",
-      "pubDate": "Thu, 16 Jul 2026 18:20:29 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX closes flat; BHP falls on copper warning, AMP shares rally",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-edge-up-wall-street-rises-as-oil-prices-swing-20260716-p60fow.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket treaded water as losses by world’s biggest miner BHP and energy stocks offset gains by the big four banks and a rally by wealth giant AMP.",
-      "pubDate": "Thu, 16 Jul 2026 17:23:19 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Wallabies coach gambles at selection table in Test farewell",
-      "link": "https://www.abc.net.au/news/2026-07-16/wallabies-italy-rugby-test-joe-schmidt-fraser-mcreight/106924296",
-      "snippet": "",
-      "pubDate": "Thu, 16 Jul 2026 06:23:12 +0000",
       "source": "ABC News"
     }
   ]
