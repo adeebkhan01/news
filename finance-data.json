@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-16T16:46:19.262Z",
+  "fetchedAt": "2026-07-16T19:37:07.422Z",
   "asx200": {
     "value": 8840.7,
     "change": -77,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.01,
-    "changePercent": -1.09,
+    "changePercent": -1.12,
     "previousClose": 0.71,
     "asOf": "2026-07-16",
     "history": [
@@ -203,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 3993.6,
-      "change": -337.3,
-      "changePercent": -7.79
+      "price": 3983.4,
+      "change": -347.5,
+      "changePercent": -8.02
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 56.27,
-      "change": -13.63,
-      "changePercent": -19.5
+      "price": 55.82,
+      "change": -14.08,
+      "changePercent": -20.15
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 78.76,
-      "change": 2.71,
-      "changePercent": 3.56
+      "price": 78.33,
+      "change": 2.28,
+      "changePercent": 3
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.34,
-      "change": -0.15,
-      "changePercent": -2.25
+      "price": 6.29,
+      "change": -0.2,
+      "changePercent": -3.07
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,48 @@
   ],
   "news": [
     {
+      "title": "ASX set to slide, AI stock slump hurts Wall Street",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-ai-stock-slump-hurts-wall-street-20260717-p60g1s.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Computer chipmakers and other winners of the artificial-intelligence boom are slumping again and weighing on stock markets worldwide.",
+      "pubDate": "Fri, 17 Jul 2026 05:19:12 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "My colleague is constantly negative. How can I make them cheer up?",
+      "link": "https://www.smh.com.au/business/workplace/my-colleague-is-constantly-negative-how-can-i-make-them-cheer-up-20260716-p60fvn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "When a colleague is always down, it can make your workplace experience negative too. But there are some things you can try.",
+      "pubDate": "Fri, 17 Jul 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Overwork is slowly burning us out. So why do we normalise it?",
+      "link": "https://www.smh.com.au/business/workplace/overwork-is-slowly-burning-us-out-so-why-do-we-normalise-it-20260716-p60fvq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "These hidden, psychosocial hazards in the workplace can quickly wear us down and bring us to breaking point.",
+      "pubDate": "Fri, 17 Jul 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Rinehart’s media monitoring tests her commitment to freedom of speech",
+      "link": "https://www.smh.com.au/business/companies/rinehart-s-media-monitoring-tests-her-commitment-to-freedom-of-speech-20260716-p60frb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The billionaire has some of the outward hallmarks of a free speech champion, but that hasn’t stopped even niche journalists getting terse complaints.",
+      "pubDate": "Fri, 17 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Brutal plunge: Lendlease fund sells B-grade city office for half the price, four years on",
+      "link": "https://www.smh.com.au/business/companies/brutal-plunge-lendlease-fund-sells-b-grade-city-office-for-half-the-price-four-years-on-20260716-p60ftc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "A tower in Little Collins Street has sold for less than half of its $83 million post-pandemic purchase price.",
+      "pubDate": "Fri, 17 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Fast-track for Sunito’s Five Dock dream project",
+      "link": "https://www.smh.com.au/business/companies/fast-track-for-sunito-s-five-dock-dream-project-20260716-p60fwz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Developer Iwan Sunito’s $1.9 billion project is a step closer to reality.",
+      "pubDate": "Fri, 17 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "ABC chair Kim Williams enters the lion’s den at Sky News",
       "link": "https://www.smh.com.au/business/companies/abc-chair-kim-williams-enters-the-lion-s-den-at-sky-news-20260716-p60fzy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The ABC’s top man found he was a long way from his home circuit of writer’s festivals, but did not give Chris Kenny an inch.",
@@ -878,48 +920,6 @@
       "snippet": "",
       "pubDate": "Thu, 16 Jul 2026 06:23:12 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Is SpaceX a meme stock? Elon Musk loses trillionaire status",
-      "link": "https://www.smh.com.au/business/companies/is-spacex-a-meme-stock-elon-musk-loses-trillionaire-status-20260716-p60frd.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "A month after the biggest IPO in human history, SpaceX has been trading below its float price. Is the market finally waking up?",
-      "pubDate": "Thu, 16 Jul 2026 16:02:36 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "No hiring if an AI can do the job, staff at mining giant told",
-      "link": "https://www.smh.com.au/business/workplace/no-hiring-if-an-ai-can-do-the-job-staff-at-mining-giant-told-20260713-p60eth.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "An Australian company has become the latest in a line to curb its workforce as powerful tech tools come to do work once reserved for humans.",
-      "pubDate": "Thu, 16 Jul 2026 15:58:23 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Foxtel ups prices 10 days after announcing record NRL deal",
-      "link": "https://www.smh.com.au/business/companies/foxtel-ups-prices-10-days-after-announcing-record-nrl-deal-20260716-p60fxm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The pay television company is covering the lion’s share of the massive $5.3 billion rights arrangement announced last week.",
-      "pubDate": "Thu, 16 Jul 2026 15:52:32 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Why chucking a sickie is something we should all be proud of",
-      "link": "https://www.smh.com.au/business/workplace/why-chucking-a-sickie-is-something-we-should-all-be-proud-of-20260716-p60fv7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Our propensity to call in sick more than other countries has a broad range of benefits for individuals, the community and the workplace.",
-      "pubDate": "Thu, 16 Jul 2026 13:20:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Death-defying Argentina living every World Cup game as if it's the last",
-      "link": "https://www.abc.net.au/news/2026-07-16/world-cup-argentina-daredevils-beat-england-semi-final-atlanta/106921274",
-      "snippet": "",
-      "pubDate": "Thu, 16 Jul 2026 03:15:34 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ClearVue recruits world-leading solar glass expert",
-      "link": "https://www.smh.com.au/business/companies/clearvue-recruits-world-leading-solar-glass-expert-20260716-p60fvh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "ClearVue Technologies has appointed globally recognised building-integrated photovoltaics specialist Professor Rebecca Yang to its board as it pushes its solar glass into world markets.",
-      "pubDate": "Thu, 16 Jul 2026 12:44:54 +1000",
-      "source": "SMH Business"
     }
   ]
 }
