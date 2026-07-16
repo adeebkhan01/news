@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-16T08:36:52.782Z",
+  "fetchedAt": "2026-07-16T11:14:37.589Z",
   "asx200": {
     "value": 8840.7,
     "change": -77,
@@ -104,7 +104,7 @@
   "audusd": {
     "value": 0.7,
     "change": -0.01,
-    "changePercent": -1.03,
+    "changePercent": -0.92,
     "previousClose": 0.71,
     "asOf": "2026-07-16",
     "history": [
@@ -207,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4036.6,
-      "change": -294.3,
-      "changePercent": -6.8
+      "price": 4035,
+      "change": -295.9,
+      "changePercent": -6.83
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 57.24,
-      "change": -12.66,
-      "changePercent": -18.11
+      "price": 56.79,
+      "change": -13.11,
+      "changePercent": -18.75
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 79.44,
-      "change": 3.39,
-      "changePercent": 4.46
+      "price": 79.52,
+      "change": 3.47,
+      "changePercent": 4.56
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.39,
-      "change": -0.1,
-      "changePercent": -1.48
+      "price": 6.38,
+      "change": -0.11,
+      "changePercent": -1.71
     },
     {
       "name": "BHP Group",
@@ -842,7 +842,21 @@
   ],
   "news": [
     {
-      "title": "Live: Broncos premiership defence on the line against NRL-leading Panthers",
+      "title": "ABC chair Kim Williams enters the lion’s den at Sky News",
+      "link": "https://www.smh.com.au/business/companies/abc-chair-kim-williams-enters-the-lion-s-den-at-sky-news-20260716-p60fzy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The ABC’s top man found he was a long way from his home circuit of writer’s festivals, but did not give Chris Kenny an inch.",
+      "pubDate": "Thu, 16 Jul 2026 18:59:51 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Cats stretching the lead over Saints at Kardinia",
+      "link": "https://www.abc.net.au/news/2026-07-16/afl-round-19-live-cats-saints-geelong-st-kilda/106912736",
+      "snippet": "",
+      "pubDate": "Thu, 16 Jul 2026 08:57:02 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Panthers lead as Broncos premiership defence hangs by a thread",
       "link": "https://www.abc.net.au/news/2026-07-16/nrl-live-updates-penrith-panthers-vs-brisbane-broncos/106913406",
       "snippet": "",
       "pubDate": "Thu, 16 Jul 2026 08:31:36 +0000",
@@ -909,20 +923,6 @@
       "link": "https://www.smh.com.au/business/companies/clearvue-recruits-world-leading-solar-glass-expert-20260716-p60fvh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "ClearVue Technologies has appointed globally recognised building-integrated photovoltaics specialist Professor Rebecca Yang to its board as it pushes its solar glass into world markets.",
       "pubDate": "Thu, 16 Jul 2026 12:44:54 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "China’s economic divide is widening in era of protectionism",
-      "link": "https://www.smh.com.au/business/the-economy/china-s-economic-divide-is-widening-in-era-of-protectionism-20260716-p60fqx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Growth is faltering and exports are threatened by increased protectionism, so Beijing is finally looking to its massive pool of consumers to generate growth.",
-      "pubDate": "Thu, 16 Jul 2026 12:00:25 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "The Cap Raise Crucible for June: Megaport, Forrestania and KGL Resources",
-      "link": "https://www.smh.com.au/business/companies/the-cap-raise-crucible-for-june-megaport-forrestania-and-kgl-resources-20260716-p60ftm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "This edition of The Crucible features Megaport, Forrestania and KGL Resources after punters poured $3.5 billion into 56 equity deals over a frantic June period.",
-      "pubDate": "Thu, 16 Jul 2026 11:30:27 +1000",
       "source": "SMH Business"
     }
   ]
