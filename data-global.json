@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-16T16:19:57.230Z",
-  "summary": "Global tensions have escalated sharply with military confrontations dominating the news cycle: the US has launched strikes against Iran and imposed a blockade on its tankers while Iran responds with attacks on military bases, raising fresh concerns about regional conflict. Ukraine faces internal upheaval as lawmakers approve a new prime minister amid widespread protests over the dismissal of the defence minister, while Russia continues relentless bombardment of Ukrainian cities. Elsewhere, a tragic fire at an Algerian foster care home has killed children, a newly discovered monkey species with distinctive orange lips highlights ongoing biodiversity discoveries in central Africa, and the UK faces extreme weather as the new normal with climate concerns mounting globally. Economic and political strife also grips the continent, from job cuts at Aer Lingus to EU courts validating Spanish amnesty law, alongside tech giants like TSMC committing further investment to US operations and AI copyright disputes.",
+  "fetchedAt": "2026-07-16T19:18:34.208Z",
+  "summary": "Global tensions are escalating sharply as the US conducts military strikes against Iran and enforces a new blockade on Iranian tankers, while Iran retaliates with attacks on military bases, raising the risk of direct conflict. The Ebola outbreak in the Democratic Republic of Congo is spreading faster than ever recorded even as Uganda moves toward eliminating the virus, presenting a significant regional health crisis. Ukraine faces internal political turmoil following President Zelenskyy's dismissal of the defence minister, triggering widespread protests despite parliament approving a new prime minister. Elsewhere, a major data breach has reportedly targeted India's Kudankulam nuclear plant, Syria's war-displaced residents struggle to rebuild, Sudan's demographics have been drastically altered by ongoing conflict, and extreme weather continues to worsen across Europe.",
   "sources": [
     {
       "id": "bbcnews",
@@ -25,6 +25,86 @@
   ],
   "articles": [
     {
+      "title": "Ebola spreading more quickly in DRC, while Uganda is close to being virus-free",
+      "link": "https://www.aljazeera.com/news/2026/7/16/ebola-spreading-more-quickly-in-drc-while-uganda-is-close-to-being-virus-free?traffic_source=rss",
+      "desc": "Uganda ⁠⁠discharges last-remaining patient, as WHO says Ebola has &#039;expanded faster than any previous outbreak&#039; in DRC.",
+      "pubDate": "Thu, 16 Jul 2026 19:05:09 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/afp_6a590ef4374f-1784221428.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "What could a US ground invasion of Iran look like?",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/what-could-a-us-ground-invasion-of-iran-look-like?traffic_source=rss",
+      "desc": "Donald Trump has refused to rule out sending US troops into Iran as fighting resumes and US strikes continue.",
+      "pubDate": "Thu, 16 Jul 2026 18:45:30 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/IMG_0223-1784227241.png?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran condemns ‘barbaric’ US attack near children’s cancer hospital",
+      "link": "https://www.aljazeera.com/news/2026/7/16/iran-condemns-barbaric-us-attack-near-childrens-cancer-hospital?traffic_source=rss",
+      "desc": "Iran accuses US of &#039;cowardly war crime&#039; as doctor says blast was &#039;so close&#039; they thought the hospital was struck.",
+      "pubDate": "Thu, 16 Jul 2026 18:37:55 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/2026-07-16T022833Z_200744418_RC2QEMATWBK4_RTRMADP_3_IRAN-CRISIS-USA-1784224937.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "WHO: Ebola spreading faster than ever recorded in DR Congo",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/who-ebola-spreading-faster-than-ever-recorded-in-dr-congo?traffic_source=rss",
+      "desc": "The World Health Organization warns the Ebola outbreak in DR Congo is spreading faster than any previous outbreak.",
+      "pubDate": "Thu, 16 Jul 2026 18:21:28 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/WIDE-THUMB-WHO-ebola-1784226036.png?resize=1920%2C1362",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "In Syria’s Jobar, locals struggle to rebuild their destroyed homes",
+      "link": "https://www.aljazeera.com/features/2026/7/16/in-syrias-jobar-locals-struggle-to-rebuild-their-destroyed-homes?traffic_source=rss",
+      "desc": "Jobar was held by rebels for much of Syria&#039;s 13-year war but was destroyed by repeated government assaults.",
+      "pubDate": "Thu, 16 Jul 2026 17:54:46 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2021/03/Eastern-Gouta2018-04-02T143524Z_603854982_RC165314CDA0_RTRMADP_3_MIDEAST-CRISIS-SYRIA-GHOUTA.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "'Moment of joy' as Uganda discharges last Ebola patient",
+      "link": "https://www.bbc.co.uk/news/articles/cx2myxjv172o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The good news from Uganda comes as the WHO chief warns the virus in DR Congo is spreading fast.",
+      "pubDate": "Thu, 16 Jul 2026 17:15:32 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/674d/live/ec3e9520-8105-11f1-b8b2-1fedac836136.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Rare protests in Kyiv over dismissal of defence minister",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/rare-protests-in-kyiv-over-dismissal-of-defence-minister?traffic_source=rss",
+      "desc": "Rare protests erupted in central Kyiv over Ukrainian President Zelenskyy’s dismissal of defence minister.",
+      "pubDate": "Thu, 16 Jul 2026 17:15:03 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1784222019.jpg?resize=1619%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "US to impose new 25 percent tariffs on some Brazilian imports",
+      "link": "https://www.aljazeera.com/economy/2026/7/16/us-to-impose-new-25-percent-tariffs-on-some-brazilian-imports?traffic_source=rss",
+      "desc": "Beef, coffee and rare-earth materials escaped US tariffs amid trade tensions with Brazil over alleged unfair practices.",
+      "pubDate": "Thu, 16 Jul 2026 16:27:44 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/AP26126779099343-1784214916.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
       "title": "Children among dead at Algeria foster care home blaze - president",
       "link": "https://www.bbc.co.uk/news/articles/cvgwd4nz344o?at_medium=RSS&amp;at_campaign=rss",
       "desc": "Eleven people have died and 19 other have suffered injuries in the overnight fire, the authorities say.",
@@ -33,6 +113,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Vance says Israeli campaign tried to sway US opinion against Iran diplomacy",
+      "link": "https://www.aljazeera.com/news/2026/7/16/vance-says-israeli-campaign-tried-to-sway-us-opinion-against-iran-diplomacy?traffic_source=rss",
+      "desc": "The US vice-president also said he faced &#039;vicious&#039; personal attacks over his diplomatic outreach to end war.",
+      "pubDate": "Thu, 16 Jul 2026 16:13:25 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/AFP__20260708__2284662292__v1__HighRes__VicePresidentVanceDiscussesAdministrationSFi-1-1784212238_39c933-1784214662.jpg?resize=1200%2C630&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
     },
     {
       "title": "JD Vance says Welsh castle was 'coolest thing I've ever seen'",
@@ -53,6 +143,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Israeli attacks kill at least five Palestinians in Gaza despite ‘ceasefire’",
+      "link": "https://www.aljazeera.com/news/2026/7/16/israeli-attacks-kill-at-least-five-palestinians-in-gaza-despite-ceasefire?traffic_source=rss",
+      "desc": "Attacks continue in violation of the October agreement with more than 1,100 Palestinians killed since then.",
+      "pubDate": "Thu, 16 Jul 2026 15:53:42 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/afp_6a58f1f7eac1-1784214007.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
     },
     {
       "title": "UK urges FIFA to investigate Argentina over World Cup Falklands banner",
@@ -183,6 +283,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "The EU climate policy the world copied is under fire — what's at stake?",
+      "link": "https://www.dw.com/en/the-eu-climate-policy-the-world-copied-is-under-fire-what-s-at-stake/a-77979725?maca=en-rss-en-eu-2092-rdf",
+      "desc": "The emissions trading system became a global blueprint for pricing carbon and cutting CO2. Now industry groups are pushing back against tougher climate rules. How effective is the scheme and where doe",
+      "pubDate": "2026-07-16T11:33:00Z",
+      "img": "https://static.dw.com/image/73257949_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "Hundreds protest in Kyiv over Zelenskyy’s dismissal of defence minister",
@@ -12220,76 +12330,6 @@
       "desc": "Here’s what came out of the G7 summit in France.",
       "pubDate": "Tue, 16 Jun 2026 20:36:36 +0000",
       "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781642142.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "US judge upholds conviction of ex-judge who helped man evade federal agents",
-      "link": "https://www.aljazeera.com/news/2026/6/16/us-judge-upholds-conviction-of-ex-judge-who-helped-man-evade-federal-agents?traffic_source=rss",
-      "desc": "Activists say former judge Hannah Dugan was targeted by the Trump administration for defiance over immigration raids.",
-      "pubDate": "Tue, 16 Jun 2026 19:17:31 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26154573137853-1781634453.jpg?resize=1200%2C675",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "‘I know what you’ve been through’: FIFA president visits Iran team",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/16/i-know-what-youve-been-through-fifa-president-visits-iran-team?traffic_source=rss",
-      "desc": "FIFA President Gianni Infantino praised Iran’s players during a World Cup dressing room visit after the team’s 2-2 draw.",
-      "pubDate": "Tue, 16 Jun 2026 18:46:52 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781635543.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Ohio Governor Mike DeWine opposes death penalty, reversing past support",
-      "link": "https://www.aljazeera.com/news/2026/6/16/ohio-governor-mike-dewine-opposes-death-penalty-reversing-past-support?traffic_source=rss",
-      "desc": "Support for capital punishment has steadily declined in the United States, with several states rolling back its use.",
-      "pubDate": "Tue, 16 Jun 2026 18:43:14 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/ap_6a31929a9ba4b-1781633690.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "CRISPR gene-editing for crops: Precision tool or new risk?",
-      "link": "https://www.dw.com/en/crispr-gene-editing-for-crops-precision-tool-or-new-risk/a-77579053?maca=en-rss_en_science-22531-xml-mrss",
-      "desc": "The EU is poised to ease restrictions on crops developed using novel genetic techniques. While supporters say the technology could help farmers adapt to climate change, critics argue its effects remai",
-      "pubDate": "Tue, 16 Jun 2026 17:44:00 GMT",
-      "img": "https://static.dw.com/image/66125770_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "Israeli strikes kill four in southern Lebanon amid ceasefire talks",
-      "link": "https://www.aljazeera.com/news/2026/6/16/israeli-strikes-kill-four-in-southern-lebanon-amid-ceasefire-talks?traffic_source=rss",
-      "desc": "Drone attacks target vehicles in Nabatieh amid fragile ceasefire negotiations between Iran and the US.",
-      "pubDate": "Tue, 16 Jun 2026 17:42:12 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26166485359000-1781603777.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Israel seizes power over occupied West Bank mosque from Palestinians",
-      "link": "https://www.aljazeera.com/news/2026/6/16/israel-seizes-power-over-occupied-west-bank-mosque-from-palestinians?traffic_source=rss",
-      "desc": "Hebron&#039;s mayor warns unilateral changes breach agreements, posing significant consequences for the region&#039;s stability.",
-      "pubDate": "Tue, 16 Jun 2026 17:23:12 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/03/processed-82D3CBE6-B319-4C57-94F4-1A2A5A73380F-1772815235.jpeg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Trump slams Israeli attacks on Lebanon at G7 summit",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/16/trump-slams-israeli-attacks-on-lebanon-at-g7-summit?traffic_source=rss",
-      "desc": "US President Donald Trump slammed Israeli attacks on Lebanon at the G7 Summit.",
-      "pubDate": "Tue, 16 Jun 2026 16:55:31 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781628918.jpg?resize=1621%2C1080&amp;quality=80",
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
