@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-16T19:18:34.208Z",
-  "summary": "Global tensions are escalating sharply as the US conducts military strikes against Iran and enforces a new blockade on Iranian tankers, while Iran retaliates with attacks on military bases, raising the risk of direct conflict. The Ebola outbreak in the Democratic Republic of Congo is spreading faster than ever recorded even as Uganda moves toward eliminating the virus, presenting a significant regional health crisis. Ukraine faces internal political turmoil following President Zelenskyy's dismissal of the defence minister, triggering widespread protests despite parliament approving a new prime minister. Elsewhere, a major data breach has reportedly targeted India's Kudankulam nuclear plant, Syria's war-displaced residents struggle to rebuild, Sudan's demographics have been drastically altered by ongoing conflict, and extreme weather continues to worsen across Europe.",
+  "fetchedAt": "2026-07-16T22:06:11.981Z",
+  "summary": "Escalating tensions between the US and Iran dominate global headlines, with American forces conducting six consecutive nights of strikes that have prompted Iranian warnings of wider conflict and accusations of attacks near civilian targets. In Eastern Europe, Ukraine faces internal discord after President Zelenskyy's dismissal of the defence minister sparked large protests in Kyiv, though lawmakers have approved a new prime minister. Health crises in Africa show divergent trajectories as Uganda celebrates discharging its last Ebola patient while the Democratic Republic of Congo battles an unprecedented outbreak spreading faster than ever recorded. Across multiple regions, from the Israeli-Palestinian territories to Sudan and Syria, civilians face displacement and humanitarian challenges amid ongoing conflict and disaster.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Blasts reported in Iran as US launches new wave of strikes",
+      "link": "https://www.bbc.co.uk/news/articles/c151gdjwd10o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The US says its attacks aim to \"further degrade Iranian military capabilities\", as fighting continued for the sixth day in a row.",
+      "pubDate": "Thu, 16 Jul 2026 21:44:37 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0cb4/live/5f142cf0-815f-11f1-b976-0b9c15b0ccfc.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "US mounts sixth straight night of attacks as Iran warns of wider war",
+      "link": "https://www.aljazeera.com/news/2026/7/16/us-mounts-sixth-straight-night-of-attacks-as-iran-warns-of-wider-war?traffic_source=rss",
+      "desc": "Iranian media reports airport, bridge and communications tower targeted.",
+      "pubDate": "Thu, 16 Jul 2026 21:02:11 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/epa_6a593d219dd5-1784233249.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Donald Trump live: US president to deliver primetime address on elections",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/7/16/donald-trump-live-us-president-to-deliver-primetime-address-on-elections?traffic_source=rss",
+      "desc": "Critics fear Trump may use his podium to spread spread doubt about election integrity before the 2026 midterms.",
+      "pubDate": "Thu, 16 Jul 2026 20:59:18 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/reuters_6a592df7-1784229367.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Palestinians injured in Israeli settler attacks across West Bank",
+      "link": "https://www.aljazeera.com/news/2026/7/16/palestinians-injured-in-israeli-settler-attacks-across-west-bank?traffic_source=rss",
+      "desc": "More than 30 people reportedly arrested across the occupied territory, as Israel intensifies its siege.",
+      "pubDate": "Thu, 16 Jul 2026 20:37:23 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/ap_6a5935bf99fab-1784231359.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Leaky pipes may explain years-long bay pollution",
+      "link": "https://www.bbc.co.uk/news/articles/c1eyeww172do?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The Environment Agency has rated Cullercoat's water quality as \"poor\" since 2018.",
+      "pubDate": "Thu, 16 Jul 2026 20:16:34 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e3a5/live/28a76f60-1ae5-11f0-84fd-f389f3c61043.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Nicaragua severs diplomatic ties with Italy over 1978 murder case",
+      "link": "https://www.aljazeera.com/news/2026/7/16/nicaragua-severs-diplomatic-ties-with-italy-over-1978-murder-case?traffic_source=rss",
+      "desc": "The rift follows Italy’s renewed demand for Nicaragua to extradite the man convicted of former prime minister&#039;s killing.",
+      "pubDate": "Thu, 16 Jul 2026 19:57:46 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/reuters_6a592d20-1784229152.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "Ebola spreading more quickly in DRC, while Uganda is close to being virus-free",
       "link": "https://www.aljazeera.com/news/2026/7/16/ebola-spreading-more-quickly-in-drc-while-uganda-is-close-to-being-virus-free?traffic_source=rss",
@@ -12313,26 +12373,6 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Somaliland president visits Israeli Knesset on tour",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/16/aje-onl-nf_somaliland-president-visits-israeli-knesset-on-tour-160626?traffic_source=rss",
-      "desc": "Somaliland’s President is on a ‘historic’ tour of Israel, where he’s opened an embassy and visited the Knesset.",
-      "pubDate": "Tue, 16 Jun 2026 21:51:28 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781646628.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Iran, Ukraine dominate G7 summit",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/16/iran-ukraine-dominate-g7-summit?traffic_source=rss",
-      "desc": "Here’s what came out of the G7 summit in France.",
-      "pubDate": "Tue, 16 Jun 2026 20:36:36 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781642142.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
     }
   ]
 }
