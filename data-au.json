@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-17T08:16:24.523Z",
-  "summary": "Australia's news cycle today is dominated by violent crime and safety concerns, with multiple reports of school lockdowns, arrests related to shootings, and ongoing legal proceedings in high-profile cases including the Footscray High School incident and appeals from convicted killer bus drivers. Critical infrastructure failures made headlines as Telstra acknowledged its nationwide outage was preventable, caused by a system rollback spanning two decades. Environmental issues feature prominently, including a major funding dispute over traditional owner consultation that has paused flood mitigation works and the discovery of a whale stranded on Sydney beaches. The stories reveal broader concerns about public safety, institutional accountability, and the tension between development and indigenous rights consultation in Australia.",
+  "fetchedAt": "2026-07-17T10:50:25.213Z",
+  "summary": "Australia faces a convergence of serious challenges this week. Several criminal justice stories dominate, including a Perth lawyer jailed for helping bikies, a teacher imprisoned for student abuse, and a bus driver fighting a conviction over a teenage pedestrian's death. Political controversy swirls around One Nation leader Pauline Hanson, who faces criticism over migration and NDIS comments while luxury Europe travel photos surface, fueling accusations of being out of touch. Infrastructure and corporate issues also feature prominently, with Telstra admitting a nationwide outage was avoidable and Prime Minister Albanese tasked with delivering detail on data centre policy.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,156 @@
     }
   ],
   "articles": [
+    {
+      "title": "California braces for its sharkiest summer in a decade – but experts say don’t panic",
+      "link": "https://www.theguardian.com/environment/2026/jul/17/california-sharks-spike",
+      "desc": "<p>Young great white sharks are returning in large numbers, but researchers say humans are not on the menu</p><p>Surfers, swimmers and fishermen across <a href=\"https://www.theguardian.com/us-news/cal",
+      "pubDate": "Fri, 17 Jul 2026 10:00:04 GMT",
+      "img": "https://i.guim.co.uk/img/media/508bea5222d2e6382beadc482bc4eefa267c7c7c/342_0_3424_2739/master/3424.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Climate change driving more rains that lead to deadly flash floods, experts say",
+      "link": "https://www.theguardian.com/us-news/2026/jul/17/climate-change-rains-flash-floods",
+      "desc": "<p>Over the last month, states across the country have experienced record rainfall and flash flooding</p><p>Climate change is driving increasingly common bouts of heavy rain in the US that cause deadl",
+      "pubDate": "Fri, 17 Jul 2026 10:00:04 GMT",
+      "img": "https://i.guim.co.uk/img/media/1ae86f1dcd9fc6df091ffbcf8c9ac908c2d03b3d/500_0_5000_4000/master/5000.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Did the world’s fourth-richest man just touch down in Sydney?",
+      "link": "https://www.smh.com.au/business/companies/did-the-world-s-fourth-richest-man-just-touch-down-in-sydney-20260717-p60gbk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "Amazon founder Jeff Bezos, or his doppelganger, enjoyed the views and fine food in Coogee alongside his wife Lauren Sanchez Bezos.",
+      "pubDate": "Fri, 17 Jul 2026 19:56:34 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.6724%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/f54993df34ac964231fe47dc252f2717a6cc256904beb48ddfe43177f735873b",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "He was caught helping bikies stay out of jail, now this Perth lawyer is heading there himself",
+      "link": "https://www.smh.com.au/national/western-australia/he-was-caught-helping-bikies-stay-out-of-jail-now-this-perth-lawyer-is-heading-there-himself-20260717-p60gc2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Ted Dobson, son of late prominent Perth lawyer Terry Dobson, struck up an “intense” friendship with former head of the Comancheros bikie gang Ray Cilli.",
+      "pubDate": "Fri, 17 Jul 2026 19:42:11 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.1037%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/21b0cd880c19a7e0a7a0038547e9ffbc3ca48368",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Catalano’s 25-year-old son now overseeing his regional media empire",
+      "link": "https://www.smh.com.au/business/companies/catalano-s-25-year-old-son-now-overseeing-his-regional-media-empire-20260717-p60g7t.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "Luca Catalano joins his brother Jordan as a director on the company overseeing Australian Community Media, which their father left after facing domestic violence allegations.",
+      "pubDate": "Fri, 17 Jul 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2562%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_58/t_crop_custom/q_86%2Cf_auto/ab09544429e78d490b3c49483f37ebdf34370ea1",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Albanese has diagnosed the data centre problem. Now he must show the detail",
+      "link": "https://www.smh.com.au/national/albanese-has-diagnosed-the-data-centre-problem-now-he-must-show-the-detail-20260717-p60g8w.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Anthony Albanese’s speech marked a turning point in acknowledging that the technology is reshaping our nation at the macro level.",
+      "pubDate": "Fri, 17 Jul 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.6464%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_2006%2C$y_66/t_crop_custom/q_86%2Cf_auto/b2acb5361bd7c940cc79c480a6cce8854cc57f84",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Are we supposed to be impressed by AI? It’s still so dumb",
+      "link": "https://www.smh.com.au/technology/are-we-supposed-to-be-impressed-by-ai-it-s-still-so-dumb-20260714-p60f5u.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_technology",
+      "desc": "How can something so influential so often show less ability than the most ill-informed human?",
+      "pubDate": "Fri, 17 Jul 2026 19:23:02 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2353333333333333%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_93/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/6b86a12cfec0e3289da9a62fef403ed837a870cb",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "View from the Hill: Has Hanson flown too close to the sun for some One Nation supporters?",
+      "link": "https://theconversation.com/view-from-the-hill-has-hanson-flown-too-close-to-the-sun-for-some-one-nation-supporters-287185",
+      "desc": "From walking the streets of London with Tommy Robinson to going to luxury fashion shows in Italy, Pauline Hanson may be testing her supporters’ patience.",
+      "pubDate": "2026-07-17T09:12:57Z",
+      "img": "https://images.theconversation.com/files/748519/original/file-20260717-57-znf846.jpg?ixlib=rb-4.1.1&amp;rect=0%2C1056%2C6324%2C3162&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "Rohan Dennis faces potential jail time over driving ban breach",
+      "link": "https://www.smh.com.au/national/rohan-dennis-faces-potential-jail-time-over-driving-ban-breach-20260717-p60gcq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Disgraced cyclist Rohan Dennis had his licence disqualified following a crash that killed his Olympian wife.",
+      "pubDate": "Fri, 17 Jul 2026 18:56:19 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/0605bfe236b29d3df965ac651f42322784d1e7fd",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Perth CBD ‘sex-on-premise’ venue tipped for approval despite community backlash",
+      "link": "https://www.smh.com.au/national/western-australia/perth-cbd-sex-on-premise-venue-tipped-for-approval-despite-community-backlash-20260717-p60gas.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The proposed Barrack Street venue would be an alcohol-free, members-only space capped at 50 people, aiming to provide a “sex-positive sanctuary” amid concerns over CBD safety.",
+      "pubDate": "Fri, 17 Jul 2026 18:44:21 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1765%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/853759880c40fd00fcb52e735d6863bfcbd3d8ad101b031d13b1e50637669b62",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Pauline Hanson under fire after migration and NDIS comments",
+      "link": "https://www.smh.com.au/national/pauline-hanson-under-fire-after-migration-and-ndis-comments-20260717-p60gco.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Claims from Pauline Hanson that Muslims are rorting the NDIS and that removing the white Australia policy has created migration problems have come under fire.",
+      "pubDate": "Fri, 17 Jul 2026 18:35:19 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/2d4239e48cea757868e27e9bf1b4dc728900f631",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Man jailed after letting bedridden stepdad decompose in Gold Coast home",
+      "link": "https://www.smh.com.au/national/man-jailed-after-letting-bedridden-stepdad-decompose-in-gold-coast-home-20260717-p60gcn.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The 51-year-old was sentenced to nine years behind bars, but with time already served, he could be free within weeks.",
+      "pubDate": "Fri, 17 Jul 2026 18:34:07 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/0e040ce10c44f8433ee6258de3407ac5efdd6e49",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Hanson’s luxe Europe trip us out of touch with battlers",
+      "link": "https://www.smh.com.au/national/nsw/hanson-s-luxe-europe-trip-us-out-of-touch-with-battlers-20260717-p60g35.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Pauline Hanson is in Europe merely investigating the source of all those immigrants who come here to take Australian jobs.",
+      "pubDate": "Fri, 17 Jul 2026 18:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5516%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/be9fbf7641d51681d36f28fdbd026e7c2a114444",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Paedophile was CEO of basketball club with 3000 junior members for 18 months",
+      "link": "https://www.smh.com.au/national/victoria/paedophile-was-ceo-of-basketball-club-with-3000-junior-members-for-18-months-20260717-p60g91.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Richard Irving was chief executive of one of the nation’s largest community sports clubs for almost 18 months, despite being charged with the online grooming of a 14-year-old girl for sex.",
+      "pubDate": "Fri, 17 Jul 2026 18:29:39 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.6508246977547496%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_377%2C$y_186/t_crop_custom/q_86%2Cf_auto/484fba5f5c4ae82c2149bb80b6566928a91576b6",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Apple goes to war with the designer of the iPhone",
+      "link": "https://www.smh.com.au/technology/apple-goes-to-war-with-the-designer-of-the-iphone-20260716-p60foy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_technology",
+      "desc": "Sir Jony Ive’s 30-year partnership with Apple was one of the world’s most lucrative collaborations. Their break-up could be similarly explosive.",
+      "pubDate": "Fri, 17 Jul 2026 18:15:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.22490000000000002%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_171%2C$y_165/t_crop_custom/q_86%2Cf_auto/t_metro_analysis_no_age_social_wm/e9df54ffd42718cbf650dfc68387c9027872e0b7",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
     {
       "title": "Teacher jailed for student abuse after bus driver caught him in the act",
       "link": "https://www.smh.com.au/national/victoria/teacher-jailed-for-student-abuse-after-bus-driver-caught-him-in-the-act-20260717-p60g82.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
@@ -32848,296 +32998,6 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Secret plan to sneak Ben Roberts-Smith out back exit of Sydney prison",
-      "link": "https://www.smh.com.au/national/nsw/secret-plan-to-sneak-ben-roberts-smith-out-back-exit-of-sydney-prison-20260617-p607pi.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "The prison governor personally escorted the high-profile prisoner into and out of jail.",
-      "pubDate": "Wed, 17 Jun 2026 20:36:10 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.4350328688460984%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_155%2C$y_395/t_crop_custom/q_86%2Cf_auto/1f083dff7205ad43d369778ce6c0cdb3e96c19e6",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Lululemon apologises after Japanese drum row at Great Wall yoga event",
-      "link": "https://www.theguardian.com/media/2026/jun/17/lululemon-apologises-japanese-drum-great-wall-china-yoga-event",
-      "desc": "<p>Online uproar follows Canadian brand’s use of taiko drum at sponsored festival held to celebrate Chinese culture</p><p>The activewear brand Lululemon has apologised after a promotional event held o",
-      "pubDate": "Wed, 17 Jun 2026 10:10:49 GMT",
-      "img": "https://i.guim.co.uk/img/media/2d0ca3ee4c88bd0657ec13be6baedd367b5260b5/683_0_6827_5464/master/6827.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "One Nation prepared to cut worker entitlements to shore up struggling small businesses",
-      "link": "https://www.abc.net.au/news/2026-06-17/one-nation-cut-worker-entitlements-joyce-business/106810648",
-      "desc": "One Nation's newly named \"treasury spokesman\" Barnaby Joyce says the party is prepared to cut worker entitlements to safeguard small businesses struggling to deal with inflation and high power prices.",
-      "pubDate": "Wed, 17 Jun 2026 10:05:51 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/e933fb409404229898b11502f34bb954?impolicy=wcms_crop_resize&amp;cropH=3123&amp;cropW=2342&amp;xPos=1604&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "The ocean has shielded us from the worst of climate change. Now it is running a fever | Karina Von Schuckmann",
-      "link": "https://www.theguardian.com/commentisfree/2026/jun/17/ocean-fever-climate-change",
-      "desc": "<p>Nearly every indicator of climate change is flashing red. But we still hold the tools available to bring the planet back into balance</p><p>The ocean is running a fever. In 2025, the number of days",
-      "pubDate": "Wed, 17 Jun 2026 10:00:28 GMT",
-      "img": "https://i.guim.co.uk/img/media/29011b4ea6b6d0d54648ffb25497a38be5e5938f/1220_0_4646_3720/master/4646.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Brisbane's Lang Park to undergo largest upgrade in 23 years",
-      "link": "https://www.abc.net.au/news/2026-06-17/lang-park-upgrade-new-screens-greater-capacity/106810870",
-      "desc": "The LNP government has announced plans for the largest upgrade to Lang Park in 23 years, featuring greater capacity, wraparound screens, and new entertainment zones ahead of next week's budget.",
-      "pubDate": "Wed, 17 Jun 2026 09:53:31 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/d370949586d76c34e8f5b3fead1e01e7?impolicy=wcms_crop_resize&amp;cropH=3024&amp;cropW=2268&amp;xPos=1147&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Bikie arrested again after goodwill gesture gone wrong outside court",
-      "link": "https://www.smh.com.au/national/bikie-arrested-again-after-goodwill-gesture-gone-wrong-outside-court-20260617-p607s2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Perth bikie Dayne Brajkovich has faced a Perth court after inadvertently exposing a belt bearing alleged gang insignia while giving a homeless man his jumper.",
-      "pubDate": "Wed, 17 Jun 2026 19:31:32 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/1fab04088f1f645b2bb173fdc6cbc48cb7524950",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "‘Huge’ money saw alleged bar wars kidnappers carry on assault of wrong target: police",
-      "link": "https://www.smh.com.au/national/victoria/huge-money-saw-alleged-bar-wars-kidnappers-carry-on-assault-of-wrong-target-police-20260616-p6074j.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "A group of teens attacked a man with a hammer and forced his head underwater despite realising they had picked up the wrong person, a court has heard.",
-      "pubDate": "Wed, 17 Jun 2026 19:30:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.1902%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_110/t_crop_custom/q_86%2Cf_auto/d9215a8b45a1624042d4077841eba219246edfa5",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Girls being told they’re ‘too pretty to do math’ is degrading",
-      "link": "https://www.smh.com.au/national/girls-being-told-they-re-too-pretty-to-do-math-is-degrading-20260616-p607b4.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Myer is selling T-shirts with the contentious slogan, and the company which makes them is also Australian.",
-      "pubDate": "Wed, 17 Jun 2026 19:30:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_1%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_52/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/21f0c5115ff3059bf40e87a8b8a2e4fbdf2c9eab",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "‘From a bygone era’: The T-shirt frustrating our brightest minds",
-      "link": "https://www.smh.com.au/national/victoria/from-a-bygone-era-the-t-shirt-frustrating-our-brightest-minds-20260617-p607md.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Australia’s former chief scientist has criticised Myer for selling a women’s T-shirt emblazoned with the words “I’m too pretty to do math”.",
-      "pubDate": "Wed, 17 Jun 2026 19:30:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_1.7504076451013437%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_97%2C$y_456/t_crop_custom/q_86%2Cf_auto/21f0c5115ff3059bf40e87a8b8a2e4fbdf2c9eab",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "View from The Hill: Hanson gets quite a bit off her chest when she enters the media den",
-      "link": "https://theconversation.com/view-from-the-hill-hanson-gets-quite-a-bit-off-her-chest-when-she-enters-the-media-den-284304",
-      "desc": "Pauline Hanson’s first-ever – and perhaps only-ever – appearance at the National Press Club was Hanson off the leash.",
-      "pubDate": "2026-06-17T09:28:28Z",
-      "img": "https://images.theconversation.com/files/742383/original/file-20260617-57-qqwj14.jpg?ixlib=rb-4.1.0&amp;rect=0%2C455%2C7114%2C3557&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "View from The Hill: Hanson gets quite a bit off off her chest when she enters the media den",
-      "link": "https://theconversation.com/view-from-the-hill-hanson-gets-quite-a-bit-off-off-her-chest-when-she-enters-the-media-den-284304",
-      "desc": "Pauline Hanson’s first-ever – and perhaps only-ever – appearance at the National Press Club was Hanson off the leash.",
-      "pubDate": "2026-06-17T09:28:28Z",
-      "img": "https://images.theconversation.com/files/742383/original/file-20260617-57-qqwj14.jpg?ixlib=rb-4.1.0&amp;rect=0%2C455%2C7114%2C3557&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Controversial abortion bill passes SA upper house",
-      "link": "https://www.smh.com.au/national/controversial-abortion-bill-passes-sa-upper-house-20260617-p607s0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "A controversial bill restricting abortion rights has passed South Australia's upper house.",
-      "pubDate": "Wed, 17 Jun 2026 19:27:16 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/038902802beb601b8413d3f98f74ec0a960e1e11",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Girl killed, boy and man critically injured in four-car crash",
-      "link": "https://www.smh.com.au/national/victoria/girl-dead-boy-critically-injured-after-four-car-crash-20260617-p607rq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "The crash happened in West Melbourne just before afternoon peak hour on Wednesday.",
-      "pubDate": "Wed, 17 Jun 2026 19:25:45 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.2056%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_54/t_crop_custom/q_86%2Cf_auto/331c6f5a1ccf7543cb82febe89aea241d1eba103",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Pauline Hanson unleashes in Press Club address",
-      "link": "https://www.smh.com.au/national/pauline-hanson-unleashes-in-press-club-address-20260617-p607ry.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Pauline Hanson has made her first address at the National Press Club in a fiery speech, taking aim at immigration, identity politics and major public broadcasters.",
-      "pubDate": "Wed, 17 Jun 2026 19:22:47 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/1bc8ec84fefa8f78f5cbccffd3f163e69d488cca",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Mum defends teen son accused of plotting attack at local school",
-      "link": "https://www.smh.com.au/national/mum-defends-teen-son-accused-of-plotting-attack-at-local-school-20260617-p607rw.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "The mother of a 13-year-old boy who allegedly plotted to kill children at a local primary school says her son did not pose a risk to the public.",
-      "pubDate": "Wed, 17 Jun 2026 19:17:27 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/8f802a1fccde141be2f3163b623963f243556d44",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Accused ‘ISIS bride’ denied bail due to public risk",
-      "link": "https://www.smh.com.au/national/accused-isis-bride-denied-bail-due-to-public-risk-20260617-p607rx.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "An accused “ISIS bride” has been refused bail after a magistrate found she posed an unacceptable risk of endangering the community.",
-      "pubDate": "Wed, 17 Jun 2026 19:16:29 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/3ec4d4a1cec60527f75bffdc9a8d160eaeca31e9",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Missing Tasmanian devil found after two weeks on the run",
-      "link": "https://www.smh.com.au/national/missing-tasmanian-devil-found-after-two-weeks-on-the-run-20260617-p607q2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "A missing Tasmanian devil that sparked an intensive two-week search on the Gold Coast has been found.",
-      "pubDate": "Wed, 17 Jun 2026 19:16:01 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/9d267550f78f0368e13cbbb2a2048e9ef8d82a0e",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Mother of AFL premiership players hits back after raid",
-      "link": "https://www.smh.com.au/national/mother-of-afl-premiership-players-hits-back-after-raid-20260617-p607qc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "The mother of AFL premiership players Ben and Sam Reid has hit back after police raided her home in relation to Dezi Freeman.",
-      "pubDate": "Wed, 17 Jun 2026 19:11:29 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/1f81f5117f326f5093e5a1721482d8c0e0643014",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Woman arrested after man found dead in Melbourne home",
-      "link": "https://www.smh.com.au/national/woman-arrested-after-man-found-dead-in-melbourne-home-20260617-p607qi.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "A young woman has been arrested after a man was found dead in a suburban home in Melbourne’s east overnight.",
-      "pubDate": "Wed, 17 Jun 2026 19:10:08 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/7864dfc2e46b0229b0fc6b4bfd8ba490b733d983",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Lang Park upgrade: Big screens, 1000 more seats in time for Rugby World Cup",
-      "link": "https://www.smh.com.au/national/queensland/lang-park-upgrade-big-screens-1000-more-seats-in-time-for-rugby-world-cup-20260617-p607rh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "A screen that wraps all the way around Suncorp Stadium’s interior is among the upgrades the government announced just hours before the Origin kick-off.",
-      "pubDate": "Wed, 17 Jun 2026 19:07:19 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.2648888888888889%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/cb7a91a940cf8414c3e49ca05e5361bf67d3861718f23570770cfde3e2d498db",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "AFP investigates banner stunt during Pauline Hanson’s National Press Club speech",
-      "link": "https://www.theguardian.com/australia-news/2026/jun/17/pauline-hanson-one-nation-national-press-club-speech-banner-stunt-police-investigation-ntwnfb",
-      "desc": "<p>Activist group GetUp claims responsibility for incident, saying ‘we thought the occasion deserved some honesty’</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/email-newsletters?CMP=cvau",
-      "pubDate": "Wed, 17 Jun 2026 09:03:20 GMT",
-      "img": "https://i.guim.co.uk/img/media/825435079ae66b4eea52bbca39bb2fb82a20088e/256_0_5990_4794/master/5990.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Bystanders frantically tried to save two children after car crashes into pram",
-      "link": "https://www.smh.com.au/national/nsw/two-children-dead-after-car-crashes-into-pram-20260617-p607qg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Desperate motorists lifted the SUV onto its side to rescue one of the children trapped underneath. The one- and five-year-old were both killed in the south-west Sydney crash.",
-      "pubDate": "Wed, 17 Jun 2026 19:02:32 +1000",
-      "img": "https://static.ffx.io/images/$zoom_1.4789%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/e70d1d84df1a3837e45f30e0f1c44060fa8aa01f7bb85c56fad4524cc31ffdc8",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Pauline Hanson unleashes in Press Club address",
-      "link": "https://www.smh.com.au/national/pauline-hanson-unleashes-in-press-club-address-20260617-p607q0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Pauline Hanson has made her first address at the National Press Club in a fiery speech, taking aim at immigration, identity politics and major public broadcasters.",
-      "pubDate": "Wed, 17 Jun 2026 19:02:02 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/454a80e92dcefb442bf3f83c4f6eb8f59e4b428d",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Kyle Sandilands ‘happy’ with multimillion-dollar ARN settlement",
-      "link": "https://www.smh.com.au/national/kyle-sandilands-happy-with-multimillion-dollar-arn-settlement-20260617-p607r8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Kyle Sandilands has commented on his multimillion-dollar ARN Media settlement, saying he could have “dragged it on” but is happy to get “back to work”.",
-      "pubDate": "Wed, 17 Jun 2026 19:01:38 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/98e7a74019e78c4b4294ce4644873100db0823d0",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Pauline Hanson makes clear what a One Nation government would be like – it’s an ugly picture",
-      "link": "https://www.theguardian.com/australia-news/2026/jun/17/pauline-hanson-press-club-speech-one-nation-government-ugly-picture-ntwnfb",
-      "desc": "<p>The One Nation leader offered a series of inflammatory statements at the National Press Club that may play well with her supporters but will alarm many others</p><ul><li><p><a href=\"https://www.the",
-      "pubDate": "Wed, 17 Jun 2026 09:01:11 GMT",
-      "img": "https://i.guim.co.uk/img/media/9bfdcf202dd766389e35316eff4154abf6f4bf2a/784_0_4725_3781/master/4725.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "‘People just love hearing about themselves’: The Gen Z yearning for magic fuelling an $8b astrology market",
-      "link": "https://www.smh.com.au/national/people-just-love-hearing-about-themselves-the-gen-z-yearning-for-magic-fuelling-an-8b-astrology-market-20260605-p6049a.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Astrology is charting new growth, particularly among Gen Zers seeking a sense of self and certainty – and, perhaps, magic – in a bleak, online world.",
-      "pubDate": "Wed, 17 Jun 2026 19:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_1.0105%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_110/t_crop_custom/q_86%2Cf_auto/7dcaeb9665dd0867d75c83744b3f12becc250eb58e147e8d21d45b9a8227bea8",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Catalano remortgages Raes on Wategos resort in Byron Bay",
-      "link": "https://www.smh.com.au/national/victoria/catalano-remortgages-raes-on-wategos-resort-in-byron-bay-20260617-p607o5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "The son of Antony Catalano has taken out two fresh mortgages over his father’s landmark property as the businessman faces charges over the alleged assault of his wife.",
-      "pubDate": "Wed, 17 Jun 2026 18:55:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.1293%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_96/t_crop_custom/q_86%2Cf_auto/e8f482e2313a065b9454173a7766d939f422eb2a",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Bill restricting late-term abortions fails to pass SA lower house",
-      "link": "https://www.abc.net.au/news/2026-06-17/abortion-bill-voted-down-in-lower-house/106808360",
-      "desc": "South Australia's lower house has voted against a bill to restrict access to abortions past 25 weeks. The legislation was defeated 36 votes to 9.",
-      "pubDate": "Wed, 17 Jun 2026 08:39:01 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/1667634eff6df2f2b533875173e8bdca?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=155&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Bill restricting late-term abortions passes SA upper house",
-      "link": "https://www.abc.net.au/news/2026-06-17/abortion-bill-passes-upper-house-sa/106808360",
-      "desc": "South Australia's upper house has passed a bill to restrict access to abortions past 25 weeks. The legislation passed 10 votes to 9 with the support of three newly-elected One Nation MPs.",
-      "pubDate": "Wed, 17 Jun 2026 08:39:01 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/1667634eff6df2f2b533875173e8bdca?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=155&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
     }
   ]
 }
