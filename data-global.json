@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-17T16:18:18.131Z",
-  "summary": "Global tensions are escalating on multiple fronts, with escalating US-Iran military strikes threatening wider regional conflict, while Israel prepares for October elections amid ongoing settler violence in the West Bank and disputed military operations near Iran. In domestic political news, the UK's Labour Party has confirmed Andy Burnham as its new leader heading toward the prime ministership. China is facing economic slowdown while pushing technological advancement through a new AI alliance, and separately, North Korea has met with top Chinese officials amid broader geopolitical maneuvering. Environmental and humanitarian crises are mounting, including a devastating earthquake in Venezuela killing nearly five thousand people, escalating energy insecurity in the Strait of Hormuz, and growing climate risks to critical infrastructure like airports.",
+  "fetchedAt": "2026-07-17T19:16:24.680Z",
+  "summary": "Global tensions are escalating across multiple regions, with escalating military pressure on Iran following suspected nuclear facility damage, Ukraine's energy infrastructure under attack, and Israel moving toward elections amid West Bank violence. Major geopolitical realignments are underway as Germany strengthens nuclear cooperation with France while pivoting toward Algeria for energy security, and China launches new AI initiatives while its economy shows signs of strain. Meanwhile, the incoming UK Labour government under Andy Burnham signals shifts in international policy, and trade friction is rising between the US and trading partners including Brazil and China. Climate change is emerging as a serious infrastructure challenge, with several countries racing to meet emissions targets while facing mounting economic and environmental pressures.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,96 @@
     }
   ],
   "articles": [
+    {
+      "title": "EU proposes slowing down cuts to carbon emissions for businesses",
+      "link": "https://www.bbc.co.uk/news/articles/ckgv0zd497zo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Under the proposals, the EU plans to relax its emissions trading system to give companies more time to reduce their carbon output.",
+      "pubDate": "Fri, 17 Jul 2026 18:34:04 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9bda/live/48708610-8204-11f1-a09e-7710dfe15161.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Germany’s Merz hails nuclear deterrence cooperation with France",
+      "link": "https://www.aljazeera.com/news/2026/7/17/germanys-merz-hails-nuclear-deterrence-cooperation-with-france?traffic_source=rss",
+      "desc": "The Franco-German cooperation is not a move to replace NATO’s nuclear umbrella, stresses German Chancellor.",
+      "pubDate": "Fri, 17 Jul 2026 18:31:27 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/afp_6a5a6390c6bc-1784308624.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Beyond LNG: Berlin’s red-carpet diplomacy signals a bigger bet on Algeria",
+      "link": "https://www.aljazeera.com/economy/2026/7/17/beyond-lng-berlins-red-carpet-diplomacy-signals-a-bigger-bet-on-algeria?traffic_source=rss",
+      "desc": "Germany, stripped of Russian pipeline gas, received Algeria&#039;s president with military honours and talked about LNG.",
+      "pubDate": "Fri, 17 Jul 2026 18:28:34 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/ap_6a5a6a6ee53a1-1784310382.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Can the US and Iran reach a lasting deal to end the conflict?",
+      "link": "https://www.aljazeera.com/video/inside-story/2026/7/17/can-the-us-and-iran-reach-a-lasting-deal-to-end-the-conflict?traffic_source=rss",
+      "desc": "Air strikes intensify raising fear of an all-out war.",
+      "pubDate": "Fri, 17 Jul 2026 18:12:00 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1784309767.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Life after amputation: Gaza women find recovery through football",
+      "link": "https://www.aljazeera.com/features/2026/7/17/life-after-amputation-gaza-women-find-recovery-through-football?traffic_source=rss",
+      "desc": "Palestinian women in Gaza who have lost limbs during Israel&#039;s genocidal war are using football as a way of recovering.",
+      "pubDate": "Fri, 17 Jul 2026 18:02:39 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/IMG-20260709-WA0150-1784306274.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Did the US just start a trade war with Brazil?",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/17/did-the-us-just-start-a-trade-war-with-brazil?traffic_source=rss",
+      "desc": "Did the US just start a trade war with Brazil?",
+      "pubDate": "Fri, 17 Jul 2026 17:15:48 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1784308450.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "China's Moonshot AI claims Kimi K3 can rival OpenAI and Anthropic",
+      "link": "https://www.bbc.co.uk/news/articles/cy9w4q8pgp0o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The company has unveiled a massive new artificial intelligence model it says can take on top American firms.",
+      "pubDate": "Fri, 17 Jul 2026 16:53:04 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2c87/live/deb1fae0-81f6-11f1-8f4c-d74af0a2675b.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "US Republicans accuse Canada of wildfire inaction",
+      "link": "https://www.bbc.co.uk/news/articles/cwyq93j34lgo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Canadian leader Mark Carney says both countries have a responsibility to fight climate change.",
+      "pubDate": "Fri, 17 Jul 2026 16:51:47 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0b00/live/0ecf40f0-81ea-11f1-b7bc-5dd9ae7a9918.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Apple regains top spot as world’s most valuable company",
+      "link": "https://www.aljazeera.com/economy/2026/7/17/apple-regains-top-spot-as-worlds-most-valuable-company?traffic_source=rss",
+      "desc": "Apple regained world’s top spot with $4.88 trillion valuation, overtaking Nvidia which saw a 3.5% market value drop.",
+      "pubDate": "Fri, 17 Jul 2026 16:47:39 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/reuters_6a5a4e2a-1784303146.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "‘They took our toilet’: How a settlement has squeezed a Palestinian village",
       "link": "https://www.aljazeera.com/features/2026/7/17/they-took-toilet-settlement-squeezed-palestinian-village?traffic_source=rss",
@@ -12303,96 +12393,6 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Will Ukraine become an EU member?",
-      "link": "https://www.aljazeera.com/video/inside-story/2026/6/17/will-ukraine-become-an-eu-member?traffic_source=rss",
-      "desc": "Ukraine has opened the first phase of membership talks with the ‌European Union.",
-      "pubDate": "Wed, 17 Jun 2026 18:53:27 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781721423.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Fed holds US interest rates steady as uncertainty over Trump's Iran deal remains",
-      "link": "https://www.bbc.com/news/articles/cdjkl78vd7lo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The Federal Reserve held rates between 3.5% and 3.75% after Kevin Warsh's first meeting in charge of the central bank.",
-      "pubDate": "Wed, 17 Jun 2026 18:41:12 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8343/live/037d0fe0-6a7d-11f1-8e56-530bbb41ec43.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "US Federal Reserve holds rates steady under new chair Warsh",
-      "link": "https://www.aljazeera.com/economy/2026/6/17/us-federal-reserve-holds-rates-steady-under-new-chair-warsh?traffic_source=rss",
-      "desc": "Heightened energy prices because of the US-Israel war with Iran have pushed US inflation to a three-year high.",
-      "pubDate": "Wed, 17 Jun 2026 18:07:19 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/reuters_6a32b7ca-1781708746.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Serial killer who murdered eight women in Long Island town imprisoned for life",
-      "link": "https://www.bbc.com/news/articles/clyw29kvlydo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "In fiery exchange, judge sentenced him to three life sentences plus 25 years to life on four other charges, all running consecutively.",
-      "pubDate": "Wed, 17 Jun 2026 17:45:54 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3647/live/5c383800-6a67-11f1-a1ef-fd29fb1a4751.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Death toll in Gaza since ‘ceasefire’ with Israel goes past 1,000",
-      "link": "https://www.aljazeera.com/news/2026/6/17/death-toll-in-gaza-since-ceasefire-with-israel-goes-past-1000?traffic_source=rss",
-      "desc": "More than 1,000 people in Gaza have been killed since a US-brokered &#039;ceasefire&#039; between Hamas and Israel was agreed.",
-      "pubDate": "Wed, 17 Jun 2026 17:14:31 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/reuters_6a305567-1781552487.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Young Palestinian women learn AI to tell stories of war on Gaza",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/young-palestinian-women-learn-ai-to-tell-stories-of-war-on-gaza?traffic_source=rss",
-      "desc": "Young Palestinian women learn AI to tell stories of war on Gaza.",
-      "pubDate": "Wed, 17 Jun 2026 16:58:42 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/WIDE-THUMB-GAZA-AI-1781715451.png?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Trump pushes to delay appointment of new spy chief in legislative standoff",
-      "link": "https://www.aljazeera.com/news/2026/6/17/trump-pushes-to-delay-appointment-of-new-spy-chief-in-legislative-standoff?traffic_source=rss",
-      "desc": "Trump says plan to keep controversial acting DNI head, Bill Pulte, in role as he pushes for surveillance, voter ID law.",
-      "pubDate": "Wed, 17 Jun 2026 16:43:43 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/ap_6a32b22a4184b-1781707306.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "AI will create more jobs for humans, not replace them, Amazon founder Bezos says",
-      "link": "https://www.bbc.com/news/articles/ceqdrw2yy3vo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The Amazon founder, who now has robotics and space travel companies, thinks AI will create a labour shortage.",
-      "pubDate": "Wed, 17 Jun 2026 16:37:41 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1b53/live/14d94320-6a65-11f1-8e1d-bbbb1017d210.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Trump: ‘Very strong’ Iran deal is a ‘wall to a nuclear weapon’",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/trump-very-strong-iran-deal-is-a-wall-to-a-nuclear?traffic_source=rss",
-      "desc": "US President Donald Trump claimed that the scheduled signing of his Iran “peace deal” in Geneva on Friday would be succe",
-      "pubDate": "Wed, 17 Jun 2026 16:30:29 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781713742.jpg?resize=1619%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
     }
   ]
 }
