@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-18T02:48:09.960Z",
-  "summary": "Australia's domestic agenda is dominated by cost-of-living pressures, with reports of real estate undercutting, stagnant wage growth, and rental market stress, while property concerns extend to a smelter cleanup bill likely falling to Tasmanian taxpayers. Political integrity remains under scrutiny following allegations against Senator Malcolm Roberts over vaccine misinformation, a robodebt whistleblower's claims about intimidation, and police conduct investigations. Technology regulation features prominently with the Prime Minister backing restraint on data centre expansion and criticism mounting over big tech firms using Australian content without compensating artists. These stories reflect broader anxieties about economic squeeze, political accountability, and corporate oversight in contemporary Australia.",
+  "fetchedAt": "2026-07-18T05:31:00.681Z",
+  "summary": "Australia's political landscape faces fresh scrutiny as Prime Minister Albanese criticizes Pauline Hanson for undermining social cohesion following an Islamophobia report, while authorities arrest so-called \"hate disruptors\" over threats to politicians. The economy shows mixed signals, with housing affordability concerns mounting as real estate firms face accusations of underquoting and rent prices drop in some Sydney suburbs, while debates continue over data centres and AI regulation. Law enforcement has been spotlighted in multiple incidents, from arrests over threats to politicians to an investigation into police conduct with a detainee and an Australian's detention by US ICE officers in Las Vegas. Several safety and accountability issues dominate, including a Perth pharmacist's sacking for self-dispensing drugs, weak medical device regulations facing investigation, and false vaccine claims from Senator Malcolm Roberts coming under scrutiny.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,76 @@
     }
   ],
   "articles": [
+    {
+      "title": "Arrival of huge US thrift chain Savers unsettles Geelong op shops",
+      "link": "https://www.abc.net.au/news/2026-07-18/us-thrift-chain-savers-arrival-unsettles-geelong-op-shops/106926136",
+      "desc": "Charity op shops in Geelong are feeling threatened by the arrival of US megastore Savers.",
+      "pubDate": "Sat, 18 Jul 2026 04:41:25 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/fad16861d23a1a3039e40f923976cd1c?impolicy=wcms_crop_resize&amp;cropH=3333&amp;cropW=2500&amp;xPos=1250&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Why India's reopening a nuclear power plant built in the 1960s",
+      "link": "https://www.abc.net.au/news/2026-07-18/india-nuclear-power-ambitions-tarapur-plant/106926796",
+      "desc": "Despite repeated setbacks and isolation, India continues to hold onto its nuclear dream.",
+      "pubDate": "Sat, 18 Jul 2026 04:23:21 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/15e436a4ac59c228e3858600502894da?impolicy=wcms_crop_resize&amp;cropH=1080&amp;cropW=810&amp;xPos=20&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Perth pharmacist sacked after illegally dispensing herself a cocktail of drugs",
+      "link": "https://www.smh.com.au/national/western-australia/perth-pharmacist-sacked-after-illegally-dispensing-herself-a-cocktail-of-drugs-20260718-p60gfy.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Over the course of nine months, Gemma Louise Latter stole almost 300 pills from Wizard Pharmacy in Carramar including diazepam, tramadol and zolpiderm ‘for personal use’ without a prescription.",
+      "pubDate": "Sat, 18 Jul 2026 14:22:10 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2122%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_27/t_crop_custom/q_86%2Cf_auto/a477fd716b49ac119d4ae10eef64bc3332a62062",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Hanson ‘undermining social cohesion’, Albanese says, as Labor responds to Islamophobia envoy’s report",
+      "link": "https://www.theguardian.com/australia-news/2026/jul/18/anthony-albanese-islamophobia-envoy-report-pauline-hanson-social-cohesion-ntwnfb",
+      "desc": "<p>Government’s response to 54 recommendations made by Aftab Malik includes new education taskforce and federal police social cohesion team </p><ul><li><p>Get our <a href=\"https://www.theguardian.com/",
+      "pubDate": "Sat, 18 Jul 2026 04:06:40 GMT",
+      "img": "https://i.guim.co.uk/img/media/462935edfffee149fe85054a8c4a816de3adb231/1017_0_6880_5504/master/6880.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "‘Hate disruptors’ make wave of arrests over threats to politicians",
+      "link": "https://www.smh.com.au/national/nsw/hate-disruptors-make-wave-of-arrests-over-threats-to-politicians-20260718-p60gfm.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Four people have been arrested this month over threats to federal politicians as a far-right code word appeared on a flyer in a country NSW town.",
+      "pubDate": "Sat, 18 Jul 2026 14:05:57 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.3502%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_76/t_crop_custom/q_86%2Cf_auto/0ff0373c31e6524d4e6d422c80f4e18283349b15ad3586a1f01b9cfa67be4686",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "The Age photos of the week, July 18, 2026",
+      "link": "https://www.smh.com.au/national/victoria/the-age-photos-of-the-week-july-18-2026-20260718-p60gfg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The week in photos from our award-winning staff photographers and regular contributors at The Age.",
+      "pubDate": "Sat, 18 Jul 2026 14:03:16 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.353%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_55/t_crop_custom/q_86%2Cf_auto/0d308141a2f6b73d50aabe7323b278b89213b603",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "There is a way to make homes cheaper. Building endless towers is not it",
+      "link": "https://www.smh.com.au/national/there-is-a-way-to-make-homes-cheaper-building-endless-towers-is-not-it-20260717-p60g2z.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Solutions to the housing crisis keep eluding our leaders. They should look to their predecessors, and take us back to the future.",
+      "pubDate": "Sat, 18 Jul 2026 13:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1293%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_96/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/fccfc250911108bbfa378b490155d79ebb6bf6f4",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
     {
       "title": "Australian tackled, handcuffed by ICE officers in Las Vegas",
       "link": "https://www.smh.com.au/national/australian-tackled-handcuffed-by-ice-officers-in-las-vegas-20260718-p60gfb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
@@ -145,6 +215,16 @@
       "desc": "The June quarterly rent report from Domain paints a mixed picture of Sydney's market, including both major surges and significant drops for rent prices in certain suburbs.",
       "pubDate": "Fri, 17 Jul 2026 21:11:50 +0000",
       "img": "https://live-production.wcms.abc-cdn.net.au/5bd651e5eaa4727b6405a59df59ed7ca?impolicy=wcms_crop_resize&amp;cropH=2851&amp;cropW=2138&amp;xPos=1068&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Regulating AI is like catching smoke, warns Christopher Pyne",
+      "link": "https://www.abc.net.au/news/2026-07-18/regulating-ai-is-like-catching-smoke-warns-christopher-pyne/106931580",
+      "desc": "Former Defence Minister Christopher Pyne tells David Lipson artificial intelligence is the most significant development since the nuclear weapon.",
+      "pubDate": "Fri, 17 Jul 2026 21:00:00 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/d9d8bd1d497ce2af89a66307aac101a6?impolicy=wcms_crop_resize&amp;cropH=2160&amp;cropW=1620&amp;xPos=1110&amp;yPos=0&amp;width=862&amp;height=1149",
       "sourceId": "abcnews",
       "sourceName": "ABC News",
       "sourceColor": "#E64626"
@@ -32368,166 +32448,6 @@
       "sourceId": "conversationau",
       "sourceName": "The Conversation AU",
       "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Sarah Game won't rule out introducing another bill to restrict late term abortion",
-      "link": "https://www.abc.net.au/news/2026-06-18/sarah-game-sa-abortion-bill-reaction/106812306",
-      "desc": "Family First upper house MLC Sarah Game has not ruled out introducing another bill restricting late-term abortion access, after her proposed legislation to restrict abortion after 25 weeks failed in t",
-      "pubDate": "Thu, 18 Jun 2026 05:14:42 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/17ab9aa7ecf25bc83dae1435a2aaca5b?impolicy=wcms_crop_resize&amp;cropH=2333&amp;cropW=1750&amp;xPos=1258&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "The audacious plan to refreeze the Arctic – podcast",
-      "link": "https://www.theguardian.com/science/audio/2026/jun/18/inside-the-audacious-plan-to-refreeze-the-arctic-podcast",
-      "desc": "<p>Sea ice is melting fast and worsening the climate crisis. But what if there were a way to thicken it again? Madeleine Finlay is joined by environment editor Damian Carrington to discuss a bold atte",
-      "pubDate": "Thu, 18 Jun 2026 05:11:33 GMT",
-      "img": "https://i.guim.co.uk/img/media/77b2b240db2f8c986edfe66c73060dbbcd3fb437/711_0_4692_3754/master/4692.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "More than 13,000 seal pups die on remote Australian island amid bird flu outbreak",
-      "link": "https://www.theguardian.com/environment/2026/jun/18/more-than-13000-seal-pups-die-on-remote-australian-island-amid-bird-flu-outbreak",
-      "desc": "<p>Testing confirms spread of deadly H5N1 virus on the subantarctic Heard Island, about 4,000km south-west of Perth</p><ul><li><p><a href=\"https://www.theguardian.com/australia-news/live/2026/jun/18/a",
-      "pubDate": "Thu, 18 Jun 2026 04:51:04 GMT",
-      "img": "https://i.guim.co.uk/img/media/6e156e320ffebe0fbec017c0e818487ef32adf50/184_301_3373_2699/master/3373.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Red Metal heap leach breakthrough fires up Qld rare earths play",
-      "link": "https://www.smh.com.au/business/companies/red-metal-heap-leach-breakthrough-fires-up-qld-rare-earths-play-20260618-p6083p.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "Red Metal Limited says leach tests at its huge Sybella rare earths project near Mount Isa back a heap-leach pathway, with coarse saprock and transitional ore delivering stunning recoveries.",
-      "pubDate": "Thu, 18 Jun 2026 14:16:18 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.7354%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_54/t_crop_custom/q_86%2Cf_auto/464d353178724e4db9dd5a5acad304e2780fbc13fc3f87cf7046405a5433be5e",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Politics with Michelle Grattan: Jonno Duniam on guilt and relief about quitting politics",
-      "link": "https://theconversation.com/politics-with-michelle-grattan-jonno-duniam-on-guilt-and-relief-about-quitting-politics-285477",
-      "desc": "The departing Liberal frontbencher also said it’s ‘mad’ to be talking about doing deals with One Nation so far from an election.",
-      "pubDate": "2026-06-18T04:02:47Z",
-      "img": "https://images.theconversation.com/files/742357/original/file-20260617-57-nab61s.jpg?ixlib=rb-4.1.0&amp;rect=0%2C582%2C8256%2C4128&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Is Australia prepared for the data centre boom?",
-      "link": "https://www.abc.net.au/news/2026-06-18/data-centre-boom-sparks-warning-to-consider-climate-change/106799658",
-      "desc": "As data centres rapidly come online to meet demand, governments are being urged to ensure that development does not outpace adequate planning.",
-      "pubDate": "Thu, 18 Jun 2026 04:02:31 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/ea30a6b569cdfdf583412a52b3d9d9d2?impolicy=wcms_crop_resize&amp;cropH=1280&amp;cropW=960&amp;xPos=480&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Australia is crying out for more tradies. Why aren’t young people answering?",
-      "link": "https://www.smh.com.au/business/workplace/australia-is-crying-out-for-more-tradies-why-aren-t-young-people-answering-20260618-p607xj.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "All around the world, young people are hedging their bets on tangible skills they can hold on to in an unpredictable future. But that’s not happening here.",
-      "pubDate": "Thu, 18 Jun 2026 14:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.5568901851851852%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_125/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/3187f16fcc8a1df0cde97da6a369ef5a31acc2e3",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Flagship unveils monster Canadian copper opportunity",
-      "link": "https://www.smh.com.au/business/companies/flagship-unveils-monster-canadian-copper-opportunity-20260618-p6083k.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "Flagship Minerals has landed the Whipsaw copper project in British Columbia, Canada, unveiling a massive drill-supported exploration target of up to 1.02 billion tonnes.",
-      "pubDate": "Thu, 18 Jun 2026 13:58:29 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.7354%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_12/t_crop_custom/q_86%2Cf_auto/b9de38ba5411dfc5d62657f3ff7d2592f08450e7bfbbca46baeb0d1aac4c98c5",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "The White House is using anime as propaganda. Fans in Japan hate it",
-      "link": "https://www.abc.net.au/news/2026-06-18/white-house-anime-propaganda-japan-petition-against-it/106799328",
-      "desc": "Both fans and the Japanese government push back after a series of Trump administration posts using images from popular anime and manga.",
-      "pubDate": "Thu, 18 Jun 2026 03:48:51 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/292747ff6b6c2a45fd224d6ebfbb4c92?impolicy=wcms_crop_resize&amp;cropH=801&amp;cropW=601&amp;xPos=0&amp;yPos=26&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Labor started building $217m Burswood racetrack before securing Supercars deal: report",
-      "link": "https://www.smh.com.au/national/western-australia/labor-started-building-217m-burswood-racetrack-before-securing-supercars-deal-report-20260618-p60807.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "An interim report on the controversial project has raised several major concerns, however Treasurer Rita Saffioti labelled it as a “political stunt”.",
-      "pubDate": "Thu, 18 Jun 2026 13:47:09 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.8478%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_117%2C$y_0/t_crop_custom/q_86%2Cf_auto/a291f3f5a832d7fa6aa2451363b64c3561229273",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Hope for hundreds of miners after colliery $434 million in debt sold",
-      "link": "https://www.abc.net.au/news/2026-06-18/gfg-tahmoor-coal-sold-to-new-owners/106812760",
-      "desc": "Hundreds of former Tahmoor miners could soon return to jobs close to home after liquidators announced the sale of the mine to a consortium led by Golden Energy and Resources and M Resources.",
-      "pubDate": "Thu, 18 Jun 2026 03:28:45 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/05a457ea33a249082af52da8cca985fd?impolicy=wcms_crop_resize&amp;cropH=683&amp;cropW=512&amp;xPos=256&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Charges dropped for woman accused of children’s murder",
-      "link": "https://www.smh.com.au/national/queensland/charges-dropped-for-woman-accused-of-childrens-murder-20260618-p6083d.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "A woman accused of killing her two adult children years apart has had a remaining murder charge dropped.",
-      "pubDate": "Thu, 18 Jun 2026 13:28:19 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.1718876805713358%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_34/t_crop_custom/q_86%2Cf_auto/67ba8501c45fb373bb3efa091f644c381b70f752",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Viking hits ore sorting success at Nevada tungsten play",
-      "link": "https://www.smh.com.au/business/companies/viking-hits-ore-sorting-success-at-nevada-tungsten-play-20260618-p6082v.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "Viking Mines has proven sensor-based ore sorting can successfully upgrade tungsten feed and reject barren waste rocks at its Linka project in Nevada.",
-      "pubDate": "Thu, 18 Jun 2026 13:20:07 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.7354%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_54/t_crop_custom/q_86%2Cf_auto/8110ab0fa4e0b952e23884fbed62bd791f15ca014f99670d7edafb20a384c1da",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Labor MP's &#34;Fake Aboriginal&#34; claim",
-      "link": "https://www.smh.com.au/national/labor-mps-fake-aboriginal-claim-20260618-p60833.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Former Treaty minister Natalie Hutchins made the claim against a Melton councillor's partner under parliamentary privilege.",
-      "pubDate": "Thu, 18 Jun 2026 13:18:52 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/cd4fd835ea6e4add17765dccca96842680419587",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Proposed data centre faces scrutiny over water and environmental risks",
-      "link": "https://www.abc.net.au/news/2026-06-18/iren-data-centre-ai-budey-local-concerns-water-river-murray/106802586",
-      "desc": "A massive data centre proposed for SA faces scrutiny over water and environmental risks.",
-      "pubDate": "Thu, 18 Jun 2026 03:03:42 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/d8dcc0b6a7f3fc344f7393e62c70024b?impolicy=wcms_crop_resize&amp;cropH=1080&amp;cropW=810&amp;xPos=371&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "What message is Pauline Hanson sending to multicultural Australia? | Fiona Katauskas",
-      "link": "https://www.theguardian.com/commentisfree/picture/2026/jun/18/pauline-hanson-national-press-club-multicultural-australia-ntwnfb",
-      "desc": "<p>They’re hearing it loud and clear</p><ul><li><p>See more of <a href=\"https://www.theguardian.com/profile/fiona-katauskas\">Fiona Katauskas’s cartoons here</a></p></li></ul> <a href=\"https://www.theg",
-      "pubDate": "Thu, 18 Jun 2026 02:58:56 GMT",
-      "img": "https://i.guim.co.uk/img/media/ee8caf5ffd2fa2c9c4d7ba3fc3c0c9d9fc18b9e4/1_0_1180_944/master/1180.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
     }
   ]
 }
