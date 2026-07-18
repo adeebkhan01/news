@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-18T03:38:51.912Z",
+  "fetchedAt": "2026-07-18T08:13:39.838Z",
   "asx200": {
     "value": 8796.7,
     "change": -169.6,
@@ -201,7 +201,7 @@
         "close": 0.7
       },
       {
-        "date": "2026-07-17",
+        "date": "2026-07-18",
         "close": 0.7
       }
     ]
@@ -211,33 +211,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4023,
-      "change": -335.9,
-      "changePercent": -7.71
+      "price": 4018.8,
+      "change": -340.1,
+      "changePercent": -7.8
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 56.22,
-      "change": -14.48,
-      "changePercent": -20.48
+      "price": 56.33,
+      "change": -14.37,
+      "changePercent": -20.33
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 81.77,
-      "change": 4.98,
-      "changePercent": 6.49
+      "price": 81.78,
+      "change": 4.99,
+      "changePercent": 6.5
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 6.27,
-      "change": -0.21,
-      "changePercent": -3.26
+      "change": -0.22,
+      "changePercent": -3.35
     },
     {
       "name": "BHP Group",
@@ -846,7 +846,14 @@
   ],
   "news": [
     {
-      "title": "Live: Port forced into last-minute line-up switch ahead of Dockers clash",
+      "title": "Live: Raiders star suffers suspected Achilles rupture, Warriors host Dragons",
+      "link": "https://www.abc.net.au/news/2026-07-18/nrl-live-blog-raiders-rabbitohs-warriors-dragons-bulldogs-tigers/106928426",
+      "snippet": "",
+      "pubDate": "Sat, 18 Jul 2026 04:32:18 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Live: Roos and Dees locked in thriller as stray boot leaves star bloodied",
       "link": "https://www.abc.net.au/news/2026-07-18/afl-rd-19-live-ptad-frem-kang-melb-coll-carl-wc-bris/106918214",
       "snippet": "",
       "pubDate": "Sat, 18 Jul 2026 03:00:21 +0000",
@@ -921,13 +928,6 @@
       "snippet": "",
       "pubDate": "Fri, 17 Jul 2026 16:54:41 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Billionaires on the beach: Inside Jeff Bezos and Lauren Sanchez’s surprise Coogee lunch",
-      "link": "https://www.smh.com.au/business/companies/did-the-world-s-fourth-richest-man-just-touch-down-in-sydney-20260717-p60gbk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Amazon founder Jeff Bezos, or his doppelganger, enjoyed the views and fine food in Coogee alongside his wife Lauren Sanchez Bezos.",
-      "pubDate": "Fri, 17 Jul 2026 19:56:34 +1000",
-      "source": "SMH Business"
     }
   ]
 }
