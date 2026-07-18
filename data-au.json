@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-18T19:10:38.670Z",
-  "summary": "Australia's domestic agenda is dominated by education costs, with private school fees rising as parents spend over $4.5 billion annually, while affordability concerns extend to housing where experts challenge high-rise development as a solution. The country faces serious governance and safety issues including a damning police clearance of a paedophile to work with children, a toxic workplace scandal at Mardi Gras, and regulatory gaps in medical device oversight that have proven deadly. Prime Minister Albanese has warned that Islamophobia is nearing normalisation, responding to a report highlighting divisive political rhetoric. Regionally, Perth confronts a water crisis with residents drinking from bird baths, while tragic incidents including deaths on the Sydney Harbour Bridge and a rock climbing accident dominate emergency news.",
+  "fetchedAt": "2026-07-18T21:54:51.549Z",
+  "summary": "Australia's political landscape faces scrutiny today with Pauline Hanson's international appearances and One Nation's polling surge drawing criticism over conspiracy theories and extremist associations, while the Albanese government grapples with questions about AI policy and economic management. Regulatory and workplace safety issues dominate the agenda, from medical device loopholes that have proven deadly to CFMEU corruption inquiries and allegations of toxic workplaces in major organisations. Consumer issues including vape nicotine levels and private school fee increases highlight growing affordability pressures, while the energy sector disputes the government's fuel tax break and its impact on decarbonisation efforts. A stabbing in Sydney and several traffic accidents round out a day marked by ongoing public safety and infrastructure concerns.",
   "sources": [
     {
       "id": "abcnews",
@@ -30,11 +30,191 @@
   ],
   "articles": [
     {
+      "title": "Concern over nicotine level in vapes",
+      "link": "https://www.smh.com.au/national/concern-over-nicotine-level-in-vapes-20260719-p60gj2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Some black market vapes have the same amount of nicotine in them as 600 cigarettes, a new study has claimed.",
+      "pubDate": "Sun, 19 Jul 2026 07:48:14 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/6b586a107e089dc526146b18b251b87e50adcd0c",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Man stabbed in Sydney's eastern suburbs",
+      "link": "https://www.smh.com.au/national/man-stabbed-in-sydneys-eastern-suburbs-20260719-p60gj3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A man has been stabbed in the face and hands at a unit in Sydney's eastern suburbs.",
+      "pubDate": "Sun, 19 Jul 2026 07:48:04 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/7395ab60901a1d0ded132d0d93ce03024e6db4a1",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Hanson speaks at conservative conference in London",
+      "link": "https://www.smh.com.au/national/hanson-speaks-at-conservative-conference-in-london-20260719-p60gj1.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "One Nation leader Pauline Hanson was a speaker at the CPAC conservative conference in London, capping off her European trip.",
+      "pubDate": "Sun, 19 Jul 2026 07:47:43 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/b861e1e4d1f3ef35227d72be576a630fb864637b",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Ex-tradie in the running for Australia's best small bar prize",
+      "link": "https://www.abc.net.au/news/2026-07-19/small-sydney-inner-west-bars-pubs-revitalising-nightlife/106924010",
+      "desc": "Taran Howard opened up his small bar in Sydney's inner west last September. Since then, he has learnt how to mix drinks \"on the fly\".",
+      "pubDate": "Sat, 18 Jul 2026 21:21:30 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/8f00879c2536d06e011e2e086a4bfd9a?impolicy=wcms_crop_resize&amp;cropH=1201&amp;cropW=901&amp;xPos=548&amp;yPos=165&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Inquiry hears of CFMEU's political influence and intimidation in Queensland",
+      "link": "https://www.abc.net.au/news/2026-07-19/queensland-cfmeu-inquiry-wrap/106926394",
+      "desc": "The inquiry heard claims former senior public servants and industry figures faced aggressive union tactics.",
+      "pubDate": "Sat, 18 Jul 2026 21:07:24 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/e76e35d5adeeaf69f092afc15cf7ba3d?impolicy=wcms_crop_resize&amp;cropH=784&amp;cropW=588&amp;xPos=190&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Musos fear payday super rules could ruin live music industry",
+      "link": "https://www.abc.net.au/news/2026-07-19/jazz-artists-fear-super-changes-impacts-music-scene/106912640",
+      "desc": "Two long-running Australian jazz festivals have been cancelled, with organisers blaming new superannuation rules.",
+      "pubDate": "Sat, 18 Jul 2026 20:33:37 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/f9f75b69cb61690c74ba78ffb584a970?impolicy=wcms_crop_resize&amp;cropH=2813&amp;cropW=2110&amp;xPos=1445&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "From 40 cartographers to two: Street directories nearing end of the road",
+      "link": "https://www.abc.net.au/news/2026-07-19/street-directories-are-nearing-the-end-of-the-road/106883510",
+      "desc": "While sales of the once-ubiquitous street directories have fallen dramatically since their peak in the 1980s, they still have a niche market.",
+      "pubDate": "Sat, 18 Jul 2026 20:18:01 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/0e9b2eef401501cecfb07e85abf3f144?impolicy=wcms_crop_resize&amp;cropH=2844&amp;cropW=2133&amp;xPos=744&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Australia’s fuel tax break slowing BHP’s decarbonisation, mining giant’s investors warned",
+      "link": "https://www.theguardian.com/australia-news/2026/jul/18/australias-fuel-tax-break-slowing-bhps-decarbonisation-mining-giants-investors-warned",
+      "desc": "<p>Removal of tax credit would incentivise electrification of truck and rail fleets, Australian Centre for Corporate Responsibility says</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/emai",
+      "pubDate": "Sat, 18 Jul 2026 20:00:09 GMT",
+      "img": "https://i.guim.co.uk/img/media/cf3450a5907c2470ab1aca0224a58f06842f93c4/553_0_2752_2202/master/2752.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Chemtrails to Covid: Malcolm Roberts’ conspiracy theory beliefs under scrutiny amid One Nation surge in polls",
+      "link": "https://www.theguardian.com/australia-news/2026/jul/19/chemtrails-to-covid-malcolm-roberts-conspiracy-theory-beliefs-under-scrutiny-amid-one-nation-surge-in-polls",
+      "desc": "<p>The Queensland senator’s appearances on fringe podcasts includes statements on a global elite, the UN, the climate crisis and support for Vladimir Putin</p><ul><li><p>Get our <a href=\"https://www.t",
+      "pubDate": "Sat, 18 Jul 2026 20:00:08 GMT",
+      "img": "https://i.guim.co.uk/img/media/751f85af82bd91669ecbef17713727bff586fad0/131_0_3750_3000/master/3750.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "When Pauline Hanson and Tommy Robinson met, hatred was a given. More disturbing was the spectacle | Hugh Riminton",
+      "link": "https://www.theguardian.com/commentisfree/2026/jul/19/when-pauline-hanson-and-tommy-robinson-met-hatred-was-a-given-more-disturbing-was-the-spectacle",
+      "desc": "<p>One Nation’s polling popularity is proof positive we live in an upside-down world which surpasses substance and vaults reason</p><p>Pauline Hanson’s podcast with Tommy Robinson was dispiriting in u",
+      "pubDate": "Sat, 18 Jul 2026 20:00:08 GMT",
+      "img": "https://i.guim.co.uk/img/media/672dba3fad70498ba7605802111cae2f304df293/155_63_1103_883/master/1103.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "There will be disagreement at next week’s Labor conference – but don’t expect the feuds of the past",
+      "link": "https://www.theguardian.com/australia-news/2026/jul/18/there-will-be-disagreement-at-next-weeks-labor-conference-but-dont-expect-the-feuds-of-the-past",
+      "desc": "<p>It’s hoped a deliberate demonstration of ‘constructive unity’ by the party will entrench the public’s perception of Labor stability</p><p>The Labor national conference has long been the stage for s",
+      "pubDate": "Sat, 18 Jul 2026 20:00:07 GMT",
+      "img": "https://i.guim.co.uk/img/media/fd2105e7a8e40ee9adc07b9b3dc707f93c774e22/330_0_3287_2631/master/3287.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Albanese’s AI speech was a good start. Now Australia must confront these bigger questions | Julianne Schultz",
+      "link": "https://www.theguardian.com/commentisfree/2026/jul/18/albaneses-ai-speech-was-a-good-start-now-australia-must-confront-these-bigger-questions",
+      "desc": "<p>The PM’s vision must look beyond datacentres and copyright to questions of capability, security and public benefit</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/email-newsletters?CMP=c",
+      "pubDate": "Sat, 18 Jul 2026 20:00:07 GMT",
+      "img": "https://i.guim.co.uk/img/media/ddef10e089cacae8d6bf7f0090d7c5f07db5c63d/786_0_5967_4777/master/5967.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Abbott, Turnbull and Morrison: Paul Kelly on the Liberals’ identity crisis - podcast",
+      "link": "https://www.theguardian.com/australia-news/audio/2026/jul/19/abbott-turnbull-and-morrison-paul-kelly-on-the-liberals-identity-crisis-full-story-podcast",
+      "desc": "<p>Political editor <strong>Tom McIlroy</strong> talks to<strong> </strong>Paul Kelly about his new book on the turbulent era of the Liberal party under prime ministers Tony Abbott, Malcolm Turnbull a",
+      "pubDate": "Sat, 18 Jul 2026 20:00:06 GMT",
+      "img": "https://i.guim.co.uk/img/media/7247704cba135cd7459a96e7a8c17323b1389d02/313_0_1875_1500/master/1875.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "How brighter, safer headlights may cause problems for other drivers",
+      "link": "https://www.abc.net.au/news/2026-07-19/led-headlights-dazzling-drivers-glare-road-safety/106919228",
+      "desc": "Bright LED headlights improve visibility for motorists and make them significantly safer at night, but what about the driver coming the other way?",
+      "pubDate": "Sat, 18 Jul 2026 19:59:41 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/a6fdc701c075474734c1899a8c178d38?impolicy=wcms_crop_resize&amp;cropH=3024&amp;cropW=2268&amp;xPos=882&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Cattle farmers plant trees for sustainable aviation fuel",
+      "link": "https://www.abc.net.au/news/2026-07-19/pongamia-tree-aviation-fuel/106893544",
+      "desc": "A north Queensland farming family is trialling planting biofuel-producing trees alongside their cattle.",
+      "pubDate": "Sat, 18 Jul 2026 19:29:23 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/99db736ffe69aa509fdfaa4a236921be?impolicy=wcms_crop_resize&amp;cropH=2832&amp;cropW=2124&amp;xPos=1058&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Flash flood warnings strike north-east US amid wildfire smoke from Canada",
+      "link": "https://www.theguardian.com/us-news/2026/jul/18/flash-flood-weather-north-east-us",
+      "desc": "<p>Poor air quality from wildfires continues to plague New York City as several neighborhoods hit by thunderstorms</p><p>Saturday is delivering a double dose of dangerous weather across the north-east",
+      "pubDate": "Sat, 18 Jul 2026 19:11:13 GMT",
+      "img": "https://i.guim.co.uk/img/media/ae0f77f98b146bb5c9fd62de529f6cc494c91b5f/811_0_5000_4000/master/5000.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Sara Albrecht took on Trump's tariffs. She got 'violent' calls",
+      "link": "https://www.abc.net.au/news/2026-07-19/conservative-law-firm-that-took-on-trump-and-won/106921598",
+      "desc": "When a law centre decided to fight Donald Trump's \"liberation day\" tariffs, it was acutely aware of possible \"retaliation\" from a president who takes matters \"personally\".",
+      "pubDate": "Sat, 18 Jul 2026 19:10:27 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/ea6870de0d57b82f12e39d52e7fe071e?impolicy=wcms_crop_resize&amp;cropH=2074&amp;cropW=1556&amp;xPos=765&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
       "title": "The anti-aging industry promises to extend life. Here's the reality",
       "link": "https://www.abc.net.au/news/2026-07-19/biohacking-anti-aging-science-promise-to-extend-human-lifespan/106923024",
       "desc": "The fear of aging is driving a wave of biohacking businesses promising to help restore youth and fight disease. Four Corners investigates the race to reverse the aging process.",
       "pubDate": "Sat, 18 Jul 2026 19:00:30 +0000",
       "img": "https://live-production.wcms.abc-cdn.net.au/37ef0fc2c44e159a4fe15d071f466b04?impolicy=wcms_crop_resize&amp;cropH=959&amp;cropW=719&amp;xPos=521&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Hanson faces rough political seas beyond the Mediterranean",
+      "link": "https://www.abc.net.au/news/2026-07-19/pauline-hanson-one-nation-dolce-gabbana-liberals-taylor/106928124",
+      "desc": "Many voters are unhappy with the hand they feel successive governments have dealt them and no one has tapped into that better than Pauline Hanson.",
+      "pubDate": "Sat, 18 Jul 2026 19:00:00 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/b46f6e9def1b0689025c0d7ad257b877?impolicy=wcms_crop_resize&amp;cropH=1280&amp;cropW=960&amp;xPos=162&amp;yPos=0&amp;width=862&amp;height=1149",
       "sourceId": "abcnews",
       "sourceName": "ABC News",
       "sourceColor": "#E64626"
@@ -31798,136 +31978,6 @@
       "sourceId": "abcnews",
       "sourceName": "ABC News",
       "sourceColor": "#E64626"
-    },
-    {
-      "title": "Australia to provide Ukraine extra $100 million",
-      "link": "https://www.smh.com.au/national/australia-to-provide-ukraine-extra-100-million-20260619-p6089d.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Australia will give Ukraine a further $100 million for military spending.",
-      "pubDate": "Fri, 19 Jun 2026 07:07:05 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/c9edc9d536c5a7f3ba772dc4d737615687a7b628",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Live: Treasurer defends budget backdown despite Labor losing 'political paint'",
-      "link": "https://www.abc.net.au/news/2026-06-19/federal-politics-live-blog-chalmers-defends-backdown/106816924",
-      "desc": "Treasurer Jim Chalmers says the federal government has lost \"political paint\" from May's budget while defending a backdown on key budget measures. Follow live.",
-      "pubDate": "Thu, 18 Jun 2026 21:03:25 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/bfa731f0bc1a72b3641d1ac275409baa?impolicy=wcms_crop_resize&amp;cropH=1080&amp;cropW=810&amp;xPos=403&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Lal Lal Falls runs dry as upstream 'greed' sees water vanish",
-      "link": "https://www.abc.net.au/news/2026-06-19/lal-lal-falls-sacred-indigenous-site-without-water/106802870",
-      "desc": "Indigenous and environmental groups are accusing a Chinese company of hoarding water on a Victorian property and causing a sacred waterfall to run dry.",
-      "pubDate": "Thu, 18 Jun 2026 21:01:26 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/1ca1c70e10878c4c8940955a2650a1a1?impolicy=wcms_crop_resize&amp;cropH=3748&amp;cropW=2811&amp;xPos=2189&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "News live: Australia gives Ukraine another $100m for fight against Russia; AFL great in hospital after truck crash",
-      "link": "https://www.theguardian.com/australia-news/live/2026/jun/19/news-live-australia-ukraine-jim-chalmers-anthony-albanese-capital-gains-tax-concessions-business-pauline-hanson-one-nation-ntwnfb",
-      "desc": "<p>Two payments of $50m will boost Ukraine’s air defence and munitions supply. Follow today’s news live</p><p>• Get our <a href=\"https://www.theguardian.com/email-newsletters?CMP=cvau_sfl\">breaking ne",
-      "pubDate": "Thu, 18 Jun 2026 20:27:28 GMT",
-      "img": "https://i.guim.co.uk/img/media/58ab8cc0f1a88c772eeb0b794ed37cc57a46180b/229_0_2000_1601/master/2000.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Microbes destroyed an ancient pterosaur’s wingbone, then preserved it for 100 million years",
-      "link": "https://theconversation.com/microbes-destroyed-an-ancient-pterosaurs-wingbone-then-preserved-it-for-100-million-years-281528",
-      "desc": "What a prehistoric flying reptile’s bone reveals about its diet – and the future of fossil science.",
-      "pubDate": "2026-06-18T20:08:19Z",
-      "img": "https://images.theconversation.com/files/742292/original/file-20260616-82-oorxzh.jpeg?ixlib=rb-4.1.0&amp;rect=0%2C91%2C2048%2C1024&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "‘Park the bus’, ‘the false nine’ and ‘total football’: what do soccer’s strange phrases mean?",
-      "link": "https://theconversation.com/park-the-bus-the-false-nine-and-total-football-what-do-soccers-strange-phrases-mean-285251",
-      "desc": "Following the World Cup but confused by some of the language used by commentators and fans? You’re not alone.",
-      "pubDate": "2026-06-18T20:07:06Z",
-      "img": "https://images.theconversation.com/files/742002/original/file-20260616-57-jor5yg.jpg?ixlib=rb-4.1.0&amp;rect=0%2C45%2C3050%2C1525&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Push to turn NSW south coast into state's largest national park",
-      "link": "https://www.abc.net.au/news/2026-06-19/great-southern-forest-national-park-proposal/106784904",
-      "desc": "The National Parks Association wants an ambitious 1.2-million-hectare national park spanning from the Illawarra to the Victorian border.",
-      "pubDate": "Thu, 18 Jun 2026 20:00:14 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/685a0a6aef63f470371189fddc6debdf?impolicy=wcms_crop_resize&amp;cropH=2346&amp;cropW=1760&amp;xPos=1207&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Qantas’ Project Sunrise is no sonic boom, but an incremental ‘moonshot’",
-      "link": "https://www.smh.com.au/business/companies/qantas-project-sunrise-is-no-sonic-boom-but-an-incremental-moonshot-20260612-p606bs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "Qantas’ new 22-hour mega-long-haul plane represents something rare in the commercial aviation sector: engineering progress. Whether travellers buy it is another question.",
-      "pubDate": "Fri, 19 Jun 2026 05:50:35 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.353%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_109/t_crop_custom/q_86%2Cf_auto/t_metro_analysis_no_age_social_wm/3687f50c5b83c8f0bae963a8e53d1ed32e76b6aa",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "More than chatbots: why business AI agents are Big Tech’s next product battleground",
-      "link": "https://theconversation.com/more-than-chatbots-why-business-ai-agents-are-big-techs-next-product-battleground-285055",
-      "desc": "Meta’s just-launched Business Agent could mark a major shift in how companies of all sizes deal with customers. But what are the trade-offs?",
-      "pubDate": "2026-06-18T19:44:41Z",
-      "img": "https://images.theconversation.com/files/742354/original/file-20260617-57-gawx94.jpg?ixlib=rb-4.1.0&amp;rect=0%2C759%2C6000%2C3000&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Former principal raises concerns with special school teacher training",
-      "link": "https://www.abc.net.au/news/2026-06-19/qld-special-school-teachers-below-allocation/106799014",
-      "desc": "Data shows special schools across Queensland are operating with fewer than the number of allocated teachers.",
-      "pubDate": "Thu, 18 Jun 2026 19:33:18 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/d80d5941b69751397cad368249892cb6?impolicy=wcms_crop_resize&amp;cropH=1667&amp;cropW=1250&amp;xPos=625&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Trump administration reverses decision to scrap ocean monitoring system",
-      "link": "https://www.theguardian.com/us-news/2026/jun/18/ocean-monitoring-system-reversal-trump-administration",
-      "desc": "<p>Move to dismantle $368m sea observatory initiative faced opposition from experts and lawmakers</p><p>The Donald <a href=\"https://www.theguardian.com/us-news/trump-administration\">Trump administrati",
-      "pubDate": "Thu, 18 Jun 2026 19:31:44 GMT",
-      "img": "https://i.guim.co.uk/img/media/e2ee005d0d19a4cbe55fdbb3768234ff13892179/1003_1442_3195_2556/master/3195.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Allan’s hand-picked business council on ice after 18 months, chair quietly moved on",
-      "link": "https://www.smh.com.au/national/victoria/allan-s-hand-picked-business-council-on-ice-after-18-months-chair-quietly-moved-on-20260618-p6085j.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "After assembling some of the state’s brightest business luminaries, the premier is no longer taking meetings with her Business Council as the work from home debate continues to rage.",
-      "pubDate": "Fri, 19 Jun 2026 05:30:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.3236%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/7ff6071e20cbf67498614cb5edafc0057e2e4489",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "ASX set to fall, Wall Street rebounds; Intel surges as Trump announces Apple deal",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-fall-wall-street-rebounds-intel-surges-as-trump-announces-apple-deal-20260619-p6088p.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "Stocks rose on Wall Street, taking back most of their losses from a day earlier, and are on track to notch weekly gains.",
-      "pubDate": "Fri, 19 Jun 2026 05:21:01 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.242%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_34/t_crop_custom/q_86%2Cf_auto/d9089e5b1729382ee8f83c71390567936c1f4e6e",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
     }
   ]
 }
