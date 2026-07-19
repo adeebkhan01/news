@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-19T08:25:13.436Z",
-  "summary": "The Middle East remains the dominant focus of global news, with escalating military exchanges between the US and Iran following the deaths of American soldiers in a Jordan attack, prompting reciprocal strikes and raising regional tensions significantly. The Israel-Palestine conflict continues to generate substantial coverage, encompassing ongoing Gaza hostilities despite ceasefire efforts, Israeli settlement expansion, and international condemnation including Belgium's import ban on Israeli settlement goods. European affairs feature Hungary's presidential removal and a new EU border system causing airport delays, while secondary stories include sports coverage of the World Cup final, economic pressures on Russia's wartime economy, and various political developments in France, Germany, and the UK.",
+  "fetchedAt": "2026-07-19T10:37:47.286Z",
+  "summary": "The Middle East faces escalating military tensions after Iranian forces attacked a US military base in Jordan, killing two American service members, prompting the US to launch retaliatory strikes on Iranian infrastructure over multiple nights. Russia meanwhile continues its bombardment campaign in Ukraine with its largest ballistic missile assault of the war targeting Kyiv. The Israeli-Palestinian conflict remains acute with ongoing attacks on civilians in Gaza, military operations in the West Bank, and international responses including Belgium's ban on settlement imports. Domestic political shifts are underway across Europe, notably Hungary's parliament backing removal of the president while Lebanon's leader heads to Washington to discuss peace negotiations.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,16 @@
     }
   ],
   "articles": [
+    {
+      "title": "Russia launches major ballistic missile attack on Kyiv",
+      "link": "https://www.bbc.co.uk/news/articles/c2el7xpnzrpo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "One death is reported in what President Zelensky calls \"one of the most massive ballistic attacks\" on Ukraine's capital.",
+      "pubDate": "Sun, 19 Jul 2026 09:54:50 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/856a/live/4c968bc0-8346-11f1-9454-a31108ec7e77.png",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
     {
       "title": "Russia launches largest ballistic missile attack on Kyiv since start of war",
       "link": "https://www.aljazeera.com/news/2026/7/19/russia-launches-largest-ballistic-missile-attack-on-kyiv-since-start-of-war?traffic_source=rss",
@@ -63,6 +73,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Russia's largest ballistic assault of war rocks Kyiv",
+      "link": "https://www.dw.com/en/russia-s-largest-ballistic-assault-of-war-rocks-kyiv/a-78022851?maca=en-rss-en-eu-2092-rdf",
+      "desc": "Fires broke out across the Ukrainian capital after Russia's latest missile attack, which used the highest number of ballistic missiles of the war so far. Several people have been injured in Kyiv.",
+      "pubDate": "2026-07-19T03:40:00Z",
+      "img": "https://static.dw.com/image/78022794_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "‘Spanish style’ wins over New York’s die-hard World Cup fans ahead of final",
@@ -11940,66 +11960,6 @@
       "desc": "South Korea&#039;s president said Trump had told him the &#039;time had come&#039; to focus on North Korea &#039;issue&#039; at the G7 summit.",
       "pubDate": "Fri, 19 Jun 2026 11:07:23 +0000",
       "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/epa_6a34f9a7cdb4-1781856679.jpg?resize=1920%2C1369",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Lebanon says Israeli strikes kill 18 as Israel says four soldiers killed by Hezbollah",
-      "link": "https://www.bbc.com/news/articles/c23ymz1n9rmo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "It comes a day after the US and Iran signed a deal to end their conflict, including fighting in Lebanon.",
-      "pubDate": "Fri, 19 Jun 2026 10:12:21 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1045/live/9af8ef40-6bc9-11f1-8546-8f19e4fe30f4.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "US-Iran talks postponed as Vance pulls out of Switzerland trip",
-      "link": "https://www.bbc.com/news/articles/c8r2eme2n5do?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The talks were expected to focus on implementing the deal to end the war signed earlier this week.",
-      "pubDate": "Fri, 19 Jun 2026 09:38:44 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f807/live/15c36cd0-6ba9-11f1-ad4f-418bfa76e5cc.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "US curbs Anthropic AI access, raising global concerns",
-      "link": "https://www.dw.com/en/us-curbs-anthropic-ai-access-raising-global-concerns/a-77577694?maca=en-rss-en-bus-2091-rdf",
-      "desc": "The Trump administration has restricted foreign access to Anthropic's latest AI models over security fears, forcing a global shutdown. Could the row hurt the Claude-maker's IPO plans and set a far-rea",
-      "pubDate": "2026-06-19T09:21:00Z",
-      "img": "https://static.dw.com/image/77592246_6.jpg",
-      "sourceId": "dwnews",
-      "sourceName": "DW News",
-      "sourceColor": "#002B55"
-    },
-    {
-      "title": "US export ban on Anthropic’s AI models further strains alliances",
-      "link": "https://www.aljazeera.com/news/2026/6/19/us-export-ban-on-anthropics-ai-models-further-strains-alliances?traffic_source=rss",
-      "desc": "Trump administration&#039;s move to cut off allies&#039; access to advanced AI prompts calls for greater self-reliance.",
-      "pubDate": "Fri, 19 Jun 2026 09:05:57 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/AP26127571392608-1-1780015397_13c669-1780016460.jpg?resize=1200%2C630&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "For one Yemeni, World Cup serves as a marker of war and peace",
-      "link": "https://www.aljazeera.com/features/2026/6/19/for-one-yemeni-world-cup-serves-as-a-marker-of-war-and-peace?traffic_source=rss",
-      "desc": "Since 1982, a Yemeni fan&#039;s commitment to the World Cup has endured war, economic turmoil, and personal sacrifices.",
-      "pubDate": "Fri, 19 Jun 2026 08:49:47 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/Adel-Mohsen-watches-the-opening-match-of-the-World-Cup-on-a-giant-public-screen-in-Mukalla-while-taking-notes-for-a-later-football-analysis.-Saeed-Al-BatatiAl-Jazeera-1781793807.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "World Cup: Who is Ayyoub Bouaddi, the French teenager playing for Morocco?",
-      "link": "https://www.aljazeera.com/sports/2026/6/19/world-cup-who-is-ayyoub-bouaddi-the-french-teenager-playing-for-morocco?traffic_source=rss",
-      "desc": "A promising midfielder marked for the French team, Bouaddi is a breakout sensation on his World Cup debut with Morocco.",
-      "pubDate": "Fri, 19 Jun 2026 08:32:17 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2025-12-05T195701Z_2053407804_UP1ELC51JF08L_RTRMADP_3_SOCCER-FRANCE-LIL-OM-1781838545.jpg?resize=1920%2C1440",
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
