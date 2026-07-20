@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-20T14:14:55.143Z",
-  "summary": "Global tensions are escalating sharply, with the US conducting multiple nights of strikes against Iran in response to attacks on American personnel, while regional instability spreads across the Middle East including attacks on Kuwait and Lebanon. In India, thousands of Gen Z protesters dubbed the \"cockroach\" movement are marching on parliament to demand education reforms, representing one of the country's largest youth-led demonstrations in years. The UK is entering a new political era with Andy Burnham set to become prime minister on Monday, taking over from a government that has cycled through seven leaders in a decade. Elsewhere, Colombia faces leadership tensions as President Petro prepares a farewell speech, the EU has fined AliExpress a record 550 million euros for enabling illegal goods sales, and a severe flash flooding incident in Utah has killed five people including a firefighter.",
+  "fetchedAt": "2026-07-20T16:27:19.349Z",
+  "summary": "The United States and Iran are in active military conflict with the US conducting nine consecutive nights of strikes on Iranian positions, while diplomatic efforts continue through mediators according to Iranian statements. Hamas has named Khalil al-Hayya as its new overall political leader following ongoing Middle East tensions. In domestic politics, Britain has a new prime minister in Andy Burnham, while India is experiencing mass protests dubbed the \"cockroach\" movement demanding education reforms and drawing police response. Separately, the European Union has fined AliExpress a record 550 million euros for facilitating illegal goods sales, and the UN is attempting to revive peace talks in Cyprus.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Iran says diplomatic efforts ongoing via mediators amid fighting with US",
+      "link": "https://www.aljazeera.com/news/2026/7/20/iran-says-diplomatic-efforts-ongoing-via-mediators-amid-fighting-with-us?traffic_source=rss",
+      "desc": "An Iranian army spokesman asserts the war will continue until deterrence against further attacks has been achieved.",
+      "pubDate": "Mon, 20 Jul 2026 16:12:07 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/epa_6a5e4808e373-1784563720.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Who is Khalil al-Hayya, Hamas’s newly elected political chief?",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/20/who-is-khalil-al-hayya-hamass-newly-elected-political-chief?traffic_source=rss",
+      "desc": "Hamas has announced the election of Khalil al-Hayya as the new head of its political bureau.",
+      "pubDate": "Mon, 20 Jul 2026 15:59:30 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/WIDE-THUMB-al-Hayya-1784563022.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "What are ‘civilian’ sites in international law and where have US, Iran hit?",
+      "link": "https://www.aljazeera.com/news/2026/7/20/what-are-civilian-sites-in-international-law-and-where-have-us-iran-hit?traffic_source=rss",
+      "desc": "The US has escalated attacks on Iranian roads, bridges and power plants, and Iran too, has responded.",
+      "pubDate": "Mon, 20 Jul 2026 14:37:16 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/AFP__20260718__C2JR9DR__v3__HighRes__TopshotIranUsIsraelWar-1784462360_76d046-1784462424.jpg?resize=1200%2C630&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Guterres to visit Cyprus as UN seeks to revive peace talks",
+      "link": "https://www.dw.com/en/guterres-to-visit-cyprus-as-un-seeks-to-revive-peace-talks/a-78037819?maca=en-rss-en-eu-2092-rdf",
+      "desc": "UN Secretary-General Antonio Guterres will visit Cyprus next week in what is seen as an effort to kickstart the stalled peace process. Why now? What is known about the plan? And what might be differen",
+      "pubDate": "2026-07-20T14:16:00Z",
+      "img": "https://static.dw.com/image/75483855_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
+    },
+    {
+      "title": "Why a 90-year-old treaty limits NATO in the Black Sea",
+      "link": "https://www.dw.com/en/why-a-90-year-old-treaty-limits-nato-in-the-black-sea/a-77966363?maca=en-rss-en-eu-2092-rdf",
+      "desc": "A 90-year-old treaty still shapes the balance of power in the Black Sea. As Ukraine fights on against Russia, can NATO project power into waters it can't enter freely?",
+      "pubDate": "2026-07-20T14:10:00Z",
+      "img": "https://static.dw.com/image/77964384_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
+    },
+    {
+      "title": "Hamas names Khalil al-Hayya as new overall leader",
+      "link": "https://www.bbc.co.uk/news/articles/cx25nzkyj50o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The Palestinian armed group's Qatar-based chief negotiator replaces Yahya Sinwar, who was killed by Israeli forces in Gaza in 2024.",
+      "pubDate": "Mon, 20 Jul 2026 14:02:31 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6ba5/live/ce9d2310-842f-11f1-8db9-6b4471749e2a.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
     {
       "title": "Petro to give farewell speech amid Colombia transfer-of-power tensions",
       "link": "https://www.aljazeera.com/news/2026/7/20/petro-to-give-farewell-speech-amid-colombia-transfer-of-power-tensions?traffic_source=rss",
@@ -143,6 +203,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Meet Andy Burnham, Britain's prime minister",
+      "link": "https://www.dw.com/en/meet-andy-burnham-britain-s-prime-minister/a-77664543?maca=en-rss-en-eu-2092-rdf",
+      "desc": "Andy Burnham has been sworn in as the successor to British Prime Minister Keir Starmer. The former Manchester mayor has become a leading figure in the Labour Party and one of the UK's most popular pol",
+      "pubDate": "2026-07-20T11:37:00Z",
+      "img": "https://static.dw.com/image/77645769_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "Occupied West Bank World Cup screening halted for funeral",
@@ -11933,56 +12003,6 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
-    },
-    {
-      "title": "How Ivan Cepeda emerged a frontrunner in Colombia’s presidential election",
-      "link": "https://www.aljazeera.com/news/longform/2026/6/20/how-ivan-cepeda-emerged-a-frontrunner-in-colombias-presidential-election?traffic_source=rss",
-      "desc": "Critics say Cepeda, a soft-spoken senator, became a &#039;hero to the left&#039; after he took on a right-wing president in court.",
-      "pubDate": "Sat, 20 Jun 2026 16:04:37 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/AP26167801696887-1781825300.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Trump insists Italy’s Meloni sought photos with him to boost popularity",
-      "link": "https://www.aljazeera.com/news/2026/6/20/trump-insists-italys-meloni-sought-photos-with-him-to-boost?traffic_source=rss",
-      "desc": "Comments escalate a row between the once-close leaders that has emerged during the conflict with Iran.",
-      "pubDate": "Sat, 20 Jun 2026 15:58:55 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/getty_6a36ab4391-1781967683.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Meloni tells Trump to 'focus on your own popularity' as row escalates",
-      "link": "https://www.bbc.com/news/articles/cgqj77909jpo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The US president earlier questioned Meloni's popularity after suggesting she \"begged\" for a photo at G7 summit",
-      "pubDate": "Sat, 20 Jun 2026 15:31:12 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/614c/live/49688d60-6bd9-11f1-b1db-af71d47507d6.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Bolivian president declares state of emergency",
-      "link": "https://www.bbc.com/news/articles/cr47wn92zdgo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The move comes after weeks of anti-government protests that have caused a shortage of basic goods in Bolivia.",
-      "pubDate": "Sat, 20 Jun 2026 15:27:09 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/beac/live/71781aa0-6cab-11f1-8cf1-179ca1da487f.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Court bans Spanish PM’s wife from leaving country amid corruption probe",
-      "link": "https://www.aljazeera.com/news/2026/6/20/court-bans-spanish-pms-wife-from-leaving-country-amid-corruption-probe?traffic_source=rss",
-      "desc": "Begona Gomez is accused of using her position as the prime minister&#039;s wife ⁠to secure work contracts.",
-      "pubDate": "Sat, 20 Jun 2026 14:21:15 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/reuters_6a369964-1781963108.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
     }
   ]
 }
