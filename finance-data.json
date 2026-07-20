@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-20T20:01:02.187Z",
+  "fetchedAt": "2026-07-20T22:27:00.878Z",
   "asx200": {
     "value": 8791.3,
     "change": -37.4,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.7,
     "change": 0,
-    "changePercent": -0.14,
+    "changePercent": -0.23,
     "previousClose": 0.7,
     "asOf": "2026-07-20",
     "history": [
@@ -191,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4013.4,
-      "change": -210.7,
-      "changePercent": -4.99
+      "price": 4010.4,
+      "change": -213.7,
+      "changePercent": -5.06
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 56.75,
-      "change": -9.51,
-      "changePercent": -14.35
+      "price": 56.6,
+      "change": -9.66,
+      "changePercent": -14.58
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 82.45,
-      "change": 5.85,
-      "changePercent": 7.64
+      "price": 82.53,
+      "change": 5.93,
+      "changePercent": 7.74
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.35,
-      "change": -0.03,
-      "changePercent": -0.44
+      "price": 6.33,
+      "change": -0.04,
+      "changePercent": -0.69
     },
     {
       "name": "BHP Group",
@@ -826,10 +826,45 @@
   ],
   "news": [
     {
-      "title": "ASX set to slide, Wall Street steadies; Judge pauses $157b Paramount-Warner Bros deal",
+      "title": "‘Baked bean cans’: Emirates boss to reject Boeing planes",
+      "link": "https://www.smh.com.au/business/companies/baked-bean-cans-emirates-boss-to-reject-boeing-jets-20260721-p60h1q.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Boeing has been dealt a fresh blow after Emirates said it would refuse to take delivery of 10 aircraft, claiming that the much-delayed $629 million 777x jets would be better off being sent to Heinz.",
+      "pubDate": "Tue, 21 Jul 2026 08:04:58 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Football world 'devastated' by death of English icon Keegan",
+      "link": "https://www.abc.net.au/news/2026-07-21/football-kevin-keegan-dead-at-75-liverpool-newcastle-legend/106938584",
+      "snippet": "",
+      "pubDate": "Mon, 20 Jul 2026 21:40:03 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "PM backs bid for future NT AFL team, no promises on funding",
+      "link": "https://www.abc.net.au/news/2026-07-21/pm-backs-bid-for-future-nt-afl-team/106935342",
+      "snippet": "",
+      "pubDate": "Mon, 20 Jul 2026 21:25:42 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Ex-league star Dureau dies at 39 after long cancer battle",
+      "link": "https://www.abc.net.au/news/2026-07-21/rugby-league-scott-dureau-dead-at-39-from-brain-cancer/106938560",
+      "snippet": "",
+      "pubDate": "Mon, 20 Jul 2026 20:49:50 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "'I love my name': Swans star on having the best name in the AFLW",
+      "link": "https://www.abc.net.au/news/2026-07-21/sydney-swans-aflw-star-zippy-fish-on-debut-season-and-name/106884018",
+      "snippet": "",
+      "pubDate": "Mon, 20 Jul 2026 20:40:12 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to slide, Wall Street drifts lower; Judge pauses $157b Paramount-Warner Bros deal",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-wall-street-steadies-paramount-warner-bros-deal-paused-by-judge-20260721-p60h0v.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Wall Street is holding steadier, as stocks of chipmakers and other winners of the artificial-intelligence boom trim some of their recent losses.",
-      "pubDate": "Tue, 21 Jul 2026 05:19:21 +1000",
+      "snippet": "Wall Street drifted to a quiet finish after stocks of chipmakers and other winners of the artificial-intelligence boom trimmed some of their recent losses.",
+      "pubDate": "Tue, 21 Jul 2026 06:24:51 +1000",
       "source": "SMH Business"
     },
     {
@@ -872,41 +907,6 @@
       "link": "https://www.smh.com.au/business/companies/big-hits-white-cliff-minerals-australian-gold-and-copper-kingfisher-mining-20260720-p60gyo.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Bulls N’ Bears Big Hits looks at notable drill hits reported this week to the ASX, led by White Cliff Minerals in Canada and Australian Gold &amp; Copper and Kingfisher Mining in NSW.",
       "pubDate": "Mon, 20 Jul 2026 16:57:33 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Gateway fires up three-rig gold hunt at WA Yandal project",
-      "link": "https://www.smh.com.au/business/companies/gateway-fires-up-three-rig-gold-hunt-at-wa-yandal-project-20260720-p60gya.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Gateway Mining has launched a major RC drilling campaign across multiple discoveries at its WA Yandal project to convert a burgeoning discovery pipeline into future resource growth.",
-      "pubDate": "Mon, 20 Jul 2026 16:30:18 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Barkly drills for bigger NT rare earths with 10,000m push",
-      "link": "https://www.smh.com.au/business/companies/barkly-drills-for-bigger-nt-rare-earths-with-10-000m-push-20260720-p60gxs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Barkly Rare Earths has officially set the drill bit spinning in a 10,000m campaign to expand its 40Mt NT rare earths resource, with first assays on the way.",
-      "pubDate": "Mon, 20 Jul 2026 16:11:22 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Bezos’ whirlwind visit: How do the rich and famous get to the beach so fast?",
-      "link": "https://www.smh.com.au/business/companies/bezos-whirlwind-visit-how-do-the-rich-and-famous-get-to-the-beach-so-fast-20260720-p60gq9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The billionaire landed, appeared at a restaurant near Coogee beach a mere hour later, then jetted off after a 43-hour stay.",
-      "pubDate": "Mon, 20 Jul 2026 16:03:51 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Electric Tiwi football final sees back-to-back victory for Imalu Tigers",
-      "link": "https://www.abc.net.au/news/2026-07-20/nt-tiwi-islands-football-grand-final-imalu-tapalinga-premiers/106933406",
-      "snippet": "",
-      "pubDate": "Mon, 20 Jul 2026 06:02:27 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Coles’ backdown on $4 billion pet deal was a smart move. Private equity can’t have been pleased",
-      "link": "https://www.smh.com.au/business/companies/investors-bark-coles-backpedals-on-peak-pooch-price-for-pet-business-20260720-p60gux.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Leah Weckert isn’t the first boss of the supermarket chain to believe that pets could be a boon to the chain, but investors corrected her.",
-      "pubDate": "Mon, 20 Jul 2026 15:49:52 +1000",
       "source": "SMH Business"
     }
   ]
