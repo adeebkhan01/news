@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-20T16:49:46.958Z",
+  "fetchedAt": "2026-07-20T20:01:02.187Z",
   "asx200": {
     "value": 8791.3,
     "change": -37.4,
@@ -92,7 +92,7 @@
   "audusd": {
     "value": 0.7,
     "change": 0,
-    "changePercent": -0.1,
+    "changePercent": -0.14,
     "previousClose": 0.7,
     "asOf": "2026-07-20",
     "history": [
@@ -177,6 +177,10 @@
         "close": 0.7
       },
       {
+        "date": "2026-07-19",
+        "close": 0.7
+      },
+      {
         "date": "2026-07-20",
         "close": 0.7
       }
@@ -187,33 +191,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4016.3,
-      "change": -207.8,
-      "changePercent": -4.92
+      "price": 4013.4,
+      "change": -210.7,
+      "changePercent": -4.99
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 57.16,
-      "change": -9.09,
-      "changePercent": -13.73
+      "price": 56.75,
+      "change": -9.51,
+      "changePercent": -14.35
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 81.7,
-      "change": 5.1,
-      "changePercent": 6.66
+      "price": 82.45,
+      "change": 5.85,
+      "changePercent": 7.64
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 6.35,
-      "change": -0.02,
-      "changePercent": -0.36
+      "change": -0.03,
+      "changePercent": -0.44
     },
     {
       "name": "BHP Group",
@@ -822,6 +826,20 @@
   ],
   "news": [
     {
+      "title": "ASX set to slide, Wall Street steadies; Judge pauses $157b Paramount-Warner Bros deal",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-wall-street-steadies-paramount-warner-bros-deal-paused-by-judge-20260721-p60h0v.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Wall Street is holding steadier, as stocks of chipmakers and other winners of the artificial-intelligence boom trim some of their recent losses.",
+      "pubDate": "Tue, 21 Jul 2026 05:19:21 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "AI is reshaping the economy, but good luck measuring how",
+      "link": "https://www.smh.com.au/business/the-economy/ai-is-reshaping-the-economy-but-good-luck-measuring-how-20260708-p60div.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "No one is sure what effect the technology is having right now.",
+      "pubDate": "Tue, 21 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Eddie McGuire’s radio show axed after Karl Stefanovic’s sacking",
       "link": "https://www.smh.com.au/business/companies/eddie-mcguire-s-radio-show-axed-after-karl-stefanovic-s-sacking-20260720-p60grl.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "But the prominent football commentator will get a new twice-weekly sports program on the Gold Network instead.",
@@ -889,20 +907,6 @@
       "link": "https://www.smh.com.au/business/companies/investors-bark-coles-backpedals-on-peak-pooch-price-for-pet-business-20260720-p60gux.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Leah Weckert isn’t the first boss of the supermarket chain to believe that pets could be a boon to the chain, but investors corrected her.",
       "pubDate": "Mon, 20 Jul 2026 15:49:52 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Breakthrough win for Bernard Tomic after lean tennis times",
-      "link": "https://www.abc.net.au/news/2026-07-20/breakthrough-for-tomic-after-lean-tennis-times/106936094",
-      "snippet": "",
-      "pubDate": "Mon, 20 Jul 2026 05:05:29 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Mia Freedman’s son appointed CEO of Mamamia",
-      "link": "https://www.smh.com.au/business/companies/mia-freedman-s-son-appointed-ceo-of-mamamia-20260720-p60gvc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Luca Lavigne, 28, will take over as chief executive of Australia’s largest women-focused media company in September.",
-      "pubDate": "Mon, 20 Jul 2026 14:24:01 +1000",
       "source": "SMH Business"
     }
   ]
