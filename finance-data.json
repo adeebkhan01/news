@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-21T19:56:53.684Z",
+  "fetchedAt": "2026-07-21T22:23:20.592Z",
   "asx200": {
     "value": 8793.3,
     "change": -35.4,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.7,
     "change": 0,
-    "changePercent": -0.13,
+    "changePercent": -0.16,
     "previousClose": 0.7,
     "asOf": "2026-07-21",
     "history": [
@@ -185,6 +185,10 @@
         "close": 0.7
       },
       {
+        "date": "2026-07-20",
+        "close": 0.7
+      },
+      {
         "date": "2026-07-21",
         "close": 0.7
       }
@@ -195,25 +199,25 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4087.5,
-      "change": -94.4,
-      "changePercent": -2.26
+      "price": 4081.6,
+      "change": -100.3,
+      "changePercent": -2.4
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 59.05,
-      "change": -6.48,
-      "changePercent": -9.88
+      "price": 59.12,
+      "change": -6.41,
+      "changePercent": -9.79
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 84.7,
-      "change": 9.88,
-      "changePercent": 13.21
+      "price": 84.63,
+      "change": 9.81,
+      "changePercent": 13.11
     },
     {
       "name": "Copper",
@@ -221,7 +225,7 @@
       "iconBg": "#fef0e6",
       "price": 6.53,
       "change": 0.17,
-      "changePercent": 2.67
+      "changePercent": 2.74
     },
     {
       "name": "BHP Group",
@@ -830,10 +834,24 @@
   ],
   "news": [
     {
+      "title": "US rider hit by car in road rage incident before Tour de France time trial",
+      "link": "https://www.abc.net.au/news/2026-07-22/tour-de-france-mcnulty-road-rage-evenepoel-wins-time-trial-stage/106942866",
+      "snippet": "",
+      "pubDate": "Tue, 21 Jul 2026 22:06:40 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Players and fans made the World Cup a success, but the politics shouldn't be forgotten",
+      "link": "https://www.abc.net.au/news/2026-07-22/world-cup-usa-canada-mexico-legacy-fifa/106942436",
+      "snippet": "",
+      "pubDate": "Tue, 21 Jul 2026 20:50:27 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "ASX set to advance, tech stocks push Wall Street higher; Google’s new AI offerings",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-advance-tech-stocks-push-wall-street-higher-google-s-new-ai-offerings-20260722-p60hd2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "More gains for makers of computer chips and other winners of the artificial-intelligence boom are carrying Wall Street higher.",
-      "pubDate": "Wed, 22 Jul 2026 05:13:25 +1000",
+      "snippet": "More gains for makers of computer chips and other winners of the artificial-intelligence boom boosted Wall Street.",
+      "pubDate": "Wed, 22 Jul 2026 06:40:24 +1000",
       "source": "SMH Business"
     },
     {
@@ -897,20 +915,6 @@
       "link": "https://www.smh.com.au/business/companies/gateway-triples-new-wa-gold-discovery-strike-to-2-5km-20260721-p60ha6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Gateway Mining has tripled Cowza’s strike to 2.5km and confirmed fresh-rock gold, positioning the new discovery as a potential key find at its Yandal project in WA.",
       "pubDate": "Tue, 21 Jul 2026 15:56:58 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "$900 million fines look like the cost of doing business for giant shopping apps",
-      "link": "https://www.smh.com.au/business/consumer-affairs/regulators-are-playing-whack-a-mole-with-dangerous-goods-on-huge-shopping-apps-20260721-p60h6h.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Booming Chinese ecommerce giants sell almost anything at cut down prices, including some that are unsafe or banned for good reason.",
-      "pubDate": "Tue, 21 Jul 2026 15:51:02 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Flagship banks $5.8M lithium sale as gold, copper focus gathers pace",
-      "link": "https://www.smh.com.au/business/companies/flagship-banks-5-8m-lithium-sale-as-gold-copper-focus-gathers-pace-20260721-p60ha3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Flagship Minerals has received US$4M ($5.7M) from the sale of its RK lithium project in Thailand, boosting funds to focus on gold and copper growth projects.",
-      "pubDate": "Tue, 21 Jul 2026 15:48:02 +1000",
       "source": "SMH Business"
     }
   ]
