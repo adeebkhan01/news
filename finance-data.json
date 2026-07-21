@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-21T14:29:57.310Z",
+  "fetchedAt": "2026-07-21T16:50:58.355Z",
   "asx200": {
     "value": 8793.3,
     "change": -35.4,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.7,
     "change": 0,
-    "changePercent": 0,
+    "changePercent": -0.06,
     "previousClose": 0.7,
     "asOf": "2026-07-21",
     "history": [
@@ -195,33 +195,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4068.5,
-      "change": -113.4,
-      "changePercent": -2.71
+      "price": 4079.1,
+      "change": -102.8,
+      "changePercent": -2.46
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 59.28,
-      "change": -6.25,
-      "changePercent": -9.54
+      "price": 59.3,
+      "change": -6.23,
+      "changePercent": -9.5
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 84.39,
-      "change": 9.57,
-      "changePercent": 12.79
+      "price": 84.23,
+      "change": 9.41,
+      "changePercent": 12.58
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.52,
-      "change": 0.16,
-      "changePercent": 2.58
+      "price": 6.56,
+      "change": 0.21,
+      "changePercent": 3.22
     },
     {
       "name": "BHP Group",
@@ -451,7 +451,7 @@
     },
     {
       "name": "Information Technology",
-      "changePercent": 1.8,
+      "changePercent": 0.51,
       "stocks": [
         {
           "name": "XRO",
@@ -470,8 +470,8 @@
         },
         {
           "name": "APX",
-          "price": 0.92,
-          "changePercent": 5.17
+          "price": 0,
+          "changePercent": 0
         }
       ]
     },
