@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-20T22:03:43.704Z",
-  "summary": "Trade tensions escalated as Trump imposed steep tariffs on Canadian imports while warning about cross-border wildfires, complicating relations with a key US ally. In the Middle East, Israel-Hamas dynamics shifted with Hamas naming Khalil al-Hayya as political chief, while Iran reported ongoing diplomatic efforts amid military exchanges and Trump claiming recent strikes were in honour of fallen US personnel. Domestically across multiple countries, mass protests erupted in India over education and political issues with police crackdowns, while Colombia faces transfer-of-power tensions and Lebanese military operations expanded in the south. Corporate news included a court-ordered pause on the Paramount-Warner Bros merger and a record EU fine against AliExpress for facilitating illegal goods sales.",
+  "fetchedAt": "2026-07-21T03:13:44.021Z",
+  "summary": "Global tensions are escalating across multiple fronts, with the US striking Iran for a tenth consecutive night while Iran retaliates against Gulf states, and Trump imposing 50 percent tariffs on Canadian goods in a fresh trade dispute. Political instability is mounting domestically in several countries, including Ukraine facing leadership protests and India experiencing significant parliamentary demonstrations over education and reform issues. Maritime and transportation disasters have claimed dozens of lives, including a ferry capsizing off Guyana with over 80 missing, while corporate consolidation efforts in the US face legal obstacles with a judge pausing the Paramount-Warner Bros merger. Regional conflicts continue to reshape leadership structures, including Hamas naming a new political chief and Lebanon's military initiating operations in the south amid broader Middle Eastern tensions.",
   "sources": [
     {
       "id": "bbcnews",
@@ -25,11 +25,131 @@
   ],
   "articles": [
     {
+      "title": "At least 27 dead and 83 missing after passenger ferry capsizes off Guyana",
+      "link": "https://www.bbc.co.uk/news/articles/cm2gm99nrm7o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "An investigation into the tragedy has been launched, the island's prime minister says, adding he hopes more will be found alive.",
+      "pubDate": "Tue, 21 Jul 2026 02:07:48 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/be5c/live/801f6fc0-838c-11f1-a4c3-dfd0ee4be073.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Why protests are growing in Ukraine over defence leadership and dismissals",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/21/aje-onl-nf_protests-in-kyiv-over-defence-minister-dismissal-200726?traffic_source=rss",
+      "desc": "Protests continue as anger grows over President Zelenskyy’s decision to fire the country’s defence minister.",
+      "pubDate": "Tue, 21 Jul 2026 01:27:56 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1784597269.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Trump imposes 50% US tariffs on some Canadian goods, citing discrimination",
+      "link": "https://www.aljazeera.com/news/2026/7/21/trump-imposes-50-us-tariffs-on-some-canadian-goods-citing-discrimination?traffic_source=rss",
+      "desc": "Tariffs apply to Canadian wine, hockey sticks, cement, and other products, sparking fears of escalating trade tensions.",
+      "pubDate": "Tue, 21 Jul 2026 00:08:50 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/05/reuters_6a0b93ea-1779143658.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "US attacks Iran for 10th consecutive night",
+      "link": "https://www.aljazeera.com/news/2026/7/21/us-launches-tenth-consecutive-night-of-attacks-on-iran?traffic_source=rss",
+      "desc": "Washington vows revenge for US military casualties, while Iran claims attacks on US sites across the region.",
+      "pubDate": "Tue, 21 Jul 2026 00:06:33 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/ap_6a5eb780831cc-1784592256.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Iran war live: Tehran attacks Gulf states, says 2 tankers in Hormuz on fire",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/7/21/iran-war-live-us-launches-10th-night-of-strikes-tehran-attacks-kuwait?traffic_source=rss",
+      "desc": "Explosions reported in Iran&#039;s Bandar Abbas, Qeshm Island, Chabahar and Konarak as US launches new wave of attacks.",
+      "pubDate": "Tue, 21 Jul 2026 00:00:00 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/2026-07-20T143912Z_969046555_RC2FELAQAH60_RTRMADP_3_IRAN-CRISIS-IRANIANS-SOUTH-1784591155.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Suspect charged in fatal attack on UK politician Ann Widdecombe",
+      "link": "https://www.aljazeera.com/news/2026/7/20/suspect-charged-in-fatal-attack-on-uk-politician-ann-widdecombe?traffic_source=rss",
+      "desc": "Police say a possible political motive is under investigation in the killing of the Reform UK figure.",
+      "pubDate": "Mon, 20 Jul 2026 23:21:12 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/afp_6a55ef057b14-1784016645.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Argentina, minus Messi, return home after World Cup final heartbreak",
+      "link": "https://www.aljazeera.com/sports/2026/7/20/argentina-minus-messi-return-home-after-world-cup-final-heartbreak?traffic_source=rss",
+      "desc": "Thousands wait to greet the team, who return without captain Messi and a few other players after the World Cup.",
+      "pubDate": "Mon, 20 Jul 2026 23:16:06 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/AFP__20260720__C2PH298__v1__HighRes__ArgentinaFblWc2026Fans-1784587436.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "'I made £100,000 of TikTok sales in one day': The business of live shopping",
+      "link": "https://www.bbc.co.uk/news/articles/cm2j22w8k0po?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Buying on social media livestreams is fast becoming regular consumer behaviour for many.",
+      "pubDate": "Mon, 20 Jul 2026 23:06:04 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4e6c/live/07f87140-8418-11f1-b3ec-1d7f0502d196.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "What are the new British Prime Minister’s biggest challenges?",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/20/what-are-the-new-british-prime-ministers-biggest-challenges?traffic_source=rss",
+      "desc": "Britain has a new Prime Minister: Andy Burnham. The former Mayor of Manchester must now unite a divided nation.",
+      "pubDate": "Mon, 20 Jul 2026 22:54:06 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1784588030.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Chaos in India as ‘Cockroach activists’ march on parliament",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/20/aje-onl-nf_chaos-in-india-as-cockroach-march-on-parliament-200726?traffic_source=rss",
+      "desc": "Chaos outside India&#039;s parliament as protesters tried to storm it; satirical Cockroach Janta Party gains traction.",
+      "pubDate": "Mon, 20 Jul 2026 22:40:31 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1784587213.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "War on Iran: War resumes 30 days after MoU",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/20/aje-onl-nf_war-on-iran-back-to-square-one-200726?traffic_source=rss",
+      "desc": "30 days into the US-Iran MoU the worst fighting in months has erupted threatening to unravel the ceasefire.",
+      "pubDate": "Mon, 20 Jul 2026 22:26:49 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1784586401.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
       "title": "Trump imposes 50% tariff on Canadian imports",
       "link": "https://www.bbc.co.uk/news/articles/cg4dzq3x3e1o?at_medium=RSS&amp;at_campaign=rss",
       "desc": "The duties take effect within 30 days and mark a major escalation in trade tensions between the North American neighbours.",
       "pubDate": "Mon, 20 Jul 2026 22:02:42 GMT",
       "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/06cc/live/a320cf00-8481-11f1-926f-c90d1bcfbc84.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "The 20-somethings betting big on tech stocks",
+      "link": "https://www.bbc.co.uk/news/articles/c20yz9v1llro?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The BBC hears from people about the risks and rewards of investing in technology shares.",
+      "pubDate": "Mon, 20 Jul 2026 22:00:41 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/851d/live/dc840590-80bd-11f1-bee8-53ce494e1abc.jpg",
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
@@ -12003,36 +12123,6 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Which teams have qualified for the World Cup 2026 knockouts, round of 32?",
-      "link": "https://www.aljazeera.com/sports/2026/6/21/which-teams-have-qualified-for-the-world-cup-2026-knockouts-round-of-32?traffic_source=rss",
-      "desc": "The 2026 FIFA World Cup knockout stage format, criteria and rules for qualification. Find out who&#039;s in and who&#039;s out.",
-      "pubDate": "Sun, 21 Jun 2026 03:00:22 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-20T220811Z_1646985383_UP1EM6K1PHL1O_RTRMADP_3_SOCCER-WORLDCUP-GER-CIV-1782003822.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Iran war live: US, Tehran set to hold high-level talks in Switzerland",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/6/21/iran-war-live-vance-heads-to-switzerland-israel-kills-16-in-lebanon?traffic_source=rss",
-      "desc": "Talks come as Iran says it is closing the Strait of Hormuz over Israel&#039;s deadly attacks on Lebanon.",
-      "pubDate": "Sun, 21 Jun 2026 00:00:00 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-20T190125Z_128840624_RC2PXLAFPVRR_RTRMADP_3_IRAN-CRISIS-LEBANON-SOUTH-AFTERMATH-1781998275.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Colombia's escalating, brutal internal conflict is defining its presidential election",
-      "link": "https://www.bbc.com/news/articles/cvgqv8q1ndpo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "A left-wing senator who backs talks with armed gangs faces an outsider endorsed by Trump.",
-      "pubDate": "Sat, 20 Jun 2026 23:17:51 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/42c9/live/a7a4ecd0-6bf1-11f1-8631-5f302ec8cd09.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
     }
   ]
 }
