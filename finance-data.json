@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-21T09:06:12.437Z",
+  "fetchedAt": "2026-07-21T11:20:48.442Z",
   "asx200": {
     "value": 8793.3,
     "change": -35.4,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.7,
     "change": 0,
-    "changePercent": 0.17,
+    "changePercent": 0.09,
     "previousClose": 0.7,
     "asOf": "2026-07-21",
     "history": [
@@ -199,33 +199,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4066.6,
-      "change": -115.3,
-      "changePercent": -2.76
+      "price": 4061.5,
+      "change": -120.4,
+      "changePercent": -2.88
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 59.22,
-      "change": -6.31,
-      "changePercent": -9.63
+      "price": 59.06,
+      "change": -6.47,
+      "changePercent": -9.87
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 82.27,
-      "change": 7.45,
-      "changePercent": 9.96
+      "price": 83.49,
+      "change": 8.67,
+      "changePercent": 11.59
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.53,
-      "change": 0.17,
-      "changePercent": 2.64
+      "price": 6.52,
+      "change": 0.16,
+      "changePercent": 2.58
     },
     {
       "name": "BHP Group",
@@ -247,7 +247,7 @@
   "sectors": [
     {
       "name": "Financials",
-      "changePercent": -0.64,
+      "changePercent": -0.94,
       "stocks": [
         {
           "name": "CBA",
@@ -256,8 +256,8 @@
         },
         {
           "name": "WBC",
-          "price": 0,
-          "changePercent": 0
+          "price": 36.22,
+          "changePercent": -1.2
         },
         {
           "name": "ANZ",
@@ -403,7 +403,7 @@
     },
     {
       "name": "Consumer Staples",
-      "changePercent": -0.63,
+      "changePercent": -0.52,
       "stocks": [
         {
           "name": "WOW",
@@ -422,8 +422,8 @@
         },
         {
           "name": "A2M",
-          "price": 7.02,
-          "changePercent": -0.43
+          "price": 0,
+          "changePercent": 0
         }
       ]
     },
@@ -834,9 +834,16 @@
   ],
   "news": [
     {
-      "title": "Questions raised about new KPMG CEO’s role in ‘strategic denial’ of whistleblower claims",
+      "title": "Fiat and Citroen’s Australian pullback could be just the start as Chinese EV surge",
+      "link": "https://www.smh.com.au/business/companies/fiat-and-citroen-s-australian-pullback-could-be-just-the-start-as-chinese-ev-surge-20260721-p60h2s.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "More European, American and Japanese carmakers are coming under pressure as our vehicle preferences turn quickly toward Chinese EVs.",
+      "pubDate": "Tue, 21 Jul 2026 19:30:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "One day into the job and KPMG’s CEO is already facing questions over whistleblower saga",
       "link": "https://www.smh.com.au/business/companies/kpmg-appoints-new-ceo-as-massive-job-cuts-loom-20260721-p60h49.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Incoming boss John Sams faces question about his role in KPMG’s handling of whistleblower claims that it initially denied and later admitted largely had merit.",
+      "snippet": "John Sams is a lifelong veteran of the embattled consulting giant that is trying to show it can reform itself after leading a host of senior executives.",
       "pubDate": "Tue, 21 Jul 2026 18:42:38 +1000",
       "source": "SMH Business"
     },
@@ -869,9 +876,9 @@
       "source": "SMH Business"
     },
     {
-      "title": "Regulators are playing whack-a-mole with dangerous goods on huge shopping apps",
+      "title": "$900 million fines look like the cost of doing business for giant shopping apps",
       "link": "https://www.smh.com.au/business/consumer-affairs/regulators-are-playing-whack-a-mole-with-dangerous-goods-on-huge-shopping-apps-20260721-p60h6h.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The booming Chinese e-commerce giant has been fined $900 million, but that only represents about 1 per cent of its sales.",
+      "snippet": "Booming Chinese ecommerce giants sell almost anything at cut down prices, including some that are unsafe or banned for good reason.",
       "pubDate": "Tue, 21 Jul 2026 15:51:02 +1000",
       "source": "SMH Business"
     },
@@ -909,13 +916,6 @@
       "snippet": "With billions in assets set to pass between generations, our six-part series simplifies the daunting world of inheritance planning.",
       "pubDate": "Tue, 21 Jul 2026 13:45:10 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Vaughters says night tests would have saved cycling '25 years of drama'",
-      "link": "https://www.abc.net.au/news/2026-07-21/vaughters-night-tests-could-have-stop-cycling-blood-doping-era/106939774",
-      "snippet": "",
-      "pubDate": "Tue, 21 Jul 2026 03:18:55 +0000",
-      "source": "ABC News"
     }
   ]
 }
