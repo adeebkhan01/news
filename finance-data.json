@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-21T16:50:58.355Z",
+  "fetchedAt": "2026-07-21T19:56:53.684Z",
   "asx200": {
     "value": 8793.3,
     "change": -35.4,
@@ -96,7 +96,7 @@
   "audusd": {
     "value": 0.7,
     "change": 0,
-    "changePercent": -0.06,
+    "changePercent": -0.13,
     "previousClose": 0.7,
     "asOf": "2026-07-21",
     "history": [
@@ -195,33 +195,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4079.1,
-      "change": -102.8,
-      "changePercent": -2.46
+      "price": 4087.5,
+      "change": -94.4,
+      "changePercent": -2.26
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 59.3,
-      "change": -6.23,
-      "changePercent": -9.5
+      "price": 59.05,
+      "change": -6.48,
+      "changePercent": -9.88
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 84.23,
-      "change": 9.41,
-      "changePercent": 12.58
+      "price": 84.7,
+      "change": 9.88,
+      "changePercent": 13.21
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.56,
-      "change": 0.21,
-      "changePercent": 3.22
+      "price": 6.53,
+      "change": 0.17,
+      "changePercent": 2.67
     },
     {
       "name": "BHP Group",
@@ -451,7 +451,7 @@
     },
     {
       "name": "Information Technology",
-      "changePercent": 0.51,
+      "changePercent": 1.8,
       "stocks": [
         {
           "name": "XRO",
@@ -470,8 +470,8 @@
         },
         {
           "name": "APX",
-          "price": 0,
-          "changePercent": 0
+          "price": 0.92,
+          "changePercent": 5.17
         }
       ]
     },
@@ -830,6 +830,34 @@
   ],
   "news": [
     {
+      "title": "ASX set to advance, tech stocks push Wall Street higher; Google’s new AI offerings",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-advance-tech-stocks-push-wall-street-higher-google-s-new-ai-offerings-20260722-p60hd2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "More gains for makers of computer chips and other winners of the artificial-intelligence boom are carrying Wall Street higher.",
+      "pubDate": "Wed, 22 Jul 2026 05:13:25 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "If you want to understand why houses are so expensive, go to the airport",
+      "link": "https://www.smh.com.au/business/the-economy/if-you-want-to-understand-why-houses-are-so-expensive-go-to-the-airport-20260721-p60h27.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "We’re paying too much for our housing, just like we’re paying too much for food at the airport. Stick with me here, there is a connection.",
+      "pubDate": "Wed, 22 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Why European summer holiday fares haven’t fallen in line with petrol",
+      "link": "https://www.smh.com.au/business/companies/why-european-summer-holiday-fares-haven-t-fallen-in-line-with-petrol-20260721-p60h2l.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "While bowser prices for motorists have dipped on hopes – however fleeting – of Middle East stability, jet fuel prices remain elevated.",
+      "pubDate": "Wed, 22 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Sydney influencer battles FIFA and Instagram as his business evaporates",
+      "link": "https://www.smh.com.au/business/companies/sydney-influencer-battles-fifa-and-instagram-as-his-business-evaporates-20260721-p60h2u.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Will Atkinson claims Meta, Instagram’s owner, has failed to restore his social media account even as FIFA didn’t proceed with a copyright infringement lawsuit.",
+      "pubDate": "Wed, 22 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Fiat and Citroen’s Australian pullback could be just the start as Chinese EV surge",
       "link": "https://www.smh.com.au/business/companies/fiat-and-citroen-s-australian-pullback-could-be-just-the-start-as-chinese-ev-surge-20260721-p60h2s.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "More European, American and Japanese carmakers are coming under pressure as our vehicle preferences turn quickly toward Chinese EVs.",
@@ -883,34 +911,6 @@
       "link": "https://www.smh.com.au/business/companies/flagship-banks-5-8m-lithium-sale-as-gold-copper-focus-gathers-pace-20260721-p60ha3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Flagship Minerals has received US$4M ($5.7M) from the sale of its RK lithium project in Thailand, boosting funds to focus on gold and copper growth projects.",
       "pubDate": "Tue, 21 Jul 2026 15:48:02 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Google is building an AI fence around the internet it once championed",
-      "link": "https://www.smh.com.au/business/companies/google-is-building-an-ai-fence-around-the-internet-it-once-championed-20260721-p60h7b.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "As the web giant incorporates more artificial intelligence into search, people are spending more time on Google. Some website operators are crying foul.",
-      "pubDate": "Tue, 21 Jul 2026 15:48:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "‘Baked bean cans’: Emirates boss to reject Boeing planes",
-      "link": "https://www.smh.com.au/business/companies/baked-bean-cans-emirates-boss-to-reject-boeing-jets-20260721-p60h1q.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Boeing has been dealt a fresh blow after Emirates said it would refuse to take delivery of 10 aircraft, claiming that the much-delayed $629 million 777x jets would be better off being sent to Heinz.",
-      "pubDate": "Tue, 21 Jul 2026 15:07:47 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Golden Dragon maps 3km WA gold corridor ripe for drilling",
-      "link": "https://www.smh.com.au/business/companies/golden-dragon-maps-3km-wa-gold-corridor-ripe-for-drilling-20260721-p60h8p.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Golden Dragon has hit paydirt with a 3km-long gold anomaly at its WA Cue project. The soil results link four prospects, suggesting a much larger system is at play.",
-      "pubDate": "Tue, 21 Jul 2026 14:36:29 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Smart Succession",
-      "link": "https://www.smh.com.au/business/banking-and-finance/smart-succession-20260612-p606c9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "With billions in assets set to pass between generations, our six-part series simplifies the daunting world of inheritance planning.",
-      "pubDate": "Tue, 21 Jul 2026 13:45:10 +1000",
       "source": "SMH Business"
     }
   ]
