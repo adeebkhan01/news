@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-22T02:56:24.616Z",
-  "summary": "Australia's news cycle today is dominated by safety and security concerns, with a cruise ship captain sacked for negligence, a teenager charged with murder, and ongoing investigations into domestic violence and workplace deaths at industrial sites. High-profile figures face scrutiny including cricket star David Warner's drink-driving plea and revelations about an Australian ISIS doctor found alive in Iraq, prompting political debate over constitutional limits on preventing his return. The economy and technology sector show mixed signals, with Atlassian's new headquarters highlighting tech success while tourism drops sharply in Western Australia and concerns mount over AI safety coherence and potential oil price impacts from Middle East tensions. Cultural institutions like Melbourne's music venues continue closing despite some wins, and industrial action looms with Victorian teachers set to strike.",
+  "fetchedAt": "2026-07-22T05:55:00.285Z",
+  "summary": "Australia faces multiple high-profile controversies and investigations today, with politician Pauline Hanson drawing sustained criticism for victim-blaming comments on domestic violence while also coming under media scrutiny at One Nation's headquarters, and former radio host Alan Jones facing serious allegations from prosecutors regarding sexual interest in younger men. Infrastructure and economic developments are advancing across the nation, including a major Perth CBD revamp worth $240 million, a significant WA gold mine investment flagged at $1.8 billion, and Atlassian moving closer to building Sydney's largest hybrid tower, while major energy companies Origin Energy and the nation's largest power company are investigating potential customer data breaches. The legal system is dealing with several significant cases including a suspected Chadstone shooter appearing in court after three decades, David Warner pleading guilty to drink-driving, and a defamation case against Rebel Wilson being thrown out. Regional concerns are mounting in Western Australia where tourism has dropped significantly and Lactalis is planning to close its Longwarry dairy factory by 2027.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,216 @@
     }
   ],
   "articles": [
+    {
+      "title": "Safety tightened after Sea World helicopter tragedy",
+      "link": "https://www.smh.com.au/national/queensland/safety-tightened-after-sea-world-helicopter-tragedy-20260722-p60hmq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The company now operating as Surfers Paradise Helicopters had brought in a suite of new controls aimed at preventing another crash, an inquest heard.",
+      "pubDate": "Wed, 22 Jul 2026 15:54:16 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2102%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_110/t_crop_custom/q_86%2Cf_auto/4c15dd4a8bec77143d2af2dd085dd8c064d3e692",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Brittany Higgins accuses Pauline Hanson of victim-blaming for calling domestic violence a ‘two-way street’",
+      "link": "https://www.theguardian.com/australia-news/2026/jul/22/brittany-higgins-pauline-hanson-domestic-violence-comments-ntwnfb",
+      "desc": "<p>One Nation leader criticised by advocates after telling women being abused: ‘don’t put up with it’</p><ul><li><p><a href=\"https://www.theguardian.com/australia-news/live/2026/jul/22/australia-news-",
+      "pubDate": "Wed, 22 Jul 2026 05:53:13 GMT",
+      "img": "https://i.guim.co.uk/img/media/faf073aa6d3104529efe4c7df3899a9c282a442f/0_0_2825_2261/master/2825.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "‘Transformative’: Green light for $240m Perth CBD revamp with hotel and rooftop pool",
+      "link": "https://www.smh.com.au/national/western-australia/transformative-green-light-for-240m-perth-cbd-revamp-with-hotel-and-rooftop-pool-20260722-p60hlv.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A 240-room hotel, sky bar, and restored heritage arcade are set to reactivate Perth’s CBD after a unanimously approved $240 million development.",
+      "pubDate": "Wed, 22 Jul 2026 15:41:47 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.4065%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_80/t_crop_custom/q_86%2Cf_auto/b5a65120e7d0450bc393406d8c8a127213ad9a3a67cd8c45e35960e7836aaa28",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "As net closed in after 30 years, accused Chadstone shooter said he better ‘take the medicine’, court hears",
+      "link": "https://www.smh.com.au/national/victoria/as-net-closed-in-after-30-years-accused-chadstone-shooter-said-he-better-take-the-medicine-court-hears-20260722-p60hgs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Former rugby league player Garry Sullivan was allegedly linked to the 1994 shopping centre hold-up by DNA on a discarded glove.",
+      "pubDate": "Wed, 22 Jul 2026 15:25:33 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.795%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/b3c32bdee43e79692ab6d76a10dd5610aafc6b22",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Horizon Gold flags massive $1.8B earn for WA gold mine",
+      "link": "https://www.smh.com.au/business/companies/horizon-gold-flags-massive-1-8b-earn-for-wa-gold-mine-20260722-p60hlr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "Horizon Gold has tabled a robust definitive study for its WA Gum Creek project, showing a huge $1.8B in cashflow from 880,000 ounces of gold over a 10-year mine life.",
+      "pubDate": "Wed, 22 Jul 2026 15:11:49 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.7354%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_109/t_crop_custom/q_86%2Cf_auto/4011400debf1c57d454b41f5a4cd8d51fe6e57a320ae34b1de77b9d45116724f",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Alan Jones acted on sexual interest in ‘significantly younger men’, prosecutors allege",
+      "link": "https://www.smh.com.au/national/nsw/alan-jones-acted-on-sexual-interest-in-significantly-younger-men-prosecutors-allege-20260722-p60hg6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Prosecutors will seek to prove Alan Jones engaged in a pattern of behaviour regarding a series of complainants.",
+      "pubDate": "Wed, 22 Jul 2026 15:05:04 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.2896%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_21/t_crop_custom/q_86%2Cf_auto/4326359ac027f875599d17f30b2b494147b26a98",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Dairy giant Lactalis to close Longwarry factory by 2027",
+      "link": "https://www.abc.net.au/news/2026-07-22/lactalis-to-close-dairy-factory-in-longwarry-gippsland/106944900",
+      "desc": "Lactalis has announced it will close its dairy factory in Longwarry, in Gippsland, with a phased transition of production to other sites.",
+      "pubDate": "Wed, 22 Jul 2026 05:02:58 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/760e4167581847ca5f83589651352c5c?impolicy=wcms_crop_resize&amp;cropH=853&amp;cropW=639&amp;xPos=320&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Rivers of magma once bubbled beneath crust of Mars, research suggests",
+      "link": "https://www.theguardian.com/science/2026/jul/22/magma-rivers-beneath-mars-crust-study",
+      "desc": "<p>Finding widens selection of rocky planets that may once have been habitable</p><p>Mars once had rivers of magma bubbling beneath its crust, <a href=\"https://www.ox.ac.uk/news/2026-06-24-new-evidenc",
+      "pubDate": "Wed, 22 Jul 2026 05:00:07 GMT",
+      "img": "https://i.guim.co.uk/img/media/667b3ec52ad752cecfd27f688b613443fc671df9/330_0_1125_900/master/1125.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Peninsula firms FY27 US mine growth plan on strong uranium grades",
+      "link": "https://www.smh.com.au/business/companies/peninsula-firms-fy27-us-mine-growth-plan-on-strong-uranium-grades-20260722-p60hlc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "Peninsula Energy says strong uranium grades with low-pH and a US$56m funding package will support its CY2027 Lance growth plan as it fine-tunes wellfield flow rates.",
+      "pubDate": "Wed, 22 Jul 2026 14:55:52 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.7354%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_109/t_crop_custom/q_86%2Cf_auto/695600b9ec4f912e47294c09eab61806e3bae4b32d43cbd995bd58625b5f86ff",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Family wrongly informed of relative’s death in hospital identity mix up",
+      "link": "https://www.smh.com.au/national/victoria/family-wrongly-informed-of-relative-s-death-in-hospital-identity-mix-up-20260722-p60hjs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A 55-year-old woman was found dead in Tarneit on May 13, Victoria Police said, and was initially misidentified as another woman of a similar age.",
+      "pubDate": "Wed, 22 Jul 2026 14:29:35 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1283%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_96/t_crop_custom/q_86%2Cf_auto/946ce95211979e3eeb60976cf6f0e90cf63041b4",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Minister says Australian IS-linked 'Doctor Jihad' can 'rot' in Iraqi jail",
+      "link": "https://www.abc.net.au/news/2026-07-22/tareq-kamleh-islamic-state-doctor-jihad-iraq-jail/106944450",
+      "desc": "Perth paediatrician Tareq Kamleh went to Syria to join the Islamic State group in 2015 and has, until now, been presumed dead.",
+      "pubDate": "Wed, 22 Jul 2026 04:22:29 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/445c0ce4c39252885100a6b14f3de646?impolicy=wcms_crop_resize&amp;cropH=960&amp;cropW=720&amp;xPos=0&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Microscopic plant remains reveal 25,000 years of GunaiKurnai rituals deep in a Victorian cave",
+      "link": "https://theconversation.com/microscopic-plant-remains-reveal-25-000-years-of-gunaikurnai-rituals-deep-in-a-victorian-cave-287775",
+      "desc": "A new study shows the cave was only used for very special purposes.",
+      "pubDate": "2026-07-22T04:00:37Z",
+      "img": "https://images.theconversation.com/files/748760/original/file-20260720-57-92cz9b.jpg?ixlib=rb-4.1.1&amp;rect=0%2C4646%2C5504%2C2752&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "‘A great thrill’: baby puffin is first one seen on Dorset coast in three decades",
+      "link": "https://www.theguardian.com/environment/2026/jul/22/baby-puffin-first-dorset-coast-three-decades",
+      "desc": "<p>Puffling excites volunteers trying to save the last known regular nesting site on mainland of southern England</p><p>For years, volunteers have craned their necks and tested their patience to peer ",
+      "pubDate": "Wed, 22 Jul 2026 04:00:06 GMT",
+      "img": "https://i.guim.co.uk/img/media/f8f0e32abca5a46146d0179fe46965c10ffde036/96_533_1389_1111/master/1389.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Revisited: A Scottish tea mystery, episode two – the list",
+      "link": "https://www.theguardian.com/science/audio/2026/jul/22/revisited-a-scottish-tea-mystery-episode-two-the-list",
+      "desc": "<p>Science correspondent Nicola Davis investigates the strange story of Tam O’Braan and his attempts to grow tea in Scotland.</p><p>In episode two of this mini-series first broadcast in October 2025, ",
+      "pubDate": "Wed, 22 Jul 2026 04:00:05 GMT",
+      "img": "https://i.guim.co.uk/img/media/9b345c428667848733e826dc75430fa7a4eae1f3/397_0_4005_3204/master/4005.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Judge throws out defamation case against Rebel Wilson",
+      "link": "https://www.smh.com.au/national/watch-live-rebel-wilson-learns-her-fate-in-high-stakes-defamation-case-20260721-p60hah.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "The Hollywood star was sued by the lead actor in her directorial debut over a series of Instagram stories.",
+      "pubDate": "Wed, 22 Jul 2026 14:00:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.21109999999999998%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_74%2C$y_81/t_crop_custom/q_86%2Cf_auto/872e78bd4bee04b7668ca4e11e7f07b9764ea849",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Nation’s largest power company probes potential data breach",
+      "link": "https://www.smh.com.au/business/consumer-affairs/nation-s-largest-power-company-probes-potential-data-leak-20260722-p60hk9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "Origin Energy has launched an urgent investigation into the potential leak of the personal details of some of its 4.7 million customers.",
+      "pubDate": "Wed, 22 Jul 2026 13:43:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_1.059%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_80/t_crop_custom/q_86%2Cf_auto/2c91290c0097f76ebfa62ce27b40d2c73bf1bc0e",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Beetaloo powers into AI boom with NT gas-to-digital strategy",
+      "link": "https://www.smh.com.au/business/companies/beetaloo-powers-into-ai-boom-with-nt-gas-to-digital-strategy-20260722-p60hkb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "desc": "Beetaloo Energy has secured exclusive NT land for a proposed gas-powered AI data centre precinct, opening a potential long-term domestic market for its Beetaloo Basin gas.",
+      "pubDate": "Wed, 22 Jul 2026 13:39:41 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.7354%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/fefa30a9fa8d29b4740bed0ae00d67a4f5f988c9b2dd8853c5322f59a148a549",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Media scrutiny can take many forms. Pauline Hanson’s past few weeks have shown how quickly it can backfire",
+      "link": "https://theconversation.com/media-scrutiny-can-take-many-forms-pauline-hansons-past-few-weeks-have-shown-how-quickly-it-can-backfire-287858",
+      "desc": "Since her press club address, media coverage of the One Nation leader has shifted from fawning to more sober – and revealed some dubious ethics in the process.",
+      "pubDate": "2026-07-22T03:24:36Z",
+      "img": "https://images.theconversation.com/files/749399/original/file-20260722-85-6v3inl.jpg?ixlib=rb-4.1.1&amp;rect=0%2C651%2C7806%2C3903&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "Atlassian one step closer to world's largest hybrid tower in Sydney CBD",
+      "link": "https://www.abc.net.au/news/2026-07-22/nsw-atlassian-new-building-topping-out-ceremony-sydney/106943758",
+      "desc": "When construction finishes next year, the Sydney building will be the tallest hybrid structure in the world by 100 metres.",
+      "pubDate": "Wed, 22 Jul 2026 03:19:09 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/5ea36759cecf09adba33d36f8421b5cd?impolicy=wcms_crop_resize&amp;cropH=2500&amp;cropW=1875&amp;xPos=1313&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "Three things Australia must do to end the tobacco wars",
+      "link": "https://theconversation.com/three-things-australia-must-do-to-end-the-tobacco-wars-287569",
+      "desc": "Right now, based on market share, organised crime effectively is Big Tobacco in Australia.",
+      "pubDate": "2026-07-22T03:07:51Z",
+      "img": "https://images.theconversation.com/files/747919/original/file-20260715-57-v0swsa.jpg?ixlib=rb-4.1.1&amp;rect=0%2C1250%2C7935%2C3967&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
+    },
+    {
+      "title": "Origin Energy investigating 'potential' customer data breach",
+      "link": "https://www.abc.net.au/news/2026-07-22/origin-energy-investigating-potential-data-breach/106944660",
+      "desc": "Origin Energy says it does not believe customer credit card or bank details have been affected by a suspected data breach at the company.",
+      "pubDate": "Wed, 22 Jul 2026 03:07:38 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/ba5144e7c7eac899f9d19c9ed295171d?impolicy=wcms_crop_resize&amp;cropH=2667&amp;cropW=2000&amp;xPos=413&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
     {
       "title": "SA government hits 'pause' on compulsory acquisition of popular restaurant",
       "link": "https://www.abc.net.au/news/2026-07-22/sa-government-pausing-compulsory-acquisition-of-wok-the-duck/106943264",
@@ -2578,6 +2788,16 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "A cheap 15-year-old piece of hardware broke Telstra. It’s a wake-up call for other businesses",
+      "link": "https://theconversation.com/a-cheap-15-year-old-piece-of-hardware-broke-telstra-its-a-wake-up-call-for-other-businesses-287781",
+      "desc": "Telstra is far from alone in its neglect of key pieces of equipment.",
+      "pubDate": "2026-07-20T02:09:59Z",
+      "img": "https://images.theconversation.com/files/748714/original/file-20260720-71-4jrw62.jpg?ixlib=rb-4.1.1&amp;rect=0%2C250%2C3000%2C1500&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+      "sourceId": "conversationau",
+      "sourceName": "The Conversation AU",
+      "sourceColor": "#D8352A"
     },
     {
       "title": "A cheap 25-year-old piece of hardware broke Telstra. It’s a wake-up call for other businesses",
@@ -32618,166 +32838,6 @@
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
-    },
-    {
-      "title": "‘Low-hanging fruit’: New deal lets neighbours trade excess solar power",
-      "link": "https://www.smh.com.au/environment/sustainability/low-hanging-fruit-new-deal-lets-neighbours-trade-excess-solar-power-20260612-p606co.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_environment",
-      "desc": "A virtual energy network allows consumers without solar panels or a shortage of solar output to buy directly from those with plenty.",
-      "pubDate": "Mon, 22 Jun 2026 15:45:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.4113103703703704%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_60%2C$y_81/t_crop_custom/q_86%2Cf_auto/4186c6d8ecfbf3197d895b83077f5016aea44a9e",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Zali Steggall expected to launch teal party after months of secret talks",
-      "link": "https://www.theguardian.com/australia-news/2026/jun/22/zali-steggall-teal-party-launch",
-      "desc": "<p>Allegra Spender, Sophie Scamps and Nicolette Boele are understood to be open to the idea but other crossbenchers are firmly against</p><ul><li><p><a href=\"https://www.theguardian.com/australia-news",
-      "pubDate": "Mon, 22 Jun 2026 05:36:39 GMT",
-      "img": "https://i.guim.co.uk/img/media/3d409c9160dcc691f3f9b5e534f7b617a0317716/294_0_6016_4812/master/6016.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "I banned an obnoxious diner for the first time. It started with the burnt tuile",
-      "link": "https://www.smh.com.au/business/small-business/i-banned-an-obnoxious-diner-for-the-first-time-it-started-with-the-burnt-tuile-20260622-p608xt.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "The night had been going well at my restaurant, especially considering the earlier dramas. But then I got a whisper in my ear: “Unhappy lady in pink.”",
-      "pubDate": "Mon, 22 Jun 2026 15:00:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.2521428571428571%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_21/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/7a5455ad6138c4d1e1711d8f08d90d3ad28c23f1",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "The new David Jones boss needs a turnaround miracle",
-      "link": "https://www.smh.com.au/business/companies/the-new-david-jones-boss-needs-a-turnaround-miracle-20260622-p608yh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "The crucial news at Australia’s oldest department store isn’t the sudden change in chief executive, it’s that the chain lives to fight another day.",
-      "pubDate": "Mon, 22 Jun 2026 14:58:39 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.28109725192048785%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_371%2C$y_248/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/94eb3968dae0dc5864d0c4d5063a38b476139405",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Gateway nails high-grade gold in new WA Yandal discovery",
-      "link": "https://www.smh.com.au/business/companies/gateway-nails-high-grade-gold-in-new-wa-yandal-discovery-20260622-p60921.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "Gateway Mining’s new Cowza discovery has delivered 4m at 4.7g/t gold, highlighting a 4.5km untested gap between another recent find at its Yandal project in WA.",
-      "pubDate": "Mon, 22 Jun 2026 14:53:09 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.7354%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_68/t_crop_custom/q_86%2Cf_auto/6c146a9daf27daab4d97bf877f1f90668a11cdd764c8a2ceca414dca5765f0f9",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "'No longer appropriate': WA MP calls to end Lord's Prayer in parliament",
-      "link": "https://www.abc.net.au/news/2026-06-22/call-for-lords-prayer-to-be-scrapped-in-wa-parliament/106827492",
-      "desc": "A Labor MP says he wants the Lord’s Prayer scrapped from WA parliament, despite the reading of the Christian prayer being a long-held tradition before sessions.",
-      "pubDate": "Mon, 22 Jun 2026 04:50:17 +0000",
-      "img": "https://live-production.wcms.abc-cdn.net.au/3f25b7d4f627ce47100c42a11f3760ce?impolicy=wcms_crop_resize&amp;cropH=6336&amp;cropW=4752&amp;xPos=942&amp;yPos=0&amp;width=862&amp;height=1149",
-      "sourceId": "abcnews",
-      "sourceName": "ABC News",
-      "sourceColor": "#E64626"
-    },
-    {
-      "title": "Authorities confirm second case of deadly bird flu in WA",
-      "link": "https://www.smh.com.au/national/authorities-confirm-second-case-of-deadly-bird-flu-in-wa-20260622-p6091w.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Agriculture minister Julie Cook has confirmed a second wild bird has tested positive to the H5 bird flu.",
-      "pubDate": "Mon, 22 Jun 2026 14:30:44 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/23c9faccb91b0432da60dc9a960e6e1203c1f016",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Time’s running out to book Virgin flight credits before June 30. What are your refund rights?",
-      "link": "https://theconversation.com/times-running-out-to-book-virgin-flight-credits-before-june-30-what-are-your-refund-rights-285585",
-      "desc": "Two experts explain what the new Virgin rules mean, the options for chasing a refund – and how to make it simpler for consumers in future.",
-      "pubDate": "2026-06-22T04:30:01Z",
-      "img": "https://images.theconversation.com/files/743161/original/file-20260622-71-7yt1qd.jpg?ixlib=rb-4.1.0&amp;rect=0%2C100%2C1922%2C961&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Sydney teacher charged over child abuse material, drug possession",
-      "link": "https://www.smh.com.au/national/nsw/sydney-teacher-charged-over-child-abuse-material-drug-possession-20260622-p6090n.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "The year 2 teacher was arrested at an independent Sydney school and charged with possessing child abuse material.",
-      "pubDate": "Mon, 22 Jun 2026 14:07:59 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.9865185185185185%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_506%2C$y_179/t_crop_custom/q_86%2Cf_auto/10d7a0eff804b21ebfd899e313d3a6017756e099df3af90b67b6ed5258852920",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "From mobile jungles to shadow art: how Dutch people try to beat the heat",
-      "link": "https://www.theguardian.com/world/2026/jun/22/from-mobile-jungles-to-shadow-art-how-dutch-people-try-to-beat-the-heat",
-      "desc": "<p>A national heatwave plan has been activated to help people stay cool during the Netherlands’ increasingly hot summers</p><p>Households in Amsterdam are being urged to hang their curtains outside th",
-      "pubDate": "Mon, 22 Jun 2026 04:00:50 GMT",
-      "img": "https://i.guim.co.uk/img/media/282a1f0adf363c04aa705896d5d9405af97a5a71/50_0_1500_1200/master/1500.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "South Perth councillors quit ‘dysfunctional environment’ with rate hike the last straw",
-      "link": "https://www.smh.com.au/national/western-australia/south-perth-councillors-quit-dysfunctional-environment-with-rate-hike-the-last-straw-20260622-p60908.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "South Perth is the latest WA local government to face a councillor mass exodus after three members resigned in the span of 72 hours.",
-      "pubDate": "Mon, 22 Jun 2026 13:46:37 +1000",
-      "img": "https://static.ffx.io/images/$zoom_1%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_141%2C$y_55/t_crop_custom/q_86%2Cf_auto/36bb1dd95f9ebf42b3977ae26323d0d247d9b6c517a75f0e6e05373c949ce7e5",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Australia to export leading radar technology under $2.5 billion deal",
-      "link": "https://www.smh.com.au/national/australia-to-export-leading-radar-technology-under-2-5-billion-deal-20260622-p6090m.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Australia will export its leading radar technology to Canada under a deal worth $2.5 billion.",
-      "pubDate": "Mon, 22 Jun 2026 13:18:48 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/ca1814a8b96c64c1849f594385eb48774accd205",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Australia has already spent over $100 million dealing with Varroa mite. Here’s what we can do next",
-      "link": "https://theconversation.com/australia-has-already-spent-over-100-million-dealing-with-varroa-mite-heres-what-we-can-do-next-285071",
-      "desc": "Current pesticides are already failing – but science points to a way forward.",
-      "pubDate": "2026-06-22T03:18:30Z",
-      "img": "https://images.theconversation.com/files/742614/original/file-20260618-57-gj6b2q.jpg?ixlib=rb-4.1.0&amp;rect=0%2C688%2C6000%2C3000&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
-      "sourceId": "conversationau",
-      "sourceName": "The Conversation AU",
-      "sourceColor": "#D8352A"
-    },
-    {
-      "title": "Clearance rates hit six-year low as more than half of Australian homes up for auction fail to sell",
-      "link": "https://www.theguardian.com/australia-news/2026/jun/22/auction-clearance-rates-six-year-low-australian-homes",
-      "desc": "<p>Preliminary data show 47.7% of homes sold at auction in the week ending 21 June, the lowest rate has been since April 2020</p><ul><li><p><a href=\"https://www.theguardian.com/australia-news/live/202",
-      "pubDate": "Mon, 22 Jun 2026 03:18:24 GMT",
-      "img": "https://i.guim.co.uk/img/media/f727f3b8b2cbcae939cfa7105706cac1ff299fea/0_0_3333_2667/master/3333.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "CCTV released over Melbourne shooting",
-      "link": "https://www.smh.com.au/national/cctv-released-over-melbourne-shooting-20260622-p6090l.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "CCTV has been released amid the police probe into the shooting of ex boxer in Melbourne.",
-      "pubDate": "Mon, 22 Jun 2026 13:17:32 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/3711ce9f3f0f48313518b99c0703e0ad56c5d57f",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "‘Time for a refresh’: David Jones appoints first woman as CEO",
-      "link": "https://www.smh.com.au/business/companies/time-for-a-refresh-david-jones-appoints-first-woman-as-ceo-20260622-p608zh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "desc": "DJ’s private equity owner has appointed Erica Berchtold to run the 188-year-old department store, which has been struggling for years to make money.",
-      "pubDate": "Mon, 22 Jun 2026 13:05:46 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.19353070175438594%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/3dcde4db118f15c631451622bc38e2a208739418",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
     }
   ]
 }
