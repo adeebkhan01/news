@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-22T16:53:15.020Z",
+  "fetchedAt": "2026-07-22T19:49:57.389Z",
   "asx200": {
     "value": 8823,
     "change": 6.9,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.7,
     "change": 0,
-    "changePercent": -0.1,
+    "changePercent": -0.09,
     "previousClose": 0.7,
     "asOf": "2026-07-22",
     "history": [
@@ -203,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4155,
-      "change": -26.9,
-      "changePercent": -0.64
+      "price": 4139.6,
+      "change": -42.3,
+      "changePercent": -1.01
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 60.42,
-      "change": -5.11,
-      "changePercent": -7.79
+      "price": 60.13,
+      "change": -5.4,
+      "changePercent": -8.24
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 86.42,
-      "change": 11.6,
-      "changePercent": 15.5
+      "price": 86.78,
+      "change": 11.96,
+      "changePercent": 15.99
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.49,
-      "change": 0.13,
-      "changePercent": 2.09
+      "price": 6.48,
+      "change": 0.12,
+      "changePercent": 1.95
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,34 @@
   ],
   "news": [
     {
+      "title": "Your guide to every day of the Commonwealth Games in Australian time",
+      "link": "https://www.abc.net.au/news/2026-07-23/commonwealth-games-glasgow-2026-daily-schedule/106931964",
+      "snippet": "",
+      "pubDate": "Wed, 22 Jul 2026 19:34:05 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "ASX set to rise, Wall Street mixed; Oil continues to climb",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-mixed-oil-continues-to-climb-20260723-p60hqg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The US stock market is drifting in mixed trading, while oil prices climb another 3 per cent as fighting continues in the war with Iran.",
+      "pubDate": "Thu, 23 Jul 2026 05:18:29 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "KPMG whistleblower refused to move to Australia, fearing alleged bullying",
+      "link": "https://www.smh.com.au/business/companies/kpmg-whistleblower-refused-to-move-to-australia-fearing-alleged-bullying-20260722-p60hf0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Former KPMG board member and partner Kim Lawry has been accused of bullying and defaming the whistleblower who later triggered an existential crisis at the firm.",
+      "pubDate": "Thu, 23 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "How we got to Glasgow 2026 and what the Commonwealth Games will look like",
+      "link": "https://www.abc.net.au/news/2026-07-23/commonwealth-games-2026-explainer-victoria-to-glasgow/106866994",
+      "snippet": "",
+      "pubDate": "Wed, 22 Jul 2026 18:58:25 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Nina Kennedy arrives early to lead Australia into Glasgow opening ceremony",
       "link": "https://www.abc.net.au/news/2026-07-23/nina-kennedy-tim-hodge-commonwealth-games-flag-and-baton-bearers/106946590",
       "snippet": "",
@@ -892,34 +920,6 @@
       "snippet": "Horizon Gold has tabled a robust definitive study for its WA Gum Creek project, showing a huge $1.8B in cashflow from 880,000 ounces of gold over a 10-year mine life.",
       "pubDate": "Wed, 22 Jul 2026 15:11:49 +1000",
       "source": "SMH Business"
-    },
-    {
-      "title": "Peninsula firms FY27 US mine growth plan on strong uranium grades",
-      "link": "https://www.smh.com.au/business/companies/peninsula-firms-fy27-us-mine-growth-plan-on-strong-uranium-grades-20260722-p60hlc.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Peninsula Energy says strong uranium grades with low-pH and a US$56m funding package will support its CY2027 Lance growth plan as it fine-tunes wellfield flow rates.",
-      "pubDate": "Wed, 22 Jul 2026 14:55:52 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Nation’s largest power company probes data breach",
-      "link": "https://www.smh.com.au/business/consumer-affairs/nation-s-largest-power-company-probes-potential-data-leak-20260722-p60hk9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Origin Energy has launched an urgent investigation into the potential leak of the personal details of some of its 4.7 million customers.",
-      "pubDate": "Wed, 22 Jul 2026 13:43:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Beetaloo powers into AI boom with NT gas-to-digital strategy",
-      "link": "https://www.smh.com.au/business/companies/beetaloo-powers-into-ai-boom-with-nt-gas-to-digital-strategy-20260722-p60hkb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Beetaloo Energy has secured exclusive NT land for a proposed gas-powered AI data centre precinct, opening a potential long-term domestic market for its Beetaloo Basin gas.",
-      "pubDate": "Wed, 22 Jul 2026 13:39:41 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Lewis breaks Australian 100m record, beats five-time Olympic champ",
-      "link": "https://www.abc.net.au/news/2026-07-22/athletics-torrie-lewis-breaks-australian-100m-record/106944300",
-      "snippet": "",
-      "pubDate": "Wed, 22 Jul 2026 03:30:00 +0000",
-      "source": "ABC News"
     }
   ]
 }
