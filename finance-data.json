@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-22T19:49:57.389Z",
+  "fetchedAt": "2026-07-22T22:29:54.781Z",
   "asx200": {
     "value": 8823,
     "change": 6.9,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.7,
     "change": 0,
-    "changePercent": -0.09,
+    "changePercent": -0.17,
     "previousClose": 0.7,
     "asOf": "2026-07-22",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.7
       },
       {
+        "date": "2026-07-21",
+        "close": 0.7
+      },
+      {
         "date": "2026-07-22",
         "close": 0.7
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4139.6,
-      "change": -42.3,
-      "changePercent": -1.01
+      "price": 4127.3,
+      "change": -54.6,
+      "changePercent": -1.31
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 60.13,
-      "change": -5.4,
-      "changePercent": -8.24
+      "price": 59.84,
+      "change": -5.69,
+      "changePercent": -8.68
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 86.78,
-      "change": 11.96,
-      "changePercent": 15.99
+      "price": 88.2,
+      "change": 13.38,
+      "changePercent": 17.88
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
       "price": 6.48,
-      "change": 0.12,
-      "changePercent": 1.95
+      "change": 0.13,
+      "changePercent": 2
     },
     {
       "name": "BHP Group",
@@ -838,6 +842,48 @@
   ],
   "news": [
     {
+      "title": "Macquarie Group boss Shemara Wikramanayake to retire",
+      "link": "https://www.smh.com.au/business/banking-and-finance/macquarie-group-boss-shemara-wikramanayake-to-retire-20260723-p60hro.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The chief of the “millionaires’ factory” is retiring after close to eight years in the job, to be replaced by the head of its banking arm, Greg Ward.",
+      "pubDate": "Thu, 23 Jul 2026 08:29:14 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Star footballer's protest over transfer leads to training cancellation",
+      "link": "https://www.abc.net.au/news/2026-07-23/tolu-arokodare-forces-wolves-training-cancellation/106947528",
+      "snippet": "",
+      "pubDate": "Wed, 22 Jul 2026 22:19:32 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Philipsen claims Tour de France stage as UCI defends late-night drug tests",
+      "link": "https://www.abc.net.au/news/2026-07-23/tour-de-france-stage-17-jasper-philipsen-claims-victory/106947460",
+      "snippet": "",
+      "pubDate": "Wed, 22 Jul 2026 21:07:04 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "When Gordon Bray and his Homebush schoolmates ruled their rugby world",
+      "link": "https://www.abc.net.au/news/2026-07-23/rugby-union-homebush-boys-high-1965-first-xv-bray-symond-coates/106872264",
+      "snippet": "",
+      "pubDate": "Wed, 22 Jul 2026 20:39:15 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "AFL's first publicly gay player calls for respect in Crows-Pies match",
+      "link": "https://www.abc.net.au/news/2026-07-23/afl-first-gay-player-urges-fan-respect-in-crows-collingwood-game/106943436",
+      "snippet": "",
+      "pubDate": "Wed, 22 Jul 2026 20:12:52 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Chargrill Charlie’s is the little chook shop that could. It’s just not so little any more",
+      "link": "https://www.smh.com.au/business/entrepreneurship/chargrill-charlie-s-is-the-little-chook-shop-that-could-it-s-just-not-so-little-any-more-20260703-p60chq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The suburban roast chicken and takeaway joint, backed by Big Chicken and private equity, is one of many chains jostling for supremacy in the chicken wars.",
+      "pubDate": "Thu, 23 Jul 2026 06:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
       "title": "Your guide to every day of the Commonwealth Games in Australian time",
       "link": "https://www.abc.net.au/news/2026-07-23/commonwealth-games-glasgow-2026-daily-schedule/106931964",
       "snippet": "",
@@ -845,7 +891,7 @@
       "source": "ABC News"
     },
     {
-      "title": "ASX set to rise, Wall Street mixed; Oil continues to climb",
+      "title": "ASX set to rise, Wall Street mixed; Oil continues to climb; Tesla, Alphabet results",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-mixed-oil-continues-to-climb-20260723-p60hqg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "The US stock market is drifting in mixed trading, while oil prices climb another 3 per cent as fighting continues in the war with Iran.",
       "pubDate": "Thu, 23 Jul 2026 05:18:29 +1000",
@@ -854,7 +900,7 @@
     {
       "title": "KPMG whistleblower refused to move to Australia, fearing alleged bullying",
       "link": "https://www.smh.com.au/business/companies/kpmg-whistleblower-refused-to-move-to-australia-fearing-alleged-bullying-20260722-p60hf0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Former KPMG board member and partner Kim Lawry has been accused of bullying and defaming the whistleblower who later triggered an existential crisis at the firm.",
+      "snippet": "KPMG partner and former board member Kim Lawry has been accused of bullying and defaming the whistleblower who later triggered an existential crisis at the firm.",
       "pubDate": "Thu, 23 Jul 2026 05:00:00 +1000",
       "source": "SMH Business"
     },
@@ -866,7 +912,7 @@
       "source": "ABC News"
     },
     {
-      "title": "Nina Kennedy arrives early to lead Australia into Glasgow opening ceremony",
+      "title": "Kennedy arrives early to lead Australia into Glasgow opening ceremony",
       "link": "https://www.abc.net.au/news/2026-07-23/nina-kennedy-tim-hodge-commonwealth-games-flag-and-baton-bearers/106946590",
       "snippet": "",
       "pubDate": "Wed, 22 Jul 2026 14:28:37 +0000",
@@ -877,48 +923,6 @@
       "link": "https://www.smh.com.au/business/companies/crypto-casino-billionaire-s-father-s-mansion-in-suspicious-fire-20260722-p60hlq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Police are investigating a fire at the 15-bedroom, 15-bathroom compound that the family hoped to renovate at a cost of $30 million.",
       "pubDate": "Wed, 22 Jul 2026 18:43:23 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Miners and energy stocks push ASX higher; Origin, Lynas decline",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-advance-tech-stocks-push-wall-street-higher-google-s-new-ai-offerings-20260722-p60hd2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket advanced after Wall Street climbed, shrugging off another jump in oil prices amid the hostilities in the Middle East.",
-      "pubDate": "Wed, 22 Jul 2026 18:10:38 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Eels defend Luai's 2027 signing ahead of Chiefs move",
-      "link": "https://www.abc.net.au/news/2026-07-22/nrl-parramatta-eels-jarome-luai-2027/106946658",
-      "snippet": "",
-      "pubDate": "Wed, 22 Jul 2026 07:56:12 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Viking rolls drill rig onto US tungsten play after 40-year wait",
-      "link": "https://www.smh.com.au/business/companies/viking-rolls-drill-rig-onto-us-tungsten-play-after-40-year-wait-20260722-p60hnp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Viking Mines is set to drill its historic Linka tungsten project in the US for the first time in 40 years, targeting high-grade extensions and a maiden resource.",
-      "pubDate": "Wed, 22 Jul 2026 16:47:39 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Proteomics taps Healius network for national diagnostics rollout",
-      "link": "https://www.smh.com.au/business/companies/proteomics-taps-healius-network-for-national-diagnostics-rollout-20260722-p60hn5.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Proteomics International Laboratories has signed Healius as exclusive Australian pathology distributor for its Promarker blood tests, unlocking a network of more than 2000 collection centres.",
-      "pubDate": "Wed, 22 Jul 2026 16:30:03 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "It’s News Corp v the ‘byte burglars’: Murdochs fire up in AI content battle",
-      "link": "https://www.smh.com.au/business/companies/it-s-news-corp-vs-the-byte-burglars-murdochs-fire-up-in-ai-content-battle-20260722-p60hi3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Taking on the Murdoch empire and allegedly stealing its publishing news content was never going to go unanswered by the world’s most powerful media family.",
-      "pubDate": "Wed, 22 Jul 2026 16:17:32 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Horizon Gold flags massive $1.8B earn for WA gold mine",
-      "link": "https://www.smh.com.au/business/companies/horizon-gold-flags-massive-1-8b-earn-for-wa-gold-mine-20260722-p60hlr.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Horizon Gold has tabled a robust definitive study for its WA Gum Creek project, showing a huge $1.8B in cashflow from 880,000 ounces of gold over a 10-year mine life.",
-      "pubDate": "Wed, 22 Jul 2026 15:11:49 +1000",
       "source": "SMH Business"
     }
   ]
