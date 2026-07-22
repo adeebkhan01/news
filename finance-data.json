@@ -1,11 +1,11 @@
 {
-  "fetchedAt": "2026-07-21T22:23:20.592Z",
+  "fetchedAt": "2026-07-22T03:52:50.338Z",
   "asx200": {
-    "value": 8793.3,
-    "change": -35.4,
-    "changePercent": -0.4,
-    "previousClose": 8828.7,
-    "asOf": "2026-07-21",
+    "value": 8831,
+    "change": 14.9,
+    "changePercent": 0.17,
+    "previousClose": 8816.1,
+    "asOf": "2026-07-22",
     "history": [
       {
         "date": "2026-06-22",
@@ -90,15 +90,23 @@
       {
         "date": "2026-07-20",
         "close": 8791.3
+      },
+      {
+        "date": "2026-07-21",
+        "close": 8793.3
+      },
+      {
+        "date": "2026-07-22",
+        "close": 8831
       }
     ]
   },
   "audusd": {
     "value": 0.7,
     "change": 0,
-    "changePercent": -0.16,
+    "changePercent": -0.01,
     "previousClose": 0.7,
-    "asOf": "2026-07-21",
+    "asOf": "2026-07-22",
     "history": [
       {
         "date": "2026-06-21",
@@ -189,7 +197,7 @@
         "close": 0.7
       },
       {
-        "date": "2026-07-21",
+        "date": "2026-07-22",
         "close": 0.7
       }
     ]
@@ -199,169 +207,169 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4081.6,
-      "change": -100.3,
-      "changePercent": -2.4
+      "price": 4137.3,
+      "change": -44.6,
+      "changePercent": -1.07
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 59.12,
-      "change": -6.41,
-      "changePercent": -9.79
+      "price": 60.06,
+      "change": -5.47,
+      "changePercent": -8.34
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 84.63,
-      "change": 9.81,
-      "changePercent": 13.11
+      "price": 85.2,
+      "change": 10.38,
+      "changePercent": 13.87
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.53,
+      "price": 6.52,
       "change": 0.17,
-      "changePercent": 2.74
+      "changePercent": 2.6
     },
     {
       "name": "BHP Group",
       "icon": "⛏️",
       "iconBg": "#e6f2ec",
-      "price": 58.29,
-      "change": -3.11,
-      "changePercent": -5.07
+      "price": 60.05,
+      "change": -0.29,
+      "changePercent": -0.48
     },
     {
       "name": "Rio Tinto",
       "icon": "🏗️",
       "iconBg": "#eff6ff",
-      "price": 157.99,
-      "change": -19.38,
-      "changePercent": -10.93
+      "price": 162.12,
+      "change": -13.87,
+      "changePercent": -7.88
     }
   ],
   "sectors": [
     {
       "name": "Financials",
-      "changePercent": -0.94,
+      "changePercent": 0.11,
       "stocks": [
         {
           "name": "CBA",
-          "price": 170.49,
-          "changePercent": -0.41
+          "price": 170.98,
+          "changePercent": 0.28
         },
         {
           "name": "WBC",
-          "price": 36.22,
-          "changePercent": -1.2
+          "price": 36.21,
+          "changePercent": -0.03
         },
         {
           "name": "ANZ",
-          "price": 35.7,
-          "changePercent": -1.19
+          "price": 35.69,
+          "changePercent": -0.03
         },
         {
           "name": "NAB",
-          "price": 39.3,
-          "changePercent": -0.98
+          "price": 39.38,
+          "changePercent": 0.2
         }
       ]
     },
     {
       "name": "Materials",
-      "changePercent": -0.87,
+      "changePercent": 2.39,
       "stocks": [
         {
           "name": "BHP",
-          "price": 58.29,
-          "changePercent": 1.3
+          "price": 60.06,
+          "changePercent": 3.04
         },
         {
           "name": "RIO",
-          "price": 157.99,
-          "changePercent": 0.03
+          "price": 162.12,
+          "changePercent": 2.61
         },
         {
           "name": "FMG",
-          "price": 18.52,
-          "changePercent": -1.33
+          "price": 18.81,
+          "changePercent": 1.57
         },
         {
           "name": "MIN",
-          "price": 52.69,
-          "changePercent": -3.48
+          "price": 53.93,
+          "changePercent": 2.35
         }
       ]
     },
     {
       "name": "Health Care",
-      "changePercent": -1.33,
+      "changePercent": -2.02,
       "stocks": [
         {
           "name": "CSL",
-          "price": 121.38,
-          "changePercent": -1
+          "price": 118.14,
+          "changePercent": -2.67
         },
         {
           "name": "COH",
-          "price": 118,
-          "changePercent": -0.84
+          "price": 113.55,
+          "changePercent": -3.77
         },
         {
           "name": "RMD",
-          "price": 27.94,
-          "changePercent": -0.89
+          "price": 27.87,
+          "changePercent": -0.25
         },
         {
           "name": "SHL",
-          "price": 21.12,
-          "changePercent": -2.58
+          "price": 20.83,
+          "changePercent": -1.4
         }
       ]
     },
     {
       "name": "Consumer Discretionary",
-      "changePercent": -0.26,
+      "changePercent": -1.03,
       "stocks": [
         {
           "name": "WES",
-          "price": 91.84,
-          "changePercent": -1.2
+          "price": 91.01,
+          "changePercent": -0.9
         },
         {
           "name": "HVN",
-          "price": 4.81,
-          "changePercent": -0.21
+          "price": 4.73,
+          "changePercent": -1.66
         },
         {
           "name": "JBH",
-          "price": 79.29,
-          "changePercent": -0.05
+          "price": 78.23,
+          "changePercent": -1.34
         },
         {
           "name": "ALL",
-          "price": 62.55,
-          "changePercent": 0.42
+          "price": 62.42,
+          "changePercent": -0.21
         }
       ]
     },
     {
       "name": "Industrials",
-      "changePercent": -0.29,
+      "changePercent": -0.32,
       "stocks": [
         {
           "name": "TCL",
-          "price": 14.6,
-          "changePercent": -1.28
+          "price": 14.58,
+          "changePercent": -0.14
         },
         {
           "name": "BXB",
-          "price": 19.33,
-          "changePercent": -0.36
+          "price": 19.01,
+          "changePercent": -1.68
         },
         {
           "name": "SYD",
@@ -370,29 +378,29 @@
         },
         {
           "name": "QAN",
-          "price": 10.14,
-          "changePercent": 0.5
+          "price": 10.2,
+          "changePercent": 0.54
         }
       ]
     },
     {
       "name": "Real Estate",
-      "changePercent": 0.45,
+      "changePercent": -0.75,
       "stocks": [
         {
           "name": "GMG",
-          "price": 29.55,
-          "changePercent": 1.34
+          "price": 29.17,
+          "changePercent": -1.29
         },
         {
           "name": "SGP",
-          "price": 4.14,
-          "changePercent": 0.73
+          "price": 4.11,
+          "changePercent": -0.72
         },
         {
           "name": "GPT",
-          "price": 4.97,
-          "changePercent": 0
+          "price": 4.93,
+          "changePercent": -0.7
         },
         {
           "name": "MGR",
@@ -403,131 +411,131 @@
     },
     {
       "name": "Consumer Staples",
-      "changePercent": -0.63,
+      "changePercent": -0.75,
       "stocks": [
         {
           "name": "WOW",
-          "price": 39.48,
-          "changePercent": 0.38
+          "price": 38.9,
+          "changePercent": -1.48
         },
         {
           "name": "COL",
-          "price": 23.3,
-          "changePercent": -0.34
+          "price": 23.2,
+          "changePercent": -0.43
         },
         {
           "name": "TWE",
-          "price": 4.62,
-          "changePercent": -2.12
+          "price": 4.6,
+          "changePercent": -0.54
         },
         {
           "name": "A2M",
-          "price": 7.02,
-          "changePercent": -0.43
+          "price": 6.98,
+          "changePercent": -0.57
         }
       ]
     },
     {
       "name": "Energy",
-      "changePercent": 0.02,
+      "changePercent": 0.13,
       "stocks": [
         {
           "name": "WDS",
-          "price": 31.25,
-          "changePercent": 1.13
+          "price": 31.47,
+          "changePercent": 0.69
         },
         {
           "name": "STO",
-          "price": 7.77,
-          "changePercent": -0.89
+          "price": 7.84,
+          "changePercent": 0.9
         },
         {
           "name": "ORG",
-          "price": 10.62,
-          "changePercent": 1.14
+          "price": 10.36,
+          "changePercent": -2.45
         },
         {
           "name": "WHC",
-          "price": 7.53,
-          "changePercent": -1.31
+          "price": 7.64,
+          "changePercent": 1.39
         }
       ]
     },
     {
       "name": "Information Technology",
-      "changePercent": 1.8,
+      "changePercent": 0.03,
       "stocks": [
         {
           "name": "XRO",
-          "price": 69.67,
-          "changePercent": 2.05
+          "price": 67.91,
+          "changePercent": -2.53
         },
         {
           "name": "WTC",
-          "price": 34,
-          "changePercent": 0.86
+          "price": 33.75,
+          "changePercent": -0.74
         },
         {
           "name": "CPU",
-          "price": 39.72,
-          "changePercent": -0.87
+          "price": 39.76,
+          "changePercent": 0.1
         },
         {
           "name": "APX",
-          "price": 0.92,
-          "changePercent": 5.17
+          "price": 0.95,
+          "changePercent": 3.28
         }
       ]
     },
     {
       "name": "Communication Services",
-      "changePercent": 0,
+      "changePercent": -1.9,
       "stocks": [
         {
           "name": "TLS",
-          "price": 4.98,
-          "changePercent": -1.78
+          "price": 4.97,
+          "changePercent": -0.3
         },
         {
           "name": "REA",
-          "price": 164.07,
-          "changePercent": 1.76
+          "price": 160.24,
+          "changePercent": -2.33
         },
         {
           "name": "CAR",
-          "price": 26.12,
-          "changePercent": 1.67
+          "price": 25.47,
+          "changePercent": -2.49
         },
         {
           "name": "NWS",
-          "price": 45.73,
-          "changePercent": -1.66
+          "price": 44.59,
+          "changePercent": -2.5
         }
       ]
     },
     {
       "name": "Utilities",
-      "changePercent": 0.29,
+      "changePercent": -1.16,
       "stocks": [
         {
           "name": "AGL",
-          "price": 8.23,
-          "changePercent": -1.2
+          "price": 8.26,
+          "changePercent": 0.36
         },
         {
           "name": "APA",
-          "price": 10.13,
-          "changePercent": -0.49
+          "price": 10.09,
+          "changePercent": -0.44
         },
         {
           "name": "ORG",
-          "price": 10.62,
-          "changePercent": 1.14
+          "price": 10.36,
+          "changePercent": -2.45
         },
         {
           "name": "MEZ",
-          "price": 4.74,
-          "changePercent": 1.72
+          "price": 4.64,
+          "changePercent": -2.11
         }
       ]
     }
@@ -834,6 +842,76 @@
   ],
   "news": [
     {
+      "title": "Nation’s largest power company probes potential data leak",
+      "link": "https://www.smh.com.au/business/consumer-affairs/nation-s-largest-power-company-probes-potential-data-leak-20260722-p60hk9.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Origin Energy has launched an urgent investigation into the potential leak of the personal details of some of its 4.7 million customers.",
+      "pubDate": "Wed, 22 Jul 2026 13:43:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Beetaloo powers into AI boom with NT gas-to-digital strategy",
+      "link": "https://www.smh.com.au/business/companies/beetaloo-powers-into-ai-boom-with-nt-gas-to-digital-strategy-20260722-p60hkb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Beetaloo Energy has secured exclusive NT land for a proposed gas-powered AI data centre precinct, opening a potential long-term domestic market for its Beetaloo Basin gas.",
+      "pubDate": "Wed, 22 Jul 2026 13:39:41 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Lewis breaks Australian 100m record, beats five-time Olympic champ",
+      "link": "https://www.abc.net.au/news/2026-07-22/athletics-torrie-lewis-breaks-australian-100m-record/106944300",
+      "snippet": "",
+      "pubDate": "Wed, 22 Jul 2026 03:30:00 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Fox sisters combine in 'dream team' for gold medals at World Championships",
+      "link": "https://www.abc.net.au/news/2026-07-22/kayak-jess-fox-noemie-fox-win-gold-world-championships/106944088",
+      "snippet": "",
+      "pubDate": "Wed, 22 Jul 2026 02:20:36 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Cruise boat captain sacked after sleeping in front of passengers",
+      "link": "https://www.smh.com.au/business/companies/cruise-boat-captain-sacked-after-sleeping-in-front-of-guests-20260722-p60hez.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "A Whitsundays tour boat captain who fell asleep and was snoring in front of guests, left unqualified staff to steer the boat, and threw food into the water with people snorkelling nearby, has failed to win back his job.",
+      "pubDate": "Wed, 22 Jul 2026 11:59:37 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Miners and energy stocks push ASX higher; Lynas, tech stocks decline",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-advance-tech-stocks-push-wall-street-higher-google-s-new-ai-offerings-20260722-p60hd2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The Australian sharemarket advanced in early trade after Wall Street climbed, shrugging off another jump in oil prices amid the hostilities in the Middle East.",
+      "pubDate": "Wed, 22 Jul 2026 11:58:06 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "The real oil shock from the Iran war might be just beginning",
+      "link": "https://www.smh.com.au/business/markets/the-real-oil-shock-from-the-iran-war-might-be-just-beginning-20260722-p60heb.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The opening of a second front in the war in the Middle East and depleted stocks of oil and refined products around the globe have left the world vulnerable, and oil prices are spiking.",
+      "pubDate": "Wed, 22 Jul 2026 11:57:41 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "ABC boss says Anthropic wants to pay for decades of content to train its Claude chatbot",
+      "link": "https://www.smh.com.au/business/companies/abc-boss-says-anthropic-wants-to-pay-for-decades-of-content-to-train-its-claude-chatbot-20260722-p60hef.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Hugh Marks said the $1.4 trillion tech giant wants to buy access to the ABC’s archives.",
+      "pubDate": "Wed, 22 Jul 2026 10:36:13 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Spanish chief accuses FIFA boss of 'destroying the football industry'",
+      "link": "https://www.abc.net.au/news/2026-07-22/fifa-president-gianni-infantino-destroying-football-javier-tebas/106943082",
+      "snippet": "",
+      "pubDate": "Tue, 21 Jul 2026 23:08:30 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Cameron McEvoy has lived a life between trips to Glasgow",
+      "link": "https://www.abc.net.au/news/2026-07-22/commonwealth-games-cam-mcevoy-back-in-glasgow/106942604",
+      "snippet": "",
+      "pubDate": "Tue, 21 Jul 2026 22:30:17 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "US rider hit by car in road rage incident before Tour de France time trial",
       "link": "https://www.abc.net.au/news/2026-07-22/tour-de-france-mcnulty-road-rage-evenepoel-wins-time-trial-stage/106942866",
       "snippet": "",
@@ -846,76 +924,6 @@
       "snippet": "",
       "pubDate": "Tue, 21 Jul 2026 20:50:27 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "ASX set to advance, tech stocks push Wall Street higher; Google’s new AI offerings",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-advance-tech-stocks-push-wall-street-higher-google-s-new-ai-offerings-20260722-p60hd2.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "More gains for makers of computer chips and other winners of the artificial-intelligence boom boosted Wall Street.",
-      "pubDate": "Wed, 22 Jul 2026 06:40:24 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "If you want to understand why houses are so expensive, go to the airport",
-      "link": "https://www.smh.com.au/business/the-economy/if-you-want-to-understand-why-houses-are-so-expensive-go-to-the-airport-20260721-p60h27.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "We’re paying too much for our housing, just like we’re paying too much for food at the airport. Stick with me here, there is a connection.",
-      "pubDate": "Wed, 22 Jul 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Why European summer holiday fares haven’t fallen in line with petrol",
-      "link": "https://www.smh.com.au/business/companies/why-european-summer-holiday-fares-haven-t-fallen-in-line-with-petrol-20260721-p60h2l.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "While bowser prices for motorists have dipped on hopes – however fleeting – of Middle East stability, jet fuel prices remain elevated.",
-      "pubDate": "Wed, 22 Jul 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Sydney influencer battles FIFA and Instagram as his business evaporates",
-      "link": "https://www.smh.com.au/business/companies/sydney-influencer-battles-fifa-and-instagram-as-his-business-evaporates-20260721-p60h2u.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Will Atkinson claims Meta, Instagram’s owner, has failed to restore his social media account even as FIFA didn’t proceed with a copyright infringement lawsuit.",
-      "pubDate": "Wed, 22 Jul 2026 05:00:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Fiat and Citroen’s Australian pullback could be just the start as Chinese EV surge",
-      "link": "https://www.smh.com.au/business/companies/fiat-and-citroen-s-australian-pullback-could-be-just-the-start-as-chinese-ev-surge-20260721-p60h2s.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "More European, American and Japanese carmakers are coming under pressure as our vehicle preferences turn quickly toward Chinese EVs.",
-      "pubDate": "Tue, 21 Jul 2026 19:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "One day into the job and KPMG’s CEO is already facing questions over whistleblower saga",
-      "link": "https://www.smh.com.au/business/companies/kpmg-appoints-new-ceo-as-massive-job-cuts-loom-20260721-p60h49.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "John Sams is a lifelong veteran of the embattled consulting giant that is trying to show it can reform itself after leading a host of senior executives.",
-      "pubDate": "Tue, 21 Jul 2026 18:42:38 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "McRae sends special message to Hill before Pies head west",
-      "link": "https://www.abc.net.au/news/2026-07-21/mcrae-sends-special-message-to-hill-before-pies-head-west/106941576",
-      "snippet": "",
-      "pubDate": "Tue, 21 Jul 2026 07:51:20 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "ASX recoups losses to finish flat as gold miners, tech stocks gain",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-slide-wall-street-steadies-paramount-warner-bros-deal-paused-by-judge-20260721-p60h0v.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket recovered from its early losses and closed basically unchanged on Tuesday after investors waded back into tech stocks and gold producers rallied following an upswing in prices for the precious metal.",
-      "pubDate": "Tue, 21 Jul 2026 17:22:37 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "How this Champions League winner aims to ignite Stingers",
-      "link": "https://www.abc.net.au/news/2026-07-21/abby-andrews-water-polo-world-cup-sydney/106940074",
-      "snippet": "",
-      "pubDate": "Tue, 21 Jul 2026 06:01:08 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Gateway triples new WA gold discovery strike to 2.5km",
-      "link": "https://www.smh.com.au/business/companies/gateway-triples-new-wa-gold-discovery-strike-to-2-5km-20260721-p60ha6.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Gateway Mining has tripled Cowza’s strike to 2.5km and confirmed fresh-rock gold, positioning the new discovery as a potential key find at its Yandal project in WA.",
-      "pubDate": "Tue, 21 Jul 2026 15:56:58 +1000",
-      "source": "SMH Business"
     }
   ]
 }
