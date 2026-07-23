@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-23T19:52:12.511Z",
+  "fetchedAt": "2026-07-23T22:27:59.680Z",
   "asx200": {
     "value": 8839,
     "change": 52,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.7,
     "change": 0,
-    "changePercent": -0.4,
+    "changePercent": -0.36,
     "previousClose": 0.7,
     "asOf": "2026-07-23",
     "history": [
@@ -193,6 +193,10 @@
         "close": 0.7
       },
       {
+        "date": "2026-07-22",
+        "close": 0.7
+      },
+      {
         "date": "2026-07-23",
         "close": 0.7
       }
@@ -203,33 +207,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4049.8,
-      "change": -80.1,
-      "changePercent": -1.94
+      "price": 4051.8,
+      "change": -78.1,
+      "changePercent": -1.89
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 57.82,
-      "change": -4.2,
-      "changePercent": -6.77
+      "price": 57.86,
+      "change": -4.17,
+      "changePercent": -6.72
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 91.67,
-      "change": 18.46,
-      "changePercent": 25.22
+      "price": 92.26,
+      "change": 19.05,
+      "changePercent": 26.02
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.32,
-      "change": 0.18,
-      "changePercent": 2.88
+      "price": 6.33,
+      "change": 0.19,
+      "changePercent": 3.11
     },
     {
       "name": "BHP Group",
@@ -838,11 +842,46 @@
   ],
   "news": [
     {
+      "title": "Stage winner almost hits overzealous fan in gruelling Tour de France climb",
+      "link": "https://www.abc.net.au/news/2026-07-24/tour-de-france-stage-18-richard-carapaz-almost-hits-fan/106952700",
+      "snippet": "",
+      "pubDate": "Thu, 23 Jul 2026 21:47:35 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "History beckons as Stingers, Sharks surge into water polo semifinals",
+      "link": "https://www.abc.net.au/news/2026-07-24/water-polo-world-cup-finals-stingers-sharks-semis/106951728",
+      "snippet": "",
+      "pubDate": "Thu, 23 Jul 2026 21:39:11 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "This is the AFL's most interesting Western Derby in a decade",
+      "link": "https://www.abc.net.au/news/2026-07-24/most-interesting-afl-western-derby-in-recent-history/100702660",
+      "snippet": "",
+      "pubDate": "Thu, 23 Jul 2026 21:32:17 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "ASX set to slump as oil surges over $US100, Tesla and Alphabet tumble",
       "link": "https://www.smh.com.au/business/markets/asx-set-to-slump-as-oil-surges-over-us100-tesla-and-alphabet-tumble-20260724-p60i4o.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "Rising oil prices and sharp drops for two of Wall Street’s most influential companies, Alphabet and Tesla, yanked the US stock market lower.",
-      "pubDate": "Fri, 24 Jul 2026 05:24:13 +1000",
+      "pubDate": "Fri, 24 Jul 2026 06:31:37 +1000",
       "source": "SMH Business"
+    },
+    {
+      "title": "Qantas plane set to arrive in Australia today – direct from France",
+      "link": "https://www.smh.com.au/business/companies/qantas-plane-set-to-arrive-in-australia-today-direct-from-france-20260723-p60i3u.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The custom-built Airbus A350-1000ULR is expected to land in Melbourne on Friday after making a direct 20-hour plus flight from the factory in Toulouse.",
+      "pubDate": "Fri, 24 Jul 2026 06:00:55 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "This footy club wants better for its women's team but is in a pinch",
+      "link": "https://www.abc.net.au/news/2026-07-24/macedon-football-netball-club-facilities-women-and-girls-teams/106854456",
+      "snippet": "",
+      "pubDate": "Thu, 23 Jul 2026 19:51:02 +0000",
+      "source": "ABC News"
     },
     {
       "title": "My boss is awful, and we all want to leave. How do I avoid burning bridges?",
@@ -880,45 +919,10 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Parade of athletes begins after King Charles arrives by TARDIS",
+      "title": "Live: King Charles opens Glasgow 2026 after ceremony buoyed by Scottish pride",
       "link": "https://www.abc.net.au/news/2026-07-24/commonwealth-games-opening-ceremony-live-blog/106952502",
       "snippet": "",
       "pubDate": "Thu, 23 Jul 2026 18:37:14 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Netball agents frustrated as pay talks roll into Glasgow 2026",
-      "link": "https://www.abc.net.au/news/2026-07-23/super-netball-player-agents-express-concern-as-pay-talks-roll-on/106951692",
-      "snippet": "",
-      "pubDate": "Thu, 23 Jul 2026 11:48:33 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Australia gets first win with Glasgow asleep and the Games yet to open",
-      "link": "https://www.abc.net.au/news/2026-07-23/bowls-kicks-off-2026-glasgow-commonwealth-games/106951118",
-      "snippet": "",
-      "pubDate": "Thu, 23 Jul 2026 11:17:47 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Google hit with $1.5 billion fine over app store, search breaches",
-      "link": "https://www.smh.com.au/business/companies/google-hit-with-890-million-eu-fine-over-app-store-search-breaches-20260723-p60i3j.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The tech giant has been slapped with two fines from the EU for favouring its own services in search results and restricting app developers from steering users to cheaper offers.",
-      "pubDate": "Thu, 23 Jul 2026 21:04:16 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Macquarie boss’s shareholding stands out from the crowd",
-      "link": "https://www.smh.com.au/business/companies/macquarie-boss-s-shareholding-stands-out-from-the-crowd-20260723-p60hxa.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Shemara Wikramanayake is set to leave Macquarie with a shareholding built up over almost four decades worth hundreds of millions.",
-      "pubDate": "Thu, 23 Jul 2026 19:30:00 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Penrith flyer breaks record in comeback Panthers win",
-      "link": "https://www.abc.net.au/news/2026-07-23/nrl-live-updates-eels-panthers-nathan-cleary-mitchell-moses/106951712",
-      "snippet": "",
-      "pubDate": "Thu, 23 Jul 2026 09:10:45 +0000",
       "source": "ABC News"
     }
   ]
