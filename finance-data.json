@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-23T16:51:54.860Z",
+  "fetchedAt": "2026-07-23T19:52:12.511Z",
   "asx200": {
     "value": 8839,
     "change": 52,
@@ -100,7 +100,7 @@
   "audusd": {
     "value": 0.7,
     "change": 0,
-    "changePercent": -0.23,
+    "changePercent": -0.4,
     "previousClose": 0.7,
     "asOf": "2026-07-23",
     "history": [
@@ -203,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4052.6,
-      "change": -77.3,
-      "changePercent": -1.87
+      "price": 4049.8,
+      "change": -80.1,
+      "changePercent": -1.94
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 58,
-      "change": -4.03,
-      "changePercent": -6.49
+      "price": 57.82,
+      "change": -4.2,
+      "changePercent": -6.77
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 92.36,
-      "change": 19.15,
-      "changePercent": 26.16
+      "price": 91.67,
+      "change": 18.46,
+      "changePercent": 25.22
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.34,
-      "change": 0.2,
-      "changePercent": 3.18
+      "price": 6.32,
+      "change": 0.18,
+      "changePercent": 2.88
     },
     {
       "name": "BHP Group",
@@ -838,6 +838,55 @@
   ],
   "news": [
     {
+      "title": "ASX set to slump as oil surges over $US100, Tesla and Alphabet tumble",
+      "link": "https://www.smh.com.au/business/markets/asx-set-to-slump-as-oil-surges-over-us100-tesla-and-alphabet-tumble-20260724-p60i4o.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Rising oil prices and sharp drops for two of Wall Street’s most influential companies, Alphabet and Tesla, yanked the US stock market lower.",
+      "pubDate": "Fri, 24 Jul 2026 05:24:13 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "My boss is awful, and we all want to leave. How do I avoid burning bridges?",
+      "link": "https://www.smh.com.au/business/workplace/my-boss-is-awful-and-we-all-want-to-leave-how-do-i-avoid-burning-bridges-20260723-p60hze.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Office politics can be delicate and sometimes dobbing in a person in power can seem right in theory but only causes pain in practice.",
+      "pubDate": "Fri, 24 Jul 2026 05:01:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "What Macca’s reveals about our living standards – and how to get a free lunch",
+      "link": "https://www.smh.com.au/business/the-economy/what-macca-s-reveals-about-our-living-standards-and-how-to-get-a-free-lunch-20260722-p60hk8.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "One economist has gone on McDonald’s runs across the world in pursuit of data on wages. Here’s how you could help (and get a free burger).",
+      "pubDate": "Fri, 24 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Pauline Hanson’s own words come back to bite her on Tommy Robinson",
+      "link": "https://www.smh.com.au/business/companies/pauline-hanson-s-own-words-come-back-to-bite-her-on-tommy-robinson-20260723-p60hsh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "“I will say and do what I want,” the One Nation leader told Seven, only for her party to then suggest meeting the British radical was a “stitch-up” from the TV station.",
+      "pubDate": "Fri, 24 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Two 170-year-old shops in Chapel Street to be sold for the first time, ever",
+      "link": "https://www.smh.com.au/business/companies/two-170-year-old-shops-in-chapel-street-to-be-sold-for-the-first-time-ever-20260723-p60hwk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "The historic Prahran Mechanics’ Institute is offering the adjoining Prahran shops it has owned since 1856 at auction next month.",
+      "pubDate": "Fri, 24 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Will it be third try lucky for controversial car park in exclusive Double Bay?",
+      "link": "https://www.smh.com.au/business/small-business/will-it-be-third-try-lucky-for-controversial-car-park-in-exclusive-double-bay-20260723-p60hxk.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
+      "snippet": "Woollahra’s local burghers are having another crack at trying to flog their huge – but run-down – car park on Cross Street.",
+      "pubDate": "Fri, 24 Jul 2026 05:00:00 +1000",
+      "source": "SMH Business"
+    },
+    {
+      "title": "Live: Parade of athletes begins after King Charles arrives by TARDIS",
+      "link": "https://www.abc.net.au/news/2026-07-24/commonwealth-games-opening-ceremony-live-blog/106952502",
+      "snippet": "",
+      "pubDate": "Thu, 23 Jul 2026 18:37:14 +0000",
+      "source": "ABC News"
+    },
+    {
       "title": "Netball agents frustrated as pay talks roll into Glasgow 2026",
       "link": "https://www.abc.net.au/news/2026-07-23/super-netball-player-agents-express-concern-as-pay-talks-roll-on/106951692",
       "snippet": "",
@@ -871,55 +920,6 @@
       "snippet": "",
       "pubDate": "Thu, 23 Jul 2026 09:10:45 +0000",
       "source": "ABC News"
-    },
-    {
-      "title": "Pies make statement with impressive win over listless Crows",
-      "link": "https://www.abc.net.au/news/2026-07-23/afl-round-20-live-adelaide-collingwood-crows-magpies/106940334",
-      "snippet": "",
-      "pubDate": "Thu, 23 Jul 2026 08:37:01 +0000",
-      "source": "ABC News"
-    },
-    {
-      "title": "Macquarie chief to walk away with shares worth hundreds of millions",
-      "link": "https://www.smh.com.au/business/banking-and-finance/macquarie-group-boss-shemara-wikramanayake-to-retire-20260723-p60hro.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The chief of the “millionaires’ factory” will depart in November with a significant personal treasure chest built up over nearly four decades with the company.",
-      "pubDate": "Thu, 23 Jul 2026 18:02:28 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "ASX trims gains as jobs data stokes rate hike bets; miners, James Hardie rise",
-      "link": "https://www.smh.com.au/business/markets/asx-set-to-rise-wall-street-mixed-oil-continues-to-climb-20260723-p60hqg.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The Australian sharemarket pared most of its early gains after the nation’s latest job market figures came in stronger than expected, keeping the chances of another interest rate rise next month on the table.",
-      "pubDate": "Thu, 23 Jul 2026 17:44:36 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Origin Energy confirms data breach has exposed customer information",
-      "link": "https://www.smh.com.au/business/consumer-affairs/origin-energy-confirms-data-breach-has-exposed-customer-information-20260723-p60i0c.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The nation’s largest power and gas company has confirmed that a hacker has gained unauthorised access to some customers’ private information, including names, addresses and some financial details.",
-      "pubDate": "Thu, 23 Jul 2026 16:14:31 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "The telltale signs you’re working for a ‘ChatGPT Boss’",
-      "link": "https://www.smh.com.au/business/workplace/the-telltale-signs-you-re-working-for-a-chatgpt-boss-20260723-p60hyz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Using too much AI to communicate is a shortcut to people questioning the leadership abilities you’ve spent your career trying to build.",
-      "pubDate": "Thu, 23 Jul 2026 15:27:56 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Eat what you kill: Macquarie’s first-ever female CEO is a tough act to follow",
-      "link": "https://www.smh.com.au/business/banking-and-finance/eat-what-you-kill-macquarie-s-first-ever-female-ceo-is-a-tough-act-to-follow-20260723-p60hxe.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Incoming chief executive Greg Ward’s pay package hinges entirely on the future success of the millionaires’ factory. He needs to stack up against a formidable line-up of former CEOs.",
-      "pubDate": "Thu, 23 Jul 2026 15:06:46 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "PLC Resources lights up big new WA Murchison gold system",
-      "link": "https://www.smh.com.au/business/companies/plc-resources-lights-up-big-new-wa-murchison-gold-system-20260723-p60hzf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "PLC Resources has unveiled a new, untested regional gold corridor in the Murchison, with recent drilling at its Rochefort prospect returning geochemical smoke for a nearby gold system.",
-      "pubDate": "Thu, 23 Jul 2026 15:06:46 +1000",
-      "source": "SMH Business"
     }
   ]
 }
