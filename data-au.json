@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-23T11:13:34.827Z",
-  "summary": "Australia's news today is dominated by industrial action and political tensions, with teachers striking across Victoria over broader workplace disputes beyond pay, while Labor's national conference sees internal divisions surface with minister Ed Husic breaking ranks on key policy positions. Major incidents include a hazmat leak at an Adelaide hospital requiring ambulance diversions, a body discovered near Sydney's eastern waterfront, and severe weather disrupting Brisbane with fog-related flight and traffic chaos. On the international front, Google faces significant EU penalties for app store violations, while geopolitical tensions in the Middle East are pushing oil prices near $100 a barrel following US military action. Technology and safety concerns also feature prominently, with reports of AI systems breaching corporate security and warnings from experts about the planetary risks of space-based data centres.",
+  "fetchedAt": "2026-07-23T14:10:02.011Z",
+  "summary": "Australia's domestic agenda is dominated by industrial action, with Victorian teachers striking again and further walkouts threatened over broader workplace issues, while the government pushes ahead with major infrastructure investments including billions in AUKUS shipyard funding for Adelaide. Crime and safety concerns feature prominently, ranging from a violent street attack in Perth to a court hearing for a drill rapper charged with stabbing a local footballer, alongside a separate case of a woman jailed for poisoning an exchange student. Technology and security risks underscore emerging challenges, with Origin confirming a major customer data breach and experts warning of potential catastrophic impacts from proposed space datacenters. Prime Minister Anthony Albanese is launching Labor's national conference amid political pressures from One Nation, while security concerns extend internationally with tensions escalating between the US and Iran affecting global oil prices.",
   "sources": [
     {
       "id": "abcnews",
@@ -29,6 +29,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Superquiz, Friday, July 24",
+      "link": "https://www.smh.com.au/national/superquiz-friday-july-24-20260723-p60hxs.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "Trivia buffs, test your knowledge with today’s interactive superquiz.",
+      "pubDate": "Thu, 23 Jul 2026 23:59:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.9819%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_1%2C$y_236/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/24d8c9ba98147348592ea2ed292e48328b593d46",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Risk of Parkinson’s disease may increase with prolonged exposure to road traffic noise",
+      "link": "https://www.theguardian.com/society/2026/jul/23/road-traffic-noise-parkinsons-disease-study-health",
+      "desc": "<p>Pioneering study linking noise pollution to Parkinson’s finds 3% increase in risk for every 11.5dB rise in noise levels</p><p>Long-term exposure to road traffic noise is associated with a higher ri",
+      "pubDate": "Thu, 23 Jul 2026 13:24:25 GMT",
+      "img": "https://i.guim.co.uk/img/media/eb10e87cada197787472eeb15755ff28a85fdc3a/1528_1011_5566_4453/master/5566.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Thousands of tourists among those evacuated amid intense wildfire in France",
+      "link": "https://www.theguardian.com/world/2026/jul/23/people-evacuated-intense-wildfire-saumos-france",
+      "desc": "<p>Reception centres open to thousands of evacuees after blaze begins in pine forest 45km west of Bordeaux</p><ul><li><p><a href=\"https://www.theguardian.com/world/live/2026/jul/23/eu-sanctions-russia",
+      "pubDate": "Thu, 23 Jul 2026 12:58:05 GMT",
+      "img": "https://i.guim.co.uk/img/media/4c0553fd54435dc932a03d73737bbeaa9c10a256/421_0_4896_3919/master/4896.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Billions in new funding for AUKUS shipyards in Adelaide",
+      "link": "https://www.abc.net.au/news/2026-07-23/adelaide-aukus-shipyards-new-funding/106951802",
+      "desc": "The billions of dollars in additional funding is another step towards making Australia's nuclear submarine program \"a reality\".",
+      "pubDate": "Thu, 23 Jul 2026 12:30:35 +0000",
+      "img": "https://live-production.wcms.abc-cdn.net.au/c4f22c5f4e856525b9c7fd72a75b42ee?impolicy=wcms_crop_resize&amp;cropH=3160&amp;cropW=2370&amp;xPos=1623&amp;yPos=0&amp;width=862&amp;height=1149",
+      "sourceId": "abcnews",
+      "sourceName": "ABC News",
+      "sourceColor": "#E64626"
+    },
+    {
+      "title": "‘Why do I feel crappy?’: women are learning about their luteal phases - and Maha is weaponizing it",
+      "link": "https://www.theguardian.com/society/2026/jul/23/luteal-phase-maha",
+      "desc": "<p>People have found language for moodiest part of their menstrual cycles, and the right has seized on it</p><p>Emily Rae Detrick, a health coach, wants women to be more in touch with their menstrual ",
+      "pubDate": "Thu, 23 Jul 2026 12:00:44 GMT",
+      "img": "https://i.guim.co.uk/img/media/29f32dc531796fb9cd1b46b4a9c3ec9514e47e99/0_0_3000_2400/master/3000.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Woman almost dies during attack on Perth street",
+      "link": "https://www.smh.com.au/national/woman-almost-dies-during-attack-on-perth-street-20260723-p60i3n.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
+      "desc": "A woman has almost died on a Perth street, saved only by bystanders as a man launched a brutal assault.",
+      "pubDate": "Thu, 23 Jul 2026 21:18:01 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/3b331fdec1231c70fb4a6b8fe3a82bae310817dd",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
     {
       "title": "Google hit with €890 million EU fine over app store, search breaches",
       "link": "https://www.smh.com.au/business/companies/google-hit-with-890-million-eu-fine-over-app-store-search-breaches-20260723-p60i3j.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
@@ -5898,6 +5958,16 @@
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Trump’s deep public health cuts hinder response to record US cyclosporiasis outbreak",
+      "link": "https://www.theguardian.com/society/2026/jul/18/trump-cyclosporiasis-outbreak",
+      "desc": "<p>Experts say layoffs, reduced disease surveillance and Medicaid cuts have made the foodborne parasite more difficult to track and contain</p><p>As soon as Michigan detected the first sign of cyclosp",
+      "pubDate": "Sat, 18 Jul 2026 13:32:17 GMT",
+      "img": "https://i.guim.co.uk/img/media/0db0420f58fe4cb79a31e9d5dc7db591e1eaab79/0_0_5000_4000/master/5000.jpg",
+      "sourceId": "guardianau",
+      "sourceName": "The Guardian AU",
+      "sourceColor": "#052962"
     },
     {
       "title": "Residents in Perth's south-west resort to drinking water from bird baths",
@@ -33128,96 +33198,6 @@
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
-    },
-    {
-      "title": "WA’s fossil fuel exports could drop by $28 billion under net-zero future: report",
-      "link": "https://www.smh.com.au/national/western-australia/wa-s-fossil-fuel-exports-could-drop-by-28-billion-under-net-zero-future-report-20260623-p6098f.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Under one scenario modelled in a new report from the Bankwest Curtin Economics Centre, fossil fuel exports could decline to about $11 billion by 2050.",
-      "pubDate": "Wed, 24 Jun 2026 00:01:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.2606%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_78/t_crop_custom/q_86%2Cf_auto/7e6faa6a96e8c61caeb7ed9e289e1b8c906b9379",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "From yoghurt to luxury sails: how to shade your home from supercharged UK heatwaves",
-      "link": "https://www.theguardian.com/environment/2026/jun/23/how-to-shade-your-home-supercharged-heatwaves-uk",
-      "desc": "<p>As hot weather becomes more common, companies and homeowners are coming up with innovative ways to keep properties cool</p><p>When graphic designer Marc Alabaster had a new set of glass doors insta",
-      "pubDate": "Tue, 23 Jun 2026 14:00:29 GMT",
-      "img": "https://i.guim.co.uk/img/media/df21e8a43db7ad08412ce27c82937ed48691d54c/126_0_3779_3024/master/3779.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Superquiz, Wednesday, June 24",
-      "link": "https://www.smh.com.au/national/superquiz-wednesday-june-24-20260623-p6098p.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Trivia buffs, test your knowledge with today’s interactive superquiz.",
-      "pubDate": "Tue, 23 Jun 2026 23:59:00 +1000",
-      "img": "https://static.ffx.io/images/$zoom_0.9805555555555555%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_231/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/24d8c9ba98147348592ea2ed292e48328b593d46",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
-    },
-    {
-      "title": "Forty drown across France in heatwave and parts of Spain above 30C at night",
-      "link": "https://www.theguardian.com/world/2026/jun/23/heatwave-france-spain-italy-europe",
-      "desc": "<p>France has its hottest night on record, 15 Italian cities under red heat alert and UN chief says London is ‘cooking’</p><ul><li><p><a href=\"https://www.theguardian.com/world/live/2026/jun/23/europe",
-      "pubDate": "Tue, 23 Jun 2026 13:44:33 GMT",
-      "img": "https://i.guim.co.uk/img/media/93c5b56c53ab8b31206e80da775a925447da1ca7/75_68_4772_3818/master/4772.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Hosepipe ban introduced by South East Water as heatwave causes surge in demand",
-      "link": "https://www.theguardian.com/environment/2026/jun/23/hosepipe-ban-south-east-water-heatwave-surge-demand",
-      "desc": "<p>Company urges customers in Kent, Sussex, Surrey, Hampshire and Berkshire to use water only for essential purposes as temperatures soar</p><ul><li><p><a href=\"https://www.theguardian.com/world/live/",
-      "pubDate": "Tue, 23 Jun 2026 12:57:55 GMT",
-      "img": "https://i.guim.co.uk/img/media/2e2fc5de9db8ccf38628394fb7220c8258c4e0d0/716_0_3540_2832/master/3540.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Will California’s billionaire tax proposal make it to ballots?",
-      "link": "https://www.theguardian.com/technology/2026/jun/22/california-billionaire-tax-techscape",
-      "desc": "<p>Despite more than double the needed number of signatures to qualify for ballot, there’s uncertainty it’ll make it to voters</p><p>Hi and welcome to TechScape. Nick Robins-Early and Dara Kerr here, ",
-      "pubDate": "Tue, 23 Jun 2026 12:45:51 GMT",
-      "img": "https://i.guim.co.uk/img/media/38e509e5c6cebd21b697c28446bba95920578c09/356_0_3560_2848/master/3560.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "A super El Niño threatens disaster. Trump is handling it recklessly | Terry Garcia",
-      "link": "https://www.theguardian.com/commentisfree/2026/jun/23/super-el-nino-extreme-weather-trump",
-      "desc": "<p>The administration interrupted data streams that are key to forecasting. These systems should not be vulnerable to political whims</p><p>In 1877, North Americans experienced an unusually mild winte",
-      "pubDate": "Tue, 23 Jun 2026 12:00:27 GMT",
-      "img": "https://i.guim.co.uk/img/media/548532b0d813502995fb48af25527a063425864b/63_0_1890_1512/master/1890.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Majority of datacenters are vulnerable to climate threats like floods and fires, study finds",
-      "link": "https://www.theguardian.com/us-news/2026/jun/23/datacenters-climate-hazards-study",
-      "desc": "<p>Study warns AI datacenters are vulnerable to the climate hazards that their global greenhouse gas emissions bolster</p><p>Amid rising concern that the <a href=\"https://www.theguardian.com/technolog",
-      "pubDate": "Tue, 23 Jun 2026 11:30:26 GMT",
-      "img": "https://i.guim.co.uk/img/media/beeb1b282a4c9873eb541eec6c02f74961e097c3/116_319_2911_2329/master/2911.jpg",
-      "sourceId": "guardianau",
-      "sourceName": "The Guardian AU",
-      "sourceColor": "#052962"
-    },
-    {
-      "title": "Million-dollar reward offered to crack double murder mystery",
-      "link": "https://www.smh.com.au/national/million-dollar-reward-offered-to-crack-double-murder-mystery-20260623-p609gz.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "Detectives have offered a $1 million reward and released footage of the final time Erica Coyne and her son were seen alive.",
-      "pubDate": "Tue, 23 Jun 2026 21:19:59 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/be773dbe293da3adbf35d304b5fc14ff0f283e6b",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
     }
   ]
 }
