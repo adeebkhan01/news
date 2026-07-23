@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-23T03:18:22.858Z",
-  "summary": "Global tensions are escalating across multiple fronts, with the US engaged in intensifying military confrontation with Iran while expanding security partnerships in the Middle East, evidenced by a newly announced nuclear cooperation deal with Saudi Arabia and a $1.15 trillion military bill. The Middle East conflict continues to deepen as Ukraine's new military leadership pledges escalated retaliation against Russia, Hamas seeks a permanent Gaza ceasefire, and regional actors including Houthis and Iranian forces demonstrate growing military capabilities. Technology and governance concerns are emerging separately, with allegations that China's Moonshot AI stole from Anthropic, and a Nicaraguan decision to abolish elections drawing UN condemnation. Domestically, the Trump administration is reshaping foreign policy priorities while facing scrutiny over projected defense spending, with officials debating the strategic and financial wisdom of sustained military engagement in Iran.",
+  "fetchedAt": "2026-07-23T08:36:20.845Z",
+  "summary": "Global tensions are escalating across multiple fronts, with Iran-US hostilities intensifying following new American military strikes and Iranian missile attacks, while a landmark US-Saudi Arabia civilian nuclear cooperation deal signals a significant regional realignment in the Middle East. In Ukraine, leadership changes continue as the new military chief vows escalated retaliation against Russia while top US and Russian diplomats discuss the war in Manila. Tech giants face mounting pressures from spiraling artificial intelligence costs and alleged intellectual property theft, while China's trade tensions with North America threaten sectors from Canadian dairy to broader supply chains. Humanitarian crises persist across Gaza, Bangladesh, and the Democratic Republic of Congo, with protracted conflicts complicating recovery efforts and raising international accountability questions.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Top US and Russian diplomats discuss Ukraine war in Manila",
+      "link": "https://www.aljazeera.com/news/2026/7/23/top-us-and-russian-diplomats-discuss-ukraine-war-in-manila?traffic_source=rss",
+      "desc": "Russian Foreign Minister Lavrov &#039;reaffirmed ​readiness&#039; for political ​and diplomatic settlement to Russia-Ukraine war.",
+      "pubDate": "Thu, 23 Jul 2026 07:18:21 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/reuters_6a61b967-1784789351.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Google burning through cash with spiralling AI costs",
+      "link": "https://www.bbc.co.uk/news/articles/c235n47g8g8o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The company said earlier this year it expected to spend as much as $190bn on AI investments.",
+      "pubDate": "Thu, 23 Jul 2026 07:15:59 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f610/live/9cc8bdc0-8616-11f1-8dd8-4d5cff7c66df.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Will the war on Iran affect ASEAN’s efforts to tackle regional issues?",
+      "link": "https://www.aljazeera.com/video/inside-story/2026/7/23/will-the-war-on-iran-affect-aseans-efforts-to-tackle-regional-issues?traffic_source=rss",
+      "desc": "Renewed fighting between the US and Iran has overshadowed the ASEAN gathering in Manila.",
+      "pubDate": "Thu, 23 Jul 2026 05:44:13 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1784785262.jpg?resize=1920%2C1061&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Saudi Arabia and US agree to landmark nuclear deal for civilian purposes",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/23/saudi-arabia-and-us-agree-to-landmark-nuclear-deal-for-civilian-purposes?traffic_source=rss",
+      "desc": "The US and Saudi Arabia have agreed to a civilian nuclear deal allowing Riyadh to build nuclear reactors.",
+      "pubDate": "Thu, 23 Jul 2026 05:31:11 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1784784555.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Big bosses reveal the secret to getting hired",
+      "link": "https://www.bbc.co.uk/news/videos/cvgxelx3y78o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Business leaders share their best career advice and the qualities they look for when recruiting new staff.",
+      "pubDate": "Thu, 23 Jul 2026 05:22:34 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fa14/live/ecd31450-85e4-11f1-b976-0b9c15b0ccfc.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "In Gaza, a long path to recovery for one woman who lost eye, and daughter",
+      "link": "https://www.aljazeera.com/features/2026/7/23/in-gaza-a-long-path-to-recovery-for-one-woman-who-lost-eye-and-daughter?traffic_source=rss",
+      "desc": "Psychological wounds compound Najwa&#039;s physical injuries after losing her daughter in an Israeli air strike.",
+      "pubDate": "Thu, 23 Jul 2026 03:07:01 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/IMG-20260721-WA0044-1784771982.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "China's Moonshot AI stole from Anthropic, Trump tech adviser says",
       "link": "https://www.bbc.co.uk/news/articles/c5ye2gyz0x4o?at_medium=RSS&amp;at_campaign=rss",
@@ -153,6 +213,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Hungary: Ex-PM Orban pledges resistance to Magyar 'tyranny'",
+      "link": "https://www.dw.com/en/hungary-ex-pm-orban-pledges-resistance-to-magyar-tyranny/a-78076217?maca=en-rss-en-eu-2092-rdf",
+      "desc": "Hungary's former prime minister alleges that his successor has \"dismantled the rule of law and eliminated checks and balances.\" Peter Magyar has pursued Viktor Orban and his allies since winning April",
+      "pubDate": "2026-07-22T18:33:00Z",
+      "img": "https://static.dw.com/image/78076308_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
     },
     {
       "title": "US judge sets 2027 trial date for Venezuela’s Maduro and wife",
@@ -12430,136 +12500,6 @@
       "desc": "United Nations Commission of Inquiry says Israel&#039;s &#039;deliberate targeting&#039; of Gaza children part of ongoing &#039;genocide&#039;.",
       "pubDate": "Tue, 23 Jun 2026 08:42:03 +0000",
       "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a39785e5668-1782151262.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Dettol apologises after ad to clean up 'toxic men' backfires in China",
-      "link": "https://www.bbc.co.uk/news/articles/ced4vq6zylpo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The ad sparked accusations of sexism in China, after featuring a man looking for a partner who is \"not tainted by other men\".",
-      "pubDate": "Tue, 23 Jun 2026 08:05:07 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/74d2/live/dc836e90-6ed0-11f1-8bcc-0dcbc11a720b.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Iran war day 116: US eases Iran sanctions; Lebanon ceasefire holds",
-      "link": "https://www.aljazeera.com/news/2026/6/23/iran-war-day-116-us-eases-iran-sanctions-lebanon-ceasefire-holds?traffic_source=rss",
-      "desc": "US eases oil sanctions for 60 days after Iran agrees to allow international nuclear inspections.",
-      "pubDate": "Tue, 23 Jun 2026 07:58:51 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a3a3c75a5b8-1782201461.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "EU to hold migration meeting with Taliban officials in Brussels",
-      "link": "https://www.aljazeera.com/news/2026/6/23/eu-to-hold-migration-meeting-with-taliban-officials-in-brussels?traffic_source=rss",
-      "desc": "The meeting is expected to focus on the deportation of Afghan nationals who do not have a right to stay in Europe.",
-      "pubDate": "Tue, 23 Jun 2026 07:08:04 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/02/getty_699c22b308-1771840179.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Why Iran’s President Pezeshkian is heading to Pakistan after US talks",
-      "link": "https://www.aljazeera.com/news/2026/6/23/why-irans-president-pezeshkian-is-heading-to-pakistan-after-us-iran-talks?traffic_source=rss",
-      "desc": "This is Pezeshkian&#039;s first overseas trip since Iran war began, and comes a day after the high-stakes Switzerland talks.",
-      "pubDate": "Tue, 23 Jun 2026 06:37:52 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2025-08-03T083219Z_427205860_RC2KZFAUP1XY_RTRMADP_3_PAKISTAN-IRAN-1782187727.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Giannis Antetokounmpo trade: Bucks star to join Miami Heat – reports",
-      "link": "https://www.aljazeera.com/sports/2026/6/23/giannis-antetokounmpo-trade-milwaukee-bucks-miami-heat-nba-basketball-reports?traffic_source=rss",
-      "desc": "The reported deal draws a line under months of speculation concerning the 10-time All-Star&#039;s future in Milwaukee.",
-      "pubDate": "Tue, 23 Jun 2026 05:47:47 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2024/10/GettyImages-1766325496-1728908906.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Palestine weekly wrap: Israel’s ‘quiet annexation’ grows louder",
-      "link": "https://www.aljazeera.com/news/2026/6/23/palestine-weekly-wrap-israels-quiet-annexation-grows-louder?traffic_source=rss",
-      "desc": "Al Jazeera cameraman killed in Gaza, West Bank mosques torched, as Israeli officials describe attempt to expand control.",
-      "pubDate": "Tue, 23 Jun 2026 05:40:33 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/ap_6a3989784768a-1782155640.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Iran says no new commitments on nuclear sites after Vance says inspectors to be invited back",
-      "link": "https://www.bbc.co.uk/news/articles/c3vy3nr63gxo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Iran's foreign ministry says it made \"no new commitments\" on nuclear inspections after talks in Switzerland.",
-      "pubDate": "Tue, 23 Jun 2026 05:39:17 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/66d4/live/4c1d6d60-6ebc-11f1-8e1d-bbbb1017d210.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Why was JD Vance in a luxury Swiss resort for talks with Iran?",
-      "link": "https://www.bbc.co.uk/news/videos/c4gyenl6nz0o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "BBC correspondent Jessica Parker explains some key points of the direct talks between the US vice-president and Iran.",
-      "pubDate": "Tue, 23 Jun 2026 05:38:36 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c00d/live/2cba3e70-6ec2-11f1-8e1d-bbbb1017d210.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Five Eyes intelligence alliance warns of threats from new AI models",
-      "link": "https://www.aljazeera.com/economy/2026/6/23/five-eyes-intelligence-alliance-warns-of-threats-from-new-ai-models?traffic_source=rss",
-      "desc": "Frontier AI models are &#039;fundamentally transforming&#039; offensive cyber capabilities, intelligence officials say.",
-      "pubDate": "Tue, 23 Jun 2026 03:56:47 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-05-28T100002Z_1135925787_RC28ILAQV7NQ_RTRMADP_3_USA-MILITARY-SURVEILLANCE-1782183365.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Australia's coal and gas exports violate our human rights, group says in new UN case",
-      "link": "https://www.bbc.co.uk/news/articles/cn8q5nx6jw6o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The group says that it is unlawful for Australia to continue approving fossil fuel exports without protecting its citizens.",
-      "pubDate": "Tue, 23 Jun 2026 03:55:00 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/03f3/live/d6a07f80-6eb3-11f1-8d28-330d80923bb9.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Australia's coal and gas exports violate our human rights, group says in new UN case",
-      "link": "https://www.bbc.com/news/articles/cn8q5nx6jw6o?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "The group says that it is unlawful for Australia to continue approving fossil fuel exports without protecting its citizens.",
-      "pubDate": "Tue, 23 Jun 2026 03:55:00 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/03f3/live/d6a07f80-6eb3-11f1-8d28-330d80923bb9.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Last one, the best one? How Lionel Messi keeps doing it at the World Cup",
-      "link": "https://www.aljazeera.com/sports/2026/6/23/last-one-the-best-one-how-lionel-messi-keeps-doing-it-at-the-world-cup?traffic_source=rss",
-      "desc": "Argentina coach Lionel Scaloni, who has built an ecosystem around Messi, lauds the captain’s commitment to the team.",
-      "pubDate": "Tue, 23 Jun 2026 03:47:29 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a39f4ad1c37-1782183085.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Conservative radio host defends Trump, says he’s better than Vance",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/23/conservative-radio-host-defends-trump-says-hes-better-than-vance?traffic_source=rss",
-      "desc": "Prominent conservative radio host, spoke at the International Policy Summit to defend Trump’s handling of the Iran war.",
-      "pubDate": "Tue, 23 Jun 2026 03:42:16 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1782185924.jpg?resize=1920%2C1080&amp;quality=80",
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
