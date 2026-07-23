@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-23T11:22:10.452Z",
+  "fetchedAt": "2026-07-23T14:37:43.209Z",
   "asx200": {
     "value": 8839,
     "change": 52,
@@ -94,17 +94,13 @@
       {
         "date": "2026-07-22",
         "close": 8823
-      },
-      {
-        "date": "2026-07-23",
-        "close": 8839
       }
     ]
   },
   "audusd": {
     "value": 0.7,
     "change": 0,
-    "changePercent": 0.06,
+    "changePercent": -0.26,
     "previousClose": 0.7,
     "asOf": "2026-07-23",
     "history": [
@@ -207,33 +203,33 @@
       "name": "Gold",
       "icon": "🥇",
       "iconBg": "#fef9ee",
-      "price": 4092.5,
-      "change": -37.4,
-      "changePercent": -0.91
+      "price": 4055.3,
+      "change": -74.6,
+      "changePercent": -1.81
     },
     {
       "name": "Silver",
       "icon": "🥈",
       "iconBg": "#f8f9fa",
-      "price": 58.9,
-      "change": -3.12,
-      "changePercent": -5.04
+      "price": 58.09,
+      "change": -3.94,
+      "changePercent": -6.34
     },
     {
       "name": "Crude Oil (WTI)",
       "icon": "🛢️",
       "iconBg": "#f3f0f9",
-      "price": 90.51,
-      "change": 17.3,
-      "changePercent": 23.63
+      "price": 91.72,
+      "change": 18.51,
+      "changePercent": 25.28
     },
     {
       "name": "Copper",
       "icon": "🔶",
       "iconBg": "#fef0e6",
-      "price": 6.47,
-      "change": 0.33,
-      "changePercent": 5.37
+      "price": 6.38,
+      "change": 0.24,
+      "changePercent": 3.83
     },
     {
       "name": "BHP Group",
@@ -842,9 +838,23 @@
   ],
   "news": [
     {
-      "title": "Google hit with €890 million EU fine over app store, search breaches",
+      "title": "Netball agents frustrated as pay talks roll into Glasgow 2026",
+      "link": "https://www.abc.net.au/news/2026-07-23/super-netball-player-agents-express-concern-as-pay-talks-roll-on/106951692",
+      "snippet": "",
+      "pubDate": "Thu, 23 Jul 2026 11:48:33 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Australia gets first win with Glasgow asleep and the Games yet to open",
+      "link": "https://www.abc.net.au/news/2026-07-23/bowls-kicks-off-2026-glasgow-commonwealth-games/106951118",
+      "snippet": "",
+      "pubDate": "Thu, 23 Jul 2026 11:17:47 +0000",
+      "source": "ABC News"
+    },
+    {
+      "title": "Google hit with $1.5 billion fine over app store, search breaches",
       "link": "https://www.smh.com.au/business/companies/google-hit-with-890-million-eu-fine-over-app-store-search-breaches-20260723-p60i3j.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "The tech giant has been slapped with two fines for favouring its own services in search results and restricting app developers from steering users to cheaper offers.",
+      "snippet": "The tech giant has been slapped with two fines from the EU for favouring its own services in search results and restricting app developers from steering users to cheaper offers.",
       "pubDate": "Thu, 23 Jul 2026 21:04:16 +1000",
       "source": "SMH Business"
     },
@@ -856,14 +866,14 @@
       "source": "SMH Business"
     },
     {
-      "title": "Live: Eels take shock lead with Panthers down to 12",
+      "title": "Penrith flyer breaks record in comeback Panthers win",
       "link": "https://www.abc.net.au/news/2026-07-23/nrl-live-updates-eels-panthers-nathan-cleary-mitchell-moses/106951712",
       "snippet": "",
       "pubDate": "Thu, 23 Jul 2026 09:10:45 +0000",
       "source": "ABC News"
     },
     {
-      "title": "Live: Quaynor booed by Crows fans despite pleas in crunch Pies clash",
+      "title": "Pies make statement with impressive win over listless Crows",
       "link": "https://www.abc.net.au/news/2026-07-23/afl-round-20-live-adelaide-collingwood-crows-magpies/106940334",
       "snippet": "",
       "pubDate": "Thu, 23 Jul 2026 08:37:01 +0000",
@@ -909,20 +919,6 @@
       "link": "https://www.smh.com.au/business/companies/plc-resources-lights-up-big-new-wa-murchison-gold-system-20260723-p60hzf.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
       "snippet": "PLC Resources has unveiled a new, untested regional gold corridor in the Murchison, with recent drilling at its Rochefort prospect returning geochemical smoke for a nearby gold system.",
       "pubDate": "Thu, 23 Jul 2026 15:06:46 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Pacgold hits copper-gold jackpot under existing SA gold system",
-      "link": "https://www.smh.com.au/business/companies/pacgold-hits-copper-gold-jackpot-under-existing-sa-gold-system-20260723-p60hyo.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Pacgold has unearthed a significant high-grade gold and copper discovery at its White Dam North project in SA, with drilling hitting a 20m zone of sulphide mineralisation.",
-      "pubDate": "Thu, 23 Jul 2026 14:24:41 +1000",
-      "source": "SMH Business"
-    },
-    {
-      "title": "Great Southern, Gold Fields drill monster QLD copper-gold target",
-      "link": "https://www.smh.com.au/business/companies/great-southern-gold-fields-drill-monster-qld-copper-gold-target-20260723-p60hy0.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_business",
-      "snippet": "Great Southern Mining has begun drilling its big Mt Dillon copper-gold porphyry target in Queensland, with global major Gold Fields funding the campaign.",
-      "pubDate": "Thu, 23 Jul 2026 13:56:47 +1000",
       "source": "SMH Business"
     }
   ]
