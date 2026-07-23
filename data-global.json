@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-23T19:23:58.982Z",
-  "summary": "The Middle East dominates global attention as tensions escalate across multiple fronts, with the Trump administration conditioning a nuclear deal with Saudi Arabia on Israeli recognition through the Abraham Accords, while Houthi attacks fuel fears of broader regional conflict and further oil price spikes, now approaching one hundred dollars a barrel. Venezuela faces an economic crisis following massive earthquake damage estimated at nineteen point six billion dollars, while diplomatic efforts intensify elsewhere including Lebanese and Iraqi leadership engaging with the US on regional security arrangements. In Europe, the UK's new Prime Minister Andy Burnham signals Scotland's independence ambitions are off the table, and regulatory bodies are intensifying pressure on tech giants, with the EU fining Google nearly a billion euros for antitrust violations and concerns mounting over OpenAI's security breach. Ukraine continues absorbing Russian attacks and grappling with internal military leadership changes, while the US House moves to restrain executive war powers against Iran for the first time since hostilities resumed.",
+  "fetchedAt": "2026-07-23T22:08:20.488Z",
+  "summary": "Middle East tensions are escalating as Iran and the US exchange threats following recent strikes, while Trump conditions a proposed Saudi nuclear deal on Riyadh's normalization with Israel through the Abraham Accords, raising broader security concerns. Oil prices have surged past $100 per barrel amid regional instability and Houthi attacks, threatening global economic disruption. In Europe, regulators are cracking down on tech giants with major fines against Google, while AI safety concerns mount following OpenAI's security incident, prompting lawmakers to explore oversight mechanisms. Domestically across several nations, from Ukraine's defence minister demanding reinstatement to Lebanon's president visiting Washington to address Hezbollah, leadership transitions and political conflicts are reshaping strategic alignments.",
   "sources": [
     {
       "id": "bbcnews",
@@ -24,6 +24,76 @@
     }
   ],
   "articles": [
+    {
+      "title": "Trump warns of largest strikes on Iran yet as Tehran lashes out across Gulf",
+      "link": "https://www.aljazeera.com/news/2026/7/23/trump-warns-of-biggest-strikes-yet-on-iran-as-tehran-lashes-out-across-gulf?traffic_source=rss",
+      "desc": "The US president&#039;s threat comes after another day of Iranian attacks on Bahrain, Kuwait and Jordan.",
+      "pubDate": "Thu, 23 Jul 2026 21:43:28 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/AP26203567771256-1784842668.jpg?resize=1200%2C675",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "US-Saudi nuclear deal hinges on normalisation with Israel",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/23/us-saudi-nuclear-deal-hinges-on-normalisation-with-israel?traffic_source=rss",
+      "desc": "President Trump said a proposed US-Saudi civilian nuclear deal is subject to Saudi Arabia joining the Abraham Accords",
+      "pubDate": "Thu, 23 Jul 2026 21:41:25 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1784842844.jpg?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Rally attendee steals the show by mimicking Trump’s gestures",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/23/rally-attendee-steals-the-show-by-mimicking-trumps-gestures?traffic_source=rss",
+      "desc": "A rally attendee seated directly behind Trump drew attention by mimicking the president.",
+      "pubDate": "Thu, 23 Jul 2026 21:08:32 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/Screenshot-2026-07-23-at-22.02.04-1784840684.png?resize=1200%2C630",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Lawmakers push for AI 'kill switch' after OpenAI goes rogue",
+      "link": "https://www.bbc.co.uk/news/articles/cx2vqj2e9x8o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "A new bill would let the US government order the shutdown AI models that pose a major public threat.",
+      "pubDate": "Thu, 23 Jul 2026 20:58:35 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a255/live/1eacc3a0-86d9-11f1-bba7-35d3e67315de.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "How Sudan war is putting cancer patients at risk",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/23/how-sudan-war-is-putting-cancer-patients-at-risk?traffic_source=rss",
+      "desc": "How Sudan war is putting cancer patients at risk",
+      "pubDate": "Thu, 23 Jul 2026 20:46:14 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/wide-thumb-sudan-cancer-1784839523.png?resize=1920%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Minnesota man who killed Democratic lawmaker sentenced to life in US prison",
+      "link": "https://www.aljazeera.com/news/2026/7/23/minnesota-man-who-killed-democratic-lawmaker-sentenced-to-life-in-us-prison?traffic_source=rss",
+      "desc": "Judge says that long sentence is merited for slaying of state Democratic lawmaker Melissa Hortman and her husband Mark.",
+      "pubDate": "Thu, 23 Jul 2026 19:50:30 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/reuters_6a6265ae-1784833454.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Resumption of oil exports: Will Yemen recover its economic lifeline?",
+      "link": "https://www.aljazeera.com/economy/2026/7/23/resumption-of-oil-exports-will-yemen-recover-its-economic-lifeline?traffic_source=rss",
+      "desc": "Yemen has proven oil reserves estimated at three billion barrels, but the security environment hinders its export.",
+      "pubDate": "Thu, 23 Jul 2026 19:28:24 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/2020-10-05T060326Z_785026071_RC26CJ9IU1P1_RTRMADP_3_YEMEN-SECURITY-MARIB-1784817158.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
     {
       "title": "World Bank estimates Venezuela earthquakes caused $19.6bn in damage",
       "link": "https://www.aljazeera.com/news/2026/7/23/world-bank-estimates-venezuela-earthquakes-caused-19-6bn-in-damage?traffic_source=rss",
@@ -12540,86 +12610,6 @@
       "desc": "New UN report documents the toll of Israel&#039;s war on Gaza and its occupation of the West Bank on Palestinian children.",
       "pubDate": "Tue, 23 Jun 2026 22:50:00 +0000",
       "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1782254907.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Kunal Shah: The Indian entrepreneur taking charge of WhatsApp",
-      "link": "https://www.bbc.co.uk/news/articles/c0my4n38myjo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "Kunal Shah has been a recognisable figure in India's startup ecosystem for a while but now he faces global spotlight.",
-      "pubDate": "Tue, 23 Jun 2026 21:57:05 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cdfa/live/981f95a0-6eec-11f1-8546-8f19e4fe30f4.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Donald Trump to attend World Cup final, present trophy: Infantino",
-      "link": "https://www.aljazeera.com/sports/2026/6/23/donald-trump-to-attend-world-cup-final-present-trophy-infantino?traffic_source=rss",
-      "desc": "FIFA president Gianni Infantino will be &#039;enjoying the final&#039; with Trump and present the trophy together on July 19.",
-      "pubDate": "Tue, 23 Jun 2026 21:44:47 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a3af82c246c-1782249516.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "UN starts evacuating 11,000 stranded sailors from Strait of Hormuz",
-      "link": "https://www.aljazeera.com/news/2026/6/23/un-starts-evacuating-11000-stranded-sailors-from-strait-of-hormuz?traffic_source=rss",
-      "desc": "Following the start of the US-Israel war on Iran on February 28, Tehran had effectively closed off the vital waterway.",
-      "pubDate": "Tue, 23 Jun 2026 21:00:32 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a38667f4877-1782081151.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Alibaba sues US military over labelling it a ‘Chinese military company’",
-      "link": "https://www.aljazeera.com/news/2026/6/23/alibaba-sues-us-military-over-labelling-it-a-chinese-military?traffic_source=rss",
-      "desc": "E-commerce giant says that claims of affiliation with Chinese military have &#039;no basis in fact or law&#039;.",
-      "pubDate": "Tue, 23 Jun 2026 20:12:48 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/ap_6a3accc7443f2-1782238407.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Trump disputes Iran’s rejection of nuclear inspectors",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/23/trump-disputes-irans-rejection-of-nuclear-inspectors?traffic_source=rss",
-      "desc": "President Trump pushed back on Iran’s foreign ministry claim that there are no plans to allow IAEA nuclear inspectors.",
-      "pubDate": "Tue, 23 Jun 2026 20:11:28 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1782245422.jpg?resize=1619%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "UN says it will evacuate sailors stranded in Strait of Hormuz, as Rubio warns against tolls",
-      "link": "https://www.bbc.co.uk/news/articles/c24yr796emzo?at_medium=RSS&amp;at_campaign=rss",
-      "desc": "US Secretary of State Marco Rubio warned Iran that no country can charge fees for ships to travel through the strait.",
-      "pubDate": "Tue, 23 Jun 2026 20:01:32 GMT",
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e62d/live/0661c170-6f2c-11f1-8b65-27158411943c.jpg",
-      "sourceId": "bbcnews",
-      "sourceName": "BBC News",
-      "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Iran’s president arrives in Pakistan for peace talks",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/23/irans-president-arrives-in-pakistan-for-peace-talks?traffic_source=rss",
-      "desc": "Iran’s president arrives in Pakistan for peace talks",
-      "pubDate": "Tue, 23 Jun 2026 19:57:01 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1782244440.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "US Senate votes to pass Iran war powers resolution in blow to Trump",
-      "link": "https://www.aljazeera.com/news/2026/6/23/us-senate-votes-to-halt-iran-war-bucking-trump?traffic_source=rss",
-      "desc": "The resolution is the first to pass both the Senate and the House, though it is likely to face a presidential veto.",
-      "pubDate": "Tue, 23 Jun 2026 19:50:29 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a3ae8ace4b3-1782245548.jpg?resize=1920%2C1440",
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
