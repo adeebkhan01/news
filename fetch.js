@@ -35,7 +35,7 @@ const REGIONS = {
     label: 'Australia',
     dataFile: 'data-au.json',
     translate: false,
-    topicFilter: false,
+    topicFilter: true,
     summaryPrompt: 'You are a concise news briefing editor covering Australia.',
     sources: [
       { id: 'abcnews',        name: 'ABC News',              color: '#E64626', url: 'https://www.abc.net.au/news/feed/51892/rss.xml' },
@@ -96,7 +96,20 @@ var FEED_CONCURRENCY = 4;
 // How many previously-failed translations to retry per run.
 var RETRY_PER_RUN = 60;
 
-var TOPIC_KEYWORDS = /\b(econom|business|financ|fiscal|GDP|inflation|recession|trade|tariff|market|stock|shares|invest|bank|central bank|interest rate|budget|tax|revenue|deficit|surplus|export|import|manufactur|industr|commodit|crude|oil price|mining|agricultur|startup|IPO|merger|acquisit|regulat|subsid|debt|bond|currenc|forex|bankrupt|layoff|jobs|unemploy|wage|profit|earning|airline|tech giant|politic|elect|parliament|congress|senat|president|prime minister|governor|diplomac|sanction|legislat|bill|law|polic|reform|coalition|opposit|referendum|geopolit|summit|treaty|NATO|UN |EU |ASEAN|WHO|IMF|World Bank|WTO|G7|G20|war |ceasefire|conflict|military|weapon|nuclear|missile|invasion|occupied|siege|airstrike|scienc|research|study|discover|climate|environment|carbon|emission|renewable|energy|space|NASA|AI |artificial intelligen|quantum|biotech|pharma|vaccin|genome|CRISPR|neurosci|physicist|astrono|fossil|species|biodiversit|sustainab|pandem|epidemic)\b/i;
+// Topic matching, in three parts because one wrapped alternation can't serve
+// all three. The previous single /\b(econom|politic|...)\b/i put a word
+// boundary AFTER the alternation, so every prefix term in it — 105 of 120 —
+// could never match: "econom" requires a boundary before the "y" of economy.
+//
+// Prefixes match any continuation: econom -> economy/economic/economics.
+var TOPIC_PREFIX_RE = /\b(?:econom|business|financ|fiscal|inflation|recession|trade|tariff|market|stock|sharehold|invest|bank|budget|taxation|taxpayer|revenue|deficit|surplus|export|import|manufactur|industr|commodit|oil price|mining|agricultur|startup|merger|acquisit|regulat|subsid|currenc|forex|bankrupt|layoff|unemploy|wage|profit|earning|airline|tech giant|politic|elect|parliament|congress|senat|president|prime minister|governor|diplomac|sanction|legislat|lawmak|lawsuit|polic|reform|coalition|opposit|referendum|geopolit|summit|treaty|ceasefire|conflict|militar|weapon|nuclear|missile|invasion|occupied|siege|airstrike|warfare|wartime|scienc|research|discover|climate|environment|carbon|emission|renewable|energy|artificial intelligen|quantum|biotech|pharma|vaccin|genome|neurosci|physicist|astrono|biodiversit|sustainab|pandem|epidemic)/i;
+
+// Whole words only: as prefixes these would catch taxi, billion, lawn, warden,
+// spacious, shared, studio, bondage.
+var TOPIC_WORD_RE = /\b(?:tax|taxes|bill|bills|law|laws|war|wars|job|jobs|study|studies|studied|space|shares|crude|debt|debts|bond|bonds|fossil|fossils|species|interest rate|interest rates|central bank|world bank)\b/i;
+
+// Case-sensitive, or /i would match the ordinary words "un", "eu", "ai", "who".
+var TOPIC_ACRONYM_RE = /\b(?:GDP|IPO|NATO|ASEAN|WHO|IMF|WTO|G7|G20|NASA|CRISPR|UN|EU|AI)\b/;
 
 // Publishers put the section in the article path: en.prothomalo.com/entertainment/...
 function sectionOf(link) {
@@ -118,7 +131,7 @@ function inExcludedSection(article) {
 
 function matchesTopic(article) {
   var text = (article.title || '') + ' ' + (article.desc || '');
-  return TOPIC_KEYWORDS.test(text);
+  return TOPIC_PREFIX_RE.test(text) || TOPIC_WORD_RE.test(text) || TOPIC_ACRONYM_RE.test(text);
 }
 
 function parseDate(str) {
@@ -427,7 +440,10 @@ async function main() {
       var beforePrune = (existing.articles || []).length;
       existingArticles = (existing.articles || [])
         .filter(function(a) { return isRecent(a.pubDate); })
-        .filter(function(a) { return !inExcludedSection(a); });
+        .filter(function(a) { return !inExcludedSection(a); })
+        // Applied to stored articles too, so turning the filter on (or editing
+        // the keywords) takes effect next run instead of over 30 days.
+        .filter(function(a) { return !REGION.topicFilter || matchesTopic(a); });
       var pruned = beforePrune - existingArticles.length;
       existingArticles.forEach(function(a) {
         if (REGION.translate) {
@@ -436,7 +452,7 @@ async function main() {
         }
         existingByLink[a.link] = true;
       });
-      console.log('Loaded', existingArticles.length, 'existing articles (' + pruned + ' pruned: over 30 days old or excluded section)');
+      console.log('Loaded', existingArticles.length, 'existing articles (' + pruned + ' pruned: stale, excluded section, or off-topic)');
     } catch(e) { console.warn('Could not read existing ' + loadFile + ':', e.message); }
   }
 

@@ -70,8 +70,14 @@ failed.
   `RETRY_PER_RUN` of those are retried each run.
 - **A failed briefing keeps the previous one** rather than blanking it.
 - **Bangla is Bangladesh-only.** `translate: true` is set per region.
-- **Global is topic-filtered** through `TOPIC_KEYWORDS`, a keyword whitelist.
-  Bangladesh and Australia are not: they take whatever their feeds publish.
+- **Australia and Global are topic-filtered**; Bangladesh is not, so it takes
+  whatever its feeds publish. The filter is a keyword whitelist in three
+  parts: `TOPIC_PREFIX_RE` matches any continuation (`econom` catches
+  economy/economic/economics), `TOPIC_WORD_RE` matches whole words only
+  (`tax` must not catch taxi), and `TOPIC_ACRONYM_RE` is case-sensitive so
+  `/i` doesn't match the ordinary words "un", "eu" and "ai". It applies to
+  stored articles as well as new ones, so editing the keywords takes effect
+  on the next run.
 - **Soft sections are excluded per source.** A publisher with one site-wide
   feed sends entertainment and photo galleries along with the news, and the
   section is in the article URL (`en.prothomalo.com/entertainment/...`), so
