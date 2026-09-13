@@ -93,8 +93,15 @@ var THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
 var MAX_FEED_BYTES  = 8 * 1024 * 1024;
 var FEED_CONCURRENCY = 4;
 
-// How many previously-failed translations to retry per run.
-var RETRY_PER_RUN = 60;
+// How many previously-failed translations to retry per run. Sized against the
+// run cadence in .github/workflows/fetch-feeds.yml: at twice a day this keeps
+// the backlog draining at roughly 400 articles a day.
+var RETRY_PER_RUN = 200;
+
+// Per feed URL. The runs are 12 hours apart and the busiest single-URL feeds
+// (Prothom Alo, Al Jazeera all.xml) publish 30+ items in that window, so a cap
+// of 30 would silently drop articles between runs.
+var MAX_ITEMS_PER_FEED = 100;
 
 // Topic matching, in three parts because one wrapped alternation can't serve
 // all three. The previous single /\b(econom|politic|...)\b/i put a word
@@ -273,7 +280,7 @@ function getTag(block, tag) {
 
 function parseRSS(xml, source) {
   var items=[], re=/<item[^>]*>([\s\S]*?)<\/item>/gi, m;
-  while((m=re.exec(xml))!==null && items.length<30) {
+  while((m=re.exec(xml))!==null && items.length<MAX_ITEMS_PER_FEED) {
     var b=m[1], title=stripTags(getTag(b,'title'));
     if(!title) continue;
     items.push({ title, link: getTag(b,'link')||getTag(b,'guid')||'', desc: stripTags(getTag(b,'description')).slice(0,200), pubDate: getTag(b,'pubDate')||getTag(b,'dc:date')||'', img: extractImg(b), sourceId: source.id, sourceName: source.name, sourceColor: source.color });
@@ -283,7 +290,7 @@ function parseRSS(xml, source) {
 
 function parseAtom(xml, source) {
   var items=[], re=/<entry[^>]*>([\s\S]*?)<\/entry>/gi, m;
-  while((m=re.exec(xml))!==null && items.length<30) {
+  while((m=re.exec(xml))!==null && items.length<MAX_ITEMS_PER_FEED) {
     var b=m[1], title=stripTags(getTag(b,'title'));
     if(!title) continue;
     var lm=b.match(/<link[^>]+href="([^"]+)"/i)||b.match(/<link[^>]*>([^<]+)<\/link>/i);

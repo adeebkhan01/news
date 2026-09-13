@@ -7,7 +7,7 @@ scheduled GitHub Action pulls RSS feeds into JSON files; the page is a single
 ## How it works
 
 ```
-.github/workflows/fetch-feeds.yml   every 3 hours
+.github/workflows/fetch-feeds.yml   twice a day (00:20 and 12:20 UTC)
         └── node fetch.js --region {bd,au,global}
                 ├── fetch + parse each RSS/Atom feed
                 ├── drop articles older than 30 days, dedupe by link
@@ -64,6 +64,11 @@ failed.
 - **Articles accumulate.** Each run merges new articles into the existing file
   and prunes anything older than 30 days, so the feed survives a publisher
   outage.
+- **Run cadence and the item cap go together.** Runs are 12 hours apart, so
+  `MAX_ITEMS_PER_FEED` has to exceed what a feed publishes in 12 hours or
+  articles are lost between runs; the busiest single-URL feeds manage 30-35.
+  `RETRY_PER_RUN` is sized the same way. Shorten the cron and both can come
+  down; lengthen it and both need raising.
 - **Translations retry.** A failure caused by the API being unavailable
   (exhausted credit, rate limits, timeouts) leaves the article queued. Only an
   unusable model response marks it permanently untranslatable, and up to

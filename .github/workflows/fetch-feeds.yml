@@ -2,7 +2,8 @@ name: Fetch RSS Feeds
 
 on:
   schedule:
-    - cron: '0 */3 * * *'
+    # Twice a day. Off the hour because scheduled runs queue at :00.
+    - cron: '20 0,12 * * *'
   workflow_dispatch:
 
 permissions:
