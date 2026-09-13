@@ -87,6 +87,9 @@ SOURCES.forEach(function(s) {
 
 var THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
 
+// How many previously-failed translations to retry per run.
+var RETRY_PER_RUN = 60;
+
 var TOPIC_KEYWORDS = /\b(econom|business|financ|fiscal|GDP|inflation|recession|trade|tariff|market|stock|shares|invest|bank|central bank|interest rate|budget|tax|revenue|deficit|surplus|export|import|manufactur|industr|commodit|crude|oil price|mining|agricultur|startup|IPO|merger|acquisit|regulat|subsid|debt|bond|currenc|forex|bankrupt|layoff|jobs|unemploy|wage|profit|earning|airline|tech giant|politic|elect|parliament|congress|senat|president|prime minister|governor|diplomac|sanction|legislat|bill|law|polic|reform|coalition|opposit|referendum|geopolit|summit|treaty|NATO|UN |EU |ASEAN|WHO|IMF|World Bank|WTO|G7|G20|war |ceasefire|conflict|military|weapon|nuclear|missile|invasion|occupied|siege|airstrike|scienc|research|study|discover|climate|environment|carbon|emission|renewable|energy|space|NASA|AI |artificial intelligen|quantum|biotech|pharma|vaccin|genome|CRISPR|neurosci|physicist|astrono|fossil|species|biodiversit|sustainab|pandem|epidemic)\b/i;
 
 function matchesTopic(article) {
@@ -175,9 +178,28 @@ function extractOgImage(html) {
   return m ? m[1] : null;
 }
 
+function decodeEntities(str) {
+  return str
+    .replace(/&#(\d+);/g, function (_, d) { return String.fromCharCode(+d); })
+    .replace(/&#x([0-9a-f]+);/gi, function (_, h) { return String.fromCharCode(parseInt(h, 16)); })
+    .replace(/&nbsp;/g, ' ').replace(/&quot;/g, '"').replace(/&apos;/g, "'")
+    .replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&');   // last, so &amp;lt; unwraps one layer per pass
+}
+
+// Feeds escape their markup to varying depths: some send raw HTML, some send
+// it entity-encoded, some do both. Decoding before stripping (and repeating)
+// is what keeps <p>, <br> and href URLs out of the copy — decoding after a
+// single strip, as this used to, turns &lt;p&gt; back into a live tag.
 function stripTags(html) {
-  return (html || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g,'$1').replace(/<[^>]+>/g,'')
-    .replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&apos;/g,"'").replace(/&nbsp;/g,' ').replace(/\s+/g,' ').trim();
+  var s = String(html || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1');
+  for (var i = 0; i < 3; i++) {
+    var next = decodeEntities(s).replace(/<[^>]*>/g, ' ')
+      .replace(/<[^>]*$/, ' ');   // descriptions get truncated mid-tag
+    if (next === s) break;
+    s = next;
+  }
+  return s.replace(/\s+/g, ' ').trim();
 }
 
 function extractImg(block) {
@@ -274,8 +296,22 @@ function claudeComplete(systemPrompt, userPrompt) {
   });
 }
 
+// Set when the API itself can't serve us — exhausted credit, a bad key, rate
+// limits, server faults, timeouts. None of those are the article's fault, so
+// they must never be recorded against it as a permanent failure, and there is
+// no point firing hundreds more requests once one of them comes back.
+var apiUnavailable = false;
+
+function isApiUnavailable(err) {
+  var m = String((err && err.message) || '');
+  if (/credit balance|rate limit|overloaded|Internal server error/i.test(m)) return true;
+  if (/Claude API error \((?:401|403|408|429|5\d\d)\)/.test(m)) return true;
+  if (/timeout|ECONNRESET|ECONNREFUSED|ENOTFOUND|EAI_AGAIN|socket hang up/i.test(m)) return true;
+  return false;
+}
+
 async function generatePageSummary(articles) {
-  if (!ANTHROPIC_API_KEY) return null;
+  if (!ANTHROPIC_API_KEY || apiUnavailable) return null;
   console.log('Generating page summary for', REGION.label, '...');
   var titles = articles.slice(0,40).map(function(a,i){ return (i+1)+'. '+a.title; }).join('\n');
   try {
@@ -283,7 +319,11 @@ async function generatePageSummary(articles) {
       REGION.summaryPrompt + ' Write in plain prose, no bullet points, no markdown.',
       'Here are the top headlines from ' + REGION.label + ' news sources today:\n\n'+titles+'\n\nWrite a 3-4 sentence briefing summarising the key themes and most significant stories. Be direct and informative.'
     );
-  } catch(e) { console.error('Page summary failed:', e.message); return null; }
+  } catch(e) {
+    console.error('Page summary failed:', e.message);
+    if (isApiUnavailable(e)) apiUnavailable = true;
+    return null;
+  }
 }
 
 // Translate articles to Bangla
@@ -310,10 +350,18 @@ async function translateArticles(articles) {
         a.descBn  = parsed.descBn  || '';
       } catch(e) {
         console.error('  Translation failed for "' + a.title.slice(0,40) + '":', e.message);
-        a.titleBn = false;
-        a.descBn  = false;
+        if (isApiUnavailable(e)) {
+          apiUnavailable = true;   // leave the article untouched so it retries
+        } else {
+          a.titleBn = false;       // the model answered, just not usably
+          a.descBn  = false;
+        }
       }
     }));
+    if (apiUnavailable) {
+      console.error('  Anthropic API unavailable — stopping translation for this run; the remaining articles stay queued');
+      break;
+    }
     if (i+BATCH < articles.length) await new Promise(function(r){ setTimeout(r,500); });
   }
 }
@@ -370,10 +418,13 @@ async function main() {
 
   if (REGION.translate) {
     var needsTranslation = existingArticles.filter(function(a) { return a.titleBn === undefined; });
+    // Previously-failed articles used to be skipped forever, so a single API
+    // outage stranded every article it touched. Drain them a batch per run.
     var failedTranslation = existingArticles.filter(function(a) { return a.titleBn === false; });
-    console.log(freshArticles.length, 'new articles,', needsTranslation.length, 'existing need translation,', failedTranslation.length, 'previously failed (skipped)');
-    var toTranslate = freshArticles.concat(needsTranslation);
-    await translateArticles(toTranslate);
+    var retrying = failedTranslation.slice(0, RETRY_PER_RUN);
+    console.log(freshArticles.length, 'new articles,', needsTranslation.length, 'existing need translation,',
+                failedTranslation.length, 'previously failed (' + retrying.length + ' retried this run)');
+    await translateArticles(freshArticles.concat(needsTranslation, retrying));
   } else {
     console.log(freshArticles.length, 'new articles (translation disabled for', REGION.label, ')');
   }
@@ -382,13 +433,18 @@ async function main() {
   var allArticles = freshArticles.concat(existingArticles);
   allArticles.sort(function(a,b){ return (parseDate(b.pubDate)||0)-(parseDate(a.pubDate)||0); });
 
-  // ── Generate page summary from latest headlines (skip if no new articles) ──
-  var pageSummary = null;
-  if (freshArticles.length > 0) {
-    pageSummary = await generatePageSummary(allArticles);
+  // ── Page summary: refresh on new articles, or whenever we haven't got one ──
+  var storedSummary = null;
+  try { storedSummary = JSON.parse(fs.readFileSync(dataFile,'utf8')).summary || null; } catch(e) {}
+
+  var pageSummary = storedSummary;
+  if (freshArticles.length > 0 || !storedSummary) {
+    var generated = await generatePageSummary(allArticles);
+    // A failed call must not wipe a good summary off the page.
+    if (generated) pageSummary = generated;
+    else if (storedSummary) console.log('Summary generation failed — keeping the previous one');
   } else {
     console.log('No new articles — reusing existing summary');
-    try { pageSummary = JSON.parse(fs.readFileSync(dataFile,'utf8')).summary || null; } catch(e) {}
   }
 
   var output = {
@@ -400,6 +456,9 @@ async function main() {
 
   fs.writeFileSync(dataFile, JSON.stringify(output, null, 2));
   console.log('Done.', dataFile, 'now has', allArticles.length, 'articles (', freshArticles.length, 'new,', existingArticles.length, 'retained)');
+  if (apiUnavailable) {
+    console.warn('NOTE: the Anthropic API was unavailable this run — summaries and translations were skipped and will be retried next run.');
+  }
 
   if (regionArg === 'bd') {
     fs.writeFileSync('data.json', JSON.stringify(output, null, 2));
