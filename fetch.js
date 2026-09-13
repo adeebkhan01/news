@@ -5,6 +5,15 @@ const fs      = require('fs');
 
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
+// Feeds retired 2026-09 after failing on every scheduled run for weeks.
+// Re-add only with a green result from `node tools/check-feeds.js <url>`:
+//   bdnews24 widget feed        403   publisher blocks the runner
+//   TBS News /rss               404
+//   Daily Sun /rss              403
+//   SMH /rss/politics.xml       404   national.xml still carries politics
+//   SBS politics + environment  404   no working replacement found
+//   Al Jazeera economy.xml      404   all.xml already covers it
+//   AP News (3 feeds)           403   AP no longer serves public RSS
 const REGIONS = {
   bd: {
     label: 'Bangladesh',
@@ -15,11 +24,8 @@ const REGIONS = {
       { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/business/rss.xml' },
       { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/frontpage/rss.xml' },
       { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/bangladesh/rss.xml' },
-      { id: 'bdnews24',         name: 'bdnews24',          color: '#e05c1a', url: 'https://bdnews24.com/?widgetName=rssfeed&widgetId=1150&getXmlFeed=true' },
       { id: 'prothomalo',       name: 'Prothom Alo',       color: '#c0392b', url: 'https://en.prothomalo.com/feed/' },
-      { id: 'tbsnews',          name: 'TBS News',          color: '#2980b9', url: 'https://www.tbsnews.net/rss' },
       { id: 'financialexpress', name: 'Financial Express', color: '#8e44ad', url: 'https://thefinancialexpress.com.bd/feed/' },
-      { id: 'dailysun',         name: 'Daily Sun',         color: '#16a085', url: 'https://www.daily-sun.com/rss' },
     ]
   },
   au: {
@@ -37,11 +43,8 @@ const REGIONS = {
       { id: 'guardianau',     name: 'The Guardian AU',       color: '#052962', url: 'https://www.theguardian.com/environment/rss' },
       { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/business.xml' },
       { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/national.xml' },
-      { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/politics.xml' },
       { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/environment.xml' },
       { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/technology.xml' },
-      { id: 'sbsnews',        name: 'SBS News',              color: '#0D1F3C', url: 'https://www.sbs.com.au/news/topic/politics/feed' },
-      { id: 'sbsnews',        name: 'SBS News',              color: '#0D1F3C', url: 'https://www.sbs.com.au/news/topic/environment/feed' },
       { id: 'conversationau', name: 'The Conversation AU',   color: '#D8352A', url: 'https://theconversation.com/au/business/articles.atom' },
       { id: 'conversationau', name: 'The Conversation AU',   color: '#D8352A', url: 'https://theconversation.com/au/politics/articles.atom' },
       { id: 'conversationau', name: 'The Conversation AU',   color: '#D8352A', url: 'https://theconversation.com/au/technology/articles.atom' },
@@ -58,11 +61,7 @@ const REGIONS = {
       { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/world/rss.xml' },
       { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/business/rss.xml' },
       { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/science_and_environment/rss.xml' },
-      { id: 'aljazeera', name: 'Al Jazeera',  color: '#D2A02E', url: 'https://www.aljazeera.com/xml/rss/economy.xml' },
       { id: 'aljazeera', name: 'Al Jazeera',  color: '#D2A02E', url: 'https://www.aljazeera.com/xml/rss/all.xml' },
-      { id: 'apnews',    name: 'AP News',     color: '#E41D13', url: 'https://apnews.com/world-news.rss' },
-      { id: 'apnews',    name: 'AP News',     color: '#E41D13', url: 'https://apnews.com/business.rss' },
-      { id: 'apnews',    name: 'AP News',     color: '#E41D13', url: 'https://apnews.com/science.rss' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-bus' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-eu' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/xml/rss_en_science' },
@@ -86,6 +85,10 @@ SOURCES.forEach(function(s) {
 });
 
 var THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+
+// Guardrails for feed fetching.
+var MAX_FEED_BYTES  = 8 * 1024 * 1024;
+var FEED_CONCURRENCY = 4;
 
 // How many previously-failed translations to retry per run.
 var RETRY_PER_RUN = 60;
@@ -143,12 +146,32 @@ function fetchUrl(reqUrl, redirects) {
       }
       if (res.statusCode !== 200) return reject(new Error('HTTP ' + res.statusCode));
       var data = ''; res.setEncoding('utf8');
-      res.on('data', function(c) { data += c; });
+      res.on('data', function(c) {
+        data += c;
+        if (data.length > MAX_FEED_BYTES) { req.destroy(); reject(new Error('Feed larger than ' + MAX_FEED_BYTES + ' bytes')); }
+      });
       res.on('end', function() { resolve(data); });
     });
     req.on('error', reject);
     req.on('timeout', function() { req.destroy(); reject(new Error('Timeout')); });
   });
+}
+
+function isTransientHttp(err) {
+  var m = String((err && err.message) || '');
+  return /Timeout|HTTP (?:408|429|5\d\d)|ECONNRESET|ECONNREFUSED|EAI_AGAIN|socket hang up/i.test(m);
+}
+
+// One retry, because a lone 503 or dropped socket used to lose a source for
+// the entire run. Permanent answers (403, 404) are not worth retrying.
+async function fetchFeedWithRetry(reqUrl) {
+  try {
+    return await fetchUrl(reqUrl);
+  } catch (e) {
+    if (!isTransientHttp(e)) throw e;
+    await new Promise(function(r) { setTimeout(r, 1500); });
+    return fetchUrl(reqUrl);
+  }
 }
 
 function fetchHead(reqUrl, redirects) {
@@ -375,8 +398,7 @@ async function main() {
   // ── Load existing data ──
   var existingArticles = [];
   var existingByLink = {};
-  var loadFile = fs.existsSync(dataFile) ? dataFile
-    : (regionArg === 'bd' && fs.existsSync('data.json')) ? 'data.json' : null;
+  var loadFile = fs.existsSync(dataFile) ? dataFile : null;
   if (loadFile) {
     try {
       var existing = JSON.parse(fs.readFileSync(loadFile,'utf8'));
@@ -394,25 +416,42 @@ async function main() {
   }
 
   // ── Fetch fresh articles from feeds ──
-  var freshArticles = [], seenLinks = Object.assign({}, existingByLink);
-  for (var i=0; i<SOURCES.length; i++) {
-    var source=SOURCES[i];
-    try {
-      console.log('Fetching:', source.name, '-', source.url);
-      var xml=await fetchUrl(source.url);
-      var parsed=parseFeed(xml,source)
-        .filter(function(a){ return isRecent(a.pubDate); })
-        .filter(function(a){
-          if(seenLinks[a.link]) return false;
-          seenLinks[a.link]=true;
-          return true;
-        });
-      var articles = REGION.topicFilter ? parsed.filter(matchesTopic) : parsed;
-      var filtered = parsed.length - articles.length;
-      console.log('  Got', articles.length, 'new articles' + (filtered ? ' (' + filtered + ' off-topic filtered)' : ''));
-      freshArticles=freshArticles.concat(articles);
-    } catch(e) { console.error('  Failed:', e.message); }
-  }
+  // Fetched in parallel, but parsed and deduped in source order so a run's
+  // output doesn't depend on which feed happened to answer first.
+  var fetched = new Array(SOURCES.length);
+  var nextSource = 0;
+  await Promise.all(Array.from({ length: Math.min(FEED_CONCURRENCY, SOURCES.length) }, async function () {
+    while (nextSource < SOURCES.length) {
+      var idx = nextSource++;
+      var source = SOURCES[idx];
+      try {
+        fetched[idx] = { source: source, xml: await fetchFeedWithRetry(source.url) };
+      } catch (e) {
+        fetched[idx] = { source: source, error: e.message };
+      }
+    }
+  }));
+
+  var freshArticles = [], seenLinks = Object.assign({}, existingByLink), failedSources = [];
+  fetched.forEach(function (result) {
+    var source = result.source;
+    if (result.error) {
+      console.error('Failed:', source.name, '-', source.url, '-', result.error);
+      failedSources.push(source.name + ' (' + result.error + ')');
+      return;
+    }
+    var parsed = parseFeed(result.xml, source)
+      .filter(function(a){ return isRecent(a.pubDate); })
+      .filter(function(a){
+        if (seenLinks[a.link]) return false;
+        seenLinks[a.link] = true;
+        return true;
+      });
+    var articles = REGION.topicFilter ? parsed.filter(matchesTopic) : parsed;
+    var filtered = parsed.length - articles.length;
+    console.log('Fetched:', source.name, '-', articles.length, 'new articles' + (filtered ? ' (' + filtered + ' off-topic filtered)' : ''));
+    freshArticles = freshArticles.concat(articles);
+  });
 
   await enrichImages(freshArticles);
 
@@ -456,14 +495,20 @@ async function main() {
 
   fs.writeFileSync(dataFile, JSON.stringify(output, null, 2));
   console.log('Done.', dataFile, 'now has', allArticles.length, 'articles (', freshArticles.length, 'new,', existingArticles.length, 'retained)');
+  if (failedSources.length) {
+    console.warn('WARNING:', failedSources.length, 'of', SOURCES.length, 'feeds failed this run:');
+    failedSources.forEach(function(f) { console.warn('  -', f); });
+    console.warn('Run `node tools/check-feeds.js` (or the Feed Health workflow) to confirm whether they are permanently dead.');
+  }
   if (apiUnavailable) {
     console.warn('NOTE: the Anthropic API was unavailable this run — summaries and translations were skipped and will be retried next run.');
   }
-
-  if (regionArg === 'bd') {
-    fs.writeFileSync('data.json', JSON.stringify(output, null, 2));
-    console.log('Also wrote data.json for backward compatibility');
-  }
 }
 
-main().catch(function(e){ console.error(e); process.exit(1); });
+// Importable so tools/check-feeds.js can reuse the real source list and
+// parser rather than keeping a second copy that drifts out of date.
+module.exports = { REGIONS, fetchUrl, parseFeed, stripTags, decodeEntities, parseDate };
+
+if (require.main === module) {
+  main().catch(function(e){ console.error(e); process.exit(1); });
+}

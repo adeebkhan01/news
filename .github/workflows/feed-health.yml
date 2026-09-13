@@ -1,0 +1,61 @@
+name: Feed Health
+
+# Reports which configured feeds still return articles, and lets you try
+# candidate replacement URLs before editing the source list. Commits nothing.
+on:
+  workflow_dispatch:
+    inputs:
+      region:
+        description: 'Region to check (bd, au, global, or blank for all)'
+        required: false
+        default: ''
+      candidates:
+        description: 'Space-separated candidate feed URLs to try as well'
+        required: false
+        # Replacements for the feeds retired in 2026-09, unverified because
+        # they can only be reached from a runner. Dispatch this workflow and
+        # add whichever come back "ok" to the source list in fetch.js.
+        default: >-
+          https://bdnews24.com/feed
+          https://www.tbsnews.net/rss.xml
+          https://www.daily-sun.com/rss.xml
+          https://www.newagebd.net/feed/rss.xml
+          https://www.dhakatribune.com/feed
+          https://unb.com.bd/rss
+          https://www.risingbd.com/rss/rss.xml
+          https://www.smh.com.au/rss/feed.xml
+          https://www.sbs.com.au/news/feed
+          https://www.news.com.au/content-feeds/latest-news-national/
+          https://feeds.npr.org/1001/rss.xml
+          https://feeds.npr.org/1006/rss.xml
+          https://feeds.bbci.co.uk/news/rss.xml
+          https://www.theguardian.com/world/rss
+          https://www.france24.com/en/rss
+  schedule:
+    - cron: '17 6 * * 1'   # Monday morning, so dead feeds surface weekly
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      # Inputs go through the environment, never string-interpolated into the
+      # script, so a crafted input can't run as shell.
+      - name: Check feeds
+        env:
+          REGION: ${{ inputs.region }}
+          CANDIDATES: ${{ inputs.candidates }}
+        run: |
+          args=()
+          [ -n "$REGION" ] && args+=(--region "$REGION")
+          for url in $CANDIDATES; do
+            case "$url" in
+              https://*|http://*) args+=("$url") ;;
+              *) echo "Ignoring non-URL candidate: $url" ;;
+            esac
+          done
+          node tools/check-feeds.js "${args[@]}"

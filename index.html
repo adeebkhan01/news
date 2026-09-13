@@ -6,6 +6,7 @@
 <meta name="description" content="A clean, fast news reader for Bangladesh, Australia and the world — headlines from trusted sources, updated continuously." />
 <meta name="theme-color" content="#146c42" />
 <title>The Daily Digest — Bangladesh · Australia · Global</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23146c42'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' font-weight='700' fill='%23faf7f1' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@300;400;500;600;700&family=Tiro+Bangla&display=swap" rel="stylesheet" />
@@ -539,10 +540,16 @@ function safeURL(url) {
   return /^https?:\/\//i.test(raw) ? escapeHTML(raw) : '';
 }
 
+// Takes raw text and escapes it here: highlighting escaped text let a query
+// like "amp" or "quot" match inside an entity and break it apart.
 function highlight(text, query) {
-  if (!query) return text;
-  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  return text.replace(new RegExp('(' + escaped + ')', 'gi'), '<span class="highlight">$1</span>');
+  const raw = String(text == null ? '' : text);
+  if (!query) return escapeHTML(raw);
+  const pattern = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // split() on a capturing group puts the matches at the odd indices.
+  return raw.split(new RegExp('(' + pattern + ')', 'gi'))
+    .map((part, i) => i % 2 ? '<span class="highlight">' + escapeHTML(part) + '</span>' : escapeHTML(part))
+    .join('');
 }
 
 function timeAgo(dateStr) {
@@ -668,8 +675,8 @@ function setFilter(id, el) {
 /* ── Rendering ── */
 function cardHTML(a, isFeatured) {
   const isBn     = langMode === 'bn' && a.titleBn;
-  const title    = highlight(escapeHTML(isBn ? a.titleBn : (a.title || 'Untitled')), escapeHTML(searchQuery));
-  const desc     = highlight(escapeHTML(isBn ? (a.descBn || '') : (a.desc || '')), escapeHTML(searchQuery));
+  const title    = highlight(isBn ? a.titleBn : (a.title || 'Untitled'), searchQuery);
+  const desc     = highlight(isBn ? (a.descBn || '') : (a.desc || ''), searchQuery);
   const source   = escapeHTML(a.sourceName || 'Unknown');
   const color    = escapeHTML(a.sourceColor || '#8a8578');
   const link     = safeURL(a.link);
