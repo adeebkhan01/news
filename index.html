@@ -65,7 +65,7 @@
   /* space */
   --space-1:2px;--space-2:4px;--space-3:8px;--space-4:12px;--space-5:16px;
   --space-6:24px;--space-7:32px;--space-8:48px;--space-9:64px;--space-10:96px;
-  --gutter:24px;--section-y:64px;--measure:68ch;--page-max:1180px;
+  --gutter:24px;--section-y:64px;--measure:68ch;--page-max:calc((100vw + 1180px) / 2);
   --control-h-sm:26px;--control-h-md:34px;--control-h-lg:44px;
   --lead-h:380px;   /* the lead slot is a fixed box — see .card.featured */
 
@@ -262,7 +262,26 @@ a{color:inherit}
 }
 .panel + .panel{margin-top:var(--space-6)}
 .panel-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-4);margin-bottom:var(--space-3)}
-#page-summary{margin-bottom:var(--space-6)}
+#page-summary{
+  margin-bottom:var(--space-6);
+  display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:var(--space-6);align-items:start;
+}
+.brief-main{min-width:0}
+.facts{border-top:var(--border-w) solid var(--border-strong);padding-top:var(--space-3)}
+.fact{padding:var(--space-3) 0;border-bottom:var(--border-w) dashed var(--border-hairline)}
+.fact:last-child{border-bottom:none;padding-bottom:0}
+.fact dt{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
+  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-muted);
+}
+.fact dd{
+  margin-top:var(--space-2);font-family:var(--font-display);font-weight:700;
+  font-size:var(--size-md);line-height:1.1;letter-spacing:var(--track-display);
+  color:var(--text-heading);font-variant-numeric:tabular-nums;
+}
+@media(max-width:820px){
+  #page-summary{grid-template-columns:1fr;gap:var(--space-5)}
+}
 #page-summary-text{font-size:var(--size-md);line-height:1.5;max-width:var(--measure);color:var(--text-body)}
 #summary-toggle{
   display:none;margin-top:var(--space-3);padding:0;background:none;border:none;cursor:pointer;
@@ -533,12 +552,12 @@ footer{
 <main class="content-wrap">
   <div class="main-col">
     <section id="page-summary" style="display:none" class="panel" aria-label="Briefing">
-      <div class="panel-head">
-        <span class="label">Briefing</span>
-        <span class="label" id="summary-provenance"></span>
+      <div class="brief-main">
+        <div class="panel-head"><span class="label">Briefing</span></div>
+        <div id="page-summary-text"></div>
+        <button id="summary-toggle" onclick="toggleSummary()" aria-expanded="false">Read more</button>
       </div>
-      <div id="page-summary-text"></div>
-      <button id="summary-toggle" onclick="toggleSummary()" aria-expanded="false">Read more</button>
+      <dl class="facts" id="brief-facts"></dl>
     </section>
 
     <div class="section-head">
@@ -581,6 +600,9 @@ let loading      = false;
 let langMode     = 'en';
 let activeRegion = localStorage.getItem('news-region') || 'bd';
 let searchTimer  = null;
+let summaryEn    = '';
+let summaryBn    = '';
+let lastFetched  = '';
 
 const PAGE_SIZE = 24;
 let visibleArticles = [];
@@ -690,6 +712,7 @@ function toggleLang() {
   btn.classList.toggle('bn', langMode === 'bn');
   renderArticles();
   showHeadlines(allArticles);
+  renderSummary();
 }
 
 /* ── Region ── */
@@ -895,16 +918,43 @@ function showSkeletons() {
     '<div class="loading-grid">' + Array(6).fill(skel).join('') + '</div>';
 }
 
-function showPageSummary(text) {
+function showPageSummary(text, textBn) {
+  summaryEn = text || '';
+  summaryBn = textBn || '';
+  renderSummary();
+}
+
+function renderSummary() {
   const box = document.getElementById('page-summary');
+  // Falls back to English when the translation hasn't landed yet, rather
+  // than dropping the briefing off the page.
+  const isBn = langMode === 'bn' && summaryBn;
+  const text = isBn ? summaryBn : summaryEn;
   if (!text) { box.style.display = 'none'; return; }
+
   const body = document.getElementById('page-summary-text');
   body.textContent = text;
+  if (isBn) body.setAttribute('lang', 'bn'); else body.removeAttribute('lang');
   body.classList.add('clamped');
+
   const toggle = document.getElementById('summary-toggle');
   toggle.textContent = 'Read more';
   toggle.setAttribute('aria-expanded', 'false');
-  box.style.display = 'block';
+  box.style.display = 'grid';
+  renderFacts();
+}
+
+// Fills the space the 68ch measure leaves beside the prose, and puts the
+// provenance where the system wants it: every number named and dated.
+function renderFacts() {
+  const rows = [
+    ['Region',   REGION_CONFIG[activeRegion].label],
+    ['Articles', allArticles.length.toLocaleString()],
+    ['Sources',  String(allSources.length)],
+    ['Fetched',  lastFetched || '—']
+  ];
+  document.getElementById('brief-facts').innerHTML = rows.map(([k, v]) =>
+    '<div class="fact"><dt>' + k + '</dt><dd>' + escapeHTML(v) + '</dd></div>').join('');
 }
 
 function toggleSummary() {
@@ -958,15 +1008,14 @@ async function loadData() {
 
     if (data.fetchedAt) {
       const fetched = new Date(data.fetchedAt);
-      const stamp = fetched.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      lastFetched = fetched.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
         + ' · ' + fetched.toLocaleDateString([], { day: '2-digit', month: 'short' });
-      document.getElementById('last-updated').textContent = 'Fetched ' + stamp;
-      document.getElementById('summary-provenance').textContent = stamp;
-      document.getElementById('latest-provenance').textContent = stamp;
+      document.getElementById('last-updated').textContent = 'Fetched ' + lastFetched;
+      document.getElementById('latest-provenance').textContent = lastFetched;
     }
 
     showHeadlines(allArticles);
-    showPageSummary(data.summary);
+    showPageSummary(data.summary, data.summaryBn);
     setStatus('ok', 'Live', REGION_CONFIG[activeRegion].label);
     buildFilterBar();
     renderArticles();

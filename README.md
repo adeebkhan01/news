@@ -13,7 +13,7 @@ scheduled GitHub Action pulls RSS feeds into JSON files; the page is a single
                 ├── drop articles older than 30 days, dedupe by link
                 ├── backfill missing images from each article's og:image
                 ├── translate new Bangladesh articles to Bangla (Claude)
-                ├── write a short briefing for the region (Claude)
+                ├── write a short briefing, and translate it for Bangladesh (Claude)
                 └── write data-{bd,au,global}.json  ── committed back to main
 index.html  fetches the JSON for the selected region and renders it
 ```
@@ -94,6 +94,11 @@ woff2 files removes that, and `font-src` already allows `'self'`.
   unusable model response marks it permanently untranslatable, and up to
   `RETRY_PER_RUN` of those are retried each run.
 - **A failed briefing keeps the previous one** rather than blanking it.
+- **The briefing is translated, not written twice.** For a region with
+  `translate: true` the English briefing is generated first and then
+  translated into `summaryBn`, so both languages describe the same headlines.
+  A new briefing clears the old translation; the translation is retried each
+  run until it lands, and the page falls back to English until it does.
 - **Bangla is Bangladesh-only.** `translate: true` is set per region.
 - **Australia and Global are topic-filtered**; Bangladesh is not, so it takes
   whatever its feeds publish. The filter is a keyword whitelist in three
@@ -146,6 +151,15 @@ What the system asks for, and where it shows up here:
 
 Cards render 24 at a time and load more on scroll; a feed can hold thousands
 of articles and putting them all in the DOM makes every later repaint crawl.
+
+**The briefing sits beside a facts panel.** Prose is capped at the 68ch
+measure the system requires, which leaves the panel wide; the space carries
+region, article count, source count and freshness rather than a stretched
+line length.
+
+**The page width is `(100vw + 1180px) / 2`** — half the side margin the
+system's 1180px column would leave, on request. Below 1180px it exceeds the
+viewport and stops binding, so narrow screens are unaffected.
 
 **The lead slot is a fixed box** (`--lead-h`), because ordinary cards are
 levelled by the grid row stretching them to match while the lead has a row to
