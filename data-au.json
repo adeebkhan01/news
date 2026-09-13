@@ -1,6 +1,7 @@
 {
-  "fetchedAt": "2026-09-13T11:17:18.843Z",
-  "summary": "Australia's news cycle is dominated by crime and violence, with multiple shooting investigations in Perth, a carjacking in Sydney, and a serious collision involving police in an unspecified location. Political tensions are rising as One Nation gains momentum in Victoria, prompting Coalition responses on free speech and leading strategists to warn against character attacks on Pauline Hanson, while Prime Minister Albanese has defended his mother against Hanson's criticism. Technology and climate concerns feature prominently, with major tech leaders calling for an urgent slowdown in AI development, and the nation's first H5 bird flu death in an endangered sea lion raising conservation alarms. Industrial safety and social infrastructure issues round out the briefing, including WorkSafe investigations into a shovel fire and the opening of new public playgrounds across the country.",
+  "fetchedAt": "2026-09-13T11:53:17.988Z",
+  "summary": "Australian news today is dominated by crime and safety concerns, including a shooting in Perth's Hamilton Hill with police hunting two suspects, alleged carjacking in Sydney, and a stalking case involving Apple AirTags. The political landscape is heating up with debate over One Nation's rising influence in Victoria, coalition leadership questions around Hastie, and Prime Minister Albanese defending his mother's use of public housing against Pauline Hanson's criticism. Technology features prominently with global tech leaders calling for urgent restraint on AI development over safety concerns. The Adelaide Crows have involved police and the AFL over a \"disgusting\" message sent to player Jordan Dawson, while other stories touch on a dangerous bird flu outbreak affecting sea lions and workplace safety investigations at Kalgoorlie's Super Pit mine.",
+  "summaryBn": null,
   "sources": [
     {
       "id": "abcnews",
@@ -25,11 +26,41 @@
   ],
   "articles": [
     {
+      "title": "Crows call in police, AFL after ‘disgusting’ message sent to Jordan Dawson",
+      "link": "https://www.smh.com.au/sport/afl/crows-call-in-police-afl-after-disgusting-message-sent-to-jordan-dawson-20260913-p60wz7.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_feed",
+      "desc": "Adelaide reported social media abuse directed at captain Jordan Dawson to South Australia Police and the AFL integrity unit.",
+      "pubDate": "Sun, 13 Sep 2026 21:24:20 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.33833865814696484%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_114/t_crop_custom/q_86%2Cf_auto/f00f37e806464d2acf8bdd5a93493a69786b1339",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Police searching for duo after man shot in Perth",
+      "link": "https://www.smh.com.au/national/police-searching-for-duo-after-man-shot-in-perth-20260913-p60wz3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_feed",
+      "desc": "Police are searching for two men after another man was shot in Perth on Sunday morning.",
+      "pubDate": "Sun, 13 Sep 2026 20:15:06 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/54326fa66ee1326375e8c5812bcfffb97050f001",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
       "title": "Police searching for duo after man shot in Perth",
       "link": "https://www.smh.com.au/national/police-searching-for-duo-after-man-shot-in-perth-20260913-p60wz3.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
       "desc": "Police are searching for two men after another man was shot in Perth on Sunday morning.",
       "pubDate": "Sun, 13 Sep 2026 20:15:06 +1000",
       "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/54326fa66ee1326375e8c5812bcfffb97050f001",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Police release CCTV in hunt for two men after Hamilton Hill shooting",
+      "link": "https://www.smh.com.au/national/western-australia/man-shot-in-hamilton-hill-as-police-hunt-for-two-suspects-20260913-p60wvw.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_feed",
+      "desc": "Police believe it to be an isolated incident and there is currently no concern for the safety of the public.",
+      "pubDate": "Sun, 13 Sep 2026 19:38:31 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.5851666666666666%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_174%2C$y_232/t_crop_custom/q_86%2Cf_auto/014097e63a994bd0df5c1cee6e4d2e8ea9ff48dd3101107bc947dd74ead39ff8",
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
@@ -46,6 +77,16 @@
     },
     {
       "title": "New school playgrounds, ovals to be opened to public: Find your nearest new open space",
+      "link": "https://www.smh.com.au/national/nsw/new-school-playgrounds-ovals-to-be-opened-to-public-find-your-nearest-new-open-space-20260911-p60whq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_feed",
+      "desc": "New schools being built in Sydney’s north-west and south-west growth areas will open their playgrounds and green space to communities that were never given enough of them.",
+      "pubDate": "Sun, 13 Sep 2026 19:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.19063906390639063%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_55/t_crop_custom/q_86%2Cf_auto/72930353230579aac200b21960b420050dc38ab9",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "New school playgrounds, ovals to be opened to public: Find your nearest new open space",
       "link": "https://www.smh.com.au/national/nsw/new-school-playgrounds-ovals-to-be-opened-to-public-find-your-nearest-new-open-space-20260911-p60whq.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
       "desc": "New schools being built in Sydney’s north-west and south-west growth areas will open their playgrounds and green space to communities that were never given enough of them.",
       "pubDate": "Sun, 13 Sep 2026 19:30:00 +1000",
@@ -56,10 +97,30 @@
     },
     {
       "title": "Tech leaders call for urgent global slowdown on AI",
+      "link": "https://www.smh.com.au/technology/tech-leaders-call-for-urgent-global-slowdown-on-ai-20260913-p60wyp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_feed",
+      "desc": "Tech leaders are calling for an urgent global slowdown on artificial intelligence and warning self-training AI is evolving faster than safety guard rails can handle.",
+      "pubDate": "Sun, 13 Sep 2026 18:43:57 +1000",
+      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/94c40558e27f759c0c40e75fd8b6191baaf176f9",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Tech leaders call for urgent global slowdown on AI",
       "link": "https://www.smh.com.au/technology/tech-leaders-call-for-urgent-global-slowdown-on-ai-20260913-p60wyp.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_technology",
       "desc": "Tech leaders are calling for an urgent global slowdown on artificial intelligence and warning self-training AI is evolving faster than safety guard rails can handle.",
       "pubDate": "Sun, 13 Sep 2026 18:43:57 +1000",
       "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/94c40558e27f759c0c40e75fd8b6191baaf176f9",
+      "sourceId": "smh",
+      "sourceName": "Sydney Morning Herald",
+      "sourceColor": "#0A5CA8"
+    },
+    {
+      "title": "Hastie the answer for struggling Coalition but not just yet",
+      "link": "https://www.smh.com.au/national/nsw/hastie-the-answer-for-struggling-coalition-but-not-just-yet-20260913-p60wva.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_feed",
+      "desc": "I’m no supporter of Andrew Hastie, but his standing up to Gina Rinehart and her sidekick Pauline Hanson is a big tick in his favour.",
+      "pubDate": "Sun, 13 Sep 2026 18:30:00 +1000",
+      "img": "https://static.ffx.io/images/$zoom_0.1701%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_95/t_crop_custom/q_86%2Cf_auto/a9d975faf2ce543ec68e975adbc88971bb4c6cb5",
       "sourceId": "smh",
       "sourceName": "Sydney Morning Herald",
       "sourceColor": "#0A5CA8"
@@ -17653,16 +17714,6 @@
       "sourceId": "guardianau",
       "sourceName": "The Guardian AU",
       "sourceColor": "#052962"
-    },
-    {
-      "title": "Nigel Farage claims victory in by-election over Count Binface",
-      "link": "https://www.smh.com.au/national/nigel-farage-claims-victory-in-by-election-over-count-binface-20260814-p60ojh.html?ref=rss&amp;utm_medium=rss&amp;utm_source=rss_national",
-      "desc": "UK right wing politician Nigel Farage has won a bizarre by-election battle in his seat of Clacton, caused by his own resignation.",
-      "pubDate": "Fri, 14 Aug 2026 21:34:48 +1000",
-      "img": "https://static.ffx.io/images/w_800%2Ch_450%2Cc_fill%2Cg_auto:faces/q_86%2Cf_auto/375e04d52bfb0ac8695277b717abea678682685a",
-      "sourceId": "smh",
-      "sourceName": "Sydney Morning Herald",
-      "sourceColor": "#0A5CA8"
     }
   ]
 }
