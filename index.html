@@ -610,10 +610,13 @@ let renderedCount   = 0;
 let featuredIndex   = -1;
 let feedObserver    = null;
 
+// hasLang mirrors `translate` in fetch.js: it says the region's data file
+// carries Bangla, not that every article in it does. A region whose backlog is
+// still draining renders untranslated articles in English either way.
 const REGION_CONFIG = {
-  bd:     { label: 'Bangladesh', mark: 'BD', dataFile: 'data-bd.json',     hasLang: true  },
-  au:     { label: 'Australia',  mark: 'AU', dataFile: 'data-au.json',     hasLang: false },
-  global: { label: 'Global',     mark: 'GL', dataFile: 'data-global.json', hasLang: false }
+  bd:     { label: 'Bangladesh', mark: 'BD', dataFile: 'data-bd.json',     hasLang: true },
+  au:     { label: 'Australia',  mark: 'AU', dataFile: 'data-au.json',     hasLang: true },
+  global: { label: 'Global',     mark: 'GL', dataFile: 'data-global.json', hasLang: true }
 };
 
 /* ── Theme ── */

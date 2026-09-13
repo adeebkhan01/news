@@ -58,6 +58,12 @@ runs the same check every Monday and can be dispatched by hand with candidate
 URLs in its input box, which is the easiest way to test replacements — some
 publishers answer runners but not local machines, and vice versa.
 
+The CNN feeds and the three English-language Bangladeshi dailies (Dhaka
+Tribune, New Age, UNB) were added without that check — they can't be reached
+from where they were added — so run the Feed Health workflow and retire any
+that report `DEAD` or `STALE`. Its candidates box holds the alternates to try
+in their place.
+
 A feed that fails is not fatal: that source is skipped for the run, previously
 collected articles are retained, and the run log ends with a list of what
 failed.
@@ -99,7 +105,14 @@ woff2 files removes that, and `font-src` already allows `'self'`.
   translated into `summaryBn`, so both languages describe the same headlines.
   A new briefing clears the old translation; the translation is retried each
   run until it lands, and the page falls back to English until it does.
-- **Bangla is Bangladesh-only.** `translate: true` is set per region.
+- **Bangla is on for every region.** `translate: true` is still set per region
+  in `fetch.js`, and `hasLang` in `REGION_CONFIG` (`index.html`) has to match —
+  it decides whether the page offers the toggle.
+- **A newly translated region backfills over several runs.** Switching
+  `translate` on queues the region's entire stored month at once, so
+  `BACKFILL_PER_RUN` caps how much of that backlog one run takes and drains it
+  newest-first. Articles waiting their turn render in English; the toggle does
+  not wait for the backlog to finish.
 - **Australia and Global are topic-filtered**; Bangladesh is not, so it takes
   whatever its feeds publish. The filter is a keyword whitelist in three
   parts: `TOPIC_PREFIX_RE` matches any continuation (`econom` catches

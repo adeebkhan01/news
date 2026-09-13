@@ -33,12 +33,18 @@ const REGIONS = {
       { id: 'prothomalo',       name: 'Prothom Alo',       color: '#c0392b', url: 'https://en.prothomalo.com/feed/',
         excludeSections: ['entertainment', 'photo', 'lifestyle'] },
       { id: 'risingbd',         name: 'Rising BD',         color: '#0f7b6c', url: 'https://www.risingbd.com/rss/rss.xml' },
+      // English-language Bangladeshi dailies. Added unverified — the sandbox
+      // can't reach them; dispatch the Feed Health workflow to confirm, and
+      // retire any that come back DEAD or STALE.
+      { id: 'dhakatribune',     name: 'Dhaka Tribune',     color: '#1b5e9e', url: 'https://www.dhakatribune.com/feed' },
+      { id: 'newage',           name: 'New Age',           color: '#8e2d2d', url: 'https://www.newagebd.net/feed/rss.xml' },
+      { id: 'unb',              name: 'UNB',               color: '#2f6f4f', url: 'https://unb.com.bd/rss' },
     ]
   },
   au: {
     label: 'Australia',
     dataFile: 'data-au.json',
-    translate: false,
+    translate: true,
     topicFilter: true,
     summaryPrompt: 'You are a concise news briefing editor covering Australia.',
     sources: [
@@ -62,7 +68,7 @@ const REGIONS = {
   global: {
     label: 'Global',
     dataFile: 'data-global.json',
-    translate: false,
+    translate: true,
     topicFilter: true,
     summaryPrompt: 'You are a concise news briefing editor covering global affairs.',
     sources: [
@@ -77,6 +83,11 @@ const REGIONS = {
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-bus' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-eu' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/xml/rss_en_science' },
+      // Added unverified — confirm with the Feed Health workflow before
+      // trusting them. CNN has retired feeds without notice before.
+      { id: 'cnn',       name: 'CNN',         color: '#CC0000', url: 'https://rss.cnn.com/rss/edition_world.rss' },
+      { id: 'cnn',       name: 'CNN',         color: '#CC0000', url: 'https://rss.cnn.com/rss/money_news_international.rss' },
+      { id: 'cnn',       name: 'CNN',         color: '#CC0000', url: 'https://rss.cnn.com/rss/edition_technology.rss' },
     ]
   }
 };
@@ -105,6 +116,13 @@ var FEED_CONCURRENCY = 4;
 // run cadence in .github/workflows/fetch-feeds.yml: at twice a day this keeps
 // the backlog draining at roughly 400 articles a day.
 var RETRY_PER_RUN = 200;
+
+// Turning translate: true on for a region that already holds a month of
+// articles queues the whole backlog in one go — Australia and Global carry
+// roughly 1,700 and 1,300. Drain it newest-first over successive runs so no
+// single run carries hours of API calls, and the articles readers see first
+// are translated first.
+var BACKFILL_PER_RUN = 300;
 
 // Per feed URL. The runs are 12 hours apart and the busiest single-URL feeds
 // (Prothom Alo, Al Jazeera all.xml) publish 30+ items in that window, so a cap
@@ -532,12 +550,16 @@ async function main() {
   await enrichImages(freshArticles);
 
   if (REGION.translate) {
-    var needsTranslation = existingArticles.filter(function(a) { return a.titleBn === undefined; });
+    var backlog = existingArticles
+      .filter(function(a) { return a.titleBn === undefined; })
+      .sort(function(a,b){ return (parseDate(b.pubDate)||0)-(parseDate(a.pubDate)||0); });
+    var needsTranslation = backlog.slice(0, BACKFILL_PER_RUN);
     // Previously-failed articles used to be skipped forever, so a single API
     // outage stranded every article it touched. Drain them a batch per run.
     var failedTranslation = existingArticles.filter(function(a) { return a.titleBn === false; });
     var retrying = failedTranslation.slice(0, RETRY_PER_RUN);
-    console.log(freshArticles.length, 'new articles,', needsTranslation.length, 'existing need translation,',
+    console.log(freshArticles.length, 'new articles,', backlog.length, 'existing need translation',
+                '(' + needsTranslation.length + ' this run),',
                 failedTranslation.length, 'previously failed (' + retrying.length + ' retried this run)');
     await translateArticles(freshArticles.concat(needsTranslation, retrying));
   } else {
