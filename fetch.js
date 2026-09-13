@@ -16,7 +16,12 @@ const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 //   AP News (3 feeds)           403   AP no longer serves public RSS
 //   Financial Express /feed/    200   answers, parses 0 articles
 //   DW rss_en_enviro            200   answers, parses 0 articles
-// Checked but not adopted, newest item already past the 30-day retention:
+// Retired 2026-09 for staleness: they answer 200 and parse cleanly, but their
+// newest item is already outside the 30-day retention window, so every run
+// fetched them and kept nothing.
+//   thedailystar.net/frontpage/rss.xml  (newest item 1514d old)
+//   thedailystar.net/bangladesh/rss.xml (newest item  207d old)
+// Checked but not adopted, same reason:
 //   tbsnews.net/rss.xml (1766d), sbs.com.au/news/feed (18d, dormant)
 const REGIONS = {
   bd: {
@@ -26,8 +31,6 @@ const REGIONS = {
     summaryPrompt: 'You are a concise news briefing editor covering Bangladesh.',
     sources: [
       { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/business/rss.xml' },
-      { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/frontpage/rss.xml' },
-      { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/bangladesh/rss.xml' },
       // Site-wide feed, so it carries the soft sections too. The article URL
       // names its section, which is a far better signal than keyword matching.
       { id: 'prothomalo',       name: 'Prothom Alo',       color: '#c0392b', url: 'https://en.prothomalo.com/feed/',

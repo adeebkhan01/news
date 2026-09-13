@@ -58,6 +58,11 @@ runs the same check every Monday and can be dispatched by hand with candidate
 URLs in its input box, which is the easiest way to test replacements — some
 publishers answer runners but not local machines, and vice versa.
 
+`STALE` is a real retirement signal, not a warning: The Daily Star's
+`frontpage` and `bangladesh` feeds were dropped on it in 2026-09, both
+answering 200 and parsing cleanly with newest items 1514 and 207 days old. Its
+`business` feed is still live and stays.
+
 The CNN feeds and the three English-language Bangladeshi dailies (Dhaka
 Tribune, New Age, UNB) were added without that check — they can't be reached
 from where they were added — so run the Feed Health workflow and retire any
