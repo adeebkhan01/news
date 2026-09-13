@@ -323,11 +323,11 @@ async function enrichImages(articles) {
   }
 }
 
-function claudeComplete(systemPrompt, userPrompt) {
+function claudeComplete(systemPrompt, userPrompt, maxTokens) {
   return new Promise(function(resolve, reject) {
     var body = JSON.stringify({
       model: 'claude-haiku-4-5-20251001',
-      max_tokens: 400,
+      max_tokens: maxTokens || 400,
       system: systemPrompt,
       messages: [{ role: 'user', content: userPrompt }]
     });
@@ -393,6 +393,25 @@ async function generatePageSummary(articles) {
     );
   } catch(e) {
     console.error('Page summary failed:', e.message);
+    if (isApiUnavailable(e)) apiUnavailable = true;
+    return null;
+  }
+}
+
+// The briefing is written in English and translated, rather than generated
+// twice, so the two languages always describe the same set of headlines.
+async function translateSummary(text) {
+  if (!ANTHROPIC_API_KEY || apiUnavailable || !text) return null;
+  console.log('Translating the briefing to Bangla...');
+  try {
+    return await claudeComplete(
+      'You are a Bengali (Bangla) translator. Translate the given English news briefing into natural Bengali. '
+      + 'Respond with the translation only — no preamble, no quotation marks, no markdown.',
+      text,
+      1500
+    );
+  } catch (e) {
+    console.error('Briefing translation failed:', e.message);
     if (isApiUnavailable(e)) apiUnavailable = true;
     return null;
   }
@@ -530,22 +549,36 @@ async function main() {
   allArticles.sort(function(a,b){ return (parseDate(b.pubDate)||0)-(parseDate(a.pubDate)||0); });
 
   // ── Page summary: refresh on new articles, or whenever we haven't got one ──
-  var storedSummary = null;
-  try { storedSummary = JSON.parse(fs.readFileSync(dataFile,'utf8')).summary || null; } catch(e) {}
+  var storedSummary = null, storedSummaryBn = null;
+  try {
+    var prev = JSON.parse(fs.readFileSync(dataFile,'utf8'));
+    storedSummary   = prev.summary   || null;
+    storedSummaryBn = prev.summaryBn || null;
+  } catch(e) {}
 
-  var pageSummary = storedSummary;
+  var pageSummary = storedSummary, pageSummaryBn = storedSummaryBn;
   if (freshArticles.length > 0 || !storedSummary) {
     var generated = await generatePageSummary(allArticles);
     // A failed call must not wipe a good summary off the page.
-    if (generated) pageSummary = generated;
-    else if (storedSummary) console.log('Summary generation failed — keeping the previous one');
+    if (generated) {
+      pageSummary = generated;
+      pageSummaryBn = null;   // the stored translation describes the old one
+    } else if (storedSummary) {
+      console.log('Summary generation failed — keeping the previous one');
+    }
   } else {
     console.log('No new articles — reusing existing summary');
+  }
+
+  // Retried every run until it lands, like the article translations.
+  if (REGION.translate && pageSummary && !pageSummaryBn) {
+    pageSummaryBn = await translateSummary(pageSummary);
   }
 
   var output = {
     fetchedAt: new Date().toISOString(),
     summary:   pageSummary,
+    summaryBn: pageSummaryBn || null,
     sources:   UNIQUE_SOURCES,
     articles:  allArticles
   };
