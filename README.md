@@ -94,10 +94,35 @@ failed.
 
 ## Front end
 
-`index.html` holds a small design-token system (`--bg`, `--text`, `--brand`
-and friends) with a light and a dark palette, switched by `data-theme` on
-`<html>` and remembered in `localStorage`. Type is Libre Baskerville for
-headlines, Source Sans 3 for UI, Tiro Bangla for Bangla.
+`index.html` is set in the **Aparajita** design system (brand guidelines
+v1.0). Tokens live at the top of the stylesheet: base scales (`--paper-*`,
+`--ink-*`, `--gold-*`) and the semantic aliases (`--bg-page`, `--text-body`,
+`--border-strong`) that every rule references, so the night theme re-points
+the aliases without touching a component. Token values are taken from the
+system's own token file, including the night theme and the status hexes the
+written guidelines name but do not specify.
+
+What the system asks for, and where it shows up here:
+
+- **Monospace throughout.** Space Mono 700 for structure — headlines, buttons,
+  tabs, micro-labels — and IBM Plex Mono for prose and data. Never the reverse.
+  Tiro Bangla stays for Bangla, as no monospace Bengali face exists.
+- **Navy on warm paper.** Never pure black or white. Per-source brand colours
+  were dropped: the palette is ink plus one gold.
+- **One gold thing per view** — here, the wordmark tick. The region tabs
+  therefore use the lifted-paper active state rather than a gold rule. The
+  focus ring and selection wash are gold by exemption.
+- **A hard, unblurred edge** on every raised box, offset down-and-right in a
+  darker shade of its own surface. Raised acts, inset receives: buttons and
+  cards are raised, the search field is inset. Nothing is blurred anywhere.
+- **2px radius everywhere**, 1px ink borders, dashed hairlines between rows.
+- **Micro-labels** — 11px uppercase, +0.14em — above every section and field.
+- **Motion is 70ms on state, 130ms on layout**, and nothing else. No shimmer,
+  no spinner, no entrance animation: loading says "48 / 3435 shown", a refresh
+  says "Fetching", and a run state is a glyph plus a colour.
+- **Icons are unicode glyphs** set in Space Mono. No SVG icon set, no emoji.
+- **Images are evidence.** Article art is the publisher's own; anything
+  missing gets the 135° striped placeholder captioned with what belongs there.
 
 Cards render 24 at a time and load more on scroll; a feed can hold thousands
 of articles and putting them all in the DOM makes every later repaint crawl.
