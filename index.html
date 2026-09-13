@@ -31,13 +31,13 @@
   --paper-0:#ffffff;--paper-1:#fdfcfb;--paper-2:#f6f4f1;--paper-3:#eae6df;--paper-4:#ddd8cf;
   /* ink */
   --ink-0:#0e1729;--ink-1:#1b2a4a;--ink-2:#3d4f70;--ink-3:#5c6b85;
-  --line-1:#8fa3bf;--line-2:#c6d0de;      /* line-2 derived: the guidelines name it but give no hex */
+  --line-1:#8fa3bf;--line-2:#c3ccd9;
   /* signal gold */
   --gold-1:#d4a418;--gold-2:#b98c0c;--gold-ink:#6d5205;--gold-wash:#f7eccc;
-  /* status — run states only (hexes derived: named in §03, not specified) */
-  --ok-1:#1f7a4d;--ok-wash:#e4f0e9;
-  --warn-1:#8a6a0f;--warn-wash:#f7eccc;
-  --err-1:#a32b23;--err-wash:#f6e5e3;
+  /* status — run states only */
+  --ok-1:#2f7d54;--ok-wash:#e4f0e8;
+  --warn-1:#b8761a;--warn-wash:#f8ecd9;
+  --err-1:#a8321f;--err-wash:#f8e5e1;
 
   /* semantic aliases */
   --bg-page:var(--paper-1);--bg-surface:var(--paper-2);--bg-sunken:var(--paper-3);--bg-inverse:var(--ink-1);
@@ -45,7 +45,7 @@
   --text-inverse:var(--paper-1);--text-accent:var(--gold-ink);
   --border-strong:var(--ink-1);--border-quiet:var(--line-1);--border-hairline:var(--line-2);
   --focus-ring:var(--gold-1);--selection-bg:var(--gold-wash);
-  --edge-color:var(--line-2);--edge-strong:var(--ink-0);--edge-gold:var(--gold-ink);
+  --edge-color:var(--line-2);--edge-color-strong:var(--ink-2);--edge-color-gold:var(--gold-2);
 
   /* type */
   --font-display:'Space Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
@@ -62,11 +62,13 @@
   --control-h-sm:26px;--control-h-md:34px;--control-h-lg:44px;
 
   /* edges */
-  --radius:2px;--border-w:1px;
-  --edge-1:2px 2px 0 var(--edge-color);
-  --edge-2:3px 3px 0 var(--edge-color);
-  --edge-3:6px 6px 0 var(--edge-strong);
-  --edge-none:none;
+  --radius:2px;--border-w:1px;--border-w-heavy:2px;
+  --edge-1:2px 2px 0 0 var(--edge-color);
+  --edge-2:4px 4px 0 0 var(--edge-color);
+  --edge-3:6px 6px 0 0 var(--edge-color);
+  --edge-strong:3px 3px 0 0 var(--edge-color-strong);
+  --edge-none:0 0 0 0 var(--edge-color);
+  --press-1:translate(2px,2px);--press-2:translate(4px,4px);
   --motion-fast:70ms;--motion-base:130ms;--ease:linear;--ease-smooth:cubic-bezier(.2,0,.2,1);
   --header-h:56px;
 }
@@ -74,13 +76,11 @@
 /* Night theme — same roles, ink and paper swapped. The guidelines flag this
    as untested, so it is a starting point rather than a finished surface. */
 :root[data-theme="night"]{
-  --bg-page:#0b1220;--edge-inverse:#000;--bg-surface:#121c2f;--bg-sunken:#18243b;--bg-inverse:var(--paper-2);
-  --text-heading:#eef2f8;--text-body:#dbe3ef;--text-muted:#93a3bd;
+  --bg-page:var(--ink-0);--bg-surface:#16233c;--bg-sunken:#0a101d;--bg-inverse:var(--paper-1);
+  --text-heading:var(--paper-1);--text-body:#e6eaf1;--text-muted:var(--line-1);
   --text-inverse:var(--ink-0);--text-accent:var(--gold-1);
-  --border-strong:#3d4f70;--border-quiet:#2b3a56;--border-hairline:#26324a;
-  --edge-color:#26324a;--edge-strong:#000000;
-  --gold-wash:#2e2712;--ok-wash:#12271c;--warn-wash:#2b2412;--err-wash:#2b1614;
-  --selection-bg:#3a300f;
+  --border-strong:var(--line-1);--border-quiet:#35486b;--border-hairline:#253352;
+  --edge-color:#060b14;--edge-color-strong:#060b14;
 }
 
 html{font-size:16px;-webkit-text-size-adjust:100%;font-family:var(--font-text)}
@@ -144,8 +144,8 @@ a{color:inherit}
   transition:background var(--motion-fast) var(--ease),color var(--motion-fast) var(--ease);
 }
 .btn:hover{background:var(--bg-sunken)}
-.btn:active{transform:translate(2px,2px);box-shadow:none}   /* travels into its own edge */
-.btn-primary{background:var(--bg-inverse);color:var(--text-inverse);box-shadow:2px 2px 0 var(--edge-strong)}
+.btn:active{transform:var(--press-1);box-shadow:var(--edge-none)}   /* travels into its own edge */
+.btn-primary{background:var(--bg-inverse);color:var(--text-inverse);box-shadow:2px 2px 0 0 var(--edge-color-strong)}
 .btn-primary:hover{filter:brightness(.92)}
 .btn[disabled]{background:var(--bg-sunken);border-color:var(--border-hairline);color:var(--text-muted);box-shadow:none;cursor:default}
 .btn[disabled]:active{transform:none}
@@ -250,7 +250,7 @@ a{color:inherit}
 .panel{
   background:var(--bg-surface);
   border:var(--border-w) solid var(--border-strong);border-radius:var(--radius);
-  box-shadow:var(--edge-2);padding:var(--space-5);
+  box-shadow:var(--edge-strong);padding:var(--space-5);
 }
 .panel + .panel{margin-top:var(--space-6)}
 .panel-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-4);margin-bottom:var(--space-3)}
@@ -268,11 +268,11 @@ a{color:inherit}
   position:relative;display:flex;flex-direction:column;text-decoration:none;color:inherit;
   background:var(--bg-page);
   border:var(--border-w) solid var(--border-strong);border-radius:var(--radius);
-  box-shadow:var(--edge-2);
+  box-shadow:var(--edge-strong);
   transition:background var(--motion-fast) var(--ease);
 }
 .card:hover{background:var(--bg-surface)}
-.card:active{transform:translate(3px,3px);box-shadow:none}
+.card:active{transform:translate(3px,3px);box-shadow:var(--edge-none)}
 .grid > .card{content-visibility:auto;contain-intrinsic-size:auto 320px}
 .grid > .card.featured{content-visibility:visible}
 
@@ -372,13 +372,13 @@ a{color:inherit}
 
 .notice{
   border:var(--border-w) solid var(--border-strong);border-radius:var(--radius);
-  box-shadow:var(--edge-2);background:var(--bg-surface);padding:var(--space-6);
+  box-shadow:var(--edge-strong);background:var(--bg-surface);padding:var(--space-6);
 }
 .notice h3{font-family:var(--font-display);font-weight:700;font-size:var(--size-lg);
   letter-spacing:var(--track-display);color:var(--text-heading);margin-bottom:var(--space-3)}
 .notice p{font-size:var(--size-sm);line-height:1.5;max-width:var(--measure);color:var(--text-body)}
 .notice p + p{margin-top:var(--space-3)}
-.notice.error{border-color:var(--err-1);background:var(--err-wash);box-shadow:3px 3px 0 var(--err-1)}
+.notice.error{border-color:var(--err-1);background:var(--err-wash);box-shadow:3px 3px 0 0 var(--err-1)}
 .notice.error h3{color:var(--err-1)}
 
 /* ─── Footer ───────────────────────────────────────────────────────── */
@@ -399,7 +399,7 @@ footer{
   border:var(--border-w) solid var(--border-strong);border-radius:var(--radius);box-shadow:var(--edge-1);
 }
 #to-top.show{display:grid}
-#to-top:active{transform:translate(2px,2px);box-shadow:none}
+#to-top:active{transform:var(--press-1);box-shadow:var(--edge-none)}
 
 /* ─── Responsive ───────────────────────────────────────────────────── */
 @media(max-width:980px){

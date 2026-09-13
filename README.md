@@ -98,7 +98,9 @@ failed.
 v1.0). Tokens live at the top of the stylesheet: base scales (`--paper-*`,
 `--ink-*`, `--gold-*`) and the semantic aliases (`--bg-page`, `--text-body`,
 `--border-strong`) that every rule references, so the night theme re-points
-the aliases without touching a component.
+the aliases without touching a component. Token values are taken from the
+system's own token file, including the night theme and the status hexes the
+written guidelines name but do not specify.
 
 What the system asks for, and where it shows up here:
 
