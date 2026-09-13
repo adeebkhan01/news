@@ -7,7 +7,7 @@ scheduled GitHub Action pulls RSS feeds into JSON files; the page is a single
 ## How it works
 
 ```
-.github/workflows/fetch-feeds.yml   every 3 hours
+.github/workflows/fetch-feeds.yml   twice a day (00:20 and 12:20 UTC)
         └── node fetch.js --region {bd,au,global}
                 ├── fetch + parse each RSS/Atom feed
                 ├── drop articles older than 30 days, dedupe by link
@@ -64,14 +64,33 @@ failed.
 - **Articles accumulate.** Each run merges new articles into the existing file
   and prunes anything older than 30 days, so the feed survives a publisher
   outage.
+- **Run cadence and the item cap go together.** Runs are 12 hours apart, so
+  `MAX_ITEMS_PER_FEED` has to exceed what a feed publishes in 12 hours or
+  articles are lost between runs; the busiest single-URL feeds manage 30-35.
+  `RETRY_PER_RUN` is sized the same way. Shorten the cron and both can come
+  down; lengthen it and both need raising.
 - **Translations retry.** A failure caused by the API being unavailable
   (exhausted credit, rate limits, timeouts) leaves the article queued. Only an
   unusable model response marks it permanently untranslatable, and up to
   `RETRY_PER_RUN` of those are retried each run.
 - **A failed briefing keeps the previous one** rather than blanking it.
 - **Bangla is Bangladesh-only.** `translate: true` is set per region.
-- **Global is topic-filtered** through `TOPIC_KEYWORDS`; the other regions
-  take everything their feeds publish.
+- **Australia and Global are topic-filtered**; Bangladesh is not, so it takes
+  whatever its feeds publish. The filter is a keyword whitelist in three
+  parts: `TOPIC_PREFIX_RE` matches any continuation (`econom` catches
+  economy/economic/economics), `TOPIC_WORD_RE` matches whole words only
+  (`tax` must not catch taxi), and `TOPIC_ACRONYM_RE` is case-sensitive so
+  `/i` doesn't match the ordinary words "un", "eu" and "ai". It applies to
+  stored articles as well as new ones, so editing the keywords takes effect
+  on the next run.
+- **Soft sections are excluded per source.** A publisher with one site-wide
+  feed sends entertainment and photo galleries along with the news, and the
+  section is in the article URL (`en.prothomalo.com/entertainment/...`), so
+  `excludeSections` on a source drops them by section rather than by guessing
+  from keywords. Prothom Alo excludes `entertainment`, `photo` and
+  `lifestyle`; sports and opinion are kept. The filter also applies to
+  already-stored articles, so a change takes effect on the next run instead
+  of waiting out the 30-day retention.
 
 ## Front end
 
