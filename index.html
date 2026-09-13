@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- The page renders text from third-party RSS feeds. Everything is escaped
+     and every URL restricted to http(s), so this is defence in depth: an
+     injected tag still can't load a remote script, reach the network, submit
+     a form, or rewrite the base URL. It cannot stop INLINE script injection,
+     because the page's own script is inline — see README. frame-ancestors is
+     omitted deliberately: it is ignored in a meta CSP. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'self'; base-uri 'none'; form-action 'none'" />
 <meta name="description" content="A clean, fast news reader for Bangladesh, Australia and the world — headlines from trusted sources, updated continuously." />
 <meta name="theme-color" content="#fdfcfb" media="(prefers-color-scheme: light)" />
 <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />

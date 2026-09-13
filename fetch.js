@@ -14,6 +14,10 @@ const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 //   SBS politics + environment  404   no working replacement found
 //   Al Jazeera economy.xml      404   all.xml already covers it
 //   AP News (3 feeds)           403   AP no longer serves public RSS
+//   Financial Express /feed/    200   answers, parses 0 articles
+//   DW rss_en_enviro            200   answers, parses 0 articles
+// Checked but not adopted, newest item already past the 30-day retention:
+//   tbsnews.net/rss.xml (1766d), sbs.com.au/news/feed (18d, dormant)
 const REGIONS = {
   bd: {
     label: 'Bangladesh',
@@ -28,7 +32,7 @@ const REGIONS = {
       // names its section, which is a far better signal than keyword matching.
       { id: 'prothomalo',       name: 'Prothom Alo',       color: '#c0392b', url: 'https://en.prothomalo.com/feed/',
         excludeSections: ['entertainment', 'photo', 'lifestyle'] },
-      { id: 'financialexpress', name: 'Financial Express', color: '#8e44ad', url: 'https://thefinancialexpress.com.bd/feed/' },
+      { id: 'risingbd',         name: 'Rising BD',         color: '#0f7b6c', url: 'https://www.risingbd.com/rss/rss.xml' },
     ]
   },
   au: {
@@ -44,6 +48,7 @@ const REGIONS = {
       { id: 'guardianau',     name: 'The Guardian AU',       color: '#052962', url: 'https://www.theguardian.com/business/rss' },
       { id: 'guardianau',     name: 'The Guardian AU',       color: '#052962', url: 'https://www.theguardian.com/science/rss' },
       { id: 'guardianau',     name: 'The Guardian AU',       color: '#052962', url: 'https://www.theguardian.com/environment/rss' },
+      { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/feed.xml' },
       { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/business.xml' },
       { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/national.xml' },
       { id: 'smh',            name: 'Sydney Morning Herald', color: '#0A5CA8', url: 'https://www.smh.com.au/rss/environment.xml' },
@@ -65,10 +70,13 @@ const REGIONS = {
       { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/business/rss.xml' },
       { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/science_and_environment/rss.xml' },
       { id: 'aljazeera', name: 'Al Jazeera',  color: '#D2A02E', url: 'https://www.aljazeera.com/xml/rss/all.xml' },
+      { id: 'guardian',  name: 'The Guardian', color: '#052962', url: 'https://www.theguardian.com/world/rss' },
+      { id: 'npr',       name: 'NPR',         color: '#E11B22', url: 'https://feeds.npr.org/1001/rss.xml' },
+      { id: 'npr',       name: 'NPR',         color: '#E11B22', url: 'https://feeds.npr.org/1006/rss.xml' },
+      { id: 'france24',  name: 'France 24',   color: '#00558C', url: 'https://www.france24.com/en/rss' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-bus' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-eu' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/xml/rss_en_science' },
-      { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/xml/rss_en_enviro' },
     ]
   }
 };
