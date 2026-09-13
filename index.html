@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- The page renders text from third-party RSS feeds. Everything is escaped
+     and every URL restricted to http(s), so this is defence in depth: an
+     injected tag still can't load a remote script, reach the network, submit
+     a form, or rewrite the base URL. It cannot stop INLINE script injection,
+     because the page's own script is inline — see README. frame-ancestors is
+     omitted deliberately: it is ignored in a meta CSP. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'self'; base-uri 'none'; form-action 'none'" />
 <meta name="description" content="A clean, fast news reader for Bangladesh, Australia and the world — headlines from trusted sources, updated continuously." />
 <meta name="theme-color" content="#fdfcfb" media="(prefers-color-scheme: light)" />
 <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
@@ -60,6 +67,7 @@
   --space-6:24px;--space-7:32px;--space-8:48px;--space-9:64px;--space-10:96px;
   --gutter:24px;--section-y:64px;--measure:68ch;--page-max:1180px;
   --control-h-sm:26px;--control-h-md:34px;--control-h-lg:44px;
+  --lead-h:380px;   /* the lead slot is a fixed box — see .card.featured */
 
   /* edges */
   --radius:2px;--border-w:1px;--border-w-heavy:2px;
@@ -152,7 +160,7 @@ a{color:inherit}
 
 /* ─── Toolbar: region tabs + search ────────────────────────────────── */
 .toolbar{background:var(--bg-surface);border-bottom:var(--border-w) solid var(--border-strong)}
-.toolbar-inner{display:flex;align-items:flex-end;gap:var(--space-6);padding:var(--space-4) 0;flex-wrap:wrap}
+.toolbar-inner{display:flex;align-items:flex-end;gap:var(--space-6);padding-block:var(--space-4);flex-wrap:wrap}
 .field{display:flex;flex-direction:column;gap:var(--space-2)}
 .field .label{display:block}
 
@@ -199,7 +207,7 @@ a{color:inherit}
 
 /* ─── Source filter ────────────────────────────────────────────────── */
 .filter-bar{background:var(--bg-page);border-bottom:var(--border-w) solid var(--border-hairline)}
-.filter-bar-inner{display:flex;gap:var(--space-2);padding:var(--space-3) 0;overflow-x:auto;scrollbar-width:none;align-items:center}
+.filter-bar-inner{display:flex;gap:var(--space-2);padding-block:var(--space-3);overflow-x:auto;scrollbar-width:none;align-items:center}
 .filter-bar-inner::-webkit-scrollbar{display:none}
 .chip{
   font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
@@ -333,6 +341,14 @@ a{color:inherit}
   .card.featured .card-body{padding:var(--space-5)}
   .card.featured .card-title{font-size:var(--size-xl)}
 }
+/* Ordinary cards are levelled by the grid row stretching them to match; the
+   lead has a row to itself, so without a fixed box its height swung with the
+   length of whichever headline led the region. */
+@media(min-width:821px){
+  .card.featured{height:var(--lead-h)}
+  .card.featured .thumb{height:100%;min-height:0}
+  .card.featured .card-body{overflow:hidden}
+}
 .highlight{background:var(--selection-bg);color:inherit}
 .feed-sentinel{display:flex;justify-content:center;padding:var(--space-6) 0 var(--space-2)}
 
@@ -384,7 +400,7 @@ a{color:inherit}
 /* ─── Footer ───────────────────────────────────────────────────────── */
 footer{
   border-top:var(--border-w) solid var(--border-strong);background:var(--bg-surface);
-  margin-top:var(--space-9);padding:var(--space-6) 0;
+  margin-top:var(--space-9);padding-block:var(--space-6);
 }
 .foot-inner{max-width:var(--page-max);margin:0 auto;padding:0 var(--gutter);
   display:flex;justify-content:space-between;gap:var(--space-5);flex-wrap:wrap;
@@ -406,16 +422,54 @@ footer{
   .content-wrap{grid-template-columns:1fr;gap:var(--space-6)}
   .sidebar{position:static;max-height:none;overflow:visible}
 }
+/* ─── Mobile: a bulletin, not a card grid ──────────────────────────
+   Card art costs a phone screen more than it gives: at this width each
+   thumbnail is a scroll-length of its own between one headline and the
+   next. The cards give up their boxes and become hairline-separated
+   entries — the system's numbered list block, counting the feed. */
 @media(max-width:700px){
   :root{--gutter:16px}
-  .grid,.loading-grid{grid-template-columns:1fr}
   .wordmark .edition{display:none}
   .kbd-hint{display:none}
   #summary-toggle{display:inline-block}
   #page-summary-text.clamped{display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+
+  .grid,.loading-grid{display:block}
+  .thumb,.thumb.placeholder,.skeleton-thumb{display:none}
+
+  .card,.card.featured{
+    display:grid;grid-template-columns:auto 1fr;column-gap:var(--space-4);
+    height:auto;background:none;border:0;border-radius:0;box-shadow:none;
+    border-bottom:var(--border-w) dashed var(--border-hairline);
+    contain-intrinsic-size:auto 120px;
+  }
+  .card:hover,.card.featured:hover{background:none}
+  .card:active{transform:none}
+  /* Numbered from the markup: content-visibility carries style containment,
+     which scopes a CSS counter to each card and renders every row as 01. */
+  .card::before{
+    content:attr(data-n);
+    font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+    color:var(--text-muted);padding-top:var(--space-5);
+  }
+  .card-body{padding:var(--space-5) 0;gap:var(--space-2)}
+  .card-title,.card.featured .card-title{
+    font-size:var(--size-md);line-height:var(--leading-snug,1.25);-webkit-line-clamp:3;
+  }
+  .card-desc,.card.featured .card-desc{display:none}   /* bulletin: headline, source, age */
+  .card-meta{padding-top:var(--space-2);border-top:0}
+  .lead-badge{margin-bottom:var(--space-1)}
+  .card.featured .card-body{padding:var(--space-5) 0}
+
+  .skeleton{border:0;border-bottom:var(--border-w) dashed var(--border-hairline);border-radius:0}
+  .skeleton-body{padding:var(--space-5) 0}
+
+  /* The Latest panel repeats the top of the feed; on a phone that is the
+     same six headlines twice. */
+  .sidebar{display:none}
 }
 @media(max-width:560px){
-  .masthead-inner{height:auto;padding:var(--space-3) 0;flex-wrap:wrap;gap:var(--space-3)}
+  .masthead-inner{height:auto;padding-block:var(--space-3);flex-wrap:wrap;gap:var(--space-3)}
   .wordmark{width:100%;font-size:var(--size-md)}
   .masthead-right{margin-left:0;width:100%;flex-wrap:wrap;gap:var(--space-2)}
   .masthead-right .btn{flex:1;padding:0 var(--space-2)}
@@ -729,7 +783,7 @@ function setFilter(id, el) {
 }
 
 /* ── Rendering ── */
-function cardHTML(a, isFeatured) {
+function cardHTML(a, isFeatured, n) {
   const isBn     = langMode === 'bn' && a.titleBn;
   const title    = highlight(isBn ? a.titleBn : (a.title || 'Untitled'), searchQuery);
   const desc     = highlight(isBn ? (a.descBn || '') : (a.desc || ''), searchQuery);
@@ -744,6 +798,7 @@ function cardHTML(a, isFeatured) {
     : '<div class="thumb placeholder"><span class="cap">No image &#183; ' + source + '</span></div>';
 
   return '<a class="card' + (isFeatured ? ' featured' : '') + '" href="' + (link || '#') + '"'
+    + ' data-n="' + String(n).padStart(2, '0') + '"'
     + (link ? ' target="_blank" rel="noopener noreferrer"' : '') + '>'
     + thumb
     + '<div class="card-body">'
@@ -805,7 +860,7 @@ function appendBatch() {
 
   const slice = visibleArticles.slice(renderedCount, renderedCount + PAGE_SIZE);
   grid.insertAdjacentHTML('beforeend', slice.map((a, i) =>
-    cardHTML(a, renderedCount + i === featuredIndex)).join(''));
+    cardHTML(a, renderedCount + i === featuredIndex, renderedCount + i + 1)).join(''));
   renderedCount += slice.length;
 
   const progress = document.getElementById('feed-progress');

@@ -20,13 +20,17 @@ for (let i = 0; i < args.length; i++) {
 }
 
 const CONCURRENCY = 6;
+const STALE_DAYS = 30;   // matches the retention window in fetch.js
+
+function newestAgeDays(articles) {
+  const newest = articles.map(a => parseDate(a.pubDate)).filter(Boolean).sort((a, b) => b - a)[0];
+  return newest == null ? null : (Date.now() - newest) / 864e5;
+}
 
 function ageOf(articles) {
-  const newest = articles.map(a => parseDate(a.pubDate)).filter(Boolean).sort((a, b) => b - a)[0];
-  if (!newest) return 'no dates';
-  const hours = (Date.now() - newest) / 36e5;
-  if (hours < 48) return Math.round(hours) + 'h old';
-  return Math.round(hours / 24) + 'd old';
+  const days = newestAgeDays(articles);
+  if (days == null) return 'no dates';
+  return days < 2 ? Math.round(days * 24) + 'h old' : Math.round(days) + 'd old';
 }
 
 async function check(entry) {
@@ -35,7 +39,12 @@ async function check(entry) {
     const xml = await fetchUrl(entry.url);
     const articles = parseFeed(xml, probe);
     if (!articles.length) return { ...entry, ok: false, detail: 'parsed 0 articles' };
-    return { ...entry, ok: true, detail: `${articles.length} articles, newest ${ageOf(articles)}` };
+    const detail = `${articles.length} articles, newest ${ageOf(articles)}`;
+    const days = newestAgeDays(articles);
+    if (days != null && days > STALE_DAYS) {
+      return { ...entry, ok: true, stale: true, detail: detail + ' — past retention' };
+    }
+    return { ...entry, ok: true, detail };
   } catch (e) {
     return { ...entry, ok: false, detail: e.message };
   }
@@ -61,16 +70,21 @@ async function runPool(entries) {
   const results = await runPool(configured.concat(extras));
   results.sort((a, b) => (a.region + a.name).localeCompare(b.region + b.name));
 
-  let dead = 0;
+  let dead = 0, stale = 0;
   for (const r of results) {
-    if (!r.ok && r.region !== 'candidate') dead++;
+    if (r.region !== 'candidate') {
+      if (!r.ok) dead++;
+      else if (r.stale) stale++;
+    }
+    const mark = !r.ok ? 'DEAD' : r.stale ? 'STALE' : 'ok';
     console.log(
-      `${r.ok ? 'ok  ' : 'DEAD'}  ${r.region.padEnd(9)} ${r.name.slice(0, 22).padEnd(22)} ${r.detail.slice(0, 46).padEnd(46)} ${r.url}`
+      `${mark.padEnd(5)} ${r.region.padEnd(9)} ${r.name.slice(0, 22).padEnd(22)} ${r.detail.slice(0, 46).padEnd(46)} ${r.url}`
     );
   }
 
-  const live = results.filter(r => r.ok && r.region !== 'candidate').length;
-  console.log(`\n${live} live, ${dead} dead of ${results.filter(r => r.region !== 'candidate').length} configured feeds`);
+  const checked = results.filter(r => r.region !== 'candidate');
+  const live = checked.filter(r => r.ok && !r.stale).length;
+  console.log(`\n${live} live, ${stale} stale, ${dead} dead of ${checked.length} configured feeds`);
   if (extras.length) {
     const good = results.filter(r => r.region === 'candidate' && r.ok);
     console.log(`${good.length} of ${extras.length} candidate URLs usable`);

@@ -50,7 +50,10 @@ node tools/check-feeds.js --region bd              # one region
 node tools/check-feeds.js https://example.com/rss  # try a candidate
 ```
 
-It exits non-zero when a configured feed is dead. The **Feed Health** workflow
+It exits non-zero when a configured feed is dead — that is the signal, not a
+crash. A feed that answers but whose newest item is already past the 30-day
+retention is reported `STALE`: it parses fine and contributes nothing. The
+**Feed Health** workflow
 runs the same check every Monday and can be dispatched by hand with candidate
 URLs in its input box, which is the easiest way to test replacements — some
 publishers answer runners but not local machines, and vice versa.
@@ -58,6 +61,23 @@ publishers answer runners but not local machines, and vice versa.
 A feed that fails is not fatal: that source is skipped for the run, previously
 collected articles are retained, and the run log ends with a list of what
 failed.
+
+## Security
+
+The page renders text from third-party RSS feeds, so everything is escaped
+(`escapeHTML`) and every URL is restricted to `http(s)` (`safeURL`) before it
+reaches the DOM. A `Content-Security-Policy` meta tag backs that up: an
+injected tag still cannot load a remote script, reach the network, submit a
+form or rewrite the base URL.
+
+The CSP keeps `script-src 'unsafe-inline'` because the page's own script is
+inline, so it does **not** stop inline script injection — the escaping is what
+does that. Moving the script to its own file would let the policy drop
+`unsafe-inline` entirely; it costs the single-file property. `frame-ancestors`
+is omitted deliberately: it is ignored in a meta CSP and needs a real header.
+
+Fonts come from Google, so visitors' IPs reach Google; self-hosting the two
+woff2 files removes that, and `font-src` already allows `'self'`.
 
 ## Behaviour worth knowing
 
@@ -126,3 +146,14 @@ What the system asks for, and where it shows up here:
 
 Cards render 24 at a time and load more on scroll; a feed can hold thousands
 of articles and putting them all in the DOM makes every later repaint crawl.
+
+**The lead slot is a fixed box** (`--lead-h`), because ordinary cards are
+levelled by the grid row stretching them to match while the lead has a row to
+itself — without it the lead's height swung with the length of whichever
+headline led the region.
+
+**Below 700px the feed becomes a bulletin**: article art is hidden, the cards
+give up their boxes and become numbered entries on dashed hairlines, the
+standfirst is dropped, and the Latest panel is hidden because it repeats the
+top of the feed. Card art costs a phone screen more than it gives — each
+thumbnail is a scroll-length between one headline and the next.
