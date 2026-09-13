@@ -486,6 +486,12 @@ footer{
   /* The Latest panel repeats the top of the feed; on a phone that is the
      same six headlines twice. */
   .sidebar{display:none}
+
+  /* Same reasoning for the facts list: the region is the selected tab, the
+     count is in the section head, and the fetch time is in the footer. What
+     fills the space beside a 68ch measure on a desktop is, stacked under the
+     briefing on a phone, four rows of things the page already says. */
+  .facts{display:none}
 }
 @media(max-width:560px){
   .masthead-inner{height:auto;padding-block:var(--space-3);flex-wrap:wrap;gap:var(--space-3)}
@@ -1015,6 +1021,10 @@ async function loadData() {
         + ' · ' + fetched.toLocaleDateString([], { day: '2-digit', month: 'short' });
       document.getElementById('last-updated').textContent = 'Fetched ' + lastFetched;
       document.getElementById('latest-provenance').textContent = lastFetched;
+      // The masthead's copy goes at 560px and the facts list at 700px, so on a
+      // phone this is the only place the fetch time survives.
+      document.getElementById('foot-provenance').textContent =
+        'Refreshed twice daily via GitHub Actions \u2014 last ' + lastFetched;
     }
 
     showHeadlines(allArticles);
