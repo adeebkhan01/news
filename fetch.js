@@ -24,7 +24,10 @@ const REGIONS = {
       { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/business/rss.xml' },
       { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/frontpage/rss.xml' },
       { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/bangladesh/rss.xml' },
-      { id: 'prothomalo',       name: 'Prothom Alo',       color: '#c0392b', url: 'https://en.prothomalo.com/feed/' },
+      // Site-wide feed, so it carries the soft sections too. The article URL
+      // names its section, which is a far better signal than keyword matching.
+      { id: 'prothomalo',       name: 'Prothom Alo',       color: '#c0392b', url: 'https://en.prothomalo.com/feed/',
+        excludeSections: ['entertainment', 'photo', 'lifestyle'] },
       { id: 'financialexpress', name: 'Financial Express', color: '#8e44ad', url: 'https://thefinancialexpress.com.bd/feed/' },
     ]
   },
@@ -94,6 +97,24 @@ var FEED_CONCURRENCY = 4;
 var RETRY_PER_RUN = 60;
 
 var TOPIC_KEYWORDS = /\b(econom|business|financ|fiscal|GDP|inflation|recession|trade|tariff|market|stock|shares|invest|bank|central bank|interest rate|budget|tax|revenue|deficit|surplus|export|import|manufactur|industr|commodit|crude|oil price|mining|agricultur|startup|IPO|merger|acquisit|regulat|subsid|debt|bond|currenc|forex|bankrupt|layoff|jobs|unemploy|wage|profit|earning|airline|tech giant|politic|elect|parliament|congress|senat|president|prime minister|governor|diplomac|sanction|legislat|bill|law|polic|reform|coalition|opposit|referendum|geopolit|summit|treaty|NATO|UN |EU |ASEAN|WHO|IMF|World Bank|WTO|G7|G20|war |ceasefire|conflict|military|weapon|nuclear|missile|invasion|occupied|siege|airstrike|scienc|research|study|discover|climate|environment|carbon|emission|renewable|energy|space|NASA|AI |artificial intelligen|quantum|biotech|pharma|vaccin|genome|CRISPR|neurosci|physicist|astrono|fossil|species|biodiversit|sustainab|pandem|epidemic)\b/i;
+
+// Publishers put the section in the article path: en.prothomalo.com/entertainment/...
+function sectionOf(link) {
+  var m = String(link || '').match(/^https?:\/\/[^/]+\/([^/?#]+)/i);
+  return m ? m[1].toLowerCase() : '';
+}
+
+var EXCLUDED_SECTIONS = {};
+SOURCES.forEach(function(s) {
+  if (s.excludeSections) {
+    EXCLUDED_SECTIONS[s.id] = (EXCLUDED_SECTIONS[s.id] || []).concat(s.excludeSections);
+  }
+});
+
+function inExcludedSection(article) {
+  var excluded = EXCLUDED_SECTIONS[article.sourceId];
+  return !!excluded && excluded.indexOf(sectionOf(article.link)) !== -1;
+}
 
 function matchesTopic(article) {
   var text = (article.title || '') + ' ' + (article.desc || '');
@@ -403,7 +424,11 @@ async function main() {
     try {
       var existing = JSON.parse(fs.readFileSync(loadFile,'utf8'));
       if (loadFile !== dataFile) console.log('Migrated existing articles from', loadFile);
-      existingArticles = (existing.articles || []).filter(function(a) { return isRecent(a.pubDate); });
+      var beforePrune = (existing.articles || []).length;
+      existingArticles = (existing.articles || [])
+        .filter(function(a) { return isRecent(a.pubDate); })
+        .filter(function(a) { return !inExcludedSection(a); });
+      var pruned = beforePrune - existingArticles.length;
       existingArticles.forEach(function(a) {
         if (REGION.translate) {
           if (a.titleBn === null) a.titleBn = false;
@@ -411,7 +436,7 @@ async function main() {
         }
         existingByLink[a.link] = true;
       });
-      console.log('Loaded', existingArticles.length, 'existing articles (after 30-day prune)');
+      console.log('Loaded', existingArticles.length, 'existing articles (' + pruned + ' pruned: over 30 days old or excluded section)');
     } catch(e) { console.warn('Could not read existing ' + loadFile + ':', e.message); }
   }
 
@@ -442,6 +467,7 @@ async function main() {
     }
     var parsed = parseFeed(result.xml, source)
       .filter(function(a){ return isRecent(a.pubDate); })
+      .filter(function(a){ return !inExcludedSection(a); })
       .filter(function(a){
         if (seenLinks[a.link]) return false;
         seenLinks[a.link] = true;

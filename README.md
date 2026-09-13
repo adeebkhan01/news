@@ -70,8 +70,16 @@ failed.
   `RETRY_PER_RUN` of those are retried each run.
 - **A failed briefing keeps the previous one** rather than blanking it.
 - **Bangla is Bangladesh-only.** `translate: true` is set per region.
-- **Global is topic-filtered** through `TOPIC_KEYWORDS`; the other regions
-  take everything their feeds publish.
+- **Global is topic-filtered** through `TOPIC_KEYWORDS`, a keyword whitelist.
+  Bangladesh and Australia are not: they take whatever their feeds publish.
+- **Soft sections are excluded per source.** A publisher with one site-wide
+  feed sends entertainment and photo galleries along with the news, and the
+  section is in the article URL (`en.prothomalo.com/entertainment/...`), so
+  `excludeSections` on a source drops them by section rather than by guessing
+  from keywords. Prothom Alo excludes `entertainment`, `photo` and
+  `lifestyle`; sports and opinion are kept. The filter also applies to
+  already-stored articles, so a change takes effect on the next run instead
+  of waiting out the 30-day retention.
 
 ## Front end
 
