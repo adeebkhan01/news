@@ -126,3 +126,14 @@ What the system asks for, and where it shows up here:
 
 Cards render 24 at a time and load more on scroll; a feed can hold thousands
 of articles and putting them all in the DOM makes every later repaint crawl.
+
+**The lead slot is a fixed box** (`--lead-h`), because ordinary cards are
+levelled by the grid row stretching them to match while the lead has a row to
+itself — without it the lead's height swung with the length of whichever
+headline led the region.
+
+**Below 700px the feed becomes a bulletin**: article art is hidden, the cards
+give up their boxes and become numbered entries on dashed hairlines, the
+standfirst is dropped, and the Latest panel is hidden because it repeats the
+top of the feed. Card art costs a phone screen more than it gives — each
+thumbnail is a scroll-length between one headline and the next.
