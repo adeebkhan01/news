@@ -10,6 +10,7 @@ let searchTimer  = null;
 let briefingEn   = [];     // [{ id, headline, what, why, watch }]
 let briefingBn   = [];
 let briefFull    = false;  // the briefing's two depths: headline + why, or the whole item
+let briefOpenSet = new Set();  // indices of items expanded one at a time, while briefFull is false
 let storyById    = {};     // story id -> the record fetch.js published
 let storyByLead  = {};     // the link of a story's freshest member -> that story
 let articleByLink = {};    // link -> article, so a story can name its members
@@ -82,8 +83,9 @@ const STRINGS = {
     whatHappened:    'What happened',
     whyItMatters:    'Why this matters',
     whatToWatch:     'What to watch',
-    briefShowFull:   'Expand',
-    briefShowShort:  'Compact',
+    briefShowFull:   'Expand all',
+    briefShowShort:  'Collapse all',
+    readMore:        'Read more',
     showLess:        'Show less',
     orderTop:        'Top stories',
     orderLatest:     'Latest',
@@ -165,8 +167,9 @@ const STRINGS = {
     whatHappened:    'যা ঘটেছে',
     whyItMatters:    'কেন গুরুত্বপূর্ণ',
     whatToWatch:     'যা লক্ষ্য রাখবেন',
-    briefShowFull:   'বিস্তারিত',
-    briefShowShort:  'সংক্ষিপ্ত',
+    briefShowFull:   'সব বিস্তারিত',
+    briefShowShort:  'সব সংক্ষিপ্ত',
+    readMore:        'আরও পড়ুন',
     showLess:        'কম দেখান',
     orderTop:        'প্রধান খবর',
     orderLatest:     'সর্বশেষ',
@@ -1002,10 +1005,13 @@ function renderArticles() {
     if (briefed.size) articles = articles.filter(a => !briefed.has(a.clusterId));
   }
 
-  // Only the ranked view is capped, and only when it is showing everything:
-  // a search or a source filter is a question the reader asked, and cutting
-  // its answer off at thirty would be answering a different one.
-  const capped = collapsing && feedOrder === 'top' && articles.length > TOP_STORIES_SHOWN;
+  // Only the ranked Today view is capped, and only when it is showing
+  // everything: a search or a source filter is a question the reader asked,
+  // and cutting its answer off at thirty would be answering a different one.
+  // All time is the deliberate opposite of Today — its whole point is the
+  // full retention window, uncapped, paged in as the reader scrolls.
+  const capped = collapsing && feedOrder === 'top' && dateScope === 'today'
+    && articles.length > TOP_STORIES_SHOWN;
   if (capped) articles = articles.slice(0, TOP_STORIES_SHOWN);
 
   document.getElementById('article-count').textContent =
@@ -1187,7 +1193,8 @@ function storyForItem(id) {
 // The three labels are the point. An aggregator gives you a headline and
 // leaves the reader to work out whether it changes anything; naming the
 // question each sentence answers is what makes this a briefing.
-function briefItemElement(item, n, full, itemLang) {
+function briefItemElement(item, n, full, itemLang, itemOpen) {
+  const open = full || itemOpen;
   const wrap = el('article', 'brief-item');
   if (itemLang === 'bn') wrap.lang = 'bn';
   wrap.dataset.n = String(n).padStart(2, '0');
@@ -1222,8 +1229,12 @@ function briefItemElement(item, n, full, itemLang) {
   // it is why the story matters, and repeating that above each one is a row
   // of chrome per item. The labels come back in the full view, where there
   // are three different questions to tell apart.
-  if (!full) {
+  if (!open) {
     if (item.why) wrap.appendChild(el('p', 'brief-why', item.why));
+    // Only while the whole briefing is still compact: once "Expand all" has
+    // opened every item, a per-item toggle would just be a second control
+    // for the same state the bottom button already carries.
+    if (!full) wrap.appendChild(briefItemToggle(n, false));
     return wrap;
   }
 
@@ -1235,7 +1246,18 @@ function briefItemElement(item, n, full, itemLang) {
       dl.appendChild(el('dd', null, text));
     });
   wrap.appendChild(dl);
+  if (!full) wrap.appendChild(briefItemToggle(n, true));
   return wrap;
+}
+
+// One item opened on its own, independent of "Expand all" — same muted
+// "Read →" treatment as the bottom toggle, scoped to just this line.
+function briefItemToggle(n, isOpen) {
+  const btn = el('button', 'brief-item-toggle', t(isOpen ? 'showLess' : 'readMore'));
+  btn.type = 'button';
+  btn.dataset.itemIndex = String(n);
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  return btn;
 }
 
 function renderSummary() {
@@ -1263,7 +1285,10 @@ function renderSummary() {
     body.classList.remove('clamped');
     body.classList.add('brief-items');
     const frag = document.createDocumentFragment();
-    items.forEach((item, i) => frag.appendChild(briefItemElement(item, i + 1, briefFull, itemLang)));
+    items.forEach((item, i) => {
+      const n = i + 1;
+      frag.appendChild(briefItemElement(item, n, briefFull, itemLang, briefOpenSet.has(n)));
+    });
     body.replaceChildren(frag);
     toggle.textContent = t(briefFull ? 'briefShowShort' : 'briefShowFull');
     toggle.setAttribute('aria-expanded', briefFull ? 'true' : 'false');
@@ -1315,6 +1340,15 @@ function renderChangeNote() {
 // is no second, prose-summary mode left to branch on.
 function toggleSummary() {
   briefFull = !briefFull;
+  // Expand all / Collapse all is the whole briefing moving as one; whatever
+  // was opened item-by-item under the old state would otherwise reappear
+  // the next time the reader steps back out of "Expand all".
+  briefOpenSet.clear();
+  renderSummary();
+}
+
+function toggleBriefItem(n) {
+  if (briefOpenSet.has(n)) briefOpenSet.delete(n); else briefOpenSet.add(n);
   renderSummary();
 }
 
@@ -1658,6 +1692,12 @@ function wireControls() {
   document.getElementById('lang-toggle').addEventListener('click', toggleLang);
   document.getElementById('refresh-btn').addEventListener('click', loadData);
   document.getElementById('summary-toggle').addEventListener('click', toggleSummary);
+  // Delegated: each item's own toggle is rebuilt on every renderSummary(),
+  // but #page-summary-text, the parent they're rebuilt inside, is not.
+  document.getElementById('page-summary-text').addEventListener('click', e => {
+    const btn = e.target.closest('.brief-item-toggle');
+    if (btn) toggleBriefItem(Number(btn.dataset.itemIndex));
+  });
   document.getElementById('search-clear').addEventListener('click', clearSearch);
   document.getElementById('to-top').addEventListener('click', () => window.scrollTo({ top: 0 }));
   document.getElementById('search-input').addEventListener('input', e => onSearch(e.target.value));

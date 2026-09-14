@@ -333,6 +333,15 @@ a{color:inherit}
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
   animation:brief-expand var(--motion-base) var(--ease-smooth);
 }
+/* Same muted, uppercase treatment as the bottom "Expand all" control and
+   the "Read →" line on cards — a label, not a call-to-action, scoped to
+   just the one item it sits under. */
+.brief-item-toggle{
+  display:block;margin-top:var(--space-2);padding:0;background:none;border:none;cursor:pointer;
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-muted);
+}
+.brief-item-toggle:hover{color:var(--text-body)}
 /* Browsing the archive. The controls are in the briefing's own head because
    that is what they change: the feed follows, but the briefing is the thing
    a reader comes back for. */
