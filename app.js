@@ -16,6 +16,8 @@ let storyById    = {};     // story id -> the record fetch.js published
 let storyByLead  = {};     // the link of a story's freshest member -> that story
 let articleByLink = {};    // link -> article, so a story can name its members
 let feedOrder    = localStorage.getItem('news-order') === 'latest' ? 'latest' : 'top';
+let changedSince = null;   // the date the "new"/"developing" markers are measured against
+let droppedItems = [];     // stories that were on that day's briefing and are not on today's
 let fetchedAt    = null;   // the Date, not a formatted string: the format is language-dependent
 
 const PAGE_SIZE = 24;
@@ -76,6 +78,11 @@ const STRINGS = {
     orderTop:        'Top stories',
     orderLatest:     'Latest',
     coveredBy:       'Covered by {n} sources',
+    statusNew:       'New',
+    statusDeveloping:'Developing',
+    gainedSources:   'Developing \u00B7 +{n}',
+    comparedWith:    'Changes measured against {date}',
+    droppedHeading:  'Off the briefing since {date}',
     singleSource:    'Single-source report',
     alsoReported:    'Also reported by',
     headlines:       'Headlines',
@@ -143,6 +150,11 @@ const STRINGS = {
     orderTop:        'প্রধান খবর',
     orderLatest:     'সর্বশেষ',
     coveredBy:       '{n}টি উৎসে প্রকাশিত',
+    statusNew:       'নতুন',
+    statusDeveloping:'অগ্রগতি',
+    gainedSources:   'অগ্রগতি \u00B7 +{n}',
+    comparedWith:    '{date} তারিখের সঙ্গে তুলনা',
+    droppedHeading:  '{date} থেকে সারসংক্ষেপের বাইরে',
     singleSource:    'একটি উৎসের খবর',
     alsoReported:    'আরও প্রকাশ করেছে',
     headlines:       'শিরোনাম',
@@ -428,6 +440,15 @@ function applyLanguage() {
   renderSummary();
 }
 
+// An archive date is a plain YYYY-MM-DD, not an instant: parsed as UTC and
+// rendered without a time, so "13 September" does not become the 12th for a
+// reader west of Greenwich.
+function formatDay(iso) {
+  const d = new Date(String(iso) + 'T00:00:00Z');
+  if (Number.isNaN(d.getTime())) return String(iso);
+  return d.toLocaleDateString(LOCALE[langMode], { day: 'numeric', month: 'long', timeZone: 'UTC' });
+}
+
 // hour12 is forced off: bn-BD otherwise renders a 12-hour clock with a Latin
 // "AM", which belongs to neither language, and the two views disagree on the
 // same instant.
@@ -553,6 +574,19 @@ function otherSources(a, story) {
   return story.sourceIds.filter(id => id !== a.sourceId);
 }
 
+// The "since yesterday" marker for a story, or null when there is nothing to
+// say. Absent status means the pipeline had no earlier snapshot to compare
+// against — which is not the same as "unchanged", and must not render as it.
+function changeChip(story) {
+  if (!story || !story.status || !changedSince) return null;
+  if (story.status === 'new') return el('span', 'change-chip is-new', t('statusNew'));
+  if (story.status === 'developing') {
+    return el('span', 'change-chip is-developing',
+      story.gained ? t('gainedSources', { n: num(story.gained) }) : t('statusDeveloping'));
+  }
+  return null;   // 'continuing' is the default state and needs no badge
+}
+
 // One of the other newsrooms that covered this story, linked to its own
 // telling. Its own function so that `link` here is unambiguously this
 // member's URL, and so the safeURL check sits next to the assignment it
@@ -621,6 +655,8 @@ function cardElement(a, isFeatured, n, isSecondary) {
   } else if (story) {
     label.appendChild(el('span', 'single-source', t('singleSource')));
   }
+  const chip = changeChip(story);
+  if (chip) label.appendChild(chip);
   body.appendChild(label);
 
   // lang on the element, not a guess from the page: an article with no
@@ -866,9 +902,13 @@ function briefItemElement(item, n, full, itemLang) {
   // record for: the briefing says four newsrooms reported this, and the
   // reader can see which four in the feed below.
   const story = storyById[item.id];
+  const meta = el('div', 'brief-meta');
   if (story && story.sourceIds && story.sourceIds.length > 1) {
-    wrap.appendChild(el('span', 'brief-sources', t('coveredBy', { n: num(story.sourceIds.length) })));
+    meta.appendChild(el('span', 'brief-sources', t('coveredBy', { n: num(story.sourceIds.length) })));
   }
+  const chip = changeChip(story);
+  if (chip) meta.appendChild(chip);
+  if (meta.childElementCount) wrap.appendChild(meta);
 
   const rows = full
     ? [[t('whatHappened'), item.what], [t('whyItMatters'), item.why], [t('whatToWatch'), item.watch]]
@@ -905,6 +945,7 @@ function renderSummary() {
     byline.textContent = t('briefingBy');
     byline.hidden = false;
     box.hidden = false;
+    renderChangeNote();
     renderFacts();
     return;
   }
@@ -927,7 +968,33 @@ function renderSummary() {
   toggle.hidden = false;
   byline.hidden = true;
   box.hidden = false;
+  renderChangeNote();
   renderFacts();
+}
+
+// What the markers mean, said once rather than implied on every badge. A
+// "New" chip with no stated baseline is a claim the reader cannot check, and
+// the baseline is not always yesterday — a region whose archive has a gap
+// compares against the last day it has.
+function renderChangeNote() {
+  const note = document.getElementById('brief-change');
+  if (!changedSince) { note.hidden = true; note.replaceChildren(); return; }
+
+  const frag = document.createDocumentFragment();
+  frag.appendChild(el('span', 'label', t('comparedWith', { date: formatDay(changedSince) })));
+
+  // The other half of "what changed": what was on that day's briefing and is
+  // not on today's. Headlines only, and not links — they are the archive's
+  // wording from a day that has moved on, not today's coverage.
+  if (droppedItems.length) {
+    const list = el('ul', 'dropped-list');
+    droppedItems.slice(0, 4).forEach(d => list.appendChild(el('li', null, d.headline)));
+    frag.appendChild(el('span', 'label dropped-heading',
+      t('droppedHeading', { date: formatDay(changedSince) })));
+    frag.appendChild(list);
+  }
+  note.replaceChildren(frag);
+  note.hidden = false;
 }
 
 // Fills the space the 68ch measure leaves beside the prose, and puts the
@@ -1029,6 +1096,9 @@ async function loadData() {
     // the selected language, and the language can change after the load.
     // renderProvenance puts it in all three places — masthead, Latest panel and
     // the footer, which below 560px is the only one still visible.
+    changedSince = typeof data.changedSince === 'string' ? data.changedSince : null;
+    droppedItems = Array.isArray(data.dropped) ? data.dropped : [];
+
     fetchedAt = data.fetchedAt ? new Date(data.fetchedAt) : null;
     renderProvenance();
 

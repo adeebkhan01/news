@@ -4,6 +4,7 @@ const security = require('./lib/security.js');
 const lang     = require('./lib/lang.js');
 const cluster  = require('./lib/cluster.js');
 const rank     = require('./lib/rank.js');
+const archive  = require('./lib/archive.js');
 
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
@@ -1023,6 +1024,26 @@ async function main() {
     }
   }
 
+  // ── What changed since yesterday ──
+  //
+  // Compared against the last snapshot from a day before this one, never
+  // against this morning's run: both of a day's runs write the same file, and
+  // "unchanged since three hours ago" is true of almost everything and worth
+  // saying about nothing.
+  var today = archive.dayOf(Date.now());
+  var previousSnapshot = archive.previousSnapshot(regionArg, today);
+  var changes = archive.diffStories(ranked.slice(0, archive.ARCHIVE_STORIES), previousSnapshot);
+  var dropped = archive.droppedFromBriefing(briefing, previousSnapshot);
+  if (changes) {
+    var counts = { new: 0, developing: 0, continuing: 0 };
+    Object.keys(changes.stories).forEach(function (id) { counts[changes.stories[id].status]++; });
+    console.log('Against the snapshot of', changes.since + ':', counts.new, 'new,',
+                counts.developing, 'developing,', counts.continuing, 'unchanged;',
+                dropped.length, 'off the briefing');
+  } else {
+    console.log('No earlier snapshot for', REGION.label, '— nothing to compare against this run');
+  }
+
   var stories = published.map(function (st) {
     var record = {
       id:        st.id,
@@ -1037,6 +1058,14 @@ async function main() {
     };
     if (whyMap[st.id])   record.why   = whyMap[st.id];
     if (whyBnMap[st.id]) record.whyBn = whyBnMap[st.id];
+    // Absent rather than 'continuing' when there is no baseline: a field that
+    // says "unchanged" and a field that says "we cannot know" must not look
+    // the same to the page.
+    var change = changes && changes.stories[st.id];
+    if (change) {
+      record.status = change.status;
+      if (change.gained) record.gained = change.gained;
+    }
     return record;
   });
 
@@ -1051,11 +1080,36 @@ async function main() {
     briefing:   briefing || null,
     briefingBn: briefingBn || null,
     sources:    UNIQUE_SOURCES,
+    // What the "since yesterday" markers are measured against, named rather
+    // than implied: a reader told a story is new deserves to know new since
+    // when, and a stale archive would otherwise silently compare against last
+    // week while the page said "yesterday".
+    changedSince: changes ? changes.since : null,
+    dropped:      dropped,
     stories:    stories,
     articles:   allArticles
   };
 
   fs.writeFileSync(dataFile, JSON.stringify(output, null, 2));
+
+  // ── The snapshot ──
+  //
+  // Written after the data file, and only with a briefing in hand: a snapshot
+  // whose briefing is null is a baseline that makes tomorrow's "what changed"
+  // compare against nothing, which is worse than having no snapshot for the
+  // day at all.
+  if (briefing) {
+    archive.writeSnapshot(archive.buildSnapshot({
+      day: today, region: regionArg, fetchedAt: output.fetchedAt,
+      briefing: briefing, briefingBn: briefingBn, stories: ranked
+    }));
+    var pruned = archive.prune(regionArg);
+    archive.writeIndex(Object.keys(REGIONS));
+    console.log('Archived', archive.ARCHIVE_STORIES, 'stories for', today
+      + (pruned.length ? ' (pruned ' + pruned.length + ' snapshot(s) past the ' + archive.ARCHIVE_DAYS + '-day window)' : ''));
+  } else {
+    console.log('No briefing this run — no snapshot written for', today);
+  }
   console.log('Done.', dataFile, 'now has', allArticles.length, 'articles (', freshArticles.length, 'new,', existingArticles.length, 'retained) in',
               ranked.length, 'stories,', stories.length, 'of them published with a record of their own');
   if (failedSources.length) {
@@ -1076,7 +1130,7 @@ async function main() {
 // parser rather than keeping a second copy that drifts out of date.
 module.exports = { REGIONS, POLICY, SOURCE_LANG, fetchUrl, fetchFeedUrl, parseFeed, stripTags, decodeEntities, parseDate,
                    sanitizeLink, sanitizeImage, parseJsonBlock, summaryFromBriefing, storyBrief,
-                   BRIEFING_STORIES, WHY_STORIES, security, lang, cluster, rank };
+                   BRIEFING_STORIES, WHY_STORIES, security, lang, cluster, rank, archive };
 
 if (require.main === module) {
   main().catch(function(e){ console.error(e); process.exit(1); });

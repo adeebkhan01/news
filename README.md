@@ -25,7 +25,9 @@ over the top few: what happened, why it matters, what to watch.
                 │   "why this matters" line for the top of the feed (Claude)
                 ├── translate both into Bangla (Claude)
                 ├── validate everything the model returned
-                └── write data-{bd,au,global}.json
+                ├── diff against the last dated snapshot (lib/archive.js)
+                ├── write data-{bd,au,global}.json
+                └── write archive/{region}/YYYY-MM-DD.json + archive/index.json
         └── node --test tests/*.test.js   ── the gate: red here, nothing is committed
                 └── data files committed back to main
 index.html  fetches the JSON for the selected region and renders it
@@ -44,6 +46,7 @@ is not published at all — the data already on `main` stays up instead.
 | `fetch.js` | Feed fetcher, parser and Claude integration |
 | `lib/cluster.js` | Grouping articles into stories — offline, no model call |
 | `lib/rank.js` | Story ranking and topic classification |
+| `lib/archive.js` | Dated snapshots, and the "what changed since yesterday" diff |
 | `lib/security.js` | Egress policy and input validation — what may be fetched, what may be published |
 | `tests/*.test.js` | `node --test tests/*.test.js`. No network, no dependencies |
 | `tools/check-feeds.js` | Feed health check (see below) |
@@ -189,6 +192,37 @@ says so, because that is a weaker claim and should not look identical. The
 text — an aggregator that blurred the model's words into the publisher's would
 be the one dishonest thing on the page.
 
+## Yesterday
+
+Everything the page knows is overwritten twice a day, which is fine for a feed
+and useless for a reader who came back: "what changed since I last looked" is
+unanswerable when there is only ever a now. `archive/{region}/YYYY-MM-DD.json`
+is a dated snapshot of that day's briefing and top twenty stories, and it is
+what makes a change observable at all.
+
+**It stores no articles.** A region's data file is about 1.5 MB and there are
+two runs a day; a year of full copies is a repository nobody can clone. A
+snapshot is the briefing plus the ranked stories in headline form — about
+16 KB — and snapshots past a 120-day window are pruned, so the working tree
+stays bounded while git history keeps the rest.
+
+**The baseline is a day strictly before today.** Both of a day's runs write
+the same file, so comparing today against today would report the morning's
+news as unchanged since the morning. A region whose archive has a gap compares
+against the last day it has, and `changedSince` in the data file names that
+day so the page can say which one rather than claiming "yesterday".
+
+**With no baseline, nothing is new.** On the first run every story is
+trivially new, and a page announcing 146 new stories on its first morning
+teaches its reader to ignore the badge forever. `diffStories` returns null
+rather than a verdict, the stories carry no `status` field, and the page
+renders no markers — which is deliberately *not* the same as rendering
+"unchanged". So the markers appear from the second day the pipeline runs, not
+the first.
+
+A story that lost members is not "developing" either: articles age out of the
+30-day window, so a story can shrink, and that is not a development.
+
 ## Security
 
 Everything this project handles comes from somewhere it does not control: the
@@ -292,6 +326,9 @@ committed. In **Settings → Branches** and **Settings → Code security**:
   line was written against a smaller set of headlines and is rewritten. Story
   ids are derived from the *earliest* member's link, which is the one part of
   a growing story that does not change.
+- **A run with no briefing writes no snapshot.** A snapshot whose briefing is
+  null is a baseline that makes tomorrow's comparison compare against nothing,
+  which is worse than having no snapshot for that day.
 - **Not every story gets a record in the data file.** Only those with more
   than one member (so the page can collapse them into one card) and the top
   few by rank (which carry the analytical line). Writing a record for all
