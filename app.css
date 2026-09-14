@@ -291,12 +291,13 @@ a{color:inherit}
 }
 .panel + .panel{margin-top:var(--space-6)}
 .panel-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-4);margin-bottom:var(--space-3);flex-wrap:wrap}
+/* No box any more: the briefing reads as its own section, same as
+   Headlines below it — a heading on a rule, not a bordered card. */
 #page-summary{
-  margin-bottom:var(--space-6);
+  margin-bottom:var(--space-8);
 }
 /* An id rule outranks [hidden], so the briefing needs to be told again. */
 #page-summary[hidden]{display:none}
-.brief-main{min-width:0}
 /* The briefing is items now, not a paragraph: one numbered story each, with
    the question each line answers named beside it. That labelling is the whole
    difference between a summary and a briefing. */
@@ -444,11 +445,14 @@ body.archive-mode #status-text{display:none}
   .brief-lines dd{margin-bottom:var(--space-3)}
 }
 #page-summary-text{font-size:var(--size-md);line-height:1.5;color:var(--text-body)}
+/* Same treatment as the "Read →" line on every card: a small uppercase
+   label, not a call-to-action button. */
 #summary-toggle{
   display:none;margin-top:var(--space-3);padding:0;background:none;border:none;cursor:pointer;
   font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
-  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-accent);
+  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-muted);
 }
+#summary-toggle:hover{color:var(--text-body)}
 /* The prose briefing only ever needed a toggle where it was clamped, which is
    the narrow layout. The item briefing has two real depths — the consequence
    alone, or the whole item — and that choice is worth offering at any width. */
