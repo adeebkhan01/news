@@ -20,7 +20,7 @@ const fs = require('node:fs');
 const cluster = require('../lib/cluster.js');
 const rank = require('../lib/rank.js');
 const sec = require('../lib/security.js');
-const { parseJsonBlock, summaryFromBriefing, parseDate } = require('../fetch.js');
+const { parseJsonBlock, parseDate } = require('../fetch.js');
 
 const HOUR = 60 * 60 * 1000;
 
@@ -343,14 +343,6 @@ test('JSON survives the fences and preamble a model wraps it in', () => {
   assert.deepEqual(parseJsonBlock('```json\n[{"a":1}]\n```'), [{ a: 1 }]);
   assert.deepEqual(parseJsonBlock('Here you go:\n{"a":1}\nHope that helps'), { a: 1 });
   assert.throws(() => parseJsonBlock('no json at all'));
-});
-
-test('the prose summary is rebuilt from the briefing rather than bought again', () => {
-  const prose = summaryFromBriefing([GOOD_ITEM, Object.assign({}, GOOD_ITEM, { what: 'A second thing happened.' })]);
-  assert.ok(prose.includes('policy rate'));
-  assert.ok(prose.includes('A second thing happened.'));
-  assert.equal(summaryFromBriefing(null), null);
-  assert.equal(summaryFromBriefing([]), null);
 });
 
 // ── Against the real files ───────────────────────────────────────────────

@@ -7,8 +7,6 @@ let loading      = false;
 let langMode     = localStorage.getItem('news-lang') === 'bn' ? 'bn' : 'en';
 let activeRegion = localStorage.getItem('news-region') || 'bd';
 let searchTimer  = null;
-let summaryEn    = '';
-let summaryBn    = '';
 let briefingEn   = [];     // [{ id, headline, what, why, watch }]
 let briefingBn   = [];
 let briefFull    = false;  // the briefing's two depths: headline + why, or the whole item
@@ -18,10 +16,12 @@ let articleByLink = {};    // link -> article, so a story can name its members
 let feedOrder    = localStorage.getItem('news-order') === 'latest' ? 'latest' : 'top';
 let changedSince = null;   // the date the "new"/"developing" markers are measured against
 let droppedItems = [];     // stories that were on that day's briefing and are not on today's
-let archiveDays  = {};     // region -> the dates archive/index.json says exist, newest first
+let archiveDates = [];     // dates the current region's database has a snapshot for, newest first
 let viewDate     = null;   // null is today's live data; a YYYY-MM-DD is an archived briefing
 let archiveSnap  = null;   // the snapshot being viewed, when viewDate is set
 let fetchedAt    = null;   // the Date, not a formatted string: the format is language-dependent
+let SQL          = null;   // the sql.js module, loaded once and reused across region switches
+let dbHandle     = null;   // the currently open sql.js Database — one region's whole database
 
 const PAGE_SIZE = 24;
 
@@ -49,9 +49,9 @@ let feedIsCapped    = false;
 // carries Bangla, not that every article in it does. A region whose backlog is
 // still draining renders untranslated articles in English either way.
 const REGION_CONFIG = {
-  bd:     { mark: 'BD', flag: '\u{1F1E7}\u{1F1E9}', dataFile: 'data-bd.json',     hasLang: true },
-  au:     { mark: 'AU', flag: '\u{1F1E6}\u{1F1FA}', dataFile: 'data-au.json',     hasLang: true },
-  global: { mark: 'GL', flag: '\u{1F30F}',           dataFile: 'data-global.json', hasLang: true }
+  bd:     { mark: 'BD', flag: '\u{1F1E7}\u{1F1E9}', dbFile: 'data-bd.sqlite',     hasLang: true },
+  au:     { mark: 'AU', flag: '\u{1F1E6}\u{1F1FA}', dbFile: 'data-au.sqlite',     hasLang: true },
+  global: { mark: 'GL', flag: '\u{1F30F}',           dbFile: 'data-global.sqlite', hasLang: true }
 };
 
 /* ── Language ──────────────────────────────────────────────────────────
@@ -1080,14 +1080,6 @@ function notice(className, heading, body) {
   return box;
 }
 
-function showPageSummary(data) {
-  summaryEn  = data.summary   || '';
-  summaryBn  = data.summaryBn || '';
-  briefingEn = Array.isArray(data.briefing)   ? data.briefing   : [];
-  briefingBn = Array.isArray(data.briefingBn) ? data.briefingBn : [];
-  renderSummary();
-}
-
 // The briefing in the selected language, falling back item by item rather
 // than all or nothing: a Bangla translation that has not landed yet shows the
 // English briefing instead of no briefing.
@@ -1207,26 +1199,10 @@ function renderSummary() {
     return;
   }
 
-  // No briefing in the data file. That is the shape every file had before the
-  // briefing existed, and the shape a run that could not reach the model
-  // leaves behind, so the prose summary stays a first-class fallback rather
-  // than a migration step to be deleted later.
-  const isBn = langMode === 'bn' && summaryBn;
-  const text = isBn ? summaryBn : summaryEn;
-  if (!text) { box.hidden = true; return; }
-
-  body.classList.remove('brief-items');
-  body.replaceChildren(document.createTextNode(text));
-  if (isBn) body.setAttribute('lang', 'bn'); else body.removeAttribute('lang');
-  body.classList.add('clamped');
-  toggle.textContent = t('readMore');
-  toggle.setAttribute('aria-expanded', 'false');
-  toggle.classList.remove('brief-depth');
-  toggle.hidden = false;
-  byline.hidden = true;
-  box.hidden = false;
-  renderChangeNote();
-  renderFacts();
+  // Nothing to show: no briefing has ever been generated for this region
+  // (no API key, or every attempt has failed so far). Hides the whole panel
+  // rather than rendering an empty one.
+  box.hidden = true;
 }
 
 // What the markers mean, said once rather than implied on every badge. A
@@ -1277,17 +1253,12 @@ function renderFacts() {
   document.getElementById('brief-facts').replaceChildren(facts);
 }
 
+// The panel is hidden entirely whenever there is no briefing to show (see
+// renderSummary), so this toggle only ever runs with items in hand — there
+// is no second, prose-summary mode left to branch on.
 function toggleSummary() {
-  if (briefingItems().items.length) {
-    briefFull = !briefFull;
-    renderSummary();
-    return;
-  }
-  const body = document.getElementById('page-summary-text');
-  const toggle = document.getElementById('summary-toggle');
-  const clamped = body.classList.toggle('clamped');
-  toggle.textContent = t(clamped ? 'readMore' : 'showLess');
-  toggle.setAttribute('aria-expanded', clamped ? 'false' : 'true');
+  briefFull = !briefFull;
+  renderSummary();
 }
 
 function showHeadlines(articles) {
@@ -1309,31 +1280,19 @@ function showHeadlines(articles) {
 }
 
 /* ── Archive ──────────────────────────────────────────────────────────────
-   The browser cannot list a directory, so the archive is browsable only
-   because the pipeline writes down what is in it. A missing or unreadable
-   index is not an error: it means no day has been archived yet, and the
-   controls simply do not appear. */
-async function loadArchiveIndex() {
-  try {
-    const base = window.location.pathname.replace(/[^/]*$/, '');
-    const res = await fetch(base + 'archive/index.json?t=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const index = await res.json();
-    archiveDays = (index && index.regions) || {};
-  } catch (e) {
-    archiveDays = {};
-  }
-}
+   Browsing it is a SQL query against the database already sitting in
+   memory, not a separate fetch — the whole point of loading the region as
+   one file is that every day within the retention window is already there.
+   loadRegionDb populates archiveDates as part of opening the database; this
+   module only reads that state back. */
 
 // Today's own snapshot is excluded from the navigation. It exists — the run
 // writes it — but the live view already shows that day, and an "Older" button
 // that lands on the same date the page is already showing reads as a bug. A
 // link straight to today's date still opens it; only the stepping skips it.
 function daysForRegion() {
-  const days = archiveDays[activeRegion];
-  if (!Array.isArray(days)) return [];
   const today = new Date().toISOString().slice(0, 10);
-  return days.filter(d => d !== today);
+  return archiveDates.filter(d => d !== today);
 }
 
 // The address bar is the share link. A dated briefing someone can send to
@@ -1355,20 +1314,26 @@ function readLocation() {
   if (date && /^\d{4}-\d{2}-\d{2}$/.test(date)) viewDate = date;
 }
 
-async function showDate(date) {
+function queryArchiveSnapshot(date) {
+  const rows = query('SELECT * FROM snapshot_stories WHERE date = ? ORDER BY position', [date]);
+  if (!rows.length) return null;
+  const briefing = queryBriefingFor(date);
+  return {
+    date, briefing: briefing.en, briefingBn: briefing.bn.length ? briefing.bn : null,
+    stories: rows.map(r => ({
+      id: r.story_id, headline: plainText(r.headline), lead: r.lead_link, size: r.size,
+      sourceIds: JSON.parse(r.source_ids), topic: r.topic, score: r.score,
+      why: r.why, whyBn: r.why_bn
+    }))
+  };
+}
+
+// No network at all: the whole region's database, history included, is
+// already open in memory once loadRegionDb has run — opening a past day is a
+// different query against the same file, not a different file.
+function showDate(date) {
   viewDate = date || null;
-  archiveSnap = null;
-  if (viewDate) {
-    try {
-      const base = window.location.pathname.replace(/[^/]*$/, '');
-      const file = 'archive/' + encodeURIComponent(activeRegion) + '/' + encodeURIComponent(viewDate) + '.json';
-      const res = await fetch(base + file + '?t=' + Date.now());
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      archiveSnap = await res.json();
-    } catch (e) {
-      archiveSnap = null;   // rendered as "nothing archived for that day", not as a failure
-    }
-  }
+  archiveSnap = viewDate ? queryArchiveSnapshot(viewDate) : null;
   syncLocation();
   applyArchiveChrome();
   renderSummary();
@@ -1407,6 +1372,142 @@ function applyArchiveChrome() {
   newerBtn.dataset.date = newer || '';
 }
 
+/* ── Database ──────────────────────────────────────────────────────────────
+   Everything the page reads — today's articles, every story, every day's
+   briefing, and the full history back to the retention window — lives in one
+   file per region, fetched whole and queried client-side with sql.js. Making
+   it work is one contract: whatever Node's own node:sqlite wrote, this has to
+   open and read back exactly, with no export step and nothing kept in sync
+   by hand between the write side and this one. */
+
+// Loaded once; every region switch reuses the same wasm module and only
+// fetches a new database file.
+async function ensureSqlJs() {
+  if (SQL) return SQL;
+  // locateFile's `name` argument is whatever the glue file's own build
+  // hardcodes (sql-wasm.wasm, unversioned) — not the versioned filename it
+  // itself shipped as. Naming the wasm file explicitly here, rather than
+  // trusting that argument, is what keeps an upgrade to a newer sql.js from
+  // silently breaking on a filename this code never controlled.
+  SQL = await initSqlJs({ locateFile: () => 'vendor/sql-wasm-1.13.0.wasm' });
+  return SQL;
+}
+
+// sql.js returns one {columns, values} result per statement (or none, for a
+// query that matched nothing) rather than row objects — this is the one
+// place that shape is dealt with, so every query site below reads like a
+// normal array of rows.
+function rowsOf(result) {
+  const set = result && result[0];
+  if (!set) return [];
+  return set.values.map(row => {
+    const obj = {};
+    set.columns.forEach((col, i) => { obj[col] = row[i]; });
+    return obj;
+  });
+}
+
+function query(sql, params) {
+  return rowsOf(dbHandle.exec(sql, params));
+}
+
+// Mirrors lib/db.js's own readArticles exactly — same rule, reimplemented
+// because this half runs in the browser and that half runs in Node, and
+// neither can require the other. Exactly one translation direction is ever
+// relevant for a given article; translate_failed marks only that one.
+function hydrateArticle(row, sourceMeta) {
+  const meta = sourceMeta[row.source_id] || { name: row.source_id, color: '#666' };
+  const a = {
+    link: row.link, title: plainText(row.title), desc: plainText(row.desc),
+    pubDate: row.pub_date, img: row.img || null, lang: row.lang,
+    sourceId: row.source_id, sourceName: meta.name, sourceColor: meta.color
+  };
+  if (row.story_id != null) a.clusterId = row.story_id;
+  if (row.score != null) a.score = row.score;
+  if (row.topic != null) a.topic = row.topic;
+  const wantEn = row.lang === 'bn';
+  assignTranslated(a, 'titleEn', row.title_en, wantEn && row.translate_failed);
+  assignTranslated(a, 'descEn', row.desc_en, wantEn && row.translate_failed);
+  assignTranslated(a, 'titleBn', row.title_bn, !wantEn && row.translate_failed);
+  assignTranslated(a, 'descBn', row.desc_bn, !wantEn && row.translate_failed);
+  return a;
+}
+function assignTranslated(article, key, value, failed) {
+  if (value != null) { article[key] = plainText(value); return; }
+  if (failed) { article[key] = false; return; }
+}
+
+// A story, in the shape cardElement/briefItemElement/storyDetail already
+// expect — the same shape the old JSON's data.stories[] carried. `links` and
+// `sourceIds` are grouped from the article rows rather than queried
+// separately: a story's membership is already fully described by
+// articles.story_id, so asking the same question twice would only be a
+// second place for the two answers to disagree.
+function buildStoryMaps(storyRows, articles) {
+  const byId = {};
+  storyRows.forEach(r => {
+    byId[r.id] = {
+      id: r.id, topic: r.topic, score: r.score, first: r.first_date, latest: r.latest_date,
+      why: r.why || null, whyBn: r.why_bn || null, status: r.status || null,
+      gained: r.gained || null, links: [], sourceIds: []
+    };
+  });
+  // Newest first, matching how allArticles is already ordered: members[0]
+  // — the lead — is a story's freshest telling.
+  articles.forEach(a => {
+    const st = a.clusterId && byId[a.clusterId];
+    if (!st) return;
+    st.links.push(a.link);
+    if (!st.sourceIds.includes(a.sourceId)) st.sourceIds.push(a.sourceId);
+  });
+  storyById = {};
+  storyByLead = {};
+  Object.keys(byId).forEach(id => {
+    const st = byId[id];
+    if (!st.links.length) return;   // a story row with no live member: skip
+    st.lead = st.links[0];
+    st.size = st.links.length;
+    storyById[id] = st;
+    storyByLead[st.lead] = st;
+  });
+}
+
+// The structured briefing, whatever date it was last written under — not
+// necessarily today, exactly mirroring the fallback fetch.js itself reads
+// when deciding whether to regenerate.
+function queryLatestBriefing() {
+  const [row] = query("SELECT MAX(date) as d FROM briefing_items");
+  if (!row || !row.d) return { en: [], bn: [] };
+  return queryBriefingFor(row.d);
+}
+function queryBriefingFor(date) {
+  const rows = query('SELECT * FROM briefing_items WHERE date = ? ORDER BY position', [date]);
+  const en = rows.map(r => ({ id: r.story_id || '', headline: r.headline, what: r.what, why: r.why, watch: r.watch }));
+  const anyBn = rows.some(r => r.headline_bn);
+  const bn = anyBn ? rows.map(r => ({ id: r.story_id || '', headline: r.headline_bn, what: r.what_bn, why: r.why_bn, watch: r.watch_bn })) : [];
+  return { en, bn };
+}
+
+function queryMeta(key) {
+  const [row] = query('SELECT value FROM meta WHERE key = ?', [key]);
+  return row ? row.value : null;
+}
+
+// Fetches and opens one region's whole database, replacing whatever was
+// open before. The previous handle is freed explicitly — sql.js holds its
+// data on the wasm heap, which a garbage collector watching only the JS
+// reference has no idea how large it is.
+async function loadRegionDb(region) {
+  const SQLlib = await ensureSqlJs();
+  const base = window.location.pathname.replace(/[^/]*$/, '');
+  const res = await fetch(base + REGION_CONFIG[region].dbFile + '?t=' + Date.now());
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const bytes = new Uint8Array(await res.arrayBuffer());
+  if (dbHandle) { try { dbHandle.close(); } catch (e) {} }
+  dbHandle = new SQLlib.Database(bytes);
+  archiveDates = query('SELECT date FROM snapshots ORDER BY date DESC').map(r => r.date);
+}
+
 /* ── Data ── */
 async function loadData() {
   if (loading) return;
@@ -1415,26 +1516,19 @@ async function loadData() {
   const btn = document.getElementById('refresh-btn');
   btn.disabled = true;
   document.getElementById('refresh-label').textContent = t('fetching');
-  setStatus('warn', () => t('fetching') + ' ' + REGION_CONFIG[activeRegion].dataFile);
+  setStatus('warn', () => t('fetching') + ' ' + REGION_CONFIG[activeRegion].dbFile);
   showSkeletons();
 
   try {
-    const base = window.location.pathname.replace(/[^/]*$/, '');
-    const res  = await fetch(base + REGION_CONFIG[activeRegion].dataFile + '?t=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
+    await loadRegionDb(activeRegion);
 
-    const data  = await res.json();
-    // Only the fields an article actually has: spreading a fixed set would
-    // give every article an own `titleBn` of undefined, which reads as "this
-    // article has a Bangla field" to anything using `in`.
-    allArticles = (data.articles || []).map(a => {
-      const out = { ...a };
-      for (const f of ['title', 'desc', 'titleBn', 'descBn', 'titleEn', 'descEn']) {
-        if (typeof out[f] === 'string' && out[f]) out[f] = plainText(out[f]);
-      }
-      return out;
-    });
-    allSources  = data.sources  || [];
+    const sourceRows = query('SELECT id, name, color FROM sources');
+    allSources = sourceRows;
+    const sourceMeta = {};
+    sourceRows.forEach(s => { sourceMeta[s.id] = s; });
+
+    allArticles = query('SELECT * FROM articles ORDER BY pub_date_ms DESC')
+      .map(row => hydrateArticle(row, sourceMeta));
 
     // Stories are what the feed is actually made of: one record per event,
     // naming every article covering it and which of them to link to. Indexed
@@ -1442,34 +1536,33 @@ async function loadData() {
     // the card asks "is this article its story's lead?".
     articleByLink = {};
     allArticles.forEach(a => { if (a.link) articleByLink[a.link] = a; });
+    buildStoryMaps(query('SELECT * FROM stories'), allArticles);
 
-    storyById   = {};
-    storyByLead = {};
-    (data.stories || []).forEach(st => {
-      if (!st || !st.id) return;
-      storyById[st.id] = st;
-      if (st.lead) storyByLead[st.lead] = st;
-    });
+    changedSince = queryMeta('changedSince');
+    const droppedJson = queryMeta('dropped');
+    droppedItems = droppedJson ? JSON.parse(droppedJson) : [];
 
     // Stored as a Date rather than a formatted string: the format depends on
     // the selected language, and the language can change after the load.
     // renderProvenance puts it in all three places — masthead, Latest panel and
     // the footer, which below 560px is the only one still visible.
-    changedSince = typeof data.changedSince === 'string' ? data.changedSince : null;
-    droppedItems = Array.isArray(data.dropped) ? data.dropped : [];
-
-    fetchedAt = data.fetchedAt ? new Date(data.fetchedAt) : null;
+    const fetchedAtValue = queryMeta('fetchedAt');
+    fetchedAt = fetchedAtValue ? new Date(fetchedAtValue) : null;
     renderProvenance();
 
+    const latest = queryLatestBriefing();
+    briefingEn = latest.en;
+    briefingBn = latest.bn;
+
     showHeadlines(allArticles);
-    showPageSummary(data);
+    renderSummary();
     setStatus('ok', () => regionLabel(activeRegion));
     buildFilterBar();
     renderArticles();
 
   } catch (e) {
     const box = notice('notice error', t('errorTitle'),
-      t('errorBody', { file: REGION_CONFIG[activeRegion].dataFile, message: e.message }));
+      t('errorBody', { file: REGION_CONFIG[activeRegion].dbFile, message: e.message }));
     box.appendChild(el('p', null, t('errorHint')));
     document.getElementById('feed-container').replaceChildren(box);
     setStatus('err', () => t('errorTitle'));
@@ -1539,7 +1632,6 @@ applyLanguage();
   const wanted = viewDate;
   viewDate = null;
   await loadData();
-  await loadArchiveIndex();
-  if (wanted) await showDate(wanted);
+  if (wanted) showDate(wanted);
   else applyArchiveChrome();
 })();

@@ -26,6 +26,14 @@ jobs:
       # a commit SHA cannot. Dependabot raises a PR when there is a newer one.
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
+      # node:sqlite is built into Node itself — no install step, no
+      # dependency — but it needs a Node new enough to carry it. ubuntu-latest
+      # ships a Node, but not a pinned one; this is what guarantees a version
+      # that actually has it.
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+
       - name: Fetch feeds
         run: |
           node fetch.js --region bd
@@ -47,13 +55,15 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # archive/ carries the dated snapshots each run writes, and the
-          # pruning of ones past the retention window — so it is staged with
-          # -A rather than by name: a deletion is a change that has to travel
-          # with the run that made it, or the next run prunes the same files
-          # again forever.
-          git add data-bd.json data-au.json data-global.json
-          git add -A archive
+          # No pathspec: a named one — even a glob — fails the whole command
+          # once it matches neither the working tree nor the index, which is
+          # exactly what happens to data-*.json after fetch.js has deleted
+          # and migrated it and a later commit has already recorded that
+          # deletion. -A alone stages whatever actually changed (new or
+          # updated .sqlite files, that one-time .json deletion when it
+          # happens) and is a no-op — never an error — when nothing did.
+          # .gitignore already keeps anything else out.
+          git add -A
           git diff --staged --quiet && { echo "No data changes"; exit 0; }
           git commit -m "chore: refresh feeds $(date -u '+%Y-%m-%d %H:%M UTC')"
           # main moves under us when several runs land close together.

@@ -1,8 +1,11 @@
 # The Daily Digest
 
 A static news reader for Bangladesh, Australia and global headlines. A
-scheduled GitHub Action pulls RSS feeds into JSON files; the page reads them.
-No build step, no server, no dependencies.
+scheduled GitHub Action pulls RSS feeds into a small database, one file per
+region; the page reads it. No build step, no server, no dependencies of its
+own on the write side — the one real dependency this project has is on the
+read side, a vendored WebAssembly build of SQLite the page uses to query its
+own data file client-side.
 
 It is not an RSS mirror. The pipeline groups the articles into *stories* —
 one event, however many publishers covered it — ranks those stories by how
@@ -16,7 +19,7 @@ over the top few: what happened, why it matters, what to watch.
         └── node fetch.js --region {bd,au,global}
                 ├── check every URL against the egress policy (lib/security.js)
                 ├── fetch + parse each RSS/Atom feed
-                ├── drop articles older than 30 days, dedupe by link
+                ├── drop articles older than the retention window, dedupe by link
                 ├── backfill missing images from each article's og:image
                 ├── detect each article's language, translate it the other way (Claude)
                 ├── group articles into stories (lib/cluster.js)
@@ -25,12 +28,12 @@ over the top few: what happened, why it matters, what to watch.
                 │   "why this matters" line for the top of the feed (Claude)
                 ├── translate both into Bangla (Claude)
                 ├── validate everything the model returned
-                ├── diff against the last dated snapshot (lib/archive.js)
-                ├── write data-{bd,au,global}.json
-                └── write archive/{region}/YYYY-MM-DD.json + archive/index.json
+                ├── diff against the last dated snapshot (lib/db.js)
+                └── write data-{bd,au,global}.sqlite
         └── node --test tests/*.test.js   ── the gate: red here, nothing is committed
-                └── data files committed back to main
-index.html  fetches the JSON for the selected region and renders it
+                └── data-*.sqlite committed back to main
+index.html  loads sql.js (vendor/), fetches the region's .sqlite file whole,
+            and queries it client-side for everything it renders
 ```
 
 Every stage refuses rather than repairs. A URL that fails the policy is not
@@ -46,23 +49,31 @@ is not published at all — the data already on `main` stays up instead.
 | `fetch.js` | Feed fetcher, parser and Claude integration |
 | `lib/cluster.js` | Grouping articles into stories — offline, no model call |
 | `lib/rank.js` | Story ranking and topic classification |
-| `lib/archive.js` | Dated snapshots, and the "what changed since yesterday" diff |
+| `lib/db.js` | The database: schema, the write transaction, pruning — Node-side, via `node:sqlite` |
 | `lib/security.js` | Egress policy and input validation — what may be fetched, what may be published |
 | `tests/*.test.js` | `node --test tests/*.test.js`. No network, no dependencies |
 | `tools/check-feeds.js` | Feed health check (see below) |
-| `data-*.json` | Generated. Committed by the workflow; don't hand-edit |
+| `vendor/sql-wasm-*.{js,wasm}` | sql.js — vendored, not installed; how the page reads its own data files |
+| `data-*.sqlite` | Generated. Committed by the workflow; don't hand-edit |
 
 ## Running it locally
 
 ```bash
-node fetch.js --region bd        # writes data-bd.json
+node fetch.js --region bd        # writes data-bd.sqlite
 python3 -m http.server 8000      # then open http://localhost:8000
 ```
 
 The page fetches its data over HTTP, so open it through a server rather than
-as a `file://` URL. Run `node --test tests/*.test.js` before pushing; CI runs
-the same command, and the publishing workflow runs it again between fetching
-and committing.
+as a `file://` URL — the `.sqlite` file is fetched with the same `fetch()`
+call as any other same-origin resource, and `file://` has no origin for
+`connect-src 'self'` to mean anything about. Run `node --test tests/*.test.js`
+before pushing; CI runs the same command, and the publishing workflow runs it
+again between fetching and committing.
+
+`fetch.js` needs Node 22 or newer — `node:sqlite` is built in from there, so
+this adds no package and no install step, but it does mean an older Node
+cannot run it. The front end has no such requirement; any browser that runs
+WebAssembly opens the page.
 
 `ANTHROPIC_API_KEY` enables the Bangla translations and the region briefing.
 Without it the fetch still runs and the page still works — those two features
@@ -80,8 +91,8 @@ node tools/check-feeds.js https://example.com/rss  # try a candidate
 ```
 
 It exits non-zero when a configured feed is dead — that is the signal, not a
-crash. A feed that answers but whose newest item is already past the 30-day
-retention is reported `STALE`: it parses fine and contributes nothing. The
+crash. A feed that answers but whose newest item is already past the retention
+window is reported `STALE`: it parses fine and contributes nothing. The
 **Feed Health** workflow
 runs the same check every Monday and can be dispatched by hand with candidate
 URLs in its input box, which is the easiest way to test replacements — some
@@ -180,17 +191,16 @@ to seven items, every field within length, no markup, `watch` the only field a
 story is allowed not to have. Anything else is a failed call and the previous
 briefing stays up.
 
-`summary` is still written, derived from the briefing's `what` lines rather
-than bought separately, so a browser holding a cached `app.js` from before the
-briefing existed still renders the day's account.
-
 **On the page.** The feed shows one card per story, defaulting to importance
 order with a Latest toggle beside the heading. A card names how many sources
 carried the story; a story only one newsroom carried says so, because that is
-a weaker claim and should not look identical. The "why this matters" line is
-labelled and set apart from the publisher's own text — an aggregator that
-blurred the model's words into the publisher's would be the one dishonest
-thing on the page.
+a weaker claim and should not look identical, and the count is also the way
+in — clicking it opens a comparison of every publisher's own wording of the
+event, closed by default and costing nothing until asked for. The "why this
+matters" line lives in the briefing only, not repeated on every card: the
+stories that matter most already carry the analysis there, and putting it on
+every card too was exactly the kind of per-item chrome a scanning reader is
+meant to get past, not read.
 
 ## The page must not get longer
 
@@ -207,25 +217,28 @@ counting briefing items as stories, because they are.
 
 | | before any of this | now |
 |---|---|---|
-| Briefing panel, desktop | 346px | 477px |
-| Briefing panel, phone | 213px | 585px |
-| **Scroll to six stories, desktop** | 2,270px | **1,218px** |
-| **Scroll to six stories, phone** | 1,291px | **1,180px** |
-| Whole page, desktop | 5,629px | 5,519px |
+| Briefing panel, desktop | 346px | 494px |
+| Briefing panel, phone | 213px | 602px |
+| **Scroll to six stories, desktop** | 2,270px | **1,188px** |
+| **Scroll to six stories, phone** | 1,291px | **1,154px** |
+| Whole page, desktop | 5,629px | 5,489px |
 
 Six stories now cost about half the scroll they used to on desktop and
-slightly less on a phone — and each of those six carries a consequence, a
-source count and a change marker, where before they were bare headlines.
+slightly less on a phone — and each of those six carries a source count and
+a change marker, where before they were bare headlines.
 
 Four rules got it there, and they are worth keeping:
 
 **One line per thing.** A source count and a "developing" marker are four
 words; given a row of their own they cost more height than the headline they
-annotate. They ride on the end of the headline instead. The same goes for the
-"why this matters" label on a card, which is now an inline `Why:` rather than
-a heading — it is still there, because that sentence is the model's and the
-headline above it is the publisher's and the two must never read as one voice,
-but it no longer costs a row to say so.
+annotate. They ride on the end of the headline instead. The card's own
+"why this matters" line went further: it is not on the card at all any more.
+It survived one round as a labelled paragraph and another as an inline
+`Why:` clamped to two lines, but neither earned a permanent place — the
+stories that matter most already carry the analysis in the briefing above,
+and repeating it under every card was exactly the per-item chrome a scanning
+reader is here to get past. The sentence itself is untouched in the data; it
+simply is not rendered a second time.
 
 **Nothing may grow on a talkative day.** Every model-written line is clamped
 to two lines, so the height of the page does not depend on how expansive the
@@ -254,49 +267,93 @@ to resist: comprehensiveness is what an RSS reader already gives you, and it
 is why reading one takes all morning. Past thirty the honest answer is
 "nothing else today", with Latest one click away for everything.
 
-## Yesterday
+## The database
 
-Everything the page knows is overwritten twice a day, which is fine for a feed
-and useless for a reader who came back: "what changed since I last looked" is
-unanswerable when there is only ever a now. `archive/{region}/YYYY-MM-DD.json`
-is a dated snapshot of that day's briefing and top twenty stories, and it is
-what makes a change observable at all.
+Everything the page knows used to be overwritten twice a day, which was fine
+for a feed and useless for a reader who came back: "what changed since I
+last looked" was unanswerable when there was only ever a now, and the
+history that made it answerable — a dated archive of headlines — had to be
+kept compact, because a flat JSON file rewritten wholesale every run could
+not afford to hold 120 days of full articles. A real database does not have
+that problem, so it now holds everything within the retention window:
+articles, the stories they cluster into, every day's structured briefing in
+full, and a frozen daily snapshot of the top twenty stories for the
+day-over-day diff and the archive. One file per region, one retention
+window (120 days) for all of it, replacing the two-tier design (30 days of
+articles, 120 of archive headlines) that used to exist only because storing
+more than that was expensive.
 
-**It stores no articles.** A region's data file is about 1.5 MB and there are
-two runs a day; a year of full copies is a repository nobody can clone. A
-snapshot is the briefing plus the ranked stories in headline form — about
-16 KB — and snapshots past a 120-day window are pruned, so the working tree
-stays bounded while git history keeps the rest.
+**Written with `node:sqlite`, read with sql.js.** The pipeline (Node,
+`lib/db.js`) writes a standard SQLite file using Node's own built-in driver
+— no npm package, no install step, the thing this project has never had.
+The page (the browser) reads that exact file back with
+[sql.js](https://github.com/sql-js/sql.js), a WebAssembly build of SQLite,
+vendored into `vendor/` rather than pulled from a CDN — the CSP allows
+`script-src 'self'` and nothing else, so a third-party script has to be
+self-hosted to run at all. Nothing is exported or converted between the two:
+whatever Node wrote to disk is exactly what the browser opens, because both
+are the same file format. `'wasm-unsafe-eval'` is the one narrow addition to
+the CSP this needs — WebAssembly.instantiate asks for it specifically, and it
+grants nothing `eval` or `new Function` would; `tests/frontend.test.js`
+checks the vendored file never actually needs the broader grant.
+
+**One request per region, then no more.** Switching from Bangladesh to
+Australia fetches a new `.sqlite` file — the one real piece of network
+traffic the page makes beyond its own static assets. Everything after that —
+searching, filtering, switching between Top Stories and Latest, browsing the
+archive twenty days back — is a SQL query against the file already sitting
+in the browser's memory. The old archive fetched a fresh JSON file for every
+day a reader stepped back through; this fetches nothing for any of it.
+
+**The migration.** The first time `fetch.js` runs against a region with no
+database yet, and a legacy `data-{region}.json` still on disk, it imports
+that file's articles, stories and briefing into the new database before
+doing anything else — so translations and a briefing that already cost real
+API calls are not silently thrown away and re-bought. This runs at most
+once per region, ever: the JSON file is deleted once it has been read, and a
+region with no JSON file (or a database already holding rows) skips the step
+entirely. It is deliberately not a full historical import — the JSON file
+only ever held "now", never a day-by-day past — so the one snapshot this
+writes simply establishes migration day as day one of database-backed
+history, honestly, rather than inventing days that were never recorded.
 
 **The baseline is a day strictly before today.** Both of a day's runs write
-the same file, so comparing today against today would report the morning's
-news as unchanged since the morning. A region whose archive has a gap compares
-against the last day it has, and `changedSince` in the data file names that
-day so the page can say which one rather than claiming "yesterday".
+to the same date, so comparing today against today would report the
+morning's news as unchanged since the morning. A region whose history has a
+gap compares against the last day it has, and that day is stored in the
+database (`meta.changedSince`) so the page can say which one rather than
+claiming "yesterday".
 
 **With no baseline, nothing is new.** On the first run every story is
 trivially new, and a page announcing 146 new stories on its first morning
-teaches its reader to ignore the badge forever. `diffStories` returns null
-rather than a verdict, the stories carry no `status` field, and the page
-renders no markers — which is deliberately *not* the same as rendering
-"unchanged". So the markers appear from the second day the pipeline runs, not
-the first.
+teaches its reader to ignore the badge forever. The diff returns nothing
+rather than a verdict, no story carries a `status`, and the page renders no
+markers — which is deliberately *not* the same as rendering "unchanged". So
+the markers appear from the second day the pipeline runs, not the first.
 
-A story that lost members is not "developing" either: articles age out of the
-30-day window, so a story can shrink, and that is not a development.
+A story that lost members is not "developing" either: articles age out of
+the retention window, so a story can shrink, and that is not a development.
+
+**A run that fails to generate a briefing falls back to the most recently
+written one, whatever day it was written under** — not strictly today's.
+That is the same property the single unversioned JSON blob had by simply
+not being overwritten; the difference is that a day with nothing generated
+now honestly has no row for that day, rather than an undated blob quietly
+describing an older one.
 
 **Browsing it.** The briefing panel carries Older / Today / Newer, and the
 selected day is in the URL — `index.html?region=bd&date=2026-09-13` — so a
-dated briefing is a link someone can send to someone else. Today's own
-snapshot is skipped when stepping back, because the live view already shows
-that day and an Older button landing on the date already on screen reads as a
-bug; a link straight to it still opens it.
+dated briefing is a link someone can send to someone else, and it opens
+instantly: no fetch, just a different query against the database already in
+memory. Today's own snapshot is skipped when stepping back, because the live
+view already shows that day and an Older button landing on the date already
+on screen reads as a bug; a link straight to it still opens it.
 
 An archived day renders as a list, not a card grid: the snapshot holds
 headlines, and cards would promise art, descriptions and a live source
-breakdown it deliberately does not carry. The controls that describe live data
-— the source chips, the ordering, the LIVE strip — are hidden rather than
-disabled, because a day that is over has no live ordering to offer.
+breakdown it deliberately does not carry. The controls that describe live
+data — the source chips, the ordering, the LIVE strip — are hidden rather
+than disabled, because a day that is over has no live ordering to offer.
 
 ## Security
 
@@ -338,7 +395,11 @@ and set with `textContent`; search highlighting appends text nodes and its own
 element rather than wrapping a tag around escaped text. There is no
 `escapeHTML` any more because there is nothing to escape for. The CSP has no
 `'unsafe-inline'` on scripts or styles: `script-src` is `'self'` plus a SHA-256
-hash for the five-line theme bootstrap that has to run before first paint.
+hash for the five-line theme bootstrap that has to run before first paint,
+plus `'wasm-unsafe-eval'` for sql.js's WebAssembly instantiation — the one
+narrow grant beyond `'self'`, and narrower than `'unsafe-eval'`: sql.js
+doesn't call `eval` or `new Function` at all, and `tests/frontend.test.js`
+checks the vendored file for exactly that, not just app.js.
 `img-src` names the publishers' CDNs one by one, and a test fails if that list
 and the fetcher's own image rules drift apart.
 
@@ -357,7 +418,16 @@ and Dependabot raises a PR weekly so pinned does not become stale. Workflow
 permissions stop at what each job does: only `fetch-feeds` may write, because
 it is the only one that commits. `ANTHROPIC_API_KEY` is scoped to the single
 step that calls the API, and the validator refuses any model output containing
-a key, so a leak cannot reach a committed data file.
+a key, so a leak cannot reach a committed database file.
+
+sql.js is the one exception to "no dependencies", and it is deliberately not
+managed the way a real dependency would be: no `package.json`, no lockfile,
+no Dependabot — it is two files under `vendor/`, fetched once from the npm
+registry, checked into git like any other asset, and upgraded by hand
+(replacing both files and every filename reference to them) on the rare
+occasion sql.js itself needs it. Nothing about that upgrade path is
+automatic, which is the honest trade for having no automatic update
+mechanism pull in something unreviewed.
 
 ### Still to do, by hand
 
@@ -376,9 +446,9 @@ committed. In **Settings → Branches** and **Settings → Code security**:
 
 ## Behaviour worth knowing
 
-- **Articles accumulate.** Each run merges new articles into the existing file
-  and prunes anything older than 30 days, so the feed survives a publisher
-  outage.
+- **Articles accumulate.** Each run merges new articles into the database
+  and prunes anything older than the 120-day retention window, so the feed
+  survives a publisher outage.
 - **Run cadence and the item cap go together.** Runs are 12 hours apart, so
   `MAX_ITEMS_PER_FEED` has to exceed what a feed publishes in 12 hours or
   articles are lost between runs; the busiest single-URL feeds manage 30-35.
@@ -404,11 +474,15 @@ committed. In **Settings → Branches** and **Settings → Code security**:
 - **A run with no briefing writes no snapshot.** A snapshot whose briefing is
   null is a baseline that makes tomorrow's comparison compare against nothing,
   which is worse than having no snapshot for that day.
-- **Not every story gets a record in the data file.** Only those with more
+- **Not every story gets a row in the `stories` table.** Only those with more
   than one member (so the page can collapse them into one card) and the top
-  few by rank (which carry the analytical line). Writing a record for all
-  ~1,300 clusters would spend a third of the file restating what the articles
-  already carry.
+  few by rank (which carry the analytical line). An article can still point
+  at a story id with no row of its own — the page treats that exactly like a
+  story it has never heard of, which is what it is.
+- **A story with no live article left in it is deleted immediately**, not
+  only at the end-of-run prune — the same write transaction that removes an
+  article's last reference to a story sweeps the now-empty story away, so a
+  reader can never be handed a story with nothing behind it.
 - **Bangla is on for every region.** `translate: true` is still set per region
   in `fetch.js`, and `hasLang` in `REGION_CONFIG` (`app.js`) has to match —
   it decides whether the page offers the toggle.
@@ -451,7 +525,7 @@ committed. In **Settings → Branches** and **Settings → Code security**:
   from keywords. Prothom Alo excludes `entertainment`, `photo` and
   `lifestyle`; sports and opinion are kept. The filter also applies to
   already-stored articles, so a change takes effect on the next run instead
-  of waiting out the 30-day retention.
+  of waiting out the retention window.
 
 ## Front end
 
