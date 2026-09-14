@@ -38,6 +38,16 @@ self.addEventListener('fetch', function (event) {
     event.respondWith(staleWhileRevalidate(req));
     return;
   }
+  // The page itself carries no content-hash query string the way app.css
+  // and app.js do (see the note above), so caching it cache-first would
+  // freeze a repeat visitor on whichever HTML first got cached — every
+  // future deploy invisible to them until they clear site data by hand.
+  // Network-first keeps it current; the cache only stands in once there is
+  // no connection at all to ask the network with.
+  if (req.mode === 'navigate' || url.pathname === '/' || url.pathname.endsWith('/index.html')) {
+    event.respondWith(networkFirst(req));
+    return;
+  }
   event.respondWith(cacheFirst(req));
 });
 
@@ -50,6 +60,15 @@ function cacheFirst(req) {
         return res;
       });
     });
+  });
+}
+
+function networkFirst(req) {
+  return caches.open(CACHE_NAME).then(function (cache) {
+    return fetch(req).then(function (res) {
+      if (res.ok) cache.put(req, res.clone());
+      return res;
+    }).catch(function () { return cache.match(req); });
   });
 }
 
