@@ -1,5 +1,6 @@
 const https   = require('https');
 const fs      = require('fs');
+const crypto  = require('crypto');
 const security = require('./lib/security.js');
 const lang     = require('./lib/lang.js');
 const cluster  = require('./lib/cluster.js');
@@ -166,6 +167,15 @@ var MAX_HEAD_BYTES  = 8 * 1024;          // og:image lives in <head>; the body i
 var FEED_TIMEOUT_MS = 15000;
 var HEAD_TIMEOUT_MS = 10000;
 var FEED_CONCURRENCY = 4;
+var MAX_IMAGE_BYTES  = 4 * 1024 * 1024;
+var IMAGE_TIMEOUT_MS = 10000;
+
+// Existing rows written before images were downloaded at all still hold an
+// external URL. Same shape as BACKFILL_PER_RUN below: drain the backlog a
+// bounded slice at a time, newest article first, rather than either doing
+// the whole month at once or leaving old rows hotlinked until they age out
+// of the retention window on their own.
+var IMAGE_BACKFILL_PER_RUN = 200;
 
 // Derived from the feed list above: the set of URLs this script may fetch and
 // the domains it may follow a link to. Built once, consulted on every request.
@@ -476,6 +486,113 @@ async function enrichImages(articles) {
     }));
   }
   reportRejectedImageHosts(rejectedHosts, 'og:image');
+}
+
+// ── Images: downloaded once, served from this site's own origin ──────────
+//
+// Hotlinking a publisher's CDN directly means every reader's image request
+// depends on that CDN choosing to serve an unfamiliar origin — which some
+// do not, intermittently or permanently, and a static site with no server
+// of its own has no way to route around that at request time. Downloading
+// each image once here and committing the bytes turns "will this CDN serve
+// us today" into a question asked once, hours before any reader sees the
+// page, rather than on every single page load. It also means img-src no
+// longer has to enumerate a publisher domain for every source: the page
+// only ever loads images from itself.
+var IMAGE_DIR = 'images';
+var IMAGE_EXT_BY_TYPE = {
+  'image/jpeg': 'jpg', 'image/jpg': 'jpg', 'image/png': 'png',
+  'image/webp': 'webp', 'image/gif': 'gif'
+};
+
+// Binary sibling of fetchUrl: same egress checks, same redirect handling,
+// same size/time caps, but a Buffer instead of a UTF-8 string, and a
+// content-type check no text fetch needs. A redirect target still has to
+// clear isAllowedImageUrl — a CDN redirecting an image request to some
+// other host entirely is not a hop this follows blindly.
+function fetchImageBytes(reqUrl, redirects) {
+  redirects = redirects || 0;
+  return new Promise(function (resolve, reject) {
+    if (redirects > 3) return reject(new Error('Too many redirects'));
+    var safe = security.parseSafeUrl(reqUrl);
+    if (!safe) return reject(new Error('Refused by egress policy'));
+
+    var req = https.get(safe.href, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36' },
+      timeout: IMAGE_TIMEOUT_MS
+    }, function (res) {
+      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        res.resume();
+        var next = resolveLocation(res.headers.location, safe.href);
+        if (!security.isAllowedImageUrl(next, POLICY)) {
+          return reject(new Error('Redirect refused by egress policy'));
+        }
+        return fetchImageBytes(next, redirects + 1).then(resolve).catch(reject);
+      }
+      if (res.statusCode !== 200) return reject(new Error('HTTP ' + res.statusCode));
+      var type = String(res.headers['content-type'] || '').split(';')[0].trim().toLowerCase();
+      var ext = IMAGE_EXT_BY_TYPE[type];
+      if (!ext) { res.resume(); return reject(new Error('Not an image content-type: ' + type)); }
+      var chunks = [], total = 0;
+      res.on('data', function (c) {
+        total += c.length;
+        if (total > MAX_IMAGE_BYTES) { req.destroy(); reject(new Error('Image larger than ' + MAX_IMAGE_BYTES + ' bytes')); }
+        else chunks.push(c);
+      });
+      res.on('end', function () { resolve({ buffer: Buffer.concat(chunks), ext: ext }); });
+    });
+    req.on('error', reject);
+    req.on('timeout', function () { req.destroy(); reject(new Error('Timeout')); });
+  });
+}
+
+// A stable filename derived from the source URL, not the article: two
+// articles sharing one thumbnail (a wire photo two publishers both ran)
+// download once and both point at the same file. Hashed rather than
+// derived from the URL's own path, which can carry query strings,
+// unpredictable length, or characters no filesystem promises to accept.
+function imageFilename(url, ext) {
+  return crypto.createHash('sha1').update(url).digest('hex').slice(0, 20) + '.' + ext;
+}
+
+// Downloads one image and writes it under images/<region>/, returning the
+// path stored in the database — relative to the repo root, which is also
+// where the page serves it from, so no further translation is needed
+// between what gets written here and what ends up in an <img src>. Never
+// rejects: a failed download costs the picture, exactly like a rejected
+// domain always has, never the run.
+async function localizeImage(url, region) {
+  if (!security.isAllowedImageUrl(url, POLICY)) return null;
+  try {
+    var got = await fetchImageBytes(url);
+    var relPath = IMAGE_DIR + '/' + region + '/' + imageFilename(url, got.ext);
+    fs.mkdirSync(IMAGE_DIR + '/' + region, { recursive: true });
+    fs.writeFileSync(relPath, got.buffer);
+    return relPath;
+  } catch (e) {
+    return null;
+  }
+}
+
+// Only ever called with freshly fetched articles — an existing article's
+// img is already either a local path or null from a prior run, and neither
+// is worth re-downloading. That makes this idempotent across runs without
+// tracking anything extra: a URL that failed once becomes null, same as a
+// rejected domain, and stays that way rather than retrying forever.
+async function localizeImages(articles, region) {
+  var targets = articles.filter(function (a) { return a.img && /^https:\/\//i.test(a.img); });
+  if (!targets.length) return;
+
+  var ok = 0, failed = 0;
+  var BATCH = 5;
+  for (var i = 0; i < targets.length; i += BATCH) {
+    await Promise.all(targets.slice(i, i + BATCH).map(async function (a) {
+      var local = await localizeImage(a.img, region);
+      a.img = local;
+      if (local) ok++; else failed++;
+    }));
+  }
+  console.log('Images: downloaded', ok + (failed ? ', ' + failed + ' failed (kept no picture)' : ''));
 }
 
 // Naming the host is the whole point: a publisher moving to a new CDN shows up
@@ -1080,6 +1197,16 @@ async function main() {
   });
 
   await enrichImages(freshArticles);
+
+  var imageBacklog = existingArticles
+    .filter(function(a) { return a.img && /^https:\/\//i.test(a.img); })
+    .sort(function(a,b){ return (parseDate(b.pubDate)||0)-(parseDate(a.pubDate)||0); });
+  var imagesToBackfill = imageBacklog.slice(0, IMAGE_BACKFILL_PER_RUN);
+  if (imageBacklog.length) {
+    console.log(imageBacklog.length, 'existing articles still hotlink their image',
+                '(' + imagesToBackfill.length + ' backfilled this run)');
+  }
+  await localizeImages(freshArticles.concat(imagesToBackfill), regionArg);
 
   if (REGION.translate) {
     // Which field is missing depends on which way the article needs to go, so
