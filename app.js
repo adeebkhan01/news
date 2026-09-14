@@ -883,10 +883,23 @@ function cardElement(a, isFeatured, n, isSecondary) {
     pic.decoding = 'async';
     // A listener rather than an onerror attribute: the CSP no longer allows an
     // inline handler, and this one cannot be confused with feed content.
+    //
+    // One retry before giving up: a hotlinked image failing once is often a
+    // transient hiccup on the publisher's CDN — a connection reset, a
+    // momentary blip under the burst of a page load fetching dozens of
+    // images at once — not a permanently dead link. Re-requesting a couple
+    // of seconds later catches that case; only a second failure gets the
+    // placeholder.
+    let imgRetried = false;
     pic.addEventListener('error', () => {
+      if (!imgRetried) {
+        imgRetried = true;
+        setTimeout(() => { pic.src = img; }, 2000);
+        return;
+      }
       wrap.className = 'thumb placeholder';
       wrap.replaceChildren(el('span', 'cap', t('imageUnavailable')));
-    }, { once: true });
+    });
     pic.src = img;
     wrap.appendChild(pic);
     card.appendChild(wrap);
