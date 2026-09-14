@@ -39,7 +39,7 @@
     document.documentElement.setAttribute('data-theme', theme);
   })();
 </script>
-<link rel="stylesheet" href="app.css?v=c3d09abcba40" />
+<link rel="stylesheet" href="app.css?v=251872a4423c" />
 </head>
 <body>
 <a class="skip-link" href="#feed-container" data-i18n="skipToHeadlines">Skip to headlines</a>
@@ -121,9 +121,6 @@
 
     <div class="section-head">
       <h2 data-i18n="headlines">Headlines</h2>
-      <div class="order-switch" id="order-switch" role="group" data-i18n-label="order" aria-label="Order">
-        <button class="order-btn" data-order="top" aria-pressed="true" data-i18n="orderTop">Top stories</button>
-      </div>
       <span class="status-line">
         <span class="status-strip" id="status-strip">&#9679; Live</span>
         <span id="status-text">Loading</span>
@@ -157,6 +154,6 @@
      document order, so initSqlJs is defined by the time app.js needs it.
      locateFile in app.js points this at the matching .wasm file. -->
 <script src="vendor/sql-wasm-1.13.0.js" defer></script>
-<script src="app.js?v=e2bac7c257bb" defer></script>
+<script src="app.js?v=e55dbc9168b2" defer></script>
 </body>
 </html>
