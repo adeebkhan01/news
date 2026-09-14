@@ -4,18 +4,25 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- Nothing on this page may run, load or connect unless it is named here.
-     script-src is 'self' plus one hash: the page's own files, and the
-     inline theme bootstrap that has to run before first paint to avoid a
-     flash. No 'unsafe-inline' on scripts or styles, so an injected tag
+     script-src is 'self' plus one hash: the page's own files (which now
+     includes vendor/sql-wasm-*.js, the vendored WebAssembly build of
+     SQLite the archive reads its database through), and the inline theme
+     bootstrap that has to run before first paint to avoid a flash.
+     'wasm-unsafe-eval' is the one narrow exception to no 'unsafe-eval':
+     WebAssembly.instantiate needs it, and it grants nothing eval or
+     new Function would — sql.js does not call either, which
+     tests/frontend.test.js checks for the whole vendor file, not just
+     app.js. No 'unsafe-inline' on scripts or styles, so an injected tag
      cannot execute even if one ever got through — and nothing does, because
      feed text reaches the DOM as text nodes rather than as markup.
      img-src names the publishers' CDNs one by one, mirroring IMAGE_DOMAINS
      and IMAGE_HOSTS in lib/security.js — a domain wildcarded because the
      publisher owns it, a shared-CDN host named exactly because it does not.
-     tests/security.test.js fails if the two drift apart.
+     tests/security.test.js fails if the two drift apart. connect-src 'self'
+     is also what lets the page fetch its own data-{region}.sqlite files.
      frame-ancestors is omitted deliberately: it is ignored in a meta CSP
      and needs a real header, which GitHub Pages will not serve. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-fZ21OHFTlZGA1hOkTvMIcS92235qeNGBK+384Rw3HMo='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://npr.brightspotcdn.com https://abc-cdn.net.au https://*.abc-cdn.net.au https://abc.net.au https://*.abc.net.au https://aljazeera.com https://*.aljazeera.com https://bbc.co.uk https://*.bbc.co.uk https://bbc.com https://*.bbc.com https://bbci.co.uk https://*.bbci.co.uk https://dailyamardesh.com https://*.dailyamardesh.com https://dw.com https://*.dw.com https://ffx.io https://*.ffx.io https://france24.com https://*.france24.com https://guim.co.uk https://*.guim.co.uk https://npr.org https://*.npr.org https://prothomalo.com https://*.prothomalo.com https://risingbd.com https://*.risingbd.com https://smh.com.au https://*.smh.com.au https://theconversation.com https://*.theconversation.com https://thedailystar.net https://*.thedailystar.net https://theguardian.com https://*.theguardian.com; connect-src 'self'; base-uri 'none'; form-action 'none'" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-fZ21OHFTlZGA1hOkTvMIcS92235qeNGBK+384Rw3HMo='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://npr.brightspotcdn.com https://abc-cdn.net.au https://*.abc-cdn.net.au https://abc.net.au https://*.abc.net.au https://aljazeera.com https://*.aljazeera.com https://bbc.co.uk https://*.bbc.co.uk https://bbc.com https://*.bbc.com https://bbci.co.uk https://*.bbci.co.uk https://dailyamardesh.com https://*.dailyamardesh.com https://dw.com https://*.dw.com https://ffx.io https://*.ffx.io https://france24.com https://*.france24.com https://guim.co.uk https://*.guim.co.uk https://npr.org https://*.npr.org https://prothomalo.com https://*.prothomalo.com https://risingbd.com https://*.risingbd.com https://smh.com.au https://*.smh.com.au https://theconversation.com https://*.theconversation.com https://thedailystar.net https://*.thedailystar.net https://theguardian.com https://*.theguardian.com; connect-src 'self'; base-uri 'none'; form-action 'none'" />
 <meta name="description" content="A clean, fast news reader for Bangladesh, Australia and the world — headlines from trusted sources, updated continuously." />
 <meta name="theme-color" content="#fdfcfb" media="(prefers-color-scheme: light)" />
 <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
@@ -32,7 +39,7 @@
     document.documentElement.setAttribute('data-theme', theme);
   })();
 </script>
-<link rel="stylesheet" href="app.css?v=7673e6f46c15" />
+<link rel="stylesheet" href="app.css?v=1c7202a0cd5c" />
 </head>
 <body>
 <a class="skip-link" href="#feed-container" data-i18n="skipToHeadlines">Skip to headlines</a>
@@ -88,8 +95,14 @@
         <div class="panel-head">
           <span class="label" data-i18n="briefing">Briefing</span>
           <span class="label brief-byline" id="brief-byline" hidden></span>
+          <div class="archive-nav" id="archive-nav" role="group" data-i18n-label="archive" aria-label="Archive" hidden>
+            <button id="archive-older" type="button">Older</button>
+            <button id="archive-today" type="button">Today</button>
+            <button id="archive-newer" type="button">Newer</button>
+          </div>
         </div>
         <div id="page-summary-text"></div>
+        <div id="brief-change" class="brief-change" hidden></div>
         <button id="summary-toggle" aria-expanded="false" data-i18n="readMore">Read more</button>
       </div>
       <dl class="facts" id="brief-facts"></dl>
@@ -130,6 +143,10 @@
   </div>
 </footer>
 
-<script src="app.js?v=587fae2d57d3" defer></script>
+<!-- Loaded before app.js, and both deferred: deferred scripts run in
+     document order, so initSqlJs is defined by the time app.js needs it.
+     locateFile in app.js points this at the matching .wasm file. -->
+<script src="vendor/sql-wasm-1.13.0.js" defer></script>
+<script src="app.js?v=afc55dd6f687" defer></script>
 </body>
 </html>

@@ -7,8 +7,6 @@ let loading      = false;
 let langMode     = localStorage.getItem('news-lang') === 'bn' ? 'bn' : 'en';
 let activeRegion = localStorage.getItem('news-region') || 'bd';
 let searchTimer  = null;
-let summaryEn    = '';
-let summaryBn    = '';
 let briefingEn   = [];     // [{ id, headline, what, why, watch }]
 let briefingBn   = [];
 let briefFull    = false;  // the briefing's two depths: headline + why, or the whole item
@@ -16,7 +14,14 @@ let storyById    = {};     // story id -> the record fetch.js published
 let storyByLead  = {};     // the link of a story's freshest member -> that story
 let articleByLink = {};    // link -> article, so a story can name its members
 let feedOrder    = localStorage.getItem('news-order') === 'latest' ? 'latest' : 'top';
+let changedSince = null;   // the date the "new"/"developing" markers are measured against
+let droppedItems = [];     // stories that were on that day's briefing and are not on today's
+let archiveDates = [];     // dates the current region's database has a snapshot for, newest first
+let viewDate     = null;   // null is today's live data; a YYYY-MM-DD is an archived briefing
+let archiveSnap  = null;   // the snapshot being viewed, when viewDate is set
 let fetchedAt    = null;   // the Date, not a formatted string: the format is language-dependent
+let SQL          = null;   // the sql.js module, loaded once and reused across region switches
+let dbHandle     = null;   // the currently open sql.js Database — one region's whole database
 
 const PAGE_SIZE = 24;
 
@@ -25,18 +30,28 @@ const PAGE_SIZE = 24;
 // to read all twenty to find out which one matters, which is exactly the work
 // the ranking was supposed to do for them.
 const SECONDARY_COUNT = 4;
+
+// How many stories the ranked view shows before it stops.
+//
+// The feed holds a month — around 1,300 stories — and an infinite scroll over
+// them is the instinct this product is supposed to resist: comprehensiveness
+// is what an RSS reader already gives you, and it is why reading one takes
+// all morning. Top stories is an answer to "what matters today", and past
+// thirty the honest answer is "nothing else, and Latest has the rest".
+const TOP_STORIES_SHOWN = 30;
 let visibleArticles = [];
 let renderedCount   = 0;
 let featuredIndex   = -1;
 let feedObserver    = null;
+let feedIsCapped    = false;
 
 // hasLang mirrors `translate` in fetch.js: it says the region's data file
 // carries Bangla, not that every article in it does. A region whose backlog is
 // still draining renders untranslated articles in English either way.
 const REGION_CONFIG = {
-  bd:     { mark: 'BD', flag: '\u{1F1E7}\u{1F1E9}', dataFile: 'data-bd.json',     hasLang: true },
-  au:     { mark: 'AU', flag: '\u{1F1E6}\u{1F1FA}', dataFile: 'data-au.json',     hasLang: true },
-  global: { mark: 'GL', flag: '\u{1F30F}',           dataFile: 'data-global.json', hasLang: true }
+  bd:     { mark: 'BD', flag: '\u{1F1E7}\u{1F1E9}', dbFile: 'data-bd.sqlite',     hasLang: true },
+  au:     { mark: 'AU', flag: '\u{1F1E6}\u{1F1FA}', dbFile: 'data-au.sqlite',     hasLang: true },
+  global: { mark: 'GL', flag: '\u{1F30F}',           dbFile: 'data-global.sqlite', hasLang: true }
 };
 
 /* ── Language ──────────────────────────────────────────────────────────
@@ -64,7 +79,7 @@ const STRINGS = {
     filterBySource:  'Filter by source',
     allSources:      'All sources',
     briefing:        'Briefing',
-    briefingBy:      'Written by Claude from the headlines below',
+    briefingBy:      'Written by Claude',
     whatHappened:    'What happened',
     whyItMatters:    'Why this matters',
     whatToWatch:     'What to watch',
@@ -76,8 +91,26 @@ const STRINGS = {
     orderTop:        'Top stories',
     orderLatest:     'Latest',
     coveredBy:       'Covered by {n} sources',
+    sourceCount:     '{n} sources',
+    sourceCountParen:'({n} sources)',
+    statusNew:       'New',
+    statusDeveloping:'Developing',
+    gainedSources:   'Developing \u00B7 +{n}',
+    comparedWith:    'Changes measured against {date}',
+    droppedHeading:  'Off the briefing since {date}',
+    archive:         'Archive',
+    archiveOlder:    'Older',
+    archiveNewer:    'Newer',
+    archiveToday:    'Today',
+    archiveViewing:  'Archived briefing \u00B7 {date}',
+    archiveStories:  'Top stories on {date}',
+    archiveMissing:  'No briefing was archived for {date}.',
+    archiveHint:     'The archive keeps each day\u2019s briefing and its top stories, not the full feed.',
     singleSource:    'Single-source report',
     alsoReported:    'Also reported by',
+    runningFor:      'running {n}h, first filed {from}',
+    reportCount:     '{n} reports',
+    reportCountOne:  '{n} report',
     headlines:       'Headlines',
     latest:          'Latest',
     backToTop:       'Back to top',
@@ -94,6 +127,7 @@ const STRINGS = {
     unknownSource:   'Unknown',
     shownOfTotal:    '{n} / {total} shown',
     endOfFeed:       'End of feed \u00B7 {n} shown',
+    endOfTop:        'That is the day \u00B7 top {n} stories \u00B7 everything else in',
     emptyTitle:      'Nothing here yet',
     emptySearch:     'No headlines match \u201C{query}\u201D. Widen the term or clear the filter.',
     emptySource:     'This source has published nothing in the retained window. Pick another source or region.',
@@ -131,7 +165,7 @@ const STRINGS = {
     filterBySource:  'উৎস অনুযায়ী ছাঁকুন',
     allSources:      'সব উৎস',
     briefing:        'সারসংক্ষেপ',
-    briefingBy:      'নিচের শিরোনামগুলো থেকে ক্লদের লেখা',
+    briefingBy:      'ক্লদের লেখা',
     whatHappened:    'যা ঘটেছে',
     whyItMatters:    'কেন গুরুত্বপূর্ণ',
     whatToWatch:     'যা লক্ষ্য রাখবেন',
@@ -143,8 +177,26 @@ const STRINGS = {
     orderTop:        'প্রধান খবর',
     orderLatest:     'সর্বশেষ',
     coveredBy:       '{n}টি উৎসে প্রকাশিত',
+    sourceCount:     '{n}টি উৎস',
+    sourceCountParen:'({n}টি উৎস)',
+    statusNew:       'নতুন',
+    statusDeveloping:'অগ্রগতি',
+    gainedSources:   'অগ্রগতি \u00B7 +{n}',
+    comparedWith:    '{date} তারিখের সঙ্গে তুলনা',
+    droppedHeading:  '{date} থেকে সারসংক্ষেপের বাইরে',
+    archive:         'আর্কাইভ',
+    archiveOlder:    'আগের',
+    archiveNewer:    'পরের',
+    archiveToday:    'আজ',
+    archiveViewing:  'আর্কাইভ করা সারসংক্ষেপ \u00B7 {date}',
+    archiveStories:  '{date} তারিখের প্রধান খবর',
+    archiveMissing:  '{date} তারিখের জন্য কোনো সারসংক্ষেপ সংরক্ষিত হয়নি।',
+    archiveHint:     'আর্কাইভে প্রতিদিনের সারসংক্ষেপ ও প্রধান খবর থাকে, পুরো ফিড নয়।',
     singleSource:    'একটি উৎসের খবর',
     alsoReported:    'আরও প্রকাশ করেছে',
+    runningFor:      '{n} ঘণ্টা ধরে, প্রথম প্রকাশ {from}',
+    reportCount:     '{n}টি প্রতিবেদন',
+    reportCountOne:  '{n}টি প্রতিবেদন',
     headlines:       'শিরোনাম',
     latest:          'সর্বশেষ',
     backToTop:       'উপরে ফিরুন',
@@ -161,6 +213,7 @@ const STRINGS = {
     unknownSource:   'অজানা',
     shownOfTotal:    '{n} / {total} দেখানো হয়েছে',
     endOfFeed:       'ফিডের শেষ \u00B7 {n}টি দেখানো হয়েছে',
+    endOfTop:        'আজকের খবর শেষ \u00B7 শীর্ষ {n}টি \u00B7 বাকি সব দেখুন',
     emptyTitle:      'এখানে এখনও কিছু নেই',
     emptySearch:     '\u201C{query}\u201D-এর সঙ্গে কোনো শিরোনাম মেলেনি। শব্দটি বড় করুন বা ছাঁকনি মুছুন।',
     emptySource:     'এই উৎস সংরক্ষিত সময়সীমার মধ্যে কিছু প্রকাশ করেনি। অন্য উৎস বা অঞ্চল বেছে নিন।',
@@ -418,6 +471,7 @@ function applyLanguage() {
 
   applyThemeLabel();
   applyOrderSwitch();
+  applyArchiveChrome();
   applyRegionChrome();
   renderStatus();
   document.getElementById('refresh-label').textContent = t(loading ? 'fetching' : 'refresh');
@@ -426,6 +480,18 @@ function applyLanguage() {
   renderArticles();
   showHeadlines(allArticles);
   renderSummary();
+}
+
+// An archive date is a plain YYYY-MM-DD, not an instant: parsed as UTC and
+// rendered without a time, so "13 September" does not become the 12th for a
+// reader west of Greenwich.
+function formatDay(iso) {
+  const d = new Date(String(iso) + 'T00:00:00Z');
+  if (Number.isNaN(d.getTime())) return String(iso);
+  // The year is not optional here. An archive that can hold a hundred and
+  // twenty days spans a new year, and "1 January" alone names two days.
+  return d.toLocaleDateString(LOCALE[langMode],
+    { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 }
 
 // hour12 is forced off: bn-BD otherwise renders a 12-hour clock with a Latin
@@ -461,6 +527,12 @@ function switchRegion(regionId, el) {
 
   activeFilter = 'all';
   clearSearch();
+  // A date archived for one region need not exist for another, and silently
+  // showing a different day under a new flag would be the worst of both. The
+  // region switch returns to live.
+  viewDate = null;
+  archiveSnap = null;
+  syncLocation();
   loadData();
 }
 
@@ -553,6 +625,22 @@ function otherSources(a, story) {
   return story.sourceIds.filter(id => id !== a.sourceId);
 }
 
+// The "since yesterday" marker for a story, or null when there is nothing to
+// say. Absent status means the pipeline had no earlier snapshot to compare
+// against — which is not the same as "unchanged", and must not render as it.
+function changeChip(story) {
+  // Never in the archive: "new" means new relative to today's run, and
+  // stamping it on a day that is over would be a claim about the wrong day.
+  if (viewDate) return null;
+  if (!story || !story.status || !changedSince) return null;
+  if (story.status === 'new') return el('span', 'change-chip is-new', t('statusNew'));
+  if (story.status === 'developing') {
+    return el('span', 'change-chip is-developing',
+      story.gained ? t('gainedSources', { n: num(story.gained) }) : t('statusDeveloping'));
+  }
+  return null;   // 'continuing' is the default state and needs no badge
+}
+
 // One of the other newsrooms that covered this story, linked to its own
 // telling. Its own function so that `link` here is unambiguously this
 // member's URL, and so the safeURL check sits next to the assignment it
@@ -565,6 +653,57 @@ function sourceAnchor(member) {
   anchor.target = '_blank';
   anchor.rel = 'noopener noreferrer';
   return anchor;
+}
+
+// What the other newsrooms said, and when the story ran. Each publisher's own
+// headline rather than just its name: where two of them disagree, that
+// disagreement is visible here and nowhere else on the page.
+function storyDetail(article, story) {
+  const box = el('div', 'story-detail');
+
+  const span = storySpan(story);
+  if (span) box.appendChild(el('p', 'story-span', span));
+
+  const list = el('ul', 'story-sources');
+  (story.links || []).forEach(memberLink => {
+    const member = articleByLink[memberLink];
+    if (!member) return;
+    const row = el('li', 'story-source' + (member.link === article.link ? ' is-shown' : ''));
+    row.appendChild(el('span', 'label', sourceLabel(member)));
+    const anchor = sourceAnchor(member);
+    if (anchor) {
+      anchor.replaceChildren(document.createTextNode(pick(member, 'title') || t('untitled')));
+      if (shownLang(member) === 'bn') anchor.lang = 'bn';
+      row.appendChild(anchor);
+    } else {
+      row.appendChild(el('span', null, pick(member, 'title') || t('untitled')));
+    }
+    list.appendChild(row);
+  });
+  box.appendChild(list);
+  return box;
+}
+
+// One line of provenance above the comparison: how many reports, from how
+// many newsrooms, over how long.
+//
+// Reports and sources are counted separately because they differ and the
+// difference matters — a publisher filing three times is not three
+// newsrooms, and a list of three rows under a chip reading "2 sources" looks
+// like an error until the line above it says why.
+function storySpan(story) {
+  const reports = (story.links || []).length;
+  const sources = (story.sourceIds || []).length;
+  if (!reports) return '';
+  let line = t(reports === 1 ? 'reportCountOne' : 'reportCount', { n: num(reports) })
+    + ' \u00B7 ' + t('sourceCount', { n: num(sources) });
+  const first = Date.parse(story.first), latest = Date.parse(story.latest);
+  const hours = Math.round((latest - first) / 3600000);
+  // Omitted when everything landed within the hour: "0h" is not information.
+  if (Number.isFinite(first) && Number.isFinite(latest) && hours >= 1) {
+    line += ' \u00B7 ' + t('runningFor', { n: num(hours), from: timeAgo(story.first) || '\u2014' });
+  }
+  return line;
 }
 
 // A card used to be one big <a>. It cannot be any more: a card now carries
@@ -615,12 +754,22 @@ function cardElement(a, isFeatured, n, isSecondary) {
   // Corroboration, stated on the card rather than left for the reader to
   // notice: how many independent newsrooms carried this, and — when only one
   // did — that nobody else has confirmed it.
+  //
+  // When there are others, the count is also the way in: it opens the
+  // comparison rather than the card carrying a list of publishers nobody
+  // asked for. One control, two jobs, no extra row.
+  let detailToggle = null;
   if (others.length) {
-    label.appendChild(el('span', 'corroborated',
-      t('coveredBy', { n: num(story.sourceIds.length) })));
+    detailToggle = el('button', 'corroborated is-toggle',
+      t('sourceCount', { n: num(story.sourceIds.length) }));
+    detailToggle.type = 'button';
+    detailToggle.setAttribute('aria-expanded', 'false');
+    label.appendChild(detailToggle);
   } else if (story) {
     label.appendChild(el('span', 'single-source', t('singleSource')));
   }
+  const chip = changeChip(story);
+  if (chip) label.appendChild(chip);
   body.appendChild(label);
 
   // lang on the element, not a guess from the page: an article with no
@@ -644,20 +793,12 @@ function cardElement(a, isFeatured, n, isSecondary) {
   title.appendChild(titleLink);
   body.appendChild(title);
 
-  // The analytical line, where the pipeline bought one for this story. It is
-  // labelled because it is not the publisher's words and must never read as
-  // though it were.
-  if (story) {
-    const why = langMode === 'bn' && story.whyBn ? story.whyBn : story.why;
-    if (why) {
-      const line = el('p', 'card-why');
-      if (langMode === 'bn' && story.whyBn) line.lang = 'bn';
-      line.appendChild(el('span', 'why-label', t('whyItMatters')));
-      line.appendChild(document.createTextNode(why));
-      body.appendChild(line);
-    }
-  }
-
+  // No "why this matters" line here any more. It lived on every card for two
+  // rounds and never earned its place: the top stories already carry the
+  // analysis in the briefing above, and repeating it card by card is the
+  // per-item chrome a scanning reader is here to get past, not read. The
+  // sentence itself is still bought and stored (story.why) — it is what the
+  // briefing shows, and what a future story page would show in full.
   const descText = pick(a, 'desc');
   if (descText) {
     const desc = el('p', 'card-desc');
@@ -666,19 +807,19 @@ function cardElement(a, isFeatured, n, isSecondary) {
     body.appendChild(desc);
   }
 
-  // The other newsrooms, by name and linked to their own version. This is the
-  // difference between "5 sources" as a badge and as something a reader can
-  // check.
-  if (others.length) {
-    const list = el('div', 'card-sources');
-    list.appendChild(el('span', 'label', t('alsoReported')));
-    story.links.forEach(memberLink => {
-      const member = articleByLink[memberLink];
-      if (!member || member.sourceId === a.sourceId) return;
-      const anchor = sourceAnchor(member);
-      if (anchor) list.appendChild(anchor);
+  // The comparison, behind the count. Closed it costs nothing; open it is the
+  // thing an aggregator can do that a single masthead cannot — the same event
+  // as four newsrooms chose to word it, and when they first and last filed.
+  if (detailToggle) {
+    const detail = storyDetail(a, story);
+    detail.hidden = true;
+    detailToggle.addEventListener('click', () => {
+      const open = detail.hidden;
+      detail.hidden = !open;
+      detailToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      detailToggle.classList.toggle('is-open', open);
     });
-    if (list.childElementCount > 1) body.appendChild(list);
+    body.appendChild(detail);
   }
 
   const meta = el('div', 'card-meta');
@@ -705,6 +846,17 @@ function collapseToStories(articles) {
   });
 }
 
+// The stories the briefing has already covered, which the feed underneath
+// therefore does not repeat. Five cards restating the five items directly
+// above them was the single biggest thing standing between a reader and the
+// sixth story of the day — and the briefing headlines link straight through,
+// so nothing becomes unreachable by being left out here.
+function briefedStoryIds() {
+  const ids = new Set();
+  if (!viewDate) briefingEn.forEach(item => { if (item.id) ids.add(item.id); });
+  return ids;
+}
+
 function orderArticles(articles) {
   const byTime = (x, y) => (Date.parse(y.pubDate) || 0) - (Date.parse(x.pubDate) || 0);
   if (feedOrder === 'latest') return articles.slice().sort(byTime);
@@ -717,7 +869,61 @@ function orderArticles(articles) {
   });
 }
 
+// The archive holds headlines, not articles, so an archived day is a list and
+// not a card grid. Showing it as cards would promise art, descriptions and a
+// live source breakdown that the snapshot deliberately does not carry.
+function renderArchiveFeed() {
+  const container = document.getElementById('feed-container');
+  const stories = (archiveSnap && archiveSnap.stories) || [];
+
+  document.getElementById('article-count').textContent =
+    t(stories.length === 1 ? 'articleCountOne' : 'articleCount', { n: num(stories.length) });
+
+  if (feedObserver) feedObserver.disconnect();
+  visibleArticles = [];
+  renderedCount = 0;
+
+  // The briefing panel above already says this day has nothing archived;
+  // saying it twice, in two boxes, reads as two separate problems.
+  if (!stories.length) {
+    container.replaceChildren();
+    document.getElementById('article-count').textContent = '';
+    return;
+  }
+
+  const list = el('ol', 'archive-list');
+  stories.forEach(st => {
+    const item = el('li', 'archive-item');
+    const link = safeURL(st.lead);
+    const anchor = el('a', 'archive-headline', st.headline || t('untitled'));
+    anchor.href = link || '#';
+    if (link) { anchor.target = '_blank'; anchor.rel = 'noopener noreferrer'; }
+    item.appendChild(anchor);
+
+    const meta = el('div', 'archive-meta');
+    if (st.sourceIds && st.sourceIds.length > 1) {
+      meta.appendChild(el('span', 'corroborated', t('coveredBy', { n: num(st.sourceIds.length) })));
+    }
+    if (st.topic) meta.appendChild(el('span', 'label', st.topic));
+    if (meta.childElementCount) item.appendChild(meta);
+
+    if (st.why) {
+      const why = el('p', 'card-why');
+      why.appendChild(el('span', 'why-label', t('whyItMatters')));
+      why.appendChild(document.createTextNode(st.why));
+      item.appendChild(why);
+    }
+    list.appendChild(item);
+  });
+
+  const head = el('div', 'archive-head');
+  head.appendChild(el('span', 'label', t('archiveStories', { date: formatDay(viewDate) })));
+  container.replaceChildren(head, list);
+}
+
 function renderArticles() {
+  if (viewDate) return renderArchiveFeed();
+
   const container = document.getElementById('feed-container');
   const q = searchQuery.toLowerCase();
 
@@ -738,6 +944,20 @@ function renderArticles() {
   if (collapsing) articles = collapseToStories(articles);
   articles = orderArticles(articles);
 
+  // Only in the ranked view: under Latest the question is "what came in", and
+  // silently withholding the six most recent things because a briefing
+  // mentioned them would be answering something else.
+  if (collapsing && feedOrder === 'top') {
+    const briefed = briefedStoryIds();
+    if (briefed.size) articles = articles.filter(a => !briefed.has(a.clusterId));
+  }
+
+  // Only the ranked view is capped, and only when it is showing everything:
+  // a search or a source filter is a question the reader asked, and cutting
+  // its answer off at thirty would be answering a different one.
+  const capped = collapsing && feedOrder === 'top' && articles.length > TOP_STORIES_SHOWN;
+  if (capped) articles = articles.slice(0, TOP_STORIES_SHOWN);
+
   document.getElementById('article-count').textContent =
     t(articles.length === 1 ? 'articleCountOne' : 'articleCount', { n: num(articles.length) });
 
@@ -754,10 +974,27 @@ function renderArticles() {
   // thousands of articles, and rendering them all makes every subsequent
   // repaint (theme switch, filtering, scrolling) crawl.
   visibleArticles = articles;
-  // The lead is the top-ranked story that has a picture to lead with, and only
-  // in the ordering where "top" means anything. Under "Latest" the first card
-  // is merely the newest, which is not a lead and is not badged as one.
-  featuredIndex = (collapsing && feedOrder === 'top') ? articles.findIndex(a => a.img) : -1;
+  feedIsCapped = capped;
+  // The lead is the top-ranked story, full stop — index 0, not "whichever
+  // story happens to have a picture". Searching forward for the first
+  // image-bearing story used to pick the *second* story when the top one
+  // had none: the featured card carries grid-column:1/-1, so CSS Grid
+  // pushed it to a new row rather than letting it share row one with the
+  // card ahead of it, leaving row one a single narrow card followed by
+  // empty columns and a wide gap before the sidebar. A top story with no
+  // image gets the same placeholder every other image-less card gets — it
+  // is a first-class fallback everywhere else on this page, and the hero
+  // slot is no exception, let alone one that breaks the grid.
+  //
+  // Only in the ordering where "top" means anything: under "Latest" the
+  // first card is merely the newest, which is not a lead and is not badged
+  // as one. And not at all when a briefing is up: the briefing has already
+  // taken the day's top stories, so the first card in the feed is the sixth
+  // most important thing that happened. Giving that the largest box on the
+  // page, under a badge reading "Lead story", is the page contradicting
+  // itself.
+  const briefingLeads = !viewDate && briefingEn.length > 0;
+  featuredIndex = (collapsing && feedOrder === 'top' && !briefingLeads && articles.length) ? 0 : -1;
   renderedCount = 0;
 
   const grid = el('div', 'grid');
@@ -793,8 +1030,19 @@ function appendBatch() {
 
   if (renderedCount >= visibleArticles.length) {
     const sentinel = document.getElementById('feed-sentinel');
-    if (sentinel) sentinel.replaceChildren(
-      el('span', 'label', t('endOfFeed', { n: num(visibleArticles.length) })));
+    if (sentinel) {
+      const end = el('span', 'label', feedIsCapped
+        ? t('endOfTop', { n: num(visibleArticles.length) })
+        : t('endOfFeed', { n: num(visibleArticles.length) }));
+      if (feedIsCapped) {
+        const more = el('button', 'link-button', t('orderLatest'));
+        more.type = 'button';
+        more.addEventListener('click', () => setFeedOrder('latest'));
+        sentinel.replaceChildren(end, more);
+      } else {
+        sentinel.replaceChildren(end);
+      }
+    }
     if (feedObserver) feedObserver.disconnect();
   }
 }
@@ -832,20 +1080,26 @@ function notice(className, heading, body) {
   return box;
 }
 
-function showPageSummary(data) {
-  summaryEn  = data.summary   || '';
-  summaryBn  = data.summaryBn || '';
-  briefingEn = Array.isArray(data.briefing)   ? data.briefing   : [];
-  briefingBn = Array.isArray(data.briefingBn) ? data.briefingBn : [];
-  renderSummary();
-}
-
 // The briefing in the selected language, falling back item by item rather
 // than all or nothing: a Bangla translation that has not landed yet shows the
 // English briefing instead of no briefing.
 function briefingItems() {
-  const bn = langMode === 'bn' && briefingBn.length === briefingEn.length;
-  return { items: bn ? briefingBn : briefingEn, lang: bn ? 'bn' : 'en' };
+  const en = viewDate ? ((archiveSnap && archiveSnap.briefing) || []) : briefingEn;
+  const alt = viewDate ? ((archiveSnap && archiveSnap.briefingBn) || []) : briefingBn;
+  const bn = langMode === 'bn' && alt.length === en.length && en.length > 0;
+  return { items: bn ? alt : en, lang: bn ? 'bn' : 'en' };
+}
+
+// A briefing item's story, from whichever set is being shown. In archive mode
+// the live story map describes today and would put today's source count on a
+// headline from a week ago.
+function storyForItem(id) {
+  if (!id) return null;
+  if (viewDate) {
+    const stories = (archiveSnap && archiveSnap.stories) || [];
+    return stories.find(st => st.id === id) || null;
+  }
+  return storyById[id] || null;
 }
 
 // One briefing item: the headline, and underneath it either the consequence
@@ -859,27 +1113,48 @@ function briefItemElement(item, n, full, itemLang) {
   if (itemLang === 'bn') wrap.lang = 'bn';
   wrap.dataset.n = String(n).padStart(2, '0');
 
-  const head = el('h3', 'brief-headline', item.headline);
+  // Headline and its metadata share one line. A source count and a
+  // "developing" marker are four words between them; giving them a row of
+  // their own cost more vertical space than the headline they describe, and
+  // the briefing has to fit in a glance or it is not a briefing.
+  const head = el('h3', 'brief-headline');
+  const story = storyForItem(item.id);
+  // The headline is the way in. Until it was a link, the briefing was a thing
+  // you read and then went looking for underneath — which is exactly the
+  // duplication that made the page twice as long as it needed to be.
+  const link = story && safeURL(story.lead);
+  if (link) {
+    const anchor = el('a', 'brief-link', item.headline);
+    anchor.href = link;
+    anchor.target = '_blank';
+    anchor.rel = 'noopener noreferrer';
+    head.appendChild(anchor);
+  } else {
+    head.appendChild(document.createTextNode(item.headline));
+  }
+  if (story && story.sourceIds && story.sourceIds.length > 1) {
+    head.appendChild(el('span', 'brief-sources', t('sourceCountParen', { n: num(story.sourceIds.length) })));
+  }
+  const chip = changeChip(story);
+  if (chip) head.appendChild(chip);
   wrap.appendChild(head);
 
-  // The story behind the item, when it is one the data file published a
-  // record for: the briefing says four newsrooms reported this, and the
-  // reader can see which four in the feed below.
-  const story = storyById[item.id];
-  if (story && story.sourceIds && story.sourceIds.length > 1) {
-    wrap.appendChild(el('span', 'brief-sources', t('coveredBy', { n: num(story.sourceIds.length) })));
+  // Compact is one sentence and no label: this is the briefing, every line in
+  // it is why the story matters, and repeating that above each one is a row
+  // of chrome per item. The labels come back in the full view, where there
+  // are three different questions to tell apart.
+  if (!full) {
+    if (item.why) wrap.appendChild(el('p', 'brief-why', item.why));
+    return wrap;
   }
 
-  const rows = full
-    ? [[t('whatHappened'), item.what], [t('whyItMatters'), item.why], [t('whatToWatch'), item.watch]]
-    : [[t('whyItMatters'), item.why]];
-
   const dl = el('dl', 'brief-lines');
-  rows.forEach(([label, text]) => {
-    if (!text) return;
-    dl.appendChild(el('dt', null, label));
-    dl.appendChild(el('dd', null, text));
-  });
+  [[t('whatHappened'), item.what], [t('whyItMatters'), item.why], [t('whatToWatch'), item.watch]]
+    .forEach(([label, text]) => {
+      if (!text) return;
+      dl.appendChild(el('dt', null, label));
+      dl.appendChild(el('dd', null, text));
+    });
   wrap.appendChild(dl);
   return wrap;
 }
@@ -890,6 +1165,20 @@ function renderSummary() {
   const toggle = document.getElementById('summary-toggle');
   const byline = document.getElementById('brief-byline');
   const { items, lang: itemLang } = briefingItems();
+
+  // A day with no snapshot is a fact about the archive, not a failure to
+  // load: the pipeline writes no snapshot for a run that had no briefing.
+  if (viewDate && !items.length) {
+    body.classList.remove('brief-items', 'clamped');
+    body.replaceChildren(notice('notice', t('archiveMissing', { date: formatDay(viewDate) }), t('archiveHint')));
+    toggle.hidden = true;
+    byline.textContent = t('archiveViewing', { date: formatDay(viewDate) });
+    byline.hidden = false;
+    document.getElementById('brief-change').hidden = true;
+    box.hidden = false;
+    renderFacts();
+    return;
+  }
 
   if (items.length) {
     body.removeAttribute('lang');
@@ -902,32 +1191,46 @@ function renderSummary() {
     toggle.setAttribute('aria-expanded', briefFull ? 'true' : 'false');
     toggle.classList.add('brief-depth');
     toggle.hidden = false;
-    byline.textContent = t('briefingBy');
+    byline.textContent = viewDate ? t('archiveViewing', { date: formatDay(viewDate) }) : t('briefingBy');
     byline.hidden = false;
     box.hidden = false;
+    renderChangeNote();
     renderFacts();
     return;
   }
 
-  // No briefing in the data file. That is the shape every file had before the
-  // briefing existed, and the shape a run that could not reach the model
-  // leaves behind, so the prose summary stays a first-class fallback rather
-  // than a migration step to be deleted later.
-  const isBn = langMode === 'bn' && summaryBn;
-  const text = isBn ? summaryBn : summaryEn;
-  if (!text) { box.hidden = true; return; }
+  // Nothing to show: no briefing has ever been generated for this region
+  // (no API key, or every attempt has failed so far). Hides the whole panel
+  // rather than rendering an empty one.
+  box.hidden = true;
+}
 
-  body.classList.remove('brief-items');
-  body.replaceChildren(document.createTextNode(text));
-  if (isBn) body.setAttribute('lang', 'bn'); else body.removeAttribute('lang');
-  body.classList.add('clamped');
-  toggle.textContent = t('readMore');
-  toggle.setAttribute('aria-expanded', 'false');
-  toggle.classList.remove('brief-depth');
-  toggle.hidden = false;
-  byline.hidden = true;
-  box.hidden = false;
-  renderFacts();
+// What the markers mean, said once rather than implied on every badge. A
+// "New" chip with no stated baseline is a claim the reader cannot check, and
+// the baseline is not always yesterday — a region whose archive has a gap
+// compares against the last day it has.
+function renderChangeNote() {
+  const note = document.getElementById('brief-change');
+  // Only in the full view. What the markers are measured against is something
+  // a reader checks once, not something they need re-reading every morning
+  // above the fold — and the chips themselves are the part worth scanning.
+  if (viewDate || !changedSince || !briefFull) { note.hidden = true; note.replaceChildren(); return; }
+
+  const frag = document.createDocumentFragment();
+  frag.appendChild(el('span', 'label', t('comparedWith', { date: formatDay(changedSince) })));
+
+  // The other half of "what changed": what was on that day's briefing and is
+  // not on today's. Headlines only, and not links — they are the archive's
+  // wording from a day that has moved on, not today's coverage.
+  if (droppedItems.length) {
+    const list = el('ul', 'dropped-list');
+    droppedItems.slice(0, 4).forEach(d => list.appendChild(el('li', null, d.headline)));
+    frag.appendChild(el('span', 'label dropped-heading',
+      t('droppedHeading', { date: formatDay(changedSince) })));
+    frag.appendChild(list);
+  }
+  note.replaceChildren(frag);
+  note.hidden = false;
 }
 
 // Fills the space the 68ch measure leaves beside the prose, and puts the
@@ -950,17 +1253,12 @@ function renderFacts() {
   document.getElementById('brief-facts').replaceChildren(facts);
 }
 
+// The panel is hidden entirely whenever there is no briefing to show (see
+// renderSummary), so this toggle only ever runs with items in hand — there
+// is no second, prose-summary mode left to branch on.
 function toggleSummary() {
-  if (briefingItems().items.length) {
-    briefFull = !briefFull;
-    renderSummary();
-    return;
-  }
-  const body = document.getElementById('page-summary-text');
-  const toggle = document.getElementById('summary-toggle');
-  const clamped = body.classList.toggle('clamped');
-  toggle.textContent = t(clamped ? 'readMore' : 'showLess');
-  toggle.setAttribute('aria-expanded', clamped ? 'false' : 'true');
+  briefFull = !briefFull;
+  renderSummary();
 }
 
 function showHeadlines(articles) {
@@ -981,6 +1279,235 @@ function showHeadlines(articles) {
   list.replaceChildren(frag);
 }
 
+/* ── Archive ──────────────────────────────────────────────────────────────
+   Browsing it is a SQL query against the database already sitting in
+   memory, not a separate fetch — the whole point of loading the region as
+   one file is that every day within the retention window is already there.
+   loadRegionDb populates archiveDates as part of opening the database; this
+   module only reads that state back. */
+
+// Today's own snapshot is excluded from the navigation. It exists — the run
+// writes it — but the live view already shows that day, and an "Older" button
+// that lands on the same date the page is already showing reads as a bug. A
+// link straight to today's date still opens it; only the stepping skips it.
+function daysForRegion() {
+  const today = new Date().toISOString().slice(0, 10);
+  return archiveDates.filter(d => d !== today);
+}
+
+// The address bar is the share link. A dated briefing someone can send to
+// someone else has to survive being pasted, so the date and region live in
+// the URL rather than only in memory.
+function syncLocation() {
+  const params = new URLSearchParams();
+  params.set('region', activeRegion);
+  if (viewDate) params.set('date', viewDate);
+  const url = window.location.pathname + '?' + params.toString();
+  window.history.replaceState({}, '', url);
+}
+
+function readLocation() {
+  const params = new URLSearchParams(window.location.search);
+  const region = params.get('region');
+  if (region && REGION_CONFIG[region]) activeRegion = region;
+  const date = params.get('date');
+  if (date && /^\d{4}-\d{2}-\d{2}$/.test(date)) viewDate = date;
+}
+
+function queryArchiveSnapshot(date) {
+  const rows = query('SELECT * FROM snapshot_stories WHERE date = ? ORDER BY position', [date]);
+  if (!rows.length) return null;
+  const briefing = queryBriefingFor(date);
+  return {
+    date, briefing: briefing.en, briefingBn: briefing.bn.length ? briefing.bn : null,
+    stories: rows.map(r => ({
+      id: r.story_id, headline: plainText(r.headline), lead: r.lead_link, size: r.size,
+      sourceIds: JSON.parse(r.source_ids), topic: r.topic, score: r.score,
+      why: r.why, whyBn: r.why_bn
+    }))
+  };
+}
+
+// No network at all: the whole region's database, history included, is
+// already open in memory once loadRegionDb has run — opening a past day is a
+// different query against the same file, not a different file.
+function showDate(date) {
+  viewDate = date || null;
+  archiveSnap = viewDate ? queryArchiveSnapshot(viewDate) : null;
+  syncLocation();
+  applyArchiveChrome();
+  renderSummary();
+  renderArticles();
+}
+
+// One class on <body> rather than a dozen hidden flags: the controls that
+// describe live data — the source chips, the ordering — have nothing to say
+// about a day that is over, and CSS is where "this control does not apply
+// here" belongs.
+function applyArchiveChrome() {
+  document.body.classList.toggle('archive-mode', !!viewDate);
+
+  const nav = document.getElementById('archive-nav');
+  const days = daysForRegion();
+  if (!days.length) { nav.hidden = true; return; }
+  nav.hidden = false;
+
+  // days is newest first, so "older" is the next index along and "newer" is
+  // the one before. With no date selected we are on today, which sits before
+  // every archived day.
+  const at = viewDate ? days.indexOf(viewDate) : -1;
+  const older = at === -1 ? days[0] : days[at + 1];
+  const newer = at <= 0 ? null : days[at - 1];
+
+  const olderBtn = document.getElementById('archive-older');
+  const newerBtn = document.getElementById('archive-newer');
+  const todayBtn = document.getElementById('archive-today');
+  olderBtn.textContent = t('archiveOlder');
+  newerBtn.textContent = t('archiveNewer');
+  todayBtn.textContent = t('archiveToday');
+  olderBtn.disabled = !older;
+  newerBtn.disabled = !newer;
+  todayBtn.disabled = !viewDate;
+  olderBtn.dataset.date = older || '';
+  newerBtn.dataset.date = newer || '';
+}
+
+/* ── Database ──────────────────────────────────────────────────────────────
+   Everything the page reads — today's articles, every story, every day's
+   briefing, and the full history back to the retention window — lives in one
+   file per region, fetched whole and queried client-side with sql.js. Making
+   it work is one contract: whatever Node's own node:sqlite wrote, this has to
+   open and read back exactly, with no export step and nothing kept in sync
+   by hand between the write side and this one. */
+
+// Loaded once; every region switch reuses the same wasm module and only
+// fetches a new database file.
+async function ensureSqlJs() {
+  if (SQL) return SQL;
+  // locateFile's `name` argument is whatever the glue file's own build
+  // hardcodes (sql-wasm.wasm, unversioned) — not the versioned filename it
+  // itself shipped as. Naming the wasm file explicitly here, rather than
+  // trusting that argument, is what keeps an upgrade to a newer sql.js from
+  // silently breaking on a filename this code never controlled.
+  SQL = await initSqlJs({ locateFile: () => 'vendor/sql-wasm-1.13.0.wasm' });
+  return SQL;
+}
+
+// sql.js returns one {columns, values} result per statement (or none, for a
+// query that matched nothing) rather than row objects — this is the one
+// place that shape is dealt with, so every query site below reads like a
+// normal array of rows.
+function rowsOf(result) {
+  const set = result && result[0];
+  if (!set) return [];
+  return set.values.map(row => {
+    const obj = {};
+    set.columns.forEach((col, i) => { obj[col] = row[i]; });
+    return obj;
+  });
+}
+
+function query(sql, params) {
+  return rowsOf(dbHandle.exec(sql, params));
+}
+
+// Mirrors lib/db.js's own readArticles exactly — same rule, reimplemented
+// because this half runs in the browser and that half runs in Node, and
+// neither can require the other. Exactly one translation direction is ever
+// relevant for a given article; translate_failed marks only that one.
+function hydrateArticle(row, sourceMeta) {
+  const meta = sourceMeta[row.source_id] || { name: row.source_id, color: '#666' };
+  const a = {
+    link: row.link, title: plainText(row.title), desc: plainText(row.desc),
+    pubDate: row.pub_date, img: row.img || null, lang: row.lang,
+    sourceId: row.source_id, sourceName: meta.name, sourceColor: meta.color
+  };
+  if (row.story_id != null) a.clusterId = row.story_id;
+  if (row.score != null) a.score = row.score;
+  if (row.topic != null) a.topic = row.topic;
+  const wantEn = row.lang === 'bn';
+  assignTranslated(a, 'titleEn', row.title_en, wantEn && row.translate_failed);
+  assignTranslated(a, 'descEn', row.desc_en, wantEn && row.translate_failed);
+  assignTranslated(a, 'titleBn', row.title_bn, !wantEn && row.translate_failed);
+  assignTranslated(a, 'descBn', row.desc_bn, !wantEn && row.translate_failed);
+  return a;
+}
+function assignTranslated(article, key, value, failed) {
+  if (value != null) { article[key] = plainText(value); return; }
+  if (failed) { article[key] = false; return; }
+}
+
+// A story, in the shape cardElement/briefItemElement/storyDetail already
+// expect — the same shape the old JSON's data.stories[] carried. `links` and
+// `sourceIds` are grouped from the article rows rather than queried
+// separately: a story's membership is already fully described by
+// articles.story_id, so asking the same question twice would only be a
+// second place for the two answers to disagree.
+function buildStoryMaps(storyRows, articles) {
+  const byId = {};
+  storyRows.forEach(r => {
+    byId[r.id] = {
+      id: r.id, topic: r.topic, score: r.score, first: r.first_date, latest: r.latest_date,
+      why: r.why || null, whyBn: r.why_bn || null, status: r.status || null,
+      gained: r.gained || null, links: [], sourceIds: []
+    };
+  });
+  // Newest first, matching how allArticles is already ordered: members[0]
+  // — the lead — is a story's freshest telling.
+  articles.forEach(a => {
+    const st = a.clusterId && byId[a.clusterId];
+    if (!st) return;
+    st.links.push(a.link);
+    if (!st.sourceIds.includes(a.sourceId)) st.sourceIds.push(a.sourceId);
+  });
+  storyById = {};
+  storyByLead = {};
+  Object.keys(byId).forEach(id => {
+    const st = byId[id];
+    if (!st.links.length) return;   // a story row with no live member: skip
+    st.lead = st.links[0];
+    st.size = st.links.length;
+    storyById[id] = st;
+    storyByLead[st.lead] = st;
+  });
+}
+
+// The structured briefing, whatever date it was last written under — not
+// necessarily today, exactly mirroring the fallback fetch.js itself reads
+// when deciding whether to regenerate.
+function queryLatestBriefing() {
+  const [row] = query("SELECT MAX(date) as d FROM briefing_items");
+  if (!row || !row.d) return { en: [], bn: [] };
+  return queryBriefingFor(row.d);
+}
+function queryBriefingFor(date) {
+  const rows = query('SELECT * FROM briefing_items WHERE date = ? ORDER BY position', [date]);
+  const en = rows.map(r => ({ id: r.story_id || '', headline: r.headline, what: r.what, why: r.why, watch: r.watch }));
+  const anyBn = rows.some(r => r.headline_bn);
+  const bn = anyBn ? rows.map(r => ({ id: r.story_id || '', headline: r.headline_bn, what: r.what_bn, why: r.why_bn, watch: r.watch_bn })) : [];
+  return { en, bn };
+}
+
+function queryMeta(key) {
+  const [row] = query('SELECT value FROM meta WHERE key = ?', [key]);
+  return row ? row.value : null;
+}
+
+// Fetches and opens one region's whole database, replacing whatever was
+// open before. The previous handle is freed explicitly — sql.js holds its
+// data on the wasm heap, which a garbage collector watching only the JS
+// reference has no idea how large it is.
+async function loadRegionDb(region) {
+  const SQLlib = await ensureSqlJs();
+  const base = window.location.pathname.replace(/[^/]*$/, '');
+  const res = await fetch(base + REGION_CONFIG[region].dbFile + '?t=' + Date.now());
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const bytes = new Uint8Array(await res.arrayBuffer());
+  if (dbHandle) { try { dbHandle.close(); } catch (e) {} }
+  dbHandle = new SQLlib.Database(bytes);
+  archiveDates = query('SELECT date FROM snapshots ORDER BY date DESC').map(r => r.date);
+}
+
 /* ── Data ── */
 async function loadData() {
   if (loading) return;
@@ -989,26 +1516,19 @@ async function loadData() {
   const btn = document.getElementById('refresh-btn');
   btn.disabled = true;
   document.getElementById('refresh-label').textContent = t('fetching');
-  setStatus('warn', () => t('fetching') + ' ' + REGION_CONFIG[activeRegion].dataFile);
+  setStatus('warn', () => t('fetching') + ' ' + REGION_CONFIG[activeRegion].dbFile);
   showSkeletons();
 
   try {
-    const base = window.location.pathname.replace(/[^/]*$/, '');
-    const res  = await fetch(base + REGION_CONFIG[activeRegion].dataFile + '?t=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
+    await loadRegionDb(activeRegion);
 
-    const data  = await res.json();
-    // Only the fields an article actually has: spreading a fixed set would
-    // give every article an own `titleBn` of undefined, which reads as "this
-    // article has a Bangla field" to anything using `in`.
-    allArticles = (data.articles || []).map(a => {
-      const out = { ...a };
-      for (const f of ['title', 'desc', 'titleBn', 'descBn', 'titleEn', 'descEn']) {
-        if (typeof out[f] === 'string' && out[f]) out[f] = plainText(out[f]);
-      }
-      return out;
-    });
-    allSources  = data.sources  || [];
+    const sourceRows = query('SELECT id, name, color FROM sources');
+    allSources = sourceRows;
+    const sourceMeta = {};
+    sourceRows.forEach(s => { sourceMeta[s.id] = s; });
+
+    allArticles = query('SELECT * FROM articles ORDER BY pub_date_ms DESC')
+      .map(row => hydrateArticle(row, sourceMeta));
 
     // Stories are what the feed is actually made of: one record per event,
     // naming every article covering it and which of them to link to. Indexed
@@ -1016,31 +1536,33 @@ async function loadData() {
     // the card asks "is this article its story's lead?".
     articleByLink = {};
     allArticles.forEach(a => { if (a.link) articleByLink[a.link] = a; });
+    buildStoryMaps(query('SELECT * FROM stories'), allArticles);
 
-    storyById   = {};
-    storyByLead = {};
-    (data.stories || []).forEach(st => {
-      if (!st || !st.id) return;
-      storyById[st.id] = st;
-      if (st.lead) storyByLead[st.lead] = st;
-    });
+    changedSince = queryMeta('changedSince');
+    const droppedJson = queryMeta('dropped');
+    droppedItems = droppedJson ? JSON.parse(droppedJson) : [];
 
     // Stored as a Date rather than a formatted string: the format depends on
     // the selected language, and the language can change after the load.
     // renderProvenance puts it in all three places — masthead, Latest panel and
     // the footer, which below 560px is the only one still visible.
-    fetchedAt = data.fetchedAt ? new Date(data.fetchedAt) : null;
+    const fetchedAtValue = queryMeta('fetchedAt');
+    fetchedAt = fetchedAtValue ? new Date(fetchedAtValue) : null;
     renderProvenance();
 
+    const latest = queryLatestBriefing();
+    briefingEn = latest.en;
+    briefingBn = latest.bn;
+
     showHeadlines(allArticles);
-    showPageSummary(data);
+    renderSummary();
     setStatus('ok', () => regionLabel(activeRegion));
     buildFilterBar();
     renderArticles();
 
   } catch (e) {
     const box = notice('notice error', t('errorTitle'),
-      t('errorBody', { file: REGION_CONFIG[activeRegion].dataFile, message: e.message }));
+      t('errorBody', { file: REGION_CONFIG[activeRegion].dbFile, message: e.message }));
     box.appendChild(el('p', null, t('errorHint')));
     document.getElementById('feed-container').replaceChildren(box);
     setStatus('err', () => t('errorTitle'));
@@ -1074,6 +1596,11 @@ function wireControls() {
     const btn = e.target.closest('.order-btn');
     if (btn) setFeedOrder(btn.dataset.order);
   });
+  document.getElementById('archive-nav').addEventListener('click', e => {
+    const btn = e.target.closest('button');
+    if (!btn || btn.disabled) return;
+    showDate(btn.id === 'archive-today' ? null : btn.dataset.date);
+  });
 
   // Delegated, because the chips are rebuilt on every load and the tabs are
   // the same three buttons for the life of the page.
@@ -1088,9 +1615,23 @@ function wireControls() {
 }
 
 /* ── Boot ── */
+// The URL wins over the stored region: a shared link has to open on the day
+// and the region it names, whatever this browser last looked at.
+readLocation();
 document.querySelectorAll('.tab').forEach(c => {
   c.setAttribute('aria-selected', c.dataset.region === activeRegion ? 'true' : 'false');
 });
 wireControls();
 applyLanguage();
-loadData();
+// Live data renders first even when the URL names an archived day, and the
+// archive view replaces it once its snapshot is actually in hand. Rendering
+// the archive view first would flash "nothing archived for that day" at every
+// visitor following a shared link, which is the one thing a share link must
+// not do.
+(async () => {
+  const wanted = viewDate;
+  viewDate = null;
+  await loadData();
+  if (wanted) showDate(wanted);
+  else applyArchiveChrome();
+})();

@@ -4,6 +4,7 @@ const security = require('./lib/security.js');
 const lang     = require('./lib/lang.js');
 const cluster  = require('./lib/cluster.js');
 const rank     = require('./lib/rank.js');
+const db       = require('./lib/db.js');
 
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
@@ -40,7 +41,7 @@ const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 //                                     would add image-less cards to a region
 //                                     that does not need them.
 // Retired 2026-09 for staleness: they answer 200 and parse cleanly, but their
-// newest item is already outside the 30-day retention window, so every run
+// newest item is already outside the retention window, so every run
 // fetched them and kept nothing.
 //   thedailystar.net/frontpage/rss.xml  (newest item 1514d old)
 //   thedailystar.net/bangladesh/rss.xml (newest item  207d old)
@@ -137,7 +138,13 @@ SOURCES.forEach(function(s) {
   if (!seenIds[s.id]) { seenIds[s.id] = true; UNIQUE_SOURCES.push({ id: s.id, name: s.name, color: s.color }); }
 });
 
-var THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+// One retention window for everything the database holds — articles, the
+// stories they cluster into, every day's briefing and snapshot — set once
+// in lib/db.js rather than duplicated here. The old design had two numbers
+// (30 days of articles in a JSON file, 120 of archive headlines) because a
+// flat file rewritten whole every run could not afford to keep full
+// articles that long; a database can.
+var RETENTION_MS = db.RETENTION_DAYS * 24 * 60 * 60 * 1000;
 
 // Guardrails for feed fetching. Every fetch this script makes is bounded by
 // all three: who it may talk to, how long it may wait, and how much it will
@@ -230,7 +237,7 @@ function parseDate(str) {
 function isRecent(pubDate) {
   var t = parseDate(pubDate);
   if (!t) return true;
-  return (Date.now() - t) < THIRTY_DAYS_MS;
+  return (Date.now() - t) < RETENTION_MS;
 }
 
 function resolveLocation(loc, from) {
@@ -589,8 +596,8 @@ async function generateBriefing(stories) {
       + '[{"id": "the id given above", '
       + '"headline": "a short factual headline, under 12 words", '
       + '"what": "1-2 sentences on what actually happened", '
-      + '"why": "one sentence on why it matters — the concrete consequence, for whom", '
-      + '"watch": "one sentence on what to watch next, or an empty string if there is no clear next step"}]\n\n'
+      + '"why": "one sentence on why it matters — the concrete consequence, for whom, at most 18 words", '
+      + '"watch": "one sentence on what to watch next, at most 18 words, or an empty string if there is no clear next step"}]\n\n'
       + 'Write only what the headlines support. Where they disagree, say so. Do not speculate beyond them,'
       + ' do not repeat the headline back as the "what", and do not use markdown.',
       2000
@@ -604,14 +611,32 @@ async function generateBriefing(stories) {
       console.error('Briefing rejected by validation (' + String(raw).length + ' chars)');
       return null;
     }
-    // An id the model echoed correctly links the item to its story; one it
-    // invented or dropped is filled in by position, which is the order the
-    // stories were given in.
+    // Tie each item to exactly one story, and no story to two items.
+    //
+    // A model-echoed id that is merely *valid* is not enough: the first real
+    // run came back with five items carrying four ids, the last two pointing
+    // at the same story. That is not cosmetic now that a briefing headline is
+    // a link and the feed skips what the briefing covered — one item would
+    // link to the wrong article, and a story nobody briefed would vanish from
+    // the feed. So an id is taken only if it names a story offered and not
+    // already claimed; otherwise the item falls back to its position, which
+    // is the order the stories were given in; and if that is taken too, the
+    // item keeps no id at all and renders as plain text rather than as a link
+    // to somebody else's story.
     var allowed = {};
     top.forEach(function (st) { allowed[st.id] = true; });
-    valid.forEach(function (item, i) {
-      if (!item.id || !allowed[item.id]) item.id = top[i] ? top[i].id : '';
+    var claimed = {};
+    valid.forEach(function (item) {
+      if (item.id && allowed[item.id] && !claimed[item.id]) { claimed[item.id] = true; return; }
+      item.id = '';
     });
+    valid.forEach(function (item, i) {
+      if (item.id) return;
+      var fallback = top[i] && top[i].id;
+      if (fallback && !claimed[fallback]) { item.id = fallback; claimed[fallback] = true; }
+    });
+    var unmatched = valid.filter(function (item) { return !item.id; }).length;
+    if (unmatched) console.warn('Briefing:', unmatched, 'item(s) could not be tied to a story and will not link');
     return valid;
   } catch (e) {
     console.error('Briefing failed:', e.message);
@@ -631,6 +656,8 @@ async function generateWhyLines(stories) {
       REGION.summaryPrompt
       + ' You explain consequences in one sentence. Respond ONLY with valid JSON, no markdown.',
       'For each story below, write one sentence on why it matters — the concrete consequence and for whom.'
+      + ' At most 18 words: it is read on a phone, under a headline, and a sentence that runs to three lines'
+      + ' there is a sentence nobody finishes.'
       + ' Be specific ("this raises borrowing costs for exporters"), never generic ("this is an important'
       + ' development"). Write only what the headlines support.\n\n'
       + stories.map(storyBrief).join('\n\n') + '\n\n'
@@ -701,16 +728,6 @@ async function translateWhyLines(whyMap) {
   }
 }
 
-// The plain-prose briefing the page fell back on before this one existed, and
-// still falls back on: a reader on a cached copy of app.js, and anything
-// consuming the data file for its `summary` field, gets the same account in
-// the shape it expects. Built from the briefing already written rather than
-// bought separately.
-function summaryFromBriefing(items) {
-  if (!items || !items.length) return null;
-  return security.validateSummary(items.map(function (it) { return it.what; }).join(' '));
-}
-
 // Each article carries its own text in `title`/`desc` and the other language
 // in `titleBn`/`descBn` or `titleEn`/`descEn` — whichever direction it needs.
 // Never both, so nothing is stored twice and there is no question of which
@@ -779,6 +796,113 @@ async function translateArticles(articles) {
   }
 }
 
+// A one-time bridge from the old per-region JSON file to the database. Runs
+// only when the database has never been written to and the legacy file still
+// exists — after the first successful run, this never executes again, and a
+// region that never had a JSON file (or whose database already has rows)
+// skips it entirely.
+//
+// This exists to not throw away already-purchased work: the JSON file holds
+// translations and a briefing that cost real API calls, and a fresh start
+// would re-buy all of it. It is deliberately not a full historical import —
+// the JSON file only ever held "now", never a day-by-day past — so the one
+// snapshot this writes simply establishes today as day one of database-backed
+// history, honestly, rather than inventing days that were never recorded.
+function migrateLegacyJson(dbconn, jsonFile, today) {
+  var already = dbconn.prepare('SELECT COUNT(*) n FROM articles').get().n;
+  if (already > 0) return null;
+  if (!fs.existsSync(jsonFile)) return null;
+
+  var old;
+  try { old = JSON.parse(fs.readFileSync(jsonFile, 'utf8')); }
+  catch (e) { console.warn('Could not read legacy', jsonFile, 'for migration:', e.message); return null; }
+
+  var articlesByLink = {};
+  (old.articles || []).forEach(function (a) { articlesByLink[a.link] = a; });
+
+  var stories = (old.stories || []).map(function (st) {
+    var lead = articlesByLink[st.lead];
+    return {
+      id: st.id, leadLink: st.lead, topic: st.topic, score: st.score,
+      first: st.first, latest: st.latest, memberCount: st.size,
+      why: st.why || null, whyBn: st.whyBn || null,
+      // Carried through only for building the migration's one snapshot row
+      // below; not part of the `stories` table shape itself.
+      headline: lead ? lead.title : st.lead, sourceIds: st.sourceIds
+    };
+  });
+
+  var articles = (old.articles || []).map(function (a) {
+    return {
+      link: a.link, title: a.title, desc: a.desc || '', pubDate: a.pubDate,
+      pubDateMs: parseDate(a.pubDate), img: a.img || null, lang: a.lang || 'en',
+      sourceId: a.sourceId, titleEn: a.titleEn, descEn: a.descEn,
+      titleBn: a.titleBn, descBn: a.descBn,
+      storyId: a.clusterId || null, score: a.score, topic: a.topic
+    };
+  });
+
+  db.writeRun(dbconn, {
+    fetchedAt: old.fetchedAt || new Date().toISOString(),
+    date: today,
+    sources: old.sources || [],
+    stories: stories,
+    articles: articles,
+    briefingItems: Array.isArray(old.briefing) ? old.briefing : null,
+    briefingItemsBn: Array.isArray(old.briefingBn) ? old.briefingBn : null,
+    snapshotStories: stories.map(function (st) {
+      return { id: st.id, headline: st.headline, leadLink: st.leadLink, size: st.memberCount,
+               sourceIds: st.sourceIds || [], topic: st.topic, score: st.score,
+               why: st.why, whyBn: st.whyBn };
+    })
+  });
+
+  console.log('Migrated', articles.length, 'articles and', stories.length,
+    'stories from', jsonFile, 'into the database — this runs once.');
+  return { articles: articles.length, stories: stories.length };
+}
+
+// How many stories a day's snapshot freezes. Twenty is the top of the feed,
+// not the whole feed — the point of the snapshot is the day-over-day diff
+// and the archive view, and past the top twenty a story changing is not
+// something anybody is coming back to check.
+var ARCHIVE_STORIES = 20;
+
+// What changed, per story, against the previous day's frozen snapshot.
+//
+// Returns null when there is nothing to compare against — the first run for
+// a region, or one whose snapshot history has a gap. That is the important
+// case: with no baseline every story is trivially "new", and a page that
+// announced 146 new stories on its first morning would teach its reader to
+// ignore the badge forever.
+function diffStories(topStories, previousSnapshotStories, previousDate) {
+  if (!previousSnapshotStories || !previousSnapshotStories.length) return null;
+  var before = Object.create(null);
+  previousSnapshotStories.forEach(function (st) { before[st.id] = st; });
+
+  var out = Object.create(null);
+  topStories.forEach(function (story) {
+    var was = before[story.id];
+    var size = story.members ? story.members.length : story.size;
+    if (!was) { out[story.id] = { status: 'new' }; return; }
+    var gained = size - (was.size || 0);
+    out[story.id] = gained > 0 ? { status: 'developing', gained: gained } : { status: 'continuing' };
+  });
+  return { since: previousDate, stories: out };
+}
+
+// Stories that were on the previous day's briefing and are not on today's.
+// A reader who read yesterday's briefing is owed the other half of "what
+// changed": not only what arrived, but what has dropped off.
+function droppedFromBriefing(briefingItems, previousBriefingItems) {
+  if (!previousBriefingItems || !briefingItems) return [];
+  var today = Object.create(null);
+  briefingItems.forEach(function (item) { if (item.id) today[item.id] = true; });
+  return previousBriefingItems
+    .filter(function (item) { return item.id && !today[item.id]; })
+    .map(function (item) { return { id: item.id, headline: item.headline }; });
+}
+
 async function main() {
   console.log('Running fetch for region:', REGION.label, '(' + regionArg + ')');
 
@@ -794,59 +918,68 @@ async function main() {
               POLICY.linkDomains.size, 'link domains,', POLICY.imageDomains.size, 'image domains');
   if (!ANTHROPIC_API_KEY) console.warn('Warning: ANTHROPIC_API_KEY not set — AI summary and Bangla translations will be skipped');
 
-  var dataFile = REGION.dataFile;
+  var dbFile = REGION.dataFile.replace(/\.json$/, '.sqlite');
+  var conn = db.open(dbFile);
+  var today = new Date().toISOString().slice(0, 10);
+
+  migrateLegacyJson(conn, REGION.dataFile, today);
 
   // ── Load existing data ──
   var existingArticles = [];
   var existingByLink = {};
-  var loadFile = fs.existsSync(dataFile) ? dataFile : null;
-  if (loadFile) {
-    try {
-      var existing = JSON.parse(fs.readFileSync(loadFile,'utf8'));
-      if (loadFile !== dataFile) console.log('Migrated existing articles from', loadFile);
-      var beforePrune = (existing.articles || []).length;
-      existingArticles = (existing.articles || [])
-        .filter(function(a) { return isRecent(a.pubDate); })
-        .filter(function(a) { return !inExcludedSection(a); })
+  var excludedLinks = [];   // stored articles that fail a filter this run — deleted, not just skipped
+  var sourceMeta = db.readSources(conn);
+  var loaded = db.readArticles(conn, sourceMeta);
+  var beforePrune = loaded.length;
+  existingArticles = loaded
+    .filter(function(a) { return isRecent(a.pubDate); })
+    .filter(function(a) {
+      var keep = !inExcludedSection(a)
         // Applied to stored articles too, so turning the filter on (or editing
-        // the keywords) takes effect next run instead of over 30 days.
-        .filter(function(a) { return !REGION.topicFilter || matchesTopic(a); })
-        // Same for the link and image rules. A month of articles was written
-        // before they existed, and the page renders the file rather than the
-        // feed, so anything the rules would refuse today is refused now
-        // instead of ageing out over the next thirty days.
-        .filter(function(a) { a.link = sanitizeLink(a.link); return !!a.link; })
-        .map(function(a) { a.img = sanitizeImage(a.img, a.link); return a; });
-      var pruned = beforePrune - existingArticles.length;
-      var restamped = 0;
-      existingArticles.forEach(function(a) {
-        // Articles stored before the pipeline knew about direction have no
-        // `lang`. Work it out from the text now, so a Bangla article stops
-        // being treated as English needing a Bangla translation.
-        var was = a.lang;
-        a.lang = lang.articleLang(a, SOURCE_LANG[a.sourceId]);
-        if (was !== a.lang) restamped++;
-        if (a.lang === 'bn') {
-          // These hold a "translation" of Bangla into Bangla: the model was
-          // asked to render Bangla text in Bangla and correctly returned it
-          // unchanged. The article's own text is already in `title`, so this
-          // is a duplicate, and clearing it is what queues the English
-          // translation that was never made.
-          delete a.titleBn;
-          delete a.descBn;
-        }
-        if (REGION.translate) {
-          var titleKey = lang.translatedField(a, 'title');
-          var descKey  = lang.translatedField(a, 'desc');
-          if (a[titleKey] === null) a[titleKey] = false;
-          if (a[descKey]  === null) a[descKey]  = false;
-        }
-        existingByLink[a.link] = true;
-      });
-      console.log('Loaded', existingArticles.length, 'existing articles (' + pruned + ' pruned: stale, excluded section, or off-topic)');
-      if (restamped) console.log('  Re-stamped the language of', restamped, 'stored article(s)');
-    } catch(e) { console.warn('Could not read existing ' + loadFile + ':', e.message); }
-  }
+        // the keywords) takes effect next run instead of over the retention window.
+        && (!REGION.topicFilter || matchesTopic(a));
+      if (!keep) excludedLinks.push(a.link);
+      return keep;
+    })
+    // Same for the link and image rules. A month of articles was written
+    // before they existed, and the page renders the database rather than the
+    // feed, so anything the rules would refuse today is refused now instead
+    // of ageing out over the rest of the retention window.
+    .filter(function(a) {
+      var clean = sanitizeLink(a.link);
+      if (!clean) { excludedLinks.push(a.link); return false; }
+      a.link = clean;
+      return true;
+    })
+    .map(function(a) { a.img = sanitizeImage(a.img, a.link); return a; });
+  var pruned = beforePrune - existingArticles.length;
+  var restamped = 0;
+  existingArticles.forEach(function(a) {
+    // Articles stored before the pipeline knew about direction have no
+    // `lang`. Work it out from the text now, so a Bangla article stops
+    // being treated as English needing a Bangla translation.
+    var was = a.lang;
+    a.lang = lang.articleLang(a, SOURCE_LANG[a.sourceId]);
+    if (was !== a.lang) restamped++;
+    if (a.lang === 'bn') {
+      // These hold a "translation" of Bangla into Bangla: the model was
+      // asked to render Bangla text in Bangla and correctly returned it
+      // unchanged. The article's own text is already in `title`, so this
+      // is a duplicate, and clearing it is what queues the English
+      // translation that was never made.
+      delete a.titleBn;
+      delete a.descBn;
+    }
+    if (REGION.translate) {
+      var titleKey = lang.translatedField(a, 'title');
+      var descKey  = lang.translatedField(a, 'desc');
+      if (a[titleKey] === null) a[titleKey] = false;
+      if (a[descKey]  === null) a[descKey]  = false;
+    }
+    existingByLink[a.link] = true;
+  });
+  console.log('Loaded', existingArticles.length, 'existing articles (' + pruned + ' pruned: stale, excluded section, or off-topic)');
+  if (restamped) console.log('  Re-stamped the language of', restamped, 'stored article(s)');
 
   // ── Fetch fresh articles from feeds ──
   // Fetched in parallel, but parsed and deduped in source order so a run's
@@ -951,21 +1084,26 @@ async function main() {
   var published = ranked.filter(function (st, i) { return st.members.length > 1 || i < storyCap; });
 
   // ── Briefing and "why this matters" ──
-  var stored = {};
-  try { stored = JSON.parse(fs.readFileSync(dataFile, 'utf8')) || {}; } catch (e) {}
-  var storedBriefing   = Array.isArray(stored.briefing)   ? stored.briefing   : null;
-  var storedBriefingBn = Array.isArray(stored.briefingBn) ? stored.briefingBn : null;
+  //
+  // Falls back to the most recently written briefing, whatever day it was
+  // written under — not strictly today's. A run that cannot generate one
+  // must still show the last one that worked, the same property the old
+  // single-blob JSON file had by simply not being overwritten.
+  var storedBriefingRow = db.readLatestBriefing(conn);
+  var storedBriefing   = storedBriefingRow ? storedBriefingRow.en : null;
+  var storedBriefingBn = storedBriefingRow ? storedBriefingRow.bn : null;
 
   // A story's "why this matters" is bought once and kept for as long as the
   // story is unchanged. A new publisher joining the story is a change: the
   // line was written against a smaller set of headlines and may no longer be
   // what the story is about.
   var storedWhy = Object.create(null), storedWhyBn = Object.create(null), storedSize = Object.create(null);
-  (Array.isArray(stored.stories) ? stored.stories : []).forEach(function (st) {
-    if (!st || !st.id) return;
-    if (st.why)   storedWhy[st.id]   = st.why;
-    if (st.whyBn) storedWhyBn[st.id] = st.whyBn;
-    storedSize[st.id] = st.size || 0;
+  var whyState = db.readStoryWhyState(conn);
+  Object.keys(whyState).forEach(function (id) {
+    var st = whyState[id];
+    if (st.why)   storedWhy[id]   = st.why;
+    if (st.whyBn) storedWhyBn[id] = st.whyBn;
+    storedSize[id] = st.memberCount || 0;
   });
 
   var briefing = storedBriefing, briefingBn = storedBriefingBn;
@@ -1023,41 +1161,111 @@ async function main() {
     }
   }
 
+  // ── What changed since yesterday ──
+  //
+  // Compared against the last snapshot from a day before this one, never
+  // against this morning's run: both of a day's runs write to the same date,
+  // and "unchanged since three hours ago" is true of almost everything and
+  // worth saying about nothing.
+  var previousDate = db.previousSnapshotDate(conn, today);
+  var previousSnapshotStories = db.readSnapshotStories(conn, previousDate);
+  var previousBriefing = previousDate ? db.readBriefing(conn, previousDate) : null;
+  var changes = diffStories(ranked.slice(0, ARCHIVE_STORIES), previousSnapshotStories, previousDate);
+  var dropped = droppedFromBriefing(briefing, previousBriefing ? previousBriefing.en : null);
+  if (changes) {
+    var counts = { new: 0, developing: 0, continuing: 0 };
+    Object.keys(changes.stories).forEach(function (id) { counts[changes.stories[id].status]++; });
+    console.log('Against the snapshot of', changes.since + ':', counts.new, 'new,',
+                counts.developing, 'developing,', counts.continuing, 'unchanged;',
+                dropped.length, 'off the briefing');
+  } else {
+    console.log('No earlier snapshot for', REGION.label, '— nothing to compare against this run');
+  }
+
   var stories = published.map(function (st) {
     var record = {
-      id:        st.id,
-      lead:      st.members[0].link,
-      size:      st.members.length,
-      sourceIds: st.sourceIds,
-      links:     st.members.map(function (m) { return m.link; }),
-      topic:     st.topic,
-      score:     Math.round(st.score * 1000) / 1000,
-      first:     st.members[st.members.length - 1].pubDate,
-      latest:    st.members[0].pubDate
+      id: st.id, leadLink: st.members[0].link, topic: st.topic,
+      score: Math.round(st.score * 1000) / 1000, memberCount: st.members.length,
+      first: st.members[st.members.length - 1].pubDate, latest: st.members[0].pubDate
     };
     if (whyMap[st.id])   record.why   = whyMap[st.id];
     if (whyBnMap[st.id]) record.whyBn = whyBnMap[st.id];
+    // Absent rather than 'continuing' when there is no baseline: a field that
+    // says "unchanged" and a field that says "we cannot know" must not look
+    // the same to the page.
+    var change = changes && changes.stories[st.id];
+    if (change) {
+      record.status = change.status;
+      if (change.gained) record.gained = change.gained;
+    }
     return record;
   });
 
-  var output = {
-    fetchedAt:  new Date().toISOString(),
-    // Kept, and still the plain-prose account of the day: a browser holding a
-    // cached app.js from before the briefing existed reads this field, and so
-    // does anything else consuming the file. Derived from the briefing rather
-    // than bought separately.
-    summary:    summaryFromBriefing(briefing) || stored.summary || null,
-    summaryBn:  summaryFromBriefing(briefingBn) || null,
-    briefing:   briefing || null,
-    briefingBn: briefingBn || null,
-    sources:    UNIQUE_SOURCES,
-    stories:    stories,
-    articles:   allArticles
-  };
+  var fetchedAt = new Date().toISOString();
+  var dbArticles = allArticles.map(function (a) {
+    return {
+      link: a.link, title: a.title, desc: a.desc || '', pubDate: a.pubDate,
+      pubDateMs: parseDate(a.pubDate), img: a.img || null, lang: a.lang, sourceId: a.sourceId,
+      titleEn: a.titleEn, descEn: a.descEn, titleBn: a.titleBn, descBn: a.descBn,
+      storyId: a.clusterId || null, score: a.score, topic: a.topic
+    };
+  });
 
-  fs.writeFileSync(dataFile, JSON.stringify(output, null, 2));
-  console.log('Done.', dataFile, 'now has', allArticles.length, 'articles (', freshArticles.length, 'new,', existingArticles.length, 'retained) in',
+  // ── The snapshot ──
+  //
+  // Only with a briefing in hand, fresh or reused: a snapshot whose briefing
+  // is null is a baseline that makes tomorrow's "what changed" compare
+  // against nothing, which is worse than having no snapshot for the day at
+  // all. The snapshot freezes today's story *ranking*, which is worth
+  // recording even on a day the briefing prose itself is a carried-over one.
+  var snapshotStories = briefing ? ranked.slice(0, ARCHIVE_STORIES).map(function (st) {
+    return {
+      id: st.id, headline: st.members[0].title, leadLink: st.members[0].link,
+      size: st.members.length, sourceIds: st.sourceIds, topic: st.topic,
+      score: Math.round(st.score * 1000) / 1000, why: whyMap[st.id] || null, whyBn: whyBnMap[st.id] || null
+    };
+  }) : null;
+
+  db.writeRun(conn, {
+    fetchedAt: fetchedAt,
+    date: today,
+    sources: UNIQUE_SOURCES,
+    stories: stories,
+    articles: dbArticles,
+    deleteLinks: excludedLinks,
+    briefingItems: briefing || null,
+    briefingItemsBn: briefingBn || null,
+    snapshotStories: snapshotStories,
+    changedSince: changes ? changes.since : null,
+    droppedItems: dropped
+  });
+
+  var prunedCounts = db.prune(conn, Date.now());
+  db.vacuum(conn);
+  db.closeQuietly(conn);
+
+  // The legacy file is no longer read or written once the database exists;
+  // remove it so it cannot linger as a second, increasingly stale copy of
+  // the same data, and so the publishing workflow has nothing left to stage
+  // for it.
+  if (fs.existsSync(REGION.dataFile)) fs.unlinkSync(REGION.dataFile);
+
+  console.log('Done.', dbFile, 'now has', dbArticles.length - excludedLinks.length, 'articles (',
+              freshArticles.length, 'new,', existingArticles.length, 'retained) in',
               ranked.length, 'stories,', stories.length, 'of them published with a record of their own');
+  if (snapshotStories) {
+    console.log('Archived', snapshotStories.length, 'stories for', today);
+  } else {
+    console.log('No briefing this run — no snapshot written for', today);
+  }
+  if (prunedCounts.articles || prunedCounts.stories || prunedCounts.briefings) {
+    console.log('Pruned past the', db.RETENTION_DAYS + '-day window:', prunedCounts.articles, 'article(s),',
+                prunedCounts.stories, 'orphaned stor(y/ies),', prunedCounts.briefings, 'day(s) of briefing,',
+                prunedCounts.snapshots, 'snapshot(s).');
+  }
+  if (excludedLinks.length) {
+    console.log('Removed', excludedLinks.length, 'previously-stored article(s) that no longer pass a filter.');
+  }
   if (failedSources.length) {
     console.warn('WARNING:', failedSources.length, 'of', SOURCES.length, 'feeds failed this run:');
     failedSources.forEach(function(f) { console.warn('  -', f); });
@@ -1072,11 +1280,11 @@ async function main() {
   }
 }
 
-// Importable so tools/check-feeds.js can reuse the real source list and
+// Importable so tools/check-feeds.js can reuse// Importable so tools/check-feeds.js can reuse the real source list and
 // parser rather than keeping a second copy that drifts out of date.
 module.exports = { REGIONS, POLICY, SOURCE_LANG, fetchUrl, fetchFeedUrl, parseFeed, stripTags, decodeEntities, parseDate,
-                   sanitizeLink, sanitizeImage, parseJsonBlock, summaryFromBriefing, storyBrief,
-                   BRIEFING_STORIES, WHY_STORIES, security, lang, cluster, rank };
+                   sanitizeLink, sanitizeImage, parseJsonBlock, storyBrief,
+                   BRIEFING_STORIES, WHY_STORIES, security, lang, cluster, rank, db };
 
 if (require.main === module) {
   main().catch(function(e){ console.error(e); process.exit(1); });

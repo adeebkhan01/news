@@ -69,14 +69,20 @@ test('the inline bootstrap script matches the hash the CSP allows', () => {
   );
 });
 
-test('index.html carries exactly one inline script and no other', () => {
-  // Every other script is a file, so there is exactly one hash to keep current.
-  // A second inline script would need a second hash, and without one it would
-  // simply not run.
+test('index.html carries exactly one inline script and two external ones', () => {
+  // The inline theme bootstrap needs a hash — everything else is a file, so
+  // it is the one hash to keep current. app.js is one external script;
+  // vendor/sql-wasm's glue code, loaded before it so initSqlJs exists by the
+  // time app.js runs, is the other.
   const { inline, external } = scriptTags();
   assert.equal(inline.length, 1, `expected one inline script, found ${inline.length}`);
-  assert.equal(external.length, 1, `expected one external script, found ${external.length}`);
+  assert.equal(external.length, 2, `expected two external scripts, found ${external.length}`);
   assert.match(html, /<script src="app\.js\?v=[0-9a-f]{12}" defer><\/script>/);
+  assert.match(html, /<script src="vendor\/sql-wasm-[\d.]+\.js" defer><\/script>/);
+  // Document order, not just presence: initSqlJs must exist before app.js's
+  // deferred code runs and calls it.
+  assert.ok(html.indexOf('vendor/sql-wasm') < html.indexOf('src="app.js'),
+    'sql-wasm must be loaded before app.js in document order');
 });
 
 test('app.js and app.css are requested at a URL that changes with them', () => {
@@ -152,6 +158,22 @@ test('app.js never turns feed data into markup', () => {
   assert.ok(!/\bnew Function\s*\(/.test(appJs), 'app.js calls new Function');
 });
 
+test("the vendored sql.js build does not need 'unsafe-eval'", () => {
+  // The CSP grants 'wasm-unsafe-eval' and nothing broader — that is only
+  // defensible as long as the library actually only needs the narrow
+  // grant. If a future version of the vendor file starts using eval or
+  // new Function (an asm.js fallback path does), the CSP would need
+  // 'unsafe-eval' too, and that is a real widening worth catching here
+  // rather than discovering as a silent CSP violation in production.
+  const files = fs.readdirSync('vendor').filter(f => f.endsWith('.js'));
+  assert.ok(files.length, 'no vendored .js file found');
+  for (const file of files) {
+    const src = fs.readFileSync('vendor/' + file, 'utf8');
+    assert.ok(!/\beval\s*\(/.test(src), `vendor/${file} calls eval`);
+    assert.ok(!/\bnew Function\s*\(/.test(src), `vendor/${file} calls new Function`);
+  }
+});
+
 test('app.js sets link and image URLs only through safeURL', () => {
   // Belt and braces over the fetcher's own check: the page is also served from
   // a data file someone could edit by hand.
@@ -163,4 +185,20 @@ test('app.js sets link and image URLs only through safeURL', () => {
       `a URL is assigned without going through safeURL: ${line}`
     );
   }
+});
+
+test('the featured card is always the first card in the DOM, never a later one', () => {
+  // Regression: featuredIndex used to be articles.findIndex(a => a.img),
+  // picking whichever story had a picture — which could be the *second*
+  // story if the top-ranked one had none. The featured card carries
+  // grid-column:1/-1, so CSS Grid pushed it to a new row rather than share
+  // row one with the card ahead of it, leaving row one a single narrow card
+  // followed by empty columns and a wide gap before the sidebar. The fix is
+  // that the hero slot is always index 0 (or none at all) — an image-less
+  // top story gets the same placeholder every other image-less card gets,
+  // rather than being skipped over.
+  assert.ok(!/articles\.findIndex\(a\s*=>\s*a\.img\)/.test(appJs),
+    'featuredIndex is picking a card by image again — this reintroduces the grid gap bug');
+  assert.match(appJs, /featuredIndex\s*=\s*\([^)]*\)\s*\?\s*0\s*:\s*-1/,
+    'featuredIndex should resolve to index 0 or -1, never a searched-for index');
 });
