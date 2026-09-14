@@ -143,8 +143,8 @@ const STRINGS = {
     minutesAgo:      '{n}m ago',
     hoursAgo:        '{n}h ago',
     daysAgo:         '{n}d ago',
-    siteTitle:       'Daily Digest \u2014 {region}',
-    footerRegions:   'Daily Digest \u2014 Bangladesh, Australia, Global',
+    siteTitle:       'AK\u2019s Daily Digest \u2014 {region}',
+    footerRegions:   'AK\u2019s Daily Digest \u2014 Bangladesh, Australia, Global',
     footerRefresh:   'Refreshed twice daily via GitHub Actions',
     footerLast:      'Refreshed twice daily via GitHub Actions \u2014 last {time}'
   },
@@ -227,8 +227,8 @@ const STRINGS = {
     minutesAgo:      '{n} মিনিট আগে',
     hoursAgo:        '{n} ঘণ্টা আগে',
     daysAgo:         '{n} দিন আগে',
-    siteTitle:       'ডেইলি ডাইজেস্ট \u2014 {region}',
-    footerRegions:   'ডেইলি ডাইজেস্ট \u2014 বাংলাদেশ, অস্ট্রেলিয়া, বিশ্ব',
+    siteTitle:       'AK-এর ডেইলি ডাইজেস্ট \u2014 {region}',
+    footerRegions:   'AK-এর ডেইলি ডাইজেস্ট \u2014 বাংলাদেশ, অস্ট্রেলিয়া, বিশ্ব',
     footerRefresh:   'GitHub Actions-এ দিনে দুইবার হালনাগাদ',
     footerLast:      'GitHub Actions-এ দিনে দুইবার হালনাগাদ \u2014 সর্বশেষ {time}'
   }
