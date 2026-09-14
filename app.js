@@ -230,11 +230,26 @@ applyThemeLabel();
 
 /* Status is always a glyph and a colour, never colour alone. */
 const STATUS_GLYPH = { ok: '\u25CF', warn: '\u25B2', err: '\u2715' };
-function setStatus(kind, word, detail) {
+const STATUS_WORD  = { ok: 'statusLive', warn: 'statusLoading', err: 'statusFailed' };
+
+// The kind is kept rather than the rendered words, because the language can
+// change after the status was set and the line has to be able to say the same
+// thing again in the other one. Storing "Live" would have left it in English
+// on a Bangla page — which is exactly what it did.
+let statusKind = 'warn';
+let statusDetail = () => '';
+
+function setStatus(kind, detail) {
+  statusKind = kind;
+  statusDetail = detail || (() => '');
+  renderStatus();
+}
+
+function renderStatus() {
   const strip = document.getElementById('status-strip');
-  strip.className = 'status-strip' + (kind === 'ok' ? '' : ' ' + kind);
-  strip.textContent = STATUS_GLYPH[kind] + ' ' + word;
-  document.getElementById('status-text').textContent = detail || '';
+  strip.className = 'status-strip' + (statusKind === 'ok' ? '' : ' ' + statusKind);
+  strip.textContent = STATUS_GLYPH[statusKind] + ' ' + t(STATUS_WORD[statusKind]);
+  document.getElementById('status-text').textContent = statusDetail();
 }
 
 /* ── Helpers ── */
@@ -339,6 +354,7 @@ function applyLanguage() {
 
   applyThemeLabel();
   applyRegionChrome();
+  renderStatus();
   document.getElementById('refresh-label').textContent = t(loading ? 'fetching' : 'refresh');
   renderProvenance();
   buildFilterBar();
@@ -701,7 +717,7 @@ async function loadData() {
   const btn = document.getElementById('refresh-btn');
   btn.disabled = true;
   document.getElementById('refresh-label').textContent = t('fetching');
-  setStatus('warn', t('statusLoading'), t('fetching') + ' ' + REGION_CONFIG[activeRegion].dataFile);
+  setStatus('warn', () => t('fetching') + ' ' + REGION_CONFIG[activeRegion].dataFile);
   showSkeletons();
 
   try {
@@ -731,7 +747,7 @@ async function loadData() {
 
     showHeadlines(allArticles);
     showPageSummary(data.summary, data.summaryBn);
-    setStatus('ok', t('statusLive'), regionLabel(activeRegion));
+    setStatus('ok', () => regionLabel(activeRegion));
     buildFilterBar();
     renderArticles();
 
@@ -740,7 +756,7 @@ async function loadData() {
       t('errorBody', { file: REGION_CONFIG[activeRegion].dataFile, message: e.message }));
     box.appendChild(el('p', null, t('errorHint')));
     document.getElementById('feed-container').replaceChildren(box);
-    setStatus('err', t('statusFailed'), t('errorTitle'));
+    setStatus('err', () => t('errorTitle'));
     document.getElementById('article-count').textContent = '';
   }
 
