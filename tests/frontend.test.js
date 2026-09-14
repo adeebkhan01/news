@@ -78,14 +78,28 @@ test('img-src names exactly the image domains the fetcher enforces', () => {
   // two places. Adding a source updates POLICY automatically — this is what
   // says the CSP was updated too.
   const imgSrc = cspDirectives()['img-src'];
-  const listed = new Set(
-    imgSrc.filter(v => v.startsWith('https://')).map(v => v.replace(/^https:\/\/(\*\.)?/, ''))
+
+  // A domain the fetcher trusts by registrable name is listed twice — bare and
+  // wildcarded — because a CSP source without a wildcard matches only that
+  // exact host. A multi-tenant CDN host is listed once, with no wildcard, which
+  // is the whole point of keeping the two apart.
+  const wildcards = new Set(
+    imgSrc.filter(v => v.startsWith('https://*.')).map(v => v.slice('https://*.'.length))
   );
-  const expected = new Set(POLICY.imageDomains);
+  const bare = new Set(
+    imgSrc.filter(v => v.startsWith('https://') && !v.startsWith('https://*.'))
+          .map(v => v.slice('https://'.length))
+  );
+  assert.deepEqual([...wildcards].sort(), [...POLICY.imageDomains].sort(),
+    'img-src wildcards and POLICY.imageDomains have drifted apart');
   assert.deepEqual(
-    [...listed].sort(), [...expected].sort(),
-    'img-src and IMAGE_DOMAINS/POLICY have drifted apart'
-  );
+    [...bare].sort(),
+    [...new Set([...POLICY.imageDomains, ...POLICY.imageHosts])].sort(),
+    'img-src bare hosts and POLICY have drifted apart');
+  for (const host of POLICY.imageHosts) {
+    assert.ok(!wildcards.has(host),
+      `${host} is a multi-tenant CDN host and must not be wildcarded in img-src`);
+  }
   assert.ok(imgSrc.includes("'self'"));
   assert.ok(imgSrc.includes('data:'), 'the favicon is a data: URL');
 });

@@ -137,6 +137,26 @@ test('image hosts: the CDNs the data files actually use', () => {
   assert.ok(!sec.isAllowedImageUrl('http://static.ffx.io/x.jpg', POLICY));
 });
 
+test('a multi-tenant CDN is allowed by exact host, never by domain', () => {
+  // NPR publishes art from its own tenant on Brightspot, a CMS vendor with
+  // many customers. Trusting the registrable domain would trust all of them,
+  // which is the mistake this split exists to prevent.
+  assert.ok(sec.isAllowedImageUrl('https://npr.brightspotcdn.com/dims3/x.jpg', POLICY));
+  assert.ok(!sec.isAllowedImageUrl('https://brightspotcdn.com/x.jpg', POLICY));
+  assert.ok(!sec.isAllowedImageUrl('https://someone-else.brightspotcdn.com/x.jpg', POLICY));
+  // And the reverse holds for a domain a publisher actually owns.
+  assert.ok(sec.isAllowedImageUrl('https://anything.guim.co.uk/x.jpg', POLICY));
+});
+
+test('no shared CDN is trusted by registrable domain', () => {
+  // A guess at shared infrastructure is worse than no entry: it admits every
+  // tenant. An entry earns its place by a real article using it, named exactly.
+  for (const shared of ['cloudfront.net', 'akamaized.net', 'wp.com', 'brightspotcdn.com',
+                        'amazonaws.com', 'fastly.net', 'cdn.ampproject.org']) {
+    assert.ok(!POLICY.imageDomains.has(shared), `${shared} must not be a trusted image domain`);
+  }
+});
+
 // ── What the parsers do with hostile feed content ────────────────────────
 
 test('sanitizeLink: an href a feed cannot poison', () => {
