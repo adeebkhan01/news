@@ -92,6 +92,7 @@ const STRINGS = {
     orderLatest:     'Latest',
     coveredBy:       'Covered by {n} sources',
     sourceCount:     '{n} sources',
+    sourceCountParen:'({n} sources)',
     statusNew:       'New',
     statusDeveloping:'Developing',
     gainedSources:   'Developing \u00B7 +{n}',
@@ -107,7 +108,6 @@ const STRINGS = {
     archiveHint:     'The archive keeps each day\u2019s briefing and its top stories, not the full feed.',
     singleSource:    'Single-source report',
     alsoReported:    'Also reported by',
-    whyShort:        'Why:',
     runningFor:      'running {n}h, first filed {from}',
     reportCount:     '{n} reports',
     reportCountOne:  '{n} report',
@@ -178,6 +178,7 @@ const STRINGS = {
     orderLatest:     'সর্বশেষ',
     coveredBy:       '{n}টি উৎসে প্রকাশিত',
     sourceCount:     '{n}টি উৎস',
+    sourceCountParen:'({n}টি উৎস)',
     statusNew:       'নতুন',
     statusDeveloping:'অগ্রগতি',
     gainedSources:   'অগ্রগতি \u00B7 +{n}',
@@ -193,7 +194,6 @@ const STRINGS = {
     archiveHint:     'আর্কাইভে প্রতিদিনের সারসংক্ষেপ ও প্রধান খবর থাকে, পুরো ফিড নয়।',
     singleSource:    'একটি উৎসের খবর',
     alsoReported:    'আরও প্রকাশ করেছে',
-    whyShort:        'কেন:',
     runningFor:      '{n} ঘণ্টা ধরে, প্রথম প্রকাশ {from}',
     reportCount:     '{n}টি প্রতিবেদন',
     reportCountOne:  '{n}টি প্রতিবেদন',
@@ -793,24 +793,12 @@ function cardElement(a, isFeatured, n, isSecondary) {
   title.appendChild(titleLink);
   body.appendChild(title);
 
-  // The analytical line, where the pipeline bought one for this story. It is
-  // labelled because it is not the publisher's words and must never read as
-  // though it were.
-  if (story) {
-    const why = langMode === 'bn' && story.whyBn ? story.whyBn : story.why;
-    if (why) {
-      const line = el('p', 'card-why');
-      if (langMode === 'bn' && story.whyBn) line.lang = 'bn';
-      // Inline, not a heading. The label is here because this sentence is the
-      // model's and the headline above it is the publisher's, and the two must
-      // never read as one voice — but a full row of small caps to say so cost
-      // more height than the sentence it labelled.
-      line.appendChild(el('span', 'why-label', t('whyShort')));
-      line.appendChild(document.createTextNode(why));
-      body.appendChild(line);
-    }
-  }
-
+  // No "why this matters" line here any more. It lived on every card for two
+  // rounds and never earned its place: the top stories already carry the
+  // analysis in the briefing above, and repeating it card by card is the
+  // per-item chrome a scanning reader is here to get past, not read. The
+  // sentence itself is still bought and stored (story.why) — it is what the
+  // briefing shows, and what a future story page would show in full.
   const descText = pick(a, 'desc');
   if (descText) {
     const desc = el('p', 'card-desc');
@@ -1144,7 +1132,7 @@ function briefItemElement(item, n, full, itemLang) {
     head.appendChild(document.createTextNode(item.headline));
   }
   if (story && story.sourceIds && story.sourceIds.length > 1) {
-    head.appendChild(el('span', 'brief-sources', t('sourceCount', { n: num(story.sourceIds.length) })));
+    head.appendChild(el('span', 'brief-sources', t('sourceCountParen', { n: num(story.sourceIds.length) })));
   }
   const chip = changeChip(story);
   if (chip) head.appendChild(chip);
