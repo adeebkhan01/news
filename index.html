@@ -39,7 +39,7 @@
     document.documentElement.setAttribute('data-theme', theme);
   })();
 </script>
-<link rel="stylesheet" href="app.css?v=022304367309" />
+<link rel="stylesheet" href="app.css?v=c3d09abcba40" />
 </head>
 <body>
 <a class="skip-link" href="#feed-container" data-i18n="skipToHeadlines">Skip to headlines</a>
@@ -99,33 +99,30 @@
 
 <main class="content-wrap">
   <div class="main-col">
-    <section id="page-summary" hidden class="panel" data-i18n-label="briefing" aria-label="Briefing">
-      <div class="brief-main">
-        <div class="panel-head">
-          <span class="label" data-i18n="briefing">Briefing</span>
-          <span class="label brief-byline" id="brief-byline" hidden></span>
-          <!-- Three buttons shrunk to one control: a date flanked by two
-               arrows. The date itself is the "back to today" action, doing
-               what a separate Today button did, so the reader is never
-               shown three equal-weight buttons to understand one thing —
-               where in time they are. -->
-          <div class="archive-nav" id="archive-nav" hidden>
-            <button id="archive-older" type="button" aria-label="Older">&#8249;</button>
-            <button id="archive-date" type="button"></button>
-            <button id="archive-newer" type="button" aria-label="Newer">&#8250;</button>
-          </div>
+    <section id="page-summary" hidden aria-label="Top stories">
+      <div class="section-head">
+        <h2 data-i18n="orderTop">Top stories</h2>
+        <span class="label brief-byline" id="brief-byline" hidden></span>
+        <!-- Three buttons shrunk to one control: a date flanked by two
+             arrows. The date itself is the "back to today" action, doing
+             what a separate Today button did, so the reader is never
+             shown three equal-weight buttons to understand one thing —
+             where in time they are. -->
+        <div class="archive-nav" id="archive-nav" hidden>
+          <button id="archive-older" type="button" aria-label="Older">&#8249;</button>
+          <button id="archive-date" type="button"></button>
+          <button id="archive-newer" type="button" aria-label="Newer">&#8250;</button>
         </div>
-        <div id="page-summary-text"></div>
-        <div id="brief-change" class="brief-change" hidden></div>
-        <button id="summary-toggle" aria-expanded="false" data-i18n="readMore">Read more</button>
       </div>
+      <div id="page-summary-text"></div>
+      <div id="brief-change" class="brief-change" hidden></div>
+      <button id="summary-toggle" aria-expanded="false" data-i18n="briefShowFull">Expand</button>
     </section>
 
     <div class="section-head">
       <h2 data-i18n="headlines">Headlines</h2>
       <div class="order-switch" id="order-switch" role="group" data-i18n-label="order" aria-label="Order">
         <button class="order-btn" data-order="top" aria-pressed="true" data-i18n="orderTop">Top stories</button>
-        <button class="order-btn" data-order="latest" aria-pressed="false" data-i18n="orderLatest">Latest</button>
       </div>
       <span class="status-line">
         <span class="status-strip" id="status-strip">&#9679; Live</span>
@@ -160,6 +157,6 @@
      document order, so initSqlJs is defined by the time app.js needs it.
      locateFile in app.js points this at the matching .wasm file. -->
 <script src="vendor/sql-wasm-1.13.0.js" defer></script>
-<script src="app.js?v=b954e2c03731" defer></script>
+<script src="app.js?v=e2bac7c257bb" defer></script>
 </body>
 </html>

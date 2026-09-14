@@ -78,14 +78,11 @@ const STRINGS = {
     clearSearch:     'Clear search',
     filterBySource:  'Filter by source',
     allSources:      'All sources',
-    briefing:        'Briefing',
-    briefingBy:      'Written by Claude',
     whatHappened:    'What happened',
     whyItMatters:    'Why this matters',
     whatToWatch:     'What to watch',
-    briefShowFull:   'Full briefing',
+    briefShowFull:   'Expand',
     briefShowShort:  'Compact',
-    readMore:        'Read more',
     showLess:        'Show less',
     order:           'Order',
     orderTop:        'Top stories',
@@ -161,14 +158,11 @@ const STRINGS = {
     clearSearch:     'খোঁজ মুছুন',
     filterBySource:  'উৎস অনুযায়ী ছাঁকুন',
     allSources:      'সব উৎস',
-    briefing:        'সারসংক্ষেপ',
-    briefingBy:      'ক্লদের লেখা',
     whatHappened:    'যা ঘটেছে',
     whyItMatters:    'কেন গুরুত্বপূর্ণ',
     whatToWatch:     'যা লক্ষ্য রাখবেন',
-    briefShowFull:   'পূর্ণ সারসংক্ষেপ',
+    briefShowFull:   'বিস্তারিত',
     briefShowShort:  'সংক্ষিপ্ত',
-    readMore:        'আরও পড়ুন',
     showLess:        'কম দেখান',
     order:           'ক্রম',
     orderTop:        'প্রধান খবর',
@@ -1246,8 +1240,8 @@ function renderSummary() {
     toggle.setAttribute('aria-expanded', briefFull ? 'true' : 'false');
     toggle.classList.add('brief-depth');
     toggle.hidden = false;
-    byline.textContent = viewDate ? t('archiveViewing', { date: formatDay(viewDate) }) : t('briefingBy');
-    byline.hidden = false;
+    byline.textContent = viewDate ? t('archiveViewing', { date: formatDay(viewDate) }) : '';
+    byline.hidden = !viewDate;
     box.hidden = false;
     renderChangeNote();
     return;
