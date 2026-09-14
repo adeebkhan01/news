@@ -53,7 +53,7 @@
     document.documentElement.setAttribute('data-theme', theme);
   })();
 </script>
-<link rel="stylesheet" href="app.css?v=a149dabb0d79" />
+<link rel="stylesheet" href="app.css?v=cdf301af191b" />
 </head>
 <body>
 <a class="skip-link" href="#feed-container" data-i18n="skipToHeadlines">Skip to headlines</a>
@@ -93,36 +93,6 @@
      for the reader's first glance. The source list itself is a dropdown
      now rather than an always-open row of chips: closed, it costs one line;
      open, it is the same list of sources it always was. -->
-<div class="filter-row">
-  <div class="filter-row-inner wrap">
-    <div class="search-compact">
-      <input id="search-input" type="search" autocomplete="off" placeholder="Search" data-i18n-placeholder="filterHeadlines" aria-label="Search" data-i18n-label="search" />
-      <span class="kbd-hint" id="kbd-hint">/</span>
-      <button id="search-clear" data-i18n-label="clearSearch" aria-label="Clear search">&#10005;</button>
-    </div>
-    <div class="sources-dropdown">
-      <button id="sources-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
-        <span id="sources-trigger-label" data-i18n="allSources">All sources</span><span class="caret" aria-hidden="true">&#9662;</span>
-      </button>
-      <div class="sources-menu" id="sources-menu" role="listbox" data-i18n-label="filterBySource" aria-label="Filter by source" hidden>
-        <button class="source-option active" role="option" aria-selected="true" data-source="all" data-i18n="allSources">All sources</button>
-      </div>
-    </div>
-    <!-- Same control, same menu markup, filtering the topic every article's
-         own pipeline classification already carries (lib/rank.js) instead of
-         its publisher — reusing .sources-menu/.source-option rather than a
-         parallel set of rules for what is visually the same dropdown. -->
-    <div class="sources-dropdown">
-      <button id="topics-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
-        <span id="topics-trigger-label" data-i18n="allTopics">All topics</span><span class="caret" aria-hidden="true">&#9662;</span>
-      </button>
-      <div class="sources-menu" id="topics-menu" role="listbox" data-i18n-label="filterByTopic" aria-label="Filter by topic" hidden>
-        <button class="source-option active" role="option" aria-selected="true" data-topic="all" data-i18n="allTopics">All topics</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <main class="content-wrap">
   <div class="main-col">
     <section id="page-summary" hidden aria-label="Top stories">
@@ -144,6 +114,40 @@
       <div id="brief-change" class="brief-change" hidden></div>
       <button id="summary-toggle" aria-expanded="false" data-i18n="briefShowFull">Expand all</button>
     </section>
+
+    <!-- Search and the source/topic filters are utility, not editorial
+         content — they belong beside the list they narrow (Headlines),
+         not above it competing with Top stories and Latest for the first
+         screen a visitor sees. -->
+    <div class="filter-row">
+      <div class="filter-row-inner">
+        <div class="search-compact">
+          <input id="search-input" type="search" autocomplete="off" placeholder="Search" data-i18n-placeholder="filterHeadlines" aria-label="Search" data-i18n-label="search" />
+          <span class="kbd-hint" id="kbd-hint">/</span>
+          <button id="search-clear" data-i18n-label="clearSearch" aria-label="Clear search">&#10005;</button>
+        </div>
+        <div class="sources-dropdown">
+          <button id="sources-trigger" class="dropdown-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span id="sources-trigger-label" data-i18n="allSources">All sources</span><span class="caret" aria-hidden="true">&#9662;</span>
+          </button>
+          <div class="sources-menu" id="sources-menu" role="listbox" data-i18n-label="filterBySource" aria-label="Filter by source" hidden>
+            <button class="source-option active" role="option" aria-selected="true" data-source="all" data-i18n="allSources">All sources</button>
+          </div>
+        </div>
+        <!-- Same control, same menu markup, filtering the topic every article's
+             own pipeline classification already carries (lib/rank.js) instead of
+             its publisher — reusing .sources-menu/.source-option rather than a
+             parallel set of rules for what is visually the same dropdown. -->
+        <div class="sources-dropdown">
+          <button id="topics-trigger" class="dropdown-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span id="topics-trigger-label" data-i18n="allTopics">All topics</span><span class="caret" aria-hidden="true">&#9662;</span>
+          </button>
+          <div class="sources-menu" id="topics-menu" role="listbox" data-i18n-label="filterByTopic" aria-label="Filter by topic" hidden>
+            <button class="source-option active" role="option" aria-selected="true" data-topic="all" data-i18n="allTopics">All topics</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="section-head">
       <h2 data-i18n="headlines">Headlines</h2>
