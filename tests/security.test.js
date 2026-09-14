@@ -209,22 +209,32 @@ test('sanitizeModelText: refuses markup, overlength, control characters, credent
 });
 
 test('validateTranslation: the declared shape, or nothing', () => {
+  // The keys are direction-independent: the model is asked for title/desc
+  // whichever way it is translating, and the caller files the answer under the
+  // field for the direction it asked for.
   assert.deepEqual(
-    sec.validateTranslation({ titleBn: 'শিরোনাম', descBn: 'বিবরণ' }),
-    { titleBn: 'শিরোনাম', descBn: 'বিবরণ' }
+    sec.validateTranslation({ title: 'শিরোনাম', desc: 'বিবরণ' }),
+    { title: 'শিরোনাম', desc: 'বিবরণ' }
+  );
+  assert.deepEqual(
+    sec.validateTranslation({ title: 'A headline', desc: 'A description' }),
+    { title: 'A headline', desc: 'A description' }
   );
   // An empty description is legitimate; an empty title is not a translation.
-  assert.deepEqual(sec.validateTranslation({ titleBn: 'শিরোনাম', descBn: '' }), { titleBn: 'শিরোনাম', descBn: '' });
-  assert.equal(sec.validateTranslation({ descBn: 'বিবরণ' }), null);
-  assert.equal(sec.validateTranslation({ titleBn: '<b>শিরোনাম</b>' }), null);
-  assert.equal(sec.validateTranslation({ titleBn: 123 }), null);
+  assert.deepEqual(sec.validateTranslation({ title: 'শিরোনাম', desc: '' }), { title: 'শিরোনাম', desc: '' });
+  assert.equal(sec.validateTranslation({ desc: 'বিবরণ' }), null);
+  assert.equal(sec.validateTranslation({ title: '<b>শিরোনাম</b>' }), null);
+  assert.equal(sec.validateTranslation({ title: 123 }), null);
   assert.equal(sec.validateTranslation(['শিরোনাম']), null);
   assert.equal(sec.validateTranslation('শিরোনাম'), null);
   assert.equal(sec.validateTranslation(null), null);
+  // The old one-directional shape is no longer accepted, so a stale prompt
+  // fails loudly instead of writing undefined into the data file.
+  assert.equal(sec.validateTranslation({ titleBn: 'শিরোনাম', descBn: '' }), null);
   // A description that fails on its own does not cost the title.
   assert.deepEqual(
-    sec.validateTranslation({ titleBn: 'শিরোনাম', descBn: '<script>x</script>' }),
-    { titleBn: 'শিরোনাম', descBn: '' }
+    sec.validateTranslation({ title: 'শিরোনাম', desc: '<script>x</script>' }),
+    { title: 'শিরোনাম', desc: '' }
   );
 });
 

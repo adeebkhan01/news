@@ -1,6 +1,7 @@
 const https   = require('https');
 const fs      = require('fs');
 const security = require('./lib/security.js');
+const lang     = require('./lib/lang.js');
 
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
@@ -34,7 +35,11 @@ const REGIONS = {
       // names its section, which is a far better signal than keyword matching.
       { id: 'prothomalo',       name: 'Prothom Alo',       color: '#c0392b', url: 'https://en.prothomalo.com/feed/',
         excludeSections: ['entertainment', 'photo', 'lifestyle'] },
-      { id: 'risingbd',         name: 'Rising BD',         color: '#0f7b6c', url: 'https://www.risingbd.com/rss/rss.xml' },
+      // The one Bangla-language feed on the list. Its articles are translated
+      // into English rather than out of it; `lang` is the fallback for a title
+      // too short for detection to judge.
+      { id: 'risingbd',         name: 'Rising BD',         color: '#0f7b6c', url: 'https://www.risingbd.com/rss/rss.xml',
+        lang: 'bn' },
       // English-language Bangladeshi dailies. Added unverified — the sandbox
       // can't reach them; dispatch the Feed Health workflow to confirm, and
       // retire any that come back DEAD or STALE.
@@ -166,6 +171,11 @@ function sectionOf(link) {
   var m = String(link || '').match(/^https?:\/\/[^/]+\/([^/?#]+)/i);
   return m ? m[1].toLowerCase() : '';
 }
+
+// What each source publishes in, for articles whose own title is too short for
+// detection to have an opinion.
+var SOURCE_LANG = {};
+SOURCES.forEach(function(s) { if (s.lang) SOURCE_LANG[s.id] = s.lang; });
 
 var EXCLUDED_SECTIONS = {};
 SOURCES.forEach(function(s) {
@@ -385,7 +395,7 @@ function parseRSS(xml, source) {
     if(!title) continue;
     var link = sanitizeLink(getTag(b,'link')||getTag(b,'guid')||'');
     if(!link) continue;
-    items.push({ title, link, desc: stripTags(getTag(b,'description')).slice(0,200), pubDate: getTag(b,'pubDate')||getTag(b,'dc:date')||'', img: sanitizeImage(extractImg(b), link), sourceId: source.id, sourceName: source.name, sourceColor: source.color });
+    items.push({ title, link, desc: stripTags(getTag(b,'description')).slice(0,200), pubDate: getTag(b,'pubDate')||getTag(b,'dc:date')||'', img: sanitizeImage(extractImg(b), link), lang: lang.articleLang({ title: title }, source.lang), sourceId: source.id, sourceName: source.name, sourceColor: source.color });
   }
   return items;
 }
@@ -398,7 +408,7 @@ function parseAtom(xml, source) {
     var lm=b.match(/<link[^>]+href="([^"]+)"/i)||b.match(/<link[^>]*>([^<]+)<\/link>/i);
     var link = sanitizeLink(lm?lm[1].trim():'');
     if(!link) continue;
-    items.push({ title, link, desc: stripTags(getTag(b,'summary')||getTag(b,'content')).slice(0,200), pubDate: getTag(b,'published')||getTag(b,'updated')||'', img: sanitizeImage(extractImg(b), link), sourceId: source.id, sourceName: source.name, sourceColor: source.color });
+    items.push({ title, link, desc: stripTags(getTag(b,'summary')||getTag(b,'content')).slice(0,200), pubDate: getTag(b,'published')||getTag(b,'updated')||'', img: sanitizeImage(extractImg(b), link), lang: lang.articleLang({ title: title }, source.lang), sourceId: source.id, sourceName: source.name, sourceColor: source.color });
   }
   return items;
 }
@@ -504,7 +514,9 @@ function isApiUnavailable(err) {
 async function generatePageSummary(articles) {
   if (!ANTHROPIC_API_KEY || apiUnavailable) return null;
   console.log('Generating page summary for', REGION.label, '...');
-  var titles = articles.slice(0,40).map(function(a,i){ return (i+1)+'. '+a.title; }).join('\n');
+  var titles = articles.slice(0,40)
+    .map(function(a,i){ return (i+1)+'. ' + (a.lang === 'bn' && typeof a.titleEn === 'string' ? a.titleEn : a.title); })
+    .join('\n');
   try {
     var raw = await claudeComplete(
       REGION.summaryPrompt + ' Write in plain prose, no bullet points, no markdown.',
@@ -545,20 +557,44 @@ async function translateSummary(text) {
   }
 }
 
-// Translate articles to Bangla
+// Each article carries its own text in `title`/`desc` and the other language
+// in `titleBn`/`descBn` or `titleEn`/`descEn` — whichever direction it needs.
+// Never both, so nothing is stored twice and there is no question of which
+// copy is authoritative.
+var PROMPTS = {
+  bn: {
+    system: 'You are a Bengali (Bangla) translator. Translate the given English news text to Bengali. '
+          + 'Respond ONLY with valid JSON, no markdown, no explanation.',
+    title: 'Bengali translation of the title',
+    desc:  'Bengali translation of the description (or empty string if no description)'
+  },
+  en: {
+    system: 'You are a Bengali (Bangla) to English translator. Translate the given Bengali news text to natural English. '
+          + 'Respond ONLY with valid JSON, no markdown, no explanation.',
+    title: 'English translation of the title',
+    desc:  'English translation of the description (or empty string if no description)'
+  }
+};
+
 async function translateArticles(articles) {
   if (!ANTHROPIC_API_KEY || !articles.length) return;
-  console.log('Translating', articles.length, 'articles to Bangla...');
+  var intoBangla = articles.filter(function(a) { return lang.targetLang(a) === 'bn'; }).length;
+  console.log('Translating', articles.length, 'articles (' + intoBangla + ' into Bangla, '
+              + (articles.length - intoBangla) + ' into English)...');
   var BATCH = 5;
   for (var i=0; i<articles.length; i+=BATCH) {
     await Promise.all(articles.slice(i,i+BATCH).map(async function(a) {
+      var want = lang.targetLang(a);
+      var titleKey = lang.translatedField(a, 'title');
+      var descKey  = lang.translatedField(a, 'desc');
+      var prompt = PROMPTS[want];
       try {
         var result = await claudeComplete(
-          'You are a Bengali (Bangla) translator. Translate the given English news text to Bengali. Respond ONLY with valid JSON, no markdown, no explanation.',
+          prompt.system,
           'Title: '+a.title+'\nDescription: '+(a.desc||'')+'\n\n'
           + 'Return a JSON object with exactly these fields:\n'
-          + '{"titleBn": "Bengali translation of the title", '
-          + '"descBn": "Bengali translation of the description (or empty string if no description)"}'
+          + '{"title": "' + prompt.title + '", '
+          + '"desc": "' + prompt.desc + '"}'
         );
         var clean = result.replace(/^```[a-z]*\n?/i,'').replace(/```$/,'').trim();
         var start = clean.indexOf('{');
@@ -569,15 +605,15 @@ async function translateArticles(articles) {
         // already a case this loop knows how to handle.
         var valid = security.validateTranslation(JSON.parse(clean.slice(start, end + 1)));
         if (!valid) throw new Error('Translation failed validation');
-        a.titleBn = valid.titleBn;
-        a.descBn  = valid.descBn;
+        a[titleKey] = valid.title;
+        a[descKey]  = valid.desc;
       } catch(e) {
-        console.error('  Translation failed for "' + a.title.slice(0,40) + '":', e.message);
+        console.error('  Translation into ' + want + ' failed for "' + a.title.slice(0,40) + '":', e.message);
         if (isApiUnavailable(e)) {
           apiUnavailable = true;   // leave the article untouched so it retries
         } else {
-          a.titleBn = false;       // the model answered, just not usably
-          a.descBn  = false;
+          a[titleKey] = false;     // the model answered, just not usably
+          a[descKey]  = false;
         }
       }
     }));
@@ -628,14 +664,33 @@ async function main() {
         .filter(function(a) { a.link = sanitizeLink(a.link); return !!a.link; })
         .map(function(a) { a.img = sanitizeImage(a.img, a.link); return a; });
       var pruned = beforePrune - existingArticles.length;
+      var restamped = 0;
       existingArticles.forEach(function(a) {
+        // Articles stored before the pipeline knew about direction have no
+        // `lang`. Work it out from the text now, so a Bangla article stops
+        // being treated as English needing a Bangla translation.
+        var was = a.lang;
+        a.lang = lang.articleLang(a, SOURCE_LANG[a.sourceId]);
+        if (was !== a.lang) restamped++;
+        if (a.lang === 'bn') {
+          // These hold a "translation" of Bangla into Bangla: the model was
+          // asked to render Bangla text in Bangla and correctly returned it
+          // unchanged. The article's own text is already in `title`, so this
+          // is a duplicate, and clearing it is what queues the English
+          // translation that was never made.
+          delete a.titleBn;
+          delete a.descBn;
+        }
         if (REGION.translate) {
-          if (a.titleBn === null) a.titleBn = false;
-          if (a.descBn === null)  a.descBn  = false;
+          var titleKey = lang.translatedField(a, 'title');
+          var descKey  = lang.translatedField(a, 'desc');
+          if (a[titleKey] === null) a[titleKey] = false;
+          if (a[descKey]  === null) a[descKey]  = false;
         }
         existingByLink[a.link] = true;
       });
       console.log('Loaded', existingArticles.length, 'existing articles (' + pruned + ' pruned: stale, excluded section, or off-topic)');
+      if (restamped) console.log('  Re-stamped the language of', restamped, 'stored article(s)');
     } catch(e) { console.warn('Could not read existing ' + loadFile + ':', e.message); }
   }
 
@@ -681,13 +736,15 @@ async function main() {
   await enrichImages(freshArticles);
 
   if (REGION.translate) {
+    // Which field is missing depends on which way the article needs to go, so
+    // "needs translation" is asked per article rather than by one fixed key.
     var backlog = existingArticles
-      .filter(function(a) { return a.titleBn === undefined; })
+      .filter(function(a) { return a[lang.translatedField(a, 'title')] === undefined; })
       .sort(function(a,b){ return (parseDate(b.pubDate)||0)-(parseDate(a.pubDate)||0); });
     var needsTranslation = backlog.slice(0, BACKFILL_PER_RUN);
     // Previously-failed articles used to be skipped forever, so a single API
     // outage stranded every article it touched. Drain them a batch per run.
-    var failedTranslation = existingArticles.filter(function(a) { return a.titleBn === false; });
+    var failedTranslation = existingArticles.filter(function(a) { return a[lang.translatedField(a, 'title')] === false; });
     var retrying = failedTranslation.slice(0, RETRY_PER_RUN);
     console.log(freshArticles.length, 'new articles,', backlog.length, 'existing need translation',
                 '(' + needsTranslation.length + ' this run),',
@@ -754,8 +811,8 @@ async function main() {
 
 // Importable so tools/check-feeds.js can reuse the real source list and
 // parser rather than keeping a second copy that drifts out of date.
-module.exports = { REGIONS, POLICY, fetchUrl, fetchFeedUrl, parseFeed, stripTags, decodeEntities, parseDate,
-                   sanitizeLink, sanitizeImage, security };
+module.exports = { REGIONS, POLICY, SOURCE_LANG, fetchUrl, fetchFeedUrl, parseFeed, stripTags, decodeEntities, parseDate,
+                   sanitizeLink, sanitizeImage, security, lang };
 
 if (require.main === module) {
   main().catch(function(e){ console.error(e); process.exit(1); });

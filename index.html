@@ -35,7 +35,7 @@
 <link rel="stylesheet" href="app.css" />
 </head>
 <body>
-<a class="skip-link" href="#feed-container">Skip to headlines</a>
+<a class="skip-link" href="#feed-container" data-i18n="skipToHeadlines">Skip to headlines</a>
 
 <header class="masthead">
   <div class="masthead-inner wrap">
@@ -48,7 +48,7 @@
       <button class="btn" id="theme-toggle">
         <span id="theme-label">Night</span>
       </button>
-      <button class="btn" id="lang-toggle" aria-label="Switch language" lang="bn">বাংলা</button>
+      <button class="btn" id="lang-toggle" data-i18n-label="switchLanguage" aria-label="Switch language" lang="bn">বাংলা</button>
       <button class="btn btn-primary" id="refresh-btn">
         <span id="refresh-label">Refresh</span>
       </button>
@@ -59,41 +59,41 @@
 <div class="toolbar">
   <div class="toolbar-inner wrap">
     <div class="field">
-      <span class="label" id="region-label">Region</span>
+      <span class="label" id="region-label" data-i18n="region">Region</span>
       <div class="tabs" role="tablist" aria-labelledby="region-label">
-        <button class="tab" role="tab" aria-selected="true" data-region="bd">Bangladesh</button>
-        <button class="tab" role="tab" aria-selected="false" data-region="au">Australia</button>
-        <button class="tab" role="tab" aria-selected="false" data-region="global">Global</button>
+        <button class="tab" role="tab" aria-selected="true" data-region="bd" data-i18n="regionBd">Bangladesh</button>
+        <button class="tab" role="tab" aria-selected="false" data-region="au" data-i18n="regionAu">Australia</button>
+        <button class="tab" role="tab" aria-selected="false" data-region="global" data-i18n="regionGlobal">Global</button>
       </div>
     </div>
     <div class="field search">
-      <label class="label" for="search-input">Search</label>
-      <input id="search-input" type="search" autocomplete="off" placeholder="Filter headlines" />
+      <label class="label" for="search-input" data-i18n="search">Search</label>
+      <input id="search-input" type="search" autocomplete="off" placeholder="Filter headlines" data-i18n-placeholder="filterHeadlines" />
       <span class="kbd-hint" id="kbd-hint">/</span>
-      <button id="search-clear" aria-label="Clear search">&#10005;</button>
+      <button id="search-clear" data-i18n-label="clearSearch" aria-label="Clear search">&#10005;</button>
     </div>
   </div>
 </div>
 
 <div class="filter-bar">
-  <div class="filter-bar-inner wrap" id="filter-bar" role="group" aria-label="Filter by source">
+  <div class="filter-bar-inner wrap" id="filter-bar" role="group" data-i18n-label="filterBySource" aria-label="Filter by source">
     <button class="chip active" data-source="all">All sources</button>
   </div>
 </div>
 
 <main class="content-wrap">
   <div class="main-col">
-    <section id="page-summary" hidden class="panel" aria-label="Briefing">
+    <section id="page-summary" hidden class="panel" data-i18n-label="briefing" aria-label="Briefing">
       <div class="brief-main">
-        <div class="panel-head"><span class="label">Briefing</span></div>
+        <div class="panel-head"><span class="label" data-i18n="briefing">Briefing</span></div>
         <div id="page-summary-text"></div>
-        <button id="summary-toggle" aria-expanded="false">Read more</button>
+        <button id="summary-toggle" aria-expanded="false" data-i18n="readMore">Read more</button>
       </div>
       <dl class="facts" id="brief-facts"></dl>
     </section>
 
     <div class="section-head">
-      <h2>Headlines</h2>
+      <h2 data-i18n="headlines">Headlines</h2>
       <span class="status-line">
         <span class="status-strip" id="status-strip">&#9679; Live</span>
         <span id="status-text">Loading</span>
@@ -106,7 +106,7 @@
   <aside class="sidebar">
     <div class="panel">
       <div class="panel-head">
-        <span class="label">Latest</span>
+        <span class="label" data-i18n="latest">Latest</span>
         <span class="label" id="latest-provenance"></span>
       </div>
       <ul class="headlines-list" id="headlines-list"></ul>
@@ -114,11 +114,11 @@
   </aside>
 </main>
 
-<button id="to-top" aria-label="Back to top">&#8593;</button>
+<button id="to-top" data-i18n-label="backToTop" aria-label="Back to top">&#8593;</button>
 
 <footer>
   <div class="foot-inner">
-    <span>Daily Digest — Bangladesh, Australia, Global</span>
+    <span data-i18n="footerRegions">Daily Digest — Bangladesh, Australia, Global</span>
     <span id="foot-provenance">Refreshed twice daily via GitHub Actions</span>
   </div>
 </footer>

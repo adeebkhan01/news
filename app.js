@@ -4,12 +4,12 @@ let allSources   = [];
 let activeFilter = 'all';
 let searchQuery  = '';
 let loading      = false;
-let langMode     = 'en';
+let langMode     = localStorage.getItem('news-lang') === 'bn' ? 'bn' : 'en';
 let activeRegion = localStorage.getItem('news-region') || 'bd';
 let searchTimer  = null;
 let summaryEn    = '';
 let summaryBn    = '';
-let lastFetched  = '';
+let fetchedAt    = null;   // the Date, not a formatted string: the format is language-dependent
 
 const PAGE_SIZE = 24;
 let visibleArticles = [];
@@ -21,16 +21,196 @@ let feedObserver    = null;
 // carries Bangla, not that every article in it does. A region whose backlog is
 // still draining renders untranslated articles in English either way.
 const REGION_CONFIG = {
-  bd:     { label: 'Bangladesh', mark: 'BD', dataFile: 'data-bd.json',     hasLang: true },
-  au:     { label: 'Australia',  mark: 'AU', dataFile: 'data-au.json',     hasLang: true },
-  global: { label: 'Global',     mark: 'GL', dataFile: 'data-global.json', hasLang: true }
+  bd:     { mark: 'BD', dataFile: 'data-bd.json',     hasLang: true },
+  au:     { mark: 'AU', dataFile: 'data-au.json',     hasLang: true },
+  global: { mark: 'GL', dataFile: 'data-global.json', hasLang: true }
 };
+
+/* ── Language ──────────────────────────────────────────────────────────
+   The page's own words are fixed, so they are translated once, here, and
+   cost nothing at run time. Only the articles go through the model, and
+   only once each, in whichever direction they need.
+
+   Every key must exist in both dictionaries; a test asserts it, because a
+   missing key would silently render English inside a Bangla page. */
+const STRINGS = {
+  en: {
+    skipToHeadlines: 'Skip to headlines',
+    switchLanguage:  'Switch language',
+    themeDay:        'Day',
+    themeNight:      'Night',
+    refresh:         'Refresh',
+    fetching:        'Fetching',
+    region:          'Region',
+    regionBd:        'Bangladesh',
+    regionAu:        'Australia',
+    regionGlobal:    'Global',
+    search:          'Search',
+    filterHeadlines: 'Filter headlines',
+    clearSearch:     'Clear search',
+    filterBySource:  'Filter by source',
+    allSources:      'All sources',
+    briefing:        'Briefing',
+    readMore:        'Read more',
+    showLess:        'Show less',
+    headlines:       'Headlines',
+    latest:          'Latest',
+    backToTop:       'Back to top',
+    statusLive:      'Live',
+    statusLoading:   'Loading',
+    statusFailed:    'Failed',
+    articleCount:    '{n} articles',
+    articleCountOne: '{n} article',
+    leadStory:       'Lead story',
+    readArrow:       'Read \u2192',
+    noImage:         'No image \u00B7 {source}',
+    imageUnavailable:'Image unavailable',
+    untitled:        'Untitled',
+    unknownSource:   'Unknown',
+    shownOfTotal:    '{n} / {total} shown',
+    endOfFeed:       'End of feed \u00B7 {n} shown',
+    emptyTitle:      'Nothing here yet',
+    emptySearch:     'No headlines match \u201C{query}\u201D. Widen the term or clear the filter.',
+    emptySource:     'This source has published nothing in the retained window. Pick another source or region.',
+    errorTitle:      'No data file',
+    errorBody:       '{file} did not load: {message}.',
+    errorHint:       'Run the Fetch RSS Feeds workflow in Actions, then reload.',
+    factRegion:      'Region',
+    factArticles:    'Articles',
+    factSources:     'Sources',
+    factFetched:     'Fetched',
+    fetchedAt:       'Fetched {time}',
+    justNow:         'just now',
+    minutesAgo:      '{n}m ago',
+    hoursAgo:        '{n}h ago',
+    daysAgo:         '{n}d ago',
+    siteTitle:       'Daily Digest \u2014 {region}',
+    footerRegions:   'Daily Digest \u2014 Bangladesh, Australia, Global',
+    footerRefresh:   'Refreshed twice daily via GitHub Actions',
+    footerLast:      'Refreshed twice daily via GitHub Actions \u2014 last {time}'
+  },
+  bn: {
+    skipToHeadlines: 'শিরোনামে যান',
+    switchLanguage:  'ভাষা বদলান',
+    themeDay:        'দিন',
+    themeNight:      'রাত',
+    refresh:         'রিফ্রেশ',
+    fetching:        'আনা হচ্ছে',
+    region:          'অঞ্চল',
+    regionBd:        'বাংলাদেশ',
+    regionAu:        'অস্ট্রেলিয়া',
+    regionGlobal:    'বিশ্ব',
+    search:          'খোঁজ',
+    filterHeadlines: 'শিরোনাম ছাঁকুন',
+    clearSearch:     'খোঁজ মুছুন',
+    filterBySource:  'উৎস অনুযায়ী ছাঁকুন',
+    allSources:      'সব উৎস',
+    briefing:        'সারসংক্ষেপ',
+    readMore:        'আরও পড়ুন',
+    showLess:        'কম দেখান',
+    headlines:       'শিরোনাম',
+    latest:          'সর্বশেষ',
+    backToTop:       'উপরে ফিরুন',
+    statusLive:      'সরাসরি',
+    statusLoading:   'লোড হচ্ছে',
+    statusFailed:    'ব্যর্থ',
+    articleCount:    '{n}টি নিবন্ধ',
+    articleCountOne: '{n}টি নিবন্ধ',
+    leadStory:       'প্রধান খবর',
+    readArrow:       'পড়ুন \u2192',
+    noImage:         'ছবি নেই \u00B7 {source}',
+    imageUnavailable:'ছবি পাওয়া যায়নি',
+    untitled:        'শিরোনামহীন',
+    unknownSource:   'অজানা',
+    shownOfTotal:    '{n} / {total} দেখানো হয়েছে',
+    endOfFeed:       'ফিডের শেষ \u00B7 {n}টি দেখানো হয়েছে',
+    emptyTitle:      'এখানে এখনও কিছু নেই',
+    emptySearch:     '\u201C{query}\u201D-এর সঙ্গে কোনো শিরোনাম মেলেনি। শব্দটি বড় করুন বা ছাঁকনি মুছুন।',
+    emptySource:     'এই উৎস সংরক্ষিত সময়সীমার মধ্যে কিছু প্রকাশ করেনি। অন্য উৎস বা অঞ্চল বেছে নিন।',
+    errorTitle:      'কোনো ডেটা ফাইল নেই',
+    errorBody:       '{file} লোড হয়নি: {message}।',
+    errorHint:       'Actions-এ Fetch RSS Feeds ওয়ার্কফ্লো চালান, তারপর পৃষ্ঠাটি রিলোড করুন।',
+    factRegion:      'অঞ্চল',
+    factArticles:    'নিবন্ধ',
+    factSources:     'উৎস',
+    factFetched:     'সংগৃহীত',
+    fetchedAt:       'সংগৃহীত {time}',
+    justNow:         'এইমাত্র',
+    minutesAgo:      '{n} মিনিট আগে',
+    hoursAgo:        '{n} ঘণ্টা আগে',
+    daysAgo:         '{n} দিন আগে',
+    siteTitle:       'ডেইলি ডাইজেস্ট \u2014 {region}',
+    footerRegions:   'ডেইলি ডাইজেস্ট \u2014 বাংলাদেশ, অস্ট্রেলিয়া, বিশ্ব',
+    footerRefresh:   'GitHub Actions-এ দিনে দুইবার হালনাগাদ',
+    footerLast:      'GitHub Actions-এ দিনে দুইবার হালনাগাদ \u2014 সর্বশেষ {time}'
+  }
+};
+
+// Publishers' own names, as a Bangla reader would see them in print. Kept out
+// of the data files so a rename is one edit here rather than a refetch.
+const SOURCE_NAMES_BN = {
+  dailystar: 'দ্য ডেইলি স্টার', prothomalo: 'প্রথম আলো',   risingbd: 'রাইজিংবিডি',
+  dhakatribune: 'ঢাকা ট্রিবিউন', newage: 'নিউ এজ',          unb: 'ইউএনবি',
+  abcnews: 'এবিসি নিউজ',        guardianau: 'দ্য গার্ডিয়ান অস্ট্রেলিয়া',
+  smh: 'সিডনি মর্নিং হেরাল্ড',   conversationau: 'দ্য কনভারসেশন অস্ট্রেলিয়া',
+  bbcnews: 'বিবিসি নিউজ',       aljazeera: 'আল জাজিরা',    guardian: 'দ্য গার্ডিয়ান',
+  npr: 'এনপিআর',                france24: 'ফ্রান্স ২৪',      dwnews: 'ডয়চে ভেলে',
+  cnn: 'সিএনএন'
+};
+
+const LOCALE = { en: 'en-GB', bn: 'bn-BD' };
+
+// Interpolation is {name}, and every value is substituted as plain text — the
+// result only ever reaches the page through textContent.
+function t(key, vars) {
+  let out = (STRINGS[langMode] && STRINGS[langMode][key]) || STRINGS.en[key] || key;
+  if (vars) Object.keys(vars).forEach(k => { out = out.split('{' + k + '}').join(String(vars[k])); });
+  return out;
+}
+
+// Bengali numerals when the page is in Bangla, grouped the way the locale
+// groups them.
+function num(n) {
+  try { return Number(n).toLocaleString(LOCALE[langMode]); }
+  catch (e) { return String(n); }
+}
+
+function regionLabel(id) {
+  return t(id === 'bd' ? 'regionBd' : id === 'au' ? 'regionAu' : 'regionGlobal');
+}
+
+function sourceLabel(article) {
+  if (langMode === 'bn') {
+    const bn = SOURCE_NAMES_BN[article.sourceId];
+    if (bn) return bn;
+  }
+  return article.sourceName || t('unknownSource');
+}
+
+// The article's own text, or its translation, whichever matches the selected
+// language — falling back to whatever exists rather than showing nothing.
+// `false` in a translated field means the model answered unusably.
+function pick(article, field) {
+  const own = article.lang || 'en';
+  if (langMode === own) return article[field] || '';
+  const other = article[field + (langMode === 'bn' ? 'Bn' : 'En')];
+  return (typeof other === 'string' && other) ? other : (article[field] || '');
+}
+
+// Which language pick() actually returned, which is not always the one
+// selected: a Bangla article with no English translation yet stays Bangla.
+function shownLang(article) {
+  const own = article.lang || 'en';
+  if (langMode === own) return own;
+  const other = article['title' + (langMode === 'bn' ? 'Bn' : 'En')];
+  return (typeof other === 'string' && other) ? langMode : own;
+}
 
 /* ── Theme ── */
 function applyThemeLabel() {
   // The button names what it will do, so no icon has to be invented.
   document.getElementById('theme-label').textContent =
-    document.documentElement.getAttribute('data-theme') === 'night' ? 'Day' : 'Night';
+    t(document.documentElement.getAttribute('data-theme') === 'night' ? 'themeDay' : 'themeNight');
 }
 
 function toggleTheme() {
@@ -117,25 +297,73 @@ function appendHighlighted(parent, text, query) {
 }
 
 function timeAgo(dateStr) {
-  const t = Date.parse(dateStr);
-  if (!t) return '';
-  const diff = (Date.now() - t) / 1000;
-  if (diff < 60)    return 'just now';
-  if (diff < 3600)  return Math.floor(diff / 60)    + 'm ago';
-  if (diff < 86400) return Math.floor(diff / 3600)  + 'h ago';
-  return                   Math.floor(diff / 86400) + 'd ago';
+  const at = Date.parse(dateStr);
+  if (!at) return '';
+  const diff = (Date.now() - at) / 1000;
+  if (diff < 60)    return t('justNow');
+  if (diff < 3600)  return t('minutesAgo', { n: num(Math.floor(diff / 60))    });
+  if (diff < 86400) return t('hoursAgo',   { n: num(Math.floor(diff / 3600))  });
+  return                   t('daysAgo',    { n: num(Math.floor(diff / 86400)) });
 }
 
 /* ── Language ── */
 function toggleLang() {
   langMode = langMode === 'en' ? 'bn' : 'en';
+  localStorage.setItem('news-lang', langMode);
+  applyLanguage();
+}
+
+// Everything the page says, in the selected language. Static chrome comes from
+// the markup's data-i18n keys; everything else is re-rendered, because the
+// language decides not just the words but the numerals, the date format and
+// which side of each article to show.
+function applyLanguage() {
+  document.documentElement.lang = langMode;
+
   const btn = document.getElementById('lang-toggle');
   btn.textContent = langMode === 'bn' ? 'English' : 'বাংলা';
   btn.setAttribute('lang', langMode === 'bn' ? 'en' : 'bn');
   btn.classList.toggle('bn', langMode === 'bn');
+  btn.setAttribute('aria-label', t('switchLanguage'));
+
+  document.querySelectorAll('[data-i18n]').forEach(node => {
+    node.textContent = t(node.dataset.i18n);
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(node => {
+    node.setAttribute('placeholder', t(node.dataset.i18nPlaceholder));
+  });
+  document.querySelectorAll('[data-i18n-label]').forEach(node => {
+    node.setAttribute('aria-label', t(node.dataset.i18nLabel));
+  });
+
+  applyThemeLabel();
+  applyRegionChrome();
+  document.getElementById('refresh-label').textContent = t(loading ? 'fetching' : 'refresh');
+  renderProvenance();
+  buildFilterBar();
   renderArticles();
   showHeadlines(allArticles);
   renderSummary();
+}
+
+// hour12 is forced off: bn-BD otherwise renders a 12-hour clock with a Latin
+// "AM", which belongs to neither language, and the two views disagree on the
+// same instant.
+function formatFetched() {
+  const locale = LOCALE[langMode];
+  return fetchedAt.toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit', hour12: false })
+    + ' \u00B7 ' + fetchedAt.toLocaleDateString(locale, { day: '2-digit', month: 'short' });
+}
+
+// The fetch time in three places, formatted for the selected language. Kept
+// together because they all go stale the moment the language changes.
+function renderProvenance() {
+  const when = fetchedAt ? formatFetched() : '';
+  document.getElementById('last-updated').textContent = when ? t('fetchedAt', { time: when }) : '\u2014';
+  document.getElementById('latest-provenance').textContent = when;
+  document.getElementById('foot-provenance').textContent =
+    when ? t('footerLast', { time: when }) : t('footerRefresh');
+  return when;
 }
 
 /* ── Region ── */
@@ -156,16 +384,15 @@ function switchRegion(regionId, el) {
 
 function applyRegionChrome() {
   const cfg = REGION_CONFIG[activeRegion];
-  document.getElementById('logo-edition').textContent = cfg.label;
-  document.title = 'Daily Digest — ' + cfg.label;
+  document.getElementById('logo-edition').textContent = regionLabel(activeRegion);
+  document.title = t('siteTitle', { region: regionLabel(activeRegion) });
 
   const langBtn = document.getElementById('lang-toggle');
-  langBtn.style.display = cfg.hasLang ? '' : 'none';
+  langBtn.hidden = !cfg.hasLang;
   if (!cfg.hasLang && langMode !== 'en') {
     langMode = 'en';
-    langBtn.textContent = 'বাংলা';
-    langBtn.setAttribute('lang', 'bn');
-    langBtn.classList.remove('bn');
+    localStorage.setItem('news-lang', langMode);
+    applyLanguage();
   }
 }
 
@@ -204,7 +431,7 @@ function buildFilterBar() {
   const bar = document.getElementById('filter-bar');
   bar.replaceChildren();
 
-  const allBtn = el('button', 'chip' + (activeFilter === 'all' ? ' active' : ''), 'All sources');
+  const allBtn = el('button', 'chip' + (activeFilter === 'all' ? ' active' : ''), t('allSources'));
   allBtn.dataset.source = 'all';
   bar.appendChild(allBtn);
 
@@ -213,8 +440,8 @@ function buildFilterBar() {
     if (!count) return;
     const btn = el('button', 'chip' + (activeFilter === s.id ? ' active' : ''));
     btn.dataset.source = s.id;
-    btn.appendChild(document.createTextNode(s.name));
-    btn.appendChild(el('span', 'count', String(count)));
+    btn.appendChild(document.createTextNode(sourceLabel({ sourceId: s.id, sourceName: s.name })));
+    btn.appendChild(el('span', 'count', num(count)));
     bar.appendChild(btn);
   });
 }
@@ -228,8 +455,7 @@ function setFilter(id, el) {
 
 /* ── Rendering ── */
 function cardElement(a, isFeatured, n) {
-  const isBn   = langMode === 'bn' && a.titleBn;
-  const source = a.sourceName || 'Unknown';
+  const source = sourceLabel(a);
   const link   = safeURL(a.link);
   const img    = safeURL(a.img);
 
@@ -249,37 +475,41 @@ function cardElement(a, isFeatured, n) {
     // inline handler, and this one cannot be confused with feed content.
     pic.addEventListener('error', () => {
       wrap.className = 'thumb placeholder';
-      wrap.replaceChildren(el('span', 'cap', 'Image unavailable'));
+      wrap.replaceChildren(el('span', 'cap', t('imageUnavailable')));
     }, { once: true });
     pic.src = img;
     wrap.appendChild(pic);
     card.appendChild(wrap);
   } else {
     const wrap = el('div', 'thumb placeholder');
-    wrap.appendChild(el('span', 'cap', 'No image \u00B7 ' + source));
+    wrap.appendChild(el('span', 'cap', t('noImage', { source: source })));
     card.appendChild(wrap);
   }
 
   const body = el('div', 'card-body');
-  if (isFeatured) body.appendChild(el('span', 'lead-badge', 'Lead story'));
+  if (isFeatured) body.appendChild(el('span', 'lead-badge', t('leadStory')));
   body.appendChild(el('span', 'label', source));
 
+  // lang on the element, not a guess from the page: an article with no
+  // translation yet still renders in its own language, and the Bangla face
+  // applies to exactly the text that is Bangla.
+  const shown = shownLang(a);
   const title = el('h2', 'card-title');
-  if (isBn) title.lang = 'bn';
-  appendHighlighted(title, isBn ? a.titleBn : (a.title || 'Untitled'), searchQuery);
+  if (shown === 'bn') title.lang = 'bn';
+  appendHighlighted(title, pick(a, 'title') || t('untitled'), searchQuery);
   body.appendChild(title);
 
-  const descText = isBn ? (a.descBn || '') : (a.desc || '');
+  const descText = pick(a, 'desc');
   if (descText) {
     const desc = el('p', 'card-desc');
-    if (isBn) desc.lang = 'bn';
+    if (shown === 'bn') desc.lang = 'bn';
     appendHighlighted(desc, descText, searchQuery);
     body.appendChild(desc);
   }
 
   const meta = el('div', 'card-meta');
   meta.appendChild(el('span', 'age', timeAgo(a.pubDate) || '\u2014'));
-  meta.appendChild(el('span', null, 'Read \u2192'));
+  meta.appendChild(el('span', null, t('readArrow')));
   body.appendChild(meta);
 
   card.appendChild(body);
@@ -295,23 +525,23 @@ function renderArticles() {
     : allArticles.filter(a => a.sourceId === activeFilter);
 
   if (q) {
+    // Across every language the article carries, so a Bangla query finds an
+    // English article that has been translated, and the other way round.
     articles = articles.filter(a =>
-      (a.title || '').toLowerCase().includes(q) ||
-      (a.desc  || '').toLowerCase().includes(q) ||
-      (a.titleBn || '').toLowerCase().includes(q)
+      ['title', 'desc', 'titleBn', 'descBn', 'titleEn', 'descEn']
+        .some(f => typeof a[f] === 'string' && a[f].toLowerCase().includes(q))
     );
   }
 
   document.getElementById('article-count').textContent =
-    articles.length.toLocaleString() + (articles.length === 1 ? ' article' : ' articles');
+    t(articles.length === 1 ? 'articleCountOne' : 'articleCount', { n: num(articles.length) });
 
   if (!articles.length) {
     visibleArticles = [];
     renderedCount = 0;
     if (feedObserver) feedObserver.disconnect();
-    container.replaceChildren(notice('notice', 'Nothing here yet',
-      q ? 'No headlines match \u201C' + searchQuery + '\u201D. Widen the term or clear the filter.'
-        : 'This source has published nothing in the retained window. Pick another source or region.'));
+    container.replaceChildren(notice('notice', t('emptyTitle'),
+      q ? t('emptySearch', { query: searchQuery }) : t('emptySource')));
     return;
   }
 
@@ -346,12 +576,13 @@ function appendBatch() {
   renderedCount += slice.length;
 
   const progress = document.getElementById('feed-progress');
-  if (progress) progress.textContent = renderedCount + ' / ' + visibleArticles.length + ' shown';
+  if (progress) progress.textContent =
+    t('shownOfTotal', { n: num(renderedCount), total: num(visibleArticles.length) });
 
   if (renderedCount >= visibleArticles.length) {
     const sentinel = document.getElementById('feed-sentinel');
     if (sentinel) sentinel.replaceChildren(
-      el('span', 'label', 'End of feed \u00B7 ' + visibleArticles.length + ' shown'));
+      el('span', 'label', t('endOfFeed', { n: num(visibleArticles.length) })));
     if (feedObserver) feedObserver.disconnect();
   }
 }
@@ -409,7 +640,7 @@ function renderSummary() {
   body.classList.add('clamped');
 
   const toggle = document.getElementById('summary-toggle');
-  toggle.textContent = 'Read more';
+  toggle.textContent = t('readMore');
   toggle.setAttribute('aria-expanded', 'false');
   box.hidden = false;
   renderFacts();
@@ -418,11 +649,12 @@ function renderSummary() {
 // Fills the space the 68ch measure leaves beside the prose, and puts the
 // provenance where the system wants it: every number named and dated.
 function renderFacts() {
+  const when = fetchedAt ? formatFetched() : '\u2014';
   const rows = [
-    ['Region',   REGION_CONFIG[activeRegion].label],
-    ['Articles', allArticles.length.toLocaleString()],
-    ['Sources',  String(allSources.length)],
-    ['Fetched',  lastFetched || '—']
+    [t('factRegion'),   regionLabel(activeRegion)],
+    [t('factArticles'), num(allArticles.length)],
+    [t('factSources'),  num(allSources.length)],
+    [t('factFetched'),  when]
   ];
   const facts = document.createDocumentFragment();
   rows.forEach(([k, v]) => {
@@ -438,7 +670,7 @@ function toggleSummary() {
   const body = document.getElementById('page-summary-text');
   const toggle = document.getElementById('summary-toggle');
   const clamped = body.classList.toggle('clamped');
-  toggle.textContent = clamped ? 'Read more' : 'Show less';
+  toggle.textContent = t(clamped ? 'readMore' : 'showLess');
   toggle.setAttribute('aria-expanded', clamped ? 'false' : 'true');
 }
 
@@ -448,11 +680,10 @@ function showHeadlines(articles) {
   const frag = document.createDocumentFragment();
   articles.slice(0, 6).forEach(a => {
     const link = safeURL(a.link);
-    const isBn = langMode === 'bn' && a.titleBn;
     const item = el('li', 'headline-item');
-    const anchor = el('a', 'headline-title', isBn ? a.titleBn : (a.title || ''));
+    const anchor = el('a', 'headline-title', pick(a, 'title'));
     anchor.href = link || '#';
-    if (isBn) anchor.lang = 'bn';
+    if (shownLang(a) === 'bn') anchor.lang = 'bn';
     if (link) { anchor.target = '_blank'; anchor.rel = 'noopener noreferrer'; }
     item.appendChild(anchor);
     item.appendChild(el('span', 'headline-time', timeAgo(a.pubDate) || '\u2014'));
@@ -468,8 +699,8 @@ async function loadData() {
 
   const btn = document.getElementById('refresh-btn');
   btn.disabled = true;
-  document.getElementById('refresh-label').textContent = 'Fetching';
-  setStatus('warn', 'Loading', 'Fetching ' + REGION_CONFIG[activeRegion].dataFile);
+  document.getElementById('refresh-label').textContent = t('fetching');
+  setStatus('warn', t('statusLoading'), t('fetching') + ' ' + REGION_CONFIG[activeRegion].dataFile);
   showSkeletons();
 
   try {
@@ -478,44 +709,42 @@ async function loadData() {
     if (!res.ok) throw new Error('HTTP ' + res.status);
 
     const data  = await res.json();
-    allArticles = (data.articles || []).map(a => ({
-      ...a,
-      title:   plainText(a.title),
-      desc:    plainText(a.desc),
-      titleBn: a.titleBn ? plainText(a.titleBn) : a.titleBn,
-      descBn:  a.descBn  ? plainText(a.descBn)  : a.descBn
-    }));
+    // Only the fields an article actually has: spreading a fixed set would
+    // give every article an own `titleBn` of undefined, which reads as "this
+    // article has a Bangla field" to anything using `in`.
+    allArticles = (data.articles || []).map(a => {
+      const out = { ...a };
+      for (const f of ['title', 'desc', 'titleBn', 'descBn', 'titleEn', 'descEn']) {
+        if (typeof out[f] === 'string' && out[f]) out[f] = plainText(out[f]);
+      }
+      return out;
+    });
     allSources  = data.sources  || [];
 
-    if (data.fetchedAt) {
-      const fetched = new Date(data.fetchedAt);
-      lastFetched = fetched.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-        + ' · ' + fetched.toLocaleDateString([], { day: '2-digit', month: 'short' });
-      document.getElementById('last-updated').textContent = 'Fetched ' + lastFetched;
-      document.getElementById('latest-provenance').textContent = lastFetched;
-      // The masthead's copy goes at 560px and the facts list at 700px, so on a
-      // phone this is the only place the fetch time survives.
-      document.getElementById('foot-provenance').textContent =
-        'Refreshed twice daily via GitHub Actions \u2014 last ' + lastFetched;
-    }
+    // Stored as a Date rather than a formatted string: the format depends on
+    // the selected language, and the language can change after the load.
+    // renderProvenance puts it in all three places — masthead, Latest panel and
+    // the footer, which below 560px is the only one still visible.
+    fetchedAt = data.fetchedAt ? new Date(data.fetchedAt) : null;
+    renderProvenance();
 
     showHeadlines(allArticles);
     showPageSummary(data.summary, data.summaryBn);
-    setStatus('ok', 'Live', REGION_CONFIG[activeRegion].label);
+    setStatus('ok', t('statusLive'), regionLabel(activeRegion));
     buildFilterBar();
     renderArticles();
 
   } catch (e) {
-    const box = notice('notice error', 'No data file',
-      REGION_CONFIG[activeRegion].dataFile + ' did not load: ' + e.message + '.');
-    box.appendChild(el('p', null, 'Run the Fetch RSS Feeds workflow in Actions, then reload.'));
+    const box = notice('notice error', t('errorTitle'),
+      t('errorBody', { file: REGION_CONFIG[activeRegion].dataFile, message: e.message }));
+    box.appendChild(el('p', null, t('errorHint')));
     document.getElementById('feed-container').replaceChildren(box);
-    setStatus('err', 'Failed', 'No data file');
+    setStatus('err', t('statusFailed'), t('errorTitle'));
     document.getElementById('article-count').textContent = '';
   }
 
   btn.disabled = false;
-  document.getElementById('refresh-label').textContent = 'Refresh';
+  document.getElementById('refresh-label').textContent = t('refresh');
   loading = false;
 }
 
@@ -555,5 +784,5 @@ document.querySelectorAll('.tab').forEach(c => {
   c.setAttribute('aria-selected', c.dataset.region === activeRegion ? 'true' : 'false');
 });
 wireControls();
-applyRegionChrome();
+applyLanguage();
 loadData();
