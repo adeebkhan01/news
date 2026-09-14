@@ -76,7 +76,26 @@ test('index.html carries exactly one inline script and no other', () => {
   const { inline, external } = scriptTags();
   assert.equal(inline.length, 1, `expected one inline script, found ${inline.length}`);
   assert.equal(external.length, 1, `expected one external script, found ${external.length}`);
-  assert.ok(html.includes('<script src="app.js" defer></script>'));
+  assert.match(html, /<script src="app\.js\?v=[0-9a-f]{12}" defer><\/script>/);
+});
+
+test('app.js and app.css are requested at a URL that changes with them', () => {
+  // index.html used to be the whole front end, so a deploy was atomic. Split
+  // into files, a fresh index.html can pair with a browser-cached app.js and
+  // the page half-updates with no error anywhere — which is exactly what it
+  // did. A content hash in the query string makes a changed file a different
+  // URL, so a stale copy cannot be served for one.
+  for (const [file, pattern] of [
+    ['app.css', /href="app\.css\?v=([0-9a-f]{12})"/],
+    ['app.js',  /src="app\.js\?v=([0-9a-f]{12})"/]
+  ]) {
+    const m = html.match(pattern);
+    assert.ok(m, `${file} is referenced without a ?v= content hash`);
+    const actual = crypto.createHash('sha256')
+      .update(fs.readFileSync(file)).digest('hex').slice(0, 12);
+    assert.equal(m[1], actual,
+      `${file} changed but index.html still asks for ?v=${m[1]}. Correct value: ${actual}`);
+  }
 });
 
 test('the markup carries no inline event handlers and no style attributes', () => {
