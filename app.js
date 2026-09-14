@@ -2,11 +2,13 @@
 let allArticles  = [];
 let allSources   = [];
 let activeFilter = 'all';
+let activeTopic  = 'all';
 let searchQuery  = '';
 let loading      = false;
 let langMode     = localStorage.getItem('news-lang') === 'bn' ? 'bn' : 'en';
 let activeRegion = localStorage.getItem('news-region') || 'bd';
 let searchTimer  = null;
+let readLinks    = loadReadLinks();  // links the reader has already clicked into, this browser only
 let briefingEn   = [];     // [{ id, headline, what, why, watch }]
 let briefingBn   = [];
 let briefFull    = false;  // the briefing's two depths: headline + why, or the whole item
@@ -47,6 +49,25 @@ let featuredIndex   = -1;
 let feedObserver    = null;
 let feedIsCapped    = false;
 
+// A browser-local reading history, not a synced account: the point is
+// letting a returning reader see what's new since their last visit, and a
+// month of clicked links is plenty for that without growing unbounded.
+const READ_CAP = 500;
+
+function loadReadLinks() {
+  try { return new Set(JSON.parse(localStorage.getItem('news-read') || '[]')); }
+  catch (e) { return new Set(); }
+}
+
+function markRead(link) {
+  if (!link || readLinks.has(link)) return;
+  readLinks.add(link);
+  // Set iteration order is insertion order, so the first value is the oldest.
+  if (readLinks.size > READ_CAP) readLinks.delete(readLinks.values().next().value);
+  try { localStorage.setItem('news-read', JSON.stringify(Array.from(readLinks))); }
+  catch (e) {}
+}
+
 // hasLang mirrors `translate` in fetch.js: it says the region's data file
 // carries Bangla, not that every article in it does. A region whose backlog is
 // still draining renders untranslated articles in English either way.
@@ -80,6 +101,8 @@ const STRINGS = {
     clearSearch:     'Clear search',
     filterBySource:  'Filter by source',
     allSources:      'All sources',
+    filterByTopic:   'Filter by topic',
+    allTopics:       'All topics',
     whatHappened:    'What happened',
     whyItMatters:    'Why this matters',
     whatToWatch:     'What to watch',
@@ -135,6 +158,7 @@ const STRINGS = {
     emptySearch:     'No headlines match \u201C{query}\u201D. Widen the term or clear the filter.',
     emptySource:     'This source has published nothing in the retained window. Pick another source or region.',
     emptyToday:      'Nothing published today yet. Switch to All time to see the full retained window.',
+    emptyTopic:      'Nothing tagged {topic} in this window. Pick another topic, source, or region.',
     errorTitle:      'No data file',
     errorBody:       '{file} did not load: {message}.',
     errorHint:       'Run the Fetch RSS Feeds workflow in Actions, then reload.',
@@ -164,6 +188,8 @@ const STRINGS = {
     clearSearch:     'খোঁজ মুছুন',
     filterBySource:  'উৎস অনুযায়ী ছাঁকুন',
     allSources:      'সব উৎস',
+    filterByTopic:   'বিষয় অনুযায়ী ছাঁকুন',
+    allTopics:       'সব বিষয়',
     whatHappened:    'যা ঘটেছে',
     whyItMatters:    'কেন গুরুত্বপূর্ণ',
     whatToWatch:     'যা লক্ষ্য রাখবেন',
@@ -219,6 +245,7 @@ const STRINGS = {
     emptySearch:     '\u201C{query}\u201D-এর সঙ্গে কোনো শিরোনাম মেলেনি। শব্দটি বড় করুন বা ছাঁকনি মুছুন।',
     emptySource:     'এই উৎস সংরক্ষিত সময়সীমার মধ্যে কিছু প্রকাশ করেনি। অন্য উৎস বা অঞ্চল বেছে নিন।',
     emptyToday:      'আজ এখনও কিছু প্রকাশিত হয়নি। পুরো সংরক্ষিত সময়সীমা দেখতে সর্বকাল-এ যান।',
+    emptyTopic:      'এই সময়সীমায় {topic} বিষয়ে কিছু নেই। অন্য বিষয়, উৎস বা অঞ্চল বেছে নিন।',
     errorTitle:      'কোনো ডেটা ফাইল নেই',
     errorBody:       '{file} লোড হয়নি: {message}।',
     errorHint:       'Actions-এ Fetch RSS Feeds ওয়ার্কফ্লো চালান, তারপর পৃষ্ঠাটি রিলোড করুন।',
@@ -493,6 +520,7 @@ function applyLanguage() {
   document.getElementById('refresh-label').textContent = t(loading ? 'fetching' : 'refresh');
   renderProvenance();
   buildFilterBar();
+  buildTopicBar();
   renderArticles();
   showHeadlines(allArticles);
   renderSummary();
@@ -542,6 +570,7 @@ function switchRegion(regionId, el) {
   });
 
   activeFilter = 'all';
+  activeTopic = 'all';
   clearSearch();
   // A date archived for one region need not exist for another, and silently
   // showing a different day under a new flag would be the worst of both. The
@@ -642,7 +671,7 @@ function renderSourcesTriggerLabel() {
 
 function setFilter(id, optionEl) {
   activeFilter = id;
-  document.querySelectorAll('.source-option').forEach(c => {
+  document.querySelectorAll('#sources-menu .source-option').forEach(c => {
     c.classList.remove('active');
     c.setAttribute('aria-selected', 'false');
   });
@@ -661,6 +690,76 @@ function toggleSourcesMenu(open) {
   trigger.setAttribute('aria-expanded', next ? 'true' : 'false');
 }
 function closeSourcesMenu() { toggleSourcesMenu(false); }
+
+// The topic every article's own pipeline classification already carries
+// (lib/rank.js's TOPIC_WEIGHT keys) — display case only, not translated:
+// the classifier itself only ever writes these English words, the same way
+// the archive's own topic label (see the story head below) has always shown
+// them unlocalized.
+const TOPIC_LABELS = {
+  conflict: 'Conflict', economy: 'Economy', politics: 'Politics', markets: 'Markets',
+  business: 'Business', world: 'World', environment: 'Environment', health: 'Health',
+  science: 'Science', technology: 'Technology', society: 'Society', culture: 'Culture',
+  opinion: 'Opinion', sport: 'Sport', other: 'Other'
+};
+function topicLabel(topic) { return TOPIC_LABELS[topic] || topic; }
+
+function buildTopicBar() {
+  const counts = {};
+  allArticles.forEach(a => { if (a.topic) counts[a.topic] = (counts[a.topic] || 0) + 1; });
+
+  const menu = document.getElementById('topics-menu');
+  menu.replaceChildren();
+
+  const allBtn = el('button', 'source-option' + (activeTopic === 'all' ? ' active' : ''), t('allTopics'));
+  allBtn.type = 'button';
+  allBtn.role = 'option';
+  allBtn.setAttribute('aria-selected', activeTopic === 'all' ? 'true' : 'false');
+  allBtn.dataset.topic = 'all';
+  menu.appendChild(allBtn);
+
+  Object.keys(TOPIC_LABELS).forEach(topic => {
+    const count = counts[topic] || 0;
+    if (!count) return;
+    const btn = el('button', 'source-option' + (activeTopic === topic ? ' active' : ''));
+    btn.type = 'button';
+    btn.role = 'option';
+    btn.setAttribute('aria-selected', activeTopic === topic ? 'true' : 'false');
+    btn.dataset.topic = topic;
+    btn.appendChild(document.createTextNode(topicLabel(topic)));
+    btn.appendChild(el('span', 'count', num(count)));
+    menu.appendChild(btn);
+  });
+
+  renderTopicsTriggerLabel();
+}
+
+function renderTopicsTriggerLabel() {
+  const label = document.getElementById('topics-trigger-label');
+  label.textContent = activeTopic === 'all' ? t('allTopics') : topicLabel(activeTopic);
+}
+
+function setTopicFilter(id, optionEl) {
+  activeTopic = id;
+  document.querySelectorAll('#topics-menu .source-option').forEach(c => {
+    c.classList.remove('active');
+    c.setAttribute('aria-selected', 'false');
+  });
+  optionEl.classList.add('active');
+  optionEl.setAttribute('aria-selected', 'true');
+  renderTopicsTriggerLabel();
+  closeTopicsMenu();
+  renderArticles();
+}
+
+function toggleTopicsMenu(open) {
+  const menu = document.getElementById('topics-menu');
+  const trigger = document.getElementById('topics-trigger');
+  const next = open == null ? menu.hidden : open;
+  menu.hidden = !next;
+  trigger.setAttribute('aria-expanded', next ? 'true' : 'false');
+}
+function closeTopicsMenu() { toggleTopicsMenu(false); }
 
 /* ── Rendering ── */
 
@@ -838,6 +937,11 @@ function cardElement(a, isFeatured, n, isSecondary) {
   titleLink.href = link || '#';
   if (link) { titleLink.target = '_blank'; titleLink.rel = 'noopener noreferrer'; }
   if (shown === 'bn') titleLink.lang = 'bn';
+  if (link && readLinks.has(link)) titleLink.classList.add('is-read');
+  if (link) titleLink.addEventListener('click', () => {
+    markRead(link);
+    titleLink.classList.add('is-read');
+  });
   const titleText = el('span', 'clamp');
   appendHighlighted(titleText, pick(a, 'title') || t('untitled'), searchQuery);
   titleLink.appendChild(titleText);
@@ -982,6 +1086,7 @@ function renderArticles() {
     ? allArticles
     : allArticles.filter(a => a.sourceId === activeFilter);
 
+  if (activeTopic !== 'all') articles = articles.filter(a => a.topic === activeTopic);
   if (dateScope === 'today') articles = articles.filter(a => isFromToday(a.pubDate));
 
   if (q) {
@@ -993,7 +1098,7 @@ function renderArticles() {
     );
   }
 
-  const collapsing = !q && activeFilter === 'all';
+  const collapsing = !q && activeFilter === 'all' && activeTopic === 'all';
   if (collapsing) articles = collapseToStories(articles);
   articles = orderArticles(articles);
 
@@ -1023,6 +1128,7 @@ function renderArticles() {
     if (feedObserver) feedObserver.disconnect();
     const body = q ? t('emptySearch', { query: searchQuery })
       : dateScope === 'today' ? t('emptyToday')
+      : activeTopic !== 'all' ? t('emptyTopic', { topic: topicLabel(activeTopic) })
       : t('emptySource');
     container.replaceChildren(notice('notice', t('emptyTitle'), body));
     return;
@@ -1210,10 +1316,14 @@ function briefItemElement(item, n, full, itemLang, itemOpen) {
   // duplication that made the page twice as long as it needed to be.
   const link = story && safeURL(story.lead);
   if (link) {
-    const anchor = el('a', 'brief-link', item.headline);
+    const anchor = el('a', 'brief-link' + (readLinks.has(link) ? ' is-read' : ''), item.headline);
     anchor.href = link;
     anchor.target = '_blank';
     anchor.rel = 'noopener noreferrer';
+    anchor.addEventListener('click', () => {
+      markRead(link);
+      anchor.classList.add('is-read');
+    });
     head.appendChild(anchor);
   } else {
     head.appendChild(document.createTextNode(item.headline));
@@ -1661,6 +1771,7 @@ async function loadData() {
     renderSummary();
     setStatus('ok', () => regionLabel(activeRegion));
     buildFilterBar();
+    buildTopicBar();
     renderArticles();
 
   } catch (e) {
@@ -1717,19 +1828,69 @@ function wireControls() {
     const link = e.target.closest('.region-link');
     if (link) switchRegion(link.dataset.region, link);
   });
-  document.getElementById('sources-trigger').addEventListener('click', () => toggleSourcesMenu());
+  document.getElementById('sources-trigger').addEventListener('click', () => {
+    closeTopicsMenu();
+    toggleSourcesMenu();
+  });
   document.getElementById('sources-menu').addEventListener('click', e => {
     const option = e.target.closest('.source-option');
     if (option && option.dataset.source) setFilter(option.dataset.source, option);
   });
+  document.getElementById('topics-trigger').addEventListener('click', () => {
+    closeSourcesMenu();
+    toggleTopicsMenu();
+  });
+  document.getElementById('topics-menu').addEventListener('click', e => {
+    const option = e.target.closest('.source-option');
+    if (option && option.dataset.topic) setTopicFilter(option.dataset.topic, option);
+  });
   // Closed the same way any dropdown is: a click elsewhere, or Escape.
   document.addEventListener('click', e => {
-    if (!e.target.closest('.sources-dropdown')) closeSourcesMenu();
+    if (!e.target.closest('.sources-dropdown')) { closeSourcesMenu(); closeTopicsMenu(); }
   });
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeSourcesMenu();
+    if (e.key === 'Escape') { closeSourcesMenu(); closeTopicsMenu(); }
   });
 }
+
+// Offline support and instant repeat loads. Guarded rather than assumed: a
+// browser with no serviceWorker support just gets the page it always got.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
+}
+
+/* ── Swipe navigation ── */
+// Left across BD → AU → Global and back — the same order the masthead tabs
+// already read in, just reachable without a thumb trip up to them. Clamped
+// rather than wrapping past either end, matching how the tabs themselves
+// have no cyclic "next after Global is BD" behavior either.
+(function setupSwipeNav() {
+  const REGION_ORDER = ['bd', 'au', 'global'];
+  const SWIPE_MIN_X = 60;   // minimum horizontal travel to count as a swipe
+  const SWIPE_MAX_Y = 60;   // more vertical than this reads as a scroll, not a swipe
+  let startX = 0, startY = 0;
+
+  document.addEventListener('touchstart', e => {
+    if (e.touches.length !== 1) return;
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  }, { passive: true });
+
+  document.addEventListener('touchend', e => {
+    const touch = e.changedTouches[0];
+    if (!touch) return;
+    const dx = touch.clientX - startX;
+    const dy = touch.clientY - startY;
+    if (Math.abs(dx) < SWIPE_MIN_X || Math.abs(dy) > SWIPE_MAX_Y) return;
+
+    const at = REGION_ORDER.indexOf(activeRegion);
+    const next = REGION_ORDER[at + (dx < 0 ? 1 : -1)];
+    if (!next) return;
+    switchRegion(next, document.querySelector(`.region-link[data-region="${next}"]`));
+  }, { passive: true });
+})();
 
 /* ── Boot ── */
 // The URL wins over the stored region: a shared link has to open on the day
