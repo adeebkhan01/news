@@ -274,7 +274,7 @@ const SOURCE_NAMES_BN = {
   smh: 'সিডনি মর্নিং হেরাল্ড',   conversationau: 'দ্য কনভারসেশন অস্ট্রেলিয়া',
   bbcnews: 'বিবিসি নিউজ',       aljazeera: 'আল জাজিরা',    guardian: 'দ্য গার্ডিয়ান',
   npr: 'এনপিআর',                france24: 'ফ্রান্স ২৪',      dwnews: 'ডয়চে ভেলে',
-  cnn: 'সিএনএন'
+  cnn: 'সিএনএন',                bloomberg: 'ব্লুমবার্গ',     pewresearch: 'পিউ রিসার্চ'
 };
 
 const LOCALE = { en: 'en-GB', bn: 'bn-BD' };
