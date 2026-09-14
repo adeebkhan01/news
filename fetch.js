@@ -46,6 +46,22 @@ const REGIONS = {
       { id: 'dhakatribune',     name: 'Dhaka Tribune',     color: '#1b5e9e', url: 'https://www.dhakatribune.com/feed' },
       { id: 'newage',           name: 'New Age',           color: '#8e2d2d', url: 'https://www.newagebd.net/feed/rss.xml' },
       { id: 'unb',              name: 'UNB',               color: '#2f6f4f', url: 'https://unb.com.bd/rss' },
+      // Bangla-language sources, so these are translated into English rather
+      // than out of it. Both URLs are unverified guesses — the sandbox they
+      // were added from cannot reach either host, and neither appears in any
+      // public index of Bangladeshi feeds. The Feed Health workflow decides:
+      // whatever reports DEAD gets retired and an alternate from its
+      // candidates box swapped in.
+      //
+      // Amar Desh publishes at dailyamardesh.com; amardesh.com is a different
+      // site. Bangladeshi dailies split roughly between /rss.xml,
+      // /rss/rss.xml and /feed, so the alternates cover all three.
+      { id: 'amardesh',         name: 'Amar Desh',         color: '#8c4a1f', url: 'https://www.dailyamardesh.com/rss.xml',
+        lang: 'bn' },
+      // BTV is a government site and may simply not publish RSS at all. If it
+      // reports DEAD with no working alternate, retiring it is the answer.
+      { id: 'btv',              name: 'BTV',               color: '#0f6e8c', url: 'https://www.btv.gov.bd/rss.xml',
+        lang: 'bn' },
     ]
   },
   au: {

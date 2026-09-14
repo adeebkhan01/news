@@ -67,20 +67,39 @@ test('translation direction follows the article, not a fixed assumption', () => 
   assert.equal(lang.translatedField({ lang: 'bn' }, 'desc'), 'descEn');
 });
 
-test('the Bangla-language source is declared as such', () => {
-  // Rising BD publishes in Bangla. If that declaration is lost, articles whose
-  // titles are too short to judge go the wrong way.
-  assert.equal(SOURCE_LANG.risingbd, 'bn');
-  const risingbd = REGIONS.bd.sources.find(s => s.id === 'risingbd');
-  assert.ok(risingbd, 'Rising BD is no longer configured');
-  assert.equal(risingbd.lang, 'bn');
-  // Every other source is English, which is the default, so it says nothing.
+test('the Bangla-language sources are declared as such', () => {
+  // These publish in Bangla. If a declaration is lost, articles whose titles
+  // are too short for the detector to judge go the wrong way.
+  const BANGLA_SOURCES = ['risingbd', 'amardesh', 'btv'];
+  for (const id of BANGLA_SOURCES) {
+    assert.equal(SOURCE_LANG[id], 'bn', `${id} is no longer declared as Bangla`);
+    const source = REGIONS.bd.sources.find(s => s.id === id);
+    assert.ok(source, `${id} is no longer configured`);
+    assert.equal(source.lang, 'bn');
+  }
+  // Everything else is English, which is the default and so says nothing. A
+  // new declaration here should be a deliberate edit to this list.
   for (const region of Object.values(REGIONS)) {
     for (const s of region.sources) {
-      if (s.id === 'risingbd') continue;
-      assert.ok(s.lang === undefined, `${s.id} declares lang: ${s.lang} — is that intended?`);
+      if (BANGLA_SOURCES.includes(s.id)) continue;
+      assert.ok(s.lang === undefined, `${s.id} declares lang: ${s.lang} — add it to BANGLA_SOURCES if intended`);
     }
   }
+});
+
+test('every source has a Bangla name for the page to show', () => {
+  // Without one the chip falls back to the English name, which is the single
+  // most visible way a half-translated page gives itself away.
+  const appJs = fs.readFileSync('app.js', 'utf8');
+  const start = appJs.indexOf('SOURCE_NAMES_BN = {');
+  assert.notEqual(start, -1, 'SOURCE_NAMES_BN is gone');
+  const block = appJs.slice(start, appJs.indexOf('};', start));
+  const ids = new Set();
+  for (const region of Object.values(REGIONS)) {
+    for (const s of region.sources) ids.add(s.id);
+  }
+  const missing = [...ids].filter(id => !new RegExp('\\b' + id + ':').test(block));
+  assert.deepEqual(missing, [], 'these sources have no Bangla name in app.js');
 });
 
 // ── The page's own words ─────────────────────────────────────────────────

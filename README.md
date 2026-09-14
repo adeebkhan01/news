@@ -78,11 +78,20 @@ publishers answer runners but not local machines, and vice versa.
 answering 200 and parsing cleanly with newest items 1514 and 207 days old. Its
 `business` feed is still live and stays.
 
-The CNN feeds and the three English-language Bangladeshi dailies (Dhaka
-Tribune, New Age, UNB) were added without that check — they can't be reached
-from where they were added — so run the Feed Health workflow and retire any
-that report `DEAD` or `STALE`. Its candidates box holds the alternates to try
-in their place.
+Eight feeds are configured but unverified, because the sandbox they were added
+from cannot reach any of them: the three CNN feeds, the three English-language
+Bangladeshi dailies (Dhaka Tribune, New Age, UNB), and the two Bangla-language
+ones (Amar Desh, BTV). The weekly Feed Health run checks them as configured
+feeds and goes red naming any that are dead — that is the check working, not
+breaking. Retire what reports `DEAD` or `STALE` and swap in an alternate from
+the candidates box.
+
+The last two are the least certain. Amar Desh publishes at
+**dailyamardesh.com** — `amardesh.com` is a different site — and Bangladeshi
+dailies split between `/rss.xml`, `/rss/rss.xml` and `/feed`, so the exact path
+is a guess. BTV is a government site and may publish no feed at all; neither
+appears in any public index of Bangladeshi feeds. If BTV's candidates all fail,
+retiring it is the answer rather than hunting further.
 
 A feed that fails is not fatal: that source is skipped for the run, previously
 collected articles are retained, and the run log ends with a list of what

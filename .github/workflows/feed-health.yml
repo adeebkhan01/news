@@ -12,20 +12,29 @@ on:
       candidates:
         description: 'Space-separated candidate feed URLs to try as well'
         required: false
-        # Alternates for the feeds added unverified in 2026-09 — the CNN and
-        # English-Bangladeshi sources. The ones now in fetch.js are checked as
-        # configured feeds, so this list is what to fall back to if any of them
-        # report DEAD or STALE. Dispatch and swap in whichever come back "ok".
+        # Alternates for the feeds in fetch.js that have never been verified.
+        # Those are checked as *configured* feeds — including on the weekly
+        # scheduled run, which gets no dispatch inputs at all and so never sees
+        # this list. It is only what to fall back to once one of them reports
+        # DEAD or STALE: dispatch by hand and swap in whichever comes back ok.
+        #
+        # Amar Desh and BTV first, as the least certain. Amar Desh publishes at
+        # dailyamardesh.com (amardesh.com is a different site) and Bangladeshi
+        # dailies split between /rss.xml, /rss/rss.xml and /feed, so all three
+        # are here. BTV is a government site that may publish no feed at all;
+        # if none of its candidates answer, retiring it is the answer.
         default: >-
+          https://www.dailyamardesh.com/rss/rss.xml
+          https://www.dailyamardesh.com/feed
+          https://dailyamardesh.com/rss.xml
+          https://www.btv.gov.bd/feed
+          https://btv.gov.bd/rss.xml
+          https://www.btv.gov.bd/rss/rss.xml
           https://rss.cnn.com/rss/edition.rss
-          https://rss.cnn.com/rss/cnn_world.rss
           https://rss.cnn.com/rss/money_latest.rss
           https://www.observerbd.com/rss.xml
-          https://www.businesspostbd.com/rss
           https://www.banglanews24.com/english/rss/rss.xml
           https://bdnews24.com/feed
-          https://www.daily-sun.com/rss.xml
-          https://www.tbsnews.net/rss.xml
   schedule:
     - cron: '17 6 * * 1'   # Monday morning, so dead feeds surface weekly
 
