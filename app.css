@@ -201,11 +201,25 @@ a{color:inherit}
 .main-col{min-width:0}
 
 /* Section opener: micro-label + title on a 1px hard rule. */
+/* Region flags. The display and text faces are monospace and carry no emoji
+   glyphs, so these need the platform's emoji font explicitly. On Windows,
+   Chrome renders regional-indicator pairs as the letters "BD"/"AU" rather than
+   a flag — which is why the label always sits beside the flag rather than
+   being replaced by it. */
+.flag{
+  font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif;
+  font-size:1em;line-height:1;margin-right:var(--space-2);
+}
+.tab .flag{margin-right:var(--space-3)}
+.fact dd .flag{margin-right:var(--space-2)}
+
 .section-head{
   display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-5);
   padding-bottom:var(--space-3);margin-bottom:var(--space-5);
   border-bottom:var(--border-w) solid var(--border-strong);
 }
+.status-line #article-count{display:none}
+
 .section-head h2{
   font-family:var(--font-display);font-weight:700;font-size:var(--size-xl);line-height:1.25;
   letter-spacing:var(--track-display);color:var(--text-heading);
@@ -466,8 +480,12 @@ footer{
   /* Same reasoning for the facts list: the region is the selected tab, the
      count is in the section head, and the fetch time is in the footer. What
      fills the space beside a 68ch measure on a desktop is, stacked under the
-     briefing on a phone, four rows of things the page already says. */
+     briefing on a phone, three rows of things the page already says. */
   .facts{display:none}
+
+  /* Which is why the count comes back here: with the facts panel gone, this is
+     the only place on a phone that says how many articles there are. */
+  .status-line #article-count{display:inline}
 }
 @media(max-width:560px){
   .masthead-inner{height:auto;padding-block:var(--space-3);flex-wrap:wrap;gap:var(--space-3)}

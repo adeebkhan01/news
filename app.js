@@ -21,9 +21,9 @@ let feedObserver    = null;
 // carries Bangla, not that every article in it does. A region whose backlog is
 // still draining renders untranslated articles in English either way.
 const REGION_CONFIG = {
-  bd:     { mark: 'BD', dataFile: 'data-bd.json',     hasLang: true },
-  au:     { mark: 'AU', dataFile: 'data-au.json',     hasLang: true },
-  global: { mark: 'GL', dataFile: 'data-global.json', hasLang: true }
+  bd:     { mark: 'BD', flag: '\u{1F1E7}\u{1F1E9}', dataFile: 'data-bd.json',     hasLang: true },
+  au:     { mark: 'AU', flag: '\u{1F1E6}\u{1F1FA}', dataFile: 'data-au.json',     hasLang: true },
+  global: { mark: 'GL', flag: '\u{1F30F}',           dataFile: 'data-global.json', hasLang: true }
 };
 
 /* ── Language ──────────────────────────────────────────────────────────
@@ -252,7 +252,13 @@ function renderStatus() {
   const strip = document.getElementById('status-strip');
   strip.className = 'status-strip' + (statusKind === 'ok' ? '' : ' ' + statusKind);
   strip.textContent = STATUS_GLYPH[statusKind] + ' ' + t(STATUS_WORD[statusKind]);
-  document.getElementById('status-text').textContent = statusDetail();
+  // When everything is fine the detail is the region name, which the selected
+  // tab, the masthead and the briefing panel all already say. It earns its
+  // place only when it is telling you something you cannot see: what is
+  // loading, or what failed.
+  const detail = document.getElementById('status-text');
+  detail.textContent = statusDetail();
+  detail.hidden = statusKind === 'ok';
 }
 
 /* ── Helpers ── */
@@ -404,7 +410,11 @@ function switchRegion(regionId, el) {
 
 function applyRegionChrome() {
   const cfg = REGION_CONFIG[activeRegion];
-  document.getElementById('logo-edition').textContent = regionLabel(activeRegion);
+  const edition = document.getElementById('logo-edition');
+  edition.replaceChildren(
+    el('span', 'flag', cfg.flag),
+    document.createTextNode(regionLabel(activeRegion))
+  );
   document.title = t('siteTitle', { region: regionLabel(activeRegion) });
 
   const langBtn = document.getElementById('lang-toggle');
@@ -669,12 +679,12 @@ function renderSummary() {
 // Fills the space the 68ch measure leaves beside the prose, and puts the
 // provenance where the system wants it: every number named and dated.
 function renderFacts() {
-  const when = fetchedAt ? formatFetched() : '\u2014';
+  // No Fetched row: the masthead carries the same timestamp a few centimetres
+  // above, and the footer carries it below. Three copies of one clock.
   const rows = [
-    [t('factRegion'),   regionLabel(activeRegion)],
+    [t('factRegion'),   REGION_CONFIG[activeRegion].flag + ' ' + regionLabel(activeRegion)],
     [t('factArticles'), num(allArticles.length)],
-    [t('factSources'),  num(allSources.length)],
-    [t('factFetched'),  when]
+    [t('factSources'),  num(allSources.length)]
   ];
   const facts = document.createDocumentFragment();
   rows.forEach(([k, v]) => {
