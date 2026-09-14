@@ -101,11 +101,27 @@ a{color:inherit}
 }
 /* The one gold thing on this view. Tick height = cap height, width ~0.4x. */
 .wordmark .tick{width:.4em;height:.72em;background:var(--gold-1);display:inline-block;flex-shrink:0}
-.wordmark .edition{
-  font-size:var(--size-2xs);letter-spacing:var(--track-label);color:var(--text-muted);
-  padding-left:var(--space-4);margin-left:var(--space-2);align-self:center;
+/* Region switching lives in the masthead now, as three inline names rather
+   than a boxed tab set in its own bordered section below it — navigation,
+   not a second piece of content competing with the briefing for the first
+   glance. The active region is named in full; hover/focus states are the
+   only other visual weight any of the three carry. */
+.region-strip{
+  display:flex;align-items:baseline;gap:var(--space-2);min-width:0;overflow:hidden;
+  font-family:var(--font-display);font-size:var(--size-sm);white-space:nowrap;
 }
-.masthead-right{margin-left:auto;display:flex;align-items:center;gap:var(--space-3)}
+.region-sep{color:var(--text-muted);flex-shrink:0}
+.region-link{
+  background:none;border:none;padding:2px 0;cursor:pointer;
+  color:var(--text-muted);font:inherit;letter-spacing:.01em;
+  border-bottom:var(--border-w-heavy) solid transparent;
+  transition:color var(--motion-fast) var(--ease);
+}
+.region-link:hover{color:var(--text-body)}
+.region-link[aria-selected="true"]{
+  color:var(--text-heading);font-weight:700;border-bottom-color:var(--gold-1);
+}
+.masthead-right{margin-left:auto;display:flex;align-items:center;gap:var(--space-3);flex-shrink:0}
 .provenance{
   font-family:var(--font-text);font-size:var(--size-xs);color:var(--text-muted);
   white-space:nowrap;font-variant-numeric:tabular-nums;
@@ -122,6 +138,10 @@ a{color:inherit}
   box-shadow:var(--edge-1);cursor:pointer;
   transition:background var(--motion-fast) var(--ease),color var(--motion-fast) var(--ease);
 }
+/* Dormant today (every region currently has a Bangla toggle to show or
+   hide), real the moment one doesn't: a class rule outranks [hidden] in the
+   cascade, same as the other controls this pattern was fixed on above. */
+.btn[hidden]{display:none}
 .btn:hover{background:var(--bg-sunken)}
 .btn:active{transform:var(--press-1);box-shadow:var(--edge-none)}   /* travels into its own edge */
 .btn-primary{background:var(--bg-inverse);color:var(--text-inverse);box-shadow:2px 2px 0 0 var(--edge-color-strong)}
@@ -129,69 +149,75 @@ a{color:inherit}
 .btn[disabled]{background:var(--bg-sunken);border-color:var(--border-hairline);color:var(--text-muted);box-shadow:none;cursor:default}
 .btn[disabled]:active{transform:none}
 
-/* ─── Toolbar: region tabs + search ────────────────────────────────── */
-.toolbar{background:var(--bg-surface);border-bottom:var(--border-w) solid var(--border-strong)}
-.toolbar-inner{display:flex;align-items:flex-end;gap:var(--space-6);padding-block:var(--space-4);flex-wrap:wrap}
-.field{display:flex;flex-direction:column;gap:var(--space-2)}
-.field .label{display:block}
-
-/* Boxed tabs: active is a lifted paper tab, so gold stays on the wordmark. */
-.tabs{display:flex;gap:var(--space-1);flex-shrink:0}
-.tab{
-  font-family:var(--font-display);font-weight:700;font-size:var(--size-sm);line-height:1;
-  text-transform:uppercase;letter-spacing:.02em;
-  height:var(--control-h-md);padding:0 var(--space-4);
-  background:transparent;color:var(--text-muted);
-  border:var(--border-w) solid var(--border-hairline);border-radius:var(--radius);
-  cursor:pointer;white-space:nowrap;
-  transition:background var(--motion-fast) var(--ease),color var(--motion-fast) var(--ease);
-}
-.tab:hover{background:var(--bg-sunken);color:var(--text-body)}
-.tab[aria-selected="true"]{
-  background:var(--bg-page);color:var(--text-heading);
-  border-color:var(--border-strong);box-shadow:var(--edge-1);
-}
-
-.search{position:relative;flex:1;min-width:240px}
+/* ─── Filter row: search + source dropdown ─────────────────────────── */
+/* One quiet row for both utility controls, where there used to be two
+   bordered sections (a "Region / Search" toolbar, then a separate always-
+   open row of source chips). Utility recedes so the briefing can lead. */
+.filter-row{background:var(--bg-page);border-bottom:var(--border-w) solid var(--border-hairline)}
+.filter-row-inner{display:flex;align-items:center;gap:var(--space-4);padding-block:var(--space-3)}
+.search-compact{position:relative;flex:1;min-width:160px;max-width:360px}
 /* Inputs are inset — raised acts, inset receives. */
 #search-input{
-  width:100%;height:var(--control-h-md);
-  background:var(--bg-page);color:var(--text-body);
+  width:100%;height:var(--control-h-sm);
+  background:var(--bg-surface);color:var(--text-body);
   font-family:var(--font-text);font-size:var(--size-sm);
-  border:var(--border-w) solid var(--border-strong);border-radius:var(--radius);
-  box-shadow:inset 2px 2px 0 var(--border-hairline);
-  padding:0 var(--space-8) 0 var(--space-3);outline:none;
+  border:var(--border-w) solid var(--border-hairline);border-radius:var(--radius);
+  box-shadow:inset 1px 1px 0 var(--border-hairline);
+  padding:0 var(--space-7) 0 var(--space-3);outline:none;
 }
+#search-input:focus{border-color:var(--border-strong)}
 #search-input::placeholder{color:var(--text-muted)}
 #search-input::-webkit-search-cancel-button{display:none}
 .kbd-hint{
-  position:absolute;right:var(--space-3);bottom:10px;pointer-events:none;
+  position:absolute;right:var(--space-3);top:50%;transform:translateY(-50%);pointer-events:none;
   font-family:var(--font-display);font-size:var(--size-2xs);color:var(--text-muted);
 }
 #search-clear{
-  position:absolute;right:var(--space-2);bottom:5px;display:none;
-  width:24px;height:24px;line-height:1;
+  position:absolute;right:var(--space-2);top:50%;transform:translateY(-50%);display:none;
+  width:20px;height:20px;line-height:1;
   background:none;border:none;color:var(--text-muted);cursor:pointer;
   font-family:var(--font-display);font-size:var(--size-sm);
 }
 #search-clear:hover{color:var(--text-body)}
 
-/* ─── Source filter ────────────────────────────────────────────────── */
-.filter-bar{background:var(--bg-page);border-bottom:var(--border-w) solid var(--border-hairline)}
-.filter-bar-inner{display:flex;gap:var(--space-2);padding-block:var(--space-3);overflow-x:auto;scrollbar-width:none;align-items:center}
-.filter-bar-inner::-webkit-scrollbar{display:none}
-.chip{
-  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
-  text-transform:uppercase;letter-spacing:var(--track-label);
+/* The source list, closed by default: a dropdown rather than a permanently
+   open row of chips scrolling off the edge of the screen. Same list, same
+   click-to-filter, costing one line until it is asked for. */
+.sources-dropdown{position:relative;flex-shrink:0}
+#sources-trigger{
   height:var(--control-h-sm);padding:0 var(--space-3);
-  display:inline-flex;align-items:center;gap:var(--space-3);flex-shrink:0;
-  background:transparent;color:var(--text-muted);
+  display:inline-flex;align-items:center;gap:var(--space-2);
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+  text-transform:uppercase;letter-spacing:var(--track-label);
+  background:var(--bg-surface);color:var(--text-body);
   border:var(--border-w) solid var(--border-hairline);border-radius:var(--radius);cursor:pointer;
-  transition:background var(--motion-fast) var(--ease),color var(--motion-fast) var(--ease);
 }
-.chip:hover{background:var(--bg-sunken);color:var(--text-body)}
-.chip.active{background:var(--bg-inverse);border-color:var(--bg-inverse);color:var(--text-inverse)}
-.chip .count{font-family:var(--font-text);font-weight:400;letter-spacing:0;font-variant-numeric:tabular-nums;opacity:.75}
+#sources-trigger:hover{background:var(--bg-sunken)}
+#sources-trigger[aria-expanded="true"]{border-color:var(--border-strong)}
+#sources-trigger .caret{color:var(--text-muted);font-size:var(--size-xs)}
+.sources-menu{
+  position:absolute;z-index:50;top:calc(100% + var(--space-2));right:0;min-width:220px;
+  display:flex;flex-direction:column;gap:2px;padding:var(--space-2);
+  background:var(--bg-surface);border:var(--border-w) solid var(--border-strong);
+  border-radius:var(--radius);box-shadow:var(--edge-2);
+}
+/* A class rule outranks [hidden] in the cascade, so the menu has to be told
+   again — same reason #page-summary carries the identical override below. */
+.sources-menu[hidden]{display:none}
+.source-option{
+  display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);
+  height:var(--control-h-sm);padding:0 var(--space-3);
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+  text-transform:uppercase;letter-spacing:var(--track-label);
+  background:none;color:var(--text-muted);border:none;border-radius:var(--radius);cursor:pointer;
+  text-align:left;white-space:nowrap;
+}
+.source-option:hover{background:var(--bg-sunken);color:var(--text-body)}
+.source-option.active{background:var(--bg-inverse);color:var(--text-inverse)}
+.source-option .count{
+  font-family:var(--font-text);font-weight:400;letter-spacing:0;
+  font-variant-numeric:tabular-nums;opacity:.75;
+}
 
 /* ─── Layout ───────────────────────────────────────────────────────── */
 .content-wrap{
@@ -210,7 +236,7 @@ a{color:inherit}
   font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif;
   font-size:1em;line-height:1;margin-right:var(--space-2);
 }
-.tab .flag{margin-right:var(--space-3)}
+.region-link .flag{margin-right:var(--space-1)}
 .fact dd .flag{margin-right:var(--space-2)}
 
 .section-head{
@@ -227,30 +253,38 @@ a{color:inherit}
 /* Two questions the feed can answer — what matters, and what is newest. The
    switch sits beside the heading rather than in the toolbar because it
    describes this list and nothing else. */
-.order-switch{display:flex;gap:var(--space-1);margin-right:auto;align-self:center}
+/* Top Stories is the editorial default and reads like one — plain text at
+   heading weight, no box around it. Latest is the deviation, and only it
+   ever gets a visible control: a quiet underline that fills in solid once
+   chosen. Two equal pill buttons used to ask the reader to make a choice
+   neither this page nor its ranking pipeline is actually neutral about. */
+.order-switch{display:flex;align-items:baseline;gap:var(--space-3);margin-right:auto}
 .order-btn{
-  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
-  text-transform:uppercase;letter-spacing:var(--track-label);
-  height:var(--control-h-sm);padding:0 var(--space-4);cursor:pointer;
-  background:transparent;color:var(--text-muted);
-  border:var(--border-w) solid var(--border-hairline);border-radius:var(--radius);
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-sm);line-height:1;
+  letter-spacing:var(--track-display);cursor:pointer;
+  background:none;color:var(--text-muted);border:none;padding:0;
+  border-bottom:var(--border-w-heavy) solid transparent;
 }
-.order-btn:hover{background:var(--bg-sunken);color:var(--text-body)}
-.order-btn.active{background:var(--bg-inverse);border-color:var(--bg-inverse);color:var(--text-inverse)}
+.order-btn:hover{color:var(--text-body)}
+.order-btn.active{color:var(--text-heading);border-bottom-color:var(--gold-1)}
 .status-line{
-  display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap;
-  font-family:var(--font-text);font-size:var(--size-sm);color:var(--text-muted);
+  display:flex;align-items:center;gap:var(--space-3);flex-wrap:wrap;
+  font-family:var(--font-text);font-size:var(--size-xs);color:var(--text-muted);
   font-variant-numeric:tabular-nums;
 }
+/* Confirmation, not news: a small dot of colour for the steady "Live" state
+   and nothing louder. Loading is routine, not a problem, so it no longer
+   borrows the amber "something needs attention" treatment — it reads the
+   same muted grey as the rest of this line, with the skeletons below doing
+   the actual work of saying "this is in progress". Only a real failure
+   (err) still gets a colour loud enough to interrupt. */
 .status-strip{
   display:inline-flex;align-items:center;gap:var(--space-2);
-  padding:2px var(--space-3);border-radius:var(--radius);
-  border:var(--border-w) solid var(--ok-1);background:var(--ok-wash);color:var(--ok-1);
   font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
-  text-transform:uppercase;letter-spacing:var(--track-label);
+  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--ok-1);
 }
-.status-strip.warn{border-color:var(--warn-1);background:var(--warn-wash);color:var(--warn-1)}
-.status-strip.err{border-color:var(--err-1);background:var(--err-wash);color:var(--err-1)}
+.status-strip.warn{color:var(--text-muted)}
+.status-strip.err{color:var(--err-1)}
 
 /* ─── Briefing panel ───────────────────────────────────────────────── */
 .panel{
@@ -301,20 +335,36 @@ a{color:inherit}
   font-size:var(--size-sm);line-height:1.45;color:var(--text-body);
   max-width:var(--measure);margin-top:2px;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  animation:brief-expand var(--motion-base) var(--ease-smooth);
 }
 /* Browsing the archive. The controls are in the briefing's own head because
    that is what they change: the feed follows, but the briefing is the thing
    a reader comes back for. */
-.archive-nav{display:flex;gap:var(--space-1);margin-left:auto}
+/* Three buttons of equal weight used to ask the reader to parse Older /
+   Today / Newer as three separate ideas. It is one idea — where in time
+   this briefing is — so it is one compact control: two plain arrows around
+   the date itself, which is also the "back to today" action. */
+/* A class rule outranks [hidden] in the cascade — same reason #page-summary
+   and .sources-menu both carry the identical override. Without this,
+   archive-nav rendered its three controls, useless and clickable, on every
+   region that has not yet accumulated a day of archive history: a
+   pre-existing bug this caught, not one this redesign introduced. */
+.archive-nav[hidden]{display:none}
+.archive-nav{display:flex;align-items:center;gap:var(--space-2);margin-left:auto}
 .archive-nav button{
-  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
-  text-transform:uppercase;letter-spacing:var(--track-label);
-  height:var(--control-h-sm);padding:0 var(--space-3);cursor:pointer;
-  background:var(--bg-page);color:var(--text-body);
-  border:var(--border-w) solid var(--border-hairline);border-radius:var(--radius);
+  background:none;border:none;padding:0;cursor:pointer;color:var(--text-muted);
 }
-.archive-nav button:hover:not([disabled]){background:var(--bg-sunken)}
-.archive-nav button[disabled]{color:var(--text-muted);cursor:default;opacity:.55}
+.archive-nav button:hover:not([disabled]){color:var(--text-body)}
+.archive-nav button[disabled]{color:var(--border-hairline);cursor:default}
+.archive-nav #archive-older,.archive-nav #archive-newer{
+  font-size:var(--size-md);line-height:1;padding:2px var(--space-1);
+}
+.archive-nav #archive-date{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+  letter-spacing:var(--track-label);text-transform:uppercase;
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.archive-nav #archive-date:hover:not([disabled]){text-decoration:underline;text-underline-offset:2px}
 /* A day that is over has no live ordering and no live source breakdown, so
    the controls that describe those are not merely disabled — they are gone. */
 body.archive-mode .filter-bar,
@@ -380,8 +430,14 @@ body.archive-mode #status-text{display:none}
 .brief-headline .change-chip{margin-left:var(--space-2);vertical-align:1px}
 .brief-link{text-decoration:none;color:inherit}
 .brief-link:hover{color:var(--text-accent);text-decoration:underline;text-underline-offset:3px}
+/* Read more swaps the DOM outright (a two-sentence why for a three-part
+   dl), so a plain fade-in on arrival is what makes that read as the same
+   item growing in place rather than a new page section appearing. */
 .brief-lines{margin-top:var(--space-2);display:grid;grid-template-columns:max-content minmax(0,1fr);
-  gap:var(--space-1) var(--space-4);align-items:baseline}
+  gap:var(--space-1) var(--space-4);align-items:baseline;
+  animation:brief-expand var(--motion-base) var(--ease-smooth);
+}
+@keyframes brief-expand{from{opacity:0;transform:translateY(-2px)}to{opacity:1;transform:none}}
 .brief-lines dt{
   font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1.5;
   text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-muted);white-space:nowrap;
@@ -416,6 +472,13 @@ body.archive-mode #status-text{display:none}
    the narrow layout. The item briefing has two real depths — the consequence
    alone, or the whole item — and that choice is worth offering at any width. */
 #summary-toggle.brief-depth{display:inline-block}
+/* .brief-depth is never removed once a real briefing has rendered once, so
+   without this, hiding the button later (an archived day with nothing on
+   it, or a fresh loading skeleton) left it visible anyway — the compound
+   selector above ties with this one on specificity and author styles never
+   lose to [hidden] on their own, so the fix is to out-rank it in source
+   order instead of chasing every place the class gets left on. */
+#summary-toggle[hidden]{display:none}
 
 /* ─── Cards ────────────────────────────────────────────────────────── */
 .grid,.loading-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--space-5)}
@@ -622,6 +685,8 @@ body.archive-mode #status-text{display:none}
 .skeleton-line.w85{width:85%}
 .skeleton-line.w55{width:55%}
 .skeleton-line{height:11px;background:var(--bg-sunken)}
+.brief-item.skeleton-brief .skeleton-line{margin-top:var(--space-2)}
+.brief-item.skeleton-brief .skeleton-line:first-child{margin-top:0}
 
 .notice{
   border:var(--border-w) solid var(--border-strong);border-radius:var(--radius);
@@ -666,7 +731,10 @@ footer{
    entries — the system's numbered list block, counting the feed. */
 @media(max-width:700px){
   :root{--gutter:16px}
-  .wordmark .edition{display:none}
+  /* The active region still names itself in full; the other two shrink to
+     their flag alone rather than wrapping the strip onto its own crowded
+     line — the flag plus its aria-label is enough to tell them apart. */
+  .region-link:not([aria-selected="true"]) .region-name{display:none}
   .kbd-hint{display:none}
   #summary-toggle{display:inline-block}
   #page-summary-text.clamped{display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
@@ -725,13 +793,13 @@ footer{
 @media(max-width:560px){
   .masthead-inner{height:auto;padding-block:var(--space-3);flex-wrap:wrap;gap:var(--space-3)}
   .wordmark{width:100%;font-size:var(--size-md)}
-  .masthead-right{margin-left:0;width:100%;flex-wrap:wrap;gap:var(--space-2)}
+  .region-strip{order:1;width:100%}
+  .masthead-right{order:2;margin-left:0;width:100%;flex-wrap:wrap;gap:var(--space-2)}
   .masthead-right .btn{flex:1;padding:0 var(--space-2)}
   .provenance{display:none}
-  .toolbar-inner{gap:var(--space-4)}
-  .tabs{width:100%}
-  .tab{flex:1;padding:0 var(--space-2)}
+  .filter-row-inner{gap:var(--space-3)}
+  .search-compact{max-width:none}
 }
 @media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{transition-duration:.01ms!important}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
 }
