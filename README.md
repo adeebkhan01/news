@@ -186,11 +186,73 @@ briefing existed still renders the day's account.
 
 **On the page.** The feed shows one card per story, defaulting to importance
 order with a Latest toggle beside the heading. A card names how many sources
-carried the story and links to each of them; a story only one newsroom carried
-says so, because that is a weaker claim and should not look identical. The
-"why this matters" line is labelled and set apart from the publisher's own
-text — an aggregator that blurred the model's words into the publisher's would
-be the one dishonest thing on the page.
+carried the story; a story only one newsroom carried says so, because that is
+a weaker claim and should not look identical. The "why this matters" line is
+labelled and set apart from the publisher's own text — an aggregator that
+blurred the model's words into the publisher's would be the one dishonest
+thing on the page.
+
+## The page must not get longer
+
+Intelligence that costs height is not free, and the first version of all this
+spent height it had not earned: the briefing panel went from 346px to 829px on
+desktop and from 213px to **1,299px** on a phone, and the number of stories
+visible in the first screen went from two to none. A briefing you have to
+scroll past is not a briefing.
+
+So the page is measured, not eyeballed. The rule is that the reader should
+understand the day in about thirty seconds, and the metric that tracks it is
+**how far you scroll before you have seen six of the day's stories** —
+counting briefing items as stories, because they are.
+
+| | before any of this | now |
+|---|---|---|
+| Briefing panel, desktop | 346px | 477px |
+| Briefing panel, phone | 213px | 585px |
+| **Scroll to six stories, desktop** | 2,270px | **1,218px** |
+| **Scroll to six stories, phone** | 1,291px | **1,180px** |
+| Whole page, desktop | 5,629px | 5,519px |
+
+Six stories now cost about half the scroll they used to on desktop and
+slightly less on a phone — and each of those six carries a consequence, a
+source count and a change marker, where before they were bare headlines.
+
+Four rules got it there, and they are worth keeping:
+
+**One line per thing.** A source count and a "developing" marker are four
+words; given a row of their own they cost more height than the headline they
+annotate. They ride on the end of the headline instead. The same goes for the
+"why this matters" label on a card, which is now an inline `Why:` rather than
+a heading — it is still there, because that sentence is the model's and the
+headline above it is the publisher's and the two must never read as one voice,
+but it no longer costs a row to say so.
+
+**Nothing may grow on a talkative day.** Every model-written line is clamped
+to two lines, so the height of the page does not depend on how expansive the
+model felt that morning. The prompts ask for eighteen words for the same
+reason — not to save space, since the clamp already bounds it, but so the
+reader sees a finished sentence rather than a truncated one.
+
+**Depth goes behind the count.** The source comparison — each newsroom's own
+wording of the same event, how many reports from how many sources, and how
+long the story has been running — opens from the `N sources` chip. Closed it
+costs nothing; open it is the one thing an aggregator can do that a single
+masthead cannot.
+
+**The feed does not repeat the briefing.** Briefing headlines link straight to
+the story, and the ranked feed skips what the briefing already covered. Five
+cards restating the five items directly above them was the single biggest
+thing standing between a reader and the sixth story of the day. For the same
+reason there is no hero card while a briefing is up: the first card in the
+feed would be the sixth most important thing that happened, and giving that
+the largest box on the page under a badge reading "Lead story" is the page
+contradicting itself.
+
+And the ranked view stops at thirty stories. The feed holds a month — around
+1,300 — and an infinite scroll over them is the instinct this product exists
+to resist: comprehensiveness is what an RSS reader already gives you, and it
+is why reading one takes all morning. Past thirty the honest answer is
+"nothing else today", with Latest one click away for everything.
 
 ## Yesterday
 

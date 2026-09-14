@@ -16,6 +16,7 @@
 const test = require('node:test');
 const assert = require('node:assert');
 
+const fs = require('node:fs');
 const cluster = require('../lib/cluster.js');
 const rank = require('../lib/rank.js');
 const sec = require('../lib/security.js');
@@ -355,7 +356,6 @@ test('the prose summary is rebuilt from the briefing rather than bought again', 
 // ── Against the real files ───────────────────────────────────────────────
 
 test('the shipped data clusters without misattributing a link', () => {
-  const fs = require('node:fs');
   for (const file of ['data-bd.json', 'data-au.json', 'data-global.json']) {
     if (!fs.existsSync(file)) continue;
     const data = JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -374,4 +374,61 @@ test('the shipped data clusters without misattributing a link', () => {
     }
     assert.equal(seen.size, data.articles.length, `${file}: articles went missing in clustering`);
   }
+});
+
+// ── Tying briefing items to stories ──────────────────────────────────────
+//
+// This is the check the first production run failed: five items came back
+// carrying four ids, the last two naming the same story. A merely *valid* id
+// is not enough — a briefing headline is a link, and the feed skips what the
+// briefing covered, so two items on one story means one wrong link and one
+// story silently missing from the page.
+
+// generateBriefing is not exported (it makes a network call), so the id-tying
+// rule is exercised through the same logic on a copy here, and the real one is
+// pinned by asserting the source still contains it. A behaviour worth a test
+// is worth knowing when it is deleted.
+function tieIds(items, top) {
+  const allowed = {};
+  top.forEach(st => { allowed[st.id] = true; });
+  const claimed = {};
+  items.forEach(item => {
+    if (item.id && allowed[item.id] && !claimed[item.id]) { claimed[item.id] = true; return; }
+    item.id = '';
+  });
+  items.forEach((item, i) => {
+    if (item.id) return;
+    const fallback = top[i] && top[i].id;
+    if (fallback && !claimed[fallback]) { item.id = fallback; claimed[fallback] = true; }
+  });
+  return items;
+}
+
+test('no two briefing items may claim the same story', () => {
+  const top = [{ id: 'a' }, { id: 'b' }, { id: 'c' }, { id: 'd' }, { id: 'e' }];
+  const out = tieIds([{ id: 'a' }, { id: 'b' }, { id: 'c' }, { id: 'd' }, { id: 'd' }], top);
+  const ids = out.map(i => i.id).filter(Boolean);
+  assert.equal(new Set(ids).size, ids.length, 'a story was claimed twice: ' + JSON.stringify(ids));
+  assert.equal(out[4].id, 'e', 'the duplicate should fall back to its position');
+});
+
+test('an invented id falls back to position, not to somebody else\'s story', () => {
+  const top = [{ id: 'a' }, { id: 'b' }];
+  const out = tieIds([{ id: 'a' }, { id: 'NOPE' }], top);
+  assert.deepEqual(out.map(i => i.id), ['a', 'b']);
+});
+
+test('an item with nowhere to land keeps no id rather than a wrong one', () => {
+  // Both positions already claimed out of order: the last item must end up
+  // with no id, so the page renders it as text instead of linking it to a
+  // story it does not describe.
+  const top = [{ id: 'a' }, { id: 'b' }];
+  const out = tieIds([{ id: 'b' }, { id: 'a' }, { id: 'a' }], top);
+  assert.deepEqual(out.map(i => i.id), ['b', 'a', '']);
+});
+
+test('the shipped generateBriefing still ties ids the same way', () => {
+  const source = fs.readFileSync('fetch.js', 'utf8');
+  assert.ok(source.includes('!claimed[item.id]'),
+    'generateBriefing no longer rejects a duplicate id — tieIds above is now testing nothing');
 });

@@ -590,8 +590,8 @@ async function generateBriefing(stories) {
       + '[{"id": "the id given above", '
       + '"headline": "a short factual headline, under 12 words", '
       + '"what": "1-2 sentences on what actually happened", '
-      + '"why": "one sentence on why it matters — the concrete consequence, for whom", '
-      + '"watch": "one sentence on what to watch next, or an empty string if there is no clear next step"}]\n\n'
+      + '"why": "one sentence on why it matters — the concrete consequence, for whom, at most 18 words", '
+      + '"watch": "one sentence on what to watch next, at most 18 words, or an empty string if there is no clear next step"}]\n\n'
       + 'Write only what the headlines support. Where they disagree, say so. Do not speculate beyond them,'
       + ' do not repeat the headline back as the "what", and do not use markdown.',
       2000
@@ -605,14 +605,32 @@ async function generateBriefing(stories) {
       console.error('Briefing rejected by validation (' + String(raw).length + ' chars)');
       return null;
     }
-    // An id the model echoed correctly links the item to its story; one it
-    // invented or dropped is filled in by position, which is the order the
-    // stories were given in.
+    // Tie each item to exactly one story, and no story to two items.
+    //
+    // A model-echoed id that is merely *valid* is not enough: the first real
+    // run came back with five items carrying four ids, the last two pointing
+    // at the same story. That is not cosmetic now that a briefing headline is
+    // a link and the feed skips what the briefing covered — one item would
+    // link to the wrong article, and a story nobody briefed would vanish from
+    // the feed. So an id is taken only if it names a story offered and not
+    // already claimed; otherwise the item falls back to its position, which
+    // is the order the stories were given in; and if that is taken too, the
+    // item keeps no id at all and renders as plain text rather than as a link
+    // to somebody else's story.
     var allowed = {};
     top.forEach(function (st) { allowed[st.id] = true; });
-    valid.forEach(function (item, i) {
-      if (!item.id || !allowed[item.id]) item.id = top[i] ? top[i].id : '';
+    var claimed = {};
+    valid.forEach(function (item) {
+      if (item.id && allowed[item.id] && !claimed[item.id]) { claimed[item.id] = true; return; }
+      item.id = '';
     });
+    valid.forEach(function (item, i) {
+      if (item.id) return;
+      var fallback = top[i] && top[i].id;
+      if (fallback && !claimed[fallback]) { item.id = fallback; claimed[fallback] = true; }
+    });
+    var unmatched = valid.filter(function (item) { return !item.id; }).length;
+    if (unmatched) console.warn('Briefing:', unmatched, 'item(s) could not be tied to a story and will not link');
     return valid;
   } catch (e) {
     console.error('Briefing failed:', e.message);
@@ -632,6 +650,8 @@ async function generateWhyLines(stories) {
       REGION.summaryPrompt
       + ' You explain consequences in one sentence. Respond ONLY with valid JSON, no markdown.',
       'For each story below, write one sentence on why it matters — the concrete consequence and for whom.'
+      + ' At most 18 words: it is read on a phone, under a headline, and a sentence that runs to three lines'
+      + ' there is a sentence nobody finishes.'
       + ' Be specific ("this raises borrowing costs for exporters"), never generic ("this is an important'
       + ' development"). Write only what the headlines support.\n\n'
       + stories.map(storyBrief).join('\n\n') + '\n\n'

@@ -30,10 +30,20 @@ const PAGE_SIZE = 24;
 // to read all twenty to find out which one matters, which is exactly the work
 // the ranking was supposed to do for them.
 const SECONDARY_COUNT = 4;
+
+// How many stories the ranked view shows before it stops.
+//
+// The feed holds a month — around 1,300 stories — and an infinite scroll over
+// them is the instinct this product is supposed to resist: comprehensiveness
+// is what an RSS reader already gives you, and it is why reading one takes
+// all morning. Top stories is an answer to "what matters today", and past
+// thirty the honest answer is "nothing else, and Latest has the rest".
+const TOP_STORIES_SHOWN = 30;
 let visibleArticles = [];
 let renderedCount   = 0;
 let featuredIndex   = -1;
 let feedObserver    = null;
+let feedIsCapped    = false;
 
 // hasLang mirrors `translate` in fetch.js: it says the region's data file
 // carries Bangla, not that every article in it does. A region whose backlog is
@@ -69,7 +79,7 @@ const STRINGS = {
     filterBySource:  'Filter by source',
     allSources:      'All sources',
     briefing:        'Briefing',
-    briefingBy:      'Written by Claude from the headlines below',
+    briefingBy:      'Written by Claude',
     whatHappened:    'What happened',
     whyItMatters:    'Why this matters',
     whatToWatch:     'What to watch',
@@ -81,6 +91,7 @@ const STRINGS = {
     orderTop:        'Top stories',
     orderLatest:     'Latest',
     coveredBy:       'Covered by {n} sources',
+    sourceCount:     '{n} sources',
     statusNew:       'New',
     statusDeveloping:'Developing',
     gainedSources:   'Developing \u00B7 +{n}',
@@ -96,6 +107,10 @@ const STRINGS = {
     archiveHint:     'The archive keeps each day\u2019s briefing and its top stories, not the full feed.',
     singleSource:    'Single-source report',
     alsoReported:    'Also reported by',
+    whyShort:        'Why:',
+    runningFor:      'running {n}h, first filed {from}',
+    reportCount:     '{n} reports',
+    reportCountOne:  '{n} report',
     headlines:       'Headlines',
     latest:          'Latest',
     backToTop:       'Back to top',
@@ -112,6 +127,7 @@ const STRINGS = {
     unknownSource:   'Unknown',
     shownOfTotal:    '{n} / {total} shown',
     endOfFeed:       'End of feed \u00B7 {n} shown',
+    endOfTop:        'That is the day \u00B7 top {n} stories \u00B7 everything else in',
     emptyTitle:      'Nothing here yet',
     emptySearch:     'No headlines match \u201C{query}\u201D. Widen the term or clear the filter.',
     emptySource:     'This source has published nothing in the retained window. Pick another source or region.',
@@ -149,7 +165,7 @@ const STRINGS = {
     filterBySource:  'উৎস অনুযায়ী ছাঁকুন',
     allSources:      'সব উৎস',
     briefing:        'সারসংক্ষেপ',
-    briefingBy:      'নিচের শিরোনামগুলো থেকে ক্লদের লেখা',
+    briefingBy:      'ক্লদের লেখা',
     whatHappened:    'যা ঘটেছে',
     whyItMatters:    'কেন গুরুত্বপূর্ণ',
     whatToWatch:     'যা লক্ষ্য রাখবেন',
@@ -161,6 +177,7 @@ const STRINGS = {
     orderTop:        'প্রধান খবর',
     orderLatest:     'সর্বশেষ',
     coveredBy:       '{n}টি উৎসে প্রকাশিত',
+    sourceCount:     '{n}টি উৎস',
     statusNew:       'নতুন',
     statusDeveloping:'অগ্রগতি',
     gainedSources:   'অগ্রগতি \u00B7 +{n}',
@@ -176,6 +193,10 @@ const STRINGS = {
     archiveHint:     'আর্কাইভে প্রতিদিনের সারসংক্ষেপ ও প্রধান খবর থাকে, পুরো ফিড নয়।',
     singleSource:    'একটি উৎসের খবর',
     alsoReported:    'আরও প্রকাশ করেছে',
+    whyShort:        'কেন:',
+    runningFor:      '{n} ঘণ্টা ধরে, প্রথম প্রকাশ {from}',
+    reportCount:     '{n}টি প্রতিবেদন',
+    reportCountOne:  '{n}টি প্রতিবেদন',
     headlines:       'শিরোনাম',
     latest:          'সর্বশেষ',
     backToTop:       'উপরে ফিরুন',
@@ -192,6 +213,7 @@ const STRINGS = {
     unknownSource:   'অজানা',
     shownOfTotal:    '{n} / {total} দেখানো হয়েছে',
     endOfFeed:       'ফিডের শেষ \u00B7 {n}টি দেখানো হয়েছে',
+    endOfTop:        'আজকের খবর শেষ \u00B7 শীর্ষ {n}টি \u00B7 বাকি সব দেখুন',
     emptyTitle:      'এখানে এখনও কিছু নেই',
     emptySearch:     '\u201C{query}\u201D-এর সঙ্গে কোনো শিরোনাম মেলেনি। শব্দটি বড় করুন বা ছাঁকনি মুছুন।',
     emptySource:     'এই উৎস সংরক্ষিত সময়সীমার মধ্যে কিছু প্রকাশ করেনি। অন্য উৎস বা অঞ্চল বেছে নিন।',
@@ -633,6 +655,57 @@ function sourceAnchor(member) {
   return anchor;
 }
 
+// What the other newsrooms said, and when the story ran. Each publisher's own
+// headline rather than just its name: where two of them disagree, that
+// disagreement is visible here and nowhere else on the page.
+function storyDetail(article, story) {
+  const box = el('div', 'story-detail');
+
+  const span = storySpan(story);
+  if (span) box.appendChild(el('p', 'story-span', span));
+
+  const list = el('ul', 'story-sources');
+  (story.links || []).forEach(memberLink => {
+    const member = articleByLink[memberLink];
+    if (!member) return;
+    const row = el('li', 'story-source' + (member.link === article.link ? ' is-shown' : ''));
+    row.appendChild(el('span', 'label', sourceLabel(member)));
+    const anchor = sourceAnchor(member);
+    if (anchor) {
+      anchor.replaceChildren(document.createTextNode(pick(member, 'title') || t('untitled')));
+      if (shownLang(member) === 'bn') anchor.lang = 'bn';
+      row.appendChild(anchor);
+    } else {
+      row.appendChild(el('span', null, pick(member, 'title') || t('untitled')));
+    }
+    list.appendChild(row);
+  });
+  box.appendChild(list);
+  return box;
+}
+
+// One line of provenance above the comparison: how many reports, from how
+// many newsrooms, over how long.
+//
+// Reports and sources are counted separately because they differ and the
+// difference matters — a publisher filing three times is not three
+// newsrooms, and a list of three rows under a chip reading "2 sources" looks
+// like an error until the line above it says why.
+function storySpan(story) {
+  const reports = (story.links || []).length;
+  const sources = (story.sourceIds || []).length;
+  if (!reports) return '';
+  let line = t(reports === 1 ? 'reportCountOne' : 'reportCount', { n: num(reports) })
+    + ' \u00B7 ' + t('sourceCount', { n: num(sources) });
+  const first = Date.parse(story.first), latest = Date.parse(story.latest);
+  const hours = Math.round((latest - first) / 3600000);
+  // Omitted when everything landed within the hour: "0h" is not information.
+  if (Number.isFinite(first) && Number.isFinite(latest) && hours >= 1) {
+    line += ' \u00B7 ' + t('runningFor', { n: num(hours), from: timeAgo(story.first) || '\u2014' });
+  }
+  return line;
+}
+
 // A card used to be one big <a>. It cannot be any more: a card now carries
 // links of its own — the other publishers who covered the story — and an
 // anchor inside an anchor is not a thing a browser will render. The card is
@@ -681,9 +754,17 @@ function cardElement(a, isFeatured, n, isSecondary) {
   // Corroboration, stated on the card rather than left for the reader to
   // notice: how many independent newsrooms carried this, and — when only one
   // did — that nobody else has confirmed it.
+  //
+  // When there are others, the count is also the way in: it opens the
+  // comparison rather than the card carrying a list of publishers nobody
+  // asked for. One control, two jobs, no extra row.
+  let detailToggle = null;
   if (others.length) {
-    label.appendChild(el('span', 'corroborated',
-      t('coveredBy', { n: num(story.sourceIds.length) })));
+    detailToggle = el('button', 'corroborated is-toggle',
+      t('sourceCount', { n: num(story.sourceIds.length) }));
+    detailToggle.type = 'button';
+    detailToggle.setAttribute('aria-expanded', 'false');
+    label.appendChild(detailToggle);
   } else if (story) {
     label.appendChild(el('span', 'single-source', t('singleSource')));
   }
@@ -720,7 +801,11 @@ function cardElement(a, isFeatured, n, isSecondary) {
     if (why) {
       const line = el('p', 'card-why');
       if (langMode === 'bn' && story.whyBn) line.lang = 'bn';
-      line.appendChild(el('span', 'why-label', t('whyItMatters')));
+      // Inline, not a heading. The label is here because this sentence is the
+      // model's and the headline above it is the publisher's, and the two must
+      // never read as one voice — but a full row of small caps to say so cost
+      // more height than the sentence it labelled.
+      line.appendChild(el('span', 'why-label', t('whyShort')));
       line.appendChild(document.createTextNode(why));
       body.appendChild(line);
     }
@@ -734,19 +819,19 @@ function cardElement(a, isFeatured, n, isSecondary) {
     body.appendChild(desc);
   }
 
-  // The other newsrooms, by name and linked to their own version. This is the
-  // difference between "5 sources" as a badge and as something a reader can
-  // check.
-  if (others.length) {
-    const list = el('div', 'card-sources');
-    list.appendChild(el('span', 'label', t('alsoReported')));
-    story.links.forEach(memberLink => {
-      const member = articleByLink[memberLink];
-      if (!member || member.sourceId === a.sourceId) return;
-      const anchor = sourceAnchor(member);
-      if (anchor) list.appendChild(anchor);
+  // The comparison, behind the count. Closed it costs nothing; open it is the
+  // thing an aggregator can do that a single masthead cannot — the same event
+  // as four newsrooms chose to word it, and when they first and last filed.
+  if (detailToggle) {
+    const detail = storyDetail(a, story);
+    detail.hidden = true;
+    detailToggle.addEventListener('click', () => {
+      const open = detail.hidden;
+      detail.hidden = !open;
+      detailToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      detailToggle.classList.toggle('is-open', open);
     });
-    if (list.childElementCount > 1) body.appendChild(list);
+    body.appendChild(detail);
   }
 
   const meta = el('div', 'card-meta');
@@ -771,6 +856,17 @@ function collapseToStories(articles) {
     if (!story || story.size <= 1) return true;
     return story.lead === a.link;
   });
+}
+
+// The stories the briefing has already covered, which the feed underneath
+// therefore does not repeat. Five cards restating the five items directly
+// above them was the single biggest thing standing between a reader and the
+// sixth story of the day — and the briefing headlines link straight through,
+// so nothing becomes unreachable by being left out here.
+function briefedStoryIds() {
+  const ids = new Set();
+  if (!viewDate) briefingEn.forEach(item => { if (item.id) ids.add(item.id); });
+  return ids;
 }
 
 function orderArticles(articles) {
@@ -860,6 +956,20 @@ function renderArticles() {
   if (collapsing) articles = collapseToStories(articles);
   articles = orderArticles(articles);
 
+  // Only in the ranked view: under Latest the question is "what came in", and
+  // silently withholding the six most recent things because a briefing
+  // mentioned them would be answering something else.
+  if (collapsing && feedOrder === 'top') {
+    const briefed = briefedStoryIds();
+    if (briefed.size) articles = articles.filter(a => !briefed.has(a.clusterId));
+  }
+
+  // Only the ranked view is capped, and only when it is showing everything:
+  // a search or a source filter is a question the reader asked, and cutting
+  // its answer off at thirty would be answering a different one.
+  const capped = collapsing && feedOrder === 'top' && articles.length > TOP_STORIES_SHOWN;
+  if (capped) articles = articles.slice(0, TOP_STORIES_SHOWN);
+
   document.getElementById('article-count').textContent =
     t(articles.length === 1 ? 'articleCountOne' : 'articleCount', { n: num(articles.length) });
 
@@ -876,10 +986,18 @@ function renderArticles() {
   // thousands of articles, and rendering them all makes every subsequent
   // repaint (theme switch, filtering, scrolling) crawl.
   visibleArticles = articles;
+  feedIsCapped = capped;
   // The lead is the top-ranked story that has a picture to lead with, and only
   // in the ordering where "top" means anything. Under "Latest" the first card
   // is merely the newest, which is not a lead and is not badged as one.
-  featuredIndex = (collapsing && feedOrder === 'top') ? articles.findIndex(a => a.img) : -1;
+  //
+  // And not at all when a briefing is up: the briefing has already taken the
+  // day's top stories, so the first card in the feed is the sixth most
+  // important thing that happened. Giving that the largest box on the page,
+  // under a badge reading "Lead story", is the page contradicting itself.
+  const briefingLeads = !viewDate && briefingEn.length > 0;
+  featuredIndex = (collapsing && feedOrder === 'top' && !briefingLeads)
+    ? articles.findIndex(a => a.img) : -1;
   renderedCount = 0;
 
   const grid = el('div', 'grid');
@@ -915,8 +1033,19 @@ function appendBatch() {
 
   if (renderedCount >= visibleArticles.length) {
     const sentinel = document.getElementById('feed-sentinel');
-    if (sentinel) sentinel.replaceChildren(
-      el('span', 'label', t('endOfFeed', { n: num(visibleArticles.length) })));
+    if (sentinel) {
+      const end = el('span', 'label', feedIsCapped
+        ? t('endOfTop', { n: num(visibleArticles.length) })
+        : t('endOfFeed', { n: num(visibleArticles.length) }));
+      if (feedIsCapped) {
+        const more = el('button', 'link-button', t('orderLatest'));
+        more.type = 'button';
+        more.addEventListener('click', () => setFeedOrder('latest'));
+        sentinel.replaceChildren(end, more);
+      } else {
+        sentinel.replaceChildren(end);
+      }
+    }
     if (feedObserver) feedObserver.disconnect();
   }
 }
@@ -995,31 +1124,48 @@ function briefItemElement(item, n, full, itemLang) {
   if (itemLang === 'bn') wrap.lang = 'bn';
   wrap.dataset.n = String(n).padStart(2, '0');
 
-  const head = el('h3', 'brief-headline', item.headline);
-  wrap.appendChild(head);
-
-  // The story behind the item, when it is one the data file published a
-  // record for: the briefing says four newsrooms reported this, and the
-  // reader can see which four in the feed below.
+  // Headline and its metadata share one line. A source count and a
+  // "developing" marker are four words between them; giving them a row of
+  // their own cost more vertical space than the headline they describe, and
+  // the briefing has to fit in a glance or it is not a briefing.
+  const head = el('h3', 'brief-headline');
   const story = storyForItem(item.id);
-  const meta = el('div', 'brief-meta');
+  // The headline is the way in. Until it was a link, the briefing was a thing
+  // you read and then went looking for underneath — which is exactly the
+  // duplication that made the page twice as long as it needed to be.
+  const link = story && safeURL(story.lead);
+  if (link) {
+    const anchor = el('a', 'brief-link', item.headline);
+    anchor.href = link;
+    anchor.target = '_blank';
+    anchor.rel = 'noopener noreferrer';
+    head.appendChild(anchor);
+  } else {
+    head.appendChild(document.createTextNode(item.headline));
+  }
   if (story && story.sourceIds && story.sourceIds.length > 1) {
-    meta.appendChild(el('span', 'brief-sources', t('coveredBy', { n: num(story.sourceIds.length) })));
+    head.appendChild(el('span', 'brief-sources', t('sourceCount', { n: num(story.sourceIds.length) })));
   }
   const chip = changeChip(story);
-  if (chip) meta.appendChild(chip);
-  if (meta.childElementCount) wrap.appendChild(meta);
+  if (chip) head.appendChild(chip);
+  wrap.appendChild(head);
 
-  const rows = full
-    ? [[t('whatHappened'), item.what], [t('whyItMatters'), item.why], [t('whatToWatch'), item.watch]]
-    : [[t('whyItMatters'), item.why]];
+  // Compact is one sentence and no label: this is the briefing, every line in
+  // it is why the story matters, and repeating that above each one is a row
+  // of chrome per item. The labels come back in the full view, where there
+  // are three different questions to tell apart.
+  if (!full) {
+    if (item.why) wrap.appendChild(el('p', 'brief-why', item.why));
+    return wrap;
+  }
 
   const dl = el('dl', 'brief-lines');
-  rows.forEach(([label, text]) => {
-    if (!text) return;
-    dl.appendChild(el('dt', null, label));
-    dl.appendChild(el('dd', null, text));
-  });
+  [[t('whatHappened'), item.what], [t('whyItMatters'), item.why], [t('whatToWatch'), item.watch]]
+    .forEach(([label, text]) => {
+      if (!text) return;
+      dl.appendChild(el('dt', null, label));
+      dl.appendChild(el('dd', null, text));
+    });
   wrap.appendChild(dl);
   return wrap;
 }
@@ -1092,7 +1238,10 @@ function renderSummary() {
 // compares against the last day it has.
 function renderChangeNote() {
   const note = document.getElementById('brief-change');
-  if (viewDate || !changedSince) { note.hidden = true; note.replaceChildren(); return; }
+  // Only in the full view. What the markers are measured against is something
+  // a reader checks once, not something they need re-reading every morning
+  // above the fold — and the chips themselves are the part worth scanning.
+  if (viewDate || !changedSince || !briefFull) { note.hidden = true; note.replaceChildren(); return; }
 
   const frag = document.createDocumentFragment();
   frag.appendChild(el('span', 'label', t('comparedWith', { date: formatDay(changedSince) })));
