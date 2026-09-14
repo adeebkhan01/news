@@ -1,0 +1,484 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+/* ─── Tokens ───────────────────────────────────────────────────────────
+   Aparajita Brand Guidelines v1.0. Base scales below, semantic aliases
+   after; components only ever reference the aliases, so the night theme
+   re-points them without touching a rule. */
+:root{
+  /* paper */
+  --paper-0:#ffffff;--paper-1:#fdfcfb;--paper-2:#f6f4f1;--paper-3:#eae6df;--paper-4:#ddd8cf;
+  /* ink */
+  --ink-0:#0e1729;--ink-1:#1b2a4a;--ink-2:#3d4f70;--ink-3:#5c6b85;
+  --line-1:#8fa3bf;--line-2:#c3ccd9;
+  /* signal gold */
+  --gold-1:#d4a418;--gold-2:#b98c0c;--gold-ink:#6d5205;--gold-wash:#f7eccc;
+  /* status — run states only */
+  --ok-1:#2f7d54;--ok-wash:#e4f0e8;
+  --warn-1:#b8761a;--warn-wash:#f8ecd9;
+  --err-1:#a8321f;--err-wash:#f8e5e1;
+
+  /* semantic aliases */
+  --bg-page:var(--paper-1);--bg-surface:var(--paper-2);--bg-sunken:var(--paper-3);--bg-inverse:var(--ink-1);
+  --text-heading:var(--ink-0);--text-body:var(--ink-1);--text-muted:var(--ink-3);
+  --text-inverse:var(--paper-1);--text-accent:var(--gold-ink);
+  --border-strong:var(--ink-1);--border-quiet:var(--line-1);--border-hairline:var(--line-2);
+  --focus-ring:var(--gold-1);--selection-bg:var(--gold-wash);
+  --edge-color:var(--line-2);--edge-color-strong:var(--ink-2);--edge-color-gold:var(--gold-2);
+
+  /* type */
+  --font-display:'Space Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --font-text:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --font-bangla:'Tiro Bangla',serif;   /* exception: no monospace Bengali face exists */
+  --size-2xs:11px;--size-xs:12px;--size-sm:13px;--size-md:15px;--size-lg:18px;
+  --size-xl:22px;--size-2xl:28px;--size-3xl:36px;--size-4xl:48px;--size-5xl:64px;
+  --track-display:-0.03em;--track-label:0.14em;
+
+  /* space */
+  --space-1:2px;--space-2:4px;--space-3:8px;--space-4:12px;--space-5:16px;
+  --space-6:24px;--space-7:32px;--space-8:48px;--space-9:64px;--space-10:96px;
+  --gutter:24px;--section-y:64px;--measure:68ch;--page-max:calc((100vw + 1180px) / 2);
+  --control-h-sm:26px;--control-h-md:34px;--control-h-lg:44px;
+  --lead-h:380px;   /* the lead slot is a fixed box — see .card.featured */
+
+  /* edges */
+  --radius:2px;--border-w:1px;--border-w-heavy:2px;
+  --edge-1:2px 2px 0 0 var(--edge-color);
+  --edge-2:4px 4px 0 0 var(--edge-color);
+  --edge-3:6px 6px 0 0 var(--edge-color);
+  --edge-strong:3px 3px 0 0 var(--edge-color-strong);
+  --edge-none:0 0 0 0 var(--edge-color);
+  --press-1:translate(2px,2px);--press-2:translate(4px,4px);
+  --motion-fast:70ms;--motion-base:130ms;--ease:linear;--ease-smooth:cubic-bezier(.2,0,.2,1);
+  --header-h:56px;
+}
+
+/* Night theme — same roles, ink and paper swapped. The guidelines flag this
+   as untested, so it is a starting point rather than a finished surface. */
+:root[data-theme="night"]{
+  --bg-page:var(--ink-0);--bg-surface:#16233c;--bg-sunken:#0a101d;--bg-inverse:var(--paper-1);
+  --text-heading:var(--paper-1);--text-body:#e6eaf1;--text-muted:var(--line-1);
+  --text-inverse:var(--ink-0);--text-accent:var(--gold-1);
+  --border-strong:var(--line-1);--border-quiet:#35486b;--border-hairline:#253352;
+  --edge-color:#060b14;--edge-color-strong:#060b14;
+}
+
+html{font-size:16px;-webkit-text-size-adjust:100%;font-family:var(--font-text)}
+body{
+  background:var(--bg-page);color:var(--text-body);
+  font-family:var(--font-text);font-size:var(--size-md);line-height:1.5;
+  min-height:100vh;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+::selection{background:var(--selection-bg)}
+:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+[lang="bn"]{font-family:var(--font-bangla);line-height:1.6}
+/* Colour transitions are suppressed while the theme swaps so the document
+   doesn't animate every border at once. */
+:root.theme-switch *,:root.theme-switch *::before,:root.theme-switch *::after{transition:none!important}
+
+.wrap{max-width:var(--page-max);margin:0 auto;padding:0 var(--gutter)}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--ink-1);color:var(--paper-1);
+  padding:var(--space-3) var(--space-5);z-index:300;font-family:var(--font-display);font-size:var(--size-sm)}
+.skip-link:focus{left:0}
+
+/* Micro-label: 11px, uppercase, +0.14em. Sits above every section, field
+   and table header — the most recognisable thing in the system. */
+.label{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
+  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-muted);
+}
+
+/* ─── Masthead ─────────────────────────────────────────────────────── */
+.masthead{
+  position:sticky;top:0;z-index:100;background:var(--bg-page);
+  box-shadow:inset 0 -3px 0 var(--border-hairline);   /* inset, never a drop shadow */
+}
+.masthead-inner{display:flex;align-items:center;gap:var(--space-5);height:var(--header-h)}
+.wordmark{
+  display:flex;align-items:baseline;gap:.2em;text-decoration:none;flex-shrink:0;
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-lg);
+  letter-spacing:0.03em;text-transform:uppercase;color:var(--text-heading);
+}
+/* The one gold thing on this view. Tick height = cap height, width ~0.4x. */
+.wordmark .tick{width:.4em;height:.72em;background:var(--gold-1);display:inline-block;flex-shrink:0}
+.wordmark .edition{
+  font-size:var(--size-2xs);letter-spacing:var(--track-label);color:var(--text-muted);
+  padding-left:var(--space-4);margin-left:var(--space-2);align-self:center;
+}
+.masthead-right{margin-left:auto;display:flex;align-items:center;gap:var(--space-3)}
+.provenance{
+  font-family:var(--font-text);font-size:var(--size-xs);color:var(--text-muted);
+  white-space:nowrap;font-variant-numeric:tabular-nums;
+}
+
+/* ─── Buttons ──────────────────────────────────────────────────────── */
+.btn{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-sm);line-height:1;
+  text-transform:uppercase;letter-spacing:.02em;
+  height:var(--control-h-md);padding:0 var(--space-4);
+  display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2);
+  background:var(--bg-surface);color:var(--text-body);
+  border:var(--border-w) solid var(--border-strong);border-radius:var(--radius);
+  box-shadow:var(--edge-1);cursor:pointer;
+  transition:background var(--motion-fast) var(--ease),color var(--motion-fast) var(--ease);
+}
+.btn:hover{background:var(--bg-sunken)}
+.btn:active{transform:var(--press-1);box-shadow:var(--edge-none)}   /* travels into its own edge */
+.btn-primary{background:var(--bg-inverse);color:var(--text-inverse);box-shadow:2px 2px 0 0 var(--edge-color-strong)}
+.btn-primary:hover{filter:brightness(.92)}
+.btn[disabled]{background:var(--bg-sunken);border-color:var(--border-hairline);color:var(--text-muted);box-shadow:none;cursor:default}
+.btn[disabled]:active{transform:none}
+
+/* ─── Toolbar: region tabs + search ────────────────────────────────── */
+.toolbar{background:var(--bg-surface);border-bottom:var(--border-w) solid var(--border-strong)}
+.toolbar-inner{display:flex;align-items:flex-end;gap:var(--space-6);padding-block:var(--space-4);flex-wrap:wrap}
+.field{display:flex;flex-direction:column;gap:var(--space-2)}
+.field .label{display:block}
+
+/* Boxed tabs: active is a lifted paper tab, so gold stays on the wordmark. */
+.tabs{display:flex;gap:var(--space-1);flex-shrink:0}
+.tab{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-sm);line-height:1;
+  text-transform:uppercase;letter-spacing:.02em;
+  height:var(--control-h-md);padding:0 var(--space-4);
+  background:transparent;color:var(--text-muted);
+  border:var(--border-w) solid var(--border-hairline);border-radius:var(--radius);
+  cursor:pointer;white-space:nowrap;
+  transition:background var(--motion-fast) var(--ease),color var(--motion-fast) var(--ease);
+}
+.tab:hover{background:var(--bg-sunken);color:var(--text-body)}
+.tab[aria-selected="true"]{
+  background:var(--bg-page);color:var(--text-heading);
+  border-color:var(--border-strong);box-shadow:var(--edge-1);
+}
+
+.search{position:relative;flex:1;min-width:240px}
+/* Inputs are inset — raised acts, inset receives. */
+#search-input{
+  width:100%;height:var(--control-h-md);
+  background:var(--bg-page);color:var(--text-body);
+  font-family:var(--font-text);font-size:var(--size-sm);
+  border:var(--border-w) solid var(--border-strong);border-radius:var(--radius);
+  box-shadow:inset 2px 2px 0 var(--border-hairline);
+  padding:0 var(--space-8) 0 var(--space-3);outline:none;
+}
+#search-input::placeholder{color:var(--text-muted)}
+#search-input::-webkit-search-cancel-button{display:none}
+.kbd-hint{
+  position:absolute;right:var(--space-3);bottom:10px;pointer-events:none;
+  font-family:var(--font-display);font-size:var(--size-2xs);color:var(--text-muted);
+}
+#search-clear{
+  position:absolute;right:var(--space-2);bottom:5px;display:none;
+  width:24px;height:24px;line-height:1;
+  background:none;border:none;color:var(--text-muted);cursor:pointer;
+  font-family:var(--font-display);font-size:var(--size-sm);
+}
+#search-clear:hover{color:var(--text-body)}
+
+/* ─── Source filter ────────────────────────────────────────────────── */
+.filter-bar{background:var(--bg-page);border-bottom:var(--border-w) solid var(--border-hairline)}
+.filter-bar-inner{display:flex;gap:var(--space-2);padding-block:var(--space-3);overflow-x:auto;scrollbar-width:none;align-items:center}
+.filter-bar-inner::-webkit-scrollbar{display:none}
+.chip{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
+  text-transform:uppercase;letter-spacing:var(--track-label);
+  height:var(--control-h-sm);padding:0 var(--space-3);
+  display:inline-flex;align-items:center;gap:var(--space-3);flex-shrink:0;
+  background:transparent;color:var(--text-muted);
+  border:var(--border-w) solid var(--border-hairline);border-radius:var(--radius);cursor:pointer;
+  transition:background var(--motion-fast) var(--ease),color var(--motion-fast) var(--ease);
+}
+.chip:hover{background:var(--bg-sunken);color:var(--text-body)}
+.chip.active{background:var(--bg-inverse);border-color:var(--bg-inverse);color:var(--text-inverse)}
+.chip .count{font-family:var(--font-text);font-weight:400;letter-spacing:0;font-variant-numeric:tabular-nums;opacity:.75}
+
+/* ─── Layout ───────────────────────────────────────────────────────── */
+.content-wrap{
+  max-width:var(--page-max);margin:0 auto;padding:var(--space-7) var(--gutter) var(--space-9);
+  display:grid;grid-template-columns:1fr 300px;gap:var(--space-7);align-items:start;
+}
+.main-col{min-width:0}
+
+/* Section opener: micro-label + title on a 1px hard rule. */
+.section-head{
+  display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-5);
+  padding-bottom:var(--space-3);margin-bottom:var(--space-5);
+  border-bottom:var(--border-w) solid var(--border-strong);
+}
+.section-head h2{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-xl);line-height:1.25;
+  letter-spacing:var(--track-display);color:var(--text-heading);
+}
+.status-line{
+  display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap;
+  font-family:var(--font-text);font-size:var(--size-sm);color:var(--text-muted);
+  font-variant-numeric:tabular-nums;
+}
+.status-strip{
+  display:inline-flex;align-items:center;gap:var(--space-2);
+  padding:2px var(--space-3);border-radius:var(--radius);
+  border:var(--border-w) solid var(--ok-1);background:var(--ok-wash);color:var(--ok-1);
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+  text-transform:uppercase;letter-spacing:var(--track-label);
+}
+.status-strip.warn{border-color:var(--warn-1);background:var(--warn-wash);color:var(--warn-1)}
+.status-strip.err{border-color:var(--err-1);background:var(--err-wash);color:var(--err-1)}
+
+/* ─── Briefing panel ───────────────────────────────────────────────── */
+.panel{
+  background:var(--bg-surface);
+  border:var(--border-w) solid var(--border-strong);border-radius:var(--radius);
+  box-shadow:var(--edge-strong);padding:var(--space-5);
+}
+.panel + .panel{margin-top:var(--space-6)}
+.panel-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-4);margin-bottom:var(--space-3)}
+#page-summary{
+  margin-bottom:var(--space-6);
+  display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:var(--space-6);align-items:start;
+}
+/* An id rule outranks [hidden], so the briefing needs to be told again. */
+#page-summary[hidden]{display:none}
+.brief-main{min-width:0}
+.facts{border-top:var(--border-w) solid var(--border-strong);padding-top:var(--space-3)}
+.fact{padding:var(--space-3) 0;border-bottom:var(--border-w) dashed var(--border-hairline)}
+.fact:last-child{border-bottom:none;padding-bottom:0}
+.fact dt{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
+  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-muted);
+}
+.fact dd{
+  margin-top:var(--space-2);font-family:var(--font-display);font-weight:700;
+  font-size:var(--size-md);line-height:1.1;letter-spacing:var(--track-display);
+  color:var(--text-heading);font-variant-numeric:tabular-nums;
+}
+@media(max-width:820px){
+  #page-summary{grid-template-columns:1fr;gap:var(--space-5)}
+}
+#page-summary-text{font-size:var(--size-md);line-height:1.5;max-width:var(--measure);color:var(--text-body)}
+#summary-toggle{
+  display:none;margin-top:var(--space-3);padding:0;background:none;border:none;cursor:pointer;
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-accent);
+}
+
+/* ─── Cards ────────────────────────────────────────────────────────── */
+.grid,.loading-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--space-5)}
+.card{
+  position:relative;display:flex;flex-direction:column;text-decoration:none;color:inherit;
+  background:var(--bg-page);
+  border:var(--border-w) solid var(--border-strong);border-radius:var(--radius);
+  box-shadow:var(--edge-strong);
+  transition:background var(--motion-fast) var(--ease);
+}
+.card:hover{background:var(--bg-surface)}
+.card:active{transform:translate(3px,3px);box-shadow:var(--edge-none)}
+.grid > .card{content-visibility:auto;contain-intrinsic-size:auto 320px}
+.grid > .card.featured{content-visibility:visible}
+
+.thumb{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:var(--bg-sunken);flex-shrink:0;
+  border-bottom:var(--border-w) solid var(--border-strong)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+/* Striped placeholder: 135deg paper-2/paper-3, captioned with what belongs there. */
+.thumb.placeholder{
+  display:grid;place-items:center;
+  background:repeating-linear-gradient(135deg,var(--paper-2) 0 8px,var(--paper-3) 8px 16px);
+}
+:root[data-theme="night"] .thumb.placeholder{
+  background:repeating-linear-gradient(135deg,var(--bg-surface) 0 8px,var(--bg-sunken) 8px 16px);
+}
+.thumb.placeholder .cap{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-muted);
+  text-align:center;padding:0 var(--space-4);
+}
+
+.card-body{padding:var(--space-5);flex:1;display:flex;flex-direction:column;gap:var(--space-3)}
+.card-title{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-md);line-height:1.25;
+  letter-spacing:var(--track-display);color:var(--text-heading);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+}
+.card-desc{
+  font-size:var(--size-sm);line-height:1.5;color:var(--text-muted);max-width:var(--measure);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+/* Provenance row: source left, freshness right, on a dashed hairline. */
+.card-meta{
+  margin-top:auto;padding-top:var(--space-3);
+  border-top:var(--border-w) dashed var(--border-hairline);
+  display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-3);
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-muted);
+}
+.card-meta .age{font-family:var(--font-text);font-weight:400;letter-spacing:0;font-variant-numeric:tabular-nums}
+
+.card.featured{grid-column:1/-1;flex-direction:row;align-items:stretch}
+.card.featured .thumb{width:46%;aspect-ratio:auto;min-height:260px;border-bottom:none;
+  border-right:var(--border-w) solid var(--border-strong)}
+.card.featured .card-body{padding:var(--space-6);justify-content:center;gap:var(--space-4)}
+.card.featured .card-title{font-size:var(--size-2xl);line-height:1.08;-webkit-line-clamp:4}
+.card.featured .card-desc{font-size:var(--size-md);-webkit-line-clamp:3}
+.lead-badge{
+  align-self:flex-start;
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
+  text-transform:uppercase;letter-spacing:var(--track-label);
+  color:var(--text-inverse);background:var(--bg-inverse);
+  padding:var(--space-2) var(--space-3);border-radius:var(--radius);
+}
+@media(max-width:820px){
+  .card.featured{flex-direction:column}
+  .card.featured .thumb{width:100%;aspect-ratio:16/9;min-height:0;
+    border-right:none;border-bottom:var(--border-w) solid var(--border-strong)}
+  .card.featured .card-body{padding:var(--space-5)}
+  .card.featured .card-title{font-size:var(--size-xl)}
+}
+/* Ordinary cards are levelled by the grid row stretching them to match; the
+   lead has a row to itself, so without a fixed box its height swung with the
+   length of whichever headline led the region. */
+@media(min-width:821px){
+  .card.featured{height:var(--lead-h)}
+  .card.featured .thumb{height:100%;min-height:0}
+  .card.featured .card-body{overflow:hidden}
+}
+.highlight{background:var(--selection-bg);color:inherit}
+.feed-sentinel{display:flex;justify-content:center;padding:var(--space-6) 0 var(--space-2)}
+
+/* ─── Facts panel: key/value rows on dashed hairlines ──────────────── */
+.sidebar{position:sticky;top:calc(var(--header-h) + var(--space-5));
+  max-height:calc(100vh - var(--header-h) - var(--space-7));overflow-y:auto;overscroll-behavior:contain;
+  scrollbar-width:thin;scrollbar-color:var(--border-quiet) transparent}
+.sidebar::-webkit-scrollbar{width:6px}
+.sidebar::-webkit-scrollbar-thumb{background:var(--border-quiet)}
+.headlines-list{list-style:none}
+.headline-item{
+  display:grid;grid-template-columns:auto 1fr;column-gap:var(--space-3);align-items:start;
+  padding:var(--space-3) 0;border-bottom:var(--border-w) dashed var(--border-hairline);
+}
+.headline-item:first-child{padding-top:0}
+.headline-item:last-child{border-bottom:none;padding-bottom:0}
+.headline-item::before{
+  counter-increment:hl;content:counter(hl,decimal-leading-zero);grid-row:1/3;
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);color:var(--text-muted);
+  padding-top:2px;
+}
+.headlines-list{counter-reset:hl}
+.headline-title{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-sm);line-height:1.25;
+  letter-spacing:var(--track-display);color:var(--text-heading);text-decoration:none;display:block;
+}
+.headline-title:hover{color:var(--text-accent)}
+.headline-time{display:block;margin-top:2px;font-size:var(--size-xs);color:var(--text-muted);font-variant-numeric:tabular-nums}
+
+/* ─── Loading, empty, error ────────────────────────────────────────── */
+/* No shimmer: progress is reported in words, not motion. */
+.skeleton{border:var(--border-w) solid var(--border-hairline);border-radius:var(--radius);background:var(--bg-page)}
+.skeleton-thumb{aspect-ratio:16/9;background:repeating-linear-gradient(135deg,var(--paper-2) 0 8px,var(--paper-3) 8px 16px)}
+:root[data-theme="night"] .skeleton-thumb{background:repeating-linear-gradient(135deg,var(--bg-surface) 0 8px,var(--bg-sunken) 8px 16px)}
+.skeleton-body{padding:var(--space-5);display:flex;flex-direction:column;gap:var(--space-3)}
+.skeleton-line.w35{width:35%}
+.skeleton-line.w85{width:85%}
+.skeleton-line.w55{width:55%}
+.skeleton-line{height:11px;background:var(--bg-sunken)}
+
+.notice{
+  border:var(--border-w) solid var(--border-strong);border-radius:var(--radius);
+  box-shadow:var(--edge-strong);background:var(--bg-surface);padding:var(--space-6);
+}
+.notice h3{font-family:var(--font-display);font-weight:700;font-size:var(--size-lg);
+  letter-spacing:var(--track-display);color:var(--text-heading);margin-bottom:var(--space-3)}
+.notice p{font-size:var(--size-sm);line-height:1.5;max-width:var(--measure);color:var(--text-body)}
+.notice p + p{margin-top:var(--space-3)}
+.notice.error{border-color:var(--err-1);background:var(--err-wash);box-shadow:3px 3px 0 0 var(--err-1)}
+.notice.error h3{color:var(--err-1)}
+
+/* ─── Footer ───────────────────────────────────────────────────────── */
+footer{
+  border-top:var(--border-w) solid var(--border-strong);background:var(--bg-surface);
+  margin-top:var(--space-9);padding-block:var(--space-6);
+}
+.foot-inner{max-width:var(--page-max);margin:0 auto;padding:0 var(--gutter);
+  display:flex;justify-content:space-between;gap:var(--space-5);flex-wrap:wrap;
+  font-size:var(--size-xs);color:var(--text-muted)}
+
+#to-top{
+  position:fixed;right:var(--gutter);bottom:var(--gutter);z-index:90;
+  width:var(--control-h-lg);height:var(--control-h-lg);
+  display:none;place-items:center;cursor:pointer;
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-md);
+  background:var(--bg-surface);color:var(--text-body);
+  border:var(--border-w) solid var(--border-strong);border-radius:var(--radius);box-shadow:var(--edge-1);
+}
+#to-top.show{display:grid}
+#to-top:active{transform:var(--press-1);box-shadow:var(--edge-none)}
+
+/* ─── Responsive ───────────────────────────────────────────────────── */
+@media(max-width:980px){
+  .content-wrap{grid-template-columns:1fr;gap:var(--space-6)}
+  .sidebar{position:static;max-height:none;overflow:visible}
+}
+/* ─── Mobile: a bulletin, not a card grid ──────────────────────────
+   Card art costs a phone screen more than it gives: at this width each
+   thumbnail is a scroll-length of its own between one headline and the
+   next. The cards give up their boxes and become hairline-separated
+   entries — the system's numbered list block, counting the feed. */
+@media(max-width:700px){
+  :root{--gutter:16px}
+  .wordmark .edition{display:none}
+  .kbd-hint{display:none}
+  #summary-toggle{display:inline-block}
+  #page-summary-text.clamped{display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+
+  .grid,.loading-grid{display:block}
+  .thumb,.thumb.placeholder,.skeleton-thumb{display:none}
+
+  .card,.card.featured{
+    display:grid;grid-template-columns:auto 1fr;column-gap:var(--space-4);
+    height:auto;background:none;border:0;border-radius:0;box-shadow:none;
+    border-bottom:var(--border-w) dashed var(--border-hairline);
+    contain-intrinsic-size:auto 120px;
+  }
+  .card:hover,.card.featured:hover{background:none}
+  .card:active{transform:none}
+  /* Numbered from the markup: content-visibility carries style containment,
+     which scopes a CSS counter to each card and renders every row as 01. */
+  .card::before{
+    content:attr(data-n);
+    font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+    color:var(--text-muted);padding-top:var(--space-5);
+  }
+  .card-body{padding:var(--space-5) 0;gap:var(--space-2)}
+  .card-title,.card.featured .card-title{
+    font-size:var(--size-md);line-height:var(--leading-snug,1.25);-webkit-line-clamp:3;
+  }
+  .card-desc,.card.featured .card-desc{display:none}   /* bulletin: headline, source, age */
+  .card-meta{padding-top:var(--space-2);border-top:0}
+  .lead-badge{margin-bottom:var(--space-1)}
+  .card.featured .card-body{padding:var(--space-5) 0}
+
+  .skeleton{border:0;border-bottom:var(--border-w) dashed var(--border-hairline);border-radius:0}
+  .skeleton-body{padding:var(--space-5) 0}
+
+  /* The Latest panel repeats the top of the feed; on a phone that is the
+     same six headlines twice. */
+  .sidebar{display:none}
+
+  /* Same reasoning for the facts list: the region is the selected tab, the
+     count is in the section head, and the fetch time is in the footer. What
+     fills the space beside a 68ch measure on a desktop is, stacked under the
+     briefing on a phone, four rows of things the page already says. */
+  .facts{display:none}
+}
+@media(max-width:560px){
+  .masthead-inner{height:auto;padding-block:var(--space-3);flex-wrap:wrap;gap:var(--space-3)}
+  .wordmark{width:100%;font-size:var(--size-md)}
+  .masthead-right{margin-left:0;width:100%;flex-wrap:wrap;gap:var(--space-2)}
+  .masthead-right .btn{flex:1;padding:0 var(--space-2)}
+  .provenance{display:none}
+  .toolbar-inner{gap:var(--space-4)}
+  .tabs{width:100%}
+  .tab{flex:1;padding:0 var(--space-2)}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms!important}
+}

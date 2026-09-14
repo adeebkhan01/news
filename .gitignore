@@ -1,0 +1,7 @@
+# Nothing here is a dependency of the site — the page and the fetcher have no
+# packages at all. This exists so a local `npm install playwright` for a
+# browser check can't end up in a commit.
+node_modules/
+package-lock.json
+package.json
+*.png
