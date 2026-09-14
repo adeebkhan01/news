@@ -152,12 +152,13 @@ a{color:inherit}
 .btn[disabled]{background:var(--bg-sunken);border-color:var(--border-hairline);color:var(--text-muted);box-shadow:none;cursor:default}
 .btn[disabled]:active{transform:none}
 
-/* ─── Filter row: search + source dropdown ─────────────────────────── */
-/* One quiet row for both utility controls, where there used to be two
-   bordered sections (a "Region / Search" toolbar, then a separate always-
-   open row of source chips). Utility recedes so the briefing can lead. */
-.filter-row{background:var(--bg-page);border-bottom:var(--border-w) solid var(--border-hairline)}
-.filter-row-inner{display:flex;align-items:center;gap:var(--space-4);padding-block:var(--space-3)}
+/* ─── Filter row: search + source/topic dropdowns ───────────────────── */
+/* One quiet row for the utility controls, sitting beside the list they
+   narrow (Headlines) rather than above the whole page: a full-width bar
+   here used to sit between the masthead and Top stories, pushing both it
+   and the Latest sidebar below the fold before a visitor saw either. */
+.filter-row{margin-bottom:var(--space-6);border-bottom:var(--border-w) solid var(--border-hairline)}
+.filter-row-inner{display:flex;align-items:center;gap:var(--space-4);padding-bottom:var(--space-5)}
 .search-compact{position:relative;flex:1;min-width:160px;max-width:360px}
 /* Inputs are inset — raised acts, inset receives. */
 #search-input{
@@ -187,7 +188,10 @@ a{color:inherit}
    open row of chips scrolling off the edge of the screen. Same list, same
    click-to-filter, costing one line until it is asked for. */
 .sources-dropdown{position:relative;flex-shrink:0}
-#sources-trigger{
+/* Shared by every dropdown trigger button (sources, topics, …) — an id
+   selector here would style only the first one built and leave any later
+   dropdown reusing this markup looking like plain unstyled text. */
+.dropdown-trigger{
   height:var(--control-h-sm);padding:0 var(--space-3);
   display:inline-flex;align-items:center;gap:var(--space-2);
   font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
@@ -195,9 +199,9 @@ a{color:inherit}
   background:var(--bg-surface);color:var(--text-body);
   border:var(--border-w) solid var(--border-hairline);border-radius:var(--radius);cursor:pointer;
 }
-#sources-trigger:hover{background:var(--bg-sunken)}
-#sources-trigger[aria-expanded="true"]{border-color:var(--border-strong)}
-#sources-trigger .caret{color:var(--text-muted);font-size:var(--size-xs)}
+.dropdown-trigger:hover{background:var(--bg-sunken)}
+.dropdown-trigger[aria-expanded="true"]{border-color:var(--border-strong)}
+.dropdown-trigger .caret{color:var(--text-muted);font-size:var(--size-xs)}
 .sources-menu{
   position:absolute;z-index:50;top:calc(100% + var(--space-2));right:0;min-width:220px;
   display:flex;flex-direction:column;gap:2px;padding:var(--space-2);
@@ -373,7 +377,7 @@ a{color:inherit}
 /* A day that is over has no live source breakdown, and its date is already
    the point of viewing it, so the controls that describe those are not
    merely disabled — they are gone. */
-body.archive-mode .filter-bar,
+body.archive-mode .filter-row,
 body.archive-mode #scope-switch{display:none}
 /* "● LIVE" beside a day that ended is the page contradicting itself. The
    status strip reports the live fetch, and in the archive there isn't one. */

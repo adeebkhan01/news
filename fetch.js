@@ -568,6 +568,53 @@ function parseJsonBlock(raw) {
   return JSON.parse(clean.slice(start, end + 1));
 }
 
+// A second look at the same headline math cluster.js uses, at a looser
+// threshold and for a different purpose. clusterArticles() is deliberately
+// tuned to under-merge — THRESHOLD (0.30) exists to stop two different
+// events ever sharing one byline, which is a misattribution. That leaves
+// two clusters cluster.js correctly kept apart (worded differently enough,
+// or a few hours outside WINDOW_MS) but which are still, to a reader, the
+// same story showing up twice in a five-item digest — a second raid on the
+// same street, a follow-up vote, the same event reported through two
+// different lead paragraphs. Showing a display duplicate has none of the
+// downside a wrong merge does, so this can catch more than the merge step
+// is willing to risk: it only ever drops the lower-ranked half of a pair,
+// never attributes one publisher's words to another's link. The same
+// two-signal guard cluster.js uses (a minimum shared-token count, and the
+// rarest shared token clearing an IDF floor) still applies, so two stories
+// sharing only a common name or "government says" do not collide.
+//
+// Checked against only the candidates the briefing could plausibly use —
+// the full ranked list can run to hundreds of stories in a 30-day window,
+// and nothing past the first couple of dozen is ever a real contender for
+// five slots.
+var BRIEFING_DEDUP_THRESHOLD = 0.18;
+var BRIEFING_DEDUP_POOL = 25;
+
+function briefingDedupText(story) {
+  return cluster.comparableText(story.members[0]);
+}
+
+function dedupForBriefing(stories, limit) {
+  var pool = stories.slice(0, BRIEFING_DEDUP_POOL);
+  var idf = cluster.buildIdf(pool.map(function (s) { return cluster.tokenize(briefingDedupText(s)); }));
+  var idfFloor = cluster.minTopIdf(Math.max(1, pool.length));
+  var picked = [], pickedVecs = [];
+  for (var i = 0; i < pool.length && picked.length < limit; i++) {
+    var vec = cluster.vectorFor(cluster.tokenize(briefingDedupText(pool[i])), idf);
+    var isDup = pickedVecs.some(function (v) {
+      var cmp = cluster.compare(vec, v);
+      return cmp.score >= BRIEFING_DEDUP_THRESHOLD
+        && cmp.shared >= cluster.MIN_SHARED_TOKENS
+        && cmp.topIdf >= idfFloor;
+    });
+    if (isDup) continue;
+    picked.push(pool[i]);
+    pickedVecs.push(vec);
+  }
+  return picked;
+}
+
 // The briefing. Not a summary of the feed — an editor's account of the few
 // things that happened, each one answering the three questions a reader has:
 // what happened, why it matters, and what to watch next.
@@ -578,7 +625,7 @@ function parseJsonBlock(raw) {
 // clearing, because it had no way to know which five mattered.
 async function generateBriefing(stories) {
   if (!ANTHROPIC_API_KEY || apiUnavailable) return null;
-  var top = stories.slice(0, BRIEFING_STORIES);
+  var top = dedupForBriefing(stories, BRIEFING_STORIES);
   if (top.length < security.BRIEFING_MIN_ITEMS) {
     console.log('Only', top.length, 'ranked stories — not enough for a briefing');
     return null;
@@ -1283,8 +1330,8 @@ async function main() {
 // Importable so tools/check-feeds.js can reuse// Importable so tools/check-feeds.js can reuse the real source list and
 // parser rather than keeping a second copy that drifts out of date.
 module.exports = { REGIONS, POLICY, SOURCE_LANG, fetchUrl, fetchFeedUrl, parseFeed, stripTags, decodeEntities, parseDate,
-                   sanitizeLink, sanitizeImage, parseJsonBlock, storyBrief,
-                   BRIEFING_STORIES, WHY_STORIES, security, lang, cluster, rank, db };
+                   sanitizeLink, sanitizeImage, parseJsonBlock, storyBrief, dedupForBriefing,
+                   BRIEFING_STORIES, WHY_STORIES, BRIEFING_DEDUP_THRESHOLD, security, lang, cluster, rank, db };
 
 if (require.main === module) {
   main().catch(function(e){ console.error(e); process.exit(1); });
