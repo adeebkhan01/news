@@ -23,8 +23,12 @@ const { POLICY } = require('../fetch.js');
 const html = fs.readFileSync('index.html', 'utf8');
 const appJs = fs.readFileSync('app.js', 'utf8');
 
+// HTML tag matching is case-insensitive and tolerates whitespace, so these
+// patterns have to be too. A test that only recognises one spelling of a tag
+// does not fail when someone writes another — it silently stops checking, which
+// is the worst outcome available to a test whose whole job is a guarantee.
 function cspDirectives() {
-  const m = html.match(/<meta http-equiv="Content-Security-Policy" content="([^"]+)"/);
+  const m = html.match(/<meta\s+http-equiv="Content-Security-Policy"\s+content="([^"]+)"/i);
   assert.ok(m, 'no Content-Security-Policy meta tag');
   const out = {};
   m[1].split(';').forEach(part => {
@@ -45,8 +49,18 @@ test('the CSP allows no inline script or style', () => {
   assert.deepEqual(csp['connect-src'], ["'self'"]);
 });
 
+// Every script tag in the page, split by whether it loads a file. <SCRIPT>,
+// <script >, and <script> are one tag to a browser.
+function scriptTags() {
+  const tags = [...html.matchAll(/<script\b([^>]*)>/gi)];
+  const hasSrc = t => /\bsrc\s*=/i.test(t[1]);
+  return { inline: tags.filter(t => !hasSrc(t)), external: tags.filter(hasSrc) };
+}
+
 test('the inline bootstrap script matches the hash the CSP allows', () => {
-  const m = html.match(/<script>(.*?)<\/script>/s);
+  // The negative lookahead is what keeps this off <script src="app.js">, which
+  // has no body to hash.
+  const m = html.match(/<script\b(?![^>]*\bsrc\s*=)[^>]*>([\s\S]*?)<\/script\s*>/i);
   assert.ok(m, 'the theme bootstrap script is gone — drop its hash from the CSP too');
   const hash = 'sha256-' + crypto.createHash('sha256').update(m[1], 'utf8').digest('base64');
   assert.ok(
@@ -56,8 +70,12 @@ test('the inline bootstrap script matches the hash the CSP allows', () => {
 });
 
 test('index.html carries exactly one inline script and no other', () => {
-  // Every other script is a file, so there is one hash to keep current.
-  assert.equal((html.match(/<script>/g) || []).length, 1);
+  // Every other script is a file, so there is exactly one hash to keep current.
+  // A second inline script would need a second hash, and without one it would
+  // simply not run.
+  const { inline, external } = scriptTags();
+  assert.equal(inline.length, 1, `expected one inline script, found ${inline.length}`);
+  assert.equal(external.length, 1, `expected one external script, found ${external.length}`);
   assert.ok(html.includes('<script src="app.js" defer></script>'));
 });
 

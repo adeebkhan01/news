@@ -59,11 +59,28 @@ test('every workflow declares its permissions', () => {
   }
 });
 
+// The entries under the top-level `permissions:` key, read line by line and
+// stopping at the next unindented key. Walking an indented block with a nested
+// quantifier is how a regex ends up backtracking exponentially — it is never
+// worth it for something a five-line loop reads more clearly anyway.
+function topLevelPermissions(text) {
+  const lines = text.split('\n');
+  const start = lines.findIndex(line => /^permissions:/.test(line));
+  if (start === -1) return [];
+  const entries = [];
+  for (let i = start + 1; i < lines.length; i++) {
+    if (/^\S/.test(lines[i])) break;          // next top-level key
+    if (lines[i].trim()) entries.push(lines[i].trim());
+  }
+  return entries;
+}
+
 test('only the workflow that publishes may write', () => {
   // One job commits to main. Every other job reads. If that stops being true,
   // it should be a deliberate edit to this test, not a quiet change in a yml.
   const writers = files.filter(f =>
-    /^permissions:\n(?:\s+\S+:.*\n)*?\s+contents:\s*write/m.test(fs.readFileSync(path.join(DIR, f), 'utf8'))
+    topLevelPermissions(fs.readFileSync(path.join(DIR, f), 'utf8'))
+      .some(entry => /^contents:\s*write$/.test(entry))
   );
   assert.deepEqual(writers, ['fetch-feeds.yml']);
 });
