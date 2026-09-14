@@ -102,6 +102,7 @@ const STRINGS = {
     archiveOlder:    'Older',
     archiveNewer:    'Newer',
     archiveToday:    'Today',
+    archiveBackToToday:'Back to today',
     archiveViewing:  'Archived briefing \u00B7 {date}',
     archiveStories:  'Top stories on {date}',
     archiveMissing:  'No briefing was archived for {date}.',
@@ -188,6 +189,7 @@ const STRINGS = {
     archiveOlder:    'আগের',
     archiveNewer:    'পরের',
     archiveToday:    'আজ',
+    archiveBackToToday:'আজকে ফিরে যান',
     archiveViewing:  'আর্কাইভ করা সারসংক্ষেপ \u00B7 {date}',
     archiveStories:  '{date} তারিখের প্রধান খবর',
     archiveMissing:  '{date} তারিখের জন্য কোনো সারসংক্ষেপ সংরক্ষিত হয়নি।',
@@ -521,7 +523,7 @@ function switchRegion(regionId, el) {
   localStorage.setItem('news-region', regionId);
   applyRegionChrome();
 
-  document.querySelectorAll('.tab').forEach(c => {
+  document.querySelectorAll('.region-link').forEach(c => {
     c.setAttribute('aria-selected', c === el ? 'true' : 'false');
   });
 
@@ -538,11 +540,9 @@ function switchRegion(regionId, el) {
 
 function applyRegionChrome() {
   const cfg = REGION_CONFIG[activeRegion];
-  const edition = document.getElementById('logo-edition');
-  edition.replaceChildren(
-    el('span', 'flag', cfg.flag),
-    document.createTextNode(regionLabel(activeRegion))
-  );
+  // The region-strip's own active state (set in switchRegion and at boot)
+  // already names the region in full — nothing left for the wordmark to
+  // repeat.
   document.title = t('siteTitle', { region: regionLabel(activeRegion) });
 
   const langBtn = document.getElementById('lang-toggle');
@@ -581,35 +581,72 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && document.activeElement === input) { clearSearch(); input.blur(); }
 });
 
-/* ── Filters ── */
+/* ── Filters ──────────────────────────────────────────────────────────────
+   A dropdown, not a permanently open row: closed it costs the one line the
+   search field already sits on; open it is the same list of sources it
+   always was, one click either way. */
 function buildFilterBar() {
   const counts = {};
   allArticles.forEach(a => { counts[a.sourceId] = (counts[a.sourceId] || 0) + 1; });
 
-  const bar = document.getElementById('filter-bar');
-  bar.replaceChildren();
+  const menu = document.getElementById('sources-menu');
+  menu.replaceChildren();
 
-  const allBtn = el('button', 'chip' + (activeFilter === 'all' ? ' active' : ''), t('allSources'));
+  const allBtn = el('button', 'source-option' + (activeFilter === 'all' ? ' active' : ''), t('allSources'));
+  allBtn.type = 'button';
+  allBtn.role = 'option';
+  allBtn.setAttribute('aria-selected', activeFilter === 'all' ? 'true' : 'false');
   allBtn.dataset.source = 'all';
-  bar.appendChild(allBtn);
+  menu.appendChild(allBtn);
 
   allSources.forEach(s => {
     const count = counts[s.id] || 0;
     if (!count) return;
-    const btn = el('button', 'chip' + (activeFilter === s.id ? ' active' : ''));
+    const btn = el('button', 'source-option' + (activeFilter === s.id ? ' active' : ''));
+    btn.type = 'button';
+    btn.role = 'option';
+    btn.setAttribute('aria-selected', activeFilter === s.id ? 'true' : 'false');
     btn.dataset.source = s.id;
     btn.appendChild(document.createTextNode(sourceLabel({ sourceId: s.id, sourceName: s.name })));
     btn.appendChild(el('span', 'count', num(count)));
-    bar.appendChild(btn);
+    menu.appendChild(btn);
   });
+
+  renderSourcesTriggerLabel();
 }
 
-function setFilter(id, el) {
+// The trigger names the current selection — "All sources", or the one
+// publisher chosen — so the closed control still says what it is filtering
+// to, rather than a neutral "Sources" that leaves the reader to open it to
+// find out.
+function renderSourcesTriggerLabel() {
+  const label = document.getElementById('sources-trigger-label');
+  if (activeFilter === 'all') { label.textContent = t('allSources'); return; }
+  const source = allSources.find(s => s.id === activeFilter);
+  label.textContent = source ? sourceLabel({ sourceId: source.id, sourceName: source.name }) : t('allSources');
+}
+
+function setFilter(id, optionEl) {
   activeFilter = id;
-  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-  el.classList.add('active');
+  document.querySelectorAll('.source-option').forEach(c => {
+    c.classList.remove('active');
+    c.setAttribute('aria-selected', 'false');
+  });
+  optionEl.classList.add('active');
+  optionEl.setAttribute('aria-selected', 'true');
+  renderSourcesTriggerLabel();
+  closeSourcesMenu();
   renderArticles();
 }
+
+function toggleSourcesMenu(open) {
+  const menu = document.getElementById('sources-menu');
+  const trigger = document.getElementById('sources-trigger');
+  const next = open == null ? menu.hidden : open;
+  menu.hidden = !next;
+  trigger.setAttribute('aria-expanded', next ? 'true' : 'false');
+}
+function closeSourcesMenu() { toggleSourcesMenu(false); }
 
 /* ── Rendering ── */
 
@@ -1059,6 +1096,7 @@ function observeSentinel() {
 }
 
 function showSkeletons() {
+  showBriefingSkeleton();
   const grid = el('div', 'loading-grid');
   for (let i = 0; i < 6; i++) {
     const card = el('div', 'skeleton');
@@ -1070,6 +1108,33 @@ function showSkeletons() {
     grid.appendChild(card);
   }
   document.getElementById('feed-container').replaceChildren(grid);
+}
+
+// The briefing panel used to stay hidden while its data loaded, then appear
+// from nothing once it arrived — the one jump on the page nothing else made,
+// since every card already had a skeleton to hold its place. This gives it
+// one too: a handful of lines at roughly the height five real items take, so
+// the panel is on screen from first paint and does not shove the rest of the
+// page down once the real briefing lands.
+function showBriefingSkeleton() {
+  const box = document.getElementById('page-summary');
+  const body = document.getElementById('page-summary-text');
+  body.className = 'brief-items';
+  const frag = document.createDocumentFragment();
+  for (let i = 0; i < 3; i++) {
+    const item = el('div', 'brief-item skeleton-brief');
+    item.dataset.n = String(i + 1).padStart(2, '0');
+    item.appendChild(el('div', 'skeleton-line w85'));
+    item.appendChild(el('div', 'skeleton-line w55'));
+    frag.appendChild(item);
+  }
+  body.replaceChildren(frag);
+  document.getElementById('summary-toggle').hidden = true;
+  document.getElementById('brief-byline').hidden = true;
+  document.getElementById('brief-change').hidden = true;
+  document.getElementById('archive-nav').hidden = true;
+  document.getElementById('brief-facts').replaceChildren();
+  box.hidden = false;
 }
 
 // The one shape both the empty state and the load failure use.
@@ -1361,13 +1426,18 @@ function applyArchiveChrome() {
 
   const olderBtn = document.getElementById('archive-older');
   const newerBtn = document.getElementById('archive-newer');
-  const todayBtn = document.getElementById('archive-today');
-  olderBtn.textContent = t('archiveOlder');
-  newerBtn.textContent = t('archiveNewer');
-  todayBtn.textContent = t('archiveToday');
+  const dateBtn = document.getElementById('archive-date');
+  // The arrows keep their fixed ‹ › glyphs; only their accessible names are
+  // translated. The date button's own visible text does the talking — the
+  // day itself when browsing, or "Today" when live, and either way it is
+  // also the "back to today" action, doing what a separate button used to.
+  olderBtn.setAttribute('aria-label', t('archiveOlder'));
+  newerBtn.setAttribute('aria-label', t('archiveNewer'));
+  dateBtn.textContent = viewDate ? formatDay(viewDate) : t('archiveToday');
+  dateBtn.setAttribute('aria-label', viewDate ? t('archiveBackToToday') : t('archiveToday'));
   olderBtn.disabled = !older;
   newerBtn.disabled = !newer;
-  todayBtn.disabled = !viewDate;
+  dateBtn.disabled = !viewDate;
   olderBtn.dataset.date = older || '';
   newerBtn.dataset.date = newer || '';
 }
@@ -1554,6 +1624,13 @@ async function loadData() {
     briefingEn = latest.en;
     briefingBn = latest.bn;
 
+    // Refreshed here, not only from showDate/boot: switching regions resets
+    // viewDate to live but never used to touch archive-nav's own visibility
+    // or enabled state, which is per-region (a fresh region's archive dates
+    // differ from the one just left) — so the control could show yesterday's
+    // region's dates, or stay visible for a region with no history at all.
+    applyArchiveChrome();
+
     showHeadlines(allArticles);
     renderSummary();
     setStatus('ok', () => regionLabel(activeRegion));
@@ -1599,18 +1676,26 @@ function wireControls() {
   document.getElementById('archive-nav').addEventListener('click', e => {
     const btn = e.target.closest('button');
     if (!btn || btn.disabled) return;
-    showDate(btn.id === 'archive-today' ? null : btn.dataset.date);
+    showDate(btn.id === 'archive-date' ? null : btn.dataset.date);
   });
 
-  // Delegated, because the chips are rebuilt on every load and the tabs are
-  // the same three buttons for the life of the page.
-  document.querySelector('.tabs').addEventListener('click', e => {
-    const tab = e.target.closest('.tab');
-    if (tab) switchRegion(tab.dataset.region, tab);
+  // Delegated, because the source options are rebuilt on every load and the
+  // region links are the same three buttons for the life of the page.
+  document.querySelector('.region-strip').addEventListener('click', e => {
+    const link = e.target.closest('.region-link');
+    if (link) switchRegion(link.dataset.region, link);
   });
-  document.getElementById('filter-bar').addEventListener('click', e => {
-    const chip = e.target.closest('.chip');
-    if (chip && chip.dataset.source) setFilter(chip.dataset.source, chip);
+  document.getElementById('sources-trigger').addEventListener('click', () => toggleSourcesMenu());
+  document.getElementById('sources-menu').addEventListener('click', e => {
+    const option = e.target.closest('.source-option');
+    if (option && option.dataset.source) setFilter(option.dataset.source, option);
+  });
+  // Closed the same way any dropdown is: a click elsewhere, or Escape.
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.sources-dropdown')) closeSourcesMenu();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeSourcesMenu();
   });
 }
 
@@ -1618,7 +1703,7 @@ function wireControls() {
 // The URL wins over the stored region: a shared link has to open on the day
 // and the region it names, whatever this browser last looked at.
 readLocation();
-document.querySelectorAll('.tab').forEach(c => {
+document.querySelectorAll('.region-link').forEach(c => {
   c.setAttribute('aria-selected', c.dataset.region === activeRegion ? 'true' : 'false');
 });
 wireControls();

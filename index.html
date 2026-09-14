@@ -39,7 +39,7 @@
     document.documentElement.setAttribute('data-theme', theme);
   })();
 </script>
-<link rel="stylesheet" href="app.css?v=1c7202a0cd5c" />
+<link rel="stylesheet" href="app.css?v=022304367309" />
 </head>
 <body>
 <a class="skip-link" href="#feed-container" data-i18n="skipToHeadlines">Skip to headlines</a>
@@ -48,8 +48,19 @@
   <div class="masthead-inner wrap">
     <a class="wordmark" href="index.html">
       <span>Daily Digest</span><span class="tick" aria-hidden="true"></span>
-      <span class="edition" id="logo-edition">Bangladesh</span>
     </a>
+    <!-- Navigation, not content: three regions inline, the active one named
+         in full and the other two named only by flag once space is tight.
+         This used to be its own bordered section under the masthead with a
+         "Region" micro-label over it — chrome enough to read as a second
+         piece of content rather than as wayfinding. -->
+    <nav class="region-strip" id="region-strip" aria-label="Region" data-i18n-label="region">
+      <button class="region-link" role="tab" aria-selected="true" data-region="bd"><span class="flag" aria-hidden="true">🇧🇩</span><span class="region-name" data-i18n="regionBd">Bangladesh</span></button>
+      <span class="region-sep" aria-hidden="true">·</span>
+      <button class="region-link" role="tab" aria-selected="false" data-region="au"><span class="flag" aria-hidden="true">🇦🇺</span><span class="region-name" data-i18n="regionAu">Australia</span></button>
+      <span class="region-sep" aria-hidden="true">·</span>
+      <button class="region-link" role="tab" aria-selected="false" data-region="global"><span class="flag" aria-hidden="true">🌏</span><span class="region-name" data-i18n="regionGlobal">Global</span></button>
+    </nav>
     <div class="masthead-right">
       <span class="provenance" id="last-updated">—</span>
       <button class="btn" id="theme-toggle">
@@ -63,28 +74,26 @@
   </div>
 </header>
 
-<div class="toolbar">
-  <div class="toolbar-inner wrap">
-    <div class="field">
-      <span class="label" id="region-label" data-i18n="region">Region</span>
-      <div class="tabs" role="tablist" aria-labelledby="region-label">
-        <button class="tab" role="tab" aria-selected="true" data-region="bd"><span class="flag" aria-hidden="true">🇧🇩</span><span data-i18n="regionBd">Bangladesh</span></button>
-        <button class="tab" role="tab" aria-selected="false" data-region="au"><span class="flag" aria-hidden="true">🇦🇺</span><span data-i18n="regionAu">Australia</span></button>
-        <button class="tab" role="tab" aria-selected="false" data-region="global"><span class="flag" aria-hidden="true">🌏</span><span data-i18n="regionGlobal">Global</span></button>
-      </div>
-    </div>
-    <div class="field search">
-      <label class="label" for="search-input" data-i18n="search">Search</label>
-      <input id="search-input" type="search" autocomplete="off" placeholder="Filter headlines" data-i18n-placeholder="filterHeadlines" />
+<!-- Search and the source filter are utility, not editorial content — one
+     quiet row, not two bordered sections competing with the briefing below
+     for the reader's first glance. The source list itself is a dropdown
+     now rather than an always-open row of chips: closed, it costs one line;
+     open, it is the same list of sources it always was. -->
+<div class="filter-row">
+  <div class="filter-row-inner wrap">
+    <div class="search-compact">
+      <input id="search-input" type="search" autocomplete="off" placeholder="Search" data-i18n-placeholder="filterHeadlines" aria-label="Search" data-i18n-label="search" />
       <span class="kbd-hint" id="kbd-hint">/</span>
       <button id="search-clear" data-i18n-label="clearSearch" aria-label="Clear search">&#10005;</button>
     </div>
-  </div>
-</div>
-
-<div class="filter-bar">
-  <div class="filter-bar-inner wrap" id="filter-bar" role="group" data-i18n-label="filterBySource" aria-label="Filter by source">
-    <button class="chip active" data-source="all">All sources</button>
+    <div class="sources-dropdown">
+      <button id="sources-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+        <span id="sources-trigger-label" data-i18n="allSources">All sources</span><span class="caret" aria-hidden="true">&#9662;</span>
+      </button>
+      <div class="sources-menu" id="sources-menu" role="listbox" data-i18n-label="filterBySource" aria-label="Filter by source" hidden>
+        <button class="source-option active" role="option" aria-selected="true" data-source="all" data-i18n="allSources">All sources</button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -95,10 +104,15 @@
         <div class="panel-head">
           <span class="label" data-i18n="briefing">Briefing</span>
           <span class="label brief-byline" id="brief-byline" hidden></span>
-          <div class="archive-nav" id="archive-nav" role="group" data-i18n-label="archive" aria-label="Archive" hidden>
-            <button id="archive-older" type="button">Older</button>
-            <button id="archive-today" type="button">Today</button>
-            <button id="archive-newer" type="button">Newer</button>
+          <!-- Three buttons shrunk to one control: a date flanked by two
+               arrows. The date itself is the "back to today" action, doing
+               what a separate Today button did, so the reader is never
+               shown three equal-weight buttons to understand one thing —
+               where in time they are. -->
+          <div class="archive-nav" id="archive-nav" hidden>
+            <button id="archive-older" type="button" aria-label="Older">&#8249;</button>
+            <button id="archive-date" type="button"></button>
+            <button id="archive-newer" type="button" aria-label="Newer">&#8250;</button>
           </div>
         </div>
         <div id="page-summary-text"></div>
@@ -147,6 +161,6 @@
      document order, so initSqlJs is defined by the time app.js needs it.
      locateFile in app.js points this at the matching .wasm file. -->
 <script src="vendor/sql-wasm-1.13.0.js" defer></script>
-<script src="app.js?v=afc55dd6f687" defer></script>
+<script src="app.js?v=b954e2c03731" defer></script>
 </body>
 </html>
