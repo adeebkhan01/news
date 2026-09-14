@@ -120,6 +120,18 @@ const REGIONS = {
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-bus' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-eu' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/xml/rss_en_science' },
+      { id: 'bloomberg', name: 'Bloomberg',   color: '#7C11B0', url: 'https://feeds.bloomberg.com/politics/news.rss' },
+      { id: 'bloomberg', name: 'Bloomberg',   color: '#7C11B0', url: 'https://feeds.bloomberg.com/business/news.rss' },
+      { id: 'bloomberg', name: 'Bloomberg',   color: '#7C11B0', url: 'https://feeds.bloomberg.com/markets/news.rss' },
+      { id: 'bloomberg', name: 'Bloomberg',   color: '#7C11B0', url: 'https://feeds.bloomberg.com/technology/news.rss' },
+      { id: 'bloomberg', name: 'Bloomberg',   color: '#7C11B0', url: 'https://feeds.bloomberg.com/economics/news.rss' },
+      { id: 'bloomberg', name: 'Bloomberg',   color: '#7C11B0', url: 'https://feeds.bloomberg.com/wealth/news.rss' },
+      // Pew publishes well outside hard news too (religion surveys, media-habit
+      // studies, demographic research) — global's topicFilter (matchesTopic,
+      // above) already exists for exactly this: it keeps only what matches the
+      // same substantive-topic patterns every other source is held to, rather
+      // than adding a second, source-specific filter to maintain.
+      { id: 'pewresearch', name: 'Pew Research', color: '#003F6C', url: 'https://www.pewresearch.org/feed/' },
     ]
   }
 };

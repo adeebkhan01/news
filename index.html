@@ -24,7 +24,7 @@
      and needs a real header, which GitHub Pages will not serve.
      manifest-src 'self' is the one addition for the PWA manifest — every
      other directive still falls back to default-src 'none'. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-fZ21OHFTlZGA1hOkTvMIcS92235qeNGBK+384Rw3HMo='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://npr.brightspotcdn.com https://abc-cdn.net.au https://*.abc-cdn.net.au https://abc.net.au https://*.abc.net.au https://aljazeera.com https://*.aljazeera.com https://bbc.co.uk https://*.bbc.co.uk https://bbc.com https://*.bbc.com https://bbci.co.uk https://*.bbci.co.uk https://dailyamardesh.com https://*.dailyamardesh.com https://dw.com https://*.dw.com https://ffx.io https://*.ffx.io https://france24.com https://*.france24.com https://guim.co.uk https://*.guim.co.uk https://npr.org https://*.npr.org https://prothomalo.com https://*.prothomalo.com https://risingbd.com https://*.risingbd.com https://smh.com.au https://*.smh.com.au https://theconversation.com https://*.theconversation.com https://thedailystar.net https://*.thedailystar.net https://theguardian.com https://*.theguardian.com; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-fZ21OHFTlZGA1hOkTvMIcS92235qeNGBK+384Rw3HMo='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://npr.brightspotcdn.com https://abc-cdn.net.au https://*.abc-cdn.net.au https://abc.net.au https://*.abc.net.au https://aljazeera.com https://*.aljazeera.com https://bbc.co.uk https://*.bbc.co.uk https://bbc.com https://*.bbc.com https://bbci.co.uk https://*.bbci.co.uk https://bloomberg.com https://*.bloomberg.com https://dailyamardesh.com https://*.dailyamardesh.com https://dw.com https://*.dw.com https://ffx.io https://*.ffx.io https://france24.com https://*.france24.com https://guim.co.uk https://*.guim.co.uk https://npr.org https://*.npr.org https://pewresearch.org https://*.pewresearch.org https://prothomalo.com https://*.prothomalo.com https://risingbd.com https://*.risingbd.com https://smh.com.au https://*.smh.com.au https://theconversation.com https://*.theconversation.com https://thedailystar.net https://*.thedailystar.net https://theguardian.com https://*.theguardian.com; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'" />
 <meta name="description" content="A clean, fast news reader for Bangladesh, Australia and the world — headlines from trusted sources, updated continuously." />
 <!-- Static, not per-region: a meta CSP page has no server to render a
      different tag per ?region=, and a share link is far more often read as
@@ -188,6 +188,6 @@
      document order, so initSqlJs is defined by the time app.js needs it.
      locateFile in app.js points this at the matching .wasm file. -->
 <script src="vendor/sql-wasm-1.13.0.js" defer></script>
-<script src="app.js?v=3b24bfe18c03" defer></script>
+<script src="app.js?v=579815db6216" defer></script>
 </body>
 </html>
