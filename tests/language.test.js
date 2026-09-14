@@ -67,20 +67,100 @@ test('translation direction follows the article, not a fixed assumption', () => 
   assert.equal(lang.translatedField({ lang: 'bn' }, 'desc'), 'descEn');
 });
 
-test('the Bangla-language source is declared as such', () => {
-  // Rising BD publishes in Bangla. If that declaration is lost, articles whose
-  // titles are too short to judge go the wrong way.
-  assert.equal(SOURCE_LANG.risingbd, 'bn');
-  const risingbd = REGIONS.bd.sources.find(s => s.id === 'risingbd');
-  assert.ok(risingbd, 'Rising BD is no longer configured');
-  assert.equal(risingbd.lang, 'bn');
-  // Every other source is English, which is the default, so it says nothing.
+test('the Bangla-language sources are declared as such', () => {
+  // These publish in Bangla. If a declaration is lost, articles whose titles
+  // are too short for the detector to judge go the wrong way.
+  const BANGLA_SOURCES = ['risingbd', 'amardesh', 'btv'];
+  for (const id of BANGLA_SOURCES) {
+    assert.equal(SOURCE_LANG[id], 'bn', `${id} is no longer declared as Bangla`);
+    const source = REGIONS.bd.sources.find(s => s.id === id);
+    assert.ok(source, `${id} is no longer configured`);
+    assert.equal(source.lang, 'bn');
+  }
+  // Everything else is English, which is the default and so says nothing. A
+  // new declaration here should be a deliberate edit to this list.
   for (const region of Object.values(REGIONS)) {
     for (const s of region.sources) {
-      if (s.id === 'risingbd') continue;
-      assert.ok(s.lang === undefined, `${s.id} declares lang: ${s.lang} — is that intended?`);
+      if (BANGLA_SOURCES.includes(s.id)) continue;
+      assert.ok(s.lang === undefined, `${s.id} declares lang: ${s.lang} — add it to BANGLA_SOURCES if intended`);
     }
   }
+});
+
+test('every source has a Bangla name for the page to show', () => {
+  // Without one the chip falls back to the English name, which is the single
+  // most visible way a half-translated page gives itself away.
+  const appJs = fs.readFileSync('app.js', 'utf8');
+  const start = appJs.indexOf('SOURCE_NAMES_BN = {');
+  assert.notEqual(start, -1, 'SOURCE_NAMES_BN is gone');
+  const block = appJs.slice(start, appJs.indexOf('};', start));
+  const ids = new Set();
+  for (const region of Object.values(REGIONS)) {
+    for (const s of region.sources) ids.add(s.id);
+  }
+  const missing = [...ids].filter(id => !new RegExp('\\b' + id + ':').test(block));
+  assert.deepEqual(missing, [], 'these sources have no Bangla name in app.js');
+});
+
+// ── Aggregator sources ───────────────────────────────────────────────────
+
+test('an aggregator is fetchable but trusted for nothing else', () => {
+  const sec = require('../lib/security.js');
+  const { POLICY } = require('../fetch.js');
+  const amardesh = REGIONS.bd.sources.find(s => s.id === 'amardesh');
+  assert.ok(amardesh, 'Amar Desh is no longer configured');
+  assert.ok(amardesh.aggregator, 'Amar Desh is no longer marked as an aggregator');
+
+  // Its feed can be fetched, because it is on the list by exact URL.
+  assert.ok(sec.isAllowedFeedUrl(amardesh.url, POLICY));
+
+  // But news.google.com's registrable domain is google.com. Without the
+  // aggregator flag that would put every Google host in the link allowlist and
+  // *.google.com in the page's img-src — the same over-broad entry that shared
+  // CDNs are kept out for.
+  assert.ok(!POLICY.linkDomains.has('google.com'), 'google.com must not be a trusted link domain');
+  assert.ok(!POLICY.imageDomains.has('google.com'), 'google.com must not be a trusted image domain');
+  assert.ok(!sec.isAllowedArticleUrl('https://news.google.com/rss/articles/CBMiX2h0', POLICY));
+
+  // The publisher's own domain is trusted, because the source says so.
+  assert.ok(POLICY.linkDomains.has('dailyamardesh.com'));
+  assert.ok(POLICY.imageDomains.has('dailyamardesh.com'));
+
+  // A Google News redirect is still storable as an href — the card has to link
+  // somewhere — it just is not a host we send requests to.
+  assert.ok(sec.parseSafeUrl('https://news.google.com/rss/articles/CBMiX2h0'));
+});
+
+test('aggregator artefacts are stripped from what gets stored', () => {
+  const { parseFeed } = require('../fetch.js');
+  const source = { id: 'amardesh', name: 'Amar Desh', color: '#000', aggregator: true, lang: 'bn' };
+  const xml = [
+    '<rss><channel>',
+    '<item><title>সরকারি চাকরিতে নতুন নিয়ম - আমার দেশ</title>',
+    '<link>https://news.google.com/rss/articles/CBMiX2h0</link>',
+    '<pubDate>Sun, 14 Sep 2026 04:00:00 GMT</pubDate>',
+    '<description>&lt;a href="https://news.google.com/x"&gt;সরকারি চাকরিতে নতুন নিয়ম&lt;/a&gt; আমার দেশ</description></item>',
+    '<item><title>Talks collapse - what happens next - Daily Amar Desh</title>',
+    '<link>https://news.google.com/rss/articles/CBMiY2h0</link>',
+    '<pubDate>Sun, 14 Sep 2026 03:00:00 GMT</pubDate></item>',
+    '</channel></rss>'
+  ].join('');
+  const items = parseFeed(xml, source);
+  assert.equal(items.length, 2);
+
+  // The " - Publisher" suffix Google News appends is not part of the headline.
+  assert.equal(items[0].title, 'সরকারি চাকরিতে নতুন নিয়ম');
+  // Only the final segment goes: a headline containing its own dash keeps it.
+  assert.equal(items[1].title, 'Talks collapse - what happens next');
+
+  // The description is a link back to Google whose text is the headline again.
+  assert.equal(items[0].desc, '');
+  assert.equal(items[1].desc, '');
+
+  // Per-article detection still beats the source's declaration, so an English
+  // piece on a Bangla source is translated the right way.
+  assert.equal(items[0].lang, 'bn');
+  assert.equal(items[1].lang, 'en');
 });
 
 // ── The page's own words ─────────────────────────────────────────────────

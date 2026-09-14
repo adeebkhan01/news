@@ -46,6 +46,29 @@ const REGIONS = {
       { id: 'dhakatribune',     name: 'Dhaka Tribune',     color: '#1b5e9e', url: 'https://www.dhakatribune.com/feed' },
       { id: 'newage',           name: 'New Age',           color: '#8e2d2d', url: 'https://www.newagebd.net/feed/rss.xml' },
       { id: 'unb',              name: 'UNB',               color: '#2f6f4f', url: 'https://unb.com.bd/rss' },
+      // Bangla-language sources, so these are translated into English rather
+      // than out of it. Both URLs are unverified guesses — the sandbox they
+      // were added from cannot reach either host, and neither appears in any
+      // public index of Bangladeshi feeds. The Feed Health workflow decides:
+      // whatever reports DEAD gets retired and an alternate from its
+      // candidates box swapped in.
+      //
+      // Amar Desh comes in through Google News rather than a feed of its own:
+      // it publishes at dailyamardesh.com, but no RSS path there could be
+      // confirmed and none is listed in any public index. This URL is a
+      // documented endpoint rather than a guess at a path.
+      //
+      // `aggregator` is what stops news.google.com being treated as a
+      // publisher. Its registrable domain is google.com, so without the flag
+      // every Google host would land in the link allowlist and *.google.com in
+      // the page's img-src.
+      { id: 'amardesh',         name: 'Amar Desh',         color: '#8c4a1f',
+        url: 'https://news.google.com/rss/search?q=site:dailyamardesh.com&hl=bn&gl=BD&ceid=BD:bn',
+        lang: 'bn', aggregator: true, linkDomains: ['dailyamardesh.com'] },
+      // BTV is a government site and may simply not publish RSS at all. If it
+      // reports DEAD with no working alternate, retiring it is the answer.
+      { id: 'btv',              name: 'BTV',               color: '#0f6e8c', url: 'https://www.btv.gov.bd/rss.xml',
+        lang: 'bn' },
     ]
   },
   au: {
@@ -388,14 +411,27 @@ function sanitizeImage(raw, base) {
   return null;
 }
 
+// Google News appends " - Publisher" to every title and fills the description
+// with a link whose text is the headline again. Both are artefacts of the
+// aggregator, not the article, so they come off here rather than being shown.
+function cleanAggregatorTitle(title) {
+  var cut = title.lastIndexOf(' - ');
+  if (cut <= 0) return title;
+  var suffix = title.slice(cut + 3).trim();
+  // A publisher's name, not a headline that happens to contain a dash.
+  if (!suffix || suffix.length > 60 || suffix.indexOf(' - ') !== -1) return title;
+  return title.slice(0, cut).trim() || title;
+}
+
 function parseRSS(xml, source) {
   var items=[], re=/<item[^>]*>([\s\S]*?)<\/item>/gi, m;
   while((m=re.exec(xml))!==null && items.length<MAX_ITEMS_PER_FEED) {
     var b=m[1], title=stripTags(getTag(b,'title'));
     if(!title) continue;
+    if (source.aggregator) title = cleanAggregatorTitle(title);
     var link = sanitizeLink(getTag(b,'link')||getTag(b,'guid')||'');
     if(!link) continue;
-    items.push({ title, link, desc: stripTags(getTag(b,'description')).slice(0,200), pubDate: getTag(b,'pubDate')||getTag(b,'dc:date')||'', img: sanitizeImage(extractImg(b), link), lang: lang.articleLang({ title: title }, source.lang), sourceId: source.id, sourceName: source.name, sourceColor: source.color });
+    items.push({ title, link, desc: source.aggregator ? '' : stripTags(getTag(b,'description')).slice(0,200), pubDate: getTag(b,'pubDate')||getTag(b,'dc:date')||'', img: sanitizeImage(extractImg(b), link), lang: lang.articleLang({ title: title }, source.lang), sourceId: source.id, sourceName: source.name, sourceColor: source.color });
   }
   return items;
 }

@@ -78,11 +78,40 @@ publishers answer runners but not local machines, and vice versa.
 answering 200 and parsing cleanly with newest items 1514 and 207 days old. Its
 `business` feed is still live and stays.
 
-The CNN feeds and the three English-language Bangladeshi dailies (Dhaka
-Tribune, New Age, UNB) were added without that check — they can't be reached
-from where they were added — so run the Feed Health workflow and retire any
-that report `DEAD` or `STALE`. Its candidates box holds the alternates to try
-in their place.
+Eight feeds are configured but unverified, because the sandbox they were added
+from cannot reach any of them: the three CNN feeds, the three English-language
+Bangladeshi dailies (Dhaka Tribune, New Age, UNB), and the two Bangla-language
+ones (Amar Desh, BTV). The weekly Feed Health run checks them as configured
+feeds and goes red naming any that are dead — that is the check working, not
+breaking. Retire what reports `DEAD` or `STALE` and swap in an alternate from
+the candidates box.
+
+**Amar Desh comes in through Google News** rather than a feed of its own. It
+publishes at **dailyamardesh.com** — `amardesh.com` is a different site — but
+no RSS path there could be confirmed, so a documented endpoint beats a guessed
+path. The trade is real and worth knowing: articles link to a
+`news.google.com` redirect rather than straight to the publisher, and the items
+carry no images, so those cards show the placeholder. If one of the
+dailyamardesh.com paths in the candidates box ever answers, switching to it is
+an improvement on both counts.
+
+A source that comes in this way is marked `aggregator: true`, which means its
+feed URL is allowlisted so it can be fetched, but its domain earns no trust
+beyond that. `news.google.com`'s registrable domain is `google.com`, so without
+the flag every Google host would land in the link allowlist and `*.google.com`
+in the page's `img-src` — the same over-broad entry that shared CDNs are kept
+out for. The publisher's real domain is declared separately via `linkDomains`.
+
+Google News also appends `" - Publisher"` to every title and fills the
+description with a link whose text is the headline again; both are stripped for
+aggregator sources, since they are artefacts of the aggregator rather than the
+article.
+
+**BTV is still a direct guess** and may publish no feed at all — it appears in
+no public index of Bangladeshi feeds. Its candidates box now leads with the
+same Google News route, though a state broadcaster's presence there can be
+thin. If nothing answers, retiring it is the answer rather than hunting
+further.
 
 A feed that fails is not fatal: that source is skipped for the run, previously
 collected articles are retained, and the run log ends with a list of what

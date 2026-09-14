@@ -12,20 +12,34 @@ on:
       candidates:
         description: 'Space-separated candidate feed URLs to try as well'
         required: false
-        # Alternates for the feeds added unverified in 2026-09 — the CNN and
-        # English-Bangladeshi sources. The ones now in fetch.js are checked as
-        # configured feeds, so this list is what to fall back to if any of them
-        # report DEAD or STALE. Dispatch and swap in whichever come back "ok".
+        # Alternates for the feeds in fetch.js that have never been verified.
+        # Those are checked as *configured* feeds — including on the weekly
+        # scheduled run, which gets no dispatch inputs at all and so never sees
+        # this list. It is only what to fall back to once one of them reports
+        # DEAD or STALE: dispatch by hand and swap in whichever comes back ok.
+        #
+        # BTV first, as the least certain: it is a government site that may
+        # publish no feed at all. Its Google News route leads, since that is how
+        # Amar Desh got in — but a state broadcaster's Google News presence can
+        # be thin, so a site: query returning nothing is a real outcome and
+        # retiring BTV is then the answer.
+        #
+        # The dailyamardesh.com paths stay listed. Amar Desh now comes in via
+        # Google News, but a feed of its own would be better — direct article
+        # links instead of Google redirects, and images — so if one of these
+        # ever answers, it is worth switching to.
         default: >-
+          https://news.google.com/rss/search?q=site:btv.gov.bd&hl=bn&gl=BD&ceid=BD:bn
+          https://www.btv.gov.bd/feed
+          https://btv.gov.bd/rss.xml
+          https://www.dailyamardesh.com/rss.xml
+          https://www.dailyamardesh.com/rss/rss.xml
+          https://www.dailyamardesh.com/feed
           https://rss.cnn.com/rss/edition.rss
-          https://rss.cnn.com/rss/cnn_world.rss
           https://rss.cnn.com/rss/money_latest.rss
           https://www.observerbd.com/rss.xml
-          https://www.businesspostbd.com/rss
           https://www.banglanews24.com/english/rss/rss.xml
           https://bdnews24.com/feed
-          https://www.daily-sun.com/rss.xml
-          https://www.tbsnews.net/rss.xml
   schedule:
     - cron: '17 6 * * 1'   # Monday morning, so dead feeds surface weekly
 
