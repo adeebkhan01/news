@@ -21,13 +21,27 @@
      tests/security.test.js fails if the two drift apart. connect-src 'self'
      is also what lets the page fetch its own data-{region}.sqlite files.
      frame-ancestors is omitted deliberately: it is ignored in a meta CSP
-     and needs a real header, which GitHub Pages will not serve. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-fZ21OHFTlZGA1hOkTvMIcS92235qeNGBK+384Rw3HMo='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://npr.brightspotcdn.com https://abc-cdn.net.au https://*.abc-cdn.net.au https://abc.net.au https://*.abc.net.au https://aljazeera.com https://*.aljazeera.com https://bbc.co.uk https://*.bbc.co.uk https://bbc.com https://*.bbc.com https://bbci.co.uk https://*.bbci.co.uk https://dailyamardesh.com https://*.dailyamardesh.com https://dw.com https://*.dw.com https://ffx.io https://*.ffx.io https://france24.com https://*.france24.com https://guim.co.uk https://*.guim.co.uk https://npr.org https://*.npr.org https://prothomalo.com https://*.prothomalo.com https://risingbd.com https://*.risingbd.com https://smh.com.au https://*.smh.com.au https://theconversation.com https://*.theconversation.com https://thedailystar.net https://*.thedailystar.net https://theguardian.com https://*.theguardian.com; connect-src 'self'; base-uri 'none'; form-action 'none'" />
+     and needs a real header, which GitHub Pages will not serve.
+     manifest-src 'self' is the one addition for the PWA manifest — every
+     other directive still falls back to default-src 'none'. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-fZ21OHFTlZGA1hOkTvMIcS92235qeNGBK+384Rw3HMo='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://npr.brightspotcdn.com https://abc-cdn.net.au https://*.abc-cdn.net.au https://abc.net.au https://*.abc.net.au https://aljazeera.com https://*.aljazeera.com https://bbc.co.uk https://*.bbc.co.uk https://bbc.com https://*.bbc.com https://bbci.co.uk https://*.bbci.co.uk https://dailyamardesh.com https://*.dailyamardesh.com https://dw.com https://*.dw.com https://ffx.io https://*.ffx.io https://france24.com https://*.france24.com https://guim.co.uk https://*.guim.co.uk https://npr.org https://*.npr.org https://prothomalo.com https://*.prothomalo.com https://risingbd.com https://*.risingbd.com https://smh.com.au https://*.smh.com.au https://theconversation.com https://*.theconversation.com https://thedailystar.net https://*.thedailystar.net https://theguardian.com https://*.theguardian.com; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'" />
 <meta name="description" content="A clean, fast news reader for Bangladesh, Australia and the world — headlines from trusted sources, updated continuously." />
+<!-- Static, not per-region: a meta CSP page has no server to render a
+     different tag per ?region=, and a share link is far more often read as
+     a title+description card than expanded into the live page anyway. -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="AK's Daily Digest" />
+<meta property="og:title" content="AK's Daily Digest — Bangladesh · Australia · Global" />
+<meta property="og:description" content="A clean, fast news reader for Bangladesh, Australia and the world — headlines from trusted sources, updated continuously." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="AK's Daily Digest — Bangladesh · Australia · Global" />
+<meta name="twitter:description" content="A clean, fast news reader for Bangladesh, Australia and the world — headlines from trusted sources, updated continuously." />
 <meta name="theme-color" content="#fdfcfb" media="(prefers-color-scheme: light)" />
 <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
 <title>AK's Daily Digest — Bangladesh · Australia · Global</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fdfcfb'/%3E%3Crect x='4' y='7' width='16' height='18' fill='%230e1729'/%3E%3Crect x='23' y='7' width='5' height='18' fill='%23d4a418'/%3E%3C/svg%3E" />
+<link rel="apple-touch-icon" href="icon.svg" />
+<link rel="manifest" href="manifest.json" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=IBM+Plex+Mono:wght@400;500;600&family=Tiro+Bangla&display=swap" rel="stylesheet" />
@@ -39,7 +53,7 @@
     document.documentElement.setAttribute('data-theme', theme);
   })();
 </script>
-<link rel="stylesheet" href="app.css?v=2c17465e49d4" />
+<link rel="stylesheet" href="app.css?v=a149dabb0d79" />
 </head>
 <body>
 <a class="skip-link" href="#feed-container" data-i18n="skipToHeadlines">Skip to headlines</a>
@@ -92,6 +106,18 @@
       </button>
       <div class="sources-menu" id="sources-menu" role="listbox" data-i18n-label="filterBySource" aria-label="Filter by source" hidden>
         <button class="source-option active" role="option" aria-selected="true" data-source="all" data-i18n="allSources">All sources</button>
+      </div>
+    </div>
+    <!-- Same control, same menu markup, filtering the topic every article's
+         own pipeline classification already carries (lib/rank.js) instead of
+         its publisher — reusing .sources-menu/.source-option rather than a
+         parallel set of rules for what is visually the same dropdown. -->
+    <div class="sources-dropdown">
+      <button id="topics-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+        <span id="topics-trigger-label" data-i18n="allTopics">All topics</span><span class="caret" aria-hidden="true">&#9662;</span>
+      </button>
+      <div class="sources-menu" id="topics-menu" role="listbox" data-i18n-label="filterByTopic" aria-label="Filter by topic" hidden>
+        <button class="source-option active" role="option" aria-selected="true" data-topic="all" data-i18n="allTopics">All topics</button>
       </div>
     </div>
   </div>
@@ -158,6 +184,6 @@
      document order, so initSqlJs is defined by the time app.js needs it.
      locateFile in app.js points this at the matching .wasm file. -->
 <script src="vendor/sql-wasm-1.13.0.js" defer></script>
-<script src="app.js?v=c24a292222ab" defer></script>
+<script src="app.js?v=b3e4599c1e86" defer></script>
 </body>
 </html>

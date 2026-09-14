@@ -1,0 +1,13 @@
+{
+  "name": "AK's Daily Digest",
+  "short_name": "Daily Digest",
+  "description": "A clean, fast news reader for Bangladesh, Australia and the world.",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fdfcfb",
+  "theme_color": "#fdfcfb",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

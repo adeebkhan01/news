@@ -436,6 +436,9 @@ body.archive-mode #status-text{display:none}
 .brief-headline .change-chip{margin-left:var(--space-2);vertical-align:1px}
 .brief-link{text-decoration:none;color:inherit}
 .brief-link:hover{color:var(--text-accent);text-decoration:underline;text-underline-offset:3px}
+/* A story already clicked into reads a shade quieter — this browser's own
+   memory of what it has seen, not a synced "read" state. */
+.brief-link.is-read{color:var(--text-muted)}
 /* Read more swaps the DOM outright (a two-sentence why for a three-part
    dl), so a plain fade-in on arrival is what makes that read as the same
    item growing in place rather than a new page section appearing. */
@@ -521,6 +524,8 @@ body.archive-mode #status-text{display:none}
    to the size of the headline. */
 .card-link{text-decoration:none;color:inherit}
 .card-link::after{content:'';position:absolute;inset:0;z-index:1}
+/* Same quiet dimming as the briefing's own read state. */
+.card-link.is-read{color:var(--text-muted)}
 .card-link .clamp{
   display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
 }
@@ -781,8 +786,8 @@ footer{
   .masthead-right{order:2;margin-left:0;width:100%;flex-wrap:wrap;gap:var(--space-2)}
   .masthead-right .btn{flex:1;padding:0 var(--space-2)}
   .provenance{display:none}
-  .filter-row-inner{gap:var(--space-3)}
-  .search-compact{max-width:none}
+  .filter-row-inner{gap:var(--space-3);flex-wrap:wrap}
+  .search-compact{max-width:none;flex-basis:100%}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
