@@ -445,6 +445,18 @@ function safeURL(url) {
   return /^https:\/\//i.test(raw) ? raw : '';
 }
 
+// Article art is downloaded and committed by the fetch pipeline, not
+// hotlinked from a publisher — so instead of an https:// check this matches
+// the exact shape fetch.js writes (images/<region>/<40 hex chars>.<ext>),
+// same-origin and nothing else. Anything that doesn't fit that shape (a
+// leftover external URL on a row from before this existed, still working
+// through the backfill queue) is treated as no image at all rather than
+// requested.
+function safeImagePath(path) {
+  const raw = String(path || '').trim();
+  return /^images\/[a-z]+\/[0-9a-f]{20,40}\.(?:jpg|jpeg|png|webp|gif)$/i.test(raw) ? raw : '';
+}
+
 // ── DOM helpers ──────────────────────────────────────────────────────────
 // Every string that reaches the page from a feed, from the model, or from an
 // error goes through textContent. Not "escaped on the way into a template" —
@@ -865,7 +877,7 @@ function storySpan(story) {
 function cardElement(a, isFeatured, n, isSecondary) {
   const source = sourceLabel(a);
   const link   = safeURL(a.link);
-  const img    = safeURL(a.img);
+  const img    = safeImagePath(a.img);
   const story  = storyOf(a);
   const others = otherSources(a, story);
 

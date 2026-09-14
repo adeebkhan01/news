@@ -4,4 +4,6 @@
 node_modules/
 package-lock.json
 package.json
-*.png
+# Root-only: a stray screenshot from local testing, not images/ — those PNGs
+# are real site content the fetch workflow downloads and commits on purpose.
+/*.png

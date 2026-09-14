@@ -39,6 +39,7 @@ A run that fails anywhere (bad URL, bad model output, failing tests) leaves
 | `tools/check-feeds.js` | Feed health check |
 | `vendor/sql-wasm-*` | Vendored sql.js |
 | `data-*.sqlite` | Generated — don't hand-edit |
+| `images/<region>/` | Generated article art — don't hand-edit |
 
 ## Running locally
 
@@ -74,19 +75,40 @@ routing through `news.google.com` — aggregating an aggregator isn't the goal.
 everything its feeds publish. A source can also `excludeSections` (by URL
 path) to drop soft sections like entertainment from an otherwise-wanted feed.
 
+## Images
+
+Article art is downloaded once by the fetch pipeline (`localizeImage` in
+`fetch.js`) and committed to `images/<region>/<hash>.<ext>` — never
+hotlinked. A publisher's CDN can refuse or rate-limit an unfamiliar origin
+on every page load; downloading once, hours before any reader sees the
+page, turns that into a question asked once instead of on every visit.
+
+Only images already passing the fetch-time domain allowlist
+(`isAllowedImageUrl`) are downloaded, capped at 4MB and 10s per image. A
+download that fails leaves the article with no image, same as a rejected
+domain always has — never a stranded external URL. Pruning an article
+(retention window, or immediate removal when a story empties) deletes its
+image file too, so the pruned working tree stays roughly proportional to
+what's actually still linked from the database.
+
+Rows written before this existed still hold an external URL; a bounded
+backfill (`IMAGE_BACKFILL_PER_RUN`) downloads a slice of the backlog every
+run until it's drained, newest article first.
+
 ## Security
 
 Rules live in `lib/security.js`, shared by the fetcher and the tests:
 
 - **Fetching**: exact URL allowlist, HTTPS only, no credentials/ports/IP
   literals, redirects re-checked, size/time caps.
-- **Storage**: article links and images validated against known domains;
-  model output checked for shape, length, no markup, no leaked credentials.
+- **Storage**: article links validated against the source's own domain;
+  images downloaded once by the fetch pipeline and committed (see Images
+  below), never hotlinked, so the page loads no publisher's CDN at all.
+  Model output checked for shape, length, no markup, no leaked credentials.
 - **Page**: feed text never becomes markup (`textContent` only, no
   `innerHTML`). CSP has no `'unsafe-inline'`; `script-src` is `'self'` plus
   one hash (the theme-bootstrap inline script) plus `'wasm-unsafe-eval'`
-  (sql.js). `img-src` lists publisher CDNs by name; a test fails if this list
-  and the fetcher's own image rules drift apart.
+  (sql.js). `img-src` is just `'self'` and `data:`.
 - **Supply chain**: every GitHub Action pinned to a commit SHA. Only
   `fetch-feeds` has write access. `ANTHROPIC_API_KEY` is scoped to the one
   step that needs it. sql.js is vendored by hand, not npm-managed — the one

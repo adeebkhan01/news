@@ -18,8 +18,6 @@ const assert = require('node:assert');
 const fs = require('node:fs');
 const crypto = require('node:crypto');
 
-const { POLICY } = require('../fetch.js');
-
 const html = fs.readFileSync('index.html', 'utf8');
 const appJs = fs.readFileSync('app.js', 'utf8');
 
@@ -114,37 +112,14 @@ test('the markup carries no inline event handlers and no style attributes', () =
   assert.equal(styles, null, `style attribute(s) in index.html: ${styles}`);
 });
 
-test('img-src names exactly the image domains the fetcher enforces', () => {
-  // The page and the fetcher have to agree: an image host the fetcher would
-  // write into the data file but the CSP would refuse renders as a broken
-  // picture, and one the CSP allows but the fetcher drops is a rule kept in
-  // two places. Adding a source updates POLICY automatically — this is what
-  // says the CSP was updated too.
+test('img-src names no publisher CDN, because none is ever loaded', () => {
+  // Article art is downloaded by the fetch pipeline and committed alongside
+  // the data files (localizeImages in fetch.js) rather than hotlinked, so
+  // the page only ever loads an image from its own origin — no per-publisher
+  // domain to keep in sync here the way POLICY.imageDomains still is,
+  // server-side, for what the fetcher is willing to download from.
   const imgSrc = cspDirectives()['img-src'];
-
-  // A domain the fetcher trusts by registrable name is listed twice — bare and
-  // wildcarded — because a CSP source without a wildcard matches only that
-  // exact host. A multi-tenant CDN host is listed once, with no wildcard, which
-  // is the whole point of keeping the two apart.
-  const wildcards = new Set(
-    imgSrc.filter(v => v.startsWith('https://*.')).map(v => v.slice('https://*.'.length))
-  );
-  const bare = new Set(
-    imgSrc.filter(v => v.startsWith('https://') && !v.startsWith('https://*.'))
-          .map(v => v.slice('https://'.length))
-  );
-  assert.deepEqual([...wildcards].sort(), [...POLICY.imageDomains].sort(),
-    'img-src wildcards and POLICY.imageDomains have drifted apart');
-  assert.deepEqual(
-    [...bare].sort(),
-    [...new Set([...POLICY.imageDomains, ...POLICY.imageHosts])].sort(),
-    'img-src bare hosts and POLICY have drifted apart');
-  for (const host of POLICY.imageHosts) {
-    assert.ok(!wildcards.has(host),
-      `${host} is a multi-tenant CDN host and must not be wildcarded in img-src`);
-  }
-  assert.ok(imgSrc.includes("'self'"));
-  assert.ok(imgSrc.includes('data:'), 'the favicon is a data: URL');
+  assert.deepEqual([...imgSrc].sort(), ["'self'", 'data:'].sort());
 });
 
 test('app.js never turns feed data into markup', () => {
@@ -174,15 +149,19 @@ test("the vendored sql.js build does not need 'unsafe-eval'", () => {
   }
 });
 
-test('app.js sets link and image URLs only through safeURL', () => {
+test('app.js sets link and image URLs only through a validator', () => {
   // Belt and braces over the fetcher's own check: the page is also served from
-  // a data file someone could edit by hand.
+  // a data file someone could edit by hand. Links go through safeURL
+  // (https:// only); article art goes through safeImagePath (the exact
+  // images/<region>/<hash>.<ext> shape the fetch pipeline writes) since it's
+  // downloaded and committed rather than hotlinked.
   assert.ok(appJs.includes('function safeURL'));
+  assert.ok(appJs.includes('function safeImagePath'));
   const assignments = appJs.match(/\.(?:href|src)\s*=\s*([^;\n]+)/g) || [];
   for (const line of assignments) {
     assert.ok(
-      /safeURL|link \|\| '#'|\blink\b|\bimg\b/.test(line),
-      `a URL is assigned without going through safeURL: ${line}`
+      /safeURL|safeImagePath|link \|\| '#'|\blink\b|\bimg\b/.test(line),
+      `a URL is assigned without going through a validator: ${line}`
     );
   }
 });
