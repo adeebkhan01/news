@@ -56,7 +56,10 @@
    as untested, so it is a starting point rather than a finished surface. */
 :root[data-theme="night"]{
   --bg-page:var(--ink-0);--bg-surface:#16233c;--bg-sunken:#0a101d;--bg-inverse:var(--paper-1);
-  --text-heading:var(--paper-1);--text-body:#e6eaf1;--text-muted:var(--line-1);
+  /* Headings used to sit at --paper-1, near-pure white (#fdfcfb) against a
+     dark page — enough contrast to glare. Dimmed a touch so bold, large
+     text stops fighting the eye while staying well clear of --text-body. */
+  --text-heading:#e9ecf2;--text-body:#e6eaf1;--text-muted:var(--line-1);
   --text-inverse:var(--ink-0);--text-accent:var(--gold-1);
   --border-strong:var(--line-1);--border-quiet:#35486b;--border-hairline:#253352;
   --edge-color:#060b14;--edge-color-strong:#060b14;
