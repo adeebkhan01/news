@@ -223,6 +223,19 @@ the first.
 A story that lost members is not "developing" either: articles age out of the
 30-day window, so a story can shrink, and that is not a development.
 
+**Browsing it.** The briefing panel carries Older / Today / Newer, and the
+selected day is in the URL — `index.html?region=bd&date=2026-09-13` — so a
+dated briefing is a link someone can send to someone else. Today's own
+snapshot is skipped when stepping back, because the live view already shows
+that day and an Older button landing on the date already on screen reads as a
+bug; a link straight to it still opens it.
+
+An archived day renders as a list, not a card grid: the snapshot holds
+headlines, and cards would promise art, descriptions and a live source
+breakdown it deliberately does not carry. The controls that describe live data
+— the source chips, the ordering, the LIVE strip — are hidden rather than
+disabled, because a day that is over has no live ordering to offer.
+
 ## Security
 
 Everything this project handles comes from somewhere it does not control: the

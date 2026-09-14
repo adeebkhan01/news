@@ -18,6 +18,9 @@ let articleByLink = {};    // link -> article, so a story can name its members
 let feedOrder    = localStorage.getItem('news-order') === 'latest' ? 'latest' : 'top';
 let changedSince = null;   // the date the "new"/"developing" markers are measured against
 let droppedItems = [];     // stories that were on that day's briefing and are not on today's
+let archiveDays  = {};     // region -> the dates archive/index.json says exist, newest first
+let viewDate     = null;   // null is today's live data; a YYYY-MM-DD is an archived briefing
+let archiveSnap  = null;   // the snapshot being viewed, when viewDate is set
 let fetchedAt    = null;   // the Date, not a formatted string: the format is language-dependent
 
 const PAGE_SIZE = 24;
@@ -83,6 +86,14 @@ const STRINGS = {
     gainedSources:   'Developing \u00B7 +{n}',
     comparedWith:    'Changes measured against {date}',
     droppedHeading:  'Off the briefing since {date}',
+    archive:         'Archive',
+    archiveOlder:    'Older',
+    archiveNewer:    'Newer',
+    archiveToday:    'Today',
+    archiveViewing:  'Archived briefing \u00B7 {date}',
+    archiveStories:  'Top stories on {date}',
+    archiveMissing:  'No briefing was archived for {date}.',
+    archiveHint:     'The archive keeps each day\u2019s briefing and its top stories, not the full feed.',
     singleSource:    'Single-source report',
     alsoReported:    'Also reported by',
     headlines:       'Headlines',
@@ -155,6 +166,14 @@ const STRINGS = {
     gainedSources:   'অগ্রগতি \u00B7 +{n}',
     comparedWith:    '{date} তারিখের সঙ্গে তুলনা',
     droppedHeading:  '{date} থেকে সারসংক্ষেপের বাইরে',
+    archive:         'আর্কাইভ',
+    archiveOlder:    'আগের',
+    archiveNewer:    'পরের',
+    archiveToday:    'আজ',
+    archiveViewing:  'আর্কাইভ করা সারসংক্ষেপ \u00B7 {date}',
+    archiveStories:  '{date} তারিখের প্রধান খবর',
+    archiveMissing:  '{date} তারিখের জন্য কোনো সারসংক্ষেপ সংরক্ষিত হয়নি।',
+    archiveHint:     'আর্কাইভে প্রতিদিনের সারসংক্ষেপ ও প্রধান খবর থাকে, পুরো ফিড নয়।',
     singleSource:    'একটি উৎসের খবর',
     alsoReported:    'আরও প্রকাশ করেছে',
     headlines:       'শিরোনাম',
@@ -430,6 +449,7 @@ function applyLanguage() {
 
   applyThemeLabel();
   applyOrderSwitch();
+  applyArchiveChrome();
   applyRegionChrome();
   renderStatus();
   document.getElementById('refresh-label').textContent = t(loading ? 'fetching' : 'refresh');
@@ -446,7 +466,10 @@ function applyLanguage() {
 function formatDay(iso) {
   const d = new Date(String(iso) + 'T00:00:00Z');
   if (Number.isNaN(d.getTime())) return String(iso);
-  return d.toLocaleDateString(LOCALE[langMode], { day: 'numeric', month: 'long', timeZone: 'UTC' });
+  // The year is not optional here. An archive that can hold a hundred and
+  // twenty days spans a new year, and "1 January" alone names two days.
+  return d.toLocaleDateString(LOCALE[langMode],
+    { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 }
 
 // hour12 is forced off: bn-BD otherwise renders a 12-hour clock with a Latin
@@ -482,6 +505,12 @@ function switchRegion(regionId, el) {
 
   activeFilter = 'all';
   clearSearch();
+  // A date archived for one region need not exist for another, and silently
+  // showing a different day under a new flag would be the worst of both. The
+  // region switch returns to live.
+  viewDate = null;
+  archiveSnap = null;
+  syncLocation();
   loadData();
 }
 
@@ -578,6 +607,9 @@ function otherSources(a, story) {
 // say. Absent status means the pipeline had no earlier snapshot to compare
 // against — which is not the same as "unchanged", and must not render as it.
 function changeChip(story) {
+  // Never in the archive: "new" means new relative to today's run, and
+  // stamping it on a day that is over would be a claim about the wrong day.
+  if (viewDate) return null;
   if (!story || !story.status || !changedSince) return null;
   if (story.status === 'new') return el('span', 'change-chip is-new', t('statusNew'));
   if (story.status === 'developing') {
@@ -753,7 +785,61 @@ function orderArticles(articles) {
   });
 }
 
+// The archive holds headlines, not articles, so an archived day is a list and
+// not a card grid. Showing it as cards would promise art, descriptions and a
+// live source breakdown that the snapshot deliberately does not carry.
+function renderArchiveFeed() {
+  const container = document.getElementById('feed-container');
+  const stories = (archiveSnap && archiveSnap.stories) || [];
+
+  document.getElementById('article-count').textContent =
+    t(stories.length === 1 ? 'articleCountOne' : 'articleCount', { n: num(stories.length) });
+
+  if (feedObserver) feedObserver.disconnect();
+  visibleArticles = [];
+  renderedCount = 0;
+
+  // The briefing panel above already says this day has nothing archived;
+  // saying it twice, in two boxes, reads as two separate problems.
+  if (!stories.length) {
+    container.replaceChildren();
+    document.getElementById('article-count').textContent = '';
+    return;
+  }
+
+  const list = el('ol', 'archive-list');
+  stories.forEach(st => {
+    const item = el('li', 'archive-item');
+    const link = safeURL(st.lead);
+    const anchor = el('a', 'archive-headline', st.headline || t('untitled'));
+    anchor.href = link || '#';
+    if (link) { anchor.target = '_blank'; anchor.rel = 'noopener noreferrer'; }
+    item.appendChild(anchor);
+
+    const meta = el('div', 'archive-meta');
+    if (st.sourceIds && st.sourceIds.length > 1) {
+      meta.appendChild(el('span', 'corroborated', t('coveredBy', { n: num(st.sourceIds.length) })));
+    }
+    if (st.topic) meta.appendChild(el('span', 'label', st.topic));
+    if (meta.childElementCount) item.appendChild(meta);
+
+    if (st.why) {
+      const why = el('p', 'card-why');
+      why.appendChild(el('span', 'why-label', t('whyItMatters')));
+      why.appendChild(document.createTextNode(st.why));
+      item.appendChild(why);
+    }
+    list.appendChild(item);
+  });
+
+  const head = el('div', 'archive-head');
+  head.appendChild(el('span', 'label', t('archiveStories', { date: formatDay(viewDate) })));
+  container.replaceChildren(head, list);
+}
+
 function renderArticles() {
+  if (viewDate) return renderArchiveFeed();
+
   const container = document.getElementById('feed-container');
   const q = searchQuery.toLowerCase();
 
@@ -880,8 +966,22 @@ function showPageSummary(data) {
 // than all or nothing: a Bangla translation that has not landed yet shows the
 // English briefing instead of no briefing.
 function briefingItems() {
-  const bn = langMode === 'bn' && briefingBn.length === briefingEn.length;
-  return { items: bn ? briefingBn : briefingEn, lang: bn ? 'bn' : 'en' };
+  const en = viewDate ? ((archiveSnap && archiveSnap.briefing) || []) : briefingEn;
+  const alt = viewDate ? ((archiveSnap && archiveSnap.briefingBn) || []) : briefingBn;
+  const bn = langMode === 'bn' && alt.length === en.length && en.length > 0;
+  return { items: bn ? alt : en, lang: bn ? 'bn' : 'en' };
+}
+
+// A briefing item's story, from whichever set is being shown. In archive mode
+// the live story map describes today and would put today's source count on a
+// headline from a week ago.
+function storyForItem(id) {
+  if (!id) return null;
+  if (viewDate) {
+    const stories = (archiveSnap && archiveSnap.stories) || [];
+    return stories.find(st => st.id === id) || null;
+  }
+  return storyById[id] || null;
 }
 
 // One briefing item: the headline, and underneath it either the consequence
@@ -901,7 +1001,7 @@ function briefItemElement(item, n, full, itemLang) {
   // The story behind the item, when it is one the data file published a
   // record for: the briefing says four newsrooms reported this, and the
   // reader can see which four in the feed below.
-  const story = storyById[item.id];
+  const story = storyForItem(item.id);
   const meta = el('div', 'brief-meta');
   if (story && story.sourceIds && story.sourceIds.length > 1) {
     meta.appendChild(el('span', 'brief-sources', t('coveredBy', { n: num(story.sourceIds.length) })));
@@ -931,6 +1031,20 @@ function renderSummary() {
   const byline = document.getElementById('brief-byline');
   const { items, lang: itemLang } = briefingItems();
 
+  // A day with no snapshot is a fact about the archive, not a failure to
+  // load: the pipeline writes no snapshot for a run that had no briefing.
+  if (viewDate && !items.length) {
+    body.classList.remove('brief-items', 'clamped');
+    body.replaceChildren(notice('notice', t('archiveMissing', { date: formatDay(viewDate) }), t('archiveHint')));
+    toggle.hidden = true;
+    byline.textContent = t('archiveViewing', { date: formatDay(viewDate) });
+    byline.hidden = false;
+    document.getElementById('brief-change').hidden = true;
+    box.hidden = false;
+    renderFacts();
+    return;
+  }
+
   if (items.length) {
     body.removeAttribute('lang');
     body.classList.remove('clamped');
@@ -942,7 +1056,7 @@ function renderSummary() {
     toggle.setAttribute('aria-expanded', briefFull ? 'true' : 'false');
     toggle.classList.add('brief-depth');
     toggle.hidden = false;
-    byline.textContent = t('briefingBy');
+    byline.textContent = viewDate ? t('archiveViewing', { date: formatDay(viewDate) }) : t('briefingBy');
     byline.hidden = false;
     box.hidden = false;
     renderChangeNote();
@@ -978,7 +1092,7 @@ function renderSummary() {
 // compares against the last day it has.
 function renderChangeNote() {
   const note = document.getElementById('brief-change');
-  if (!changedSince) { note.hidden = true; note.replaceChildren(); return; }
+  if (viewDate || !changedSince) { note.hidden = true; note.replaceChildren(); return; }
 
   const frag = document.createDocumentFragment();
   frag.appendChild(el('span', 'label', t('comparedWith', { date: formatDay(changedSince) })));
@@ -1046,6 +1160,105 @@ function showHeadlines(articles) {
     frag.appendChild(item);
   });
   list.replaceChildren(frag);
+}
+
+/* ── Archive ──────────────────────────────────────────────────────────────
+   The browser cannot list a directory, so the archive is browsable only
+   because the pipeline writes down what is in it. A missing or unreadable
+   index is not an error: it means no day has been archived yet, and the
+   controls simply do not appear. */
+async function loadArchiveIndex() {
+  try {
+    const base = window.location.pathname.replace(/[^/]*$/, '');
+    const res = await fetch(base + 'archive/index.json?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const index = await res.json();
+    archiveDays = (index && index.regions) || {};
+  } catch (e) {
+    archiveDays = {};
+  }
+}
+
+// Today's own snapshot is excluded from the navigation. It exists — the run
+// writes it — but the live view already shows that day, and an "Older" button
+// that lands on the same date the page is already showing reads as a bug. A
+// link straight to today's date still opens it; only the stepping skips it.
+function daysForRegion() {
+  const days = archiveDays[activeRegion];
+  if (!Array.isArray(days)) return [];
+  const today = new Date().toISOString().slice(0, 10);
+  return days.filter(d => d !== today);
+}
+
+// The address bar is the share link. A dated briefing someone can send to
+// someone else has to survive being pasted, so the date and region live in
+// the URL rather than only in memory.
+function syncLocation() {
+  const params = new URLSearchParams();
+  params.set('region', activeRegion);
+  if (viewDate) params.set('date', viewDate);
+  const url = window.location.pathname + '?' + params.toString();
+  window.history.replaceState({}, '', url);
+}
+
+function readLocation() {
+  const params = new URLSearchParams(window.location.search);
+  const region = params.get('region');
+  if (region && REGION_CONFIG[region]) activeRegion = region;
+  const date = params.get('date');
+  if (date && /^\d{4}-\d{2}-\d{2}$/.test(date)) viewDate = date;
+}
+
+async function showDate(date) {
+  viewDate = date || null;
+  archiveSnap = null;
+  if (viewDate) {
+    try {
+      const base = window.location.pathname.replace(/[^/]*$/, '');
+      const file = 'archive/' + encodeURIComponent(activeRegion) + '/' + encodeURIComponent(viewDate) + '.json';
+      const res = await fetch(base + file + '?t=' + Date.now());
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      archiveSnap = await res.json();
+    } catch (e) {
+      archiveSnap = null;   // rendered as "nothing archived for that day", not as a failure
+    }
+  }
+  syncLocation();
+  applyArchiveChrome();
+  renderSummary();
+  renderArticles();
+}
+
+// One class on <body> rather than a dozen hidden flags: the controls that
+// describe live data — the source chips, the ordering — have nothing to say
+// about a day that is over, and CSS is where "this control does not apply
+// here" belongs.
+function applyArchiveChrome() {
+  document.body.classList.toggle('archive-mode', !!viewDate);
+
+  const nav = document.getElementById('archive-nav');
+  const days = daysForRegion();
+  if (!days.length) { nav.hidden = true; return; }
+  nav.hidden = false;
+
+  // days is newest first, so "older" is the next index along and "newer" is
+  // the one before. With no date selected we are on today, which sits before
+  // every archived day.
+  const at = viewDate ? days.indexOf(viewDate) : -1;
+  const older = at === -1 ? days[0] : days[at + 1];
+  const newer = at <= 0 ? null : days[at - 1];
+
+  const olderBtn = document.getElementById('archive-older');
+  const newerBtn = document.getElementById('archive-newer');
+  const todayBtn = document.getElementById('archive-today');
+  olderBtn.textContent = t('archiveOlder');
+  newerBtn.textContent = t('archiveNewer');
+  todayBtn.textContent = t('archiveToday');
+  olderBtn.disabled = !older;
+  newerBtn.disabled = !newer;
+  todayBtn.disabled = !viewDate;
+  olderBtn.dataset.date = older || '';
+  newerBtn.dataset.date = newer || '';
 }
 
 /* ── Data ── */
@@ -1144,6 +1357,11 @@ function wireControls() {
     const btn = e.target.closest('.order-btn');
     if (btn) setFeedOrder(btn.dataset.order);
   });
+  document.getElementById('archive-nav').addEventListener('click', e => {
+    const btn = e.target.closest('button');
+    if (!btn || btn.disabled) return;
+    showDate(btn.id === 'archive-today' ? null : btn.dataset.date);
+  });
 
   // Delegated, because the chips are rebuilt on every load and the tabs are
   // the same three buttons for the life of the page.
@@ -1158,9 +1376,24 @@ function wireControls() {
 }
 
 /* ── Boot ── */
+// The URL wins over the stored region: a shared link has to open on the day
+// and the region it names, whatever this browser last looked at.
+readLocation();
 document.querySelectorAll('.tab').forEach(c => {
   c.setAttribute('aria-selected', c.dataset.region === activeRegion ? 'true' : 'false');
 });
 wireControls();
 applyLanguage();
-loadData();
+// Live data renders first even when the URL names an archived day, and the
+// archive view replaces it once its snapshot is actually in hand. Rendering
+// the archive view first would flash "nothing archived for that day" at every
+// visitor following a shared link, which is the one thing a share link must
+// not do.
+(async () => {
+  const wanted = viewDate;
+  viewDate = null;
+  await loadData();
+  await loadArchiveIndex();
+  if (wanted) await showDate(wanted);
+  else applyArchiveChrome();
+})();

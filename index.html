@@ -32,7 +32,7 @@
     document.documentElement.setAttribute('data-theme', theme);
   })();
 </script>
-<link rel="stylesheet" href="app.css?v=f316d644bf4e" />
+<link rel="stylesheet" href="app.css?v=bd1291c53e43" />
 </head>
 <body>
 <a class="skip-link" href="#feed-container" data-i18n="skipToHeadlines">Skip to headlines</a>
@@ -88,6 +88,11 @@
         <div class="panel-head">
           <span class="label" data-i18n="briefing">Briefing</span>
           <span class="label brief-byline" id="brief-byline" hidden></span>
+          <div class="archive-nav" id="archive-nav" role="group" data-i18n-label="archive" aria-label="Archive" hidden>
+            <button id="archive-older" type="button">Older</button>
+            <button id="archive-today" type="button">Today</button>
+            <button id="archive-newer" type="button">Newer</button>
+          </div>
         </div>
         <div id="page-summary-text"></div>
         <div id="brief-change" class="brief-change" hidden></div>
@@ -131,6 +136,6 @@
   </div>
 </footer>
 
-<script src="app.js?v=ad10d9ec9a7d" defer></script>
+<script src="app.js?v=7a2ab9037a81" defer></script>
 </body>
 </html>

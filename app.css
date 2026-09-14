@@ -289,6 +289,48 @@ a{color:inherit}
   font-family:var(--font-display);font-weight:700;font-size:var(--size-md);line-height:1.25;
   letter-spacing:var(--track-display);color:var(--text-heading);
 }
+/* Browsing the archive. The controls are in the briefing's own head because
+   that is what they change: the feed follows, but the briefing is the thing
+   a reader comes back for. */
+.archive-nav{display:flex;gap:var(--space-1);margin-left:auto}
+.archive-nav button{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
+  text-transform:uppercase;letter-spacing:var(--track-label);
+  height:var(--control-h-sm);padding:0 var(--space-3);cursor:pointer;
+  background:var(--bg-page);color:var(--text-body);
+  border:var(--border-w) solid var(--border-hairline);border-radius:var(--radius);
+}
+.archive-nav button:hover:not([disabled]){background:var(--bg-sunken)}
+.archive-nav button[disabled]{color:var(--text-muted);cursor:default;opacity:.55}
+/* A day that is over has no live ordering and no live source breakdown, so
+   the controls that describe those are not merely disabled — they are gone. */
+body.archive-mode .filter-bar,
+body.archive-mode #order-switch{display:none}
+/* "● LIVE" beside a day that ended is the page contradicting itself. The
+   status strip reports the live fetch, and in the archive there isn't one. */
+body.archive-mode .status-strip,
+body.archive-mode #status-text{display:none}
+.archive-head{padding-bottom:var(--space-3);margin-bottom:var(--space-4);
+  border-bottom:var(--border-w) solid var(--border-strong)}
+.archive-list{list-style:none;counter-reset:arc}
+.archive-item{
+  counter-increment:arc;position:relative;padding:var(--space-4) 0 var(--space-4) var(--space-7);
+  border-bottom:var(--border-w) dashed var(--border-hairline);
+}
+.archive-item:last-child{border-bottom:none}
+.archive-item::before{
+  content:counter(arc,decimal-leading-zero);position:absolute;left:0;top:var(--space-4);
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+  color:var(--text-muted);font-variant-numeric:tabular-nums;
+}
+.archive-headline{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-md);line-height:1.25;
+  letter-spacing:var(--track-display);color:var(--text-heading);text-decoration:none;
+}
+.archive-headline:hover{color:var(--text-accent)}
+.archive-meta{display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--space-2)}
+.archive-item .card-why{margin-top:var(--space-3)}
+
 .brief-meta{display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--space-2)}
 /* "New" and "Developing" earn their colour: they are the only thing on the
    page that is about the reader's last visit rather than about the news. A
