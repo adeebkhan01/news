@@ -20,7 +20,7 @@ const fs = require('node:fs');
 const cluster = require('../lib/cluster.js');
 const rank = require('../lib/rank.js');
 const sec = require('../lib/security.js');
-const { parseJsonBlock, parseDate } = require('../fetch.js');
+const { parseJsonBlock, parseDate, dedupForBriefing } = require('../fetch.js');
 
 const HOUR = 60 * 60 * 1000;
 
@@ -423,4 +423,49 @@ test('the shipped generateBriefing still ties ids the same way', () => {
   const source = fs.readFileSync('fetch.js', 'utf8');
   assert.ok(source.includes('!claimed[item.id]'),
     'generateBriefing no longer rejects a duplicate id — tieIds above is now testing nothing');
+});
+
+// ── Deduplicating the briefing's candidate pool ──────────────────────────
+//
+// cluster.js is deliberately tuned to under-merge: two clusters describing
+// the same recurring event (a second raid on the same street, worded just
+// differently enough) correctly stay separate stories rather than risk a
+// wrong merge. That is right for attribution and wrong for a five-item
+// digest, where the reader sees what looks like the same headline twice.
+// dedupForBriefing is the second, looser pass that catches that case
+// without touching how articles are clustered or attributed.
+function dedupStory(id, title, desc) {
+  return { id, members: [{ title, desc: desc || '', lang: 'en' }] };
+}
+
+test('a near-duplicate headline is dropped in favor of the higher-ranked one', () => {
+  const stories = [
+    dedupStory('s1', 'NSW police face criticism over second Oxford Street drug raid',
+      'Officers conducted another raid on Oxford Street venues amid mounting complaints.'),
+    dedupStory('s2', 'BNP leader meets British High Commissioner amid political talks',
+      'Discussions on democratic transition and bilateral relations.'),
+    dedupStory('s3', 'NSW Police conduct Oxford Street venue raids',
+      'Police raided several venues along Oxford Street overnight.'),
+  ];
+  const picked = dedupForBriefing(stories, 3);
+  assert.deepEqual(picked.map(s => s.id), ['s1', 's2'],
+    's3 reads as the same event as the higher-ranked s1 and should be dropped');
+});
+
+test('stories that merely share a name are not treated as duplicates', () => {
+  const stories = [
+    dedupStory('s1', 'Trump reiterates support for united Ireland during visit',
+      'Doubles down on comments made earlier in the trip.'),
+    dedupStory('s2', 'Trump downplays AI risks, cites China competition',
+      'Dismisses calls for slower AI development.'),
+  ];
+  const picked = dedupForBriefing(stories, 2);
+  assert.deepEqual(picked.map(s => s.id), ['s1', 's2'],
+    'sharing only "Trump" is not evidence these are the same story');
+});
+
+test('deduping never drops below the pool it was given', () => {
+  const stories = [dedupStory('s1', 'One headline', ''), dedupStory('s2', 'A different headline', '')];
+  const picked = dedupForBriefing(stories, 5);
+  assert.equal(picked.length, 2);
 });
