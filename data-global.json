@@ -1,6 +1,7 @@
 {
-  "fetchedAt": "2026-09-13T11:17:25.297Z",
-  "summary": "Global tensions are intensifying across multiple theaters as the Middle East conflict expands beyond Gaza, with Houthi attacks on shipping and Saudi territory continuing, Iran and the US locked in escalating confrontation, and Israel-Lebanon talks collapsing amid renewed explosions. The BRICS summit in New Delhi is underway amid discussions of challenging Western dominance, while political volatility grips several nations including Sweden's far-right surge, Niger's military reshuffles, and ongoing uncertainty around Trump's policies. Major humanitarian crises are mounting, with Ukraine facing its toughest winter yet, the DR Congo's worst Ebola outbreak exceeding seven thousand cases, and energy costs creating winter supply concerns. Technology companies are wrestling with AI safety warnings from insiders even as research leaders call for development slowdowns, suggesting deepening anxieties about artificial intelligence development pace.",
+  "fetchedAt": "2026-09-13T16:27:59.544Z",
+  "summary": "European politics faces significant shifts as Sweden holds elections with the far-right gaining ground and France's Marine Le Pen launches her 2027 campaign, while in the UK, Reform Party's substantial billionaire donations raise spending scrutiny. Internationally, regional tensions escalate with Russia attacking a passenger train near Poland, Houthis tightening control of the Red Sea strait, and ongoing conflict reshaping Middle Eastern alliances at the BRICS summit. Artificial intelligence dominance continues as a major policy focus, with Obama urging Democrats to prioritize AI safety measures amid warnings from tech insiders about existential risks. Domestic incidents ranging from a Wisconsin congressman's emergency lake landing to violent disorder in Portsmouth and political instability in various nations round out a notably turbulent news cycle.",
+  "summaryBn": null,
   "sources": [
     {
       "id": "bbcnews",
@@ -13,12 +14,397 @@
       "color": "#D2A02E"
     },
     {
+      "id": "guardian",
+      "name": "The Guardian",
+      "color": "#052962"
+    },
+    {
+      "id": "npr",
+      "name": "NPR",
+      "color": "#E11B22"
+    },
+    {
+      "id": "france24",
+      "name": "France 24",
+      "color": "#00558C"
+    },
+    {
       "id": "dwnews",
       "name": "DW News",
       "color": "#002B55"
     }
   ],
   "articles": [
+    {
+      "title": "Sweden general election: close race as far right eyes role in government – Europe live",
+      "link": "https://www.theguardian.com/world/live/2026/sep/13/sweden-general-election-social-democrats-magdalena-sweden-democrats-ulf-kristersson-andersson-far-right-europe-latest-news-updates",
+      "desc": "Country heads to the polls as latest polling shows 0.3-point gap between left and right wing blocs Since 2022, Sweden has been governed by a three-party minority government led by the Moderates party ",
+      "pubDate": "Sun, 13 Sep 2026 16:19:51 GMT",
+      "img": "https://i.guim.co.uk/img/media/39480f47abbeee736896ae6263a6046f37b0eb99/245_0_5880_4704/master/5880.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "First ministers at Celtic summit to affirm right to seek independence from the UK",
+      "link": "https://www.theguardian.com/politics/2026/sep/13/first-ministers-to-affirm-right-to-seek-independence-from-the-uk",
+      "desc": "Call for ‘constitutional change in Wales, Scotland and Northern Ireland’ likely to challenge Burnham’s devolution agenda The first ministers of Wales, Scotland and Northern Ireland are meeting to affi",
+      "pubDate": "Sun, 13 Sep 2026 16:16:21 GMT",
+      "img": "https://i.guim.co.uk/img/media/486c89e1706e5b22e40739bc52a87322b1d5aa2b/730_0_6833_5464/master/6833.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Russian drone hits Kyiv-Warsaw passenger train near Polish border",
+      "link": "https://www.theguardian.com/world/2026/sep/13/russian-drone-hits-kyiv-warsaw-passenger-train-polish-border",
+      "desc": "No casualties reported as Ukraine’s foreign minister says ‘Putin’s terror knocking directly on doors of EU and Nato’ A passenger train travelling from Kyiv to Warsaw was hit by a Russian drone two kil",
+      "pubDate": "Sun, 13 Sep 2026 16:13:39 GMT",
+      "img": "https://i.guim.co.uk/img/media/adbd895a4b9bc1f72e9a36c988ae2c2a18f9518c/171_0_1707_1366/master/1707.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Kosovo approves new government after months of political deadlock",
+      "link": "https://www.aljazeera.com/news/2026/9/13/kosovo-approves-new-government-after-months-of-political-deadlock?traffic_source=rss",
+      "desc": "A newly approved government offers Kosovo only brief respite before a contentious presidential vote.",
+      "pubDate": "Sun, 13 Sep 2026 16:11:41 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6aa6b9d04710-1789311440.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Wisconsin congressman swims to safety after plane makes emergency landing in lake",
+      "link": "https://www.theguardian.com/us-news/2026/sep/13/wisconsin-congressman-plane-emergency-landing-lake",
+      "desc": "Republican gubernatorial candidate Tom Tiffany and pilot swim to safety after plane made emergency landing in lake A Republican congressman said he had to swim to safety after a plane he was traveling",
+      "pubDate": "Sun, 13 Sep 2026 16:04:49 GMT",
+      "img": "https://i.guim.co.uk/img/media/5eaa9b5171fdcbf637d3345a00c8b06fd41426e5/459_0_4594_3675/master/4594.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Who better to defend Reform’s latest millions than Honest Bob Jenrick? | John Crace",
+      "link": "https://www.theguardian.com/politics/2026/sep/13/reform-latest-millions-honest-bob-jenrick",
+      "desc": "The man who once helped Richard ‘Dirty’ Desmond save a load of tax was wheeled out to face Laura Kuenssberg You wait years for one party donation of £36m and then two come along at once . Reform can h",
+      "pubDate": "Sun, 13 Sep 2026 15:51:44 GMT",
+      "img": "https://i.guim.co.uk/img/media/97907031eed6683377f6e09ce5ab0984071ccfbd/465_0_2347_1878/master/2347.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Obama reportedly urges Democrats to prioritize safety plan for AI",
+      "link": "https://www.theguardian.com/us-news/2026/sep/13/obama-democrats-ai-safety",
+      "desc": "Ex-president urged party at closed-door fundraiser to create sweeping framework, from safety ‘slow-down’ to job losses Barack Obama urged Democrats to prioritize a “public conversation” about AI manag",
+      "pubDate": "Sun, 13 Sep 2026 15:47:37 GMT",
+      "img": "https://i.guim.co.uk/img/media/5296e92325d59392639c0599e013a3f81eed9f1d/302_0_3023_2418/master/3023.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Police release images of six men sought after violent disorder in Portsmouth",
+      "link": "https://www.theguardian.com/uk-news/2026/sep/13/hampshire-police-release-images-six-men-violent-disorder-portsmouth",
+      "desc": "Hampshire and Isle of Wight force says it wants to speak to men in connection with anti-migrant unrest that left seven officers injured Police have released images of six men they would like to speak ",
+      "pubDate": "Sun, 13 Sep 2026 15:45:29 GMT",
+      "img": "https://i.guim.co.uk/img/media/db740aa1c765642457d1cd6eed55ca7581c31099/0_14_1884_1507/master/1884.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Trump doubles down on united Ireland comments on day two of visit",
+      "link": "https://www.bbc.co.uk/news/articles/cx2z79n0eeno?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The US president was speaking at the Irish Open on Sunday and said \"many people agree\" with his comments.",
+      "pubDate": "Sun, 13 Sep 2026 15:42:50 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/31a6/live/33fb3fc0-af7e-11f1-913a-7151f234deb3.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "France's far-right Marine Le Pen kicks off 2027 presidential campaign",
+      "link": "https://www.france24.com/en/france-s-far-right-marine-le-pen-kicks-off-2027-presidential-campaign",
+      "desc": "In France, Marine Le Pen has launched her presidential campaign with a rally in Hénin-Beaumont this Sunday, despite wearing an electronic tag following her recent conviction. On FRANCE 24, internation",
+      "pubDate": "Sun, 13 Sep 2026 15:41:05 GMT",
+      "img": "https://s.france24.com/media/display/84518dfc-a52a-11f1-984c-005056bf30b7/w:1024/p:16x9/2026-08-27T154621Z-1088021487-RC237NAUVKIC-RTRMADP-3-FRANCE-BUSINESS-POLITICS.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "World leaders gather in New Delhi for final day of BRICS summit",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/13/world-leaders-gather-in-new-delhi-for-final-day-of-brics-summit?traffic_source=rss",
+      "desc": "BRICS leaders gathered in New Delhi for the final day of the summit amid divisions over the wars in Iran and Ukraine.",
+      "pubDate": "Sun, 13 Sep 2026 15:40:24 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789313975.jpg?resize=1620%2C1080&amp;quality=80",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "US congressman swims to safety after his plane is forced to land on a lake",
+      "link": "https://www.bbc.co.uk/news/articles/c5y5d87x72zo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "The small plane carrying Rep Tom Tiffany had a mechanical issue that forced the pilot to make an emergency landing on a Wisconsin lake.",
+      "pubDate": "Sun, 13 Sep 2026 15:30:43 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/14d6/live/cd399ee0-af86-11f1-913a-7151f234deb3.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Four dead in Louisiana stabbing spree as police search for person of interest",
+      "link": "https://www.theguardian.com/us-news/2026/sep/13/louisiana-stabbing-spree-deaths",
+      "desc": "Sheriff’s office identifies Kaegan Jude Solet, 47, as person of interest after series of stabbings in Houma leaves four dead Police are searching for a person of interest after a series of stabbings i",
+      "pubDate": "Sun, 13 Sep 2026 15:24:59 GMT",
+      "img": "https://i.guim.co.uk/img/media/79657f57284ea29fbdc239f41e24bad4f959fa49/1125_0_3750_3000/master/3750.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "How could Reform UK spend its £72m of new billionaire donations?",
+      "link": "https://www.theguardian.com/politics/2026/sep/13/how-could-reform-uk-spend-its-72m-of-new-billionaire-donations",
+      "desc": "Harborne and Delo’s cash could buy a massive head start in an election, but spending big has possible pitfalls Nigel Farage once said he could spend his £5m gift from Christopher Harborne on Ferraris ",
+      "pubDate": "Sun, 13 Sep 2026 15:17:38 GMT",
+      "img": "https://i.guim.co.uk/img/media/019b3ab23bbcb918ccc3b563ddc68e337af1b247/425_0_7200_5760/master/7200.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "The race to make AI safer",
+      "link": "https://www.france24.com/en/the-race-to-make-ai-safer",
+      "desc": "As AI leaders warn that the technology is advancing faster than our ability to control it, Donald Trump has dismissed some of those concerns as exaggerated. On FRANCE 24, AI philosophy professor Rapha",
+      "pubDate": "Sun, 13 Sep 2026 15:16:38 GMT",
+      "img": "https://s.france24.com/media/display/0a83147c-8609-11f1-9e88-005056bf30b7/w:1024/p:16x9/WhatsApp-Image-2026-07-22-at-2-01-15-PM.jpeg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "Kamala Harris’s California home targeted by trespasser, officials say",
+      "link": "https://www.theguardian.com/us-news/2026/sep/13/kamala-harris-malibu-home-trespasser",
+      "desc": "Former vice-president and her husband were not home when person entered their property, no arrests were made Law enforcement officials and a spokesperson for former vice-president Kamala Harris said a",
+      "pubDate": "Sun, 13 Sep 2026 15:08:58 GMT",
+      "img": "https://i.guim.co.uk/img/media/6ab29aa6e2fe9fca9a068fa1278a5b6fefe820cf/172_0_2278_1823/master/2278.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Trump reiterates $5,000 ‘dividend’ pledge if Republicans win midterms",
+      "link": "https://www.theguardian.com/us-news/2026/sep/13/trump-5000-dividend-pledge",
+      "desc": "Plan to give US adults $5,000 has been greeted with incredulity across the political spectrum as well as outrage Donald Trump on Sunday doubled down on his controversial pledge to give US adults a $5,",
+      "pubDate": "Sun, 13 Sep 2026 15:07:23 GMT",
+      "img": "https://i.guim.co.uk/img/media/5c361ca74aac65d48491cdee97253eddceee34b5/218_0_2565_2053/master/2565.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "What are the five pros and cons of artificial intelligence?",
+      "link": "https://www.aljazeera.com/news/2026/9/13/what-are-the-five-pros-and-cons-of-artificial-intelligence?traffic_source=rss",
+      "desc": "AI creates new opportunities in programming and automation, but experts warn of risks to early-career workers.",
+      "pubDate": "Sun, 13 Sep 2026 15:03:48 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/09/reuters_6aa69311-1789301521.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Red Sea nations watch as Houthis seize Bab al-Mandeb strait",
+      "link": "https://www.aljazeera.com/economy/2026/9/13/red-sea-nations-watch-as-houthis-seize-bab-al-mandeb-strait?traffic_source=rss",
+      "desc": "Houthi control of Bab al-Mandeb chokes Suez Canal revenues, triggers refugee flows, and exposes regional security gaps.",
+      "pubDate": "Sun, 13 Sep 2026 15:00:47 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/09/reuters_6aa4b52c-1789179180.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "As Japan’s yen peaks, is the era of budget-friendly trips coming to an end for Australian travellers?",
+      "link": "https://www.theguardian.com/australia-news/2026/sep/14/as-japans-yen-peaks-is-the-era-of-budget-friendly-trips-coming-to-an-end-for-australian-travellers",
+      "desc": "The currency has now reached its highest level against the US and Australian dollars in six months Get our breaking news email , free app or daily news podcast In the unpredictable world of global cur",
+      "pubDate": "Sun, 13 Sep 2026 15:00:09 GMT",
+      "img": "https://i.guim.co.uk/img/media/80eece6bf8adebe33850ee747bd2df2074f9faf6/817_0_6570_5259/master/6570.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Crossbench MPs launch push to stop Australian military exports being used in human rights breaches",
+      "link": "https://www.theguardian.com/australia-news/2026/sep/14/crossbench-mps-launch-push-to-stop-australian-military-exports-being-used-in-human-rights-breaches",
+      "desc": "‘Red lines’ legislation would forbid defence equipment technology or services being used, includes parts for F-35 fighter jets Get our breaking news email , free app or daily news podcast Crossbench M",
+      "pubDate": "Sun, 13 Sep 2026 15:00:09 GMT",
+      "img": "https://i.guim.co.uk/img/media/7512e60de3ea9ee94b9c1ef2d2e3df6dd6f38171/490_494_5331_4265/master/5331.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Turkish police detain dozens in raids on gay bars and homes of LGBTQ+ activists",
+      "link": "https://www.bbc.co.uk/news/articles/cpve191wy47o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Human rights groups in Turkey have accused the government of using a family- values campaign to target the LGBTQ+ community.",
+      "pubDate": "Sun, 13 Sep 2026 14:25:56 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0cf8/live/cecf2da0-af73-11f1-b1d1-571ed4d7ff2c.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Iran-GCC summit: What’s behind the meeting, why is Bahrain not attending?",
+      "link": "https://www.aljazeera.com/news/2026/9/13/iran-gcc-summit-whats-behind-the-meeting-why-is-bahrain-not-attending?traffic_source=rss",
+      "desc": "Iran says it plans to hold talks with Iraq and Gulf nations in Oman to help strengthen shared regional security.",
+      "pubDate": "Sun, 13 Sep 2026 13:59:27 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/09/reuters_6aa63b6f-1789279087.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Yemen: The Houthis test Iran's regional influence",
+      "link": "https://www.france24.com/en/video/20260913-yemen-the-houthis-test-iran-s-regional-influence",
+      "desc": "Iran-backed Houthi attacks on Saudi Arabia have intensified as fighting spreads around the Bab el-Mandeb Strait, a vital chokepoint for global trade and oil shipments. On FRANCE 24, Sanaa Center for S",
+      "pubDate": "Sun, 13 Sep 2026 13:29:02 GMT",
+      "img": "https://s.france24.com/media/display/e97ed2ba-adc3-11f1-b34d-005056a97e36/w:1024/p:16x9/AP26253315512845.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "Swedish far-right eyes role in government",
+      "link": "https://www.france24.com/en/swedish-far-right-eyes-role-in-government",
+      "desc": "As Sweden heads into a closely fought election, the far right is gaining ground by tapping into concerns over crime and security, issues that some voters increasingly associate with migration. On FRAN",
+      "pubDate": "Sun, 13 Sep 2026 13:11:59 GMT",
+      "img": "https://s.france24.com/media/display/5d325c64-af53-11f1-8d54-005056a90284/w:1024/p:16x9/capture-20799631186aa669301c83e0-07656090.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "The Iran war reveals the limits of BRICS",
+      "link": "https://www.aljazeera.com/opinions/2026/9/13/the-iran-war-reveals-the-limits-of?traffic_source=rss",
+      "desc": "The bloc struggles to translate its economic weight into geopolitical sway. But there may be a silver lining to it.",
+      "pubDate": "Sun, 13 Sep 2026 12:46:58 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-09-13T012744Z_1095030876_RC2NHNAI3RN3_RTRMADP_3_BRICS-SUMMIT-1789264800.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "BRICS summit 2026: What are the key takeaways?",
+      "link": "https://www.aljazeera.com/news/2026/9/13/brics-summit-2026-what-are-the-key-takeaways?traffic_source=rss",
+      "desc": "The 11-nation bloc avoids condemning the US-Israel war on Iran, showing the divisions among the members.",
+      "pubDate": "Sun, 13 Sep 2026 12:04:39 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6aa691abd113-1789301163.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Politics chat: Trump's $5,000 promise to voters, Vance invokes Charlie Kirk",
+      "link": "https://www.npr.org/2026/09/13/nx-s1-5964863/politics-chat-trumps-5-000-promise-to-voters-vance-invokes-charlie-kirk",
+      "desc": "Following the midterm convention in Dallas, President Trump's $5,000 campaign promise has generated attention, but not belief. And, Vice President JD Vance characterizes Democrats as extremists.",
+      "pubDate": "Sun, 13 Sep 2026 08:04:27 -0400",
+      "img": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
+    },
+    {
+      "title": "A new tax incentive could lead to more films being made in the U.S. rather than abroad",
+      "link": "https://www.npr.org/2026/09/13/nx-s1-5962169/a-new-tax-incentive-could-lead-to-more-films-being-made-in-the-u-s-rather-than-abroad",
+      "desc": "President Trump and Congress are weighing in on potential federal tax incentives for film production. It's hoped the tax credit would keep production of films and TV in the U.S. rather than overseas.",
+      "pubDate": "Sun, 13 Sep 2026 08:04:25 -0400",
+      "img": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
+    },
+    {
+      "title": "Russians on the Goethe-Institut: 'Hostage to politics'",
+      "link": "https://www.dw.com/en/russians-on-the-goethe-institut-hostage-to-politics/a-79218936?maca=en-rss-en-eu-2092-rdf",
+      "desc": "Canceled language exams, disrupted plans to study in Germany, and the disappearance of an important cultural link: DW users shared how the closure of Germany's Goethe-Institut in Russia affects their ",
+      "pubDate": "2026-09-13T11:50:00Z",
+      "img": "https://static.dw.com/image/78815208_6.jpg",
+      "sourceId": "dwnews",
+      "sourceName": "DW News",
+      "sourceColor": "#002B55"
+    },
+    {
+      "title": "A dignified life is a ‘distant dream’ for many Iranian families amid US war",
+      "link": "https://www.aljazeera.com/economy/2026/9/13/a-dignified-life-is-a-distant-dream-for-many-iranian-families-amid-us-war?traffic_source=rss",
+      "desc": "With constant degredation and no real prospects of improvement in the foreseeable future, Iranians are losing hope.",
+      "pubDate": "Sun, 13 Sep 2026 11:45:24 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/09/epa_6aa680c3a2a1-1789296835.jpg?resize=1920%2C1440",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Philippines set for historic vote in Bangsamoro after decades of conflict",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/13/philippines-set-for-historic-vote-in-bangsamoro-after-decades-of-conflict?traffic_source=rss",
+      "desc": "Philippines set for historic vote in Bangsamoro after decades of conflict",
+      "pubDate": "Sun, 13 Sep 2026 11:35:04 +0000",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/09/JO-1789299296.jpg?resize=1800%2C1063",
+      "sourceId": "aljazeera",
+      "sourceName": "Al Jazeera",
+      "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Reform’s Robert Jenrick ‘very confident’ £72m donations are ‘perfectly legal’ – UK politics live",
+      "link": "https://www.theguardian.com/politics/live/2026/sep/13/reform-uk-nigel-farage-robert-jenrick-christopher-harborne-ben-delo-donations-funding-anthropic-ai-uk-politics-latest-news-updates",
+      "desc": "Party’s economic spokesperson says donations are a ‘breakthrough moment’ as Labour’s Angela Rayner warns of possible retrospective action Reform UK’s £72m donations may be caught by new bill, Rayner s",
+      "pubDate": "Sun, 13 Sep 2026 11:32:37 GMT",
+      "img": "https://i.guim.co.uk/img/media/55e1861cb07fc4179b42f05da5ad22dc15681d5d/85_0_1010_808/master/1010.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Houthis claim attack on Saudi base as fighting flares with Yemeni forces",
+      "link": "https://www.theguardian.com/world/2026/sep/13/houthis-claim-attack-on-saudi-base-as-fighting-flares-with-yemeni-forces",
+      "desc": "Iran-allied Houthis say drones and missiles used in attack that targeted ‘weapons depots and command and control centres’ in southern Saudi Arabia Houthi fighters have said they used drones and missil",
+      "pubDate": "Sun, 13 Sep 2026 11:26:06 GMT",
+      "img": "https://i.guim.co.uk/img/media/ce72775e12cc89c1f7da61c16a058312a3a7f694/846_0_4643_3717/master/4643.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Iran war reshapes Brics ties but also exposes divisions",
+      "link": "https://www.bbc.co.uk/news/articles/ce8767g4jdpo?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Brics members agree they need a new global order but it's harder to answer what should replace it and how to get there.",
+      "pubDate": "Sun, 13 Sep 2026 11:23:42 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/60f4/live/46af4990-af60-11f1-8b54-ef4b26bcf610.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Only slim chance government will meet target of building 1.5m homes, minister says",
+      "link": "https://www.theguardian.com/society/2026/sep/13/slim-chance-government-target-building-homes",
+      "desc": "Angela Rayner says manifesto pledge is not being dropped but focus is now on building council houses UK politics live – latest updates The government is unlikely to meet its target of building 1.5m ho",
+      "pubDate": "Sun, 13 Sep 2026 11:23:10 GMT",
+      "img": "https://i.guim.co.uk/img/media/b2fa224f6632e69f64ab5361fca2a9ef8d6777e7/259_0_3050_2440/master/3050.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Voting under way in Sweden with far right eyeing first role in government",
+      "link": "https://www.theguardian.com/world/2026/sep/13/voting-under-way-in-sweden-with-far-right-eyeing-first-role-in-government",
+      "desc": "Party with neo-Nazi roots is in line for key ministerial positions if rightwing bloc wins the election Voting is under way in Sweden in a high-stakes election that could lead to the far-right Sweden D",
+      "pubDate": "Sun, 13 Sep 2026 11:17:15 GMT",
+      "img": "https://i.guim.co.uk/img/media/ac057a10bd99664cc4d41efe583008dfed92c1d8/548_0_5330_4264/master/5330.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
     {
       "title": "AI staff 'genuinely frightened' for humanity's future, ex-Anthropic researcher tells BBC",
       "link": "https://www.bbc.co.uk/news/articles/c1kx0gyje9wo?at_medium=RSS&amp;at_campaign=rss",
@@ -28,6 +414,36 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Brazil: Michelle Bolsonaro's key role in the presidential race",
+      "link": "https://www.france24.com/en/brazil-michelle-bolsonaro-s-key-role-in-the-presidential-race",
+      "desc": "Brazil is heading to the polls on October 4, with President Luiz Inácio Lula da Silva seeking a fourth term as the Bolsonaro family mounts a political comeback through Flávio's presidential bid and Mi",
+      "pubDate": "Sun, 13 Sep 2026 11:08:22 GMT",
+      "img": "https://s.france24.com/media/display/7ece2006-af62-11f1-9504-005056bf30b7/w:1024/p:16x9/EN-20260913-120821-121000-CS.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "‘Trump accounts’ promise to mint child millionaires. Experts have their doubts",
+      "link": "https://www.theguardian.com/us-news/2026/sep/13/donald-trump-accounts-child-investment-wealth",
+      "desc": "President has hyped growth of federal investment accounts to help US children – for his own political gain Since returning to the White House, Donald Trump has scrapped rules that made childcare more ",
+      "pubDate": "Sun, 13 Sep 2026 11:00:05 GMT",
+      "img": "https://i.guim.co.uk/img/media/20d1dec62e0f6b4d050e9a7811fb9049339938bd/1163_3_2837_2270/master/2837.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "George Osborne calls for UK to rejoin EU customs union and boost trade",
+      "link": "https://www.theguardian.com/business/2026/sep/13/george-osborne-calls-for-uk-to-rejoin-eu-customs-union-and-boost-trade",
+      "desc": "Ex-Tory chancellor says economy has ‘fallen off a cliff’ since Brexit but rejoining union could be ‘quite simple’ The former chancellor George Osborne said Britain’s economy had “fallen off a cliff” s",
+      "pubDate": "Sun, 13 Sep 2026 10:48:04 GMT",
+      "img": "https://i.guim.co.uk/img/media/a3bad83b962aca5c7b73784f9b4dc90c8428f85f/578_0_5511_4410/master/5511.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
     },
     {
       "title": "Fighting continues between Yemen gov’t forces, Houthis: What is the latest?",
@@ -40,6 +456,16 @@
       "sourceColor": "#D2A02E"
     },
     {
+      "title": "Reform UK’s £72m donations may be caught by new bill, Rayner suggests",
+      "link": "https://www.theguardian.com/politics/2026/sep/13/reform-uk-donations-new-bill-retrospective-effect-angela-rayner",
+      "desc": "Minister points to legislation’s retrospective effect, but Reform says it is confident funding is within the law UK politics live – latest updates Reform UK’s record £72m in donations from two crypto ",
+      "pubDate": "Sun, 13 Sep 2026 10:31:44 GMT",
+      "img": "https://i.guim.co.uk/img/media/6be562f080c40b5a4762057cff65ae390e3ffad9/0_0_5000_4000/master/5000.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
       "title": "Israeli attack on Gaza kills two Palestinians",
       "link": "https://www.aljazeera.com/news/2026/9/13/israeli-attack-on-gaza-kills-two-palestinians?traffic_source=rss",
       "desc": "Israeli strikes on Palestinian territory persist despite a 'ceasefire' brokered by the United States.",
@@ -50,6 +476,66 @@
       "sourceColor": "#D2A02E"
     },
     {
+      "title": "Carer’s allowance scandal victims could wait until 2054 for justice, charities warn",
+      "link": "https://www.theguardian.com/society/2026/sep/13/carers-allowance-scandal-victims-could-wait-until-2054-for-justice-charities-warn",
+      "desc": "Campaigners say at current glacial pace some unpaid carers will die before receiving a refund Unpaid carers who were pursued for bills for thousands of pounds after welfare officials unlawfully change",
+      "pubDate": "Sun, 13 Sep 2026 10:12:47 GMT",
+      "img": "https://i.guim.co.uk/img/media/2d5ff3af9e9dfcccfbf71b9b62851e67af782267/0_0_5600_4480/master/5600.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Sweden election: A turning point for the far right?",
+      "link": "https://www.france24.com/en/sweden-election-a-turning-point-for-the-far-right",
+      "desc": "The stakes are high in Sweden's general election, with the far right poised to enter government for the first time. TV4 News journalist Markus Karlsson-Bourrioux explains how opinion polls shifted fro",
+      "pubDate": "Sun, 13 Sep 2026 09:48:37 GMT",
+      "img": "https://s.france24.com/media/display/426517d8-af57-11f1-b8a8-005056a97e36/w:1024/p:16x9/EN-20260913-110343-110655-CS.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "Germany: Thousands rally against far-right after AfD victory",
+      "link": "https://www.france24.com/en/germany-thousands-rally-against-far-right-after-afd-victory",
+      "desc": "Tens of thousands of people marched in around 20 cities across Germany to protest the rise of the far right after the AfD's historic victory in the Saxony-Anhalt state election. Demonstrators said the",
+      "pubDate": "Sun, 13 Sep 2026 09:41:57 GMT",
+      "img": "https://s.france24.com/media/display/b94b4a34-af4d-11f1-9e44-005056a97e36/w:1024/p:16x9/EN-20260913-100840-101014-CS.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "BRICS summit: What came out of the New Delhi meeting",
+      "link": "https://www.france24.com/en/brics-summit-what-came-out-of-the-new-delhi-meeting",
+      "desc": "The BRICS summit in New Delhi ended with a joint declaration calling for greater Global South influence in global governance and urging restraint in the Middle East. The gathering also served as a pla",
+      "pubDate": "Sun, 13 Sep 2026 09:27:16 GMT",
+      "img": "https://s.france24.com/media/display/1bc26e46-af52-11f1-bd45-005056a90284/w:1024/p:16x9/EN-20260913-080107-080556-CS.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "UK: Police probe £72 million donation to Reform UK",
+      "link": "https://www.france24.com/en/video/20260913-uk-police-probe-%C2%A372-million-donation-to-reform-uk",
+      "desc": "British police have opened a criminal investigation into a £72 million donation to Nigel Farage's Reform UK, amid questions over whether the funds breached rules on foreign political donations. The pr",
+      "pubDate": "Sun, 13 Sep 2026 09:26:10 GMT",
+      "img": "https://s.france24.com/media/display/f7248a62-97a8-11f1-96cf-005056a97e36/w:1024/p:16x9/AP26215404300241.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "Macron, Carney to visit North Atlantic French islands after Trump's map post",
+      "link": "https://www.france24.com/en/americas/20260913-macron-carney-to-visit-french-islands-after-trump-s-map-post",
+      "desc": "French President Emmanuel Macron and Canadian Prime Minister Mark Carney will reaffirm the “sovereignty of nations” on a visit on September 20 to Saint-Pierre-et-Miquelon, a French territory in the No",
+      "pubDate": "Sun, 13 Sep 2026 09:25:16 GMT",
+      "img": "https://s.france24.com/media/display/07123c12-af55-11f1-9ad5-005056a90284/w:1024/p:16x9/df646ee48064e65458879e443f4be68f8b225f7d.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
       "title": "Dramatic insider warnings over AI fall flat with some in Silicon Valley",
       "link": "https://www.bbc.co.uk/news/articles/cq635037g18o?at_medium=RSS&amp;at_campaign=rss",
       "desc": "A recent spate of stark warnings about the dangers of AI has been met with scepticism by executives and investors.",
@@ -58,6 +544,36 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "France apologises for diplomatic spat with US to lift block on new ambassador to Washington",
+      "link": "https://www.france24.com/en/france/20260913-france-apologises-for-diplomatic-spat-with-us-to-lift-block-on-new-ambassador-to-washington",
+      "desc": "The French UN mission said it regretted an online post criticising a US vote at the UN General Assembly in a move that should clear the way for the new French ambassador Aurélien Lechevallier to take ",
+      "pubDate": "Sun, 13 Sep 2026 09:01:17 GMT",
+      "img": "https://s.france24.com/media/display/8728c102-af4e-11f1-9048-005056a97e36/w:1024/p:16x9/000-C2P7793.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "Religious Vance seeks to avoid Maga schism as he keeps the faith for 2028",
+      "link": "https://www.theguardian.com/us-news/2026/sep/13/jd-vance-religion-catholic-evangelical-maga",
+      "desc": "Vice-president wears religion on his sleeve but winding spiritual path could alienate evangelicals and Catholics US vice-president JD Vance has worn his religion on his sleeve since converting to the ",
+      "pubDate": "Sun, 13 Sep 2026 09:00:03 GMT",
+      "img": "https://i.guim.co.uk/img/media/7c2891253efc3810e6d6a98eec395842925f5313/0_0_4240_3392/master/4240.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "How a young woman became an ISIS bride — and then an informant, helping save others",
+      "link": "https://www.npr.org/2026/09/13/nx-s1-5963568/canada-woman-escapes-isis",
+      "desc": "A young Canadian mother shares her memories of being an ISIS bride, and her harrowing escape from the extremist group.",
+      "pubDate": "Sun, 13 Sep 2026 05:00:00 -0400",
+      "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4798x2699+1+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F8b%2Fe0%2Fd019d9fd457ab3c71073ec829910%2Fhbarczyk-npr-isiswife-final2.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
     },
     {
       "title": "Niger military government reshuffles army command weeks after deadly mutiny",
@@ -80,6 +596,36 @@
       "sourceColor": "#D2A02E"
     },
     {
+      "title": "Trump slams AI sceptics as Altman pauses OpenAI IPO plans over safety concerns",
+      "link": "https://www.france24.com/en/technology/20260913-trump-slams-ai-skeptics-as-altman-pauses-openai-ipo-plans-over-safety-concerns",
+      "desc": "US President Donald Trump on Sunday slammed critics of artificial intelligence (AI) who warned firms to slow down development, branding them \"negative\" forces. The comments came soon after OpenAI CEO ",
+      "pubDate": "Sun, 13 Sep 2026 08:23:11 GMT",
+      "img": "https://s.france24.com/media/display/8b812582-af80-11f1-89c8-005056a97e36/w:1024/p:16x9/2026-09-13T130451Z-943753214-RC2DINAGWTJK-RTRMADP-3-USA-TRUMP-IRELAND.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "Swedes vote in close general election that could usher far right into government",
+      "link": "https://www.france24.com/en/europe/20260913-swedes-vote-in-close-general-election-that-could-usher-far-right-into-government",
+      "desc": "Swedes are heading to the polls Sunday for a general election that will either bring a far right party into government for the first time or shift the country back towards the liberalism it has long b",
+      "pubDate": "Sun, 13 Sep 2026 06:16:49 GMT",
+      "img": "https://s.france24.com/media/display/84572cd0-af39-11f1-afd7-005056a97e36/w:1024/p:16x9/000-C7XT2GD.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "Summer wildfires caused catastrophic hidden damage, scientists warn",
+      "link": "https://www.bbc.co.uk/news/articles/cn07rzrq244o?at_medium=RSS&amp;at_campaign=rss",
+      "desc": "Bangor University researchers say the scale of damage is far greater than what is immediately visible.",
+      "pubDate": "Sun, 13 Sep 2026 06:12:26 GMT",
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e504/live/f1f64000-af39-11f1-a540-61c3f7fc4e6c.jpg",
+      "sourceId": "bbcnews",
+      "sourceName": "BBC News",
+      "sourceColor": "#BB1919"
+    },
+    {
       "title": "Oil prices create 'huge worry' as winter looms",
       "link": "https://www.bbc.co.uk/news/articles/cwyzegz38wlo?at_medium=RSS&amp;at_campaign=rss",
       "desc": "The warning comes after the US-Iran conflict drives up heating oil and fuel costs.",
@@ -88,6 +634,46 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Middle East live: Houthis say hit Saudi base after renewed fighting with Yemeni forces",
+      "link": "https://www.france24.com/en/middle-east/20260913-middle-east-live-houthis-say-hit-saudi-base-after-renewed-fighting-with-yemeni-forces",
+      "desc": "Yemeni Houthi rebels claimed responsibility on Sunday for an attack on a military base in southern Saudi Arabia as renewed fighting with Yemen's government forces forced growing numbers of civilians t",
+      "pubDate": "Sun, 13 Sep 2026 05:11:17 GMT",
+      "img": "https://s.france24.com/media/display/e97ed2ba-adc3-11f1-b34d-005056a97e36/w:1024/p:16x9/AP26253315512845.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "First H5 bird flu death of endangered Australian sea lion recorded amid fears for small population",
+      "link": "https://www.theguardian.com/australia-news/2026/sep/13/first-h5-bird-flu-death-of-endangered-australian-sea-lion-kangaroo-island",
+      "desc": "South Australian authorities say case discovered on Kangaroo Island is first for species of which less than 12,000 animals remain Get our breaking news email , free app or daily news podcast South Aus",
+      "pubDate": "Sun, 13 Sep 2026 05:04:52 GMT",
+      "img": "https://i.guim.co.uk/img/media/cda14f773a1cbac9797abd59e3b1aeaba88aae4b/314_0_3726_2981/master/3726.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Albanese hits back at Pauline Hanson’s ‘nastiness’ after criticism of his mother’s use of public housing",
+      "link": "https://www.theguardian.com/australia-news/2026/sep/13/andrew-hastie-vows-to-go-all-the-way-in-fight-against-pauline-hanson-as-joyce-denies-buyers-remorse-claim-ntwnfb",
+      "desc": "Andrew Hastie also says One Nation leader is ‘not the person I thought she was’ and he feels sorry for Joyce Follow our Australia news live blog for latest updates Get our new political email , free a",
+      "pubDate": "Sun, 13 Sep 2026 03:36:16 GMT",
+      "img": "https://i.guim.co.uk/img/media/752d387636eeedc903e3c7e20dc8f376e76d0ab0/516_0_6880_5504/master/6880.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "One dead and more than 30 missing after ferry sinks off Vanuatu coast in rough seas",
+      "link": "https://www.theguardian.com/world/2026/sep/13/one-dead-and-more-than-30-missing-after-ferry-sinks-off-vanuatu-coast-in-rough-seas",
+      "desc": "Prime minister’s office tells families of those missing ‘the nation stands with you’ as search and rescue efforts continue One person has died and more than 30 are missing after a ferry sank off the c",
+      "pubDate": "Sun, 13 Sep 2026 02:39:50 GMT",
+      "img": "https://i.guim.co.uk/img/media/d7a7d4a14fd360ada3d22c0346776c1ed20e540d/1109_411_1424_1139/master/1424.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
     },
     {
       "title": "‘We started to plummet’: Turbulence rocks Turkish Airlines flight",
@@ -160,6 +746,26 @@
       "sourceColor": "#D2A02E"
     },
     {
+      "title": "OpenAI IPO will not happen in 2026 amid AI safety fears, Sam Altman says",
+      "link": "https://www.theguardian.com/us-news/2026/sep/12/openai-delays-ipo-sam-altman-ai-safety-concerns",
+      "desc": "OpenAI’s decision comes after dire warnings about rapidly progressing technology and lawmakers’ calls for new rules OpenAI will not go public in 2026, Sam Altman said in a Fortune interview published ",
+      "pubDate": "Sat, 12 Sep 2026 23:00:37 GMT",
+      "img": "https://i.guim.co.uk/img/media/c0964c5c069ea10a999ebc43dd184effb88e8bad/340_0_4590_3673/master/4590.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Saudi Arabia closes East-West pipeline as Houthis tighten grip on Red Sea",
+      "link": "https://www.france24.com/en/middle-east/20260912-saudi-arabia-shut-down-east-west-pipeline-as-houthis-tighten-grip-on-red-sea",
+      "desc": "Saudi Arabia on Saturday ​shut down the vital East-West pipeline after the conduit came under attack in the widening Middle East war, threatening to send energy prices soaring. The 1,200-km pipeline h",
+      "pubDate": "Sat, 12 Sep 2026 20:51:50 GMT",
+      "img": "https://s.france24.com/media/display/fcfd196a-ae67-11f1-8755-005056bfb2b6/w:1024/p:16x9/000-C82R6NQ.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
       "title": "Second crypto billionaire donates record $49m to far-right Reform UK",
       "link": "https://www.aljazeera.com/news/2026/9/12/second-crypto-billionaire-donates-record-49m-to-far-right-reform-uk?traffic_source=rss",
       "desc": "The two donations increase the total sum of money pledged to Reform since Friday to $97m.",
@@ -170,6 +776,16 @@
       "sourceColor": "#D2A02E"
     },
     {
+      "title": "Fossilized 10,000-year-old mastodon tooth found by California scientist",
+      "link": "https://www.theguardian.com/us-news/2026/sep/12/fossilized-mastodon-tooth-10000-years-found-california",
+      "desc": "Molar from large mammal that once lived in North America is in ‘immaculate condition’ after discovery in Bay Area A 10,000 year-old tooth in remarkable condition from an ancient Pacific mastodon, a la",
+      "pubDate": "Sat, 12 Sep 2026 20:34:58 GMT",
+      "img": "https://i.guim.co.uk/img/media/671c27b56264b92dd4704de9278b2758c7cc6dcc/0_327_1344_1075/master/1344.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
       "title": "Only Roland Garros towel left, says Ukraine tennis player after Russian strike hits flat",
       "link": "https://www.bbc.co.uk/news/articles/c4gr33g3evlo?at_medium=RSS&amp;at_campaign=rss",
       "desc": "Dayana Yastremska says her flat took a \"direct hit\" by a Russian missile in Odesa, and all that left was her Roland Garros towel.",
@@ -178,6 +794,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Do not call her a racist: anti-Pauline Hanson strategists tell campaigners character attacks won’t work in Victoria",
+      "link": "https://www.theguardian.com/australia-news/2026/sep/13/do-not-call-her-a-racist-anti-pauline-hanson-strategists-tell-campaigners-character-attacks-wont-work-in-victoria",
+      "desc": "Exclusive: Strategic rethink urges progressive activists to respectfully steer one-on-one conversations with One Nation supporters towards economic concerns Follow our Australia news live blog for lat",
+      "pubDate": "Sat, 12 Sep 2026 20:00:45 GMT",
+      "img": "https://i.guim.co.uk/img/media/6d8233cf1cedd0ad699cd125fb28a6d0fb303165/769_0_5686_4549/master/5686.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
     },
     {
       "title": "US court blocks Trump administration plan to cut disaster agency workforce",
@@ -198,6 +824,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Danish WWII drama wins Golden Lion at Venice Film Festival",
+      "link": "https://www.france24.com/en/culture/20260912-danish-wwii-drama-wins-golden-lion-at-venice-film-festival",
+      "desc": "A Danish WWII drama about a woman trying to hide a wartime relationship with a Nazi was awared top prize on Saturday at The Venice Film Festival, while Gaza documentary NAZA snagged the special jury p",
+      "pubDate": "Sat, 12 Sep 2026 19:15:14 GMT",
+      "img": "https://s.france24.com/media/display/47bcae04-aede-11f1-963d-005056bfb2b6/w:1024/p:16x9/a8de12fcfc66ea4a9d4c804abe6516a2b6171563.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
     },
     {
       "title": "Iran, UAE hold first talks at BRICS summit since conflict began",
@@ -240,6 +876,16 @@
       "sourceColor": "#D2A02E"
     },
     {
+      "title": "Tens of thousands protest against far-right AfD party in Germany",
+      "link": "https://www.france24.com/en/europe/20260912-tens-of-thousands-of-people-protest-in-germany-against-far-right-afd",
+      "desc": "About 150,000 demonstrators took to the streets in around 20 cities across Germany on Saturday against the far-right AfD, after the party scored a crushing victory in a state election last week. The A",
+      "pubDate": "Sat, 12 Sep 2026 17:12:10 GMT",
+      "img": "https://s.france24.com/media/display/83bf7692-aecb-11f1-b02e-005056a97e36/w:1024/p:16x9/000-C84J6TY.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
       "title": "Will the Houthi attacks activate the Mecca Pact?",
       "link": "https://www.aljazeera.com/opinions/2026/9/12/will-the-houthi-attacks-activate-the-mecca-pact?traffic_source=rss",
       "desc": "If there is a Saudi request, Pakistan and Turkiye will intervene, but direct involvement in the Yemen war is unlikely.",
@@ -250,6 +896,16 @@
       "sourceColor": "#D2A02E"
     },
     {
+      "title": "Donald Trump says he would ‘love’ to see united Ireland",
+      "link": "https://www.theguardian.com/us-news/2026/sep/12/donald-trump-says-he-would-love-to-see-united-ireland",
+      "desc": "US president says on visit to republic that unification will happen eventually so ‘may as well happen now’ Donald Trump has said he would “love” to see a united Ireland and that it “may as well happen",
+      "pubDate": "Sat, 12 Sep 2026 16:05:32 GMT",
+      "img": "https://i.guim.co.uk/img/media/ee24264b9b786dc796202e9989d4ee0abfe9aeac/260_0_3976_3183/master/3976.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
       "title": "DR Congo’s worst Ebola epidemic ever passes 7,000 cases",
       "link": "https://www.aljazeera.com/news/2026/9/12/dr-congos-worst-ebola-epidemic-ever-passes-7000-cases?traffic_source=rss",
       "desc": "DRC detected the outbreak of the rare Bundibugyo virus in mid-May; nearly 3,400 people have since died.",
@@ -258,6 +914,46 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Kenya: Crocodiles pushed towards homes by rising lakes",
+      "link": "https://www.france24.com/en/video/20260912-kenya-crocodiles-pushed-towards-homes-by-rising-lakes",
+      "desc": "Climate change is forcing Kenya's wildlife officers to go on a crocodile hunt on the shores of Lake Baringo in a bid to curb growing human-wildlife conflict. Lakes in Kenya's Rift Valley have risen to",
+      "pubDate": "Sat, 12 Sep 2026 15:51:07 GMT",
+      "img": "https://s.france24.com/media/display/5011a466-ae9c-11f1-906f-005056a90284/w:1024/p:16x9/EN-20260911-215340-215521-CS.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "Trump in Ireland: What are Irish people saying about the visit?",
+      "link": "https://www.france24.com/en/video/20260912-trump-in-ireland-what-are-irish-people-saying-about-the-visit",
+      "desc": "US President Donald Trump held talks Saturday in Dublin with his Irish counterpart Catherine Connolly during a weekend visit that's more about a major golf tournament hosted on a course he owns on the",
+      "pubDate": "Sat, 12 Sep 2026 15:50:55 GMT",
+      "img": "https://s.france24.com/media/display/81b97d4e-aec0-11f1-a92c-005056a90284/w:1024/p:16x9/EN-20260912-091018-091909-CS.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "French police suspect train derailment was sabotage",
+      "link": "https://www.france24.com/en/video/20260912-french-police-suspect-train-derailment-was-sabotage",
+      "desc": "French investigators suspect sabotage was behind a train derailment in northwestern France that injured 44 people and left passengers in a state of shock, prosecutors said on Saturday.",
+      "pubDate": "Sat, 12 Sep 2026 15:47:35 GMT",
+      "img": "https://s.france24.com/media/display/627e556a-aebd-11f1-9683-005056a97e36/w:1024/p:16x9/EN-20260912-161002-161159-CS.jpg",
+      "sourceId": "france24",
+      "sourceName": "France 24",
+      "sourceColor": "#00558C"
+    },
+    {
+      "title": "Saudi Arabia shuts down key oil pipeline, blaming drones from Iraq",
+      "link": "https://www.theguardian.com/world/2026/sep/12/saudi-arabia-shuts-down-oil-pipeline-blaming-drones-from-iraq",
+      "desc": "Riyadh has increased use of East-West pipeline since start of war on Iran to bypass closure of strait of Hormuz Saudi Arabia has shut down a critical oil pipeline, accusing militants in Iraq of launch",
+      "pubDate": "Sat, 12 Sep 2026 15:35:12 GMT",
+      "img": "https://i.guim.co.uk/img/media/5522d0dc1ce938b9cf8dd25dc20f8c37ab803777/481_0_3333_2667/master/3333.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
     },
     {
       "title": "US court rejects Trump’s emergency order keeping Michigan coal plant open",
@@ -300,6 +996,26 @@
       "sourceColor": "#D2A02E"
     },
     {
+      "title": "IDF soldier filmed shooting Palestinian in leg amid West Bank settler standoff",
+      "link": "https://www.theguardian.com/world/2026/sep/12/idf-soldier-filmed-shooting-palestinian-in-leg-amid-west-bank-settler-standoff",
+      "desc": "Incident is latest to raise questions over Israel’s ability or willingness to stop violent settlers in occupied territory An Israeli soldier has shot a Palestinian man, wounding him in the leg, as set",
+      "pubDate": "Sat, 12 Sep 2026 13:44:10 GMT",
+      "img": "https://i.guim.co.uk/img/media/2da0ddf613ff8da61812abeca85bacc7871e816a/0_619_1264_1009/master/1264.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
+      "title": "Xi Jinping gets red carpet at Brics summit amid thaw in India-China relations",
+      "link": "https://www.theguardian.com/world/2026/sep/12/xi-jinping-brics-summit-delhi-india-china-relations",
+      "desc": "Chinese president’s arrival in Delhi seen as step towards reconciliation after deadly 2020 military clash The Chinese president, Xi Jinping, has received a red-carpet welcome in India for a summit of ",
+      "pubDate": "Sat, 12 Sep 2026 12:39:12 GMT",
+      "img": "https://i.guim.co.uk/img/media/cad574533a5de5a1eb333d303a2c514eb446b225/167_0_1498_1198/master/1498.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
       "title": "India’s Modi calls for empowerment of Global South at BRICS Summit",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/9/12/indias-modi-calls-for-empowerment-of-global-south-at-brics-summit?traffic_source=rss",
       "desc": "India’s Prime Minister Narendra Modi has called for an overhaul of global governance.",
@@ -320,6 +1036,16 @@
       "sourceColor": "#D2A02E"
     },
     {
+      "title": "Trump touches a nerve while in Ireland by saying reunification would be 'fantastic'",
+      "link": "https://www.npr.org/2026/09/12/g-s1-143076/trump-meets-irelands-leaders",
+      "desc": "President Trump held talks in Dublin with Irish President Catherine Connolly and Ireland's Prime Minister Micheál Martin during a weekend visit centered on a major golf tournament.",
+      "pubDate": "Sat, 12 Sep 2026 06:55:14 -0400",
+      "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3936x2214+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3e%2F23%2F0402653a4c87b8cad5e5aea20f3c%2Fireland.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
+    },
+    {
       "title": "'It's like a dog set loose on us' - fear over Kenya's crackdown on foreign traders",
       "link": "https://www.bbc.co.uk/news/articles/c4g5kxw4wd7o?at_medium=RSS&amp;at_campaign=rss",
       "desc": "The authorities have struggled to contain the fallout, as frightened migrants flee the country.",
@@ -328,6 +1054,26 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "The secret quest to preserve Palestinian writer Raja Shehadeh's diaries",
+      "link": "https://www.npr.org/2026/09/12/g-s1-142760/palestinian-writer-archive-scotland-israel-shehadeh",
+      "desc": "Leading Palestinian writer Raja Shehadeh has documented Israel's occupation of the West Bank since day one. Fearing the occupation might consume his archive, he secretly moved it to Scotland",
+      "pubDate": "Sat, 12 Sep 2026 06:00:00 -0400",
+      "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3840x2160+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2d%2Fed%2F67dc55c34bc4922aa2c467bf9e69%2F009rajashehadeh.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
+    },
+    {
+      "title": "Anthropic and OpenAI CEOs call for AI development to slow down, OpenAI to delay IPO",
+      "link": "https://www.npr.org/2026/09/12/nx-s1-5950588/openai-anthropic-ai-safety-researchers-hacks",
+      "desc": "Dario Amodei and Sam Altman are the latest to urge caution amid fears the industry is racing too fast to build powerful AI while safety measures lag.",
+      "pubDate": "Sat, 12 Sep 2026 05:00:00 -0400",
+      "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3600x2025+0+188/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fbe%2Ff0%2Fa0340bef40fdbbc96a5c5127de82%2Fgettyimages-2285103434.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
     },
     {
       "title": "9/11 at 25: How the ‘War on Terror’ helped mainstream Europe’s far right",
@@ -420,6 +1166,16 @@
       "sourceColor": "#D2A02E"
     },
     {
+      "title": "Iran’s Houthi allies capture strategic island on vital oil shipping route",
+      "link": "https://www.theguardian.com/world/2026/sep/11/iran-houthi-allies-capture-strategic-island-bab-al-mandab-strait",
+      "desc": "Rampant Yemeni fighters take control of island in narrow point of Bab al-Mandab strait, which Saudi is relying on for oil exports Why the rapid Houthi advance matters and what’s at stake Yemen’s rampa",
+      "pubDate": "Sat, 12 Sep 2026 04:45:28 GMT",
+      "img": "https://i.guim.co.uk/img/media/5eff73a7a26c674254ad73697082a0fbe13b4973/0_254_4682_3746/master/4682.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
       "title": "Saudi Arabia shuts key oil pipeline after drone attack launched from Iraq",
       "link": "https://www.bbc.co.uk/news/articles/c62m933465eo?at_medium=RSS&amp;at_campaign=rss",
       "desc": "Iraq removes a military commander and opens investigations into the attack that came from an area bordering Iran.",
@@ -438,6 +1194,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Nearly 50,000 Yemeni civilians flee as Houthis advance along Red Sea coast",
+      "link": "https://www.theguardian.com/world/2026/sep/12/yemen-houthi-advance-red-sea-coast-displaces-civilians-bab-al-mandab",
+      "desc": "Global struggle for control of Bab al-Mandab strait threatens to turn Yemen’s on-off conflict into a forever war Violence erupts in Yemen again: why it matters globally and how it is linked to the US-",
+      "pubDate": "Sat, 12 Sep 2026 04:00:24 GMT",
+      "img": "https://i.guim.co.uk/img/media/d87abdac0b036f500e399324f955f7bf9c4a0a0d/472_0_2630_2104/master/2630.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
     },
     {
       "title": "Putin and Pezeshkian call out US dominance ahead of BRICS",
@@ -488,6 +1254,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "CIA releases dozens of presidential daily briefs on Bin Laden and al-Qaida from before 9/11",
+      "link": "https://www.theguardian.com/us-news/2026/sep/11/cia-releases-presidential-briefs-bin-laden-al-qaida",
+      "desc": "The presidential briefing documents were declassified on the 25th anniversary of the September 11 attacks Several dozen presidential briefing documents declassified on Friday, the 25th anniversary of ",
+      "pubDate": "Fri, 11 Sep 2026 22:27:21 GMT",
+      "img": "https://i.guim.co.uk/img/media/eafd39b81c8d7eb3b17b57dadec3659f4686aa0c/46_0_3291_2633/master/3291.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
     },
     {
       "title": "Saudi Arabia says East-West pipeline hit by drones launched from Iraq",
@@ -548,6 +1324,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Amid war and sanctions, many Iranians are losing their jobs and struggling to get by",
+      "link": "https://www.npr.org/2026/09/11/g-s1-142935/iran-us-war-jobs-economy",
+      "desc": "Many Iranians lost their jobs because of the war and the U.S. blockade. Now some are even losing their backup jobs as sanctions tighten.",
+      "pubDate": "Fri, 11 Sep 2026 15:39:35 -0400",
+      "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8640x4860+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F4f%2Fe4%2F11dfa9014353bbf9d35ae0d90775%2Fap26107642347216.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
     },
     {
       "title": "How US leaders remembered the 25th anniversary of the 9/11 attacks",
@@ -670,6 +1456,16 @@
       "sourceColor": "#D2A02E"
     },
     {
+      "title": "Buddhist monk arrested in Thailand on suspicion of embezzling $2.8m",
+      "link": "https://www.theguardian.com/world/2026/sep/11/thai-police-arrest-buddhist-abbot-suspicion-embezzling",
+      "desc": "Phra Wachirayan Wi arrested alongside woman he was filmed having sex with in latest scandal to hit country’s clergy Police in Thailand have arrested a senior Buddhist monk on suspicion of embezzling $",
+      "pubDate": "Fri, 11 Sep 2026 15:01:36 GMT",
+      "img": "https://i.guim.co.uk/img/media/ea4f2e5883e687faf4c37af96a4350d8289aa967/0_0_3173_2538/master/3173.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
       "title": "US prices remain high as fuel costs squeeze household budgets",
       "link": "https://www.bbc.co.uk/news/articles/cly41rdkrleo?at_medium=RSS&amp;at_campaign=rss",
       "desc": "Prices in the US rose 3.4% in the 12 months to August, according to the latest official report on inflation.",
@@ -678,6 +1474,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Is Patagonia the new data center hub? + Harley-Davidson's role in the trade war",
+      "link": "https://www.npr.org/2026/09/11/nx-s1-5966498/is-patagonia-the-new-data-center-hub-harley-davidsons-role-in-the-trade-war",
+      "desc": "Why Patagonia might become a new data center hub",
+      "pubDate": "Fri, 11 Sep 2026 10:16:35 -0400",
+      "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3b%2F88%2Fddc60a9046738da45d0f7df2eb78%2Fgettyimages-2254465628-1.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
     },
     {
       "title": "‘Majority do not welcome him’: Trump heads to Ireland amid fury over Gaza",
@@ -780,6 +1586,16 @@
       "sourceColor": "#002B55"
     },
     {
+      "title": "US diesel prices soar past $6 a gallon, deepening strain for hauling everyday goods",
+      "link": "https://www.npr.org/2026/09/11/g-s1-142842/us-diesel-6-a-gallon",
+      "desc": "Diesel prices in the U.S. has hit yet another record, soaring past $6 a gallon on average as Washington's war with Iran disrupts the world's flow of fuel",
+      "pubDate": "Fri, 11 Sep 2026 06:04:04 -0400",
+      "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5233x2944+0+273/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F34%2Ffc%2Fddd121964005b309f321abeed8c7%2Fap26247695683233.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
+    },
+    {
       "title": "Japan, India, Ukraine: Why some countries are uneasy about new UN map",
       "link": "https://www.aljazeera.com/news/2026/9/11/japan-india-ukraine-why-some-countries-are-uneasy-about-new-un-map?traffic_source=rss",
       "desc": "The countries are not opposed to a new map per se; they&#039;re testy about the colour shades.",
@@ -788,6 +1604,46 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "From DOGE to \"space lasers,\" Alex Gibney peels back the many layers of Elon Musk",
+      "link": "https://www.npr.org/2026/09/11/nx-s1-5962167/alex-gibney-elon-musk-documentary-review",
+      "desc": "In the Oscar-winning filmmaker's latest documentary, director Alex Gibney investigates the rise of Elon Musk and says what's behind Musk's success are distressing truths.",
+      "pubDate": "Fri, 11 Sep 2026 05:00:00 -0400",
+      "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6166x3468+0+412/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fdb%2F30%2Fa3f50d3a4ac9a4e25e74c240a5eb%2Fgettyimages-2200924488.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
+    },
+    {
+      "title": "The U.S.-Canada trade war is creating a headache for auto-parts makers",
+      "link": "https://www.npr.org/2026/09/11/nx-s1-5961530/canada-trade-war-auto-parts-supply-chain",
+      "desc": "For decades, the U.S. and Canadian auto supply chains have been tightly woven together. The trade war is threatening to unravel a complex system.",
+      "pubDate": "Fri, 11 Sep 2026 05:00:00 -0400",
+      "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3746x2107+0+195/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5d%2F4f%2Ff5ecab764bd3ba1267b758e5492d%2Fus-canada-bridge.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
+    },
+    {
+      "title": "Fintech companies are applying to become banks. Here's what it takes to become one",
+      "link": "https://www.npr.org/2026/09/11/nx-s1-5955727/fintech-companies-are-applying-to-become-banks-heres-what-it-takes-to-become-one",
+      "desc": "Many financial technology companies are applying to become banks. The Indicator finds out what it takes to go through this process and what benefits come with a bank charter.",
+      "pubDate": "Fri, 11 Sep 2026 04:46:42 -0400",
+      "img": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
+    },
+    {
+      "title": "As data centers spread, not all U.S. housing markets react the same way",
+      "link": "https://www.npr.org/2026/09/11/nx-s1-5964912/data-centers-growing-footprint-have-a-varying-effect-on-property-values",
+      "desc": "Realtors around the U.S. are being asked to explain how data centers could affect home values. But a new study shows there is no universal answer.",
+      "pubDate": "Fri, 11 Sep 2026 04:45:46 -0400",
+      "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4605x2590+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb0%2F36%2Ff6fd36fb46ae88e7b28652852061%2Fgettyimages-2161850661.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
     },
     {
       "title": "What did 25 years of the “war on terror” leave behind?",
@@ -1090,6 +1946,16 @@
       "sourceColor": "#BB1919"
     },
     {
+      "title": "Canada offers air defense support for Ukraine as Zelenskyy visits",
+      "link": "https://www.theguardian.com/world/2026/sep/10/zelenskyy-canada-visit",
+      "desc": "Canadian PM Mark Carney hosts president in Calgary, where he grew up alongside large Ukrainian community Canada offered support on Thursday to boost Ukraine’s air defenses and help replenish its drone",
+      "pubDate": "Thu, 10 Sep 2026 20:35:06 GMT",
+      "img": "https://i.guim.co.uk/img/media/be7c2941850f3cf0d37436c968f44745b159e3aa/38_0_4431_3544/master/4431.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
       "title": "Could Pakistan enter Yemen conflict under Mecca agreement?",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/9/10/10-09-sv-pakistan-yemen-mecca-pk?traffic_source=rss",
       "desc": "Pakistan says no military response has been discussed under its new defence pact with Saudi Arabia and Turkiye.",
@@ -1188,6 +2054,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Elon Musk threatens to sue over Gibney documentary's \"space lasers\" claim",
+      "link": "https://www.npr.org/2026/09/10/g-s1-142713/musk-trump-2024-lasers-space",
+      "desc": "The tech billionaire's attorney has put documentarian Alex Gibney and his production company on legal notice, claiming the Oscar-winning director defamed Musk in his nearly four-hour documentary.",
+      "pubDate": "Thu, 10 Sep 2026 11:13:09 -0400",
+      "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fcc%2F0d%2F25d6e3c3438fad9d12731db88378%2Fap25183358443915.jpg",
+      "sourceId": "npr",
+      "sourceName": "NPR",
+      "sourceColor": "#E11B22"
     },
     {
       "title": "Houthis capture Yemeni town of Mocha: Why it matters",
@@ -1400,6 +2276,16 @@
       "sourceColor": "#D2A02E"
     },
     {
+      "title": "Rubio signals shift to working with allies to fight drug trade as latest boat strike kills three",
+      "link": "https://www.theguardian.com/us-news/2026/sep/09/rubio-us-allies-drug-trafficking",
+      "desc": "Rubio visits Ecuador and welcomes cooperation after campaign of unilateral strikes on alleged ‘narco-terrorists’ The US secretary of state, Marco Rubio, gave new clarity on the approach toward combati",
+      "pubDate": "Thu, 10 Sep 2026 01:02:42 GMT",
+      "img": "https://i.guim.co.uk/img/media/f8781809b67187827f23610e3a4f3ec053e31c16/3_0_6398_5121/master/6398.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
       "title": "US states sue Trump over weakening of endangered species protections",
       "link": "https://www.aljazeera.com/news/2026/9/10/us-states-sue-trump-over-weakening-of-endangered-species-protections?traffic_source=rss",
       "desc": "Attorneys general from 20 states and Washington, DC, say the US government illegally rolled back landmark protections.",
@@ -1468,6 +2354,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Notorious Ecuadorian crime gang designated a terrorist group by US",
+      "link": "https://www.theguardian.com/world/2026/sep/09/ecuador-drugs-gang-terrorist-group-los-tiguerones-rubio",
+      "desc": "Trump administration to seek extra funding from Congress to ‘dismantle’ Los Tiguerones over narcotics trafficking The US has designated Ecuador’s Los Tiguerones gang, which stormed a television statio",
+      "pubDate": "Wed, 09 Sep 2026 22:19:25 GMT",
+      "img": "https://i.guim.co.uk/img/media/244d8e106c8da37c2eecebda739864fc423f8d34/510_0_3771_3016/master/3771.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
     },
     {
       "title": "Land in limbo: BBC visits West Bank village in area earmarked by Israel for settlement",
@@ -1638,6 +2534,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Uganda to withdraw from Invictus Games ‘out of respect for King Charles’, says military chief",
+      "link": "https://www.theguardian.com/world/2026/sep/09/uganda-withdraws-invictus-games-out-of-respect-king-charles",
+      "desc": "Gen Muhoozi Kainerugaba announces decision to pull out in post on X, citing tensions over ‘Harry-Meghan nonsense’ Uganda is withdrawing from the Duke of Sussex’s Invictus Games, the country’s military",
+      "pubDate": "Wed, 09 Sep 2026 18:20:24 GMT",
+      "img": "https://i.guim.co.uk/img/media/ba5a078148db7db95e9757dcccca697c118b18f1/491_0_4518_3614/master/4518.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
     },
     {
       "title": "Last dance? Inside Lula’s strategy to win a fourth presidency in Brazil",
@@ -1868,6 +2774,16 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
+    },
+    {
+      "title": "Family of British man found dead in Grenada ask local police to work with UK investigators",
+      "link": "https://www.theguardian.com/world/2026/sep/09/family-andrew-frederick-british-man-found-dead-grenada-local-police-uk-investigators",
+      "desc": "Andrew Frederick’s body was found in property he was staying at in Grenada in January The family of a British father who was found dead in the Caribbean in January is urging authorities in Grenada to ",
+      "pubDate": "Wed, 09 Sep 2026 08:00:03 GMT",
+      "img": "https://i.guim.co.uk/img/media/c601f3cefd8c2ed9566d6f0f45ec20f5e9f80c3e/593_0_6014_4810/master/6014.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
     },
     {
       "title": "India looks to steer BRICS away from anti-Western turn",
@@ -2400,6 +3316,16 @@
       "sourceColor": "#BB1919"
     },
     {
+      "title": "‘Trust deficit’: Why India’s economic data has sparked a furore",
+      "link": "https://www.theguardian.com/world/2026/sep/07/why-indias-economic-data-faces-a-trust-deficit",
+      "desc": "India’s statistical system once commanded respect, and its data on economic and social indicators was considered rigorous – that appears to have eroded • Don’t get This is India delivered to your inbo",
+      "pubDate": "Tue, 08 Sep 2026 06:30:29 GMT",
+      "img": "https://i.guim.co.uk/img/media/1dfd03951ba95abbf3282dfaa49ef905785af77a/473_0_4722_3779/master/4722.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
+    },
+    {
       "title": "Palestine weekly: Israeli ministers push for depopulation of Gaza",
       "link": "https://www.aljazeera.com/news/2026/9/8/palestine-weekly-israeli-ministers-push-for-depopulation-of-gaza?traffic_source=rss",
       "desc": "Ethnic cleansing plans move from slogans to policy proposals, amid West Bank demolitions and mounting deaths in Gaza.",
@@ -2468,6 +3394,16 @@
       "sourceId": "aljazeera",
       "sourceName": "Al Jazeera",
       "sourceColor": "#D2A02E"
+    },
+    {
+      "title": "Nepal says big polluters must ‘wake up’ as it calls for climate compensation over flood disaster",
+      "link": "https://www.theguardian.com/world/2026/sep/08/nepal-floods-climate-compensation",
+      "desc": "Foreign minister Shisir Khanal tells the Guardian the world’s biggest economies need to help Nepal, which contributes less than 0.1% of global greenhouse gas emissions Nepal is demanding $20m in clima",
+      "pubDate": "Tue, 08 Sep 2026 00:58:09 GMT",
+      "img": "https://i.guim.co.uk/img/media/eaed8dd07123749fede2b9dfe1d9e9d22992d090/959_0_5000_4000/master/5000.jpg",
+      "sourceId": "guardian",
+      "sourceName": "The Guardian",
+      "sourceColor": "#052962"
     },
     {
       "title": "Trump threatens to stop sale of Canadian Bombardier jets in US",
@@ -12908,76 +13844,6 @@
       "sourceId": "bbcnews",
       "sourceName": "BBC News",
       "sourceColor": "#BB1919"
-    },
-    {
-      "title": "Philippines drug war victims seek justice through truth commission",
-      "link": "https://www.aljazeera.com/features/2026/8/14/philippines-drug-war-victims-seek-justice-through-truth-commission?traffic_source=rss",
-      "desc": "Families of drug war victims testify before the Truth Commission, seeking answers and closure after years of silence.",
-      "pubDate": "Fri, 14 Aug 2026 16:08:07 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/08/epa_6a7f2d4d385c-1786719565.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Top French court upholds assisted dying law, rejects teen social media ban",
-      "link": "https://www.aljazeera.com/news/2026/8/14/top-french-court-upholds-assisted-dying-law-rejects-teen-social-media-ban?traffic_source=rss",
-      "desc": "The decisions mark both a victory and a setback for President Emmanuel Macron, who had championed both policies.",
-      "pubDate": "Fri, 14 Aug 2026 15:52:57 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/08/reuters_6a7f31fb-1786720763.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Qatar challenges AFC over open letter attacking FIFA President Infantino",
-      "link": "https://www.aljazeera.com/sports/2026/8/14/qatar-challenges-afc-over-open-letter-attacking-fifa-president-infantino?traffic_source=rss",
-      "desc": "Qatar FA President Hamad bin Khalifa Al-Thani complains about lack of consultation about AFC open letter to FIFA.",
-      "pubDate": "Fri, 14 Aug 2026 15:36:58 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/08/2026-08-14T145659Z_22400928_RC25VX94SXMT_RTRMADP_3_SOCCER-FIFA-QATAR-AFC-1786720679.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Ahmed al-Sharaa: A New Vision for Syria",
-      "link": "https://www.aljazeera.com/video/al-jazeera-world/2026/8/14/ahmed-al-sharaa-a-new-vision-for-syria?traffic_source=rss",
-      "desc": "An exclusive interview with the man who became president of Syria in 2025 about his vision for his country’s future.",
-      "pubDate": "Fri, 14 Aug 2026 15:00:00 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1786635977.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Pakistan PM’s ‘red line’ warning to India over water treaty",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/14/14-08-clip-pakistan-warns-india-over-indus-pk?traffic_source=rss",
-      "desc": "Pakistan Prime Minister Shehbaz Sharif accused India of illegally suspending the Indus Waters Treaty.",
-      "pubDate": "Fri, 14 Aug 2026 13:07:19 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1786712765.jpg?resize=1920%2C1080&amp;quality=80",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "US wants Netanyahu to condemn settler violence in Qusra",
-      "link": "https://www.aljazeera.com/news/2026/8/14/israeli-forces-block-activists-from-reaching-besieged-qusra-families?traffic_source=rss",
-      "desc": "Mike Huckabee, US ambassador to Israel, described the settlers in Qusra as \"Israeli terrorists\" amid weeklong siege.",
-      "pubDate": "Fri, 14 Aug 2026 12:09:47 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/08/AP26224599849869-1786702435.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
-    },
-    {
-      "title": "Huckabee calls Israeli settlers ‘terrorists’: Can US push end Qusra siege?",
-      "link": "https://www.aljazeera.com/news/2026/8/14/huckabee-calls-israeli-settlers-terrorists-can-us-push-end-qusra-siege?traffic_source=rss",
-      "desc": "US ambassador to Israel has issued a rare condemnation of a violent siege on families in the West Bank village of Qusra.",
-      "pubDate": "Fri, 14 Aug 2026 11:28:14 +0000",
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/08/afp_6a7ee6d14be5-1786701521.jpg?resize=1920%2C1440",
-      "sourceId": "aljazeera",
-      "sourceName": "Al Jazeera",
-      "sourceColor": "#D2A02E"
     }
   ]
 }
