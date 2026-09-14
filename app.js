@@ -9,9 +9,22 @@ let activeRegion = localStorage.getItem('news-region') || 'bd';
 let searchTimer  = null;
 let summaryEn    = '';
 let summaryBn    = '';
+let briefingEn   = [];     // [{ id, headline, what, why, watch }]
+let briefingBn   = [];
+let briefFull    = false;  // the briefing's two depths: headline + why, or the whole item
+let storyById    = {};     // story id -> the record fetch.js published
+let storyByLead  = {};     // the link of a story's freshest member -> that story
+let articleByLink = {};    // link -> article, so a story can name its members
+let feedOrder    = localStorage.getItem('news-order') === 'latest' ? 'latest' : 'top';
 let fetchedAt    = null;   // the Date, not a formatted string: the format is language-dependent
 
 const PAGE_SIZE = 24;
+
+// Below the lead, the next few cards are given more weight than the rest.
+// Twenty cards of identical size is a list, not a front page: the reader has
+// to read all twenty to find out which one matters, which is exactly the work
+// the ranking was supposed to do for them.
+const SECONDARY_COUNT = 4;
 let visibleArticles = [];
 let renderedCount   = 0;
 let featuredIndex   = -1;
@@ -51,8 +64,20 @@ const STRINGS = {
     filterBySource:  'Filter by source',
     allSources:      'All sources',
     briefing:        'Briefing',
+    briefingBy:      'Written by Claude from the headlines below',
+    whatHappened:    'What happened',
+    whyItMatters:    'Why this matters',
+    whatToWatch:     'What to watch',
+    briefShowFull:   'Full briefing',
+    briefShowShort:  'Compact',
     readMore:        'Read more',
     showLess:        'Show less',
+    order:           'Order',
+    orderTop:        'Top stories',
+    orderLatest:     'Latest',
+    coveredBy:       'Covered by {n} sources',
+    singleSource:    'Single-source report',
+    alsoReported:    'Also reported by',
     headlines:       'Headlines',
     latest:          'Latest',
     backToTop:       'Back to top',
@@ -106,8 +131,20 @@ const STRINGS = {
     filterBySource:  'উৎস অনুযায়ী ছাঁকুন',
     allSources:      'সব উৎস',
     briefing:        'সারসংক্ষেপ',
+    briefingBy:      'নিচের শিরোনামগুলো থেকে ক্লদের লেখা',
+    whatHappened:    'যা ঘটেছে',
+    whyItMatters:    'কেন গুরুত্বপূর্ণ',
+    whatToWatch:     'যা লক্ষ্য রাখবেন',
+    briefShowFull:   'পূর্ণ সারসংক্ষেপ',
+    briefShowShort:  'সংক্ষিপ্ত',
     readMore:        'আরও পড়ুন',
     showLess:        'কম দেখান',
+    order:           'ক্রম',
+    orderTop:        'প্রধান খবর',
+    orderLatest:     'সর্বশেষ',
+    coveredBy:       '{n}টি উৎসে প্রকাশিত',
+    singleSource:    'একটি উৎসের খবর',
+    alsoReported:    'আরও প্রকাশ করেছে',
     headlines:       'শিরোনাম',
     latest:          'সর্বশেষ',
     backToTop:       'উপরে ফিরুন',
@@ -211,6 +248,24 @@ function shownLang(article) {
 }
 
 /* ── Theme ── */
+// Which question the feed is answering: what matters today, or what came in
+// last. Both are legitimate and the reader gets to choose, but only one can be
+// the default, and "what matters" is the product.
+function setFeedOrder(order) {
+  feedOrder = order === 'latest' ? 'latest' : 'top';
+  localStorage.setItem('news-order', feedOrder);
+  applyOrderSwitch();
+  renderArticles();
+}
+
+function applyOrderSwitch() {
+  document.querySelectorAll('#order-switch .order-btn').forEach(btn => {
+    const on = btn.dataset.order === feedOrder;
+    btn.classList.toggle('active', on);
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+}
+
 function applyThemeLabel() {
   // The button names what it will do, so no icon has to be invented.
   document.getElementById('theme-label').textContent =
@@ -362,6 +417,7 @@ function applyLanguage() {
   });
 
   applyThemeLabel();
+  applyOrderSwitch();
   applyRegionChrome();
   renderStatus();
   document.getElementById('refresh-label').textContent = t(loading ? 'fetching' : 'refresh');
@@ -484,15 +540,50 @@ function setFilter(id, el) {
 }
 
 /* ── Rendering ── */
-function cardElement(a, isFeatured, n) {
+
+// The publishers covering this article's story, other than the one being
+// shown. Empty unless the data file published a record for the story, which
+// it does whenever more than one source carried it.
+function storyOf(a) {
+  return (a.clusterId && storyById[a.clusterId]) || null;
+}
+
+function otherSources(a, story) {
+  if (!story || !story.sourceIds) return [];
+  return story.sourceIds.filter(id => id !== a.sourceId);
+}
+
+// One of the other newsrooms that covered this story, linked to its own
+// telling. Its own function so that `link` here is unambiguously this
+// member's URL, and so the safeURL check sits next to the assignment it
+// guards rather than a dozen lines above it.
+function sourceAnchor(member) {
+  const link = safeURL(member.link);
+  if (!link) return null;
+  const anchor = el('a', 'source-link', sourceLabel(member));
+  anchor.href = link;
+  anchor.target = '_blank';
+  anchor.rel = 'noopener noreferrer';
+  return anchor;
+}
+
+// A card used to be one big <a>. It cannot be any more: a card now carries
+// links of its own — the other publishers who covered the story — and an
+// anchor inside an anchor is not a thing a browser will render. The card is
+// an <article>, the headline is the link, and the headline's ::after covers
+// the card so the whole thing is still one click target. The source links sit
+// above that overlay and keep their own clicks.
+function cardElement(a, isFeatured, n, isSecondary) {
   const source = sourceLabel(a);
   const link   = safeURL(a.link);
   const img    = safeURL(a.img);
+  const story  = storyOf(a);
+  const others = otherSources(a, story);
 
-  const card = el('a', 'card' + (isFeatured ? ' featured' : ''));
-  card.href = link || '#';
+  const card = el('article', 'card'
+    + (isFeatured ? ' featured' : '')
+    + (isSecondary ? ' secondary' : ''));
   card.dataset.n = String(n).padStart(2, '0');
-  if (link) { card.target = '_blank'; card.rel = 'noopener noreferrer'; }
 
   // Missing art gets the striped placeholder, captioned with what belongs there.
   if (img) {
@@ -518,16 +609,54 @@ function cardElement(a, isFeatured, n) {
 
   const body = el('div', 'card-body');
   if (isFeatured) body.appendChild(el('span', 'lead-badge', t('leadStory')));
-  body.appendChild(el('span', 'label', source));
+
+  const label = el('div', 'card-label');
+  label.appendChild(el('span', 'label', source));
+  // Corroboration, stated on the card rather than left for the reader to
+  // notice: how many independent newsrooms carried this, and — when only one
+  // did — that nobody else has confirmed it.
+  if (others.length) {
+    label.appendChild(el('span', 'corroborated',
+      t('coveredBy', { n: num(story.sourceIds.length) })));
+  } else if (story) {
+    label.appendChild(el('span', 'single-source', t('singleSource')));
+  }
+  body.appendChild(label);
 
   // lang on the element, not a guess from the page: an article with no
   // translation yet still renders in its own language, and the Bangla face
   // applies to exactly the text that is Bangla.
   const shown = shownLang(a);
+  //
+  // Three elements for one headline, and each one is load-bearing: the <a>
+  // carries a ::after that covers the whole card (so the card is still one
+  // click target), and that overlay would be clipped away by the line clamp
+  // if the clamp lived on the anchor or the heading rather than on the span
+  // inside it.
   const title = el('h2', 'card-title');
-  if (shown === 'bn') title.lang = 'bn';
-  appendHighlighted(title, pick(a, 'title') || t('untitled'), searchQuery);
+  const titleLink = el('a', 'card-link');
+  titleLink.href = link || '#';
+  if (link) { titleLink.target = '_blank'; titleLink.rel = 'noopener noreferrer'; }
+  if (shown === 'bn') titleLink.lang = 'bn';
+  const titleText = el('span', 'clamp');
+  appendHighlighted(titleText, pick(a, 'title') || t('untitled'), searchQuery);
+  titleLink.appendChild(titleText);
+  title.appendChild(titleLink);
   body.appendChild(title);
+
+  // The analytical line, where the pipeline bought one for this story. It is
+  // labelled because it is not the publisher's words and must never read as
+  // though it were.
+  if (story) {
+    const why = langMode === 'bn' && story.whyBn ? story.whyBn : story.why;
+    if (why) {
+      const line = el('p', 'card-why');
+      if (langMode === 'bn' && story.whyBn) line.lang = 'bn';
+      line.appendChild(el('span', 'why-label', t('whyItMatters')));
+      line.appendChild(document.createTextNode(why));
+      body.appendChild(line);
+    }
+  }
 
   const descText = pick(a, 'desc');
   if (descText) {
@@ -537,6 +666,21 @@ function cardElement(a, isFeatured, n) {
     body.appendChild(desc);
   }
 
+  // The other newsrooms, by name and linked to their own version. This is the
+  // difference between "5 sources" as a badge and as something a reader can
+  // check.
+  if (others.length) {
+    const list = el('div', 'card-sources');
+    list.appendChild(el('span', 'label', t('alsoReported')));
+    story.links.forEach(memberLink => {
+      const member = articleByLink[memberLink];
+      if (!member || member.sourceId === a.sourceId) return;
+      const anchor = sourceAnchor(member);
+      if (anchor) list.appendChild(anchor);
+    });
+    if (list.childElementCount > 1) body.appendChild(list);
+  }
+
   const meta = el('div', 'card-meta');
   meta.appendChild(el('span', 'age', timeAgo(a.pubDate) || '\u2014'));
   meta.appendChild(el('span', null, t('readArrow')));
@@ -544,6 +688,33 @@ function cardElement(a, isFeatured, n) {
 
   card.appendChild(body);
   return card;
+}
+
+// One card per story, not per article.
+//
+// Only under "All sources" with no search term: filtering to a publisher
+// means the reader asked for that publisher's own coverage, and a search has
+// to be able to find any article, including one whose story is led by
+// another. Outside those two cases, an article that is not its story's lead
+// is the same event as a card already on the page.
+function collapseToStories(articles) {
+  return articles.filter(a => {
+    const story = storyOf(a);
+    if (!story || story.size <= 1) return true;
+    return story.lead === a.link;
+  });
+}
+
+function orderArticles(articles) {
+  const byTime = (x, y) => (Date.parse(y.pubDate) || 0) - (Date.parse(x.pubDate) || 0);
+  if (feedOrder === 'latest') return articles.slice().sort(byTime);
+  // Importance first. An article with no score is one published before the
+  // ranking existed, or one whose story the file did not record; it sorts
+  // below everything scored rather than above it.
+  return articles.slice().sort((x, y) => {
+    const d = (y.score || 0) - (x.score || 0);
+    return d !== 0 ? d : byTime(x, y);
+  });
 }
 
 function renderArticles() {
@@ -563,6 +734,10 @@ function renderArticles() {
     );
   }
 
+  const collapsing = !q && activeFilter === 'all';
+  if (collapsing) articles = collapseToStories(articles);
+  articles = orderArticles(articles);
+
   document.getElementById('article-count').textContent =
     t(articles.length === 1 ? 'articleCountOne' : 'articleCount', { n: num(articles.length) });
 
@@ -579,8 +754,11 @@ function renderArticles() {
   // thousands of articles, and rendering them all makes every subsequent
   // repaint (theme switch, filtering, scrolling) crawl.
   visibleArticles = articles;
-  featuredIndex   = (!q && activeFilter === 'all') ? articles.findIndex(a => a.img) : -1;
-  renderedCount   = 0;
+  // The lead is the top-ranked story that has a picture to lead with, and only
+  // in the ordering where "top" means anything. Under "Latest" the first card
+  // is merely the newest, which is not a lead and is not badged as one.
+  featuredIndex = (collapsing && feedOrder === 'top') ? articles.findIndex(a => a.img) : -1;
+  renderedCount = 0;
 
   const grid = el('div', 'grid');
   grid.id = 'feed-grid';
@@ -600,8 +778,12 @@ function appendBatch() {
 
   const slice = visibleArticles.slice(renderedCount, renderedCount + PAGE_SIZE);
   const batch = document.createDocumentFragment();
-  slice.forEach((a, i) =>
-    batch.appendChild(cardElement(a, renderedCount + i === featuredIndex, renderedCount + i + 1)));
+  slice.forEach((a, i) => {
+    const at = renderedCount + i;
+    const isFeatured = at === featuredIndex;
+    const isSecondary = featuredIndex !== -1 && !isFeatured && at <= featuredIndex + SECONDARY_COUNT;
+    batch.appendChild(cardElement(a, isFeatured, at + 1, isSecondary));
+  });
   grid.appendChild(batch);
   renderedCount += slice.length;
 
@@ -650,28 +832,100 @@ function notice(className, heading, body) {
   return box;
 }
 
-function showPageSummary(text, textBn) {
-  summaryEn = text || '';
-  summaryBn = textBn || '';
+function showPageSummary(data) {
+  summaryEn  = data.summary   || '';
+  summaryBn  = data.summaryBn || '';
+  briefingEn = Array.isArray(data.briefing)   ? data.briefing   : [];
+  briefingBn = Array.isArray(data.briefingBn) ? data.briefingBn : [];
   renderSummary();
+}
+
+// The briefing in the selected language, falling back item by item rather
+// than all or nothing: a Bangla translation that has not landed yet shows the
+// English briefing instead of no briefing.
+function briefingItems() {
+  const bn = langMode === 'bn' && briefingBn.length === briefingEn.length;
+  return { items: bn ? briefingBn : briefingEn, lang: bn ? 'bn' : 'en' };
+}
+
+// One briefing item: the headline, and underneath it either the consequence
+// alone or the full What happened / Why this matters / What to watch.
+//
+// The three labels are the point. An aggregator gives you a headline and
+// leaves the reader to work out whether it changes anything; naming the
+// question each sentence answers is what makes this a briefing.
+function briefItemElement(item, n, full, itemLang) {
+  const wrap = el('article', 'brief-item');
+  if (itemLang === 'bn') wrap.lang = 'bn';
+  wrap.dataset.n = String(n).padStart(2, '0');
+
+  const head = el('h3', 'brief-headline', item.headline);
+  wrap.appendChild(head);
+
+  // The story behind the item, when it is one the data file published a
+  // record for: the briefing says four newsrooms reported this, and the
+  // reader can see which four in the feed below.
+  const story = storyById[item.id];
+  if (story && story.sourceIds && story.sourceIds.length > 1) {
+    wrap.appendChild(el('span', 'brief-sources', t('coveredBy', { n: num(story.sourceIds.length) })));
+  }
+
+  const rows = full
+    ? [[t('whatHappened'), item.what], [t('whyItMatters'), item.why], [t('whatToWatch'), item.watch]]
+    : [[t('whyItMatters'), item.why]];
+
+  const dl = el('dl', 'brief-lines');
+  rows.forEach(([label, text]) => {
+    if (!text) return;
+    dl.appendChild(el('dt', null, label));
+    dl.appendChild(el('dd', null, text));
+  });
+  wrap.appendChild(dl);
+  return wrap;
 }
 
 function renderSummary() {
   const box = document.getElementById('page-summary');
-  // Falls back to English when the translation hasn't landed yet, rather
-  // than dropping the briefing off the page.
+  const body = document.getElementById('page-summary-text');
+  const toggle = document.getElementById('summary-toggle');
+  const byline = document.getElementById('brief-byline');
+  const { items, lang: itemLang } = briefingItems();
+
+  if (items.length) {
+    body.removeAttribute('lang');
+    body.classList.remove('clamped');
+    body.classList.add('brief-items');
+    const frag = document.createDocumentFragment();
+    items.forEach((item, i) => frag.appendChild(briefItemElement(item, i + 1, briefFull, itemLang)));
+    body.replaceChildren(frag);
+    toggle.textContent = t(briefFull ? 'briefShowShort' : 'briefShowFull');
+    toggle.setAttribute('aria-expanded', briefFull ? 'true' : 'false');
+    toggle.classList.add('brief-depth');
+    toggle.hidden = false;
+    byline.textContent = t('briefingBy');
+    byline.hidden = false;
+    box.hidden = false;
+    renderFacts();
+    return;
+  }
+
+  // No briefing in the data file. That is the shape every file had before the
+  // briefing existed, and the shape a run that could not reach the model
+  // leaves behind, so the prose summary stays a first-class fallback rather
+  // than a migration step to be deleted later.
   const isBn = langMode === 'bn' && summaryBn;
   const text = isBn ? summaryBn : summaryEn;
   if (!text) { box.hidden = true; return; }
 
-  const body = document.getElementById('page-summary-text');
-  body.textContent = text;
+  body.classList.remove('brief-items');
+  body.replaceChildren(document.createTextNode(text));
   if (isBn) body.setAttribute('lang', 'bn'); else body.removeAttribute('lang');
   body.classList.add('clamped');
-
-  const toggle = document.getElementById('summary-toggle');
   toggle.textContent = t('readMore');
   toggle.setAttribute('aria-expanded', 'false');
+  toggle.classList.remove('brief-depth');
+  toggle.hidden = false;
+  byline.hidden = true;
   box.hidden = false;
   renderFacts();
 }
@@ -697,6 +951,11 @@ function renderFacts() {
 }
 
 function toggleSummary() {
+  if (briefingItems().items.length) {
+    briefFull = !briefFull;
+    renderSummary();
+    return;
+  }
   const body = document.getElementById('page-summary-text');
   const toggle = document.getElementById('summary-toggle');
   const clamped = body.classList.toggle('clamped');
@@ -751,6 +1010,21 @@ async function loadData() {
     });
     allSources  = data.sources  || [];
 
+    // Stories are what the feed is actually made of: one record per event,
+    // naming every article covering it and which of them to link to. Indexed
+    // both ways because the feed asks "what story is this article in?" and
+    // the card asks "is this article its story's lead?".
+    articleByLink = {};
+    allArticles.forEach(a => { if (a.link) articleByLink[a.link] = a; });
+
+    storyById   = {};
+    storyByLead = {};
+    (data.stories || []).forEach(st => {
+      if (!st || !st.id) return;
+      storyById[st.id] = st;
+      if (st.lead) storyByLead[st.lead] = st;
+    });
+
     // Stored as a Date rather than a formatted string: the format depends on
     // the selected language, and the language can change after the load.
     // renderProvenance puts it in all three places — masthead, Latest panel and
@@ -759,7 +1033,7 @@ async function loadData() {
     renderProvenance();
 
     showHeadlines(allArticles);
-    showPageSummary(data.summary, data.summaryBn);
+    showPageSummary(data);
     setStatus('ok', () => regionLabel(activeRegion));
     buildFilterBar();
     renderArticles();
@@ -796,6 +1070,10 @@ function wireControls() {
   document.getElementById('search-clear').addEventListener('click', clearSearch);
   document.getElementById('to-top').addEventListener('click', () => window.scrollTo({ top: 0 }));
   document.getElementById('search-input').addEventListener('input', e => onSearch(e.target.value));
+  document.getElementById('order-switch').addEventListener('click', e => {
+    const btn = e.target.closest('.order-btn');
+    if (btn) setFeedOrder(btn.dataset.order);
+  });
 
   // Delegated, because the chips are rebuilt on every load and the tabs are
   // the same three buttons for the life of the page.

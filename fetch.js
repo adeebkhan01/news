@@ -2,6 +2,8 @@ const https   = require('https');
 const fs      = require('fs');
 const security = require('./lib/security.js');
 const lang     = require('./lib/lang.js');
+const cluster  = require('./lib/cluster.js');
+const rank     = require('./lib/rank.js');
 
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
@@ -527,50 +529,186 @@ function isApiUnavailable(err) {
   return false;
 }
 
-async function generatePageSummary(articles) {
+// How many stories the briefing covers. Three is the floor below which it is
+// not a briefing; five is what fits in the minute a reader actually gives it.
+var BRIEFING_STORIES = 5;
+
+// How many ranked stories get a "why this matters" line. The page shows the
+// top of the feed first and most readers never reach the end of it, so the
+// line is bought for the part of the feed that is read, in one call rather
+// than one per story.
+var WHY_STORIES = 12;
+
+// What the model is shown about a story: the lead headline, and the other
+// publishers' headlines as corroboration. Their disagreements are the useful
+// part — the same event described three ways is more information than one
+// description repeated.
+function storyBrief(story, index) {
+  var lines = story.members.slice(0, 4).map(function (m) {
+    var title = m.lang === 'bn' && typeof m.titleEn === 'string' && m.titleEn ? m.titleEn : m.title;
+    return '   - ' + m.sourceName + ': ' + title;
+  });
+  return '[' + (index + 1) + '] id=' + story.id + ' (' + story.sourceIds.length + ' source'
+    + (story.sourceIds.length === 1 ? '' : 's') + ', topic: ' + story.topic + ')\n' + lines.join('\n');
+}
+
+function parseJsonBlock(raw) {
+  var clean = String(raw).replace(/^```[a-z]*\n?/i, '').replace(/```$/, '').trim();
+  var startObj = clean.indexOf('{'), startArr = clean.indexOf('[');
+  var start = startArr !== -1 && (startObj === -1 || startArr < startObj) ? startArr : startObj;
+  var end = Math.max(clean.lastIndexOf('}'), clean.lastIndexOf(']'));
+  if (start === -1 || end === -1 || end < start) throw new Error('No JSON found in response');
+  return JSON.parse(clean.slice(start, end + 1));
+}
+
+// The briefing. Not a summary of the feed — an editor's account of the few
+// things that happened, each one answering the three questions a reader has:
+// what happened, why it matters, and what to watch next.
+//
+// The model is given ranked, deduplicated stories rather than a list of
+// headlines, which is the whole reason this can be written at all: asked to
+// summarise forty headlines it produced forty headlines' worth of throat
+// clearing, because it had no way to know which five mattered.
+async function generateBriefing(stories) {
   if (!ANTHROPIC_API_KEY || apiUnavailable) return null;
-  console.log('Generating page summary for', REGION.label, '...');
-  var titles = articles.slice(0,40)
-    .map(function(a,i){ return (i+1)+'. ' + (a.lang === 'bn' && typeof a.titleEn === 'string' ? a.titleEn : a.title); })
-    .join('\n');
+  var top = stories.slice(0, BRIEFING_STORIES);
+  if (top.length < security.BRIEFING_MIN_ITEMS) {
+    console.log('Only', top.length, 'ranked stories — not enough for a briefing');
+    return null;
+  }
+  console.log('Writing the briefing for', REGION.label, 'over', top.length, 'stories...');
   try {
     var raw = await claudeComplete(
-      REGION.summaryPrompt + ' Write in plain prose, no bullet points, no markdown.',
-      'Here are the top headlines from ' + REGION.label + ' news sources today:\n\n'+titles+'\n\nWrite a 3-4 sentence briefing summarising the key themes and most significant stories. Be direct and informative.'
+      REGION.summaryPrompt
+      + ' You write the morning briefing an analyst reads before anything else.'
+      + ' Respond ONLY with valid JSON, no markdown, no preamble.',
+      'These are today\'s most significant stories from ' + REGION.label + ' news sources, already ranked'
+      + ' and deduplicated. Each one lists how the publishers covering it described it.\n\n'
+      + top.map(storyBrief).join('\n\n') + '\n\n'
+      + 'Return a JSON array of exactly ' + top.length + ' objects, one per story, in the order given:\n'
+      + '[{"id": "the id given above", '
+      + '"headline": "a short factual headline, under 12 words", '
+      + '"what": "1-2 sentences on what actually happened", '
+      + '"why": "one sentence on why it matters — the concrete consequence, for whom", '
+      + '"watch": "one sentence on what to watch next, or an empty string if there is no clear next step"}]\n\n'
+      + 'Write only what the headlines support. Where they disagree, say so. Do not speculate beyond them,'
+      + ' do not repeat the headline back as the "what", and do not use markdown.',
+      2000
     );
-    // The model reads forty headlines written by other people. An answer that
-    // comes back as markup, or runs to ten times the length asked for, is a
-    // failed call and is treated as one — the previous briefing stays up.
-    var clean = security.validateSummary(raw);
-    if (!clean) console.error('Page summary rejected by validation (' + String(raw).length + ' chars)');
-    return clean;
-  } catch(e) {
-    console.error('Page summary failed:', e.message);
+    var parsed = parseJsonBlock(raw);
+    // The model reads headlines written by other people, so its answer is
+    // untrusted input like any other. A briefing that is not the declared
+    // shape is a failed call, and the previous one stays on the page.
+    var valid = security.validateBriefing(parsed);
+    if (!valid) {
+      console.error('Briefing rejected by validation (' + String(raw).length + ' chars)');
+      return null;
+    }
+    // An id the model echoed correctly links the item to its story; one it
+    // invented or dropped is filled in by position, which is the order the
+    // stories were given in.
+    var allowed = {};
+    top.forEach(function (st) { allowed[st.id] = true; });
+    valid.forEach(function (item, i) {
+      if (!item.id || !allowed[item.id]) item.id = top[i] ? top[i].id : '';
+    });
+    return valid;
+  } catch (e) {
+    console.error('Briefing failed:', e.message);
     if (isApiUnavailable(e)) apiUnavailable = true;
     return null;
   }
 }
 
-// The briefing is written in English and translated, rather than generated
-// twice, so the two languages always describe the same set of headlines.
-async function translateSummary(text) {
-  if (!ANTHROPIC_API_KEY || apiUnavailable || !text) return null;
+// One sentence per story on the consequence, for the top of the feed. Asked
+// for in a single call keyed by story id, so a story that already has a line
+// from a previous run is never paid for twice.
+async function generateWhyLines(stories) {
+  if (!ANTHROPIC_API_KEY || apiUnavailable || !stories.length) return null;
+  console.log('Writing "why this matters" for', stories.length, 'stories...');
+  try {
+    var raw = await claudeComplete(
+      REGION.summaryPrompt
+      + ' You explain consequences in one sentence. Respond ONLY with valid JSON, no markdown.',
+      'For each story below, write one sentence on why it matters — the concrete consequence and for whom.'
+      + ' Be specific ("this raises borrowing costs for exporters"), never generic ("this is an important'
+      + ' development"). Write only what the headlines support.\n\n'
+      + stories.map(storyBrief).join('\n\n') + '\n\n'
+      + 'Return a JSON object mapping each story id to its sentence: {"' + stories[0].id + '": "...", ...}.'
+      + ' Omit any story you cannot say something specific about.',
+      2000
+    );
+    var valid = security.validateWhyMap(parseJsonBlock(raw), stories.map(function (s) { return s.id; }));
+    if (!valid) console.error('"Why this matters" rejected by validation');
+    return valid;
+  } catch (e) {
+    console.error('"Why this matters" failed:', e.message);
+    if (isApiUnavailable(e)) apiUnavailable = true;
+    return null;
+  }
+}
+
+// Bangla for the briefing, translated rather than generated a second time so
+// the two languages always describe the same stories in the same order.
+async function translateBriefing(items) {
+  if (!ANTHROPIC_API_KEY || apiUnavailable || !items || !items.length) return null;
   console.log('Translating the briefing to Bangla...');
   try {
     var raw = await claudeComplete(
-      'You are a Bengali (Bangla) translator. Translate the given English news briefing into natural Bengali. '
-      + 'Respond with the translation only — no preamble, no quotation marks, no markdown.',
-      text,
-      1500
+      'You are a Bengali (Bangla) translator. Translate each field of the given news briefing into natural'
+      + ' Bengali, preserving the JSON structure exactly. Respond ONLY with the translated JSON array,'
+      + ' no markdown, no preamble.',
+      JSON.stringify(items.map(function (it) {
+        return { id: it.id, headline: it.headline, what: it.what, why: it.why, watch: it.watch };
+      })),
+      3000
     );
-    var clean = security.validateSummary(raw);
-    if (!clean) console.error('Briefing translation rejected by validation');
-    return clean;
+    var valid = security.validateBriefing(parseJsonBlock(raw));
+    if (!valid || valid.length !== items.length) {
+      console.error('Briefing translation rejected by validation');
+      return null;
+    }
+    // Positional, not by id: the translation's job is the same items in the
+    // same order, and trusting an id the translator may have rewritten would
+    // let a mismatched pair through.
+    valid.forEach(function (it, i) { it.id = items[i].id; });
+    return valid;
   } catch (e) {
     console.error('Briefing translation failed:', e.message);
     if (isApiUnavailable(e)) apiUnavailable = true;
     return null;
   }
+}
+
+async function translateWhyLines(whyMap) {
+  var ids = Object.keys(whyMap || {});
+  if (!ANTHROPIC_API_KEY || apiUnavailable || !ids.length) return null;
+  console.log('Translating', ids.length, '"why this matters" lines to Bangla...');
+  try {
+    var raw = await claudeComplete(
+      'You are a Bengali (Bangla) translator. Translate each value of the given JSON object into natural'
+      + ' Bengali, keeping every key exactly as given. Respond ONLY with the JSON object, no markdown.',
+      JSON.stringify(whyMap),
+      2000
+    );
+    var valid = security.validateWhyMap(parseJsonBlock(raw), ids);
+    if (!valid) console.error('"Why this matters" translation rejected by validation');
+    return valid;
+  } catch (e) {
+    console.error('"Why this matters" translation failed:', e.message);
+    if (isApiUnavailable(e)) apiUnavailable = true;
+    return null;
+  }
+}
+
+// The plain-prose briefing the page fell back on before this one existed, and
+// still falls back on: a reader on a cached copy of app.js, and anything
+// consuming the data file for its `summary` field, gets the same account in
+// the shape it expects. Built from the briefing already written rather than
+// bought separately.
+function summaryFromBriefing(items) {
+  if (!items || !items.length) return null;
+  return security.validateSummary(items.map(function (it) { return it.what; }).join(' '));
 }
 
 // Each article carries its own text in `title`/`desc` and the other language
@@ -774,43 +912,152 @@ async function main() {
   var allArticles = freshArticles.concat(existingArticles);
   allArticles.sort(function(a,b){ return (parseDate(b.pubDate)||0)-(parseDate(a.pubDate)||0); });
 
-  // ── Page summary: refresh on new articles, or whenever we haven't got one ──
-  var storedSummary = null, storedSummaryBn = null;
-  try {
-    var prev = JSON.parse(fs.readFileSync(dataFile,'utf8'));
-    storedSummary   = prev.summary   || null;
-    storedSummaryBn = prev.summaryBn || null;
-  } catch(e) {}
+  // ── Group the articles into stories ──
+  //
+  // Five publishers covering one cabinet decision is one story. Clustering
+  // runs over the whole retained month rather than just this run's arrivals,
+  // because a story that broke yesterday and is still being covered today has
+  // members on both sides of that line.
+  var now = Date.now();
+  var clusters = cluster.clusterArticles(allArticles, { parseDate: parseDate });
+  var ranked = rank.rankStories(clusters, now, parseDate);
+  var multiSource = ranked.filter(function (st) { return st.sourceIds.length > 1; });
+  console.log('Clustered', allArticles.length, 'articles into', ranked.length, 'stories ('
+    + multiSource.length + ' carried by more than one source)');
 
-  var pageSummary = storedSummary, pageSummaryBn = storedSummaryBn;
-  if (freshArticles.length > 0 || !storedSummary) {
-    var generated = await generatePageSummary(allArticles);
-    // A failed call must not wipe a good summary off the page.
+  // Every article learns which story it belongs to and what that story scored,
+  // so the page can order the feed by importance and show one card per story
+  // instead of five. `lead` is the story's freshest telling — the one the card
+  // links to.
+  ranked.forEach(function (st) {
+    st.members.forEach(function (m) {
+      m.clusterId = st.id;
+      m.score = Math.round(st.score * 1000) / 1000;
+      m.topic = st.topic;
+    });
+  });
+
+  // Which stories get a record of their own in the data file. Writing one for
+  // all ~1,300 clusters would be a third of the file spent restating what the
+  // articles already carry; the page only needs a record where it has
+  // something extra to show — the members to collapse into one card, or a
+  // "why this matters" line, which is bought for the top of the feed.
+  //
+  // The test is members, not sources: four Sydney Morning Herald pieces on one
+  // shooting are four cards the page should show as one, and they are not
+  // corroboration. Only the second test decides what the card says about
+  // sources; this one decides whether the story is collapsible at all.
+  var storyCap = Math.max(WHY_STORIES, BRIEFING_STORIES);
+  var published = ranked.filter(function (st, i) { return st.members.length > 1 || i < storyCap; });
+
+  // ── Briefing and "why this matters" ──
+  var stored = {};
+  try { stored = JSON.parse(fs.readFileSync(dataFile, 'utf8')) || {}; } catch (e) {}
+  var storedBriefing   = Array.isArray(stored.briefing)   ? stored.briefing   : null;
+  var storedBriefingBn = Array.isArray(stored.briefingBn) ? stored.briefingBn : null;
+
+  // A story's "why this matters" is bought once and kept for as long as the
+  // story is unchanged. A new publisher joining the story is a change: the
+  // line was written against a smaller set of headlines and may no longer be
+  // what the story is about.
+  var storedWhy = Object.create(null), storedWhyBn = Object.create(null), storedSize = Object.create(null);
+  (Array.isArray(stored.stories) ? stored.stories : []).forEach(function (st) {
+    if (!st || !st.id) return;
+    if (st.why)   storedWhy[st.id]   = st.why;
+    if (st.whyBn) storedWhyBn[st.id] = st.whyBn;
+    storedSize[st.id] = st.size || 0;
+  });
+
+  var briefing = storedBriefing, briefingBn = storedBriefingBn;
+  if (freshArticles.length > 0 || !storedBriefing) {
+    var generated = await generateBriefing(ranked);
+    // A failed call must not wipe a good briefing off the page.
     if (generated) {
-      pageSummary = generated;
-      pageSummaryBn = null;   // the stored translation describes the old one
-    } else if (storedSummary) {
-      console.log('Summary generation failed — keeping the previous one');
+      briefing = generated;
+      briefingBn = null;            // the stored translation describes the old one
+    } else if (storedBriefing) {
+      console.log('Briefing generation failed — keeping the previous one');
     }
   } else {
-    console.log('No new articles — reusing existing summary');
+    console.log('No new articles — reusing the existing briefing');
   }
 
   // Retried every run until it lands, like the article translations.
-  if (REGION.translate && pageSummary && !pageSummaryBn) {
-    pageSummaryBn = await translateSummary(pageSummary);
+  if (REGION.translate && briefing && !briefingBn) {
+    briefingBn = await translateBriefing(briefing);
   }
 
+  var whyCandidates = ranked.slice(0, WHY_STORIES);
+  var whyNeeded = whyCandidates.filter(function (st) {
+    return !storedWhy[st.id] || storedSize[st.id] !== st.members.length;
+  });
+  var freshWhy = whyNeeded.length ? await generateWhyLines(whyNeeded) : null;
+  var whyMap = Object.create(null), whyBnMap = Object.create(null);
+  whyCandidates.forEach(function (st) {
+    var reused = !freshWhy || !freshWhy[st.id];
+    var line = reused ? storedWhy[st.id] : freshWhy[st.id];
+    if (!line) return;
+    whyMap[st.id] = line;
+    // The Bangla line only carries over with the English one it translates.
+    if (reused && storedWhyBn[st.id]) whyBnMap[st.id] = storedWhyBn[st.id];
+  });
+  // Only worth a line when something actually happened: without an API key
+  // nothing is asked for and nothing is reused, and "0 stories carry a line
+  // (12 asked for)" reads as a failure rather than a feature being off.
+  if (freshWhy || Object.keys(whyMap).length) {
+    console.log(Object.keys(whyMap).length, 'stories carry a "why this matters" line ('
+      + whyNeeded.length + ' asked for this run, the rest reused)');
+  }
+
+  if (REGION.translate) {
+    var untranslatedWhy = Object.create(null);
+    var pending = 0;
+    Object.keys(whyMap).forEach(function (id) {
+      if (whyBnMap[id]) return;
+      untranslatedWhy[id] = whyMap[id];
+      pending++;
+    });
+    if (pending) {
+      var translatedWhy = await translateWhyLines(untranslatedWhy);
+      if (translatedWhy) Object.keys(translatedWhy).forEach(function (id) { whyBnMap[id] = translatedWhy[id]; });
+    }
+  }
+
+  var stories = published.map(function (st) {
+    var record = {
+      id:        st.id,
+      lead:      st.members[0].link,
+      size:      st.members.length,
+      sourceIds: st.sourceIds,
+      links:     st.members.map(function (m) { return m.link; }),
+      topic:     st.topic,
+      score:     Math.round(st.score * 1000) / 1000,
+      first:     st.members[st.members.length - 1].pubDate,
+      latest:    st.members[0].pubDate
+    };
+    if (whyMap[st.id])   record.why   = whyMap[st.id];
+    if (whyBnMap[st.id]) record.whyBn = whyBnMap[st.id];
+    return record;
+  });
+
   var output = {
-    fetchedAt: new Date().toISOString(),
-    summary:   pageSummary,
-    summaryBn: pageSummaryBn || null,
-    sources:   UNIQUE_SOURCES,
-    articles:  allArticles
+    fetchedAt:  new Date().toISOString(),
+    // Kept, and still the plain-prose account of the day: a browser holding a
+    // cached app.js from before the briefing existed reads this field, and so
+    // does anything else consuming the file. Derived from the briefing rather
+    // than bought separately.
+    summary:    summaryFromBriefing(briefing) || stored.summary || null,
+    summaryBn:  summaryFromBriefing(briefingBn) || null,
+    briefing:   briefing || null,
+    briefingBn: briefingBn || null,
+    sources:    UNIQUE_SOURCES,
+    stories:    stories,
+    articles:   allArticles
   };
 
   fs.writeFileSync(dataFile, JSON.stringify(output, null, 2));
-  console.log('Done.', dataFile, 'now has', allArticles.length, 'articles (', freshArticles.length, 'new,', existingArticles.length, 'retained)');
+  console.log('Done.', dataFile, 'now has', allArticles.length, 'articles (', freshArticles.length, 'new,', existingArticles.length, 'retained) in',
+              ranked.length, 'stories,', stories.length, 'of them published with a record of their own');
   if (failedSources.length) {
     console.warn('WARNING:', failedSources.length, 'of', SOURCES.length, 'feeds failed this run:');
     failedSources.forEach(function(f) { console.warn('  -', f); });
@@ -828,7 +1075,8 @@ async function main() {
 // Importable so tools/check-feeds.js can reuse the real source list and
 // parser rather than keeping a second copy that drifts out of date.
 module.exports = { REGIONS, POLICY, SOURCE_LANG, fetchUrl, fetchFeedUrl, parseFeed, stripTags, decodeEntities, parseDate,
-                   sanitizeLink, sanitizeImage, security, lang };
+                   sanitizeLink, sanitizeImage, parseJsonBlock, summaryFromBriefing, storyBrief,
+                   BRIEFING_STORIES, WHY_STORIES, security, lang, cluster, rank };
 
 if (require.main === module) {
   main().catch(function(e){ console.error(e); process.exit(1); });

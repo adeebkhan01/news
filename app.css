@@ -224,6 +224,19 @@ a{color:inherit}
   font-family:var(--font-display);font-weight:700;font-size:var(--size-xl);line-height:1.25;
   letter-spacing:var(--track-display);color:var(--text-heading);
 }
+/* Two questions the feed can answer — what matters, and what is newest. The
+   switch sits beside the heading rather than in the toolbar because it
+   describes this list and nothing else. */
+.order-switch{display:flex;gap:var(--space-1);margin-right:auto;align-self:center}
+.order-btn{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
+  text-transform:uppercase;letter-spacing:var(--track-label);
+  height:var(--control-h-sm);padding:0 var(--space-4);cursor:pointer;
+  background:transparent;color:var(--text-muted);
+  border:var(--border-w) solid var(--border-hairline);border-radius:var(--radius);
+}
+.order-btn:hover{background:var(--bg-sunken);color:var(--text-body)}
+.order-btn.active{background:var(--bg-inverse);border-color:var(--bg-inverse);color:var(--text-inverse)}
 .status-line{
   display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap;
   font-family:var(--font-text);font-size:var(--size-sm);color:var(--text-muted);
@@ -254,6 +267,44 @@ a{color:inherit}
 /* An id rule outranks [hidden], so the briefing needs to be told again. */
 #page-summary[hidden]{display:none}
 .brief-main{min-width:0}
+/* The briefing is items now, not a paragraph: one numbered story each, with
+   the question each line answers named beside it. That labelling is the whole
+   difference between a summary and a briefing. */
+.brief-byline{color:var(--text-muted);text-transform:none;letter-spacing:0;font-weight:400;
+  font-family:var(--font-text);font-size:var(--size-2xs)}
+.brief-items{display:flex;flex-direction:column}
+.brief-item{
+  padding:var(--space-4) 0;border-bottom:var(--border-w) dashed var(--border-hairline);
+  position:relative;padding-left:var(--space-7);
+}
+.brief-item:first-child{padding-top:0}
+.brief-item:last-child{border-bottom:none;padding-bottom:0}
+.brief-item::before{
+  content:attr(data-n);position:absolute;left:0;top:var(--space-4);
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+  color:var(--text-accent);font-variant-numeric:tabular-nums;
+}
+.brief-item:first-child::before{top:0}
+.brief-headline{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-md);line-height:1.25;
+  letter-spacing:var(--track-display);color:var(--text-heading);
+}
+.brief-sources{
+  display:inline-block;margin-top:var(--space-2);
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-accent);
+}
+.brief-lines{margin-top:var(--space-3);display:grid;grid-template-columns:max-content minmax(0,1fr);
+  gap:var(--space-2) var(--space-4);align-items:baseline}
+.brief-lines dt{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1.5;
+  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-muted);white-space:nowrap;
+}
+.brief-lines dd{font-size:var(--size-sm);line-height:1.55;color:var(--text-body);max-width:var(--measure)}
+@media(max-width:560px){
+  .brief-lines{grid-template-columns:minmax(0,1fr);gap:var(--space-1)}
+  .brief-lines dd{margin-bottom:var(--space-3)}
+}
 .facts{border-top:var(--border-w) solid var(--border-strong);padding-top:var(--space-3)}
 .fact{padding:var(--space-3) 0;border-bottom:var(--border-w) dashed var(--border-hairline)}
 .fact:last-child{border-bottom:none;padding-bottom:0}
@@ -275,6 +326,10 @@ a{color:inherit}
   font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
   text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-accent);
 }
+/* The prose briefing only ever needed a toggle where it was clamped, which is
+   the narrow layout. The item briefing has two real depths — the consequence
+   alone, or the whole item — and that choice is worth offering at any width. */
+#summary-toggle.brief-depth{display:inline-block}
 
 /* ─── Cards ────────────────────────────────────────────────────────── */
 .grid,.loading-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--space-5)}
@@ -311,12 +366,68 @@ a{color:inherit}
 .card-title{
   font-family:var(--font-display);font-weight:700;font-size:var(--size-md);line-height:1.25;
   letter-spacing:var(--track-display);color:var(--text-heading);
-  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
 }
 .card-desc{
   font-size:var(--size-sm);line-height:1.5;color:var(--text-muted);max-width:var(--measure);
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
 }
+/* The headline's ::after covers the card, which is what keeps the whole card
+   one click target now that the card is an <article> carrying links of its
+   own. The clamp is on the span inside the anchor and not on the anchor or
+   the heading: overflow:hidden on either of those would clip the overlay back
+   to the size of the headline. */
+.card-link{text-decoration:none;color:inherit}
+.card-link::after{content:'';position:absolute;inset:0;z-index:1}
+.card-link .clamp{
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+}
+.card.featured .card-link .clamp{-webkit-line-clamp:4}
+.card-label{display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap}
+/* Corroboration, in the gold the rest of the page reserves for signal: this
+   is the single most useful thing on the card. Its absence is stated too —
+   a single-source report is a weaker claim and should not look identical. */
+.corroborated{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
+  text-transform:uppercase;letter-spacing:var(--track-label);
+  color:var(--gold-ink);background:var(--gold-wash);
+  padding:var(--space-2) var(--space-3);border-radius:var(--radius);
+}
+:root[data-theme="night"] .corroborated{color:var(--ink-0);background:var(--gold-1)}
+.single-source{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
+  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-muted);
+}
+/* Never unlabelled: this sentence is the model's, not the publisher's, and a
+   card that blurred the two would be the one dishonest thing on the page. */
+.card-why{
+  font-size:var(--size-sm);line-height:1.55;color:var(--text-body);
+  border-left:var(--border-w-heavy) solid var(--gold-1);padding-left:var(--space-4);
+}
+.why-label{
+  display:block;font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);
+  text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-muted);
+  margin-bottom:var(--space-1);
+}
+/* The other newsrooms, linked. z-index above the headline's overlay, or they
+   would be unclickable — which is the failure mode the overlay pattern is
+   famous for. */
+.card-sources{display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap;
+  padding-top:var(--space-3);border-top:var(--border-w) dashed var(--border-hairline)}
+.card-sources .label{color:var(--text-muted)}
+.source-link{
+  position:relative;z-index:2;font-size:var(--size-xs);color:var(--text-accent);
+  text-decoration:underline;text-underline-offset:2px;
+}
+.source-link:hover{background:var(--selection-bg)}
+/* Below the lead: heavier than the tail of the feed, lighter than the lead.
+   Three weights is a front page; one weight is a list. Weight is carried by
+   type and edge rather than by column span — a span that does not divide the
+   auto-fill track count leaves holes in the grid at exactly the widths it is
+   supposed to look best at. */
+.card.secondary{box-shadow:var(--edge-2);border-color:var(--border-strong)}
+.card.secondary .card-title{font-size:var(--size-lg);line-height:1.15}
+.card.secondary .card-link .clamp{-webkit-line-clamp:4}
+.card.secondary .card-desc{-webkit-line-clamp:3}
 /* Provenance row: source left, freshness right, on a dashed hairline. */
 .card-meta{
   margin-top:auto;padding-top:var(--space-3);
@@ -331,7 +442,7 @@ a{color:inherit}
 .card.featured .thumb{width:46%;aspect-ratio:auto;min-height:260px;border-bottom:none;
   border-right:var(--border-w) solid var(--border-strong)}
 .card.featured .card-body{padding:var(--space-6);justify-content:center;gap:var(--space-4)}
-.card.featured .card-title{font-size:var(--size-2xl);line-height:1.08;-webkit-line-clamp:4}
+.card.featured .card-title{font-size:var(--size-2xl);line-height:1.08}
 .card.featured .card-desc{font-size:var(--size-md);-webkit-line-clamp:3}
 .lead-badge{
   align-self:flex-start;
@@ -446,7 +557,11 @@ footer{
   .grid,.loading-grid{display:block}
   .thumb,.thumb.placeholder,.skeleton-thumb{display:none}
 
-  .card,.card.featured{
+  /* .card.secondary is named as well as .card: a one-class selector loses to
+     a two-class one wherever they disagree, so the bare .card reset would
+     leave the second-tier cards carrying their edge shadow into a layout that
+     has given up boxes entirely. */
+  .card,.card.featured,.card.secondary{
     display:grid;grid-template-columns:auto 1fr;column-gap:var(--space-4);
     height:auto;background:none;border:0;border-radius:0;box-shadow:none;
     border-bottom:var(--border-w) dashed var(--border-hairline);
@@ -463,7 +578,10 @@ footer{
   }
   .card-body{padding:var(--space-5) 0;gap:var(--space-2)}
   .card-title,.card.featured .card-title{
-    font-size:var(--size-md);line-height:var(--leading-snug,1.25);-webkit-line-clamp:3;
+    font-size:var(--size-md);line-height:var(--leading-snug,1.25);
+  }
+  .card-link .clamp,.card.featured .card-link .clamp,.card.secondary .card-link .clamp{
+    -webkit-line-clamp:3;
   }
   .card-desc,.card.featured .card-desc{display:none}   /* bulletin: headline, source, age */
   .card-meta{padding-top:var(--space-2);border-top:0}

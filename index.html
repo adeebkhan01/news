@@ -32,7 +32,7 @@
     document.documentElement.setAttribute('data-theme', theme);
   })();
 </script>
-<link rel="stylesheet" href="app.css?v=e4d9024a988b" />
+<link rel="stylesheet" href="app.css?v=7673e6f46c15" />
 </head>
 <body>
 <a class="skip-link" href="#feed-container" data-i18n="skipToHeadlines">Skip to headlines</a>
@@ -85,7 +85,10 @@
   <div class="main-col">
     <section id="page-summary" hidden class="panel" data-i18n-label="briefing" aria-label="Briefing">
       <div class="brief-main">
-        <div class="panel-head"><span class="label" data-i18n="briefing">Briefing</span></div>
+        <div class="panel-head">
+          <span class="label" data-i18n="briefing">Briefing</span>
+          <span class="label brief-byline" id="brief-byline" hidden></span>
+        </div>
         <div id="page-summary-text"></div>
         <button id="summary-toggle" aria-expanded="false" data-i18n="readMore">Read more</button>
       </div>
@@ -94,6 +97,10 @@
 
     <div class="section-head">
       <h2 data-i18n="headlines">Headlines</h2>
+      <div class="order-switch" id="order-switch" role="group" data-i18n-label="order" aria-label="Order">
+        <button class="order-btn" data-order="top" aria-pressed="true" data-i18n="orderTop">Top stories</button>
+        <button class="order-btn" data-order="latest" aria-pressed="false" data-i18n="orderLatest">Latest</button>
+      </div>
       <span class="status-line">
         <span class="status-strip" id="status-strip">&#9679; Live</span>
         <span id="status-text">Loading</span>
@@ -123,6 +130,6 @@
   </div>
 </footer>
 
-<script src="app.js?v=7877cce6a479" defer></script>
+<script src="app.js?v=587fae2d57d3" defer></script>
 </body>
 </html>

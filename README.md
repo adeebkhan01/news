@@ -4,6 +4,11 @@ A static news reader for Bangladesh, Australia and global headlines. A
 scheduled GitHub Action pulls RSS feeds into JSON files; the page reads them.
 No build step, no server, no dependencies.
 
+It is not an RSS mirror. The pipeline groups the articles into *stories* —
+one event, however many publishers covered it — ranks those stories by how
+much they matter rather than how recently they arrived, and writes a briefing
+over the top few: what happened, why it matters, what to watch.
+
 ## How it works
 
 ```
@@ -14,7 +19,11 @@ No build step, no server, no dependencies.
                 ├── drop articles older than 30 days, dedupe by link
                 ├── backfill missing images from each article's og:image
                 ├── detect each article's language, translate it the other way (Claude)
-                ├── write a short briefing, and translate it for Bangladesh (Claude)
+                ├── group articles into stories (lib/cluster.js)
+                ├── rank the stories and classify their topics (lib/rank.js)
+                ├── write the briefing over the top stories, and a
+                │   "why this matters" line for the top of the feed (Claude)
+                ├── translate both into Bangla (Claude)
                 ├── validate everything the model returned
                 └── write data-{bd,au,global}.json
         └── node --test tests/*.test.js   ── the gate: red here, nothing is committed
@@ -33,6 +42,8 @@ is not published at all — the data already on `main` stays up instead.
 | `index.html` | Markup only — no inline script, no inline styles, no handlers |
 | `app.css` / `app.js` | The front end. Separate files so the CSP can forbid inline code |
 | `fetch.js` | Feed fetcher, parser and Claude integration |
+| `lib/cluster.js` | Grouping articles into stories — offline, no model call |
+| `lib/rank.js` | Story ranking and topic classification |
 | `lib/security.js` | Egress policy and input validation — what may be fetched, what may be published |
 | `tests/*.test.js` | `node --test tests/*.test.js`. No network, no dependencies |
 | `tools/check-feeds.js` | Feed health check (see below) |
@@ -110,6 +121,73 @@ accident.
 A feed that fails is not fatal: that source is skipped for the run, previously
 collected articles are retained, and the run log ends with a list of what
 failed.
+
+## Stories, ranking and the briefing
+
+Three stages sit between the feeds and the page, and they are what make this
+a briefing rather than a list.
+
+**Grouping (`lib/cluster.js`).** Headlines become IDF-weighted token vectors
+and are compared by cosine similarity; anything above the threshold, published
+within four days, and sharing at least two tokens rare enough to mean
+something joins the same story. No model call, no embedding service, nothing
+that can fail halfway through a run or cost money per article.
+
+It is tuned to **under-merge**. A story split in two reads as two stories,
+which is what the page did before any of this existed. A wrong merge puts one
+publisher's headline over another publisher's link, which is a
+misattribution — so the threshold was set by reading the merges it produces
+over the three real data files, not derived: at 0.42 it found 15 multi-source
+stories in a month of global news; at 0.24 it began joining an analysis piece
+to the event it analysed. At 0.30 every merge across all three regions was the
+same event.
+
+Marks matter more than they look. Bengali vowel signs are combining marks
+rather than letters, so a token pattern of `\p{L}\p{N}` alone splits বাংলাদেশ
+into five one-character fragments and a Bangla headline tokenises to nothing.
+With `\p{M}` in the class, a Bangla report and an English one about the same
+event cluster together — which they now do, via the English translation the
+pipeline already bought.
+
+**Ranking (`lib/rank.js`).** Four multiplicative factors: corroboration (how
+many independent newsrooms carried it, log-scaled), recency (half-life 18
+hours), topic weight, and burst (how concentrated the coverage is in time).
+Multiplicative rather than additive, so a factor at its floor suppresses a
+story instead of being outvoted — a week-old cricket round-up covered by four
+outlets should not out-rank this morning's rate decision on volume alone.
+Every factor is returned alongside the score, because a rank nobody can
+explain is a rank nobody can debug.
+
+There is deliberately **no per-publisher quality score**. There is no
+defensible basis for asserting that one masthead is worth 1.3 of another, and
+a number invented to look rigorous is worse than no number. What the pipeline
+can honestly observe is how many independent newsrooms judged the event worth
+covering, and that factor does most of the work.
+
+`TOPIC_WEIGHT` is an editorial position, not a fact: this is a current-affairs
+briefing, so a central-bank decision outranks a cricket result. Someone
+building a sports product would invert the table, and should.
+
+**The briefing.** The model is handed ranked, deduplicated stories with each
+publisher's wording, and asked for one object per story: a headline, what
+happened, why it matters, what to watch. That is the whole reason it can be
+written at all — asked to summarise forty raw headlines, it had no way to know
+which five mattered. `security.validateBriefing` enforces the promise: three
+to seven items, every field within length, no markup, `watch` the only field a
+story is allowed not to have. Anything else is a failed call and the previous
+briefing stays up.
+
+`summary` is still written, derived from the briefing's `what` lines rather
+than bought separately, so a browser holding a cached `app.js` from before the
+briefing existed still renders the day's account.
+
+**On the page.** The feed shows one card per story, defaulting to importance
+order with a Latest toggle beside the heading. A card names how many sources
+carried the story and links to each of them; a story only one newsroom carried
+says so, because that is a weaker claim and should not look identical. The
+"why this matters" line is labelled and set apart from the publisher's own
+text — an aggregator that blurred the model's words into the publisher's would
+be the one dishonest thing on the page.
 
 ## Security
 
@@ -201,12 +279,24 @@ committed. In **Settings → Branches** and **Settings → Code security**:
   (exhausted credit, rate limits, timeouts) leaves the article queued. Only an
   unusable model response marks it permanently untranslatable, and up to
   `RETRY_PER_RUN` of those are retried each run.
-- **A failed briefing keeps the previous one** rather than blanking it.
+- **A failed briefing keeps the previous one** rather than blanking it, and a
+  briefing is only rewritten when the run brought in new articles.
 - **The briefing is translated, not written twice.** For a region with
   `translate: true` the English briefing is generated first and then
-  translated into `summaryBn`, so both languages describe the same headlines.
-  A new briefing clears the old translation; the translation is retried each
-  run until it lands, and the page falls back to English until it does.
+  translated item by item into `briefingBn`, so both languages describe the
+  same stories in the same order. A new briefing clears the old translation;
+  the translation is retried each run until it lands, and the page falls back
+  to English until it does.
+- **A "why this matters" line is bought once per story.** It is cached against
+  the story id and reused until the story gains a member — at which point the
+  line was written against a smaller set of headlines and is rewritten. Story
+  ids are derived from the *earliest* member's link, which is the one part of
+  a growing story that does not change.
+- **Not every story gets a record in the data file.** Only those with more
+  than one member (so the page can collapse them into one card) and the top
+  few by rank (which carry the analytical line). Writing a record for all
+  ~1,300 clusters would spend a third of the file restating what the articles
+  already carry.
 - **Bangla is on for every region.** `translate: true` is still set per region
   in `fetch.js`, and `hasLang` in `REGION_CONFIG` (`app.js`) has to match —
   it decides whether the page offers the toggle.
