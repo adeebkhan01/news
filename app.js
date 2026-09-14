@@ -84,7 +84,6 @@ const STRINGS = {
     briefShowFull:   'Expand',
     briefShowShort:  'Compact',
     showLess:        'Show less',
-    order:           'Order',
     orderTop:        'Top stories',
     orderLatest:     'Latest',
     coveredBy:       'Covered by {n} sources',
@@ -164,7 +163,6 @@ const STRINGS = {
     briefShowFull:   'বিস্তারিত',
     briefShowShort:  'সংক্ষিপ্ত',
     showLess:        'কম দেখান',
-    order:           'ক্রম',
     orderTop:        'প্রধান খবর',
     orderLatest:     'সর্বশেষ',
     coveredBy:       '{n}টি উৎসে প্রকাশিত',
@@ -295,16 +293,7 @@ function shownLang(article) {
 function setFeedOrder(order) {
   feedOrder = order === 'latest' ? 'latest' : 'top';
   localStorage.setItem('news-order', feedOrder);
-  applyOrderSwitch();
   renderArticles();
-}
-
-function applyOrderSwitch() {
-  document.querySelectorAll('#order-switch .order-btn').forEach(btn => {
-    const on = btn.dataset.order === feedOrder;
-    btn.classList.toggle('active', on);
-    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-  });
 }
 
 function applyThemeLabel() {
@@ -458,7 +447,6 @@ function applyLanguage() {
   });
 
   applyThemeLabel();
-  applyOrderSwitch();
   applyArchiveChrome();
   applyRegionChrome();
   renderStatus();
@@ -1632,10 +1620,6 @@ function wireControls() {
   document.getElementById('search-clear').addEventListener('click', clearSearch);
   document.getElementById('to-top').addEventListener('click', () => window.scrollTo({ top: 0 }));
   document.getElementById('search-input').addEventListener('input', e => onSearch(e.target.value));
-  document.getElementById('order-switch').addEventListener('click', e => {
-    const btn = e.target.closest('.order-btn');
-    if (btn) setFeedOrder(btn.dataset.order);
-  });
   document.getElementById('archive-nav').addEventListener('click', e => {
     const btn = e.target.closest('button');
     if (!btn || btn.disabled) return;

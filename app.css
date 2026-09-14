@@ -247,23 +247,6 @@ a{color:inherit}
   font-family:var(--font-display);font-weight:700;font-size:var(--size-xl);line-height:1.25;
   letter-spacing:var(--track-display);color:var(--text-heading);
 }
-/* Two questions the feed can answer — what matters, and what is newest. The
-   switch sits beside the heading rather than in the toolbar because it
-   describes this list and nothing else. */
-/* Top Stories is the editorial default and reads like one — plain text at
-   heading weight, no box around it. Latest is the deviation, and only it
-   ever gets a visible control: a quiet underline that fills in solid once
-   chosen. Two equal pill buttons used to ask the reader to make a choice
-   neither this page nor its ranking pipeline is actually neutral about. */
-.order-switch{display:flex;align-items:baseline;gap:var(--space-3);margin-right:auto}
-.order-btn{
-  font-family:var(--font-display);font-weight:700;font-size:var(--size-sm);line-height:1;
-  letter-spacing:var(--track-display);cursor:pointer;
-  background:none;color:var(--text-muted);border:none;padding:0;
-  border-bottom:var(--border-w-heavy) solid transparent;
-}
-.order-btn:hover{color:var(--text-body)}
-.order-btn.active{color:var(--text-heading);border-bottom-color:var(--gold-1)}
 .status-line{
   display:flex;align-items:center;gap:var(--space-3);flex-wrap:wrap;
   font-family:var(--font-text);font-size:var(--size-xs);color:var(--text-muted);
@@ -362,10 +345,9 @@ a{color:inherit}
   font-variant-numeric:tabular-nums;white-space:nowrap;
 }
 .archive-nav #archive-date:hover:not([disabled]){text-decoration:underline;text-underline-offset:2px}
-/* A day that is over has no live ordering and no live source breakdown, so
-   the controls that describe those are not merely disabled — they are gone. */
-body.archive-mode .filter-bar,
-body.archive-mode #order-switch{display:none}
+/* A day that is over has no live source breakdown, so the control that
+   describes it is not merely disabled — it is gone. */
+body.archive-mode .filter-bar{display:none}
 /* "● LIVE" beside a day that ended is the page contradicting itself. The
    status strip reports the live fetch, and in the archive there isn't one. */
 body.archive-mode .status-strip,
@@ -439,7 +421,7 @@ body.archive-mode #status-text{display:none}
   font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1.5;
   text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-muted);white-space:nowrap;
 }
-.brief-lines dd{font-size:var(--size-sm);line-height:1.55;color:var(--text-body);max-width:var(--measure)}
+.brief-lines dd{font-size:var(--size-sm);line-height:1.55;color:var(--text-body)}
 @media(max-width:560px){
   .brief-lines{grid-template-columns:minmax(0,1fr);gap:var(--space-1)}
   .brief-lines dd{margin-bottom:var(--space-3)}
