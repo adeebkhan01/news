@@ -13,7 +13,7 @@ No build step, no server, no dependencies.
                 ├── fetch + parse each RSS/Atom feed
                 ├── drop articles older than 30 days, dedupe by link
                 ├── backfill missing images from each article's og:image
-                ├── translate new Bangladesh articles to Bangla (Claude)
+                ├── detect each article's language, translate it the other way (Claude)
                 ├── write a short briefing, and translate it for Bangladesh (Claude)
                 ├── validate everything the model returned
                 └── write data-{bd,au,global}.json
@@ -187,6 +187,25 @@ committed. In **Settings → Branches** and **Settings → Code security**:
 - **Bangla is on for every region.** `translate: true` is still set per region
   in `fetch.js`, and `hasLang` in `REGION_CONFIG` (`app.js`) has to match —
   it decides whether the page offers the toggle.
+- **Translation runs in whichever direction the article needs.** Most feeds
+  publish English, so they get `titleBn`/`descBn`. Rising BD publishes Bangla,
+  so its articles get `titleEn`/`descEn` instead. Each article carries its own
+  text in `title`/`desc` and exactly one translation alongside it — never both,
+  so there is no question of which copy is authoritative. `lib/lang.js` decides
+  the direction from the text itself, falling back to the source's declared
+  `lang` only when a title is too short to judge.
+- **Detection is a ratio, not a character test.** The taka sign ৳ sits in the
+  Bengali Unicode block, so "raise ৳400 crore" contains Bengali while being an
+  English headline. Asking what *share* of a headline is Bengali gets that
+  right; asking whether it contains any Bengali does not, and the wrong answer
+  means paying to translate English into English.
+- **The page's own words are not translated at run time.** They are fixed, so
+  they live in the `STRINGS` dictionary in `app.js` and cost nothing. Pressing
+  the toggle switches every label, notice, count, relative time, date format,
+  numeral system (Bengali digits) and source name, not just the headlines. A
+  test asserts the two dictionaries have identical keys and identical
+  interpolation slots, because a missing key renders English inside a Bangla
+  page with no error anywhere.
 - **A newly translated region backfills over several runs.** Switching
   `translate` on queues the region's entire stored month at once, so
   `BACKFILL_PER_RUN` caps how much of that backlog one run takes and drains it
