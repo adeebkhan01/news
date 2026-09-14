@@ -1,0 +1,21 @@
+version: 2
+
+updates:
+  # The only dependencies this repository has are the actions its workflows
+  # run, and those are pinned to commit SHAs — which is what makes this file
+  # necessary rather than optional. A pinned SHA never picks up a security fix
+  # on its own; Dependabot is what turns "pinned" into "pinned and current"
+  # instead of "pinned and rotting".
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: tuesday
+    commit-message:
+      prefix: 'ci'
+    labels:
+      - dependencies
+
+  # There is no package.json, no lockfile and no node_modules: the page and the
+  # fetcher are dependency-free on purpose. If that ever changes, add an npm
+  # entry here in the same commit that adds the manifest.

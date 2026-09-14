@@ -1,0 +1,33 @@
+name: Tests
+
+# The suite is the security boundary as much as the code is: it is what says
+# the CSP still matches the fetcher's rules, that no innerHTML has crept back
+# in, and that the allowlist still refuses what it is supposed to refuse.
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+# Read the code, touch nothing.
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Pinned to a commit, not a tag: a tag can be moved to point at new code,
+      # a commit SHA cannot. Dependabot raises a PR when there is a newer one.
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          persist-credentials: false   # nothing here pushes
+
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
+        with:
+          node-version: '22'
+
+      # No install step: the site and the fetcher have no dependencies, and the
+      # tests use node's own runner. Nothing third-party executes in this job.
+      - name: Run tests
+        run: node --test tests/*.test.js
