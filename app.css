@@ -329,7 +329,7 @@ a{color:inherit}
    day is not a briefing anyone can rely on. */
 .brief-why{
   font-size:var(--size-sm);line-height:1.45;color:var(--text-body);
-  max-width:var(--measure);margin-top:2px;
+  margin-top:2px;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
   animation:brief-expand var(--motion-base) var(--ease-smooth);
 }
@@ -443,7 +443,7 @@ body.archive-mode #status-text{display:none}
   .brief-lines{grid-template-columns:minmax(0,1fr);gap:var(--space-1)}
   .brief-lines dd{margin-bottom:var(--space-3)}
 }
-#page-summary-text{font-size:var(--size-md);line-height:1.5;max-width:var(--measure);color:var(--text-body)}
+#page-summary-text{font-size:var(--size-md);line-height:1.5;color:var(--text-body)}
 #summary-toggle{
   display:none;margin-top:var(--space-3);padding:0;background:none;border:none;cursor:pointer;
   font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);

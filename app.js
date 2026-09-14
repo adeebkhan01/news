@@ -79,7 +79,6 @@ const STRINGS = {
     filterBySource:  'Filter by source',
     allSources:      'All sources',
     briefing:        'Briefing',
-    briefingBy:      'Written by Claude',
     whatHappened:    'What happened',
     whyItMatters:    'Why this matters',
     whatToWatch:     'What to watch',
@@ -162,7 +161,6 @@ const STRINGS = {
     filterBySource:  'উৎস অনুযায়ী ছাঁকুন',
     allSources:      'সব উৎস',
     briefing:        'সারসংক্ষেপ',
-    briefingBy:      'ক্লদের লেখা',
     whatHappened:    'যা ঘটেছে',
     whyItMatters:    'কেন গুরুত্বপূর্ণ',
     whatToWatch:     'যা লক্ষ্য রাখবেন',
@@ -1246,8 +1244,8 @@ function renderSummary() {
     toggle.setAttribute('aria-expanded', briefFull ? 'true' : 'false');
     toggle.classList.add('brief-depth');
     toggle.hidden = false;
-    byline.textContent = viewDate ? t('archiveViewing', { date: formatDay(viewDate) }) : t('briefingBy');
-    byline.hidden = false;
+    byline.textContent = viewDate ? t('archiveViewing', { date: formatDay(viewDate) }) : '';
+    byline.hidden = !viewDate;
     box.hidden = false;
     renderChangeNote();
     return;
