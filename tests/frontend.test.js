@@ -164,3 +164,19 @@ test('app.js sets link and image URLs only through safeURL', () => {
     );
   }
 });
+
+test('the featured card is always the first card in the DOM, never a later one', () => {
+  // Regression: featuredIndex used to be articles.findIndex(a => a.img),
+  // picking whichever story had a picture — which could be the *second*
+  // story if the top-ranked one had none. The featured card carries
+  // grid-column:1/-1, so CSS Grid pushed it to a new row rather than share
+  // row one with the card ahead of it, leaving row one a single narrow card
+  // followed by empty columns and a wide gap before the sidebar. The fix is
+  // that the hero slot is always index 0 (or none at all) — an image-less
+  // top story gets the same placeholder every other image-less card gets,
+  // rather than being skipped over.
+  assert.ok(!/articles\.findIndex\(a\s*=>\s*a\.img\)/.test(appJs),
+    'featuredIndex is picking a card by image again — this reintroduces the grid gap bug');
+  assert.match(appJs, /featuredIndex\s*=\s*\([^)]*\)\s*\?\s*0\s*:\s*-1/,
+    'featuredIndex should resolve to index 0 or -1, never a searched-for index');
+});

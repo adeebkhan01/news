@@ -975,17 +975,26 @@ function renderArticles() {
   // repaint (theme switch, filtering, scrolling) crawl.
   visibleArticles = articles;
   feedIsCapped = capped;
-  // The lead is the top-ranked story that has a picture to lead with, and only
-  // in the ordering where "top" means anything. Under "Latest" the first card
-  // is merely the newest, which is not a lead and is not badged as one.
+  // The lead is the top-ranked story, full stop — index 0, not "whichever
+  // story happens to have a picture". Searching forward for the first
+  // image-bearing story used to pick the *second* story when the top one
+  // had none: the featured card carries grid-column:1/-1, so CSS Grid
+  // pushed it to a new row rather than letting it share row one with the
+  // card ahead of it, leaving row one a single narrow card followed by
+  // empty columns and a wide gap before the sidebar. A top story with no
+  // image gets the same placeholder every other image-less card gets — it
+  // is a first-class fallback everywhere else on this page, and the hero
+  // slot is no exception, let alone one that breaks the grid.
   //
-  // And not at all when a briefing is up: the briefing has already taken the
-  // day's top stories, so the first card in the feed is the sixth most
-  // important thing that happened. Giving that the largest box on the page,
-  // under a badge reading "Lead story", is the page contradicting itself.
+  // Only in the ordering where "top" means anything: under "Latest" the
+  // first card is merely the newest, which is not a lead and is not badged
+  // as one. And not at all when a briefing is up: the briefing has already
+  // taken the day's top stories, so the first card in the feed is the sixth
+  // most important thing that happened. Giving that the largest box on the
+  // page, under a badge reading "Lead story", is the page contradicting
+  // itself.
   const briefingLeads = !viewDate && briefingEn.length > 0;
-  featuredIndex = (collapsing && feedOrder === 'top' && !briefingLeads)
-    ? articles.findIndex(a => a.img) : -1;
+  featuredIndex = (collapsing && feedOrder === 'top' && !briefingLeads && articles.length) ? 0 : -1;
   renderedCount = 0;
 
   const grid = el('div', 'grid');
