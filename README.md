@@ -1,27 +1,40 @@
 # The Daily Digest
 
 A static news reader for Bangladesh, Australia and global headlines. A
-scheduled GitHub Action pulls RSS feeds into JSON files; the page is a single
-`index.html` that reads them. No build step, no server, no dependencies.
+scheduled GitHub Action pulls RSS feeds into JSON files; the page reads them.
+No build step, no server, no dependencies.
 
 ## How it works
 
 ```
 .github/workflows/fetch-feeds.yml   twice a day (00:20 and 12:20 UTC)
         └── node fetch.js --region {bd,au,global}
+                ├── check every URL against the egress policy (lib/security.js)
                 ├── fetch + parse each RSS/Atom feed
                 ├── drop articles older than 30 days, dedupe by link
                 ├── backfill missing images from each article's og:image
                 ├── translate new Bangladesh articles to Bangla (Claude)
                 ├── write a short briefing, and translate it for Bangladesh (Claude)
-                └── write data-{bd,au,global}.json  ── committed back to main
+                ├── validate everything the model returned
+                └── write data-{bd,au,global}.json
+        └── node --test tests/*.test.js   ── the gate: red here, nothing is committed
+                └── data files committed back to main
 index.html  fetches the JSON for the selected region and renders it
 ```
 
+Every stage refuses rather than repairs. A URL that fails the policy is not
+fetched, an article without a usable link is not stored, an image from an
+unknown host loses its picture, a model answer that is not the declared shape
+is discarded and the previous one kept, and a run whose output fails the tests
+is not published at all — the data already on `main` stays up instead.
+
 | File | Purpose |
 |---|---|
-| `index.html` | The whole front end — markup, styles and script in one file |
+| `index.html` | Markup only — no inline script, no inline styles, no handlers |
+| `app.css` / `app.js` | The front end. Separate files so the CSP can forbid inline code |
 | `fetch.js` | Feed fetcher, parser and Claude integration |
+| `lib/security.js` | Egress policy and input validation — what may be fetched, what may be published |
+| `tests/*.test.js` | `node --test tests/*.test.js`. No network, no dependencies |
 | `tools/check-feeds.js` | Feed health check (see below) |
 | `data-*.json` | Generated. Committed by the workflow; don't hand-edit |
 
@@ -33,7 +46,9 @@ python3 -m http.server 8000      # then open http://localhost:8000
 ```
 
 The page fetches its data over HTTP, so open it through a server rather than
-as a `file://` URL.
+as a `file://` URL. Run `node --test tests/*.test.js` before pushing; CI runs
+the same command, and the publishing workflow runs it again between fetching
+and committing.
 
 `ANTHROPIC_API_KEY` enables the Bangla translations and the region briefing.
 Without it the fetch still runs and the page still works — those two features
@@ -75,20 +90,79 @@ failed.
 
 ## Security
 
-The page renders text from third-party RSS feeds, so everything is escaped
-(`escapeHTML`) and every URL is restricted to `http(s)` (`safeURL`) before it
-reaches the DOM. A `Content-Security-Policy` meta tag backs that up: an
-injected tag still cannot load a remote script, reach the network, submit a
-form or rewrite the base URL.
+Everything this project handles comes from somewhere it does not control: the
+bytes a publisher's feed returns, the URLs inside those bytes, and whatever the
+model writes after reading forty headlines other people wrote. The rules for
+all three live in `lib/security.js`, in one place, so they can be tested on
+their own and cannot drift apart between the fetcher and the tools.
 
-The CSP keeps `script-src 'unsafe-inline'` because the page's own script is
-inline, so it does **not** stop inline script injection — the escaping is what
-does that. Moving the script to its own file would let the policy drop
-`unsafe-inline` entirely; it costs the single-file property. `frame-ancestors`
-is omitted deliberately: it is ignored in a meta CSP and needs a real header.
+```
+RSS feeds
+  └── exact URL allowlist · https only · no credentials, ports or address literals
+       └── fetch: redirects off by default, re-checked when on, timeout, size cap
+            └── article links validated · images matched against known CDNs
+                 └── model output: declared shape, length, no markup, no credentials
+                      └── tests/*.test.js ── PASS publishes, FAIL leaves main alone
+                           └── GitHub Pages
+```
+
+**What may be fetched.** The allowlist is derived from the feed list itself, so
+widening what this script talks to means adding a source — a reviewable diff,
+not a config flag. Feeds match by exact URL rather than by domain. Article
+pages are fetched only on a domain the source list already covers; the BBC is
+the one publisher whose articles do not live on its feed's domain, and its
+entry says so via `linkDomains` rather than the rule being loosened for
+everyone. Registrable domains are computed against a real suffix list, because
+"last two labels" reads `unb.com.bd` as `com.bd` and would quietly admit every
+commercial host in Bangladesh.
+
+**What may reach the runner.** https only. No credentials in the URL, no
+non-default port, no address literals, no private, loopback, link-local or
+`.internal` names — which is what keeps a redirect away from cloud instance
+metadata. Checked on the first URL and again on every hop, because a 302 that
+is not re-checked is the check not happening.
+
+**What reaches the page.** Feed text is never turned into markup. Cards, the
+Latest list, the chips, the facts and the error notices are built as DOM nodes
+and set with `textContent`; search highlighting appends text nodes and its own
+element rather than wrapping a tag around escaped text. There is no
+`escapeHTML` any more because there is nothing to escape for. The CSP has no
+`'unsafe-inline'` on scripts or styles: `script-src` is `'self'` plus a SHA-256
+hash for the five-line theme bootstrap that has to run before first paint.
+`img-src` names the publishers' CDNs one by one, and a test fails if that list
+and the fetcher's own image rules drift apart.
+
+`frame-ancestors` is omitted deliberately — it is ignored in a meta CSP. So are
+`Strict-Transport-Security`, `X-Content-Type-Options` and `Referrer-Policy`:
+they are response headers, and GitHub Pages does not let you set any. Getting
+them means putting a CDN in front (Cloudflare, Netlify) or hosting elsewhere.
+HSTS at least is partly moot, since Pages already serves HTTPS and redirects.
 
 Fonts come from Google, so visitors' IPs reach Google; self-hosting the two
 woff2 files removes that, and `font-src` already allows `'self'`.
+
+**Supply chain.** Every action is pinned to a commit SHA — a tag is a mutable
+pointer in someone else's repository — with the version in a trailing comment,
+and Dependabot raises a PR weekly so pinned does not become stale. Workflow
+permissions stop at what each job does: only `fetch-feeds` may write, because
+it is the only one that commits. `ANTHROPIC_API_KEY` is scoped to the single
+step that calls the API, and the validator refuses any model output containing
+a key, so a leak cannot reach a committed data file.
+
+### Still to do, by hand
+
+Three things are repository settings rather than files, so they cannot be
+committed. In **Settings → Branches** and **Settings → Code security**:
+
+- **Protect `main`** — require the Tests and CodeQL checks to pass, and
+  disallow force pushes. Note that `fetch-feeds` pushes to `main` twice a day,
+  so either allow the `github-actions` bot to bypass the rule or have the
+  workflow open a PR instead.
+- **Enable secret scanning** and **push protection** — push protection is the
+  half that matters, since it refuses the commit rather than reporting it
+  afterwards.
+- **Confirm CodeQL** is picking up `codeql.yml` rather than default setup;
+  having both configured makes the workflow silently inert.
 
 ## Behaviour worth knowing
 
@@ -111,7 +185,7 @@ woff2 files removes that, and `font-src` already allows `'self'`.
   A new briefing clears the old translation; the translation is retried each
   run until it lands, and the page falls back to English until it does.
 - **Bangla is on for every region.** `translate: true` is still set per region
-  in `fetch.js`, and `hasLang` in `REGION_CONFIG` (`index.html`) has to match —
+  in `fetch.js`, and `hasLang` in `REGION_CONFIG` (`app.js`) has to match —
   it decides whether the page offers the toggle.
 - **A newly translated region backfills over several runs.** Switching
   `translate` on queues the region's entire stored month at once, so
@@ -137,8 +211,8 @@ woff2 files removes that, and `font-src` already allows `'self'`.
 
 ## Front end
 
-`index.html` is set in the **Aparajita** design system (brand guidelines
-v1.0). Tokens live at the top of the stylesheet: base scales (`--paper-*`,
+The page is set in the **Aparajita** design system (brand guidelines
+v1.0). Tokens live at the top of `app.css`: base scales (`--paper-*`,
 `--ink-*`, `--gold-*`) and the semantic aliases (`--bg-page`, `--text-body`,
 `--border-strong`) that every rule references, so the night theme re-points
 the aliases without touching a component. Token values are taken from the
