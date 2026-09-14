@@ -135,10 +135,6 @@ const STRINGS = {
     errorTitle:      'No data file',
     errorBody:       '{file} did not load: {message}.',
     errorHint:       'Run the Fetch RSS Feeds workflow in Actions, then reload.',
-    factRegion:      'Region',
-    factArticles:    'Articles',
-    factSources:     'Sources',
-    factFetched:     'Fetched',
     fetchedAt:       'Fetched {time}',
     justNow:         'just now',
     minutesAgo:      '{n}m ago',
@@ -222,10 +218,6 @@ const STRINGS = {
     errorTitle:      'কোনো ডেটা ফাইল নেই',
     errorBody:       '{file} লোড হয়নি: {message}।',
     errorHint:       'Actions-এ Fetch RSS Feeds ওয়ার্কফ্লো চালান, তারপর পৃষ্ঠাটি রিলোড করুন।',
-    factRegion:      'অঞ্চল',
-    factArticles:    'নিবন্ধ',
-    factSources:     'উৎস',
-    factFetched:     'সংগৃহীত',
     fetchedAt:       'সংগৃহীত {time}',
     justNow:         'এইমাত্র',
     minutesAgo:      '{n} মিনিট আগে',
@@ -1133,7 +1125,6 @@ function showBriefingSkeleton() {
   document.getElementById('brief-byline').hidden = true;
   document.getElementById('brief-change').hidden = true;
   document.getElementById('archive-nav').hidden = true;
-  document.getElementById('brief-facts').replaceChildren();
   box.hidden = false;
 }
 
@@ -1241,7 +1232,6 @@ function renderSummary() {
     byline.hidden = false;
     document.getElementById('brief-change').hidden = true;
     box.hidden = false;
-    renderFacts();
     return;
   }
 
@@ -1260,7 +1250,6 @@ function renderSummary() {
     byline.hidden = false;
     box.hidden = false;
     renderChangeNote();
-    renderFacts();
     return;
   }
 
@@ -1296,26 +1285,6 @@ function renderChangeNote() {
   }
   note.replaceChildren(frag);
   note.hidden = false;
-}
-
-// Fills the space the 68ch measure leaves beside the prose, and puts the
-// provenance where the system wants it: every number named and dated.
-function renderFacts() {
-  // No Fetched row: the masthead carries the same timestamp a few centimetres
-  // above, and the footer carries it below. Three copies of one clock.
-  const rows = [
-    [t('factRegion'),   REGION_CONFIG[activeRegion].flag + ' ' + regionLabel(activeRegion)],
-    [t('factArticles'), num(allArticles.length)],
-    [t('factSources'),  num(allSources.length)]
-  ];
-  const facts = document.createDocumentFragment();
-  rows.forEach(([k, v]) => {
-    const row = el('div', 'fact');
-    row.appendChild(el('dt', null, k));
-    row.appendChild(el('dd', null, v));
-    facts.appendChild(row);
-  });
-  document.getElementById('brief-facts').replaceChildren(facts);
 }
 
 // The panel is hidden entirely whenever there is no briefing to show (see
