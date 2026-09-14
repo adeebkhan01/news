@@ -107,12 +107,12 @@ test('every source has a Bangla name for the page to show', () => {
 test('an aggregator is fetchable but trusted for nothing else', () => {
   const sec = require('../lib/security.js');
   const { POLICY } = require('../fetch.js');
-  const amardesh = REGIONS.bd.sources.find(s => s.id === 'amardesh');
-  assert.ok(amardesh, 'Amar Desh is no longer configured');
-  assert.ok(amardesh.aggregator, 'Amar Desh is no longer marked as an aggregator');
+  const btv = REGIONS.bd.sources.find(s => s.id === 'btv');
+  assert.ok(btv, 'BTV is no longer configured');
+  assert.ok(btv.aggregator, 'BTV is no longer marked as an aggregator');
 
   // Its feed can be fetched, because it is on the list by exact URL.
-  assert.ok(sec.isAllowedFeedUrl(amardesh.url, POLICY));
+  assert.ok(sec.isAllowedFeedUrl(btv.url, POLICY));
 
   // But news.google.com's registrable domain is google.com. Without the
   // aggregator flag that would put every Google host in the link allowlist and
@@ -123,8 +123,18 @@ test('an aggregator is fetchable but trusted for nothing else', () => {
   assert.ok(!sec.isAllowedArticleUrl('https://news.google.com/rss/articles/CBMiX2h0', POLICY));
 
   // The publisher's own domain is trusted, because the source says so.
-  assert.ok(POLICY.linkDomains.has('dailyamardesh.com'));
-  assert.ok(POLICY.imageDomains.has('dailyamardesh.com'));
+  assert.ok(POLICY.linkDomains.has('btv.gov.bd'));
+  assert.ok(POLICY.imageDomains.has('btv.gov.bd'));
+
+  // Every aggregator declares where its articles actually live. Without that,
+  // a rescued feed would contribute links we can never fetch art for.
+  for (const region of Object.values(REGIONS)) {
+    for (const src of region.sources) {
+      if (!src.aggregator) continue;
+      assert.ok(Array.isArray(src.linkDomains) && src.linkDomains.length,
+        `${src.id} is an aggregator but names no publisher domain`);
+    }
+  }
 
   // A Google News redirect is still storable as an href — the card has to link
   // somewhere — it just is not a host we send requests to.
