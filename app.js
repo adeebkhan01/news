@@ -14,6 +14,7 @@ let storyById    = {};     // story id -> the record fetch.js published
 let storyByLead  = {};     // the link of a story's freshest member -> that story
 let articleByLink = {};    // link -> article, so a story can name its members
 let feedOrder    = localStorage.getItem('news-order') === 'latest' ? 'latest' : 'top';
+let dateScope    = localStorage.getItem('news-scope') === 'all' ? 'all' : 'today';
 let changedSince = null;   // the date the "new"/"developing" markers are measured against
 let droppedItems = [];     // stories that were on that day's briefing and are not on today's
 let archiveDates = [];     // dates the current region's database has a snapshot for, newest first
@@ -86,6 +87,9 @@ const STRINGS = {
     showLess:        'Show less',
     orderTop:        'Top stories',
     orderLatest:     'Latest',
+    dateScope:       'Date range',
+    scopeToday:      'Today',
+    scopeAll:        'All time',
     coveredBy:       'Covered by {n} sources',
     sourceCount:     '{n} sources',
     sourceCountParen:'({n} sources)',
@@ -128,6 +132,7 @@ const STRINGS = {
     emptyTitle:      'Nothing here yet',
     emptySearch:     'No headlines match \u201C{query}\u201D. Widen the term or clear the filter.',
     emptySource:     'This source has published nothing in the retained window. Pick another source or region.',
+    emptyToday:      'Nothing published today yet. Switch to All time to see the full retained window.',
     errorTitle:      'No data file',
     errorBody:       '{file} did not load: {message}.',
     errorHint:       'Run the Fetch RSS Feeds workflow in Actions, then reload.',
@@ -165,6 +170,9 @@ const STRINGS = {
     showLess:        'কম দেখান',
     orderTop:        'প্রধান খবর',
     orderLatest:     'সর্বশেষ',
+    dateScope:       'সময়সীমা',
+    scopeToday:      'আজ',
+    scopeAll:        'সর্বকাল',
     coveredBy:       '{n}টি উৎসে প্রকাশিত',
     sourceCount:     '{n}টি উৎস',
     sourceCountParen:'({n}টি উৎস)',
@@ -207,6 +215,7 @@ const STRINGS = {
     emptyTitle:      'এখানে এখনও কিছু নেই',
     emptySearch:     '\u201C{query}\u201D-এর সঙ্গে কোনো শিরোনাম মেলেনি। শব্দটি বড় করুন বা ছাঁকনি মুছুন।',
     emptySource:     'এই উৎস সংরক্ষিত সময়সীমার মধ্যে কিছু প্রকাশ করেনি। অন্য উৎস বা অঞ্চল বেছে নিন।',
+    emptyToday:      'আজ এখনও কিছু প্রকাশিত হয়নি। পুরো সংরক্ষিত সময়সীমা দেখতে সর্বকাল-এ যান।',
     errorTitle:      'কোনো ডেটা ফাইল নেই',
     errorBody:       '{file} লোড হয়নি: {message}।',
     errorHint:       'Actions-এ Fetch RSS Feeds ওয়ার্কফ্লো চালান, তারপর পৃষ্ঠাটি রিলোড করুন।',
@@ -294,6 +303,33 @@ function setFeedOrder(order) {
   feedOrder = order === 'latest' ? 'latest' : 'top';
   localStorage.setItem('news-order', feedOrder);
   renderArticles();
+}
+
+// Today vs the whole retention window. A "Daily Digest" whose front page
+// quietly draws from a month of stories is answering a question the reader
+// didn't ask — this is the explicit choice between the two.
+function setDateScope(scope) {
+  dateScope = scope === 'all' ? 'all' : 'today';
+  localStorage.setItem('news-scope', dateScope);
+  applyDateScope();
+  renderArticles();
+}
+
+function applyDateScope() {
+  document.querySelectorAll('#scope-switch .scope-btn').forEach(btn => {
+    const on = btn.dataset.scope === dateScope;
+    btn.classList.toggle('active', on);
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+}
+
+// Today's articles, by the same UTC calendar day daysForRegion uses to
+// decide what counts as "today" for the archive nav — one definition of
+// the boundary, not two that can quietly drift apart.
+function isFromToday(pubDate) {
+  const d = new Date(pubDate);
+  if (isNaN(d.getTime())) return false;
+  return d.toISOString().slice(0, 10) === new Date().toISOString().slice(0, 10);
 }
 
 function applyThemeLabel() {
@@ -447,6 +483,7 @@ function applyLanguage() {
   });
 
   applyThemeLabel();
+  applyDateScope();
   applyArchiveChrome();
   applyRegionChrome();
   renderStatus();
@@ -942,6 +979,8 @@ function renderArticles() {
     ? allArticles
     : allArticles.filter(a => a.sourceId === activeFilter);
 
+  if (dateScope === 'today') articles = articles.filter(a => isFromToday(a.pubDate));
+
   if (q) {
     // Across every language the article carries, so a Bangla query finds an
     // English article that has been translated, and the other way round.
@@ -976,8 +1015,10 @@ function renderArticles() {
     visibleArticles = [];
     renderedCount = 0;
     if (feedObserver) feedObserver.disconnect();
-    container.replaceChildren(notice('notice', t('emptyTitle'),
-      q ? t('emptySearch', { query: searchQuery }) : t('emptySource')));
+    const body = q ? t('emptySearch', { query: searchQuery })
+      : dateScope === 'today' ? t('emptyToday')
+      : t('emptySource');
+    container.replaceChildren(notice('notice', t('emptyTitle'), body));
     return;
   }
 
@@ -1620,6 +1661,10 @@ function wireControls() {
   document.getElementById('search-clear').addEventListener('click', clearSearch);
   document.getElementById('to-top').addEventListener('click', () => window.scrollTo({ top: 0 }));
   document.getElementById('search-input').addEventListener('input', e => onSearch(e.target.value));
+  document.getElementById('scope-switch').addEventListener('click', e => {
+    const btn = e.target.closest('.scope-btn');
+    if (btn) setDateScope(btn.dataset.scope);
+  });
   document.getElementById('archive-nav').addEventListener('click', e => {
     const btn = e.target.closest('button');
     if (!btn || btn.disabled) return;

@@ -250,6 +250,19 @@ a{color:inherit}
   font-family:var(--font-display);font-weight:700;font-size:var(--size-xl);line-height:1.25;
   letter-spacing:var(--track-display);color:var(--text-heading);
 }
+/* Today vs the whole retention window — the one question the feed itself
+   answers, so it sits beside the heading rather than in the toolbar.
+   Same quiet-underline treatment as the briefing's own tabs used to have:
+   plain text at heading weight, the active one filled in solid gold. */
+.scope-switch{display:flex;align-items:baseline;gap:var(--space-3);margin-right:auto}
+.scope-btn{
+  font-family:var(--font-display);font-weight:700;font-size:var(--size-sm);line-height:1;
+  letter-spacing:var(--track-display);cursor:pointer;
+  background:none;color:var(--text-muted);border:none;padding:0;
+  border-bottom:var(--border-w-heavy) solid transparent;
+}
+.scope-btn:hover{color:var(--text-body)}
+.scope-btn.active{color:var(--text-heading);border-bottom-color:var(--gold-1)}
 .status-line{
   display:flex;align-items:center;gap:var(--space-3);flex-wrap:wrap;
   font-family:var(--font-text);font-size:var(--size-xs);color:var(--text-muted);
@@ -348,9 +361,11 @@ a{color:inherit}
   font-variant-numeric:tabular-nums;white-space:nowrap;
 }
 .archive-nav #archive-date:hover:not([disabled]){text-decoration:underline;text-underline-offset:2px}
-/* A day that is over has no live source breakdown, so the control that
-   describes it is not merely disabled — it is gone. */
-body.archive-mode .filter-bar{display:none}
+/* A day that is over has no live source breakdown, and its date is already
+   the point of viewing it, so the controls that describe those are not
+   merely disabled — they are gone. */
+body.archive-mode .filter-bar,
+body.archive-mode #scope-switch{display:none}
 /* "● LIVE" beside a day that ended is the page contradicting itself. The
    status strip reports the live fetch, and in the archive there isn't one. */
 body.archive-mode .status-strip,
