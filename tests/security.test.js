@@ -109,11 +109,16 @@ test('feed matching is exact, not by domain', () => {
 
 test('article links: publishers yes, everyone else no', () => {
   assert.ok(sec.isAllowedArticleUrl('https://www.theguardian.com/world/2026/story', POLICY));
-  assert.ok(sec.isAllowedArticleUrl('https://edition.cnn.com/2026/09/13/story', POLICY));
+  assert.ok(sec.isAllowedArticleUrl('https://www.aljazeera.com/news/2026/story', POLICY));
   // The BBC's feed is on bbci.co.uk and its articles are on bbc.co.uk, which
   // only works because the source declares linkDomains.
   assert.ok(sec.isAllowedArticleUrl('https://www.bbc.co.uk/news/articles/abc', POLICY));
   assert.ok(sec.isAllowedArticleUrl('https://www.bbc.com/news/articles/abc', POLICY));
+
+  // A retired source loses its trust with it. CNN was retired on 2026-09-14
+  // after being refused at the TLS handshake from the runner, and nothing
+  // should still be fetching cnn.com on its behalf.
+  assert.ok(!sec.isAllowedArticleUrl('https://edition.cnn.com/2026/09/13/story', POLICY));
 
   assert.ok(!sec.isAllowedArticleUrl('https://evil.example.com/x', POLICY));
   assert.ok(!sec.isAllowedArticleUrl('https://theguardian.com.evil.example/x', POLICY));

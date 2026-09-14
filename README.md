@@ -78,40 +78,42 @@ publishers answer runners but not local machines, and vice versa.
 answering 200 and parsing cleanly with newest items 1514 and 207 days old. Its
 `business` feed is still live and stays.
 
-Eight feeds are configured but unverified, because the sandbox they were added
-from cannot reach any of them: the three CNN feeds, the three English-language
-Bangladeshi dailies (Dhaka Tribune, New Age, UNB), and the two Bangla-language
-ones (Amar Desh, BTV). The weekly Feed Health run checks them as configured
-feeds and goes red naming any that are dead — that is the check working, not
-breaking. Retire what reports `DEAD` or `STALE` and swap in an alternate from
-the candidates box.
+The first Feed Health run over the eight previously unverified feeds settled
+all of them on 2026-09-14: **30 live, 0 stale, 7 dead of 37**. What it taught,
+beyond which URLs work:
 
-**Amar Desh comes in through Google News** rather than a feed of its own. It
-publishes at **dailyamardesh.com** — `amardesh.com` is a different site — but
-no RSS path there could be confirmed, so a documented endpoint beats a guessed
-path. The trade is real and worth knowing: articles link to a
-`news.google.com` redirect rather than straight to the publisher, and the items
-carry no images, so those cards show the placeholder. If one of the
-dailyamardesh.com paths in the candidates box ever answers, switching to it is
-an improvement on both counts.
+- **A 403 or 404 is recoverable; a TLS refusal is not.** Dhaka Tribune and New
+  Age returned 403 and UNB 404 — the publisher blocking the runner or moving a
+  path, which Google News routes around. All five CNN URLs failed at the
+  handshake with "socket disconnected before secure TLS connection was
+  established", which is not an HTTP status and not a wrong path. CNN is
+  retired; Global is already covered by BBC, Al Jazeera, the Guardian, NPR,
+  France 24 and DW.
+- **Guessing a path is worth one run.** Amar Desh's `/rss.xml` and
+  `/rss/rss.xml` were both 404 while `/feed` answered with the freshest
+  articles in the region. Google News carried it for a day; its own feed is
+  strictly better and it went straight back.
+
+Four sources now come in through **Google News** (`news.google.com/rss/search?q=site:…`):
+Dhaka Tribune, New Age and UNB because their own feeds refuse the runner, and
+BTV because it serves a self-signed certificate. This is a rescue route, not a
+preference — it costs direct article links and images — so their own paths stay
+in the candidates box, and any that starts answering should be switched back.
+BTV is thin either way: `btv.gov.bd` is barely indexed, so the newest article
+it surfaces is days old rather than hours.
 
 A source that comes in this way is marked `aggregator: true`, which means its
 feed URL is allowlisted so it can be fetched, but its domain earns no trust
 beyond that. `news.google.com`'s registrable domain is `google.com`, so without
 the flag every Google host would land in the link allowlist and `*.google.com`
 in the page's `img-src` — the same over-broad entry that shared CDNs are kept
-out for. The publisher's real domain is declared separately via `linkDomains`.
+out for. The publisher's real domain is declared separately via `linkDomains`,
+and a test asserts every aggregator names one.
 
 Google News also appends `" - Publisher"` to every title and fills the
 description with a link whose text is the headline again; both are stripped for
 aggregator sources, since they are artefacts of the aggregator rather than the
 article.
-
-**BTV is still a direct guess** and may publish no feed at all — it appears in
-no public index of Bangladeshi feeds. Its candidates box now leads with the
-same Google News route, though a state broadcaster's presence there can be
-thin. If nothing answers, retiring it is the answer rather than hunting
-further.
 
 A feed that fails is not fatal: that source is skipped for the run, previously
 collected articles are retained, and the run log ends with a list of what

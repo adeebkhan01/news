@@ -18,28 +18,22 @@ on:
         # this list. It is only what to fall back to once one of them reports
         # DEAD or STALE: dispatch by hand and swap in whichever comes back ok.
         #
-        # BTV first, as the least certain: it is a government site that may
-        # publish no feed at all. Its Google News route leads, since that is how
-        # Amar Desh got in — but a state broadcaster's Google News presence can
-        # be thin, so a site: query returning nothing is a real outcome and
-        # retiring BTV is then the answer.
+        # The publishers' own feeds, for the four sources that currently come
+        # in through Google News. That route costs direct article links and
+        # images, so it is a rescue rather than a preference: if one of these
+        # ever answers, switch the source back to it. Amar Desh is the worked
+        # example — /feed answered on 2026-09-14 and it went straight back.
         #
-        # The dailyamardesh.com paths stay listed. Amar Desh now comes in via
-        # Google News, but a feed of its own would be better — direct article
-        # links instead of Google redirects, and images — so if one of these
-        # ever answers, it is worth switching to.
+        # Dhaka Tribune and New Age returned 403 and UNB 404, so these are the
+        # other paths worth trying rather than the ones already known dead.
         default: >-
-          https://news.google.com/rss/search?q=site:btv.gov.bd&hl=bn&gl=BD&ceid=BD:bn
-          https://www.btv.gov.bd/feed
-          https://btv.gov.bd/rss.xml
-          https://www.dailyamardesh.com/rss.xml
-          https://www.dailyamardesh.com/rss/rss.xml
-          https://www.dailyamardesh.com/feed
-          https://rss.cnn.com/rss/edition.rss
-          https://rss.cnn.com/rss/money_latest.rss
-          https://www.observerbd.com/rss.xml
-          https://www.banglanews24.com/english/rss/rss.xml
-          https://bdnews24.com/feed
+          https://www.dhakatribune.com/rss.xml
+          https://www.dhakatribune.com/feed/rss.xml
+          https://www.newagebd.net/feed
+          https://www.newagebd.net/rss.xml
+          https://unb.com.bd/feed
+          https://unb.com.bd/rss.xml
+          https://www.btv.gov.bd/rss/rss.xml
   schedule:
     - cron: '17 6 * * 1'   # Monday morning, so dead feeds surface weekly
 

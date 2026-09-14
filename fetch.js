@@ -16,6 +16,16 @@ const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 //   AP News (3 feeds)           403   AP no longer serves public RSS
 //   Financial Express /feed/    200   answers, parses 0 articles
 //   DW rss_en_enviro            200   answers, parses 0 articles
+// Retired 2026-09-14, all three CNN feeds plus both alternates:
+//   rss.cnn.com (5 URLs)        TLS   "socket disconnected before secure TLS
+//                                     connection was established" — refused at
+//                                     the handshake, not an HTTP status, so it
+//                                     is the runner being blocked rather than a
+//                                     wrong path. Global is already covered by
+//                                     BBC, Al Jazeera, Guardian, NPR, France 24
+//                                     and DW; routing CNN through Google News
+//                                     would add image-less cards to a region
+//                                     that does not need them.
 // Retired 2026-09 for staleness: they answer 200 and parse cleanly, but their
 // newest item is already outside the 30-day retention window, so every run
 // fetched them and kept nothing.
@@ -40,35 +50,34 @@ const REGIONS = {
       // too short for detection to judge.
       { id: 'risingbd',         name: 'Rising BD',         color: '#0f7b6c', url: 'https://www.risingbd.com/rss/rss.xml',
         lang: 'bn' },
-      // English-language Bangladeshi dailies. Added unverified — the sandbox
-      // can't reach them; dispatch the Feed Health workflow to confirm, and
-      // retire any that come back DEAD or STALE.
-      { id: 'dhakatribune',     name: 'Dhaka Tribune',     color: '#1b5e9e', url: 'https://www.dhakatribune.com/feed' },
-      { id: 'newage',           name: 'New Age',           color: '#8e2d2d', url: 'https://www.newagebd.net/feed/rss.xml' },
-      { id: 'unb',              name: 'UNB',               color: '#2f6f4f', url: 'https://unb.com.bd/rss' },
-      // Bangla-language sources, so these are translated into English rather
-      // than out of it. Both URLs are unverified guesses — the sandbox they
-      // were added from cannot reach either host, and neither appears in any
-      // public index of Bangladeshi feeds. The Feed Health workflow decides:
-      // whatever reports DEAD gets retired and an alternate from its
-      // candidates box swapped in.
-      //
-      // Amar Desh comes in through Google News rather than a feed of its own:
-      // it publishes at dailyamardesh.com, but no RSS path there could be
-      // confirmed and none is listed in any public index. This URL is a
-      // documented endpoint rather than a guess at a path.
-      //
-      // `aggregator` is what stops news.google.com being treated as a
-      // publisher. Its registrable domain is google.com, so without the flag
-      // every Google host would land in the link allowlist and *.google.com in
-      // the page's img-src.
-      { id: 'amardesh',         name: 'Amar Desh',         color: '#8c4a1f',
-        url: 'https://news.google.com/rss/search?q=site:dailyamardesh.com&hl=bn&gl=BD&ceid=BD:bn',
-        lang: 'bn', aggregator: true, linkDomains: ['dailyamardesh.com'] },
-      // BTV is a government site and may simply not publish RSS at all. If it
-      // reports DEAD with no working alternate, retiring it is the answer.
-      { id: 'btv',              name: 'BTV',               color: '#0f6e8c', url: 'https://www.btv.gov.bd/rss.xml',
+      // These three block the runner or moved their feed — 403, 403 and 404 on
+      // 2026-09-14 — so they come in through Google News instead. That is a
+      // rescue route, not a preference: it costs direct article links and
+      // images, so if a publisher's own feed ever answers, switch back. Their
+      // paths stay in the candidates box for exactly that.
+      { id: 'dhakatribune',     name: 'Dhaka Tribune',     color: '#1b5e9e',
+        url: 'https://news.google.com/rss/search?q=site:dhakatribune.com&hl=en-BD&gl=BD&ceid=BD:en',
+        aggregator: true, linkDomains: ['dhakatribune.com'] },
+      { id: 'newage',           name: 'New Age',           color: '#8e2d2d',
+        url: 'https://news.google.com/rss/search?q=site:newagebd.net&hl=en-BD&gl=BD&ceid=BD:en',
+        aggregator: true, linkDomains: ['newagebd.net'] },
+      { id: 'unb',              name: 'UNB',               color: '#2f6f4f',
+        url: 'https://news.google.com/rss/search?q=site:unb.com.bd&hl=en-BD&gl=BD&ceid=BD:en',
+        aggregator: true, linkDomains: ['unb.com.bd'] },
+      // Amar Desh publishes at dailyamardesh.com, and /feed answers — 20
+      // articles, freshest in the region. It came in through Google News for
+      // one day because /rss.xml and /rss/rss.xml both 404 and no index listed
+      // the right path; its own feed is strictly better, so the detour is over.
+      { id: 'amardesh',         name: 'Amar Desh',         color: '#8c4a1f', url: 'https://www.dailyamardesh.com/feed',
         lang: 'bn' },
+      // BTV serves a self-signed certificate on its own feed, so Google News
+      // is the only way in. Thin: the newest article it surfaces is days old
+      // rather than hours, because btv.gov.bd is barely indexed. Kept because
+      // days-old is still inside the 30-day window and it costs nothing, but
+      // it will never carry the region.
+      { id: 'btv',              name: 'BTV',               color: '#0f6e8c',
+        url: 'https://news.google.com/rss/search?q=site:btv.gov.bd&hl=bn&gl=BD&ceid=BD:bn',
+        lang: 'bn', aggregator: true, linkDomains: ['btv.gov.bd'] },
     ]
   },
   au: {
@@ -119,11 +128,6 @@ const REGIONS = {
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-bus' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-eu' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/xml/rss_en_science' },
-      // Added unverified — confirm with the Feed Health workflow before
-      // trusting them. CNN has retired feeds without notice before.
-      { id: 'cnn',       name: 'CNN',         color: '#CC0000', url: 'https://rss.cnn.com/rss/edition_world.rss' },
-      { id: 'cnn',       name: 'CNN',         color: '#CC0000', url: 'https://rss.cnn.com/rss/money_news_international.rss' },
-      { id: 'cnn',       name: 'CNN',         color: '#CC0000', url: 'https://rss.cnn.com/rss/edition_technology.rss' },
     ]
   }
 };

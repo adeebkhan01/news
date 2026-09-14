@@ -148,6 +148,9 @@ const STRINGS = {
 
 // Publishers' own names, as a Bangla reader would see them in print. Kept out
 // of the data files so a rename is one edit here rather than a refetch.
+//
+// A retired source keeps its entry: its articles stay in the data file for the
+// 30-day retention window, and they still need a name while they age out.
 const SOURCE_NAMES_BN = {
   dailystar: 'দ্য ডেইলি স্টার', prothomalo: 'প্রথম আলো',   risingbd: 'রাইজিংবিডি',
   dhakatribune: 'ঢাকা ট্রিবিউন', newage: 'নিউ এজ',          unb: 'ইউএনবি',
