@@ -9,7 +9,7 @@
 //   node tools/check-feeds.js --region bd           # one region
 //   node tools/check-feeds.js <url> <url> ...       # also try candidates
 //
-const { REGIONS, fetchUrl, parseFeed, parseDate } = require('../fetch.js');
+const { REGIONS, fetchUrl, parseFeed, parseDate, security } = require('../fetch.js');
 
 const args = process.argv.slice(2);
 let regionFilter = null;
@@ -36,7 +36,14 @@ function ageOf(articles) {
 async function check(entry) {
   const probe = { id: entry.id || 'candidate', name: entry.name || 'candidate', url: entry.url };
   try {
-    const xml = await fetchUrl(entry.url);
+    // The publishing pipeline may only fetch the exact URLs in the source
+    // list. This tool exists to try URLs that are not on it yet, so it opts
+    // into a wider policy — but only wider in one direction: still https only,
+    // still no address literals or private names, still capped and timed out.
+    // A candidate comes from a person typing it, not from feed content.
+    const xml = await fetchUrl(entry.url, {
+      allowRedirect: (u) => !!security.parseSafeUrl(u)
+    });
     const articles = parseFeed(xml, probe);
     if (!articles.length) return { ...entry, ok: false, detail: 'parsed 0 articles' };
     const detail = `${articles.length} articles, newest ${ageOf(articles)}`;

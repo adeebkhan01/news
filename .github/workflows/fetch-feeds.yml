@@ -6,6 +6,9 @@ on:
     - cron: '20 0,12 * * *'
   workflow_dispatch:
 
+# contents: write is the whole grant, and it is needed only by the last step —
+# the one that commits the refreshed data files back to main. Nothing else in
+# this workflow writes anything, and no other scope is available to it.
 permissions:
   contents: write
 
@@ -19,7 +22,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v5
+      # Pinned to a commit, not a tag: a tag can be moved to point at new code,
+      # a commit SHA cannot. Dependabot raises a PR when there is a newer one.
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
 
       - name: Fetch feeds
         run: |
@@ -28,6 +33,15 @@ jobs:
           node fetch.js --region global
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      # The gate between fetching and publishing. The suite re-checks every
+      # article that was just written — every link https, every image on a host
+      # the CSP will actually allow — so a feed that starts serving something
+      # the rules refuse fails the run instead of being committed. A failed
+      # step fails the job, and the commit step below never runs: the data file
+      # already on main stays up rather than being replaced by a bad one.
+      - name: Validate before publishing
+        run: node --test tests/*.test.js
 
       - name: Commit data files
         run: |

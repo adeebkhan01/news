@@ -1,7 +1,6 @@
 const https   = require('https');
-const http    = require('http');
-const url     = require('url');
 const fs      = require('fs');
+const security = require('./lib/security.js');
 
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
@@ -16,7 +15,12 @@ const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 //   AP News (3 feeds)           403   AP no longer serves public RSS
 //   Financial Express /feed/    200   answers, parses 0 articles
 //   DW rss_en_enviro            200   answers, parses 0 articles
-// Checked but not adopted, newest item already past the 30-day retention:
+// Retired 2026-09 for staleness: they answer 200 and parse cleanly, but their
+// newest item is already outside the 30-day retention window, so every run
+// fetched them and kept nothing.
+//   thedailystar.net/frontpage/rss.xml  (newest item 1514d old)
+//   thedailystar.net/bangladesh/rss.xml (newest item  207d old)
+// Checked but not adopted, same reason:
 //   tbsnews.net/rss.xml (1766d), sbs.com.au/news/feed (18d, dormant)
 const REGIONS = {
   bd: {
@@ -26,19 +30,23 @@ const REGIONS = {
     summaryPrompt: 'You are a concise news briefing editor covering Bangladesh.',
     sources: [
       { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/business/rss.xml' },
-      { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/frontpage/rss.xml' },
-      { id: 'dailystar', name: 'The Daily Star', color: '#1a7a4a', url: 'https://www.thedailystar.net/bangladesh/rss.xml' },
       // Site-wide feed, so it carries the soft sections too. The article URL
       // names its section, which is a far better signal than keyword matching.
       { id: 'prothomalo',       name: 'Prothom Alo',       color: '#c0392b', url: 'https://en.prothomalo.com/feed/',
         excludeSections: ['entertainment', 'photo', 'lifestyle'] },
       { id: 'risingbd',         name: 'Rising BD',         color: '#0f7b6c', url: 'https://www.risingbd.com/rss/rss.xml' },
+      // English-language Bangladeshi dailies. Added unverified — the sandbox
+      // can't reach them; dispatch the Feed Health workflow to confirm, and
+      // retire any that come back DEAD or STALE.
+      { id: 'dhakatribune',     name: 'Dhaka Tribune',     color: '#1b5e9e', url: 'https://www.dhakatribune.com/feed' },
+      { id: 'newage',           name: 'New Age',           color: '#8e2d2d', url: 'https://www.newagebd.net/feed/rss.xml' },
+      { id: 'unb',              name: 'UNB',               color: '#2f6f4f', url: 'https://unb.com.bd/rss' },
     ]
   },
   au: {
     label: 'Australia',
     dataFile: 'data-au.json',
-    translate: false,
+    translate: true,
     topicFilter: true,
     summaryPrompt: 'You are a concise news briefing editor covering Australia.',
     sources: [
@@ -62,13 +70,19 @@ const REGIONS = {
   global: {
     label: 'Global',
     dataFile: 'data-global.json',
-    translate: false,
+    translate: true,
     topicFilter: true,
     summaryPrompt: 'You are a concise news briefing editor covering global affairs.',
     sources: [
-      { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/world/rss.xml' },
-      { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/business/rss.xml' },
-      { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/science_and_environment/rss.xml' },
+      // The feed is on bbci.co.uk and every article is on bbc.co.uk, so the
+      // article domain can't be derived from the feed URL the way it can for
+      // every other source. linkDomains is how a source says so.
+      { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/world/rss.xml',
+        linkDomains: ['bbc.co.uk', 'bbc.com'] },
+      { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/business/rss.xml',
+        linkDomains: ['bbc.co.uk', 'bbc.com'] },
+      { id: 'bbcnews',   name: 'BBC News',    color: '#BB1919', url: 'https://feeds.bbci.co.uk/news/science_and_environment/rss.xml',
+        linkDomains: ['bbc.co.uk', 'bbc.com'] },
       { id: 'aljazeera', name: 'Al Jazeera',  color: '#D2A02E', url: 'https://www.aljazeera.com/xml/rss/all.xml' },
       { id: 'guardian',  name: 'The Guardian', color: '#052962', url: 'https://www.theguardian.com/world/rss' },
       { id: 'npr',       name: 'NPR',         color: '#E11B22', url: 'https://feeds.npr.org/1001/rss.xml' },
@@ -77,6 +91,11 @@ const REGIONS = {
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-bus' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/rdf/rss-en-eu' },
       { id: 'dwnews',    name: 'DW News',     color: '#002B55', url: 'https://rss.dw.com/xml/rss_en_science' },
+      // Added unverified — confirm with the Feed Health workflow before
+      // trusting them. CNN has retired feeds without notice before.
+      { id: 'cnn',       name: 'CNN',         color: '#CC0000', url: 'https://rss.cnn.com/rss/edition_world.rss' },
+      { id: 'cnn',       name: 'CNN',         color: '#CC0000', url: 'https://rss.cnn.com/rss/money_news_international.rss' },
+      { id: 'cnn',       name: 'CNN',         color: '#CC0000', url: 'https://rss.cnn.com/rss/edition_technology.rss' },
     ]
   }
 };
@@ -97,14 +116,30 @@ SOURCES.forEach(function(s) {
 
 var THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
 
-// Guardrails for feed fetching.
+// Guardrails for feed fetching. Every fetch this script makes is bounded by
+// all three: who it may talk to, how long it may wait, and how much it will
+// read before giving up.
 var MAX_FEED_BYTES  = 8 * 1024 * 1024;
+var MAX_HEAD_BYTES  = 8 * 1024;          // og:image lives in <head>; the body is waste
+var FEED_TIMEOUT_MS = 15000;
+var HEAD_TIMEOUT_MS = 10000;
 var FEED_CONCURRENCY = 4;
+
+// Derived from the feed list above: the set of URLs this script may fetch and
+// the domains it may follow a link to. Built once, consulted on every request.
+var POLICY = security.buildEgressPolicy(REGIONS);
 
 // How many previously-failed translations to retry per run. Sized against the
 // run cadence in .github/workflows/fetch-feeds.yml: at twice a day this keeps
 // the backlog draining at roughly 400 articles a day.
 var RETRY_PER_RUN = 200;
+
+// Turning translate: true on for a region that already holds a month of
+// articles queues the whole backlog in one go — Australia and Global carry
+// roughly 1,700 and 1,300. Drain it newest-first over successive runs so no
+// single run carries hours of API calls, and the articles readers see first
+// are translated first.
+var BACKFILL_PER_RUN = 300;
 
 // Per feed URL. The runs are 12 hours apart and the busiest single-URL feeds
 // (Prothom Alo, Al Jazeera all.xml) publish 30+ items in that window, so a cap
@@ -171,38 +206,71 @@ function isRecent(pubDate) {
 }
 
 function resolveLocation(loc, from) {
-  if (loc.startsWith('http://') || loc.startsWith('https://')) return loc;
-  var p = url.parse(from);
-  if (loc.startsWith('//')) return p.protocol + loc;
-  return p.protocol + '//' + p.host + (loc.startsWith('/') ? '' : '/') + loc;
+  try { return new URL(String(loc), from).href; } catch (e) { return ''; }
 }
 
-function fetchUrl(reqUrl, redirects) {
+// The one place this script opens a socket.
+//
+// https only, no embedded credentials, no address literals, no private names —
+// that is parseSafeUrl's job and it runs on the first URL and on every redirect
+// target, so a 302 cannot walk the runner onto a network the first check would
+// have refused. Redirects are off unless the caller passes allowRedirect, and
+// even then each hop has to satisfy it: publishers do move feeds, but only
+// ever to themselves.
+//
+// opts: { allowRedirect, maxBytes, timeoutMs, maxRedirects }
+function fetchUrl(reqUrl, opts, redirects) {
+  opts = opts || {};
+  var allowRedirect = opts.allowRedirect || null;
+  var maxBytes  = opts.maxBytes  || MAX_FEED_BYTES;
+  var timeoutMs = opts.timeoutMs || FEED_TIMEOUT_MS;
+  var maxHops   = opts.maxRedirects == null ? 3 : opts.maxRedirects;
   redirects = redirects || 0;
+
   return new Promise(function(resolve, reject) {
-    if (redirects > 5) return reject(new Error('Too many redirects'));
-    var lib = reqUrl.startsWith('https') ? https : http;
-    var req = lib.get(reqUrl, {
+    if (redirects > maxHops) return reject(new Error('Too many redirects'));
+    var safe = security.parseSafeUrl(reqUrl);
+    if (!safe) return reject(new Error('Refused by egress policy: ' + String(reqUrl).slice(0, 120)));
+
+    var req = https.get(safe.href, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml,*/*',
       },
-      timeout: 15000
+      timeout: timeoutMs
     }, function(res) {
       if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
         res.resume();
-        return fetchUrl(resolveLocation(res.headers.location, reqUrl), redirects + 1).then(resolve).catch(reject);
+        if (!allowRedirect) return reject(new Error('Redirect refused (HTTP ' + res.statusCode + ')'));
+        var next = resolveLocation(res.headers.location, safe.href);
+        if (!allowRedirect(next)) {
+          return reject(new Error('Redirect refused by egress policy: ' + String(next).slice(0, 120)));
+        }
+        return fetchUrl(next, opts, redirects + 1).then(resolve).catch(reject);
       }
       if (res.statusCode !== 200) return reject(new Error('HTTP ' + res.statusCode));
       var data = ''; res.setEncoding('utf8');
       res.on('data', function(c) {
         data += c;
-        if (data.length > MAX_FEED_BYTES) { req.destroy(); reject(new Error('Feed larger than ' + MAX_FEED_BYTES + ' bytes')); }
+        if (data.length > maxBytes) { req.destroy(); reject(new Error('Response larger than ' + maxBytes + ' bytes')); }
       });
       res.on('end', function() { resolve(data); });
     });
     req.on('error', reject);
     req.on('timeout', function() { req.destroy(); reject(new Error('Timeout')); });
+  });
+}
+
+// A configured feed: the URL has to be one of the exact strings in the source
+// list, and a redirect may only land on a domain that list already covers.
+function fetchFeedUrl(reqUrl) {
+  if (!security.isAllowedFeedUrl(reqUrl, POLICY)) {
+    return Promise.reject(new Error('Not a configured feed URL: ' + String(reqUrl).slice(0, 120)));
+  }
+  return fetchUrl(reqUrl, {
+    allowRedirect: function(u) { return security.isAllowedArticleUrl(u, POLICY); },
+    maxBytes: MAX_FEED_BYTES,
+    timeoutMs: FEED_TIMEOUT_MS
   });
 }
 
@@ -215,33 +283,27 @@ function isTransientHttp(err) {
 // the entire run. Permanent answers (403, 404) are not worth retrying.
 async function fetchFeedWithRetry(reqUrl) {
   try {
-    return await fetchUrl(reqUrl);
+    return await fetchFeedUrl(reqUrl);
   } catch (e) {
     if (!isTransientHttp(e)) throw e;
     await new Promise(function(r) { setTimeout(r, 1500); });
-    return fetchUrl(reqUrl);
+    return fetchFeedUrl(reqUrl);
   }
 }
 
-function fetchHead(reqUrl, redirects) {
-  redirects = redirects || 0;
-  return new Promise(function(resolve) {
-    if (redirects > 3) return resolve('');
-    var lib = reqUrl.startsWith('https') ? https : http;
-    var req = lib.get(reqUrl, { headers: { 'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0' }, timeout: 10000 }, function(res) {
-      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        res.destroy();
-        return fetchHead(resolveLocation(res.headers.location, reqUrl), redirects + 1).then(resolve);
-      }
-      var data = ''; res.setEncoding('utf8');
-      res.on('data', function(c) { data += c; if (data.length > 8000) res.destroy(); });
-      res.on('end',  function() { resolve(data); });
-      res.on('close',function() { resolve(data); });
-      res.on('error',function() { resolve(data); });
-    });
-    req.on('error',   function() { resolve(''); });
-    req.on('timeout', function() { req.destroy(); resolve(''); });
-  });
+// Fetching an article page to read its og:image is the one request whose
+// target comes out of feed content rather than the source list, so it is the
+// tightest: the caller has already matched the host against the policy, and a
+// redirect is refused outright rather than re-checked. A publisher that wants
+// to move an article can serve the tag at the URL it published.
+//
+// Never rejects — a missing picture is not a failed run.
+function fetchHead(reqUrl) {
+  return fetchUrl(reqUrl, {
+    allowRedirect: null,
+    maxBytes: MAX_HEAD_BYTES,
+    timeoutMs: HEAD_TIMEOUT_MS
+  }).catch(function() { return ''; });
 }
 
 function extractOgImage(html) {
@@ -286,12 +348,44 @@ function getTag(block, tag) {
   return m ? m[1].trim() : '';
 }
 
+// Two different questions, deliberately separated.
+//
+// A card is a link, so its href has to be a plain https URL on a public host —
+// that is the check a javascript: or data: URL in a feed runs into, and an
+// item that fails it is not a card and gets dropped. Whether the link is on a
+// domain we *fetch* is a stricter question, asked separately in enrichImages:
+// publishers do syndicate to each other, and a link we will show is not
+// automatically a link we will open.
+//
+// The picture is optional, so a host outside the image allowlist costs the art
+// and nothing else.
+var droppedLinks = 0;
+var droppedImageHosts = Object.create(null);
+
+function sanitizeLink(raw) {
+  var u = security.parseSafeUrl(raw);
+  if (!u) { if (raw) droppedLinks++; return ''; }
+  return u.href;
+}
+
+function sanitizeImage(raw, base) {
+  if (!raw) return null;
+  var abs = resolveLocation(raw, base);
+  if (security.isAllowedImageUrl(abs, POLICY)) return abs;
+  var host;
+  try { host = new URL(abs).hostname; } catch (e) { host = '(unparseable)'; }
+  droppedImageHosts[host] = (droppedImageHosts[host] || 0) + 1;
+  return null;
+}
+
 function parseRSS(xml, source) {
   var items=[], re=/<item[^>]*>([\s\S]*?)<\/item>/gi, m;
   while((m=re.exec(xml))!==null && items.length<MAX_ITEMS_PER_FEED) {
     var b=m[1], title=stripTags(getTag(b,'title'));
     if(!title) continue;
-    items.push({ title, link: getTag(b,'link')||getTag(b,'guid')||'', desc: stripTags(getTag(b,'description')).slice(0,200), pubDate: getTag(b,'pubDate')||getTag(b,'dc:date')||'', img: extractImg(b), sourceId: source.id, sourceName: source.name, sourceColor: source.color });
+    var link = sanitizeLink(getTag(b,'link')||getTag(b,'guid')||'');
+    if(!link) continue;
+    items.push({ title, link, desc: stripTags(getTag(b,'description')).slice(0,200), pubDate: getTag(b,'pubDate')||getTag(b,'dc:date')||'', img: sanitizeImage(extractImg(b), link), sourceId: source.id, sourceName: source.name, sourceColor: source.color });
   }
   return items;
 }
@@ -302,7 +396,9 @@ function parseAtom(xml, source) {
     var b=m[1], title=stripTags(getTag(b,'title'));
     if(!title) continue;
     var lm=b.match(/<link[^>]+href="([^"]+)"/i)||b.match(/<link[^>]*>([^<]+)<\/link>/i);
-    items.push({ title, link: lm?lm[1].trim():'', desc: stripTags(getTag(b,'summary')||getTag(b,'content')).slice(0,200), pubDate: getTag(b,'published')||getTag(b,'updated')||'', img: extractImg(b), sourceId: source.id, sourceName: source.name, sourceColor: source.color });
+    var link = sanitizeLink(lm?lm[1].trim():'');
+    if(!link) continue;
+    items.push({ title, link, desc: stripTags(getTag(b,'summary')||getTag(b,'content')).slice(0,200), pubDate: getTag(b,'published')||getTag(b,'updated')||'', img: sanitizeImage(extractImg(b), link), sourceId: source.id, sourceName: source.name, sourceColor: source.color });
   }
   return items;
 }
@@ -313,14 +409,37 @@ function parseFeed(xml, source) {
 }
 
 async function enrichImages(articles) {
-  var missing = articles.filter(function(a) { return !a.img && a.link && a.link.startsWith('http'); });
-  console.log('Fetching og:image for', missing.length, 'articles...');
+  var candidates = articles.filter(function(a) { return !a.img && a.link; });
+  var missing = candidates.filter(function(a) { return security.isAllowedArticleUrl(a.link, POLICY); });
+  var offPolicy = candidates.length - missing.length;
+  console.log('Fetching og:image for', missing.length, 'articles'
+    + (offPolicy ? ' (' + offPolicy + ' skipped: link outside the allowed domains)' : '') + '...');
+
+  var rejectedHosts = Object.create(null);
   var BATCH = 5;
   for (var i=0; i<missing.length; i+=BATCH) {
     await Promise.all(missing.slice(i,i+BATCH).map(async function(a) {
-      try { var html=await fetchHead(a.link); var img=extractOgImage(html); if(img) a.img=img; } catch(e) {}
+      var html = await fetchHead(a.link);
+      var img = extractOgImage(html);
+      if (!img) return;
+      var abs = resolveLocation(img, a.link);
+      if (security.isAllowedImageUrl(abs, POLICY)) { a.img = abs; return; }
+      try { rejectedHosts[new URL(abs).hostname] = (rejectedHosts[new URL(abs).hostname] || 0) + 1; }
+      catch (e) { rejectedHosts['(unparseable)'] = (rejectedHosts['(unparseable)'] || 0) + 1; }
     }));
   }
+  reportRejectedImageHosts(rejectedHosts, 'og:image');
+}
+
+// Naming the host is the whole point: a publisher moving to a new CDN shows up
+// here as one line, and the fix is one entry in IMAGE_DOMAINS.
+function reportRejectedImageHosts(hosts, label) {
+  var names = Object.keys(hosts);
+  if (!names.length) return;
+  console.warn('Dropped ' + label + ' from ' + names.length + ' host(s) not in the image allowlist'
+    + ' — cards fall back to the placeholder. Add to IMAGE_DOMAINS in lib/security.js if these are wanted:');
+  names.sort(function(a,b){ return hosts[b]-hosts[a]; })
+       .forEach(function(h) { console.warn('  -', h, '(' + hosts[h] + ')'); });
 }
 
 function claudeComplete(systemPrompt, userPrompt, maxTokens) {
@@ -387,10 +506,16 @@ async function generatePageSummary(articles) {
   console.log('Generating page summary for', REGION.label, '...');
   var titles = articles.slice(0,40).map(function(a,i){ return (i+1)+'. '+a.title; }).join('\n');
   try {
-    return await claudeComplete(
+    var raw = await claudeComplete(
       REGION.summaryPrompt + ' Write in plain prose, no bullet points, no markdown.',
       'Here are the top headlines from ' + REGION.label + ' news sources today:\n\n'+titles+'\n\nWrite a 3-4 sentence briefing summarising the key themes and most significant stories. Be direct and informative.'
     );
+    // The model reads forty headlines written by other people. An answer that
+    // comes back as markup, or runs to ten times the length asked for, is a
+    // failed call and is treated as one — the previous briefing stays up.
+    var clean = security.validateSummary(raw);
+    if (!clean) console.error('Page summary rejected by validation (' + String(raw).length + ' chars)');
+    return clean;
   } catch(e) {
     console.error('Page summary failed:', e.message);
     if (isApiUnavailable(e)) apiUnavailable = true;
@@ -404,12 +529,15 @@ async function translateSummary(text) {
   if (!ANTHROPIC_API_KEY || apiUnavailable || !text) return null;
   console.log('Translating the briefing to Bangla...');
   try {
-    return await claudeComplete(
+    var raw = await claudeComplete(
       'You are a Bengali (Bangla) translator. Translate the given English news briefing into natural Bengali. '
       + 'Respond with the translation only — no preamble, no quotation marks, no markdown.',
       text,
       1500
     );
+    var clean = security.validateSummary(raw);
+    if (!clean) console.error('Briefing translation rejected by validation');
+    return clean;
   } catch (e) {
     console.error('Briefing translation failed:', e.message);
     if (isApiUnavailable(e)) apiUnavailable = true;
@@ -436,9 +564,13 @@ async function translateArticles(articles) {
         var start = clean.indexOf('{');
         var end   = clean.lastIndexOf('}');
         if (start === -1 || end === -1) throw new Error('No JSON object found in response');
-        var parsed = JSON.parse(clean.slice(start, end + 1));
-        a.titleBn = parsed.titleBn || null;
-        a.descBn  = parsed.descBn  || '';
+        // Shape and content are both checked: the right keys, strings, within
+        // length, no markup. Anything else is an unusable answer, which is
+        // already a case this loop knows how to handle.
+        var valid = security.validateTranslation(JSON.parse(clean.slice(start, end + 1)));
+        if (!valid) throw new Error('Translation failed validation');
+        a.titleBn = valid.titleBn;
+        a.descBn  = valid.descBn;
       } catch(e) {
         console.error('  Translation failed for "' + a.title.slice(0,40) + '":', e.message);
         if (isApiUnavailable(e)) {
@@ -459,6 +591,17 @@ async function translateArticles(articles) {
 
 async function main() {
   console.log('Running fetch for region:', REGION.label, '(' + regionArg + ')');
+
+  // A source URL the policy can't accept — cleartext, a port, credentials, an
+  // address literal — would otherwise be quietly skipped on every run. Stop
+  // before fetching anything: the data file on disk is still good, and a
+  // half-built policy must never be the thing that publishes.
+  if (POLICY.invalid.length) {
+    throw new Error('Refusing to run: ' + POLICY.invalid.length + ' configured feed URL(s) rejected by the egress policy:\n  '
+      + POLICY.invalid.join('\n  '));
+  }
+  console.log('Egress policy:', POLICY.feedUrls.size, 'feed URLs,',
+              POLICY.linkDomains.size, 'link domains,', POLICY.imageDomains.size, 'image domains');
   if (!ANTHROPIC_API_KEY) console.warn('Warning: ANTHROPIC_API_KEY not set — AI summary and Bangla translations will be skipped');
 
   var dataFile = REGION.dataFile;
@@ -477,7 +620,13 @@ async function main() {
         .filter(function(a) { return !inExcludedSection(a); })
         // Applied to stored articles too, so turning the filter on (or editing
         // the keywords) takes effect next run instead of over 30 days.
-        .filter(function(a) { return !REGION.topicFilter || matchesTopic(a); });
+        .filter(function(a) { return !REGION.topicFilter || matchesTopic(a); })
+        // Same for the link and image rules. A month of articles was written
+        // before they existed, and the page renders the file rather than the
+        // feed, so anything the rules would refuse today is refused now
+        // instead of ageing out over the next thirty days.
+        .filter(function(a) { a.link = sanitizeLink(a.link); return !!a.link; })
+        .map(function(a) { a.img = sanitizeImage(a.img, a.link); return a; });
       var pruned = beforePrune - existingArticles.length;
       existingArticles.forEach(function(a) {
         if (REGION.translate) {
@@ -532,12 +681,16 @@ async function main() {
   await enrichImages(freshArticles);
 
   if (REGION.translate) {
-    var needsTranslation = existingArticles.filter(function(a) { return a.titleBn === undefined; });
+    var backlog = existingArticles
+      .filter(function(a) { return a.titleBn === undefined; })
+      .sort(function(a,b){ return (parseDate(b.pubDate)||0)-(parseDate(a.pubDate)||0); });
+    var needsTranslation = backlog.slice(0, BACKFILL_PER_RUN);
     // Previously-failed articles used to be skipped forever, so a single API
     // outage stranded every article it touched. Drain them a batch per run.
     var failedTranslation = existingArticles.filter(function(a) { return a.titleBn === false; });
     var retrying = failedTranslation.slice(0, RETRY_PER_RUN);
-    console.log(freshArticles.length, 'new articles,', needsTranslation.length, 'existing need translation,',
+    console.log(freshArticles.length, 'new articles,', backlog.length, 'existing need translation',
+                '(' + needsTranslation.length + ' this run),',
                 failedTranslation.length, 'previously failed (' + retrying.length + ' retried this run)');
     await translateArticles(freshArticles.concat(needsTranslation, retrying));
   } else {
@@ -590,6 +743,10 @@ async function main() {
     failedSources.forEach(function(f) { console.warn('  -', f); });
     console.warn('Run `node tools/check-feeds.js` (or the Feed Health workflow) to confirm whether they are permanently dead.');
   }
+  if (droppedLinks) {
+    console.warn('NOTE:', droppedLinks, 'item(s) had no usable https link and were dropped.');
+  }
+  reportRejectedImageHosts(droppedImageHosts, 'feed images');
   if (apiUnavailable) {
     console.warn('NOTE: the Anthropic API was unavailable this run — summaries and translations were skipped and will be retried next run.');
   }
@@ -597,7 +754,8 @@ async function main() {
 
 // Importable so tools/check-feeds.js can reuse the real source list and
 // parser rather than keeping a second copy that drifts out of date.
-module.exports = { REGIONS, fetchUrl, parseFeed, stripTags, decodeEntities, parseDate };
+module.exports = { REGIONS, POLICY, fetchUrl, fetchFeedUrl, parseFeed, stripTags, decodeEntities, parseDate,
+                   sanitizeLink, sanitizeImage, security };
 
 if (require.main === module) {
   main().catch(function(e){ console.error(e); process.exit(1); });

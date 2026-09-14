@@ -1,0 +1,147 @@
+'use strict';
+//
+// Tests for the things the page promises about itself.
+//
+// The Content-Security-Policy is a string in a static file, and the rules it
+// has to agree with live in JavaScript. Nothing but a test keeps the two
+// honest: a CSP that has drifted still looks fine, still parses, and quietly
+// stops enforcing the thing it was written for. Same for the inline bootstrap
+// script's hash — edit the script, forget the hash, and the theme flash comes
+// back with no error anywhere.
+//
+// These are text assertions over the shipped files, so they run without a
+// browser. What a browser actually enforces was checked separately; this is
+// what stops it regressing.
+
+const test = require('node:test');
+const assert = require('node:assert');
+const fs = require('node:fs');
+const crypto = require('node:crypto');
+
+const { POLICY } = require('../fetch.js');
+
+const html = fs.readFileSync('index.html', 'utf8');
+const appJs = fs.readFileSync('app.js', 'utf8');
+
+// HTML tag matching is case-insensitive and tolerates whitespace, so these
+// patterns have to be too. A test that only recognises one spelling of a tag
+// does not fail when someone writes another — it silently stops checking, which
+// is the worst outcome available to a test whose whole job is a guarantee.
+function cspDirectives() {
+  const m = html.match(/<meta\s+http-equiv="Content-Security-Policy"\s+content="([^"]+)"/i);
+  assert.ok(m, 'no Content-Security-Policy meta tag');
+  const out = {};
+  m[1].split(';').forEach(part => {
+    const [name, ...values] = part.trim().split(/\s+/);
+    if (name) out[name] = values;
+  });
+  return out;
+}
+
+test('the CSP allows no inline script or style', () => {
+  const csp = cspDirectives();
+  assert.ok(!csp['script-src'].includes("'unsafe-inline'"));
+  assert.ok(!csp['style-src'].includes("'unsafe-inline'"));
+  assert.ok(!csp['script-src'].includes("'unsafe-eval'"));
+  assert.deepEqual(csp['default-src'], ["'none'"]);
+  assert.deepEqual(csp['base-uri'], ["'none'"]);
+  assert.deepEqual(csp['form-action'], ["'none'"]);
+  assert.deepEqual(csp['connect-src'], ["'self'"]);
+});
+
+// Every script tag in the page, split by whether it loads a file. <SCRIPT>,
+// <script >, and <script> are one tag to a browser.
+function scriptTags() {
+  const tags = [...html.matchAll(/<script\b([^>]*)>/gi)];
+  const hasSrc = t => /\bsrc\s*=/i.test(t[1]);
+  return { inline: tags.filter(t => !hasSrc(t)), external: tags.filter(hasSrc) };
+}
+
+test('the inline bootstrap script matches the hash the CSP allows', () => {
+  // The negative lookahead is what keeps this off <script src="app.js">, which
+  // has no body to hash.
+  const m = html.match(/<script\b(?![^>]*\bsrc\s*=)[^>]*>([\s\S]*?)<\/script\s*>/i);
+  assert.ok(m, 'the theme bootstrap script is gone — drop its hash from the CSP too');
+  const hash = 'sha256-' + crypto.createHash('sha256').update(m[1], 'utf8').digest('base64');
+  assert.ok(
+    cspDirectives()['script-src'].includes("'" + hash + "'"),
+    `the bootstrap script changed but the CSP hash did not. Correct value:\n  '${hash}'`
+  );
+});
+
+test('index.html carries exactly one inline script and no other', () => {
+  // Every other script is a file, so there is exactly one hash to keep current.
+  // A second inline script would need a second hash, and without one it would
+  // simply not run.
+  const { inline, external } = scriptTags();
+  assert.equal(inline.length, 1, `expected one inline script, found ${inline.length}`);
+  assert.equal(external.length, 1, `expected one external script, found ${external.length}`);
+  assert.ok(html.includes('<script src="app.js" defer></script>'));
+});
+
+test('the markup carries no inline event handlers and no style attributes', () => {
+  // An onclick attribute is inline script; a style attribute is inline style.
+  // Both are refused by the CSP, so a page that still had them would simply
+  // stop working in that spot rather than fail loudly.
+  const handlers = html.match(/\son(?:click|input|error|load|change|submit|focus|blur|mouse\w+|key\w+)\s*=/gi);
+  assert.equal(handlers, null, `inline handler(s) in index.html: ${handlers}`);
+  const styles = html.match(/\sstyle\s*=\s*"/gi);
+  assert.equal(styles, null, `style attribute(s) in index.html: ${styles}`);
+});
+
+test('img-src names exactly the image domains the fetcher enforces', () => {
+  // The page and the fetcher have to agree: an image host the fetcher would
+  // write into the data file but the CSP would refuse renders as a broken
+  // picture, and one the CSP allows but the fetcher drops is a rule kept in
+  // two places. Adding a source updates POLICY automatically — this is what
+  // says the CSP was updated too.
+  const imgSrc = cspDirectives()['img-src'];
+
+  // A domain the fetcher trusts by registrable name is listed twice — bare and
+  // wildcarded — because a CSP source without a wildcard matches only that
+  // exact host. A multi-tenant CDN host is listed once, with no wildcard, which
+  // is the whole point of keeping the two apart.
+  const wildcards = new Set(
+    imgSrc.filter(v => v.startsWith('https://*.')).map(v => v.slice('https://*.'.length))
+  );
+  const bare = new Set(
+    imgSrc.filter(v => v.startsWith('https://') && !v.startsWith('https://*.'))
+          .map(v => v.slice('https://'.length))
+  );
+  assert.deepEqual([...wildcards].sort(), [...POLICY.imageDomains].sort(),
+    'img-src wildcards and POLICY.imageDomains have drifted apart');
+  assert.deepEqual(
+    [...bare].sort(),
+    [...new Set([...POLICY.imageDomains, ...POLICY.imageHosts])].sort(),
+    'img-src bare hosts and POLICY have drifted apart');
+  for (const host of POLICY.imageHosts) {
+    assert.ok(!wildcards.has(host),
+      `${host} is a multi-tenant CDN host and must not be wildcarded in img-src`);
+  }
+  assert.ok(imgSrc.includes("'self'"));
+  assert.ok(imgSrc.includes('data:'), 'the favicon is a data: URL');
+});
+
+test('app.js never turns feed data into markup', () => {
+  // The reason the escaping helper could be deleted: there is nothing left to
+  // escape for. If innerHTML comes back, so does the whole class of bug.
+  for (const sink of ['innerHTML', 'outerHTML', 'insertAdjacentHTML', 'document.write']) {
+    assert.ok(!appJs.includes(sink), `app.js uses ${sink}`);
+  }
+  // eval and Function are how a CSP with 'unsafe-eval' gets asked for.
+  assert.ok(!/\beval\s*\(/.test(appJs), 'app.js calls eval');
+  assert.ok(!/\bnew Function\s*\(/.test(appJs), 'app.js calls new Function');
+});
+
+test('app.js sets link and image URLs only through safeURL', () => {
+  // Belt and braces over the fetcher's own check: the page is also served from
+  // a data file someone could edit by hand.
+  assert.ok(appJs.includes('function safeURL'));
+  const assignments = appJs.match(/\.(?:href|src)\s*=\s*([^;\n]+)/g) || [];
+  for (const line of assignments) {
+    assert.ok(
+      /safeURL|link \|\| '#'|\blink\b|\bimg\b/.test(line),
+      `a URL is assigned without going through safeURL: ${line}`
+    );
+  }
+});

@@ -12,28 +12,24 @@ on:
       candidates:
         description: 'Space-separated candidate feed URLs to try as well'
         required: false
-        # Replacements for the feeds retired in 2026-09, unverified because
-        # they can only be reached from a runner. Dispatch this workflow and
-        # add whichever come back "ok" to the source list in fetch.js.
+        # Alternates for the feeds added unverified in 2026-09 — the CNN and
+        # English-Bangladeshi sources. The ones now in fetch.js are checked as
+        # configured feeds, so this list is what to fall back to if any of them
+        # report DEAD or STALE. Dispatch and swap in whichever come back "ok".
         default: >-
+          https://rss.cnn.com/rss/edition.rss
+          https://rss.cnn.com/rss/cnn_world.rss
+          https://rss.cnn.com/rss/money_latest.rss
+          https://www.observerbd.com/rss.xml
+          https://www.businesspostbd.com/rss
+          https://www.banglanews24.com/english/rss/rss.xml
           https://bdnews24.com/feed
-          https://www.tbsnews.net/rss.xml
           https://www.daily-sun.com/rss.xml
-          https://www.newagebd.net/feed/rss.xml
-          https://www.dhakatribune.com/feed
-          https://unb.com.bd/rss
-          https://www.risingbd.com/rss/rss.xml
-          https://www.smh.com.au/rss/feed.xml
-          https://www.sbs.com.au/news/feed
-          https://www.news.com.au/content-feeds/latest-news-national/
-          https://feeds.npr.org/1001/rss.xml
-          https://feeds.npr.org/1006/rss.xml
-          https://feeds.bbci.co.uk/news/rss.xml
-          https://www.theguardian.com/world/rss
-          https://www.france24.com/en/rss
+          https://www.tbsnews.net/rss.xml
   schedule:
     - cron: '17 6 * * 1'   # Monday morning, so dead feeds surface weekly
 
+# Reads the source list, fetches feeds, writes nothing back.
 permissions:
   contents: read
 
@@ -41,7 +37,11 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      # Pinned to a commit, not a tag: a tag can be moved to point at new code,
+      # a commit SHA cannot. Dependabot raises a PR when there is a newer one.
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          persist-credentials: false   # this job never pushes
 
       # Inputs go through the environment, never string-interpolated into the
       # script, so a crafted input can't run as shell.
