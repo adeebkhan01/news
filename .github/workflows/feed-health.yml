@@ -18,22 +18,27 @@ on:
         # this list. It is only what to fall back to once one of them reports
         # DEAD or STALE: dispatch by hand and swap in whichever comes back ok.
         #
-        # The publishers' own feeds, for the four sources that currently come
-        # in through Google News. That route costs direct article links and
-        # images, so it is a rescue rather than a preference: if one of these
-        # ever answers, switch the source back to it. Amar Desh is the worked
-        # example — /feed answered on 2026-09-14 and it went straight back.
+        # The four sources retired on 2026-09-14, and the paths not yet tried
+        # on each. Their known-dead ones are left out: Dhaka Tribune /feed and
+        # New Age /feed/rss.xml both 403, UNB /rss 404, BTV /rss.xml serves a
+        # self-signed certificate.
         #
-        # Dhaka Tribune and New Age returned 403 and UNB 404, so these are the
-        # other paths worth trying rather than the ones already known dead.
+        # Google News reaches all four, and was deliberately not kept — it
+        # costs the publisher's own article links and every image. So the only
+        # thing that brings one of these back is its own feed answering.
+        # Dispatch this, and if something reports ok, add the source pointing
+        # at that URL.
         default: >-
           https://www.dhakatribune.com/rss.xml
           https://www.dhakatribune.com/feed/rss.xml
+          https://www.dhakatribune.com/rss/rss.xml
           https://www.newagebd.net/feed
           https://www.newagebd.net/rss.xml
           https://unb.com.bd/feed
           https://unb.com.bd/rss.xml
+          https://www.unb.com.bd/rss
           https://www.btv.gov.bd/rss/rss.xml
+          https://www.btv.gov.bd/feed
   schedule:
     - cron: '17 6 * * 1'   # Monday morning, so dead feeds surface weekly
 

@@ -94,26 +94,18 @@ beyond which URLs work:
   articles in the region. Google News carried it for a day; its own feed is
   strictly better and it went straight back.
 
-Four sources now come in through **Google News** (`news.google.com/rss/search?q=site:…`):
-Dhaka Tribune, New Age and UNB because their own feeds refuse the runner, and
-BTV because it serves a self-signed certificate. This is a rescue route, not a
-preference — it costs direct article links and images — so their own paths stay
-in the candidates box, and any that starts answering should be switched back.
-BTV is thin either way: `btv.gov.bd` is barely indexed, so the newest article
-it surfaces is days old rather than hours.
+Four sources were retired outright rather than kept: Dhaka Tribune and New Age
+(403), UNB (404) and BTV (a self-signed certificate). A Google News
+`site:` query reaches all four and was used for exactly one day before being
+removed — it costs the publisher's own article links, so readers land on a
+`news.google.com` redirect, and it carries no images at all, so every card
+shows the placeholder. Aggregating an aggregator is not what this reads.
 
-A source that comes in this way is marked `aggregator: true`, which means its
-feed URL is allowlisted so it can be fetched, but its domain earns no trust
-beyond that. `news.google.com`'s registrable domain is `google.com`, so without
-the flag every Google host would land in the link allowlist and `*.google.com`
-in the page's `img-src` — the same over-broad entry that shared CDNs are kept
-out for. The publisher's real domain is declared separately via `linkDomains`,
-and a test asserts every aggregator names one.
-
-Google News also appends `" - Publisher"` to every title and fills the
-description with a link whose text is the headline again; both are stripped for
-aggregator sources, since they are artefacts of the aggregator rather than the
-article.
+Their untried paths are in the Feed Health candidates box. The only thing that
+brings one of them back is its own feed answering: dispatch the workflow, and
+if something reports `ok`, add the source pointing at that URL. A test asserts
+no source fetches from `news.google.com`, so the route cannot come back by
+accident.
 
 A feed that fails is not fatal: that source is skipped for the run, previously
 collected articles are retained, and the run log ends with a list of what

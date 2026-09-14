@@ -16,6 +16,17 @@ const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 //   AP News (3 feeds)           403   AP no longer serves public RSS
 //   Financial Express /feed/    200   answers, parses 0 articles
 //   DW rss_en_enviro            200   answers, parses 0 articles
+// Retired 2026-09-14, after the first Feed Health run over them:
+//   Dhaka Tribune /feed          403   blocks the runner
+//   New Age /feed/rss.xml        403   blocks the runner
+//   UNB /rss                     404   moved; no working path found
+//   BTV /rss.xml                 TLS   self-signed certificate
+// All four briefly came in through a Google News site: query instead. That
+// worked, and was removed anyway: it costs the publisher's own article links
+// (readers land on a news.google.com redirect) and every image, so the cards
+// carry no art. Aggregating an aggregator is not what this reads. Their
+// untried direct paths are in the Feed Health candidates box — if one answers,
+// the source goes back in pointing at it, and at nothing else.
 // Retired 2026-09-14, all three CNN feeds plus both alternates:
 //   rss.cnn.com (5 URLs)        TLS   "socket disconnected before secure TLS
 //                                     connection was established" — refused at
@@ -50,34 +61,12 @@ const REGIONS = {
       // too short for detection to judge.
       { id: 'risingbd',         name: 'Rising BD',         color: '#0f7b6c', url: 'https://www.risingbd.com/rss/rss.xml',
         lang: 'bn' },
-      // These three block the runner or moved their feed — 403, 403 and 404 on
-      // 2026-09-14 — so they come in through Google News instead. That is a
-      // rescue route, not a preference: it costs direct article links and
-      // images, so if a publisher's own feed ever answers, switch back. Their
-      // paths stay in the candidates box for exactly that.
-      { id: 'dhakatribune',     name: 'Dhaka Tribune',     color: '#1b5e9e',
-        url: 'https://news.google.com/rss/search?q=site:dhakatribune.com&hl=en-BD&gl=BD&ceid=BD:en',
-        aggregator: true, linkDomains: ['dhakatribune.com'] },
-      { id: 'newage',           name: 'New Age',           color: '#8e2d2d',
-        url: 'https://news.google.com/rss/search?q=site:newagebd.net&hl=en-BD&gl=BD&ceid=BD:en',
-        aggregator: true, linkDomains: ['newagebd.net'] },
-      { id: 'unb',              name: 'UNB',               color: '#2f6f4f',
-        url: 'https://news.google.com/rss/search?q=site:unb.com.bd&hl=en-BD&gl=BD&ceid=BD:en',
-        aggregator: true, linkDomains: ['unb.com.bd'] },
       // Amar Desh publishes at dailyamardesh.com, and /feed answers — 20
       // articles, freshest in the region. It came in through Google News for
       // one day because /rss.xml and /rss/rss.xml both 404 and no index listed
       // the right path; its own feed is strictly better, so the detour is over.
       { id: 'amardesh',         name: 'Amar Desh',         color: '#8c4a1f', url: 'https://www.dailyamardesh.com/feed',
         lang: 'bn' },
-      // BTV serves a self-signed certificate on its own feed, so Google News
-      // is the only way in. Thin: the newest article it surfaces is days old
-      // rather than hours, because btv.gov.bd is barely indexed. Kept because
-      // days-old is still inside the 30-day window and it costs nothing, but
-      // it will never carry the region.
-      { id: 'btv',              name: 'BTV',               color: '#0f6e8c',
-        url: 'https://news.google.com/rss/search?q=site:btv.gov.bd&hl=bn&gl=BD&ceid=BD:bn',
-        lang: 'bn', aggregator: true, linkDomains: ['btv.gov.bd'] },
     ]
   },
   au: {
@@ -415,27 +404,14 @@ function sanitizeImage(raw, base) {
   return null;
 }
 
-// Google News appends " - Publisher" to every title and fills the description
-// with a link whose text is the headline again. Both are artefacts of the
-// aggregator, not the article, so they come off here rather than being shown.
-function cleanAggregatorTitle(title) {
-  var cut = title.lastIndexOf(' - ');
-  if (cut <= 0) return title;
-  var suffix = title.slice(cut + 3).trim();
-  // A publisher's name, not a headline that happens to contain a dash.
-  if (!suffix || suffix.length > 60 || suffix.indexOf(' - ') !== -1) return title;
-  return title.slice(0, cut).trim() || title;
-}
-
 function parseRSS(xml, source) {
   var items=[], re=/<item[^>]*>([\s\S]*?)<\/item>/gi, m;
   while((m=re.exec(xml))!==null && items.length<MAX_ITEMS_PER_FEED) {
     var b=m[1], title=stripTags(getTag(b,'title'));
     if(!title) continue;
-    if (source.aggregator) title = cleanAggregatorTitle(title);
     var link = sanitizeLink(getTag(b,'link')||getTag(b,'guid')||'');
     if(!link) continue;
-    items.push({ title, link, desc: source.aggregator ? '' : stripTags(getTag(b,'description')).slice(0,200), pubDate: getTag(b,'pubDate')||getTag(b,'dc:date')||'', img: sanitizeImage(extractImg(b), link), lang: lang.articleLang({ title: title }, source.lang), sourceId: source.id, sourceName: source.name, sourceColor: source.color });
+    items.push({ title, link, desc: stripTags(getTag(b,'description')).slice(0,200), pubDate: getTag(b,'pubDate')||getTag(b,'dc:date')||'', img: sanitizeImage(extractImg(b), link), lang: lang.articleLang({ title: title }, source.lang), sourceId: source.id, sourceName: source.name, sourceColor: source.color });
   }
   return items;
 }
