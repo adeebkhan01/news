@@ -8,14 +8,9 @@ const rank     = require('./lib/rank.js');
 const db       = require('./lib/db.js');
 
 const OPENROUTER_API_KEY = process.env.OPEN_ROUTER;
-// Thinking Machines' full Inkling (975B total / 41B active params), not the
-// Small variant — chosen deliberately over the cheaper option for this
-// pipeline's translation and briefing-writing quality. Not :free: that
-// endpoint 403s every request outside a recognized agentic harness or
-// coding-tool integration (confirmed against a real run, 2026-09-15) — a
-// twice-daily cron batch job doesn't qualify, so it never translated a
-// single article.
-const OPENROUTER_MODEL = 'thinkingmachines/inkling';
+// DeepSeek Flash, via OpenRouter's rolling alias to the latest Flash
+// release (the `~` prefix). Replaces Inkling — 2026-09-15.
+const OPENROUTER_MODEL = '~deepseek/deepseek-flash-latest';
 
 // Feeds retired 2026-09 after failing on every scheduled run for weeks.
 // Re-add only with a green result from `node tools/check-feeds.js <url>`:
