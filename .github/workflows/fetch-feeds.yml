@@ -40,7 +40,7 @@ jobs:
           node fetch.js --region au
           node fetch.js --region global
         env:
-          OPEN_ROUTER: ${{ secrets.OPEN_ROUTER }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       # The gate between fetching and publishing. The suite re-checks every
       # article that was just written — every link https, every image on a host
