@@ -502,7 +502,7 @@ async function enrichImages(articles) {
 var IMAGE_DIR = 'images';
 var IMAGE_EXT_BY_TYPE = {
   'image/jpeg': 'jpg', 'image/jpg': 'jpg', 'image/png': 'png',
-  'image/webp': 'webp', 'image/gif': 'gif'
+  'image/webp': 'webp', 'image/gif': 'gif', 'image/avif': 'avif'
 };
 
 // Binary sibling of fetchUrl: same egress checks, same redirect handling,
@@ -560,9 +560,14 @@ function imageFilename(url, ext) {
 // where the page serves it from, so no further translation is needed
 // between what gets written here and what ends up in an <img src>. Never
 // rejects: a failed download costs the picture, exactly like a rejected
-// domain always has, never the run.
-async function localizeImage(url, region) {
-  if (!security.isAllowedImageUrl(url, POLICY)) return null;
+// domain always has, never the run. `onFail`, when given, hears why — not
+// for control flow, only so the caller can tally reasons across a batch
+// that would otherwise all look like one undifferentiated "failed".
+async function localizeImage(url, region, onFail) {
+  if (!security.isAllowedImageUrl(url, POLICY)) {
+    if (onFail) onFail('Refused by egress policy');
+    return null;
+  }
   try {
     var got = await fetchImageBytes(url);
     var relPath = IMAGE_DIR + '/' + region + '/' + imageFilename(url, got.ext);
@@ -570,6 +575,7 @@ async function localizeImage(url, region) {
     fs.writeFileSync(relPath, got.buffer);
     return relPath;
   } catch (e) {
+    if (onFail) onFail(e.message || String(e));
     return null;
   }
 }
@@ -583,16 +589,24 @@ async function localizeImages(articles, region) {
   var targets = articles.filter(function (a) { return a.img && /^https:\/\//i.test(a.img); });
   if (!targets.length) return;
 
-  var ok = 0, failed = 0;
+  var ok = 0, failed = 0, reasons = Object.create(null);
   var BATCH = 5;
   for (var i = 0; i < targets.length; i += BATCH) {
     await Promise.all(targets.slice(i, i + BATCH).map(async function (a) {
-      var local = await localizeImage(a.img, region);
+      var local = await localizeImage(a.img, region, function (reason) {
+        reasons[reason] = (reasons[reason] || 0) + 1;
+      });
       a.img = local;
       if (local) ok++; else failed++;
     }));
   }
   console.log('Images: downloaded', ok + (failed ? ', ' + failed + ' failed (kept no picture)' : ''));
+  if (failed) {
+    var breakdown = Object.keys(reasons)
+      .sort(function (x, y) { return reasons[y] - reasons[x]; })
+      .map(function (r) { return r + ' x' + reasons[r]; });
+    console.log('  reasons:', breakdown.join(', '));
+  }
 }
 
 // Naming the host is the whole point: a publisher moving to a new CDN shows up
