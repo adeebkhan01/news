@@ -97,14 +97,14 @@ test('the publishing workflow runs the tests before it commits', () => {
 });
 
 test('secrets are scoped to the step that needs them', () => {
-  // ANTHROPIC_API_KEY belongs to the fetch step. A workflow-level or job-level
+  // OPENROUTER_API_KEY belongs to the fetch step. A workflow-level or job-level
   // env block would hand it to the commit step and to every action either one
   // runs.
   const text = fs.readFileSync(path.join(DIR, 'fetch-feeds.yml'), 'utf8');
-  const uses = [...text.matchAll(/ANTHROPIC_API_KEY/g)];
+  const uses = [...text.matchAll(/OPENROUTER_API_KEY/g)];
   assert.equal(uses.length, 2, 'expected the key named once as an env var and once as the secret');
   // The env block sits inside a step, which means it is indented past the
   // step's own keys rather than sitting at job or workflow level.
-  assert.match(text, /\n {8}env:\n {10}ANTHROPIC_API_KEY:/,
-    'ANTHROPIC_API_KEY is not scoped to a single step');
+  assert.match(text, /\n {8}env:\n {10}OPENROUTER_API_KEY:/,
+    'OPENROUTER_API_KEY is not scoped to a single step');
 });

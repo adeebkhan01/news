@@ -7,7 +7,11 @@ const cluster  = require('./lib/cluster.js');
 const rank     = require('./lib/rank.js');
 const db       = require('./lib/db.js');
 
-const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+// Thinking Machines' full Inkling (975B total / 41B active params), not the
+// Small variant — chosen deliberately over the cheaper option for this
+// pipeline's translation and briefing-writing quality.
+const OPENROUTER_MODEL = 'thinkingmachines/inkling';
 
 // Feeds retired 2026-09 after failing on every scheduled run for weeks.
 // Re-add only with a green result from `node tools/check-feeds.js <url>`:
@@ -620,22 +624,33 @@ function reportRejectedImageHosts(hosts, label) {
        .forEach(function(h) { console.warn('  -', h, '(' + hosts[h] + ')'); });
 }
 
-function claudeComplete(systemPrompt, userPrompt, maxTokens) {
+// OpenRouter's chat-completions endpoint is OpenAI-shaped, not Anthropic-
+// shaped: system prompt as its own message rather than a top-level field,
+// and the reply lives at choices[0].message.content rather than content[0].text.
+function llmComplete(systemPrompt, userPrompt, maxTokens) {
   return new Promise(function(resolve, reject) {
+    // Both token-limit fields: OpenAI-family APIs are mid-deprecation of
+    // max_tokens in favor of max_completion_tokens, and which one a given
+    // OpenRouter-routed model actually honors isn't something this pipeline
+    // can test against live — sending both costs nothing if one is ignored.
     var body = JSON.stringify({
-      model: 'claude-haiku-4-5-20251001',
+      model: OPENROUTER_MODEL,
       max_tokens: maxTokens || 400,
-      system: systemPrompt,
-      messages: [{ role: 'user', content: userPrompt }]
+      max_completion_tokens: maxTokens || 400,
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: userPrompt }
+      ]
     });
     var req = https.request({
-      hostname: 'api.anthropic.com',
-      path: '/v1/messages',
+      hostname: 'openrouter.ai',
+      path: '/api/v1/chat/completions',
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'x-api-key': ANTHROPIC_API_KEY,
-        'anthropic-version': '2023-06-01',
+        'Authorization': 'Bearer ' + OPENROUTER_API_KEY,
+        'HTTP-Referer': 'https://adeebkhan01.github.io/news',
+        'X-Title': "AK's Daily Digest",
         'Content-Length': Buffer.byteLength(body)
       },
       timeout: 30000
@@ -644,22 +659,24 @@ function claudeComplete(systemPrompt, userPrompt, maxTokens) {
       res.on('data', function(c) { data += c; });
       res.on('end', function() {
         if (res.statusCode !== 200) {
-          return reject(new Error('Claude API error (' + res.statusCode + '): ' + data.slice(0, 300)));
+          return reject(new Error('OpenRouter API error (' + res.statusCode + '): ' + data.slice(0, 300)));
         }
         try {
           var json = JSON.parse(data);
-          if (json.type === 'error') {
-            return reject(new Error('Claude API: ' + (json.error && json.error.message || data.slice(0, 300))));
+          if (json.error) {
+            return reject(new Error('OpenRouter API: ' + (json.error.message || data.slice(0, 300))));
           }
-          if (!json.content || !json.content[0] || !json.content[0].text) {
-            return reject(new Error('Claude API returned empty content'));
+          var text = json.choices && json.choices[0] && json.choices[0].message
+            && json.choices[0].message.content;
+          if (!text) {
+            return reject(new Error('OpenRouter API returned empty content'));
           }
-          resolve(json.content[0].text);
+          resolve(text);
         } catch(e) { reject(e); }
       });
     });
     req.on('error', reject);
-    req.on('timeout', function() { req.destroy(); reject(new Error('Claude API timeout')); });
+    req.on('timeout', function() { req.destroy(); reject(new Error('OpenRouter API timeout')); });
     req.write(body);
     req.end();
   });
@@ -674,7 +691,7 @@ var apiUnavailable = false;
 function isApiUnavailable(err) {
   var m = String((err && err.message) || '');
   if (/credit balance|rate limit|overloaded|Internal server error/i.test(m)) return true;
-  if (/Claude API error \((?:401|403|408|429|5\d\d)\)/.test(m)) return true;
+  if (/OpenRouter API error \((?:401|403|408|429|5\d\d)\)/.test(m)) return true;
   if (/timeout|ECONNRESET|ECONNREFUSED|ENOTFOUND|EAI_AGAIN|socket hang up/i.test(m)) return true;
   return false;
 }
@@ -767,7 +784,7 @@ function dedupForBriefing(stories, limit) {
 // summarise forty headlines it produced forty headlines' worth of throat
 // clearing, because it had no way to know which five mattered.
 async function generateBriefing(stories) {
-  if (!ANTHROPIC_API_KEY || apiUnavailable) return null;
+  if (!OPENROUTER_API_KEY || apiUnavailable) return null;
   var top = dedupForBriefing(stories, BRIEFING_STORIES);
   if (top.length < security.BRIEFING_MIN_ITEMS) {
     console.log('Only', top.length, 'ranked stories — not enough for a briefing');
@@ -775,7 +792,7 @@ async function generateBriefing(stories) {
   }
   console.log('Writing the briefing for', REGION.label, 'over', top.length, 'stories...');
   try {
-    var raw = await claudeComplete(
+    var raw = await llmComplete(
       REGION.summaryPrompt
       + ' You write the morning briefing an analyst reads before anything else.'
       + ' Respond ONLY with valid JSON, no markdown, no preamble.',
@@ -839,10 +856,10 @@ async function generateBriefing(stories) {
 // for in a single call keyed by story id, so a story that already has a line
 // from a previous run is never paid for twice.
 async function generateWhyLines(stories) {
-  if (!ANTHROPIC_API_KEY || apiUnavailable || !stories.length) return null;
+  if (!OPENROUTER_API_KEY || apiUnavailable || !stories.length) return null;
   console.log('Writing "why this matters" for', stories.length, 'stories...');
   try {
-    var raw = await claudeComplete(
+    var raw = await llmComplete(
       REGION.summaryPrompt
       + ' You explain consequences in one sentence. Respond ONLY with valid JSON, no markdown.',
       'For each story below, write one sentence on why it matters — the concrete consequence and for whom.'
@@ -868,10 +885,10 @@ async function generateWhyLines(stories) {
 // Bangla for the briefing, translated rather than generated a second time so
 // the two languages always describe the same stories in the same order.
 async function translateBriefing(items) {
-  if (!ANTHROPIC_API_KEY || apiUnavailable || !items || !items.length) return null;
+  if (!OPENROUTER_API_KEY || apiUnavailable || !items || !items.length) return null;
   console.log('Translating the briefing to Bangla...');
   try {
-    var raw = await claudeComplete(
+    var raw = await llmComplete(
       'You are a Bengali (Bangla) translator. Translate each field of the given news briefing into natural'
       + ' Bengali, preserving the JSON structure exactly. Respond ONLY with the translated JSON array,'
       + ' no markdown, no preamble.',
@@ -899,10 +916,10 @@ async function translateBriefing(items) {
 
 async function translateWhyLines(whyMap) {
   var ids = Object.keys(whyMap || {});
-  if (!ANTHROPIC_API_KEY || apiUnavailable || !ids.length) return null;
+  if (!OPENROUTER_API_KEY || apiUnavailable || !ids.length) return null;
   console.log('Translating', ids.length, '"why this matters" lines to Bangla...');
   try {
-    var raw = await claudeComplete(
+    var raw = await llmComplete(
       'You are a Bengali (Bangla) translator. Translate each value of the given JSON object into natural'
       + ' Bengali, keeping every key exactly as given. Respond ONLY with the JSON object, no markdown.',
       JSON.stringify(whyMap),
@@ -938,7 +955,7 @@ var PROMPTS = {
 };
 
 async function translateArticles(articles) {
-  if (!ANTHROPIC_API_KEY || !articles.length) return;
+  if (!OPENROUTER_API_KEY || !articles.length) return;
   var intoBangla = articles.filter(function(a) { return lang.targetLang(a) === 'bn'; }).length;
   console.log('Translating', articles.length, 'articles (' + intoBangla + ' into Bangla, '
               + (articles.length - intoBangla) + ' into English)...');
@@ -950,7 +967,7 @@ async function translateArticles(articles) {
       var descKey  = lang.translatedField(a, 'desc');
       var prompt = PROMPTS[want];
       try {
-        var result = await claudeComplete(
+        var result = await llmComplete(
           prompt.system,
           'Title: '+a.title+'\nDescription: '+(a.desc||'')+'\n\n'
           + 'Return a JSON object with exactly these fields:\n'
@@ -979,7 +996,7 @@ async function translateArticles(articles) {
       }
     }));
     if (apiUnavailable) {
-      console.error('  Anthropic API unavailable — stopping translation for this run; the remaining articles stay queued');
+      console.error('  OpenRouter API unavailable — stopping translation for this run; the remaining articles stay queued');
       break;
     }
     if (i+BATCH < articles.length) await new Promise(function(r){ setTimeout(r,500); });
@@ -1106,7 +1123,7 @@ async function main() {
   }
   console.log('Egress policy:', POLICY.feedUrls.size, 'feed URLs,',
               POLICY.linkDomains.size, 'link domains,', POLICY.imageDomains.size, 'image domains');
-  if (!ANTHROPIC_API_KEY) console.warn('Warning: ANTHROPIC_API_KEY not set — AI summary and Bangla translations will be skipped');
+  if (!OPENROUTER_API_KEY) console.warn('Warning: OPENROUTER_API_KEY not set — AI summary and Bangla translations will be skipped');
 
   var dbFile = REGION.dataFile.replace(/\.json$/, '.sqlite');
   var conn = db.open(dbFile);
@@ -1478,7 +1495,7 @@ async function main() {
   }
   reportRejectedImageHosts(droppedImageHosts, 'feed images');
   if (apiUnavailable) {
-    console.warn('NOTE: the Anthropic API was unavailable this run — summaries and translations were skipped and will be retried next run.');
+    console.warn('NOTE: the OpenRouter API was unavailable this run — summaries and translations were skipped and will be retried next run.');
   }
 }
 
