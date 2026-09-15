@@ -117,7 +117,6 @@ const STRINGS = {
     coveredBy:       'Covered by {n} sources',
     sourceCount:     '{n} sources',
     sourceCountParen:'({n} sources)',
-    comparedWith:    'Changes measured against {date}',
     droppedHeading:  'Off the briefing since {date}',
     archive:         'Archive',
     archiveOlder:    'Older',
@@ -200,7 +199,6 @@ const STRINGS = {
     coveredBy:       '{n}টি উৎসে প্রকাশিত',
     sourceCount:     '{n}টি উৎস',
     sourceCountParen:'({n}টি উৎস)',
-    comparedWith:    '{date} তারিখের সঙ্গে তুলনা',
     droppedHeading:  '{date} থেকে সারসংক্ষেপের বাইরে',
     archive:         'আর্কাইভ',
     archiveOlder:    'আগের',
@@ -1426,30 +1424,26 @@ function renderSummary() {
   box.hidden = true;
 }
 
-// What the markers mean, said once rather than implied on every badge. A
-// "New" chip with no stated baseline is a claim the reader cannot check, and
-// the baseline is not always yesterday — a region whose archive has a gap
-// compares against the last day it has.
+// What was on yesterday's briefing and is not on today's — headlines only,
+// not links, since this is the archive's wording from a day that has moved
+// on, not today's coverage. The baseline date is stated inline rather than
+// assumed to be yesterday, since a region whose archive has a gap compares
+// against the last day it has.
 function renderChangeNote() {
   const note = document.getElementById('brief-change');
-  // Only in the full view. What the markers are measured against is something
-  // a reader checks once, not something they need re-reading every morning
-  // above the fold — and the chips themselves are the part worth scanning.
-  if (viewDate || !changedSince || !briefFull) { note.hidden = true; note.replaceChildren(); return; }
+  // Only in the full view, and only when there's something dropped to show —
+  // an empty note with nothing but a baseline date to state is not worth a
+  // reader's attention.
+  if (viewDate || !changedSince || !briefFull || !droppedItems.length) {
+    note.hidden = true; note.replaceChildren(); return;
+  }
 
   const frag = document.createDocumentFragment();
-  frag.appendChild(el('span', 'label', t('comparedWith', { date: formatDay(changedSince) })));
-
-  // The other half of "what changed": what was on that day's briefing and is
-  // not on today's. Headlines only, and not links — they are the archive's
-  // wording from a day that has moved on, not today's coverage.
-  if (droppedItems.length) {
-    const list = el('ul', 'dropped-list');
-    droppedItems.slice(0, 4).forEach(d => list.appendChild(el('li', null, d.headline)));
-    frag.appendChild(el('span', 'label dropped-heading',
-      t('droppedHeading', { date: formatDay(changedSince) })));
-    frag.appendChild(list);
-  }
+  const list = el('ul', 'dropped-list');
+  droppedItems.slice(0, 4).forEach(d => list.appendChild(el('li', null, d.headline)));
+  frag.appendChild(el('span', 'label dropped-heading',
+    t('droppedHeading', { date: formatDay(changedSince) })));
+  frag.appendChild(list);
   note.replaceChildren(frag);
   note.hidden = false;
 }
