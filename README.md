@@ -15,9 +15,9 @@ what to watch.
 ```
 .github/workflows/fetch-feeds.yml   twice daily (00:20, 12:20 UTC)
   node fetch.js --region {bd,au,global}
-    fetch + parse feeds → dedupe → translate (Inkling) → cluster into
+    fetch + parse feeds → dedupe → translate (DeepSeek Flash) → cluster into
     stories (lib/cluster.js) → rank + classify topic (lib/rank.js) →
-    write briefing (Inkling) → validate → write data-{region}.sqlite
+    write briefing (DeepSeek Flash) → validate → write data-{region}.sqlite
   node --test tests/*.test.js   ← gate: failing tests, nothing commits
 index.html loads sql.js, fetches the region's .sqlite, queries it client-side
 ```
@@ -30,7 +30,7 @@ A run that fails anywhere (bad URL, bad model output, failing tests) leaves
 | `index.html` | Markup only, no inline script/style |
 | `app.css` / `app.js` | Front end |
 | `sw.js` / `manifest.json` | PWA: offline caching, installability |
-| `fetch.js` | Feed fetcher, parser, OpenRouter (Inkling) calls |
+| `fetch.js` | Feed fetcher, parser, OpenRouter (DeepSeek Flash) calls |
 | `lib/cluster.js` | Groups articles into stories (no model call) |
 | `lib/rank.js` | Story ranking + topic classification |
 | `lib/db.js` | SQLite schema/writes/pruning (`node:sqlite`) |
@@ -53,8 +53,8 @@ origin. Run `node --test tests/*.test.js` before pushing.
 
 Needs Node 22+ (`node:sqlite` is built in). `OPEN_ROUTER` enables
 translation and briefings (via [OpenRouter](https://openrouter.ai), model
-`thinkingmachines/inkling`); without it, fetching and the page both still
-work, just without those two features.
+`~deepseek/deepseek-flash-latest`); without it, fetching and the page both
+still work, just without those two features.
 
 ## Feeds
 
