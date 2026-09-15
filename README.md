@@ -51,7 +51,7 @@ python3 -m http.server 8000      # open http://localhost:8000
 Serve over HTTP, not `file://` — the CSP's `connect-src 'self'` needs a real
 origin. Run `node --test tests/*.test.js` before pushing.
 
-Needs Node 22+ (`node:sqlite` is built in). `OPENROUTER_API_KEY` enables
+Needs Node 22+ (`node:sqlite` is built in). `OPEN_ROUTER` enables
 translation and briefings (via [OpenRouter](https://openrouter.ai), model
 `thinkingmachines/inkling`); without it, fetching and the page both still
 work, just without those two features.
@@ -111,7 +111,7 @@ Rules live in `lib/security.js`, shared by the fetcher and the tests:
   one hash (the theme-bootstrap inline script) plus `'wasm-unsafe-eval'`
   (sql.js). `img-src` is just `'self'` and `data:`.
 - **Supply chain**: every GitHub Action pinned to a commit SHA. Only
-  `fetch-feeds` has write access. `OPENROUTER_API_KEY` is scoped to the one
+  `fetch-feeds` has write access. `OPEN_ROUTER` is scoped to the one
   step that needs it. sql.js is vendored by hand, not npm-managed — the one
   intentional exception to "no dependencies."
 

@@ -7,7 +7,7 @@ const cluster  = require('./lib/cluster.js');
 const rank     = require('./lib/rank.js');
 const db       = require('./lib/db.js');
 
-const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+const OPENROUTER_API_KEY = process.env.OPEN_ROUTER;
 // Thinking Machines' full Inkling (975B total / 41B active params), not the
 // Small variant — chosen deliberately over the cheaper option for this
 // pipeline's translation and briefing-writing quality.
@@ -1123,7 +1123,7 @@ async function main() {
   }
   console.log('Egress policy:', POLICY.feedUrls.size, 'feed URLs,',
               POLICY.linkDomains.size, 'link domains,', POLICY.imageDomains.size, 'image domains');
-  if (!OPENROUTER_API_KEY) console.warn('Warning: OPENROUTER_API_KEY not set — AI summary and Bangla translations will be skipped');
+  if (!OPENROUTER_API_KEY) console.warn('Warning: OPEN_ROUTER not set — AI summary and Bangla translations will be skipped');
 
   var dbFile = REGION.dataFile.replace(/\.json$/, '.sqlite');
   var conn = db.open(dbFile);
