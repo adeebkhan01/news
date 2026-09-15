@@ -316,6 +316,15 @@ function pick(article, field) {
   return (typeof other === 'string' && other) ? other : (article[field] || '');
 }
 
+// An archived story's headline in the selected language — same fallback
+// logic as pick(), applied to snapshot_stories rows instead of articles.
+function archiveHeadline(st) {
+  const own = st.lang || 'en';
+  if (langMode === own) return st.headline || '';
+  const other = langMode === 'bn' ? st.headlineBn : st.headlineEn;
+  return other || st.headline || '';
+}
+
 // Which language pick() actually returned, which is not always the one
 // selected: a Bangla article with no English translation yet stays Bangla.
 function shownLang(article) {
@@ -1075,7 +1084,7 @@ function renderArchiveFeed() {
   stories.forEach(st => {
     const item = el('li', 'archive-item');
     const link = safeURL(st.lead);
-    const anchor = el('a', 'archive-headline', st.headline || t('untitled'));
+    const anchor = el('a', 'archive-headline', archiveHeadline(st) || t('untitled'));
     anchor.href = link || '#';
     if (link) { anchor.target = '_blank'; anchor.rel = 'noopener noreferrer'; }
     item.appendChild(anchor);
@@ -1087,11 +1096,15 @@ function renderArchiveFeed() {
     if (st.topic) meta.appendChild(el('span', 'label', st.topic));
     if (meta.childElementCount) item.appendChild(meta);
 
-    if (st.why) {
-      const why = el('p', 'card-why');
-      why.appendChild(el('span', 'why-label', t('whyItMatters')));
-      why.appendChild(document.createTextNode(st.why));
-      item.appendChild(why);
+    // `why` is always written in English and only ever translated into
+    // Bangla (never the other way), unlike the headline — so this only
+    // needs the one fallback direction.
+    const why = langMode === 'bn' && st.whyBn ? st.whyBn : st.why;
+    if (why) {
+      const whyEl = el('p', 'card-why');
+      whyEl.appendChild(el('span', 'why-label', t('whyItMatters')));
+      whyEl.appendChild(document.createTextNode(why));
+      item.appendChild(whyEl);
     }
     list.appendChild(item);
   });
@@ -1549,7 +1562,8 @@ function queryArchiveSnapshot(date) {
     stories: rows.map(r => ({
       id: r.story_id, headline: plainText(r.headline), lead: r.lead_link, size: r.size,
       sourceIds: JSON.parse(r.source_ids), topic: r.topic, score: r.score,
-      why: r.why, whyBn: r.why_bn
+      why: r.why, whyBn: r.why_bn,
+      lang: r.lang, headlineEn: plainText(r.headline_en), headlineBn: plainText(r.headline_bn)
     }))
   };
 }

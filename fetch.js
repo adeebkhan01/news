@@ -1405,10 +1405,12 @@ async function main() {
   // all. The snapshot freezes today's story *ranking*, which is worth
   // recording even on a day the briefing prose itself is a carried-over one.
   var snapshotStories = briefing ? ranked.slice(0, ARCHIVE_STORIES).map(function (st) {
+    var lead = st.members[0];
     return {
-      id: st.id, headline: st.members[0].title, leadLink: st.members[0].link,
+      id: st.id, headline: lead.title, leadLink: lead.link,
       size: st.members.length, sourceIds: st.sourceIds, topic: st.topic,
-      score: Math.round(st.score * 1000) / 1000, why: whyMap[st.id] || null, whyBn: whyBnMap[st.id] || null
+      score: Math.round(st.score * 1000) / 1000, why: whyMap[st.id] || null, whyBn: whyBnMap[st.id] || null,
+      lang: lead.lang || null, headlineEn: db.fieldValue(lead.titleEn), headlineBn: db.fieldValue(lead.titleBn)
     };
   }) : null;
 

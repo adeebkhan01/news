@@ -234,15 +234,14 @@ a{color:inherit}
 .main-col{min-width:0}
 
 /* Section opener: micro-label + title on a 1px hard rule. */
-/* Region flags. The display and text faces are monospace and carry no emoji
-   glyphs, so these need the platform's emoji font explicitly. On Windows,
-   Chrome renders regional-indicator pairs as the letters "BD"/"AU" rather than
-   a flag — which is why the label always sits beside the flag rather than
-   being replaced by it. */
+/* Region flags, as inline SVG rather than flag emoji: Windows has no color
+   flag glyphs and renders a regional-indicator pair as the bare letters
+   "BD"/"AU" in a box, so an emoji flag never looked like a flag there. An
+   SVG the page draws itself renders identically everywhere. */
 .flag{
-  font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif;
-  font-size:1em;line-height:1;margin-right:var(--space-2);
+  display:inline-flex;line-height:1;margin-right:var(--space-2);
 }
+.flag svg{width:1.3em;height:0.867em;vertical-align:-0.1em;border-radius:1px}
 .region-link .flag{margin-right:var(--space-1)}
 
 .section-head{
