@@ -90,7 +90,6 @@ const STRINGS = {
     switchLanguage:  'Switch language',
     themeDay:        'Day',
     themeNight:      'Night',
-    refresh:         'Refresh',
     fetching:        'Fetching',
     region:          'Region',
     regionBd:        'Bangladesh',
@@ -174,7 +173,6 @@ const STRINGS = {
     switchLanguage:  'ভাষা বদলান',
     themeDay:        'দিন',
     themeNight:      'রাত',
-    refresh:         'রিফ্রেশ',
     fetching:        'আনা হচ্ছে',
     region:          'অঞ্চল',
     regionBd:        'বাংলাদেশ',
@@ -532,7 +530,6 @@ function applyLanguage() {
   applyArchiveChrome();
   applyRegionChrome();
   renderStatus();
-  document.getElementById('refresh-label').textContent = t(loading ? 'fetching' : 'refresh');
   renderProvenance();
   buildFilterBar();
   buildTopicBar();
@@ -1731,9 +1728,6 @@ async function loadData() {
   if (loading) return;
   loading = true;
 
-  const btn = document.getElementById('refresh-btn');
-  btn.disabled = true;
-  document.getElementById('refresh-label').textContent = t('fetching');
   setStatus('warn', () => t('fetching') + ' ' + REGION_CONFIG[activeRegion].dbFile);
   showSkeletons();
 
@@ -1795,8 +1789,6 @@ async function loadData() {
     document.getElementById('article-count').textContent = '';
   }
 
-  btn.disabled = false;
-  document.getElementById('refresh-label').textContent = t('refresh');
   loading = false;
 }
 
@@ -1813,7 +1805,6 @@ window.addEventListener('scroll', () => {
 function wireControls() {
   document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
   document.getElementById('lang-toggle').addEventListener('click', toggleLang);
-  document.getElementById('refresh-btn').addEventListener('click', loadData);
   document.getElementById('summary-toggle').addEventListener('click', toggleSummary);
   // Delegated: each item's own toggle is rebuilt on every renderSummary(),
   // but #page-summary-text, the parent they're rebuilt inside, is not.
