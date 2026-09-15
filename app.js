@@ -118,9 +118,6 @@ const STRINGS = {
     coveredBy:       'Covered by {n} sources',
     sourceCount:     '{n} sources',
     sourceCountParen:'({n} sources)',
-    statusNew:       'New',
-    statusDeveloping:'Developing',
-    gainedSources:   'Developing \u00B7 +{n}',
     comparedWith:    'Changes measured against {date}',
     droppedHeading:  'Off the briefing since {date}',
     archive:         'Archive',
@@ -205,9 +202,6 @@ const STRINGS = {
     coveredBy:       '{n}টি উৎসে প্রকাশিত',
     sourceCount:     '{n}টি উৎস',
     sourceCountParen:'({n}টি উৎস)',
-    statusNew:       'নতুন',
-    statusDeveloping:'অগ্রগতি',
-    gainedSources:   'অগ্রগতি \u00B7 +{n}',
     comparedWith:    '{date} তারিখের সঙ্গে তুলনা',
     droppedHeading:  '{date} থেকে সারসংক্ষেপের বাইরে',
     archive:         'আর্কাইভ',
@@ -314,6 +308,15 @@ function pick(article, field) {
   if (langMode === own) return article[field] || '';
   const other = article[field + (langMode === 'bn' ? 'Bn' : 'En')];
   return (typeof other === 'string' && other) ? other : (article[field] || '');
+}
+
+// An archived story's headline in the selected language — same fallback
+// logic as pick(), applied to snapshot_stories rows instead of articles.
+function archiveHeadline(st) {
+  const own = st.lang || 'en';
+  if (langMode === own) return st.headline || '';
+  const other = langMode === 'bn' ? st.headlineBn : st.headlineEn;
+  return other || st.headline || '';
 }
 
 // Which language pick() actually returned, which is not always the one
@@ -787,22 +790,6 @@ function otherSources(a, story) {
   return story.sourceIds.filter(id => id !== a.sourceId);
 }
 
-// The "since yesterday" marker for a story, or null when there is nothing to
-// say. Absent status means the pipeline had no earlier snapshot to compare
-// against — which is not the same as "unchanged", and must not render as it.
-function changeChip(story) {
-  // Never in the archive: "new" means new relative to today's run, and
-  // stamping it on a day that is over would be a claim about the wrong day.
-  if (viewDate) return null;
-  if (!story || !story.status || !changedSince) return null;
-  if (story.status === 'new') return el('span', 'change-chip is-new', t('statusNew'));
-  if (story.status === 'developing') {
-    return el('span', 'change-chip is-developing',
-      story.gained ? t('gainedSources', { n: num(story.gained) }) : t('statusDeveloping'));
-  }
-  return null;   // 'continuing' is the default state and needs no badge
-}
-
 // One of the other newsrooms that covered this story, linked to its own
 // telling. Its own function so that `link` here is unambiguously this
 // member's URL, and so the safeURL check sits next to the assignment it
@@ -943,8 +930,6 @@ function cardElement(a, isFeatured, n, isSecondary) {
   } else if (story) {
     label.appendChild(el('span', 'single-source', t('singleSource')));
   }
-  const chip = changeChip(story);
-  if (chip) label.appendChild(chip);
   body.appendChild(label);
 
   // lang on the element, not a guess from the page: an article with no
@@ -1075,7 +1060,7 @@ function renderArchiveFeed() {
   stories.forEach(st => {
     const item = el('li', 'archive-item');
     const link = safeURL(st.lead);
-    const anchor = el('a', 'archive-headline', st.headline || t('untitled'));
+    const anchor = el('a', 'archive-headline', archiveHeadline(st) || t('untitled'));
     anchor.href = link || '#';
     if (link) { anchor.target = '_blank'; anchor.rel = 'noopener noreferrer'; }
     item.appendChild(anchor);
@@ -1087,11 +1072,15 @@ function renderArchiveFeed() {
     if (st.topic) meta.appendChild(el('span', 'label', st.topic));
     if (meta.childElementCount) item.appendChild(meta);
 
-    if (st.why) {
-      const why = el('p', 'card-why');
-      why.appendChild(el('span', 'why-label', t('whyItMatters')));
-      why.appendChild(document.createTextNode(st.why));
-      item.appendChild(why);
+    // `why` is always written in English and only ever translated into
+    // Bangla (never the other way), unlike the headline — so this only
+    // needs the one fallback direction.
+    const why = langMode === 'bn' && st.whyBn ? st.whyBn : st.why;
+    if (why) {
+      const whyEl = el('p', 'card-why');
+      whyEl.appendChild(el('span', 'why-label', t('whyItMatters')));
+      whyEl.appendChild(document.createTextNode(why));
+      item.appendChild(whyEl);
     }
     list.appendChild(item);
   });
@@ -1356,8 +1345,6 @@ function briefItemElement(item, n, full, itemLang, itemOpen) {
   if (story && story.sourceIds && story.sourceIds.length > 1) {
     head.appendChild(el('span', 'brief-sources', t('sourceCountParen', { n: num(story.sourceIds.length) })));
   }
-  const chip = changeChip(story);
-  if (chip) head.appendChild(chip);
   wrap.appendChild(head);
 
   // Compact is one sentence and no label: this is the briefing, every line in
@@ -1549,7 +1536,8 @@ function queryArchiveSnapshot(date) {
     stories: rows.map(r => ({
       id: r.story_id, headline: plainText(r.headline), lead: r.lead_link, size: r.size,
       sourceIds: JSON.parse(r.source_ids), topic: r.topic, score: r.score,
-      why: r.why, whyBn: r.why_bn
+      why: r.why, whyBn: r.why_bn,
+      lang: r.lang, headlineEn: plainText(r.headline_en), headlineBn: plainText(r.headline_bn)
     }))
   };
 }
@@ -1679,8 +1667,7 @@ function buildStoryMaps(storyRows, articles) {
   storyRows.forEach(r => {
     byId[r.id] = {
       id: r.id, topic: r.topic, score: r.score, first: r.first_date, latest: r.latest_date,
-      why: r.why || null, whyBn: r.why_bn || null, status: r.status || null,
-      gained: r.gained || null, links: [], sourceIds: []
+      why: r.why || null, whyBn: r.why_bn || null, links: [], sourceIds: []
     };
   });
   // Newest first, matching how allArticles is already ordered: members[0]
