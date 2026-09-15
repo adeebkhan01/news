@@ -403,19 +403,6 @@ body.archive-mode #status-text{display:none}
 .archive-meta{display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--space-2)}
 .archive-item .card-why{margin-top:var(--space-3)}
 
-/* "New" and "Developing" earn their colour: they are the only thing on the
-   page that is about the reader's last visit rather than about the news. A
-   story with no marker is not unchanged — it is a story the pipeline had no
-   earlier snapshot to compare against, which is why 'continuing' renders as
-   nothing at all and the baseline date is stated once below the briefing. */
-.change-chip{
-  font-family:var(--font-display);font-weight:700;font-size:var(--size-2xs);line-height:1;
-  text-transform:uppercase;letter-spacing:var(--track-label);
-  padding:var(--space-2) var(--space-3);border-radius:var(--radius);
-}
-.change-chip.is-new{color:var(--text-inverse);background:var(--ok-1)}
-.change-chip.is-developing{color:var(--gold-ink);border:var(--border-w) solid var(--gold-2)}
-:root[data-theme="night"] .change-chip.is-developing{color:var(--gold-1)}
 .brief-change{
   margin-top:var(--space-4);padding-top:var(--space-3);
   border-top:var(--border-w) dashed var(--border-hairline);
@@ -436,7 +423,6 @@ body.archive-mode #status-text{display:none}
   margin-left:var(--space-2);white-space:nowrap;
   font-size:var(--size-xs);font-weight:400;color:var(--text-muted);
 }
-.brief-headline .change-chip{margin-left:var(--space-2);vertical-align:1px}
 .brief-link{text-decoration:none;color:inherit}
 .brief-link:hover{color:var(--text-accent);text-decoration:underline;text-underline-offset:3px}
 /* A story already clicked into reads a shade quieter — this browser's own
@@ -537,7 +523,7 @@ body.archive-mode #status-text{display:none}
 /* The chips sit in the source line, so their box has to match its line box.
    Padding that makes a chip taller than the row it joins pushes every card
    down by the difference — ten pixels an item, over a whole feed. */
-.card-label .corroborated,.card-label .change-chip{padding:2px var(--space-3)}
+.card-label .corroborated{padding:2px var(--space-3)}
 /* Corroboration, in the gold the rest of the page reserves for signal: this
    is the single most useful thing on the card. Its absence is stated too —
    a single-source report is a weaker claim and should not look identical. */
