@@ -10,8 +10,9 @@ const db       = require('./lib/db.js');
 const OPENROUTER_API_KEY = process.env.OPEN_ROUTER;
 // Thinking Machines' full Inkling (975B total / 41B active params), not the
 // Small variant — chosen deliberately over the cheaper option for this
-// pipeline's translation and briefing-writing quality.
-const OPENROUTER_MODEL = 'thinkingmachines/inkling';
+// pipeline's translation and briefing-writing quality. :free is the free
+// tier of the same model, not a different one.
+const OPENROUTER_MODEL = 'thinkingmachines/inkling:free';
 
 // Feeds retired 2026-09 after failing on every scheduled run for weeks.
 // Re-add only with a green result from `node tools/check-feeds.js <url>`:
