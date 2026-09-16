@@ -39,6 +39,7 @@ jobs:
           node fetch.js --region bd
           node fetch.js --region au
           node fetch.js --region global
+          node fetch.js --region np
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 

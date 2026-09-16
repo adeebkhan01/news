@@ -74,7 +74,8 @@ function markRead(link) {
 const REGION_CONFIG = {
   bd:     { mark: 'BD', flag: '\u{1F1E7}\u{1F1E9}', dbFile: 'data-bd.sqlite',     hasLang: true },
   au:     { mark: 'AU', flag: '\u{1F1E6}\u{1F1FA}', dbFile: 'data-au.sqlite',     hasLang: true },
-  global: { mark: 'GL', flag: '\u{1F30F}',           dbFile: 'data-global.sqlite', hasLang: true }
+  global: { mark: 'GL', flag: '\u{1F30F}',           dbFile: 'data-global.sqlite', hasLang: true },
+  np:     { mark: 'NP', flag: '\u{1F1F3}\u{1F1F5}', dbFile: 'data-np.sqlite',     hasLang: true }
 };
 
 /* ── Language ──────────────────────────────────────────────────────────
@@ -95,6 +96,7 @@ const STRINGS = {
     regionBd:        'Bangladesh',
     regionAu:        'Australia',
     regionGlobal:    'Global',
+    regionNp:        'Nepal',
     search:          'Search',
     filterHeadlines: 'Filter headlines',
     clearSearch:     'Clear search',
@@ -163,7 +165,7 @@ const STRINGS = {
     hoursAgo:        '{n}h ago',
     daysAgo:         '{n}d ago',
     siteTitle:       'AK\u2019s Daily Digest \u2014 {region}',
-    footerRegions:   'AK\u2019s Daily Digest \u2014 Bangladesh, Australia, Global',
+    footerRegions:   'AK\u2019s Daily Digest \u2014 Bangladesh, Australia, Nepal, Global',
     footerRefresh:   'Refreshed twice daily via GitHub Actions',
     footerLast:      'Refreshed twice daily via GitHub Actions \u2014 last {time}'
   },
@@ -177,6 +179,7 @@ const STRINGS = {
     regionBd:        'বাংলাদেশ',
     regionAu:        'অস্ট্রেলিয়া',
     regionGlobal:    'বিশ্ব',
+    regionNp:        'নেপাল',
     search:          'খোঁজ',
     filterHeadlines: 'শিরোনাম ছাঁকুন',
     clearSearch:     'খোঁজ মুছুন',
@@ -245,7 +248,7 @@ const STRINGS = {
     hoursAgo:        '{n} ঘণ্টা আগে',
     daysAgo:         '{n} দিন আগে',
     siteTitle:       'AK-এর ডেইলি ডাইজেস্ট \u2014 {region}',
-    footerRegions:   'AK-এর ডেইলি ডাইজেস্ট \u2014 বাংলাদেশ, অস্ট্রেলিয়া, বিশ্ব',
+    footerRegions:   'AK-এর ডেইলি ডাইজেস্ট \u2014 বাংলাদেশ, অস্ট্রেলিয়া, নেপাল, বিশ্ব',
     footerRefresh:   'GitHub Actions-এ দিনে দুইবার হালনাগাদ',
     footerLast:      'GitHub Actions-এ দিনে দুইবার হালনাগাদ \u2014 সর্বশেষ {time}'
   }
@@ -264,7 +267,9 @@ const SOURCE_NAMES_BN = {
   smh: 'সিডনি মর্নিং হেরাল্ড',   conversationau: 'দ্য কনভারসেশন অস্ট্রেলিয়া',
   bbcnews: 'বিবিসি নিউজ',       aljazeera: 'আল জাজিরা',    guardian: 'দ্য গার্ডিয়ান',
   npr: 'এনপিআর',                france24: 'ফ্রান্স ২৪',      dwnews: 'ডয়চে ভেলে',
-  cnn: 'সিএনএন',                bloomberg: 'ব্লুমবার্গ',     pewresearch: 'পিউ রিসার্চ'
+  cnn: 'সিএনএন',                bloomberg: 'ব্লুমবার্গ',     pewresearch: 'পিউ রিসার্চ',
+  kathmandupost: 'দ্য কাঠমান্ডু পোস্ট', himalayantimes: 'দ্য হিমালয়ান টাইমস',
+  onlinekhabar: 'অনলাইনখবর'
 };
 
 const LOCALE = { en: 'en-GB', bn: 'bn-BD' };
@@ -285,7 +290,7 @@ function num(n) {
 }
 
 function regionLabel(id) {
-  return t(id === 'bd' ? 'regionBd' : id === 'au' ? 'regionAu' : 'regionGlobal');
+  return t(id === 'bd' ? 'regionBd' : id === 'au' ? 'regionAu' : id === 'np' ? 'regionNp' : 'regionGlobal');
 }
 
 function sourceLabel(article) {
@@ -1859,12 +1864,12 @@ if ('serviceWorker' in navigator) {
 }
 
 /* ── Swipe navigation ── */
-// Left across BD → AU → Global and back — the same order the masthead tabs
-// already read in, just reachable without a thumb trip up to them. Clamped
-// rather than wrapping past either end, matching how the tabs themselves
-// have no cyclic "next after Global is BD" behavior either.
+// Left across BD → AU → Global → Nepal and back — the same order the
+// masthead tabs already read in, just reachable without a thumb trip up to
+// them. Clamped rather than wrapping past either end, matching how the tabs
+// themselves have no cyclic "next after Nepal is BD" behavior either.
 (function setupSwipeNav() {
-  const REGION_ORDER = ['bd', 'au', 'global'];
+  const REGION_ORDER = ['bd', 'au', 'global', 'np'];
   const SWIPE_MIN_X = 60;   // minimum horizontal travel to count as a swipe
   const SWIPE_MAX_Y = 60;   // more vertical than this reads as a scroll, not a swipe
   let startX = 0, startY = 0;

@@ -142,6 +142,23 @@ const REGIONS = {
       // than adding a second, source-specific filter to maintain.
       { id: 'pewresearch', name: 'Pew Research', color: '#003F6C', url: 'https://www.pewresearch.org/feed/' },
     ]
+  },
+  // English-language sources only — no Nepali-language feed the way risingbd/
+  // amardesh are Bangla for bd, so there is no new translation direction to
+  // build. `translate` still runs (English -> Bangla), matching how au/global
+  // already translate their English sources for the same Bangla-reading
+  // audience the rest of the site serves.
+  np: {
+    label: 'Nepal',
+    dataFile: 'data-np.json',
+    translate: true,
+    topicFilter: true,
+    summaryPrompt: 'You are a concise news briefing editor covering Nepal.',
+    sources: [
+      { id: 'kathmandupost', name: 'The Kathmandu Post', color: '#8B1A1A', url: 'https://kathmandupost.com/rss' },
+      { id: 'himalayantimes', name: 'The Himalayan Times', color: '#003D7A', url: 'https://thehimalayantimes.com/feed/' },
+      { id: 'onlinekhabar', name: 'Online Khabar English', color: '#D4302A', url: 'https://english.onlinekhabar.com/feed' },
+    ]
   }
 };
 

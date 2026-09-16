@@ -241,7 +241,10 @@ a{color:inherit}
 .flag{
   display:inline-flex;line-height:1;margin-right:var(--space-2);
 }
-.flag svg{width:1.3em;height:0.867em;vertical-align:-0.1em;border-radius:1px}
+/* height:auto rather than a fixed ratio: most flags here are 3:2, but
+   Nepal's isn't a rectangle at all, and forcing its viewBox into 3:2 would
+   squash the one flag where the shape itself is the point. */
+.flag svg{width:1.3em;height:auto;vertical-align:-0.15em;border-radius:1px}
 .region-link .flag{margin-right:var(--space-1)}
 
 .section-head{
