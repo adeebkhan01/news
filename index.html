@@ -26,20 +26,20 @@
      manifest — every other directive still falls back to default-src
      'none'. -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-fZ21OHFTlZGA1hOkTvMIcS92235qeNGBK+384Rw3HMo='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'" />
-<meta name="description" content="A clean, fast news reader for Bangladesh, Australia and the world — headlines from trusted sources, updated continuously." />
+<meta name="description" content="A clean, fast news reader for Bangladesh, Australia, Nepal and the world — headlines from trusted sources, updated continuously." />
 <!-- Static, not per-region: a meta CSP page has no server to render a
      different tag per ?region=, and a share link is far more often read as
      a title+description card than expanded into the live page anyway. -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="AK's Daily Digest" />
-<meta property="og:title" content="AK's Daily Digest — Bangladesh · Australia · Global" />
-<meta property="og:description" content="A clean, fast news reader for Bangladesh, Australia and the world — headlines from trusted sources, updated continuously." />
+<meta property="og:title" content="AK's Daily Digest — Bangladesh · Australia · Nepal · Global" />
+<meta property="og:description" content="A clean, fast news reader for Bangladesh, Australia, Nepal and the world — headlines from trusted sources, updated continuously." />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="AK's Daily Digest — Bangladesh · Australia · Global" />
-<meta name="twitter:description" content="A clean, fast news reader for Bangladesh, Australia and the world — headlines from trusted sources, updated continuously." />
+<meta name="twitter:title" content="AK's Daily Digest — Bangladesh · Australia · Nepal · Global" />
+<meta name="twitter:description" content="A clean, fast news reader for Bangladesh, Australia, Nepal and the world — headlines from trusted sources, updated continuously." />
 <meta name="theme-color" content="#fdfcfb" media="(prefers-color-scheme: light)" />
 <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
-<title>AK's Daily Digest — Bangladesh · Australia · Global</title>
+<title>AK's Daily Digest — Bangladesh · Australia · Nepal · Global</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fdfcfb'/%3E%3Crect x='4' y='7' width='16' height='18' fill='%230e1729'/%3E%3Crect x='23' y='7' width='5' height='18' fill='%23d4a418'/%3E%3C/svg%3E" />
 <link rel="apple-touch-icon" href="icon.svg" />
 <link rel="manifest" href="manifest.json" />
@@ -54,7 +54,7 @@
     document.documentElement.setAttribute('data-theme', theme);
   })();
 </script>
-<link rel="stylesheet" href="app.css?v=d92e7da52288" />
+<link rel="stylesheet" href="app.css?v=a3eb3b15c9a0" />
 </head>
 <body>
 <a class="skip-link" href="#feed-container" data-i18n="skipToHeadlines">Skip to headlines</a>
@@ -64,8 +64,8 @@
     <a class="wordmark" href="index.html">
       <span>AK's Daily Digest</span><span class="tick" aria-hidden="true"></span>
     </a>
-    <!-- Navigation, not content: three regions inline, the active one named
-         in full and the other two named only by flag once space is tight.
+    <!-- Navigation, not content: four regions inline, the active one named
+         in full and the others named only by flag once space is tight.
          This used to be its own bordered section under the masthead with a
          "Region" micro-label over it — chrome enough to read as a second
          piece of content rather than as wayfinding. -->
@@ -75,6 +75,8 @@
       <button class="region-link" role="tab" aria-selected="false" data-region="au"><span class="flag" aria-hidden="true"><svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#00247d"/><path d="M0,0 15,10M15,0 0,10" stroke="#fff" stroke-width="2.4"/><path d="M0,0 15,10M15,0 0,10" stroke="#cf142b" stroke-width="1.2"/><path d="M7.5,0V10M0,5H15" stroke="#fff" stroke-width="3.4"/><path d="M7.5,0V10M0,5H15" stroke="#cf142b" stroke-width="1.7"/><g fill="#fff"><circle cx="22" cy="4" r="1"/><circle cx="25.5" cy="8" r="1"/><circle cx="21" cy="12.5" r="1"/><circle cx="26" cy="15" r="1"/><circle cx="22.5" cy="17.5" r="1.3"/></g></svg></span><span class="region-name" data-i18n="regionAu">Australia</span></button>
       <span class="region-sep" aria-hidden="true">·</span>
       <button class="region-link" role="tab" aria-selected="false" data-region="global"><span class="flag" aria-hidden="true"><svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="9" fill="#2f7fd6"/><path d="M1,10H19M10,1V19M3.2,4.5Q10,9 16.8,4.5M3.2,15.5Q10,11 16.8,15.5" stroke="#fff" stroke-width="1" fill="none"/><ellipse cx="10" cy="10" rx="4" ry="9" stroke="#fff" stroke-width="1" fill="none"/></svg></span><span class="region-name" data-i18n="regionGlobal">Global</span></button>
+      <span class="region-sep" aria-hidden="true">·</span>
+      <button class="region-link" role="tab" aria-selected="false" data-region="np"><span class="flag" aria-hidden="true"><svg viewBox="0 0 18 24" xmlns="http://www.w3.org/2000/svg"><path d="M2,1 L15,7 L2,9.5 L15,16 L2,23 Z" fill="#DC143C" stroke="#003893" stroke-width="1.4" stroke-linejoin="round"/></svg></span><span class="region-name" data-i18n="regionNp">Nepal</span></button>
     </nav>
     <div class="masthead-right">
       <span class="provenance" id="last-updated">—</span>
@@ -177,7 +179,7 @@
 
 <footer>
   <div class="foot-inner">
-    <span data-i18n="footerRegions">AK's Daily Digest — Bangladesh, Australia, Global</span>
+    <span data-i18n="footerRegions">AK's Daily Digest — Bangladesh, Australia, Nepal, Global</span>
     <span id="foot-provenance">Refreshed twice daily via GitHub Actions</span>
   </div>
 </footer>
@@ -186,6 +188,6 @@
      document order, so initSqlJs is defined by the time app.js needs it.
      locateFile in app.js points this at the matching .wasm file. -->
 <script src="vendor/sql-wasm-1.13.0.js" defer></script>
-<script src="app.js?v=531079970149" defer></script>
+<script src="app.js?v=d6ff90842c14" defer></script>
 </body>
 </html>

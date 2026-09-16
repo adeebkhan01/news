@@ -11,7 +11,7 @@
 // with index.html the moment either file changes. Everything is cached on
 // first use instead, keyed by its full request URL, hash included.
 var CACHE_NAME = 'daily-digest-v1';
-var DB_RE = /\/data-(bd|au|global)\.sqlite(\?|$)/;
+var DB_RE = /\/data-(bd|au|global|np)\.sqlite(\?|$)/;
 
 self.addEventListener('install', function (event) {
   self.skipWaiting();

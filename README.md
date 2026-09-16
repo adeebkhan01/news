@@ -1,6 +1,6 @@
 # AK's Daily Digest
 
-A static news reader for Bangladesh, Australia and global headlines. A
+A static news reader for Bangladesh, Australia, Nepal and global headlines. A
 scheduled GitHub Action fetches RSS feeds into one SQLite file per region;
 the page reads that file client-side via a vendored build of sql.js. No
 server, no build step, no npm dependencies.
@@ -14,7 +14,7 @@ what to watch.
 
 ```
 .github/workflows/fetch-feeds.yml   twice daily (00:20, 12:20 UTC)
-  node fetch.js --region {bd,au,global}
+  node fetch.js --region {bd,au,global,np}
     fetch + parse feeds → dedupe → translate (Claude) → cluster into
     stories (lib/cluster.js) → rank + classify topic (lib/rank.js) →
     write briefing (Claude) → validate → write data-{region}.sqlite
