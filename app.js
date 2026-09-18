@@ -17,6 +17,9 @@ let storyById    = {};     // story id -> the record fetch.js published
 let storyByLead  = {};     // the link of a story's freshest member -> that story
 let articleByLink = {};    // link -> article, so a story can name its members
 let feedOrder    = localStorage.getItem('news-order') === 'latest' ? 'latest' : 'top';
+// AU only. 'general' or 'broker' — a different top-story selection and
+// briefing over the same au articles, not a different region.
+let briefMode    = localStorage.getItem('news-briefmode') === 'broker' ? 'broker' : 'general';
 let dateScope    = localStorage.getItem('news-scope') === 'all' ? 'all' : 'today';
 let changedSince = null;   // the date the "new"/"developing" markers are measured against
 let droppedItems = [];     // stories that were on that day's briefing and are not on today's
@@ -116,6 +119,9 @@ const STRINGS = {
     dateScope:       'Date range',
     scopeToday:      'Today',
     scopeAll:        'All time',
+    briefMode:       'Briefing mode',
+    briefModeGeneral:'General',
+    briefModeBroker: 'For brokers',
     coveredBy:       'Covered by {n} sources',
     sourceCount:     '{n} sources',
     sourceCountParen:'({n} sources)',
@@ -199,6 +205,9 @@ const STRINGS = {
     dateScope:       'সময়সীমা',
     scopeToday:      'আজ',
     scopeAll:        'সর্বকাল',
+    briefMode:       'সারসংক্ষেপ মোড',
+    briefModeGeneral:'সাধারণ',
+    briefModeBroker: 'ব্রোকারদের জন্য',
     coveredBy:       '{n}টি উৎসে প্রকাশিত',
     sourceCount:     '{n}টি উৎস',
     sourceCountParen:'({n}টি উৎস)',
@@ -610,6 +619,36 @@ function applyRegionChrome() {
     localStorage.setItem('news-lang', langMode);
     applyLanguage();
   }
+
+  applyBriefModeChrome();
+}
+
+// The general/for-brokers toggle only exists on au — a mode of that
+// region's briefing, not a feature every region carries. Hidden elsewhere
+// rather than disabled, the same choice the language toggle already made
+// for a region with nothing to translate.
+function applyBriefModeChrome() {
+  const toggle = document.getElementById('brief-mode-toggle');
+  if (!toggle) return;
+  toggle.hidden = activeRegion !== 'au';
+  document.querySelectorAll('#brief-mode-toggle .brief-mode-btn').forEach(btn => {
+    const on = btn.dataset.mode === briefMode;
+    btn.classList.toggle('active', on);
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+}
+
+function setBriefMode(mode) {
+  const next = mode === 'broker' ? 'broker' : 'general';
+  if (next === briefMode) return;
+  briefMode = next;
+  localStorage.setItem('news-briefmode', briefMode);
+  applyBriefModeChrome();
+  const latest = queryLatestBriefing(briefMode);
+  briefingEn = latest.en;
+  briefingBn = latest.bn;
+  briefOpenSet = new Set();
+  renderSummary();
 }
 
 /* ── Search ── */
@@ -1689,13 +1728,15 @@ function buildStoryMaps(storyRows, articles) {
 // The structured briefing, whatever date it was last written under — not
 // necessarily today, exactly mirroring the fallback fetch.js itself reads
 // when deciding whether to regenerate.
-function queryLatestBriefing() {
-  const [row] = query("SELECT MAX(date) as d FROM briefing_items");
+function queryLatestBriefing(mode) {
+  const m = mode === 'broker' ? 'broker' : 'general';
+  const [row] = query("SELECT MAX(date) as d FROM briefing_items WHERE COALESCE(mode,'general') = ?", [m]);
   if (!row || !row.d) return { en: [], bn: [] };
-  return queryBriefingFor(row.d);
+  return queryBriefingFor(row.d, m);
 }
-function queryBriefingFor(date) {
-  const rows = query('SELECT * FROM briefing_items WHERE date = ? ORDER BY position', [date]);
+function queryBriefingFor(date, mode) {
+  const m = mode === 'broker' ? 'broker' : 'general';
+  const rows = query("SELECT * FROM briefing_items WHERE date = ? AND COALESCE(mode,'general') = ? ORDER BY position", [date, m]);
   const en = rows.map(r => ({ id: r.story_id || '', headline: r.headline, what: r.what, why: r.why, watch: r.watch }));
   const anyBn = rows.some(r => r.headline_bn);
   const bn = anyBn ? rows.map(r => ({ id: r.story_id || '', headline: r.headline_bn, what: r.what_bn, why: r.why_bn, watch: r.watch_bn })) : [];
@@ -1761,7 +1802,8 @@ async function loadData() {
     fetchedAt = fetchedAtValue ? new Date(fetchedAtValue) : null;
     renderProvenance();
 
-    const latest = queryLatestBriefing();
+    if (activeRegion !== 'au') briefMode = 'general';
+    const latest = queryLatestBriefing(activeRegion === 'au' ? briefMode : 'general');
     briefingEn = latest.en;
     briefingBn = latest.bn;
 
@@ -1817,6 +1859,10 @@ function wireControls() {
   document.getElementById('scope-switch').addEventListener('click', e => {
     const btn = e.target.closest('.scope-btn');
     if (btn) setDateScope(btn.dataset.scope);
+  });
+  document.getElementById('brief-mode-toggle').addEventListener('click', e => {
+    const btn = e.target.closest('.brief-mode-btn');
+    if (btn) setBriefMode(btn.dataset.mode);
   });
   document.getElementById('archive-nav').addEventListener('click', e => {
     const btn = e.target.closest('button');

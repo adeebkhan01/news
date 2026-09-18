@@ -162,6 +162,15 @@ const REGIONS = {
   }
 };
 
+// The AU-only "for brokers" mode: same fetched articles, a different top-
+// story selection (lib/rank.js's rankForBrokers, not the general au ranking)
+// and a differently-briefed take on them — not a second region, because it
+// is not a second set of sources.
+var BROKER_LABEL = 'Australian mortgage brokers';
+var BROKER_SUMMARY_PROMPT = 'You are a concise briefing editor writing for Australian mortgage brokers. '
+  + 'Frame everything in terms of what it means for a broker\'s conversations with clients this week — '
+  + 'borrowing costs, serviceability, lender policy, and the property market — not general economic commentary.';
+
 var regionArg = 'bd';
 process.argv.forEach(function(arg, i) {
   if (arg === '--region' && process.argv[i+1]) regionArg = process.argv[i+1];
@@ -791,20 +800,22 @@ function dedupForBriefing(stories, limit) {
 // headlines, which is the whole reason this can be written at all: asked to
 // summarise forty headlines it produced forty headlines' worth of throat
 // clearing, because it had no way to know which five mattered.
-async function generateBriefing(stories) {
+async function generateBriefing(stories, opts) {
   if (!ANTHROPIC_API_KEY || apiUnavailable) return null;
+  var summaryPrompt = (opts && opts.summaryPrompt) || REGION.summaryPrompt;
+  var label = (opts && opts.label) || REGION.label;
   var top = dedupForBriefing(stories, BRIEFING_STORIES);
   if (top.length < security.BRIEFING_MIN_ITEMS) {
-    console.log('Only', top.length, 'ranked stories — not enough for a briefing');
+    console.log('Only', top.length, 'ranked stories — not enough for a', label, 'briefing');
     return null;
   }
-  console.log('Writing the briefing for', REGION.label, 'over', top.length, 'stories...');
+  console.log('Writing the briefing for', label, 'over', top.length, 'stories...');
   try {
     var raw = await claudeComplete(
-      REGION.summaryPrompt
+      summaryPrompt
       + ' You write the morning briefing an analyst reads before anything else.'
       + ' Respond ONLY with valid JSON, no markdown, no preamble.',
-      'These are today\'s most significant stories from ' + REGION.label + ' news sources, already ranked'
+      'These are today\'s most significant stories from ' + label + ' news sources, already ranked'
       + ' and deduplicated. Each one lists how the publishers covering it described it.\n\n'
       + top.map(storyBrief).join('\n\n') + '\n\n'
       + 'Return a JSON array of exactly ' + top.length + ' objects, one per story, in the order given:\n'
@@ -1350,6 +1361,33 @@ async function main() {
     briefingBn = await translateBriefing(briefing);
   }
 
+  // ── The for-brokers briefing (au only) ──
+  //
+  // Same fetched articles, same clustering, a different top-story selection
+  // (rankForBrokers filters to what a broker's briefing should lead with,
+  // rather than reweighting the general ranking) and a briefing written for
+  // that audience. English only — brokers are a professional AU audience,
+  // not the Bangla-reading readership the rest of the site translates for.
+  var brokerBriefing = null, brokerRanked = [];
+  if (regionArg === 'au') {
+    brokerRanked = rank.rankForBrokers(ranked);
+    var storedBrokerBriefingRow = db.readLatestBriefing(conn, 'broker');
+    var storedBrokerBriefing = storedBrokerBriefingRow ? storedBrokerBriefingRow.en : null;
+    brokerBriefing = storedBrokerBriefing;
+    if (freshArticles.length > 0 || !storedBrokerBriefing) {
+      var generatedBroker = await generateBriefing(brokerRanked, {
+        summaryPrompt: BROKER_SUMMARY_PROMPT, label: BROKER_LABEL
+      });
+      if (generatedBroker) {
+        brokerBriefing = generatedBroker;
+      } else if (storedBrokerBriefing) {
+        console.log('Broker briefing generation failed — keeping the previous one');
+      }
+    } else {
+      console.log('No new articles — reusing the existing broker briefing');
+    }
+  }
+
   var whyCandidates = ranked.slice(0, WHY_STORIES);
   var whyNeeded = whyCandidates.filter(function (st) {
     return !storedWhy[st.id] || storedSize[st.id] !== st.members.length;
@@ -1453,6 +1491,19 @@ async function main() {
     };
   }) : null;
 
+  // Same shape as snapshotStories, over brokerRanked instead of ranked, and
+  // with no "why this matters" line — that is only ever written for the
+  // general ranking's top stories.
+  var brokerSnapshotStories = brokerBriefing ? brokerRanked.slice(0, ARCHIVE_STORIES).map(function (st) {
+    var lead = st.members[0];
+    return {
+      id: st.id, headline: lead.title, leadLink: lead.link,
+      size: st.members.length, sourceIds: st.sourceIds, topic: st.topic,
+      score: Math.round(st.score * 1000) / 1000,
+      lang: lead.lang || null, headlineEn: db.fieldValue(lead.titleEn), headlineBn: db.fieldValue(lead.titleBn)
+    };
+  }) : null;
+
   db.writeRun(conn, {
     fetchedAt: fetchedAt,
     date: today,
@@ -1463,6 +1514,8 @@ async function main() {
     briefingItems: briefing || null,
     briefingItemsBn: briefingBn || null,
     snapshotStories: snapshotStories,
+    brokerBriefingItems: brokerBriefing || null,
+    brokerSnapshotStories: brokerSnapshotStories,
     changedSince: changes ? changes.since : null,
     droppedItems: dropped
   });
