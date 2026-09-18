@@ -261,6 +261,13 @@ a{color:inherit}
    Same quiet-underline treatment as the briefing's own tabs used to have:
    plain text at heading weight, the active one filled in solid gold. */
 .scope-switch{display:flex;align-items:baseline;gap:var(--space-3);margin-right:auto}
+/* #brief-mode-toggle reuses .scope-switch's look but, unlike #scope-switch,
+   is actually hidden/shown via the `hidden` attribute rather than a body
+   class — and a class selector's display:flex outranks the UA [hidden]
+   rule, same pitfall #page-summary[hidden] and .archive-nav[hidden] below
+   already exist to fix. Without this, the toggle leaked through on every
+   region, not just au. */
+#brief-mode-toggle[hidden]{display:none}
 .scope-btn{
   font-family:var(--font-display);font-weight:700;font-size:var(--size-sm);line-height:1;
   letter-spacing:var(--track-display);cursor:pointer;

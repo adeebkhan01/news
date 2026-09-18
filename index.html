@@ -54,7 +54,7 @@
     document.documentElement.setAttribute('data-theme', theme);
   })();
 </script>
-<link rel="stylesheet" href="app.css?v=a3eb3b15c9a0" />
+<link rel="stylesheet" href="app.css?v=67e36d94a70b" />
 </head>
 <body>
 <a class="skip-link" href="#feed-container" data-i18n="skipToHeadlines">Skip to headlines</a>
@@ -99,6 +99,13 @@
       <div class="section-head">
         <h2 data-i18n="orderTop">Top stories</h2>
         <span class="label brief-byline" id="brief-byline" hidden></span>
+        <!-- au only: a different top-story selection and briefing over the
+             same articles, not a different region — see applyBriefModeChrome
+             in app.js for why this hides everywhere else. -->
+        <div class="scope-switch" id="brief-mode-toggle" role="group" data-i18n-label="briefMode" aria-label="Briefing mode" hidden>
+          <button class="scope-btn brief-mode-btn active" data-mode="general" aria-pressed="true" data-i18n="briefModeGeneral">General</button>
+          <button class="scope-btn brief-mode-btn" data-mode="broker" aria-pressed="false" data-i18n="briefModeBroker">For brokers</button>
+        </div>
         <!-- Three buttons shrunk to one control: a date flanked by two
              arrows. The date itself is the "back to today" action, doing
              what a separate Today button did, so the reader is never
@@ -188,6 +195,6 @@
      document order, so initSqlJs is defined by the time app.js needs it.
      locateFile in app.js points this at the matching .wasm file. -->
 <script src="vendor/sql-wasm-1.13.0.js" defer></script>
-<script src="app.js?v=d6ff90842c14" defer></script>
+<script src="app.js?v=78c0e6206777" defer></script>
 </body>
 </html>
