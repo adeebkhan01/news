@@ -303,7 +303,10 @@ const SOURCE_NAMES_BN = {
   kathmandupost: 'দ্য কাঠমান্ডু পোস্ট', himalayantimes: 'দ্য হিমালয়ান টাইমস',
   onlinekhabar: 'অনলাইনখবর',        nepalitimes: 'নেপালি টাইমস',
   annapurnaexpress: 'দ্য অন্নপূর্ণ এক্সপ্রেস', risingnepal: 'দ্য রাইজিং নেপাল',
-  republica: 'রিপাবলিকা'
+  republica: 'রিপাবলিকা',
+  afg: 'এএফজি ব্রোকার নিউজ',    brokernews: 'অস্ট্রেলিয়ান ব্রোকার',
+  mpamag: 'এমপিএ',             theadviser: 'দ্য অ্যাডভাইজার',
+  mfaa: 'এমএফএএ'
 };
 
 const LOCALE = { en: 'en-GB', bn: 'bn-BD' };
@@ -1172,7 +1175,13 @@ function renderArticles() {
   // or a topic — not just a different Top Stories summary sitting above an
   // otherwise-unfiltered list of headlines.
   const brokerFiltering = activeRegion === 'au' && briefMode === 'broker';
-  if (brokerFiltering) articles = articles.filter(isBrokerRelevant);
+  // A broker-only source (mortgage-broker trade press, fetched specifically
+  // for this mode) belongs in broker mode unconditionally — bypassing the
+  // keyword filter, the same way lib/rank.js's brokerRelevance() treats it
+  // server-side — and never in general mode, regardless of region.
+  articles = brokerFiltering
+    ? articles.filter(a => a.brokerOnly || isBrokerRelevant(a))
+    : articles.filter(a => !a.brokerOnly);
 
   if (q) {
     // Across every language the article carries, so a Bangla query finds an
@@ -1728,6 +1737,7 @@ function hydrateArticle(row, sourceMeta) {
   if (row.story_id != null) a.clusterId = row.story_id;
   if (row.score != null) a.score = row.score;
   if (row.topic != null) a.topic = row.topic;
+  if (row.broker_only) a.brokerOnly = true;
   const wantEn = row.lang === 'bn';
   assignTranslated(a, 'titleEn', row.title_en, wantEn && row.translate_failed);
   assignTranslated(a, 'descEn', row.desc_en, wantEn && row.translate_failed);
