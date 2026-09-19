@@ -122,6 +122,8 @@ const STRINGS = {
     briefMode:       'Briefing mode',
     briefModeGeneral:'General',
     briefModeBroker: 'For brokers',
+    briefBrokerEmptyTitle: 'No broker briefing yet',
+    briefBrokerEmptyBody:  'This region’s next scheduled update will include one.',
     coveredBy:       'Covered by {n} sources',
     sourceCount:     '{n} sources',
     sourceCountParen:'({n} sources)',
@@ -208,6 +210,8 @@ const STRINGS = {
     briefMode:       'সারসংক্ষেপ মোড',
     briefModeGeneral:'সাধারণ',
     briefModeBroker: 'ব্রোকারদের জন্য',
+    briefBrokerEmptyTitle: 'ব্রোকার সারসংক্ষেপ এখনো নেই',
+    briefBrokerEmptyBody:  'এই অঞ্চলের পরবর্তী নির্ধারিত আপডেটে এটি থাকবে।',
     coveredBy:       '{n}টি উৎসে প্রকাশিত',
     sourceCount:     '{n}টি উৎস',
     sourceCountParen:'({n}টি উৎস)',
@@ -1459,6 +1463,21 @@ function renderSummary() {
     byline.hidden = !viewDate;
     box.hidden = false;
     renderChangeNote();
+    return;
+  }
+
+  // Broker mode specifically: unlike "no API key" or "every attempt
+  // failed", this is an expected, common state — the toggle existing before
+  // the first au fetch since it shipped has generated a broker briefing at
+  // all. Says so rather than leaving the toggle sitting above a silent gap,
+  // which is what prompted this in the first place.
+  if (!viewDate && activeRegion === 'au' && briefMode === 'broker') {
+    body.classList.remove('brief-items', 'clamped');
+    body.replaceChildren(notice('notice', t('briefBrokerEmptyTitle'), t('briefBrokerEmptyBody')));
+    toggle.hidden = true;
+    byline.hidden = true;
+    document.getElementById('brief-change').hidden = true;
+    box.hidden = false;
     return;
   }
 
