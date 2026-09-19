@@ -484,10 +484,29 @@ function sanitizeLink(raw) {
   return u.href;
 }
 
+// isAllowedImageUrl requires https (parseSafeUrl's own rule), and a feed
+// that still serves media over plain http on an otherwise-allowed host is
+// common enough — older WordPress installs in particular — that the
+// upgraded URL is worth trying before the image is dropped and logged as
+// an allowlist rejection, which is a misleading reason when the domain
+// was never the problem. Never downgrades: only ever offers https for an
+// http URL, and if that host truly does not answer on 443 the download
+// itself fails later, with an accurate reason, rather than looking here
+// like the domain was never allowed at all.
+function allowedImageUrl(abs) {
+  if (security.isAllowedImageUrl(abs, POLICY)) return abs;
+  if (/^http:\/\//i.test(abs)) {
+    var upgraded = abs.replace(/^http:\/\//i, 'https://');
+    if (security.isAllowedImageUrl(upgraded, POLICY)) return upgraded;
+  }
+  return null;
+}
+
 function sanitizeImage(raw, base) {
   if (!raw) return null;
   var abs = resolveLocation(raw, base);
-  if (security.isAllowedImageUrl(abs, POLICY)) return abs;
+  var allowed = allowedImageUrl(abs);
+  if (allowed) return allowed;
   var host;
   try { host = new URL(abs).hostname; } catch (e) { host = '(unparseable)'; }
   droppedImageHosts[host] = (droppedImageHosts[host] || 0) + 1;
@@ -539,7 +558,8 @@ async function enrichImages(articles) {
       var img = extractOgImage(html);
       if (!img) return;
       var abs = resolveLocation(img, a.link);
-      if (security.isAllowedImageUrl(abs, POLICY)) { a.img = abs; return; }
+      var allowed = allowedImageUrl(abs);
+      if (allowed) { a.img = allowed; return; }
       try { rejectedHosts[new URL(abs).hostname] = (rejectedHosts[new URL(abs).hostname] || 0) + 1; }
       catch (e) { rejectedHosts['(unparseable)'] = (rejectedHosts['(unparseable)'] || 0) + 1; }
     }));
