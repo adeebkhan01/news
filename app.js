@@ -46,6 +46,21 @@ const SECONDARY_COUNT = 4;
 // all morning. Top stories is an answer to "what matters today", and past
 // thirty the honest answer is "nothing else, and Latest has the rest".
 const TOP_STORIES_SHOWN = 30;
+
+// Mirrors lib/rank.js's BROKER_STRONG_RE/BROKER_WEAK_RE exactly (kept in sync
+// by hand, like every other piece of duplicated db/ranking logic this file
+// carries for the browser side). Used to filter the headline feed itself
+// when the AU broker toggle is on — not just the Top Stories briefing — so
+// "For brokers" reads as a real filter, the same as switching regions, and
+// not just a different five-item summary sitting above an unfiltered feed.
+const BROKER_STRONG_RE = /\b(?:mortgage\w*|home loan\w*|broker\w*|lend(?:er|ers|ing)|borrow(?:er|ers|ing)|refinanc\w*|APRA|ASIC|RBA|reserve bank|cash rate|LMI|lenders mortgage insurance|serviceability|offset account|redraw|stamp duty|first[\s-]home buyer\w*|non-bank lender\w*|aggregator\w*|macroprudential|responsible lending|construction finance)\b/i;
+const BROKER_WEAK_RE = /\b(?:interest rate\w*|fixed rate\w*|variable rate\w*|property (?:market|price\w*)|house price\w*|housing (?:market|afford\w*)|auction clearance|credit polic\w*|net interest margin|bank\w* profit\w*)\b/i;
+
+function isBrokerRelevant(a) {
+  const text = [a.title, a.desc, a.titleEn, a.descEn, a.titleBn, a.descBn]
+    .filter(s => typeof s === 'string' && s).join(' ');
+  return BROKER_STRONG_RE.test(text) || BROKER_WEAK_RE.test(text);
+}
 let visibleArticles = [];
 let renderedCount   = 0;
 let featuredIndex   = -1;
@@ -164,6 +179,7 @@ const STRINGS = {
     emptySource:     'This source has published nothing in the retained window. Pick another source or region.',
     emptyToday:      'Nothing published today yet. Switch to All time to see the full retained window.',
     emptyTopic:      'Nothing tagged {topic} in this window. Pick another topic, source, or region.',
+    emptyBroker:     'Nothing broker-relevant in this window. Switch back to General to see the full feed.',
     errorTitle:      'No data file',
     errorBody:       '{file} did not load: {message}.',
     errorHint:       'Run the Fetch RSS Feeds workflow in Actions, then reload.',
@@ -252,6 +268,7 @@ const STRINGS = {
     emptySource:     'এই উৎস সংরক্ষিত সময়সীমার মধ্যে কিছু প্রকাশ করেনি। অন্য উৎস বা অঞ্চল বেছে নিন।',
     emptyToday:      'আজ এখনও কিছু প্রকাশিত হয়নি। পুরো সংরক্ষিত সময়সীমা দেখতে সর্বকাল-এ যান।',
     emptyTopic:      'এই সময়সীমায় {topic} বিষয়ে কিছু নেই। অন্য বিষয়, উৎস বা অঞ্চল বেছে নিন।',
+    emptyBroker:     'এই সময়সীমায় ব্রোকার-প্রাসঙ্গিক কিছু নেই। পুরো ফিড দেখতে সাধারণ-এ ফিরে যান।',
     errorTitle:      'কোনো ডেটা ফাইল নেই',
     errorBody:       '{file} লোড হয়নি: {message}।',
     errorHint:       'Actions-এ Fetch RSS Feeds ওয়ার্কফ্লো চালান, তারপর পৃষ্ঠাটি রিলোড করুন।',
@@ -653,6 +670,7 @@ function setBriefMode(mode) {
   briefingBn = latest.bn;
   briefOpenSet = new Set();
   renderSummary();
+  renderArticles();
 }
 
 /* ── Search ── */
@@ -1146,6 +1164,12 @@ function renderArticles() {
   if (activeTopic !== 'all') articles = articles.filter(a => a.topic === activeTopic);
   if (dateScope === 'today') articles = articles.filter(a => isFromToday(a.pubDate));
 
+  // For brokers is a filter on the same AU feed, same as switching regions
+  // or a topic — not just a different Top Stories summary sitting above an
+  // otherwise-unfiltered list of headlines.
+  const brokerFiltering = activeRegion === 'au' && briefMode === 'broker';
+  if (brokerFiltering) articles = articles.filter(isBrokerRelevant);
+
   if (q) {
     // Across every language the article carries, so a Bangla query finds an
     // English article that has been translated, and the other way round.
@@ -1184,6 +1208,7 @@ function renderArticles() {
     renderedCount = 0;
     if (feedObserver) feedObserver.disconnect();
     const body = q ? t('emptySearch', { query: searchQuery })
+      : brokerFiltering ? t('emptyBroker')
       : dateScope === 'today' ? t('emptyToday')
       : activeTopic !== 'all' ? t('emptyTopic', { topic: topicLabel(activeTopic) })
       : t('emptySource');
