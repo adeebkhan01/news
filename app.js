@@ -180,6 +180,7 @@ const STRINGS = {
     emptyToday:      'Nothing published today yet. Switch to All time to see the full retained window.',
     emptyTopic:      'Nothing tagged {topic} in this window. Pick another topic, source, or region.',
     emptyBroker:     'Nothing broker-relevant in this window. Switch back to General to see the full feed.',
+    emptyBrokerToday:'Nothing broker-relevant published today — today’s feed is small on its own. Switch to All time to see more, or General for today’s full feed.',
     errorTitle:      'No data file',
     errorBody:       '{file} did not load: {message}.',
     errorHint:       'Run the Fetch RSS Feeds workflow in Actions, then reload.',
@@ -269,6 +270,7 @@ const STRINGS = {
     emptyToday:      'আজ এখনও কিছু প্রকাশিত হয়নি। পুরো সংরক্ষিত সময়সীমা দেখতে সর্বকাল-এ যান।',
     emptyTopic:      'এই সময়সীমায় {topic} বিষয়ে কিছু নেই। অন্য বিষয়, উৎস বা অঞ্চল বেছে নিন।',
     emptyBroker:     'এই সময়সীমায় ব্রোকার-প্রাসঙ্গিক কিছু নেই। পুরো ফিড দেখতে সাধারণ-এ ফিরে যান।',
+    emptyBrokerToday:'আজ প্রকাশিত ব্রোকার-প্রাসঙ্গিক কিছু নেই — আজকের ফিড নিজেই ছোট। আরও দেখতে সর্বকাল-এ যান, বা আজকের পুরো ফিড দেখতে সাধারণ-এ যান।',
     errorTitle:      'কোনো ডেটা ফাইল নেই',
     errorBody:       '{file} লোড হয়নি: {message}।',
     errorHint:       'Actions-এ Fetch RSS Feeds ওয়ার্কফ্লো চালান, তারপর পৃষ্ঠাটি রিলোড করুন।',
@@ -299,7 +301,12 @@ const SOURCE_NAMES_BN = {
   npr: 'এনপিআর',                france24: 'ফ্রান্স ২৪',      dwnews: 'ডয়চে ভেলে',
   cnn: 'সিএনএন',                bloomberg: 'ব্লুমবার্গ',     pewresearch: 'পিউ রিসার্চ',
   kathmandupost: 'দ্য কাঠমান্ডু পোস্ট', himalayantimes: 'দ্য হিমালয়ান টাইমস',
-  onlinekhabar: 'অনলাইনখবর'
+  onlinekhabar: 'অনলাইনখবর',        nepalitimes: 'নেপালি টাইমস',
+  annapurnaexpress: 'দ্য অন্নপূর্ণ এক্সপ্রেস', risingnepal: 'দ্য রাইজিং নেপাল',
+  republica: 'রিপাবলিকা',
+  afg: 'এএফজি ব্রোকার নিউজ',    brokernews: 'অস্ট্রেলিয়ান ব্রোকার',
+  mpamag: 'এমপিএ',             theadviser: 'দ্য অ্যাডভাইজার',
+  mfaa: 'এমএফএএ'
 };
 
 const LOCALE = { en: 'en-GB', bn: 'bn-BD' };
@@ -1168,7 +1175,13 @@ function renderArticles() {
   // or a topic — not just a different Top Stories summary sitting above an
   // otherwise-unfiltered list of headlines.
   const brokerFiltering = activeRegion === 'au' && briefMode === 'broker';
-  if (brokerFiltering) articles = articles.filter(isBrokerRelevant);
+  // A broker-only source (mortgage-broker trade press, fetched specifically
+  // for this mode) belongs in broker mode unconditionally — bypassing the
+  // keyword filter, the same way lib/rank.js's brokerRelevance() treats it
+  // server-side — and never in general mode, regardless of region.
+  articles = brokerFiltering
+    ? articles.filter(a => a.brokerOnly || isBrokerRelevant(a))
+    : articles.filter(a => !a.brokerOnly);
 
   if (q) {
     // Across every language the article carries, so a Bangla query finds an
@@ -1208,6 +1221,7 @@ function renderArticles() {
     renderedCount = 0;
     if (feedObserver) feedObserver.disconnect();
     const body = q ? t('emptySearch', { query: searchQuery })
+      : brokerFiltering && dateScope === 'today' ? t('emptyBrokerToday')
       : brokerFiltering ? t('emptyBroker')
       : dateScope === 'today' ? t('emptyToday')
       : activeTopic !== 'all' ? t('emptyTopic', { topic: topicLabel(activeTopic) })
@@ -1723,6 +1737,7 @@ function hydrateArticle(row, sourceMeta) {
   if (row.story_id != null) a.clusterId = row.story_id;
   if (row.score != null) a.score = row.score;
   if (row.topic != null) a.topic = row.topic;
+  if (row.broker_only) a.brokerOnly = true;
   const wantEn = row.lang === 'bn';
   assignTranslated(a, 'titleEn', row.title_en, wantEn && row.translate_failed);
   assignTranslated(a, 'descEn', row.desc_en, wantEn && row.translate_failed);

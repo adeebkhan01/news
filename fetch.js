@@ -103,6 +103,21 @@ const REGIONS = {
       { id: 'conversationau', name: 'The Conversation AU',   color: '#D8352A', url: 'https://theconversation.com/au/politics/articles.atom' },
       { id: 'conversationau', name: 'The Conversation AU',   color: '#D8352A', url: 'https://theconversation.com/au/technology/articles.atom' },
       { id: 'conversationau', name: 'The Conversation AU',   color: '#D8352A', url: 'https://theconversation.com/au/environment/articles.atom' },
+      // Mortgage-broker trade press, requested specifically for "For
+      // brokers" mode — brokerOnly: true keeps them out of the general AU
+      // feed (see the brokerOnly checks around matchesTopic, above) rather
+      // than mixing trade-press headlines into it. All five feed URLs are
+      // unverified: this environment has no outbound network to test them
+      // (only web search worked, not a real fetch), and the pages given
+      // were section/homepage URLs rather than feed URLs, so these are the
+      // best candidate paths found, not confirmed ones. Worth checking the
+      // next scheduled fetch run's log for "Failed:" lines naming any of
+      // these five.
+      { id: 'afg',        name: 'AFG Broker News', color: '#004B87', url: 'https://afgonline.com.au/news/broker-news/feed/', brokerOnly: true },
+      { id: 'brokernews', name: 'Australian Broker', color: '#E8262E', url: 'https://www.brokernews.com.au/rss', brokerOnly: true },
+      { id: 'mpamag',     name: 'MPA', color: '#1B3F6B', url: 'https://www.mpamag.com/au/rss', brokerOnly: true },
+      { id: 'theadviser', name: 'The Adviser', color: '#00263A', url: 'https://www.theadviser.com.au/rss', brokerOnly: true },
+      { id: 'mfaa',       name: 'MFAA', color: '#6E2C6E', url: 'https://www.mfaa.com.au/news/rss', brokerOnly: true },
     ]
   },
   global: {
@@ -156,8 +171,18 @@ const REGIONS = {
     summaryPrompt: 'You are a concise news briefing editor covering Nepal.',
     sources: [
       { id: 'kathmandupost', name: 'The Kathmandu Post', color: '#8B1A1A', url: 'https://kathmandupost.com/rss' },
-      { id: 'himalayantimes', name: 'The Himalayan Times', color: '#003D7A', url: 'https://thehimalayantimes.com/feed/' },
+      // Was thehimalayantimes.com/feed/, which the fetch log showed pulling
+      // zero articles run after run — the feed had moved. This is the path
+      // the outlet's own site links to today.
+      { id: 'himalayantimes', name: 'The Himalayan Times', color: '#003D7A', url: 'https://www.thehimalayantimes.com/rss' },
       { id: 'onlinekhabar', name: 'Online Khabar English', color: '#D4302A', url: 'https://english.onlinekhabar.com/feed' },
+      { id: 'nepalitimes', name: 'Nepali Times', color: '#C8102E', url: 'https://www.nepalitimes.com/feed/' },
+      // Annapurna Post itself publishes in Nepali; its English sibling
+      // under the same Annapurna Media Network masthead is Annapurna
+      // Express, so that is the feed added here.
+      { id: 'annapurnaexpress', name: 'The Annapurna Express', color: '#0F5FA8', url: 'https://theannapurnaexpress.com/feed/' },
+      { id: 'risingnepal', name: 'The Rising Nepal', color: '#8B0000', url: 'https://risingnepaldaily.com/feed/' },
+      { id: 'republica', name: 'Republica', color: '#003865', url: 'https://myrepublica.nagariknetwork.com/author/2299/rss' },
     ]
   }
 };
@@ -1163,7 +1188,7 @@ async function main() {
       var keep = !inExcludedSection(a)
         // Applied to stored articles too, so turning the filter on (or editing
         // the keywords) takes effect next run instead of over the retention window.
-        && (!REGION.topicFilter || matchesTopic(a));
+        && (a.brokerOnly || !REGION.topicFilter || matchesTopic(a));
       if (!keep) excludedLinks.push(a.link);
       return keep;
     })
@@ -1240,7 +1265,13 @@ async function main() {
         seenLinks[a.link] = true;
         return true;
       });
-    var articles = REGION.topicFilter ? parsed.filter(matchesTopic) : parsed;
+    // A broker-only source (mortgage-broker trade press) is on-topic for
+    // broker mode by definition — matchesTopic's general-audience categories
+    // (politics/economy/markets/...) are not the bar a trade-press article
+    // has to clear, and applying it here would silently drop most of what
+    // these sources exist to add.
+    if (source.brokerOnly) parsed.forEach(function(a) { a.brokerOnly = true; });
+    var articles = (!source.brokerOnly && REGION.topicFilter) ? parsed.filter(matchesTopic) : parsed;
     var filtered = parsed.length - articles.length;
     console.log('Fetched:', source.name, '-', articles.length, 'new articles' + (filtered ? ' (' + filtered + ' off-topic filtered)' : ''));
     freshArticles = freshArticles.concat(articles);
@@ -1294,6 +1325,18 @@ async function main() {
   console.log('Clustered', allArticles.length, 'articles into', ranked.length, 'stories ('
     + multiSource.length + ' carried by more than one source)');
 
+  // Everything general-audience-facing (the Top Stories briefing, "why this
+  // matters", the day's snapshot/archive) draws from this instead of
+  // `ranked` directly — a story made up entirely of broker trade-press
+  // articles has no business leading a general reader's briefing or
+  // surviving into the general archive, which (unlike the live feed) has no
+  // client-side broker_only filter of its own. A story that mixes a
+  // trade-press article with a mainstream one stays eligible; only a story
+  // with zero non-broker-only members drops out.
+  var generalRanked = ranked.filter(function (st) {
+    return st.members.some(function (m) { return !m.brokerOnly; });
+  });
+
   // Every article learns which story it belongs to and what that story scored,
   // so the page can order the feed by importance and show one card per story
   // instead of five. `lead` is the story's freshest telling — the one the card
@@ -1344,7 +1387,7 @@ async function main() {
 
   var briefing = storedBriefing, briefingBn = storedBriefingBn;
   if (freshArticles.length > 0 || !storedBriefing) {
-    var generated = await generateBriefing(ranked);
+    var generated = await generateBriefing(generalRanked);
     // A failed call must not wipe a good briefing off the page.
     if (generated) {
       briefing = generated;
@@ -1388,7 +1431,7 @@ async function main() {
     }
   }
 
-  var whyCandidates = ranked.slice(0, WHY_STORIES);
+  var whyCandidates = generalRanked.slice(0, WHY_STORIES);
   var whyNeeded = whyCandidates.filter(function (st) {
     return !storedWhy[st.id] || storedSize[st.id] !== st.members.length;
   });
@@ -1433,7 +1476,7 @@ async function main() {
   var previousDate = db.previousSnapshotDate(conn, today);
   var previousSnapshotStories = db.readSnapshotStories(conn, previousDate);
   var previousBriefing = previousDate ? db.readBriefing(conn, previousDate) : null;
-  var changes = diffStories(ranked.slice(0, ARCHIVE_STORIES), previousSnapshotStories, previousDate);
+  var changes = diffStories(generalRanked.slice(0, ARCHIVE_STORIES), previousSnapshotStories, previousDate);
   var dropped = droppedFromBriefing(briefing, previousBriefing ? previousBriefing.en : null);
   if (changes) {
     var counts = { new: 0, developing: 0, continuing: 0 };
@@ -1481,7 +1524,7 @@ async function main() {
   // against nothing, which is worse than having no snapshot for the day at
   // all. The snapshot freezes today's story *ranking*, which is worth
   // recording even on a day the briefing prose itself is a carried-over one.
-  var snapshotStories = briefing ? ranked.slice(0, ARCHIVE_STORIES).map(function (st) {
+  var snapshotStories = briefing ? generalRanked.slice(0, ARCHIVE_STORIES).map(function (st) {
     var lead = st.members[0];
     return {
       id: st.id, headline: lead.title, leadLink: lead.link,
