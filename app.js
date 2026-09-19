@@ -301,7 +301,9 @@ const SOURCE_NAMES_BN = {
   npr: 'এনপিআর',                france24: 'ফ্রান্স ২৪',      dwnews: 'ডয়চে ভেলে',
   cnn: 'সিএনএন',                bloomberg: 'ব্লুমবার্গ',     pewresearch: 'পিউ রিসার্চ',
   kathmandupost: 'দ্য কাঠমান্ডু পোস্ট', himalayantimes: 'দ্য হিমালয়ান টাইমস',
-  onlinekhabar: 'অনলাইনখবর'
+  onlinekhabar: 'অনলাইনখবর',        nepalitimes: 'নেপালি টাইমস',
+  annapurnaexpress: 'দ্য অন্নপূর্ণ এক্সপ্রেস', risingnepal: 'দ্য রাইজিং নেপাল',
+  republica: 'রিপাবলিকা'
 };
 
 const LOCALE = { en: 'en-GB', bn: 'bn-BD' };

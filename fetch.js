@@ -156,8 +156,18 @@ const REGIONS = {
     summaryPrompt: 'You are a concise news briefing editor covering Nepal.',
     sources: [
       { id: 'kathmandupost', name: 'The Kathmandu Post', color: '#8B1A1A', url: 'https://kathmandupost.com/rss' },
-      { id: 'himalayantimes', name: 'The Himalayan Times', color: '#003D7A', url: 'https://thehimalayantimes.com/feed/' },
+      // Was thehimalayantimes.com/feed/, which the fetch log showed pulling
+      // zero articles run after run — the feed had moved. This is the path
+      // the outlet's own site links to today.
+      { id: 'himalayantimes', name: 'The Himalayan Times', color: '#003D7A', url: 'https://www.thehimalayantimes.com/rss' },
       { id: 'onlinekhabar', name: 'Online Khabar English', color: '#D4302A', url: 'https://english.onlinekhabar.com/feed' },
+      { id: 'nepalitimes', name: 'Nepali Times', color: '#C8102E', url: 'https://www.nepalitimes.com/feed/' },
+      // Annapurna Post itself publishes in Nepali; its English sibling
+      // under the same Annapurna Media Network masthead is Annapurna
+      // Express, so that is the feed added here.
+      { id: 'annapurnaexpress', name: 'The Annapurna Express', color: '#0F5FA8', url: 'https://theannapurnaexpress.com/feed/' },
+      { id: 'risingnepal', name: 'The Rising Nepal', color: '#8B0000', url: 'https://risingnepaldaily.com/feed/' },
+      { id: 'republica', name: 'Republica', color: '#003865', url: 'https://myrepublica.nagariknetwork.com/author/2299/rss' },
     ]
   }
 };
