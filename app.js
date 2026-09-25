@@ -181,6 +181,7 @@ const STRINGS = {
     emptyTopic:      'Nothing tagged {topic} in this window. Pick another topic, source, or region.',
     emptyBroker:     'Nothing broker-relevant in this window. Switch back to General to see the full feed.',
     emptyBrokerToday:'Nothing broker-relevant published today — today’s feed is small on its own. Switch to All time to see more, or General for today’s full feed.',
+    emptyAllBriefed: 'Everything published today is already above in Top stories — nothing further down to show yet.',
     errorTitle:      'No data file',
     errorBody:       '{file} did not load: {message}.',
     errorHint:       'Run the Fetch RSS Feeds workflow in Actions, then reload.',
@@ -271,6 +272,7 @@ const STRINGS = {
     emptyTopic:      'এই সময়সীমায় {topic} বিষয়ে কিছু নেই। অন্য বিষয়, উৎস বা অঞ্চল বেছে নিন।',
     emptyBroker:     'এই সময়সীমায় ব্রোকার-প্রাসঙ্গিক কিছু নেই। পুরো ফিড দেখতে সাধারণ-এ ফিরে যান।',
     emptyBrokerToday:'আজ প্রকাশিত ব্রোকার-প্রাসঙ্গিক কিছু নেই — আজকের ফিড নিজেই ছোট। আরও দেখতে সর্বকাল-এ যান, বা আজকের পুরো ফিড দেখতে সাধারণ-এ যান।',
+    emptyAllBriefed: 'আজ প্রকাশিত সবকিছু ইতিমধ্যে উপরে শীর্ষ সংবাদ-এ আছে — এখনও নিচে দেখানোর মতো নতুন কিছু নেই।',
     errorTitle:      'কোনো ডেটা ফাইল নেই',
     errorBody:       '{file} লোড হয়নি: {message}।',
     errorHint:       'Actions-এ Fetch RSS Feeds ওয়ার্কফ্লো চালান, তারপর পৃষ্ঠাটি রিলোড করুন।',
@@ -1199,9 +1201,18 @@ function renderArticles() {
   // Only in the ranked view: under Latest the question is "what came in", and
   // silently withholding the six most recent things because a briefing
   // mentioned them would be answering something else.
+  let allBriefedAway = false;
   if (collapsing && feedOrder === 'top') {
     const briefed = briefedStoryIds();
-    if (briefed.size) articles = articles.filter(a => !briefed.has(a.clusterId));
+    if (briefed.size) {
+      const before = articles.length;
+      articles = articles.filter(a => !briefed.has(a.clusterId));
+      // Distinguishes "nothing was published" from "everything published
+      // was already covered above" — a low-volume region/day can clear
+      // every one of today's stories into the top five, which is not the
+      // same as a quiet news day and reads as broken if told so.
+      allBriefedAway = before > 0 && articles.length === 0;
+    }
   }
 
   // Only the ranked Today view is capped, and only when it is showing
@@ -1223,6 +1234,7 @@ function renderArticles() {
     const body = q ? t('emptySearch', { query: searchQuery })
       : brokerFiltering && dateScope === 'today' ? t('emptyBrokerToday')
       : brokerFiltering ? t('emptyBroker')
+      : allBriefedAway ? t('emptyAllBriefed')
       : dateScope === 'today' ? t('emptyToday')
       : activeTopic !== 'all' ? t('emptyTopic', { topic: topicLabel(activeTopic) })
       : t('emptySource');
